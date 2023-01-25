@@ -104,7 +104,7 @@ public final class Static235 {
 		if (local9 != null) {
 			local19 = Static306.method5251(local9) & true;
 		}
-		local9 = (Interface6) Static105.method2207(arg1, arg0, arg2, id.class);
+		local9 = (Interface6) Static105.method2207(arg1, arg0, arg2, Interface6.class);
 		if (local9 != null) {
 			local19 &= Static306.method5251(local9);
 		}

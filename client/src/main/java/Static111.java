@@ -57,9 +57,9 @@ public final class Static111 {
 							}
 						}
 					} else if (local41 == 2) {
-						local162 = Static105.method2207(local15.anInt1110, local15.anInt1117, local15.anInt1109, id.class);
+						local162 = Static105.method2207(local15.anInt1110, local15.anInt1117, local15.anInt1109, Interface6.class);
 						if (local162 instanceof Class11_Sub5_Sub6) {
-							Static188.method3465(local15.anInt1110, local15.anInt1117, local15.anInt1109, id.class);
+							Static188.method3465(local15.anInt1110, local15.anInt1117, local15.anInt1109, Interface6.class);
 							@Pc(471) Class11_Sub5_Sub6 local471 = (Class11_Sub5_Sub6) local162;
 							if (local471.aClass11_Sub5_2 != null) {
 								Static329.method5629(local471.aClass11_Sub5_2, false);
@@ -99,11 +99,11 @@ public final class Static111 {
 							local15.method6467();
 						}
 					} else if (local41 == 2) {
-						local162 = Static105.method2207(local15.anInt1110, local15.anInt1117, local15.anInt1109, id.class);
+						local162 = Static105.method2207(local15.anInt1110, local15.anInt1117, local15.anInt1109, Interface6.class);
 						if (local162 instanceof Class11_Sub5_Sub6) {
 							local15.method6467();
 						} else {
-							Static188.method3465(local15.anInt1110, local15.anInt1117, local15.anInt1109, id.class);
+							Static188.method3465(local15.anInt1110, local15.anInt1117, local15.anInt1109, Interface6.class);
 							@Pc(191) Class41 local191 = Static359.aClass202_4.method5162(local15.anInt1112);
 							@Pc(207) int local207;
 							@Pc(204) int local204;

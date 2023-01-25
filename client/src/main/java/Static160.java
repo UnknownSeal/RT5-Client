@@ -111,7 +111,7 @@ public final class Static160 {
 	public static Class19 method2954(@OriginalArg(0) Canvas arg0, @OriginalArg(1) Class152 arg1, @OriginalArg(3) Interface2 arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4) {
 		try {
 			@Pc(6) Class local6 = Class.forName("Class19_Sub1");
-			@Pc(58) Constructor local58 = local6.getConstructor(Canvas.class, ci.class, Integer.TYPE, Integer.TYPE, ml.class);
+			@Pc(58) Constructor local58 = local6.getConstructor(Canvas.class, Interface2.class, Integer.TYPE, Integer.TYPE, Class152.class);
 			return (Class19) local58.newInstance(arg0, arg2, Integer.valueOf(arg4), new Integer(arg3), arg1);
 		} catch (@Pc(91) Exception local91) {
 			throw new RuntimeException();

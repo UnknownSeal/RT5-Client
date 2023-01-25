@@ -36,7 +36,7 @@ public final class Static83 {
 			local8 = (Interface6) Static28.method893(arg0.anInt6481, arg0.anInt6484, arg0.anInt6486);
 		}
 		if (arg0.anInt6491 == 2) {
-			local8 = (Interface6) Static105.method2207(arg0.anInt6481, arg0.anInt6484, arg0.anInt6486, id.class);
+			local8 = (Interface6) Static105.method2207(arg0.anInt6481, arg0.anInt6484, arg0.anInt6486, Interface6.class);
 		}
 		if (arg0.anInt6491 == 3) {
 			local8 = (Interface6) Static26.method865(arg0.anInt6481, arg0.anInt6484, arg0.anInt6486);

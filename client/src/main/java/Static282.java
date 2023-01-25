@@ -68,7 +68,7 @@ public final class Static282 {
 				Static15.method395(local33, local25, arg5, arg2, arg3);
 			}
 		}
-		local11 = (Interface6) Static105.method2207(arg6, arg4, arg7, id.class);
+		local11 = (Interface6) Static105.method2207(arg6, arg4, arg7, Interface6.class);
 		if (local11 != null) {
 			local25 = Static359.aClass202_4.method5162(local11.method6084());
 			local33 = local11.method6083() & 0x3;

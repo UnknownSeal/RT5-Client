@@ -133,7 +133,7 @@ public final class Static49 {
 						if (Static142.method2661(local216, arg1, local220, local199)) {
 							@Pc(621) Interface6 local621 = (Interface6) Static26.method865(local220, local199, local216);
 							if (local621 == null) {
-								local621 = (Interface6) Static105.method2207(local220, local199, local216, id.class);
+								local621 = (Interface6) Static105.method2207(local220, local199, local216, Interface6.class);
 							}
 							if (local621 == null) {
 								local621 = (Interface6) Static12.method283(local220, local199, local216);

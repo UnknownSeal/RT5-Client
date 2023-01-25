@@ -326,7 +326,6 @@ public class Class29 {
 					arg6.method4814();
 				}
 			}
-			return;
 		}
 		if (!this.aBoolean73 && !arg3) {
 			Static359.aByteArrayArrayArray16[arg8][arg4][arg0] = 0;

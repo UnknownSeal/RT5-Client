@@ -40,9 +40,17 @@ public abstract class Class11_Sub3 extends Class11 {
 	@OriginalMember(owner = "client!cj", name = "h", descriptor = "(I)I")
 	public abstract int method5747();
 
+	public boolean method6085() {
+		return false;
+	}
+
 	@OriginalMember(owner = "client!cj", name = "e", descriptor = "(I)V")
 	@Override
 	public final void method6068() {
+		throw new IllegalStateException();
+	}
+
+	public void method6086(@OriginalArg(1) Class19 arg0) {
 		throw new IllegalStateException();
 	}
 

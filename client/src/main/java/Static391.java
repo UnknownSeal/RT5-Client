@@ -63,7 +63,7 @@ public final class Static391 {
 		}
 		if (arg3 != 1) {
 			if (arg3 == 2) {
-				local43 = (Interface6) Static105.method2207(arg6, arg5, arg2, id.class);
+				local43 = (Interface6) Static105.method2207(arg6, arg5, arg2, Interface6.class);
 				if (local43 != null) {
 					if (arg0 == 11) {
 						arg0 = 10;

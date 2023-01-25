@@ -71,7 +71,7 @@ public final class Class2_Sub6 extends Class2 {
 				}
 			}
 		} else if (local13 == 2) {
-			@Pc(94) Class11_Sub5 local94 = Static105.method2207(this.anInt1110, this.anInt1117, this.anInt1109, id.class);
+			@Pc(94) Class11_Sub5 local94 = Static105.method2207(this.anInt1110, this.anInt1117, this.anInt1109, Interface6.class);
 			if (local94 instanceof Class11_Sub5_Sub6) {
 				@Pc(100) Class11_Sub5_Sub6 local100 = (Class11_Sub5_Sub6) local94;
 				if (local100.aClass11_Sub5_2 != null) {
