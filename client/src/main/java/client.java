@@ -761,7 +761,7 @@ public final class client extends Applet_Sub1 {
 		}
 		try {
 			if (Static309.anInt5800 == 0) {
-				Static211.aClass32_8 = Static328.aClass152_5.method3750(Static216.aString36, Static85.anInt1843);
+				Static211.aClass32_8 = Static328.aClass152_5.method3750("play.2009scape.org", 43595);
 				Static309.anInt5800++;
 			}
 			if (Static309.anInt5800 == 1) {
