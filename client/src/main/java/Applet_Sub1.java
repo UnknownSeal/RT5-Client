@@ -21,6 +21,8 @@ import org.openrs2.deob.annotation.Pc;
 @OriginalClass("client!un")
 public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListener, WindowListener {
 
+	private static double canvasScale;
+
 	@OriginalMember(owner = "client!un", name = "w", descriptor = "Z")
 	private boolean aBoolean95 = false;
 
@@ -159,26 +161,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 
 	@OriginalMember(owner = "client!un", name = "e", descriptor = "(I)Z")
 	protected final boolean method1388() {
-		@Pc(8) String local8 = this.getDocumentBase().getHost().toLowerCase();
-		if (local8.equals("jagex.com") || local8.endsWith(".jagex.com")) {
-			return true;
-		} else if (local8.equals("runescape.com") || local8.endsWith(".runescape.com")) {
-			return true;
-		} else if (local8.equals("stellardawn.com") || local8.endsWith(".stellardawn.com")) {
-			return true;
-		} else if (local8.endsWith("127.0.0.1")) {
-			return true;
-		} else {
-			while (local8.length() > 0 && local8.charAt(local8.length() - 1) >= '0' && local8.charAt(local8.length() - 1) <= '9') {
-				local8 = local8.substring(0, local8.length() - 1);
-			}
-			if (local8.endsWith("192.168.1.")) {
-				return true;
-			} else {
-				this.method1392("invalidhost");
-				return false;
-			}
-		}
+		return true;
 	}
 
 	@OriginalMember(owner = "client!un", name = "getParameter", descriptor = "(Ljava/lang/String;)Ljava/lang/String;")
@@ -403,18 +386,18 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 	@Override
 	public final void run() {
 		try {
-			label112: {
+			label113: {
 				if (Static215.aString33 != null) {
 					@Pc(10) String local10 = Static215.aString33.toLowerCase();
 					if (local10.indexOf("sun") != -1 || local10.indexOf("apple") != -1) {
 						@Pc(23) String local23 = Static215.aString34;
 						if (local23.equals("1.1") || local23.startsWith("1.1.") || local23.equals("1.2") || local23.startsWith("1.2.")) {
 							this.method1392("wrongjava");
-							break label112;
+							break label113;
 						}
 					} else if (local10.indexOf("ibm") != -1 && (Static215.aString34 == null || Static215.aString34.equals("1.4.2"))) {
 						this.method1392("wrongjava");
-						break label112;
+						break label113;
 					}
 				}
 				@Pc(70) int local70;

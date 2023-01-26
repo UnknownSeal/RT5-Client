@@ -68,12 +68,6 @@ public final class Static389 {
 		Static327.anInt6109 = 0;
 	}
 
-	@OriginalMember(owner = "client!wo", name = "a", descriptor = "(I)V")
-	public static void method4488() {
-		aClass197_66 = null;
-		aString53 = null;
-	}
-
 	@OriginalMember(owner = "client!wo", name = "b", descriptor = "(I)V")
 	public static void method4489() {
 		Static286.method4920();

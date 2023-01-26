@@ -14,10 +14,10 @@ public final class Static32 {
 	public static Class2_Sub5 aClass2_Sub5_2;
 
 	@OriginalMember(owner = "client!br", name = "T", descriptor = "Lclient!gd;")
-	public static Class79 aClass79_21 = new Class79("Loading...", "Lade...", "Chargement en cours...", "Carregando...");
+	public static final Class79 aClass79_21 = new Class79("Loading...", "Lade...", "Chargement en cours...", "Carregando...");
 
 	@OriginalMember(owner = "client!br", name = "X", descriptor = "Lclient!mc;")
-	public static Class145 aClass145_32 = new Class145(62, 3);
+	public static final Class145 aClass145_32 = new Class145(62, 3);
 
 	@OriginalMember(owner = "client!br", name = "a", descriptor = "(Lclient!wm;Lclient!hp;III)V")
 	public static void method990(@OriginalArg(0) Class19 arg0, @OriginalArg(1) Class11 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
@@ -51,13 +51,5 @@ public final class Static32 {
 	@OriginalMember(owner = "client!br", name = "c", descriptor = "(Z)I")
 	public static int method991() {
 		return 2;
-	}
-
-	@OriginalMember(owner = "client!br", name = "f", descriptor = "(I)V")
-	public static void method992() {
-		aClass2_Sub5_2 = null;
-		aByteArrayArray4 = null;
-		aClass79_21 = null;
-		aClass145_32 = null;
 	}
 }

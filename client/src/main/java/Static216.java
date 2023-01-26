@@ -14,7 +14,7 @@ public final class Static216 {
 	public static Class197 aClass197_58;
 
 	@OriginalMember(owner = "client!mm", name = "c", descriptor = "[I")
-	public static int[] anIntArray231 = new int[3];
+	public static final int[] anIntArray231 = new int[3];
 
 	@OriginalMember(owner = "client!mm", name = "f", descriptor = "I")
 	public static int anInt3798 = 0;
@@ -28,14 +28,6 @@ public final class Static216 {
 		local8.method2311();
 		local8.anInt2289 = arg0;
 		local8.anInt2290 = arg2;
-	}
-
-	@OriginalMember(owner = "client!mm", name = "a", descriptor = "(B)V")
-	public static void method3774() {
-		aClass197_58 = null;
-		aString36 = null;
-		aClass197_57 = null;
-		anIntArray231 = null;
 	}
 
 	@OriginalMember(owner = "client!mm", name = "a", descriptor = "(ILclient!nk;ILclient!wm;IILclient!kf;II)V")

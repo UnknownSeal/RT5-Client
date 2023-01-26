@@ -11,7 +11,7 @@ public final class Static384 {
 	public static int anInt7174 = 0;
 
 	@OriginalMember(owner = "client!wh", name = "v", descriptor = "Lclient!h;")
-	public static Class89 aClass89_253 = new Class89(77, 12);
+	public static final Class89 aClass89_253 = new Class89(77, 12);
 
 	@OriginalMember(owner = "client!wh", name = "y", descriptor = "I")
 	public static int anInt7178 = 0;
@@ -83,11 +83,5 @@ public final class Static384 {
 			}
 			Static327.method5575(local106, local72, local108, local80, arg4);
 		}
-	}
-
-	@OriginalMember(owner = "client!wh", name = "b", descriptor = "(I)V")
-	public static void method6416() {
-		Class2_Sub43.aClass36Array1 = null;
-		aClass89_253 = null;
 	}
 }

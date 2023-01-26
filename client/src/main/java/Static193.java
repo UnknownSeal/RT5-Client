@@ -8,10 +8,10 @@ public final class Static193 {
 	public static int anInt3556;
 
 	@OriginalMember(owner = "client!la", name = "f", descriptor = "Lclient!gd;")
-	public static Class79 aClass79_78 = new Class79("Connecting to update server", "Verbindung mit Update-Server...", "Connexion au serveur de mise à jour en cours", "Conectando ao servidor de atualização");
+	public static final Class79 aClass79_78 = new Class79("Connecting to update server", "Verbindung mit Update-Server...", "Connexion au serveur de mise à jour en cours", "Conectando ao servidor de atualização");
 
 	@OriginalMember(owner = "client!la", name = "i", descriptor = "Lclient!h;")
-	public static Class89 aClass89_146 = new Class89(63, -1);
+	public static final Class89 aClass89_146 = new Class89(63, -1);
 
 	@OriginalMember(owner = "client!la", name = "j", descriptor = "I")
 	public static int anInt3555 = 0;
@@ -78,11 +78,5 @@ public final class Static193 {
 		arg1.method2901(Static250.anInt4665 / 2 - 150, local58 + 2, Static141.anInt2650 * 3, 30, arg5, 0);
 		arg1.method2901(Static250.anInt4665 / 2 + Static141.anInt2650 * 3 - 150, local58 + 2, 300 - Static141.anInt2650 * 3, 30, 0, 0);
 		arg2.method5899(Static56.aString13, -1, Static172.anInt3299 / 2 + 4, arg0, Static250.anInt4665 / 2);
-	}
-
-	@OriginalMember(owner = "client!la", name = "a", descriptor = "(I)V")
-	public static void method3512() {
-		aClass89_146 = null;
-		aClass79_78 = null;
 	}
 }

@@ -381,9 +381,9 @@ public final class Class259 implements Runnable {
 						} else if (local45 == 7) {
 							this.aClass255_1.method6494();
 						} else {
+							@Pc(289) Class[] local289;
 							@Pc(291) Runtime local291;
 							@Pc(297) Method local297;
-							@Pc(289) Class[] local289;
 							if (local45 == 10) {
 								local289 = new Class[] { Class.forName("java.lang.Class"), Class.forName("java.lang.String") };
 								local291 = Runtime.getRuntime();
@@ -395,14 +395,14 @@ public final class Class259 implements Runnable {
 								}
 								local297 = Class.forName("java.lang.Runtime").getDeclaredMethod("load0", local289);
 								local297.setAccessible(true);
-								if (aString80.startsWith("linux") || aString80.startsWith("sunos")) {
+								if (aString80.startsWith("linux")) {
 									local297.invoke(local291, local16.anObject9, this.method6529("libjaggl_dri.so").toString());
 									@Pc(575) Class local575 = ((Class) local16.anObject9).getClassLoader().loadClass("jaggl.X11.dri");
 									local575.getMethod("bind").invoke(null);
 									local297.invoke(local291, local16.anObject9, this.method6529("libjaggl.so").toString());
 									local575.getMethod("close").invoke(null);
 								} else if (aString80.startsWith("mac")) {
-									local297.invoke(local291, local16.anObject9, this.method6529("libjaggl.jnilib").toString());
+									local297.invoke(local291, local16.anObject9, this.method6529("libjaggl.dylib").toString());
 								} else if (aString80.startsWith("win")) {
 									local297.invoke(local291, local16.anObject9, this.method6529("jaggl.dll").toString());
 								} else {

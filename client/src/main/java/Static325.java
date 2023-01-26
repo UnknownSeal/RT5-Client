@@ -7,28 +7,19 @@ public final class Static325 {
 	public static Interface9 anInterface9_1 = null;
 
 	@OriginalMember(owner = "client!sr", name = "b", descriptor = "Lclient!gd;")
-	public static Class79 aClass79_126 = new Class79("Loading additional fonts - ", "Lade Zusatzschriftarten - ", "Chargement de polices secondaires - ", "Carregando fontes principais - ");
+	public static final Class79 aClass79_126 = new Class79("Loading additional fonts - ", "Lade Zusatzschriftarten - ", "Chargement de polices secondaires - ", "Carregando fontes principais - ");
 
 	@OriginalMember(owner = "client!sr", name = "f", descriptor = "I")
 	public static int anInt6079 = 0;
 
 	@OriginalMember(owner = "client!sr", name = "g", descriptor = "Lclient!mc;")
-	public static Class145 aClass145_220 = new Class145(30, -1);
+	public static final Class145 aClass145_220 = new Class145(30, -1);
 
 	@OriginalMember(owner = "client!sr", name = "h", descriptor = "[I")
-	public static int[] anIntArray413 = new int[] { 1, 0, -1, 0 };
+	public static final int[] anIntArray413 = new int[] { 1, 0, -1, 0 };
 
 	@OriginalMember(owner = "client!sr", name = "i", descriptor = "[I")
-	public static int[] anIntArray414 = new int[25];
-
-	@OriginalMember(owner = "client!sr", name = "a", descriptor = "(B)V")
-	public static void method5542() {
-		anInterface9_1 = null;
-		aClass145_220 = null;
-		anIntArray413 = null;
-		anIntArray414 = null;
-		aClass79_126 = null;
-	}
+	public static final int[] anIntArray414 = new int[25];
 
 	@OriginalMember(owner = "client!sr", name = "a", descriptor = "(Lclient!o;Lclient!r;Lclient!r;B)V")
 	public static void method5543(@OriginalArg(0) Interface9 arg0, @OriginalArg(1) Class197 arg1, @OriginalArg(2) Class197 arg2) {

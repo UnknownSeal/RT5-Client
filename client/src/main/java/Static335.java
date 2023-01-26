@@ -8,17 +8,10 @@ public final class Static335 {
 	public static Class111 aClass111_4;
 
 	@OriginalMember(owner = "client!ti", name = "r", descriptor = "Lclient!hu;")
-	public static Class98 aClass98_57 = new Class98(200);
+	public static final Class98 aClass98_57 = new Class98(200);
 
 	@OriginalMember(owner = "client!ti", name = "L", descriptor = "[B")
-	public static byte[] aByteArray92 = new byte[2048];
-
-	@OriginalMember(owner = "client!ti", name = "a", descriptor = "(Z)V")
-	public static void method5692() {
-		aClass111_4 = null;
-		aClass98_57 = null;
-		aByteArray92 = null;
-	}
+	public static final byte[] aByteArray92 = new byte[2048];
 
 	@OriginalMember(owner = "client!ti", name = "a", descriptor = "(B)V")
 	public static void method5693() {

@@ -64,11 +64,4 @@ public final class Static62 {
 		local20.anIntArray489[arg0] = arg3;
 		local20.anIntArray488[arg0] = arg1;
 	}
-
-	@OriginalMember(owner = "client!dm", name = "a", descriptor = "(Z)V")
-	public static void method2392() {
-		aClass13Array9 = null;
-		anIntArray155 = null;
-		aClass42_5 = null;
-	}
 }

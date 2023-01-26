@@ -110,10 +110,10 @@ public final class Static344 {
 	private static byte[] aByteArray90;
 
 	@OriginalMember(owner = "client!tt", name = "f", descriptor = "Lclient!ad;")
-	private static Class4 aClass4_124 = new Class4(16);
+	private static final Class4 aClass4_124 = new Class4(16);
 
 	@OriginalMember(owner = "client!tt", name = "j", descriptor = "Lclient!ld;")
-	public static Class135 aClass135_36 = new Class135();
+	public static final Class135 aClass135_36 = new Class135();
 
 	@OriginalMember(owner = "client!tt", name = "l", descriptor = "I")
 	public static int anInt6048 = (int) (Math.random() * 11.0D) - 5;
@@ -122,10 +122,10 @@ public final class Static344 {
 	public static int anInt6049 = (int) (Math.random() * 17.0D) - 8;
 
 	@OriginalMember(owner = "client!tt", name = "p", descriptor = "[S")
-	private static short[] aShortArray120 = new short[1];
+	private static final short[] aShortArray120 = new short[1];
 
 	@OriginalMember(owner = "client!tt", name = "s", descriptor = "[B")
-	private static byte[] aByteArray85 = new byte[1];
+	private static final byte[] aByteArray85 = new byte[1];
 
 	@OriginalMember(owner = "client!tt", name = "a", descriptor = "(Lclient!wm;IIIIIII[S[BZ)V")
 	private static void method5508(@OriginalArg(0) Class19 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) short[] arg8, @OriginalArg(9) byte[] arg9, @OriginalArg(10) boolean arg10) {
@@ -607,34 +607,6 @@ public final class Static344 {
 		@Pc(15) int local15 = (anInt6051 - anInt6050 << 16) / local3;
 		@Pc(23) int local23 = (anInt6061 - anInt6053 << 16) / local7;
 		method5524(arg0, local15, local23);
-	}
-
-	@OriginalMember(owner = "client!tt", name = "d", descriptor = "()V")
-	public static void method5522() {
-		aClass72_6 = null;
-		aClass241_4 = null;
-		aClass202_3 = null;
-		aClass125_4 = null;
-		aClass104_4 = null;
-		anInterface11_2 = null;
-		aClass2_Sub2_Sub17_3 = null;
-		aClass197_85 = null;
-		aClass4_124 = null;
-		aByteArrayArrayArray15 = null;
-		aShortArray120 = null;
-		aByteArray85 = null;
-		aClass103_5 = null;
-		aClass135_36 = null;
-		anIntArray406 = null;
-		aByteArray88 = null;
-		aByteArray86 = null;
-		aShortArray121 = null;
-		aByteArray90 = null;
-		aByteArray89 = null;
-		aShortArray122 = null;
-		aByteArray87 = null;
-		aClass4_125 = null;
-		aClass36ArrayArrayArray2 = null;
 	}
 
 	@OriginalMember(owner = "client!tt", name = "b", descriptor = "(Lclient!wm;)Lclient!ld;")

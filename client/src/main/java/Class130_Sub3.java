@@ -6,10 +6,6 @@ import org.openrs2.deob.annotation.Pc;
 @OriginalClass("client!sf")
 public final class Class130_Sub3 extends Class130 {
 
-	protected Class130_Sub3(Class19 arg0, Class239 arg1) {
-		super(arg0, arg1);
-	}
-
 	@OriginalMember(owner = "client!sf", name = "A", descriptor = "Lclient!j;")
 	private Class19_Sub2 aClass19_Sub2_8;
 
@@ -30,6 +26,10 @@ public final class Class130_Sub3 extends Class130 {
 
 	@OriginalMember(owner = "client!sf", name = "y", descriptor = "[I")
 	private int[] anIntArray394;
+
+	protected Class130_Sub3(Class19 arg0, Class239 arg1) {
+		super(arg0, arg1);
+	}
 
 	@OriginalMember(owner = "client!sf", name = "a", descriptor = "(CIIIZLclient!kf;II)V")
 	@Override

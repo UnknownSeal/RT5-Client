@@ -14,10 +14,10 @@ public final class Static391 {
 	public static Class197 aClass197_96;
 
 	@OriginalMember(owner = "client!wq", name = "h", descriptor = "[I")
-	public static int[] anIntArray495 = new int[] { 16, 32, 64, 128 };
+	public static final int[] anIntArray495 = new int[] { 16, 32, 64, 128 };
 
 	@OriginalMember(owner = "client!wq", name = "o", descriptor = "Lclient!h;")
-	public static Class89 aClass89_256 = new Class89(69, -2);
+	public static final Class89 aClass89_256 = new Class89(69, -2);
 
 	@OriginalMember(owner = "client!wq", name = "a", descriptor = "(ILjava/lang/String;)Z")
 	public static boolean method6450(@OriginalArg(1) String arg0) {
@@ -117,14 +117,6 @@ public final class Static391 {
 			}
 		}
 		return;
-	}
-
-	@OriginalMember(owner = "client!wq", name = "a", descriptor = "(Z)V")
-	public static void method6452() {
-		anIntArray495 = null;
-		aClass89_256 = null;
-		aClass197_96 = null;
-		aClass197_95 = null;
 	}
 
 	@OriginalMember(owner = "client!wq", name = "a", descriptor = "(Lclient!cf;B)V")

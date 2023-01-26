@@ -14,14 +14,7 @@ public final class Static85 {
 	public static Class197 aClass197_21;
 
 	@OriginalMember(owner = "client!ep", name = "a", descriptor = "[I")
-	public static int[] anIntArray121 = new int[2048];
-
-	@OriginalMember(owner = "client!ep", name = "a", descriptor = "(B)V")
-	public static void method1910() {
-		aClass197_21 = null;
-		anIntArray121 = null;
-		aClass197_20 = null;
-	}
+	public static final int[] anIntArray121 = new int[2048];
 
 	@OriginalMember(owner = "client!ep", name = "a", descriptor = "(ZLclient!nk;B)V")
 	public static void method1911(@OriginalArg(0) boolean arg0, @OriginalArg(1) Class161 arg1) {

@@ -7,7 +7,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Class4 {
 
 	@OriginalMember(owner = "client!ad", name = "t", descriptor = "[J")
-	public static long[] aLongArray1 = new long[256];
+	public static final long[] aLongArray1 = new long[256];
 
 	@OriginalMember(owner = "client!ad", name = "f", descriptor = "Lclient!ag;")
 	private Class2 aClass2_9;

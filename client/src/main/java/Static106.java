@@ -11,16 +11,16 @@ public final class Static106 {
 	public static byte[][] aByteArrayArray6;
 
 	@OriginalMember(owner = "client!fu", name = "P", descriptor = "Lclient!dn;")
-	public static Class50 aClass50_1 = new Class50("stellardawn", 1);
+	public static final Class50 aClass50_1 = new Class50("stellardawn", 1);
 
 	@OriginalMember(owner = "client!fu", name = "V", descriptor = "Z")
 	public static boolean aBoolean164 = false;
 
 	@OriginalMember(owner = "client!fu", name = "W", descriptor = "[I")
-	public static int[] anIntArray135 = new int[32];
+	public static final int[] anIntArray135 = new int[32];
 
 	@OriginalMember(owner = "client!fu", name = "X", descriptor = "Lclient!h;")
-	public static Class89 aClass89_88 = new Class89(17, 2);
+	public static final Class89 aClass89_88 = new Class89(17, 2);
 
 	@OriginalMember(owner = "client!fu", name = "a", descriptor = "(IIII)I")
 	public static int method2235(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2) {
@@ -35,13 +35,5 @@ public final class Static106 {
 		@Pc(58) int local58 = Static255.method4376(local13, local28, arg0, local35);
 		@Pc(65) int local65 = Static255.method4376(local13, local42, arg0, local51);
 		return Static255.method4376(local23, local58, arg0, local65);
-	}
-
-	@OriginalMember(owner = "client!fu", name = "b", descriptor = "(B)V")
-	public static void method2236() {
-		aClass89_88 = null;
-		aByteArrayArray6 = null;
-		anIntArray135 = null;
-		aClass50_1 = null;
 	}
 }

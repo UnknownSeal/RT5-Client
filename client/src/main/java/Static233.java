@@ -11,12 +11,7 @@ public final class Static233 {
 	public static float aFloat63;
 
 	@OriginalMember(owner = "client!nh", name = "qc", descriptor = "Lclient!hu;")
-	public static Class98 aClass98_37 = new Class98(64);
-
-	@OriginalMember(owner = "client!nh", name = "d", descriptor = "(I)V")
-	public static void method4061() {
-		aClass98_37 = null;
-	}
+	public static final Class98 aClass98_37 = new Class98(64);
 
 	@OriginalMember(owner = "client!nh", name = "c", descriptor = "(ZI)I")
 	public static int method4062(@OriginalArg(1) int arg0) {

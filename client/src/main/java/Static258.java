@@ -10,11 +10,6 @@ public final class Static258 {
 	@OriginalMember(owner = "client!oo", name = "n", descriptor = "[S")
 	public static short[] aShortArray95 = new short[256];
 
-	@OriginalMember(owner = "client!oo", name = "b", descriptor = "(B)V")
-	public static void method4400() {
-		aShortArray95 = null;
-	}
-
 	@OriginalMember(owner = "client!oo", name = "a", descriptor = "(ZIIII)V")
 	public static void method4401(@OriginalArg(0) boolean arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
 		if (Static77.anInt1762 == 0) {

@@ -6,7 +6,7 @@ public final class Static347 {
 	public static float aFloat77;
 
 	@OriginalMember(owner = "client!ub", name = "S", descriptor = "Lclient!gd;")
-	public static Class79 aClass79_134 = new Class79("Loaded interface scripts", "Interface-Skripte geladen", "Interfaces chargées", "Interfaces carregadas");
+	public static final Class79 aClass79_134 = new Class79("Loaded interface scripts", "Interface-Skripte geladen", "Interfaces chargées", "Interfaces carregadas");
 
 	@OriginalMember(owner = "client!ub", name = "X", descriptor = "Z")
 	public static boolean aBoolean434 = false;
@@ -19,11 +19,6 @@ public final class Static347 {
 
 	@OriginalMember(owner = "client!ub", name = "cb", descriptor = "I")
 	public static int anInt6443 = 0;
-
-	@OriginalMember(owner = "client!ub", name = "f", descriptor = "(I)V")
-	public static void method5825() {
-		aClass79_134 = null;
-	}
 
 	@OriginalMember(owner = "client!ub", name = "c", descriptor = "(Z)V")
 	public static void method5826() {

@@ -8,16 +8,16 @@ public final class Static349 {
 	public static long aLong200 = 0L;
 
 	@OriginalMember(owner = "client!ud", name = "g", descriptor = "Lclient!hu;")
-	public static Class98 aClass98_58 = new Class98(5);
+	public static final Class98 aClass98_58 = new Class98(5);
 
 	@OriginalMember(owner = "client!ud", name = "r", descriptor = "I")
 	public static int anInt6455 = -1;
 
 	@OriginalMember(owner = "client!ud", name = "t", descriptor = "[C")
-	public static char[] aCharArray6 = new char[] { '_', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
+	public static final char[] aCharArray6 = new char[] { '_', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
 
 	@OriginalMember(owner = "client!ud", name = "z", descriptor = "[I")
-	public static int[] anIntArray444 = new int[32];
+	public static final int[] anIntArray444 = new int[32];
 
 	@OriginalMember(owner = "client!ud", name = "a", descriptor = "(IB)I")
 	public static int method5830(@OriginalArg(0) int arg0) {
@@ -53,12 +53,5 @@ public final class Static349 {
 		Static211.anInt3777 = arg4 - local59;
 		Static136.anInt6778 = arg1 - local55;
 		Static342.anInt5657 = 0;
-	}
-
-	@OriginalMember(owner = "client!ud", name = "a", descriptor = "(Z)V")
-	public static void method5834() {
-		aCharArray6 = null;
-		aClass98_58 = null;
-		anIntArray444 = null;
 	}
 }

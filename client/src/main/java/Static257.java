@@ -11,26 +11,16 @@ public final class Static257 {
 	public static short[] aShortArray79;
 
 	@OriginalMember(owner = "client!on", name = "b", descriptor = "[Ljava/lang/String;")
-	public static String[] aStringArray34 = new String[100];
+	public static final String[] aStringArray34 = new String[100];
 
 	@OriginalMember(owner = "client!on", name = "e", descriptor = "Lclient!jm;")
-	public static Class116 aClass116_5 = new Class116(64);
+	public static final Class116 aClass116_5 = new Class116(64);
 
 	@OriginalMember(owner = "client!on", name = "g", descriptor = "Lclient!qg;")
-	public static Class2_Sub4_Sub2 aClass2_Sub4_Sub2_4 = new Class2_Sub4_Sub2(5000);
+	public static final Class2_Sub4_Sub2 aClass2_Sub4_Sub2_4 = new Class2_Sub4_Sub2(5000);
 
 	@OriginalMember(owner = "client!on", name = "h", descriptor = "[I")
-	public static int[] anIntArray257 = new int[4096];
-
-	@OriginalMember(owner = "client!on", name = "a", descriptor = "(B)V")
-	public static void method3922() {
-		aString39 = null;
-		aClass2_Sub4_Sub2_4 = null;
-		anIntArray257 = null;
-		aShortArray79 = null;
-		aStringArray34 = null;
-		aClass116_5 = null;
-	}
+	public static final int[] anIntArray257 = new int[4096];
 
 	@OriginalMember(owner = "client!on", name = "a", descriptor = "(IIIIIIIBII)V")
 	public static void method3926(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(8) int arg7, @OriginalArg(9) int arg8) {

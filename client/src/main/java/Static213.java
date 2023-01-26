@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static213 {
 
 	@OriginalMember(owner = "client!mj", name = "a", descriptor = "Lclient!ot;")
-	private static Class174 aClass174_1 = new Class174();
+	private static final Class174 aClass174_1 = new Class174();
 
 	@OriginalMember(owner = "client!mj", name = "a", descriptor = "(Lclient!ot;)V")
 	private static void method3734(@OriginalArg(0) Class174 arg0) {
@@ -188,11 +188,6 @@ public final class Static213 {
 		@Pc(17) int local17 = arg1.anInt4791 >> arg1.anInt4802 - arg0 & (0x1 << arg0) - 1;
 		arg1.anInt4802 -= arg0;
 		return local17;
-	}
-
-	@OriginalMember(owner = "client!mj", name = "a", descriptor = "()V")
-	public static void method3740() {
-		aClass174_1 = null;
 	}
 
 	@OriginalMember(owner = "client!mj", name = "a", descriptor = "([BI[BII)I")

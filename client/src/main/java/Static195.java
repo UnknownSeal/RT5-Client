@@ -8,7 +8,7 @@ public final class Static195 {
 	public static Class197 aClass197_54;
 
 	@OriginalMember(owner = "client!lg", name = "e", descriptor = "[I")
-	public static int[] anIntArray211 = new int[] { 1, 2, 4, 8 };
+	public static final int[] anIntArray211 = new int[] { 1, 2, 4, 8 };
 
 	@OriginalMember(owner = "client!lg", name = "a", descriptor = "(IIB)V")
 	public static void method3558(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
@@ -19,11 +19,5 @@ public final class Static195 {
 			Static114.anInt2346 = local13.anInt636;
 		}
 		Static291.method5028();
-	}
-
-	@OriginalMember(owner = "client!lg", name = "a", descriptor = "(B)V")
-	public static void method3561() {
-		anIntArray211 = null;
-		aClass197_54 = null;
 	}
 }

@@ -14,13 +14,13 @@ public final class Static129 {
 	public static int anInt2460 = -1;
 
 	@OriginalMember(owner = "client!hg", name = "j", descriptor = "Lclient!ld;")
-	public static Class135 aClass135_19 = new Class135();
+	public static final Class135 aClass135_19 = new Class135();
 
 	@OriginalMember(owner = "client!hg", name = "l", descriptor = "Lclient!gd;")
-	public static Class79 aClass79_57 = new Class79("flash2:", "blinken2:", "clignotant2:", "flash2:");
+	public static final Class79 aClass79_57 = new Class79("flash2:", "blinken2:", "clignotant2:", "flash2:");
 
 	@OriginalMember(owner = "client!hg", name = "m", descriptor = "Lclient!ld;")
-	public static Class135 aClass135_20 = new Class135();
+	public static final Class135 aClass135_20 = new Class135();
 
 	@OriginalMember(owner = "client!hg", name = "a", descriptor = "(IIZII)V")
 	public static void method2434(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {
@@ -98,13 +98,5 @@ public final class Static129 {
 			Static23.aClipboard1 = Static144.aClient1.getToolkit().getSystemClipboard();
 		} catch (@Pc(84) Exception local84) {
 		}
-	}
-
-	@OriginalMember(owner = "client!hg", name = "c", descriptor = "(I)V")
-	public static void method2441() {
-		aClass135_20 = null;
-		aStringArray19 = null;
-		aClass135_19 = null;
-		aClass79_57 = null;
 	}
 }

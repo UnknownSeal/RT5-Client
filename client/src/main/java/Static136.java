@@ -8,7 +8,7 @@ public final class Static136 {
 	public static int anInt6778;
 
 	@OriginalMember(owner = "client!hp", name = "d", descriptor = "Lclient!gd;")
-	public static Class79 aClass79_141 = new Class79("wave:", "welle:", "ondulation:", "onda:");
+	public static final Class79 aClass79_141 = new Class79("wave:", "welle:", "ondulation:", "onda:");
 
 	@OriginalMember(owner = "client!hp", name = "a", descriptor = "(III)I")
 	public static int method6070(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
@@ -30,11 +30,6 @@ public final class Static136 {
 			Static403.method4606(arg0, 0, local11, 0, arg0.length);
 			return local11;
 		}
-	}
-
-	@OriginalMember(owner = "client!hp", name = "f", descriptor = "(I)V")
-	public static void method6073() {
-		aClass79_141 = null;
 	}
 
 	@OriginalMember(owner = "client!hp", name = "a", descriptor = "(ZI)V")

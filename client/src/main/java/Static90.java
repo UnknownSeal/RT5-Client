@@ -18,7 +18,7 @@ public final class Static90 {
 	public static Class190 aClass190_3;
 
 	@OriginalMember(owner = "client!eu", name = "E", descriptor = "[I")
-	public static int[] anIntArray460 = new int[] { 1, 2, 4, 8 };
+	public static final int[] anIntArray460 = new int[] { 1, 2, 4, 8 };
 
 	@OriginalMember(owner = "client!eu", name = "a", descriptor = "(Lclient!hc;Lclient!f;)V")
 	public static void method5949(@OriginalArg(0) Class90 arg0, @OriginalArg(1) Class67 arg1) {
@@ -722,14 +722,6 @@ public final class Static90 {
 				Static163.aClass15_1.method1583(local2198);
 			}
 		}
-	}
-
-	@OriginalMember(owner = "client!eu", name = "c", descriptor = "(Z)V")
-	public static void method5951() {
-		aClass190_3 = null;
-		aClass67ArrayArrayArray4 = null;
-		aFont3 = null;
-		anIntArray460 = null;
 	}
 
 	@OriginalMember(owner = "client!eu", name = "d", descriptor = "(Z)V")

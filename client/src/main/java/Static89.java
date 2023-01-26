@@ -12,25 +12,16 @@ public final class Static89 {
 	public static Image anImage1;
 
 	@OriginalMember(owner = "client!et", name = "d", descriptor = "Lclient!bt;")
-	public static Class2_Sub4 aClass2_Sub4_2 = new Class2_Sub4(new byte[5000]);
+	public static final Class2_Sub4 aClass2_Sub4_2 = new Class2_Sub4(new byte[5000]);
 
 	@OriginalMember(owner = "client!et", name = "i", descriptor = "Lclient!h;")
-	public static Class89 aClass89_74 = new Class89(40, 1);
+	public static final Class89 aClass89_74 = new Class89(40, 1);
 
 	@OriginalMember(owner = "client!et", name = "k", descriptor = "I")
 	public static int anInt1885 = 0;
 
 	@OriginalMember(owner = "client!et", name = "n", descriptor = "Lclient!mc;")
-	public static Class145 aClass145_67 = new Class145(80, 7);
-
-	@OriginalMember(owner = "client!et", name = "a", descriptor = "(I)V")
-	public static void method1937() {
-		aClass89_74 = null;
-		aClass145_67 = null;
-		aBooleanArray18 = null;
-		anImage1 = null;
-		aClass2_Sub4_2 = null;
-	}
+	public static final Class145 aClass145_67 = new Class145(80, 7);
 
 	@OriginalMember(owner = "client!et", name = "a", descriptor = "(IC)Z")
 	public static boolean method1939(@OriginalArg(1) char arg0) {

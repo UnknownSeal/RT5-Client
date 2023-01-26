@@ -11,24 +11,16 @@ public final class Static278 {
 	public static Class160 aClass160_1;
 
 	@OriginalMember(owner = "client!qb", name = "N", descriptor = "Lclient!gd;")
-	public static Class79 aClass79_110 = new Class79("purple:", "lila:", "violet:", "roxo:");
+	public static final Class79 aClass79_110 = new Class79("purple:", "lila:", "violet:", "roxo:");
 
 	@OriginalMember(owner = "client!qb", name = "T", descriptor = "Z")
 	public static boolean aBoolean377 = false;
 
 	@OriginalMember(owner = "client!qb", name = "V", descriptor = "[Lclient!bp;")
-	public static Class28[] aClass28Array1 = new Class28[16];
+	public static final Class28[] aClass28Array1 = new Class28[16];
 
 	@OriginalMember(owner = "client!qb", name = "X", descriptor = "[I")
-	public static int[] anIntArray362 = new int[] { 4, 4, 1, 2, 6, 4, 2, 48, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 };
-
-	@OriginalMember(owner = "client!qb", name = "f", descriptor = "(I)V")
-	public static void method4720() {
-		anIntArray362 = null;
-		aClass79_110 = null;
-		aClass160_1 = null;
-		aClass28Array1 = null;
-	}
+	public static final int[] anIntArray362 = new int[] { 4, 4, 1, 2, 6, 4, 2, 48, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 };
 
 	@OriginalMember(owner = "client!qb", name = "a", descriptor = "(Ljava/lang/String;I)I")
 	public static int method4721(@OriginalArg(0) String arg0) {

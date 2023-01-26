@@ -8,17 +8,10 @@ public final class Static131 {
 	public static Class36 aClass36_4;
 
 	@OriginalMember(owner = "client!hi", name = "a", descriptor = "Lclient!gd;")
-	public static Class79 aClass79_82 = new Class79("Please wait...", "Bitte warte...", "Veuillez patienter...", "Aguarde...");
+	public static final Class79 aClass79_82 = new Class79("Please wait...", "Bitte warte...", "Veuillez patienter...", "Aguarde...");
 
 	@OriginalMember(owner = "client!hi", name = "c", descriptor = "[S")
-	public static short[] aShortArray65 = new short[] { -10304, 9104, -1, -1, -1 };
-
-	@OriginalMember(owner = "client!hi", name = "a", descriptor = "(I)V")
-	public static void method3695() {
-		aShortArray65 = null;
-		aClass79_82 = null;
-		aClass36_4 = null;
-	}
+	public static final short[] aShortArray65 = new short[] { -10304, 9104, -1, -1, -1 };
 
 	@OriginalMember(owner = "client!hi", name = "a", descriptor = "(Ljava/lang/String;BZ)V")
 	public static void method3696(@OriginalArg(0) String arg0, @OriginalArg(2) boolean arg1) {

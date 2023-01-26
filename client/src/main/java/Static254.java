@@ -11,7 +11,7 @@ public final class Static254 {
 	public static short aShort73 = 256;
 
 	@OriginalMember(owner = "client!ok", name = "i", descriptor = "Lclient!hu;")
-	public static Class98 aClass98_39 = new Class98(8);
+	public static final Class98 aClass98_39 = new Class98(8);
 
 	@OriginalMember(owner = "client!ok", name = "j", descriptor = "I")
 	public static int anInt4701 = 765;
@@ -33,11 +33,6 @@ public final class Static254 {
 		Static312.anInt5844 = -1;
 		Static146.anInt2703 = 0;
 		Static358.anInt6550 = -1;
-	}
-
-	@OriginalMember(owner = "client!ok", name = "b", descriptor = "(I)V")
-	public static void method4372() {
-		aClass98_39 = null;
 	}
 
 	@OriginalMember(owner = "client!ok", name = "c", descriptor = "(I)I")

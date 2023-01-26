@@ -8,10 +8,10 @@ public final class Static33 {
 	public static int anInt4463;
 
 	@OriginalMember(owner = "client!bs", name = "q", descriptor = "Lclient!gd;")
-	public static Class79 aClass79_96 = new Class79("level: ", "Stufe: ", "niveau ", "nível: ");
+	public static final Class79 aClass79_96 = new Class79("level: ", "Stufe: ", "niveau ", "nível: ");
 
 	@OriginalMember(owner = "client!bs", name = "s", descriptor = "Lclient!h;")
-	public static Class89 aClass89_171 = new Class89(74, 4);
+	public static final Class89 aClass89_171 = new Class89(74, 4);
 
 	@OriginalMember(owner = "client!bs", name = "t", descriptor = "I")
 	public static int anInt4462 = -1;
@@ -99,12 +99,6 @@ public final class Static33 {
 			}
 		}
 		Static314.anInt5911 = 2;
-	}
-
-	@OriginalMember(owner = "client!bs", name = "c", descriptor = "(I)V")
-	public static void method4203() {
-		aClass89_171 = null;
-		aClass79_96 = null;
 	}
 
 	@OriginalMember(owner = "client!bs", name = "a", descriptor = "(IIIIIII)I")

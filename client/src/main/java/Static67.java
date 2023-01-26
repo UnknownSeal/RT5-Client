@@ -16,16 +16,16 @@ public final class Static67 {
 	public static int anInt1637;
 
 	@OriginalMember(owner = "client!ds", name = "q", descriptor = "Lclient!gd;")
-	public static Class79 aClass79_35 = new Class79("Loading interface scripts - ", "Lade Interface-Skripte - ", "Chargement des interfaces - ", "Carregando interfaces - ");
+	public static final Class79 aClass79_35 = new Class79("Loading interface scripts - ", "Lade Interface-Skripte - ", "Chargement des interfaces - ", "Carregando interfaces - ");
 
 	@OriginalMember(owner = "client!ds", name = "s", descriptor = "[I")
-	public static int[] anIntArray111 = new int[6];
+	public static final int[] anIntArray111 = new int[6];
 
 	@OriginalMember(owner = "client!ds", name = "v", descriptor = "[[I")
-	public static int[][] anIntArrayArray15 = new int[][] { { 12, 12, 12, 12 }, { 12, 12, 12, 12, 12, 5 }, { 5, 5, 1, 1 }, { 5, 1, 1, 5 }, { 5, 5, 5 }, { 5, 5, 5 }, { 12, 12, 12, 12, 12, 12 }, { 1, 12, 12, 12, 12, 12 }, { 1, 1, 7, 1 }, { 8, 9, 9, 8, 8, 3, 1, 9 }, { 8, 8, 9, 8, 9, 9 }, { 10, 10, 11, 11, 11, 7, 3, 7 }, { 12, 12, 12, 12 } };
+	public static final int[][] anIntArrayArray15 = new int[][] { { 12, 12, 12, 12 }, { 12, 12, 12, 12, 12, 5 }, { 5, 5, 1, 1 }, { 5, 1, 1, 5 }, { 5, 5, 5 }, { 5, 5, 5 }, { 12, 12, 12, 12, 12, 12 }, { 1, 12, 12, 12, 12, 12 }, { 1, 1, 7, 1 }, { 8, 9, 9, 8, 8, 3, 1, 9 }, { 8, 8, 9, 8, 9, 9 }, { 10, 10, 11, 11, 11, 7, 3, 7 }, { 12, 12, 12, 12 } };
 
 	@OriginalMember(owner = "client!ds", name = "w", descriptor = "Lclient!mc;")
-	public static Class145 aClass145_56 = new Class145(20, 4);
+	public static final Class145 aClass145_56 = new Class145(20, 4);
 
 	@OriginalMember(owner = "client!ds", name = "a", descriptor = "()V")
 	public static void method1765() {
@@ -119,15 +119,6 @@ public final class Static67 {
 				Static365.aClass6Array4[local13].method5720(local10, local33);
 			}
 		}
-	}
-
-	@OriginalMember(owner = "client!ds", name = "b", descriptor = "(B)V")
-	public static void method1770() {
-		aClass129_1 = null;
-		aClass145_56 = null;
-		anIntArray111 = null;
-		aClass79_35 = null;
-		anIntArrayArray15 = null;
 	}
 
 	@OriginalMember(owner = "client!ds", name = "c", descriptor = "(B)V")

@@ -11,10 +11,10 @@ public final class Static192 {
 	public static int anInt3545;
 
 	@OriginalMember(owner = "client!l", name = "c", descriptor = "Lclient!bc;")
-	public static Class16 aClass16_5 = new Class16("", 11);
+	public static final Class16 aClass16_5 = new Class16("", 11);
 
 	@OriginalMember(owner = "client!l", name = "d", descriptor = "Lclient!mc;")
-	public static Class145 aClass145_139 = new Class145(16, -1);
+	public static final Class145 aClass145_139 = new Class145(16, -1);
 
 	@OriginalMember(owner = "client!l", name = "h", descriptor = "I")
 	public static int anInt3547 = 0;
@@ -38,13 +38,6 @@ public final class Static192 {
 			}
 			return local22;
 		}
-	}
-
-	@OriginalMember(owner = "client!l", name = "a", descriptor = "(B)V")
-	public static void method3506() {
-		aClass145_139 = null;
-		aClass16_5 = null;
-		aClass161_8 = null;
 	}
 
 	@OriginalMember(owner = "client!l", name = "a", descriptor = "(I)V")

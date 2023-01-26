@@ -13,7 +13,7 @@ public final class Static301 {
 	public static Class161 aClass161_13 = null;
 
 	@OriginalMember(owner = "client!ri", name = "P", descriptor = "[[I")
-	public static int[][] anIntArrayArray49 = new int[128][128];
+	public static final int[][] anIntArrayArray49 = new int[128][128];
 
 	@OriginalMember(owner = "client!ri", name = "U", descriptor = "I")
 	public static int anInt5700 = 0;
@@ -51,12 +51,5 @@ public final class Static301 {
 				Static329.method5629(local19, true);
 			}
 		}
-	}
-
-	@OriginalMember(owner = "client!ri", name = "b", descriptor = "(B)V")
-	public static void method5188() {
-		anIntArrayArray50 = null;
-		anIntArrayArray49 = null;
-		aClass161_13 = null;
 	}
 }

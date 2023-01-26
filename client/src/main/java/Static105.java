@@ -15,16 +15,16 @@ public final class Static105 {
 	public static int anInt2187;
 
 	@OriginalMember(owner = "client!ft", name = "S", descriptor = "Lclient!gd;")
-	public static Class79 aClass79_45 = new Class79("flash1:", "blinken1:", "clignotant1:", "flash1:");
+	public static final Class79 aClass79_45 = new Class79("flash1:", "blinken1:", "clignotant1:", "flash1:");
 
 	@OriginalMember(owner = "client!ft", name = "U", descriptor = "Lclient!mc;")
-	public static Class145 aClass145_79 = new Class145(11, 16);
+	public static final Class145 aClass145_79 = new Class145(11, 16);
 
 	@OriginalMember(owner = "client!ft", name = "X", descriptor = "Z")
 	public static boolean aBoolean162 = false;
 
 	@OriginalMember(owner = "client!ft", name = "bb", descriptor = "[I")
-	public static int[] anIntArray134 = new int[5];
+	public static final int[] anIntArray134 = new int[5];
 
 	@OriginalMember(owner = "client!ft", name = "a", descriptor = "(IIILjava/lang/Class;)Lclient!hb;")
 	public static Class11_Sub5 method2207(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class arg3) {
@@ -146,12 +146,5 @@ public final class Static105 {
 			}
 		}
 		Static98.method2107();
-	}
-
-	@OriginalMember(owner = "client!ft", name = "f", descriptor = "(I)V")
-	public static void method2210() {
-		anIntArray134 = null;
-		aClass79_45 = null;
-		aClass145_79 = null;
 	}
 }

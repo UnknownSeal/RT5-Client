@@ -7,7 +7,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static376 {
 
 	@OriginalMember(owner = "client!vt", name = "a", descriptor = "Ljava/util/Calendar;")
-	public static Calendar aCalendar2 = Calendar.getInstance(TimeZone.getTimeZone("GMT"));
+	public static final Calendar aCalendar2 = Calendar.getInstance(TimeZone.getTimeZone("GMT"));
 
 	@OriginalMember(owner = "client!vt", name = "d", descriptor = "I")
 	public static int anInt7054 = 0;
@@ -88,11 +88,6 @@ public final class Static376 {
 			local168 >>= 0x1;
 		}
 		return ((local163 >> 2 & 0x3F) << 10) + (local168 >> 5 << 7) + (local187 >> 1);
-	}
-
-	@OriginalMember(owner = "client!vt", name = "a", descriptor = "(I)V")
-	public static void method6285() {
-		aCalendar2 = null;
 	}
 
 	@OriginalMember(owner = "client!vt", name = "a", descriptor = "(IIIII)V")

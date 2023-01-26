@@ -7,13 +7,13 @@ public final class Static140 {
 	public static Class109 aClass109_1;
 
 	@OriginalMember(owner = "client!hu", name = "i", descriptor = "Lclient!s;")
-	public static Class210 aClass210_6 = new Class210(13, 7);
+	public static final Class210 aClass210_6 = new Class210(13, 7);
 
 	@OriginalMember(owner = "client!hu", name = "v", descriptor = "Z")
 	public static boolean aBoolean187 = false;
 
 	@OriginalMember(owner = "client!hu", name = "x", descriptor = "[I")
-	public static int[] anIntArray167 = new int[32];
+	public static final int[] anIntArray167 = new int[32];
 
 	@OriginalMember(owner = "client!hu", name = "f", descriptor = "(I)V")
 	public static void method2622() {
@@ -125,12 +125,5 @@ public final class Static140 {
 		synchronized (Static349.aClass98_58) {
 			Static349.aClass98_58.method2614();
 		}
-	}
-
-	@OriginalMember(owner = "client!hu", name = "i", descriptor = "(I)V")
-	public static void method2628() {
-		aClass210_6 = null;
-		aClass109_1 = null;
-		anIntArray167 = null;
 	}
 }

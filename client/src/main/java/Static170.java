@@ -8,10 +8,10 @@ public final class Static170 {
 	public static int anInt3229;
 
 	@OriginalMember(owner = "client!js", name = "J", descriptor = "Lclient!h;")
-	public static Class89 aClass89_136 = new Class89(73, 6);
+	public static final Class89 aClass89_136 = new Class89(73, 6);
 
 	@OriginalMember(owner = "client!js", name = "Q", descriptor = "[B")
-	public static byte[] aByteArray33 = new byte[] { 2, 0, 0, 2, 0, 0, 0, 4, 4 };
+	public static final byte[] aByteArray33 = new byte[] { 2, 0, 0, 2, 0, 0, 0, 4, 4 };
 
 	@OriginalMember(owner = "client!js", name = "a", descriptor = "(JB)Ljava/lang/String;")
 	public static String method3228(@OriginalArg(0) long arg0) {
@@ -40,12 +40,6 @@ public final class Static170 {
 			local55.setCharAt(0, Character.toUpperCase(local55.charAt(0)));
 			return local55.toString();
 		}
-	}
-
-	@OriginalMember(owner = "client!js", name = "d", descriptor = "(B)V")
-	public static void method3229() {
-		aClass89_136 = null;
-		aByteArray33 = null;
 	}
 
 	@OriginalMember(owner = "client!js", name = "a", descriptor = "(ILclient!bu;[[B)V")

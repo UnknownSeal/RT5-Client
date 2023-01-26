@@ -43,10 +43,4 @@ public final class Static289 {
 	public static void method5020(@OriginalArg(0) int arg0, @OriginalArg(1) Class21 arg1, @OriginalArg(2) int arg2) {
 		Static332.aClass21ArrayArray3[arg2][arg0] = arg1;
 	}
-
-	@OriginalMember(owner = "client!qo", name = "a", descriptor = "(B)V")
-	public static void method5021() {
-		aClass197_71 = null;
-		aClass197_73 = null;
-	}
 }

@@ -7,7 +7,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Class187 {
 
 	@OriginalMember(owner = "client!q", name = "n", descriptor = "[I")
-	public static int[] anIntArray360 = new int[4096];
+	public static final int[] anIntArray360 = new int[4096];
 
 	@OriginalMember(owner = "client!q", name = "a", descriptor = "I")
 	public int anInt5105;

@@ -8,13 +8,13 @@ public final class Static158 {
 	public static final int anInt2895 = 1;
 
 	@OriginalMember(owner = "client!jc", name = "C", descriptor = "[[I")
-	public static int[][] anIntArrayArray22 = new int[][] { { 0, 1, 2, 3 }, { 1, -1, -1, 0 }, { -1, 2, -1, 0 }, { -1, 0, -1, 2 }, { 0, 1, -1, 2 }, { 1, 2, -1, 0 }, { -1, 4, -1, 1 }, { -1, 3, 4, -1 }, { -1, 0, 2, -1 }, { -1, -1, 2, 0 }, { 0, 2, 5, 3 }, { 0, -1, 6, -1 }, { 0, 1, 2, 3 } };
+	public static final int[][] anIntArrayArray22 = new int[][] { { 0, 1, 2, 3 }, { 1, -1, -1, 0 }, { -1, 2, -1, 0 }, { -1, 0, -1, 2 }, { 0, 1, -1, 2 }, { 1, 2, -1, 0 }, { -1, 4, -1, 1 }, { -1, 3, 4, -1 }, { -1, 0, 2, -1 }, { -1, -1, 2, 0 }, { 0, 2, 5, 3 }, { 0, -1, 6, -1 }, { 0, 1, 2, 3 } };
 
 	@OriginalMember(owner = "client!jc", name = "S", descriptor = "Lclient!cc;")
 	public static Class32 aClass32_7 = null;
 
 	@OriginalMember(owner = "client!jc", name = "T", descriptor = "Lclient!ij;")
-	public static Class105 aClass105_1 = new Class105();
+	public static final Class105 aClass105_1 = new Class105();
 
 	@OriginalMember(owner = "client!jc", name = "U", descriptor = "I")
 	public static int anInt2911 = -1;
@@ -62,13 +62,6 @@ public final class Static158 {
 				Static368.anInt6917++;
 			}
 		}
-	}
-
-	@OriginalMember(owner = "client!jc", name = "b", descriptor = "(B)V")
-	public static void method2941() {
-		aClass105_1 = null;
-		aClass32_7 = null;
-		anIntArrayArray22 = null;
 	}
 
 	@OriginalMember(owner = "client!jc", name = "a", descriptor = "(II)V")

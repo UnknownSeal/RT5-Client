@@ -14,7 +14,7 @@ public final class Static141 {
 	public static int anInt2650 = 10;
 
 	@OriginalMember(owner = "client!i", name = "V", descriptor = "Lclient!ad;")
-	public static Class4 aClass4_58 = new Class4(8);
+	public static final Class4 aClass4_58 = new Class4(8);
 
 	@OriginalMember(owner = "client!i", name = "W", descriptor = "I")
 	public static int anInt2652 = 0;
@@ -27,12 +27,6 @@ public final class Static141 {
 
 	@OriginalMember(owner = "client!i", name = "bb", descriptor = "Z")
 	public static boolean aBoolean190 = true;
-
-	@OriginalMember(owner = "client!i", name = "b", descriptor = "(B)V")
-	public static void method2653() {
-		aClass4_58 = null;
-		aClass115_1 = null;
-	}
 
 	@OriginalMember(owner = "client!i", name = "a", descriptor = "(Z[IIIIIILclient!dg;III[IIII)I")
 	public static int method2654(@OriginalArg(0) boolean arg0, @OriginalArg(1) int[] arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5, @OriginalArg(7) Class46 arg6, @OriginalArg(8) int arg7, @OriginalArg(9) int arg8, @OriginalArg(10) int arg9, @OriginalArg(11) int[] arg10, @OriginalArg(12) int arg11, @OriginalArg(13) int arg12, @OriginalArg(14) int arg13) {

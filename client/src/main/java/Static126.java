@@ -7,7 +7,7 @@ public final class Static126 {
 	public static Class13[] aClass13Array22;
 
 	@OriginalMember(owner = "client!hd", name = "m", descriptor = "Lclient!mc;")
-	public static Class145 aClass145_229 = new Class145(21, 6);
+	public static final Class145 aClass145_229 = new Class145(21, 6);
 
 	@OriginalMember(owner = "client!hd", name = "p", descriptor = "I")
 	public static int anInt6311 = 0;
@@ -20,11 +20,5 @@ public final class Static126 {
 		Static391.aClass197_95 = arg0;
 		Static26.aClass161ArrayArray1 = new Class161[Static283.aClass197_68.method5091()][];
 		Static128.aBooleanArray21 = new boolean[Static283.aClass197_68.method5091()];
-	}
-
-	@OriginalMember(owner = "client!hd", name = "b", descriptor = "(I)V")
-	public static void method5702() {
-		aClass145_229 = null;
-		aClass13Array22 = null;
 	}
 }

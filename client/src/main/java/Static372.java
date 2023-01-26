@@ -9,13 +9,13 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static372 {
 
 	@OriginalMember(owner = "client!vp", name = "a", descriptor = "Lclient!mc;")
-	public static Class145 aClass145_252 = new Class145(65, 4);
+	public static final Class145 aClass145_252 = new Class145(65, 4);
 
 	@OriginalMember(owner = "client!vp", name = "k", descriptor = "Lclient!mc;")
-	public static Class145 aClass145_253 = new Class145(6, 15);
+	public static final Class145 aClass145_253 = new Class145(6, 15);
 
 	@OriginalMember(owner = "client!vp", name = "m", descriptor = "Lclient!h;")
-	public static Class89 aClass89_245 = new Class89(5, 8);
+	public static final Class89 aClass89_245 = new Class89(5, 8);
 
 	@OriginalMember(owner = "client!vp", name = "a", descriptor = "(I)V")
 	public static void method6259() {
@@ -76,13 +76,6 @@ public final class Static372 {
 			}
 		}
 		Static120.aClass4_49 = local10;
-	}
-
-	@OriginalMember(owner = "client!vp", name = "a", descriptor = "(B)V")
-	public static void method6264() {
-		aClass89_245 = null;
-		aClass145_252 = null;
-		aClass145_253 = null;
 	}
 
 	@OriginalMember(owner = "client!vp", name = "a", descriptor = "(BLclient!bt;)Lclient!rm;")

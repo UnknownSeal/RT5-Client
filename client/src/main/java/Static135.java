@@ -8,10 +8,10 @@ public final class Static135 {
 	public static final int anInt2521 = 1338;
 
 	@OriginalMember(owner = "client!ho", name = "R", descriptor = "[Ljava/lang/String;")
-	public static String[] aStringArray20 = new String[100];
+	public static final String[] aStringArray20 = new String[100];
 
 	@OriginalMember(owner = "client!ho", name = "S", descriptor = "Lclient!bc;")
-	public static Class16 aClass16_2 = new Class16("", 14);
+	public static final Class16 aClass16_2 = new Class16("", 14);
 
 	@OriginalMember(owner = "client!ho", name = "U", descriptor = "I")
 	public static int anInt2523 = -1;
@@ -19,12 +19,6 @@ public final class Static135 {
 	@OriginalMember(owner = "client!ho", name = "a", descriptor = "([Ljava/lang/String;I[S)V")
 	public static void method2534(@OriginalArg(0) String[] arg0, @OriginalArg(2) short[] arg1) {
 		Static188.method3467(arg1, 0, arg0.length - 1, arg0);
-	}
-
-	@OriginalMember(owner = "client!ho", name = "f", descriptor = "(I)V")
-	public static void method2535() {
-		aClass16_2 = null;
-		aStringArray20 = null;
 	}
 
 	@OriginalMember(owner = "client!ho", name = "a", descriptor = "(BIC)C")

@@ -13,11 +13,6 @@ public final class Static214 {
 	@OriginalMember(owner = "client!mk", name = "c", descriptor = "I")
 	public static int anInt3793 = 0;
 
-	@OriginalMember(owner = "client!mk", name = "a", descriptor = "(B)V")
-	public static void method3743() {
-		aClass226_1 = null;
-	}
-
 	@OriginalMember(owner = "client!mk", name = "a", descriptor = "([BI)Lclient!js;")
 	public static Class2_Sub2_Sub11 method3744(@OriginalArg(0) byte[] arg0) {
 		@Pc(16) Class2_Sub2_Sub11 local16 = new Class2_Sub2_Sub11();

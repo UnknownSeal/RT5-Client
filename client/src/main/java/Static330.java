@@ -19,13 +19,6 @@ public final class Static330 {
 	@OriginalMember(owner = "client!td", name = "X", descriptor = "Z")
 	public static boolean aBoolean419 = false;
 
-	@OriginalMember(owner = "client!td", name = "d", descriptor = "(Z)V")
-	public static void method5651() {
-		aClass6Array3 = null;
-		aString62 = null;
-		aClass67ArrayArrayArray3 = null;
-	}
-
 	@OriginalMember(owner = "client!td", name = "a", descriptor = "(IIZ)B")
 	public static byte method5652(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
 		if (arg1 == 9) {

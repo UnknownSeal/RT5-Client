@@ -10,9 +10,4 @@ public final class Static9 {
 
 	@OriginalMember(owner = "client!ai", name = "O", descriptor = "I")
 	public static int anInt213 = 1;
-
-	@OriginalMember(owner = "client!ai", name = "f", descriptor = "(I)V")
-	public static void method210() {
-		aClass213_1 = null;
-	}
 }

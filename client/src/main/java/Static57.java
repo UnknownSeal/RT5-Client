@@ -12,7 +12,7 @@ public final class Static57 {
 	public static Class161[] aClass161Array1;
 
 	@OriginalMember(owner = "client!df", name = "e", descriptor = "[I")
-	public static int[] anIntArray104 = new int[] { 1, -1, -1, 1 };
+	public static final int[] anIntArray104 = new int[] { 1, -1, -1, 1 };
 
 	@OriginalMember(owner = "client!df", name = "f", descriptor = "Z")
 	public static boolean aBoolean124 = false;
@@ -61,12 +61,6 @@ public final class Static57 {
 		} catch (@Pc(51) Exception local51) {
 			return;
 		}
-	}
-
-	@OriginalMember(owner = "client!df", name = "b", descriptor = "(I)V")
-	public static void method1621() {
-		aClass161Array1 = null;
-		anIntArray104 = null;
 	}
 
 	@OriginalMember(owner = "client!df", name = "a", descriptor = "(IIIIII)V")

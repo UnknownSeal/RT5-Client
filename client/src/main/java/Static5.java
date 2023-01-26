@@ -21,25 +21,16 @@ public final class Static5 {
 	public static int anInt105;
 
 	@OriginalMember(owner = "client!ad", name = "i", descriptor = "Lclient!mc;")
-	public static Class145 aClass145_9 = new Class145(41, 3);
+	public static final Class145 aClass145_9 = new Class145(41, 3);
 
 	@OriginalMember(owner = "client!ad", name = "p", descriptor = "J")
 	public static long aLong11 = 0L;
 
 	@OriginalMember(owner = "client!ad", name = "r", descriptor = "[I")
-	public static int[] anIntArray3 = new int[] { 0, 1, 2, 3, 4, 5, 6, 14 };
+	public static final int[] anIntArray3 = new int[] { 0, 1, 2, 3, 4, 5, 6, 14 };
 
 	@OriginalMember(owner = "client!ad", name = "w", descriptor = "Lclient!gd;")
-	public static Class79 aClass79_2 = new Class79("skill: ", "Fertigkeit: ", "compétence ", "habilidade: ");
-
-	@OriginalMember(owner = "client!ad", name = "a", descriptor = "(I)V")
-	public static void method78() {
-		aClass145_9 = null;
-		anIntArray3 = null;
-		aClass79_2 = null;
-		aClass32_1 = null;
-		Class4.aLongArray1 = null;
-	}
+	public static final Class79 aClass79_2 = new Class79("skill: ", "Fertigkeit: ", "compétence ", "habilidade: ");
 
 	@OriginalMember(owner = "client!ad", name = "a", descriptor = "(IIILclient!ml;II)Ljava/awt/Frame;")
 	public static Frame method85(@OriginalArg(0) int arg0, @OriginalArg(3) Class152 arg1, @OriginalArg(4) int arg2, @OriginalArg(5) int arg3) {

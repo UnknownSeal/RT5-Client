@@ -7,23 +7,17 @@ public final class Static378 {
 	public static int anInt7079;
 
 	@OriginalMember(owner = "client!wa", name = "c", descriptor = "Lclient!ld;")
-	public static Class135 aClass135_43 = new Class135();
+	public static final Class135 aClass135_43 = new Class135();
 
 	@OriginalMember(owner = "client!wa", name = "g", descriptor = "I")
 	public static int anInt7077 = 0;
 
 	@OriginalMember(owner = "client!wa", name = "j", descriptor = "Lclient!gd;")
-	public static Class79 aClass79_146 = new Class79("Attack", "Angreifen", "Attaquer", "Atacar");
+	public static final Class79 aClass79_146 = new Class79("Attack", "Angreifen", "Attaquer", "Atacar");
 
 	@OriginalMember(owner = "client!wa", name = "a", descriptor = "(I)Lclient!vj;")
 	public static Class2_Sub2_Sub17 method6311() {
 		return Static344.aClass2_Sub2_Sub17_3;
-	}
-
-	@OriginalMember(owner = "client!wa", name = "b", descriptor = "(I)V")
-	public static void method6312() {
-		aClass135_43 = null;
-		aClass79_146 = null;
 	}
 
 	@OriginalMember(owner = "client!wa", name = "a", descriptor = "(BI)Z")

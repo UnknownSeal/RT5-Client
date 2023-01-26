@@ -8,7 +8,7 @@ public final class Static199 {
 	public static int anInt5756;
 
 	@OriginalMember(owner = "client!lm", name = "s", descriptor = "Lclient!gd;")
-	public static Class79 aClass79_120 = new Class79("flash3:", "blinken3:", "clignotant3:", "brilho3:");
+	public static final Class79 aClass79_120 = new Class79("flash3:", "blinken3:", "clignotant3:", "brilho3:");
 
 	@OriginalMember(owner = "client!lm", name = "t", descriptor = "I")
 	public static final int anInt5755 = 1337;
@@ -24,11 +24,6 @@ public final class Static199 {
 		if (Static314.aByteArrayArray17 != null) {
 			Static314.aByteArrayArray17[arg0][arg1] = (byte) arg4;
 		}
-	}
-
-	@OriginalMember(owner = "client!lm", name = "c", descriptor = "(I)V")
-	public static void method5243() {
-		aClass79_120 = null;
 	}
 
 	@OriginalMember(owner = "client!lm", name = "a", descriptor = "([JII[Ljava/lang/Object;I)V")

@@ -15,10 +15,5 @@ public final class Static102 {
 	public static int anInt3591 = 1;
 
 	@OriginalMember(owner = "client!fp", name = "A", descriptor = "Lclient!mc;")
-	public static Class145 aClass145_141 = new Class145(60, -1);
-
-	@OriginalMember(owner = "client!fp", name = "b", descriptor = "(I)V")
-	public static void method3535() {
-		aClass145_141 = null;
-	}
+	public static final Class145 aClass145_141 = new Class145(60, -1);
 }

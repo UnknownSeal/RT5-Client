@@ -14,7 +14,7 @@ public final class Static290 {
 	public static int anInt5498 = -1;
 
 	@OriginalMember(owner = "client!qp", name = "d", descriptor = "[Lclient!q;")
-	public static Class187[] aClass187Array1 = new Class187[6];
+	public static final Class187[] aClass187Array1 = new Class187[6];
 
 	@OriginalMember(owner = "client!qp", name = "i", descriptor = "Ljava/lang/String;")
 	public static String aString56 = null;
@@ -23,13 +23,6 @@ public final class Static290 {
 	public static void method5022(@OriginalArg(0) int arg0) {
 		@Pc(8) Class2_Sub2_Sub7 local8 = Static316.method5412(2, arg0);
 		local8.method2312();
-	}
-
-	@OriginalMember(owner = "client!qp", name = "a", descriptor = "(B)V")
-	public static void method5023() {
-		aString56 = null;
-		aClass22_3 = null;
-		aClass187Array1 = null;
 	}
 
 	@OriginalMember(owner = "client!qp", name = "a", descriptor = "(I)V")

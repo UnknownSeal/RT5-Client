@@ -7,7 +7,7 @@ public final class Static348 {
 	public static int anInt6446;
 
 	@OriginalMember(owner = "client!uc", name = "g", descriptor = "[B")
-	public static byte[] aByteArray94 = new byte[] { 0, 0, 2, 0, 0, 2, 1, 1, 0 };
+	public static final byte[] aByteArray94 = new byte[] { 0, 0, 2, 0, 0, 2, 1, 1, 0 };
 
 	@OriginalMember(owner = "client!uc", name = "n", descriptor = "I")
 	public static int anInt6448 = 0;
@@ -18,11 +18,6 @@ public final class Static348 {
 	@OriginalMember(owner = "client!uc", name = "a", descriptor = "(I)V")
 	public static void method5827() {
 		Static237.aBoolean297 = true;
-	}
-
-	@OriginalMember(owner = "client!uc", name = "b", descriptor = "(I)V")
-	public static void method5828() {
-		aByteArray94 = null;
 	}
 
 	@OriginalMember(owner = "client!uc", name = "a", descriptor = "(ILclient!r;Lclient!wm;)V")

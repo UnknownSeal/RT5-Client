@@ -10,10 +10,10 @@ public final class Static343 {
 	public static int anInt6390 = 0;
 
 	@OriginalMember(owner = "client!ts", name = "h", descriptor = "Lclient!mc;")
-	public static Class145 aClass145_231 = new Class145(24, -1);
+	public static final Class145 aClass145_231 = new Class145(24, -1);
 
 	@OriginalMember(owner = "client!ts", name = "p", descriptor = "[I")
-	public static int[] anIntArray432 = new int[4096];
+	public static final int[] anIntArray432 = new int[4096];
 
 	@OriginalMember(owner = "client!ts", name = "q", descriptor = "I")
 	public static int anInt6398 = 0;
@@ -23,13 +23,6 @@ public final class Static343 {
 
 	@OriginalMember(owner = "client!ts", name = "s", descriptor = "Z")
 	public static boolean aBoolean431 = true;
-
-	@OriginalMember(owner = "client!ts", name = "b", descriptor = "(B)V")
-	public static void method5781() {
-		anIntArray432 = null;
-		aClass50_4 = null;
-		aClass145_231 = null;
-	}
 
 	@OriginalMember(owner = "client!ts", name = "a", descriptor = "(ZZBII)V")
 	public static void method5783(@OriginalArg(0) boolean arg0, @OriginalArg(1) boolean arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {

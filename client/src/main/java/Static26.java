@@ -11,7 +11,7 @@ public final class Static26 {
 	public static Class161[][] aClass161ArrayArray1;
 
 	@OriginalMember(owner = "client!bj", name = "d", descriptor = "Lclient!gd;")
-	public static Class79 aClass79_18 = new Class79("Loading defaults - ", "Lade Standardeinstellungen - ", "Chargement des paramètres par défaut - ", "Carregando padrões - ");
+	public static final Class79 aClass79_18 = new Class79("Loading defaults - ", "Lade Standardeinstellungen - ", "Chargement des paramètres par défaut - ", "Carregando padrões - ");
 
 	@OriginalMember(owner = "client!bj", name = "a", descriptor = "(I)V")
 	public static void method862() {
@@ -80,12 +80,5 @@ public final class Static26 {
 			arg4.aBoolean259 = true;
 		}
 		local4.aClass11_Sub4_1 = arg4;
-	}
-
-	@OriginalMember(owner = "client!bj", name = "a", descriptor = "(B)V")
-	public static void method867() {
-		aByteArrayArray3 = null;
-		aClass161ArrayArray1 = null;
-		aClass79_18 = null;
 	}
 }

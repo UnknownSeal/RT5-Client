@@ -8,7 +8,7 @@ public final class Static241 {
 	public static long aLong130;
 
 	@OriginalMember(owner = "client!nq", name = "f", descriptor = "Lclient!h;")
-	public static Class89 aClass89_170 = new Class89(19, 0);
+	public static final Class89 aClass89_170 = new Class89(19, 0);
 
 	@OriginalMember(owner = "client!nq", name = "h", descriptor = "I")
 	public static int anInt4445 = 0;
@@ -152,11 +152,6 @@ public final class Static241 {
 		Static344.aClass125_4.method3376(64, 128);
 		Static344.aClass202_3.method5160(64);
 		Static322.aClass128_1.method3391(64);
-	}
-
-	@OriginalMember(owner = "client!nq", name = "a", descriptor = "(B)V")
-	public static void method4192() {
-		aClass89_170 = null;
 	}
 
 	@OriginalMember(owner = "client!nq", name = "b", descriptor = "(B)V")

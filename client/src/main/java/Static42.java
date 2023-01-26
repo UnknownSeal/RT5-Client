@@ -4,13 +4,13 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class Static42 {
 
 	@OriginalMember(owner = "client!cj", name = "h", descriptor = "Lclient!mc;")
-	public static Class145 aClass145_230 = new Class145(55, 0);
+	public static final Class145 aClass145_230 = new Class145(55, 0);
 
 	@OriginalMember(owner = "client!cj", name = "k", descriptor = "[Ljava/lang/String;")
-	public static String[] aStringArray59 = new String[100];
+	public static final String[] aStringArray59 = new String[100];
 
 	@OriginalMember(owner = "client!cj", name = "n", descriptor = "Lclient!h;")
-	public static Class89 aClass89_226 = new Class89(62, 6);
+	public static final Class89 aClass89_226 = new Class89(62, 6);
 
 	@OriginalMember(owner = "client!cj", name = "a", descriptor = "(IIIIII)V")
 	public static void method5748(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4) {
@@ -21,12 +21,5 @@ public final class Static42 {
 		} else {
 			Static292.method5034(arg3, arg1, arg2, arg0, arg4);
 		}
-	}
-
-	@OriginalMember(owner = "client!cj", name = "i", descriptor = "(I)V")
-	public static void method5749() {
-		aStringArray59 = null;
-		aClass145_230 = null;
-		aClass89_226 = null;
 	}
 }

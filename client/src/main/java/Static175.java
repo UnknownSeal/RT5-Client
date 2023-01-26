@@ -17,21 +17,13 @@ public final class Static175 {
 	public static boolean aBoolean225 = false;
 
 	@OriginalMember(owner = "client!kc", name = "c", descriptor = "[B")
-	public static byte[] aByteArray35 = new byte[520];
+	public static final byte[] aByteArray35 = new byte[520];
 
 	@OriginalMember(owner = "client!kc", name = "e", descriptor = "Lclient!mc;")
-	public static Class145 aClass145_132 = new Class145(9, 15);
+	public static final Class145 aClass145_132 = new Class145(9, 15);
 
 	@OriginalMember(owner = "client!kc", name = "i", descriptor = "Lclient!rt;")
-	public static Class209 aClass209_1 = new Class209("RC", 1);
-
-	@OriginalMember(owner = "client!kc", name = "a", descriptor = "(I)V")
-	public static void method3322() {
-		aClass145_132 = null;
-		aClass209_1 = null;
-		aClass113_6 = null;
-		aByteArray35 = null;
-	}
+	public static final Class209 aClass209_1 = new Class209("RC", 1);
 
 	@OriginalMember(owner = "client!kc", name = "a", descriptor = "(IIII)V")
 	public static void method3323(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {

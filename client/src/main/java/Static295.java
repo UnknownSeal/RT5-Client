@@ -11,20 +11,13 @@ public final class Static295 {
 	public static int anInt5567 = 0;
 
 	@OriginalMember(owner = "client!r", name = "H", descriptor = "Lclient!ld;")
-	public static Class135 aClass135_32 = new Class135();
+	public static final Class135 aClass135_32 = new Class135();
 
 	@OriginalMember(owner = "client!r", name = "M", descriptor = "I")
 	public static int anInt5581 = 0;
 
 	@OriginalMember(owner = "client!r", name = "O", descriptor = "[I")
-	public static int[] anIntArray375 = new int[] { 1, 2, 4, 8 };
-
-	@OriginalMember(owner = "client!r", name = "f", descriptor = "(B)V")
-	public static void method5092() {
-		anIntArray375 = null;
-		aClass3_Sub1Array1 = null;
-		aClass135_32 = null;
-	}
+	public static final int[] anIntArray375 = new int[] { 1, 2, 4, 8 };
 
 	@OriginalMember(owner = "client!r", name = "g", descriptor = "(B)V")
 	public static void method5093() {

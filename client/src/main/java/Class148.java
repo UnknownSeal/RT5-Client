@@ -7,7 +7,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Class148 {
 
 	@OriginalMember(owner = "client!mg", name = "A", descriptor = "[B")
-	public static byte[] aByteArray39;
+	public static final byte[] aByteArray39;
 
 	@OriginalMember(owner = "client!mg", name = "b", descriptor = "I")
 	public int anInt3756;

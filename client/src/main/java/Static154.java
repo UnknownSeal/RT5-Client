@@ -17,7 +17,7 @@ public final class Static154 {
 	public static int anInt2807 = 0;
 
 	@OriginalMember(owner = "client!is", name = "l", descriptor = "Lclient!gd;")
-	public static Class79 aClass79_66 = new Class79("cyan:", "blaugrün:", "cyan:", "cyan:");
+	public static final Class79 aClass79_66 = new Class79("cyan:", "blaugrün:", "cyan:", "cyan:");
 
 	@OriginalMember(owner = "client!is", name = "m", descriptor = "J")
 	public static long aLong89 = 0L;
@@ -50,12 +50,6 @@ public final class Static154 {
 				return;
 			}
 		}
-	}
-
-	@OriginalMember(owner = "client!is", name = "a", descriptor = "(I)V")
-	public static void method2782() {
-		aClass170_2 = null;
-		aClass79_66 = null;
 	}
 
 	@OriginalMember(owner = "client!is", name = "a", descriptor = "(II)V")

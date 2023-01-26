@@ -13,18 +13,10 @@ public final class Static119 {
 	public static Class21 aClass21_1;
 
 	@OriginalMember(owner = "client!gr", name = "h", descriptor = "Lclient!hu;")
-	public static Class98 aClass98_16 = new Class98(64);
+	public static final Class98 aClass98_16 = new Class98(64);
 
 	@OriginalMember(owner = "client!gr", name = "j", descriptor = "[I")
-	public static int[] anIntArray152 = new int[] { 16, 32, 64, 128 };
-
-	@OriginalMember(owner = "client!gr", name = "a", descriptor = "(B)V")
-	public static void method2376() {
-		anIntArray152 = null;
-		aClass98_16 = null;
-		aClass13_7 = null;
-		aClass21_1 = null;
-	}
+	public static final int[] anIntArray152 = new int[] { 16, 32, 64, 128 };
 
 	@OriginalMember(owner = "client!gr", name = "a", descriptor = "(IIIIIII)V")
 	public static void method2377(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5) {

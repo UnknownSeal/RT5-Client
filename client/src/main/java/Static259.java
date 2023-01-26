@@ -8,13 +8,13 @@ public final class Static259 {
 	public static Interface2 anInterface2_6;
 
 	@OriginalMember(owner = "client!oq", name = "r", descriptor = "Lclient!gd;")
-	public static Class79 aClass79_105 = new Class79("Cancel", "Abbrechen", "Annuler", "Cancelar");
+	public static final Class79 aClass79_105 = new Class79("Cancel", "Abbrechen", "Annuler", "Cancelar");
 
 	@OriginalMember(owner = "client!oq", name = "v", descriptor = "Lclient!gd;")
-	public static Class79 aClass79_106 = new Class79("M", "M", "M", "M");
+	public static final Class79 aClass79_106 = new Class79("M", "M", "M", "M");
 
 	@OriginalMember(owner = "client!oq", name = "x", descriptor = "[I")
-	public static int[] anIntArray323 = new int[13];
+	public static final int[] anIntArray323 = new int[13];
 
 	@OriginalMember(owner = "client!oq", name = "a", descriptor = "(Lclient!cf;IZI)V")
 	public static void method4426(@OriginalArg(0) Class2_Sub5 arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2) {
@@ -545,13 +545,5 @@ public final class Static259 {
 		if (local7.aClass11_Sub1_2 != null) {
 			local7.aClass11_Sub1_2 = null;
 		}
-	}
-
-	@OriginalMember(owner = "client!oq", name = "a", descriptor = "(B)V")
-	public static void method4429() {
-		aClass79_106 = null;
-		anIntArray323 = null;
-		anInterface2_6 = null;
-		aClass79_105 = null;
 	}
 }

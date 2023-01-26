@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static20 {
 
 	@OriginalMember(owner = "client!bd", name = "g", descriptor = "[Z")
-	public static boolean[] aBooleanArray6 = new boolean[100];
+	public static final boolean[] aBooleanArray6 = new boolean[100];
 
 	@OriginalMember(owner = "client!bd", name = "i", descriptor = "I")
 	public static int anInt545 = 0;
@@ -19,11 +19,5 @@ public final class Static20 {
 				Static332.aClass21ArrayArray3[local8][local12] = Static119.aClass21_1;
 			}
 		}
-	}
-
-	@OriginalMember(owner = "client!bd", name = "b", descriptor = "(I)V")
-	public static void method561() {
-		aClass161_1 = null;
-		aBooleanArray6 = null;
 	}
 }

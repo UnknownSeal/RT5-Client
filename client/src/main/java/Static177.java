@@ -14,7 +14,7 @@ public final class Static177 {
 	public static int anInt3372 = 1;
 
 	@OriginalMember(owner = "client!ke", name = "y", descriptor = "Lclient!h;")
-	public static Class89 aClass89_141 = new Class89(68, 4);
+	public static final Class89 aClass89_141 = new Class89(68, 4);
 
 	@OriginalMember(owner = "client!ke", name = "E", descriptor = "I")
 	public static int anInt3381 = 0;
@@ -70,12 +70,5 @@ public final class Static177 {
 	@OriginalMember(owner = "client!ke", name = "a", descriptor = "(III)I")
 	public static int method3348(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
 		return arg0 == 1 || arg0 == 3 ? Static74.anIntArray116[arg1 & 0x3] : Static195.anIntArray211[arg1 & 0x3];
-	}
-
-	@OriginalMember(owner = "client!ke", name = "f", descriptor = "(I)V")
-	public static void method3351() {
-		aClass89_141 = null;
-		aShortArray56 = null;
-		aClass197_48 = null;
 	}
 }

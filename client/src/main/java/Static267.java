@@ -193,26 +193,6 @@ public final class Static267 {
 		anInt4922 = 0;
 	}
 
-	@OriginalMember(owner = "client!pf", name = "a", descriptor = "()V")
-	public static void method4517() {
-		aByteArray58 = null;
-		aClass175Array1 = null;
-		aClass238Array1 = null;
-		aClass186Array1 = null;
-		aClass88Array1 = null;
-		aBooleanArray43 = null;
-		anIntArray336 = null;
-		aFloatArray23 = null;
-		aFloatArray26 = null;
-		aFloatArray27 = null;
-		aFloatArray25 = null;
-		aFloatArray28 = null;
-		aFloatArray24 = null;
-		aFloatArray22 = null;
-		anIntArray335 = null;
-		anIntArray337 = null;
-	}
-
 	@OriginalMember(owner = "client!pf", name = "a", descriptor = "(Lclient!r;II)Lclient!pf;")
 	public static Class2_Sub27 method4519(@OriginalArg(0) Class197 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
 		if (method4520(arg0)) {

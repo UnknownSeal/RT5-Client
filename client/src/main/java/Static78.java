@@ -11,22 +11,22 @@ public final class Static78 {
 	public static Class197 aClass197_89;
 
 	@OriginalMember(owner = "client!ei", name = "e", descriptor = "Lclient!h;")
-	public static Class89 aClass89_223 = new Class89(15, 10);
+	public static final Class89 aClass89_223 = new Class89(15, 10);
 
 	@OriginalMember(owner = "client!ei", name = "g", descriptor = "[S")
-	public static short[] aShortArray123 = new short[] { 6798, 8741, 25238, 4626, 4550 };
+	public static final short[] aShortArray123 = new short[] { 6798, 8741, 25238, 4626, 4550 };
 
 	@OriginalMember(owner = "client!ei", name = "h", descriptor = "Lclient!gd;")
-	public static Class79 aClass79_128 = new Class79("Loaded interfaces", "Benutzeroberfläche geladen.", "Interfaces chargées", "Interfaces carregadas");
+	public static final Class79 aClass79_128 = new Class79("Loaded interfaces", "Benutzeroberfläche geladen.", "Interfaces chargées", "Interfaces carregadas");
 
 	@OriginalMember(owner = "client!ei", name = "i", descriptor = "S")
 	public static short aShort86 = 1;
 
 	@OriginalMember(owner = "client!ei", name = "k", descriptor = "Lclient!gd;")
-	public static Class79 aClass79_129 = new Class79("Your friend list is full. Max of 100 for free users, and 200 for members.", "Deine Freunde-Liste ist voll! Maximale Einträge: Mitglieder 200/freie Spieler 100", "Votre liste d'amis est pleine (100 noms maximum pour la version gratuite et 200 pour les abonnés).", "Sua lista de amigos está cheia. O limite é 100 para os usuários não pagantes e 200 para os membros.");
+	public static final Class79 aClass79_129 = new Class79("Your friend list is full. Max of 100 for free users, and 200 for members.", "Deine Freunde-Liste ist voll! Maximale Einträge: Mitglieder 200/freie Spieler 100", "Votre liste d'amis est pleine (100 noms maximum pour la version gratuite et 200 pour les abonnés).", "Sua lista de amigos está cheia. O limite é 100 para os usuários não pagantes e 200 para os membros.");
 
 	@OriginalMember(owner = "client!ei", name = "l", descriptor = "Lclient!h;")
-	public static Class89 aClass89_224 = new Class89(31, 8);
+	public static final Class89 aClass89_224 = new Class89(31, 8);
 
 	@OriginalMember(owner = "client!ei", name = "a", descriptor = "(BI)V")
 	public static void method5696(@OriginalArg(1) int arg0) {
@@ -64,16 +64,6 @@ public final class Static78 {
 			}
 		}
 		return arg1.anInt3769;
-	}
-
-	@OriginalMember(owner = "client!ei", name = "a", descriptor = "(I)V")
-	public static void method5699() {
-		aClass89_224 = null;
-		aClass79_128 = null;
-		aClass197_89 = null;
-		aShortArray123 = null;
-		aClass79_129 = null;
-		aClass89_223 = null;
 	}
 
 	@OriginalMember(owner = "client!ei", name = "b", descriptor = "(IB)V")

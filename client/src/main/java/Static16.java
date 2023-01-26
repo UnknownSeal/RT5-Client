@@ -18,13 +18,6 @@ public final class Static16 {
 	@OriginalMember(owner = "client!as", name = "f", descriptor = "Ljava/lang/String;")
 	public static String aString51 = "";
 
-	@OriginalMember(owner = "client!as", name = "b", descriptor = "(I)V")
-	public static void method4405() {
-		aString51 = null;
-		anIntArray322 = null;
-		aClass19_10 = null;
-	}
-
 	@OriginalMember(owner = "client!as", name = "a", descriptor = "([II[J)V")
 	public static void method4406(@OriginalArg(0) int[] arg0, @OriginalArg(2) long[] arg1) {
 		Static61.method1671(arg1, arg1.length - 1, arg0, 0);

@@ -11,21 +11,13 @@ public final class Static134 {
 	public static float aFloat33;
 
 	@OriginalMember(owner = "client!hn", name = "b", descriptor = "[I")
-	public static int[] anIntArray163 = new int[] { -1, -1, 1, 1 };
+	public static final int[] anIntArray163 = new int[] { -1, -1, 1, 1 };
 
 	@OriginalMember(owner = "client!hn", name = "c", descriptor = "[I")
-	public static int[] anIntArray164 = new int[5];
+	public static final int[] anIntArray164 = new int[5];
 
 	@OriginalMember(owner = "client!hn", name = "d", descriptor = "Lclient!gd;")
-	public static Class79 aClass79_59 = new Class79("Loaded wordpack", "Wordpack geladen.", "Module texte chargé", "Pacote de palavras carregado");
-
-	@OriginalMember(owner = "client!hn", name = "a", descriptor = "(B)V")
-	public static void method2508() {
-		aClass13Array12 = null;
-		anIntArray164 = null;
-		anIntArray163 = null;
-		aClass79_59 = null;
-	}
+	public static final Class79 aClass79_59 = new Class79("Loaded wordpack", "Wordpack geladen.", "Module texte chargé", "Pacote de palavras carregado");
 
 	@OriginalMember(owner = "client!hn", name = "a", descriptor = "(BLclient!r;)I")
 	public static int method2509(@OriginalArg(1) Class197 arg0) {

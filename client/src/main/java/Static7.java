@@ -11,13 +11,13 @@ public final class Static7 {
 	public static Class29_Sub1 aClass29_Sub1_120;
 
 	@OriginalMember(owner = "client!ag", name = "f", descriptor = "Lclient!h;")
-	public static Class89 aClass89_257 = new Class89(90, 12);
+	public static final Class89 aClass89_257 = new Class89(90, 12);
 
 	@OriginalMember(owner = "client!ag", name = "l", descriptor = "Lclient!ad;")
-	public static Class4 aClass4_151 = new Class4(16);
+	public static final Class4 aClass4_151 = new Class4(16);
 
 	@OriginalMember(owner = "client!ag", name = "o", descriptor = "Lclient!mc;")
-	public static Class145 aClass145_267 = new Class145(39, 3);
+	public static final Class145 aClass145_267 = new Class145(39, 3);
 
 	@OriginalMember(owner = "client!ag", name = "a", descriptor = "(Lclient!dg;IIIIIIIIII)Z")
 	public static boolean method6462(@OriginalArg(0) Class46 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(8) int arg7, @OriginalArg(9) int arg8, @OriginalArg(10) int arg9) {
@@ -377,14 +377,6 @@ public final class Static7 {
 			return;
 		}
 		Static140.method2623();
-	}
-
-	@OriginalMember(owner = "client!ag", name = "a", descriptor = "(Z)V")
-	public static void method6470() {
-		aClass89_257 = null;
-		aClass29_Sub1_120 = null;
-		aClass4_151 = null;
-		aClass145_267 = null;
 	}
 
 	@OriginalMember(owner = "client!ag", name = "a", descriptor = "(Lclient!nk;I)Z")

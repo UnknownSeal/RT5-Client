@@ -216,11 +216,6 @@ public final class Static317 {
 		}
 	}
 
-	@OriginalMember(owner = "client!sh", name = "a", descriptor = "(I)V")
-	public static void method5549() {
-		aClass205_6 = null;
-	}
-
 	@OriginalMember(owner = "client!sh", name = "a", descriptor = "(Lclient!bt;I)V")
 	public static void method5550(@OriginalArg(0) Class2_Sub4 arg0) {
 		@Pc(9) int local9 = arg0.method4816();

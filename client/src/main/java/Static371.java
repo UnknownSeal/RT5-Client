@@ -17,16 +17,16 @@ public final class Static371 {
 	public static String aString68 = null;
 
 	@OriginalMember(owner = "client!vo", name = "p", descriptor = "Lclient!h;")
-	public static Class89 aClass89_243 = new Class89(89, 6);
+	public static final Class89 aClass89_243 = new Class89(89, 6);
 
 	@OriginalMember(owner = "client!vo", name = "z", descriptor = "Lclient!h;")
-	public static Class89 aClass89_244 = new Class89(33, 15);
+	public static final Class89 aClass89_244 = new Class89(33, 15);
 
 	@OriginalMember(owner = "client!vo", name = "C", descriptor = "Z")
 	public static volatile boolean aBoolean475 = true;
 
 	@OriginalMember(owner = "client!vo", name = "D", descriptor = "[Ljava/lang/String;")
-	public static String[] aStringArray66 = new String[100];
+	public static final String[] aStringArray66 = new String[100];
 
 	@OriginalMember(owner = "client!vo", name = "a", descriptor = "(IIIZLclient!nk;)V")
 	public static void method6255(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) boolean arg2, @OriginalArg(4) Class161 arg3) {
@@ -98,14 +98,5 @@ public final class Static371 {
 		@Pc(17) byte[] local17 = new byte[local6];
 		Static403.method4606(arg0, 0, local17, 0, local6);
 		return local17;
-	}
-
-	@OriginalMember(owner = "client!vo", name = "b", descriptor = "(Z)V")
-	public static void method6258() {
-		aClass89_243 = null;
-		aString68 = null;
-		aStringArray66 = null;
-		aClass13_20 = null;
-		aClass89_244 = null;
 	}
 }

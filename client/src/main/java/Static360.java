@@ -8,10 +8,10 @@ public final class Static360 {
 	public static int anInt6186 = -1;
 
 	@OriginalMember(owner = "client!ut", name = "D", descriptor = "[I")
-	public static int[] anIntArray421 = new int[] { 2047, 16383, 65535 };
+	public static final int[] anIntArray421 = new int[] { 2047, 16383, 65535 };
 
 	@OriginalMember(owner = "client!ut", name = "J", descriptor = "[I")
-	public static int[] anIntArray422 = new int[2048];
+	public static final int[] anIntArray422 = new int[2048];
 
 	@OriginalMember(owner = "client!ut", name = "K", descriptor = "I")
 	public static int anInt6190 = 0;
@@ -20,12 +20,6 @@ public final class Static360 {
 	public static void method5645() {
 		Static220.aClass4_83.method81();
 		Static141.aClass4_58.method81();
-	}
-
-	@OriginalMember(owner = "client!ut", name = "d", descriptor = "(B)V")
-	public static void method5646() {
-		anIntArray422 = null;
-		anIntArray421 = null;
 	}
 
 	@OriginalMember(owner = "client!ut", name = "a", descriptor = "(IIIBII)Z")

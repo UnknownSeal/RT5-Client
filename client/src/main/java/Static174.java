@@ -14,7 +14,7 @@ public final class Static174 {
 	public static Class123 aClass123_2;
 
 	@OriginalMember(owner = "client!kb", name = "D", descriptor = "[Ljava/awt/Color;")
-	public static Color[] aColorArray2 = new Color[] { new Color(9179409), new Color(3289650) };
+	public static final Color[] aColorArray2 = new Color[] { new Color(9179409), new Color(3289650) };
 
 	@OriginalMember(owner = "client!kb", name = "G", descriptor = "I")
 	public static int anInt1300 = 0;
@@ -99,11 +99,5 @@ public final class Static174 {
 			}
 			local10 = local10 + ' ';
 		}
-	}
-
-	@OriginalMember(owner = "client!kb", name = "c", descriptor = "(I)V")
-	public static void method1510() {
-		aClass123_2 = null;
-		aColorArray2 = null;
 	}
 }

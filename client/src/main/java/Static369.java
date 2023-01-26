@@ -9,13 +9,13 @@ public final class Static369 {
 	public static Class113 aClass113_9;
 
 	@OriginalMember(owner = "client!vm", name = "N", descriptor = "[I")
-	public static int[] anIntArray479 = new int[] { -1, 8192, 0, -1, 12288, 10240, 14336, -1, 4096, 6144, 2048 };
+	public static final int[] anIntArray479 = new int[] { -1, 8192, 0, -1, 12288, 10240, 14336, -1, 4096, 6144, 2048 };
 
 	@OriginalMember(owner = "client!vm", name = "S", descriptor = "Lclient!gd;")
-	public static Class79 aClass79_144 = new Class79("Prepared sound engine", "Musik-Engine vorbereitet.", "Moteur son préparé", "Mecanismo de som preparado");
+	public static final Class79 aClass79_144 = new Class79("Prepared sound engine", "Musik-Engine vorbereitet.", "Moteur son préparé", "Mecanismo de som preparado");
 
 	@OriginalMember(owner = "client!vm", name = "W", descriptor = "Lclient!mc;")
-	public static Class145 aClass145_248 = new Class145(19, -1);
+	public static final Class145 aClass145_248 = new Class145(19, -1);
 
 	@OriginalMember(owner = "client!vm", name = "Z", descriptor = "Z")
 	public static boolean aBoolean471 = false;
@@ -26,14 +26,6 @@ public final class Static369 {
 		synchronized (Static98.aClass98_10) {
 			Static98.aClass98_10.method2614();
 		}
-	}
-
-	@OriginalMember(owner = "client!vm", name = "b", descriptor = "(B)V")
-	public static void method6218() {
-		aClass145_248 = null;
-		aClass79_144 = null;
-		aClass113_9 = null;
-		anIntArray479 = null;
 	}
 
 	@OriginalMember(owner = "client!vm", name = "c", descriptor = "(IB)V")

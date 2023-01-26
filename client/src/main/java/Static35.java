@@ -10,11 +10,6 @@ public final class Static35 {
 	@OriginalMember(owner = "client!bu", name = "K", descriptor = "Lclient!jd;")
 	public static Class13 aClass13_3;
 
-	@OriginalMember(owner = "client!bu", name = "a", descriptor = "(I)V")
-	public static void method1102() {
-		aClass13_3 = null;
-	}
-
 	@OriginalMember(owner = "client!bu", name = "a", descriptor = "(IC)Z")
 	public static boolean method1103(@OriginalArg(1) char arg0) {
 		return arg0 >= 'A' && arg0 <= 'Z' || arg0 >= 'a' && arg0 <= 'z';

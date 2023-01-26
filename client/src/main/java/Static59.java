@@ -9,10 +9,10 @@ public final class Static59 {
 	public static int[] anIntArray107;
 
 	@OriginalMember(owner = "client!dh", name = "c", descriptor = "[I")
-	public static int[] anIntArray105 = new int[50];
+	public static final int[] anIntArray105 = new int[50];
 
 	@OriginalMember(owner = "client!dh", name = "e", descriptor = "[I")
-	public static int[] anIntArray106 = new int[] { 28, 35, 40, 44 };
+	public static final int[] anIntArray106 = new int[] { 28, 35, 40, 44 };
 
 	@OriginalMember(owner = "client!dh", name = "a", descriptor = "(Z)V")
 	public static void method1642() {
@@ -57,13 +57,5 @@ public final class Static59 {
 		Static61.aClass98_5.method2621();
 		Static210.aClass98_31.method2621();
 		Static198.aClass98_30.method2621();
-	}
-
-	@OriginalMember(owner = "client!dh", name = "a", descriptor = "(I)V")
-	public static void method1644() {
-		anIntArray105 = null;
-		aClass7_1 = null;
-		anIntArray106 = null;
-		anIntArray107 = null;
 	}
 }

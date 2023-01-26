@@ -8,13 +8,7 @@ public final class Static209 {
 	public static int[] anIntArray228;
 
 	@OriginalMember(owner = "client!me", name = "d", descriptor = "[Ljava/lang/String;")
-	public static String[] aStringArray32 = new String[200];
-
-	@OriginalMember(owner = "client!me", name = "a", descriptor = "(I)V")
-	public static void method3711() {
-		aStringArray32 = null;
-		anIntArray228 = null;
-	}
+	public static final String[] aStringArray32 = new String[200];
 
 	@OriginalMember(owner = "client!me", name = "b", descriptor = "(I)Lclient!jg;")
 	public static Class2_Sub20 method3712() {

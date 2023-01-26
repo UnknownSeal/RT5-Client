@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static309 {
 
 	@OriginalMember(owner = "client!rs", name = "e", descriptor = "Lclient!bc;")
-	public static Class16 aClass16_7 = new Class16("", 17);
+	public static final Class16 aClass16_7 = new Class16("", 17);
 
 	@OriginalMember(owner = "client!rs", name = "f", descriptor = "I")
 	public static int anInt5800 = 0;
@@ -98,10 +98,5 @@ public final class Static309 {
 		Static146.anInt2703 = 0;
 		Static312.anInt5844 = -1;
 		Static358.anInt6550 = -1;
-	}
-
-	@OriginalMember(owner = "client!rs", name = "a", descriptor = "(B)V")
-	public static void method5280() {
-		aClass16_7 = null;
 	}
 }

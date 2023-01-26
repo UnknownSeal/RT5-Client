@@ -8,7 +8,7 @@ public final class Static138 {
 	public static Class13 aClass13_8;
 
 	@OriginalMember(owner = "client!hr", name = "Y", descriptor = "Lclient!bc;")
-	public static Class16 aClass16_3 = new Class16("", 10);
+	public static final Class16 aClass16_3 = new Class16("", 10);
 
 	@OriginalMember(owner = "client!hr", name = "a", descriptor = "(BIII)V")
 	public static void method2578(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
@@ -59,11 +59,5 @@ public final class Static138 {
 		}
 		Static257.aClass116_5.method3154(local10, (long) arg0);
 		return local10;
-	}
-
-	@OriginalMember(owner = "client!hr", name = "b", descriptor = "(B)V")
-	public static void method2582() {
-		aClass13_8 = null;
-		aClass16_3 = null;
 	}
 }

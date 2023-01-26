@@ -5,20 +5,13 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static225 {
 
 	@OriginalMember(owner = "client!n", name = "w", descriptor = "[I")
-	public static int[] anIntArray259 = new int[14];
+	public static final int[] anIntArray259 = new int[14];
 
 	@OriginalMember(owner = "client!n", name = "x", descriptor = "I")
 	public static int anInt3979 = -1;
 
 	@OriginalMember(owner = "client!n", name = "B", descriptor = "[I")
-	public static int[] anIntArray260 = new int[2048];
-
-	@OriginalMember(owner = "client!n", name = "a", descriptor = "(I)V")
-	public static void method3952() {
-		Class11_Sub4_Sub1.anIntArray258 = null;
-		anIntArray259 = null;
-		anIntArray260 = null;
-	}
+	public static final int[] anIntArray260 = new int[2048];
 
 	@OriginalMember(owner = "client!n", name = "a", descriptor = "(Lclient!wm;IILclient!on;III[[[B[I[I[I[I[IIBIIZ)V")
 	public static void method3953(@OriginalArg(0) Class19 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class14 arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) byte[][][] arg7, @OriginalArg(8) int[] arg8, @OriginalArg(9) int[] arg9, @OriginalArg(10) int[] arg10, @OriginalArg(11) int[] arg11, @OriginalArg(12) int[] arg12, @OriginalArg(13) int arg13, @OriginalArg(14) byte arg14, @OriginalArg(15) int arg15, @OriginalArg(16) int arg16, @OriginalArg(17) boolean arg17) {

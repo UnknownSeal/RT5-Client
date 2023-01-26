@@ -6,16 +6,10 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static281 {
 
 	@OriginalMember(owner = "client!qf", name = "f", descriptor = "Lclient!wj;")
-	public static Class236 aClass236_1 = Static17.method4213();
+	public static final Class236 aClass236_1 = Static17.method4213();
 
 	@OriginalMember(owner = "client!qf", name = "qb", descriptor = "[Ljava/awt/Rectangle;")
-	public static Rectangle[] aRectangleArray2 = new Rectangle[100];
-
-	@OriginalMember(owner = "client!qf", name = "a", descriptor = "(B)V")
-	public static void method4768() {
-		aRectangleArray2 = null;
-		aClass236_1 = null;
-	}
+	public static final Rectangle[] aRectangleArray2 = new Rectangle[100];
 
 	@OriginalMember(owner = "client!qf", name = "b", descriptor = "(III)Z")
 	public static boolean method4784(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {

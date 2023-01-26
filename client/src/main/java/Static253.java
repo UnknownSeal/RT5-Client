@@ -11,7 +11,7 @@ public final class Static253 {
 	public static int anInt4693;
 
 	@OriginalMember(owner = "client!oj", name = "a", descriptor = "Lclient!mc;")
-	public static Class145 aClass145_166 = new Class145(42, -1);
+	public static final Class145 aClass145_166 = new Class145(42, -1);
 
 	@OriginalMember(owner = "client!oj", name = "f", descriptor = "Lclient!un;")
 	public static Applet_Sub1 anApplet_Sub1_1 = null;
@@ -85,11 +85,6 @@ public final class Static253 {
 		Static163.aClass15_1 = null;
 		Static51.aClass14_2 = null;
 		Static16.aClass19_10 = null;
-	}
-
-	@OriginalMember(owner = "client!oj", name = "a", descriptor = "(I)V")
-	public static void method4366() {
-		aClass145_166 = null;
 	}
 
 	@OriginalMember(owner = "client!oj", name = "a", descriptor = "(IIB)I")

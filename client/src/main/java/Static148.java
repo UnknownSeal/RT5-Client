@@ -12,10 +12,10 @@ public final class Static148 {
 	public static int anInt2719;
 
 	@OriginalMember(owner = "client!ij", name = "a", descriptor = "[I")
-	public static int[] anIntArray172 = new int[] { 0, -1, 0, 1 };
+	public static final int[] anIntArray172 = new int[] { 0, -1, 0, 1 };
 
 	@OriginalMember(owner = "client!ij", name = "c", descriptor = "Lclient!mc;")
-	public static Class145 aClass145_104 = new Class145(18, -1);
+	public static final Class145 aClass145_104 = new Class145(18, -1);
 
 	@OriginalMember(owner = "client!ij", name = "j", descriptor = "Z")
 	public static boolean aBoolean192 = false;
@@ -52,11 +52,5 @@ public final class Static148 {
 		} else {
 			return 7 - arg2;
 		}
-	}
-
-	@OriginalMember(owner = "client!ij", name = "a", descriptor = "(I)V")
-	public static void method2712() {
-		aClass145_104 = null;
-		anIntArray172 = null;
 	}
 }

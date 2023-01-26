@@ -11,7 +11,7 @@ public final class Static79 {
 	public static Class197 aClass197_19;
 
 	@OriginalMember(owner = "client!ej", name = "C", descriptor = "Lclient!h;")
-	public static Class89 aClass89_63 = new Class89(43, -1);
+	public static final Class89 aClass89_63 = new Class89(43, -1);
 
 	@OriginalMember(owner = "client!ej", name = "N", descriptor = "Z")
 	public static boolean aBoolean131 = true;
@@ -184,12 +184,5 @@ public final class Static79 {
 		Static190.aClass29_Sub1_63.method1105(arg3, arg1, arg7, arg2, local30, arg0, Static190.aClass19_8, Static171.aClass46Array1[arg0], arg6, arg5);
 		Static218.aClass177_Sub1_2.aBoolean359 = local76;
 		return;
-	}
-
-	@OriginalMember(owner = "client!ej", name = "d", descriptor = "(I)V")
-	public static void method1872() {
-		aClass197_19 = null;
-		aClass42_4 = null;
-		aClass89_63 = null;
 	}
 }

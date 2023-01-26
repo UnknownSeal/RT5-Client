@@ -8,10 +8,10 @@ public final class Static306 {
 	public static Class2_Sub26_Sub1[] aClass2_Sub26_Sub1Array2;
 
 	@OriginalMember(owner = "client!rp", name = "z", descriptor = "Lclient!hu;")
-	public static Class98 aClass98_49 = new Class98(4);
+	public static final Class98 aClass98_49 = new Class98(4);
 
 	@OriginalMember(owner = "client!rp", name = "G", descriptor = "[I")
-	public static int[] anIntArray387 = new int[] { 19, 55, 38, 155, 255, 110, 137, 205, 76 };
+	public static final int[] anIntArray387 = new int[] { 19, 55, 38, 155, 255, 110, 137, 205, 76 };
 
 	@OriginalMember(owner = "client!rp", name = "a", descriptor = "(BI)V")
 	public static void method5249(@OriginalArg(0) byte arg0) {
@@ -25,13 +25,6 @@ public final class Static306 {
 				}
 			}
 		}
-	}
-
-	@OriginalMember(owner = "client!rp", name = "d", descriptor = "(I)V")
-	public static void method5250() {
-		anIntArray387 = null;
-		aClass98_49 = null;
-		aClass2_Sub26_Sub1Array2 = null;
 	}
 
 	@OriginalMember(owner = "client!rp", name = "a", descriptor = "(ILclient!id;)Z")

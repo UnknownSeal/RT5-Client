@@ -7,7 +7,7 @@ public final class Static249 {
 	public static Class113 aClass113_8;
 
 	@OriginalMember(owner = "client!of", name = "u", descriptor = "Lclient!dn;")
-	public static Class50 aClass50_3 = new Class50("runescape", 0);
+	public static final Class50 aClass50_3 = new Class50("runescape", 0);
 
 	@OriginalMember(owner = "client!of", name = "a", descriptor = "(II)V")
 	public static void method4148(@OriginalArg(0) int arg0) {
@@ -25,11 +25,5 @@ public final class Static249 {
 		Static356.anInt6641 = arg0;
 		Static235.anInt3365 = 1;
 		Static384.aBoolean485 = false;
-	}
-
-	@OriginalMember(owner = "client!of", name = "b", descriptor = "(I)V")
-	public static void method4150() {
-		aClass50_3 = null;
-		aClass113_8 = null;
 	}
 }

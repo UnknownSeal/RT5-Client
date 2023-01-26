@@ -8,10 +8,10 @@ public final class Static231 {
 	public static int anInt4071;
 
 	@OriginalMember(owner = "client!nf", name = "j", descriptor = "[I")
-	public static int[] anIntArray265 = new int[1000];
+	public static final int[] anIntArray265 = new int[1000];
 
 	@OriginalMember(owner = "client!nf", name = "q", descriptor = "Lclient!kk;")
-	public static Class127 aClass127_7 = new Class127("LOCAL", 4);
+	public static final Class127 aClass127_7 = new Class127("LOCAL", 4);
 
 	@OriginalMember(owner = "client!nf", name = "t", descriptor = "Lclient!h;")
 	public static Class89 aClass89_164 = null;
@@ -20,7 +20,7 @@ public final class Static231 {
 	public static int anInt4079 = 999999;
 
 	@OriginalMember(owner = "client!nf", name = "w", descriptor = "[Lclient!bt;")
-	public static Class2_Sub4[] aClass2_Sub4Array1 = new Class2_Sub4[2048];
+	public static final Class2_Sub4[] aClass2_Sub4Array1 = new Class2_Sub4[2048];
 
 	@OriginalMember(owner = "client!nf", name = "a", descriptor = "(IIBI)V")
 	public static void method4021(@OriginalArg(1) int arg0, @OriginalArg(3) int arg1) {
@@ -56,13 +56,5 @@ public final class Static231 {
 		@Pc(25) int local25 = (local7 * (arg1 & 0xFF00FF) & 0xFF00FF00 | (arg1 & 0xFF00) * local7 & 0xFF0000) >>> 8;
 		@Pc(30) int local30 = 255 - local7;
 		return (((arg0 & 0xFF00FF) * local30 & 0xFF00FF00 | local30 * (arg0 & 0xFF00) & 0xFF0000) >>> 8) + local25;
-	}
-
-	@OriginalMember(owner = "client!nf", name = "b", descriptor = "(I)V")
-	public static void method4025() {
-		aClass2_Sub4Array1 = null;
-		aClass127_7 = null;
-		anIntArray265 = null;
-		aClass89_164 = null;
 	}
 }

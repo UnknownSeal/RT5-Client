@@ -11,22 +11,14 @@ public final class Static333 {
 	public static String[] aStringArray67;
 
 	@OriginalMember(owner = "client!tg", name = "m", descriptor = "Lclient!hu;")
-	public static Class98 aClass98_65 = new Class98(20);
+	public static final Class98 aClass98_65 = new Class98(20);
 
 	@OriginalMember(owner = "client!tg", name = "I", descriptor = "Lclient!s;")
-	public static Class210 aClass210_17 = new Class210(10, 6);
+	public static final Class210 aClass210_17 = new Class210(10, 6);
 
 	@OriginalMember(owner = "client!tg", name = "a", descriptor = "(B)Z")
 	public static boolean method6317() {
 		return Static14.aBoolean24;
-	}
-
-	@OriginalMember(owner = "client!tg", name = "c", descriptor = "(I)V")
-	public static void method6318() {
-		aClass13_21 = null;
-		aStringArray67 = null;
-		aClass210_17 = null;
-		aClass98_65 = null;
 	}
 
 	@OriginalMember(owner = "client!tg", name = "f", descriptor = "(I)I")

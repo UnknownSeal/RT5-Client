@@ -6,7 +6,7 @@ public final class Static114 {
 	public static int anInt2344 = 0;
 
 	@OriginalMember(owner = "client!gm", name = "b", descriptor = "[I")
-	public static int[] anIntArray148 = new int[200];
+	public static final int[] anIntArray148 = new int[200];
 
 	@OriginalMember(owner = "client!gm", name = "d", descriptor = "I")
 	public static int anInt2346 = -60;
@@ -15,13 +15,7 @@ public final class Static114 {
 	public static int anInt2348 = 0;
 
 	@OriginalMember(owner = "client!gm", name = "g", descriptor = "[Lclient!nb;")
-	public static Class157[] aClass157Array14 = new Class157[14];
-
-	@OriginalMember(owner = "client!gm", name = "a", descriptor = "(I)V")
-	public static void method2361() {
-		aClass157Array14 = null;
-		anIntArray148 = null;
-	}
+	public static final Class157[] aClass157Array14 = new Class157[14];
 
 	@OriginalMember(owner = "client!gm", name = "a", descriptor = "(B)V")
 	public static void method2362() {

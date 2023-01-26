@@ -13,11 +13,6 @@ public final class Static155 {
 	@OriginalMember(owner = "client!it", name = "a", descriptor = "I")
 	public static int anInt2808 = 0;
 
-	@OriginalMember(owner = "client!it", name = "a", descriptor = "(I)V")
-	public static void method2786() {
-		aClass2_Sub34_1 = null;
-	}
-
 	@OriginalMember(owner = "client!it", name = "a", descriptor = "(BZLjava/lang/Object;)[B")
 	public static byte[] method2787(@OriginalArg(1) boolean arg0, @OriginalArg(2) Object arg1) {
 		if (arg1 == null) {

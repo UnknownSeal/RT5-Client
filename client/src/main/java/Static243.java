@@ -11,22 +11,16 @@ public final class Static243 {
 	public static int anInt4502;
 
 	@OriginalMember(owner = "client!nt", name = "B", descriptor = "[Ljava/lang/String;")
-	public static String[] aStringArray44 = new String[8];
+	public static final String[] aStringArray44 = new String[8];
 
 	@OriginalMember(owner = "client!nt", name = "F", descriptor = "I")
 	public static final int anInt4496 = 1339;
 
 	@OriginalMember(owner = "client!nt", name = "P", descriptor = "Lclient!mc;")
-	public static Class145 aClass145_162 = new Class145(76, -1);
+	public static final Class145 aClass145_162 = new Class145(76, -1);
 
 	@OriginalMember(owner = "client!nt", name = "Q", descriptor = "I")
 	public static int anInt4503 = 0;
-
-	@OriginalMember(owner = "client!nt", name = "b", descriptor = "(I)V")
-	public static void method4235() {
-		aClass145_162 = null;
-		aStringArray44 = null;
-	}
 
 	@OriginalMember(owner = "client!nt", name = "a", descriptor = "(IZII)I")
 	public static int method4237(@OriginalArg(0) int arg0, @OriginalArg(1) boolean arg1, @OriginalArg(3) int arg2) {

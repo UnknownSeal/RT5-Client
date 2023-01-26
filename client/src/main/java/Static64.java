@@ -15,11 +15,6 @@ public final class Static64 {
 		return Static235.anInt3365 == 0 ? Static91.aClass2_Sub12_Sub3_1.method4269() : true;
 	}
 
-	@OriginalMember(owner = "client!dp", name = "b", descriptor = "(I)V")
-	public static void method1705() {
-		aClass161_2 = null;
-	}
-
 	@OriginalMember(owner = "client!dp", name = "a", descriptor = "(ILclient!r;Lclient!r;)I")
 	public static int method1707(@OriginalArg(1) Class197 arg0, @OriginalArg(2) Class197 arg1) {
 		@Pc(5) int local5 = 0;

@@ -8,7 +8,7 @@ public final class Static341 {
 	public static int anInt6376;
 
 	@OriginalMember(owner = "client!tq", name = "c", descriptor = "[I")
-	public static int[] anIntArray429 = new int[14];
+	public static final int[] anIntArray429 = new int[14];
 
 	@OriginalMember(owner = "client!tq", name = "a", descriptor = "(Z)V")
 	public static void method5766(@OriginalArg(0) boolean arg0) {
@@ -74,10 +74,5 @@ public final class Static341 {
 			}
 		}
 		return Long.toString(arg2);
-	}
-
-	@OriginalMember(owner = "client!tq", name = "a", descriptor = "(I)V")
-	public static void method5771() {
-		anIntArray429 = null;
 	}
 }

@@ -14,19 +14,13 @@ public final class Static256 {
 	public static final int anInt4720 = anInt4716;
 
 	@OriginalMember(owner = "client!om", name = "K", descriptor = "[I")
-	public static int[] anIntArray321 = new int[50];
+	public static final int[] anIntArray321 = new int[50];
 
 	@OriginalMember(owner = "client!om", name = "fb", descriptor = "Lclient!gd;")
-	public static Class79 aClass79_102 = new Class79("Loading - please wait.", "Ladevorgang - bitte warte.", "Chargement en cours. Veuillez patienter.", "Carregando. Aguarde.");
+	public static final Class79 aClass79_102 = new Class79("Loading - please wait.", "Ladevorgang - bitte warte.", "Chargement en cours. Veuillez patienter.", "Carregando. Aguarde.");
 
 	@OriginalMember(owner = "client!om", name = "nb", descriptor = "I")
 	public static final int anInt4744 = anInt4716 >> 2;
-
-	@OriginalMember(owner = "client!om", name = "a", descriptor = "(I)V")
-	public static void method4393() {
-		aClass79_102 = null;
-		anIntArray321 = null;
-	}
 
 	@OriginalMember(owner = "client!om", name = "a", descriptor = "(IJ)V")
 	public static void method4394(@OriginalArg(1) long arg0) {

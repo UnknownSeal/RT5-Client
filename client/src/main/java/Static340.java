@@ -5,10 +5,10 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static340 {
 
 	@OriginalMember(owner = "client!tp", name = "a", descriptor = "Lclient!gd;")
-	public static Class79 aClass79_133 = new Class79("Loaded world list data", "Liste der Welten geladen", "Liste des serveurs chargée", "Dados da lista de mundos carregados");
+	public static final Class79 aClass79_133 = new Class79("Loaded world list data", "Liste der Welten geladen", "Liste des serveurs chargée", "Dados da lista de mundos carregados");
 
 	@OriginalMember(owner = "client!tp", name = "k", descriptor = "Lclient!h;")
-	public static Class89 aClass89_227 = new Class89(101, 14);
+	public static final Class89 aClass89_227 = new Class89(101, 14);
 
 	@OriginalMember(owner = "client!tp", name = "a", descriptor = "(CB)C")
 	public static char method5761(@OriginalArg(0) char arg0) {
@@ -37,12 +37,6 @@ public final class Static340 {
 		} else {
 			return Character.toLowerCase(arg0);
 		}
-	}
-
-	@OriginalMember(owner = "client!tp", name = "a", descriptor = "(I)V")
-	public static void method5762() {
-		aClass89_227 = null;
-		aClass79_133 = null;
 	}
 
 	@OriginalMember(owner = "client!tp", name = "a", descriptor = "(BLclient!oe;)I")

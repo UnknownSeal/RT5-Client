@@ -8,13 +8,13 @@ public final class Static326 {
 	public static int anInt6236;
 
 	@OriginalMember(owner = "client!ss", name = "a", descriptor = "Lclient!mc;")
-	public static Class145 aClass145_228 = new Class145(71, 0);
+	public static final Class145 aClass145_228 = new Class145(71, 0);
 
 	@OriginalMember(owner = "client!ss", name = "e", descriptor = "I")
 	public static int anInt6235 = 0;
 
 	@OriginalMember(owner = "client!ss", name = "g", descriptor = "[Ljava/lang/String;")
-	public static String[] aStringArray58 = new String[] { "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" };
+	public static final String[] aStringArray58 = new String[] { "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" };
 
 	@OriginalMember(owner = "client!ss", name = "a", descriptor = "(IIIIII)V")
 	public static void method5681(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4) {
@@ -63,11 +63,5 @@ public final class Static326 {
 			Static101.method2163(local178, Static357.anIntArrayArray58[local170], arg3, local183);
 			Static101.method2163(local178, Static357.anIntArrayArray58[local174], arg3, local183);
 		}
-	}
-
-	@OriginalMember(owner = "client!ss", name = "a", descriptor = "(B)V")
-	public static void method5682() {
-		aClass145_228 = null;
-		aStringArray58 = null;
 	}
 }

@@ -5,16 +5,16 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static171 {
 
 	@OriginalMember(owner = "client!jt", name = "V", descriptor = "Lclient!mc;")
-	public static Class145 aClass145_127 = new Class145(38, 4);
+	public static final Class145 aClass145_127 = new Class145(38, 4);
 
 	@OriginalMember(owner = "client!jt", name = "X", descriptor = "[Lclient!dg;")
-	public static Class46[] aClass46Array1 = new Class46[4];
+	public static final Class46[] aClass46Array1 = new Class46[4];
 
 	@OriginalMember(owner = "client!jt", name = "db", descriptor = "I")
 	public static int anInt3268 = -1;
 
 	@OriginalMember(owner = "client!jt", name = "eb", descriptor = "Lclient!oj;")
-	public static Class170 aClass170_3 = new Class170(0);
+	public static final Class170 aClass170_3 = new Class170(0);
 
 	@OriginalMember(owner = "client!jt", name = "a", descriptor = "(IILjava/lang/String;)V")
 	public static void method3255(@OriginalArg(0) int arg0, @OriginalArg(2) String arg1) {
@@ -22,13 +22,6 @@ public final class Static171 {
 		Static257.aClass2_Sub4_Sub2_4.method4841(Static27.method872(arg1) + 1);
 		Static257.aClass2_Sub4_Sub2_4.method4826(arg0);
 		Static257.aClass2_Sub4_Sub2_4.method4821(arg1);
-	}
-
-	@OriginalMember(owner = "client!jt", name = "f", descriptor = "(I)V")
-	public static void method3256() {
-		aClass145_127 = null;
-		aClass170_3 = null;
-		aClass46Array1 = null;
 	}
 
 	@OriginalMember(owner = "client!jt", name = "a", descriptor = "(BIIZII)V")

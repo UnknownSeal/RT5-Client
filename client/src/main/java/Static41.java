@@ -20,13 +20,13 @@ public final class Static41 {
 	public static int anInt1048 = 0;
 
 	@OriginalMember(owner = "client!ch", name = "fb", descriptor = "[I")
-	public static int[] anIntArray85 = new int[32];
+	public static final int[] anIntArray85 = new int[32];
 
 	@OriginalMember(owner = "client!ch", name = "gb", descriptor = "[Lclient!nt;")
-	public static Class2_Sub2_Sub13[] aClass2_Sub2_Sub13Array2 = new Class2_Sub2_Sub13[14];
+	public static final Class2_Sub2_Sub13[] aClass2_Sub2_Sub13Array2 = new Class2_Sub2_Sub13[14];
 
 	@OriginalMember(owner = "client!ch", name = "ib", descriptor = "[I")
-	public static int[] anIntArray86 = new int[] { 1, 0, 0, 0, 1, 0, 2, 1, 1, 1, 0, 2, 0, 0, 1, 0 };
+	public static final int[] anIntArray86 = new int[] { 1, 0, 0, 0, 1, 0, 2, 1, 1, 1, 0, 2, 0, 0, 1, 0 };
 
 	@OriginalMember(owner = "client!ch", name = "a", descriptor = "(ZIII)I")
 	public static int method1305(@OriginalArg(0) boolean arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
@@ -38,12 +38,5 @@ public final class Static41 {
 		} else {
 			return -1;
 		}
-	}
-
-	@OriginalMember(owner = "client!ch", name = "f", descriptor = "(I)V")
-	public static void method1306() {
-		anIntArray86 = null;
-		anIntArray85 = null;
-		aClass2_Sub2_Sub13Array2 = null;
 	}
 }

@@ -11,24 +11,16 @@ public final class Static6 {
 	public static boolean[][] aBooleanArrayArray1;
 
 	@OriginalMember(owner = "client!ae", name = "O", descriptor = "[I")
-	public static int[] anIntArray4 = new int[13];
+	public static final int[] anIntArray4 = new int[13];
 
 	@OriginalMember(owner = "client!ae", name = "P", descriptor = "Lclient!h;")
-	public static Class89 aClass89_9 = new Class89(97, 7);
+	public static final Class89 aClass89_9 = new Class89(97, 7);
 
 	@OriginalMember(owner = "client!ae", name = "R", descriptor = "I")
 	public static int anInt158 = 0;
 
 	@OriginalMember(owner = "client!ae", name = "S", descriptor = "I")
 	public static int anInt159 = 0;
-
-	@OriginalMember(owner = "client!ae", name = "c", descriptor = "(Z)V")
-	public static void method139() {
-		aClass89_9 = null;
-		anIntArray4 = null;
-		aClass219_1 = null;
-		aBooleanArrayArray1 = null;
-	}
 
 	@OriginalMember(owner = "client!ae", name = "b", descriptor = "(BI)Lclient!nk;")
 	public static Class161 method140(@OriginalArg(1) int arg0) {

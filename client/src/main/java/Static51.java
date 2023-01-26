@@ -14,7 +14,7 @@ public final class Static51 {
 	public static long[][][] aLongArrayArrayArray1;
 
 	@OriginalMember(owner = "client!cu", name = "u", descriptor = "Lclient!gd;")
-	public static Class79 aClass79_28 = new Class79("red:", "rot:", "rouge:", "vermelho:");
+	public static final Class79 aClass79_28 = new Class79("red:", "rot:", "rouge:", "vermelho:");
 
 	@OriginalMember(owner = "client!cu", name = "w", descriptor = "I")
 	public static int anInt1369 = 0;
@@ -125,13 +125,5 @@ public final class Static51 {
 	@OriginalMember(owner = "client!cu", name = "a", descriptor = "(II)I")
 	public static int method1548(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
 		return Static314.aByteArrayArray17 == null ? 0 : Static314.aByteArrayArray17[arg0][arg1] & 0xFF;
-	}
-
-	@OriginalMember(owner = "client!cu", name = "b", descriptor = "(I)V")
-	public static void method1549() {
-		aClass79_28 = null;
-		aLongArrayArrayArray1 = null;
-		aClass14_2 = null;
-		anIntArray98 = null;
 	}
 }

@@ -64,11 +64,6 @@ public final class Static293 {
 		}
 	}
 
-	@OriginalMember(owner = "client!qs", name = "a", descriptor = "()V")
-	public static void method5038() {
-		anIntArray374 = null;
-	}
-
 	@OriginalMember(owner = "client!qs", name = "a", descriptor = "(I)V")
 	private static void method5039(@OriginalArg(0) int arg0) {
 		if (anInt5517 < 0) {

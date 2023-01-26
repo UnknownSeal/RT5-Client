@@ -10,7 +10,7 @@ public final class Static274 {
 	public static int[] anIntArray352;
 
 	@OriginalMember(owner = "client!pp", name = "w", descriptor = "Lclient!ld;")
-	public static Class135 aClass135_30 = new Class135();
+	public static final Class135 aClass135_30 = new Class135();
 
 	@OriginalMember(owner = "client!pp", name = "a", descriptor = "(ZLclient!nk;I)I")
 	public static int method4630(@OriginalArg(1) Class161 arg0, @OriginalArg(2) int arg1) {
@@ -21,13 +21,6 @@ public final class Static274 {
 		} else {
 			return arg0.anIntArray279[arg1];
 		}
-	}
-
-	@OriginalMember(owner = "client!pp", name = "b", descriptor = "(B)V")
-	public static void method4633() {
-		anIntArray352 = null;
-		aClass135_30 = null;
-		anInterface2_7 = null;
 	}
 
 	@OriginalMember(owner = "client!pp", name = "a", descriptor = "(ILclient!kk;)Z")

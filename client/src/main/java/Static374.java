@@ -9,16 +9,16 @@ public final class Static374 {
 	public static int[] anIntArray480;
 
 	@OriginalMember(owner = "client!vr", name = "d", descriptor = "Lclient!s;")
-	public static Class210 aClass210_16 = new Class210(9, 17);
+	public static final Class210 aClass210_16 = new Class210(9, 17);
 
 	@OriginalMember(owner = "client!vr", name = "e", descriptor = "[Lclient!bl;")
-	public static Class25_Sub1[] aClass25_Sub1Array2 = new Class25_Sub1[29];
+	public static final Class25_Sub1[] aClass25_Sub1Array2 = new Class25_Sub1[29];
 
 	@OriginalMember(owner = "client!vr", name = "j", descriptor = "Ljava/lang/String;")
 	public static String aString70 = "";
 
 	@OriginalMember(owner = "client!vr", name = "k", descriptor = "Lclient!mc;")
-	public static Class145 aClass145_255 = new Class145(66, 2);
+	public static final Class145 aClass145_255 = new Class145(66, 2);
 
 	@OriginalMember(owner = "client!vr", name = "a", descriptor = "(B)I")
 	public static int method6272() {
@@ -53,14 +53,5 @@ public final class Static374 {
 	public static Class2_Sub41 method6274(@OriginalArg(0) boolean arg0, @OriginalArg(2) int arg1) {
 		@Pc(12) long local12 = (long) ((arg0 ? Integer.MIN_VALUE : 0) | arg1);
 		return (Class2_Sub41) Static353.aClass4_136.method90(local12);
-	}
-
-	@OriginalMember(owner = "client!vr", name = "a", descriptor = "(I)V")
-	public static void method6275() {
-		aClass25_Sub1Array2 = null;
-		aString70 = null;
-		anIntArray480 = null;
-		aClass145_255 = null;
-		aClass210_16 = null;
 	}
 }

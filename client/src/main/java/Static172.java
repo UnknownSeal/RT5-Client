@@ -15,7 +15,7 @@ public final class Static172 {
 	public static int anInt3299;
 
 	@OriginalMember(owner = "client!ju", name = "S", descriptor = "[C")
-	public static char[] aCharArray2 = new char[] { '€', '\u0000', '‚', 'ƒ', '„', '…', '†', '‡', 'ˆ', '‰', 'Š', '‹', 'Œ', '\u0000', 'Ž', '\u0000', '\u0000', '‘', '’', '“', '”', '•', '–', '—', '˜', '™', 'š', '›', 'œ', '\u0000', 'ž', 'Ÿ' };
+	public static final char[] aCharArray2 = new char[] { '€', '\u0000', '‚', 'ƒ', '„', '…', '†', '‡', 'ˆ', '‰', 'Š', '‹', 'Œ', '\u0000', 'Ž', '\u0000', '\u0000', '‘', '’', '“', '”', '•', '–', '—', '˜', '™', 'š', '›', 'œ', '\u0000', 'ž', 'Ÿ' };
 
 	@OriginalMember(owner = "client!ju", name = "a", descriptor = "(BIIIII)V")
 	public static void method3283(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4) {
@@ -52,11 +52,6 @@ public final class Static172 {
 			local86 = (local86 << local22 & 0xF) + (local86 >> 4 - local22);
 		}
 		Static322.method5481(true, 0, arg0, local86, local72, arg2, local75, 0);
-	}
-
-	@OriginalMember(owner = "client!ju", name = "f", descriptor = "(I)V")
-	public static void method3286() {
-		aCharArray2 = null;
 	}
 
 	@OriginalMember(owner = "client!ju", name = "a", descriptor = "(ICI)I")

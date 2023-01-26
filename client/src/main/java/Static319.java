@@ -13,34 +13,34 @@ public final class Static319 {
 	public static final int anInt5977 = 50;
 
 	@OriginalMember(owner = "client!sk", name = "a", descriptor = "[I")
-	public static int[] anIntArray397 = new int[anInt5977];
+	public static final int[] anIntArray397 = new int[anInt5977];
 
 	@OriginalMember(owner = "client!sk", name = "e", descriptor = "[I")
-	public static int[] anIntArray398 = new int[anInt5977];
+	public static final int[] anIntArray398 = new int[anInt5977];
 
 	@OriginalMember(owner = "client!sk", name = "f", descriptor = "[I")
-	public static int[] anIntArray399 = new int[anInt5977];
+	public static final int[] anIntArray399 = new int[anInt5977];
 
 	@OriginalMember(owner = "client!sk", name = "h", descriptor = "[I")
-	public static int[] anIntArray400 = new int[anInt5977];
+	public static final int[] anIntArray400 = new int[anInt5977];
 
 	@OriginalMember(owner = "client!sk", name = "i", descriptor = "[Ljava/lang/String;")
-	public static String[] aStringArray54 = new String[200];
+	public static final String[] aStringArray54 = new String[200];
 
 	@OriginalMember(owner = "client!sk", name = "k", descriptor = "[Ljava/lang/String;")
-	public static String[] aStringArray55 = new String[anInt5977];
+	public static final String[] aStringArray55 = new String[anInt5977];
 
 	@OriginalMember(owner = "client!sk", name = "l", descriptor = "[I")
-	public static int[] anIntArray401 = new int[anInt5977];
+	public static final int[] anIntArray401 = new int[anInt5977];
 
 	@OriginalMember(owner = "client!sk", name = "s", descriptor = "[I")
-	public static int[] anIntArray402 = new int[anInt5977];
+	public static final int[] anIntArray402 = new int[anInt5977];
 
 	@OriginalMember(owner = "client!sk", name = "u", descriptor = "[I")
-	public static int[] anIntArray403 = new int[13];
+	public static final int[] anIntArray403 = new int[13];
 
 	@OriginalMember(owner = "client!sk", name = "v", descriptor = "Lclient!h;")
-	public static Class89 aClass89_211 = new Class89(32, -2);
+	public static final Class89 aClass89_211 = new Class89(32, -2);
 
 	@OriginalMember(owner = "client!sk", name = "a", descriptor = "(B)I")
 	public static int method5429() {
@@ -199,21 +199,6 @@ public final class Static319 {
 			throw new NumberFormatException();
 		}
 		return local30;
-	}
-
-	@OriginalMember(owner = "client!sk", name = "b", descriptor = "(B)V")
-	public static void method5433() {
-		anIntArray397 = null;
-		aStringArray54 = null;
-		anIntArray399 = null;
-		anIntArray398 = null;
-		aClass89_211 = null;
-		anIntArray402 = null;
-		anIntArray400 = null;
-		aStringArray55 = null;
-		anIntArrayArray51 = null;
-		anIntArray403 = null;
-		anIntArray401 = null;
 	}
 
 	@OriginalMember(owner = "client!sk", name = "c", descriptor = "(B)V")

@@ -14,10 +14,10 @@ public final class Static200 {
 	public static int anInt3698;
 
 	@OriginalMember(owner = "client!lo", name = "i", descriptor = "Lclient!h;")
-	public static Class89 aClass89_150 = new Class89(83, 7);
+	public static final Class89 aClass89_150 = new Class89(83, 7);
 
 	@OriginalMember(owner = "client!lo", name = "l", descriptor = "Lclient!s;")
-	public static Class210 aClass210_9 = new Class210(7, 4);
+	public static final Class210 aClass210_9 = new Class210(7, 4);
 
 	@OriginalMember(owner = "client!lo", name = "a", descriptor = "(ICLjava/lang/String;)[Ljava/lang/String;")
 	public static String[] method3642(@OriginalArg(1) char arg0, @OriginalArg(2) String arg1) {
@@ -75,13 +75,6 @@ public final class Static200 {
 			arg0 = arg0.substring(0, local9) + arg1 + arg0.substring(local9 + arg2.length());
 		}
 		return arg0;
-	}
-
-	@OriginalMember(owner = "client!lo", name = "b", descriptor = "(I)V")
-	public static void method3648() {
-		aClass210_9 = null;
-		aClass89_150 = null;
-		aClass130_3 = null;
 	}
 
 	@OriginalMember(owner = "client!lo", name = "a", descriptor = "(B)Ljava/lang/String;")

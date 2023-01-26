@@ -12,7 +12,7 @@ public final class Static137 {
 	public static Class197 aClass197_33;
 
 	@OriginalMember(owner = "client!hq", name = "x", descriptor = "Lclient!h;")
-	public static Class89 aClass89_106 = new Class89(14, 6);
+	public static final Class89 aClass89_106 = new Class89(14, 6);
 
 	@OriginalMember(owner = "client!hq", name = "b", descriptor = "(I)V")
 	public static void method2549() {
@@ -557,13 +557,6 @@ public final class Static137 {
 			}
 		}
 		local31.aClass135_34.method3539(arg2);
-	}
-
-	@OriginalMember(owner = "client!hq", name = "c", descriptor = "(I)V")
-	public static void method2551() {
-		aClass13Array13 = null;
-		aClass197_33 = null;
-		aClass89_106 = null;
 	}
 
 	@OriginalMember(owner = "client!hq", name = "a", descriptor = "(IZ)V")

@@ -11,13 +11,13 @@ public final class Static242 {
 	public static boolean aBoolean306;
 
 	@OriginalMember(owner = "client!nr", name = "d", descriptor = "Lclient!s;")
-	public static Class210 aClass210_10 = new Class210(5, 2);
+	public static final Class210 aClass210_10 = new Class210(5, 2);
 
 	@OriginalMember(owner = "client!nr", name = "e", descriptor = "I")
 	public static int anInt4449 = 104;
 
 	@OriginalMember(owner = "client!nr", name = "f", descriptor = "Lclient!mc;")
-	public static Class145 aClass145_159 = new Class145(44, 1);
+	public static final Class145 aClass145_159 = new Class145(44, 1);
 
 	@OriginalMember(owner = "client!nr", name = "h", descriptor = "I")
 	public static int anInt4450 = 0;
@@ -53,11 +53,5 @@ public final class Static242 {
 		local130.aClass11_Sub5_Sub2_1 = arg0;
 		local130.anInt4755 = local98 + 16;
 		Static356.aClass36_10.method1418(local130);
-	}
-
-	@OriginalMember(owner = "client!nr", name = "a", descriptor = "(I)V")
-	public static void method4195() {
-		aClass145_159 = null;
-		aClass210_10 = null;
 	}
 }

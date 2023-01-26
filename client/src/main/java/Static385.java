@@ -14,10 +14,10 @@ public final class Static385 {
 	public static Class197 aClass197_94;
 
 	@OriginalMember(owner = "client!wi", name = "x", descriptor = "Lclient!h;")
-	public static Class89 aClass89_255 = new Class89(71, 20);
+	public static final Class89 aClass89_255 = new Class89(71, 20);
 
 	@OriginalMember(owner = "client!wi", name = "A", descriptor = "[Lclient!nt;")
-	public static Class2_Sub2_Sub13[] aClass2_Sub2_Sub13Array4 = new Class2_Sub2_Sub13[14];
+	public static final Class2_Sub2_Sub13[] aClass2_Sub2_Sub13Array4 = new Class2_Sub2_Sub13[14];
 
 	@OriginalMember(owner = "client!wi", name = "b", descriptor = "(III)I")
 	public static int method6428(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
@@ -31,15 +31,6 @@ public final class Static385 {
 			Static352.aClass36_9.method1418(arg0);
 			Static285.anInt5374++;
 		}
-	}
-
-	@OriginalMember(owner = "client!wi", name = "b", descriptor = "(I)V")
-	public static void method6430() {
-		aClass197_94 = null;
-		aClass2_Sub16_2 = null;
-		aClass2_Sub12_Sub3_3 = null;
-		aClass89_255 = null;
-		aClass2_Sub2_Sub13Array4 = null;
 	}
 
 	@OriginalMember(owner = "client!wi", name = "a", descriptor = "(BI)V")

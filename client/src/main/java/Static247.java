@@ -4,16 +4,10 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class Static247 {
 
 	@OriginalMember(owner = "client!od", name = "bb", descriptor = "[[B")
-	public static byte[][] aByteArrayArray12 = new byte[50][];
+	public static final byte[][] aByteArrayArray12 = new byte[50][];
 
 	@OriginalMember(owner = "client!od", name = "Bb", descriptor = "Lclient!h;")
-	public static Class89 aClass89_174 = new Class89(96, 6);
-
-	@OriginalMember(owner = "client!od", name = "b", descriptor = "(Z)V")
-	public static void method4279() {
-		aClass89_174 = null;
-		aByteArrayArray12 = null;
-	}
+	public static final Class89 aClass89_174 = new Class89(96, 6);
 
 	@OriginalMember(owner = "client!od", name = "f", descriptor = "(I)V")
 	public static void method4298() {

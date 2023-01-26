@@ -7,27 +7,19 @@ public final class Static196 {
 	public static int anInt3318;
 
 	@OriginalMember(owner = "client!lh", name = "a", descriptor = "Lclient!mc;")
-	public static Class145 aClass145_131 = new Class145(52, 12);
+	public static final Class145 aClass145_131 = new Class145(52, 12);
 
 	@OriginalMember(owner = "client!lh", name = "d", descriptor = "[Lclient!wk;")
-	public static Class247[] aClass247Array2 = new Class247[50];
+	public static final Class247[] aClass247Array2 = new Class247[50];
 
 	@OriginalMember(owner = "client!lh", name = "e", descriptor = "Lclient!gd;")
-	public static Class79 aClass79_70 = new Class79("scroll:", "scrollen:", "déroulement:", "rolagem:");
+	public static final Class79 aClass79_70 = new Class79("scroll:", "scrollen:", "déroulement:", "rolagem:");
 
 	@OriginalMember(owner = "client!lh", name = "f", descriptor = "I")
 	public static int anInt3317 = -1;
 
 	@OriginalMember(owner = "client!lh", name = "g", descriptor = "[Z")
-	public static boolean[] aBooleanArray31 = new boolean[100];
-
-	@OriginalMember(owner = "client!lh", name = "b", descriptor = "(I)V")
-	public static void method3305() {
-		aClass79_70 = null;
-		aClass247Array2 = null;
-		aClass145_131 = null;
-		aBooleanArray31 = null;
-	}
+	public static final boolean[] aBooleanArray31 = new boolean[100];
 
 	@OriginalMember(owner = "client!lh", name = "e", descriptor = "(I)Z")
 	public static boolean method3309() {

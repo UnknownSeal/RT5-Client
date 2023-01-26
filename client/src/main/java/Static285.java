@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static285 {
 
 	@OriginalMember(owner = "client!qj", name = "d", descriptor = "Lclient!gd;")
-	public static Class79 aClass79_113 = new Class79("glow2:", "leuchten2:", "brillant2:", "brilho2:");
+	public static final Class79 aClass79_113 = new Class79("glow2:", "leuchten2:", "brillant2:", "brilho2:");
 
 	@OriginalMember(owner = "client!qj", name = "g", descriptor = "I")
 	public static final int anInt5368 = 52;
@@ -14,7 +14,7 @@ public final class Static285 {
 	public static int anInt5370 = 0;
 
 	@OriginalMember(owner = "client!qj", name = "m", descriptor = "Lclient!s;")
-	public static Class210 aClass210_12 = new Class210(12, 7);
+	public static final Class210 aClass210_12 = new Class210(12, 7);
 
 	@OriginalMember(owner = "client!qj", name = "o", descriptor = "I")
 	public static int anInt5374 = 0;
@@ -23,7 +23,7 @@ public final class Static285 {
 	public static int anInt5375 = 0;
 
 	@OriginalMember(owner = "client!qj", name = "q", descriptor = "[[I")
-	public static int[][] anIntArrayArray44 = new int[][] { { 2, 4, 6, 0 }, { 0, 2, 4, 6 }, { 0, 2, 4 }, { 4, 0, 2 }, { 2, 4, 0 }, { 0, 2, 4 }, { 6, 0, 1, 2, 4, 5 }, { 0, 4, 7, 6 }, { 4, 7, 6, 0 }, { 0, 8, 6, 2, 9, 4 }, { 2, 9, 4, 0, 8, 6 }, { 2, 11, 4, 6, 10, 0 }, { 2, 4, 6, 0 } };
+	public static final int[][] anIntArrayArray44 = new int[][] { { 2, 4, 6, 0 }, { 0, 2, 4, 6 }, { 0, 2, 4 }, { 4, 0, 2 }, { 2, 4, 0 }, { 0, 2, 4 }, { 6, 0, 1, 2, 4, 5 }, { 0, 4, 7, 6 }, { 4, 7, 6, 0 }, { 0, 8, 6, 2, 9, 4 }, { 2, 9, 4, 0, 8, 6 }, { 2, 11, 4, 6, 10, 0 }, { 2, 4, 6, 0 } };
 
 	@OriginalMember(owner = "client!qj", name = "a", descriptor = "(BLclient!nk;)V")
 	public static void method4885(@OriginalArg(1) Class161 arg0) {
@@ -55,13 +55,6 @@ public final class Static285 {
 				}
 			}
 		}
-	}
-
-	@OriginalMember(owner = "client!qj", name = "a", descriptor = "(I)V")
-	public static void method4888() {
-		anIntArrayArray44 = null;
-		aClass79_113 = null;
-		aClass210_12 = null;
 	}
 
 	@OriginalMember(owner = "client!qj", name = "a", descriptor = "(II)V")

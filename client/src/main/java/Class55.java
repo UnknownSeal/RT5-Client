@@ -8,7 +8,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Class55 {
 
 	@OriginalMember(owner = "client!e", name = "c", descriptor = "[Ljava/awt/Rectangle;")
-	public static Rectangle[] aRectangleArray1 = new Rectangle[100];
+	public static final Rectangle[] aRectangleArray1 = new Rectangle[100];
 
 	@OriginalMember(owner = "client!e", name = "h", descriptor = "Lclient!hu;")
 	private final Class98 aClass98_7 = new Class98(64);

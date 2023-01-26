@@ -13,7 +13,7 @@ public final class Static121 {
 	public static Class127 aClass127_4;
 
 	@OriginalMember(owner = "client!gu", name = "w", descriptor = "Lclient!gd;")
-	public static Class79 aClass79_53 = new Class79("Loaded core fonts", "Schriftarten geladen", "Polices chargées", "Fontes principais carregadas");
+	public static final Class79 aClass79_53 = new Class79("Loaded core fonts", "Schriftarten geladen", "Polices chargées", "Fontes principais carregadas");
 
 	@OriginalMember(owner = "client!gu", name = "a", descriptor = "(ZI)I")
 	public static int method2393(@OriginalArg(1) int arg0) {
@@ -23,14 +23,6 @@ public final class Static121 {
 	@OriginalMember(owner = "client!gu", name = "a", descriptor = "(IIIIIIIII)V")
 	public static void method2394(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5) {
 		Static324.method5540(arg3, arg2, arg0, 0, arg1, arg5, arg4);
-	}
-
-	@OriginalMember(owner = "client!gu", name = "a", descriptor = "(B)V")
-	public static void method2395() {
-		aClass79_53 = null;
-		anIntArray156 = null;
-		aClass127_4 = null;
-		anIntArray157 = null;
 	}
 
 	@OriginalMember(owner = "client!gu", name = "b", descriptor = "(I)V")

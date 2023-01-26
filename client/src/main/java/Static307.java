@@ -9,7 +9,7 @@ public final class Static307 {
 	public static String aString57;
 
 	@OriginalMember(owner = "client!rq", name = "l", descriptor = "Lclient!gd;")
-	public static Class79 aClass79_121 = new Class79("Loading wordpack - ", "Lade Wordpack - ", "Chargement du module texte - ", "Carregando pacote de palavras - ");
+	public static final Class79 aClass79_121 = new Class79("Loading wordpack - ", "Lade Wordpack - ", "Chargement du module texte - ", "Carregando pacote de palavras - ");
 
 	@OriginalMember(owner = "client!rq", name = "n", descriptor = "I")
 	public static int anInt5780 = 0;
@@ -71,11 +71,5 @@ public final class Static307 {
 	@OriginalMember(owner = "client!rq", name = "a", descriptor = "(Z)J")
 	public static long method5256() {
 		return Static316.aClass5_1.method4404();
-	}
-
-	@OriginalMember(owner = "client!rq", name = "a", descriptor = "(B)V")
-	public static void method5257() {
-		aString57 = null;
-		aClass79_121 = null;
 	}
 }

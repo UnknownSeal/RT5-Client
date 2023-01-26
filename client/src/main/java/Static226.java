@@ -14,10 +14,10 @@ public final class Static226 {
 	public static int anInt4016 = 0;
 
 	@OriginalMember(owner = "client!na", name = "X", descriptor = "Lclient!gd;")
-	public static Class79 aClass79_89 = new Class79("Loaded update list", "Update-Liste geladen.", "Liste des mises à jour chargée", "Lista de atualizações carregada");
+	public static final Class79 aClass79_89 = new Class79("Loaded update list", "Update-Liste geladen.", "Liste des mises à jour chargée", "Lista de atualizações carregada");
 
 	@OriginalMember(owner = "client!na", name = "Z", descriptor = "[Ljava/lang/String;")
-	public static String[] aStringArray35 = new String[100];
+	public static final String[] aStringArray35 = new String[100];
 
 	@OriginalMember(owner = "client!na", name = "f", descriptor = "(I)V")
 	public static void method3981() {
@@ -47,13 +47,5 @@ public final class Static226 {
 	@OriginalMember(owner = "client!na", name = "a", descriptor = "([Ljava/lang/Object;[II)V")
 	public static void method3983(@OriginalArg(0) Object[] arg0, @OriginalArg(1) int[] arg1) {
 		Static17.method4210(arg0, arg1, 0, arg1.length - 1);
-	}
-
-	@OriginalMember(owner = "client!na", name = "b", descriptor = "(B)V")
-	public static void method3984() {
-		aClass197_61 = null;
-		aClass119_1 = null;
-		aClass79_89 = null;
-		aStringArray35 = null;
 	}
 }

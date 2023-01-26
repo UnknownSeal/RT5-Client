@@ -5,13 +5,13 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static297 {
 
 	@OriginalMember(owner = "client!rb", name = "k", descriptor = "Lclient!hu;")
-	public static Class98 aClass98_44 = new Class98(8);
+	public static final Class98 aClass98_44 = new Class98(8);
 
 	@OriginalMember(owner = "client!rb", name = "n", descriptor = "Lclient!h;")
-	public static Class89 aClass89_200 = new Class89(66, 10);
+	public static final Class89 aClass89_200 = new Class89(66, 10);
 
 	@OriginalMember(owner = "client!rb", name = "o", descriptor = "[I")
-	public static int[] anIntArray383 = new int[] { 2, 1, 1, 1, 2, 2, 2, 1, 3, 3, 3, 2, 0, 4, 0 };
+	public static final int[] anIntArray383 = new int[] { 2, 1, 1, 1, 2, 2, 2, 1, 3, 3, 3, 2, 0, 4, 0 };
 
 	@OriginalMember(owner = "client!rb", name = "a", descriptor = "(IIIIIII)Lclient!rc;")
 	public static Class42 method5106(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5) {
@@ -24,13 +24,6 @@ public final class Static297 {
 		} else {
 			return local44;
 		}
-	}
-
-	@OriginalMember(owner = "client!rb", name = "a", descriptor = "(Z)V")
-	public static void method5109() {
-		aClass89_200 = null;
-		anIntArray383 = null;
-		aClass98_44 = null;
 	}
 
 	@OriginalMember(owner = "client!rb", name = "a", descriptor = "(II)Z")

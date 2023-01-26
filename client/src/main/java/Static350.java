@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static350 {
 
 	@OriginalMember(owner = "client!ue", name = "a", descriptor = "Lclient!gd;")
-	public static Class79 aClass79_135 = new Class79("K", "T", "K", "K");
+	public static final Class79 aClass79_135 = new Class79("K", "T", "K", "K");
 
 	@OriginalMember(owner = "client!ue", name = "a", descriptor = "(I)V")
 	public static void method5836() {
@@ -19,11 +19,6 @@ public final class Static350 {
 		} else {
 			Static296.aFloat68 += (12.0F - Static296.aFloat68) / 2.0F;
 		}
-	}
-
-	@OriginalMember(owner = "client!ue", name = "a", descriptor = "(B)V")
-	public static void method5837() {
-		aClass79_135 = null;
 	}
 
 	@OriginalMember(owner = "client!ue", name = "a", descriptor = "(BILjava/lang/String;[BII)I")

@@ -17,10 +17,10 @@ public final class Static211 {
 	public static int anInt3780;
 
 	@OriginalMember(owner = "client!mh", name = "b", descriptor = "[[B")
-	public static byte[][] aByteArrayArray8 = new byte[250][];
+	public static final byte[][] aByteArrayArray8 = new byte[250][];
 
 	@OriginalMember(owner = "client!mh", name = "e", descriptor = "[I")
-	public static int[] anIntArray230 = new int[1024];
+	public static final int[] anIntArray230 = new int[1024];
 
 	@OriginalMember(owner = "client!mh", name = "a", descriptor = "(I)V")
 	public static void method3720() {
@@ -112,14 +112,6 @@ public final class Static211 {
 			Static344.aFloat73 = 16.0F;
 		}
 		Static77.anInt1763 = -1;
-	}
-
-	@OriginalMember(owner = "client!mh", name = "a", descriptor = "(B)V")
-	public static void method3722() {
-		anIntArray230 = null;
-		aByteArrayArray8 = null;
-		aClass13_13 = null;
-		aClass32_8 = null;
 	}
 
 	@OriginalMember(owner = "client!mh", name = "a", descriptor = "(Lclient!ct;IILclient!nh;Lclient!oe;BII)V")

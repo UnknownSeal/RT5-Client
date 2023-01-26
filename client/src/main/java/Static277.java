@@ -11,21 +11,13 @@ public final class Static277 {
 	public static int anInt5115;
 
 	@OriginalMember(owner = "client!q", name = "h", descriptor = "Lclient!ld;")
-	public static Class135 aClass135_31 = new Class135();
+	public static final Class135 aClass135_31 = new Class135();
 
 	@OriginalMember(owner = "client!q", name = "o", descriptor = "[I")
-	public static int[] anIntArray361 = new int[250];
+	public static final int[] anIntArray361 = new int[250];
 
 	@OriginalMember(owner = "client!q", name = "q", descriptor = "F")
 	public static float aFloat67 = 0.0F;
-
-	@OriginalMember(owner = "client!q", name = "a", descriptor = "(B)V")
-	public static void method4677() {
-		Class187.anIntArray360 = null;
-		anIntArray361 = null;
-		aClass135_31 = null;
-		anIntArrayArray43 = null;
-	}
 
 	@OriginalMember(owner = "client!q", name = "a", descriptor = "(IIIIB)V")
 	public static void method4679(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {

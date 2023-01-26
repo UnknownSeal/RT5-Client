@@ -8,10 +8,10 @@ public final class Static120 {
 	public static Class197 aClass197_28;
 
 	@OriginalMember(owner = "client!gs", name = "d", descriptor = "Lclient!gd;")
-	public static Class79 aClass79_50 = new Class79(" from your friend list first.", " zuerst von deiner Freunde-Liste!", " de votre liste d'amis.", " da sua lista de amigos primeiro.");
+	public static final Class79 aClass79_50 = new Class79(" from your friend list first.", " zuerst von deiner Freunde-Liste!", " de votre liste d'amis.", " da sua lista de amigos primeiro.");
 
 	@OriginalMember(owner = "client!gs", name = "g", descriptor = "Lclient!h;")
-	public static Class89 aClass89_95 = new Class89(12, 3);
+	public static final Class89 aClass89_95 = new Class89(12, 3);
 
 	@OriginalMember(owner = "client!gs", name = "h", descriptor = "Lclient!ad;")
 	public static Class4 aClass4_49 = new Class4(64);
@@ -85,14 +85,6 @@ public final class Static120 {
 			Static368.aClass43_1 = Static9.aClass213_1.method5423(local16[0], local16[1], local16[2], Static278.aClass160_1, local16[3]);
 			Static72.anInt1683 = local16[4];
 		}
-	}
-
-	@OriginalMember(owner = "client!gs", name = "a", descriptor = "(Z)V")
-	public static void method2382() {
-		aClass197_28 = null;
-		aClass89_95 = null;
-		aClass4_49 = null;
-		aClass79_50 = null;
 	}
 
 	@OriginalMember(owner = "client!gs", name = "a", descriptor = "(IBI)V")

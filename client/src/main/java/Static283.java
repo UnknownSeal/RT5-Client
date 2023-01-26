@@ -18,7 +18,7 @@ public final class Static283 {
 	public static Class197 aClass197_68;
 
 	@OriginalMember(owner = "client!qh", name = "e", descriptor = "[[Z")
-	public static boolean[][] aBooleanArrayArray3 = new boolean[][] { new boolean[4], new boolean[4], { false, false, true, false }, { false, false, true, false }, { false, false, true, false }, { false, false, true, false }, { true, false, true, false }, { true, false, false, true }, { true, false, false, true }, new boolean[4], new boolean[4], new boolean[4], new boolean[4] };
+	public static final boolean[][] aBooleanArrayArray3 = new boolean[][] { new boolean[4], new boolean[4], { false, false, true, false }, { false, false, true, false }, { false, false, true, false }, { false, false, true, false }, { true, false, true, false }, { true, false, false, true }, { true, false, false, true }, new boolean[4], new boolean[4], new boolean[4], new boolean[4] };
 
 	@OriginalMember(owner = "client!qh", name = "a", descriptor = "(IIB)V")
 	public static void method4874(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
@@ -39,11 +39,5 @@ public final class Static283 {
 		if (arg1 != null) {
 			arg0.anEventQueue1.postEvent(new ActionEvent(arg1, 1001, "dummy"));
 		}
-	}
-
-	@OriginalMember(owner = "client!qh", name = "a", descriptor = "(Z)V")
-	public static void method4876() {
-		aBooleanArrayArray3 = null;
-		aClass197_68 = null;
 	}
 }

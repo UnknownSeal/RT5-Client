@@ -8,7 +8,7 @@ public final class Static308 {
 	public static Class197 aClass197_80;
 
 	@OriginalMember(owner = "client!rr", name = "w", descriptor = "Lclient!hi;")
-	public static Class93 aClass93_1 = Static172.method3290();
+	public static final Class93 aClass93_1 = Static172.method3290();
 
 	@OriginalMember(owner = "client!rr", name = "a", descriptor = "(IIZIIB)V")
 	public static void method5272(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) boolean arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
@@ -96,12 +96,6 @@ public final class Static308 {
 				local10.method6467();
 			}
 		}
-	}
-
-	@OriginalMember(owner = "client!rr", name = "c", descriptor = "(I)V")
-	public static void method5274() {
-		aClass93_1 = null;
-		aClass197_80 = null;
 	}
 
 	@OriginalMember(owner = "client!rr", name = "a", descriptor = "(Lclient!bt;I)Ljava/lang/String;")

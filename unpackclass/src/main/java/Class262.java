@@ -291,7 +291,8 @@ public abstract class Class262 {
 			try {
 				local124 = method6605(local100);
 			} catch (@Pc(126) RuntimeException local126) {
-				throw RuntimeException_Sub3.method6607(local126, "T3 - " + (arg1 != null) + "," + arg0 + "," + local100.length + "," + Class264_Sub1.method6578(local100, local100.length) + "," + Class264_Sub1.method6578(local100, local100.length - 2) + "," + this.anIntArray545[arg0] + "," + this.anInt7310);
+				System.out.println("T3 - " + (arg1 != null) + "," + arg0 + "," + local100.length + "," + Class264_Sub1.method6578(local100, local100.length) + "," + Class264_Sub1.method6578(local100, local100.length - 2) + "," + this.anIntArray545[arg0] + "," + this.anInt7310);
+				local124 = new byte[] { 0 };
 			}
 			if (this.aBoolean499) {
 				this.anObjectArray37[arg0] = null;

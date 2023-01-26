@@ -11,10 +11,10 @@ public final class Static287 {
 	public static Class183 aClass183_3;
 
 	@OriginalMember(owner = "client!ql", name = "k", descriptor = "[Ljava/lang/String;")
-	public static String[] aStringArray52 = new String[5];
+	public static final String[] aStringArray52 = new String[5];
 
 	@OriginalMember(owner = "client!ql", name = "t", descriptor = "[I")
-	public static int[] anIntArray369 = new int[] { 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99 };
+	public static final int[] anIntArray369 = new int[] { 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99 };
 
 	@OriginalMember(owner = "client!ql", name = "a", descriptor = "(BI)I")
 	public static int method4928(@OriginalArg(1) int arg0) {
@@ -52,14 +52,6 @@ public final class Static287 {
 			arg1 = 4;
 		}
 		return local15.method1521(arg1);
-	}
-
-	@OriginalMember(owner = "client!ql", name = "a", descriptor = "(I)V")
-	public static void method4936() {
-		anIntArray369 = null;
-		aClass183_3 = null;
-		aClass233_1 = null;
-		aStringArray52 = null;
 	}
 
 	@OriginalMember(owner = "client!ql", name = "a", descriptor = "(Lclient!nk;IIB)V")

@@ -6,16 +6,16 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static296 {
 
 	@OriginalMember(owner = "client!ra", name = "j", descriptor = "Lclient!h;")
-	public static Class89 aClass89_199 = new Class89(98, -2);
+	public static final Class89 aClass89_199 = new Class89(98, -2);
 
 	@OriginalMember(owner = "client!ra", name = "r", descriptor = "F")
 	public static float aFloat68 = 0.0F;
 
 	@OriginalMember(owner = "client!ra", name = "s", descriptor = "[I")
-	public static int[] anIntArray381 = new int[14];
+	public static final int[] anIntArray381 = new int[14];
 
 	@OriginalMember(owner = "client!ra", name = "u", descriptor = "Lclient!ad;")
-	public static Class4 aClass4_109 = new Class4(16);
+	public static final Class4 aClass4_109 = new Class4(16);
 
 	@OriginalMember(owner = "client!ra", name = "a", descriptor = "(Lclient!hc;IIIII)V")
 	public static void method5102(@OriginalArg(0) Class90 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5) {
@@ -65,12 +65,5 @@ public final class Static296 {
 		if (Static337.aClass131_1 != null) {
 			Static337.aClass131_1.method3691(Static21.aCanvas1);
 		}
-	}
-
-	@OriginalMember(owner = "client!ra", name = "b", descriptor = "(I)V")
-	public static void method5105() {
-		aClass4_109 = null;
-		anIntArray381 = null;
-		aClass89_199 = null;
 	}
 }

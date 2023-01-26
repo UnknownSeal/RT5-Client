@@ -8,10 +8,10 @@ import org.openrs2.deob.annotation.Pc;
 public final class Class178 {
 
 	@OriginalMember(owner = "client!ph", name = "t", descriptor = "[I")
-	public static int[] anIntArray344 = new int[32768];
+	private static final int[] anIntArray344 = new int[32768];
 
 	@OriginalMember(owner = "client!ph", name = "p", descriptor = "[I")
-	public static int[] anIntArray342;
+	private static final int[] anIntArray342;
 
 	@OriginalMember(owner = "client!ph", name = "a", descriptor = "Lclient!uf;")
 	private Class232 aClass232_1;

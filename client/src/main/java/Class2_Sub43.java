@@ -7,7 +7,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Class2_Sub43 extends Class2 {
 
 	@OriginalMember(owner = "client!wh", name = "A", descriptor = "[Lclient!cm;")
-	public static Class36[] aClass36Array1 = new Class36[5];
+	public static final Class36[] aClass36Array1 = new Class36[5];
 
 	@OriginalMember(owner = "client!wh", name = "x", descriptor = "I")
 	public final int anInt7177;

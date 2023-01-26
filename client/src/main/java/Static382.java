@@ -12,25 +12,25 @@ public final class Static382 {
 	public static int anInt7141;
 
 	@OriginalMember(owner = "client!we", name = "y", descriptor = "[I")
-	public static int[] anIntArray490 = new int[13];
+	public static final int[] anIntArray490 = new int[13];
 
 	@OriginalMember(owner = "client!we", name = "C", descriptor = "Lclient!gd;")
-	public static Class79 aClass79_147 = new Class79("Face here", "Hierhin drehen", "Regarder dans cette direction", "Virar para cá");
+	public static final Class79 aClass79_147 = new Class79("Face here", "Hierhin drehen", "Regarder dans cette direction", "Virar para cá");
 
 	@OriginalMember(owner = "client!we", name = "D", descriptor = "Lclient!mc;")
-	public static Class145 aClass145_258 = new Class145(49, -1);
+	public static final Class145 aClass145_258 = new Class145(49, -1);
 
 	@OriginalMember(owner = "client!we", name = "F", descriptor = "Lclient!mc;")
-	public static Class145 aClass145_259 = new Class145(50, 3);
+	public static final Class145 aClass145_259 = new Class145(50, 3);
 
 	@OriginalMember(owner = "client!we", name = "G", descriptor = "Lclient!mc;")
-	public static Class145 aClass145_260 = new Class145(47, 7);
+	public static final Class145 aClass145_260 = new Class145(47, 7);
 
 	@OriginalMember(owner = "client!we", name = "H", descriptor = "Lclient!mc;")
-	public static Class145 aClass145_261 = new Class145(1, -1);
+	public static final Class145 aClass145_261 = new Class145(1, -1);
 
 	@OriginalMember(owner = "client!we", name = "J", descriptor = "Lclient!mc;")
-	public static Class145 aClass145_262 = new Class145(79, 7);
+	public static final Class145 aClass145_262 = new Class145(79, 7);
 
 	@OriginalMember(owner = "client!we", name = "a", descriptor = "(IILjava/util/Random;)I")
 	public static int method6360(@OriginalArg(1) int arg0, @OriginalArg(2) Random arg1) {
@@ -96,17 +96,6 @@ public final class Static382 {
 			Static392.method6459(Static139.anInt2595, 1);
 		}
 		return local7;
-	}
-
-	@OriginalMember(owner = "client!we", name = "b", descriptor = "(B)V")
-	public static void method6365() {
-		anIntArray490 = null;
-		aClass145_262 = null;
-		aClass145_261 = null;
-		aClass145_260 = null;
-		aClass79_147 = null;
-		aClass145_259 = null;
-		aClass145_258 = null;
 	}
 
 	@OriginalMember(owner = "client!we", name = "a", descriptor = "(IIII)I")

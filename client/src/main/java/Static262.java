@@ -7,10 +7,10 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static262 {
 
 	@OriginalMember(owner = "client!pa", name = "a", descriptor = "Lclient!mc;")
-	public static Class145 aClass145_251 = new Class145(72, 7);
+	public static final Class145 aClass145_251 = new Class145(72, 7);
 
 	@OriginalMember(owner = "client!pa", name = "f", descriptor = "Lclient!gd;")
-	public static Class79 aClass79_145 = new Class79("Continue", "Weiter", "Continuer", "Continuar");
+	public static final Class79 aClass79_145 = new Class79("Continue", "Weiter", "Continuer", "Continuar");
 
 	@OriginalMember(owner = "client!pa", name = "i", descriptor = "I")
 	public static int anInt6999 = 2;
@@ -140,11 +140,5 @@ public final class Static262 {
 			Static62.anIntArray155[local97] = -1;
 		}
 		Static373.method6266(true, local18, false, local27);
-	}
-
-	@OriginalMember(owner = "client!pa", name = "a", descriptor = "(I)V")
-	public static void method6254() {
-		aClass79_145 = null;
-		aClass145_251 = null;
 	}
 }

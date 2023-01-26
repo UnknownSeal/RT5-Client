@@ -8,19 +8,13 @@ public final class Static252 {
 	public static Class13 aClass13_14;
 
 	@OriginalMember(owner = "client!oi", name = "h", descriptor = "Lclient!gd;")
-	public static Class79 aClass79_100 = new Class79("Starting 3d Library", "Starte 3D-Softwarebibliothek.", "Démarrage de la librairie 3D", "Iniciando biblioteca 3D");
+	public static final Class79 aClass79_100 = new Class79("Starting 3d Library", "Starte 3D-Softwarebibliothek.", "Démarrage de la librairie 3D", "Iniciando biblioteca 3D");
 
 	@OriginalMember(owner = "client!oi", name = "a", descriptor = "(B)V")
 	public static void method4362() {
 		Static296.aClass4_109.method81();
 		Static208.aClass246_4.method6341();
 		Static368.aClass246_10.method6341();
-	}
-
-	@OriginalMember(owner = "client!oi", name = "a", descriptor = "(I)V")
-	public static void method4363() {
-		aClass13_14 = null;
-		aClass79_100 = null;
 	}
 
 	@OriginalMember(owner = "client!oi", name = "a", descriptor = "(ZII)V")

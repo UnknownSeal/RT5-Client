@@ -8,7 +8,7 @@ public final class Static383 {
 	public static int anInt7153 = 0;
 
 	@OriginalMember(owner = "client!wf", name = "D", descriptor = "Lclient!bc;")
-	public static Class16 aClass16_9 = new Class16("", 15);
+	public static final Class16 aClass16_9 = new Class16("", 15);
 
 	@OriginalMember(owner = "client!wf", name = "a", descriptor = "(Ljava/lang/String;I)V")
 	public static void method6378(@OriginalArg(0) String arg0) {
@@ -52,10 +52,5 @@ public final class Static383 {
 			Static101.method2163(local105, local113, arg6, local96);
 			Static101.method2163(local29, local113, arg1, local105);
 		}
-	}
-
-	@OriginalMember(owner = "client!wf", name = "b", descriptor = "(I)V")
-	public static void method6380() {
-		aClass16_9 = null;
 	}
 }

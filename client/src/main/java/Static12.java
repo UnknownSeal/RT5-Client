@@ -14,13 +14,13 @@ public final class Static12 {
 	public static int[] anIntArray15;
 
 	@OriginalMember(owner = "client!am", name = "a", descriptor = "[Lclient!nh;")
-	public static Class11_Sub5_Sub2_Sub1[] aClass11_Sub5_Sub2_Sub1Array1 = new Class11_Sub5_Sub2_Sub1[2048];
+	public static final Class11_Sub5_Sub2_Sub1[] aClass11_Sub5_Sub2_Sub1Array1 = new Class11_Sub5_Sub2_Sub1[2048];
 
 	@OriginalMember(owner = "client!am", name = "c", descriptor = "Lclient!oj;")
-	public static Class170 aClass170_1 = new Class170(2);
+	public static final Class170 aClass170_1 = new Class170(2);
 
 	@OriginalMember(owner = "client!am", name = "g", descriptor = "[C")
-	public static char[] aCharArray1 = new char[] { '[', ']', '#' };
+	public static final char[] aCharArray1 = new char[] { '[', ']', '#' };
 
 	@OriginalMember(owner = "client!am", name = "h", descriptor = "I")
 	public static int anInt269 = 0;
@@ -109,15 +109,6 @@ public final class Static12 {
 				Static198.method3595(Static3.aClass16_1, local170.aClass2_Sub20_1.anInt2947, local179.anInt4424);
 			}
 		}
-	}
-
-	@OriginalMember(owner = "client!am", name = "a", descriptor = "(B)V")
-	public static void method281() {
-		anIntArray15 = null;
-		aClass11_Sub5_Sub2_Sub1Array1 = null;
-		aClass170_1 = null;
-		aClass13_2 = null;
-		aCharArray1 = null;
 	}
 
 	@OriginalMember(owner = "client!am", name = "a", descriptor = "(I)V")

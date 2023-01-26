@@ -5,13 +5,13 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static146 {
 
 	@OriginalMember(owner = "client!ih", name = "b", descriptor = "Lclient!gd;")
-	public static Class79 aClass79_63 = new Class79("Allocated memory", "Zugewiesener Speicher.", "Mémoire attribuée", "Memória alocada");
+	public static final Class79 aClass79_63 = new Class79("Allocated memory", "Zugewiesener Speicher.", "Mémoire attribuée", "Memória alocada");
 
 	@OriginalMember(owner = "client!ih", name = "f", descriptor = "I")
 	public static int anInt2703 = 0;
 
 	@OriginalMember(owner = "client!ih", name = "g", descriptor = "Lclient!h;")
-	public static Class89 aClass89_113 = new Class89(85, -2);
+	public static final Class89 aClass89_113 = new Class89(85, -2);
 
 	@OriginalMember(owner = "client!ih", name = "i", descriptor = "I")
 	public static int anInt2705 = 2;
@@ -56,11 +56,5 @@ public final class Static146 {
 		}
 		Static388.aClass116_8.method3154(local10, (long) arg0);
 		return local10;
-	}
-
-	@OriginalMember(owner = "client!ih", name = "a", descriptor = "(B)V")
-	public static void method2700() {
-		aClass79_63 = null;
-		aClass89_113 = null;
 	}
 }

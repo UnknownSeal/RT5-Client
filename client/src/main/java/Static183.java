@@ -12,13 +12,13 @@ public final class Static183 {
 	public static int anInt80;
 
 	@OriginalMember(owner = "client!kl", name = "a", descriptor = "Lclient!h;")
-	public static Class89 aClass89_6 = new Class89(1, 6);
+	public static final Class89 aClass89_6 = new Class89(1, 6);
 
 	@OriginalMember(owner = "client!kl", name = "k", descriptor = "[I")
-	public static int[] anIntArray2 = new int[1000];
+	public static final int[] anIntArray2 = new int[1000];
 
 	@OriginalMember(owner = "client!kl", name = "l", descriptor = "Lclient!mc;")
-	public static Class145 aClass145_7 = new Class145(69, 3);
+	public static final Class145 aClass145_7 = new Class145(69, 3);
 
 	@OriginalMember(owner = "client!kl", name = "o", descriptor = "Z")
 	public static boolean aBoolean8 = false;
@@ -36,14 +36,5 @@ public final class Static183 {
 		} else {
 			Static373.method6266(false, Static105.anInt2187, false, Static9.anInt212);
 		}
-	}
-
-	@OriginalMember(owner = "client!kl", name = "c", descriptor = "(I)V")
-	public static void method70() {
-		aClass89_6 = null;
-		aClass58Array2 = null;
-		aClass145_7 = null;
-		anIntArray2 = null;
-		aClass193_2 = null;
 	}
 }

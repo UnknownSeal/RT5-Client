@@ -13,7 +13,7 @@ public final class Static313 {
 	public static int[] anIntArray388;
 
 	@OriginalMember(owner = "client!sb", name = "S", descriptor = "Lclient!mc;")
-	public static Class145 aClass145_209 = new Class145(5, 7);
+	public static final Class145 aClass145_209 = new Class145(5, 7);
 
 	@OriginalMember(owner = "client!sb", name = "X", descriptor = "I")
 	public static int anInt5878 = 0;
@@ -24,12 +24,5 @@ public final class Static313 {
 		Static238.anInt4328 = -1;
 		Static151.anInt2772 = arg0;
 		Static298.method2422();
-	}
-
-	@OriginalMember(owner = "client!sb", name = "f", descriptor = "(I)V")
-	public static void method5337() {
-		anIntArray388 = null;
-		aClass107_2 = null;
-		aClass145_209 = null;
 	}
 }

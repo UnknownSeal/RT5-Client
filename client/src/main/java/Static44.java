@@ -8,7 +8,7 @@ public final class Static44 {
 	public static int anInt1105;
 
 	@OriginalMember(owner = "client!cl", name = "u", descriptor = "Lclient!gd;")
-	public static Class79 aClass79_26 = new Class79(" is already on your ignore list.", " steht bereits auf deiner Ignorieren-Liste!", " est déjà dans votre liste noire.", " já está na sua lista de ignorados.");
+	public static final Class79 aClass79_26 = new Class79(" is already on your ignore list.", " steht bereits auf deiner Ignorieren-Liste!", " est déjà dans votre liste noire.", " já está na sua lista de ignorados.");
 
 	@OriginalMember(owner = "client!cl", name = "B", descriptor = "I")
 	public static int anInt1106 = 20;
@@ -17,7 +17,7 @@ public final class Static44 {
 	public static int anInt1115 = 0;
 
 	@OriginalMember(owner = "client!cl", name = "M", descriptor = "[Z")
-	public static boolean[] aBooleanArray11 = new boolean[8];
+	public static final boolean[] aBooleanArray11 = new boolean[8];
 
 	@OriginalMember(owner = "client!cl", name = "a", descriptor = "(Lclient!wm;BLclient!r;)V")
 	public static void method1358(@OriginalArg(0) Class19 arg0, @OriginalArg(2) Class197 arg1) {
@@ -94,11 +94,5 @@ public final class Static44 {
 	public static void method1359(@OriginalArg(0) Class197 arg0) {
 		Static75.anInt1736 = arg0.method5074("titlebg");
 		Static265.anInt4856 = arg0.method5074("logo");
-	}
-
-	@OriginalMember(owner = "client!cl", name = "b", descriptor = "(B)V")
-	public static void method1361() {
-		aBooleanArray11 = null;
-		aClass79_26 = null;
 	}
 }

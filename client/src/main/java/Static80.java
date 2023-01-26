@@ -8,10 +8,10 @@ public final class Static80 {
 	public static int anInt6679;
 
 	@OriginalMember(owner = "client!ek", name = "X", descriptor = "Lclient!h;")
-	public static Class89 aClass89_234 = new Class89(65, 5);
+	public static final Class89 aClass89_234 = new Class89(65, 5);
 
 	@OriginalMember(owner = "client!ek", name = "ab", descriptor = "[I")
-	public static int[] anIntArray464 = new int[25];
+	public static final int[] anIntArray464 = new int[25];
 
 	@OriginalMember(owner = "client!ek", name = "a", descriptor = "(III[B)I")
 	public static int method5980(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) byte[] arg2) {
@@ -30,12 +30,6 @@ public final class Static80 {
 			local10 = (local10 << 5) - (local10 - ((long) arg0.charAt(local12)));
 		}
 		return local10;
-	}
-
-	@OriginalMember(owner = "client!ek", name = "c", descriptor = "(Z)V")
-	public static void method5983() {
-		anIntArray464 = null;
-		aClass89_234 = null;
 	}
 
 	@OriginalMember(owner = "client!ek", name = "a", descriptor = "(BLjava/lang/String;)J")

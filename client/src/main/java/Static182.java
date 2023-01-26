@@ -119,10 +119,4 @@ public final class Static182 {
 		Static375.aLong222 = 0L;
 		Static385.aClass2_Sub16_2 = null;
 	}
-
-	@OriginalMember(owner = "client!kk", name = "a", descriptor = "(I)V")
-	public static void method3388() {
-		anIntArray205 = null;
-		aClass161_7 = null;
-	}
 }

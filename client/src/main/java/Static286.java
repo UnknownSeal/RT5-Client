@@ -6,13 +6,13 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static286 {
 
 	@OriginalMember(owner = "client!qk", name = "gb", descriptor = "[[B")
-	public static byte[][] aByteArrayArray16 = new byte[1000][];
+	public static final byte[][] aByteArrayArray16 = new byte[1000][];
 
 	@OriginalMember(owner = "client!qk", name = "hb", descriptor = "[Ljava/awt/Color;")
-	public static Color[] aColorArray3 = new Color[] { new Color(16777215), new Color(16777215) };
+	public static final Color[] aColorArray3 = new Color[] { new Color(16777215), new Color(16777215) };
 
 	@OriginalMember(owner = "client!qk", name = "jb", descriptor = "[[I")
-	public static int[][] anIntArrayArray45 = new int[][] { { 0, 1, 2, 3 }, { 1, 2, 3, 0 }, { 1, 2, -1, 0 }, { 2, 0, -1, 1 }, { 0, 1, -1, 2 }, { 1, 2, -1, 0 }, { -1, 4, -1, 1 }, { -1, 1, 3, -1 }, { -1, 0, 2, -1 }, { 3, 5, 2, 0 }, { 0, 2, 5, 3 }, { 0, 2, 3, 5 }, { 0, 1, 2, 3 } };
+	public static final int[][] anIntArrayArray45 = new int[][] { { 0, 1, 2, 3 }, { 1, 2, 3, 0 }, { 1, 2, -1, 0 }, { 2, 0, -1, 1 }, { 0, 1, -1, 2 }, { 1, 2, -1, 0 }, { -1, 4, -1, 1 }, { -1, 1, 3, -1 }, { -1, 0, 2, -1 }, { 3, 5, 2, 0 }, { 0, 2, 5, 3 }, { 0, 2, 3, 5 }, { 0, 1, 2, 3 } };
 
 	@OriginalMember(owner = "client!qk", name = "c", descriptor = "(Z)V")
 	public static void method4919() {
@@ -24,14 +24,6 @@ public final class Static286 {
 	@OriginalMember(owner = "client!qk", name = "b", descriptor = "(B)V")
 	public static void method4920() {
 		Static254.aClass98_39.method2614();
-	}
-
-	@OriginalMember(owner = "client!qk", name = "f", descriptor = "(I)V")
-	public static void method4921() {
-		aColorArray3 = null;
-		Class2_Sub3_Sub28.anIntArray368 = null;
-		anIntArrayArray45 = null;
-		aByteArrayArray16 = null;
 	}
 
 	@OriginalMember(owner = "client!qk", name = "a", descriptor = "(Lclient!jg;ILclient!wm;Lclient!np;BI)Z")

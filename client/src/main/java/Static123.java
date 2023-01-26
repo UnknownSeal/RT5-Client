@@ -16,12 +16,6 @@ public final class Static123 {
 	@OriginalMember(owner = "client!ha", name = "z", descriptor = "I")
 	public static final int anInt2421 = -1;
 
-	@OriginalMember(owner = "client!ha", name = "b", descriptor = "(I)V")
-	public static void method2411() {
-		aClass197_30 = null;
-		aClass13Array10 = null;
-	}
-
 	@OriginalMember(owner = "client!ha", name = "a", descriptor = "(ZIIIIIII)V")
 	public static void method2412(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6) {
 		@Pc(7) int local7 = 0;

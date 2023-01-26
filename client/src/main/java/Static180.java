@@ -8,18 +8,13 @@ public final class Static180 {
 	public static int anInt3404;
 
 	@OriginalMember(owner = "client!kh", name = "i", descriptor = "Lclient!gd;")
-	public static Class79 aClass79_74 = new Class79("Choose Option", "Wähl eine Option", "Choisir une option", "Selecionar opção");
+	public static final Class79 aClass79_74 = new Class79("Choose Option", "Wähl eine Option", "Choisir une option", "Selecionar opção");
 
 	@OriginalMember(owner = "client!kh", name = "k", descriptor = "I")
 	public static int anInt3408 = 0;
 
 	@OriginalMember(owner = "client!kh", name = "m", descriptor = "I")
 	public static final int anInt3410 = 205;
-
-	@OriginalMember(owner = "client!kh", name = "a", descriptor = "(B)V")
-	public static void method3365() {
-		aClass79_74 = null;
-	}
 
 	@OriginalMember(owner = "client!kh", name = "a", descriptor = "(IIIZIILclient!r;)V")
 	public static void method3366(@OriginalArg(2) int arg0, @OriginalArg(4) int arg1, @OriginalArg(5) int arg2, @OriginalArg(6) Class197 arg3) {

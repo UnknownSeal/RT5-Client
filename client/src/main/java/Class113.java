@@ -14,7 +14,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Class113 {
 
 	@OriginalMember(owner = "client!je", name = "g", descriptor = "[I")
-	public static int[] anIntArray184 = new int[256];
+	private static final int[] anIntArray184 = new int[256];
 
 	@OriginalMember(owner = "client!je", name = "a", descriptor = "I")
 	private int anInt2912;

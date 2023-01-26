@@ -5,16 +5,16 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static168 {
 
 	@OriginalMember(owner = "client!jq", name = "t", descriptor = "Lclient!mc;")
-	public static Class145 aClass145_268 = new Class145(81, 2);
+	public static final Class145 aClass145_268 = new Class145(81, 2);
 
 	@OriginalMember(owner = "client!jq", name = "D", descriptor = "I")
 	public static int anInt7248 = -1;
 
 	@OriginalMember(owner = "client!jq", name = "H", descriptor = "[Z")
-	public static boolean[] aBooleanArray67 = new boolean[8];
+	public static final boolean[] aBooleanArray67 = new boolean[8];
 
 	@OriginalMember(owner = "client!jq", name = "I", descriptor = "[Lclient!nb;")
-	public static Class157[] aClass157Array42 = new Class157[14];
+	public static final Class157[] aClass157Array42 = new Class157[14];
 
 	@OriginalMember(owner = "client!jq", name = "a", descriptor = "(IIIIIII)V")
 	public static void method6473(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6) {
@@ -36,12 +36,5 @@ public final class Static168 {
 	@OriginalMember(owner = "client!jq", name = "a", descriptor = "(II)I")
 	public static int method6475(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
 		return Static32.aByteArrayArray4 == null ? 0 : (Static32.aByteArrayArray4[arg0][arg1] & 0xFF) << 3;
-	}
-
-	@OriginalMember(owner = "client!jq", name = "e", descriptor = "(I)V")
-	public static void method6480() {
-		aBooleanArray67 = null;
-		aClass157Array42 = null;
-		aClass145_268 = null;
 	}
 }

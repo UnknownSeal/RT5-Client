@@ -8,12 +8,7 @@ public final class Static266 {
 	public static int anInt4901;
 
 	@OriginalMember(owner = "client!pe", name = "Y", descriptor = "[I")
-	public static int[] anIntArray334 = new int[64];
-
-	@OriginalMember(owner = "client!pe", name = "c", descriptor = "(I)V")
-	public static void method4490() {
-		anIntArray334 = null;
-	}
+	public static final int[] anIntArray334 = new int[64];
 
 	@OriginalMember(owner = "client!pe", name = "b", descriptor = "(II)I")
 	public static int method4497(@OriginalArg(0) int arg0) {

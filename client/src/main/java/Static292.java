@@ -11,13 +11,13 @@ public final class Static292 {
 	public static int anInt5512;
 
 	@OriginalMember(owner = "client!qr", name = "m", descriptor = "[J")
-	public static long[] aLongArray9 = new long[32];
+	public static final long[] aLongArray9 = new long[32];
 
 	@OriginalMember(owner = "client!qr", name = "n", descriptor = "I")
 	public static int anInt5510 = 0;
 
 	@OriginalMember(owner = "client!qr", name = "p", descriptor = "[S")
-	public static short[] aShortArray115 = new short[] { 44, 19, 48, 47, 9, 23, 2, 18 };
+	public static final short[] aShortArray115 = new short[] { 44, 19, 48, 47, 9, 23, 2, 18 };
 
 	@OriginalMember(owner = "client!qr", name = "a", descriptor = "(IIIBII)V")
 	public static void method5034(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4) {
@@ -78,13 +78,6 @@ public final class Static292 {
 				}
 			}
 		}
-	}
-
-	@OriginalMember(owner = "client!qr", name = "a", descriptor = "(B)V")
-	public static void method5035() {
-		aShortArray115 = null;
-		aClass13_15 = null;
-		aLongArray9 = null;
 	}
 
 	@OriginalMember(owner = "client!qr", name = "a", descriptor = "(Lclient!ci;BLclient!r;)V")

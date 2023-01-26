@@ -11,16 +11,10 @@ public final class Static264 {
 	public static float aFloat66;
 
 	@OriginalMember(owner = "client!pc", name = "a", descriptor = "[[F")
-	public static float[][] aFloatArrayArray8 = new float[2][8];
+	public static final float[][] aFloatArrayArray8 = new float[2][8];
 
 	@OriginalMember(owner = "client!pc", name = "f", descriptor = "[[I")
-	public static int[][] anIntArrayArray40 = new int[2][8];
-
-	@OriginalMember(owner = "client!pc", name = "a", descriptor = "()V")
-	public static void method4468() {
-		aFloatArrayArray8 = null;
-		anIntArrayArray40 = null;
-	}
+	public static final int[][] anIntArrayArray40 = new int[2][8];
 
 	@OriginalMember(owner = "client!pc", name = "a", descriptor = "(F)F")
 	public static float method4471(@OriginalArg(0) float arg0) {

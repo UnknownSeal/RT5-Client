@@ -5,10 +5,10 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static132 {
 
 	@OriginalMember(owner = "client!hk", name = "e", descriptor = "[I")
-	public static int[] anIntArray161 = new int[14];
+	public static final int[] anIntArray161 = new int[14];
 
 	@OriginalMember(owner = "client!hk", name = "f", descriptor = "Lclient!mc;")
-	public static Class145 aClass145_92 = new Class145(36, 3);
+	public static final Class145 aClass145_92 = new Class145(36, 3);
 
 	@OriginalMember(owner = "client!hk", name = "g", descriptor = "Z")
 	public static boolean aBoolean179 = false;
@@ -17,17 +17,10 @@ public final class Static132 {
 	public static boolean aBoolean180 = false;
 
 	@OriginalMember(owner = "client!hk", name = "i", descriptor = "[I")
-	public static int[] anIntArray162 = new int[100];
+	public static final int[] anIntArray162 = new int[100];
 
 	@OriginalMember(owner = "client!hk", name = "j", descriptor = "I")
 	public static int anInt2468 = -2;
-
-	@OriginalMember(owner = "client!hk", name = "a", descriptor = "(I)V")
-	public static void method2483() {
-		anIntArray161 = null;
-		aClass145_92 = null;
-		anIntArray162 = null;
-	}
 
 	@OriginalMember(owner = "client!hk", name = "a", descriptor = "(IB)Lclient!rt;")
 	public static Class209 method2484(@OriginalArg(0) int arg0) {

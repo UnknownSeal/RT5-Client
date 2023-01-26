@@ -8,12 +8,6 @@ public final class Static128 {
 	@OriginalMember(owner = "client!hf", name = "i", descriptor = "[Z")
 	public static boolean[] aBooleanArray21;
 
-	@OriginalMember(owner = "client!hf", name = "a", descriptor = "(I)V")
-	public static void method2429() {
-		aBooleanArray21 = null;
-		anInterface2_4 = null;
-	}
-
 	@OriginalMember(owner = "client!hf", name = "b", descriptor = "(I)V")
 	public static void method2432() {
 		Static91.method1960(Static82.aClass145_64);

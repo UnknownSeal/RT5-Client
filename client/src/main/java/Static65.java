@@ -24,12 +24,6 @@ public final class Static65 {
 		return arg0 >>> 7;
 	}
 
-	@OriginalMember(owner = "client!dq", name = "c", descriptor = "(Z)V")
-	public static void method1733() {
-		aClass19_3 = null;
-		anIntArray110 = null;
-	}
-
 	@OriginalMember(owner = "client!dq", name = "a", descriptor = "(IIII)Z")
 	public static boolean method1734(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
 		if (Static35.method1106(arg0, arg1, arg2)) {

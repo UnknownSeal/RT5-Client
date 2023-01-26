@@ -9,10 +9,10 @@ import org.openrs2.deob.annotation.Pc;
 public abstract class Class19 {
 
 	@OriginalMember(owner = "client!wm", name = "h", descriptor = "[I")
-	public static int[] anIntArray178 = new int[16384];
+	public static final int[] anIntArray178 = new int[16384];
 
 	@OriginalMember(owner = "client!wm", name = "f", descriptor = "[I")
-	public static int[] anIntArray177 = new int[16384];
+	public static final int[] anIntArray177 = new int[16384];
 
 	@OriginalMember(owner = "client!wm", name = "m", descriptor = "I")
 	public final int anInt2836;

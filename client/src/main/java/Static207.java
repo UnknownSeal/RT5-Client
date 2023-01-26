@@ -8,19 +8,19 @@ public final class Static207 {
 	public static int anInt3746;
 
 	@OriginalMember(owner = "client!mc", name = "h", descriptor = "Lclient!ld;")
-	public static Class135 aClass135_25 = new Class135();
+	public static final Class135 aClass135_25 = new Class135();
 
 	@OriginalMember(owner = "client!mc", name = "j", descriptor = "Lclient!h;")
-	public static Class89 aClass89_154 = new Class89(81, 8);
+	public static final Class89 aClass89_154 = new Class89(81, 8);
 
 	@OriginalMember(owner = "client!mc", name = "l", descriptor = "Lclient!ld;")
 	public static Class135 aClass135_26 = new Class135();
 
 	@OriginalMember(owner = "client!mc", name = "m", descriptor = "[[Z")
-	public static boolean[][] aBooleanArrayArray2 = new boolean[][] { new boolean[4], { false, true, true, false }, { true, false, true, false }, { true, false, true, false }, { false, false, true, false }, { false, false, true, false }, { true, false, true, false }, { true, false, false, true }, { true, false, false, true }, { true, true, false, false }, new boolean[4], { false, true, false, true }, new boolean[4] };
+	public static final boolean[][] aBooleanArrayArray2 = new boolean[][] { new boolean[4], { false, true, true, false }, { true, false, true, false }, { true, false, true, false }, { false, false, true, false }, { false, false, true, false }, { true, false, true, false }, { true, false, false, true }, { true, false, false, true }, { true, true, false, false }, new boolean[4], { false, true, false, true }, new boolean[4] };
 
 	@OriginalMember(owner = "client!mc", name = "n", descriptor = "[I")
-	public static int[] anIntArray225 = new int[8];
+	public static final int[] anIntArray225 = new int[8];
 
 	@OriginalMember(owner = "client!mc", name = "a", descriptor = "(I)V")
 	public static void method3698() {
@@ -45,15 +45,6 @@ public final class Static207 {
 	@OriginalMember(owner = "client!mc", name = "a", descriptor = "(ILjava/lang/String;)V")
 	public static void method3699(@OriginalArg(1) String arg0) {
 		Static33.method4199("", 0, arg0, 0, "");
-	}
-
-	@OriginalMember(owner = "client!mc", name = "b", descriptor = "(I)V")
-	public static void method3700() {
-		anIntArray225 = null;
-		aClass135_26 = null;
-		aBooleanArrayArray2 = null;
-		aClass135_25 = null;
-		aClass89_154 = null;
 	}
 
 	@OriginalMember(owner = "client!mc", name = "a", descriptor = "(Lclient!nk;B)Lclient!nk;")

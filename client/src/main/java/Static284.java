@@ -8,22 +8,16 @@ public final class Static284 {
 	public static int anInt5359;
 
 	@OriginalMember(owner = "client!qi", name = "b", descriptor = "[I")
-	public static int[] anIntArray367 = new int[] { 1, 2, 4, 8 };
+	public static final int[] anIntArray367 = new int[] { 1, 2, 4, 8 };
 
 	@OriginalMember(owner = "client!qi", name = "e", descriptor = "J")
 	public static long aLong157 = 0L;
 
 	@OriginalMember(owner = "client!qi", name = "f", descriptor = "Lclient!cm;")
-	public static Class36 aClass36_7 = new Class36();
+	public static final Class36 aClass36_7 = new Class36();
 
 	@OriginalMember(owner = "client!qi", name = "m", descriptor = "I")
 	public static int anInt5362 = 0;
-
-	@OriginalMember(owner = "client!qi", name = "a", descriptor = "(I)V")
-	public static void method4879() {
-		anIntArray367 = null;
-		aClass36_7 = null;
-	}
 
 	@OriginalMember(owner = "client!qi", name = "a", descriptor = "(ILclient!ci;IIIILclient!wm;)V")
 	public static void method4880(@OriginalArg(1) Interface2 arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) Class19 arg5) {

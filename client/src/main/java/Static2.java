@@ -6,16 +6,10 @@ public final class Static2 {
 	public static Class113 aClass113_1;
 
 	@OriginalMember(owner = "client!aa", name = "t", descriptor = "Lclient!mc;")
-	public static Class145 aClass145_3 = new Class145(53, -1);
+	public static final Class145 aClass145_3 = new Class145(53, -1);
 
 	@OriginalMember(owner = "client!aa", name = "x", descriptor = "I")
 	public static int anInt28 = 0;
-
-	@OriginalMember(owner = "client!aa", name = "b", descriptor = "(I)V")
-	public static void method28() {
-		aClass113_1 = null;
-		aClass145_3 = null;
-	}
 
 	@OriginalMember(owner = "client!aa", name = "c", descriptor = "(I)V")
 	public static void method29() {

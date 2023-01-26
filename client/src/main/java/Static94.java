@@ -8,12 +8,7 @@ public final class Static94 {
 	public static int anInt1979 = 0;
 
 	@OriginalMember(owner = "client!ff", name = "G", descriptor = "Lclient!h;")
-	public static Class89 aClass89_79 = new Class89(53, -1);
-
-	@OriginalMember(owner = "client!ff", name = "c", descriptor = "(I)V")
-	public static void method2040() {
-		aClass89_79 = null;
-	}
+	public static final Class89 aClass89_79 = new Class89(53, -1);
 
 	@OriginalMember(owner = "client!ff", name = "a", descriptor = "(IBIZILclient!r;)V")
 	public static void method2042(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(5) Class197 arg2) {

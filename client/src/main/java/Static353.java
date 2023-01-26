@@ -12,16 +12,16 @@ public final class Static353 {
 	public static int[] anIntArray450;
 
 	@OriginalMember(owner = "client!ui", name = "a", descriptor = "Lclient!ad;")
-	public static Class4 aClass4_136 = new Class4(32);
+	public static final Class4 aClass4_136 = new Class4(32);
 
 	@OriginalMember(owner = "client!ui", name = "l", descriptor = "Lclient!h;")
-	public static Class89 aClass89_230 = new Class89(104, 4);
+	public static final Class89 aClass89_230 = new Class89(104, 4);
 
 	@OriginalMember(owner = "client!ui", name = "m", descriptor = "[I")
 	public static int[] anIntArray448 = new int[2];
 
 	@OriginalMember(owner = "client!ui", name = "n", descriptor = "[I")
-	public static int[] anIntArray449 = new int[] { 104, 120, 136, 168 };
+	public static final int[] anIntArray449 = new int[] { 104, 120, 136, 168 };
 
 	@OriginalMember(owner = "client!ui", name = "o", descriptor = "I")
 	public static int anInt6533 = 0;
@@ -38,15 +38,5 @@ public final class Static353 {
 		} else {
 			Static78.method5700(Static77.anInt1762);
 		}
-	}
-
-	@OriginalMember(owner = "client!ui", name = "c", descriptor = "(I)V")
-	public static void method5885() {
-		aClass89_230 = null;
-		aClass4_136 = null;
-		anIntArray449 = null;
-		anIntArray450 = null;
-		anIntArray448 = null;
-		aShortArrayArray7 = null;
 	}
 }

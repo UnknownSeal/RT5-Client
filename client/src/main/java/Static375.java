@@ -21,13 +21,13 @@ public final class Static375 {
 	public static Class161 aClass161_14 = null;
 
 	@OriginalMember(owner = "client!vs", name = "c", descriptor = "[[Z")
-	public static boolean[][] aBooleanArrayArray6 = new boolean[][] { { true, true, true, true, true, true, true, true, true, true, true, true, true }, { true, true, true, false, false, false, true, true, false, false, false, false, true }, { true, false, false, false, false, true, true, true, false, false, false, false, false }, { false, false, true, true, true, true, false, false, false, false, false, false, false }, { true, true, true, true, true, true, false, false, false, false, false, false, false }, { true, true, true, false, false, true, true, true, false, false, false, false, false }, { true, true, false, false, false, true, true, true, false, false, false, false, true }, { true, true, false, false, false, false, false, true, false, false, false, false, false }, { false, true, true, true, true, true, true, true, false, false, false, false, false }, { true, false, false, false, true, true, true, true, true, true, false, false, false }, { true, true, true, true, true, false, false, false, true, true, false, false, false }, { true, true, true, false, false, false, false, false, false, false, true, true, false }, new boolean[13], { true, true, true, true, true, true, true, true, true, true, true, true, true }, new boolean[13] };
+	public static final boolean[][] aBooleanArrayArray6 = new boolean[][] { { true, true, true, true, true, true, true, true, true, true, true, true, true }, { true, true, true, false, false, false, true, true, false, false, false, false, true }, { true, false, false, false, false, true, true, true, false, false, false, false, false }, { false, false, true, true, true, true, false, false, false, false, false, false, false }, { true, true, true, true, true, true, false, false, false, false, false, false, false }, { true, true, true, false, false, true, true, true, false, false, false, false, false }, { true, true, false, false, false, true, true, true, false, false, false, false, true }, { true, true, false, false, false, false, false, true, false, false, false, false, false }, { false, true, true, true, true, true, true, true, false, false, false, false, false }, { true, false, false, false, true, true, true, true, true, true, false, false, false }, { true, true, true, true, true, false, false, false, true, true, false, false, false }, { true, true, true, false, false, false, false, false, false, false, true, true, false }, new boolean[13], { true, true, true, true, true, true, true, true, true, true, true, true, true }, new boolean[13] };
 
 	@OriginalMember(owner = "client!vs", name = "m", descriptor = "[I")
-	public static int[] anIntArray482 = new int[] { 0, 0, 0, 64, 128, 128, 128, 64, 64, 96, 32, 32, 64 };
+	public static final int[] anIntArray482 = new int[] { 0, 0, 0, 64, 128, 128, 128, 64, 64, 96, 32, 32, 64 };
 
 	@OriginalMember(owner = "client!vs", name = "n", descriptor = "[Z")
-	public static boolean[] aBooleanArray64 = new boolean[100];
+	public static final boolean[] aBooleanArray64 = new boolean[100];
 
 	@OriginalMember(owner = "client!vs", name = "p", descriptor = "J")
 	public static long aLong221 = -1L;
@@ -36,21 +36,10 @@ public final class Static375 {
 	public static boolean aBoolean477 = false;
 
 	@OriginalMember(owner = "client!vs", name = "x", descriptor = "Lclient!h;")
-	public static Class89 aClass89_246 = new Class89(75, 0);
+	public static final Class89 aClass89_246 = new Class89(75, 0);
 
 	@OriginalMember(owner = "client!vs", name = "y", descriptor = "I")
 	public static int anInt7051 = 0;
-
-	@OriginalMember(owner = "client!vs", name = "a", descriptor = "(I)V")
-	public static void method6277() {
-		anIntArray482 = null;
-		aBooleanArrayArray6 = null;
-		aClass89_246 = null;
-		anIntArray481 = null;
-		anIntArray483 = null;
-		aClass161_14 = null;
-		aBooleanArray64 = null;
-	}
 
 	@OriginalMember(owner = "client!vs", name = "a", descriptor = "(IB)Z")
 	public static boolean method6278(@OriginalArg(0) int arg0) {

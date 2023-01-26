@@ -14,9 +14,4 @@ public final class Static404 {
 	public static void method4628(@OriginalArg(1) String arg0, @OriginalArg(2) Applet arg1) throws Throwable {
 		JSObject.getWindow(arg1).eval(arg0);
 	}
-
-	@OriginalMember(owner = "client!po", name = "a", descriptor = "(Ljava/lang/String;Ljava/applet/Applet;I[Ljava/lang/Object;)Ljava/lang/Object;")
-	public static Object method4629(@OriginalArg(0) String arg0, @OriginalArg(1) Applet arg1, @OriginalArg(3) Object[] arg2) throws Throwable {
-		return JSObject.getWindow(arg1).call(arg0, arg2);
-	}
 }

@@ -436,4 +436,6 @@ public final class opengl implements GL {
 
 	@OriginalMember(owner = "gl!jaggl/opengl", name = "glLineWidth", descriptor = "(F)V")
 	private native void glLineWidth(@OriginalArg(0) float width);
+
+	private native void glPixelZoom(float xfactor, float yfactor);
 }

@@ -14,15 +14,7 @@ public final class Static324 {
 	public static int[] anIntArray409 = new int[2];
 
 	@OriginalMember(owner = "client!sq", name = "h", descriptor = "[I")
-	public static int[] anIntArray410 = new int[2048];
-
-	@OriginalMember(owner = "client!sq", name = "a", descriptor = "(Z)V")
-	public static void method5534() {
-		anIntArray412 = null;
-		anIntArray409 = null;
-		anIntArray410 = null;
-		aClass197_86 = null;
-	}
+	public static final int[] anIntArray410 = new int[2048];
 
 	@OriginalMember(owner = "client!sq", name = "a", descriptor = "(Lclient!hc;IIIII)V")
 	public static void method5535(@OriginalArg(0) Class90 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5) {

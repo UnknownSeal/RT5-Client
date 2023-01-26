@@ -8,19 +8,13 @@ public final class Static147 {
 	public static final int anInt2708 = 1403;
 
 	@OriginalMember(owner = "client!ii", name = "i", descriptor = "Lclient!mc;")
-	public static Class145 aClass145_103 = new Class145(73, 7);
+	public static final Class145 aClass145_103 = new Class145(73, 7);
 
 	@OriginalMember(owner = "client!ii", name = "k", descriptor = "[S")
 	public static short[] aShortArray54 = new short[256];
 
 	@OriginalMember(owner = "client!ii", name = "o", descriptor = "I")
 	public static int anInt2717 = -1;
-
-	@OriginalMember(owner = "client!ii", name = "a", descriptor = "(I)V")
-	public static void method2701() {
-		aClass145_103 = null;
-		aShortArray54 = null;
-	}
 
 	@OriginalMember(owner = "client!ii", name = "a", descriptor = "(B)V")
 	public static void method2703() {

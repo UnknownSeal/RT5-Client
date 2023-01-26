@@ -11,22 +11,22 @@ public final class Static82 {
 	public static int[][] anIntArrayArray16;
 
 	@OriginalMember(owner = "client!em", name = "a", descriptor = "Lclient!h;")
-	public static Class89 aClass89_66 = new Class89(56, -1);
+	public static final Class89 aClass89_66 = new Class89(56, -1);
 
 	@OriginalMember(owner = "client!em", name = "f", descriptor = "Lclient!h;")
-	public static Class89 aClass89_67 = new Class89(35, -2);
+	public static final Class89 aClass89_67 = new Class89(35, -2);
 
 	@OriginalMember(owner = "client!em", name = "g", descriptor = "I")
 	public static int anInt1835 = 0;
 
 	@OriginalMember(owner = "client!em", name = "h", descriptor = "Lclient!mc;")
-	public static Class145 aClass145_64 = new Class145(25, 2);
+	public static final Class145 aClass145_64 = new Class145(25, 2);
 
 	@OriginalMember(owner = "client!em", name = "i", descriptor = "I")
 	public static int anInt1836 = 0;
 
 	@OriginalMember(owner = "client!em", name = "j", descriptor = "[I")
-	public static int[] anIntArray120 = new int[13];
+	public static final int[] anIntArray120 = new int[13];
 
 	@OriginalMember(owner = "client!em", name = "k", descriptor = "I")
 	public static int anInt1837 = 100;
@@ -45,16 +45,6 @@ public final class Static82 {
 			Static59.anIntArray107 = null;
 			return;
 		}
-	}
-
-	@OriginalMember(owner = "client!em", name = "a", descriptor = "(I)V")
-	public static void method1903() {
-		anIntArray120 = null;
-		aByteArrayArray5 = null;
-		anIntArrayArray16 = null;
-		aClass145_64 = null;
-		aClass89_67 = null;
-		aClass89_66 = null;
 	}
 
 	@OriginalMember(owner = "client!em", name = "a", descriptor = "(IZ)V")

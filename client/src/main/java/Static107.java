@@ -43,10 +43,4 @@ public final class Static107 {
 		}
 		return local12;
 	}
-
-	@OriginalMember(owner = "client!g", name = "a", descriptor = "(B)V")
-	public static void method2238() {
-		aClass113_5 = null;
-		anIntArray136 = null;
-	}
 }

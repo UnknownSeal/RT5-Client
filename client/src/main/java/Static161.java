@@ -9,16 +9,16 @@ public final class Static161 {
 	public static boolean aBoolean208;
 
 	@OriginalMember(owner = "client!jg", name = "t", descriptor = "Lclient!h;")
-	public static Class89 aClass89_123 = new Class89(10, -1);
+	public static final Class89 aClass89_123 = new Class89(10, -1);
 
 	@OriginalMember(owner = "client!jg", name = "F", descriptor = "Lclient!gd;")
-	public static Class79 aClass79_67 = new Class79(" ", ": ", " ", " ");
+	public static final Class79 aClass79_67 = new Class79(" ", ": ", " ", " ");
 
 	@OriginalMember(owner = "client!jg", name = "H", descriptor = "I")
 	public static int anInt2954 = 100;
 
 	@OriginalMember(owner = "client!jg", name = "I", descriptor = "[I")
-	public static int[] anIntArray187 = new int[] { 0, 2, 2, 2, 1, 1, 3, 3, 1, 3, 3, 4, 4 };
+	public static final int[] anIntArray187 = new int[] { 0, 2, 2, 2, 1, 1, 3, 3, 1, 3, 3, 4, 4 };
 
 	@OriginalMember(owner = "client!jg", name = "b", descriptor = "(B)V")
 	public static void method2968() {
@@ -49,13 +49,6 @@ public final class Static161 {
 			}
 			return local71;
 		}
-	}
-
-	@OriginalMember(owner = "client!jg", name = "c", descriptor = "(B)V")
-	public static void method2970() {
-		aClass89_123 = null;
-		aClass79_67 = null;
-		anIntArray187 = null;
 	}
 
 	@OriginalMember(owner = "client!jg", name = "a", descriptor = "(Ljava/lang/String;ZZ)V")

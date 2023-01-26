@@ -11,7 +11,7 @@ public final class Static144 {
 	public static int anInt2694 = 0;
 
 	@OriginalMember(owner = "client!ie", name = "n", descriptor = "Lclient!h;")
-	public static Class89 aClass89_112 = new Class89(38, 14);
+	public static final Class89 aClass89_112 = new Class89(38, 14);
 
 	@OriginalMember(owner = "client!ie", name = "a", descriptor = "(Z)V")
 	public static void method2690() {
@@ -46,11 +46,5 @@ public final class Static144 {
 		} else {
 			return 3;
 		}
-	}
-
-	@OriginalMember(owner = "client!ie", name = "b", descriptor = "(B)V")
-	public static void method2693() {
-		aClass89_112 = null;
-		aClient1 = null;
 	}
 }

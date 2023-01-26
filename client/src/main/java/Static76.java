@@ -15,16 +15,8 @@ public final class Static76 {
 	public static int anInt1739;
 
 	@OriginalMember(owner = "client!eg", name = "a", descriptor = "Lclient!gd;")
-	public static Class79 aClass79_39 = new Class79("shake:", "schütteln:", "tremblement:", "tremor:");
+	public static final Class79 aClass79_39 = new Class79("shake:", "schütteln:", "tremblement:", "tremor:");
 
 	@OriginalMember(owner = "client!eg", name = "c", descriptor = "I")
 	public static final int anInt1738 = 328;
-
-	@OriginalMember(owner = "client!eg", name = "a", descriptor = "(B)V")
-	public static void method1838() {
-		aClass14_3 = null;
-		aClass79_39 = null;
-		aClass13Array5 = null;
-		aClass130_2 = null;
-	}
 }

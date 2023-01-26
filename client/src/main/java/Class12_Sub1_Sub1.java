@@ -6,7 +6,7 @@ import org.openrs2.deob.annotation.Pc;
 public class Class12_Sub1_Sub1 extends Class12_Sub1 {
 
 	@OriginalMember(owner = "client!at", name = "L", descriptor = "[I")
-	public static int[] anIntArray292 = new int[99];
+	public static final int[] anIntArray292 = new int[99];
 
 	@OriginalMember(owner = "client!at", name = "v", descriptor = "Z")
 	public boolean aBoolean307;

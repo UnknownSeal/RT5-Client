@@ -7,11 +7,6 @@ public final class Static303 {
 	@OriginalMember(owner = "client!rm", name = "n", descriptor = "Lclient!tg;")
 	public static Class221 aClass221_2;
 
-	@OriginalMember(owner = "client!rm", name = "a", descriptor = "(B)V")
-	public static void method5206() {
-		aClass221_2 = null;
-	}
-
 	@OriginalMember(owner = "client!rm", name = "a", descriptor = "(Lclient!ld;BLclient!wm;II)V")
 	public static void method5207(@OriginalArg(0) Class135 arg0, @OriginalArg(2) Class19 arg1) {
 		Static197.aClass135_24.method3543();

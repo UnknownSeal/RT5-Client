@@ -20,7 +20,7 @@ public final class Static75 {
 	public static int anInt1737;
 
 	@OriginalMember(owner = "client!ef", name = "t", descriptor = "Lclient!gd;")
-	public static Class79 aClass79_38 = new Class79("yellow:", "gelb:", "jaune:", "amarelo:");
+	public static final Class79 aClass79_38 = new Class79("yellow:", "gelb:", "jaune:", "amarelo:");
 
 	@OriginalMember(owner = "client!ef", name = "y", descriptor = "I")
 	public static int anInt1736 = -1;
@@ -39,15 +39,6 @@ public final class Static75 {
 		if (local15 == 6) {
 			Static389.anInt4896 = local23;
 		}
-	}
-
-	@OriginalMember(owner = "client!ef", name = "b", descriptor = "(Z)V")
-	public static void method1836() {
-		aClass79_38 = null;
-		aStringArray11 = null;
-		anIntArray117 = null;
-		aClass13_5 = null;
-		aClass197_18 = null;
 	}
 
 	@OriginalMember(owner = "client!ef", name = "b", descriptor = "(II)I")

@@ -12,12 +12,6 @@ public final class Static334 {
 	@OriginalMember(owner = "client!th", name = "F", descriptor = "Lclient!h;")
 	public static Class89 aClass89_222;
 
-	@OriginalMember(owner = "client!th", name = "b", descriptor = "(B)V")
-	public static void method5684() {
-		anIntArray424 = null;
-		aClass89_222 = null;
-	}
-
 	@OriginalMember(owner = "client!th", name = "a", descriptor = "(ILclient!lo;)V")
 	public static void method5686(@OriginalArg(1) Class140 arg0) {
 		Static370.aClass140_1 = arg0;

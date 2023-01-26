@@ -27,23 +27,13 @@ public final class Static363 {
 	public static boolean aBoolean464 = true;
 
 	@OriginalMember(owner = "client!vf", name = "T", descriptor = "Lclient!mc;")
-	public static Class145 aClass145_239 = new Class145(67, 4);
+	public static final Class145 aClass145_239 = new Class145(67, 4);
 
 	@OriginalMember(owner = "client!vf", name = "U", descriptor = "Lclient!ld;")
-	public static Class135 aClass135_39 = new Class135();
+	public static final Class135 aClass135_39 = new Class135();
 
 	@OriginalMember(owner = "client!vf", name = "W", descriptor = "Lclient!mc;")
-	public static Class145 aClass145_240 = new Class145(37, 6);
-
-	@OriginalMember(owner = "client!vf", name = "c", descriptor = "(B)V")
-	public static void method6088() {
-		aFrame2 = null;
-		aClass145_240 = null;
-		aClass124Array1 = null;
-		aClass135_39 = null;
-		aClass145_239 = null;
-		aClass18_2 = null;
-	}
+	public static final Class145 aClass145_240 = new Class145(37, 6);
 
 	@OriginalMember(owner = "client!vf", name = "a", descriptor = "(IIIII)V")
 	public static void method6089(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {

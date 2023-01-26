@@ -11,16 +11,10 @@ public final class Static166 {
 	public static int anInt3187 = 0;
 
 	@OriginalMember(owner = "client!jo", name = "p", descriptor = "Lclient!h;")
-	public static Class89 aClass89_134 = new Class89(23, 8);
+	public static final Class89 aClass89_134 = new Class89(23, 8);
 
 	@OriginalMember(owner = "client!jo", name = "u", descriptor = "Lclient!mc;")
-	public static Class145 aClass145_122 = new Class145(40, 7);
-
-	@OriginalMember(owner = "client!jo", name = "a", descriptor = "(B)V")
-	public static void method3181() {
-		aClass89_134 = null;
-		aClass145_122 = null;
-	}
+	public static final Class145 aClass145_122 = new Class145(40, 7);
 
 	@OriginalMember(owner = "client!jo", name = "a", descriptor = "(ZBI)V")
 	public static void method3185(@OriginalArg(0) boolean arg0, @OriginalArg(2) int arg1) {

@@ -7,20 +7,13 @@ public final class Static291 {
 	public static int[] anIntArray372;
 
 	@OriginalMember(owner = "client!qq", name = "c", descriptor = "[Ljava/awt/Color;")
-	public static Color[] aColorArray4 = new Color[] { new Color(9179409), new Color(16777215) };
+	public static final Color[] aColorArray4 = new Color[] { new Color(9179409), new Color(16777215) };
 
 	@OriginalMember(owner = "client!qq", name = "d", descriptor = "I")
 	public static int anInt5504 = 0;
 
 	@OriginalMember(owner = "client!qq", name = "e", descriptor = "[I")
-	public static int[] anIntArray373 = new int[100];
-
-	@OriginalMember(owner = "client!qq", name = "a", descriptor = "(I)V")
-	public static void method5027() {
-		anIntArray372 = null;
-		aColorArray4 = null;
-		anIntArray373 = null;
-	}
+	public static final int[] anIntArray373 = new int[100];
 
 	@OriginalMember(owner = "client!qq", name = "a", descriptor = "(Z)V")
 	public static void method5028() {

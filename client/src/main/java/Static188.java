@@ -8,7 +8,7 @@ public final class Static188 {
 	public static Class197 aClass197_52;
 
 	@OriginalMember(owner = "client!kr", name = "H", descriptor = "[I")
-	public static int[] anIntArray206 = new int[] { 160, 192, 80, 96, 0, 144, 80, 48, 160 };
+	public static final int[] anIntArray206 = new int[] { 160, 192, 80, 96, 0, 144, 80, 48, 160 };
 
 	@OriginalMember(owner = "client!kr", name = "a", descriptor = "(Ljava/lang/String;B)V")
 	public static void method3464(@OriginalArg(0) String arg0) {
@@ -60,11 +60,5 @@ public final class Static188 {
 		arg0[local21] = local39;
 		method3467(arg0, arg1, local21 - 1, arg3);
 		method3467(arg0, local21 + 1, arg2, arg3);
-	}
-
-	@OriginalMember(owner = "client!kr", name = "b", descriptor = "(B)V")
-	public static void method3468() {
-		anIntArray206 = null;
-		aClass197_52 = null;
 	}
 }

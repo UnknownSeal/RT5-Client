@@ -4,16 +4,16 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class Static3 {
 
 	@OriginalMember(owner = "client!ab", name = "D", descriptor = "Lclient!bc;")
-	public static Class16 aClass16_1 = new Class16("", 16);
+	public static final Class16 aClass16_1 = new Class16("", 16);
 
 	@OriginalMember(owner = "client!ab", name = "G", descriptor = "Z")
 	public static boolean aBoolean5 = false;
 
 	@OriginalMember(owner = "client!ab", name = "H", descriptor = "Lclient!gd;")
-	public static Class79 aClass79_1 = new Class79("green:", "grün:", "vert:", "verde:");
+	public static final Class79 aClass79_1 = new Class79("green:", "grün:", "vert:", "verde:");
 
 	@OriginalMember(owner = "client!ab", name = "I", descriptor = "[Ljava/lang/String;")
-	public static String[] aStringArray1 = new String[] { "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" };
+	public static final String[] aStringArray1 = new String[] { "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" };
 
 	@OriginalMember(owner = "client!ab", name = "J", descriptor = "I")
 	public static int anInt61 = -1;
@@ -39,12 +39,5 @@ public final class Static3 {
 			arg5 = 8;
 		}
 		arg3.method2900(arg1, arg2, arg8, arg11, arg6, arg10, arg4[arg5 - 1][arg9], arg7, arg0);
-	}
-
-	@OriginalMember(owner = "client!ab", name = "b", descriptor = "(I)V")
-	public static void method59() {
-		aClass79_1 = null;
-		aStringArray1 = null;
-		aClass16_1 = null;
 	}
 }

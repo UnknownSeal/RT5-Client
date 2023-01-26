@@ -15,25 +15,16 @@ public final class Static116 {
 	public static int anInt2357 = 0;
 
 	@OriginalMember(owner = "client!go", name = "l", descriptor = "Lclient!fr;")
-	public static Class75 aClass75_1 = new Class75();
+	public static final Class75 aClass75_1 = new Class75();
 
 	@OriginalMember(owner = "client!go", name = "m", descriptor = "[I")
-	public static int[] anIntArray149 = new int[5];
+	public static final int[] anIntArray149 = new int[5];
 
 	@OriginalMember(owner = "client!go", name = "n", descriptor = "I")
 	public static int anInt2360 = 0;
 
 	@OriginalMember(owner = "client!go", name = "q", descriptor = "[Lclient!nt;")
-	public static Class2_Sub2_Sub13[] aClass2_Sub2_Sub13Array3 = new Class2_Sub2_Sub13[14];
-
-	@OriginalMember(owner = "client!go", name = "a", descriptor = "(I)V")
-	public static void method2363() {
-		aClass75_1 = null;
-		anIntArray149 = null;
-		aClass197_26 = null;
-		aClass2_Sub2_Sub13Array3 = null;
-		aClass13Array8 = null;
-	}
+	public static final Class2_Sub2_Sub13[] aClass2_Sub2_Sub13Array3 = new Class2_Sub2_Sub13[14];
 
 	@OriginalMember(owner = "client!go", name = "a", descriptor = "(BI)[B")
 	public static byte[] method2364(@OriginalArg(1) int arg0) {

@@ -6,13 +6,13 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static388 {
 
 	@OriginalMember(owner = "client!wn", name = "d", descriptor = "Lclient!mc;")
-	public static Class145 aClass145_266 = new Class145(23, -1);
+	public static final Class145 aClass145_266 = new Class145(23, -1);
 
 	@OriginalMember(owner = "client!wn", name = "h", descriptor = "Lclient!jm;")
-	public static Class116 aClass116_8 = new Class116(64);
+	public static final Class116 aClass116_8 = new Class116(64);
 
 	@OriginalMember(owner = "client!wn", name = "l", descriptor = "[I")
-	public static int[] anIntArray494 = new int[1000];
+	public static final int[] anIntArray494 = new int[1000];
 
 	@OriginalMember(owner = "client!wn", name = "a", descriptor = "(Lclient!ci;IBLjava/awt/Canvas;)Lclient!wm;")
 	public static Class19 method6436(@OriginalArg(0) Interface2 arg0, @OriginalArg(1) int arg1, @OriginalArg(3) Canvas arg2) {
@@ -83,12 +83,5 @@ public final class Static388 {
 		Static352.anInt6519 = Static268.anInt4959 * 16 + (Static270.aBoolean371 ? 26 : 22);
 		Static363.anInt6801 = local77;
 		Static375.aBoolean477 = true;
-	}
-
-	@OriginalMember(owner = "client!wn", name = "b", descriptor = "(Z)V")
-	public static void method6443() {
-		aClass116_8 = null;
-		anIntArray494 = null;
-		aClass145_266 = null;
 	}
 }

@@ -4,20 +4,13 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static208 {
 
 	@OriginalMember(owner = "client!md", name = "a", descriptor = "[I")
-	public static int[] anIntArray226 = new int[32];
+	public static final int[] anIntArray226 = new int[32];
 
 	@OriginalMember(owner = "client!md", name = "e", descriptor = "[I")
-	public static int[] anIntArray227 = new int[] { 1, 2, 4, 8 };
+	public static final int[] anIntArray227 = new int[] { 1, 2, 4, 8 };
 
 	@OriginalMember(owner = "client!md", name = "l", descriptor = "Lclient!wc;")
-	public static Class246 aClass246_4 = new Class246();
-
-	@OriginalMember(owner = "client!md", name = "a", descriptor = "(B)V")
-	public static void method3706() {
-		aClass246_4 = null;
-		anIntArray227 = null;
-		anIntArray226 = null;
-	}
+	public static final Class246 aClass246_4 = new Class246();
 
 	@OriginalMember(owner = "client!md", name = "a", descriptor = "(I)Z")
 	public static boolean method3709() {

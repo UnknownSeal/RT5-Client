@@ -24,11 +24,6 @@ public final class Static218 {
 		return 6;
 	}
 
-	@OriginalMember(owner = "client!mo", name = "a", descriptor = "(B)V")
-	public static void method1094() {
-		aClass177_Sub1_2 = null;
-	}
-
 	@OriginalMember(owner = "client!mo", name = "a", descriptor = "(ILclient!cf;)I")
 	public static int method1096(@OriginalArg(1) Class2_Sub5 arg0) {
 		@Pc(12) String local12 = Static318.method5420(arg0);

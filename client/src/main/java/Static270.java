@@ -27,11 +27,6 @@ public final class Static270 {
 		}
 	}
 
-	@OriginalMember(owner = "client!pi", name = "a", descriptor = "(Z)V")
-	public static void method4553() {
-		aByteArrayArray15 = null;
-	}
-
 	@OriginalMember(owner = "client!pi", name = "a", descriptor = "(I)Z")
 	public static boolean method4554() {
 		return Static268.anInt4959 > 0;

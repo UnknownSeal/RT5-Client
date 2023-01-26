@@ -931,7 +931,9 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 		if (this.anInt597 < 2 || this.anInt622 < 2 || this.anInt589 < 2) {
 			local1 |= 0x10;
 		}
-		this.aBoolean47 = Static215.aString30 != null && Static215.aString30.startsWith("mac");
+		if (Static215.aString30 != null) {
+		}
+		this.aBoolean47 = false;
 		this.aBoolean53 = ByteOrder.nativeOrder() == ByteOrder.BIG_ENDIAN;
 		this.aBoolean37 = this.anOpengl1.isExtensionAvailable("GL_ARB_vertex_buffer_object");
 		this.aBoolean44 = this.anOpengl1.isExtensionAvailable("GL_ARB_multisample");

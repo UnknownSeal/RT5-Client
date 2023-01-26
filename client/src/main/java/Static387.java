@@ -9,10 +9,10 @@ public final class Static387 {
 	public static int anInt2831 = 0;
 
 	@OriginalMember(owner = "client!wm", name = "o", descriptor = "Lclient!mc;")
-	public static Class145 aClass145_110 = new Class145(13, 16);
+	public static final Class145 aClass145_110 = new Class145(13, 16);
 
 	@OriginalMember(owner = "client!wm", name = "q", descriptor = "Lclient!h;")
-	public static Class89 aClass89_120 = new Class89(20, 6);
+	public static final Class89 aClass89_120 = new Class89(20, 6);
 
 	@OriginalMember(owner = "client!wm", name = "a", descriptor = "(IILclient!ml;Lclient!ci;Ljava/awt/Canvas;I)Lclient!wm;")
 	public static synchronized Class19 method2822(@OriginalArg(1) int arg0, @OriginalArg(2) Class152 arg1, @OriginalArg(3) Interface2 arg2, @OriginalArg(4) Canvas arg3, @OriginalArg(5) int arg4) {
@@ -42,13 +42,5 @@ public final class Static387 {
 	public static void method2835(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2) {
 		@Pc(9) Class21 local9 = Static332.aClass21ArrayArray3[arg1][arg2];
 		Static7.method6469(local9 == null ? Static119.aClass21_1 : local9, arg0);
-	}
-
-	@OriginalMember(owner = "client!wm", name = "a", descriptor = "(B)V")
-	public static void method2885() {
-		aClass145_110 = null;
-		Class19.anIntArray177 = null;
-		aClass89_120 = null;
-		Class19.anIntArray178 = null;
 	}
 }

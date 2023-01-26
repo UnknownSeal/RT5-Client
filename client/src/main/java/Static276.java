@@ -8,7 +8,7 @@ public final class Static276 {
 	public static Class130 aClass130_4;
 
 	@OriginalMember(owner = "client!pr", name = "o", descriptor = "Lclient!gd;")
-	public static Class79 aClass79_109 = new Class79("Loading core fonts - ", "Lade Schriftarten - ", "Chargement des polices - ", "Carregando fontes principais - ");
+	public static final Class79 aClass79_109 = new Class79("Loading core fonts - ", "Lade Schriftarten - ", "Chargement des polices - ", "Carregando fontes principais - ");
 
 	@OriginalMember(owner = "client!pr", name = "G", descriptor = "Z")
 	public static boolean aBoolean375 = false;
@@ -55,11 +55,5 @@ public final class Static276 {
 				}
 			}
 		}
-	}
-
-	@OriginalMember(owner = "client!pr", name = "a", descriptor = "(I)V")
-	public static void method4659() {
-		aClass130_4 = null;
-		aClass79_109 = null;
 	}
 }

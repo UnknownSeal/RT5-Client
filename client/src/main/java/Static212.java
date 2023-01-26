@@ -11,7 +11,7 @@ public final class Static212 {
 	public static int anInt3785 = 0;
 
 	@OriginalMember(owner = "client!mi", name = "m", descriptor = "Lclient!qg;")
-	public static Class2_Sub4_Sub2 aClass2_Sub4_Sub2_3 = new Class2_Sub4_Sub2(5000);
+	public static final Class2_Sub4_Sub2 aClass2_Sub4_Sub2_3 = new Class2_Sub4_Sub2(5000);
 
 	@OriginalMember(owner = "client!mi", name = "a", descriptor = "(Lclient!nk;III)V")
 	public static void method3725(@OriginalArg(0) Class161 arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
@@ -107,10 +107,5 @@ public final class Static212 {
 			@Pc(32) int local32 = Static70.method1786(arg1, arg2, arg3, arg0);
 			return arg1 ? -local32 : local32;
 		}
-	}
-
-	@OriginalMember(owner = "client!mi", name = "b", descriptor = "(I)V")
-	public static void method3733() {
-		aClass2_Sub4_Sub2_3 = null;
 	}
 }

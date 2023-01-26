@@ -14,7 +14,7 @@ public final class Static56 {
 	public static boolean aBoolean123 = false;
 
 	@OriginalMember(owner = "client!dd", name = "r", descriptor = "Lclient!ld;")
-	public static Class135 aClass135_13 = new Class135();
+	public static final Class135 aClass135_13 = new Class135();
 
 	@OriginalMember(owner = "client!dd", name = "t", descriptor = "Ljava/lang/String;")
 	public static String aString13 = "";
@@ -66,13 +66,6 @@ public final class Static56 {
 			Static18.aClass32_2 = null;
 			return;
 		}
-	}
-
-	@OriginalMember(owner = "client!dd", name = "a", descriptor = "(Z)V")
-	public static void method1615() {
-		aClass135_13 = null;
-		aString13 = null;
-		aClass199_1 = null;
 	}
 
 	@OriginalMember(owner = "client!dd", name = "a", descriptor = "(IIIII)V")

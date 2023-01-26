@@ -8,18 +8,13 @@ public final class Static93 {
 	public static int anInt1946;
 
 	@OriginalMember(owner = "client!fe", name = "e", descriptor = "Lclient!h;")
-	public static Class89 aClass89_76 = new Class89(29, 3);
+	public static final Class89 aClass89_76 = new Class89(29, 3);
 
 	@OriginalMember(owner = "client!fe", name = "f", descriptor = "I")
 	public static int anInt1950 = 0;
 
 	@OriginalMember(owner = "client!fe", name = "g", descriptor = "I")
 	public static int anInt1951 = 0;
-
-	@OriginalMember(owner = "client!fe", name = "a", descriptor = "(I)V")
-	public static void method1998() {
-		aClass89_76 = null;
-	}
 
 	@OriginalMember(owner = "client!fe", name = "a", descriptor = "(Lclient!mr;II)V")
 	public static void method1999(@OriginalArg(0) Class11_Sub5_Sub2 arg0, @OriginalArg(2) int arg1) {

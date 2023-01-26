@@ -14,7 +14,7 @@ public final class Static91 {
 	public static Class2_Sub12_Sub3 aClass2_Sub12_Sub3_1;
 
 	@OriginalMember(owner = "client!f", name = "b", descriptor = "Lclient!mc;")
-	public static Class145 aClass145_69 = new Class145(61, -1);
+	public static final Class145 aClass145_69 = new Class145(61, -1);
 
 	@OriginalMember(owner = "client!f", name = "E", descriptor = "I")
 	public static final int anInt1909 = 1400;
@@ -357,13 +357,5 @@ public final class Static91 {
 	public static void method1963(@OriginalArg(0) int arg0) {
 		Static323.anInt6062 = arg0;
 		Static124.aClass98_63.method2614();
-	}
-
-	@OriginalMember(owner = "client!f", name = "c", descriptor = "(I)V")
-	public static void method1965() {
-		aClass145_69 = null;
-		aClass2_Sub12_Sub3_1 = null;
-		aClass2_Sub2_Sub17_1 = null;
-		aString18 = null;
 	}
 }

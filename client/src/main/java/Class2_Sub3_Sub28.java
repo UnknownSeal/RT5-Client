@@ -7,7 +7,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Class2_Sub3_Sub28 extends Class2_Sub3 {
 
 	@OriginalMember(owner = "client!qk", name = "Q", descriptor = "[I")
-	public static int[] anIntArray368 = new int[32];
+	public static final int[] anIntArray368 = new int[32];
 
 	@OriginalMember(owner = "client!qk", name = "N", descriptor = "I")
 	private int anInt5401 = 0;

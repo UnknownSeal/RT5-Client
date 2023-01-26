@@ -46,11 +46,6 @@ public final class Static351 {
 		}
 	}
 
-	@OriginalMember(owner = "client!ug", name = "b", descriptor = "(Z)V")
-	public static void method5857() {
-		aBooleanArray57 = null;
-	}
-
 	@OriginalMember(owner = "client!ug", name = "b", descriptor = "(I)V")
 	public static void method5858() {
 		for (@Pc(7) int local7 = 0; local7 < 5; local7++) {

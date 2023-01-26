@@ -10,9 +10,4 @@ public final class Static103 {
 		Static89.anImage1 = null;
 		Static90.aFont3 = null;
 	}
-
-	@OriginalMember(owner = "client!fr", name = "c", descriptor = "(I)V")
-	public static void method2179() {
-		aClass111_1 = null;
-	}
 }

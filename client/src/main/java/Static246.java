@@ -102,12 +102,6 @@ public final class Static246 {
 		}
 	}
 
-	@OriginalMember(owner = "client!oc", name = "a", descriptor = "(I)V")
-	public static void method4249() {
-		aClass111_2 = null;
-		aClass58Array3 = null;
-	}
-
 	@OriginalMember(owner = "client!oc", name = "a", descriptor = "(ZI)Z")
 	public static boolean method4250(@OriginalArg(1) int arg0) {
 		return arg0 == (arg0 & -arg0);

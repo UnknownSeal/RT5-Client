@@ -8,13 +8,13 @@ public final class Static92 {
 	public static int anInt1914;
 
 	@OriginalMember(owner = "client!fa", name = "b", descriptor = "Lclient!hu;")
-	public static Class98 aClass98_9 = new Class98(260);
+	public static final Class98 aClass98_9 = new Class98(260);
 
 	@OriginalMember(owner = "client!fa", name = "d", descriptor = "I")
 	public static int anInt1913 = 0;
 
 	@OriginalMember(owner = "client!fa", name = "e", descriptor = "Lclient!hg;")
-	public static Class92 aClass92_1 = new Class92();
+	public static final Class92 aClass92_1 = new Class92();
 
 	@OriginalMember(owner = "client!fa", name = "a", descriptor = "([I[ILclient!oe;I[I)V")
 	public static void method1966(@OriginalArg(0) int[] arg0, @OriginalArg(1) int[] arg1, @OriginalArg(2) Class11_Sub5_Sub2_Sub2 arg2, @OriginalArg(4) int[] arg3) {
@@ -226,11 +226,5 @@ public final class Static92 {
 			Static376.method6287(local14, local498, arg3, local728, Static352.aClass13Array25[Static370.aBoolean474 ? 1 : 0], arg2, arg0);
 		}
 		arg1.method2868(3, arg3 + arg0.anInt4248 / 2 - 1, arg2 + arg0.anInt4261 / 2 - 1, -1, 3);
-	}
-
-	@OriginalMember(owner = "client!fa", name = "a", descriptor = "(I)V")
-	public static void method1968() {
-		aClass98_9 = null;
-		aClass92_1 = null;
 	}
 }

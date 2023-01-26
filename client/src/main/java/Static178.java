@@ -148,11 +148,6 @@ public final class Static178 {
 		return local58;
 	}
 
-	@OriginalMember(owner = "client!kf", name = "a", descriptor = "(I)V")
-	public static void method2341() {
-		aClass51_3 = null;
-	}
-
 	@OriginalMember(owner = "client!kf", name = "b", descriptor = "(I)V")
 	public static void method2342() {
 		if (Static303.aClass221_2 != null) {

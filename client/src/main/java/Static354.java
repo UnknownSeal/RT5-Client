@@ -25,14 +25,7 @@ public final class Static354 {
 	private static boolean aBoolean98;
 
 	@OriginalMember(owner = "client!un", name = "p", descriptor = "Lclient!h;")
-	public static Class89 aClass89_42 = new Class89(57, 12);
-
-	@OriginalMember(owner = "client!un", name = "a", descriptor = "(B)V")
-	public static void method1380() {
-		aClass197_9 = null;
-		aClass89_42 = null;
-		aClass32_5 = null;
-	}
+	public static final Class89 aClass89_42 = new Class89(57, 12);
 
 	@OriginalMember(owner = "client!un", name = "a", descriptor = "(IIIIIZZ)V")
 	public static void method1381(@OriginalArg(2) int arg0, @OriginalArg(3) int arg1, @OriginalArg(4) int arg2, @OriginalArg(5) boolean arg3, @OriginalArg(6) boolean arg4) {

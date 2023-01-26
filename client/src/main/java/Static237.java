@@ -17,13 +17,7 @@ public final class Static237 {
 	public static boolean aBoolean298 = false;
 
 	@OriginalMember(owner = "client!nl", name = "e", descriptor = "[I")
-	public static int[] anIntArray283 = new int[50];
-
-	@OriginalMember(owner = "client!nl", name = "b", descriptor = "(I)V")
-	public static void method4115() {
-		anIntArray283 = null;
-		aClass197_63 = null;
-	}
+	public static final int[] anIntArray283 = new int[50];
 
 	@OriginalMember(owner = "client!nl", name = "a", descriptor = "(IIIIIIII)V")
 	public static void method4117(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6) {

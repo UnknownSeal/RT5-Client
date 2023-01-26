@@ -8,29 +8,19 @@ public final class Static70 {
 	public static boolean aBoolean130 = false;
 
 	@OriginalMember(owner = "client!e", name = "j", descriptor = "Lclient!h;")
-	public static Class89 aClass89_58 = new Class89(48, 5);
+	public static final Class89 aClass89_58 = new Class89(48, 5);
 
 	@OriginalMember(owner = "client!e", name = "l", descriptor = "Lclient!gd;")
-	public static Class79 aClass79_36 = new Class79("Loaded client variable data", "Client-Variablen geladen", "Variables du client chargées", "As variáveis do sistema foram carregadas");
+	public static final Class79 aClass79_36 = new Class79("Loaded client variable data", "Client-Variablen geladen", "Variables du client chargées", "As variáveis do sistema foram carregadas");
 
 	@OriginalMember(owner = "client!e", name = "m", descriptor = "Lclient!gd;")
-	public static Class79 aClass79_37 = new Class79("M", "M", "M", "M");
+	public static final Class79 aClass79_37 = new Class79("M", "M", "M", "M");
 
 	@OriginalMember(owner = "client!e", name = "n", descriptor = "Lclient!mc;")
-	public static Class145 aClass145_57 = new Class145(15, -1);
+	public static final Class145 aClass145_57 = new Class145(15, -1);
 
 	@OriginalMember(owner = "client!e", name = "o", descriptor = "[I")
-	public static int[] anIntArray112 = new int[] { 1, 2, 4, 8 };
-
-	@OriginalMember(owner = "client!e", name = "a", descriptor = "(Z)V")
-	public static void method1783() {
-		anIntArray112 = null;
-		aClass79_36 = null;
-		aClass145_57 = null;
-		aClass79_37 = null;
-		Class55.aRectangleArray1 = null;
-		aClass89_58 = null;
-	}
+	public static final int[] anIntArray112 = new int[] { 1, 2, 4, 8 };
 
 	@OriginalMember(owner = "client!e", name = "a", descriptor = "(ZLclient!ac;Lclient!ac;BI)I")
 	public static int method1786(@OriginalArg(0) boolean arg0, @OriginalArg(1) Class3_Sub1 arg1, @OriginalArg(2) Class3_Sub1 arg2, @OriginalArg(4) int arg3) {

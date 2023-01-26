@@ -5,10 +5,10 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static125 {
 
 	@OriginalMember(owner = "client!hc", name = "c", descriptor = "Lclient!kk;")
-	public static Class127 aClass127_8 = new Class127("WTRC", 1);
+	public static final Class127 aClass127_8 = new Class127("WTRC", 1);
 
 	@OriginalMember(owner = "client!hc", name = "g", descriptor = "Lclient!h;")
-	public static Class89 aClass89_249 = new Class89(84, -1);
+	public static final Class89 aClass89_249 = new Class89(84, -1);
 
 	@OriginalMember(owner = "client!hc", name = "a", descriptor = "([III[II)V")
 	public static void method6342(@OriginalArg(0) int[] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int[] arg3) {
@@ -39,11 +39,5 @@ public final class Static125 {
 		arg3[local21] = local39;
 		method6342(arg0, local21 - 1, arg2, arg3);
 		method6342(arg0, arg1, local21 + 1, arg3);
-	}
-
-	@OriginalMember(owner = "client!hc", name = "a", descriptor = "(I)V")
-	public static void method6343() {
-		aClass127_8 = null;
-		aClass89_249 = null;
 	}
 }

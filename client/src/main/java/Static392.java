@@ -18,12 +18,6 @@ public final class Static392 {
 	@OriginalMember(owner = "client!wr", name = "e", descriptor = "I")
 	public static int anInt7228 = 0;
 
-	@OriginalMember(owner = "client!wr", name = "a", descriptor = "(B)V")
-	public static void method6458() {
-		aClass197_97 = null;
-		aClass152_6 = null;
-	}
-
 	@OriginalMember(owner = "client!wr", name = "a", descriptor = "(IIB)V")
 	public static void method6459(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
 		if (Static222.method3915(arg0)) {

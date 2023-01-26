@@ -15,20 +15,13 @@ public final class Static235 {
 	public static int anInt3365 = 0;
 
 	@OriginalMember(owner = "client!nj", name = "h", descriptor = "Lclient!h;")
-	public static Class89 aClass89_140 = new Class89(42, 3);
+	public static final Class89 aClass89_140 = new Class89(42, 3);
 
 	@OriginalMember(owner = "client!nj", name = "j", descriptor = "I")
 	public static int anInt3368 = 0;
 
 	@OriginalMember(owner = "client!nj", name = "k", descriptor = "Lclient!gd;")
-	public static Class79 aClass79_72 = new Class79("Loaded sprites", "Sprites geladen.", "Sprites chargés", "Sprites carregados");
-
-	@OriginalMember(owner = "client!nj", name = "a", descriptor = "(I)V")
-	public static void method3335() {
-		aClass79_72 = null;
-		aClass89_140 = null;
-		aClass197_47 = null;
-	}
+	public static final Class79 aClass79_72 = new Class79("Loaded sprites", "Sprites geladen.", "Sprites chargés", "Sprites carregados");
 
 	@OriginalMember(owner = "client!nj", name = "a", descriptor = "(Lclient!ml;IILclient!bt;)V")
 	public static void method3338(@OriginalArg(0) Class152 arg0, @OriginalArg(1) int arg1, @OriginalArg(3) Class2_Sub4 arg2) {

@@ -11,7 +11,7 @@ public final class Static165 {
 	public static int[][][] anIntArrayArrayArray9;
 
 	@OriginalMember(owner = "client!jm", name = "c", descriptor = "Lclient!h;")
-	public static Class89 aClass89_131 = new Class89(44, 8);
+	public static final Class89 aClass89_131 = new Class89(44, 8);
 
 	@OriginalMember(owner = "client!jm", name = "k", descriptor = "I")
 	public static int anInt3148 = 0;
@@ -54,13 +54,6 @@ public final class Static165 {
 			}
 		}
 		return local16;
-	}
-
-	@OriginalMember(owner = "client!jm", name = "a", descriptor = "(B)V")
-	public static void method3150() {
-		aClass239_3 = null;
-		aClass89_131 = null;
-		anIntArrayArrayArray9 = null;
 	}
 
 	@OriginalMember(owner = "client!jm", name = "a", descriptor = "(IIII)V")

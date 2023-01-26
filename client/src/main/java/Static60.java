@@ -9,7 +9,7 @@ public final class Static60 {
 	public static int anInt666 = 0;
 
 	@OriginalMember(owner = "client!di", name = "d", descriptor = "[I")
-	public static int[] anIntArray35 = new int[] { 0, 64, 128, 128, 128, 64, 0, 0, 32, 64, 32, 96, 64 };
+	public static final int[] anIntArray35 = new int[] { 0, 64, 128, 128, 128, 64, 0, 0, 32, 64, 32, 96, 64 };
 
 	@OriginalMember(owner = "client!di", name = "e", descriptor = "I")
 	public static final int anInt667 = 1405;
@@ -28,11 +28,6 @@ public final class Static60 {
 			}
 		} catch (@Pc(37) Exception local37) {
 		}
-	}
-
-	@OriginalMember(owner = "client!di", name = "b", descriptor = "(I)V")
-	public static void method888() {
-		anIntArray35 = null;
 	}
 
 	@OriginalMember(owner = "client!di", name = "a", descriptor = "()V")

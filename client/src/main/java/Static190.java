@@ -17,13 +17,13 @@ public final class Static190 {
 	public static Class29_Sub1 aClass29_Sub1_63;
 
 	@OriginalMember(owner = "client!kt", name = "O", descriptor = "Lclient!mc;")
-	public static Class145 aClass145_138 = new Class145(58, 2);
+	public static final Class145 aClass145_138 = new Class145(58, 2);
 
 	@OriginalMember(owner = "client!kt", name = "Y", descriptor = "I")
 	public static int anInt3541 = 1;
 
 	@OriginalMember(owner = "client!kt", name = "cb", descriptor = "[Ljava/lang/String;")
-	public static String[] aStringArray28 = new String[100];
+	public static final String[] aStringArray28 = new String[100];
 
 	@OriginalMember(owner = "client!kt", name = "a", descriptor = "(IIILclient!wm;)V")
 	public static void method3499(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) Class19 arg2) {
@@ -55,15 +55,5 @@ public final class Static190 {
 		Static197.aClass13_12 = null;
 		Static110.aClass13_6 = null;
 		Static138.aClass13_8 = null;
-	}
-
-	@OriginalMember(owner = "client!kt", name = "g", descriptor = "(I)V")
-	public static void method3504() {
-		aClass221_1 = null;
-		aStringArray28 = null;
-		aClass145_138 = null;
-		anIntArray208 = null;
-		aClass29_Sub1_63 = null;
-		aClass19_8 = null;
 	}
 }

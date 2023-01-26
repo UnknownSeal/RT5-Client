@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static45 {
 
 	@OriginalMember(owner = "client!client", name = "Y", descriptor = "Lclient!kk;")
-	public static Class127 aClass127_2 = new Class127("WTWIP", 3);
+	public static final Class127 aClass127_2 = new Class127("WTWIP", 3);
 
 	@OriginalMember(owner = "client!client", name = "db", descriptor = "I")
 	public static int anInt1196 = 0;
@@ -116,11 +116,6 @@ public final class Static45 {
 				}
 			}
 		}
-	}
-
-	@OriginalMember(owner = "client!client", name = "h", descriptor = "(I)V")
-	public static void method1399() {
-		aClass127_2 = null;
 	}
 
 	@OriginalMember(owner = "client!client", name = "a", descriptor = "([Lclient!nk;IIIIIIIII)V")

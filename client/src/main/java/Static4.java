@@ -11,7 +11,7 @@ public final class Static4 {
 	public static int anInt89;
 
 	@OriginalMember(owner = "client!ac", name = "x", descriptor = "Lclient!mc;")
-	public static Class145 aClass145_8 = new Class145(70, 3);
+	public static final Class145 aClass145_8 = new Class145(70, 3);
 
 	@OriginalMember(owner = "client!ac", name = "z", descriptor = "Lclient!nl;")
 	public static Class162 aClass162_1 = new Class162();
@@ -66,12 +66,6 @@ public final class Static4 {
 			local4.aClass11_Sub1_3 = arg3;
 			local4.aClass11_Sub1_2 = arg4;
 		}
-	}
-
-	@OriginalMember(owner = "client!ac", name = "e", descriptor = "(I)V")
-	public static void method74() {
-		aClass145_8 = null;
-		aClass162_1 = null;
 	}
 
 	@OriginalMember(owner = "client!ac", name = "a", descriptor = "(ZLclient!bt;)V")

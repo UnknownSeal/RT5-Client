@@ -6,13 +6,13 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static143 {
 
 	@OriginalMember(owner = "client!ib", name = "y", descriptor = "Ljava/util/zip/CRC32;")
-	public static CRC32 aCRC32_1 = new CRC32();
+	public static final CRC32 aCRC32_1 = new CRC32();
 
 	@OriginalMember(owner = "client!ib", name = "C", descriptor = "Lclient!s;")
-	public static Class210 aClass210_7 = new Class210(0, 4);
+	public static final Class210 aClass210_7 = new Class210(0, 4);
 
 	@OriginalMember(owner = "client!ib", name = "D", descriptor = "Lclient!mc;")
-	public static Class145 aClass145_102 = new Class145(45, 3);
+	public static final Class145 aClass145_102 = new Class145(45, 3);
 
 	@OriginalMember(owner = "client!ib", name = "a", descriptor = "(IIBZI)V")
 	public static void method2677(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) boolean arg2, @OriginalArg(4) int arg3) {
@@ -25,13 +25,6 @@ public final class Static143 {
 			arg2 = true;
 		}
 		Static163.method3099(arg3, arg0, local12, arg1, arg2);
-	}
-
-	@OriginalMember(owner = "client!ib", name = "b", descriptor = "(B)V")
-	public static void method2678() {
-		aClass145_102 = null;
-		aCRC32_1 = null;
-		aClass210_7 = null;
 	}
 
 	@OriginalMember(owner = "client!ib", name = "a", descriptor = "(IIB)V")

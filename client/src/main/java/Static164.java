@@ -19,7 +19,7 @@ public final class Static164 {
 	public static Class24 aClass24_1;
 
 	@OriginalMember(owner = "client!jl", name = "V", descriptor = "Lclient!h;")
-	public static Class89 aClass89_129 = new Class89(79, 7);
+	public static final Class89 aClass89_129 = new Class89(79, 7);
 
 	@OriginalMember(owner = "client!jl", name = "W", descriptor = "I")
 	public static final int anInt3138 = 0;
@@ -28,23 +28,13 @@ public final class Static164 {
 	public static Class161 aClass161_5 = null;
 
 	@OriginalMember(owner = "client!jl", name = "Y", descriptor = "[Ljava/lang/String;")
-	public static String[] aStringArray24 = new String[] { "en", "de", "fr", "pt", "nl" };
+	public static final String[] aStringArray24 = new String[] { "en", "de", "fr", "pt", "nl" };
 
 	@OriginalMember(owner = "client!jl", name = "cb", descriptor = "Lclient!s;")
-	public static Class210 aClass210_8 = new Class210(8, 6);
+	public static final Class210 aClass210_8 = new Class210(8, 6);
 
 	@OriginalMember(owner = "client!jl", name = "db", descriptor = "Lclient!h;")
-	public static Class89 aClass89_130 = new Class89(86, 10);
-
-	@OriginalMember(owner = "client!jl", name = "b", descriptor = "(B)V")
-	public static void method3145() {
-		aClass89_130 = null;
-		aClass89_129 = null;
-		aStringArray24 = null;
-		aClass161_5 = null;
-		aClass210_8 = null;
-		aClass24_1 = null;
-	}
+	public static final Class89 aClass89_130 = new Class89(86, 10);
 
 	@OriginalMember(owner = "client!jl", name = "a", descriptor = "(IIIIIIILclient!ur;Lclient!vi;Lclient!kf;Ljava/lang/String;Lclient!nk;)V")
 	public static void method3146(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5, @OriginalArg(7) Class130 arg6, @OriginalArg(8) Class239 arg7, @OriginalArg(9) Class78 arg8, @OriginalArg(10) String arg9, @OriginalArg(11) Class161 arg10) {

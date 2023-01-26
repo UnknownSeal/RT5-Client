@@ -8,10 +8,10 @@ public final class Static310 {
 	public static int[][][] anIntArrayArrayArray12;
 
 	@OriginalMember(owner = "client!rt", name = "d", descriptor = "Lclient!mc;")
-	public static Class145 aClass145_203 = new Class145(59, 18);
+	public static final Class145 aClass145_203 = new Class145(59, 18);
 
 	@OriginalMember(owner = "client!rt", name = "g", descriptor = "[Lclient!pr;")
-	public static Class185[] aClass185Array1 = new Class185[4];
+	public static final Class185[] aClass185Array1 = new Class185[4];
 
 	@OriginalMember(owner = "client!rt", name = "a", descriptor = "(I)V")
 	public static void method5282() {
@@ -35,12 +35,5 @@ public final class Static310 {
 			local45 |= local15;
 		}
 		return local45 | (long) arg2.method6084() << 32;
-	}
-
-	@OriginalMember(owner = "client!rt", name = "b", descriptor = "(B)V")
-	public static void method5284() {
-		anIntArrayArrayArray12 = null;
-		aClass185Array1 = null;
-		aClass145_203 = null;
 	}
 }

@@ -57,9 +57,4 @@ public final class Static339 {
 			local30 = local162;
 		}
 	}
-
-	@OriginalMember(owner = "client!to", name = "b", descriptor = "(Z)V")
-	public static void method5760() {
-		aClass13_18 = null;
-	}
 }

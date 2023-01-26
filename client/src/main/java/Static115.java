@@ -8,10 +8,10 @@ public final class Static115 {
 	public static int anInt3837;
 
 	@OriginalMember(owner = "client!gn", name = "j", descriptor = "Lclient!mc;")
-	public static Class145 aClass145_147 = new Class145(54, 8);
+	public static final Class145 aClass145_147 = new Class145(54, 8);
 
 	@OriginalMember(owner = "client!gn", name = "n", descriptor = "[I")
-	public static int[] anIntArray234 = new int[] { 2, 2, 4, 0, 1, 8, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0 };
+	public static final int[] anIntArray234 = new int[] { 2, 2, 4, 0, 1, 8, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0 };
 
 	@OriginalMember(owner = "client!gn", name = "a", descriptor = "(IIII)V")
 	public static void method3808(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
@@ -49,12 +49,6 @@ public final class Static115 {
 			Static257.aClass2_Sub4_Sub2_4.method4841(Static27.method872(arg0));
 			Static257.aClass2_Sub4_Sub2_4.method4821(arg0);
 		}
-	}
-
-	@OriginalMember(owner = "client!gn", name = "h", descriptor = "(I)V")
-	public static void method3842() {
-		aClass145_147 = null;
-		anIntArray234 = null;
 	}
 
 	@OriginalMember(owner = "client!gn", name = "a", descriptor = "(I[Lclient!nk;I)V")

@@ -13,19 +13,13 @@ public final class Static352 {
 	public static int anInt6519;
 
 	@OriginalMember(owner = "client!uh", name = "w", descriptor = "Lclient!cm;")
-	public static Class36 aClass36_9 = new Class36();
+	public static final Class36 aClass36_9 = new Class36();
 
 	@OriginalMember(owner = "client!uh", name = "V", descriptor = "J")
 	public static long aLong202 = -1L;
 
 	@OriginalMember(owner = "client!uh", name = "W", descriptor = "Z")
 	public static boolean aBoolean446 = false;
-
-	@OriginalMember(owner = "client!uh", name = "c", descriptor = "(B)V")
-	public static void method5874() {
-		aClass13Array25 = null;
-		aClass36_9 = null;
-	}
 
 	@OriginalMember(owner = "client!uh", name = "a", descriptor = "(IIIII)V")
 	public static void method5875(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {

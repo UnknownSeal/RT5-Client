@@ -1,0 +1,5 @@
+rename:
+id.class -> Interface6.class (16 instances)
+hb.class -> Class11_Sub5.class (1 instance)
+ml.class -> Class152.class (1 instance)
+ci.class -> Interface2.class (1 instance)

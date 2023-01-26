@@ -11,7 +11,7 @@ public final class Static34 {
 	public static Class103 aClass103_3;
 
 	@OriginalMember(owner = "client!bt", name = "Ab", descriptor = "Lclient!cm;")
-	public static Class36 aClass36_6 = new Class36();
+	public static final Class36 aClass36_6 = new Class36();
 
 	@OriginalMember(owner = "client!bt", name = "a", descriptor = "(ILclient!wm;)V")
 	public static void method4809(@OriginalArg(1) Class19 arg0) {
@@ -77,12 +77,5 @@ public final class Static34 {
 				return;
 			}
 		}
-	}
-
-	@OriginalMember(owner = "client!bt", name = "k", descriptor = "(I)V")
-	public static void method4846() {
-		aClass36_6 = null;
-		aClass103_3 = null;
-		aClass197_67 = null;
 	}
 }

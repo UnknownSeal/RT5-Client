@@ -13,13 +13,7 @@ public final class Static160 {
 	public static boolean aBoolean206 = false;
 
 	@OriginalMember(owner = "client!jf", name = "r", descriptor = "[I")
-	public static int[] anIntArray186 = new int[500];
-
-	@OriginalMember(owner = "client!jf", name = "a", descriptor = "(I)V")
-	public static void method2951() {
-		anIntArray185 = null;
-		anIntArray186 = null;
-	}
+	public static final int[] anIntArray186 = new int[500];
 
 	@OriginalMember(owner = "client!jf", name = "a", descriptor = "(Z)Z")
 	public static boolean method2952(@OriginalArg(0) boolean arg0) {

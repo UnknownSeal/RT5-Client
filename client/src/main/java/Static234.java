@@ -9,35 +9,24 @@ public final class Static234 {
 	public static int anInt4226 = -1;
 
 	@OriginalMember(owner = "client!ni", name = "P", descriptor = "[Ljava/lang/String;")
-	public static String[] aStringArray39 = new String[100];
+	public static final String[] aStringArray39 = new String[100];
 
 	@OriginalMember(owner = "client!ni", name = "a", descriptor = "(Lclient!ml;ILjava/lang/String;I)Lclient!cc;")
 	public static Class32 method4094(@OriginalArg(0) Class152 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) String arg2) {
 		if (arg1 == 0) {
 			return arg0.method3760(arg2);
 		}
-		@Pc(43) Class32 local43;
-		if (arg1 == 1) {
-			try {
-				Static404.method4629("openjs", arg0.anApplet1, new Object[] { (new URL(arg0.anApplet1.getCodeBase(), arg2)).toString() });
-				local43 = new Class32();
-				local43.anInt993 = 1;
-				return local43;
-			} catch (@Pc(49) Throwable local49) {
-				local43 = new Class32();
-				local43.anInt993 = 2;
-				return local43;
-			}
-		} else if (arg1 == 2) {
+		@Pc(79) Class32 local79;
+		if (arg1 == 2) {
 			try {
 				arg0.anApplet1.getAppletContext().showDocument(new URL(arg0.anApplet1.getCodeBase(), arg2), "_blank");
-				local43 = new Class32();
-				local43.anInt993 = 1;
-				return local43;
+				local79 = new Class32();
+				local79.anInt993 = 1;
+				return local79;
 			} catch (@Pc(85) Exception local85) {
-				local43 = new Class32();
-				local43.anInt993 = 2;
-				return local43;
+				local79 = new Class32();
+				local79.anInt993 = 2;
+				return local79;
 			}
 		} else if (arg1 == 3) {
 			try {
@@ -46,22 +35,17 @@ public final class Static234 {
 			}
 			try {
 				arg0.anApplet1.getAppletContext().showDocument(new URL(arg0.anApplet1.getCodeBase(), arg2), "_top");
-				local43 = new Class32();
-				local43.anInt993 = 1;
-				return local43;
+				local79 = new Class32();
+				local79.anInt993 = 1;
+				return local79;
 			} catch (@Pc(127) Exception local127) {
-				local43 = new Class32();
-				local43.anInt993 = 2;
-				return local43;
+				local79 = new Class32();
+				local79.anInt993 = 2;
+				return local79;
 			}
 		} else {
 			throw new IllegalArgumentException();
 		}
-	}
-
-	@OriginalMember(owner = "client!ni", name = "a", descriptor = "(B)V")
-	public static void method4097() {
-		aStringArray39 = null;
 	}
 
 	@OriginalMember(owner = "client!ni", name = "a", descriptor = "(CI)B")

@@ -47,11 +47,6 @@ public final class Static298 {
 		local11.method6467();
 	}
 
-	@OriginalMember(owner = "client!rc", name = "a", descriptor = "(B)V")
-	public static void method2424() {
-		aByteArray27 = null;
-	}
-
 	@OriginalMember(owner = "client!rc", name = "a", descriptor = "(II)Z")
 	public static boolean method2425(@OriginalArg(0) int arg0) {
 		if (arg0 == 15 || arg0 == 46 || arg0 == 58 || arg0 == 6 || arg0 == 21) {

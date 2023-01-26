@@ -15,10 +15,10 @@ public final class Static61 {
 	public static Class197 aClass197_12;
 
 	@OriginalMember(owner = "client!dj", name = "Y", descriptor = "Lclient!hu;")
-	public static Class98 aClass98_5 = new Class98(8);
+	public static final Class98 aClass98_5 = new Class98(8);
 
 	@OriginalMember(owner = "client!dj", name = "bb", descriptor = "Ljava/util/Random;")
-	public static Random aRandom1 = new Random();
+	public static final Random aRandom1 = new Random();
 
 	@OriginalMember(owner = "client!dj", name = "a", descriptor = "(Ljava/lang/String;I)V")
 	public static void method1669(@OriginalArg(0) String arg0) {
@@ -69,15 +69,6 @@ public final class Static61 {
 			Static257.aClass2_Sub4_Sub2_4.method4841(Static27.method872(arg0));
 			Static257.aClass2_Sub4_Sub2_4.method4821(arg0);
 		}
-	}
-
-	@OriginalMember(owner = "client!dj", name = "b", descriptor = "(B)V")
-	public static void method1670() {
-		aClass98_5 = null;
-		aString14 = null;
-		aClass197_11 = null;
-		aClass197_12 = null;
-		aRandom1 = null;
 	}
 
 	@OriginalMember(owner = "client!dj", name = "a", descriptor = "(B[JI[II)V")

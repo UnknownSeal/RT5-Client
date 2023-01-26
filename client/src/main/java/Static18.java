@@ -11,7 +11,7 @@ public final class Static18 {
 	public static Class32 aClass32_2;
 
 	@OriginalMember(owner = "client!bb", name = "k", descriptor = "Lclient!ti;")
-	public static Class222 aClass222_1 = new Class222();
+	public static final Class222 aClass222_1 = new Class222();
 
 	@OriginalMember(owner = "client!bb", name = "m", descriptor = "I")
 	public static int anInt519 = -1;
@@ -20,18 +20,10 @@ public final class Static18 {
 	public static boolean aBoolean30 = false;
 
 	@OriginalMember(owner = "client!bb", name = "y", descriptor = "[I")
-	public static int[] anIntArray27 = new int[100];
+	public static final int[] anIntArray27 = new int[100];
 
 	@OriginalMember(owner = "client!bb", name = "A", descriptor = "I")
 	public static int anInt530 = 0;
-
-	@OriginalMember(owner = "client!bb", name = "d", descriptor = "(I)V")
-	public static void method555() {
-		anIntArray27 = null;
-		aClass207_1 = null;
-		aClass222_1 = null;
-		aClass32_2 = null;
-	}
 
 	@OriginalMember(owner = "client!bb", name = "a", descriptor = "(ILjava/awt/Component;)Lclient!nj;")
 	public static Class123 method556(@OriginalArg(1) Component arg0) {

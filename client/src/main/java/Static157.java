@@ -14,20 +14,12 @@ public final class Static157 {
 	public static Class31 aClass31_4;
 
 	@OriginalMember(owner = "client!ja", name = "g", descriptor = "[I")
-	public static int[] anIntArray180 = new int[4];
+	public static final int[] anIntArray180 = new int[4];
 
 	@OriginalMember(owner = "client!ja", name = "a", descriptor = "()V")
 	public static void method2917() {
 		aClass31_4 = null;
 		aClass13_9 = null;
-	}
-
-	@OriginalMember(owner = "client!ja", name = "b", descriptor = "()V")
-	public static void method2920() {
-		aClass31_4 = null;
-		aClass13_10 = null;
-		aClass13_9 = null;
-		anIntArray180 = null;
 	}
 
 	@OriginalMember(owner = "client!ja", name = "a", descriptor = "(Lclient!wm;)V")

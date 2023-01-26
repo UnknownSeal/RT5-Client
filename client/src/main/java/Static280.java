@@ -13,9 +13,8 @@ public final class Static280 {
 			Static234.method4094(arg1, 3, arg0);
 			return;
 		}
-		@Pc(32) String local32;
 		if (Static215.aString30.startsWith("win") && Static215.anInt3795 != 3) {
-			local32 = null;
+			@Pc(32) String local32 = null;
 			if (arg1.anApplet1 != null) {
 				local32 = arg1.anApplet1.getParameter("haveie6");
 			}
@@ -24,16 +23,6 @@ public final class Static280 {
 				Static257.aString39 = arg0;
 				Static18.aClass32_2 = local52;
 				Static17.aClass152_4 = arg1;
-				return;
-			}
-		}
-		if (Static215.aString30.startsWith("mac")) {
-			local32 = null;
-			if (arg1.anApplet1 != null) {
-				local32 = arg1.anApplet1.getParameter("havefirefox");
-			}
-			if (local32 != null && local32.equals("1") && arg2) {
-				Static234.method4094(arg1, 1, arg0);
 				return;
 			}
 		}

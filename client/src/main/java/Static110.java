@@ -11,10 +11,10 @@ public final class Static110 {
 	public static Class205 aClass205_1;
 
 	@OriginalMember(owner = "client!gd", name = "e", descriptor = "Lclient!s;")
-	public static Class210 aClass210_5 = new Class210(3, -1);
+	public static final Class210 aClass210_5 = new Class210(3, -1);
 
 	@OriginalMember(owner = "client!gd", name = "h", descriptor = "Lclient!mc;")
-	public static Class145 aClass145_84 = new Class145(3, 7);
+	public static final Class145 aClass145_84 = new Class145(3, 7);
 
 	@OriginalMember(owner = "client!gd", name = "a", descriptor = "(Lclient!ml;I)[Lclient!oi;")
 	public static Class169[] method2265(@OriginalArg(0) Class152 arg0) {
@@ -39,13 +39,5 @@ public final class Static110 {
 			local59.anInt4682 = local45[(local53 << 2) + 3];
 		}
 		return local51;
-	}
-
-	@OriginalMember(owner = "client!gd", name = "a", descriptor = "(I)V")
-	public static void method2266() {
-		aClass210_5 = null;
-		aClass13_6 = null;
-		aClass145_84 = null;
-		aClass205_1 = null;
 	}
 }

@@ -149,9 +149,4 @@ public final class Static222 {
 		}
 		Static342.anInt5657 = 0;
 	}
-
-	@OriginalMember(owner = "client!ms", name = "d", descriptor = "(I)V")
-	public static void method3919() {
-		aFrame1 = null;
-	}
 }

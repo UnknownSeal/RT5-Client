@@ -14,13 +14,13 @@ public final class Static48 {
 	public static volatile long aLong37 = 0L;
 
 	@OriginalMember(owner = "client!cq", name = "e", descriptor = "Lclient!kk;")
-	public static Class127 aClass127_3 = new Class127("WTI", 5);
+	public static final Class127 aClass127_3 = new Class127("WTI", 5);
 
 	@OriginalMember(owner = "client!cq", name = "f", descriptor = "Lclient!h;")
-	public static Class89 aClass89_43 = new Class89(24, 12);
+	public static final Class89 aClass89_43 = new Class89(24, 12);
 
 	@OriginalMember(owner = "client!cq", name = "g", descriptor = "Lclient!hu;")
-	public static Class98 aClass98_3 = new Class98(10);
+	public static final Class98 aClass98_3 = new Class98(10);
 
 	@OriginalMember(owner = "client!cq", name = "a", descriptor = "(II)[B")
 	public static synchronized byte[] method1465(@OriginalArg(0) int arg0) {
@@ -40,13 +40,6 @@ public final class Static48 {
 		} else {
 			return new byte[arg0];
 		}
-	}
-
-	@OriginalMember(owner = "client!cq", name = "a", descriptor = "(I)V")
-	public static void method1466() {
-		aClass89_43 = null;
-		aClass127_3 = null;
-		aClass98_3 = null;
 	}
 
 	@OriginalMember(owner = "client!cq", name = "a", descriptor = "(IIII)I")

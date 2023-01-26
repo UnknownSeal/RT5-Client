@@ -11,7 +11,7 @@ public final class Static230 {
 	public static Class13[] aClass13Array16;
 
 	@OriginalMember(owner = "client!ne", name = "H", descriptor = "Lclient!h;")
-	public static Class89 aClass89_163 = new Class89(102, 12);
+	public static final Class89 aClass89_163 = new Class89(102, 12);
 
 	@OriginalMember(owner = "client!ne", name = "a", descriptor = "(IIIII)V")
 	public static void method4011(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {
@@ -70,13 +70,6 @@ public final class Static230 {
 		Static347.anInt6441 = 1;
 		Static47.anInt1248 = 0;
 		Static41.anInt1046 = -3;
-	}
-
-	@OriginalMember(owner = "client!ne", name = "b", descriptor = "(Z)V")
-	public static void method4014() {
-		aClass89_163 = null;
-		aClass13Array16 = null;
-		aByteArrayArrayArray13 = null;
 	}
 
 	@OriginalMember(owner = "client!ne", name = "b", descriptor = "(IIIII)V")

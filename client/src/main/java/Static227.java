@@ -13,13 +13,13 @@ public final class Static227 {
 	public static int anInt4036;
 
 	@OriginalMember(owner = "client!nb", name = "i", descriptor = "Lclient!mc;")
-	public static Class145 aClass145_151 = new Class145(68, 3);
+	public static final Class145 aClass145_151 = new Class145(68, 3);
 
 	@OriginalMember(owner = "client!nb", name = "B", descriptor = "Lclient!gd;")
-	public static Class79 aClass79_90 = new Class79("Loading interfaces - ", "Lade Benutzeroberfläche - ", "Chargement des interfaces - ", "Carregando interfaces - ");
+	public static final Class79 aClass79_90 = new Class79("Loading interfaces - ", "Lade Benutzeroberfläche - ", "Chargement des interfaces - ", "Carregando interfaces - ");
 
 	@OriginalMember(owner = "client!nb", name = "D", descriptor = "Lclient!h;")
-	public static Class89 aClass89_161 = new Class89(91, 2);
+	public static final Class89 aClass89_161 = new Class89(91, 2);
 
 	@OriginalMember(owner = "client!nb", name = "a", descriptor = "(Z)V")
 	public static void method3988() {
@@ -43,14 +43,5 @@ public final class Static227 {
 		}
 		Static107.anInt2220 = local51 + 8;
 		Static352.anInt6519 = Static268.anInt4959 * 16 + (Static270.aBoolean371 ? 26 : 22);
-	}
-
-	@OriginalMember(owner = "client!nb", name = "a", descriptor = "(B)V")
-	public static void method3991() {
-		aClass89_161 = null;
-		aClass145_151 = null;
-		aClass2_Sub12_Sub2_2 = null;
-		aClass79_90 = null;
-		aClass161_11 = null;
 	}
 }

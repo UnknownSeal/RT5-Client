@@ -13,10 +13,10 @@ public final class Static163 {
 	public static Class15 aClass15_1;
 
 	@OriginalMember(owner = "client!jj", name = "R", descriptor = "Lclient!gd;")
-	public static Class79 aClass79_68 = new Class79("Loading world map - ", "Lade Weltkarte - ", "Chargement de la mappemonde - ", "Carregando mapa-múndi - ");
+	public static final Class79 aClass79_68 = new Class79("Loading world map - ", "Lade Weltkarte - ", "Chargement de la mappemonde - ", "Carregando mapa-múndi - ");
 
 	@OriginalMember(owner = "client!jj", name = "U", descriptor = "Lclient!mc;")
-	public static Class145 aClass145_116 = new Class145(34, -1);
+	public static final Class145 aClass145_116 = new Class145(34, -1);
 
 	@OriginalMember(owner = "client!jj", name = "W", descriptor = "I")
 	public static int anInt3086 = 0;
@@ -137,14 +137,6 @@ public final class Static163 {
 			Static257.aClass2_Sub4_Sub2_4.method4841(Static27.method872(arg0));
 			Static257.aClass2_Sub4_Sub2_4.method4821(arg0);
 		}
-	}
-
-	@OriginalMember(owner = "client!jj", name = "c", descriptor = "(I)V")
-	public static void method3102() {
-		aClass15_1 = null;
-		aClass79_68 = null;
-		aClass145_116 = null;
-		aStringArray23 = null;
 	}
 
 	@OriginalMember(owner = "client!jj", name = "a", descriptor = "(ILclient!nk;)Ljava/lang/String;")

@@ -23,10 +23,4 @@ public final class Static370 {
 			local7.aClass11_Sub2_2 = null;
 		}
 	}
-
-	@OriginalMember(owner = "client!vn", name = "c", descriptor = "(Z)V")
-	public static void method6246() {
-		aClass140_1 = null;
-		aClass2_Sub24_1 = null;
-	}
 }

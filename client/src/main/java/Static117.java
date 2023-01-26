@@ -11,24 +11,16 @@ public final class Static117 {
 	public static int anInt2375;
 
 	@OriginalMember(owner = "client!gp", name = "c", descriptor = "Lclient!gd;")
-	public static Class79 aClass79_47 = new Class79("Checking for updates - ", "Suche nach Updates - ", "Vérification des mises à jour - ", "Verificando atualizações - ");
+	public static final Class79 aClass79_47 = new Class79("Checking for updates - ", "Suche nach Updates - ", "Vérification des mises à jour - ", "Verificando atualizações - ");
 
 	@OriginalMember(owner = "client!gp", name = "o", descriptor = "Lclient!gd;")
-	public static Class79 aClass79_48 = new Class79("Loaded defaults", "Standardeinstellungen geladen", "Paramètres par défaut chargés", "Padrões carregados");
+	public static final Class79 aClass79_48 = new Class79("Loaded defaults", "Standardeinstellungen geladen", "Paramètres par défaut chargés", "Padrões carregados");
 
 	@OriginalMember(owner = "client!gp", name = "r", descriptor = "I")
 	public static int anInt2376 = -1;
 
 	@OriginalMember(owner = "client!gp", name = "s", descriptor = "Lclient!gd;")
-	public static Class79 aClass79_49 = new Class79("Loading sprites - ", "Lade Sprites - ", "Chargement des sprites - ", "Carregando sprites - ");
-
-	@OriginalMember(owner = "client!gp", name = "a", descriptor = "(B)V")
-	public static void method2365() {
-		aClass79_49 = null;
-		anIntArray150 = null;
-		aClass79_47 = null;
-		aClass79_48 = null;
-	}
+	public static final Class79 aClass79_49 = new Class79("Loading sprites - ", "Lade Sprites - ", "Chargement des sprites - ", "Carregando sprites - ");
 
 	@OriginalMember(owner = "client!gp", name = "a", descriptor = "(Lclient!r;Lclient!r;Z)V")
 	public static void method2366(@OriginalArg(0) Class197 arg0, @OriginalArg(1) Class197 arg1) {

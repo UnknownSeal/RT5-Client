@@ -20,7 +20,7 @@ public final class Static97 {
 	public static final boolean aBoolean144 = false;
 
 	@OriginalMember(owner = "client!fk", name = "P", descriptor = "Lclient!h;")
-	public static Class89 aClass89_82 = new Class89(9, 8);
+	public static final Class89 aClass89_82 = new Class89(9, 8);
 
 	@OriginalMember(owner = "client!fk", name = "lb", descriptor = "I")
 	public static int anInt2040 = -50;
@@ -53,11 +53,6 @@ public final class Static97 {
 		} else {
 			Static230.method4013();
 		}
-	}
-
-	@OriginalMember(owner = "client!fk", name = "a", descriptor = "(B)V")
-	public static void method2092() {
-		aClass89_82 = null;
 	}
 
 	@OriginalMember(owner = "client!fk", name = "a", descriptor = "(I[Ljava/lang/String;)[Ljava/lang/String;")

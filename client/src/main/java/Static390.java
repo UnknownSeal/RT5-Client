@@ -12,11 +12,6 @@ public final class Static390 {
 	@OriginalMember(owner = "client!wp", name = "j", descriptor = "[[[Lclient!f;")
 	public static Class67[][][] aClass67ArrayArrayArray5;
 
-	@OriginalMember(owner = "client!wp", name = "a", descriptor = "(Z)V")
-	public static void method6447() {
-		aClass67ArrayArrayArray5 = null;
-	}
-
 	@OriginalMember(owner = "client!wp", name = "a", descriptor = "(I)V")
 	public static void method6448() {
 		Static289.aClass197_71.anInt5558 = 1;

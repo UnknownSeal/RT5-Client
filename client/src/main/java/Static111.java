@@ -16,12 +16,6 @@ public final class Static111 {
 	@OriginalMember(owner = "client!ge", name = "l", descriptor = "Z")
 	public static boolean aBoolean167 = false;
 
-	@OriginalMember(owner = "client!ge", name = "b", descriptor = "(B)V")
-	public static void method2272() {
-		aClass197_25 = null;
-		aClass197_24 = null;
-	}
-
 	@OriginalMember(owner = "client!ge", name = "a", descriptor = "(I)V")
 	public static void method2274() {
 		for (@Pc(15) Class2_Sub6 local15 = (Class2_Sub6) Static366.aClass135_40.method3550(); local15 != null; local15 = (Class2_Sub6) Static366.aClass135_40.method3551()) {

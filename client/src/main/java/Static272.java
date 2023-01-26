@@ -8,25 +8,25 @@ public final class Static272 {
 	public static int anInt5023;
 
 	@OriginalMember(owner = "client!pk", name = "Q", descriptor = "Lclient!h;")
-	public static Class89 aClass89_184 = new Class89(2, 2);
+	public static final Class89 aClass89_184 = new Class89(2, 2);
 
 	@OriginalMember(owner = "client!pk", name = "hb", descriptor = "Lclient!h;")
-	public static Class89 aClass89_185 = new Class89(78, 6);
+	public static final Class89 aClass89_185 = new Class89(78, 6);
 
 	@OriginalMember(owner = "client!pk", name = "ib", descriptor = "I")
 	public static int anInt5022 = -1;
 
 	@OriginalMember(owner = "client!pk", name = "jb", descriptor = "Lclient!h;")
-	public static Class89 aClass89_186 = new Class89(0, 10);
+	public static final Class89 aClass89_186 = new Class89(0, 10);
 
 	@OriginalMember(owner = "client!pk", name = "kb", descriptor = "Lclient!mc;")
-	public static Class145 aClass145_180 = new Class145(0, 2);
+	public static final Class145 aClass145_180 = new Class145(0, 2);
 
 	@OriginalMember(owner = "client!pk", name = "lb", descriptor = "Lclient!s;")
-	public static Class210 aClass210_11 = new Class210(1, 15);
+	public static final Class210 aClass210_11 = new Class210(1, 15);
 
 	@OriginalMember(owner = "client!pk", name = "mb", descriptor = "[I")
-	public static int[] anIntArray351 = new int[] { 32, 39, 44, 47 };
+	public static final int[] anIntArray351 = new int[] { 32, 39, 44, 47 };
 
 	@OriginalMember(owner = "client!pk", name = "a", descriptor = "(ZLjava/lang/String;I)V")
 	public static void method4592(@OriginalArg(0) boolean arg0, @OriginalArg(1) String arg1) {
@@ -61,15 +61,5 @@ public final class Static272 {
 			local112[local114] = Static146.method2699(local11[local114]).method5600();
 		}
 		Static135.method2534(local112, Static177.aShortArray56);
-	}
-
-	@OriginalMember(owner = "client!pk", name = "f", descriptor = "(I)V")
-	public static void method4593() {
-		aClass145_180 = null;
-		aClass89_185 = null;
-		anIntArray351 = null;
-		aClass89_184 = null;
-		aClass210_11 = null;
-		aClass89_186 = null;
 	}
 }

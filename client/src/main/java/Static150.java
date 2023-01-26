@@ -11,32 +11,22 @@ public final class Static150 {
 	public static Class205 aClass205_2;
 
 	@OriginalMember(owner = "client!il", name = "P", descriptor = "Lclient!mc;")
-	public static Class145 aClass145_107 = new Class145(17, 8);
+	public static final Class145 aClass145_107 = new Class145(17, 8);
 
 	@OriginalMember(owner = "client!il", name = "W", descriptor = "Lclient!gd;")
-	public static Class79 aClass79_64 = new Class79("Please remove ", "Bitte entferne ", "Veuillez commencer par supprimer ", "Remova ");
+	public static final Class79 aClass79_64 = new Class79("Please remove ", "Bitte entferne ", "Veuillez commencer par supprimer ", "Remova ");
 
 	@OriginalMember(owner = "client!il", name = "X", descriptor = "[I")
-	public static int[] anIntArray174 = new int[] { 0, 0, 0, 0, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3 };
+	public static final int[] anIntArray174 = new int[] { 0, 0, 0, 0, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3 };
 
 	@OriginalMember(owner = "client!il", name = "Y", descriptor = "[I")
-	public static int[] anIntArray175 = new int[500];
+	public static final int[] anIntArray175 = new int[500];
 
 	@OriginalMember(owner = "client!il", name = "b", descriptor = "(IIB)V")
 	public static void method2737(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
 		@Pc(16) Class2_Sub2_Sub7 local16 = Static316.method5412(6, arg0);
 		local16.method2311();
 		local16.anInt2289 = arg1;
-	}
-
-	@OriginalMember(owner = "client!il", name = "c", descriptor = "(Z)V")
-	public static void method2738() {
-		aClass145_107 = null;
-		anIntArray173 = null;
-		aClass205_2 = null;
-		aClass79_64 = null;
-		anIntArray175 = null;
-		anIntArray174 = null;
 	}
 
 	@OriginalMember(owner = "client!il", name = "a", descriptor = "(ZI)Ljava/lang/String;")

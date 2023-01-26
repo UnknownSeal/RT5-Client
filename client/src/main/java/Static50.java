@@ -5,19 +5,13 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static50 {
 
 	@OriginalMember(owner = "client!ct", name = "j", descriptor = "Lclient!h;")
-	public static Class89 aClass89_46 = new Class89(39, 17);
+	public static final Class89 aClass89_46 = new Class89(39, 17);
 
 	@OriginalMember(owner = "client!ct", name = "N", descriptor = "I")
 	public static int anInt1332 = 0;
 
 	@OriginalMember(owner = "client!ct", name = "xb", descriptor = "[Lclient!go;")
-	public static Class84[] aClass84Array1 = new Class84[8];
-
-	@OriginalMember(owner = "client!ct", name = "a", descriptor = "(I)V")
-	public static void method1517() {
-		aClass84Array1 = null;
-		aClass89_46 = null;
-	}
+	public static final Class84[] aClass84Array1 = new Class84[8];
 
 	@OriginalMember(owner = "client!ct", name = "a", descriptor = "(ZZ)V")
 	public static void method1525(@OriginalArg(0) boolean arg0) {

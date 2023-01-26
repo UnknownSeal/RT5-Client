@@ -8,7 +8,7 @@ public final class Static47 {
 	public static Class214[] aClass214Array1;
 
 	@OriginalMember(owner = "client!co", name = "f", descriptor = "Lclient!gd;")
-	public static Class79 aClass79_27 = new Class79("You can't add yourself to your own ignore list.", "Du kannst dich nicht auf deine eigene Ignorieren-Liste setzen!", "Vous ne pouvez pas ajouter votre nom à votre liste noire.", "Você não pode adicionar a si próprio à sua lista de ignorados.");
+	public static final Class79 aClass79_27 = new Class79("You can't add yourself to your own ignore list.", "Du kannst dich nicht auf deine eigene Ignorieren-Liste setzen!", "Vous ne pouvez pas ajouter votre nom à votre liste noire.", "Você não pode adicionar a si próprio à sua lista de ignorados.");
 
 	@OriginalMember(owner = "client!co", name = "l", descriptor = "I")
 	public static int anInt1248 = 0;
@@ -17,10 +17,10 @@ public final class Static47 {
 	public static boolean aBoolean102 = false;
 
 	@OriginalMember(owner = "client!co", name = "t", descriptor = "Lclient!mc;")
-	public static Class145 aClass145_43 = new Class145(75, 11);
+	public static final Class145 aClass145_43 = new Class145(75, 11);
 
 	@OriginalMember(owner = "client!co", name = "u", descriptor = "[I")
-	public static int[] anIntArray90 = new int[4096];
+	public static final int[] anIntArray90 = new int[4096];
 
 	@OriginalMember(owner = "client!co", name = "a", descriptor = "(I[BII)Ljava/lang/String;")
 	public static String method1462(@OriginalArg(0) int arg0, @OriginalArg(1) byte[] arg1, @OriginalArg(2) int arg2) {
@@ -40,14 +40,6 @@ public final class Static47 {
 			}
 		}
 		return new String(local8, 0, local15);
-	}
-
-	@OriginalMember(owner = "client!co", name = "d", descriptor = "(B)V")
-	public static void method1463() {
-		aClass145_43 = null;
-		anIntArray90 = null;
-		aClass214Array1 = null;
-		aClass79_27 = null;
 	}
 
 	@OriginalMember(owner = "client!co", name = "a", descriptor = "(II)Ljava/lang/String;")

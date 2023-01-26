@@ -11,11 +11,6 @@ public final class Static15 {
 	@OriginalMember(owner = "client!ar", name = "U", descriptor = "[Lclient!jd;")
 	public static Class13[] aClass13Array3;
 
-	@OriginalMember(owner = "client!ar", name = "f", descriptor = "(I)V")
-	public static void method392() {
-		aClass13Array3 = null;
-	}
-
 	@OriginalMember(owner = "client!ar", name = "a", descriptor = "(IJ)Ljava/lang/String;")
 	public static String method393(@OriginalArg(1) long arg0) {
 		Static376.aCalendar2.setTime(new Date(arg0));

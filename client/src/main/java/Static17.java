@@ -12,32 +12,22 @@ public final class Static17 {
 	public static Class152 aClass152_4;
 
 	@OriginalMember(owner = "client!at", name = "A", descriptor = "Lclient!jm;")
-	public static Class116 aClass116_6 = new Class116(16);
+	public static final Class116 aClass116_6 = new Class116(16);
 
 	@OriginalMember(owner = "client!at", name = "J", descriptor = "[I")
-	public static int[] anIntArray291 = new int[1000];
+	public static final int[] anIntArray291 = new int[1000];
 
 	@OriginalMember(owner = "client!at", name = "O", descriptor = "Z")
 	public static boolean aBoolean308 = true;
 
 	@OriginalMember(owner = "client!at", name = "Q", descriptor = "[Ljava/lang/String;")
-	public static String[] aStringArray43 = new String[200];
+	public static final String[] aStringArray43 = new String[200];
 
 	@OriginalMember(owner = "client!at", name = "a", descriptor = "(BII)V")
 	public static void method4207(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
 		@Pc(8) Class2_Sub2_Sub7 local8 = Static316.method5412(7, arg0);
 		local8.method2311();
 		local8.anInt2289 = arg1;
-	}
-
-	@OriginalMember(owner = "client!at", name = "e", descriptor = "(I)V")
-	public static void method4208() {
-		aClass152_4 = null;
-		anIntArray291 = null;
-		Class12_Sub1_Sub1.anIntArray292 = null;
-		aClass116_6 = null;
-		aClass11_Sub5_Sub2_Sub1_3 = null;
-		aStringArray43 = null;
 	}
 
 	@OriginalMember(owner = "client!at", name = "a", descriptor = "(ZZ)V")

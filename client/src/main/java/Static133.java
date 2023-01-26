@@ -8,24 +8,16 @@ public final class Static133 {
 	public static Class197 aClass197_32;
 
 	@OriginalMember(owner = "client!hl", name = "H", descriptor = "Lclient!hu;")
-	public static Class98 aClass98_17 = new Class98(4);
+	public static final Class98 aClass98_17 = new Class98(4);
 
 	@OriginalMember(owner = "client!hl", name = "I", descriptor = "Lclient!h;")
-	public static Class89 aClass89_103 = new Class89(61, 4);
+	public static final Class89 aClass89_103 = new Class89(61, 4);
 
 	@OriginalMember(owner = "client!hl", name = "J", descriptor = "Lclient!se;")
-	public static Class2_Sub33 aClass2_Sub33_1 = new Class2_Sub33(0, 0);
+	public static final Class2_Sub33 aClass2_Sub33_1 = new Class2_Sub33(0, 0);
 
 	@OriginalMember(owner = "client!hl", name = "K", descriptor = "I")
 	public static final int anInt2489 = 1406;
-
-	@OriginalMember(owner = "client!hl", name = "d", descriptor = "(B)V")
-	public static void method2500() {
-		aClass98_17 = null;
-		aClass2_Sub33_1 = null;
-		aClass197_32 = null;
-		aClass89_103 = null;
-	}
 
 	@OriginalMember(owner = "client!hl", name = "a", descriptor = "(BJ)V")
 	public static void method2503(@OriginalArg(1) long arg0) {

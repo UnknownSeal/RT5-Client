@@ -25,55 +25,37 @@ public final class Static198 {
 	private static int anInt3650 = 0;
 
 	@OriginalMember(owner = "client!lk", name = "b", descriptor = "[Ljava/lang/String;")
-	private static String[] aStringArray29 = new String[1000];
+	private static final String[] aStringArray29 = new String[1000];
 
 	@OriginalMember(owner = "client!lk", name = "d", descriptor = "[Lclient!ol;")
-	private static Class172[] aClass172Array1 = new Class172[50];
+	private static final Class172[] aClass172Array1 = new Class172[50];
 
 	@OriginalMember(owner = "client!lk", name = "e", descriptor = "I")
 	private static int anInt3652 = 0;
 
 	@OriginalMember(owner = "client!lk", name = "k", descriptor = "[I")
-	private static int[] anIntArray213 = new int[1000];
+	private static final int[] anIntArray213 = new int[1000];
 
 	@OriginalMember(owner = "client!lk", name = "q", descriptor = "I")
 	private static int anInt3661 = 0;
 
 	@OriginalMember(owner = "client!lk", name = "s", descriptor = "Ljava/util/Calendar;")
-	private static Calendar aCalendar1 = Calendar.getInstance();
+	private static final Calendar aCalendar1 = Calendar.getInstance();
 
 	@OriginalMember(owner = "client!lk", name = "t", descriptor = "[[I")
-	private static int[][] anIntArrayArray27 = new int[5][5000];
+	private static final int[][] anIntArrayArray27 = new int[5][5000];
 
 	@OriginalMember(owner = "client!lk", name = "y", descriptor = "[I")
-	private static int[] anIntArray214 = new int[5];
+	private static final int[] anIntArray214 = new int[5];
 
 	@OriginalMember(owner = "client!lk", name = "z", descriptor = "[I")
-	private static int[] anIntArray215 = new int[3];
+	private static final int[] anIntArray215 = new int[3];
 
 	@OriginalMember(owner = "client!lk", name = "A", descriptor = "Lclient!hu;")
-	public static Class98 aClass98_30 = new Class98(4);
+	public static final Class98 aClass98_30 = new Class98(4);
 
 	@OriginalMember(owner = "client!lk", name = "B", descriptor = "[Ljava/lang/String;")
-	private static String[] aStringArray31 = new String[] { "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" };
-
-	@OriginalMember(owner = "client!lk", name = "a", descriptor = "()V")
-	public static void method3588() {
-		anIntArray212 = null;
-		aStringArray30 = null;
-		anIntArray214 = null;
-		anIntArrayArray27 = null;
-		anIntArray213 = null;
-		aStringArray29 = null;
-		aClass172Array1 = null;
-		aClass161_9 = null;
-		aClass161_10 = null;
-		aClass86_1 = null;
-		aCalendar1 = null;
-		aStringArray31 = null;
-		anIntArray215 = null;
-		aClass98_30 = null;
-	}
+	private static final String[] aStringArray31 = new String[] { "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" };
 
 	@OriginalMember(owner = "client!lk", name = "a", descriptor = "(I)V")
 	private static void method3589(@OriginalArg(0) int arg0) {

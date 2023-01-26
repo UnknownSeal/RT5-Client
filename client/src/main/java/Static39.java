@@ -12,13 +12,5 @@ public final class Static39 {
 	public static Class72 aClass72_3;
 
 	@OriginalMember(owner = "client!cf", name = "v", descriptor = "Lclient!h;")
-	public static Class89 aClass89_34 = new Class89(105, -1);
-
-	@OriginalMember(owner = "client!cf", name = "b", descriptor = "(I)V")
-	public static void method1279() {
-		aClass89_34 = null;
-		aClass72_3 = null;
-		aClass85_1 = null;
-		aClass89_35 = null;
-	}
+	public static final Class89 aClass89_34 = new Class89(105, -1);
 }

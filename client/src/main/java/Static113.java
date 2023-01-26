@@ -12,16 +12,8 @@ public final class Static113 {
 	public static Class239 aClass239_2;
 
 	@OriginalMember(owner = "client!gl", name = "s", descriptor = "Lclient!h;")
-	public static Class89 aClass89_94 = new Class89(51, -1);
+	public static final Class89 aClass89_94 = new Class89(51, -1);
 
 	@OriginalMember(owner = "client!gl", name = "D", descriptor = "[S")
-	public static short[] aShortArray46 = new short[] { -4160, -4163, -8256, -8259, 22461 };
-
-	@OriginalMember(owner = "client!gl", name = "b", descriptor = "(I)V")
-	public static void method2358() {
-		aClass161ArrayArray2 = null;
-		aClass89_94 = null;
-		aShortArray46 = null;
-		aClass239_2 = null;
-	}
+	public static final short[] aShortArray46 = new short[] { -4160, -4163, -8256, -8259, 22461 };
 }

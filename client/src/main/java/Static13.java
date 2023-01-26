@@ -4,10 +4,10 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class Static13 {
 
 	@OriginalMember(owner = "client!ao", name = "B", descriptor = "Lclient!mc;")
-	public static Class145 aClass145_18 = new Class145(64, -1);
+	public static final Class145 aClass145_18 = new Class145(64, -1);
 
 	@OriginalMember(owner = "client!ao", name = "D", descriptor = "[[I")
-	public static int[][] anIntArrayArray4 = new int[128][128];
+	public static final int[][] anIntArrayArray4 = new int[128][128];
 
 	@OriginalMember(owner = "client!ao", name = "h", descriptor = "(I)V")
 	public static void method345() {
@@ -21,11 +21,5 @@ public final class Static13 {
 	@OriginalMember(owner = "client!ao", name = "a", descriptor = "(IB)I")
 	public static int method346(@OriginalArg(0) int arg0) {
 		return arg0 >> 11 & 0x7F;
-	}
-
-	@OriginalMember(owner = "client!ao", name = "i", descriptor = "(I)V")
-	public static void method347() {
-		aClass145_18 = null;
-		anIntArrayArray4 = null;
 	}
 }

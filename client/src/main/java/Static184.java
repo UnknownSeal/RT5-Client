@@ -8,7 +8,7 @@ public final class Static184 {
 	public static int anInt3435;
 
 	@OriginalMember(owner = "client!km", name = "j", descriptor = "Lclient!wh;")
-	public static Class2_Sub43 aClass2_Sub43_1 = new Class2_Sub43(0, 0);
+	public static final Class2_Sub43 aClass2_Sub43_1 = new Class2_Sub43(0, 0);
 
 	@OriginalMember(owner = "client!km", name = "l", descriptor = "F")
 	public static float aFloat39 = 0.0F;
@@ -19,11 +19,6 @@ public final class Static184 {
 	@OriginalMember(owner = "client!km", name = "a", descriptor = "(I)I")
 	public static int method3390() {
 		return Static153.anInt2794;
-	}
-
-	@OriginalMember(owner = "client!km", name = "a", descriptor = "(B)V")
-	public static void method3395() {
-		aClass2_Sub43_1 = null;
 	}
 
 	@OriginalMember(owner = "client!km", name = "a", descriptor = "(ZLclient!nh;I)V")

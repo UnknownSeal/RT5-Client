@@ -8,19 +8,19 @@ public final class Static329 {
 	public static int anInt6167;
 
 	@OriginalMember(owner = "client!tc", name = "Q", descriptor = "Lclient!oj;")
-	public static Class170 aClass170_4 = new Class170(1);
+	public static final Class170 aClass170_4 = new Class170(1);
 
 	@OriginalMember(owner = "client!tc", name = "T", descriptor = "[I")
-	public static int[] anIntArray419 = new int[50];
+	public static final int[] anIntArray419 = new int[50];
 
 	@OriginalMember(owner = "client!tc", name = "W", descriptor = "[[Z")
-	public static boolean[][] aBooleanArrayArray4 = new boolean[][] { new boolean[13], { false, false, true, true, true, true, true, false, false, false, false, false, true }, { true, true, true, true, true, true, false, false, false, false, false, false, false }, { true, true, true, false, false, true, true, true, false, false, false, false, false }, { true, false, false, false, false, true, true, true, false, false, false, false, false }, { false, false, true, true, true, true, false, false, false, false, false, false, false }, { false, true, true, true, true, true, false, false, false, false, false, false, true }, { false, true, true, true, true, true, true, true, false, false, false, false, true }, { true, true, false, false, false, false, false, true, false, false, false, false, false }, { true, true, true, true, true, false, false, false, true, true, false, false, false }, { true, false, false, false, true, true, true, true, true, true, false, false, false }, { true, false, true, true, true, true, true, true, false, false, true, true, false }, { true, true, true, true, true, true, true, true, true, true, true, true, true }, new boolean[13], { true, true, true, true, true, true, true, true, true, true, true, true, true } };
+	public static final boolean[][] aBooleanArrayArray4 = new boolean[][] { new boolean[13], { false, false, true, true, true, true, true, false, false, false, false, false, true }, { true, true, true, true, true, true, false, false, false, false, false, false, false }, { true, true, true, false, false, true, true, true, false, false, false, false, false }, { true, false, false, false, false, true, true, true, false, false, false, false, false }, { false, false, true, true, true, true, false, false, false, false, false, false, false }, { false, true, true, true, true, true, false, false, false, false, false, false, true }, { false, true, true, true, true, true, true, true, false, false, false, false, true }, { true, true, false, false, false, false, false, true, false, false, false, false, false }, { true, true, true, true, true, false, false, false, true, true, false, false, false }, { true, false, false, false, true, true, true, true, true, true, false, false, false }, { true, false, true, true, true, true, true, true, false, false, true, true, false }, { true, true, true, true, true, true, true, true, true, true, true, true, true }, new boolean[13], { true, true, true, true, true, true, true, true, true, true, true, true, true } };
 
 	@OriginalMember(owner = "client!tc", name = "Y", descriptor = "Lclient!ad;")
 	public static Class4 aClass4_130 = new Class4(8);
 
 	@OriginalMember(owner = "client!tc", name = "ab", descriptor = "[I")
-	public static int[] anIntArray420 = new int[3];
+	public static final int[] anIntArray420 = new int[3];
 
 	@OriginalMember(owner = "client!tc", name = "a", descriptor = "(IZIIIIZ)V")
 	public static void method5628(@OriginalArg(1) boolean arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) boolean arg5) {
@@ -107,14 +107,5 @@ public final class Static329 {
 			Static98.aClass11_Sub5Array1[Static378.anInt7077++] = arg0;
 		}
 		return true;
-	}
-
-	@OriginalMember(owner = "client!tc", name = "c", descriptor = "(Z)V")
-	public static void method5630() {
-		aClass170_4 = null;
-		aBooleanArrayArray4 = null;
-		anIntArray419 = null;
-		aClass4_130 = null;
-		anIntArray420 = null;
 	}
 }

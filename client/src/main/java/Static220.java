@@ -5,13 +5,13 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static220 {
 
 	@OriginalMember(owner = "client!mq", name = "n", descriptor = "Lclient!gd;")
-	public static Class79 aClass79_83 = new Class79("Take", "Nehmen", "Prendre", "Pegar");
+	public static final Class79 aClass79_83 = new Class79("Take", "Nehmen", "Prendre", "Pegar");
 
 	@OriginalMember(owner = "client!mq", name = "o", descriptor = "Lclient!h;")
-	public static Class89 aClass89_158 = new Class89(55, -1);
+	public static final Class89 aClass89_158 = new Class89(55, -1);
 
 	@OriginalMember(owner = "client!mq", name = "p", descriptor = "Lclient!ad;")
-	public static Class4 aClass4_83 = new Class4(8);
+	public static final Class4 aClass4_83 = new Class4(8);
 
 	@OriginalMember(owner = "client!mq", name = "q", descriptor = "Z")
 	public static boolean aBoolean252 = false;
@@ -44,13 +44,6 @@ public final class Static220 {
 			Static101.method2163(local89, local100, arg2, local94);
 			Static101.method2163(local89, local107, arg2, local94);
 		}
-	}
-
-	@OriginalMember(owner = "client!mq", name = "b", descriptor = "(B)V")
-	public static void method3872() {
-		aClass4_83 = null;
-		aClass89_158 = null;
-		aClass79_83 = null;
 	}
 
 	@OriginalMember(owner = "client!mq", name = "a", descriptor = "(ILjava/lang/String;ILjava/lang/String;IILjava/lang/String;Ljava/lang/String;)V")

@@ -9,17 +9,10 @@ public final class Static27 {
 	public static Class113 aClass113_2;
 
 	@OriginalMember(owner = "client!bk", name = "g", descriptor = "Lclient!s;")
-	public static Class210 aClass210_2 = new Class210(11, 3);
+	public static final Class210 aClass210_2 = new Class210(11, 3);
 
 	@OriginalMember(owner = "client!bk", name = "m", descriptor = "Lclient!kk;")
-	public static Class127 aClass127_1 = new Class127("WTQA", 2);
-
-	@OriginalMember(owner = "client!bk", name = "a", descriptor = "(I)V")
-	public static void method868() {
-		aClass113_2 = null;
-		aClass210_2 = null;
-		aClass127_1 = null;
-	}
+	public static final Class127 aClass127_1 = new Class127("WTQA", 2);
 
 	@OriginalMember(owner = "client!bk", name = "a", descriptor = "(III)I")
 	public static int method870(@OriginalArg(2) int arg0) {

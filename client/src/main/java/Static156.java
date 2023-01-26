@@ -8,7 +8,7 @@ public final class Static156 {
 	public static float aFloat35;
 
 	@OriginalMember(owner = "client!iu", name = "g", descriptor = "[Lclient!rk;")
-	public static Class37[] aClass37Array1 = new Class37[128];
+	public static final Class37[] aClass37Array1 = new Class37[128];
 
 	@OriginalMember(owner = "client!iu", name = "a", descriptor = "(IBIII)V")
 	public static void method2791(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {
@@ -17,11 +17,6 @@ public final class Static156 {
 			@Pc(25) int local25 = Static25.method861(Static365.anInt6832, arg0, Static161.anInt2954);
 			Static363.method6089(local25, local19, arg2, arg3);
 		}
-	}
-
-	@OriginalMember(owner = "client!iu", name = "a", descriptor = "(I)V")
-	public static void method2794() {
-		aClass37Array1 = null;
 	}
 
 	@OriginalMember(owner = "client!iu", name = "a", descriptor = "(Lclient!hc;III)V")

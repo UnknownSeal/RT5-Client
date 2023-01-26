@@ -112,13 +112,6 @@ public final class Static337 {
 		}
 	}
 
-	@OriginalMember(owner = "client!tk", name = "a", descriptor = "(I)V")
-	public static void method5707() {
-		aClass135_37 = null;
-		aClass131_1 = null;
-		aClass13_17 = null;
-	}
-
 	@OriginalMember(owner = "client!tk", name = "b", descriptor = "(I)V")
 	public static void method5708() {
 		Static371.method6256((long) Static114.anInt2348, Static190.aClass19_8);

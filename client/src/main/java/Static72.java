@@ -13,17 +13,10 @@ public final class Static72 {
 	public static int[] anIntArray114;
 
 	@OriginalMember(owner = "client!ec", name = "g", descriptor = "[B")
-	public static byte[] aByteArray23 = new byte[] { 0, 4, 4, 8, 0, 0, 8, 0, 0 };
+	public static final byte[] aByteArray23 = new byte[] { 0, 4, 4, 8, 0, 0, 8, 0, 0 };
 
 	@OriginalMember(owner = "client!ec", name = "p", descriptor = "Lclient!s;")
-	public static Class210 aClass210_3 = new Class210(4, 3);
-
-	@OriginalMember(owner = "client!ec", name = "a", descriptor = "(Z)V")
-	public static void method1808() {
-		anIntArray114 = null;
-		aByteArray23 = null;
-		aClass210_3 = null;
-	}
+	public static final Class210 aClass210_3 = new Class210(4, 3);
 
 	@OriginalMember(owner = "client!ec", name = "a", descriptor = "(JB)V")
 	public static void method1809(@OriginalArg(0) long arg0) {

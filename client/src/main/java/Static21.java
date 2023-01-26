@@ -16,19 +16,11 @@ public final class Static21 {
 	public static int anInt551 = 0;
 
 	@OriginalMember(owner = "client!be", name = "g", descriptor = "Lclient!mc;")
-	public static Class145 aClass145_25 = new Class145(27, 3);
+	public static final Class145 aClass145_25 = new Class145(27, 3);
 
 	@OriginalMember(owner = "client!be", name = "k", descriptor = "I")
 	public static int anInt554 = 0;
 
 	@OriginalMember(owner = "client!be", name = "l", descriptor = "[Lclient!nt;")
-	public static Class2_Sub2_Sub13[] aClass2_Sub2_Sub13Array1 = new Class2_Sub2_Sub13[14];
-
-	@OriginalMember(owner = "client!be", name = "a", descriptor = "(I)V")
-	public static void method562() {
-		aCanvas1 = null;
-		aClass2_Sub2_Sub13Array1 = null;
-		aClass55_1 = null;
-		aClass145_25 = null;
-	}
+	public static final Class2_Sub2_Sub13[] aClass2_Sub2_Sub13Array1 = new Class2_Sub2_Sub13[14];
 }

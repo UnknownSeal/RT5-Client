@@ -23,13 +23,13 @@ public final class Static322 {
 	public static int[] anIntArray404;
 
 	@OriginalMember(owner = "client!so", name = "d", descriptor = "Lclient!h;")
-	public static Class89 aClass89_217 = new Class89(60, -2);
+	public static final Class89 aClass89_217 = new Class89(60, -2);
 
 	@OriginalMember(owner = "client!so", name = "h", descriptor = "Lclient!mc;")
-	public static Class145 aClass145_218 = new Class145(14, 8);
+	public static final Class145 aClass145_218 = new Class145(14, 8);
 
 	@OriginalMember(owner = "client!so", name = "k", descriptor = "Lclient!gd;")
-	public static Class79 aClass79_125 = new Class79("Your ignore list is full, max of 100.", "Deine Ignorieren-Liste ist voll, du kannst nur 100 Spieler darauf eintragen.", "Votre liste noire est pleine (100 noms maximum).", "Sua lista de ignorados está cheia. O máx. é 100.");
+	public static final Class79 aClass79_125 = new Class79("Your ignore list is full, max of 100.", "Deine Ignorieren-Liste ist voll, du kannst nur 100 Spieler darauf eintragen.", "Votre liste noire est pleine (100 noms maximum).", "Sua lista de ignorados está cheia. O máx. é 100.");
 
 	@OriginalMember(owner = "client!so", name = "a", descriptor = "(III)V")
 	public static void method5480(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
@@ -299,16 +299,6 @@ public final class Static322 {
 		Static253.method4368();
 		Static37.method1135();
 		Static142.method2662();
-	}
-
-	@OriginalMember(owner = "client!so", name = "a", descriptor = "(B)V")
-	public static void method5483() {
-		aClass79_125 = null;
-		aClass89_217 = null;
-		aClass128_1 = null;
-		aClass211_2 = null;
-		aClass145_218 = null;
-		anIntArray404 = null;
 	}
 
 	@OriginalMember(owner = "client!so", name = "b", descriptor = "(I)V")
