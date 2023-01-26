@@ -431,10 +431,10 @@ public final class client extends Applet_Sub1 {
 			}
 			if (Static309.anInt5800 == 2) {
 				Static103.aClass111_1 = new Class111((Socket) Static211.aClass32_8.anObject2, Static328.aClass152_5);
-				@Pc(186) Class2_Sub4 local186 = new Class2_Sub4(5);
-				local186.method4841(Static43.aClass242_2.anInt7038);
-				local186.method4812(578);
-				Static103.aClass111_1.method2797(5, local186.aByteArray73);
+				@Pc(186) Buffer local186 = new Buffer(5);
+				local186.p1(Static43.aClass242_2.anInt7038);
+				local186.p4(578);
+				Static103.aClass111_1.method2797(5, local186.data);
 				Static309.anInt5800++;
 				Static371.aLong220 = Static204.method3684();
 			}
@@ -582,39 +582,39 @@ public final class client extends Applet_Sub1 {
 
 	@OriginalMember(owner = "client!client", name = "a", descriptor = "(B[B)V")
 	private void method1406(@OriginalArg(1) byte[] arg0) {
-		@Pc(14) Class2_Sub4 local14 = new Class2_Sub4(arg0);
+		@Pc(14) Buffer local14 = new Buffer(arg0);
 		while (true) {
 			while (true) {
 				while (true) {
-					@Pc(18) int local18 = local14.method4814();
+					@Pc(18) int local18 = local14.g1();
 					if (local18 == 0) {
 						return;
 					}
 					if (local18 == 1) {
 						@Pc(109) int[] local109 = Static209.anIntArray228 = new int[6];
-						local109[0] = local14.method4828();
-						local109[1] = local14.method4828();
-						local109[2] = local14.method4828();
-						local109[3] = local14.method4828();
-						local109[4] = local14.method4828();
-						local109[5] = local14.method4828();
+						local109[0] = local14.g2();
+						local109[1] = local14.g2();
+						local109[2] = local14.g2();
+						local109[3] = local14.g2();
+						local109[4] = local14.g2();
+						local109[5] = local14.g2();
 					} else {
 						@Pc(38) int local38;
 						@Pc(33) int local33;
 						if (local18 == 4) {
-							local33 = local14.method4814();
+							local33 = local14.g1();
 							Static117.anIntArray150 = new int[local33];
 							for (local38 = 0; local38 < local33; local38++) {
-								Static117.anIntArray150[local38] = local14.method4828();
+								Static117.anIntArray150[local38] = local14.g2();
 								if (Static117.anIntArray150[local38] == 65535) {
 									Static117.anIntArray150[local38] = -1;
 								}
 							}
 						} else if (local18 == 5) {
-							local33 = local14.method4814();
+							local33 = local14.g1();
 							Static324.anIntArray412 = new int[local33];
 							for (local38 = 0; local38 < local33; local38++) {
-								Static324.anIntArray412[local38] = local14.method4828();
+								Static324.anIntArray412[local38] = local14.g2();
 								if (Static324.anIntArray412[local38] == 65535) {
 									Static324.anIntArray412[local38] = -1;
 								}

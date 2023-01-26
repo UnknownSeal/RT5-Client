@@ -19,9 +19,9 @@ public final class Static171 {
 	@OriginalMember(owner = "client!jt", name = "a", descriptor = "(IILjava/lang/String;)V")
 	public static void method3255(@OriginalArg(0) int arg0, @OriginalArg(2) String arg1) {
 		Static91.method1960(Static382.aClass145_258);
-		Static257.aClass2_Sub4_Sub2_4.method4841(Static27.method872(arg1) + 1);
-		Static257.aClass2_Sub4_Sub2_4.method4826(arg0);
-		Static257.aClass2_Sub4_Sub2_4.method4821(arg1);
+		Static257.aClass2_Sub4_Sub2_4.p1(Static27.method872(arg1) + 1);
+		Static257.aClass2_Sub4_Sub2_4.p1add(arg0);
+		Static257.aClass2_Sub4_Sub2_4.pjstr(arg1);
 	}
 
 	@OriginalMember(owner = "client!jt", name = "a", descriptor = "(BIIZII)V")

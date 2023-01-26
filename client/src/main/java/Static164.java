@@ -104,7 +104,7 @@ public final class Static164 {
 				}
 				Static335.aClass111_4 = new Class111((Socket) Static5.aClass32_1.anObject2, Static328.aClass152_5);
 				Static5.aClass32_1 = null;
-				Static335.aClass111_4.method2797(Static257.aClass2_Sub4_Sub2_4.anInt5300, Static257.aClass2_Sub4_Sub2_4.aByteArray73);
+				Static335.aClass111_4.method2797(Static257.aClass2_Sub4_Sub2_4.offset, Static257.aClass2_Sub4_Sub2_4.data);
 				if (Static303.aClass221_2 != null) {
 					Static303.aClass221_2.method6324();
 				}

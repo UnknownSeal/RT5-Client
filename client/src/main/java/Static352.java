@@ -23,12 +23,12 @@ public final class Static352 {
 
 	@OriginalMember(owner = "client!uh", name = "a", descriptor = "(IIIII)V")
 	public static void method5875(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {
-		Static257.aClass2_Sub4_Sub2_4.anInt5300 = 0;
-		Static257.aClass2_Sub4_Sub2_4.method4841(Static43.aClass242_6.anInt7038);
-		Static257.aClass2_Sub4_Sub2_4.method4841(arg2);
-		Static257.aClass2_Sub4_Sub2_4.method4841(arg3);
-		Static257.aClass2_Sub4_Sub2_4.method4842(arg1);
-		Static257.aClass2_Sub4_Sub2_4.method4842(arg0);
+		Static257.aClass2_Sub4_Sub2_4.offset = 0;
+		Static257.aClass2_Sub4_Sub2_4.p1(Static43.aClass242_6.anInt7038);
+		Static257.aClass2_Sub4_Sub2_4.p1(arg2);
+		Static257.aClass2_Sub4_Sub2_4.p1(arg3);
+		Static257.aClass2_Sub4_Sub2_4.p2(arg1);
+		Static257.aClass2_Sub4_Sub2_4.p2(arg0);
 		Static327.anInt6109 = 0;
 		Static66.anInt1625 = 0;
 		Static318.anInt5968 = -3;

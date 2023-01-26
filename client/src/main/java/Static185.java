@@ -9,9 +9,9 @@ public final class Static185 {
 
 	@OriginalMember(owner = "client!kn", name = "a", descriptor = "(IIII)V")
 	public static void method3397(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
-		Static257.aClass2_Sub4_Sub2_4.method4812(arg2);
-		Static257.aClass2_Sub4_Sub2_4.method4854(arg1);
-		Static257.aClass2_Sub4_Sub2_4.method4842(arg0);
+		Static257.aClass2_Sub4_Sub2_4.p4(arg2);
+		Static257.aClass2_Sub4_Sub2_4.p2add(arg1);
+		Static257.aClass2_Sub4_Sub2_4.p2(arg0);
 	}
 
 	@OriginalMember(owner = "client!kn", name = "a", descriptor = "(BILclient!bc;I)Lclient!js;")

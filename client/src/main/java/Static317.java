@@ -217,28 +217,28 @@ public final class Static317 {
 	}
 
 	@OriginalMember(owner = "client!sh", name = "a", descriptor = "(Lclient!bt;I)V")
-	public static void method5550(@OriginalArg(0) Class2_Sub4 arg0) {
-		@Pc(9) int local9 = arg0.method4816();
+	public static void method5550(@OriginalArg(0) Buffer arg0) {
+		@Pc(9) int local9 = arg0.gsmarts();
 		Static363.aClass124Array1 = new Class124[local9];
 		for (@Pc(22) int local22 = 0; local22 < local9; local22++) {
 			Static363.aClass124Array1[local22] = new Class124();
-			Static363.aClass124Array1[local22].anInt3405 = arg0.method4816();
-			Static363.aClass124Array1[local22].aString28 = arg0.method4855();
+			Static363.aClass124Array1[local22].anInt3405 = arg0.gsmarts();
+			Static363.aClass124Array1[local22].aString28 = arg0.gjstr2();
 		}
-		Static375.anInt7042 = arg0.method4816();
-		Static312.anInt5843 = arg0.method4816();
-		Static299.anInt5643 = arg0.method4816();
+		Static375.anInt7042 = arg0.gsmarts();
+		Static312.anInt5843 = arg0.gsmarts();
+		Static299.anInt5643 = arg0.gsmarts();
 		Static295.aClass3_Sub1Array1 = new Class3_Sub1[Static312.anInt5843 + 1 - Static375.anInt7042];
 		for (@Pc(70) int local70 = 0; local70 < Static299.anInt5643; local70++) {
-			@Pc(76) int local76 = arg0.method4816();
+			@Pc(76) int local76 = arg0.gsmarts();
 			@Pc(84) Class3_Sub1 local84 = Static295.aClass3_Sub1Array1[local76] = new Class3_Sub1();
-			local84.anInt76 = arg0.method4814();
-			local84.anInt74 = arg0.method4835();
+			local84.anInt76 = arg0.g1();
+			local84.anInt74 = arg0.mg4();
 			local84.anInt81 = local76 + Static375.anInt7042;
-			local84.aString1 = arg0.method4855();
-			local84.aString2 = arg0.method4855();
+			local84.aString1 = arg0.gjstr2();
+			local84.aString2 = arg0.gjstr2();
 		}
-		Static361.anInt6767 = arg0.method4835();
+		Static361.anInt6767 = arg0.mg4();
 		Static70.aBoolean130 = true;
 	}
 
@@ -254,10 +254,10 @@ public final class Static317 {
 		@Pc(38) int local38 = 0;
 		while (true) {
 			while (local36 < local34.anInt2702) {
-				@Pc(52) Class2_Sub4 local52 = new Class2_Sub4(arg0.method5088(local28[local38++], local10));
-				@Pc(58) int local58 = local52.method4835();
-				@Pc(62) int local62 = local52.method4828();
-				@Pc(66) int local66 = local52.method4814();
+				@Pc(52) Buffer local52 = new Buffer(arg0.method5088(local28[local38++], local10));
+				@Pc(58) int local58 = local52.mg4();
+				@Pc(62) int local62 = local52.g2();
+				@Pc(66) int local66 = local52.g1();
 				if (!arg2 && local66 == 1) {
 					local34.anInt2702--;
 				} else {

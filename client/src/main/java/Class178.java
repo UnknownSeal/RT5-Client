@@ -261,48 +261,48 @@ public final class Class178 {
 	}
 
 	@OriginalMember(owner = "client!ph", name = "a", descriptor = "(Lclient!bt;)V")
-	public void method4551(@OriginalArg(0) Class2_Sub4 arg0) {
+	public void method4551(@OriginalArg(0) Buffer arg0) {
 		this.aClass232_9 = new Class232();
 		this.aClass232_9.method5840(arg0);
 		this.aClass232_8 = new Class232();
 		this.aClass232_8.method5840(arg0);
-		@Pc(21) int local21 = arg0.method4814();
+		@Pc(21) int local21 = arg0.g1();
 		if (local21 != 0) {
-			arg0.anInt5300--;
+			arg0.offset--;
 			this.aClass232_1 = new Class232();
 			this.aClass232_1.method5840(arg0);
 			this.aClass232_6 = new Class232();
 			this.aClass232_6.method5840(arg0);
 		}
-		local21 = arg0.method4814();
+		local21 = arg0.g1();
 		if (local21 != 0) {
-			arg0.anInt5300--;
+			arg0.offset--;
 			this.aClass232_7 = new Class232();
 			this.aClass232_7.method5840(arg0);
 			this.aClass232_3 = new Class232();
 			this.aClass232_3.method5840(arg0);
 		}
-		local21 = arg0.method4814();
+		local21 = arg0.g1();
 		if (local21 != 0) {
-			arg0.anInt5300--;
+			arg0.offset--;
 			this.aClass232_4 = new Class232();
 			this.aClass232_4.method5840(arg0);
 			this.aClass232_5 = new Class232();
 			this.aClass232_5.method5840(arg0);
 		}
 		for (@Pc(109) int local109 = 0; local109 < 10; local109++) {
-			@Pc(114) int local114 = arg0.method4816();
+			@Pc(114) int local114 = arg0.gsmarts();
 			if (local114 == 0) {
 				break;
 			}
 			this.anIntArray343[local109] = local114;
-			this.anIntArray340[local109] = arg0.method4817();
-			this.anIntArray341[local109] = arg0.method4816();
+			this.anIntArray340[local109] = arg0.gsmart();
+			this.anIntArray341[local109] = arg0.gsmarts();
 		}
-		this.anInt4961 = arg0.method4816();
-		this.anInt4962 = arg0.method4816();
-		this.anInt4960 = arg0.method4828();
-		this.anInt4963 = arg0.method4828();
+		this.anInt4961 = arg0.gsmarts();
+		this.anInt4962 = arg0.gsmarts();
+		this.anInt4960 = arg0.g2();
+		this.anInt4963 = arg0.g2();
 		this.aClass176_1 = new Class176();
 		this.aClass232_2 = new Class232();
 		this.aClass176_1.method4467(arg0, this.aClass232_2);

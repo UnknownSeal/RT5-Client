@@ -31,16 +31,16 @@ public final class Static180 {
 	}
 
 	@OriginalMember(owner = "client!kh", name = "a", descriptor = "(ILclient!bt;)V")
-	public static void method3367(@OriginalArg(1) Class2_Sub4 arg0) {
-		if (arg0.aByteArray73.length - arg0.anInt5300 < 1) {
+	public static void method3367(@OriginalArg(1) Buffer arg0) {
+		if (arg0.data.length - arg0.offset < 1) {
 			return;
 		}
-		@Pc(21) int local21 = arg0.method4814();
-		if (local21 < 0 || local21 > 1 || arg0.aByteArray73.length - arg0.anInt5300 < 2) {
+		@Pc(21) int local21 = arg0.g1();
+		if (local21 < 0 || local21 > 1 || arg0.data.length - arg0.offset < 2) {
 			return;
 		}
-		@Pc(43) int local43 = arg0.method4828();
-		if (arg0.aByteArray73.length - arg0.anInt5300 != local43 * 6) {
+		@Pc(43) int local43 = arg0.g2();
+		if (arg0.data.length - arg0.offset != local43 * 6) {
 			return;
 		}
 		while (true) {
@@ -49,11 +49,11 @@ public final class Static180 {
 			do {
 				do {
 					do {
-						if (arg0.anInt5300 >= arg0.aByteArray73.length) {
+						if (arg0.offset >= arg0.data.length) {
 							return;
 						}
-						local59 = arg0.method4828();
-						local63 = arg0.method4835();
+						local59 = arg0.g2();
+						local63 = arg0.mg4();
 					} while (Static75.anIntArray117.length <= local59);
 				} while (!Static89.aBooleanArray18[local59]);
 			} while (Static162.aClass45_1.method1623(local59).aChar2 == '1' && (local63 < -1 || local63 > 1));

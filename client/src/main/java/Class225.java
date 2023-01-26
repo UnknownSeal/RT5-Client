@@ -92,9 +92,9 @@ public final class Class225 {
 	}
 
 	@OriginalMember(owner = "client!tq", name = "a", descriptor = "(Lclient!bt;I)V")
-	public void method5772(@OriginalArg(0) Class2_Sub4 arg0) {
+	public void method5772(@OriginalArg(0) Buffer arg0) {
 		while (true) {
-			@Pc(5) int local5 = arg0.method4814();
+			@Pc(5) int local5 = arg0.g1();
 			if (local5 == 0) {
 				return;
 			}
@@ -103,17 +103,17 @@ public final class Class225 {
 	}
 
 	@OriginalMember(owner = "client!tq", name = "a", descriptor = "(Lclient!bt;IZ)V")
-	private void method5773(@OriginalArg(0) Class2_Sub4 arg0, @OriginalArg(1) int arg1) {
+	private void method5773(@OriginalArg(0) Buffer arg0, @OriginalArg(1) int arg1) {
 		if (arg1 == 1) {
-			this.anInt6374 = arg0.method4832();
+			this.anInt6374 = arg0.ig3();
 			this.method5770(this.anInt6374);
 		} else if (arg1 == 2) {
-			this.anInt6384 = arg0.method4828();
+			this.anInt6384 = arg0.g2();
 			if (this.anInt6384 == 65535) {
 				this.anInt6384 = -1;
 			}
 		} else if (arg1 == 3) {
-			this.anInt6377 = arg0.method4828();
+			this.anInt6377 = arg0.g2();
 		} else if (arg1 == 4) {
 			this.aBoolean430 = false;
 		}

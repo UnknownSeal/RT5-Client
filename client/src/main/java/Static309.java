@@ -87,9 +87,9 @@ public final class Static309 {
 			Static207.method3699(Static47.aClass79_27.method2267(Static295.anInt5581));
 		} else {
 			Static91.method1960(Static192.aClass145_139);
-			Static257.aClass2_Sub4_Sub2_4.method4841(Static27.method872(arg0) + 1);
-			Static257.aClass2_Sub4_Sub2_4.method4821(arg0);
-			Static257.aClass2_Sub4_Sub2_4.method4841(arg1 ? 1 : 0);
+			Static257.aClass2_Sub4_Sub2_4.p1(Static27.method872(arg0) + 1);
+			Static257.aClass2_Sub4_Sub2_4.pjstr(arg0);
+			Static257.aClass2_Sub4_Sub2_4.p1(arg1 ? 1 : 0);
 		}
 	}
 

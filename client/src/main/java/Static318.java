@@ -35,7 +35,7 @@ public final class Static318 {
 						throw new IOException("EOF");
 					}
 				}
-				Static180.method3367(new Class2_Sub4(local40));
+				Static180.method3367(new Buffer(local40));
 			}
 		} catch (@Pc(82) Exception local82) {
 		}

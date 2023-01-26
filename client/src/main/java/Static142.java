@@ -80,7 +80,7 @@ public final class Static142 {
 				}
 				Static335.aClass111_4 = new Class111((Socket) Static5.aClass32_1.anObject2, Static328.aClass152_5);
 				Static5.aClass32_1 = null;
-				Static335.aClass111_4.method2797(Static257.aClass2_Sub4_Sub2_4.anInt5300, Static257.aClass2_Sub4_Sub2_4.aByteArray73);
+				Static335.aClass111_4.method2797(Static257.aClass2_Sub4_Sub2_4.offset, Static257.aClass2_Sub4_Sub2_4.data);
 				if (Static303.aClass221_2 != null) {
 					Static303.aClass221_2.method6324();
 				}
@@ -111,10 +111,10 @@ public final class Static142 {
 				Static141.anInt2652 = 4;
 			}
 			if (Static141.anInt2652 == 4 && Static335.aClass111_4.method2795() >= Static163.aStringArray23.length * 8) {
-				Static212.aClass2_Sub4_Sub2_3.anInt5300 = 0;
-				Static335.aClass111_4.method2793(Static212.aClass2_Sub4_Sub2_3.aByteArray73, Static163.aStringArray23.length * 8, 0);
+				Static212.aClass2_Sub4_Sub2_3.offset = 0;
+				Static335.aClass111_4.method2793(Static212.aClass2_Sub4_Sub2_3.data, Static163.aStringArray23.length * 8, 0);
 				for (local119 = 0; local119 < Static163.aStringArray23.length; local119++) {
-					Static163.aStringArray23[local119] = Static202.method3675(Static212.aClass2_Sub4_Sub2_3.method4797());
+					Static163.aStringArray23[local119] = Static202.method3675(Static212.aClass2_Sub4_Sub2_3.g8());
 				}
 				Static141.anInt2652 = 0;
 				Static318.anInt5968 = 21;

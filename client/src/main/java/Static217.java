@@ -30,7 +30,7 @@ public final class Static217 {
 	}
 
 	@OriginalMember(owner = "client!mn", name = "b", descriptor = "(Lclient!bt;B)Lclient!pd;")
-	public static Class173_Sub2 method3798(@OriginalArg(0) Class2_Sub4 arg0) {
-		return new Class173_Sub2(arg0.method4822(), arg0.method4822(), arg0.method4822(), arg0.method4822(), arg0.method4832(), arg0.method4832(), arg0.method4814());
+	public static Class173_Sub2 method3798(@OriginalArg(0) Buffer arg0) {
+		return new Class173_Sub2(arg0.g2b_dup(), arg0.g2b_dup(), arg0.g2b_dup(), arg0.g2b_dup(), arg0.ig3(), arg0.ig3(), arg0.g1());
 	}
 }

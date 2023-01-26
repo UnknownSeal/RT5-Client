@@ -50,39 +50,39 @@ public final class Class2_Sub2_Sub12 extends Class2_Sub2 {
 	}
 
 	@OriginalMember(owner = "client!mn", name = "a", descriptor = "(BILclient!bt;)V")
-	private void method3795(@OriginalArg(1) int arg0, @OriginalArg(2) Class2_Sub4 arg1) {
+	private void method3795(@OriginalArg(1) int arg0, @OriginalArg(2) Buffer arg1) {
 		if (arg0 == 1) {
-			this.aString37 = arg1.method4808();
+			this.aString37 = arg1.gjstr();
 			return;
 		}
 		@Pc(16) int local16;
 		@Pc(26) int local26;
 		@Pc(39) byte local39;
 		if (arg0 == 2) {
-			local16 = arg1.method4814();
+			local16 = arg1.g1();
 			this.anIntArray233 = new int[local16];
 			this.aCharArray4 = new char[local16];
 			for (local26 = 0; local26 < local16; local26++) {
-				this.anIntArray233[local26] = arg1.method4828();
-				local39 = arg1.method4824();
+				this.anIntArray233[local26] = arg1.g2();
+				local39 = arg1.g1b();
 				this.aCharArray4[local26] = local39 == 0 ? 0 : Static78.method5697(local39);
 			}
 		} else if (arg0 == 3) {
-			local16 = arg1.method4814();
+			local16 = arg1.g1();
 			this.aCharArray5 = new char[local16];
 			this.anIntArray232 = new int[local16];
 			for (local26 = 0; local26 < local16; local26++) {
-				this.anIntArray232[local26] = arg1.method4828();
-				local39 = arg1.method4824();
+				this.anIntArray232[local26] = arg1.g2();
+				local39 = arg1.g1b();
 				this.aCharArray5[local26] = local39 == 0 ? 0 : Static78.method5697(local39);
 			}
 		}
 	}
 
 	@OriginalMember(owner = "client!mn", name = "a", descriptor = "(Lclient!bt;B)V")
-	public void method3796(@OriginalArg(0) Class2_Sub4 arg0) {
+	public void method3796(@OriginalArg(0) Buffer arg0) {
 		while (true) {
-			@Pc(5) int local5 = arg0.method4814();
+			@Pc(5) int local5 = arg0.g1();
 			if (local5 == 0) {
 				return;
 			}

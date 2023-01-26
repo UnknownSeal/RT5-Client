@@ -33,7 +33,7 @@ public final class IsaacRandom {
 	}
 
 	@OriginalMember(owner = "client!sq", name = "a", descriptor = "(I)I")
-	public int nextInt() {
+	public int peekNext() {
 		if (this.count == 0) {
 			this.isaac();
 			this.count = 256;
@@ -43,7 +43,7 @@ public final class IsaacRandom {
 	}
 
 	@OriginalMember(owner = "client!sq", name = "a", descriptor = "(B)I")
-	public int method5533() {
+	public int getNext() {
 		if (this.count == 0) {
 			this.isaac();
 			this.count = 256;

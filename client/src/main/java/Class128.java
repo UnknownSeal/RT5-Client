@@ -63,7 +63,7 @@ public final class Class128 {
 		@Pc(45) byte[] local45 = this.aClass197_51.method5088(Static75.method1837(arg0), Static319.method5430(arg0));
 		local24 = new Class134();
 		if (local45 != null) {
-			local24.method3508(new Class2_Sub4(local45));
+			local24.method3508(new Buffer(local45));
 		}
 		@Pc(61) Class98 local61 = this.aClass98_28;
 		synchronized (this.aClass98_28) {

@@ -32,12 +32,12 @@ public final class Static295 {
 	@OriginalMember(owner = "client!r", name = "a", descriptor = "(Lclient!nk;ZLclient!nk;)V")
 	public static void method5095(@OriginalArg(0) Class161 arg0, @OriginalArg(2) Class161 arg1) {
 		Static91.method1960(Static387.aClass145_110);
-		Static257.aClass2_Sub4_Sub2_4.method4812(arg1.anInt4317);
-		Static257.aClass2_Sub4_Sub2_4.method4837(arg1.anInt4300);
-		Static257.aClass2_Sub4_Sub2_4.method4854(arg1.anInt4297);
-		Static257.aClass2_Sub4_Sub2_4.method4804(arg0.anInt4317);
-		Static257.aClass2_Sub4_Sub2_4.method4837(arg0.anInt4300);
-		Static257.aClass2_Sub4_Sub2_4.method4829(arg0.anInt4297);
+		Static257.aClass2_Sub4_Sub2_4.p4(arg1.anInt4317);
+		Static257.aClass2_Sub4_Sub2_4.ip2add(arg1.anInt4300);
+		Static257.aClass2_Sub4_Sub2_4.p2add(arg1.anInt4297);
+		Static257.aClass2_Sub4_Sub2_4.mp4(arg0.anInt4317);
+		Static257.aClass2_Sub4_Sub2_4.ip2add(arg0.anInt4300);
+		Static257.aClass2_Sub4_Sub2_4.ip2_dup(arg0.anInt4297);
 	}
 
 	@OriginalMember(owner = "client!r", name = "c", descriptor = "(III)I")

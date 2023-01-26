@@ -89,12 +89,12 @@ public final class Static158 {
 
 	@OriginalMember(owner = "client!jc", name = "a", descriptor = "(I[B)Z")
 	public static boolean method2943(@OriginalArg(1) byte[] arg0) {
-		@Pc(8) Class2_Sub4 local8 = new Class2_Sub4(arg0);
-		@Pc(12) int local12 = local8.method4814();
+		@Pc(8) Buffer local8 = new Buffer(arg0);
+		@Pc(12) int local12 = local8.g1();
 		if (local12 != 1) {
 			return false;
 		}
-		@Pc(34) boolean local34 = local8.method4814() == 1;
+		@Pc(34) boolean local34 = local8.g1() == 1;
 		if (local34) {
 			Static317.method5550(local8);
 		}

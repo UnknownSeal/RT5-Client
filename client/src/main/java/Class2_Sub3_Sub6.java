@@ -112,31 +112,31 @@ public final class Class2_Sub3_Sub6 extends Class2_Sub3 {
 
 	@OriginalMember(owner = "client!ch", name = "a", descriptor = "(ILclient!bt;I)V")
 	@Override
-	public void method6483(@OriginalArg(0) int arg0, @OriginalArg(1) Class2_Sub4 arg1) {
+	public void method6483(@OriginalArg(0) int arg0, @OriginalArg(1) Buffer arg1) {
 		if (arg0 == 0) {
-			this.aBoolean85 = arg1.method4814() == 1;
+			this.aBoolean85 = arg1.g1() == 1;
 		} else if (arg0 == 1) {
-			this.anInt1043 = arg1.method4814();
+			this.anInt1043 = arg1.g1();
 		} else if (arg0 == 2) {
-			this.anInt1049 = arg1.method4822();
+			this.anInt1049 = arg1.g2b_dup();
 			if (this.anInt1049 < 0) {
 				this.aShortArray18 = new short[this.anInt1043];
 				for (@Pc(80) int local80 = 0; local80 < this.anInt1043; local80++) {
-					this.aShortArray18[local80] = (short) arg1.method4822();
+					this.aShortArray18[local80] = (short) arg1.g2b_dup();
 				}
 				return;
 			}
 		} else if (arg0 == 3) {
-			this.anInt1051 = this.anInt1050 = arg1.method4814();
+			this.anInt1051 = this.anInt1050 = arg1.g1();
 			return;
 		} else if (arg0 == 4) {
-			this.anInt1045 = arg1.method4814();
+			this.anInt1045 = arg1.g1();
 			return;
 		} else if (arg0 == 5) {
-			this.anInt1051 = arg1.method4814();
+			this.anInt1051 = arg1.g1();
 			return;
 		} else if (arg0 == 6) {
-			this.anInt1050 = arg1.method4814();
+			this.anInt1050 = arg1.g1();
 			return;
 		}
 	}

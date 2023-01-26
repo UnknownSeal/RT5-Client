@@ -33,7 +33,7 @@ public final class Static94 {
 	@OriginalMember(owner = "client!ff", name = "b", descriptor = "(III)V")
 	public static void method2045(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
 		Static91.method1960(Static126.aClass145_229);
-		Static257.aClass2_Sub4_Sub2_4.method4812(arg0);
-		Static257.aClass2_Sub4_Sub2_4.method4837(arg1);
+		Static257.aClass2_Sub4_Sub2_4.p4(arg0);
+		Static257.aClass2_Sub4_Sub2_4.ip2add(arg1);
 	}
 }

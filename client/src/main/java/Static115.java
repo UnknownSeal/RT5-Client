@@ -46,8 +46,8 @@ public final class Static115 {
 	public static void method3840(@OriginalArg(0) String arg0) {
 		if (!arg0.equals("")) {
 			Static91.method1960(Static13.aClass145_18);
-			Static257.aClass2_Sub4_Sub2_4.method4841(Static27.method872(arg0));
-			Static257.aClass2_Sub4_Sub2_4.method4821(arg0);
+			Static257.aClass2_Sub4_Sub2_4.p1(Static27.method872(arg0));
+			Static257.aClass2_Sub4_Sub2_4.pjstr(arg0);
 		}
 	}
 

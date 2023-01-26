@@ -67,13 +67,13 @@ public final class Static319 {
 				Static335.aClass111_4 = new Class111((Socket) Static158.aClass32_7.anObject2, Static328.aClass152_5);
 				Static158.aClass32_7 = null;
 				@Pc(76) int local76 = 0;
-				Static257.aClass2_Sub4_Sub2_4.anInt5300 = 0;
+				Static257.aClass2_Sub4_Sub2_4.offset = 0;
 				if (Static70.aBoolean130) {
 					local76 = Static361.anInt6767;
 				}
-				Static257.aClass2_Sub4_Sub2_4.method4841(Static43.aClass242_9.anInt7038);
-				Static257.aClass2_Sub4_Sub2_4.method4812(local76);
-				Static335.aClass111_4.method2797(Static257.aClass2_Sub4_Sub2_4.anInt5300, Static257.aClass2_Sub4_Sub2_4.aByteArray73);
+				Static257.aClass2_Sub4_Sub2_4.p1(Static43.aClass242_9.anInt7038);
+				Static257.aClass2_Sub4_Sub2_4.p4(local76);
+				Static335.aClass111_4.method2797(Static257.aClass2_Sub4_Sub2_4.offset, Static257.aClass2_Sub4_Sub2_4.data);
 				if (Static303.aClass221_2 != null) {
 					Static303.aClass221_2.method6324();
 				}

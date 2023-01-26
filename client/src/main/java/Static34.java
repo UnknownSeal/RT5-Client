@@ -72,8 +72,8 @@ public final class Static34 {
 				}
 				Static53.anInt3971 = Static88.anInt1876;
 				Static91.method1960(Static2.aClass145_3);
-				Static257.aClass2_Sub4_Sub2_4.method4841(Static27.method872(arg0));
-				Static257.aClass2_Sub4_Sub2_4.method4821(arg0);
+				Static257.aClass2_Sub4_Sub2_4.p1(Static27.method872(arg0));
+				Static257.aClass2_Sub4_Sub2_4.pjstr(arg0);
 				return;
 			}
 		}

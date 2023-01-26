@@ -5,10 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static286 {
 
-	@OriginalMember(owner = "client!qk", name = "gb", descriptor = "[[B")
-	public static final byte[][] aByteArrayArray16 = new byte[1000][];
-
-	@OriginalMember(owner = "client!qk", name = "hb", descriptor = "[Ljava/awt/Color;")
+    @OriginalMember(owner = "client!qk", name = "hb", descriptor = "[Ljava/awt/Color;")
 	public static final Color[] aColorArray3 = new Color[] { new Color(16777215), new Color(16777215) };
 
 	@OriginalMember(owner = "client!qk", name = "jb", descriptor = "[[I")
@@ -386,14 +383,14 @@ public final class Static286 {
 	}
 
 	@OriginalMember(owner = "client!qk", name = "a", descriptor = "(Lclient!bt;I)Lclient!jq;")
-	public static Class2_Sub3 method4927(@OriginalArg(0) Class2_Sub4 arg0) {
-		arg0.method4814();
-		@Pc(13) int local13 = arg0.method4814();
+	public static Class2_Sub3 method4927(@OriginalArg(0) Buffer arg0) {
+		arg0.g1();
+		@Pc(13) int local13 = arg0.g1();
 		@Pc(17) Class2_Sub3 local17 = Static246.method4247(local13);
-		local17.anInt7251 = arg0.method4814();
-		@Pc(26) int local26 = arg0.method4814();
+		local17.anInt7251 = arg0.g1();
+		@Pc(26) int local26 = arg0.g1();
 		for (@Pc(28) int local28 = 0; local28 < local26; local28++) {
-			@Pc(34) int local34 = arg0.method4814();
+			@Pc(34) int local34 = arg0.g1();
 			local17.method6483(local34, arg0);
 		}
 		local17.method6479();

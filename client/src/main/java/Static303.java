@@ -73,20 +73,20 @@ public final class Static303 {
 	}
 
 	@OriginalMember(owner = "client!rm", name = "a", descriptor = "(Lclient!qg;BILclient!nh;I)V")
-	public static void method5211(@OriginalArg(0) Class2_Sub4_Sub2 arg0, @OriginalArg(2) int arg1, @OriginalArg(3) Class11_Sub5_Sub2_Sub1 arg2, @OriginalArg(4) int arg3) {
+	public static void method5211(@OriginalArg(0) Packet arg0, @OriginalArg(2) int arg1, @OriginalArg(3) Class11_Sub5_Sub2_Sub1 arg2, @OriginalArg(4) int arg3) {
 		@Pc(11) byte local11 = -1;
 		if ((arg3 & 0x20) != 0) {
-			Static335.aByteArray92[arg1] = arg0.method4853();
+			Static335.aByteArray92[arg1] = arg0.g1badd();
 		}
 		@Pc(32) int local32;
 		@Pc(36) int local36;
 		@Pc(40) int local40;
 		@Pc(43) int local43;
 		if ((arg3 & 0x8) != 0) {
-			local32 = arg0.method4805();
-			local36 = arg0.method4803();
-			local40 = arg0.method4814();
-			local43 = arg0.anInt5300;
+			local32 = arg0.g2add();
+			local36 = arg0.g1bneg();
+			local40 = arg0.g1();
+			local43 = arg0.offset;
 			@Pc(51) boolean local51 = (local32 & 0x8000) != 0;
 			if (arg2.aString41 != null && arg2.aClass117_1 != null) {
 				@Pc(59) boolean local59 = false;
@@ -98,9 +98,9 @@ public final class Static303 {
 					}
 				}
 				if (!local59 && Static212.anInt3785 == 0) {
-					Static89.aClass2_Sub4_2.anInt5300 = 0;
-					arg0.method4857(Static89.aClass2_Sub4_2.aByteArray73, local40);
-					Static89.aClass2_Sub4_2.anInt5300 = 0;
+					Static89.aClass2_Sub4_2.offset = 0;
+					arg0.ipadata(Static89.aClass2_Sub4_2.data, local40);
+					Static89.aClass2_Sub4_2.offset = 0;
 					@Pc(107) int local107 = -1;
 					@Pc(117) String local117;
 					if (local51) {
@@ -130,57 +130,57 @@ public final class Static303 {
 					}
 				}
 			}
-			arg0.anInt5300 = local43 + local40;
+			arg0.offset = local43 + local40;
 		}
 		@Pc(283) int local283;
 		@Pc(289) int local289;
 		if ((arg3 & 0x400) != 0) {
-			local32 = arg0.method4810();
+			local32 = arg0.g1sub();
 			@Pc(275) int[] local275 = new int[local32];
 			@Pc(278) int[] local278 = new int[local32];
 			@Pc(281) int[] local281 = new int[local32];
 			for (local283 = 0; local283 < local32; local283++) {
-				local289 = arg0.method4802();
+				local289 = arg0.ig2();
 				if (local289 == 65535) {
 					local289 = -1;
 				}
 				local275[local283] = local289;
-				local278[local283] = arg0.method4803();
-				local281[local283] = arg0.method4802();
+				local278[local283] = arg0.g1bneg();
+				local281[local283] = arg0.ig2();
 			}
 			Static154.method2785(local275, local281, local278, arg2);
 		}
 		if ((arg3 & 0x1) != 0) {
-			local32 = arg0.method4810();
+			local32 = arg0.g1sub();
 			@Pc(337) byte[] local337 = new byte[local32];
-			@Pc(342) Class2_Sub4 local342 = new Class2_Sub4(local337);
-			arg0.method4830(local337, local32);
+			@Pc(342) Buffer local342 = new Buffer(local337);
+			arg0.igdata(local337, local32);
 			Static231.aClass2_Sub4Array1[arg1] = local342;
 			arg2.method4065(local342);
 		}
 		if ((arg3 & 0x10) != 0) {
-			local32 = arg0.method4805();
+			local32 = arg0.g2add();
 			if (local32 == 65535) {
 				local32 = -1;
 			}
 			arg2.anInt4611 = local32;
 		}
 		if ((arg3 & 0x4) != 0) {
-			local32 = arg0.method4852();
+			local32 = arg0.ig2add();
 			if (local32 == 65535) {
 				local32 = -1;
 			}
-			local36 = arg0.method4862();
+			local36 = arg0.g1add();
 			Static337.method5706(arg2, local36, local32);
 		}
 		if ((arg3 & 0x100) != 0) {
-			arg2.anInt4615 = arg0.method4853();
-			arg2.anInt4588 = arg0.method4853();
-			arg2.anInt4577 = arg0.method4840();
-			arg2.anInt4599 = arg0.method4824();
-			arg2.anInt4622 = arg0.method4805() + Static114.anInt2348;
-			arg2.anInt4584 = arg0.method4805() + Static114.anInt2348;
-			arg2.anInt4614 = arg0.method4803();
+			arg2.anInt4615 = arg0.g1badd();
+			arg2.anInt4588 = arg0.g1badd();
+			arg2.anInt4577 = arg0.g1bsub();
+			arg2.anInt4599 = arg0.g1b();
+			arg2.anInt4622 = arg0.g2add() + Static114.anInt2348;
+			arg2.anInt4584 = arg0.g2add() + Static114.anInt2348;
+			arg2.anInt4614 = arg0.g1bneg();
 			arg2.anInt4642 = 0;
 			if (arg2.aBoolean276) {
 				arg2.anInt4577 += arg2.anInt4169;
@@ -197,22 +197,22 @@ public final class Static303 {
 			}
 		}
 		if ((arg3 & 0x1000) != 0) {
-			local32 = arg0.method4828();
-			arg2.anInt4578 = arg0.method4862();
-			arg2.anInt4591 = arg0.method4810();
+			local32 = arg0.g2();
+			arg2.anInt4578 = arg0.g1add();
+			arg2.anInt4591 = arg0.g1sub();
 			arg2.anInt4623 = local32 & 0x7FFF;
 			arg2.aBoolean319 = (local32 & 0x8000) != 0;
 			arg2.anInt4621 = arg2.anInt4623 + Static114.anInt2348 + arg2.anInt4578;
 		}
 		if ((arg3 & 0x80) != 0) {
-			arg2.anInt4174 = arg0.method4828();
+			arg2.anInt4174 = arg0.g2();
 			if (arg2.anInt4643 == 0) {
 				arg2.method4324(arg2.anInt4174);
 				arg2.anInt4174 = -1;
 			}
 		}
 		if ((arg3 & 0x200) != 0) {
-			arg2.aString50 = arg0.method4808();
+			arg2.aString50 = arg0.gjstr();
 			if (arg2.aString50.charAt(0) == '~') {
 				arg2.aString50 = arg2.aString50.substring(1);
 				Static33.method4199(arg2.method4071(), 0, arg2.aString50, 2, arg2.method4069());
@@ -224,8 +224,8 @@ public final class Static303 {
 			arg2.anInt4636 = 150;
 		}
 		if ((arg3 & 0x2000) != 0) {
-			local32 = arg0.method4852();
-			local36 = arg0.method4835();
+			local32 = arg0.ig2add();
+			local36 = arg0.mg4();
 			if (local32 == 65535) {
 				local32 = -1;
 			}
@@ -282,20 +282,20 @@ public final class Static303 {
 			}
 		}
 		if ((arg3 & 0x40) != 0) {
-			local32 = arg0.method4816();
-			local36 = arg0.method4810();
+			local32 = arg0.gsmarts();
+			local36 = arg0.g1sub();
 			arg2.method4333(local36, local32, Static114.anInt2348);
 			arg2.anInt4606 = Static114.anInt2348 + 300;
-			arg2.anInt4631 = arg0.method4803();
+			arg2.anInt4631 = arg0.g1bneg();
 		}
 		if ((arg3 & 0x800) != 0) {
 			local32 = Static114.anInt2348;
-			local36 = arg0.method4816();
-			local40 = arg0.method4810();
+			local36 = arg0.gsmarts();
+			local40 = arg0.g1sub();
 			arg2.method4333(local40, local36, local32);
 		}
 		if ((arg3 & 0x4000) != 0) {
-			local11 = arg0.method4840();
+			local11 = arg0.g1bsub();
 		}
 		if (!arg2.aBoolean276) {
 			return;

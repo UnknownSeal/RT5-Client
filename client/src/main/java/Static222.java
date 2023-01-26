@@ -36,7 +36,7 @@ public final class Static222 {
 						if (local59[0] != -1) {
 							throw new IllegalStateException("if1");
 						}
-						local71.method4105(new Class2_Sub4(local59));
+						local71.method4105(new Buffer(local59));
 					}
 				}
 			}

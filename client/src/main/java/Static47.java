@@ -23,7 +23,7 @@ public final class Static47 {
 	public static final int[] anIntArray90 = new int[4096];
 
 	@OriginalMember(owner = "client!co", name = "a", descriptor = "(I[BII)Ljava/lang/String;")
-	public static String method1462(@OriginalArg(0) int arg0, @OriginalArg(1) byte[] arg1, @OriginalArg(2) int arg2) {
+	public static String decodeString(@OriginalArg(0) int arg0, @OriginalArg(1) byte[] arg1, @OriginalArg(2) int arg2) {
 		@Pc(8) char[] local8 = new char[arg2];
 		@Pc(15) int local15 = 0;
 		for (@Pc(17) int local17 = 0; local17 < arg2; local17++) {

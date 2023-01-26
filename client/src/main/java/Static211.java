@@ -16,10 +16,7 @@ public final class Static211 {
 	@OriginalMember(owner = "client!mh", name = "j", descriptor = "I")
 	public static int anInt3780;
 
-	@OriginalMember(owner = "client!mh", name = "b", descriptor = "[[B")
-	public static final byte[][] aByteArrayArray8 = new byte[250][];
-
-	@OriginalMember(owner = "client!mh", name = "e", descriptor = "[I")
+    @OriginalMember(owner = "client!mh", name = "e", descriptor = "[I")
 	public static final int[] anIntArray230 = new int[1024];
 
 	@OriginalMember(owner = "client!mh", name = "a", descriptor = "(I)V")

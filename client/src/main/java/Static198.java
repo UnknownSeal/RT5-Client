@@ -204,17 +204,17 @@ public final class Static198 {
 			}
 		}
 		Static91.method1960(Static102.aClass145_141);
-		Static257.aClass2_Sub4_Sub2_4.method4841(0);
-		@Pc(646) int local646 = Static257.aClass2_Sub4_Sub2_4.anInt5300;
+		Static257.aClass2_Sub4_Sub2_4.p1(0);
+		@Pc(646) int local646 = Static257.aClass2_Sub4_Sub2_4.offset;
 		if (arg1 == 5021) {
-			Static257.aClass2_Sub4_Sub2_4.method4841(1);
+			Static257.aClass2_Sub4_Sub2_4.p1(1);
 		} else {
-			Static257.aClass2_Sub4_Sub2_4.method4841(0);
+			Static257.aClass2_Sub4_Sub2_4.p1(0);
 		}
-		Static257.aClass2_Sub4_Sub2_4.method4841(local13);
-		Static257.aClass2_Sub4_Sub2_4.method4841(local451);
+		Static257.aClass2_Sub4_Sub2_4.p1(local13);
+		Static257.aClass2_Sub4_Sub2_4.p1(local451);
 		Static120.method2379(arg0, Static257.aClass2_Sub4_Sub2_4);
-		Static257.aClass2_Sub4_Sub2_4.method4860(Static257.aClass2_Sub4_Sub2_4.anInt5300 - local646);
+		Static257.aClass2_Sub4_Sub2_4.psize1(Static257.aClass2_Sub4_Sub2_4.offset - local646);
 	}
 
 	@OriginalMember(owner = "client!lk", name = "a", descriptor = "(Lclient!fn;I)V")
@@ -1245,21 +1245,21 @@ public final class Static198 {
 										local19 = Static146.method2698(local3493);
 									}
 									Static91.method1960(Static363.aClass145_239);
-									Static257.aClass2_Sub4_Sub2_4.method4812(local19);
+									Static257.aClass2_Sub4_Sub2_4.p4(local19);
 									return;
 								}
 								if (arg0 == 3105) {
 									local3493 = aStringArray29[--anInt3652];
 									Static91.method1960(Static49.aClass145_44);
-									Static257.aClass2_Sub4_Sub2_4.method4841(local3493.length() + 1);
-									Static257.aClass2_Sub4_Sub2_4.method4821(local3493);
+									Static257.aClass2_Sub4_Sub2_4.p1(local3493.length() + 1);
+									Static257.aClass2_Sub4_Sub2_4.pjstr(local3493);
 									return;
 								}
 								if (arg0 == 3106) {
 									local3493 = aStringArray29[--anInt3652];
 									Static91.method1960(Static221.aClass145_164);
-									Static257.aClass2_Sub4_Sub2_4.method4841(local3493.length() + 1);
-									Static257.aClass2_Sub4_Sub2_4.method4821(local3493);
+									Static257.aClass2_Sub4_Sub2_4.p1(local3493.length() + 1);
+									Static257.aClass2_Sub4_Sub2_4.pjstr(local3493);
 									return;
 								}
 								if (arg0 == 3107) {
@@ -1288,7 +1288,7 @@ public final class Static198 {
 								if (arg0 == 3110) {
 									local13 = anIntArray213[--anInt3650];
 									Static91.method1960(Static190.aClass145_138);
-									Static257.aClass2_Sub4_Sub2_4.method4842(local13);
+									Static257.aClass2_Sub4_Sub2_4.p2(local13);
 									return;
 								}
 								if (arg0 == 3111) {
@@ -2604,9 +2604,9 @@ public final class Static198 {
 				}
 				Static331.anInt6206 = anIntArray213[anInt3650 + 2];
 				Static91.method1960(Static32.aClass145_32);
-				Static257.aClass2_Sub4_Sub2_4.method4841(Static20.anInt545);
-				Static257.aClass2_Sub4_Sub2_4.method4841(Static154.aClass170_2.anInt4690);
-				Static257.aClass2_Sub4_Sub2_4.method4841(Static331.anInt6206);
+				Static257.aClass2_Sub4_Sub2_4.p1(Static20.anInt545);
+				Static257.aClass2_Sub4_Sub2_4.p1(Static154.aClass170_2.anInt4690);
+				Static257.aClass2_Sub4_Sub2_4.p1(Static331.anInt6206);
 				return;
 			}
 			if (arg0 == 5002) {
@@ -2623,11 +2623,11 @@ public final class Static198 {
 					local81 = local81.substring(0, 80);
 				}
 				Static91.method1960(Static327.aClass145_222);
-				Static257.aClass2_Sub4_Sub2_4.method4841(Static27.method872(local75) + Static27.method872(local81) + 2);
-				Static257.aClass2_Sub4_Sub2_4.method4821(local75);
-				Static257.aClass2_Sub4_Sub2_4.method4841(local89 - 1);
-				Static257.aClass2_Sub4_Sub2_4.method4841(local95);
-				Static257.aClass2_Sub4_Sub2_4.method4821(local81);
+				Static257.aClass2_Sub4_Sub2_4.p1(Static27.method872(local75) + Static27.method872(local81) + 2);
+				Static257.aClass2_Sub4_Sub2_4.pjstr(local75);
+				Static257.aClass2_Sub4_Sub2_4.p1(local89 - 1);
+				Static257.aClass2_Sub4_Sub2_4.p1(local95);
+				Static257.aClass2_Sub4_Sub2_4.pjstr(local81);
 				return;
 			}
 			if (arg0 == 5003) {
@@ -2670,11 +2670,11 @@ public final class Static198 {
 				local81 = aStringArray29[anInt3652 + 1];
 				if (Static4.anInt90 != 0 || (!Static56.aBoolean123 || Static101.aBoolean159) && !Static109.aBoolean166) {
 					Static91.method1960(Static382.aClass145_261);
-					Static257.aClass2_Sub4_Sub2_4.method4841(0);
-					local89 = Static257.aClass2_Sub4_Sub2_4.anInt5300;
-					Static257.aClass2_Sub4_Sub2_4.method4821(local75);
+					Static257.aClass2_Sub4_Sub2_4.p1(0);
+					local89 = Static257.aClass2_Sub4_Sub2_4.offset;
+					Static257.aClass2_Sub4_Sub2_4.pjstr(local75);
 					Static120.method2379(local81, Static257.aClass2_Sub4_Sub2_4);
-					Static257.aClass2_Sub4_Sub2_4.method4860(Static257.aClass2_Sub4_Sub2_4.anInt5300 - local89);
+					Static257.aClass2_Sub4_Sub2_4.psize1(Static257.aClass2_Sub4_Sub2_4.offset - local89);
 					return;
 				}
 				return;
@@ -2832,33 +2832,33 @@ public final class Static198 {
 			}
 			if (arg0 == 5059) {
 				Static91.method1960(Static369.aClass145_248);
-				Static257.aClass2_Sub4_Sub2_4.method4841(0);
-				local157 = Static257.aClass2_Sub4_Sub2_4.anInt5300;
-				Static257.aClass2_Sub4_Sub2_4.method4841(0);
-				Static257.aClass2_Sub4_Sub2_4.method4842(aClass86_1.anInt2377);
+				Static257.aClass2_Sub4_Sub2_4.p1(0);
+				local157 = Static257.aClass2_Sub4_Sub2_4.offset;
+				Static257.aClass2_Sub4_Sub2_4.p1(0);
+				Static257.aClass2_Sub4_Sub2_4.p2(aClass86_1.anInt2377);
 				aClass86_1.aClass2_Sub2_Sub16_1.method5596(Static257.aClass2_Sub4_Sub2_4, aClass86_1.anIntArray151);
-				Static257.aClass2_Sub4_Sub2_4.method4860(Static257.aClass2_Sub4_Sub2_4.anInt5300 - local157);
+				Static257.aClass2_Sub4_Sub2_4.psize1(Static257.aClass2_Sub4_Sub2_4.offset - local157);
 				return;
 			}
 			if (arg0 == 5060) {
 				local75 = aStringArray29[--anInt3652];
 				Static91.method1960(Static325.aClass145_220);
-				Static257.aClass2_Sub4_Sub2_4.method4841(0);
-				local192 = Static257.aClass2_Sub4_Sub2_4.anInt5300;
-				Static257.aClass2_Sub4_Sub2_4.method4821(local75);
-				Static257.aClass2_Sub4_Sub2_4.method4842(aClass86_1.anInt2377);
+				Static257.aClass2_Sub4_Sub2_4.p1(0);
+				local192 = Static257.aClass2_Sub4_Sub2_4.offset;
+				Static257.aClass2_Sub4_Sub2_4.pjstr(local75);
+				Static257.aClass2_Sub4_Sub2_4.p2(aClass86_1.anInt2377);
 				aClass86_1.aClass2_Sub2_Sub16_1.method5596(Static257.aClass2_Sub4_Sub2_4, aClass86_1.anIntArray151);
-				Static257.aClass2_Sub4_Sub2_4.method4860(Static257.aClass2_Sub4_Sub2_4.anInt5300 - local192);
+				Static257.aClass2_Sub4_Sub2_4.psize1(Static257.aClass2_Sub4_Sub2_4.offset - local192);
 				return;
 			}
 			if (arg0 == 5061) {
 				Static91.method1960(Static369.aClass145_248);
-				Static257.aClass2_Sub4_Sub2_4.method4841(0);
-				local157 = Static257.aClass2_Sub4_Sub2_4.anInt5300;
-				Static257.aClass2_Sub4_Sub2_4.method4841(1);
-				Static257.aClass2_Sub4_Sub2_4.method4842(aClass86_1.anInt2377);
+				Static257.aClass2_Sub4_Sub2_4.p1(0);
+				local157 = Static257.aClass2_Sub4_Sub2_4.offset;
+				Static257.aClass2_Sub4_Sub2_4.p1(1);
+				Static257.aClass2_Sub4_Sub2_4.p2(aClass86_1.anInt2377);
 				aClass86_1.aClass2_Sub2_Sub16_1.method5596(Static257.aClass2_Sub4_Sub2_4, aClass86_1.anIntArray151);
-				Static257.aClass2_Sub4_Sub2_4.method4860(Static257.aClass2_Sub4_Sub2_4.anInt5300 - local157);
+				Static257.aClass2_Sub4_Sub2_4.psize1(Static257.aClass2_Sub4_Sub2_4.offset - local157);
 				return;
 			}
 			if (arg0 == 5062) {
@@ -3347,10 +3347,10 @@ public final class Static198 {
 							local81 = aStringArray29[anInt3652 + 1];
 							local89 = anIntArray213[--anInt3650];
 							Static91.method1960(Static323.aClass145_219);
-							Static257.aClass2_Sub4_Sub2_4.method4841(Static27.method872(local75) + Static27.method872(local81) + 1);
-							Static257.aClass2_Sub4_Sub2_4.method4821(local75);
-							Static257.aClass2_Sub4_Sub2_4.method4821(local81);
-							Static257.aClass2_Sub4_Sub2_4.method4841(local89);
+							Static257.aClass2_Sub4_Sub2_4.p1(Static27.method872(local75) + Static27.method872(local81) + 1);
+							Static257.aClass2_Sub4_Sub2_4.pjstr(local75);
+							Static257.aClass2_Sub4_Sub2_4.pjstr(local81);
+							Static257.aClass2_Sub4_Sub2_4.p1(local89);
 							return;
 						}
 						if (arg0 == 5401) {

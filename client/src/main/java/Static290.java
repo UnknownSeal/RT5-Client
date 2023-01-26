@@ -44,13 +44,13 @@ public final class Static290 {
 	@OriginalMember(owner = "client!qp", name = "b", descriptor = "(I)V")
 	public static void method5025() {
 		Static91.method1960(Static13.aClass145_18);
-		Static257.aClass2_Sub4_Sub2_4.method4841(0);
+		Static257.aClass2_Sub4_Sub2_4.p1(0);
 	}
 
 	@OriginalMember(owner = "client!qp", name = "a", descriptor = "(ILclient!bt;)Lclient!gr;")
-	public static Class86 method5026(@OriginalArg(1) Class2_Sub4 arg0) {
+	public static Class86 method5026(@OriginalArg(1) Buffer arg0) {
 		@Pc(15) Class86 local15 = new Class86();
-		local15.anInt2377 = arg0.method4828();
+		local15.anInt2377 = arg0.g2();
 		local15.aClass2_Sub2_Sub16_1 = Static146.method2699(local15.anInt2377);
 		return local15;
 	}

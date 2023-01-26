@@ -17,7 +17,7 @@ public final class Static257 {
 	public static final Class116 aClass116_5 = new Class116(64);
 
 	@OriginalMember(owner = "client!on", name = "g", descriptor = "Lclient!qg;")
-	public static final Class2_Sub4_Sub2 aClass2_Sub4_Sub2_4 = new Class2_Sub4_Sub2(5000);
+	public static final Packet aClass2_Sub4_Sub2_4 = new Packet(5000);
 
 	@OriginalMember(owner = "client!on", name = "h", descriptor = "[I")
 	public static final int[] anIntArray257 = new int[4096];

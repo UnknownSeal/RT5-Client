@@ -76,7 +76,7 @@ public final class Static354 {
 	}
 
 	@OriginalMember(owner = "client!un", name = "a", descriptor = "(ZLclient!bt;)Lclient!oq;")
-	public static Class173_Sub1 method1393(@OriginalArg(1) Class2_Sub4 arg0) {
-		return new Class173_Sub1(arg0.method4822(), arg0.method4822(), arg0.method4822(), arg0.method4822(), arg0.method4832(), arg0.method4814());
+	public static Class173_Sub1 method1393(@OriginalArg(1) Buffer arg0) {
+		return new Class173_Sub1(arg0.g2b_dup(), arg0.g2b_dup(), arg0.g2b_dup(), arg0.g2b_dup(), arg0.ig3(), arg0.g1());
 	}
 }

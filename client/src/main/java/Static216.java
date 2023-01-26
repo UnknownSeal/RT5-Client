@@ -162,7 +162,7 @@ public final class Static216 {
 			Static393.aBoolean486 = false;
 		} else if (Static218.aClass177_Sub1_2.anInt4889 != 0 && Static171.anInt3268 != -1 && !Static64.method1704()) {
 			Static91.method1960(Static67.aClass145_56);
-			Static257.aClass2_Sub4_Sub2_4.method4812(Static171.anInt3268);
+			Static257.aClass2_Sub4_Sub2_4.p4(Static171.anInt3268);
 			Static171.anInt3268 = -1;
 		}
 	}

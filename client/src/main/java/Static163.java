@@ -134,8 +134,8 @@ public final class Static163 {
 	public static void method3101(@OriginalArg(1) String arg0) {
 		if (Static47.aClass214Array1 != null) {
 			Static91.method1960(Static70.aClass145_57);
-			Static257.aClass2_Sub4_Sub2_4.method4841(Static27.method872(arg0));
-			Static257.aClass2_Sub4_Sub2_4.method4821(arg0);
+			Static257.aClass2_Sub4_Sub2_4.p1(Static27.method872(arg0));
+			Static257.aClass2_Sub4_Sub2_4.pjstr(arg0);
 		}
 	}
 

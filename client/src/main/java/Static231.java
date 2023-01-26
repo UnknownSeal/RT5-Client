@@ -20,7 +20,7 @@ public final class Static231 {
 	public static int anInt4079 = 999999;
 
 	@OriginalMember(owner = "client!nf", name = "w", descriptor = "[Lclient!bt;")
-	public static final Class2_Sub4[] aClass2_Sub4Array1 = new Class2_Sub4[2048];
+	public static final Buffer[] aClass2_Sub4Array1 = new Buffer[2048];
 
 	@OriginalMember(owner = "client!nf", name = "a", descriptor = "(IIBI)V")
 	public static void method4021(@OriginalArg(1) int arg0, @OriginalArg(3) int arg1) {

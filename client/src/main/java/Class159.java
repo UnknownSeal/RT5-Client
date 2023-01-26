@@ -40,21 +40,21 @@ public final class Class159 {
 	public Class159(@OriginalArg(0) byte[] arg0, @OriginalArg(1) Class2_Sub18 arg1) {
 		this.aClass2_Sub18_1 = arg1;
 		try {
-			@Pc(21) Class2_Sub4 local21 = new Class2_Sub4(arg0);
-			@Pc(26) Class2_Sub4 local26 = new Class2_Sub4(arg0);
-			local21.anInt5300 = 2;
-			@Pc(33) int local33 = local21.method4814();
+			@Pc(21) Buffer local21 = new Buffer(arg0);
+			@Pc(26) Buffer local26 = new Buffer(arg0);
+			local21.offset = 2;
+			@Pc(33) int local33 = local21.g1();
 			@Pc(35) int local35 = 0;
 			@Pc(37) int local37 = -1;
 			@Pc(39) int local39 = -1;
-			local26.anInt5300 = local21.anInt5300 + local33;
+			local26.offset = local21.offset + local33;
 			@Pc(54) int local54;
 			for (@Pc(47) int local47 = 0; local47 < local33; local47++) {
 				local54 = this.aClass2_Sub18_1.anIntArray168[local47];
 				if (local54 == 0) {
 					local37 = local47;
 				}
-				@Pc(62) int local62 = local21.method4814();
+				@Pc(62) int local62 = local21.g1();
 				if (local62 > 0) {
 					if (local54 == 0) {
 						local39 = local47;
@@ -67,17 +67,17 @@ public final class Class159 {
 					if ((local62 & 0x1) == 0) {
 						Static229.aShortArray83[local35] = local75;
 					} else {
-						Static229.aShortArray83[local35] = (short) local26.method4817();
+						Static229.aShortArray83[local35] = (short) local26.gsmart();
 					}
 					if ((local62 & 0x2) == 0) {
 						Static229.aShortArray84[local35] = local75;
 					} else {
-						Static229.aShortArray84[local35] = (short) local26.method4817();
+						Static229.aShortArray84[local35] = (short) local26.gsmart();
 					}
 					if ((local62 & 0x4) == 0) {
 						Static229.aShortArray85[local35] = local75;
 					} else {
-						Static229.aShortArray85[local35] = (short) local26.method4817();
+						Static229.aShortArray85[local35] = (short) local26.gsmart();
 					}
 					Static229.aByteArray43[local35] = (byte) (local62 >>> 3 & 0x3);
 					if (local54 == 2) {
@@ -102,7 +102,7 @@ public final class Class159 {
 					local35++;
 				}
 			}
-			if (local26.anInt5300 != arg0.length) {
+			if (local26.offset != arg0.length) {
 				throw new RuntimeException();
 			}
 			this.anInt4048 = local35;

@@ -70,16 +70,16 @@ public final class Static340 {
 			}
 			if (local11.anInt993 == 1) {
 				local7 = (Class204) local11.anObject2;
-				@Pc(41) Class2_Sub4 local41 = new Class2_Sub4(Static112.anInt2294 * 6 + 3);
-				local41.method4841(1);
-				local41.method4842(Static112.anInt2294);
+				@Pc(41) Buffer local41 = new Buffer(Static112.anInt2294 * 6 + 3);
+				local41.p1(1);
+				local41.p2(Static112.anInt2294);
 				for (@Pc(51) int local51 = 0; local51 < Static75.anIntArray117.length; local51++) {
 					if (Static89.aBooleanArray18[local51]) {
-						local41.method4842(local51);
-						local41.method4812(Static75.anIntArray117[local51]);
+						local41.p2(local51);
+						local41.p4(Static75.anIntArray117[local51]);
 					}
 				}
-				local7.method5194(local41.aByteArray73, local41.anInt5300, 0);
+				local7.method5194(local41.data, local41.offset, 0);
 			}
 		} catch (@Pc(82) Exception local82) {
 		}

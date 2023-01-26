@@ -70,7 +70,7 @@ public final class Class125 {
 		local16.anInt4430 = arg0;
 		local16.aClass125_2 = this;
 		if (local33 != null) {
-			local16.method4181(new Class2_Sub4(local33));
+			local16.method4181(new Buffer(local33));
 		}
 		local16.method4186();
 		@Pc(65) Class98 local65 = this.aClass98_26;

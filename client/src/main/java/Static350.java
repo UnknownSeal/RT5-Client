@@ -22,7 +22,7 @@ public final class Static350 {
 	}
 
 	@OriginalMember(owner = "client!ue", name = "a", descriptor = "(BILjava/lang/String;[BII)I")
-	public static int method5838(@OriginalArg(1) int arg0, @OriginalArg(2) String arg1, @OriginalArg(3) byte[] arg2, @OriginalArg(4) int arg3) {
+	public static int encodeString(@OriginalArg(1) int arg0, @OriginalArg(2) String arg1, @OriginalArg(3) byte[] arg2, @OriginalArg(4) int arg3) {
 		@Pc(8) int local8 = arg0;
 		for (@Pc(15) int local15 = 0; local15 < local8; local15++) {
 			@Pc(22) char local22 = arg1.charAt(local15);

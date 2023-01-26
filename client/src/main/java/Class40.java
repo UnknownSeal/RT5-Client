@@ -13,9 +13,9 @@ public final class Class40 {
 	public int anInt1258 = 1;
 
 	@OriginalMember(owner = "client!cr", name = "a", descriptor = "(Lclient!bt;I)V")
-	public void method1468(@OriginalArg(0) Class2_Sub4 arg0) {
+	public void method1468(@OriginalArg(0) Buffer arg0) {
 		while (true) {
-			@Pc(17) int local17 = arg0.method4814();
+			@Pc(17) int local17 = arg0.g1();
 			if (local17 == 0) {
 				return;
 			}
@@ -24,9 +24,9 @@ public final class Class40 {
 	}
 
 	@OriginalMember(owner = "client!cr", name = "a", descriptor = "(Lclient!bt;II)V")
-	private void method1470(@OriginalArg(0) Class2_Sub4 arg0, @OriginalArg(1) int arg1) {
+	private void method1470(@OriginalArg(0) Buffer arg0, @OriginalArg(1) int arg1) {
 		if (arg1 == 1) {
-			this.aChar2 = Static78.method5697(arg0.method4824());
+			this.aChar2 = Static78.method5697(arg0.g1b());
 		} else if (arg1 == 2) {
 			this.anInt1258 = 0;
 		}

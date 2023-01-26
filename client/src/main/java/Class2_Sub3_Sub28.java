@@ -51,21 +51,21 @@ public final class Class2_Sub3_Sub28 extends Class2_Sub3 {
 
 	@OriginalMember(owner = "client!qk", name = "a", descriptor = "(ILclient!bt;I)V")
 	@Override
-	public void method6483(@OriginalArg(0) int arg0, @OriginalArg(1) Class2_Sub4 arg1) {
+	public void method6483(@OriginalArg(0) int arg0, @OriginalArg(1) Buffer arg1) {
 		if (arg0 == 0) {
-			this.anInt5416 = arg1.method4828();
+			this.anInt5416 = arg1.g2();
 		} else if (arg0 == 1) {
-			this.anInt5401 = arg1.method4828();
+			this.anInt5401 = arg1.g2();
 		} else if (arg0 == 2) {
-			this.anInt5408 = arg1.method4828();
+			this.anInt5408 = arg1.g2();
 		} else if (arg0 == 3) {
-			this.anInt5412 = arg1.method4828();
+			this.anInt5412 = arg1.g2();
 		} else if (arg0 == 4) {
-			this.anInt5404 = arg1.method4828();
+			this.anInt5404 = arg1.g2();
 		} else if (arg0 == 5) {
-			this.anInt5402 = arg1.method4828();
+			this.anInt5402 = arg1.g2();
 		} else if (arg0 == 6) {
-			this.anInt5403 = arg1.method4828();
+			this.anInt5403 = arg1.g2();
 		}
 	}
 

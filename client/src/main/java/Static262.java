@@ -48,13 +48,13 @@ public final class Static262 {
 	}
 
 	@OriginalMember(owner = "client!pa", name = "a", descriptor = "(ILclient!qg;)V")
-	public static void method6251(@OriginalArg(1) Class2_Sub4_Sub2 arg0) {
+	public static void method6251(@OriginalArg(1) Packet arg0) {
 		for (@Pc(15) int local15 = 0; local15 < Static325.anInt6079; local15++) {
 			@Pc(21) int local21 = Static52.anIntArray100[local15];
 			@Pc(25) Class11_Sub5_Sub2_Sub1 local25 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local21];
-			@Pc(29) int local29 = arg0.method4814();
+			@Pc(29) int local29 = arg0.g1();
 			if ((local29 & 0x2) != 0) {
-				local29 += arg0.method4814() << 8;
+				local29 += arg0.g1() << 8;
 			}
 			Static303.method5211(arg0, local21, local25, local29);
 		}

@@ -27,17 +27,17 @@ public final class Static161 {
 
 	@OriginalMember(owner = "client!jg", name = "a", descriptor = "([BI)[B")
 	public static byte[] method2969(@OriginalArg(0) byte[] arg0) {
-		@Pc(8) Class2_Sub4 local8 = new Class2_Sub4(arg0);
-		@Pc(12) int local12 = local8.method4814();
-		@Pc(23) int local23 = local8.method4835();
+		@Pc(8) Buffer local8 = new Buffer(arg0);
+		@Pc(12) int local12 = local8.g1();
+		@Pc(23) int local23 = local8.mg4();
 		if (local23 < 0 || Static45.anInt1198 != 0 && Static45.anInt1198 < local23) {
 			throw new RuntimeException();
 		} else if (local12 == 0) {
 			@Pc(45) byte[] local45 = new byte[local23];
-			local8.method4798(local45, local23);
+			local8.gdata(local45, local23);
 			return local45;
 		} else {
-			@Pc(57) int local57 = local8.method4835();
+			@Pc(57) int local57 = local8.mg4();
 			if (local57 < 0 || Static45.anInt1198 != 0 && Static45.anInt1198 < local57) {
 				throw new RuntimeException();
 			}
@@ -470,9 +470,9 @@ public final class Static161 {
 			}
 			if (Static347.anInt6442 == 30) {
 				Static91.method1960(Static243.aClass145_162);
-				Static257.aClass2_Sub4_Sub2_4.method4841(arg0.length() + 2);
-				Static257.aClass2_Sub4_Sub2_4.method4841(arg1 ? 1 : 0);
-				Static257.aClass2_Sub4_Sub2_4.method4821(arg0);
+				Static257.aClass2_Sub4_Sub2_4.p1(arg0.length() + 2);
+				Static257.aClass2_Sub4_Sub2_4.p1(arg1 ? 1 : 0);
+				Static257.aClass2_Sub4_Sub2_4.pjstr(arg0);
 			}
 			if (arg0.startsWith("fps ") && Static189.aClass127_6 != Static121.aClass127_4) {
 				Static250.method4345(Static146.method2698(arg0.substring(4)));
@@ -502,8 +502,8 @@ public final class Static161 {
 		if (!Static101.aBoolean158 && Static335.aClass111_4 != null) {
 			Static91.method1960(Static326.aClass145_228);
 			try {
-				Static335.aClass111_4.method2797(Static257.aClass2_Sub4_Sub2_4.anInt5300, Static257.aClass2_Sub4_Sub2_4.aByteArray73);
-				Static257.aClass2_Sub4_Sub2_4.anInt5300 = 0;
+				Static335.aClass111_4.method2797(Static257.aClass2_Sub4_Sub2_4.offset, Static257.aClass2_Sub4_Sub2_4.data);
+				Static257.aClass2_Sub4_Sub2_4.offset = 0;
 			} catch (@Pc(57) IOException local57) {
 				Static101.aBoolean158 = true;
 			}

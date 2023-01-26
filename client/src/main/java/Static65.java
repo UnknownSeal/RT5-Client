@@ -50,9 +50,9 @@ public final class Static65 {
 		if (arg2 == 1) {
 			Static91.method1960(Static310.aClass145_203);
 		}
-		Static257.aClass2_Sub4_Sub2_4.method4826(Static174.aClass123_2.method3342(82) ? 1 : 0);
-		Static257.aClass2_Sub4_Sub2_4.method4842(arg0 + Static164.anInt3140);
-		Static257.aClass2_Sub4_Sub2_4.method4829(arg1 + Static148.anInt2719);
+		Static257.aClass2_Sub4_Sub2_4.p1add(Static174.aClass123_2.method3342(82) ? 1 : 0);
+		Static257.aClass2_Sub4_Sub2_4.p2(arg0 + Static164.anInt3140);
+		Static257.aClass2_Sub4_Sub2_4.ip2_dup(arg1 + Static148.anInt2719);
 		Static370.aBoolean474 = false;
 		Static358.anInt6550 = arg0;
 		Static312.anInt5844 = arg1;

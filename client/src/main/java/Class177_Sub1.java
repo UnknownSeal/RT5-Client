@@ -67,7 +67,7 @@ public final class Class177_Sub1 extends Class177 {
 						throw new IOException("EOF");
 					}
 				}
-				this.method4498(new Class2_Sub4(local153));
+				this.method4498(new Buffer(local153));
 			}
 		} catch (@Pc(193) Exception local193) {
 		}
@@ -99,42 +99,42 @@ public final class Class177_Sub1 extends Class177 {
 	}
 
 	@OriginalMember(owner = "client!pe", name = "d", descriptor = "(I)Lclient!bt;")
-	public Class2_Sub4 method4493() {
-		@Pc(8) Class2_Sub4 local8 = new Class2_Sub4(39);
-		local8.method4841(16);
-		local8.method4841(super.anInt4879);
-		local8.method4841(super.aBoolean354 ? 1 : 0);
-		local8.method4841(super.aBoolean349 ? 1 : 0);
-		local8.method4841(super.aBoolean359 ? 1 : 0);
-		local8.method4841(super.aBoolean350 ? 1 : 0);
-		local8.method4841(0);
-		local8.method4841(super.aBoolean353 ? 1 : 0);
-		local8.method4841(super.aBoolean355 ? 1 : 0);
-		local8.method4841(super.aBoolean358 ? 1 : 0);
-		local8.method4841(super.anInt4886);
-		local8.method4841(super.aBoolean364 ? 1 : 0);
-		local8.method4841(super.aBoolean361 ? 1 : 0);
-		local8.method4841(super.aBoolean348 ? 1 : 0);
-		local8.method4841(super.anInt4891);
-		local8.method4841(super.aBoolean352 ? 1 : 0);
-		local8.method4841(super.anInt4888);
-		local8.method4841(super.anInt4889);
-		local8.method4841(super.anInt4882);
-		local8.method4842(super.anInt4884);
-		local8.method4842(super.anInt4893);
-		local8.method4841(Static184.method3390());
-		local8.method4812(super.anInt4887);
-		local8.method4841(super.anInt4894);
-		local8.method4841(super.aBoolean362 ? 1 : 0);
-		local8.method4841(super.aBoolean351 ? 1 : 0);
-		local8.method4841(super.anInt4883);
-		local8.method4841(super.aBoolean356 ? 1 : 0);
-		local8.method4841(super.aBoolean363 ? 1 : 0);
-		local8.method4841(super.anInt4895);
-		local8.method4841(super.aBoolean357 ? 1 : 0);
-		local8.method4841(super.anInt4878);
-		local8.method4841(super.anInt4881);
-		local8.method4841(super.aBoolean360 ? 0 : 1);
+	public Buffer method4493() {
+		@Pc(8) Buffer local8 = new Buffer(39);
+		local8.p1(16);
+		local8.p1(super.anInt4879);
+		local8.p1(super.aBoolean354 ? 1 : 0);
+		local8.p1(super.aBoolean349 ? 1 : 0);
+		local8.p1(super.aBoolean359 ? 1 : 0);
+		local8.p1(super.aBoolean350 ? 1 : 0);
+		local8.p1(0);
+		local8.p1(super.aBoolean353 ? 1 : 0);
+		local8.p1(super.aBoolean355 ? 1 : 0);
+		local8.p1(super.aBoolean358 ? 1 : 0);
+		local8.p1(super.anInt4886);
+		local8.p1(super.aBoolean364 ? 1 : 0);
+		local8.p1(super.aBoolean361 ? 1 : 0);
+		local8.p1(super.aBoolean348 ? 1 : 0);
+		local8.p1(super.anInt4891);
+		local8.p1(super.aBoolean352 ? 1 : 0);
+		local8.p1(super.anInt4888);
+		local8.p1(super.anInt4889);
+		local8.p1(super.anInt4882);
+		local8.p2(super.anInt4884);
+		local8.p2(super.anInt4893);
+		local8.p1(Static184.method3390());
+		local8.p4(super.anInt4887);
+		local8.p1(super.anInt4894);
+		local8.p1(super.aBoolean362 ? 1 : 0);
+		local8.p1(super.aBoolean351 ? 1 : 0);
+		local8.p1(super.anInt4883);
+		local8.p1(super.aBoolean356 ? 1 : 0);
+		local8.p1(super.aBoolean363 ? 1 : 0);
+		local8.p1(super.anInt4895);
+		local8.p1(super.aBoolean357 ? 1 : 0);
+		local8.p1(super.anInt4878);
+		local8.p1(super.anInt4881);
+		local8.p1(super.aBoolean360 ? 0 : 1);
 		return local8;
 	}
 
@@ -158,8 +158,8 @@ public final class Class177_Sub1 extends Class177 {
 			}
 			if (local17.anInt993 == 1) {
 				local7 = (Class204) local17.anObject2;
-				@Pc(39) Class2_Sub4 local39 = this.method4493();
-				local7.method5194(local39.aByteArray73, local39.anInt5300, 0);
+				@Pc(39) Buffer local39 = this.method4493();
+				local7.method5194(local39.data, local39.offset, 0);
 			}
 		} catch (@Pc(49) Exception local49) {
 		}
@@ -172,11 +172,11 @@ public final class Class177_Sub1 extends Class177 {
 	}
 
 	@OriginalMember(owner = "client!pe", name = "a", descriptor = "(ILclient!bt;)V")
-	private void method4498(@OriginalArg(1) Class2_Sub4 arg0) {
-		if (arg0.aByteArray73.length - arg0.anInt5300 < 1) {
+	private void method4498(@OriginalArg(1) Buffer arg0) {
+		if (arg0.data.length - arg0.offset < 1) {
 			return;
 		}
-		@Pc(21) int local21 = arg0.method4814();
+		@Pc(21) int local21 = arg0.g1();
 		if (local21 < 0 || local21 > 16) {
 			return;
 		}
@@ -216,60 +216,60 @@ public final class Class177_Sub1 extends Class177 {
 		} else {
 			local34 = 19;
 		}
-		if (local34 > arg0.aByteArray73.length - arg0.anInt5300) {
+		if (local34 > arg0.data.length - arg0.offset) {
 			return;
 		}
-		super.anInt4879 = arg0.method4814();
+		super.anInt4879 = arg0.g1();
 		if (super.anInt4879 < 1) {
 			super.anInt4879 = 1;
 		} else if (super.anInt4879 > 4) {
 			super.anInt4879 = 4;
 		}
-		this.method4492(arg0.method4814() == 1);
-		super.aBoolean349 = arg0.method4814() == 1;
-		super.aBoolean359 = arg0.method4814() == 1;
-		super.aBoolean350 = arg0.method4814() == 1;
-		super.anInt4895 = arg0.method4814() == 1 ? 1 : 0;
-		super.aBoolean353 = arg0.method4814() == 1;
-		super.aBoolean355 = arg0.method4814() == 1;
-		super.aBoolean358 = arg0.method4814() == 1;
-		super.anInt4886 = arg0.method4814();
+		this.method4492(arg0.g1() == 1);
+		super.aBoolean349 = arg0.g1() == 1;
+		super.aBoolean359 = arg0.g1() == 1;
+		super.aBoolean350 = arg0.g1() == 1;
+		super.anInt4895 = arg0.g1() == 1 ? 1 : 0;
+		super.aBoolean353 = arg0.g1() == 1;
+		super.aBoolean355 = arg0.g1() == 1;
+		super.aBoolean358 = arg0.g1() == 1;
+		super.anInt4886 = arg0.g1();
 		if (super.anInt4886 > 2) {
 			super.anInt4886 = 2;
 		}
 		if (local21 < 2) {
-			super.aBoolean364 = arg0.method4814() == 1;
-			arg0.method4814();
+			super.aBoolean364 = arg0.g1() == 1;
+			arg0.g1();
 		} else {
-			super.aBoolean364 = arg0.method4814() == 1;
+			super.aBoolean364 = arg0.g1() == 1;
 		}
-		super.aBoolean361 = arg0.method4814() == 1;
-		super.aBoolean348 = arg0.method4814() == 1;
-		super.anInt4891 = arg0.method4814();
+		super.aBoolean361 = arg0.g1() == 1;
+		super.aBoolean348 = arg0.g1() == 1;
+		super.anInt4891 = arg0.g1();
 		if (super.anInt4891 > 2) {
 			super.anInt4891 = 2;
 		}
 		super.anInt4885 = super.anInt4891;
-		super.aBoolean352 = arg0.method4814() == 1;
-		super.anInt4888 = arg0.method4814();
+		super.aBoolean352 = arg0.g1() == 1;
+		super.anInt4888 = arg0.g1();
 		if (super.anInt4888 > 127) {
 			super.anInt4888 = 127;
 		}
-		super.anInt4889 = arg0.method4814();
-		super.anInt4882 = arg0.method4814();
+		super.anInt4889 = arg0.g1();
+		super.anInt4882 = arg0.g1();
 		if (super.anInt4882 > 127) {
 			super.anInt4882 = 127;
 		}
 		if (local21 >= 1) {
-			super.anInt4884 = arg0.method4828();
-			super.anInt4893 = arg0.method4828();
+			super.anInt4884 = arg0.g2();
+			super.anInt4893 = arg0.g2();
 		}
 		if (local21 >= 3 && local21 < 6) {
-			arg0.method4814();
+			arg0.g1();
 		}
 		@Pc(437) int local437;
 		if (local21 >= 4) {
-			local437 = arg0.method4814();
+			local437 = arg0.g1();
 			if (local437 < 0 || local437 > 2) {
 				local437 = 0;
 			}
@@ -279,44 +279,44 @@ public final class Class177_Sub1 extends Class177 {
 			Static26.method864(local437);
 		}
 		if (local21 >= 5) {
-			super.anInt4887 = arg0.method4835();
+			super.anInt4887 = arg0.mg4();
 		}
 		local437 = 0;
 		if (local21 >= 6) {
-			super.anInt4894 = local437 = arg0.method4814();
+			super.anInt4894 = local437 = arg0.g1();
 		}
 		if (super.anInt4894 != 1 && super.anInt4894 != 2) {
 			super.anInt4894 = 2;
 		}
 		if (local21 >= 7) {
-			super.aBoolean362 = arg0.method4814() == 1;
+			super.aBoolean362 = arg0.g1() == 1;
 		}
 		if (local21 >= 8) {
-			super.aBoolean351 = arg0.method4814() == 1;
+			super.aBoolean351 = arg0.g1() == 1;
 		}
 		if (local21 >= 9) {
-			super.anInt4883 = arg0.method4814();
+			super.anInt4883 = arg0.g1();
 		}
 		if (super.anInt4883 < 0 || super.anInt4883 > Static289.method5018(Static309.anInt5802)) {
 			super.anInt4883 = 0;
 		}
 		if (local21 >= 10) {
-			super.aBoolean356 = arg0.method4814() != 0;
+			super.aBoolean356 = arg0.g1() != 0;
 		}
 		if (local21 >= 11) {
-			super.aBoolean363 = arg0.method4814() != 0;
+			super.aBoolean363 = arg0.g1() != 0;
 		}
 		if (local21 >= 12) {
-			super.anInt4895 = arg0.method4814();
+			super.anInt4895 = arg0.g1();
 		}
 		if (super.anInt4895 < 0 || super.anInt4895 > 2) {
 			super.anInt4895 = 1;
 		}
 		if (local21 >= 13) {
-			super.aBoolean357 = arg0.method4814() == 1;
+			super.aBoolean357 = arg0.g1() == 1;
 		}
 		if (local21 >= 14) {
-			super.anInt4878 = arg0.method4814();
+			super.anInt4878 = arg0.g1();
 		} else if (local437 == 0) {
 			super.anInt4878 = 2;
 		} else {
@@ -326,13 +326,13 @@ public final class Class177_Sub1 extends Class177 {
 			super.anInt4878 = 2;
 		}
 		if (local21 >= 15) {
-			super.anInt4881 = arg0.method4814();
+			super.anInt4881 = arg0.g1();
 			if (super.anInt4881 < 0 || super.anInt4881 > 4) {
 				super.anInt4881 = Static201.anInt3699 == 1 ? 2 : 4;
 			}
 		}
 		if (local21 >= 16) {
-			super.aBoolean360 = arg0.method4814() != 1;
+			super.aBoolean360 = arg0.g1() != 1;
 		}
 	}
 }

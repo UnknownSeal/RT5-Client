@@ -19,22 +19,22 @@ public final class Class176 {
 	private final int[][][] anIntArrayArrayArray11 = new int[2][2][4];
 
 	@OriginalMember(owner = "client!pc", name = "a", descriptor = "(Lclient!bt;Lclient!uf;)V")
-	public void method4467(@OriginalArg(0) Class2_Sub4 arg0, @OriginalArg(1) Class232 arg1) {
-		@Pc(3) int local3 = arg0.method4814();
+	public void method4467(@OriginalArg(0) Buffer arg0, @OriginalArg(1) Class232 arg1) {
+		@Pc(3) int local3 = arg0.g1();
 		this.anIntArray332[0] = local3 >> 4;
 		this.anIntArray332[1] = local3 & 0xF;
 		if (local3 == 0) {
 			this.anIntArray331[0] = this.anIntArray331[1] = 0;
 			return;
 		}
-		this.anIntArray331[0] = arg0.method4828();
-		this.anIntArray331[1] = arg0.method4828();
-		@Pc(37) int local37 = arg0.method4814();
+		this.anIntArray331[0] = arg0.g2();
+		this.anIntArray331[1] = arg0.g2();
+		@Pc(37) int local37 = arg0.g1();
 		@Pc(42) int local42;
 		for (@Pc(39) int local39 = 0; local39 < 2; local39++) {
 			for (local42 = 0; local42 < this.anIntArray332[local39]; local42++) {
-				this.anIntArrayArrayArray11[local39][0][local42] = arg0.method4828();
-				this.anIntArrayArrayArray10[local39][0][local42] = arg0.method4828();
+				this.anIntArrayArrayArray11[local39][0][local42] = arg0.g2();
+				this.anIntArrayArrayArray10[local39][0][local42] = arg0.g2();
 			}
 		}
 		for (local42 = 0; local42 < 2; local42++) {
@@ -43,8 +43,8 @@ public final class Class176 {
 					this.anIntArrayArrayArray11[local42][1][local81] = this.anIntArrayArrayArray11[local42][0][local81];
 					this.anIntArrayArrayArray10[local42][1][local81] = this.anIntArrayArrayArray10[local42][0][local81];
 				} else {
-					this.anIntArrayArrayArray11[local42][1][local81] = arg0.method4828();
-					this.anIntArrayArrayArray10[local42][1][local81] = arg0.method4828();
+					this.anIntArrayArrayArray11[local42][1][local81] = arg0.g2();
+					this.anIntArrayArrayArray10[local42][1][local81] = arg0.g2();
 				}
 			}
 		}

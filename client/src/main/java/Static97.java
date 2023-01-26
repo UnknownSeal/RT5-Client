@@ -37,19 +37,19 @@ public final class Static97 {
 			Static154.anInt2803 = 1;
 			Static41.anInt1046 = -3;
 			Static193.anInt3557 = 0;
-			@Pc(40) Class2_Sub4 local40 = new Class2_Sub4(128);
-			local40.method4841(10);
-			local40.method4812((int) (Math.random() * 9.9999999E7D));
-			local40.method4831(Static80.method5984(Static374.aString70));
-			local40.method4812((int) (Math.random() * 9.9999999E7D));
-			local40.method4821(Static16.aString51);
-			local40.method4812((int) (Math.random() * 9.9999999E7D));
-			local40.method4833(Static320.aBigInteger2, Static194.aBigInteger1);
-			Static257.aClass2_Sub4_Sub2_4.anInt5300 = 0;
-			Static257.aClass2_Sub4_Sub2_4.method4841(Static43.aClass242_10.anInt7038);
-			Static257.aClass2_Sub4_Sub2_4.method4841(local40.anInt5300 + 2);
-			Static257.aClass2_Sub4_Sub2_4.method4842(578);
-			Static257.aClass2_Sub4_Sub2_4.method4856(local40.aByteArray73, local40.anInt5300);
+			@Pc(40) Buffer local40 = new Buffer(128);
+			local40.p1(10);
+			local40.p4((int) (Math.random() * 9.9999999E7D));
+			local40.p8(Static80.method5984(Static374.aString70));
+			local40.p4((int) (Math.random() * 9.9999999E7D));
+			local40.pjstr(Static16.aString51);
+			local40.p4((int) (Math.random() * 9.9999999E7D));
+			local40.rsaenc(Static320.aBigInteger2, Static194.aBigInteger1);
+			Static257.aClass2_Sub4_Sub2_4.offset = 0;
+			Static257.aClass2_Sub4_Sub2_4.p1(Static43.aClass242_10.anInt7038);
+			Static257.aClass2_Sub4_Sub2_4.p1(local40.offset + 2);
+			Static257.aClass2_Sub4_Sub2_4.p2(578);
+			Static257.aClass2_Sub4_Sub2_4.pdata(local40.data, local40.offset);
 		} else {
 			Static230.method4013();
 		}

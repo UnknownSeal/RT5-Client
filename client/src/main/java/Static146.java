@@ -49,7 +49,7 @@ public final class Static146 {
 		}
 		local10 = new Class2_Sub2_Sub16();
 		if (local28 != null) {
-			local10.method5598(new Class2_Sub4(local28));
+			local10.method5598(new Buffer(local28));
 		}
 		if (arg0 >= 32768) {
 			local10.method5603();

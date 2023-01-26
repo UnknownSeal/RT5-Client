@@ -31,28 +31,28 @@ public final class Class101 {
 	public int anInt2687 = 16777215;
 
 	@OriginalMember(owner = "client!ie", name = "a", descriptor = "(Lclient!bt;II)V")
-	private void method2689(@OriginalArg(0) Class2_Sub4 arg0, @OriginalArg(2) int arg1) {
+	private void method2689(@OriginalArg(0) Buffer arg0, @OriginalArg(2) int arg1) {
 		if (arg1 == 1) {
-			this.anInt2690 = arg0.method4828();
+			this.anInt2690 = arg0.g2();
 		} else if (arg1 == 2) {
 			this.aBoolean191 = true;
 		} else if (arg1 == 3) {
-			this.anInt2695 = arg0.method4822();
-			this.anInt2698 = arg0.method4822();
-			this.anInt2693 = arg0.method4822();
+			this.anInt2695 = arg0.g2b_dup();
+			this.anInt2698 = arg0.g2b_dup();
+			this.anInt2693 = arg0.g2b_dup();
 		} else if (arg1 == 4) {
-			this.anInt2692 = arg0.method4814();
+			this.anInt2692 = arg0.g1();
 		} else if (arg1 == 5) {
-			this.anInt2686 = arg0.method4828();
+			this.anInt2686 = arg0.g2();
 		} else if (arg1 == 6) {
-			this.anInt2687 = arg0.method4832();
+			this.anInt2687 = arg0.ig3();
 		}
 	}
 
 	@OriginalMember(owner = "client!ie", name = "a", descriptor = "(ILclient!bt;)V")
-	public void method2694(@OriginalArg(1) Class2_Sub4 arg0) {
+	public void method2694(@OriginalArg(1) Buffer arg0) {
 		while (true) {
-			@Pc(17) int local17 = arg0.method4814();
+			@Pc(17) int local17 = arg0.g1();
 			if (local17 == 0) {
 				return;
 			}

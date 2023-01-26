@@ -154,8 +154,8 @@ public final class Class2_Sub36 extends Class2 {
 	@OriginalMember(owner = "client!t", name = "a", descriptor = "([IZI)V")
 	public void method5568(@OriginalArg(0) int[] arg0, @OriginalArg(2) int arg1) {
 		@Pc(1) int local1 = 0;
-		@Pc(3) Class2_Sub4 local3 = Static8.aClass2_Sub4_1;
-		local3.anInt5300 = 0;
+		@Pc(3) Buffer local3 = Static8.aClass2_Sub4_1;
+		local3.offset = 0;
 		@Pc(33) short[] local33;
 		@Pc(22) int local22;
 		@Pc(27) int local27;
@@ -175,11 +175,11 @@ public final class Class2_Sub36 extends Class2 {
 							local45 += 3;
 						} else {
 							local1++;
-							local3.method4842(local33[local45++] & 0xFFFF);
+							local3.p2(local33[local45++] & 0xFFFF);
 							local1++;
-							local3.method4842(local33[local45++] & 0xFFFF);
+							local3.p2(local33[local45++] & 0xFFFF);
 							local1++;
-							local3.method4842(local33[local45++] & 0xFFFF);
+							local3.p2(local33[local45++] & 0xFFFF);
 						}
 					}
 				}
@@ -197,10 +197,10 @@ public final class Class2_Sub36 extends Class2 {
 							local45 += 3;
 						} else {
 							local1++;
-							local3.method4844(local33[local45++] & 0xFFFF);
+							local3.ip2(local33[local45++] & 0xFFFF);
 							local1++;
-							local3.method4844(local33[local45++] & 0xFFFF);
-							local3.method4844(local33[local45++] & 0xFFFF);
+							local3.ip2(local33[local45++] & 0xFFFF);
+							local3.ip2(local33[local45++] & 0xFFFF);
 							local1++;
 						}
 					}
@@ -211,7 +211,7 @@ public final class Class2_Sub36 extends Class2 {
 			return;
 		}
 		@Pc(185) opengl local185 = this.aClass19_Sub1_34.anOpengl1;
-		this.aClass180_Sub2_1.method6066(local3.aByteArray73, local3.anInt5300);
+		this.aClass180_Sub2_1.method6066(local3.data, local3.offset);
 		this.aClass19_Sub1_34.method790(this.aClass6_Sub1_3.aClass126_1, this.aClass6_Sub1_3.aClass126_4, this.aClass126_14, this.aClass6_Sub1_3.aClass126_2);
 		this.aClass19_Sub1_34.method846(this.anInt6095, (this.aClass6_Sub1_3.anInt181 & 0x7) != 0, (this.aClass6_Sub1_3.anInt181 & 0x8) != 0);
 		if (this.aClass19_Sub1_34.aBoolean50) {

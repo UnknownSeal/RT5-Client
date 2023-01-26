@@ -272,7 +272,7 @@ public final class Static322 {
 		Static50.method1530();
 		if (Static222.aFrame1 != null && Static335.aClass111_4 != null && Static347.anInt6442 == 25) {
 			Static91.method1960(Static30.aClass145_28);
-			Static257.aClass2_Sub4_Sub2_4.method4812(1057001181);
+			Static257.aClass2_Sub4_Sub2_4.p4(1057001181);
 		}
 		if (!Static220.aBoolean252) {
 			local731 = (Static105.anInt2187 - (Static373.anInt7033 >> 4)) / 8;

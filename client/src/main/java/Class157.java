@@ -179,67 +179,67 @@ public final class Class157 {
 	}
 
 	@OriginalMember(owner = "client!nb", name = "a", descriptor = "(Lclient!bt;II)V")
-	private void method3987(@OriginalArg(0) Class2_Sub4 arg0, @OriginalArg(1) int arg1) {
+	private void method3987(@OriginalArg(0) Buffer arg0, @OriginalArg(1) int arg1) {
 		@Pc(16) int local16;
 		@Pc(22) int local22;
 		@Pc(45) int local45;
 		@Pc(60) int local60;
 		if (arg1 == 1) {
-			local16 = arg0.method4828();
+			local16 = arg0.g2();
 			this.anIntArray261 = new int[local16];
 			for (local22 = 0; local22 < local16; local22++) {
-				this.anIntArray261[local22] = arg0.method4828();
+				this.anIntArray261[local22] = arg0.g2();
 			}
 			this.anIntArray262 = new int[local16];
 			for (local45 = 0; local45 < local16; local45++) {
-				this.anIntArray262[local45] = arg0.method4828();
+				this.anIntArray262[local45] = arg0.g2();
 			}
 			for (local60 = 0; local60 < local16; local60++) {
-				this.anIntArray262[local60] += arg0.method4828() << 16;
+				this.anIntArray262[local60] += arg0.g2() << 16;
 			}
 		} else if (arg1 == 2) {
-			this.anInt4032 = arg0.method4828();
+			this.anInt4032 = arg0.g2();
 		} else if (arg1 == 3) {
 			this.aBooleanArray37 = new boolean[256];
-			local16 = arg0.method4814();
+			local16 = arg0.g1();
 			for (local22 = 0; local22 < local16; local22++) {
-				this.aBooleanArray37[arg0.method4814()] = true;
+				this.aBooleanArray37[arg0.g1()] = true;
 			}
 		} else if (arg1 == 4) {
 			this.aBoolean261 = true;
 		} else if (arg1 == 5) {
-			this.anInt4023 = arg0.method4814();
+			this.anInt4023 = arg0.g1();
 		} else if (arg1 == 6) {
-			this.anInt4030 = arg0.method4828();
+			this.anInt4030 = arg0.g2();
 		} else if (arg1 == 7) {
-			this.anInt4034 = arg0.method4828();
+			this.anInt4034 = arg0.g2();
 		} else if (arg1 == 8) {
-			this.anInt4024 = arg0.method4814();
+			this.anInt4024 = arg0.g1();
 		} else if (arg1 == 9) {
-			this.anInt4027 = arg0.method4814();
+			this.anInt4027 = arg0.g1();
 		} else if (arg1 == 10) {
-			this.anInt4029 = arg0.method4814();
+			this.anInt4029 = arg0.g1();
 		} else if (arg1 == 11) {
-			this.anInt4022 = arg0.method4814();
+			this.anInt4022 = arg0.g1();
 		} else if (arg1 == 12) {
-			local16 = arg0.method4814();
+			local16 = arg0.g1();
 			this.anIntArray263 = new int[local16];
 			for (local22 = 0; local22 < local16; local22++) {
-				this.anIntArray263[local22] = arg0.method4828();
+				this.anIntArray263[local22] = arg0.g2();
 			}
 			for (local45 = 0; local45 < local16; local45++) {
-				this.anIntArray263[local45] += arg0.method4828() << 16;
+				this.anIntArray263[local45] += arg0.g2() << 16;
 			}
 		} else if (arg1 == 13) {
-			local16 = arg0.method4828();
+			local16 = arg0.g2();
 			this.anIntArrayArray33 = new int[local16][];
 			for (local22 = 0; local22 < local16; local22++) {
-				local45 = arg0.method4814();
+				local45 = arg0.g1();
 				if (local45 > 0) {
 					this.anIntArrayArray33[local22] = new int[local45];
-					this.anIntArrayArray33[local22][0] = arg0.method4832();
+					this.anIntArrayArray33[local22][0] = arg0.ig3();
 					for (local60 = 1; local60 < local45; local60++) {
-						this.anIntArrayArray33[local22][local60] = arg0.method4828();
+						this.anIntArrayArray33[local22][local60] = arg0.g2();
 					}
 				}
 			}
@@ -346,9 +346,9 @@ public final class Class157 {
 	}
 
 	@OriginalMember(owner = "client!nb", name = "a", descriptor = "(Lclient!bt;I)V")
-	public void method3992(@OriginalArg(0) Class2_Sub4 arg0) {
+	public void method3992(@OriginalArg(0) Buffer arg0) {
 		while (true) {
-			@Pc(5) int local5 = arg0.method4814();
+			@Pc(5) int local5 = arg0.g1();
 			if (local5 == 0) {
 				return;
 			}

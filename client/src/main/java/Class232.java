@@ -65,10 +65,10 @@ public final class Class232 {
 	}
 
 	@OriginalMember(owner = "client!uf", name = "a", descriptor = "(Lclient!bt;)V")
-	public void method5840(@OriginalArg(0) Class2_Sub4 arg0) {
-		this.anInt6459 = arg0.method4814();
-		this.anInt6462 = arg0.method4835();
-		this.anInt6460 = arg0.method4835();
+	public void method5840(@OriginalArg(0) Buffer arg0) {
+		this.anInt6459 = arg0.g1();
+		this.anInt6462 = arg0.mg4();
+		this.anInt6460 = arg0.mg4();
 		this.method5842(arg0);
 	}
 
@@ -82,13 +82,13 @@ public final class Class232 {
 	}
 
 	@OriginalMember(owner = "client!uf", name = "b", descriptor = "(Lclient!bt;)V")
-	public void method5842(@OriginalArg(0) Class2_Sub4 arg0) {
-		this.anInt6461 = arg0.method4814();
+	public void method5842(@OriginalArg(0) Buffer arg0) {
+		this.anInt6461 = arg0.g1();
 		this.anIntArray445 = new int[this.anInt6461];
 		this.anIntArray446 = new int[this.anInt6461];
 		for (@Pc(16) int local16 = 0; local16 < this.anInt6461; local16++) {
-			this.anIntArray445[local16] = arg0.method4828();
-			this.anIntArray446[local16] = arg0.method4828();
+			this.anIntArray445[local16] = arg0.g2();
+			this.anIntArray446[local16] = arg0.g2();
 		}
 	}
 }

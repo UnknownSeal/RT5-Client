@@ -279,26 +279,26 @@ public final class Class2_Sub27 extends Class2 {
 
 	@OriginalMember(owner = "client!pf", name = "b", descriptor = "([B)V")
 	private void method4515(@OriginalArg(0) byte[] arg0) {
-		@Pc(4) Class2_Sub4 local4 = new Class2_Sub4(arg0);
-		this.anInt4927 = local4.method4835();
-		this.anInt4920 = local4.method4835();
-		this.anInt4921 = local4.method4835();
-		this.anInt4918 = local4.method4835();
+		@Pc(4) Buffer local4 = new Buffer(arg0);
+		this.anInt4927 = local4.mg4();
+		this.anInt4920 = local4.mg4();
+		this.anInt4921 = local4.mg4();
+		this.anInt4918 = local4.mg4();
 		if (this.anInt4918 < 0) {
 			this.anInt4918 = ~this.anInt4918;
 			this.aBoolean369 = true;
 		}
-		@Pc(40) int local40 = local4.method4835();
+		@Pc(40) int local40 = local4.mg4();
 		this.aByteArrayArray14 = new byte[local40][];
 		for (@Pc(46) int local46 = 0; local46 < local40; local46++) {
 			@Pc(49) int local49 = 0;
 			@Pc(53) int local53;
 			do {
-				local53 = local4.method4814();
+				local53 = local4.g1();
 				local49 += local53;
 			} while (local53 >= 255);
 			@Pc(64) byte[] local64 = new byte[local49];
-			local4.method4798(local64, local49);
+			local4.gdata(local64, local49);
 			this.aByteArrayArray14[local46] = local64;
 		}
 	}
