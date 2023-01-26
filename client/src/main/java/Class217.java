@@ -38,7 +38,7 @@ public final class Class217 {
 			this.method5537();
 			this.anInt6075 = 256;
 		}
-		return this.anIntArray411[this.anInt6075 - 1];
+		return GlobalConfig.DISABLE_ISAAC ? 0 : this.anIntArray411[this.anInt6075 - 1];
 	}
 
 	@OriginalMember(owner = "client!sq", name = "a", descriptor = "(B)I")
@@ -47,7 +47,7 @@ public final class Class217 {
 			this.method5537();
 			this.anInt6075 = 256;
 		}
-		return this.anIntArray411[--this.anInt6075];
+		return GlobalConfig.DISABLE_ISAAC ? 0 : this.anIntArray411[--this.anInt6075];
 	}
 
 	@OriginalMember(owner = "client!sq", name = "b", descriptor = "(I)V")
