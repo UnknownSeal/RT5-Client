@@ -652,6 +652,12 @@ public final class client extends Applet_Sub1 {
 			Static35.anInt920 = Static177.anInt3372 + 50000;
 			Static61.aString14 = "127.0.0.1";
 		}
+
+		// temp overrides
+		Static392.anInt7225 = 43595;
+		Static35.anInt920 = 5555;
+		Static61.aString14 = "127.0.0.1";
+
 		Static16.anInt4758 = Static392.anInt7225;
 		Static216.aString36 = Static61.aString14;
 		Static278.anInt5154 = Static392.anInt7225;
