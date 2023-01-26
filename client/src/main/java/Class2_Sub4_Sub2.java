@@ -10,7 +10,7 @@ public final class Class2_Sub4_Sub2 extends Class2_Sub4 {
 	private int anInt5340;
 
 	@OriginalMember(owner = "client!qg", name = "Qb", descriptor = "Lclient!sq;")
-	private Class217 aClass217_1;
+	private IsaacRandom aClass217_1;
 
 	@OriginalMember(owner = "client!qg", name = "<init>", descriptor = "(I)V")
 	public Class2_Sub4_Sub2(@OriginalArg(0) int arg0) {
@@ -66,13 +66,13 @@ public final class Class2_Sub4_Sub2 extends Class2_Sub4 {
 
 	@OriginalMember(owner = "client!qg", name = "s", descriptor = "(B)Z")
 	public boolean method4869() {
-		@Pc(17) int local17 = super.aByteArray73[super.anInt5300] - this.aClass217_1.method5532() & 0xFF;
+		@Pc(17) int local17 = super.aByteArray73[super.anInt5300] - this.aClass217_1.nextInt() & 0xFF;
 		return local17 >= 128;
 	}
 
 	@OriginalMember(owner = "client!qg", name = "a", descriptor = "([IB)V")
 	public void method4870(@OriginalArg(0) int[] arg0) {
-		this.aClass217_1 = new Class217(arg0);
+		this.aClass217_1 = new IsaacRandom(arg0);
 	}
 
 	@OriginalMember(owner = "client!qg", name = "i", descriptor = "(BI)I")
