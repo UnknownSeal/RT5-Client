@@ -20,13 +20,13 @@ public final class Class220 {
 
 	@OriginalMember(owner = "client!te", name = "a", descriptor = "(B)Lclient!dk;")
 	public synchronized Class48 method5657() {
-		@Pc(13) Class48 local13 = (Class48) this.aClass150_4.aClass98_33.method2612((long) this.anInt6201);
+		@Pc(13) Class48 local13 = (Class48) this.aClass150_4.aSoftLruHashTable_33.method2612((long) this.anInt6201);
 		if (local13 != null) {
 			return local13;
 		}
 		local13 = Static396.method1682(this.aClass150_4.aClass197_56, this.anInt6201, 0);
 		if (local13 != null) {
-			this.aClass150_4.aClass98_33.method2624((long) this.anInt6201, local13);
+			this.aClass150_4.aSoftLruHashTable_33.method2624((long) this.anInt6201, local13);
 		}
 		return local13;
 	}

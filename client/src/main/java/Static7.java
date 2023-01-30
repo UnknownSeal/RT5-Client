@@ -14,7 +14,7 @@ public final class Static7 {
 	public static final Class89 aClass89_257 = new Class89(90, 12);
 
 	@OriginalMember(owner = "client!ag", name = "l", descriptor = "Lclient!ad;")
-	public static final Class4 aClass4_151 = new Class4(16);
+	public static final HashTable aClass4_151 = new HashTable(16);
 
 	@OriginalMember(owner = "client!ag", name = "o", descriptor = "Lclient!mc;")
 	public static final Class145 aClass145_267 = new Class145(39, 3);
@@ -274,8 +274,8 @@ public final class Static7 {
 					local146 = local141 >> 28;
 					local411 = local141 >> 14 & 0x3FFF;
 					local419 = local141 & 0x3FFF;
-					local432 = (local411 + Static164.anInt3140 + local34.anIntArray316[0] & 0x3FFF) - Static164.anInt3140;
-					local439 = (local34.anIntArray317[0] + Static148.anInt2719 + local419 & 0x3FFF) - Static148.anInt2719;
+					local432 = (local411 + Static164.originX + local34.anIntArray316[0] & 0x3FFF) - Static164.originX;
+					local439 = (local34.anIntArray317[0] + Static148.originZ + local419 & 0x3FFF) - Static148.originZ;
 					if (local15) {
 						local34.aBoolean276 = true;
 						local34.anInt4181 = local439;
@@ -294,7 +294,7 @@ public final class Static7 {
 		} else if (arg1 == Static234.anInt4226) {
 			throw new RuntimeException("s:lr");
 		} else {
-			Static360.anIntArray422[arg1] = (Static164.anInt3140 + local34.anIntArray316[0] >> 6 << 14) + (local34.aByte78 << 28) + (Static148.anInt2719 + local34.anIntArray317[0] >> 6);
+			Static360.anIntArray422[arg1] = (Static164.originX + local34.anIntArray316[0] >> 6 << 14) + (local34.aByte78 << 28) + (Static148.originZ + local34.anIntArray317[0] >> 6);
 			if (local34.anInt4174 == -1) {
 				Static324.anIntArray410[arg1] = local34.aClass248_7.method6440();
 			} else {
@@ -320,7 +320,7 @@ public final class Static7 {
 		@Pc(30) Class137 local30 = new Class137(Static329.aClass4_130);
 		for (@Pc(35) Class2_Sub7 local35 = (Class2_Sub7) local30.method3560(); local35 != null; local35 = (Class2_Sub7) local30.method3559()) {
 			if (local35.anInt1370 == local25) {
-				return Static6.method140((int) local35.aLong232);
+				return Static6.method140((int) local35.key);
 			}
 		}
 		return null;

@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!jq")
-public abstract class Class2_Sub3 extends Class2 {
+public abstract class Class2_Sub3 extends Node {
 
 	@OriginalMember(owner = "client!jq", name = "x", descriptor = "Lclient!vs;")
 	protected Class243 aClass243_41;
@@ -22,7 +22,7 @@ public abstract class Class2_Sub3 extends Class2 {
 	public boolean aBoolean487;
 
 	static {
-		new Class79("You are temporarily banned from this clan channel.", "Du wurdest temporär aus diesem Chatraum verbannt.", "Vous êtes temporairement exclu de ce canal de clan.", "Você está temporariamente vetado de entrar nesse canal de clã.");
+		new LocalisedText("You are temporarily banned from this clan channel.", "Du wurdest temporär aus diesem Chatraum verbannt.", "Vous êtes temporairement exclu de ce canal de clan.", "Você está temporariamente vetado de entrar nesse canal de clã.");
 	}
 
 	@OriginalMember(owner = "client!jq", name = "<init>", descriptor = "(IZ)V")

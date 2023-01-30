@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static285 {
 
 	@OriginalMember(owner = "client!qj", name = "d", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_113 = new Class79("glow2:", "leuchten2:", "brillant2:", "brilho2:");
+	public static final LocalisedText A_TRANSLATABLE_STRING___113 = new LocalisedText("glow2:", "leuchten2:", "brillant2:", "brilho2:");
 
 	@OriginalMember(owner = "client!qj", name = "g", descriptor = "I")
 	public static final int anInt5368 = 52;
@@ -36,7 +36,7 @@ public final class Static285 {
 			return;
 		}
 		arg0.anInt4320 = 150;
-		arg0.anInt4274 = (int) (Math.sin((double) Static114.anInt2348 / 40.0D) * 256.0D) & 0x7FF;
+		arg0.anInt4274 = (int) (Math.sin((double) Static114.loop / 40.0D) * 256.0D) & 0x7FF;
 		arg0.anInt4313 = Static234.anInt4226;
 		arg0.anInt4288 = 5;
 		arg0.anInt4236 = Static276.method4650(Static17.aClass11_Sub5_Sub2_Sub1_3.aString41);

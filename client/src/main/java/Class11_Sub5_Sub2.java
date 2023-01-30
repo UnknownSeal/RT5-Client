@@ -55,7 +55,7 @@ public abstract class Class11_Sub5_Sub2 extends Class11_Sub5 {
 	public int anInt4639;
 
 	@OriginalMember(owner = "client!mr", name = "hc", descriptor = "Lclient!oh;")
-	protected Class12_Sub5 aClass12_Sub5_3;
+	protected Class12_Sub5 particleSystem;
 
 	@OriginalMember(owner = "client!mr", name = "ic", descriptor = "Lclient!cl;")
 	public Class2_Sub6 aClass2_Sub6_3;
@@ -94,7 +94,7 @@ public abstract class Class11_Sub5_Sub2 extends Class11_Sub5 {
 	public int anInt4585 = -1;
 
 	@OriginalMember(owner = "client!mr", name = "mb", descriptor = "I")
-	public int anInt4610 = 0;
+	public int lastSeenLoop = 0;
 
 	@OriginalMember(owner = "client!mr", name = "P", descriptor = "I")
 	public int anInt4590 = 0;
@@ -157,7 +157,7 @@ public abstract class Class11_Sub5_Sub2 extends Class11_Sub5 {
 	public final int[] anIntArray315 = new int[4];
 
 	@OriginalMember(owner = "client!mr", name = "Ib", descriptor = "I")
-	private int anInt4628 = 1;
+	private int size = 1;
 
 	@OriginalMember(owner = "client!mr", name = "Lb", descriptor = "I")
 	protected int anInt4630 = -32768;
@@ -202,7 +202,7 @@ public abstract class Class11_Sub5_Sub2 extends Class11_Sub5 {
 	public int anInt4640 = 0;
 
 	@OriginalMember(owner = "client!mr", name = "fc", descriptor = "[Lclient!gn;")
-	public final Class31[] aClass31Array3 = new Class31[3];
+	public final Model[] aModelArray3 = new Model[3];
 
 	@OriginalMember(owner = "client!mr", name = "cc", descriptor = "[B")
 	public final byte[] aByteArray51 = new byte[10];
@@ -211,7 +211,7 @@ public abstract class Class11_Sub5_Sub2 extends Class11_Sub5 {
 	protected boolean aBoolean321 = false;
 
 	@OriginalMember(owner = "client!mr", name = "kc", descriptor = "I")
-	public int anInt4643 = 0;
+	public int movementQueueSize = 0;
 
 	@OriginalMember(owner = "client!mr", name = "jc", descriptor = "I")
 	public int anInt4642 = 0;
@@ -220,7 +220,7 @@ public abstract class Class11_Sub5_Sub2 extends Class11_Sub5 {
 	public final int[] anIntArray317 = new int[10];
 
 	static {
-		new Class79("Use", "Benutzen", "Utiliser", "Usar");
+		new LocalisedText("Use", "Benutzen", "Utiliser", "Usar");
 	}
 
 	@OriginalMember(owner = "client!mr", name = "<init>", descriptor = "()V")
@@ -229,7 +229,7 @@ public abstract class Class11_Sub5_Sub2 extends Class11_Sub5 {
 	}
 
 	@OriginalMember(owner = "client!mr", name = "a", descriptor = "(ZLclient!gn;)V")
-	protected final void method4319(@OriginalArg(1) Class31 arg0) {
+	protected final void method4319(@OriginalArg(1) Model arg0) {
 		@Pc(7) int local7 = this.aClass248_8.anInt7197;
 		@Pc(11) int local11 = this.aClass248_9.anInt7197;
 		if (local7 == 0 && local11 == 0) {
@@ -284,7 +284,7 @@ public abstract class Class11_Sub5_Sub2 extends Class11_Sub5 {
 	@OriginalMember(owner = "client!mr", name = "a", descriptor = "(B)V")
 	@Override
 	public final void method6077() {
-		@Pc(12) int local12 = (this.anInt4628 - 1) * 64 + 60;
+		@Pc(12) int local12 = (this.size - 1) * 64 + 60;
 		super.aShort101 = (short) (super.anInt6783 - local12 >> 7);
 		super.aShort102 = (short) (local12 + super.anInt6783 >> 7);
 		super.aShort103 = (short) (super.anInt6781 - local12 >> 7);
@@ -323,13 +323,13 @@ public abstract class Class11_Sub5_Sub2 extends Class11_Sub5 {
 	}
 
 	@OriginalMember(owner = "client!mr", name = "b", descriptor = "(ZI)V")
-	public final void method4321(@OriginalArg(1) int arg0) {
-		this.anInt4628 = arg0;
+	public final void setSize(@OriginalArg(1) int size) {
+		this.size = size;
 	}
 
 	@OriginalMember(owner = "client!mr", name = "a", descriptor = "(I)I")
 	public int method4322() {
-		@Pc(7) Class222 local7 = this.method4331();
+		@Pc(7) BasType local7 = this.method4331();
 		if (local7.anInt6272 == -1) {
 			return this.anInt4630 == -32768 ? 200 : -this.anInt4630;
 		} else {
@@ -353,7 +353,7 @@ public abstract class Class11_Sub5_Sub2 extends Class11_Sub5 {
 
 	@OriginalMember(owner = "client!mr", name = "d", descriptor = "(B)I")
 	public final int method4326() {
-		@Pc(9) Class222 local9 = this.method4331();
+		@Pc(9) BasType local9 = this.method4331();
 		@Pc(13) int local13 = this.aClass248_7.anInt7197;
 		@Pc(30) boolean local30;
 		if (local9.anInt6266 == 0) {
@@ -396,7 +396,7 @@ public abstract class Class11_Sub5_Sub2 extends Class11_Sub5 {
 
 	@OriginalMember(owner = "client!mr", name = "b", descriptor = "(Z)I")
 	public int method4327() {
-		return this.anInt4628;
+		return this.size;
 	}
 
 	@OriginalMember(owner = "client!mr", name = "e", descriptor = "(B)I")
@@ -410,29 +410,29 @@ public abstract class Class11_Sub5_Sub2 extends Class11_Sub5 {
 
 	@OriginalMember(owner = "client!mr", name = "b", descriptor = "(I)V")
 	public final void method4330() {
-		this.anInt4643 = 0;
+		this.movementQueueSize = 0;
 		this.anInt4642 = 0;
 	}
 
 	@OriginalMember(owner = "client!mr", name = "finalize", descriptor = "()V")
 	@Override
 	public final void finalize() {
-		if (this.aClass12_Sub5_3 != null) {
-			this.aClass12_Sub5_3.method4353();
+		if (this.particleSystem != null) {
+			this.particleSystem.method4353();
 		}
 	}
 
 	@OriginalMember(owner = "client!mr", name = "c", descriptor = "(I)Lclient!ti;")
-	public final Class222 method4331() {
+	public final BasType method4331() {
 		@Pc(13) int local13 = this.method4328();
-		return local13 == -1 ? Static18.aClass222_1 : Static59.aClass7_1.method245(local13);
+		return local13 == -1 ? Static18.A_BAS_TYPE___1 : Static59.aClass7_1.method245(local13);
 	}
 
 	@OriginalMember(owner = "client!mr", name = "a", descriptor = "(ILclient!wm;[Lclient!gn;Z)V")
-	protected final void method4332(@OriginalArg(1) Class19 arg0, @OriginalArg(2) Class31[] arg1, @OriginalArg(3) boolean arg2) {
+	protected final void method4332(@OriginalArg(1) Class19 arg0, @OriginalArg(2) Model[] arg1, @OriginalArg(3) boolean arg2) {
 		if (!arg2) {
-			@Pc(15) Class31 local15 = arg1[0];
-			@Pc(19) Class31 local19 = arg1[1];
+			@Pc(15) Model local15 = arg1[0];
+			@Pc(19) Model local19 = arg1[1];
 			if (local15 != null) {
 				@Pc(24) Class114[] local24 = local15.method3807();
 				@Pc(27) Class163[] local27 = local15.method3839();
@@ -442,10 +442,10 @@ public abstract class Class11_Sub5_Sub2 extends Class11_Sub5 {
 					local29 = local19.method3807();
 					local31 = local19.method3839();
 				}
-				if ((this.aClass12_Sub5_3 == null || this.aClass12_Sub5_3.aBoolean322) && (local24 != null || local27 != null || local19 != null && (local29 != null || local31 != null))) {
-					this.aClass12_Sub5_3 = new Class12_Sub5(Static114.anInt2348);
+				if ((this.particleSystem == null || this.particleSystem.aBoolean322) && (local24 != null || local27 != null || local19 != null && (local29 != null || local31 != null))) {
+					this.particleSystem = new Class12_Sub5(Static114.loop);
 				}
-				if (this.aClass12_Sub5_3 != null) {
+				if (this.particleSystem != null) {
 					@Pc(78) Class114[] local78;
 					if (local29 == null) {
 						local78 = local24;
@@ -466,15 +466,15 @@ public abstract class Class11_Sub5_Sub2 extends Class11_Sub5 {
 						Static403.method4608(local27, 0, local105, 0, local27.length);
 						Static403.method4608(local31, 0, local105, local27.length, local31.length);
 					}
-					this.aClass12_Sub5_3.method4356(arg0, (long) Static114.anInt2348, local78, local105);
+					this.particleSystem.method4356(arg0, (long) Static114.loop, local78, local105);
 				}
 				this.aBoolean321 = true;
 			}
-		} else if (this.aClass12_Sub5_3 != null) {
-			this.aClass12_Sub5_3.method4354((long) Static114.anInt2348);
+		} else if (this.particleSystem != null) {
+			this.particleSystem.method4354((long) Static114.loop);
 		}
-		if (this.aClass12_Sub5_3 != null) {
-			this.aClass12_Sub5_3.method4360(super.aByte78, super.aShort103, super.aShort104, super.aShort101, super.aShort102);
+		if (this.particleSystem != null) {
+			this.particleSystem.method4360(super.aByte78, super.aShort103, super.aShort104, super.aShort101, super.aShort102);
 		}
 	}
 

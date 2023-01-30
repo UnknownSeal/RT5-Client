@@ -7,81 +7,81 @@ import org.openrs2.deob.annotation.Pc;
 public final class Class246 {
 
 	@OriginalMember(owner = "client!wc", name = "g", descriptor = "Lclient!tl;")
-	private Class2_Sub2 aClass2_Sub2_54;
+	private SecondaryNode cursor;
 
 	@OriginalMember(owner = "client!wc", name = "d", descriptor = "Lclient!tl;")
-	private final Class2_Sub2 aClass2_Sub2_53 = new Class2_Sub2();
+	private final SecondaryNode sentinel = new SecondaryNode();
 
 	@OriginalMember(owner = "client!wc", name = "<init>", descriptor = "()V")
 	public Class246() {
-		this.aClass2_Sub2_53.aClass2_Sub2_52 = this.aClass2_Sub2_53;
-		this.aClass2_Sub2_53.aClass2_Sub2_51 = this.aClass2_Sub2_53;
+		this.sentinel.secondaryPrevious = this.sentinel;
+		this.sentinel.secondaryNext = this.sentinel;
 	}
 
 	@OriginalMember(owner = "client!wc", name = "a", descriptor = "(B)Lclient!tl;")
-	public Class2_Sub2 method6335() {
-		@Pc(6) Class2_Sub2 local6 = this.aClass2_Sub2_54;
-		if (this.aClass2_Sub2_53 == local6) {
-			this.aClass2_Sub2_54 = null;
+	public SecondaryNode next() {
+		@Pc(6) SecondaryNode node = this.cursor;
+		if (this.sentinel == node) {
+			this.cursor = null;
 			return null;
 		} else {
-			this.aClass2_Sub2_54 = local6.aClass2_Sub2_51;
-			return local6;
+			this.cursor = node.secondaryNext;
+			return node;
 		}
 	}
 
 	@OriginalMember(owner = "client!wc", name = "a", descriptor = "(I)Lclient!tl;")
-	public Class2_Sub2 method6336() {
-		@Pc(14) Class2_Sub2 local14 = this.aClass2_Sub2_53.aClass2_Sub2_51;
-		if (local14 == this.aClass2_Sub2_53) {
-			this.aClass2_Sub2_54 = null;
+	public SecondaryNode head() {
+		@Pc(14) SecondaryNode node = this.sentinel.secondaryNext;
+		if (node == this.sentinel) {
+			this.cursor = null;
 			return null;
 		} else {
-			this.aClass2_Sub2_54 = local14.aClass2_Sub2_51;
-			return local14;
+			this.cursor = node.secondaryNext;
+			return node;
 		}
 	}
 
 	@OriginalMember(owner = "client!wc", name = "b", descriptor = "(I)I")
 	public int method6337() {
 		@Pc(7) int local7 = 0;
-		for (@Pc(11) Class2_Sub2 local11 = this.aClass2_Sub2_53.aClass2_Sub2_51; local11 != this.aClass2_Sub2_53; local11 = local11.aClass2_Sub2_51) {
+		for (@Pc(11) SecondaryNode local11 = this.sentinel.secondaryNext; local11 != this.sentinel; local11 = local11.secondaryNext) {
 			local7++;
 		}
 		return local7;
 	}
 
 	@OriginalMember(owner = "client!wc", name = "c", descriptor = "(I)Lclient!tl;")
-	public Class2_Sub2 method6338() {
-		@Pc(7) Class2_Sub2 local7 = this.aClass2_Sub2_53.aClass2_Sub2_51;
-		if (this.aClass2_Sub2_53 == local7) {
+	public SecondaryNode method6338() {
+		@Pc(7) SecondaryNode local7 = this.sentinel.secondaryNext;
+		if (this.sentinel == local7) {
 			return null;
 		} else {
-			local7.method6142();
+			local7.unlinkSecondary();
 			return local7;
 		}
 	}
 
 	@OriginalMember(owner = "client!wc", name = "a", descriptor = "(ILclient!tl;)V")
-	public void method6340(@OriginalArg(1) Class2_Sub2 arg0) {
-		if (arg0.aClass2_Sub2_52 != null) {
-			arg0.method6142();
+	public void method6340(@OriginalArg(1) SecondaryNode arg0) {
+		if (arg0.secondaryPrevious != null) {
+			arg0.unlinkSecondary();
 		}
-		arg0.aClass2_Sub2_52 = this.aClass2_Sub2_53.aClass2_Sub2_52;
-		arg0.aClass2_Sub2_51 = this.aClass2_Sub2_53;
-		arg0.aClass2_Sub2_52.aClass2_Sub2_51 = arg0;
-		arg0.aClass2_Sub2_51.aClass2_Sub2_52 = arg0;
+		arg0.secondaryPrevious = this.sentinel.secondaryPrevious;
+		arg0.secondaryNext = this.sentinel;
+		arg0.secondaryPrevious.secondaryNext = arg0;
+		arg0.secondaryNext.secondaryPrevious = arg0;
 	}
 
 	@OriginalMember(owner = "client!wc", name = "b", descriptor = "(B)V")
 	public void method6341() {
 		while (true) {
-			@Pc(9) Class2_Sub2 local9 = this.aClass2_Sub2_53.aClass2_Sub2_51;
-			if (local9 == this.aClass2_Sub2_53) {
-				this.aClass2_Sub2_54 = null;
+			@Pc(9) SecondaryNode local9 = this.sentinel.secondaryNext;
+			if (local9 == this.sentinel) {
+				this.cursor = null;
 				return;
 			}
-			local9.method6142();
+			local9.unlinkSecondary();
 		}
 	}
 }

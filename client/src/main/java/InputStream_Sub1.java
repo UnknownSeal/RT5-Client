@@ -6,13 +6,13 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class InputStream_Sub1 extends InputStream {
 
 	static {
-		new Class79("Unable to delete name - system busy.", "Name konnte nicht gelöscht werden - Systemfehler.", "Impossible d'effacer le nom - système occupé.", "Não foi possível deletar o nome - sistema ocupado.");
+		new LocalisedText("Unable to delete name - system busy.", "Name konnte nicht gelöscht werden - Systemfehler.", "Impossible d'effacer le nom - système occupé.", "Não foi possível deletar o nome - sistema ocupado.");
 	}
 
 	@OriginalMember(owner = "client!mk", name = "read", descriptor = "()I")
 	@Override
 	public int read() {
-		Static231.method4022(30000L);
+		Static231.sleep(30000L);
 		return -1;
 	}
 }

@@ -7,7 +7,7 @@ public final class Static325 {
 	public static Interface9 anInterface9_1 = null;
 
 	@OriginalMember(owner = "client!sr", name = "b", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_126 = new Class79("Loading additional fonts - ", "Lade Zusatzschriftarten - ", "Chargement de polices secondaires - ", "Carregando fontes principais - ");
+	public static final LocalisedText A_TRANSLATABLE_STRING___126 = new LocalisedText("Loading additional fonts - ", "Lade Zusatzschriftarten - ", "Chargement de polices secondaires - ", "Carregando fontes principais - ");
 
 	@OriginalMember(owner = "client!sr", name = "f", descriptor = "I")
 	public static int anInt6079 = 0;

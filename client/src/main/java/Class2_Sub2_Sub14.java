@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!qm")
-public final class Class2_Sub2_Sub14 extends Class2_Sub2 {
+public final class Class2_Sub2_Sub14 extends SecondaryNode {
 
 	@OriginalMember(owner = "client!qm", name = "I", descriptor = "[I")
 	private final int[] anIntArray370;
@@ -25,7 +25,7 @@ public final class Class2_Sub2_Sub14 extends Class2_Sub2 {
 	private final Class2_Sub3[] aClass2_Sub3Array30;
 
 	static {
-		new Class79("You have been permanently muted due to breaking a rule.", "Du wurdest permanent stumm geschaltet, da du gegen eine Regel verstoßen hast.", "L'accès à la messagerie instantanée vous a définitivement été retiré suite à une infraction.", "Você foi permanentemente vetado por ter violado uma regra.");
+		new LocalisedText("You have been permanently muted due to breaking a rule.", "Du wurdest permanent stumm geschaltet, da du gegen eine Regel verstoßen hast.", "L'accès à la messagerie instantanée vous a définitivement été retiré suite à une infraction.", "Você foi permanentemente vetado por ter violado uma regra.");
 	}
 
 	@OriginalMember(owner = "client!qm", name = "<init>", descriptor = "(Lclient!bt;)V")

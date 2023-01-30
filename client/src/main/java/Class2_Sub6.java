@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!cl")
-public final class Class2_Sub6 extends Class2 {
+public final class Class2_Sub6 extends Node {
 
 	@OriginalMember(owner = "client!cl", name = "v", descriptor = "I")
 	public int anInt1100;
@@ -52,7 +52,7 @@ public final class Class2_Sub6 extends Class2 {
 	public int anInt1118;
 
 	@OriginalMember(owner = "client!cl", name = "a", descriptor = "(Lclient!wm;II)Lclient!gn;")
-	public Class31 method1360(@OriginalArg(0) Class19 arg0, @OriginalArg(1) int arg1) {
+	public Model method1360(@OriginalArg(0) Class19 arg0, @OriginalArg(1) int arg1) {
 		@Pc(13) int local13 = Static150.anIntArray174[this.anInt1116];
 		if (local13 == 0) {
 			@Pc(119) Class11_Sub1 local119 = Static12.method283(this.anInt1110, this.anInt1117, this.anInt1109);

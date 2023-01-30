@@ -103,7 +103,7 @@ public final class Class43 {
 	public boolean method1617(@OriginalArg(1) int arg0, @OriginalArg(2) Class19 arg1) {
 		if (arg0 != this.anInt1459) {
 			this.anInt1459 = arg0;
-			@Pc(20) int local20 = Static162.method2976(arg0);
+			@Pc(20) int local20 = Static162.clp2(arg0);
 			if (arg0 < local20) {
 				local20 = Static351.method5854(arg0);
 			}

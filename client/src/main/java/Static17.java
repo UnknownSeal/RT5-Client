@@ -37,15 +37,15 @@ public final class Static17 {
 				@Pc(16) int local16 = Static212.aClass2_Sub4_Sub2_3.gBit(15);
 				if (local16 != 32767) {
 					@Pc(21) boolean local21 = false;
-					if (Static365.aClass11_Sub5_Sub2_Sub2Array1[local16] == null) {
-						Static365.aClass11_Sub5_Sub2_Sub2Array1[local16] = new Class11_Sub5_Sub2_Sub2();
-						Static365.aClass11_Sub5_Sub2_Sub2Array1[local16].anInt4619 = local16;
+					if (Static365.npcs[local16] == null) {
+						Static365.npcs[local16] = new Npc();
+						Static365.npcs[local16].anInt4619 = local16;
 						local21 = true;
 					}
-					@Pc(42) Class11_Sub5_Sub2_Sub2 local42 = Static365.aClass11_Sub5_Sub2_Sub2Array1[local16];
-					Static211.anIntArray230[Static166.anInt3187++] = local16;
-					local42.anInt4610 = Static114.anInt2348;
-					if (local42.aClass71_1 != null && local42.aClass71_1.method2099()) {
+					@Pc(42) Npc local42 = Static365.npcs[local16];
+					Static211.ids[Static166.size++] = local16;
+					local42.lastSeenLoop = Static114.loop;
+					if (local42.type != null && local42.type.method2099()) {
 						Static154.method2781(local42);
 					}
 					@Pc(71) int local71;
@@ -76,19 +76,19 @@ public final class Static17 {
 					if (local119 == 1) {
 						Static277.anIntArray361[Static343.anInt6390++] = local16;
 					}
-					local42.method4341(Static6.aClass219_1.method5569(Static212.aClass2_Sub4_Sub2_3.gBit(14)));
+					local42.setType(Static6.aClass219_1.get(Static212.aClass2_Sub4_Sub2_3.gBit(14)));
 					@Pc(151) int local151 = Static212.aClass2_Sub4_Sub2_3.gBit(3) + 4 << 11 & 0x3929;
 					@Pc(156) int local156 = Static212.aClass2_Sub4_Sub2_3.gBit(2);
 					@Pc(161) int local161 = Static212.aClass2_Sub4_Sub2_3.gBit(1);
-					local42.method4321(local42.aClass71_1.anInt2041);
-					local42.anInt4604 = local42.aClass71_1.anInt2044 << 3;
+					local42.setSize(local42.type.size);
+					local42.anInt4604 = local42.type.rotationspeed << 3;
 					if (local42.anInt4604 == 0) {
 						local42.method4329(0);
 					} else if (local21) {
 						local42.method4329(local151);
 					}
 					local42.method4338(local42.method4327(), local156, aClass11_Sub5_Sub2_Sub1_3.anIntArray316[0] + local97, local161 == 1, aClass11_Sub5_Sub2_Sub1_3.anIntArray317[0] + local71);
-					if (local42.aClass71_1.method2099()) {
+					if (local42.type.method2099()) {
 						Static211.method3723(null, local42.anIntArray317[0], 0, null, local42, local42.anIntArray316[0], local42.aByte78);
 					}
 					continue;
@@ -131,25 +131,25 @@ public final class Static17 {
 	}
 
 	@OriginalMember(owner = "client!at", name = "a", descriptor = "(Ljava/lang/String;I)Ljava/lang/Class;")
-	public static Class method4211(@OriginalArg(0) String arg0) throws ClassNotFoundException {
-		if (arg0.equals("B")) {
+	public static Class classForName(@OriginalArg(0) String name) throws ClassNotFoundException {
+		if (name.equals("B")) {
 			return Byte.TYPE;
-		} else if (arg0.equals("I")) {
+		} else if (name.equals("I")) {
 			return Integer.TYPE;
-		} else if (arg0.equals("S")) {
+		} else if (name.equals("S")) {
 			return Short.TYPE;
-		} else if (arg0.equals("J")) {
+		} else if (name.equals("J")) {
 			return Long.TYPE;
-		} else if (arg0.equals("Z")) {
+		} else if (name.equals("Z")) {
 			return Boolean.TYPE;
-		} else if (arg0.equals("F")) {
+		} else if (name.equals("F")) {
 			return Float.TYPE;
-		} else if (arg0.equals("D")) {
+		} else if (name.equals("D")) {
 			return Double.TYPE;
-		} else if (arg0.equals("C")) {
+		} else if (name.equals("C")) {
 			return Character.TYPE;
 		} else {
-			return Class.forName(arg0);
+			return Class.forName(name);
 		}
 	}
 
@@ -171,16 +171,16 @@ public final class Static17 {
 	@OriginalMember(owner = "client!at", name = "a", descriptor = "(Ljava/awt/Frame;ILclient!ml;)V")
 	public static void method4214(@OriginalArg(0) Frame arg0, @OriginalArg(2) Class152 arg1) {
 		while (true) {
-			@Pc(19) Class32 local19 = arg1.method3762(arg0);
+			@Pc(19) PrivelegedRequest local19 = arg1.method3762(arg0);
 			while (local19.anInt993 == 0) {
-				Static231.method4022(10L);
+				Static231.sleep(10L);
 			}
 			if (local19.anInt993 == 1) {
 				arg0.setVisible(false);
 				arg0.dispose();
 				return;
 			}
-			Static231.method4022(100L);
+			Static231.sleep(100L);
 		}
 	}
 }

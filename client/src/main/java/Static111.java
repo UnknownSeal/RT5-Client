@@ -20,7 +20,7 @@ public final class Static111 {
 	public static void method2274() {
 		for (@Pc(15) Class2_Sub6 local15 = (Class2_Sub6) Static366.aClass135_40.method3550(); local15 != null; local15 = (Class2_Sub6) Static366.aClass135_40.method3551()) {
 			if (Static330.aClass67ArrayArrayArray3 == null) {
-				local15.method6467();
+				local15.unlink();
 			} else {
 				@Pc(41) int local41;
 				@Pc(262) Class11_Sub1 local262;
@@ -30,7 +30,7 @@ public final class Static111 {
 				@Pc(162) Class11_Sub5 local162;
 				@Pc(90) Class11_Sub3_Sub1 local90;
 				@Pc(136) Class11_Sub2_Sub2 local136;
-				if (Static114.anInt2348 >= local15.anInt1118) {
+				if (Static114.loop >= local15.anInt1118) {
 					local41 = Static150.anIntArray174[local15.anInt1116];
 					if (local41 == 0) {
 						local262 = Static12.method283(local15.anInt1110, local15.anInt1117, local15.anInt1109);
@@ -69,33 +69,33 @@ public final class Static111 {
 							}
 						}
 					}
-					local15.method6467();
-				} else if (Static114.anInt2348 == local15.anInt1100) {
+					local15.unlink();
+				} else if (Static114.loop == local15.anInt1100) {
 					local41 = Static150.anIntArray174[local15.anInt1116];
 					if (local41 == 0) {
 						local262 = Static12.method283(local15.anInt1110, local15.anInt1117, local15.anInt1109);
 						if (local262 instanceof Class11_Sub1_Sub1) {
-							local15.method6467();
+							local15.unlink();
 						} else if (Static99.method2143(local15.anInt1110, local15.anInt1117, local15.anInt1109) == null) {
 							local298 = new Class11_Sub1_Sub1(local15.anInt1116, local15.anInt1111, local15.anInt1104, local15.anInt1114, local15.anInt1101, local262);
 							Static4.method73(local15.anInt1110, local15.anInt1117, local15.anInt1109, local298, null);
 						} else {
-							local15.method6467();
+							local15.unlink();
 						}
 					} else if (local41 == 1) {
 						local54 = Static28.method893(local15.anInt1110, local15.anInt1117, local15.anInt1109);
 						if (local54 instanceof Class11_Sub3_Sub1) {
-							local15.method6467();
+							local15.unlink();
 						} else if (Static93.method2001(local15.anInt1110, local15.anInt1117, local15.anInt1109) == null) {
 							local90 = new Class11_Sub3_Sub1(local15.anInt1116, local15.anInt1111, local15.anInt1104, local15.anInt1114, local15.anInt1101, local54);
 							Static94.method2044(local15.anInt1110, local15.anInt1117, local15.anInt1109, local90, null);
 						} else {
-							local15.method6467();
+							local15.unlink();
 						}
 					} else if (local41 == 2) {
 						local162 = Static105.method2207(local15.anInt1110, local15.anInt1117, local15.anInt1109, Interface6.class);
 						if (local162 instanceof Class11_Sub5_Sub6) {
-							local15.method6467();
+							local15.unlink();
 						} else {
 							Static188.method3465(local15.anInt1110, local15.anInt1117, local15.anInt1109, Interface6.class);
 							@Pc(191) Class41 local191 = Static359.aClass202_4.method5162(local15.anInt1112);
@@ -114,7 +114,7 @@ public final class Static111 {
 					} else if (local41 == 3) {
 						local117 = Static26.method865(local15.anInt1110, local15.anInt1117, local15.anInt1109);
 						if (local117 instanceof Class11_Sub2_Sub2) {
-							local15.method6467();
+							local15.unlink();
 						} else {
 							local136 = new Class11_Sub2_Sub2(local15.anInt1104, local15.anInt1114, local15.anInt1101, local117);
 							Static29.method938(local15.anInt1110, local15.anInt1117, local15.anInt1109, local136);
@@ -197,7 +197,7 @@ public final class Static111 {
 	@OriginalMember(owner = "client!ge", name = "a", descriptor = "(IIILjava/lang/String;IIII)V")
 	public static void method2277(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) String arg3, @OriginalArg(4) int arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6) {
 		@Pc(7) Class12_Sub3 local7 = new Class12_Sub3();
-		local7.anInt3201 = arg0 + Static114.anInt2348;
+		local7.anInt3201 = arg0 + Static114.loop;
 		local7.anInt3204 = arg1;
 		local7.aString26 = arg3;
 		local7.anInt3206 = arg2;

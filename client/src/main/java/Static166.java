@@ -8,7 +8,7 @@ public final class Static166 {
 	public static int anInt3193;
 
 	@OriginalMember(owner = "client!jo", name = "m", descriptor = "I")
-	public static int anInt3187 = 0;
+	public static int size = 0;
 
 	@OriginalMember(owner = "client!jo", name = "p", descriptor = "Lclient!h;")
 	public static final Class89 aClass89_134 = new Class89(23, 8);
@@ -20,7 +20,7 @@ public final class Static166 {
 	public static void method3185(@OriginalArg(0) boolean arg0, @OriginalArg(2) int arg1) {
 		@Pc(8) Class2_Sub41 local8 = Static374.method6274(arg0, arg1);
 		if (local8 != null) {
-			local8.method6467();
+			local8.unlink();
 		}
 	}
 

@@ -61,7 +61,7 @@ public final class Static341 {
 			}
 		}
 		if (!local11) {
-			Static207.method3699(Static139.aClass79_60.method2267(Static295.anInt5581) + arg1);
+			Static207.method3699(Static139.A_TRANSLATABLE_STRING___60.getLocalisedText(Static295.anInt5581) + arg1);
 		}
 	}
 

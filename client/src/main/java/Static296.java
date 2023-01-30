@@ -15,7 +15,7 @@ public final class Static296 {
 	public static final int[] anIntArray381 = new int[14];
 
 	@OriginalMember(owner = "client!ra", name = "u", descriptor = "Lclient!ad;")
-	public static final Class4 aClass4_109 = new Class4(16);
+	public static final HashTable aClass4_109 = new HashTable(16);
 
 	@OriginalMember(owner = "client!ra", name = "a", descriptor = "(Lclient!hc;IIIII)V")
 	public static void method5102(@OriginalArg(0) Class90 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5) {
@@ -57,7 +57,7 @@ public final class Static296 {
 		if (Static337.aClass131_1 != null) {
 			Static337.aClass131_1.method3690(Static21.aCanvas1);
 		}
-		Static144.aClient1.method1379();
+		Static144.instance.method1379();
 		Static21.aCanvas1.setBackground(Color.black);
 		Static29.anInt721 = -1;
 		Static174.aClass123_2 = Static18.method556(Static21.aCanvas1);

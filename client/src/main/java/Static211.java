@@ -11,13 +11,13 @@ public final class Static211 {
 	public static Class13 aClass13_13;
 
 	@OriginalMember(owner = "client!mh", name = "g", descriptor = "Lclient!cc;")
-	public static Class32 aClass32_8;
+	public static PrivelegedRequest aPrivelegedRequest_8;
 
 	@OriginalMember(owner = "client!mh", name = "j", descriptor = "I")
 	public static int anInt3780;
 
     @OriginalMember(owner = "client!mh", name = "e", descriptor = "[I")
-	public static final int[] anIntArray230 = new int[1024];
+	public static final int[] ids = new int[1024];
 
 	@OriginalMember(owner = "client!mh", name = "a", descriptor = "(I)V")
 	public static void method3720() {
@@ -55,7 +55,7 @@ public final class Static211 {
 		Static369.method6216();
 		Static192.method3507();
 		Static161.method2968();
-		Static198.aClass98_30.method2614();
+		Static198.A_SOFT_LRU_HASH_TABLE___30.method2614();
 		Static190.aClass19_8.method2903();
 		Static261.aClass116_7.method3152();
 		Static194.method3540();
@@ -64,7 +64,7 @@ public final class Static211 {
 		Static289.aClass197_71.method5067();
 		Static354.aClass197_9.method5067();
 		Static85.aClass197_21.method5067();
-		Static288.aClass197_70.method5067();
+		Static288.js5Archive5.method5067();
 		Static101.aClass197_23.method5067();
 		Static237.aClass197_63.method5067();
 		Static30.aClass197_5.method5067();
@@ -88,10 +88,10 @@ public final class Static211 {
 		Static235.aClass197_47.method5067();
 		Static61.aClass197_11.method5067();
 		Static85.aClass197_20.method5067();
-		Static306.aClass98_49.method2614();
-		Static139.aClass98_18.method2614();
-		Static61.aClass98_5.method2614();
-		Static210.aClass98_31.method2614();
+		Static306.A_SOFT_LRU_HASH_TABLE___49.method2614();
+		Static139.A_SOFT_LRU_HASH_TABLE___18.method2614();
+		Static61.A_SOFT_LRU_HASH_TABLE___5.method2614();
+		Static210.A_SOFT_LRU_HASH_TABLE___31.method2614();
 	}
 
 	@OriginalMember(owner = "client!mh", name = "a", descriptor = "(II)V")
@@ -112,7 +112,7 @@ public final class Static211 {
 	}
 
 	@OriginalMember(owner = "client!mh", name = "a", descriptor = "(Lclient!ct;IILclient!nh;Lclient!oe;BII)V")
-	public static void method3723(@OriginalArg(0) Class41 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class11_Sub5_Sub2_Sub1 arg3, @OriginalArg(4) Class11_Sub5_Sub2_Sub2 arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6) {
+	public static void method3723(@OriginalArg(0) Class41 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class11_Sub5_Sub2_Sub1 arg3, @OriginalArg(4) Npc arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6) {
 		@Pc(7) Class2_Sub19 local7 = new Class2_Sub19();
 		local7.anInt2905 = arg6;
 		local7.anInt2899 = arg5 * 128;
@@ -143,17 +143,17 @@ public final class Static211 {
 			Static83.aClass135_14.method3539(local7);
 		} else if (arg4 != null) {
 			local7.aClass11_Sub5_Sub2_Sub2_1 = arg4;
-			@Pc(131) Class71 local131 = arg4.aClass71_1;
-			if (local131.anIntArray129 != null) {
+			@Pc(131) NpcType local131 = arg4.type;
+			if (local131.multiNpcs != null) {
 				local7.aBoolean204 = true;
-				local131 = local131.method2093(Static214.aClass226_1);
+				local131 = local131.getMultiNpc(Static214.aClass226_1);
 			}
 			if (local131 != null) {
-				local7.anInt2904 = (arg1 + local131.anInt2041) * 128;
-				local7.anInt2896 = (arg5 + local131.anInt2041) * 128;
+				local7.anInt2904 = (arg1 + local131.size) * 128;
+				local7.anInt2896 = (arg5 + local131.size) * 128;
 				local7.anInt2894 = Static340.method5763(arg4);
-				local7.anInt2901 = local131.anInt2022 * 128;
-				local7.anInt2906 = local131.anInt2051;
+				local7.anInt2901 = local131.soundradius * 128;
+				local7.anInt2906 = local131.soundvolume;
 			}
 			Static363.aClass135_39.method3539(local7);
 		} else if (arg3 != null) {
@@ -163,7 +163,7 @@ public final class Static211 {
 			local7.anInt2894 = Static384.method6414(arg3);
 			local7.anInt2906 = arg3.anInt4201;
 			local7.anInt2901 = arg3.anInt4182 * 128;
-			Static232.aClass4_86.method87(local7, (long) arg3.anInt4619);
+			Static232.aClass4_86.put(local7, (long) arg3.anInt4619);
 		}
 	}
 
@@ -172,8 +172,8 @@ public final class Static211 {
 		if (Static86.anInt1870 > 0) {
 			Static99.method2144();
 		} else {
-			Static246.aClass111_2 = Static335.aClass111_4;
-			Static335.aClass111_4 = null;
+			Static246.aBufferedSocket_2 = Static335.aBufferedSocket_4;
+			Static335.aBufferedSocket_4 = null;
 			Static336.method5704(40);
 		}
 	}

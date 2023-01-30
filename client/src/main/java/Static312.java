@@ -7,10 +7,10 @@ public final class Static312 {
 	public static int anInt5843;
 
 	@OriginalMember(owner = "client!sa", name = "P", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_123 = new Class79("Loaded textures", "Texturen geladen.", "Textures chargées", "Texturas carregadas");
+	public static final LocalisedText A_TRANSLATABLE_STRING___123 = new LocalisedText("Loaded textures", "Texturen geladen.", "Textures chargées", "Texturas carregadas");
 
 	@OriginalMember(owner = "client!sa", name = "U", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_124 = new Class79("K", "T", "K", "K");
+	public static final LocalisedText A_TRANSLATABLE_STRING___124 = new LocalisedText("K", "T", "K", "K");
 
 	@OriginalMember(owner = "client!sa", name = "W", descriptor = "I")
 	public static int anInt5844 = -1;

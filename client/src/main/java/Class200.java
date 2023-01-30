@@ -181,7 +181,7 @@ public final class Class200 {
 	private void method5117(@OriginalArg(0) Class2_Sub38 arg0) {
 		arg0.method6304();
 		arg0.aBoolean479 = false;
-		arg0.method6467();
+		arg0.unlink();
 		this.method5115();
 	}
 
@@ -201,7 +201,7 @@ public final class Class200 {
 			this.aBoolean395 = true;
 			this.aBoolean394 = true;
 			if (!this.aClass135_33.method3549()) {
-				for (@Pc(33) Class2 local33 = this.aClass135_33.method3550(); local33 != this.aClass135_33.aClass2_130; local33 = local33.aClass2_243) {
+				for (@Pc(33) Node local33 = this.aClass135_33.method3550(); local33 != this.aClass135_33.aClass2_130; local33 = local33.next) {
 					((Class2_Sub38) local33).method6304();
 				}
 			}
@@ -218,7 +218,7 @@ public final class Class200 {
 		if (this.anInt5603 != arg2 || this.anInt5605 != arg3) {
 			this.anInt5603 = arg2;
 			this.anInt5605 = arg3;
-			for (@Pc(30) Class2 local30 = this.aClass135_33.method3550(); local30 != this.aClass135_33.aClass2_130; local30 = local30.aClass2_243) {
+			for (@Pc(30) Node local30 = this.aClass135_33.method3550(); local30 != this.aClass135_33.aClass2_130; local30 = local30.next) {
 				((Class2_Sub38) local30).method6305(this.anInt5603, this.anInt5605);
 			}
 			this.aBoolean397 = true;

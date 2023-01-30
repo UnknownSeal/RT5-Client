@@ -16,7 +16,7 @@ public final class Class2_Sub12_Sub1 extends Class2_Sub12 {
 	private final Class2_Sub12_Sub3 aClass2_Sub12_Sub3_2;
 
 	static {
-		new Class79("Please close the interface you have open before using 'Report Abuse'.", "Bitte schließ die momentan geöffnete Benutzeroberfläche,", "Fermez l'interface que vous avez ouverte avant d'utiliser le bouton « Signaler un abus ».", "Feche a interface aberta antes de usar o recurso \"Denunciar abuso\".");
+		new LocalisedText("Please close the interface you have open before using 'Report Abuse'.", "Bitte schließ die momentan geöffnete Benutzeroberfläche,", "Fermez l'interface que vous avez ouverte avant d'utiliser le bouton « Signaler un abus ».", "Feche a interface aberta antes de usar o recurso \"Denunciar abuso\".");
 	}
 
 	@OriginalMember(owner = "client!ff", name = "<init>", descriptor = "(Lclient!od;)V")

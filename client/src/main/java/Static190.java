@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static190 {
 
 	@OriginalMember(owner = "client!kt", name = "V", descriptor = "[I")
-	public static int[] anIntArray208;
+	public static int[] npcGroupIDs;
 
 	@OriginalMember(owner = "client!kt", name = "X", descriptor = "Lclient!wm;")
 	public static Class19 aClass19_8;

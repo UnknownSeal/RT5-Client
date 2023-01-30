@@ -119,7 +119,7 @@ public final class Class112 {
 			local35 = local35 * local84 - local31 * local79 >> 15;
 			local31 = local94;
 		}
-		@Pc(147) Class31 local147 = Static157.aClass31_4.method3799((byte) 0, 25600, true);
+		@Pc(147) Model local147 = Static157.aModel_4.method3799((byte) 0, 25600, true);
 		if (arg0.method2829()) {
 			local147.method3815((short) 0, (short) this.anInt2876);
 		} else {
@@ -193,7 +193,7 @@ public final class Class112 {
 		}
 		arg0.method2838(1.0F);
 		arg0.method2832(16777215, 1.0F, 1.0F, (float) local32, (float) local34, (float) local36);
-		@Pc(172) Class31 local172 = arg0.method2864(local6, 1024, 0, 64, 768);
+		@Pc(172) Model local172 = arg0.method2864(local6, 1024, 0, 64, 768);
 		local85 = local172.method3821() - local172.method3805();
 		local89 = local172.method3816() - local172.method3801();
 		local99 = local172.method3805() + local85 / 2;
@@ -271,7 +271,7 @@ public final class Class112 {
 			this.aClass13_11 = null;
 			return false;
 		}
-		@Pc(143) int local143 = Static162.method2976(this.anInt2872);
+		@Pc(143) int local143 = Static162.clp2(this.anInt2872);
 		if (local143 > arg3) {
 			local143 = Static351.method5854(arg3);
 		}

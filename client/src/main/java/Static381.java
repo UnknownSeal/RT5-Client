@@ -32,7 +32,7 @@ public final class Static381 {
 			if (Static200.anInt3698 > 0 && Static67.aClass129_1 == null) {
 				Static67.aClass129_1 = new Class129();
 				Static67.aClass129_1.aClass152_3 = arg1;
-				arg1.method3768(Static200.anInt3698, Static67.aClass129_1);
+				arg1.startThread(Static67.aClass129_1, Static200.anInt3698);
 			}
 			if (Static67.aClass129_1 != null) {
 				if (Static67.aClass129_1.aClass221Array1[arg0] != null) {
@@ -52,7 +52,7 @@ public final class Static381 {
 				if (Static200.anInt3698 > 0 && Static67.aClass129_1 == null) {
 					Static67.aClass129_1 = new Class129();
 					Static67.aClass129_1.aClass152_3 = arg1;
-					arg1.method3768(Static200.anInt3698, Static67.aClass129_1);
+					arg1.startThread(Static67.aClass129_1, Static200.anInt3698);
 				}
 				if (Static67.aClass129_1 != null) {
 					if (Static67.aClass129_1.aClass221Array1[arg0] != null) {

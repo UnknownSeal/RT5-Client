@@ -14,7 +14,7 @@ public final class Static141 {
 	public static int anInt2650 = 10;
 
 	@OriginalMember(owner = "client!i", name = "V", descriptor = "Lclient!ad;")
-	public static final Class4 aClass4_58 = new Class4(8);
+	public static final HashTable aClass4_58 = new HashTable(8);
 
 	@OriginalMember(owner = "client!i", name = "W", descriptor = "I")
 	public static int anInt2652 = 0;

@@ -8,7 +8,7 @@ public final class Static101 {
 	public static Class197 aClass197_23;
 
 	@OriginalMember(owner = "client!fo", name = "e", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_44 = new Class79("Members object", "Gegenstand für Mitglieder", "Objet d'abonnés", "Objeto para membros");
+	public static final LocalisedText A_TRANSLATABLE_STRING___44 = new LocalisedText("Members object", "Gegenstand für Mitglieder", "Objet d'abonnés", "Objeto para membros");
 
 	@OriginalMember(owner = "client!fo", name = "f", descriptor = "Lclient!mc;")
 	public static final Class145 aClass145_75 = new Class145(8, 6);
@@ -65,15 +65,15 @@ public final class Static101 {
 
 	@OriginalMember(owner = "client!fo", name = "a", descriptor = "(IIILclient!r;)Lclient!vi;")
 	public static Class239 method2165(@OriginalArg(2) int arg0, @OriginalArg(3) Class197 arg1) {
-		@Pc(13) byte[] local13 = arg1.method5088(0, arg0);
+		@Pc(13) byte[] local13 = arg1.fetchFile(arg0, 0);
 		return local13 == null ? null : new Class239(local13);
 	}
 
 	@OriginalMember(owner = "client!fo", name = "a", descriptor = "(II)I")
 	public static int method2166(@OriginalArg(1) int arg0) {
-		if (Static335.aClass111_4 != null) {
-			Static335.aClass111_4.method2799();
-			Static335.aClass111_4 = null;
+		if (Static335.aBufferedSocket_4 != null) {
+			Static335.aBufferedSocket_4.method2799();
+			Static335.aBufferedSocket_4 = null;
 		}
 		Static12.anInt270++;
 		if (Static12.anInt270 > 4) {

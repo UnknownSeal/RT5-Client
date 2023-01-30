@@ -12,8 +12,8 @@ public final class Static317 {
 
 	@OriginalMember(owner = "client!sh", name = "a", descriptor = "(Lclient!mr;BZ)V")
 	public static void method5547(@OriginalArg(0) Class11_Sub5_Sub2 arg0, @OriginalArg(2) boolean arg1) {
-		@Pc(9) Class222 local9 = arg0.method4331();
-		if (arg0.anInt4643 == 0) {
+		@Pc(9) BasType local9 = arg0.method4331();
+		if (arg0.movementQueueSize == 0) {
 			arg0.anInt4641 = 0;
 			Static16.anInt4756 = 0;
 			Static170.anInt3229 = -1;
@@ -34,7 +34,7 @@ public final class Static317 {
 				return;
 			}
 		}
-		if (arg0.anInt4594 != -1 && arg0.anInt4595 <= Static114.anInt2348) {
+		if (arg0.anInt4594 != -1 && arg0.anInt4595 <= Static114.loop) {
 			@Pc(97) Class91 local97 = Static322.aClass211_2.method5406(arg0.anInt4594);
 			if (local97.aBoolean177 && local97.anInt2448 != -1) {
 				@Pc(111) Class157 local111 = Static39.aClass85_1.method2371(local97.anInt2448);
@@ -54,8 +54,8 @@ public final class Static317 {
 		}
 		@Pc(154) int local154 = arg0.anInt6781;
 		@Pc(157) int local157 = arg0.anInt6783;
-		@Pc(174) int local174 = arg0.anIntArray316[arg0.anInt4643 - 1] * 128 + arg0.method4327() * 64;
-		@Pc(191) int local191 = arg0.anIntArray317[arg0.anInt4643 - 1] * 128 + arg0.method4327() * 64;
+		@Pc(174) int local174 = arg0.anIntArray316[arg0.movementQueueSize - 1] * 128 + arg0.method4327() * 64;
+		@Pc(191) int local191 = arg0.anIntArray317[arg0.movementQueueSize - 1] * 128 + arg0.method4327() * 64;
 		if (local174 > local154) {
 			if (local157 < local191) {
 				arg0.method4324(10240);
@@ -77,12 +77,12 @@ public final class Static317 {
 		} else if (local191 < local157) {
 			arg0.method4324(0);
 		}
-		@Pc(289) byte local289 = arg0.aByteArray51[arg0.anInt4643 - 1];
+		@Pc(289) byte local289 = arg0.aByteArray51[arg0.movementQueueSize - 1];
 		if (!arg1 && (local174 - local154 > 256 || local174 - local154 < -256 || local191 - local157 > 256 || local191 - local157 < -256)) {
 			arg0.anInt6783 = local191;
 			arg0.anInt6781 = local174;
 			arg0.method4329(arg0.anInt4616);
-			arg0.anInt4643--;
+			arg0.movementQueueSize--;
 			Static170.anInt3229 = -1;
 			if (arg0.anInt4642 > 0) {
 				arg0.anInt4642--;
@@ -92,8 +92,8 @@ public final class Static317 {
 		}
 		@Pc(354) int local354 = 4;
 		@Pc(356) boolean local356 = true;
-		if (arg0 instanceof Class11_Sub5_Sub2_Sub2) {
-			local356 = ((Class11_Sub5_Sub2_Sub2) arg0).aClass71_1.aBoolean143;
+		if (arg0 instanceof Npc) {
+			local356 = ((Npc) arg0).type.rotationflag;
 		}
 		@Pc(396) int local396;
 		if (local356) {
@@ -101,21 +101,21 @@ public final class Static317 {
 			if (local396 != 0 && arg0.anInt4611 == -1 && arg0.anInt4604 != 0) {
 				local354 = 2;
 			}
-			if (!arg1 && arg0.anInt4643 > 2) {
+			if (!arg1 && arg0.movementQueueSize > 2) {
 				local354 = 6;
 			}
-			if (!arg1 && arg0.anInt4643 > 3) {
+			if (!arg1 && arg0.movementQueueSize > 3) {
 				local354 = 8;
 			}
 		} else {
-			if (!arg1 && arg0.anInt4643 > 1) {
+			if (!arg1 && arg0.movementQueueSize > 1) {
 				local354 = 6;
 			}
-			if (!arg1 && arg0.anInt4643 > 2) {
+			if (!arg1 && arg0.movementQueueSize > 2) {
 				local354 = 8;
 			}
 		}
-		if (arg0.anInt4641 > 0 && arg0.anInt4643 > 1) {
+		if (arg0.anInt4641 > 0 && arg0.movementQueueSize > 1) {
 			arg0.anInt4641--;
 			local354 = 8;
 		}
@@ -127,7 +127,7 @@ public final class Static317 {
 		Static16.anInt4756 = 0;
 		if (local9.anInt6274 != -1) {
 			local354 <<= 0x7;
-			if (arg0.anInt4643 == 1) {
+			if (arg0.movementQueueSize == 1) {
 				local396 = arg0.anInt4640 * arg0.anInt4640;
 				@Pc(554) int local554 = (local174 >= arg0.anInt6781 ? local174 - arg0.anInt6781 : -local174 + arg0.anInt6781) << 7;
 				@Pc(572) int local572 = (arg0.anInt6783 <= local191 ? local191 - arg0.anInt6783 : -local191 + arg0.anInt6783) << 7;
@@ -196,7 +196,7 @@ public final class Static317 {
 		if (local174 != arg0.anInt6781 || local191 != arg0.anInt6783) {
 			return;
 		}
-		arg0.anInt4643--;
+		arg0.movementQueueSize--;
 		if (arg0.anInt4642 > 0) {
 			arg0.anInt4642--;
 			return;
@@ -206,13 +206,13 @@ public final class Static317 {
 	@OriginalMember(owner = "client!sh", name = "a", descriptor = "(BI)V")
 	public static void method5548(@OriginalArg(1) int arg0) {
 		Static233.anInt4199 = arg0;
-		@Pc(15) Class98 local15 = Static349.aClass98_58;
-		synchronized (Static349.aClass98_58) {
-			Static349.aClass98_58.method2614();
+		@Pc(15) SoftLruHashTable local15 = Static349.A_SOFT_LRU_HASH_TABLE___58;
+		synchronized (Static349.A_SOFT_LRU_HASH_TABLE___58) {
+			Static349.A_SOFT_LRU_HASH_TABLE___58.method2614();
 		}
-		local15 = Static92.aClass98_9;
-		synchronized (Static92.aClass98_9) {
-			Static92.aClass98_9.method2614();
+		local15 = Static92.A_SOFT_LRU_HASH_TABLE___9;
+		synchronized (Static92.A_SOFT_LRU_HASH_TABLE___9) {
+			Static92.A_SOFT_LRU_HASH_TABLE___9.method2614();
 		}
 	}
 
@@ -244,7 +244,7 @@ public final class Static317 {
 
 	@OriginalMember(owner = "client!sh", name = "a", descriptor = "(Lclient!r;Ljava/lang/String;ZI)Lclient!ih;")
 	public static Class103 method5551(@OriginalArg(0) Class197 arg0, @OriginalArg(1) String arg1, @OriginalArg(2) boolean arg2) {
-		@Pc(10) int local10 = arg0.method5074(arg1);
+		@Pc(10) int local10 = arg0.getGroupID(arg1);
 		if (local10 == -1) {
 			return new Class103(0);
 		}
@@ -254,7 +254,7 @@ public final class Static317 {
 		@Pc(38) int local38 = 0;
 		while (true) {
 			while (local36 < local34.anInt2702) {
-				@Pc(52) Buffer local52 = new Buffer(arg0.method5088(local28[local38++], local10));
+				@Pc(52) Buffer local52 = new Buffer(arg0.fetchFile(local10, local28[local38++]));
 				@Pc(58) int local58 = local52.mg4();
 				@Pc(62) int local62 = local52.g2();
 				@Pc(66) int local66 = local52.g1();

@@ -14,7 +14,7 @@ public final class Static226 {
 	public static int anInt4016 = 0;
 
 	@OriginalMember(owner = "client!na", name = "X", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_89 = new Class79("Loaded update list", "Update-Liste geladen.", "Liste des mises à jour chargée", "Lista de atualizações carregada");
+	public static final LocalisedText A_TRANSLATABLE_STRING___89 = new LocalisedText("Loaded update list", "Update-Liste geladen.", "Liste des mises à jour chargée", "Lista de atualizações carregada");
 
 	@OriginalMember(owner = "client!na", name = "Z", descriptor = "[Ljava/lang/String;")
 	public static final String[] aStringArray35 = new String[100];

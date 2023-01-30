@@ -31,7 +31,7 @@ public final class Class158 {
 	private Class2_Sub33[] aClass2_Sub33Array1;
 
 	static {
-		new Class79("Sending request to leave channel...", "Chatraum wird verlassen...", "Envoi de la demande de sortie du canal...", "Enviando solicitação para deixar o canal...");
+		new LocalisedText("Sending request to leave channel...", "Chatraum wird verlassen...", "Envoi de la demande de sortie du canal...", "Enviando solicitação para deixar o canal...");
 	}
 
 	@OriginalMember(owner = "client!nc", name = "<init>", descriptor = "(III)V")
@@ -71,7 +71,7 @@ public final class Class158 {
 					@Pc(52) Class2_Sub33 local52 = (Class2_Sub33) this.aClass135_27.method3547();
 					local27 = new Class2_Sub33(arg0, local52.anInt5933);
 					this.aClass2_Sub33Array1[local52.anInt5932] = null;
-					local52.method6467();
+					local52.unlink();
 				} else {
 					local27 = new Class2_Sub33(arg0, this.anInt4039);
 					this.anInt4039++;

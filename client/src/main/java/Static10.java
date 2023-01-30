@@ -33,7 +33,7 @@ public final class Static10 {
 	@OriginalMember(owner = "client!aj", name = "b", descriptor = "(II)V")
 	public static void method237(@OriginalArg(1) int arg0) {
 		Static238.anInt4338 = arg0;
-		Static133.aClass98_17.method2614();
+		Static133.A_SOFT_LRU_HASH_TABLE___17.method2614();
 	}
 
 	@OriginalMember(owner = "client!aj", name = "b", descriptor = "(III)I")

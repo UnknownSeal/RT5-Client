@@ -104,7 +104,7 @@ public final class Static363 {
 			local210 = local185 - local175;
 		}
 		if (local196 == 0 && local210 == 0 || local196 <= -Static373.anInt7033 || Static373.anInt7033 <= local196 || local210 <= -Static242.anInt4449 || local210 >= Static242.anInt4449) {
-			Static262.method6252(null, "RC: " + local94 + "," + local175 + " " + local180 + "," + local185 + " " + Static164.anInt3140 + "," + Static148.anInt2719);
+			Static262.method6252(null, "RC: " + local94 + "," + local175 + " " + local180 + "," + local185 + " " + Static164.originX + "," + Static148.originZ);
 			return;
 		}
 		@Pc(290) int local290;

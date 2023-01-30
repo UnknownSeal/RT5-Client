@@ -17,7 +17,7 @@ public final class Static287 {
 	public static final int[] anIntArray369 = new int[] { 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99 };
 
 	@OriginalMember(owner = "client!ql", name = "a", descriptor = "(BI)I")
-	public static int method4928(@OriginalArg(1) int arg0) {
+	public static int bitCount(@OriginalArg(1) int arg0) {
 		@Pc(5) int local5 = 0;
 		if (arg0 < 0 || arg0 >= 65536) {
 			local5 += 16;

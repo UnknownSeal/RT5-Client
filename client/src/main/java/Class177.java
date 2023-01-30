@@ -41,7 +41,7 @@ public abstract class Class177 {
 	public boolean aBoolean359 = true;
 
 	@OriginalMember(owner = "client!wo", name = "z", descriptor = "I")
-	public int anInt4889 = 255;
+	public int musicVolume = 255;
 
 	@OriginalMember(owner = "client!wo", name = "t", descriptor = "I")
 	public int anInt4886 = 2;
@@ -101,7 +101,7 @@ public abstract class Class177 {
 	public int anInt4879 = 3;
 
 	static {
-		new Class79("Ok", "Okay", "OK", "Ok");
+		new LocalisedText("Ok", "Okay", "OK", "Ok");
 	}
 
 	@OriginalMember(owner = "client!wo", name = "<init>", descriptor = "()V")

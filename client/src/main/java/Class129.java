@@ -29,7 +29,7 @@ public final class Class129 implements Runnable {
 						local19.method6315();
 					}
 				}
-				Static231.method4022(10L);
+				Static231.sleep(10L);
 				Static283.method4875(this.aClass152_3, null);
 			}
 		} catch (@Pc(43) Exception local43) {

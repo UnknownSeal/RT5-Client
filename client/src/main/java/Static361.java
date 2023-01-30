@@ -39,7 +39,7 @@ public final class Static361 {
 		arg0.method2868(local13, local7, local9, -10660793, local11);
 		arg0.method2868(16, local7 + 1, local9 + 1, -16777216, local11 - 2);
 		arg0.method2837(local9 + 18, local7 - -1, local13 - 19, -16777216, -2 + local11);
-		Static52.aClass130_1.method5896(local7 + 3, -1, local9 + 14, -10660793, Static180.aClass79_74.method2267(Static295.anInt5581));
+		Static52.aClass130_1.method5896(local7 + 3, -1, local9 + 14, -10660793, Static180.A_TRANSLATABLE_STRING___74.getLocalisedText(Static295.anInt5581));
 		@Pc(72) int local72 = Static226.aClass119_1.method3303();
 		@Pc(76) int local76 = Static226.aClass119_1.method3312();
 		@Pc(78) int local78 = 0;
@@ -51,15 +51,15 @@ public final class Static361 {
 			}
 			@Pc(138) int[] local138 = null;
 			if (Static298.method2425(local88.anInt1005)) {
-				local138 = Static313.aClass107_2.method2759((int) local88.aLong30).anIntArray364;
+				local138 = Static313.aClass107_2.get((int) local88.aLong30).anIntArray364;
 			} else if (local88.anInt1008 != -1) {
-				local138 = Static313.aClass107_2.method2759(local88.anInt1008).anIntArray364;
+				local138 = Static313.aClass107_2.get(local88.anInt1008).anIntArray364;
 			} else if (Static297.method5110(local88.anInt1005)) {
-				@Pc(166) Class11_Sub5_Sub2_Sub2 local166 = Static365.aClass11_Sub5_Sub2_Sub2Array1[(int) local88.aLong30];
+				@Pc(166) Npc local166 = Static365.npcs[(int) local88.aLong30];
 				if (local166 != null) {
-					@Pc(171) Class71 local171 = local166.aClass71_1;
-					if (local171.anIntArray129 != null) {
-						local171 = local171.method2093(Static214.aClass226_1);
+					@Pc(171) NpcType local171 = local166.type;
+					if (local171.multiNpcs != null) {
+						local171 = local171.getMultiNpc(Static214.aClass226_1);
 					}
 					if (local171 != null) {
 						local138 = local171.anIntArray131;

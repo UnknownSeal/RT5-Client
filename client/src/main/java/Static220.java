@@ -5,13 +5,13 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static220 {
 
 	@OriginalMember(owner = "client!mq", name = "n", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_83 = new Class79("Take", "Nehmen", "Prendre", "Pegar");
+	public static final LocalisedText A_TRANSLATABLE_STRING___83 = new LocalisedText("Take", "Nehmen", "Prendre", "Pegar");
 
 	@OriginalMember(owner = "client!mq", name = "o", descriptor = "Lclient!h;")
 	public static final Class89 aClass89_158 = new Class89(55, -1);
 
 	@OriginalMember(owner = "client!mq", name = "p", descriptor = "Lclient!ad;")
-	public static final Class4 aClass4_83 = new Class4(8);
+	public static final HashTable aClass4_83 = new HashTable(8);
 
 	@OriginalMember(owner = "client!mq", name = "q", descriptor = "Z")
 	public static boolean aBoolean252 = false;

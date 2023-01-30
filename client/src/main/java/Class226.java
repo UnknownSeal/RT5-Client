@@ -7,7 +7,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Class226 implements Interface11 {
 
 	@OriginalMember(owner = "client!ts", name = "d", descriptor = "Lclient!ad;")
-	private Class4 aClass4_132 = new Class4(128);
+	private HashTable aClass4_132 = new HashTable(128);
 
 	@OriginalMember(owner = "client!ts", name = "j", descriptor = "[I")
 	private final int[] anIntArray431 = new int[Static56.aClass199_1.anInt5596];
@@ -35,7 +35,7 @@ public final class Class226 implements Interface11 {
 		@Pc(16) Class2_Sub35 local16 = (Class2_Sub35) this.aClass4_132.method90((long) arg0);
 		if (local16 == null) {
 			local16 = new Class2_Sub35(Static204.method3684() + 500L);
-			this.aClass4_132.method87(local16, (long) arg0);
+			this.aClass4_132.put(local16, (long) arg0);
 		} else {
 			local16.aLong183 = Static204.method3684() + 500L;
 		}
@@ -50,7 +50,7 @@ public final class Class226 implements Interface11 {
 				this.anIntArray430[local3] = 0;
 			}
 		}
-		this.aClass4_132 = new Class4(128);
+		this.aClass4_132 = new HashTable(128);
 	}
 
 	@OriginalMember(owner = "client!ts", name = "a", descriptor = "(BI)I")
@@ -70,12 +70,12 @@ public final class Class226 implements Interface11 {
 		for (@Pc(27) Class2_Sub35 local27 = arg0 ? (Class2_Sub35) this.aClass4_132.method80() : (Class2_Sub35) this.aClass4_132.method79(); local27 != null; local27 = (Class2_Sub35) this.aClass4_132.method79()) {
 			if (local13 > (local27.aLong183 & 0x3FFFFFFFFFFFFFFFL)) {
 				if ((local27.aLong183 & 0x4000000000000000L) != 0L) {
-					@Pc(54) int local54 = (int) local27.aLong232;
+					@Pc(54) int local54 = (int) local27.key;
 					this.anIntArray430[local54] = this.anIntArray431[local54];
-					local27.method6467();
+					local27.unlink();
 					return local54;
 				}
-				local27.method6467();
+				local27.unlink();
 			}
 		}
 		return -1;
@@ -93,7 +93,7 @@ public final class Class226 implements Interface11 {
 		@Pc(24) Class2_Sub35 local24 = (Class2_Sub35) this.aClass4_132.method90((long) arg1);
 		if (local24 == null) {
 			local24 = new Class2_Sub35(4611686018427387905L);
-			this.aClass4_132.method87(local24, (long) arg1);
+			this.aClass4_132.put(local24, (long) arg1);
 		} else if (local24.aLong183 != 4611686018427387905L) {
 			local24.aLong183 = Static204.method3684() + 500L | 0x4000000000000000L;
 			return;

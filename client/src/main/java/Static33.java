@@ -8,7 +8,7 @@ public final class Static33 {
 	public static int anInt4463;
 
 	@OriginalMember(owner = "client!bs", name = "q", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_96 = new Class79("level: ", "Stufe: ", "niveau ", "nível: ");
+	public static final LocalisedText A_TRANSLATABLE_STRING___96 = new LocalisedText("level: ", "Stufe: ", "niveau ", "nível: ");
 
 	@OriginalMember(owner = "client!bs", name = "s", descriptor = "Lclient!h;")
 	public static final Class89 aClass89_171 = new Class89(74, 4);
@@ -26,9 +26,9 @@ public final class Static33 {
 		if (Static375.aClass161_14 == null) {
 			if (!Static375.aBoolean477 && Static268.anInt4959 > 0) {
 				if (Static148.aBoolean192 && Static174.aClass123_2.method3342(81) && Static268.anInt4959 > 2) {
-					return ((Class2_Sub5) Static129.aClass135_19.aClass2_130.aClass2_244.aClass2_244).anInt1007;
+					return ((Class2_Sub5) Static129.aClass135_19.aClass2_130.previous.previous).anInt1007;
 				}
-				return ((Class2_Sub5) Static129.aClass135_19.aClass2_130.aClass2_244).anInt1007;
+				return ((Class2_Sub5) Static129.aClass135_19.aClass2_130.previous).anInt1007;
 			}
 			@Pc(23) int local23 = Static226.aClass119_1.method3303();
 			@Pc(27) int local27 = Static226.aClass119_1.method3312();
@@ -67,9 +67,9 @@ public final class Static33 {
 
 	@OriginalMember(owner = "client!bs", name = "a", descriptor = "(BI)V")
 	public static void method4201() {
-		@Pc(1) Class98 local1 = Static98.aClass98_10;
-		synchronized (Static98.aClass98_10) {
-			Static98.aClass98_10.method2615(5);
+		@Pc(1) SoftLruHashTable local1 = Static98.A_SOFT_LRU_HASH_TABLE___10;
+		synchronized (Static98.A_SOFT_LRU_HASH_TABLE___10) {
+			Static98.A_SOFT_LRU_HASH_TABLE___10.clean(5);
 		}
 	}
 

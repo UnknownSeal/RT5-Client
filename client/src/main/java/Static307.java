@@ -9,7 +9,7 @@ public final class Static307 {
 	public static String aString57;
 
 	@OriginalMember(owner = "client!rq", name = "l", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_121 = new Class79("Loading wordpack - ", "Lade Wordpack - ", "Chargement du module texte - ", "Carregando pacote de palavras - ");
+	public static final LocalisedText A_TRANSLATABLE_STRING___121 = new LocalisedText("Loading wordpack - ", "Lade Wordpack - ", "Chargement du module texte - ", "Carregando pacote de palavras - ");
 
 	@OriginalMember(owner = "client!rq", name = "n", descriptor = "I")
 	public static int anInt5780 = 0;
@@ -39,7 +39,7 @@ public final class Static307 {
 	}
 
 	@OriginalMember(owner = "client!rq", name = "a", descriptor = "(ILclient!oe;BI)V")
-	public static void method5255(@OriginalArg(0) int arg0, @OriginalArg(1) Class11_Sub5_Sub2_Sub2 arg1, @OriginalArg(3) int arg2) {
+	public static void method5255(@OriginalArg(0) int arg0, @OriginalArg(1) Npc arg1, @OriginalArg(3) int arg2) {
 		if (arg0 == arg1.anInt4597 && arg0 != -1) {
 			@Pc(78) Class157 local78 = Static39.aClass85_1.method2371(arg0);
 			@Pc(81) int local81 = local78.anInt4022;
@@ -61,7 +61,7 @@ public final class Static307 {
 			arg1.anInt4624 = 0;
 			arg1.anInt4592 = 1;
 			arg1.anInt4590 = arg2;
-			arg1.anInt4642 = arg1.anInt4643;
+			arg1.anInt4642 = arg1.movementQueueSize;
 			if (arg1.anInt4597 != -1) {
 				Static1.method4(Static39.aClass85_1.method2371(arg1.anInt4597), false, arg1.aByte78, arg1.anInt6781, arg1.anInt6783, arg1.anInt4607);
 			}

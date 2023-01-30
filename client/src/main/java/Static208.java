@@ -14,7 +14,7 @@ public final class Static208 {
 
 	@OriginalMember(owner = "client!md", name = "a", descriptor = "(I)Z")
 	public static boolean method3709() {
-		@Pc(8) Class2_Sub5 local8 = (Class2_Sub5) Static129.aClass135_19.aClass2_130.aClass2_244;
+		@Pc(8) Class2_Sub5 local8 = (Class2_Sub5) Static129.aClass135_19.aClass2_130.previous;
 		if (local8 == null || Static129.aClass135_19.aClass2_130 == local8) {
 			return false;
 		} else {

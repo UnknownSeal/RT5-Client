@@ -11,7 +11,7 @@ public final class Static158 {
 	public static final int[][] anIntArrayArray22 = new int[][] { { 0, 1, 2, 3 }, { 1, -1, -1, 0 }, { -1, 2, -1, 0 }, { -1, 0, -1, 2 }, { 0, 1, -1, 2 }, { 1, 2, -1, 0 }, { -1, 4, -1, 1 }, { -1, 3, 4, -1 }, { -1, 0, 2, -1 }, { -1, -1, 2, 0 }, { 0, 2, 5, 3 }, { 0, -1, 6, -1 }, { 0, 1, 2, 3 } };
 
 	@OriginalMember(owner = "client!jc", name = "S", descriptor = "Lclient!cc;")
-	public static Class32 aClass32_7 = null;
+	public static PrivelegedRequest aPrivelegedRequest_7 = null;
 
 	@OriginalMember(owner = "client!jc", name = "T", descriptor = "Lclient!ij;")
 	public static final Class105 aClass105_1 = new Class105();
@@ -26,12 +26,12 @@ public final class Static158 {
 		for (@Pc(13) int local13 = 0; local13 < arg0.length; local13++) {
 			@Pc(27) Class230 local27 = Static287.aClass233_1.method5884(arg0[local13]);
 			if (local27.anInt6454 != -1) {
-				@Pc(39) Class13 local39 = (Class13) Static210.aClass98_31.method2612((long) local27.anInt6454);
+				@Pc(39) Class13 local39 = (Class13) Static210.A_SOFT_LRU_HASH_TABLE___31.method2612((long) local27.anInt6454);
 				if (local39 == null) {
 					@Pc(47) Class48 local47 = Static396.method1682(Static30.aClass197_5, local27.anInt6454, 0);
 					if (local47 != null) {
 						local39 = Static190.aClass19_8.method2891(local47);
-						Static210.aClass98_31.method2624((long) local27.anInt6454, local39);
+						Static210.A_SOFT_LRU_HASH_TABLE___31.method2624((long) local27.anInt6454, local39);
 					}
 				}
 				if (local39 != null) {

@@ -19,12 +19,12 @@ public final class Static384 {
 	@OriginalMember(owner = "client!wh", name = "a", descriptor = "(ZLclient!nh;)I")
 	public static int method6414(@OriginalArg(1) Class11_Sub5_Sub2_Sub1 arg0) {
 		@Pc(8) int local8 = arg0.anInt4168;
-		@Pc(12) Class222 local12 = arg0.method4331();
+		@Pc(12) BasType local12 = arg0.method4331();
 		if (arg0.aBoolean317) {
 			local8 = arg0.anInt4167;
-		} else if (local12.anInt6263 == arg0.anInt4585 || local12.anInt6292 == arg0.anInt4585 || local12.anInt6301 == arg0.anInt4585 || local12.anInt6271 == arg0.anInt4585) {
+		} else if (local12.runSeqID == arg0.anInt4585 || local12.anInt6292 == arg0.anInt4585 || local12.anInt6301 == arg0.anInt4585 || local12.anInt6271 == arg0.anInt4585) {
 			local8 = arg0.anInt4196;
-		} else if (local12.anInt6265 == arg0.anInt4585 || local12.anInt6299 == arg0.anInt4585 || local12.anInt6267 == arg0.anInt4585 || local12.anInt6284 == arg0.anInt4585) {
+		} else if (local12.crawlSeqID == arg0.anInt4585 || local12.anInt6299 == arg0.anInt4585 || local12.anInt6267 == arg0.anInt4585 || local12.anInt6284 == arg0.anInt4585) {
 			local8 = arg0.anInt4187;
 		}
 		return local8;

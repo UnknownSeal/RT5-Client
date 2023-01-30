@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static109 {
 
 	@OriginalMember(owner = "client!gb", name = "i", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_46 = new Class79("Created gameworld", "Spielwelt erstellt.", "Monde de jeu créé", "Universo de jogo criado");
+	public static final LocalisedText A_TRANSLATABLE_STRING___46 = new LocalisedText("Created gameworld", "Spielwelt erstellt.", "Monde de jeu créé", "Universo de jogo criado");
 
 	@OriginalMember(owner = "client!gb", name = "l", descriptor = "D")
 	public static double aDouble1 = -1.0D;
@@ -31,7 +31,7 @@ public final class Static109 {
 					Static227.aClass2_Sub12_Sub2_2.method2081(local10.aClass2_Sub12_Sub4_2);
 					local10.aClass2_Sub12_Sub4_2 = null;
 				}
-				local10.method6467();
+				local10.unlink();
 				return;
 			}
 		}

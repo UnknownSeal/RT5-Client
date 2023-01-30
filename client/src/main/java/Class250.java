@@ -132,41 +132,41 @@ public final class Class250 {
 	public Class81 aClass81_2;
 
 	@OriginalMember(owner = "client!wq", name = "K", descriptor = "Lclient!cb;")
-	public final Class31_Sub1 aClass31_Sub1_11;
+	public final Model_Sub1 aClass31_Sub1_11;
 
 	@OriginalMember(owner = "client!wq", name = "fb", descriptor = "Lclient!cb;")
-	public final Class31_Sub1 aClass31_Sub1_14;
+	public final Model_Sub1 aClass31_Sub1_14;
 
 	@OriginalMember(owner = "client!wq", name = "s", descriptor = "Lclient!cb;")
-	public final Class31_Sub1 aClass31_Sub1_9;
+	public final Model_Sub1 aClass31_Sub1_9;
 
 	@OriginalMember(owner = "client!wq", name = "W", descriptor = "Lclient!cb;")
-	public final Class31_Sub1 aClass31_Sub1_13;
+	public final Model_Sub1 aClass31_Sub1_13;
 
 	@OriginalMember(owner = "client!wq", name = "F", descriptor = "Lclient!cb;")
-	public final Class31_Sub1 aClass31_Sub1_10;
+	public final Model_Sub1 aClass31_Sub1_10;
 
 	@OriginalMember(owner = "client!wq", name = "ib", descriptor = "Lclient!cb;")
-	public final Class31_Sub1 aClass31_Sub1_15;
+	public final Model_Sub1 aClass31_Sub1_15;
 
 	@OriginalMember(owner = "client!wq", name = "V", descriptor = "Lclient!cb;")
-	public final Class31_Sub1 aClass31_Sub1_12;
+	public final Model_Sub1 aClass31_Sub1_12;
 
 	@OriginalMember(owner = "client!wq", name = "jb", descriptor = "Lclient!cb;")
-	public final Class31_Sub1 aClass31_Sub1_16;
+	public final Model_Sub1 aClass31_Sub1_16;
 
 	@OriginalMember(owner = "client!wq", name = "<init>", descriptor = "(Lclient!j;)V")
 	public Class250(@OriginalArg(0) Class19_Sub2 arg0) {
 		this.aClass19_Sub2_11 = arg0;
 		this.aClass81_2 = new Class81(this.aClass19_Sub2_11);
-		this.aClass31_Sub1_11 = new Class31_Sub1(this.aClass19_Sub2_11);
-		this.aClass31_Sub1_14 = new Class31_Sub1(this.aClass19_Sub2_11);
-		this.aClass31_Sub1_9 = new Class31_Sub1(this.aClass19_Sub2_11);
-		this.aClass31_Sub1_13 = new Class31_Sub1(this.aClass19_Sub2_11);
-		this.aClass31_Sub1_10 = new Class31_Sub1(this.aClass19_Sub2_11);
-		this.aClass31_Sub1_15 = new Class31_Sub1(this.aClass19_Sub2_11);
-		this.aClass31_Sub1_12 = new Class31_Sub1(this.aClass19_Sub2_11);
-		this.aClass31_Sub1_16 = new Class31_Sub1(this.aClass19_Sub2_11);
+		this.aClass31_Sub1_11 = new Model_Sub1(this.aClass19_Sub2_11);
+		this.aClass31_Sub1_14 = new Model_Sub1(this.aClass19_Sub2_11);
+		this.aClass31_Sub1_9 = new Model_Sub1(this.aClass19_Sub2_11);
+		this.aClass31_Sub1_13 = new Model_Sub1(this.aClass19_Sub2_11);
+		this.aClass31_Sub1_10 = new Model_Sub1(this.aClass19_Sub2_11);
+		this.aClass31_Sub1_15 = new Model_Sub1(this.aClass19_Sub2_11);
+		this.aClass31_Sub1_12 = new Model_Sub1(this.aClass19_Sub2_11);
+		this.aClass31_Sub1_16 = new Model_Sub1(this.aClass19_Sub2_11);
 	}
 
 	@OriginalMember(owner = "client!wq", name = "a", descriptor = "(ILjava/lang/Runnable;)V")

@@ -158,7 +158,7 @@ public final class Class12_Sub5 extends Class12 {
 		this.aBoolean322 = true;
 		for (@Pc(8) Class2_Sub2_Sub5 local8 = (Class2_Sub2_Sub5) this.aClass135_29.method3550(); local8 != null; local8 = (Class2_Sub2_Sub5) this.aClass135_29.method3551()) {
 			if (local8.aClass28_1.anInt737 == 1) {
-				local8.method6142();
+				local8.unlinkSecondary();
 			}
 		}
 		this.aClass12_Sub1_Sub1_Sub1Array2 = new Class12_Sub1_Sub1_Sub1[8192];
@@ -214,10 +214,10 @@ public final class Class12_Sub5 extends Class12 {
 					}
 				}
 			}
-			local16.method6467();
+			local16.unlink();
 			this.anInt4678--;
 			if (local16.method6141()) {
-				local16.method6142();
+				local16.unlinkSecondary();
 				Static201.anInt3701--;
 			}
 		}

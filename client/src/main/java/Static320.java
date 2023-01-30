@@ -27,7 +27,7 @@ public final class Static320 {
 
 	@OriginalMember(owner = "client!sm", name = "b", descriptor = "(B)V")
 	public static void method5460() {
-		Static133.aClass98_17.method2621();
+		Static133.A_SOFT_LRU_HASH_TABLE___17.method2621();
 	}
 
 	@OriginalMember(owner = "client!sm", name = "a", descriptor = "(ZIB)Ljava/lang/String;")

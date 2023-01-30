@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!mp")
-public final class Class31_Sub2 extends Class31 {
+public final class Model_Sub2 extends Model {
 
 	@OriginalMember(owner = "client!mp", name = "o", descriptor = "[S")
 	private short[] aShortArray66;
@@ -160,7 +160,7 @@ public final class Class31_Sub2 extends Class31 {
 	private Class82 aClass82_1;
 
 	@OriginalMember(owner = "client!mp", name = "<init>", descriptor = "(Lclient!bf;)V")
-	public Class31_Sub2(@OriginalArg(0) Class19_Sub1 arg0) {
+	public Model_Sub2(@OriginalArg(0) Class19_Sub1 arg0) {
 		this.aClass19_Sub1_24 = arg0;
 		this.aClass126_11 = new Class126(this.aClass19_Sub1_24, null, 5126, 3, 0);
 		this.aClass126_13 = new Class126(this.aClass19_Sub1_24, null, 5126, 2, 0);
@@ -170,7 +170,7 @@ public final class Class31_Sub2 extends Class31 {
 	}
 
 	@OriginalMember(owner = "client!mp", name = "<init>", descriptor = "(Lclient!bf;Lclient!pr;IIII)V")
-	public Class31_Sub2(@OriginalArg(0) Class19_Sub1 arg0, @OriginalArg(1) Class185 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5) {
+	public Model_Sub2(@OriginalArg(0) Class19_Sub1 arg0, @OriginalArg(1) Class185 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5) {
 		this.anInt3844 = arg5;
 		this.aClass19_Sub1_24 = arg0;
 		this.anInt3842 = arg2;
@@ -836,9 +836,9 @@ public final class Class31_Sub2 extends Class31 {
 
 	@OriginalMember(owner = "client!mp", name = "a", descriptor = "(BIZ)Lclient!gn;")
 	@Override
-	public Class31 method3799(@OriginalArg(0) byte arg0, @OriginalArg(1) int arg1, @OriginalArg(2) boolean arg2) {
-		@Pc(10) Class31_Sub2 local10;
-		@Pc(6) Class31_Sub2 local6;
+	public Model method3799(@OriginalArg(0) byte arg0, @OriginalArg(1) int arg1, @OriginalArg(2) boolean arg2) {
+		@Pc(10) Model_Sub2 local10;
+		@Pc(6) Model_Sub2 local6;
 		if (arg0 == 1) {
 			local6 = this.aClass19_Sub1_24.aClass31_Sub2_5;
 			local10 = this.aClass19_Sub1_24.aClass31_Sub2_4;
@@ -852,7 +852,7 @@ public final class Class31_Sub2 extends Class31 {
 			local10 = this.aClass19_Sub1_24.aClass31_Sub2_8;
 			local6 = this.aClass19_Sub1_24.aClass31_Sub2_6;
 		} else {
-			local10 = local6 = new Class31_Sub2(this.aClass19_Sub1_24);
+			local10 = local6 = new Model_Sub2(this.aClass19_Sub1_24);
 		}
 		return this.method3857(local6, arg2, local10, arg0 != 0, arg1);
 	}
@@ -1489,8 +1489,8 @@ public final class Class31_Sub2 extends Class31 {
 
 	@OriginalMember(owner = "client!mp", name = "a", descriptor = "(Lclient!gn;IIIZ)V")
 	@Override
-	public void method3802(@OriginalArg(0) Class31 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) boolean arg4) {
-		@Pc(2) Class31_Sub2 local2 = (Class31_Sub2) arg0;
+	public void method3802(@OriginalArg(0) Model arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) boolean arg4) {
+		@Pc(2) Model_Sub2 local2 = (Model_Sub2) arg0;
 		if (this.anInt3843 == 0 || local2.anInt3843 == 0) {
 			return;
 		}
@@ -1926,7 +1926,7 @@ public final class Class31_Sub2 extends Class31 {
 	}
 
 	@OriginalMember(owner = "client!mp", name = "a", descriptor = "(Lclient!mp;ZLclient!mp;IZI)Lclient!gn;")
-	private Class31 method3857(@OriginalArg(0) Class31_Sub2 arg0, @OriginalArg(1) boolean arg1, @OriginalArg(2) Class31_Sub2 arg2, @OriginalArg(4) boolean arg3, @OriginalArg(5) int arg4) {
+	private Model method3857(@OriginalArg(0) Model_Sub2 arg0, @OriginalArg(1) boolean arg1, @OriginalArg(2) Model_Sub2 arg2, @OriginalArg(4) boolean arg3, @OriginalArg(5) int arg4) {
 		arg2.aByte33 = 0;
 		arg2.anInt3841 = this.anInt3841;
 		arg2.aShort49 = this.aShort49;

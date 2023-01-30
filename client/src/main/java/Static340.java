@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static340 {
 
 	@OriginalMember(owner = "client!tp", name = "a", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_133 = new Class79("Loaded world list data", "Liste der Welten geladen", "Liste des serveurs chargée", "Dados da lista de mundos carregados");
+	public static final LocalisedText A_TRANSLATABLE_STRING___133 = new LocalisedText("Loaded world list data", "Liste der Welten geladen", "Liste des serveurs chargée", "Dados da lista de mundos carregados");
 
 	@OriginalMember(owner = "client!tp", name = "k", descriptor = "Lclient!h;")
 	public static final Class89 aClass89_227 = new Class89(101, 14);
@@ -40,22 +40,22 @@ public final class Static340 {
 	}
 
 	@OriginalMember(owner = "client!tp", name = "a", descriptor = "(BLclient!oe;)I")
-	public static int method5763(@OriginalArg(1) Class11_Sub5_Sub2_Sub2 arg0) {
-		@Pc(8) Class71 local8 = arg0.aClass71_1;
-		if (local8.anIntArray129 != null) {
-			local8 = local8.method2093(Static214.aClass226_1);
+	public static int method5763(@OriginalArg(1) Npc arg0) {
+		@Pc(8) NpcType local8 = arg0.type;
+		if (local8.multiNpcs != null) {
+			local8 = local8.getMultiNpc(Static214.aClass226_1);
 			if (local8 == null) {
 				return -1;
 			}
 		}
-		@Pc(28) int local28 = local8.anInt2015;
-		@Pc(32) Class222 local32 = arg0.method4331();
+		@Pc(28) int local28 = local8.walksound;
+		@Pc(32) BasType local32 = arg0.method4331();
 		if (arg0.aBoolean317) {
-			local28 = local8.anInt2038;
-		} else if (local32.anInt6263 == arg0.anInt4585 || arg0.anInt4585 == local32.anInt6292 || local32.anInt6301 == arg0.anInt4585 || local32.anInt6271 == arg0.anInt4585) {
-			local28 = local8.anInt2025;
-		} else if (local32.anInt6265 == arg0.anInt4585 || arg0.anInt4585 == local32.anInt6299 || local32.anInt6267 == arg0.anInt4585 || arg0.anInt4585 == local32.anInt6284) {
-			local28 = local8.anInt2009;
+			local28 = local8.idlesound;
+		} else if (local32.runSeqID == arg0.anInt4585 || arg0.anInt4585 == local32.anInt6292 || local32.anInt6301 == arg0.anInt4585 || local32.anInt6271 == arg0.anInt4585) {
+			local28 = local8.runsound;
+		} else if (local32.crawlSeqID == arg0.anInt4585 || arg0.anInt4585 == local32.anInt6299 || local32.anInt6267 == arg0.anInt4585 || arg0.anInt4585 == local32.anInt6284) {
+			local28 = local8.crawlsound;
 		}
 		return local28;
 	}
@@ -64,9 +64,9 @@ public final class Static340 {
 	public static void method5764() {
 		@Pc(7) Class204 local7 = null;
 		try {
-			@Pc(11) Class32 local11 = Static328.aClass152_5.method3755();
+			@Pc(11) PrivelegedRequest local11 = Static328.aClass152_5.method3755();
 			while (local11.anInt993 == 0) {
-				Static231.method4022(1L);
+				Static231.sleep(1L);
 			}
 			if (local11.anInt993 == 1) {
 				local7 = (Class204) local11.anObject2;

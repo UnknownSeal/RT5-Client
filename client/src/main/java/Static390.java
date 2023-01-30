@@ -14,8 +14,8 @@ public final class Static390 {
 
 	@OriginalMember(owner = "client!wp", name = "a", descriptor = "(I)V")
 	public static void method6448() {
-		Static289.aClass197_71.anInt5558 = 1;
-		Static144.aClient1.method1382();
+		Static289.aClass197_71.discardUnpacked = 1;
+		Static144.instance.method1382();
 		Static242.aBoolean306 = true;
 		Static343.aBoolean431 = true;
 		Static4.method77();
@@ -47,9 +47,9 @@ public final class Static390 {
 		for (@Pc(4448) int local4448 = 0; local4448 < 2048; local4448++) {
 			Static12.aClass11_Sub5_Sub2_Sub1Array1[local4448] = null;
 		}
-		Static166.anInt3187 = 0;
+		Static166.size = 0;
 		for (@Pc(4464) int local4464 = 0; local4464 < 32768; local4464++) {
-			Static365.aClass11_Sub5_Sub2_Sub2Array1[local4464] = null;
+			Static365.npcs[local4464] = null;
 		}
 		Static332.aClass135_38.method3543();
 		Static129.aClass135_20.method3543();
@@ -79,7 +79,7 @@ public final class Static390 {
 			Static162.method2978(Static139.anInt2595);
 		}
 		for (@Pc(4552) Class2_Sub7 local4552 = (Class2_Sub7) Static329.aClass4_130.method80(); local4552 != null; local4552 = (Class2_Sub7) Static329.aClass4_130.method79()) {
-			if (!local4552.method6461()) {
+			if (!local4552.isLinked()) {
 				local4552 = (Class2_Sub7) Static329.aClass4_130.method80();
 				if (local4552 == null) {
 					break;
@@ -88,7 +88,7 @@ public final class Static390 {
 			Static276.method4654(false, local4552, true);
 		}
 		Static139.anInt2595 = -1;
-		Static329.aClass4_130 = new Class4(8);
+		Static329.aClass4_130 = new HashTable(8);
 		Static210.method3719();
 		Static192.aClass161_8 = null;
 		for (@Pc(4594) int local4594 = 0; local4594 < 8; local4594++) {
@@ -115,7 +115,7 @@ public final class Static390 {
 		Static348.method5827();
 		Static257.aShortArray79 = Static223.aShortArray78 = Static258.aShortArray95 = Static147.aShortArray54 = new short[256];
 		Static100.aBoolean156 = true;
-		Static330.aString62 = Static66.aClass79_34.method2267(Static295.anInt5581);
+		Static330.aString62 = Static66.A_TRANSLATABLE_STRING___34.getLocalisedText(Static295.anInt5581);
 		Static292.anInt5510 = 0;
 		Static218.aClass177_Sub1_2.aBoolean365 = false;
 		Static218.aClass177_Sub1_2.aBoolean366 = false;
@@ -123,6 +123,6 @@ public final class Static390 {
 		Static93.method2002();
 		Static375.aLong222 = 0L;
 		Static385.aClass2_Sub16_2 = null;
-		Static289.aClass197_71.anInt5558 = 2;
+		Static289.aClass197_71.discardUnpacked = 2;
 	}
 }

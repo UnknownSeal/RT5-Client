@@ -14,7 +14,7 @@ public final class Static210 {
 	public static int anInt3761 = 500;
 
 	@OriginalMember(owner = "client!mg", name = "v", descriptor = "Lclient!hu;")
-	public static final Class98 aClass98_31 = new Class98(8);
+	public static final SoftLruHashTable A_SOFT_LRU_HASH_TABLE___31 = new SoftLruHashTable(8);
 
 	@OriginalMember(owner = "client!mg", name = "w", descriptor = "Lclient!h;")
 	public static final Class89 aClass89_155 = new Class89(46, -1);

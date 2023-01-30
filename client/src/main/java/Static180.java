@@ -8,7 +8,7 @@ public final class Static180 {
 	public static int anInt3404;
 
 	@OriginalMember(owner = "client!kh", name = "i", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_74 = new Class79("Choose Option", "Wähl eine Option", "Choisir une option", "Selecionar opção");
+	public static final LocalisedText A_TRANSLATABLE_STRING___74 = new LocalisedText("Choose Option", "Wähl eine Option", "Choisir une option", "Selecionar opção");
 
 	@OriginalMember(owner = "client!kh", name = "k", descriptor = "I")
 	public static int anInt3408 = 0;
@@ -72,7 +72,7 @@ public final class Static180 {
 
 	@OriginalMember(owner = "client!kh", name = "a", descriptor = "(II)V")
 	public static void method3369() {
-		Static133.aClass98_17.method2615(5);
+		Static133.A_SOFT_LRU_HASH_TABLE___17.clean(5);
 	}
 
 	@OriginalMember(owner = "client!kh", name = "b", descriptor = "(B)[Lclient!vr;")

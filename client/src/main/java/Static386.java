@@ -88,7 +88,7 @@ public final class Static386 {
 			local117 = local103 & 0xFF;
 			local75.aByteArray51[0] = Static335.aByteArray92[arg1];
 			local75.aByte78 = (byte) local107;
-			local75.method4063(local31 + (local113 << 6) - Static164.anInt3140, -Static148.anInt2719 + local36 + (local117 << 6));
+			local75.method4063(local31 + (local113 << 6) - Static164.originX, -Static148.originZ + local36 + (local117 << 6));
 			local75.aBoolean276 = false;
 			return true;
 		} else if (local8 == 1) {

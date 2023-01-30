@@ -202,7 +202,7 @@ public final class Class238 {
 			Static362.anIntArray470[local15] = this.anIntArray475[local15];
 		}
 		@Pc(34) int local34 = Static362.anIntArray471[this.anInt6772 - 1];
-		@Pc(40) int local40 = Static287.method4928(local34 - 1);
+		@Pc(40) int local40 = Static287.bitCount(local34 - 1);
 		Static362.anIntArray468[0] = Static267.method4512(local40);
 		Static362.anIntArray468[1] = Static267.method4512(local40);
 		@Pc(52) int local52 = 2;

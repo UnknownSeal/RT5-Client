@@ -35,7 +35,7 @@ public final class Static385 {
 
 	@OriginalMember(owner = "client!wi", name = "a", descriptor = "(BI)V")
 	public static void method6431(@OriginalArg(1) int arg0) {
-		@Pc(8) int local8 = Static114.anInt2348 - Static241.anInt4445;
+		@Pc(8) int local8 = Static114.loop - Static241.anInt4445;
 		if (local8 >= 100) {
 			Static314.anInt5911 = 1;
 			return;

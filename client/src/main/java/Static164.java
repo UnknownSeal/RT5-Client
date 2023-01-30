@@ -10,7 +10,7 @@ public final class Static164 {
 	public static int anInt3139;
 
 	@OriginalMember(owner = "client!jl", name = "ab", descriptor = "I")
-	public static int anInt3140;
+	public static int originX;
 
 	@OriginalMember(owner = "client!jl", name = "bb", descriptor = "F")
 	public static float aFloat38;
@@ -72,9 +72,9 @@ public final class Static164 {
 		}
 		try {
 			if (++Static193.anInt3557 > 1500) {
-				if (Static335.aClass111_4 != null) {
-					Static335.aClass111_4.method2799();
-					Static335.aClass111_4 = null;
+				if (Static335.aBufferedSocket_4 != null) {
+					Static335.aBufferedSocket_4.method2799();
+					Static335.aBufferedSocket_4 = null;
 				}
 				if (Static60.anInt666 >= 1) {
 					Static154.anInt2803 = 0;
@@ -91,27 +91,27 @@ public final class Static164 {
 				Static193.anInt3557 = 0;
 			}
 			if (Static154.anInt2803 == 1) {
-				Static5.aClass32_1 = Static328.aClass152_5.method3750(Static61.aString14, Static278.anInt5154);
+				Static5.aPrivelegedRequest_1 = Static328.aClass152_5.method3750(Static61.aString14, Static278.anInt5154);
 				Static154.anInt2803 = 2;
 			}
 			@Pc(125) int local125;
 			if (Static154.anInt2803 == 2) {
-				if (Static5.aClass32_1.anInt993 == 2) {
+				if (Static5.aPrivelegedRequest_1.anInt993 == 2) {
 					throw new IOException();
 				}
-				if (Static5.aClass32_1.anInt993 != 1) {
+				if (Static5.aPrivelegedRequest_1.anInt993 != 1) {
 					return;
 				}
-				Static335.aClass111_4 = new Class111((Socket) Static5.aClass32_1.anObject2, Static328.aClass152_5);
-				Static5.aClass32_1 = null;
-				Static335.aClass111_4.method2797(Static257.aClass2_Sub4_Sub2_4.offset, Static257.aClass2_Sub4_Sub2_4.data);
+				Static335.aBufferedSocket_4 = new BufferedSocket((Socket) Static5.aPrivelegedRequest_1.anObject2, Static328.aClass152_5);
+				Static5.aPrivelegedRequest_1 = null;
+				Static335.aBufferedSocket_4.write(Static257.aClass2_Sub4_Sub2_4.data, Static257.aClass2_Sub4_Sub2_4.offset);
 				if (Static303.aClass221_2 != null) {
 					Static303.aClass221_2.method6324();
 				}
 				if (Static190.aClass221_1 != null) {
 					Static190.aClass221_1.method6324();
 				}
-				local125 = Static335.aClass111_4.method2800();
+				local125 = Static335.aBufferedSocket_4.method2800();
 				if (Static303.aClass221_2 != null) {
 					Static303.aClass221_2.method6324();
 				}
@@ -121,31 +121,31 @@ public final class Static164 {
 				if (local125 != 101) {
 					Static41.anInt1046 = local125;
 					Static154.anInt2803 = 0;
-					Static335.aClass111_4.method2799();
-					Static335.aClass111_4 = null;
+					Static335.aBufferedSocket_4.method2799();
+					Static335.aBufferedSocket_4 = null;
 					return;
 				}
 				Static154.anInt2803 = 3;
 			}
-			if (Static154.anInt2803 == 3 && Static335.aClass111_4.method2795() >= 2) {
-				local125 = Static335.aClass111_4.method2800() << 8 | Static335.aClass111_4.method2800();
+			if (Static154.anInt2803 == 3 && Static335.aBufferedSocket_4.method2795() >= 2) {
+				local125 = Static335.aBufferedSocket_4.method2800() << 8 | Static335.aBufferedSocket_4.method2800();
 				Static375.method6278(local125);
 				if (Static120.anInt2385 == -1) {
 					Static154.anInt2803 = 0;
 					Static41.anInt1046 = 6;
-					Static335.aClass111_4.method2799();
-					Static335.aClass111_4 = null;
+					Static335.aBufferedSocket_4.method2799();
+					Static335.aBufferedSocket_4 = null;
 				} else {
 					Static154.anInt2803 = 0;
-					Static335.aClass111_4.method2799();
-					Static335.aClass111_4 = null;
+					Static335.aBufferedSocket_4.method2799();
+					Static335.aBufferedSocket_4 = null;
 					Static230.method4013();
 				}
 			}
 		} catch (@Pc(208) IOException local208) {
-			if (Static335.aClass111_4 != null) {
-				Static335.aClass111_4.method2799();
-				Static335.aClass111_4 = null;
+			if (Static335.aBufferedSocket_4 != null) {
+				Static335.aBufferedSocket_4.method2799();
+				Static335.aBufferedSocket_4 = null;
 			}
 			if (Static60.anInt666 >= 1) {
 				Static154.anInt2803 = 0;

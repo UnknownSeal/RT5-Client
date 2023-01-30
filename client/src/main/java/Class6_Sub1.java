@@ -98,7 +98,7 @@ public final class Class6_Sub1 extends Class6 {
 	private float[][] aFloatArrayArray2;
 
 	@OriginalMember(owner = "client!ah", name = "L", descriptor = "Lclient!ad;")
-	private Class4 aClass4_7;
+	private HashTable aClass4_7;
 
 	@OriginalMember(owner = "client!ah", name = "q", descriptor = "Lclient!ic;")
 	private Class100 aClass100_1;
@@ -136,7 +136,7 @@ public final class Class6_Sub1 extends Class6 {
 				this.aFloatArrayArray2[local128][local122] = (float) local164 * local179;
 			}
 		}
-		this.aClass4_7 = new Class4(128);
+		this.aClass4_7 = new HashTable(128);
 		if ((this.anInt181 & 0x10) != 0) {
 			this.aClass100_1 = new Class100(this.aClass19_Sub1_1, this);
 		}
@@ -230,7 +230,7 @@ public final class Class6_Sub1 extends Class6 {
 		@Pc(82) Class2_Sub36[] local82 = this.aClass2_Sub36ArrayArrayArray1[arg0][arg1] = new Class2_Sub36[arg6.length];
 		for (@Pc(84) int local84 = 0; local84 < arg6.length; local84++) {
 			@Pc(115) long local115 = (long) arg12 << 48 | (long) arg11 << 42 | (long) arg10 << 28 | (long) (arg9[local84] << 14) | (long) arg8[local84];
-			@Pc(121) Class2 local121;
+			@Pc(121) Node local121;
 			for (local121 = this.aClass4_7.method90(local115); local121 != null; local121 = this.aClass4_7.method82()) {
 				@Pc(126) Class2_Sub36 local126 = (Class2_Sub36) local121;
 				if (local126.anInt6095 == arg8[local84] && local126.aFloat75 == (float) arg9[local84] && local126.anInt6097 == arg10 && local126.anInt6096 == arg11 && local126.anInt6098 == arg12) {
@@ -239,7 +239,7 @@ public final class Class6_Sub1 extends Class6 {
 			}
 			if (local121 == null) {
 				local82[local84] = new Class2_Sub36(this, arg8[local84], arg9[local84], arg10, arg11, arg12);
-				this.aClass4_7.method87(local82[local84], local115);
+				this.aClass4_7.put(local82[local84], local115);
 			} else {
 				local82[local84] = (Class2_Sub36) local121;
 			}
@@ -343,7 +343,7 @@ public final class Class6_Sub1 extends Class6 {
 			this.aClass19_Sub1_1.method794(8448, 7681);
 			this.aClass19_Sub1_1.method793(0, 34166, 770);
 			this.aClass19_Sub1_1.method833(0, 34167);
-			for (@Pc(236) Class2 local236 = this.aClass135_3.method3550(); local236 != null; local236 = this.aClass135_3.method3551()) {
+			for (@Pc(236) Node local236 = this.aClass135_3.method3550(); local236 != null; local236 = this.aClass135_3.method3551()) {
 				@Pc(241) Class2_Sub23 local241 = (Class2_Sub23) local236;
 				local241.method3525(arg2, arg0, arg3, arg1);
 			}
@@ -442,7 +442,7 @@ public final class Class6_Sub1 extends Class6 {
 			}
 			@Pc(137) ByteBuffer local137 = ByteBuffer.allocateDirect(this.anInt185 * local14).order(ByteOrder.nativeOrder());
 			@Pc(141) Class2_Sub36[] local141 = new Class2_Sub36[this.anInt185];
-			@Pc(149) Class4 local149 = new Class4(Static351.method5854(this.anInt185));
+			@Pc(149) HashTable local149 = new HashTable(Static351.method5854(this.anInt185));
 			@Pc(153) Class2_Sub36[] local153 = new Class2_Sub36[this.anInt186];
 			@Pc(155) int local155;
 			@Pc(161) int local161;
@@ -552,7 +552,7 @@ public final class Class6_Sub1 extends Class6 {
 									local502 = this.aClass19_Sub1_1.aFloat3 + local502 * (local502 > 0.0F ? this.aClass19_Sub1_1.aFloat8 : this.aClass19_Sub1_1.aFloat16);
 								}
 							}
-							@Pc(773) Class2 local773 = local149.method90(local488);
+							@Pc(773) Node local773 = local149.method90(local488);
 							@Pc(805) int local805;
 							if (local773 == null) {
 								if (local462 == local458) {
@@ -614,11 +614,11 @@ public final class Class6_Sub1 extends Class6 {
 								if (local458 != -1) {
 									local141[local398] = local180[local432];
 								}
-								local149.method87(new Class2_Sub9(local430[local432]), local488);
+								local149.put(new Class2_Sub9(local430[local432]), local488);
 							} else {
 								local430[local432] = ((Class2_Sub9) local773).aShort20;
 								local398 = local430[local432] & 0xFFFF;
-								if (local458 != -1 && local180[local432].aLong232 < local141[local398].aLong232) {
+								if (local458 != -1 && local180[local432].key < local141[local398].key) {
 									local141[local398] = local180[local432];
 								}
 							}
@@ -656,13 +656,13 @@ public final class Class6_Sub1 extends Class6 {
 							}
 							if (local1184 != null) {
 								local1184.method5566(local1149, local155, local161);
-								if (local1190 == null || local1184.aLong232 < local1190.aLong232) {
+								if (local1190 == null || local1184.key < local1190.key) {
 									local1190 = local1184;
 								}
 							}
 							if (local1188 != null) {
 								local1188.method5566(local1149, local155, local161);
-								if (local1190 == null || local1188.aLong232 < local1190.aLong232) {
+								if (local1190 == null || local1188.key < local1190.key) {
 									local1190 = local1188;
 								}
 							}
@@ -701,7 +701,7 @@ public final class Class6_Sub1 extends Class6 {
 			@Pc(1357) long[] local1357 = new long[this.aClass2_Sub36Array1.length];
 			for (@Pc(1359) int local1359 = 0; local1359 < this.aClass2_Sub36Array1.length; local1359++) {
 				@Pc(1369) Class2_Sub36 local1369 = this.aClass2_Sub36Array1[local1359];
-				local1357[local1359] = local1369.aLong232;
+				local1357[local1359] = local1369.key;
 				local1369.method5565(this.anInt179);
 			}
 			Static367.method6143(this.aClass2_Sub36Array1, local1357);

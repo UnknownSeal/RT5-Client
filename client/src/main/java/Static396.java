@@ -112,13 +112,13 @@ public final class Static396 {
 
 	@OriginalMember(owner = "client!dk", name = "a", descriptor = "(Lclient!r;II)Lclient!dk;")
 	public static Class48 method1682(@OriginalArg(0) Class197 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		@Pc(5) byte[] local5 = arg0.method5088(arg2, arg1);
+		@Pc(5) byte[] local5 = arg0.fetchFile(arg1, arg2);
 		return local5 == null ? null : method1679(local5)[0];
 	}
 
 	@OriginalMember(owner = "client!dk", name = "b", descriptor = "(Lclient!r;II)[Lclient!dk;")
 	public static Class48[] method1688(@OriginalArg(0) Class197 arg0, @OriginalArg(1) int arg1) {
-		@Pc(5) byte[] local5 = arg0.method5088(0, arg1);
+		@Pc(5) byte[] local5 = arg0.fetchFile(arg1, 0);
 		return local5 == null ? null : method1679(local5);
 	}
 }

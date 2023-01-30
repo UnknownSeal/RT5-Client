@@ -8,13 +8,13 @@ public final class Static120 {
 	public static Class197 aClass197_28;
 
 	@OriginalMember(owner = "client!gs", name = "d", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_50 = new Class79(" from your friend list first.", " zuerst von deiner Freunde-Liste!", " de votre liste d'amis.", " da sua lista de amigos primeiro.");
+	public static final LocalisedText A_TRANSLATABLE_STRING___50 = new LocalisedText(" from your friend list first.", " zuerst von deiner Freunde-Liste!", " de votre liste d'amis.", " da sua lista de amigos primeiro.");
 
 	@OriginalMember(owner = "client!gs", name = "g", descriptor = "Lclient!h;")
 	public static final Class89 aClass89_95 = new Class89(12, 3);
 
 	@OriginalMember(owner = "client!gs", name = "h", descriptor = "Lclient!ad;")
-	public static Class4 aClass4_49 = new Class4(64);
+	public static HashTable aClass4_49 = new HashTable(64);
 
 	@OriginalMember(owner = "client!gs", name = "i", descriptor = "I")
 	public static int anInt2385 = -1;
@@ -31,7 +31,7 @@ public final class Static120 {
 	@OriginalMember(owner = "client!gs", name = "a", descriptor = "(Ljava/lang/String;ILclient!bt;)I")
 	public static int method2379(@OriginalArg(0) String arg0, @OriginalArg(2) Buffer arg1) {
 		@Pc(6) int local6 = arg1.offset;
-		@Pc(10) byte[] local10 = Static51.method1546(arg0);
+		@Pc(10) byte[] local10 = Static51.encodeString(arg0);
 		arg1.psmarts(local10.length);
 		arg1.offset += Static370.aClass140_1.method3647(arg1.data, local10, 0, arg1.offset, local10.length);
 		return arg1.offset - local6;
@@ -62,8 +62,8 @@ public final class Static120 {
 							@Pc(67) int local67 = local40 >> 14 & 0x3FF;
 							@Pc(73) int local73 = local40 >> 3 & 0x7FF;
 							@Pc(83) int local83 = local73 / 8 + (local67 / 8 << 8);
-							for (@Pc(85) int local85 = 0; local85 < Static291.anIntArray372.length; local85++) {
-								if (Static291.anIntArray372[local85] == local83 && arg0[local85] != null) {
+							for (@Pc(85) int local85 = 0; local85 < Static291.mapSquares.length; local85++) {
+								if (Static291.mapSquares[local85] == local83 && arg0[local85] != null) {
 									@Pc(107) Buffer local107 = new Buffer(arg0[local85]);
 									arg1.method1091(local24 * 8, local73, local107, Static171.aClass46Array1, local67, local28 * 8, local61, local50, local18);
 									arg1.method1101(local107, local28 * 8, local18, local50, local73, local67, Static190.aClass19_8, local16[0] == -1 ? local16 : null, local24 * 8, local61);

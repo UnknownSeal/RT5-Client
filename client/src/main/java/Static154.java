@@ -17,7 +17,7 @@ public final class Static154 {
 	public static int anInt2807 = 0;
 
 	@OriginalMember(owner = "client!is", name = "l", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_66 = new Class79("cyan:", "blaugrün:", "cyan:", "cyan:");
+	public static final LocalisedText A_TRANSLATABLE_STRING___66 = new LocalisedText("cyan:", "blaugrün:", "cyan:", "cyan:");
 
 	@OriginalMember(owner = "client!is", name = "m", descriptor = "J")
 	public static long aLong89 = 0L;
@@ -39,14 +39,14 @@ public final class Static154 {
 	}
 
 	@OriginalMember(owner = "client!is", name = "a", descriptor = "(Lclient!oe;B)V")
-	public static void method2781(@OriginalArg(0) Class11_Sub5_Sub2_Sub2 arg0) {
+	public static void method2781(@OriginalArg(0) Npc arg0) {
 		for (@Pc(16) Class2_Sub19 local16 = (Class2_Sub19) Static363.aClass135_39.method3550(); local16 != null; local16 = (Class2_Sub19) Static363.aClass135_39.method3551()) {
 			if (local16.aClass11_Sub5_Sub2_Sub2_1 == arg0) {
 				if (local16.aClass2_Sub12_Sub4_3 != null) {
 					Static227.aClass2_Sub12_Sub2_2.method2081(local16.aClass2_Sub12_Sub4_3);
 					local16.aClass2_Sub12_Sub4_3 = null;
 				}
-				local16.method6467();
+				local16.unlink();
 				return;
 			}
 		}
@@ -55,9 +55,9 @@ public final class Static154 {
 	@OriginalMember(owner = "client!is", name = "a", descriptor = "(II)V")
 	public static void method2783(@OriginalArg(0) int arg0) {
 		Static199.anInt5756 = arg0;
-		@Pc(7) Class98 local7 = Static98.aClass98_10;
-		synchronized (Static98.aClass98_10) {
-			Static98.aClass98_10.method2614();
+		@Pc(7) SoftLruHashTable local7 = Static98.A_SOFT_LRU_HASH_TABLE___10;
+		synchronized (Static98.A_SOFT_LRU_HASH_TABLE___10) {
+			Static98.A_SOFT_LRU_HASH_TABLE___10.method2614();
 		}
 	}
 

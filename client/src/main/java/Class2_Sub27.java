@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!pf")
-public final class Class2_Sub27 extends Class2 {
+public final class Class2_Sub27 extends Node {
 
 	@OriginalMember(owner = "client!pf", name = "t", descriptor = "[[B")
 	private byte[][] aByteArrayArray14;
@@ -54,7 +54,7 @@ public final class Class2_Sub27 extends Class2 {
 	private float[] method4514(@OriginalArg(0) int arg0) {
 		Static267.method4516(this.aByteArrayArray14[arg0]);
 		Static267.method4521();
-		@Pc(15) int local15 = Static267.method4512(Static287.method4928(Static267.anIntArray336.length - 1));
+		@Pc(15) int local15 = Static267.method4512(Static287.bitCount(Static267.anIntArray336.length - 1));
 		@Pc(19) boolean local19 = Static267.aBooleanArray43[local15];
 		@Pc(25) int local25 = local19 ? Static267.anInt4923 : Static267.anInt4926;
 		@Pc(27) boolean local27 = false;
@@ -148,7 +148,7 @@ public final class Class2_Sub27 extends Class2 {
 				local214[local359 * 4 + 3] = (local307 - local321) * local430 - (local313 - local396) * local440;
 				local214[local359 * 4 + 1] = (local313 - local396) * local430 + (local307 - local321) * local440;
 			}
-			@Pc(486) int local486 = Static287.method4928(local25 - 1);
+			@Pc(486) int local486 = Static287.bitCount(local25 - 1);
 			@Pc(520) int local520;
 			@Pc(522) int local522;
 			@Pc(527) int local527;

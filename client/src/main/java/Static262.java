@@ -10,7 +10,7 @@ public final class Static262 {
 	public static final Class145 aClass145_251 = new Class145(72, 7);
 
 	@OriginalMember(owner = "client!pa", name = "f", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_145 = new Class79("Continue", "Weiter", "Continuer", "Continuar");
+	public static final LocalisedText A_TRANSLATABLE_STRING___145 = new LocalisedText("Continue", "Weiter", "Continuer", "Continuar");
 
 	@OriginalMember(owner = "client!pa", name = "i", descriptor = "I")
 	public static int anInt6999 = 2;
@@ -23,7 +23,7 @@ public final class Static262 {
 		}
 		@Pc(37) int local37 = Math.min(arg5.anInt4248 / 2, arg5.anInt4261 / 2);
 		if (local37 * local37 >= local19) {
-			Static376.method6287(arg6, arg2, arg7, arg3, Static123.aClass13Array10[arg0], arg4, arg5);
+			Static376.renderDot(arg6, arg2, arg7, arg3, Static123.aClass13Array10[arg0], arg4, arg5);
 			return;
 		}
 		local37 -= 10;
@@ -79,9 +79,9 @@ public final class Static262 {
 			local7 = Static200.method3646(local7, "%26", "&");
 			local7 = Static200.method3646(local7, "%23", "#");
 			if (Static392.aClass152_6.anApplet1 != null) {
-				@Pc(103) Class32 local103 = Static392.aClass152_6.method3765(new URL(Static392.aClass152_6.anApplet1.getCodeBase(), "clienterror.ws?c=" + Static277.anInt5115 + "&u=" + Static241.aLong130 + "&v1=" + Static215.aString33 + "&v2=" + Static215.aString34 + "&e=" + local7));
+				@Pc(103) PrivelegedRequest local103 = Static392.aClass152_6.method3765(new URL(Static392.aClass152_6.anApplet1.getCodeBase(), "clienterror.ws?c=" + Static277.anInt5115 + "&u=" + Static241.aLong130 + "&v1=" + Static215.aString33 + "&v2=" + Static215.aString34 + "&e=" + local7));
 				while (local103.anInt993 == 0) {
-					Static231.method4022(1L);
+					Static231.sleep(1L);
 				}
 				if (local103.anInt993 == 1) {
 					@Pc(121) DataInputStream local121 = (DataInputStream) local103.anObject2;
@@ -96,48 +96,48 @@ public final class Static262 {
 	@OriginalMember(owner = "client!pa", name = "a", descriptor = "(Z)V")
 	public static void method6253() {
 		Static217.method3794(Static218.aClass177_Sub1_2.anInt4883);
-		@Pc(18) int local18 = (Static136.anInt6778 >> 10) + (Static164.anInt3140 >> 3);
-		@Pc(27) int local27 = (Static211.anInt3777 >> 10) + (Static148.anInt2719 >> 3);
+		@Pc(18) int local18 = (Static136.anInt6778 >> 10) + (Static164.originX >> 3);
+		@Pc(27) int local27 = (Static211.anInt3777 >> 10) + (Static148.originZ >> 3);
 		Static355.anInt6585 = Static17.aClass11_Sub5_Sub2_Sub1_3.aByte78 = 0;
 		Static17.aClass11_Sub5_Sub2_Sub1_3.method4063(8, 8);
-		Static51.anIntArray98 = new int[18];
+		Static51.underwaterMapGroupIDs = new int[18];
 		Static106.aByteArrayArray6 = new byte[18][];
 		Static232.aByteArrayArray9 = new byte[18][];
 		Static82.aByteArrayArray5 = new byte[18][];
-		Static62.anIntArray155 = new int[18];
+		Static62.underwaterLocGroupIDs = new int[18];
 		Static270.aByteArrayArray15 = new byte[18][];
-		Static190.anIntArray208 = new int[18];
-		Static221.anIntArray314 = new int[18];
+		Static190.npcGroupIDs = new int[18];
+		Static221.mapGroupIDs = new int[18];
 		Static210.aByteArrayArray7 = new byte[18][];
-		Static374.anIntArray480 = new int[18];
-		Static291.anIntArray372 = new int[18];
-		Static277.anIntArrayArray43 = new int[18][4];
-		@Pc(78) int local78 = 0;
-		@Pc(97) int local97;
-		for (@Pc(87) int local87 = (local18 - (Static373.anInt7033 >> 4)) / 8; local87 <= ((Static373.anInt7033 >> 4) + local18) / 8; local87++) {
-			for (local97 = (local27 - (Static242.anInt4449 >> 4)) / 8; local97 <= (local27 + (Static242.anInt4449 >> 4)) / 8; local97++) {
-				@Pc(105) int local105 = local97 + (local87 << 8);
-				Static291.anIntArray372[local78] = local105;
-				Static221.anIntArray314[local78] = Static288.aClass197_70.method5074("m" + local87 + "_" + local97);
-				Static374.anIntArray480[local78] = Static288.aClass197_70.method5074("l" + local87 + "_" + local97);
-				Static190.anIntArray208[local78] = Static288.aClass197_70.method5074("n" + local87 + "_" + local97);
-				Static51.anIntArray98[local78] = Static288.aClass197_70.method5074("um" + local87 + "_" + local97);
-				Static62.anIntArray155[local78] = Static288.aClass197_70.method5074("ul" + local87 + "_" + local97);
-				if (Static190.anIntArray208[local78] == -1) {
-					Static221.anIntArray314[local78] = -1;
-					Static374.anIntArray480[local78] = -1;
-					Static51.anIntArray98[local78] = -1;
-					Static62.anIntArray155[local78] = -1;
+		Static374.locGroupIDs = new int[18];
+		Static291.mapSquares = new int[18];
+		Static277.xteaKeys = new int[18][4];
+		@Pc(78) int i = 0;
+		@Pc(97) int mapZ;
+		for (@Pc(87) int mapX = (local18 - (Static373.anInt7033 >> 4)) / 8; mapX <= ((Static373.anInt7033 >> 4) + local18) / 8; mapX++) {
+			for (mapZ = (local27 - (Static242.anInt4449 >> 4)) / 8; mapZ <= (local27 + (Static242.anInt4449 >> 4)) / 8; mapZ++) {
+				@Pc(105) int mapSquare = (mapX << 8) + mapZ;
+				Static291.mapSquares[i] = mapSquare;
+				Static221.mapGroupIDs[i] = Static288.js5Archive5.getGroupID("m" + mapX + "_" + mapZ);
+				Static374.locGroupIDs[i] = Static288.js5Archive5.getGroupID("l" + mapX + "_" + mapZ);
+				Static190.npcGroupIDs[i] = Static288.js5Archive5.getGroupID("n" + mapX + "_" + mapZ);
+				Static51.underwaterMapGroupIDs[i] = Static288.js5Archive5.getGroupID("um" + mapX + "_" + mapZ);
+				Static62.underwaterLocGroupIDs[i] = Static288.js5Archive5.getGroupID("ul" + mapX + "_" + mapZ);
+				if (Static190.npcGroupIDs[i] == -1) {
+					Static221.mapGroupIDs[i] = -1;
+					Static374.locGroupIDs[i] = -1;
+					Static51.underwaterMapGroupIDs[i] = -1;
+					Static62.underwaterLocGroupIDs[i] = -1;
 				}
-				local78++;
+				i++;
 			}
 		}
-		for (local97 = local78; local97 < Static190.anIntArray208.length; local97++) {
-			Static190.anIntArray208[local97] = -1;
-			Static221.anIntArray314[local97] = -1;
-			Static374.anIntArray480[local97] = -1;
-			Static51.anIntArray98[local97] = -1;
-			Static62.anIntArray155[local97] = -1;
+		for (mapZ = i; mapZ < Static190.npcGroupIDs.length; mapZ++) {
+			Static190.npcGroupIDs[mapZ] = -1;
+			Static221.mapGroupIDs[mapZ] = -1;
+			Static374.locGroupIDs[mapZ] = -1;
+			Static51.underwaterMapGroupIDs[mapZ] = -1;
+			Static62.underwaterLocGroupIDs[mapZ] = -1;
 		}
 		Static373.method6266(true, local18, false, local27);
 	}

@@ -13,7 +13,7 @@ public final class Static163 {
 	public static Class15 aClass15_1;
 
 	@OriginalMember(owner = "client!jj", name = "R", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_68 = new Class79("Loading world map - ", "Lade Weltkarte - ", "Chargement de la mappemonde - ", "Carregando mapa-múndi - ");
+	public static final LocalisedText A_TRANSLATABLE_STRING___68 = new LocalisedText("Loading world map - ", "Lade Weltkarte - ", "Chargement de la mappemonde - ", "Carregando mapa-múndi - ");
 
 	@OriginalMember(owner = "client!jj", name = "U", descriptor = "Lclient!mc;")
 	public static final Class145 aClass145_116 = new Class145(34, -1);
@@ -108,7 +108,7 @@ public final class Static163 {
 		if (Static139.anInt2595 != -1) {
 			Static60.method891(true);
 		}
-		if (Static335.aClass111_4 != null && (Static347.anInt6442 == 30 || Static347.anInt6442 == 25)) {
+		if (Static335.aBufferedSocket_4 != null && (Static347.anInt6442 == 30 || Static347.anInt6442 == 25)) {
 			Static93.method2002();
 		}
 		for (local159 = 0; local159 < 100; local159++) {

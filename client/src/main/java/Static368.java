@@ -18,7 +18,7 @@ public final class Static368 {
 	public static final Class246 aClass246_10 = new Class246();
 
 	@OriginalMember(owner = "client!vl", name = "gb", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_143 = new Class79("Examine", "Untersuchen", "Examiner", "Examinar");
+	public static final LocalisedText A_TRANSLATABLE_STRING___143 = new LocalisedText("Examine", "Untersuchen", "Examiner", "Examinar");
 
 	@OriginalMember(owner = "client!vl", name = "g", descriptor = "(I)V")
 	public static void method6191() {

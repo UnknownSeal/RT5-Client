@@ -37,7 +37,7 @@ public final class Class175 {
 			local27 = 0;
 			local32 = Static267.method4512(5) + 1;
 			while (local27 < this.anInt4805) {
-				@Pc(41) int local41 = Static267.method4512(Static287.method4928(this.anInt4805 - local27));
+				@Pc(41) int local41 = Static267.method4512(Static287.bitCount(this.anInt4805 - local27));
 				for (local43 = 0; local43 < local41; local43++) {
 					this.anIntArray329[local27++] = local32;
 				}

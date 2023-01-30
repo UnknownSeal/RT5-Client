@@ -8,10 +8,10 @@ public final class Static18 {
 	public static Class207 aClass207_1;
 
 	@OriginalMember(owner = "client!bb", name = "F", descriptor = "Lclient!cc;")
-	public static Class32 aClass32_2;
+	public static PrivelegedRequest aPrivelegedRequest_2;
 
 	@OriginalMember(owner = "client!bb", name = "k", descriptor = "Lclient!ti;")
-	public static final Class222 aClass222_1 = new Class222();
+	public static final BasType A_BAS_TYPE___1 = new BasType();
 
 	@OriginalMember(owner = "client!bb", name = "m", descriptor = "I")
 	public static int anInt519 = -1;

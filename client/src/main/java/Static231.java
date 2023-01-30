@@ -38,15 +38,15 @@ public final class Static231 {
 	}
 
 	@OriginalMember(owner = "client!nf", name = "a", descriptor = "(IJ)V")
-	public static void method4022(@OriginalArg(1) long arg0) {
-		if (arg0 <= 0L) {
+	public static void sleep(@OriginalArg(1) long millis) {
+		if (millis <= 0L) {
 			return;
 		}
-		if (arg0 % 10L == 0L) {
-			Static270.method4552(arg0 - 1L);
-			Static270.method4552(1L);
+		if (millis % 10L == 0L) {
+			Static270.sleepUninterruptibly(millis - 1L);
+			Static270.sleepUninterruptibly(1L);
 		} else {
-			Static270.method4552(arg0);
+			Static270.sleepUninterruptibly(millis);
 		}
 	}
 

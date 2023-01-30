@@ -7,10 +7,10 @@ import org.openrs2.deob.annotation.Pc;
 public final class Class24 {
 
 	@OriginalMember(owner = "client!bk", name = "k", descriptor = "Lclient!ad;")
-	private final Class4 aClass4_11 = new Class4(256);
+	private final HashTable aClass4_11 = new HashTable(256);
 
 	@OriginalMember(owner = "client!bk", name = "n", descriptor = "Lclient!ad;")
-	private final Class4 aClass4_12 = new Class4(256);
+	private final HashTable aClass4_12 = new HashTable(256);
 
 	@OriginalMember(owner = "client!bk", name = "h", descriptor = "Lclient!r;")
 	private final Class197 aClass197_4;
@@ -60,7 +60,7 @@ public final class Class24 {
 				return null;
 			}
 			local31 = local54.method6433();
-			this.aClass4_12.method87(local31, local24);
+			this.aClass4_12.put(local31, local24);
 			if (arg1 != null) {
 				arg1[0] -= local31.aByteArray31.length;
 			}
@@ -85,14 +85,14 @@ public final class Class24 {
 				if (local55 == null) {
 					return null;
 				}
-				this.aClass4_11.method87(local55, local26);
+				this.aClass4_11.put(local55, local26);
 			}
 			local33 = local55.method4518(arg1);
 			if (local33 == null) {
 				return null;
 			} else {
-				local55.method6467();
-				this.aClass4_12.method87(local33, local26);
+				local55.unlink();
+				this.aClass4_12.put(local33, local26);
 				return local33;
 			}
 		} else {

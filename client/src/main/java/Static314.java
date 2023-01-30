@@ -12,11 +12,11 @@ public final class Static314 {
 
 	@OriginalMember(owner = "client!sd", name = "b", descriptor = "(II)Lclient!bp;")
 	public static Class28 method5366(@OriginalArg(0) int arg0) {
-		@Pc(10) Class28 local10 = (Class28) Static119.aClass98_16.method2612((long) arg0);
+		@Pc(10) Class28 local10 = (Class28) Static119.A_SOFT_LRU_HASH_TABLE___16.method2612((long) arg0);
 		if (local10 != null) {
 			return local10;
 		}
-		@Pc(20) byte[] local20 = Static188.aClass197_52.method5088(arg0, 1);
+		@Pc(20) byte[] local20 = Static188.aClass197_52.fetchFile(1, arg0);
 		local10 = new Class28();
 		local10.anInt749 = arg0;
 		if (local20 != null) {
@@ -24,10 +24,10 @@ public final class Static314 {
 		}
 		local10.method945();
 		if (local10.anInt737 == 2 && Static7.aClass4_151.method90((long) arg0) == null) {
-			Static7.aClass4_151.method87(new Class2_Sub39(Static307.anInt5780), (long) arg0);
+			Static7.aClass4_151.put(new IntNode(Static307.anInt5780), (long) arg0);
 			Static278.aClass28Array1[Static307.anInt5780++] = local10;
 		}
-		Static119.aClass98_16.method2624((long) arg0, local10);
+		Static119.A_SOFT_LRU_HASH_TABLE___16.method2624((long) arg0, local10);
 		return local10;
 	}
 

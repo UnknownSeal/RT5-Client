@@ -100,7 +100,7 @@ public final class Static376 {
 	}
 
 	@OriginalMember(owner = "client!vt", name = "a", descriptor = "(Lclient!kf;IIILclient!jd;ILclient!nk;B)V")
-	public static void method6287(@OriginalArg(0) Class78 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) Class13 arg4, @OriginalArg(5) int arg5, @OriginalArg(6) Class161 arg6) {
+	public static void renderDot(@OriginalArg(0) Class78 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) Class13 arg4, @OriginalArg(5) int arg5, @OriginalArg(6) Class161 arg6) {
 		if (arg4 == null) {
 			return;
 		}

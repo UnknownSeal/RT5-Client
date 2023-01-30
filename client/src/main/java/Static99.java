@@ -15,9 +15,9 @@ public final class Static99 {
 
 	@OriginalMember(owner = "client!fm", name = "i", descriptor = "(I)V")
 	public static void method2144() {
-		if (Static335.aClass111_4 != null) {
-			Static335.aClass111_4.method2799();
-			Static335.aClass111_4 = null;
+		if (Static335.aBufferedSocket_4 != null) {
+			Static335.aBufferedSocket_4.method2799();
+			Static335.aBufferedSocket_4 = null;
 		}
 		Static211.method3720();
 		Static253.method4365();
@@ -30,11 +30,11 @@ public final class Static99 {
 		Static393.aBoolean486 = false;
 		Static171.anInt3268 = -1;
 		Static239.method4151(true);
-		Static164.anInt3140 = 0;
+		Static164.originX = 0;
 		Static9.anInt212 = 0;
 		Static220.aBoolean252 = false;
 		Static105.anInt2187 = 0;
-		Static148.anInt2719 = 0;
+		Static148.originZ = 0;
 		for (@Pc(56) int local56 = 0; local56 < Static50.aClass84Array1.length; local56++) {
 			Static50.aClass84Array1[local56] = null;
 		}
@@ -42,9 +42,9 @@ public final class Static99 {
 		for (@Pc(75) int local75 = 0; local75 < 2048; local75++) {
 			Static12.aClass11_Sub5_Sub2_Sub1Array1[local75] = null;
 		}
-		Static166.anInt3187 = 0;
+		Static166.size = 0;
 		for (@Pc(91) int local91 = 0; local91 < 32768; local91++) {
-			Static365.aClass11_Sub5_Sub2_Sub2Array1[local91] = null;
+			Static365.npcs[local91] = null;
 		}
 		Static120.aClass4_49.method81();
 		Static117.method2369();

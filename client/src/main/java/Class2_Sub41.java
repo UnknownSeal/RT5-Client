@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!we")
-public final class Class2_Sub41 extends Class2 {
+public final class Class2_Sub41 extends Node {
 
 	@OriginalMember(owner = "client!we", name = "u", descriptor = "[I")
 	public int[] anIntArray488 = new int[1];
@@ -13,14 +13,14 @@ public final class Class2_Sub41 extends Class2 {
 	public int[] anIntArray489 = new int[] { -1 };
 
 	static {
-		new Class79("You cannot send a quick chat message to a player on this world at this time.", "Einem Spieler auf dieser Welt können derzeit keine Direktchat-Nachrichten", "Impossible d'envoyer un message rapide à un joueur de ce serveur à l'heure actuelle.", "Você não pode enviar uma mensagem de papo rápido para um jogador neste mundo neste momento.");
+		new LocalisedText("You cannot send a quick chat message to a player on this world at this time.", "Einem Spieler auf dieser Welt können derzeit keine Direktchat-Nachrichten", "Impossible d'envoyer un message rapide à un joueur de ce serveur à l'heure actuelle.", "Você não pode enviar uma mensagem de papo rápido para um jogador neste mundo neste momento.");
 	}
 
 	@OriginalMember(owner = "client!we", name = "a", descriptor = "(IIIIZLclient!nb;IILclient!jo;Lclient!wm;)Lclient!gn;")
-	public Class31 method6359(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) boolean arg3, @OriginalArg(5) Class157 arg4, @OriginalArg(6) int arg5, @OriginalArg(8) Class117 arg6, @OriginalArg(9) Class19 arg7) {
-		@Pc(7) Class31 local7 = null;
+	public Model method6359(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) boolean arg3, @OriginalArg(5) Class157 arg4, @OriginalArg(6) int arg5, @OriginalArg(8) Class117 arg6, @OriginalArg(9) Class19 arg7) {
+		@Pc(7) Model local7 = null;
 		@Pc(9) int local9 = 1024;
-		@Pc(11) Class222 local11 = null;
+		@Pc(11) BasType local11 = null;
 		if (arg2 != -1) {
 			local11 = Static59.aClass7_1.method245(arg2);
 		}
@@ -81,8 +81,8 @@ public final class Class2_Sub41 extends Class2 {
 			}
 		}
 		@Pc(230) long local230 = this.method6362(arg6 == null ? null : arg6.anIntArray194, local23, arg3, arg2);
-		if (Static48.aClass98_3 != null) {
-			local7 = (Class31) Static48.aClass98_3.method2612(local230);
+		if (Static48.A_SOFT_LRU_HASH_TABLE___3 != null) {
+			local7 = (Model) Static48.A_SOFT_LRU_HASH_TABLE___3.method2612(local230);
 		}
 		if (local7 == null || arg7.method2863(local7.method3826(), local9) != 0) {
 			if (local7 != null) {
@@ -91,7 +91,7 @@ public final class Class2_Sub41 extends Class2 {
 			@Pc(259) int local259 = local9;
 			@Pc(261) boolean local261 = false;
 			for (@Pc(263) int local263 = 0; local263 < local23.length; local263++) {
-				if (local23[local263] != -1 && !Static313.aClass107_2.method2759(local23[local263]).method4769(arg3)) {
+				if (local23[local263] != -1 && !Static313.aClass107_2.get(local23[local263]).method4769(arg3)) {
 					local261 = true;
 				}
 			}
@@ -101,24 +101,24 @@ public final class Class2_Sub41 extends Class2 {
 			@Pc(300) Class185[] local300 = new Class185[local23.length];
 			for (@Pc(302) int local302 = 0; local302 < local23.length; local302++) {
 				if (local23[local302] != -1) {
-					local300[local302] = Static313.aClass107_2.method2759(local23[local302]).method4778(arg3);
+					local300[local302] = Static313.aClass107_2.get(local23[local302]).method4778(arg3);
 				}
 			}
 			@Pc(354) int local354;
-			if (local11 != null && local11.anIntArrayArray53 != null) {
-				for (@Pc(334) int local334 = 0; local334 < local11.anIntArrayArray53.length; local334++) {
-					if (local11.anIntArrayArray53[local334] != null && local300[local334] != null) {
-						local354 = local11.anIntArrayArray53[local334][0];
-						@Pc(361) int local361 = local11.anIntArrayArray53[local334][1];
-						@Pc(368) int local368 = local11.anIntArrayArray53[local334][2];
-						@Pc(375) int local375 = local11.anIntArrayArray53[local334][3];
-						@Pc(382) int local382 = local11.anIntArrayArray53[local334][4];
-						@Pc(389) int local389 = local11.anIntArrayArray53[local334][5];
+			if (local11 != null && local11.equipmentTransforms != null) {
+				for (@Pc(334) int local334 = 0; local334 < local11.equipmentTransforms.length; local334++) {
+					if (local11.equipmentTransforms[local334] != null && local300[local334] != null) {
+						local354 = local11.equipmentTransforms[local334][0];
+						@Pc(361) int local361 = local11.equipmentTransforms[local334][1];
+						@Pc(368) int local368 = local11.equipmentTransforms[local334][2];
+						@Pc(375) int local375 = local11.equipmentTransforms[local334][3];
+						@Pc(382) int local382 = local11.equipmentTransforms[local334][4];
+						@Pc(389) int local389 = local11.equipmentTransforms[local334][5];
 						if (local375 != 0 || local382 != 0 || local389 != 0) {
 							local300[local334].method4663(local382, local389, local375);
 						}
 						if (local354 != 0 || local361 != 0 || local368 != 0) {
-							local300[local334].method4655(local354, local368, local361);
+							local300[local334].translate(local354, local368, local361);
 						}
 					}
 				}
@@ -138,15 +138,15 @@ public final class Class2_Sub41 extends Class2 {
 					}
 				}
 			}
-			if (Static48.aClass98_3 != null) {
+			if (Static48.A_SOFT_LRU_HASH_TABLE___3 != null) {
 				local7.method3813(local9);
-				Static48.aClass98_3.method2624(local230, local7);
+				Static48.A_SOFT_LRU_HASH_TABLE___3.method2624(local230, local7);
 			}
 		}
 		if (arg4 == null || local87 == null) {
 			return local7;
 		} else {
-			@Pc(536) Class31 local536 = local7.method3799((byte) 1, local9, true);
+			@Pc(536) Model local536 = local7.method3799((byte) 1, local9, true);
 			local536.method3827(local85, local89, local83, arg4.aBoolean263, arg1 - 1, local81, local87, 0);
 			return local536;
 		}

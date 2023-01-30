@@ -2,13 +2,13 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!cc")
-public final class Class32 {
+public final class PrivelegedRequest {
 
 	@OriginalMember(owner = "client!cc", name = "a", descriptor = "Ljava/lang/Object;")
 	public volatile Object anObject2;
 
 	@OriginalMember(owner = "client!cc", name = "b", descriptor = "Lclient!cc;")
-	public Class32 aClass32_3;
+	public PrivelegedRequest next;
 
 	@OriginalMember(owner = "client!cc", name = "c", descriptor = "I")
 	public int anInt991;

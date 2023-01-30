@@ -20,9 +20,9 @@ public final class Class206 implements Runnable {
 
 	@OriginalMember(owner = "client!ro", name = "<init>", descriptor = "(Lclient!ml;)V")
 	public Class206(@OriginalArg(0) Class152 arg0) {
-		@Pc(20) Class32 local20 = arg0.method3768(5, this);
+		@Pc(20) PrivelegedRequest local20 = arg0.startThread(this, 5);
 		while (local20.anInt993 == 0) {
-			Static231.method4022(10L);
+			Static231.sleep(10L);
 		}
 		if (local20.anInt993 == 2) {
 			throw new RuntimeException();
@@ -76,7 +76,7 @@ public final class Class206 implements Runnable {
 		local15.anInt6199 = 1;
 		@Pc(21) Class246 local21 = this.aClass246_9;
 		synchronized (this.aClass246_9) {
-			@Pc(29) Class2_Sub2_Sub10_Sub2 local29 = (Class2_Sub2_Sub10_Sub2) this.aClass246_9.method6336();
+			@Pc(29) Class2_Sub2_Sub10_Sub2 local29 = (Class2_Sub2_Sub10_Sub2) this.aClass246_9.head();
 			while (true) {
 				if (local29 == null) {
 					break;
@@ -86,7 +86,7 @@ public final class Class206 implements Runnable {
 					local15.aBoolean416 = false;
 					return local15;
 				}
-				local29 = (Class2_Sub2_Sub10_Sub2) this.aClass246_9.method6335();
+				local29 = (Class2_Sub2_Sub10_Sub2) this.aClass246_9.next();
 			}
 		}
 		local15.aByteArray91 = arg1.method5260(arg0);

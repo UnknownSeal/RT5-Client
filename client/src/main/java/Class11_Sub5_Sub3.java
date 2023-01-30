@@ -100,7 +100,7 @@ public final class Class11_Sub5_Sub3 extends Class11_Sub5 {
 	@OriginalMember(owner = "client!om", name = "b", descriptor = "(Lclient!wm;B)Lclient!nf;")
 	@Override
 	public Class12_Sub4 method6072(@OriginalArg(0) Class19 arg0) {
-		@Pc(21) Class31 local21 = this.method4395(1024, arg0);
+		@Pc(21) Model local21 = this.method4395(1024, arg0);
 		if (local21 == null) {
 			return null;
 		}
@@ -172,14 +172,14 @@ public final class Class11_Sub5_Sub3 extends Class11_Sub5 {
 	}
 
 	@OriginalMember(owner = "client!om", name = "a", descriptor = "(BLclient!wm;Lclient!gn;)V")
-	private void method4392(@OriginalArg(1) Class19 arg0, @OriginalArg(2) Class31 arg1) {
+	private void method4392(@OriginalArg(1) Class19 arg0, @OriginalArg(2) Model arg1) {
 		@Pc(12) Class114[] local12 = arg1.method3807();
 		@Pc(15) Class163[] local15 = arg1.method3839();
 		if ((this.aClass12_Sub5_4 == null || this.aClass12_Sub5_4.aBoolean322) && (local12 != null || local15 != null)) {
-			this.aClass12_Sub5_4 = new Class12_Sub5(Static114.anInt2348);
+			this.aClass12_Sub5_4 = new Class12_Sub5(Static114.loop);
 		}
 		if (this.aClass12_Sub5_4 != null) {
-			this.aClass12_Sub5_4.method4356(arg0, (long) Static114.anInt2348, local12, local15);
+			this.aClass12_Sub5_4.method4356(arg0, (long) Static114.loop, local12, local15);
 			this.aClass12_Sub5_4.method4360(super.aByte78, super.aShort103, super.aShort104, super.aShort101, super.aShort102);
 		}
 	}
@@ -209,7 +209,7 @@ public final class Class11_Sub5_Sub3 extends Class11_Sub5 {
 	}
 
 	@OriginalMember(owner = "client!om", name = "a", descriptor = "(IBLclient!wm;)Lclient!gn;")
-	private Class31 method4395(@OriginalArg(0) int arg0, @OriginalArg(2) Class19 arg1) {
+	private Model method4395(@OriginalArg(0) int arg0, @OriginalArg(2) Class19 arg1) {
 		@Pc(17) Class91 local17 = Static322.aClass211_2.method5406(this.anInt4732);
 		return local17.method2433(this.anInt4718, this.anInt4742, arg1, arg0, Static39.aClass85_1, this.anInt4728);
 	}
@@ -217,7 +217,7 @@ public final class Class11_Sub5_Sub3 extends Class11_Sub5 {
 	@OriginalMember(owner = "client!om", name = "a", descriptor = "(Lclient!wm;B)V")
 	@Override
 	public void method6069(@OriginalArg(0) Class19 arg0) {
-		@Pc(9) Class31 local9 = this.method4395(0, arg0);
+		@Pc(9) Model local9 = this.method4395(0, arg0);
 		if (local9 == null) {
 			return;
 		}

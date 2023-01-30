@@ -21,7 +21,7 @@ public final class Static235 {
 	public static int anInt3368 = 0;
 
 	@OriginalMember(owner = "client!nj", name = "k", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_72 = new Class79("Loaded sprites", "Sprites geladen.", "Sprites chargés", "Sprites carregados");
+	public static final LocalisedText A_TRANSLATABLE_STRING___72 = new LocalisedText("Loaded sprites", "Sprites geladen.", "Sprites chargés", "Sprites carregados");
 
 	@OriginalMember(owner = "client!nj", name = "a", descriptor = "(Lclient!ml;IILclient!bt;)V")
 	public static void method3338(@OriginalArg(0) Class152 arg0, @OriginalArg(1) int arg1, @OriginalArg(3) Buffer arg2) {
@@ -30,10 +30,10 @@ public final class Static235 {
 		local9.anInt7156 = arg2.mg4();
 		local9.anIntArray491 = new int[local9.anInt7154];
 		local9.anIntArray493 = new int[local9.anInt7154];
-		local9.aClass32Array1 = new Class32[local9.anInt7154];
+		local9.aPrivelegedRequestArray1 = new PrivelegedRequest[local9.anInt7154];
 		local9.aByteArrayArrayArray17 = new byte[local9.anInt7154][][];
 		local9.anIntArray492 = new int[local9.anInt7154];
-		local9.aClass32Array2 = new Class32[local9.anInt7154];
+		local9.aPrivelegedRequestArray2 = new PrivelegedRequest[local9.anInt7154];
 		for (@Pc(56) int local56 = 0; local56 < local9.anInt7154; local56++) {
 			try {
 				@Pc(62) int local62 = arg2.g1();
@@ -49,7 +49,7 @@ public final class Static235 {
 					}
 					local9.anIntArray493[local56] = local62;
 					local9.anIntArray492[local56] = local84;
-					local9.aClass32Array1[local56] = arg0.method3761(Static17.method4211(local78), local82);
+					local9.aPrivelegedRequestArray1[local56] = arg0.method3761(Static17.classForName(local78), local82);
 				} else if (local62 == 3 || local62 == 4) {
 					local78 = arg2.gjstr();
 					local82 = arg2.gjstr();
@@ -70,9 +70,9 @@ public final class Static235 {
 					local9.anIntArray493[local56] = local62;
 					@Pc(192) Class[] local192 = new Class[local84];
 					for (local167 = 0; local167 < local84; local167++) {
-						local192[local167] = Static17.method4211(local139[local167]);
+						local192[local167] = Static17.classForName(local139[local167]);
 					}
-					local9.aClass32Array2[local56] = arg0.method3747(Static17.method4211(local78), local82, local192);
+					local9.aPrivelegedRequestArray2[local56] = arg0.method3747(Static17.classForName(local78), local82, local192);
 					local9.aByteArrayArrayArray17[local56] = local156;
 				}
 			} catch (@Pc(231) ClassNotFoundException local231) {
@@ -116,7 +116,7 @@ public final class Static235 {
 			Static211.method3724();
 			return true;
 		} catch (@Pc(21) Exception local21) {
-			@Pc(81) String local81 = "T2 - " + (Static231.aClass89_164 == null ? -1 : Static231.aClass89_164.method2399()) + "," + (Static66.aClass89_57 == null ? -1 : Static66.aClass89_57.method2399()) + "," + (Static39.aClass89_35 == null ? -1 : Static39.aClass89_35.method2399()) + " - " + Static82.anInt1836 + "," + (Static164.anInt3140 + Static17.aClass11_Sub5_Sub2_Sub1_3.anIntArray316[0]) + "," + (Static148.anInt2719 + Static17.aClass11_Sub5_Sub2_Sub1_3.anIntArray317[0]) + " - ";
+			@Pc(81) String local81 = "T2 - " + (Static231.aClass89_164 == null ? -1 : Static231.aClass89_164.method2399()) + "," + (Static66.aClass89_57 == null ? -1 : Static66.aClass89_57.method2399()) + "," + (Static39.aClass89_35 == null ? -1 : Static39.aClass89_35.method2399()) + " - " + Static82.anInt1836 + "," + (Static164.originX + Static17.aClass11_Sub5_Sub2_Sub1_3.anIntArray316[0]) + "," + (Static148.originZ + Static17.aClass11_Sub5_Sub2_Sub1_3.anIntArray317[0]) + " - ";
 			for (@Pc(83) int local83 = 0; local83 < Static82.anInt1836 && local83 < 50; local83++) {
 				local81 = local81 + Static212.aClass2_Sub4_Sub2_3.data[local83] + ",";
 			}

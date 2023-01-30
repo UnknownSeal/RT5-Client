@@ -17,7 +17,7 @@ public final class Static162 {
 	public static final int[] anIntArray188 = new int[50];
 
 	@OriginalMember(owner = "client!jh", name = "a", descriptor = "(IZ)I")
-	public static int method2976(@OriginalArg(0) int arg0) {
+	public static int clp2(@OriginalArg(0) int arg0) {
 		@Pc(9) int local9 = arg0 - 1;
 		@Pc(15) int local15 = local9 | local9 >>> 1;
 		@Pc(21) int local21 = local15 | local15 >>> 2;

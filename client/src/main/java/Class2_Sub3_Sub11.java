@@ -19,7 +19,7 @@ public final class Class2_Sub3_Sub11 extends Class2_Sub3 {
 	private int anInt2182 = 0;
 
 	static {
-		new Class79("Please wait until you are logged out of your previous channel.", "Bitte warte, bis du den vorherigen Chatraum verlassen hast.", "Veuillez attendre d'être déconnecté(e) de votre canal précédent.", "Aguarde até se desconectar do canal anterior.");
+		new LocalisedText("Please wait until you are logged out of your previous channel.", "Bitte warte, bis du den vorherigen Chatraum verlassen hast.", "Veuillez attendre d'être déconnecté(e) de votre canal précédent.", "Aguarde até se desconectar do canal anterior.");
 	}
 
 	@OriginalMember(owner = "client!ft", name = "<init>", descriptor = "()V")

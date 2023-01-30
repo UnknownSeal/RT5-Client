@@ -17,13 +17,13 @@ public final class Static78 {
 	public static final short[] aShortArray123 = new short[] { 6798, 8741, 25238, 4626, 4550 };
 
 	@OriginalMember(owner = "client!ei", name = "h", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_128 = new Class79("Loaded interfaces", "Benutzeroberfläche geladen.", "Interfaces chargées", "Interfaces carregadas");
+	public static final LocalisedText A_TRANSLATABLE_STRING___128 = new LocalisedText("Loaded interfaces", "Benutzeroberfläche geladen.", "Interfaces chargées", "Interfaces carregadas");
 
 	@OriginalMember(owner = "client!ei", name = "i", descriptor = "S")
 	public static short aShort86 = 1;
 
 	@OriginalMember(owner = "client!ei", name = "k", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_129 = new Class79("Your friend list is full. Max of 100 for free users, and 200 for members.", "Deine Freunde-Liste ist voll! Maximale Einträge: Mitglieder 200/freie Spieler 100", "Votre liste d'amis est pleine (100 noms maximum pour la version gratuite et 200 pour les abonnés).", "Sua lista de amigos está cheia. O limite é 100 para os usuários não pagantes e 200 para os membros.");
+	public static final LocalisedText A_TRANSLATABLE_STRING___129 = new LocalisedText("Your friend list is full. Max of 100 for free users, and 200 for members.", "Deine Freunde-Liste ist voll! Maximale Einträge: Mitglieder 200/freie Spieler 100", "Votre liste d'amis est pleine (100 noms maximum pour la version gratuite et 200 pour les abonnés).", "Sua lista de amigos está cheia. O limite é 100 para os usuários não pagantes e 200 para os membros.");
 
 	@OriginalMember(owner = "client!ei", name = "l", descriptor = "Lclient!h;")
 	public static final Class89 aClass89_224 = new Class89(31, 8);
@@ -43,7 +43,7 @@ public final class Static78 {
 			throw new IllegalArgumentException("Non cp1252 character 0x" + Integer.toString(local12, 16) + " provided");
 		}
 		if (local12 >= 128 && local12 < 160) {
-			@Pc(43) char local43 = Static172.aCharArray2[local12 - 128];
+			@Pc(43) char local43 = Static172.CP1252_TABLE[local12 - 128];
 			if (local43 == '\u0000') {
 				local43 = '?';
 			}

@@ -10,7 +10,7 @@ public final class Class2_Sub3_Sub31 extends Class2_Sub3 {
 	private int anInt5838 = 32768;
 
 	static {
-		new Class79(" left the channel.", " hat den Chatraum verlassen.", " a quitté le canal.", " deixou o canal.");
+		new LocalisedText(" left the channel.", " hat den Chatraum verlassen.", " a quitté le canal.", " deixou o canal.");
 	}
 
 	@OriginalMember(owner = "client!sa", name = "<init>", descriptor = "()V")

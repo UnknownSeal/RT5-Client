@@ -15,7 +15,7 @@ public final class Static61 {
 	public static Class197 aClass197_12;
 
 	@OriginalMember(owner = "client!dj", name = "Y", descriptor = "Lclient!hu;")
-	public static final Class98 aClass98_5 = new Class98(8);
+	public static final SoftLruHashTable A_SOFT_LRU_HASH_TABLE___5 = new SoftLruHashTable(8);
 
 	@OriginalMember(owner = "client!dj", name = "bb", descriptor = "Ljava/util/Random;")
 	public static final Random aRandom1 = new Random();
@@ -26,7 +26,7 @@ public final class Static61 {
 			return;
 		}
 		if (Static384.anInt7178 >= 100 && !Static381.aBoolean482 || Static384.anInt7178 >= 200) {
-			Static207.method3699(Static78.aClass79_129.method2267(Static295.anInt5581));
+			Static207.method3699(Static78.A_TRANSLATABLE_STRING___129.getLocalisedText(Static295.anInt5581));
 			return;
 		}
 		@Pc(33) String local33 = Static135.method2537(arg0);
@@ -37,13 +37,13 @@ public final class Static61 {
 		for (@Pc(38) int local38 = 0; local38 < Static384.anInt7178; local38++) {
 			@Pc(46) String local46 = Static135.method2537(Static17.aStringArray43[local38]);
 			if (local46 != null && local46.equals(local33)) {
-				Static207.method3699(arg0 + Static332.aClass79_131.method2267(Static295.anInt5581));
+				Static207.method3699(arg0 + Static332.A_TRANSLATABLE_STRING___131.getLocalisedText(Static295.anInt5581));
 				return;
 			}
 			if (Static319.aStringArray54[local38] != null) {
 				local78 = Static135.method2537(Static319.aStringArray54[local38]);
 				if (local78 != null && local78.equals(local33)) {
-					Static207.method3699(arg0 + Static332.aClass79_131.method2267(Static295.anInt5581));
+					Static207.method3699(arg0 + Static332.A_TRANSLATABLE_STRING___131.getLocalisedText(Static295.anInt5581));
 					return;
 				}
 			}
@@ -51,19 +51,19 @@ public final class Static61 {
 		for (@Pc(108) int local108 = 0; local108 < Static301.anInt5700; local108++) {
 			local78 = Static135.method2537(Static226.aStringArray35[local108]);
 			if (local78 != null && local78.equals(local33)) {
-				Static207.method3699(Static150.aClass79_64.method2267(Static295.anInt5581) + arg0 + Static151.aClass79_65.method2267(Static295.anInt5581));
+				Static207.method3699(Static150.A_TRANSLATABLE_STRING___64.getLocalisedText(Static295.anInt5581) + arg0 + Static151.A_TRANSLATABLE_STRING___65.getLocalisedText(Static295.anInt5581));
 				return;
 			}
 			if (Static371.aStringArray66[local108] != null) {
 				@Pc(151) String local151 = Static135.method2537(Static371.aStringArray66[local108]);
 				if (local151 != null && local151.equals(local33)) {
-					Static207.method3699(Static150.aClass79_64.method2267(Static295.anInt5581) + arg0 + Static151.aClass79_65.method2267(Static295.anInt5581));
+					Static207.method3699(Static150.A_TRANSLATABLE_STRING___64.getLocalisedText(Static295.anInt5581) + arg0 + Static151.A_TRANSLATABLE_STRING___65.getLocalisedText(Static295.anInt5581));
 					return;
 				}
 			}
 		}
 		if (Static135.method2537(Static17.aClass11_Sub5_Sub2_Sub1_3.aString41).equals(local33)) {
-			Static207.method3699(Static122.aClass79_54.method2267(Static295.anInt5581));
+			Static207.method3699(Static122.A_TRANSLATABLE_STRING___54.getLocalisedText(Static295.anInt5581));
 		} else {
 			Static91.method1960(Static148.aClass145_104);
 			Static257.aClass2_Sub4_Sub2_4.p1(Static27.method872(arg0));
@@ -104,7 +104,7 @@ public final class Static61 {
 
 	@OriginalMember(owner = "client!dj", name = "a", descriptor = "(IIBLclient!r;)Lclient!vj;")
 	public static Class2_Sub2_Sub17 method1672(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) Class197 arg2) {
-		@Pc(14) Buffer local14 = new Buffer(arg2.method5088(arg0, arg1));
+		@Pc(14) Buffer local14 = new Buffer(arg2.fetchFile(arg1, arg0));
 		@Pc(54) Class2_Sub2_Sub17 local54 = new Class2_Sub2_Sub17(arg0, local14.gjstr(), local14.gjstr(), local14.mg4(), local14.mg4(), local14.g1() == 1, local14.g1(), local14.g1());
 		@Pc(58) int local58 = local14.g1();
 		for (@Pc(60) int local60 = 0; local60 < local58; local60++) {
@@ -116,11 +116,11 @@ public final class Static61 {
 
 	@OriginalMember(owner = "client!dj", name = "c", descriptor = "(B)V")
 	public static void method1673() {
-		for (@Pc(5) int local5 = 0; local5 < Static166.anInt3187; local5++) {
-			@Pc(13) int local13 = Static211.anIntArray230[local5];
-			@Pc(17) Class11_Sub5_Sub2_Sub2 local17 = Static365.aClass11_Sub5_Sub2_Sub2Array1[local13];
+		for (@Pc(5) int local5 = 0; local5 < Static166.size; local5++) {
+			@Pc(13) int local13 = Static211.ids[local5];
+			@Pc(17) Npc local17 = Static365.npcs[local13];
 			if (local17 != null) {
-				Static93.method1999(local17, local17.aClass71_1.anInt2041);
+				Static93.method1999(local17, local17.type.size);
 			}
 		}
 	}

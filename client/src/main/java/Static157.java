@@ -11,20 +11,20 @@ public final class Static157 {
 	public static Class13 aClass13_10;
 
 	@OriginalMember(owner = "client!ja", name = "o", descriptor = "Lclient!gn;")
-	public static Class31 aClass31_4;
+	public static Model aModel_4;
 
 	@OriginalMember(owner = "client!ja", name = "g", descriptor = "[I")
 	public static final int[] anIntArray180 = new int[4];
 
 	@OriginalMember(owner = "client!ja", name = "a", descriptor = "()V")
 	public static void method2917() {
-		aClass31_4 = null;
+		aModel_4 = null;
 		aClass13_9 = null;
 	}
 
 	@OriginalMember(owner = "client!ja", name = "a", descriptor = "(Lclient!wm;)V")
 	public static void method2923(@OriginalArg(0) Class19 arg0) {
-		if (aClass31_4 != null) {
+		if (aModel_4 != null) {
 			return;
 		}
 		@Pc(8) Class185 local8 = new Class185(580, 1104, 1);
@@ -65,7 +65,7 @@ public final class Static157 {
 		local8.anIntArray357 = null;
 		local8.anIntArray358 = null;
 		local8.aByteArray61 = null;
-		aClass31_4 = arg0.method2864(local8, 25600, 33, 64, 768);
+		aModel_4 = arg0.method2864(local8, 25600, 33, 64, 768);
 	}
 
 	@OriginalMember(owner = "client!ja", name = "b", descriptor = "(Lclient!wm;)V")

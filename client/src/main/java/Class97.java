@@ -16,7 +16,7 @@ public final class Class97 {
 	private int anInt2579;
 
 	@OriginalMember(owner = "client!hs", name = "b", descriptor = "Lclient!ad;")
-	private final Class4 aClass4_55;
+	private final HashTable aClass4_55;
 
 	@OriginalMember(owner = "client!hs", name = "<init>", descriptor = "(I)V")
 	public Class97(@OriginalArg(0) int arg0) {
@@ -25,7 +25,7 @@ public final class Class97 {
 		@Pc(16) int local16;
 		for (local16 = 1; arg0 > local16 + local16; local16 += local16) {
 		}
-		this.aClass4_55 = new Class4(local16);
+		this.aClass4_55 = new HashTable(local16);
 	}
 
 	@OriginalMember(owner = "client!hs", name = "a", descriptor = "(ILclient!iq;Ljava/lang/Object;)V")
@@ -43,8 +43,8 @@ public final class Class97 {
 	@OriginalMember(owner = "client!hs", name = "a", descriptor = "(Lclient!bq;B)V")
 	private void method2586(@OriginalArg(0) Class2_Sub2_Sub2 arg0) {
 		if (arg0 != null) {
-			arg0.method6467();
-			arg0.method6142();
+			arg0.unlink();
+			arg0.unlinkSecondary();
 			this.anInt2579 += arg0.anInt5040;
 		}
 	}
@@ -66,7 +66,7 @@ public final class Class97 {
 			this.method2586(local36);
 		}
 		@Pc(61) Class2_Sub2_Sub2_Sub2 local61 = new Class2_Sub2_Sub2_Sub2(arg0, arg1, 1);
-		this.aClass4_55.method87(local61, arg0.method1779());
+		this.aClass4_55.put(local61, arg0.method1779());
 		this.aClass246_1.method6340(local61);
 		local61.aLong215 = 0L;
 	}
@@ -76,29 +76,29 @@ public final class Class97 {
 		if (Static281.aClass236_1 == null) {
 			return;
 		}
-		for (@Pc(19) Class2_Sub2_Sub2 local19 = (Class2_Sub2_Sub2) this.aClass246_1.method6336(); local19 != null; local19 = (Class2_Sub2_Sub2) this.aClass246_1.method6335()) {
+		for (@Pc(19) Class2_Sub2_Sub2 local19 = (Class2_Sub2_Sub2) this.aClass246_1.head(); local19 != null; local19 = (Class2_Sub2_Sub2) this.aClass246_1.next()) {
 			if (local19.method4624()) {
 				if (local19.method4625() == null) {
-					local19.method6467();
-					local19.method6142();
+					local19.unlink();
+					local19.unlinkSecondary();
 					this.anInt2579 += local19.anInt5040;
 				}
 			} else if ((long) 5 < ++local19.aLong215) {
 				@Pc(66) Class2_Sub2_Sub2 local66 = Static281.aClass236_1.method6029(local19);
-				this.aClass4_55.method87(local66, local19.aLong232);
-				Static145.method2696(local19, local66);
-				local19.method6467();
-				local19.method6142();
+				this.aClass4_55.put(local66, local19.key);
+				Static145.insertAfter(local66, local19);
+				local19.unlink();
+				local19.unlinkSecondary();
 			}
 		}
 	}
 
 	@OriginalMember(owner = "client!hs", name = "a", descriptor = "(B)V")
 	public void method2590() {
-		for (@Pc(7) Class2_Sub2_Sub2 local7 = (Class2_Sub2_Sub2) this.aClass246_1.method6336(); local7 != null; local7 = (Class2_Sub2_Sub2) this.aClass246_1.method6335()) {
+		for (@Pc(7) Class2_Sub2_Sub2 local7 = (Class2_Sub2_Sub2) this.aClass246_1.head(); local7 != null; local7 = (Class2_Sub2_Sub2) this.aClass246_1.next()) {
 			if (local7.method4624()) {
-				local7.method6467();
-				local7.method6142();
+				local7.unlink();
+				local7.unlinkSecondary();
 				this.anInt2579 += local7.anInt5040;
 			}
 		}
@@ -129,19 +129,19 @@ public final class Class97 {
 				if (local30 != null) {
 					if (local18.method4624()) {
 						@Pc(59) Class2_Sub2_Sub2_Sub2 local59 = new Class2_Sub2_Sub2_Sub2(arg0, local30, local18.anInt5040);
-						this.aClass4_55.method87(local59, local18.aLong232);
+						this.aClass4_55.put(local59, local18.key);
 						this.aClass246_1.method6340(local59);
 						local59.aLong215 = 0L;
-						local18.method6467();
-						local18.method6142();
+						local18.unlink();
+						local18.unlinkSecondary();
 					} else {
 						this.aClass246_1.method6340(local18);
 						local18.aLong215 = 0L;
 					}
 					return local30;
 				}
-				local18.method6467();
-				local18.method6142();
+				local18.unlink();
+				local18.unlinkSecondary();
 				this.anInt2579 += local18.anInt5040;
 			}
 		}

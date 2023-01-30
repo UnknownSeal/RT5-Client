@@ -52,10 +52,10 @@ public final class Static59 {
 		Static13.method345();
 		Static320.method5460();
 		Static177.method3346();
-		Static306.aClass98_49.method2621();
-		Static139.aClass98_18.method2621();
-		Static61.aClass98_5.method2621();
-		Static210.aClass98_31.method2621();
-		Static198.aClass98_30.method2621();
+		Static306.A_SOFT_LRU_HASH_TABLE___49.method2621();
+		Static139.A_SOFT_LRU_HASH_TABLE___18.method2621();
+		Static61.A_SOFT_LRU_HASH_TABLE___5.method2621();
+		Static210.A_SOFT_LRU_HASH_TABLE___31.method2621();
+		Static198.A_SOFT_LRU_HASH_TABLE___30.method2621();
 	}
 }

@@ -31,12 +31,12 @@ public final class Static177 {
 			@Pc(27) byte[] local27 = arg1[local21];
 			if (local27 != null) {
 				@Pc(34) Buffer local34 = new Buffer(local27);
-				local40 = Static291.anIntArray372[local21] >> 8;
-				@Pc(46) int local46 = Static291.anIntArray372[local21] & 0xFF;
-				@Pc(53) int local53 = local40 * 64 - Static164.anInt3140;
-				@Pc(59) int local59 = local46 * 64 - Static148.anInt2719;
+				local40 = Static291.mapSquares[local21] >> 8;
+				@Pc(46) int local46 = Static291.mapSquares[local21] & 0xFF;
+				@Pc(53) int local53 = local40 * 64 - Static164.originX;
+				@Pc(59) int local59 = local46 * 64 - Static148.originZ;
 				Static37.method1135();
-				arg0.method1087(local53, Static171.aClass46Array1, local34, local59, Static148.anInt2719, Static164.anInt3140);
+				arg0.method1087(local53, Static171.aClass46Array1, local34, local59, Static148.originZ, Static164.originX);
 				arg0.method1100(local16, local59, local53, Static190.aClass19_8, local34);
 				if (!arg0.aBoolean73 && Static105.anInt2187 / 8 == local40 && Static9.anInt212 / 8 == local46) {
 					if (local16[0] == -1) {
@@ -49,8 +49,8 @@ public final class Static177 {
 			}
 		}
 		for (@Pc(136) int local136 = 0; local136 < local19; local136++) {
-			@Pc(148) int local148 = (Static291.anIntArray372[local136] >> 8) * 64 - Static164.anInt3140;
-			local40 = (Static291.anIntArray372[local136] & 0xFF) * 64 - Static148.anInt2719;
+			@Pc(148) int local148 = (Static291.mapSquares[local136] >> 8) * 64 - Static164.originX;
+			local40 = (Static291.mapSquares[local136] & 0xFF) * 64 - Static148.originZ;
 			@Pc(163) byte[] local163 = arg1[local136];
 			if (local163 == null && Static9.anInt212 < 800) {
 				Static37.method1135();
@@ -61,9 +61,9 @@ public final class Static177 {
 
 	@OriginalMember(owner = "client!ke", name = "d", descriptor = "(I)V")
 	public static void method3346() {
-		@Pc(1) Class98 local1 = Static98.aClass98_10;
-		synchronized (Static98.aClass98_10) {
-			Static98.aClass98_10.method2621();
+		@Pc(1) SoftLruHashTable local1 = Static98.A_SOFT_LRU_HASH_TABLE___10;
+		synchronized (Static98.A_SOFT_LRU_HASH_TABLE___10) {
+			Static98.A_SOFT_LRU_HASH_TABLE___10.method2621();
 		}
 	}
 

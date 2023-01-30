@@ -3,7 +3,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!jc")
-public final class Class2_Sub19 extends Class2 {
+public final class Class2_Sub19 extends Node {
 
 	@OriginalMember(owner = "client!jc", name = "s", descriptor = "Lclient!nh;")
 	public Class11_Sub5_Sub2_Sub1 aClass11_Sub5_Sub2_Sub1_2;
@@ -27,7 +27,7 @@ public final class Class2_Sub19 extends Class2 {
 	public int anInt2899;
 
 	@OriginalMember(owner = "client!jc", name = "B", descriptor = "Lclient!oe;")
-	public Class11_Sub5_Sub2_Sub2 aClass11_Sub5_Sub2_Sub2_1;
+	public Npc aClass11_Sub5_Sub2_Sub2_1;
 
 	@OriginalMember(owner = "client!jc", name = "E", descriptor = "I")
 	public int anInt2901;
@@ -63,8 +63,8 @@ public final class Class2_Sub19 extends Class2 {
 	public int anInt2900 = 0;
 
 	static {
-		new Class79("Error joining clan channel - please try again later!", "Fehler beim Betreten des Chatraums - bitte versuch es später erneut.", "Erreur lors de la connexion au canal de clan - veuillez réessayer ultérieurement.", "Erro ao entrar no canal do clã. Tente de novo depois!");
-		new Class79("Chat disabled", "Deaktiviert", "Messagerie désactivée", "Bate-papo desativado");
+		new LocalisedText("Error joining clan channel - please try again later!", "Fehler beim Betreten des Chatraums - bitte versuch es später erneut.", "Erreur lors de la connexion au canal de clan - veuillez réessayer ultérieurement.", "Erro ao entrar no canal do clã. Tente de novo depois!");
+		new LocalisedText("Chat disabled", "Deaktiviert", "Messagerie désactivée", "Bate-papo desativado");
 	}
 
 	@OriginalMember(owner = "client!jc", name = "b", descriptor = "(Z)V")
@@ -91,15 +91,15 @@ public final class Class2_Sub19 extends Class2 {
 			@Pc(42) int local42 = Static340.method5763(this.aClass11_Sub5_Sub2_Sub2_1);
 			if (local42 != local8) {
 				this.anInt2894 = local42;
-				@Pc(52) Class71 local52 = this.aClass11_Sub5_Sub2_Sub2_1.aClass71_1;
-				if (local52.anIntArray129 != null) {
-					local52 = local52.method2093(Static214.aClass226_1);
+				@Pc(52) NpcType local52 = this.aClass11_Sub5_Sub2_Sub2_1.type;
+				if (local52.multiNpcs != null) {
+					local52 = local52.getMultiNpc(Static214.aClass226_1);
 				}
 				if (local52 == null) {
 					this.anInt2906 = this.anInt2901 = 0;
 				} else {
-					this.anInt2901 = local52.anInt2022 * 128;
-					this.anInt2906 = local52.anInt2051;
+					this.anInt2901 = local52.soundradius * 128;
+					this.anInt2906 = local52.soundvolume;
 				}
 			}
 		} else if (this.aClass11_Sub5_Sub2_Sub1_2 != null) {

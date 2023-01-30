@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static279 {
 
 	@OriginalMember(owner = "client!qc", name = "a", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_111 = new Class79("Loading title screen - ", "Lade Titelbild - ", "Chargement de l'écran-titre - ", "Carregando tela título - ");
+	public static final LocalisedText A_TRANSLATABLE_STRING___111 = new LocalisedText("Loading title screen - ", "Lade Titelbild - ", "Chargement de l'écran-titre - ", "Carregando tela título - ");
 
 	@OriginalMember(owner = "client!qc", name = "e", descriptor = "Lclient!ha;")
 	public static Class2_Sub16 aClass2_Sub16_1 = null;
@@ -48,7 +48,7 @@ public final class Static279 {
 		arg0.method2890(0, Static250.anInt4665, 350 - Static284.anInt5359, -1);
 		Static52.aClass130_1.method5896(10, -16777216, 350 - Static113.aClass239_2.anInt6846 - 1, -1, "--> " + Static25.aString9);
 		local43 = -1;
-		if (Static114.anInt2348 % 30 > 15) {
+		if (Static114.loop % 30 > 15) {
 			local43 = 16777215;
 		}
 		arg0.method2810(local43, Static113.aClass239_2.method6125("--> " + Static25.aString9.substring(0, Static357.anInt6683)) + 10, -Static113.aClass239_2.anInt6846 + -11 + 350, 12);

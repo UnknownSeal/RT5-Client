@@ -16,7 +16,7 @@ public final class Class2_Sub3_Sub22 extends Class2_Sub3 {
 	private int anInt4019 = 4096;
 
 	static {
-		new Class79("Your clan channel has now been enabled!", "Dein Chatraum ist jetzt eingeschaltet.", "Votre canal de clan est activé !", "Seu canal de clã já está ativado!");
+		new LocalisedText("Your clan channel has now been enabled!", "Dein Chatraum ist jetzt eingeschaltet.", "Votre canal de clan est activé !", "Seu canal de clã já está ativado!");
 	}
 
 	@OriginalMember(owner = "client!na", name = "<init>", descriptor = "()V")

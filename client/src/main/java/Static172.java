@@ -1,7 +1,7 @@
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
-import java.awt.image.ImageObserver;
+
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
@@ -15,7 +15,7 @@ public final class Static172 {
 	public static int anInt3299;
 
 	@OriginalMember(owner = "client!ju", name = "S", descriptor = "[C")
-	public static final char[] aCharArray2 = new char[] { '€', '\u0000', '‚', 'ƒ', '„', '…', '†', '‡', 'ˆ', '‰', 'Š', '‹', 'Œ', '\u0000', 'Ž', '\u0000', '\u0000', '‘', '’', '“', '”', '•', '–', '—', '˜', '™', 'š', '›', 'œ', '\u0000', 'ž', 'Ÿ' };
+	public static final char[] CP1252_TABLE = new char[] { '€', '\u0000', '‚', 'ƒ', '„', '…', '†', '‡', 'ˆ', '‰', 'Š', '‹', 'Œ', '\u0000', 'Ž', '\u0000', '\u0000', '‘', '’', '“', '”', '•', '–', '—', '˜', '™', 'š', '›', 'œ', '\u0000', 'ž', 'Ÿ' };
 
 	@OriginalMember(owner = "client!ju", name = "a", descriptor = "(BIIIII)V")
 	public static void method3283(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4) {
@@ -174,12 +174,4 @@ public final class Static172 {
 		}
 	}
 
-	@OriginalMember(owner = "client!ju", name = "c", descriptor = "(B)Lclient!hi;")
-	public static Class93 method3290() {
-		try {
-			return (Class93) Class.forName("Class93_Sub1").getDeclaredConstructor().newInstance();
-		} catch (@Pc(14) Throwable local14) {
-			return null;
-		}
-	}
 }

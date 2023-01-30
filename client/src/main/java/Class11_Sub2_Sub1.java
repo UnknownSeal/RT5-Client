@@ -28,13 +28,13 @@ public final class Class11_Sub2_Sub1 extends Class11_Sub2 implements Interface6 
 	private final boolean aBoolean66;
 
 	@OriginalMember(owner = "client!bm", name = "O", descriptor = "Lclient!gn;")
-	private Class31 aClass31_1;
+	private Model aModel_1;
 
 	@OriginalMember(owner = "client!bm", name = "Q", descriptor = "Lclient!kb;")
 	private Class2_Sub2_Sub4 aClass2_Sub2_Sub4_1;
 
 	static {
-		new Class79("You have been removed from this channel.", "Du wurdest aus dem Chatraum entfernt.", "Vous avez été supprimé de ce canal.", "Você foi retirado desse canal.");
+		new LocalisedText("You have been removed from this channel.", "Du wurdest aus dem Chatraum entfernt.", "Vous avez été supprimé de ce canal.", "Você foi retirado desse canal.");
 	}
 
 	@OriginalMember(owner = "client!bm", name = "<init>", descriptor = "(Lclient!wm;Lclient!ct;IIIIZIZ)V")
@@ -55,10 +55,10 @@ public final class Class11_Sub2_Sub1 extends Class11_Sub2 implements Interface6 
 		}
 		@Pc(85) Class105 local85 = this.method940(local70, this.aBoolean66, arg0);
 		if (local85 != null) {
-			this.aClass31_1 = local85.aClass31_3;
+			this.aModel_1 = local85.aModel_3;
 			this.aClass2_Sub2_Sub4_1 = local85.aClass2_Sub2_Sub4_3;
 			if (this.aBoolean64) {
-				this.aClass31_1 = this.aClass31_1.method3799((byte) 0, local70, false);
+				this.aModel_1 = this.aModel_1.method3799((byte) 0, local70, false);
 				return;
 			}
 		}
@@ -68,8 +68,8 @@ public final class Class11_Sub2_Sub1 extends Class11_Sub2 implements Interface6 
 	@Override
 	public void method6068() {
 		this.aBoolean64 = false;
-		if (this.aClass31_1 != null) {
-			this.aClass31_1.method3813(this.aClass31_1.method3826() & 0xFFFF7FFF);
+		if (this.aModel_1 != null) {
+			this.aModel_1.method3813(this.aModel_1.method3826() & 0xFFFF7FFF);
 		}
 	}
 
@@ -86,19 +86,19 @@ public final class Class11_Sub2_Sub1 extends Class11_Sub2 implements Interface6 
 	}
 
 	@OriginalMember(owner = "client!bm", name = "a", descriptor = "(IILclient!wm;)Lclient!gn;")
-	private Class31 method936(@OriginalArg(0) int arg0, @OriginalArg(2) Class19 arg1) {
-		if (this.aClass31_1 != null && arg1.method2863(this.aClass31_1.method3826(), arg0) == 0) {
-			return this.aClass31_1;
+	private Model method936(@OriginalArg(0) int arg0, @OriginalArg(2) Class19 arg1) {
+		if (this.aModel_1 != null && arg1.method2863(this.aModel_1.method3826(), arg0) == 0) {
+			return this.aModel_1;
 		} else {
 			@Pc(32) Class105 local32 = this.method940(arg0, false, arg1);
-			return local32 == null ? null : local32.aClass31_3;
+			return local32 == null ? null : local32.aModel_3;
 		}
 	}
 
 	@OriginalMember(owner = "client!bm", name = "b", descriptor = "(Lclient!wm;B)Lclient!nf;")
 	@Override
 	public Class12_Sub4 method6072(@OriginalArg(0) Class19 arg0) {
-		if (this.aClass31_1 == null) {
+		if (this.aModel_1 == null) {
 			return null;
 		}
 		@Pc(11) Class14 local11 = arg0.method2808();
@@ -107,7 +107,7 @@ public final class Class11_Sub2_Sub1 extends Class11_Sub2 implements Interface6 
 		if (this.aBoolean63) {
 			local21 = Static147.method2706(1);
 		}
-		this.aClass31_1.method3834(local11, local21 == null ? null : local21.aClass12_Sub2Array1[0], 0);
+		this.aModel_1.method3834(local11, local21 == null ? null : local21.aClass12_Sub2Array1[0], 0);
 		return local21;
 	}
 
@@ -116,8 +116,8 @@ public final class Class11_Sub2_Sub1 extends Class11_Sub2 implements Interface6 
 	public void method6074(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class19 arg3, @OriginalArg(4) boolean arg4, @OriginalArg(5) Class11 arg5) {
 		if (arg5 instanceof Class11_Sub2_Sub1) {
 			@Pc(12) Class11_Sub2_Sub1 local12 = (Class11_Sub2_Sub1) arg5;
-			if (this.aClass31_1 != null && local12.aClass31_1 != null) {
-				this.aClass31_1.method3802(local12.aClass31_1, arg0, arg2, arg1, arg4);
+			if (this.aModel_1 != null && local12.aModel_1 != null) {
+				this.aModel_1.method3802(local12.aModel_1, arg0, arg2, arg1, arg4);
 			}
 		}
 	}
@@ -141,14 +141,14 @@ public final class Class11_Sub2_Sub1 extends Class11_Sub2 implements Interface6 
 	@OriginalMember(owner = "client!bm", name = "b", descriptor = "(I)V")
 	@Override
 	public void method6081() {
-		if (this.aClass31_1 != null) {
-			this.aClass31_1.method3809();
+		if (this.aModel_1 != null) {
+			this.aModel_1.method3809();
 		}
 	}
 
 	@OriginalMember(owner = "client!bm", name = "a", descriptor = "(ILclient!wm;I)Lclient!gn;")
 	@Override
-	public Class31 method6087(@OriginalArg(0) int arg0, @OriginalArg(1) Class19 arg1) {
+	public Model method6087(@OriginalArg(0) int arg0, @OriginalArg(1) Class19 arg1) {
 		return this.method936(arg0, arg1);
 	}
 
@@ -207,7 +207,7 @@ public final class Class11_Sub2_Sub1 extends Class11_Sub2 implements Interface6 
 	@OriginalMember(owner = "client!bm", name = "a", descriptor = "(IIBLclient!wm;)Z")
 	@Override
 	public boolean method6067(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) Class19 arg2) {
-		@Pc(14) Class31 local14 = this.method936(65536, arg2);
+		@Pc(14) Model local14 = this.method936(65536, arg2);
 		if (local14 == null) {
 			return false;
 		} else {

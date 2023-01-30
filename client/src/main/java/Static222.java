@@ -29,7 +29,7 @@ public final class Static222 {
 			}
 			for (@Pc(45) int local45 = 0; local45 < local23; local45++) {
 				if (Static26.aClass161ArrayArray1[arg0][local45] == null) {
-					@Pc(59) byte[] local59 = Static283.aClass197_68.method5088(local45, arg0);
+					@Pc(59) byte[] local59 = Static283.aClass197_68.fetchFile(arg0, local45);
 					if (local59 != null) {
 						@Pc(71) Class161 local71 = Static26.aClass161ArrayArray1[arg0][local45] = new Class161();
 						local71.anInt4317 = local45 + (arg0 << 16);

@@ -17,10 +17,10 @@ public final class Static270 {
 	public static boolean aBoolean371 = false;
 
 	@OriginalMember(owner = "client!pi", name = "a", descriptor = "(BJ)V")
-	public static void method4552(@OriginalArg(1) long arg0) {
+	public static void sleepUninterruptibly(@OriginalArg(1) long millis) {
 		try {
-			Thread.sleep(arg0);
-		} catch (@Pc(15) InterruptedException local15) {
+			Thread.sleep(millis);
+		} catch (@Pc(15) InterruptedException exception) {
 		}
 	}
 

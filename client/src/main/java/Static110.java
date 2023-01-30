@@ -21,9 +21,9 @@ public final class Static110 {
 		if (!arg0.method3764()) {
 			return new Class169[0];
 		}
-		@Pc(21) Class32 local21 = arg0.method3771();
+		@Pc(21) PrivelegedRequest local21 = arg0.method3771();
 		while (local21.anInt993 == 0) {
-			Static231.method4022(10L);
+			Static231.sleep(10L);
 		}
 		if (local21.anInt993 == 2) {
 			return new Class169[0];

@@ -18,7 +18,7 @@ public final class Static316 {
 		@Pc(15) Class2_Sub2_Sub7 local15 = (Class2_Sub2_Sub7) Static296.aClass4_109.method90((long) arg1 | (long) arg0 << 32);
 		if (local15 == null) {
 			local15 = new Class2_Sub2_Sub7(arg0, arg1);
-			Static296.aClass4_109.method87(local15, local15.aLong232);
+			Static296.aClass4_109.put(local15, local15.key);
 		}
 		return local15;
 	}

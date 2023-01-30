@@ -169,7 +169,7 @@ public final class Static79 {
 		if (arg0 < 3 && Static325.method5544(arg7, arg1)) {
 			local30 = arg0 + 1;
 		}
-		if (!Static218.aClass177_Sub1_2.method4494(Static77.anInt1762) && !Static142.method2661(arg7, Static44.anInt1115, local30, arg1)) {
+		if (!Static218.aClass177_Sub1_2.method4494(Static77.anInt1762) && !Static142.method2661(arg7, Static44.visibleLevel, local30, arg1)) {
 			return;
 		}
 		if (Static330.aClass67ArrayArrayArray3 == null) {

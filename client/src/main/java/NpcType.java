@@ -4,187 +4,187 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!fk")
-public final class Class71 {
+public final class NpcType {
 
 	@OriginalMember(owner = "client!fk", name = "n", descriptor = "[[I")
-	private int[][] anIntArrayArray18;
+	private int[][] modeloffsets;
 
 	@OriginalMember(owner = "client!fk", name = "A", descriptor = "[I")
-	private int[] anIntArray128;
+	private int[] modelids;
 
 	@OriginalMember(owner = "client!fk", name = "F", descriptor = "[I")
-	public int[] anIntArray129;
+	public int[] multiNpcs;
 
 	@OriginalMember(owner = "client!fk", name = "H", descriptor = "[B")
-	private byte[] aByteArray24;
+	private byte[] recol_p;
 
 	@OriginalMember(owner = "client!fk", name = "M", descriptor = "[[I")
 	private int[][] anIntArrayArray19;
 
 	@OriginalMember(owner = "client!fk", name = "O", descriptor = "[S")
-	private short[] aShortArray31;
+	private short[] recol_d;
 
 	@OriginalMember(owner = "client!fk", name = "U", descriptor = "[I")
-	private int[] anIntArray130;
+	private int[] headmodels;
 
 	@OriginalMember(owner = "client!fk", name = "Y", descriptor = "[I")
 	public int[] anIntArray131;
 
 	@OriginalMember(owner = "client!fk", name = "ib", descriptor = "[S")
-	private short[] aShortArray32;
+	private short[] recol_s;
 
 	@OriginalMember(owner = "client!fk", name = "jb", descriptor = "Lclient!ta;")
 	public Class219 aClass219_2;
 
 	@OriginalMember(owner = "client!fk", name = "kb", descriptor = "[S")
-	private short[] aShortArray33;
+	private short[] retex_d;
 
 	@OriginalMember(owner = "client!fk", name = "nb", descriptor = "Lclient!ad;")
-	private Class4 aClass4_41;
+	private HashTable params;
 
 	@OriginalMember(owner = "client!fk", name = "ub", descriptor = "[S")
-	private short[] aShortArray34;
+	private short[] retex_s;
 
 	@OriginalMember(owner = "client!fk", name = "wb", descriptor = "I")
 	public int anInt2048;
 
 	@OriginalMember(owner = "client!fk", name = "e", descriptor = "B")
-	public byte aByte14 = -96;
+	public byte shadowcolormodifier1 = -96;
 
 	@OriginalMember(owner = "client!fk", name = "j", descriptor = "Z")
-	public boolean aBoolean142 = true;
+	public boolean hasshadow = true;
 
 	@OriginalMember(owner = "client!fk", name = "h", descriptor = "I")
-	public int anInt2009 = -1;
+	public int crawlsound = -1;
 
 	@OriginalMember(owner = "client!fk", name = "q", descriptor = "Z")
-	public boolean aBoolean143 = true;
+	public boolean rotationflag = true;
 
 	@OriginalMember(owner = "client!fk", name = "l", descriptor = "I")
-	private int anInt2012 = -1;
+	private int multiNpcVarbit = -1;
 
 	@OriginalMember(owner = "client!fk", name = "p", descriptor = "I")
-	private int anInt2014 = 128;
+	private int resize_y = 128;
 
 	@OriginalMember(owner = "client!fk", name = "t", descriptor = "I")
-	public int anInt2017 = -1;
+	public int cursor1op = -1;
 
 	@OriginalMember(owner = "client!fk", name = "z", descriptor = "[Ljava/lang/String;")
-	public final String[] aStringArray14 = new String[5];
+	public final String[] ops = new String[5];
 
 	@OriginalMember(owner = "client!fk", name = "V", descriptor = "I")
-	public int anInt2032 = -1;
+	public int bastypeid = -1;
 
 	@OriginalMember(owner = "client!fk", name = "Q", descriptor = "I")
-	public int anInt2028 = -1;
+	public int hitbarid = -1;
 
 	@OriginalMember(owner = "client!fk", name = "y", descriptor = "I")
-	public int anInt2020 = -1;
+	public int cursor2 = -1;
 
 	@OriginalMember(owner = "client!fk", name = "b", descriptor = "S")
-	public short aShort24 = 0;
+	public short shadowcolor1 = 0;
 
 	@OriginalMember(owner = "client!fk", name = "K", descriptor = "I")
-	public int anInt2025 = -1;
+	public int runsound = -1;
 
 	@OriginalMember(owner = "client!fk", name = "i", descriptor = "I")
-	public int anInt2010 = -1;
+	public int iconheight = -1;
 
 	@OriginalMember(owner = "client!fk", name = "eb", descriptor = "Ljava/lang/String;")
-	public String aString19 = "null";
+	public String name = "null";
 
 	@OriginalMember(owner = "client!fk", name = "w", descriptor = "B")
-	public byte aByte16 = 0;
+	public byte defaultmode = 0;
 
 	@OriginalMember(owner = "client!fk", name = "hb", descriptor = "Z")
 	public boolean aBoolean148 = false;
 
 	@OriginalMember(owner = "client!fk", name = "G", descriptor = "I")
-	public int anInt2023 = -1;
+	public int attackcursor = -1;
 
 	@OriginalMember(owner = "client!fk", name = "E", descriptor = "I")
-	public int anInt2022 = 0;
+	public int soundradius = 0;
 
 	@OriginalMember(owner = "client!fk", name = "X", descriptor = "S")
-	public short aShort25 = 0;
+	public short shadowcolor2 = 0;
 
 	@OriginalMember(owner = "client!fk", name = "cb", descriptor = "I")
-	public int anInt2037 = -1;
+	public int mapelement = -1;
 
 	@OriginalMember(owner = "client!fk", name = "N", descriptor = "I")
-	private int anInt2027 = 0;
+	private int contrast = 0;
 
 	@OriginalMember(owner = "client!fk", name = "k", descriptor = "I")
-	public int anInt2011 = -1;
+	public int cursor1 = -1;
 
 	@OriginalMember(owner = "client!fk", name = "D", descriptor = "Z")
-	public boolean aBoolean145 = true;
+	public boolean interactive = true;
 
 	@OriginalMember(owner = "client!fk", name = "r", descriptor = "I")
-	public int anInt2015 = -1;
+	public int walksound = -1;
 
 	@OriginalMember(owner = "client!fk", name = "fb", descriptor = "I")
-	public int anInt2039 = -1;
+	public int vislevel = -1;
 
 	@OriginalMember(owner = "client!fk", name = "gb", descriptor = "Z")
-	public boolean aBoolean147 = true;
+	public boolean minimapdisplay = true;
 
 	@OriginalMember(owner = "client!fk", name = "sb", descriptor = "I")
-	private int anInt2046 = 0;
+	private int ambient = 0;
 
 	@OriginalMember(owner = "client!fk", name = "qb", descriptor = "I")
-	public int anInt2044 = 32;
+	public int rotationspeed = 32;
 
 	@OriginalMember(owner = "client!fk", name = "ob", descriptor = "I")
 	public int anInt2042 = -1;
 
 	@OriginalMember(owner = "client!fk", name = "B", descriptor = "I")
-	private int anInt2021 = -1;
+	private int multiNpcVarp = -1;
 
 	@OriginalMember(owner = "client!fk", name = "db", descriptor = "I")
-	public int anInt2038 = -1;
+	public int idlesound = -1;
 
 	@OriginalMember(owner = "client!fk", name = "tb", descriptor = "I")
-	private int anInt2047 = 128;
+	private int resize_x = 128;
 
 	@OriginalMember(owner = "client!fk", name = "C", descriptor = "B")
-	public byte aByte17 = 4;
+	public byte spawndirection = 4;
 
 	@OriginalMember(owner = "client!fk", name = "T", descriptor = "I")
-	public int anInt2031 = -1;
+	public int opcode138 = -1;
 
 	@OriginalMember(owner = "client!fk", name = "ab", descriptor = "I")
-	public int anInt2035 = -1;
+	public int cursor2op = -1;
 
 	@OriginalMember(owner = "client!fk", name = "mb", descriptor = "I")
-	public int anInt2041 = 1;
+	public int size = 1;
 
 	@OriginalMember(owner = "client!fk", name = "vb", descriptor = "Z")
-	public boolean aBoolean149 = false;
+	public boolean toprenderpriority = false;
 
 	@OriginalMember(owner = "client!fk", name = "m", descriptor = "B")
-	public byte aByte15 = -16;
+	public byte shadowcolormodifier2 = -16;
 
 	@OriginalMember(owner = "client!fk", name = "I", descriptor = "Z")
 	public boolean aBoolean146 = false;
 
 	@OriginalMember(owner = "client!fk", name = "zb", descriptor = "I")
-	public int anInt2051 = 255;
+	public int soundvolume = 255;
 
 	@OriginalMember(owner = "client!fk", name = "yb", descriptor = "I")
-	public int anInt2050 = -1;
+	public int headicon = -1;
 
 	@OriginalMember(owner = "client!fk", name = "a", descriptor = "(Lclient!ak;ILclient!nb;Lclient!wm;Lclient!gp;IIILclient!nb;I[Lclient!bg;IBLclient!wl;I)Lclient!gn;")
-	public Class31 method2086(@OriginalArg(0) Class7 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Class157 arg2, @OriginalArg(3) Class19 arg3, @OriginalArg(4) Class85 arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) Class157 arg8, @OriginalArg(9) int arg9, @OriginalArg(10) Class20[] arg10, @OriginalArg(11) int arg11, @OriginalArg(13) Interface11 arg12, @OriginalArg(14) int arg13) {
-		if (this.anIntArray129 != null) {
-			@Pc(13) Class71 local13 = this.method2093(arg12);
-			return local13 == null ? null : local13.method2086(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13);
+	public Model getBodyModel(@OriginalArg(0) Class7 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Class157 arg2, @OriginalArg(3) Class19 arg3, @OriginalArg(4) Class85 arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) Class157 arg8, @OriginalArg(9) int arg9, @OriginalArg(10) Class20[] arg10, @OriginalArg(11) int arg11, @OriginalArg(13) Interface11 arg12, @OriginalArg(14) int arg13) {
+		if (this.multiNpcs != null) {
+			@Pc(13) NpcType local13 = this.getMultiNpc(arg12);
+			return local13 == null ? null : local13.getBodyModel(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13);
 		}
 		@Pc(37) int local37 = arg9;
-		if (this.anInt2014 != 128) {
+		if (this.resize_y != 128) {
 			local37 = arg9 | 0x2;
 		}
-		if (this.anInt2047 != 128) {
+		if (this.resize_x != 128) {
 			local37 |= 0x5;
 		}
 		@Pc(65) boolean local65 = arg2 != null || arg8 != null;
@@ -308,10 +308,10 @@ public final class Class71 {
 				local37 |= 0x200;
 			}
 		}
-		@Pc(520) Class98 local520 = this.aClass219_2.aClass98_54;
-		@Pc(537) Class31 local537;
-		synchronized (this.aClass219_2.aClass98_54) {
-			local537 = (Class31) this.aClass219_2.aClass98_54.method2612((long) (this.anInt2048 | arg3.anInt2836 << 16));
+		@Pc(520) SoftLruHashTable local520 = this.aClass219_2.aSoftLruHashTable_54;
+		@Pc(537) Model local537;
+		synchronized (this.aClass219_2.aSoftLruHashTable_54) {
+			local537 = (Model) this.aClass219_2.aSoftLruHashTable_54.method2612((long) (this.anInt2048 | arg3.anInt2836 << 16));
 		}
 		if (local537 == null || (local537.method3826() & local37) != local37) {
 			if (local537 != null) {
@@ -320,50 +320,50 @@ public final class Class71 {
 			local359 = local37;
 			@Pc(566) boolean local566 = false;
 			@Pc(570) Class197 local570 = this.aClass219_2.aClass197_88;
-			@Pc(574) int local574;
+			@Pc(574) int i;
 			synchronized (this.aClass219_2.aClass197_88) {
-				local574 = 0;
+				i = 0;
 				while (true) {
-					if (local574 >= this.anIntArray128.length) {
+					if (i >= this.modelids.length) {
 						break;
 					}
-					if (this.anIntArray128[local574] != -1 && !this.aClass219_2.aClass197_88.method5087(0, this.anIntArray128[local574])) {
+					if (this.modelids[i] != -1 && !this.aClass219_2.aClass197_88.method5087(0, this.modelids[i])) {
 						local566 = true;
 					}
-					local574++;
+					i++;
 				}
 			}
 			if (local566) {
 				return null;
 			}
-			@Pc(621) Class185[] local621 = new Class185[this.anIntArray128.length];
-			for (local574 = 0; local574 < this.anIntArray128.length; local574++) {
-				if (this.anIntArray128[local574] != -1) {
+			@Pc(621) Class185[] models = new Class185[this.modelids.length];
+			for (i = 0; i < this.modelids.length; i++) {
+				if (this.modelids[i] != -1) {
 					@Pc(636) Class197 local636 = this.aClass219_2.aClass197_88;
 					synchronized (this.aClass219_2.aClass197_88) {
-						local621[local574] = Static298.method2426(this.aClass219_2.aClass197_88, this.anIntArray128[local574]);
+						models[i] = Static298.method2426(this.aClass219_2.aClass197_88, this.modelids[i]);
 					}
-					if (this.anIntArrayArray18 != null && this.anIntArrayArray18[local574] != null && local621[local574] != null) {
-						local621[local574].method4655(this.anIntArrayArray18[local574][0], this.anIntArrayArray18[local574][2], this.anIntArrayArray18[local574][1]);
+					if (this.modeloffsets != null && this.modeloffsets[i] != null && models[i] != null) {
+						models[i].translate(this.modeloffsets[i][0], this.modeloffsets[i][2], this.modeloffsets[i][1]);
 					}
 				}
 			}
-			@Pc(700) Class222 local700 = null;
-			if (this.anInt2032 != -1) {
-				local700 = arg0.method245(this.anInt2032);
+			@Pc(700) BasType basType = null;
+			if (this.bastypeid != -1) {
+				basType = arg0.method245(this.bastypeid);
 			}
 			@Pc(718) int local718;
-			if (local700 != null && local700.anIntArrayArray53 != null) {
-				for (local718 = 0; local718 < local700.anIntArrayArray53.length; local718++) {
-					if (local700.anIntArrayArray53[local718] != null && local718 < local621.length && local621[local718] != null) {
-						@Pc(742) int local742 = local700.anIntArrayArray53[local718][0];
-						@Pc(749) int local749 = local700.anIntArrayArray53[local718][1];
-						@Pc(756) int local756 = local700.anIntArrayArray53[local718][2];
-						@Pc(765) int local765 = local700.anIntArrayArray53[local718][3] << 3;
-						@Pc(774) int local774 = local700.anIntArrayArray53[local718][4] << 3;
-						@Pc(783) int local783 = local700.anIntArrayArray53[local718][5] << 3;
+			if (basType != null && basType.equipmentTransforms != null) {
+				for (local718 = 0; local718 < basType.equipmentTransforms.length; local718++) {
+					if (basType.equipmentTransforms[local718] != null && local718 < models.length && models[local718] != null) {
+						@Pc(742) int local742 = basType.equipmentTransforms[local718][0];
+						@Pc(749) int local749 = basType.equipmentTransforms[local718][1];
+						@Pc(756) int local756 = basType.equipmentTransforms[local718][2];
+						@Pc(765) int local765 = basType.equipmentTransforms[local718][3] << 3;
+						@Pc(774) int local774 = basType.equipmentTransforms[local718][4] << 3;
+						@Pc(783) int local783 = basType.equipmentTransforms[local718][5] << 3;
 						if (this.anIntArrayArray19 == null) {
-							this.anIntArrayArray19 = new int[local700.anIntArrayArray53.length][];
+							this.anIntArrayArray19 = new int[basType.equipmentTransforms.length][];
 						}
 						if (this.anIntArrayArray19[local718] == null) {
 							@Pc(805) int[] local805 = this.anIntArrayArray19[local718] = new int[15];
@@ -399,48 +399,48 @@ public final class Class71 {
 							local805[11] = local756;
 						}
 						if (local765 != 0 || local774 != 0 || local783 != 0) {
-							local621[local718].method4663(local774, local783, local765);
+							models[local718].method4663(local774, local783, local765);
 						}
 						if (local742 != 0 || local749 != 0 || local756 != 0) {
-							local621[local718].method4655(local742, local756, local749);
+							models[local718].translate(local742, local756, local749);
 						}
 					}
 				}
 			}
 			@Pc(1152) Class185 local1152;
-			if (local621.length == 1) {
-				local1152 = local621[0];
+			if (models.length == 1) {
+				local1152 = models[0];
 			} else {
-				local1152 = new Class185(local621, local621.length);
+				local1152 = new Class185(models, models.length);
 			}
-			if (this.aShortArray32 != null) {
+			if (this.recol_s != null) {
 				local359 = local37 | 0x2000;
 			}
-			if (this.aShortArray33 != null) {
+			if (this.retex_d != null) {
 				local359 |= 0x4000;
 			}
-			local537 = arg3.method2864(local1152, local359, this.aClass219_2.anInt6108, this.anInt2046 + 64, this.anInt2027 + 850);
-			if (this.aShortArray32 != null) {
-				for (local718 = 0; local718 < this.aShortArray32.length; local718++) {
-					if (this.aByteArray24 == null || this.aByteArray24.length <= local718) {
-						local537.method3837(this.aShortArray32[local718], this.aShortArray31[local718]);
+			local537 = arg3.method2864(local1152, local359, this.aClass219_2.anInt6108, this.ambient + 64, this.contrast + 850);
+			if (this.recol_s != null) {
+				for (local718 = 0; local718 < this.recol_s.length; local718++) {
+					if (this.recol_p == null || this.recol_p.length <= local718) {
+						local537.method3837(this.recol_s[local718], this.recol_d[local718]);
 					} else {
-						local537.method3837(this.aShortArray32[local718], Static258.aShortArray95[this.aByteArray24[local718] & 0xFF]);
+						local537.method3837(this.recol_s[local718], Static258.aShortArray95[this.recol_p[local718] & 0xFF]);
 					}
 				}
 			}
-			if (this.aShortArray33 != null) {
-				for (local718 = 0; local718 < this.aShortArray33.length; local718++) {
-					local537.method3815(this.aShortArray33[local718], this.aShortArray34[local718]);
+			if (this.retex_d != null) {
+				for (local718 = 0; local718 < this.retex_d.length; local718++) {
+					local537.method3815(this.retex_d[local718], this.retex_s[local718]);
 				}
 			}
 			local537.method3813(local37);
-			@Pc(1272) Class98 local1272 = this.aClass219_2.aClass98_54;
-			synchronized (this.aClass219_2.aClass98_54) {
-				this.aClass219_2.aClass98_54.method2624((long) (arg3.anInt2836 << 16 | this.anInt2048), local537);
+			@Pc(1272) SoftLruHashTable local1272 = this.aClass219_2.aSoftLruHashTable_54;
+			synchronized (this.aClass219_2.aSoftLruHashTable_54) {
+				this.aClass219_2.aSoftLruHashTable_54.method2624((long) (arg3.anInt2836 << 16 | this.anInt2048), local537);
 			}
 		}
-		@Pc(1300) Class31 local1300 = local537.method3799((byte) 4, local37, true);
+		@Pc(1300) Model local1300 = local537.method3799((byte) 4, local37, true);
 		if (!local65) {
 			return local1300;
 		}
@@ -465,29 +465,29 @@ public final class Class71 {
 			Static116.aClass2_Sub2_Sub13Array3[local1427] = null;
 			Static168.aClass157Array42[local1427] = null;
 		}
-		if (this.anInt2047 != 128 || this.anInt2014 != 128) {
-			local1300.method3841(this.anInt2047, this.anInt2014, this.anInt2047);
+		if (this.resize_x != 128 || this.resize_y != 128) {
+			local1300.method3841(this.resize_x, this.resize_y, this.resize_x);
 		}
 		local1300.method3813(arg9);
 		return local1300;
 	}
 
 	@OriginalMember(owner = "client!fk", name = "a", descriptor = "(IIIILclient!wm;Lclient!nb;ZLclient!wl;Lclient!gp;)Lclient!gn;")
-	public Class31 method2088(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) Class19 arg3, @OriginalArg(5) Class157 arg4, @OriginalArg(7) Interface11 arg5, @OriginalArg(8) Class85 arg6) {
-		if (this.anIntArray129 != null) {
-			@Pc(13) Class71 local13 = this.method2093(arg5);
-			return local13 == null ? null : local13.method2088(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
-		} else if (this.anIntArray130 == null) {
+	public Model getHeadModel(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) Class19 arg3, @OriginalArg(5) Class157 arg4, @OriginalArg(7) Interface11 arg5, @OriginalArg(8) Class85 arg6) {
+		if (this.multiNpcs != null) {
+			@Pc(13) NpcType type = this.getMultiNpc(arg5);
+			return type == null ? null : type.getHeadModel(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+		} else if (this.headmodels == null) {
 			return null;
 		} else {
 			@Pc(36) int local36 = 1024;
 			if (arg4 != null && arg2 != -1) {
 				local36 = arg4.method3989(arg2, true, arg1) | 0x400;
 			}
-			@Pc(63) Class98 local63 = this.aClass219_2.aClass98_55;
-			@Pc(80) Class31 local80;
-			synchronized (this.aClass219_2.aClass98_55) {
-				local80 = (Class31) this.aClass219_2.aClass98_55.method2612((long) (arg3.anInt2836 << 16 | this.anInt2048));
+			@Pc(63) SoftLruHashTable local63 = this.aClass219_2.aSoftLruHashTable_55;
+			@Pc(80) Model local80;
+			synchronized (this.aClass219_2.aSoftLruHashTable_55) {
+				local80 = (Model) this.aClass219_2.aSoftLruHashTable_55.method2612((long) arg3.anInt2836 << 16 | this.anInt2048);
 			}
 			if (local80 == null || local36 != (local36 & local80.method3826())) {
 				if (local80 != null) {
@@ -500,10 +500,10 @@ public final class Class71 {
 				synchronized (this.aClass219_2.aClass197_88) {
 					local117 = 0;
 					while (true) {
-						if (this.anIntArray130.length <= local117) {
+						if (this.headmodels.length <= local117) {
 							break;
 						}
-						if (!this.aClass219_2.aClass197_88.method5087(0, this.anIntArray130[local117])) {
+						if (!this.aClass219_2.aClass197_88.method5087(0, this.headmodels[local117])) {
 							local109 = true;
 						}
 						local117++;
@@ -512,11 +512,11 @@ public final class Class71 {
 				if (local109) {
 					return null;
 				}
-				@Pc(157) Class185[] local157 = new Class185[this.anIntArray130.length];
+				@Pc(157) Class185[] local157 = new Class185[this.headmodels.length];
 				@Pc(161) Class197 local161 = this.aClass219_2.aClass197_88;
 				synchronized (this.aClass219_2.aClass197_88) {
-					for (@Pc(165) int local165 = 0; local165 < this.anIntArray130.length; local165++) {
-						local157[local165] = Static298.method2426(this.aClass219_2.aClass197_88, this.anIntArray130[local165]);
+					for (@Pc(165) int local165 = 0; local165 < this.headmodels.length; local165++) {
+						local157[local165] = Static298.method2426(this.aClass219_2.aClass197_88, this.headmodels[local165]);
 					}
 				}
 				@Pc(209) Class185 local209;
@@ -525,31 +525,31 @@ public final class Class71 {
 				} else {
 					local209 = new Class185(local157, local157.length);
 				}
-				if (this.aShortArray32 != null) {
+				if (this.recol_s != null) {
 					local107 = local36 | 0x2000;
 				}
-				if (this.aShortArray33 != null) {
+				if (this.retex_d != null) {
 					local107 |= 0x4000;
 				}
 				local80 = arg3.method2864(local209, local107, this.aClass219_2.anInt6108, 64, 768);
-				if (this.aShortArray32 != null) {
-					for (local117 = 0; local117 < this.aShortArray32.length; local117++) {
-						if (this.aByteArray24 == null || this.aByteArray24.length <= local117) {
-							local80.method3837(this.aShortArray32[local117], this.aShortArray31[local117]);
+				if (this.recol_s != null) {
+					for (local117 = 0; local117 < this.recol_s.length; local117++) {
+						if (this.recol_p == null || this.recol_p.length <= local117) {
+							local80.method3837(this.recol_s[local117], this.recol_d[local117]);
 						} else {
-							local80.method3837(this.aShortArray32[local117], Static258.aShortArray95[this.aByteArray24[local117] & 0xFF]);
+							local80.method3837(this.recol_s[local117], Static258.aShortArray95[this.recol_p[local117] & 0xFF]);
 						}
 					}
 				}
-				if (this.aShortArray33 != null) {
-					for (local117 = 0; local117 < this.aShortArray33.length; local117++) {
-						local80.method3815(this.aShortArray33[local117], this.aShortArray34[local117]);
+				if (this.retex_d != null) {
+					for (local117 = 0; local117 < this.retex_d.length; local117++) {
+						local80.method3815(this.retex_d[local117], this.retex_s[local117]);
 					}
 				}
 				local80.method3813(local36);
-				@Pc(319) Class98 local319 = this.aClass219_2.aClass98_55;
-				synchronized (this.aClass219_2.aClass98_55) {
-					this.aClass219_2.aClass98_55.method2624((long) (arg3.anInt2836 << 16 | this.anInt2048), local80);
+				@Pc(319) SoftLruHashTable local319 = this.aClass219_2.aSoftLruHashTable_55;
+				synchronized (this.aClass219_2.aSoftLruHashTable_55) {
+					this.aClass219_2.aSoftLruHashTable_55.method2624((long) arg3.anInt2836 << 16 | this.anInt2048, local80);
 				}
 			}
 			if (arg4 != null && arg2 != -1) {
@@ -562,34 +562,34 @@ public final class Class71 {
 
 	@OriginalMember(owner = "client!fk", name = "a", descriptor = "(Z)V")
 	public void method2089() {
-		if (this.anIntArray128 == null) {
-			this.anIntArray128 = new int[0];
+		if (this.modelids == null) {
+			this.modelids = new int[0];
 		}
 	}
 
 	@OriginalMember(owner = "client!fk", name = "a", descriptor = "(Ljava/lang/String;IB)Ljava/lang/String;")
 	public String method2090(@OriginalArg(0) String arg0, @OriginalArg(1) int arg1) {
-		if (this.aClass4_41 == null) {
+		if (this.params == null) {
 			return arg0;
 		} else {
-			@Pc(22) Class2_Sub40 local22 = (Class2_Sub40) this.aClass4_41.method90((long) arg1);
-			return local22 == null ? arg0 : local22.aString65;
+			@Pc(22) StringNode local22 = (StringNode) this.params.method90((long) arg1);
+			return local22 == null ? arg0 : local22.value;
 		}
 	}
 
 	@OriginalMember(owner = "client!fk", name = "a", descriptor = "(Lclient!wl;I)Z")
 	public boolean method2091(@OriginalArg(0) Interface11 arg0) {
-		if (this.anIntArray129 == null) {
+		if (this.multiNpcs == null) {
 			return true;
 		}
 		@Pc(10) int local10 = -1;
-		if (this.anInt2012 != -1) {
-			local10 = arg0.method5777(this.anInt2012);
-		} else if (this.anInt2021 != -1) {
-			local10 = arg0.method5776(this.anInt2021);
+		if (this.multiNpcVarbit != -1) {
+			local10 = arg0.method5777(this.multiNpcVarbit);
+		} else if (this.multiNpcVarp != -1) {
+			local10 = arg0.method5776(this.multiNpcVarp);
 		}
-		if (local10 < 0 || this.anIntArray129.length - 1 <= local10 || this.anIntArray129[local10] == -1) {
-			@Pc(66) int local66 = this.anIntArray129[this.anIntArray129.length - 1];
+		if (local10 < 0 || this.multiNpcs.length - 1 <= local10 || this.multiNpcs[local10] == -1) {
+			@Pc(66) int local66 = this.multiNpcs[this.multiNpcs.length - 1];
 			return local66 != -1;
 		} else {
 			return true;
@@ -597,250 +597,258 @@ public final class Class71 {
 	}
 
 	@OriginalMember(owner = "client!fk", name = "b", descriptor = "(Lclient!wl;I)Lclient!fk;")
-	public Class71 method2093(@OriginalArg(0) Interface11 arg0) {
-		@Pc(13) int local13 = -1;
-		if (this.anInt2012 != -1) {
-			local13 = arg0.method5777(this.anInt2012);
-		} else if (this.anInt2021 != -1) {
-			local13 = arg0.method5776(this.anInt2021);
+	public NpcType getMultiNpc(@OriginalArg(0) Interface11 arg0) {
+		@Pc(13) int value = -1;
+		if (this.multiNpcVarbit != -1) {
+			value = arg0.method5777(this.multiNpcVarbit);
+		} else if (this.multiNpcVarp != -1) {
+			value = arg0.method5776(this.multiNpcVarp);
 		}
-		if (local13 < 0 || local13 >= this.anIntArray129.length - 1 || this.anIntArray129[local13] == -1) {
-			@Pc(68) int local68 = this.anIntArray129[this.anIntArray129.length - 1];
-			return local68 == -1 ? null : this.aClass219_2.method5569(local68);
+		if (value < 0 || value >= this.multiNpcs.length - 1 || this.multiNpcs[value] == -1) {
+			@Pc(68) int defaultMultiNpc = this.multiNpcs[this.multiNpcs.length - 1];
+			return defaultMultiNpc == -1 ? null : this.aClass219_2.get(defaultMultiNpc);
 		} else {
-			return this.aClass219_2.method5569(this.anIntArray129[local13]);
+			return this.aClass219_2.get(this.multiNpcs[value]);
 		}
 	}
 
 	@OriginalMember(owner = "client!fk", name = "a", descriptor = "(Lclient!bt;II)V")
-	private void method2094(@OriginalArg(0) Buffer arg0, @OriginalArg(2) int arg1) {
-		@Pc(50) int local50;
-		@Pc(60) int local60;
-		if (arg1 == 1) {
-			local50 = arg0.g1();
-			this.anIntArray128 = new int[local50];
-			for (local60 = 0; local60 < local50; local60++) {
-				this.anIntArray128[local60] = arg0.g2();
-				if (this.anIntArray128[local60] == 65535) {
-					this.anIntArray128[local60] = -1;
+	private void decode(@OriginalArg(0) Buffer buffer, @OriginalArg(2) int opcode) {
+		@Pc(50) int count;
+		@Pc(60) int i;
+		if (opcode == 1) {
+			count = buffer.g1();
+			this.modelids = new int[count];
+			for (i = 0; i < count; i++) {
+				this.modelids[i] = buffer.g2();
+				if (this.modelids[i] == 65535) {
+					this.modelids[i] = -1;
 				}
 			}
-		} else if (arg1 == 2) {
-			this.aString19 = arg0.gjstr();
-		} else if (arg1 == 12) {
-			this.anInt2041 = arg0.g1();
-		} else if (arg1 >= 30 && arg1 < 35) {
-			this.aStringArray14[arg1 - 30] = arg0.gjstr();
-		} else if (arg1 == 40) {
-			local50 = arg0.g1();
-			this.aShortArray32 = new short[local50];
-			this.aShortArray31 = new short[local50];
-			for (local60 = 0; local60 < local50; local60++) {
-				this.aShortArray32[local60] = (short) arg0.g2();
-				this.aShortArray31[local60] = (short) arg0.g2();
+		} else if (opcode == 2) {
+			this.name = buffer.gjstr();
+		} else if (opcode == 12) {
+			this.size = buffer.g1();
+		} else if (opcode >= 30 && opcode < 35) {
+			this.ops[opcode - 30] = buffer.gjstr();
+		} else if (opcode == 40) {
+			count = buffer.g1();
+			this.recol_s = new short[count];
+			this.recol_d = new short[count];
+			for (i = 0; i < count; i++) {
+				this.recol_s[i] = (short) buffer.g2();
+				this.recol_d[i] = (short) buffer.g2();
 			}
-		} else if (arg1 == 41) {
-			local50 = arg0.g1();
-			this.aShortArray33 = new short[local50];
-			this.aShortArray34 = new short[local50];
-			for (local60 = 0; local60 < local50; local60++) {
-				this.aShortArray33[local60] = (short) arg0.g2();
-				this.aShortArray34[local60] = (short) arg0.g2();
+		} else if (opcode == 41) {
+			count = buffer.g1();
+			this.retex_s = new short[count];
+			this.retex_d = new short[count];
+			for (i = 0; i < count; i++) {
+				this.retex_d[i] = (short) buffer.g2();
+				this.retex_s[i] = (short) buffer.g2();
 			}
-		} else if (arg1 == 42) {
-			local50 = arg0.g1();
-			this.aByteArray24 = new byte[local50];
-			for (local60 = 0; local60 < local50; local60++) {
-				this.aByteArray24[local60] = arg0.g1b();
+		} else if (opcode == 42) {
+			count = buffer.g1();
+			this.recol_p = new byte[count];
+			for (i = 0; i < count; i++) {
+				this.recol_p[i] = buffer.g1b();
 			}
-		} else if (arg1 == 60) {
-			local50 = arg0.g1();
-			this.anIntArray130 = new int[local50];
-			for (local60 = 0; local60 < local50; local60++) {
-				this.anIntArray130[local60] = arg0.g2();
+		} else if (opcode == 60) {
+			count = buffer.g1();
+			this.headmodels = new int[count];
+			for (i = 0; i < count; i++) {
+				this.headmodels[i] = buffer.g2();
 			}
-		} else if (arg1 == 93) {
-			this.aBoolean147 = false;
-		} else if (arg1 == 95) {
-			this.anInt2039 = arg0.g2();
-		} else if (arg1 == 97) {
-			this.anInt2047 = arg0.g2();
-		} else if (arg1 == 98) {
-			this.anInt2014 = arg0.g2();
-		} else if (arg1 == 99) {
-			this.aBoolean149 = true;
-		} else if (arg1 == 100) {
-			this.anInt2046 = arg0.g1b();
-		} else if (arg1 == 101) {
-			this.anInt2027 = arg0.g1b() * 5;
-		} else if (arg1 == 102) {
-			this.anInt2050 = arg0.g2();
-		} else if (arg1 == 103) {
-			this.anInt2044 = arg0.g2();
+		} else if (opcode == 93) {
+			this.minimapdisplay = false;
+		} else if (opcode == 95) {
+			this.vislevel = buffer.g2();
+		} else if (opcode == 97) {
+			this.resize_x = buffer.g2();
+		} else if (opcode == 98) {
+			this.resize_y = buffer.g2();
+		} else if (opcode == 99) {
+			this.toprenderpriority = true;
+		} else if (opcode == 100) {
+			this.ambient = buffer.g1b();
+		} else if (opcode == 101) {
+			this.contrast = buffer.g1b() * 5;
+		} else if (opcode == 102) {
+			this.headicon = buffer.g2();
+		} else if (opcode == 103) {
+			this.rotationspeed = buffer.g2();
 		} else {
 			@Pc(233) int local233;
-			if (arg1 == 106 || arg1 == 118) {
-				this.anInt2012 = arg0.g2();
-				if (this.anInt2012 == 65535) {
-					this.anInt2012 = -1;
+			if (opcode == 106 || opcode == 118) {
+				this.multiNpcVarbit = buffer.g2();
+				if (this.multiNpcVarbit == 65535) {
+					this.multiNpcVarbit = -1;
 				}
-				this.anInt2021 = arg0.g2();
-				if (this.anInt2021 == 65535) {
-					this.anInt2021 = -1;
+				this.multiNpcVarp = buffer.g2();
+				if (this.multiNpcVarp == 65535) {
+					this.multiNpcVarp = -1;
 				}
-				local50 = -1;
-				if (arg1 == 118) {
-					local50 = arg0.g2();
-					if (local50 == 65535) {
-						local50 = -1;
+				count = -1;
+				if (opcode == 118) {
+					count = buffer.g2();
+					if (count == 65535) {
+						count = -1;
 					}
 				}
-				local60 = arg0.g1();
-				this.anIntArray129 = new int[local60 + 2];
-				for (local233 = 0; local233 <= local60; local233++) {
-					this.anIntArray129[local233] = arg0.g2();
-					if (this.anIntArray129[local233] == 65535) {
-						this.anIntArray129[local233] = -1;
+				i = buffer.g1();
+				this.multiNpcs = new int[i + 2];
+				for (local233 = 0; local233 <= i; local233++) {
+					this.multiNpcs[local233] = buffer.g2();
+					if (this.multiNpcs[local233] == 65535) {
+						this.multiNpcs[local233] = -1;
 					}
 				}
-				this.anIntArray129[local60 + 1] = local50;
-			} else if (arg1 == 107) {
-				this.aBoolean145 = false;
-			} else if (arg1 == 109) {
-				this.aBoolean143 = false;
-			} else if (arg1 == 111) {
-				this.aBoolean142 = false;
-			} else if (arg1 == 113) {
-				this.aShort24 = (short) arg0.g2();
-				this.aShort25 = (short) arg0.g2();
-			} else if (arg1 == 114) {
-				this.aByte14 = arg0.g1b();
-				this.aByte15 = arg0.g1b();
-			} else if (arg1 == 115) {
-				arg0.g1();
-				arg0.g1();
-			} else if (arg1 == 119) {
-				this.aByte16 = arg0.g1b();
-			} else if (arg1 == 121) {
-				this.anIntArrayArray18 = new int[this.anIntArray128.length][];
-				local50 = arg0.g1();
-				for (local60 = 0; local60 < local50; local60++) {
-					local233 = arg0.g1();
-					@Pc(717) int[] local717 = this.anIntArrayArray18[local233] = new int[3];
-					local717[0] = arg0.g1b();
-					local717[1] = arg0.g1b();
-					local717[2] = arg0.g1b();
+				this.multiNpcs[i + 1] = count;
+			} else if (opcode == 107) {
+				this.interactive = false;
+			} else if (opcode == 109) {
+				this.rotationflag = false;
+			} else if (opcode == 111) {
+				this.hasshadow = false;
+			} else if (opcode == 113) {
+				this.shadowcolor1 = (short) buffer.g2();
+				this.shadowcolor2 = (short) buffer.g2();
+			} else if (opcode == 114) {
+				this.shadowcolormodifier1 = buffer.g1b();
+				this.shadowcolormodifier2 = buffer.g1b();
+			} else if (opcode == 115) {
+				buffer.g1();
+				buffer.g1();
+			} else if (opcode == 119) {
+				this.defaultmode = buffer.g1b();
+			} else if (opcode == 121) {
+				this.modeloffsets = new int[this.modelids.length][];
+				count = buffer.g1();
+				for (i = 0; i < count; i++) {
+					local233 = buffer.g1();
+					@Pc(717) int[] tempArray = this.modeloffsets[local233] = new int[3];
+					tempArray[0] = buffer.g1b();
+					tempArray[1] = buffer.g1b();
+					tempArray[2] = buffer.g1b();
 				}
-			} else if (arg1 == 122) {
-				this.anInt2028 = arg0.g2();
-			} else if (arg1 == 123) {
-				this.anInt2010 = arg0.g2();
-			} else if (arg1 == 125) {
-				this.aByte17 = arg0.g1b();
-			} else if (arg1 == 127) {
-				this.anInt2032 = arg0.g2();
-			} else if (arg1 == 128) {
-				arg0.g1();
-			} else if (arg1 == 134) {
-				this.anInt2038 = arg0.g2();
-				if (this.anInt2038 == 65535) {
-					this.anInt2038 = -1;
+			} else if (opcode == 122) {
+				this.hitbarid = buffer.g2();
+			} else if (opcode == 123) {
+				this.iconheight = buffer.g2();
+			} else if (opcode == 125) {
+				this.spawndirection = buffer.g1b();
+			} else if (opcode == 127) {
+				this.bastypeid = buffer.g2();
+			} else if (opcode == 128) {
+				/*
+				 * movespeed
+				 *
+				 * stationary(0, (byte) -1)
+				 * crawl(1, (byte) 0)
+				 * walk(2, (byte) 1)
+				 * run(3, (byte) 2)
+				 */
+				buffer.g1();
+			} else if (opcode == 134) {
+				this.idlesound = buffer.g2();
+				if (this.idlesound == 65535) {
+					this.idlesound = -1;
 				}
-				this.anInt2009 = arg0.g2();
-				if (this.anInt2009 == 65535) {
-					this.anInt2009 = -1;
+				this.crawlsound = buffer.g2();
+				if (this.crawlsound == 65535) {
+					this.crawlsound = -1;
 				}
-				this.anInt2015 = arg0.g2();
-				if (this.anInt2015 == 65535) {
-					this.anInt2015 = -1;
+				this.walksound = buffer.g2();
+				if (this.walksound == 65535) {
+					this.walksound = -1;
 				}
-				this.anInt2025 = arg0.g2();
-				if (this.anInt2025 == 65535) {
-					this.anInt2025 = -1;
+				this.runsound = buffer.g2();
+				if (this.runsound == 65535) {
+					this.runsound = -1;
 				}
-				this.anInt2022 = arg0.g1();
-			} else if (arg1 == 135) {
-				this.anInt2017 = arg0.g1();
-				this.anInt2011 = arg0.g2();
-			} else if (arg1 == 136) {
-				this.anInt2035 = arg0.g1();
-				this.anInt2020 = arg0.g2();
-			} else if (arg1 == 137) {
-				this.anInt2023 = arg0.g2();
-			} else if (arg1 == 138) {
-				this.anInt2031 = arg0.g2();
-			} else if (arg1 == 139) {
-				this.anInt2042 = arg0.g2();
-			} else if (arg1 == 140) {
-				this.anInt2051 = arg0.g1();
-			} else if (arg1 == 141) {
+				this.soundradius = buffer.g1();
+			} else if (opcode == 135) {
+				this.cursor1op = buffer.g1();
+				this.cursor1 = buffer.g2();
+			} else if (opcode == 136) {
+				this.cursor2op = buffer.g1();
+				this.cursor2 = buffer.g2();
+			} else if (opcode == 137) {
+				this.attackcursor = buffer.g2();
+			} else if (opcode == 138) {
+				this.opcode138 = buffer.g2();
+			} else if (opcode == 139) {
+				this.anInt2042 = buffer.g2();
+			} else if (opcode == 140) {
+				this.soundvolume = buffer.g1();
+			} else if (opcode == 141) {
 				this.aBoolean148 = true;
-			} else if (arg1 == 142) {
-				this.anInt2037 = arg0.g2();
-			} else if (arg1 == 143) {
+			} else if (opcode == 142) {
+				this.mapelement = buffer.g2();
+			} else if (opcode == 143) {
 				this.aBoolean146 = true;
-			} else if (arg1 >= 150 && arg1 < 155) {
-				this.aStringArray14[arg1 - 150] = arg0.gjstr();
+			} else if (opcode >= 150 && opcode < 155) {
+				this.ops[opcode - 150] = buffer.gjstr();
 				if (!this.aClass219_2.aBoolean410) {
-					this.aStringArray14[arg1 - 150] = null;
+					this.ops[opcode - 150] = null;
 				}
-			} else if (arg1 == 160) {
-				local50 = arg0.g1();
-				this.anIntArray131 = new int[local50];
-				for (local60 = 0; local60 < local50; local60++) {
-					this.anIntArray131[local60] = arg0.g2();
+			} else if (opcode == 160) {
+				count = buffer.g1();
+				this.anIntArray131 = new int[count];
+				for (i = 0; i < count; i++) {
+					this.anIntArray131[i] = buffer.g2();
 				}
-			} else if (arg1 == 249) {
-				local50 = arg0.g1();
-				if (this.aClass4_41 == null) {
-					local60 = Static162.method2976(local50);
-					this.aClass4_41 = new Class4(local60);
+			} else if (opcode == 249) {
+				count = buffer.g1();
+				if (this.params == null) {
+					int buckets = Static162.clp2(count);
+					this.params = new HashTable(buckets);
 				}
-				for (local60 = 0; local60 < local50; local60++) {
-					@Pc(539) boolean local539 = arg0.g1() == 1;
-					@Pc(543) int local543 = arg0.ig3();
-					@Pc(552) Class2 local552;
-					if (local539) {
-						local552 = new Class2_Sub40(arg0.gjstr());
+				for (i = 0; i < count; i++) {
+					@Pc(539) boolean isString = buffer.g1() == 1;
+					@Pc(543) int key = buffer.ig3();
+					@Pc(552) Node value;
+					if (isString) {
+						value = new StringNode(buffer.gjstr());
 					} else {
-						local552 = new Class2_Sub39(arg0.mg4());
+						value = new IntNode(buffer.mg4());
 					}
-					this.aClass4_41.method87(local552, (long) local543);
+					this.params.put(value, key);
 				}
 			}
 		}
 	}
 
 	@OriginalMember(owner = "client!fk", name = "a", descriptor = "(BLclient!bt;)V")
-	public void method2097(@OriginalArg(1) Buffer arg0) {
+	public void decode(@OriginalArg(1) Buffer arg0) {
 		while (true) {
 			@Pc(15) int local15 = arg0.g1();
 			if (local15 == 0) {
 				return;
 			}
-			this.method2094(arg0, local15);
+			this.decode(arg0, local15);
 		}
 	}
 
 	@OriginalMember(owner = "client!fk", name = "a", descriptor = "(III)I")
 	public int method2098(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
-		if (this.aClass4_41 == null) {
+		if (this.params == null) {
 			return arg0;
 		} else {
-			@Pc(22) Class2_Sub39 local22 = (Class2_Sub39) this.aClass4_41.method90((long) arg1);
-			return local22 == null ? arg0 : local22.anInt6818;
+			@Pc(22) IntNode local22 = (IntNode) this.params.method90((long) arg1);
+			return local22 == null ? arg0 : local22.value;
 		}
 	}
 
 	@OriginalMember(owner = "client!fk", name = "a", descriptor = "(I)Z")
 	public boolean method2099() {
-		if (this.anIntArray129 == null) {
-			return this.anInt2038 != -1 || this.anInt2015 != -1 || this.anInt2025 != -1;
+		if (this.multiNpcs == null) {
+			return this.idlesound != -1 || this.walksound != -1 || this.runsound != -1;
 		}
-		for (@Pc(28) int local28 = 0; local28 < this.anIntArray129.length; local28++) {
-			if (this.anIntArray129[local28] != -1) {
-				@Pc(45) Class71 local45 = this.aClass219_2.method5569(this.anIntArray129[local28]);
-				if (local45.anInt2038 != -1 || local45.anInt2015 != -1 || local45.anInt2025 != -1) {
+		for (@Pc(28) int local28 = 0; local28 < this.multiNpcs.length; local28++) {
+			if (this.multiNpcs[local28] != -1) {
+				@Pc(45) NpcType local45 = this.aClass219_2.get(this.multiNpcs[local28]);
+				if (local45.idlesound != -1 || local45.walksound != -1 || local45.runsound != -1) {
 					return true;
 				}
 			}

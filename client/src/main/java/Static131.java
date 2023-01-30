@@ -8,20 +8,20 @@ public final class Static131 {
 	public static Class36 aClass36_4;
 
 	@OriginalMember(owner = "client!hi", name = "a", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_82 = new Class79("Please wait...", "Bitte warte...", "Veuillez patienter...", "Aguarde...");
+	public static final LocalisedText A_TRANSLATABLE_STRING___82 = new LocalisedText("Please wait...", "Bitte warte...", "Veuillez patienter...", "Aguarde...");
 
 	@OriginalMember(owner = "client!hi", name = "c", descriptor = "[S")
 	public static final short[] aShortArray65 = new short[] { -10304, 9104, -1, -1, -1 };
 
 	@OriginalMember(owner = "client!hi", name = "a", descriptor = "(Ljava/lang/String;BZ)V")
 	public static void method3696(@OriginalArg(0) String arg0, @OriginalArg(2) boolean arg1) {
-		Static61.aClass197_12.anInt5558 = 1;
+		Static61.aClass197_12.discardUnpacked = 1;
 		@Pc(18) String local18 = arg0.toLowerCase();
 		@Pc(21) short[] local21 = new short[16];
 		@Pc(23) int local23 = 0;
 		for (@Pc(25) int local25 = 0; local25 < Static313.aClass107_2.anInt2779; local25++) {
-			@Pc(34) Class188 local34 = Static313.aClass107_2.method2759(local25);
-			if ((!arg1 || local34.aBoolean381) && local34.anInt5258 == -1 && local34.anInt5235 == -1 && local34.anInt5214 == 0 && local34.aString55.toLowerCase().indexOf(local18) != -1) {
+			@Pc(34) ObjType local34 = Static313.aClass107_2.get(local25);
+			if ((!arg1 || local34.aBoolean381) && local34.certificateTemplate == -1 && local34.lentLink == -1 && local34.anInt5214 == 0 && local34.aString55.toLowerCase().indexOf(local18) != -1) {
 				if (local23 >= 250) {
 					Static328.anInt6127 = -1;
 					Static177.aShortArray56 = null;
@@ -42,10 +42,10 @@ public final class Static131 {
 		Static328.anInt6127 = local23;
 		@Pc(128) String[] local128 = new String[Static328.anInt6127];
 		for (@Pc(130) int local130 = 0; local130 < Static328.anInt6127; local130++) {
-			local128[local130] = Static313.aClass107_2.method2759(local21[local130]).aString55;
+			local128[local130] = Static313.aClass107_2.get(local21[local130]).aString55;
 		}
 		Static135.method2534(local128, Static177.aShortArray56);
 		Static61.aClass197_12.method5067();
-		Static61.aClass197_12.anInt5558 = 2;
+		Static61.aClass197_12.discardUnpacked = 2;
 	}
 }

@@ -57,7 +57,7 @@ public final class Static375 {
 			}
 			@Pc(109) String local109 = "http://" + local7.aString2 + local39 + "/l=" + Static295.anInt5581 + "/a=" + Static165.anInt3149 + local55 + "/j" + (Static276.aBoolean375 ? "1" : "0") + ",o" + (Static237.aBoolean298 ? "1" : "0") + ",a2";
 			try {
-				Static144.aClient1.getAppletContext().showDocument(new URL(local109), "_self");
+				Static144.instance.getAppletContext().showDocument(new URL(local109), "_self");
 				return true;
 			} catch (@Pc(119) Exception local119) {
 				return false;

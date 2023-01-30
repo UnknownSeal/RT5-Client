@@ -33,7 +33,7 @@ public final class Class11_Sub5_Sub5 extends Class11_Sub5 implements Interface6 
 	@OriginalMember(owner = "client!us", name = "b", descriptor = "(Lclient!wm;B)Lclient!nf;")
 	@Override
 	public Class12_Sub4 method6072(@OriginalArg(0) Class19 arg0) {
-		@Pc(16) Class31 local16 = this.aClass192_4.method4940(true, false, arg0, 1024, super.anInt6783, super.anInt6781);
+		@Pc(16) Model local16 = this.aClass192_4.method4940(true, false, arg0, 1024, super.anInt6783, super.anInt6781);
 		if (local16 == null) {
 			return null;
 		}
@@ -86,7 +86,7 @@ public final class Class11_Sub5_Sub5 extends Class11_Sub5 implements Interface6 
 	@OriginalMember(owner = "client!us", name = "a", descriptor = "(Lclient!wm;B)V")
 	@Override
 	public void method6069(@OriginalArg(0) Class19 arg0) {
-		@Pc(16) Class31 local16 = this.aClass192_4.method4940(true, true, arg0, 131072, super.anInt6783, super.anInt6781);
+		@Pc(16) Model local16 = this.aClass192_4.method4940(true, true, arg0, 131072, super.anInt6783, super.anInt6781);
 		if (local16 != null) {
 			this.aClass192_4.method4934(arg0, super.aShort101, local16, super.aShort103, super.aShort102, false, super.aShort104);
 		}
@@ -107,7 +107,7 @@ public final class Class11_Sub5_Sub5 extends Class11_Sub5 implements Interface6 
 	@OriginalMember(owner = "client!us", name = "a", descriptor = "(IIBLclient!wm;)Z")
 	@Override
 	public boolean method6067(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) Class19 arg2) {
-		@Pc(23) Class31 local23 = this.aClass192_4.method4940(false, false, arg2, 65536, super.anInt6783, super.anInt6781);
+		@Pc(23) Model local23 = this.aClass192_4.method4940(false, false, arg2, 65536, super.anInt6783, super.anInt6781);
 		if (local23 == null) {
 			return false;
 		} else {
@@ -119,7 +119,7 @@ public final class Class11_Sub5_Sub5 extends Class11_Sub5 implements Interface6 
 
 	@OriginalMember(owner = "client!us", name = "a", descriptor = "(ILclient!wm;I)Lclient!gn;")
 	@Override
-	public Class31 method6087(@OriginalArg(0) int arg0, @OriginalArg(1) Class19 arg1) {
+	public Model method6087(@OriginalArg(0) int arg0, @OriginalArg(1) Class19 arg1) {
 		return this.aClass192_4.method4940(false, false, arg1, arg0, 0, 0);
 	}
 

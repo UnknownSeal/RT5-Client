@@ -19,7 +19,7 @@ public class Class2_Sub3_Sub10 extends Class2_Sub3 {
 	private int anInt6675 = -1;
 
 	static {
-		new Class79(null, "Mitglieder können 200 Freunde hinzufügen, freie Spieler nur 100.", null, null);
+		new LocalisedText(null, "Mitglieder können 200 Freunde hinzufügen, freie Spieler nur 100.", null, null);
 	}
 
 	@OriginalMember(owner = "client!ek", name = "<init>", descriptor = "()V")

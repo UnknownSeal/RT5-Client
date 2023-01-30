@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!cb")
-public final class Class31_Sub1 extends Class31 {
+public final class Model_Sub1 extends Model {
 
 	@OriginalMember(owner = "client!cb", name = "s", descriptor = "[I")
 	private static final int[] anIntArray45 = new int[2048];
@@ -64,10 +64,10 @@ public final class Class31_Sub1 extends Class31 {
 	private int[] anIntArray53;
 
 	@OriginalMember(owner = "client!cb", name = "P", descriptor = "Lclient!cb;")
-	private Class31_Sub1 aClass31_Sub1_1;
+	private Model_Sub1 aClass31_Sub1_1;
 
 	@OriginalMember(owner = "client!cb", name = "Q", descriptor = "Lclient!cb;")
-	private Class31_Sub1 aClass31_Sub1_2;
+	private Model_Sub1 aClass31_Sub1_2;
 
 	@OriginalMember(owner = "client!cb", name = "S", descriptor = "S")
 	private short aShort4;
@@ -82,7 +82,7 @@ public final class Class31_Sub1 extends Class31 {
 	private int[] anIntArray56;
 
 	@OriginalMember(owner = "client!cb", name = "W", descriptor = "Lclient!cb;")
-	private Class31_Sub1 aClass31_Sub1_3;
+	private Model_Sub1 aClass31_Sub1_3;
 
 	@OriginalMember(owner = "client!cb", name = "X", descriptor = "[I")
 	private int[] anIntArray57;
@@ -109,7 +109,7 @@ public final class Class31_Sub1 extends Class31 {
 	private int[] anIntArray62;
 
 	@OriginalMember(owner = "client!cb", name = "ib", descriptor = "Lclient!cb;")
-	private Class31_Sub1 aClass31_Sub1_4;
+	private Model_Sub1 aClass31_Sub1_4;
 
 	@OriginalMember(owner = "client!cb", name = "jb", descriptor = "I")
 	private int anInt983;
@@ -157,7 +157,7 @@ public final class Class31_Sub1 extends Class31 {
 	private int[] anIntArray69;
 
 	@OriginalMember(owner = "client!cb", name = "Ab", descriptor = "Lclient!cb;")
-	private Class31_Sub1 aClass31_Sub1_5;
+	private Model_Sub1 aClass31_Sub1_5;
 
 	@OriginalMember(owner = "client!cb", name = "Bb", descriptor = "[I")
 	private int[] anIntArray70;
@@ -175,7 +175,7 @@ public final class Class31_Sub1 extends Class31 {
 	private Class81 aClass81_1;
 
 	@OriginalMember(owner = "client!cb", name = "Gb", descriptor = "Lclient!cb;")
-	private Class31_Sub1 aClass31_Sub1_6;
+	private Model_Sub1 aClass31_Sub1_6;
 
 	@OriginalMember(owner = "client!cb", name = "Hb", descriptor = "[[I")
 	private int[][] anIntArrayArray8;
@@ -244,10 +244,10 @@ public final class Class31_Sub1 extends Class31 {
 	private int[] anIntArray78;
 
 	@OriginalMember(owner = "client!cb", name = "fc", descriptor = "Lclient!cb;")
-	private Class31_Sub1 aClass31_Sub1_7;
+	private Model_Sub1 aClass31_Sub1_7;
 
 	@OriginalMember(owner = "client!cb", name = "gc", descriptor = "Lclient!cb;")
-	private Class31_Sub1 aClass31_Sub1_8;
+	private Model_Sub1 aClass31_Sub1_8;
 
 	@OriginalMember(owner = "client!cb", name = "hc", descriptor = "[[I")
 	private int[][] anIntArrayArray11;
@@ -304,12 +304,12 @@ public final class Class31_Sub1 extends Class31 {
 	}
 
 	@OriginalMember(owner = "client!cb", name = "<init>", descriptor = "(Lclient!j;)V")
-	public Class31_Sub1(@OriginalArg(0) Class19_Sub2 arg0) {
+	public Model_Sub1(@OriginalArg(0) Class19_Sub2 arg0) {
 		this.aClass19_Sub2_3 = arg0;
 	}
 
 	@OriginalMember(owner = "client!cb", name = "<init>", descriptor = "(Lclient!j;Lclient!pr;IIII)V")
-	public Class31_Sub1(@OriginalArg(0) Class19_Sub2 arg0, @OriginalArg(1) Class185 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5) {
+	public Model_Sub1(@OriginalArg(0) Class19_Sub2 arg0, @OriginalArg(1) Class185 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5) {
 		this.aClass19_Sub2_3 = arg0;
 		this.anInt984 = arg2;
 		this.anInt982 = arg3;
@@ -399,7 +399,7 @@ public final class Class31_Sub1 extends Class31 {
 	}
 
 	@OriginalMember(owner = "client!cb", name = "<init>", descriptor = "(Lclient!j;[Lclient!cb;)V")
-	public Class31_Sub1(@OriginalArg(0) Class19_Sub2 arg0, @OriginalArg(1) Class31_Sub1[] arg1) {
+	public Model_Sub1(@OriginalArg(0) Class19_Sub2 arg0, @OriginalArg(1) Model_Sub1[] arg1) {
 		this.aClass19_Sub2_3 = arg0;
 		@Pc(39) boolean local39 = false;
 		@Pc(41) boolean local41 = false;
@@ -412,7 +412,7 @@ public final class Class31_Sub1 extends Class31 {
 		@Pc(58) int local58 = 0;
 		this.aByte4 = -1;
 		for (@Pc(63) int local63 = 0; local63 < arg1.length; local63++) {
-			@Pc(68) Class31_Sub1 local68 = arg1[local63];
+			@Pc(68) Model_Sub1 local68 = arg1[local63];
 			if (local68 != null) {
 				this.anInt987 += local68.anInt987;
 				this.anInt986 += local68.anInt986;
@@ -479,7 +479,7 @@ public final class Class31_Sub1 extends Class31 {
 		@Pc(305) int local305;
 		@Pc(618) int local618;
 		for (@Pc(283) int local283 = 0; local283 < arg1.length; local283++) {
-			@Pc(288) Class31_Sub1 local288 = arg1[local283];
+			@Pc(288) Model_Sub1 local288 = arg1[local283];
 			if (local288 != null) {
 				local288.method1257(false);
 				if (local288.aShortArray8 != null && this.aShortArray8 == null) {
@@ -558,7 +558,7 @@ public final class Class31_Sub1 extends Class31 {
 		@Pc(667) int local667 = 0;
 		this.anInt981 = this.anInt987;
 		for (local305 = 0; local305 < arg1.length; local305++) {
-			@Pc(678) Class31_Sub1 local678 = arg1[local305];
+			@Pc(678) Model_Sub1 local678 = arg1[local305];
 			if (local678 != null) {
 				for (local618 = 0; local618 < local678.anInt980; local618++) {
 					if (local678.anIntArray43[local618] >= local678.anInt981) {
@@ -1810,7 +1810,7 @@ public final class Class31_Sub1 extends Class31 {
 	}
 
 	@OriginalMember(owner = "client!cb", name = "a", descriptor = "(Lclient!cb;Lclient!cb;IZZ)Lclient!gn;")
-	private Class31 method1241(@OriginalArg(0) Class31_Sub1 arg0, @OriginalArg(1) Class31_Sub1 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) boolean arg3, @OriginalArg(4) boolean arg4) {
+	private Model method1241(@OriginalArg(0) Model_Sub1 arg0, @OriginalArg(1) Model_Sub1 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) boolean arg3, @OriginalArg(4) boolean arg4) {
 		arg0.aBoolean79 = this.aBoolean79;
 		if (this.aBoolean79) {
 			arg0.aShort4 = this.aShort4;
@@ -3007,8 +3007,8 @@ public final class Class31_Sub1 extends Class31 {
 
 	@OriginalMember(owner = "client!cb", name = "a", descriptor = "(Lclient!gn;IIIZ)V")
 	@Override
-	public void method3802(@OriginalArg(0) Class31 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) boolean arg4) {
-		@Pc(2) Class31_Sub1 local2 = (Class31_Sub1) arg0;
+	public void method3802(@OriginalArg(0) Model arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) boolean arg4) {
+		@Pc(2) Model_Sub1 local2 = (Model_Sub1) arg0;
 		if ((this.anInt984 & 0x8000) != 32768) {
 			throw new IllegalStateException("");
 		} else if ((local2.anInt984 & 0x8000) == 32768) {
@@ -4066,10 +4066,10 @@ public final class Class31_Sub1 extends Class31 {
 
 	@OriginalMember(owner = "client!cb", name = "a", descriptor = "(BIZ)Lclient!gn;")
 	@Override
-	public Class31 method3799(@OriginalArg(0) byte arg0, @OriginalArg(1) int arg1, @OriginalArg(2) boolean arg2) {
+	public Model method3799(@OriginalArg(0) byte arg0, @OriginalArg(1) int arg1, @OriginalArg(2) boolean arg2) {
 		this.method1244(Thread.currentThread());
-		@Pc(11) Class31_Sub1 local11;
-		@Pc(8) Class31_Sub1 local8;
+		@Pc(11) Model_Sub1 local11;
+		@Pc(8) Model_Sub1 local8;
 		if (arg0 == 1) {
 			local8 = this.aClass31_Sub1_7;
 			local11 = this.aClass31_Sub1_1;
@@ -4083,7 +4083,7 @@ public final class Class31_Sub1 extends Class31 {
 			local8 = this.aClass31_Sub1_2;
 			local11 = this.aClass31_Sub1_8;
 		} else {
-			local11 = local8 = new Class31_Sub1(this.aClass19_Sub2_3);
+			local11 = local8 = new Model_Sub1(this.aClass19_Sub2_3);
 		}
 		return this.method1241(local11, local8, arg1, arg0 != 0, arg2);
 	}

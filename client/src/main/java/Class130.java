@@ -58,7 +58,7 @@ public abstract class Class130 {
 		@Pc(25) int local25 = 0;
 		@Pc(28) int local28 = arg5.length();
 		for (@Pc(30) int local30 = 0; local30 < local28; local30++) {
-			@Pc(41) char local41 = (char) (Static234.method4098(arg5.charAt(local30)) & 0xFF);
+			@Pc(41) char local41 = (char) (Static234.encodeChar(arg5.charAt(local30)) & 0xFF);
 			if (local41 == '<') {
 				local21 = local30;
 			} else {
@@ -393,7 +393,7 @@ public abstract class Class130 {
 		@Pc(19) int local19 = -1;
 		@Pc(22) int local22 = arg2.length();
 		for (@Pc(24) int local24 = 0; local24 < local22; local24++) {
-			@Pc(35) char local35 = (char) (Static234.method4098(arg2.charAt(local24)) & 0xFF);
+			@Pc(35) char local35 = (char) (Static234.encodeChar(arg2.charAt(local24)) & 0xFF);
 			if (local35 == '<') {
 				local17 = local24;
 			} else {

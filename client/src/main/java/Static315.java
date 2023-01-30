@@ -11,7 +11,7 @@ public final class Static315 {
 		Static295.aClass135_32.method3543();
 		for (@Pc(13) Class2_Sub5 local13 = (Class2_Sub5) Static129.aClass135_19.method3550(); local13 != null; local13 = (Class2_Sub5) Static129.aClass135_19.method3551()) {
 			if (local13.anInt1005 < 1000) {
-				local13.method6467();
+				local13.unlink();
 				Static295.aClass135_32.method3539(local13);
 			}
 		}
@@ -92,34 +92,34 @@ public final class Static315 {
 		Static212.aClass2_Sub4_Sub2_3.accessBits();
 		@Pc(13) int local13 = Static212.aClass2_Sub4_Sub2_3.gBit(8);
 		@Pc(18) int local18;
-		if (local13 < Static166.anInt3187) {
-			for (local18 = local13; local18 < Static166.anInt3187; local18++) {
-				Static17.anIntArray291[Static242.anInt4450++] = Static211.anIntArray230[local18];
+		if (local13 < Static166.size) {
+			for (local18 = local13; local18 < Static166.size; local18++) {
+				Static17.anIntArray291[Static242.anInt4450++] = Static211.ids[local18];
 			}
 		}
-		if (Static166.anInt3187 < local13) {
+		if (Static166.size < local13) {
 			throw new RuntimeException("gnpov1");
 		}
-		Static166.anInt3187 = 0;
+		Static166.size = 0;
 		for (local18 = 0; local18 < local13; local18++) {
-			@Pc(64) int local64 = Static211.anIntArray230[local18];
-			@Pc(68) Class11_Sub5_Sub2_Sub2 local68 = Static365.aClass11_Sub5_Sub2_Sub2Array1[local64];
+			@Pc(64) int local64 = Static211.ids[local18];
+			@Pc(68) Npc local68 = Static365.npcs[local64];
 			@Pc(73) int local73 = Static212.aClass2_Sub4_Sub2_3.gBit(1);
 			if (local73 == 0) {
-				Static211.anIntArray230[Static166.anInt3187++] = local64;
-				local68.anInt4610 = Static114.anInt2348;
+				Static211.ids[Static166.size++] = local64;
+				local68.lastSeenLoop = Static114.loop;
 			} else {
 				@Pc(96) int local96 = Static212.aClass2_Sub4_Sub2_3.gBit(2);
 				if (local96 == 0) {
-					Static211.anIntArray230[Static166.anInt3187++] = local64;
-					local68.anInt4610 = Static114.anInt2348;
+					Static211.ids[Static166.size++] = local64;
+					local68.lastSeenLoop = Static114.loop;
 					Static277.anIntArray361[Static343.anInt6390++] = local64;
 				} else {
 					@Pc(140) int local140;
 					@Pc(150) int local150;
 					if (local96 == 1) {
-						Static211.anIntArray230[Static166.anInt3187++] = local64;
-						local68.anInt4610 = Static114.anInt2348;
+						Static211.ids[Static166.size++] = local64;
+						local68.lastSeenLoop = Static114.loop;
 						local140 = Static212.aClass2_Sub4_Sub2_3.gBit(3);
 						local68.method4337(1, local140);
 						local150 = Static212.aClass2_Sub4_Sub2_3.gBit(1);
@@ -127,8 +127,8 @@ public final class Static315 {
 							Static277.anIntArray361[Static343.anInt6390++] = local64;
 						}
 					} else if (local96 == 2) {
-						Static211.anIntArray230[Static166.anInt3187++] = local64;
-						local68.anInt4610 = Static114.anInt2348;
+						Static211.ids[Static166.size++] = local64;
+						local68.lastSeenLoop = Static114.loop;
 						if (Static212.aClass2_Sub4_Sub2_3.gBit(1) == 1) {
 							local140 = Static212.aClass2_Sub4_Sub2_3.gBit(3);
 							local68.method4337(2, local140);

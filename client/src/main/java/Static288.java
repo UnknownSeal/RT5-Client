@@ -9,14 +9,14 @@ public final class Static288 {
 	public static Class13[] aClass13Array21;
 
 	@OriginalMember(owner = "client!qm", name = "Q", descriptor = "Lclient!r;")
-	public static Class197 aClass197_70;
+	public static Class197 js5Archive5;
 
 	@OriginalMember(owner = "client!qm", name = "J", descriptor = "Lclient!hu;")
-	public static final Class98 aClass98_42 = new Class98(4);
+	public static final SoftLruHashTable A_SOFT_LRU_HASH_TABLE___42 = new SoftLruHashTable(4);
 
 	@OriginalMember(owner = "client!qm", name = "N", descriptor = "I")
 	public static int anInt5464 = -1;
 
 	@OriginalMember(owner = "client!qm", name = "O", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_114 = new Class79("wave2:", "welle2:", "ondulation2:", "onda2:");
+	public static final LocalisedText A_TRANSLATABLE_STRING___114 = new LocalisedText("wave2:", "welle2:", "ondulation2:", "onda2:");
 }

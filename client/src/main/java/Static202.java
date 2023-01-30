@@ -42,6 +42,6 @@ public final class Static202 {
 	@OriginalMember(owner = "client!lq", name = "a", descriptor = "(II)V")
 	public static void method3677(@OriginalArg(1) int arg0) {
 		Static25.anInt648 = arg0;
-		Static48.aClass98_3.method2614();
+		Static48.A_SOFT_LRU_HASH_TABLE___3.method2614();
 	}
 }

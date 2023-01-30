@@ -80,7 +80,7 @@ public final class Static344 {
 	public static int anInt6057;
 
 	@OriginalMember(owner = "client!tt", name = "F", descriptor = "Lclient!ad;")
-	private static Class4 aClass4_125;
+	private static HashTable aClass4_125;
 
 	@OriginalMember(owner = "client!tt", name = "G", descriptor = "I")
 	public static int anInt6058;
@@ -110,7 +110,7 @@ public final class Static344 {
 	private static byte[] aByteArray90;
 
 	@OriginalMember(owner = "client!tt", name = "f", descriptor = "Lclient!ad;")
-	private static final Class4 aClass4_124 = new Class4(16);
+	private static final HashTable aClass4_124 = new HashTable(16);
 
 	@OriginalMember(owner = "client!tt", name = "j", descriptor = "Lclient!ld;")
 	public static final Class135 aClass135_36 = new Class135();
@@ -279,7 +279,7 @@ public final class Static344 {
 						local215[local220] = (short) arg1.g2();
 						local218[local220] = arg1.g1b();
 					}
-					aClass4_125.method87(new Class2_Sub29(local215, local218), (long) (arg4 << 16 | arg5));
+					aClass4_125.put(new Class2_Sub29(local215, local218), (long) (arg4 << 16 | arg5));
 				}
 			} else {
 				local215 = null;
@@ -325,11 +325,11 @@ public final class Static344 {
 		aClass104_4 = arg5;
 		anInterface11_2 = arg6;
 		aClass4_124.method81();
-		@Pc(21) int local21 = aClass197_85.method5074("details");
+		@Pc(21) int local21 = aClass197_85.getGroupID("details");
 		@Pc(26) int[] local26 = aClass197_85.method5076(local21);
 		for (@Pc(28) int local28 = 0; local28 < local26.length; local28++) {
 			@Pc(37) Class2_Sub2_Sub17 local37 = Static61.method1672(local26[local28], local21, aClass197_85);
-			aClass4_124.method87(local37, (long) local37.anInt6869);
+			aClass4_124.put(local37, (long) local37.anInt6869);
 		}
 		Static280.method4765(false);
 	}
@@ -426,7 +426,7 @@ public final class Static344 {
 		aByteArray89 = new byte[anInt6056 * anInt6052];
 		aShortArray122 = new short[anInt6056 * anInt6052];
 		aByteArray87 = new byte[anInt6056 * anInt6052];
-		aClass4_125 = new Class4(1024);
+		aClass4_125 = new HashTable(1024);
 		aClass36ArrayArrayArray2 = new Class36[3][anInt6056 >> 6][anInt6052 >> 6];
 		anIntArray406 = new int[aClass72_6.anInt2059 + 1];
 	}

@@ -63,7 +63,7 @@ public final class Static337 {
 		}
 		if (arg2.aClass2_Sub12_Sub4_2 != null) {
 			arg2.aClass2_Sub12_Sub4_2.method4978(local140);
-			if (arg2.aClass2_Sub12_Sub4_2.method6461()) {
+			if (arg2.aClass2_Sub12_Sub4_2.isLinked()) {
 				return;
 			}
 			arg2.aClass2_Sub12_Sub4_2 = null;
@@ -102,7 +102,7 @@ public final class Static337 {
 			arg0.anInt4597 = arg2;
 			arg0.anInt4598 = 0;
 			arg0.anInt4624 = 0;
-			arg0.anInt4642 = arg0.anInt4643;
+			arg0.anInt4642 = arg0.movementQueueSize;
 			arg0.anInt4590 = arg1;
 			arg0.anInt4592 = 1;
 			arg0.anInt4607 = 0;
@@ -114,7 +114,7 @@ public final class Static337 {
 
 	@OriginalMember(owner = "client!tk", name = "b", descriptor = "(I)V")
 	public static void method5708() {
-		Static371.method6256((long) Static114.anInt2348, Static190.aClass19_8);
+		Static371.method6256((long) Static114.loop, Static190.aClass19_8);
 		if (Static139.anInt2595 != -1) {
 			Static232.method4027(Static139.anInt2595);
 		}
@@ -125,7 +125,7 @@ public final class Static337 {
 			Static20.aBooleanArray6[local19] = Static357.aBooleanArray59[local19];
 			Static357.aBooleanArray59[local19] = false;
 		}
-		Static132.anInt2468 = Static114.anInt2348;
+		Static132.anInt2468 = Static114.loop;
 		if (Static190.aClass19_8.method2871()) {
 			Static106.aBoolean164 = true;
 		}

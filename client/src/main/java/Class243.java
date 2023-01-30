@@ -31,7 +31,7 @@ public final class Class243 {
 	private Class2_Sub43[] aClass2_Sub43Array1;
 
 	static {
-		new Class79("Already attempting to join a channel - please wait...", "Du versuchst bereits, einem Chatraum beizutreten - bitte warte.", "Tentative de connexion au canal déjà en cours - veuillez patienter...", "Já há uma tentativa de entrar em um canal. Aguarde...");
+		new LocalisedText("Already attempting to join a channel - please wait...", "Du versuchst bereits, einem Chatraum beizutreten - bitte warte.", "Tentative de connexion au canal déjà en cours - veuillez patienter...", "Já há uma tentativa de entrar em um canal. Aguarde...");
 	}
 
 	@OriginalMember(owner = "client!vs", name = "<init>", descriptor = "(III)V")
@@ -60,7 +60,7 @@ public final class Class243 {
 					@Pc(55) Class2_Sub43 local55 = (Class2_Sub43) this.aClass135_42.method3547();
 					local30 = new Class2_Sub43(arg0, local55.anInt7177);
 					this.aClass2_Sub43Array1[local55.anInt7176] = null;
-					local55.method6467();
+					local55.unlink();
 				} else {
 					local30 = new Class2_Sub43(arg0, this.anInt7048);
 					this.anInt7048++;

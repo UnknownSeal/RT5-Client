@@ -5,7 +5,6 @@ import java.awt.Frame;
 import java.awt.Point;
 import java.awt.Toolkit;
 import java.awt.datatransfer.Clipboard;
-import java.awt.datatransfer.ClipboardOwner;
 import java.awt.datatransfer.Transferable;
 import java.io.DataInputStream;
 import java.io.IOException;
@@ -34,7 +33,7 @@ public final class Class152 implements Runnable {
 	public Class204 aClass204_2 = null;
 
 	@OriginalMember(owner = "client!ml", name = "a", descriptor = "Lclient!cc;")
-	private Class32 aClass32_9 = null;
+	private PrivelegedRequest requestQueueHead = null;
 
 	@OriginalMember(owner = "client!ml", name = "b", descriptor = "Lclient!rl;")
 	public Class204 aClass204_1 = null;
@@ -46,7 +45,7 @@ public final class Class152 implements Runnable {
 	private boolean aBoolean247 = false;
 
 	@OriginalMember(owner = "client!ml", name = "s", descriptor = "Lclient!cc;")
-	private Class32 aClass32_10 = null;
+	private PrivelegedRequest requestQueueTail = null;
 
 	@OriginalMember(owner = "client!ml", name = "k", descriptor = "Ljava/awt/EventQueue;")
 	public EventQueue anEventQueue1;
@@ -122,50 +121,50 @@ public final class Class152 implements Runnable {
 	}
 
 	@OriginalMember(owner = "client!ml", name = "a", descriptor = "(Ljava/lang/Class;ILjava/lang/String;[Ljava/lang/Class;)Lclient!cc;")
-	public Class32 method3747(@OriginalArg(0) Class arg0, @OriginalArg(2) String arg1, @OriginalArg(3) Class[] arg2) {
-		return this.method3766(new Object[] { arg0, arg1, arg2 }, 0, 8, 0);
+	public PrivelegedRequest method3747(@OriginalArg(0) Class arg0, @OriginalArg(2) String arg1, @OriginalArg(3) Class[] arg2) {
+		return this.enqueue(new Object[] { arg0, arg1, arg2 }, 0, 8, 0);
 	}
 
 	@OriginalMember(owner = "client!ml", name = "a", descriptor = "(IIIZI)Lclient!cc;")
-	public Class32 method3748(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(4) int arg2) {
-		return this.method3766(null, (arg0 << 16) + arg1, 6, arg2 << 16);
+	public PrivelegedRequest method3748(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(4) int arg2) {
+		return this.enqueue(null, (arg0 << 16) + arg1, 6, arg2 << 16);
 	}
 
 	@OriginalMember(owner = "client!ml", name = "a", descriptor = "(I)Lclient!cc;")
-	public Class32 method3749() {
-		return this.method3766(null, 0, 12, 0);
+	public PrivelegedRequest method3749() {
+		return this.enqueue(null, 0, 12, 0);
 	}
 
 	@OriginalMember(owner = "client!ml", name = "a", descriptor = "(Ljava/lang/String;II)Lclient!cc;")
-	public Class32 method3750(@OriginalArg(0) String arg0, @OriginalArg(1) int arg1) {
-		return this.method3766(arg0, arg1, 1, 0);
+	public PrivelegedRequest method3750(@OriginalArg(0) String arg0, @OriginalArg(1) int arg1) {
+		return this.enqueue(arg0, arg1, 1, 0);
 	}
 
 	@OriginalMember(owner = "client!ml", name = "a", descriptor = "(ILjava/lang/Class;)Lclient!cc;")
-	public Class32 method3751(@OriginalArg(1) Class arg0) {
-		return this.method3766(arg0, 0, 20, 0);
+	public PrivelegedRequest method3751(@OriginalArg(1) Class arg0) {
+		return this.enqueue(arg0, 0, 20, 0);
 	}
 
 	@OriginalMember(owner = "client!ml", name = "b", descriptor = "(ILjava/lang/Class;)Lclient!cc;")
-	public Class32 method3753(@OriginalArg(1) Class arg0) {
-		return this.method3766(arg0, 0, 10, 0);
+	public PrivelegedRequest method3753(@OriginalArg(1) Class arg0) {
+		return this.enqueue(arg0, 0, 10, 0);
 	}
 
 	@OriginalMember(owner = "client!ml", name = "run", descriptor = "()V")
 	@Override
 	public void run() {
 		while (true) {
-			@Pc(15) Class32 local15;
+			@Pc(15) PrivelegedRequest local15;
 			synchronized (this) {
 				while (true) {
 					if (this.aBoolean247) {
 						return;
 					}
-					if (this.aClass32_9 != null) {
-						local15 = this.aClass32_9;
-						this.aClass32_9 = this.aClass32_9.aClass32_3;
-						if (this.aClass32_9 == null) {
-							this.aClass32_10 = null;
+					if (this.requestQueueHead != null) {
+						local15 = this.requestQueueHead;
+						this.requestQueueHead = this.requestQueueHead.next;
+						if (this.requestQueueHead == null) {
+							this.requestQueueTail = null;
 						}
 						break;
 					}
@@ -225,13 +224,13 @@ public final class Class152 implements Runnable {
 	}
 
 	@OriginalMember(owner = "client!ml", name = "a", descriptor = "(B)Lclient!cc;")
-	public Class32 method3755() {
-		return this.method3766(null, 0, 13, 0);
+	public PrivelegedRequest method3755() {
+		return this.enqueue(null, 0, 13, 0);
 	}
 
 	@OriginalMember(owner = "client!ml", name = "a", descriptor = "(BI)Lclient!cc;")
-	public Class32 method3756(@OriginalArg(1) int arg0) {
-		return this.method3766(null, arg0, 3, 0);
+	public PrivelegedRequest method3756(@OriginalArg(1) int arg0) {
+		return this.enqueue(null, arg0, 3, 0);
 	}
 
 	@OriginalMember(owner = "client!ml", name = "b", descriptor = "(B)V")
@@ -240,18 +239,18 @@ public final class Class152 implements Runnable {
 	}
 
 	@OriginalMember(owner = "client!ml", name = "a", descriptor = "(Ljava/lang/String;B)Lclient!cc;")
-	public Class32 method3760(@OriginalArg(0) String arg0) {
-		return this.method3766(arg0, 0, 16, 0);
+	public PrivelegedRequest method3760(@OriginalArg(0) String arg0) {
+		return this.enqueue(arg0, 0, 16, 0);
 	}
 
 	@OriginalMember(owner = "client!ml", name = "a", descriptor = "(Ljava/lang/Class;Ljava/lang/String;B)Lclient!cc;")
-	public Class32 method3761(@OriginalArg(0) Class arg0, @OriginalArg(1) String arg1) {
-		return this.method3766(new Object[] { arg0, arg1 }, 0, 9, 0);
+	public PrivelegedRequest method3761(@OriginalArg(0) Class arg0, @OriginalArg(1) String arg1) {
+		return this.enqueue(new Object[] { arg0, arg1 }, 0, 9, 0);
 	}
 
 	@OriginalMember(owner = "client!ml", name = "a", descriptor = "(Ljava/awt/Frame;I)Lclient!cc;")
-	public Class32 method3762(@OriginalArg(0) Frame arg0) {
-		return this.method3766(arg0, 0, 7, 0);
+	public PrivelegedRequest method3762(@OriginalArg(0) Frame arg0) {
+		return this.enqueue(arg0, 0, 7, 0);
 	}
 
 	@OriginalMember(owner = "client!ml", name = "b", descriptor = "(I)Lclient!fc;")
@@ -265,25 +264,25 @@ public final class Class152 implements Runnable {
 	}
 
 	@OriginalMember(owner = "client!ml", name = "a", descriptor = "(ZLjava/net/URL;)Lclient!cc;")
-	public Class32 method3765(@OriginalArg(1) URL arg0) {
-		return this.method3766(arg0, 0, 4, 0);
+	public PrivelegedRequest method3765(@OriginalArg(1) URL arg0) {
+		return this.enqueue(arg0, 0, 4, 0);
 	}
 
 	@OriginalMember(owner = "client!ml", name = "a", descriptor = "(Ljava/lang/Object;IIII)Lclient!cc;")
-	private Class32 method3766(@OriginalArg(0) Object arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {
-		@Pc(3) Class32 local3 = new Class32();
-		local3.anObject3 = arg0;
-		local3.anInt991 = arg2;
-		local3.anInt992 = arg1;
+	private PrivelegedRequest enqueue(@OriginalArg(0) Object arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {
+		@Pc(3) PrivelegedRequest request = new PrivelegedRequest();
+		request.anObject3 = arg0;
+		request.anInt991 = arg2;
+		request.anInt992 = arg1;
 		synchronized (this) {
-			if (this.aClass32_10 == null) {
-				this.aClass32_10 = this.aClass32_9 = local3;
+			if (this.requestQueueTail == null) {
+				this.requestQueueTail = this.requestQueueHead = request;
 			} else {
-				this.aClass32_10.aClass32_3 = local3;
-				this.aClass32_10 = local3;
+				this.requestQueueTail.next = request;
+				this.requestQueueTail = request;
 			}
 			this.notify();
-			return local3;
+			return request;
 		}
 	}
 
@@ -328,22 +327,22 @@ public final class Class152 implements Runnable {
 	}
 
 	@OriginalMember(owner = "client!ml", name = "a", descriptor = "(IILjava/lang/Runnable;)Lclient!cc;")
-	public Class32 method3768(@OriginalArg(0) int arg0, @OriginalArg(2) Runnable arg1) {
-		return this.method3766(arg1, arg0, 2, 0);
+	public PrivelegedRequest startThread(@OriginalArg(2) Runnable runnable, @OriginalArg(0) int priority) {
+		return this.enqueue(runnable, priority, 2, 0);
 	}
 
 	@OriginalMember(owner = "client!ml", name = "a", descriptor = "(ILjava/awt/Point;I[ILjava/awt/Component;I)Lclient!cc;")
-	public Class32 method3769(@OriginalArg(0) int arg0, @OriginalArg(1) Point arg1, @OriginalArg(3) int[] arg2, @OriginalArg(4) Component arg3, @OriginalArg(5) int arg4) {
-		return this.method3766(new Object[] { arg3, arg2, arg1 }, arg0, 17, arg4);
+	public PrivelegedRequest method3769(@OriginalArg(0) int arg0, @OriginalArg(1) Point arg1, @OriginalArg(3) int[] arg2, @OriginalArg(4) Component arg3, @OriginalArg(5) int arg4) {
+		return this.enqueue(new Object[] { arg3, arg2, arg1 }, arg0, 17, arg4);
 	}
 
 	@OriginalMember(owner = "client!ml", name = "c", descriptor = "(ILjava/lang/Class;)Lclient!cc;")
-	public Class32 method3770(@OriginalArg(1) Class arg0) {
-		return this.method3766(arg0, 0, 11, 0);
+	public PrivelegedRequest method3770(@OriginalArg(1) Class arg0) {
+		return this.enqueue(arg0, 0, 11, 0);
 	}
 
 	@OriginalMember(owner = "client!ml", name = "c", descriptor = "(B)Lclient!cc;")
-	public Class32 method3771() {
-		return this.method3766(null, 0, 5, 0);
+	public PrivelegedRequest method3771() {
+		return this.enqueue(null, 0, 5, 0);
 	}
 }

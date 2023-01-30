@@ -17,7 +17,7 @@ public final class Static134 {
 	public static final int[] anIntArray164 = new int[5];
 
 	@OriginalMember(owner = "client!hn", name = "d", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_59 = new Class79("Loaded wordpack", "Wordpack geladen.", "Module texte chargé", "Pacote de palavras carregado");
+	public static final LocalisedText A_TRANSLATABLE_STRING___59 = new LocalisedText("Loaded wordpack", "Wordpack geladen.", "Module texte chargé", "Pacote de palavras carregado");
 
 	@OriginalMember(owner = "client!hn", name = "a", descriptor = "(BLclient!r;)I")
 	public static int method2509(@OriginalArg(1) Class197 arg0) {

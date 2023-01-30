@@ -7,7 +7,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Class198 {
 
 	@OriginalMember(owner = "client!ra", name = "a", descriptor = "Lclient!oc;")
-	public Class167 aClass167_1;
+	public Class167 gruopNameHashTable;
 
 	@OriginalMember(owner = "client!ra", name = "c", descriptor = "[Lclient!oc;")
 	public Class167[] aClass167Array1;
@@ -22,7 +22,7 @@ public final class Class198 {
 	public int[] anIntArray376;
 
 	@OriginalMember(owner = "client!ra", name = "g", descriptor = "[I")
-	public int[] anIntArray377;
+	public int[] groupCapacities;
 
 	@OriginalMember(owner = "client!ra", name = "l", descriptor = "I")
 	public int anInt5591;
@@ -49,7 +49,7 @@ public final class Class198 {
 	public final int anInt5589;
 
 	static {
-		new Class79("Unable to add name - unknown player.", "Name konnte nicht hinzugefügt werden - Spieler unbekannt.", "Impossible d'ajouter le nom - joueur inconnu.", "Não foi possível adicionar um nome - jogador desconhecido.");
+		new LocalisedText("Unable to add name - unknown player.", "Name konnte nicht hinzugefügt werden - Spieler unbekannt.", "Impossible d'ajouter le nom - joueur inconnu.", "Não foi possível adicionar um nome - jogador desconhecido.");
 	}
 
 	@OriginalMember(owner = "client!ra", name = "<init>", descriptor = "([BI)V")
@@ -85,7 +85,7 @@ public final class Class198 {
 			}
 		}
 		this.anInt5592 = local59 + 1;
-		this.anIntArray377 = new int[this.anInt5592];
+		this.groupCapacities = new int[this.anInt5592];
 		this.anIntArrayArray46 = new int[this.anInt5592][];
 		this.anIntArray378 = new int[this.anInt5592];
 		this.anIntArray382 = new int[this.anInt5592];
@@ -100,7 +100,7 @@ public final class Class198 {
 			for (local155 = 0; local155 < this.anInt5591; local155++) {
 				this.anIntArray379[this.anIntArray380[local155]] = local12.mg4();
 			}
-			this.aClass167_1 = new Class167(this.anIntArray379);
+			this.gruopNameHashTable = new Class167(this.anIntArray379);
 		}
 		for (local141 = 0; local141 < this.anInt5591; local141++) {
 			this.anIntArray382[this.anIntArray380[local141]] = local12.mg4();
@@ -128,7 +128,7 @@ public final class Class198 {
 					local268 = local287;
 				}
 			}
-			this.anIntArray377[local253] = local268 + 1;
+			this.groupCapacities[local253] = local268 + 1;
 			if (local268 + 1 == local260) {
 				this.anIntArrayArray46[local253] = null;
 			}
@@ -141,8 +141,8 @@ public final class Class198 {
 		for (local253 = 0; local253 < this.anInt5591; local253++) {
 			local260 = this.anIntArray380[local253];
 			local268 = this.anIntArray376[local260];
-			this.anIntArrayArray47[local260] = new int[this.anIntArray377[local260]];
-			for (local270 = 0; local270 < this.anIntArray377[local260]; local270++) {
+			this.anIntArrayArray47[local260] = new int[this.groupCapacities[local260]];
+			for (local270 = 0; local270 < this.groupCapacities[local260]; local270++) {
 				this.anIntArrayArray47[local260][local270] = -1;
 			}
 			for (local287 = 0; local287 < local268; local287++) {

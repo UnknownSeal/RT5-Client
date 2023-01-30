@@ -11,7 +11,7 @@ public final class Static98 {
 	public static Class11_Sub5[] aClass11_Sub5Array1;
 
 	@OriginalMember(owner = "client!fl", name = "f", descriptor = "Lclient!hu;")
-	public static final Class98 aClass98_10 = new Class98(32);
+	public static final SoftLruHashTable A_SOFT_LRU_HASH_TABLE___10 = new SoftLruHashTable(32);
 
 	@OriginalMember(owner = "client!fl", name = "i", descriptor = "Lclient!mc;")
 	public static final Class145 aClass145_73 = new Class145(46, 2);

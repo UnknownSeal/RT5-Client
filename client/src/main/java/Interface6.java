@@ -27,5 +27,5 @@ public interface Interface6 {
 	void method6086(@OriginalArg(1) Class19 arg0);
 
 	@OriginalMember(owner = "client!id", name = "a", descriptor = "(ILclient!wm;I)Lclient!gn;")
-	Class31 method6087(@OriginalArg(0) int arg0, @OriginalArg(1) Class19 arg1);
+    Model method6087(@OriginalArg(0) int arg0, @OriginalArg(1) Class19 arg1);
 }

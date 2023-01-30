@@ -40,31 +40,31 @@ public final class Static181 {
 			local36 = Static212.aClass2_Sub4_Sub2_3.g1bneg() == 1;
 			Static217.method3794(local23);
 			local44 = (Static82.anInt1836 - Static212.aClass2_Sub4_Sub2_3.offset) / 16;
-			Static277.anIntArrayArray43 = new int[local44][4];
+			Static277.xteaKeys = new int[local44][4];
 			for (local48 = 0; local48 < local44; local48++) {
 				for (local52 = 0; local52 < 4; local52++) {
-					Static277.anIntArrayArray43[local48][local52] = Static212.aClass2_Sub4_Sub2_3.mg4();
+					Static277.xteaKeys[local48][local52] = Static212.aClass2_Sub4_Sub2_3.mg4();
 				}
 			}
 			Static106.aByteArrayArray6 = new byte[local44][];
-			Static51.anIntArray98 = new int[local44];
+			Static51.underwaterMapGroupIDs = new int[local44];
 			Static82.aByteArrayArray5 = new byte[local44][];
 			Static232.aByteArrayArray9 = new byte[local44][];
-			Static374.anIntArray480 = new int[local44];
-			Static221.anIntArray314 = new int[local44];
-			Static291.anIntArray372 = new int[local44];
-			Static62.anIntArray155 = new int[local44];
+			Static374.locGroupIDs = new int[local44];
+			Static221.mapGroupIDs = new int[local44];
+			Static291.mapSquares = new int[local44];
+			Static62.underwaterLocGroupIDs = new int[local44];
 			Static270.aByteArrayArray15 = new byte[local44][];
 			Static210.aByteArrayArray7 = null;
-			Static190.anIntArray208 = null;
+			Static190.npcGroupIDs = null;
 			local44 = 0;
 			for (local52 = (local13 - (Static373.anInt7033 >> 4)) / 8; local52 <= (local13 + (Static373.anInt7033 >> 4)) / 8; local52++) {
 				for (local59 = (local17 - (Static242.anInt4449 >> 4)) / 8; local59 <= (local17 + (Static242.anInt4449 >> 4)) / 8; local59++) {
-					Static291.anIntArray372[local44] = (local52 << 8) + local59;
-					Static221.anIntArray314[local44] = Static288.aClass197_70.method5074("m" + local52 + "_" + local59);
-					Static374.anIntArray480[local44] = Static288.aClass197_70.method5074("l" + local52 + "_" + local59);
-					Static51.anIntArray98[local44] = Static288.aClass197_70.method5074("um" + local52 + "_" + local59);
-					Static62.anIntArray155[local44] = Static288.aClass197_70.method5074("ul" + local52 + "_" + local59);
+					Static291.mapSquares[local44] = (local52 << 8) + local59;
+					Static221.mapGroupIDs[local44] = Static288.js5Archive5.getGroupID("m" + local52 + "_" + local59);
+					Static374.locGroupIDs[local44] = Static288.js5Archive5.getGroupID("l" + local52 + "_" + local59);
+					Static51.underwaterMapGroupIDs[local44] = Static288.js5Archive5.getGroupID("um" + local52 + "_" + local59);
+					Static62.underwaterLocGroupIDs[local44] = Static288.js5Archive5.getGroupID("ul" + local52 + "_" + local59);
 					local44++;
 				}
 			}
@@ -91,22 +91,22 @@ public final class Static181 {
 		}
 		Static212.aClass2_Sub4_Sub2_3.accessBytes();
 		local48 = (Static82.anInt1836 - Static212.aClass2_Sub4_Sub2_3.offset) / 16;
-		Static277.anIntArrayArray43 = new int[local48][4];
+		Static277.xteaKeys = new int[local48][4];
 		for (local52 = 0; local52 < local48; local52++) {
 			for (local59 = 0; local59 < 4; local59++) {
-				Static277.anIntArrayArray43[local52][local59] = Static212.aClass2_Sub4_Sub2_3.mg4();
+				Static277.xteaKeys[local52][local59] = Static212.aClass2_Sub4_Sub2_3.mg4();
 			}
 		}
-		Static374.anIntArray480 = new int[local48];
-		Static62.anIntArray155 = new int[local48];
+		Static374.locGroupIDs = new int[local48];
+		Static62.underwaterLocGroupIDs = new int[local48];
 		Static232.aByteArrayArray9 = new byte[local48][];
 		Static270.aByteArrayArray15 = new byte[local48][];
 		Static106.aByteArrayArray6 = new byte[local48][];
-		Static190.anIntArray208 = null;
-		Static221.anIntArray314 = new int[local48];
+		Static190.npcGroupIDs = null;
+		Static221.mapGroupIDs = new int[local48];
 		Static210.aByteArrayArray7 = null;
-		Static51.anIntArray98 = new int[local48];
-		Static291.anIntArray372 = new int[local48];
+		Static51.underwaterMapGroupIDs = new int[local48];
+		Static291.mapSquares = new int[local48];
 		Static82.aByteArrayArray5 = new byte[local48][];
 		local48 = 0;
 		for (local59 = 0; local59 < 4; local59++) {
@@ -118,19 +118,19 @@ public final class Static181 {
 						@Pc(225) int local225 = local209 >> 3 & 0x7FF;
 						@Pc(235) int local235 = local225 / 8 + (local219 / 8 << 8);
 						for (@Pc(237) int local237 = 0; local237 < local48; local237++) {
-							if (local235 == Static291.anIntArray372[local237]) {
+							if (local235 == Static291.mapSquares[local237]) {
 								local235 = -1;
 								break;
 							}
 						}
 						if (local235 != -1) {
-							Static291.anIntArray372[local48] = local235;
+							Static291.mapSquares[local48] = local235;
 							@Pc(270) int local270 = local235 >> 8 & 0xFF;
 							@Pc(274) int local274 = local235 & 0xFF;
-							Static221.anIntArray314[local48] = Static288.aClass197_70.method5074("m" + local270 + "_" + local274);
-							Static374.anIntArray480[local48] = Static288.aClass197_70.method5074("l" + local270 + "_" + local274);
-							Static51.anIntArray98[local48] = Static288.aClass197_70.method5074("um" + local270 + "_" + local274);
-							Static62.anIntArray155[local48] = Static288.aClass197_70.method5074("ul" + local270 + "_" + local274);
+							Static221.mapGroupIDs[local48] = Static288.js5Archive5.getGroupID("m" + local270 + "_" + local274);
+							Static374.locGroupIDs[local48] = Static288.js5Archive5.getGroupID("l" + local270 + "_" + local274);
+							Static51.underwaterMapGroupIDs[local48] = Static288.js5Archive5.getGroupID("um" + local270 + "_" + local274);
+							Static62.underwaterLocGroupIDs[local48] = Static288.js5Archive5.getGroupID("ul" + local270 + "_" + local274);
 							local48++;
 						}
 					}

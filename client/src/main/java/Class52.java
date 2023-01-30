@@ -7,10 +7,10 @@ import org.openrs2.deob.annotation.Pc;
 public final class Class52 {
 
 	@OriginalMember(owner = "client!ds", name = "e", descriptor = "Lclient!ad;")
-	private Class4 aClass4_30;
+	private HashTable aClass4_30;
 
 	@OriginalMember(owner = "client!ds", name = "i", descriptor = "Lclient!ad;")
-	public Class4 aClass4_31;
+	public HashTable aClass4_31;
 
 	@OriginalMember(owner = "client!ds", name = "l", descriptor = "C")
 	public char aChar3;
@@ -25,8 +25,8 @@ public final class Class52 {
 	private String aString16 = "null";
 
 	static {
-		new Class79("Unable to add friend - unknown player.", "Spieler konnte nicht hinzugefügt werden - Spieler unbekannt.", "Impossible d'ajouter l'ami - joueur inconnu.", "Não foi possível adicionar um amigo - jogador desconhecido.");
-		new Class79("Nothing interesting happens.", "Nichts Interessantes passiert.", "Il ne se passe rien d'intéressant.", "Nada de interessante acontece.");
+		new LocalisedText("Unable to add friend - unknown player.", "Spieler konnte nicht hinzugefügt werden - Spieler unbekannt.", "Impossible d'ajouter l'ami - joueur inconnu.", "Não foi possível adicionar um amigo - jogador desconhecido.");
+		new LocalisedText("Nothing interesting happens.", "Nichts Interessantes passiert.", "Il ne se passe rien d'intéressant.", "Nada de interessante acontece.");
 	}
 
 	@OriginalMember(owner = "client!ds", name = "a", descriptor = "(II)I")
@@ -34,8 +34,8 @@ public final class Class52 {
 		if (this.aClass4_31 == null) {
 			return this.anInt1634;
 		} else {
-			@Pc(23) Class2_Sub39 local23 = (Class2_Sub39) this.aClass4_31.method90((long) arg0);
-			return local23 == null ? this.anInt1634 : local23.anInt6818;
+			@Pc(23) IntNode local23 = (IntNode) this.aClass4_31.method90((long) arg0);
+			return local23 == null ? this.anInt1634 : local23.value;
 		}
 	}
 
@@ -51,26 +51,26 @@ public final class Class52 {
 			this.anInt1634 = arg0.mg4();
 		} else if (arg1 == 5 || arg1 == 6) {
 			@Pc(45) int local45 = arg0.g2();
-			this.aClass4_31 = new Class4(Static162.method2976(local45));
+			this.aClass4_31 = new HashTable(Static162.clp2(local45));
 			for (@Pc(55) int local55 = 0; local55 < local45; local55++) {
 				@Pc(61) int local61 = arg0.mg4();
-				@Pc(73) Class2 local73;
+				@Pc(73) Node local73;
 				if (arg1 == 5) {
-					local73 = new Class2_Sub40(arg0.gjstr());
+					local73 = new StringNode(arg0.gjstr());
 				} else {
-					local73 = new Class2_Sub39(arg0.mg4());
+					local73 = new IntNode(arg0.mg4());
 				}
-				this.aClass4_31.method87(local73, (long) local61);
+				this.aClass4_31.put(local73, (long) local61);
 			}
 		}
 	}
 
 	@OriginalMember(owner = "client!ds", name = "a", descriptor = "(B)V")
 	private void method1768() {
-		this.aClass4_30 = new Class4(this.aClass4_31.method89());
-		for (@Pc(20) Class2_Sub39 local20 = (Class2_Sub39) this.aClass4_31.method80(); local20 != null; local20 = (Class2_Sub39) this.aClass4_31.method79()) {
-			@Pc(29) Class2_Sub39 local29 = new Class2_Sub39((int) local20.aLong232);
-			this.aClass4_30.method87(local29, (long) local20.anInt6818);
+		this.aClass4_30 = new HashTable(this.aClass4_31.method89());
+		for (@Pc(20) IntNode local20 = (IntNode) this.aClass4_31.method80(); local20 != null; local20 = (IntNode) this.aClass4_31.method79()) {
+			@Pc(29) IntNode local29 = new IntNode((int) local20.key);
+			this.aClass4_30.put(local29, (long) local20.value);
 		}
 	}
 
@@ -98,16 +98,16 @@ public final class Class52 {
 		if (this.aClass4_30 == null) {
 			this.method1768();
 		}
-		@Pc(29) Class2_Sub39 local29 = (Class2_Sub39) this.aClass4_30.method90((long) arg0);
+		@Pc(29) IntNode local29 = (IntNode) this.aClass4_30.method90((long) arg0);
 		return local29 != null;
 	}
 
 	@OriginalMember(owner = "client!ds", name = "d", descriptor = "(B)V")
 	private void method1773() {
-		this.aClass4_30 = new Class4(this.aClass4_31.method89());
-		for (@Pc(28) Class2_Sub40 local28 = (Class2_Sub40) this.aClass4_31.method80(); local28 != null; local28 = (Class2_Sub40) this.aClass4_31.method79()) {
-			@Pc(39) Class2_Sub28 local39 = new Class2_Sub28(local28.aString65, (int) local28.aLong232);
-			this.aClass4_30.method87(local39, Static80.method5981(local28.aString65));
+		this.aClass4_30 = new HashTable(this.aClass4_31.method89());
+		for (@Pc(28) StringNode local28 = (StringNode) this.aClass4_31.method80(); local28 != null; local28 = (StringNode) this.aClass4_31.method79()) {
+			@Pc(39) Class2_Sub28 local39 = new Class2_Sub28(local28.value, (int) local28.key);
+			this.aClass4_30.put(local39, Static80.method5981(local28.value));
 		}
 	}
 
@@ -127,8 +127,8 @@ public final class Class52 {
 		if (this.aClass4_31 == null) {
 			return this.aString16;
 		} else {
-			@Pc(19) Class2_Sub40 local19 = (Class2_Sub40) this.aClass4_31.method90((long) arg0);
-			return local19 == null ? this.aString16 : local19.aString65;
+			@Pc(19) StringNode local19 = (StringNode) this.aClass4_31.method90((long) arg0);
+			return local19 == null ? this.aString16 : local19.value;
 		}
 	}
 }

@@ -16,7 +16,7 @@ public final class Class2_Sub3_Sub17 extends Class2_Sub3 {
 	private int anInt3137 = 1;
 
 	static {
-		new Class79("Now talking in clan channel of player: ", "Clanchat dieses Spieler beigetreten: ", "Vous participez actuellement au canal de clan du joueur : ", "Falando no canal do clã do jogador: ");
+		new LocalisedText("Now talking in clan channel of player: ", "Clanchat dieses Spieler beigetreten: ", "Vous participez actuellement au canal de clan du joueur : ", "Falando no canal do clã do jogador: ");
 	}
 
 	@OriginalMember(owner = "client!jl", name = "<init>", descriptor = "()V")

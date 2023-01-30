@@ -6,14 +6,16 @@ import org.openrs2.deob.annotation.Pc;
 @OriginalClass("client!r")
 public final class Class197 {
 
+	@OriginalMember(owner = "client!fk", name = "v", descriptor = "Z")
+	public static final boolean RAISE_EXCEPTIONS = false;
 	@OriginalMember(owner = "client!r", name = "c", descriptor = "[Ljava/lang/Object;")
 	private Object[] anObjectArray35;
 
 	@OriginalMember(owner = "client!r", name = "S", descriptor = "[[Ljava/lang/Object;")
-	private Object[][] anObjectArrayArray1;
+	private Object[][] unpacked;
 
 	@OriginalMember(owner = "client!r", name = "h", descriptor = "Lclient!ra;")
-	private Class198 aClass198_2 = null;
+	private Class198 index = null;
 
 	@OriginalMember(owner = "client!r", name = "g", descriptor = "Lclient!di;")
 	private final Class25 aClass25_1;
@@ -22,13 +24,13 @@ public final class Class197 {
 	private final boolean aBoolean393;
 
 	@OriginalMember(owner = "client!r", name = "n", descriptor = "I")
-	public int anInt5558;
+	public int discardUnpacked;
 
 	@OriginalMember(owner = "client!r", name = "<init>", descriptor = "(Lclient!di;ZI)V")
 	public Class197(@OriginalArg(0) Class25 arg0, @OriginalArg(1) boolean arg1, @OriginalArg(2) int arg2) {
 		this.aClass25_1 = arg0;
 		this.aBoolean393 = arg1;
-		this.anInt5558 = arg2;
+		this.discardUnpacked = arg2;
 	}
 
 	@OriginalMember(owner = "client!r", name = "a", descriptor = "(BI)I")
@@ -42,21 +44,21 @@ public final class Class197 {
 
 	@OriginalMember(owner = "client!r", name = "a", descriptor = "(Z)V")
 	public void method5067() {
-		if (this.anObjectArrayArray1 != null) {
-			for (@Pc(11) int local11 = 0; local11 < this.anObjectArrayArray1.length; local11++) {
-				this.anObjectArrayArray1[local11] = null;
+		if (this.unpacked != null) {
+			for (@Pc(11) int local11 = 0; local11 < this.unpacked.length; local11++) {
+				this.unpacked[local11] = null;
 			}
 		}
 	}
 
 	@OriginalMember(owner = "client!r", name = "a", descriptor = "(III)Z")
-	private boolean method5068(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
-		if (!this.method5085()) {
+	private boolean isFileValid(@OriginalArg(2) int group, @OriginalArg(0) int file) {
+		if (!this.isIndexReady()) {
 			return false;
-		} else if (arg1 >= 0 && arg0 >= 0 && this.aClass198_2.anIntArray377.length > arg1 && arg0 < this.aClass198_2.anIntArray377[arg1]) {
+		} else if (group >= 0 && file >= 0 && this.index.groupCapacities.length > group && file < this.index.groupCapacities[group]) {
 			return true;
-		} else if (Static97.aBoolean144) {
-			throw new IllegalArgumentException(arg1 + "," + arg0);
+		} else if (RAISE_EXCEPTIONS) {
+			throw new IllegalArgumentException(group + "," + file);
 		} else {
 			return false;
 		}
@@ -64,14 +66,14 @@ public final class Class197 {
 
 	@OriginalMember(owner = "client!r", name = "a", descriptor = "(ZIZ)V")
 	public void method5069(@OriginalArg(2) boolean arg0) {
-		if (!this.method5085()) {
+		if (!this.isIndexReady()) {
 			return;
 		}
-		this.aClass198_2.aClass167Array1 = null;
-		this.aClass198_2.anIntArrayArray47 = null;
+		this.index.aClass167Array1 = null;
+		this.index.anIntArrayArray47 = null;
 		if (arg0) {
-			this.aClass198_2.anIntArray379 = null;
-			this.aClass198_2.aClass167_1 = null;
+			this.index.anIntArray379 = null;
+			this.index.gruopNameHashTable = null;
 		}
 	}
 
@@ -89,9 +91,9 @@ public final class Class197 {
 
 	@OriginalMember(owner = "client!r", name = "a", descriptor = "(Ljava/lang/String;B)Z")
 	public boolean method5071(@OriginalArg(0) String arg0) {
-		if (this.method5085()) {
+		if (this.isIndexReady()) {
 			@Pc(20) String local20 = arg0.toLowerCase();
-			@Pc(29) int local29 = this.aClass198_2.aClass167_1.method4248(Static278.method4721(local20));
+			@Pc(29) int local29 = this.index.gruopNameHashTable.get(Static278.hashCode(local20));
 			return this.method5070(local29);
 		} else {
 			return false;
@@ -100,12 +102,12 @@ public final class Class197 {
 
 	@OriginalMember(owner = "client!r", name = "a", descriptor = "(I)Z")
 	public boolean method5072() {
-		if (!this.method5085()) {
+		if (!this.isIndexReady()) {
 			return false;
 		}
 		@Pc(13) boolean local13 = true;
-		for (@Pc(15) int local15 = 0; local15 < this.aClass198_2.anIntArray380.length; local15++) {
-			@Pc(23) int local23 = this.aClass198_2.anIntArray380[local15];
+		for (@Pc(15) int local15 = 0; local15 < this.index.anIntArray380.length; local15++) {
+			@Pc(23) int local23 = this.index.anIntArray380[local15];
 			if (this.anObjectArray35[local23] == null) {
 				this.method5078(local23);
 				if (this.anObjectArray35[local23] == null) {
@@ -123,12 +125,12 @@ public final class Class197 {
 		} else if (this.anObjectArray35[arg1] == null) {
 			return false;
 		} else {
-			@Pc(25) int local25 = this.aClass198_2.anIntArray376[arg1];
-			@Pc(31) int[] local31 = this.aClass198_2.anIntArrayArray46[arg1];
-			if (this.anObjectArrayArray1[arg1] == null) {
-				this.anObjectArrayArray1[arg1] = new Object[this.aClass198_2.anIntArray377[arg1]];
+			@Pc(25) int local25 = this.index.anIntArray376[arg1];
+			@Pc(31) int[] local31 = this.index.anIntArrayArray46[arg1];
+			if (this.unpacked[arg1] == null) {
+				this.unpacked[arg1] = new Object[this.index.groupCapacities[arg1]];
 			}
-			@Pc(60) Object[] local60 = this.anObjectArrayArray1[arg1];
+			@Pc(60) Object[] local60 = this.unpacked[arg1];
 			@Pc(62) boolean local62 = true;
 			for (@Pc(64) int local64 = 0; local64 < local25; local64++) {
 				@Pc(70) int local70;
@@ -147,9 +149,9 @@ public final class Class197 {
 			}
 			@Pc(128) byte[] local128;
 			if (arg2 == null || arg2[0] == 0 && arg2[1] == 0 && arg2[2] == 0 && arg2[3] == 0) {
-				local128 = Static155.method2787(false, this.anObjectArray35[arg1]);
+				local128 = Static155.unwrap(false, this.anObjectArray35[arg1]);
 			} else {
-				local128 = Static155.method2787(true, this.anObjectArray35[arg1]);
+				local128 = Static155.unwrap(true, this.anObjectArray35[arg1]);
 				@Pc(133) Buffer local133 = new Buffer(local128);
 				local133.tinydec(arg2, local133.data.length);
 			}
@@ -157,7 +159,7 @@ public final class Class197 {
 			try {
 				local157 = Static161.method2969(local128);
 			} catch (@Pc(159) RuntimeException local159) {
-				throw Static382.method6363(local159, "T3 - " + (arg2 != null) + "," + arg1 + "," + local128.length + "," + Static36.method1111(local128, local128.length) + "," + Static36.method1111(local128, local128.length - 2) + "," + this.aClass198_2.anIntArray382[arg1] + "," + this.aClass198_2.anInt5589);
+				throw Static382.method6363(local159, "T3 - " + (arg2 != null) + "," + arg1 + "," + local128.length + "," + Static36.method1111(local128, local128.length) + "," + Static36.method1111(local128, local128.length - 2) + "," + this.index.anIntArray382[arg1] + "," + this.index.anInt5589);
 			}
 			if (this.aBoolean393) {
 				this.anObjectArray35[arg1] = null;
@@ -173,7 +175,7 @@ public final class Class197 {
 				@Pc(322) int local322;
 				@Pc(326) int local326;
 				@Pc(328) int local328;
-				if (this.anInt5558 == 2) {
+				if (this.discardUnpacked == 2) {
 					local232 = local157.length;
 					local232--;
 					local239 = local157[local232] & 0xFF;
@@ -259,7 +261,7 @@ public final class Class197 {
 						} else {
 							local328 = local31[local326];
 						}
-						if (this.anInt5558 == 0) {
+						if (this.discardUnpacked == 0) {
 							local60[local328] = Static6.method143(local296[local326]);
 						} else {
 							local60[local328] = local296[local326];
@@ -272,7 +274,7 @@ public final class Class197 {
 				} else {
 					local232 = local31[0];
 				}
-				if (this.anInt5558 == 0) {
+				if (this.discardUnpacked == 0) {
 					local60[local232] = Static6.method143(local157);
 				} else {
 					local60[local232] = local157;
@@ -283,11 +285,11 @@ public final class Class197 {
 	}
 
 	@OriginalMember(owner = "client!r", name = "a", descriptor = "(BLjava/lang/String;)I")
-	public int method5074(@OriginalArg(1) String arg0) {
-		if (this.method5085()) {
-			@Pc(18) String local18 = arg0.toLowerCase();
-			@Pc(29) int local29 = this.aClass198_2.aClass167_1.method4248(Static278.method4721(local18));
-			return this.method5101(local29) ? local29 : -1;
+	public int getGroupID(@OriginalArg(1) String group) {
+		if (this.isIndexReady()) {
+			@Pc(18) String groupLowercase = group.toLowerCase();
+			@Pc(29) int groupID = this.index.gruopNameHashTable.get(Static278.hashCode(groupLowercase));
+			return this.method5101(groupID) ? groupID : -1;
 		} else {
 			return -1;
 		}
@@ -295,9 +297,9 @@ public final class Class197 {
 
 	@OriginalMember(owner = "client!r", name = "b", descriptor = "(Ljava/lang/String;B)V")
 	public void method5075(@OriginalArg(0) String arg0) {
-		if (this.method5085()) {
+		if (this.isIndexReady()) {
 			@Pc(17) String local17 = arg0.toLowerCase();
-			@Pc(26) int local26 = this.aClass198_2.aClass167_1.method4248(Static278.method4721(local17));
+			@Pc(26) int local26 = this.index.gruopNameHashTable.get(Static278.hashCode(local17));
 			this.method5082(local26);
 		}
 	}
@@ -307,9 +309,9 @@ public final class Class197 {
 		if (!this.method5101(arg0)) {
 			return null;
 		}
-		@Pc(23) int[] local23 = this.aClass198_2.anIntArrayArray46[arg0];
+		@Pc(23) int[] local23 = this.index.anIntArrayArray46[arg0];
 		if (local23 == null) {
-			local23 = new int[this.aClass198_2.anIntArray376[arg0]];
+			local23 = new int[this.index.anIntArray376[arg0]];
 			@Pc(34) int local34 = 0;
 			while (local23.length > local34) {
 				local23[local34] = local34++;
@@ -320,10 +322,10 @@ public final class Class197 {
 
 	@OriginalMember(owner = "client!r", name = "a", descriptor = "(B)I")
 	public int method5077() {
-		if (!this.method5085()) {
+		if (!this.isIndexReady()) {
 			throw new IllegalStateException("");
 		}
-		return this.aClass198_2.anInt5589;
+		return this.index.anInt5589;
 	}
 
 	@OriginalMember(owner = "client!r", name = "c", descriptor = "(BI)V")
@@ -336,47 +338,47 @@ public final class Class197 {
 	}
 
 	@OriginalMember(owner = "client!r", name = "a", descriptor = "([IIII)[B")
-	public byte[] method5079(@OriginalArg(0) int[] arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
-		if (!this.method5068(arg1, arg2)) {
+	public byte[] fetchFile(@OriginalArg(3) int group, @OriginalArg(2) int file, @OriginalArg(0) int[] key) {
+		if (!this.isFileValid(group, file)) {
 			return null;
 		}
-		if (this.anObjectArrayArray1[arg2] == null || this.anObjectArrayArray1[arg2][arg1] == null) {
-			@Pc(32) boolean local32 = this.method5073(arg1, arg2, arg0);
+		if (this.unpacked[group] == null || this.unpacked[group][file] == null) {
+			@Pc(32) boolean local32 = this.method5073(file, group, key);
 			if (!local32) {
-				this.method5078(arg2);
-				local32 = this.method5073(arg1, arg2, arg0);
+				this.method5078(group);
+				local32 = this.method5073(file, group, key);
 				if (!local32) {
 					return null;
 				}
 			}
 		}
-		@Pc(65) byte[] local65 = Static155.method2787(false, this.anObjectArrayArray1[arg2][arg1]);
-		if (this.anInt5558 == 1) {
-			this.anObjectArrayArray1[arg2][arg1] = null;
-			if (this.aClass198_2.anIntArray377[arg2] == 1) {
-				this.anObjectArrayArray1[arg2] = null;
+		@Pc(65) byte[] data = Static155.unwrap(false, this.unpacked[group][file]);
+		if (this.discardUnpacked == 1) {
+			this.unpacked[group][file] = null;
+			if (this.index.groupCapacities[group] == 1) {
+				this.unpacked[group] = null;
 			}
-		} else if (this.anInt5558 == 2) {
-			this.anObjectArrayArray1[arg2] = null;
+		} else if (this.discardUnpacked == 2) {
+			this.unpacked[group] = null;
 		}
-		return local65;
+		return data;
 	}
 
 	@OriginalMember(owner = "client!r", name = "a", descriptor = "(IB)I")
 	public int method5080(@OriginalArg(0) int arg0) {
-		return this.method5101(arg0) ? this.aClass198_2.anIntArray377[arg0] : 0;
+		return this.method5101(arg0) ? this.index.groupCapacities[arg0] : 0;
 	}
 
 	@OriginalMember(owner = "client!r", name = "a", descriptor = "(II)[B")
 	public byte[] method5081(@OriginalArg(0) int arg0) {
-		if (!this.method5085()) {
+		if (!this.isIndexReady()) {
 			return null;
-		} else if (this.aClass198_2.anIntArray377.length == 1) {
-			return this.method5088(arg0, 0);
+		} else if (this.index.groupCapacities.length == 1) {
+			return this.fetchFile(0, arg0);
 		} else if (!this.method5101(arg0)) {
 			return null;
-		} else if (this.aClass198_2.anIntArray377[arg0] == 1) {
-			return this.method5088(0, arg0);
+		} else if (this.index.groupCapacities[arg0] == 1) {
+			return this.fetchFile(arg0, 0);
 		} else {
 			throw new RuntimeException();
 		}
@@ -389,15 +391,15 @@ public final class Class197 {
 
 	@OriginalMember(owner = "client!r", name = "a", descriptor = "(Ljava/lang/String;Ljava/lang/String;I)[B")
 	public byte[] method5083(@OriginalArg(0) String arg0, @OriginalArg(1) String arg1) {
-		if (!this.method5085()) {
+		if (!this.isIndexReady()) {
 			return null;
 		}
 		@Pc(12) String local12 = arg0.toLowerCase();
 		@Pc(15) String local15 = arg1.toLowerCase();
-		@Pc(28) int local28 = this.aClass198_2.aClass167_1.method4248(Static278.method4721(local12));
+		@Pc(28) int local28 = this.index.gruopNameHashTable.get(Static278.hashCode(local12));
 		if (this.method5101(local28)) {
-			@Pc(46) int local46 = this.aClass198_2.aClass167Array1[local28].method4248(Static278.method4721(local15));
-			return this.method5088(local46, local28);
+			@Pc(46) int local46 = this.index.aClass167Array1[local28].get(Static278.hashCode(local15));
+			return this.fetchFile(local28, local46);
 		} else {
 			return null;
 		}
@@ -405,9 +407,9 @@ public final class Class197 {
 
 	@OriginalMember(owner = "client!r", name = "c", descriptor = "(Ljava/lang/String;B)I")
 	public int method5084(@OriginalArg(0) String arg0) {
-		if (this.method5085()) {
+		if (this.isIndexReady()) {
 			@Pc(12) String local12 = arg0.toLowerCase();
-			@Pc(21) int local21 = this.aClass198_2.aClass167_1.method4248(Static278.method4721(local12));
+			@Pc(21) int local21 = this.index.gruopNameHashTable.get(Static278.hashCode(local12));
 			return this.method5066(local21);
 		} else {
 			return 0;
@@ -415,27 +417,27 @@ public final class Class197 {
 	}
 
 	@OriginalMember(owner = "client!r", name = "b", descriptor = "(B)Z")
-	private boolean method5085() {
-		if (this.aClass198_2 == null) {
-			this.aClass198_2 = this.aClass25_1.method884();
-			if (this.aClass198_2 == null) {
+	private boolean isIndexReady() {
+		if (this.index == null) {
+			this.index = this.aClass25_1.method884();
+			if (this.index == null) {
 				return false;
 			}
-			this.anObjectArray35 = new Object[this.aClass198_2.anInt5592];
-			this.anObjectArrayArray1 = new Object[this.aClass198_2.anInt5592][];
+			this.anObjectArray35 = new Object[this.index.anInt5592];
+			this.unpacked = new Object[this.index.anInt5592][];
 		}
 		return true;
 	}
 
 	@OriginalMember(owner = "client!r", name = "d", descriptor = "(BI)Z")
 	public boolean method5086(@OriginalArg(1) int arg0) {
-		if (!this.method5085()) {
+		if (!this.isIndexReady()) {
 			return false;
-		} else if (this.aClass198_2.anIntArray377.length == 1) {
+		} else if (this.index.groupCapacities.length == 1) {
 			return this.method5087(arg0, 0);
 		} else if (!this.method5101(arg0)) {
 			return false;
-		} else if (this.aClass198_2.anIntArray377[arg0] == 1) {
+		} else if (this.index.groupCapacities[arg0] == 1) {
 			return this.method5087(0, arg0);
 		} else {
 			throw new RuntimeException();
@@ -444,9 +446,9 @@ public final class Class197 {
 
 	@OriginalMember(owner = "client!r", name = "b", descriptor = "(III)Z")
 	public boolean method5087(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
-		if (!this.method5068(arg0, arg1)) {
+		if (!this.isFileValid(arg1, arg0)) {
 			return false;
-		} else if (this.anObjectArrayArray1[arg1] != null && this.anObjectArrayArray1[arg1][arg0] != null) {
+		} else if (this.unpacked[arg1] != null && this.unpacked[arg1][arg0] != null) {
 			return true;
 		} else if (this.anObjectArray35[arg1] == null) {
 			this.method5078(arg1);
@@ -457,8 +459,8 @@ public final class Class197 {
 	}
 
 	@OriginalMember(owner = "client!r", name = "a", descriptor = "(BII)[B")
-	public byte[] method5088(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
-		return this.method5079(null, arg0, arg1);
+	public byte[] fetchFile(@OriginalArg(2) int group, @OriginalArg(1) int file) {
+		return this.fetchFile(group, file, null);
 	}
 
 	@OriginalMember(owner = "client!r", name = "c", descriptor = "(B)V")
@@ -472,13 +474,13 @@ public final class Class197 {
 
 	@OriginalMember(owner = "client!r", name = "d", descriptor = "(B)I")
 	public int method5090() {
-		if (!this.method5085()) {
+		if (!this.isIndexReady()) {
 			return 0;
 		}
 		@Pc(13) int local13 = 0;
 		@Pc(23) int local23 = 0;
 		for (@Pc(25) int local25 = 0; local25 < this.anObjectArray35.length; local25++) {
-			if (this.aClass198_2.anIntArray376[local25] > 0) {
+			if (this.index.anIntArray376[local25] > 0) {
 				local13 += 100;
 				local23 += this.method5066(local25);
 			}
@@ -492,20 +494,20 @@ public final class Class197 {
 
 	@OriginalMember(owner = "client!r", name = "e", descriptor = "(B)I")
 	public int method5091() {
-		return this.method5085() ? this.aClass198_2.anIntArray377.length : -1;
+		return this.isIndexReady() ? this.index.groupCapacities.length : -1;
 	}
 
 	@OriginalMember(owner = "client!r", name = "c", descriptor = "(II)V")
 	public void method5094(@OriginalArg(1) int arg0) {
-		if (this.method5101(arg0) && this.anObjectArrayArray1 != null) {
-			this.anObjectArrayArray1[arg0] = null;
+		if (this.method5101(arg0) && this.unpacked != null) {
+			this.unpacked[arg0] = null;
 		}
 	}
 
 	@OriginalMember(owner = "client!r", name = "b", descriptor = "(IZ)I")
 	public int method5096(@OriginalArg(0) int arg0) {
-		if (this.method5085()) {
-			@Pc(16) int local16 = this.aClass198_2.aClass167_1.method4248(arg0);
+		if (this.isIndexReady()) {
+			@Pc(16) int local16 = this.index.gruopNameHashTable.get(arg0);
 			return this.method5101(local16) ? local16 : -1;
 		} else {
 			return -1;
@@ -514,14 +516,14 @@ public final class Class197 {
 
 	@OriginalMember(owner = "client!r", name = "a", descriptor = "(Ljava/lang/String;Ljava/lang/String;Z)Z")
 	public boolean method5097(@OriginalArg(0) String arg0, @OriginalArg(1) String arg1) {
-		if (!this.method5085()) {
+		if (!this.isIndexReady()) {
 			return false;
 		}
 		@Pc(12) String local12 = arg0.toLowerCase();
 		@Pc(15) String local15 = arg1.toLowerCase();
-		@Pc(24) int local24 = this.aClass198_2.aClass167_1.method4248(Static278.method4721(local12));
+		@Pc(24) int local24 = this.index.gruopNameHashTable.get(Static278.hashCode(local12));
 		if (this.method5101(local24)) {
-			@Pc(47) int local47 = this.aClass198_2.aClass167Array1[local24].method4248(Static278.method4721(local15));
+			@Pc(47) int local47 = this.index.aClass167Array1[local24].get(Static278.hashCode(local15));
 			return this.method5087(local47, local24);
 		} else {
 			return false;
@@ -530,9 +532,9 @@ public final class Class197 {
 
 	@OriginalMember(owner = "client!r", name = "a", descriptor = "(ILjava/lang/String;)Z")
 	public boolean method5100(@OriginalArg(1) String arg0) {
-		if (this.method5085()) {
+		if (this.isIndexReady()) {
 			@Pc(12) String local12 = arg0.toLowerCase();
-			@Pc(21) int local21 = this.aClass198_2.aClass167_1.method4248(Static278.method4721(local12));
+			@Pc(21) int local21 = this.index.gruopNameHashTable.get(Static278.hashCode(local12));
 			return local21 >= 0;
 		} else {
 			return false;
@@ -541,11 +543,11 @@ public final class Class197 {
 
 	@OriginalMember(owner = "client!r", name = "d", descriptor = "(II)Z")
 	private boolean method5101(@OriginalArg(1) int arg0) {
-		if (!this.method5085()) {
+		if (!this.isIndexReady()) {
 			return false;
-		} else if (arg0 >= 0 && this.aClass198_2.anIntArray377.length > arg0 && this.aClass198_2.anIntArray377[arg0] != 0) {
+		} else if (arg0 >= 0 && this.index.groupCapacities.length > arg0 && this.index.groupCapacities[arg0] != 0) {
 			return true;
-		} else if (Static97.aBoolean144) {
+		} else if (RAISE_EXCEPTIONS) {
 			throw new IllegalArgumentException(Integer.toString(arg0));
 		} else {
 			return false;

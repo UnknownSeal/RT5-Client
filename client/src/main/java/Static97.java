@@ -16,9 +16,6 @@ public final class Static97 {
 	@OriginalMember(owner = "client!fk", name = "c", descriptor = "I")
 	public static int anInt2005 = 0;
 
-	@OriginalMember(owner = "client!fk", name = "v", descriptor = "Z")
-	public static final boolean aBoolean144 = false;
-
 	@OriginalMember(owner = "client!fk", name = "P", descriptor = "Lclient!h;")
 	public static final Class89 aClass89_82 = new Class89(9, 8);
 
@@ -77,14 +74,14 @@ public final class Static97 {
 	}
 
 	@OriginalMember(owner = "client!fk", name = "a", descriptor = "(Lclient!ag;BLclient!ag;)V")
-	public static void method2100(@OriginalArg(0) Class2 arg0, @OriginalArg(2) Class2 arg1) {
-		if (arg0.aClass2_244 != null) {
-			arg0.method6467();
+	public static void method2100(@OriginalArg(0) Node arg0, @OriginalArg(2) Node arg1) {
+		if (arg0.previous != null) {
+			arg0.unlink();
 		}
-		arg0.aClass2_244 = arg1.aClass2_244;
-		arg0.aClass2_243 = arg1;
-		arg0.aClass2_244.aClass2_243 = arg0;
-		arg0.aClass2_243.aClass2_244 = arg0;
+		arg0.previous = arg1.previous;
+		arg0.next = arg1;
+		arg0.previous.next = arg0;
+		arg0.next.previous = arg0;
 	}
 
 	@OriginalMember(owner = "client!fk", name = "a", descriptor = "(IB)I")

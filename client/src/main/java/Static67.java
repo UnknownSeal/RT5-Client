@@ -16,7 +16,7 @@ public final class Static67 {
 	public static int anInt1637;
 
 	@OriginalMember(owner = "client!ds", name = "q", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_35 = new Class79("Loading interface scripts - ", "Lade Interface-Skripte - ", "Chargement des interfaces - ", "Carregando interfaces - ");
+	public static final LocalisedText A_TRANSLATABLE_STRING___35 = new LocalisedText("Loading interface scripts - ", "Lade Interface-Skripte - ", "Chargement des interfaces - ", "Carregando interfaces - ");
 
 	@OriginalMember(owner = "client!ds", name = "s", descriptor = "[I")
 	public static final int[] anIntArray111 = new int[6];
@@ -122,9 +122,9 @@ public final class Static67 {
 	}
 
 	@OriginalMember(owner = "client!ds", name = "c", descriptor = "(B)V")
-	public static void method1772() {
-		if (Static283.aBoolean383) {
-			Static283.aBoolean383 = false;
+	public static void clear() {
+		if (Static283.loaded) {
+			Static283.loaded = false;
 			Static252.aClass13_14 = null;
 			Static333.aClass13_21 = null;
 		}

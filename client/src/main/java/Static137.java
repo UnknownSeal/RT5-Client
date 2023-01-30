@@ -58,7 +58,7 @@ public final class Static137 {
 			@Pc(109) boolean local109 = false;
 			local112 = Static257.aClass2_Sub4_Sub2_4.offset;
 			for (@Pc(117) Class2_Sub24 local117 = (Class2_Sub24) Static277.aClass135_31.method3550(); local117 != null && Static257.aClass2_Sub4_Sub2_4.offset - local112 < 240; local117 = (Class2_Sub24) Static277.aClass135_31.method3551()) {
-				local117.method6467();
+				local117.unlink();
 				local135 = local117.method5241();
 				if (local135 < 0) {
 					local135 = 0;
@@ -416,7 +416,7 @@ public final class Static137 {
 												} else if (local410 > 3) {
 													local410 = 3;
 												}
-												Static6.method141(local410, Static148.anInt2719 + Static17.aClass11_Sub5_Sub2_Sub1_3.anIntArray317[0], Static17.aClass11_Sub5_Sub2_Sub1_3.anIntArray316[0] + Static164.anInt3140);
+												Static6.method141(local410, Static148.originZ + Static17.aClass11_Sub5_Sub2_Sub1_3.anIntArray317[0], Static17.aClass11_Sub5_Sub2_Sub1_3.anIntArray316[0] + Static164.originX);
 											}
 											Static315.method5380();
 											for (local410 = 0; local410 < 5; local410++) {
@@ -489,9 +489,9 @@ public final class Static137 {
 												Static1.aBoolean1 = false;
 											}
 											try {
-												if (Static335.aClass111_4 != null && Static257.aClass2_Sub4_Sub2_4.offset > 0) {
+												if (Static335.aBufferedSocket_4 != null && Static257.aClass2_Sub4_Sub2_4.offset > 0) {
 													Static175.anInt3348 += Static257.aClass2_Sub4_Sub2_4.offset;
-													Static335.aClass111_4.method2797(Static257.aClass2_Sub4_Sub2_4.offset, Static257.aClass2_Sub4_Sub2_4.data);
+													Static335.aBufferedSocket_4.write(Static257.aClass2_Sub4_Sub2_4.data, Static257.aClass2_Sub4_Sub2_4.offset);
 													Static367.anInt6876 = 0;
 													Static257.aClass2_Sub4_Sub2_4.offset = 0;
 													return;
@@ -536,19 +536,19 @@ public final class Static137 {
 		@Pc(31) Class2_Sub32 local31 = (Class2_Sub32) Static120.aClass4_49.method90(local25);
 		if (local31 == null) {
 			local31 = new Class2_Sub32();
-			Static120.aClass4_49.method87(local31, local25);
+			Static120.aClass4_49.put(local31, local25);
 			local31.aClass135_34.method3539(arg2);
 			return;
 		}
-		@Pc(54) Class188 local54 = Static313.aClass107_2.method2759(arg2.anInt1717);
-		@Pc(57) int local57 = local54.anInt5220;
-		if (local54.anInt5247 == 1) {
+		@Pc(54) ObjType local54 = Static313.aClass107_2.get(arg2.anInt1717);
+		@Pc(57) int local57 = local54.cost;
+		if (local54.stackable == 1) {
 			local57 *= arg2.anInt1719 + 1;
 		}
 		for (@Pc(76) Class2_Sub8 local76 = (Class2_Sub8) local31.aClass135_34.method3550(); local76 != null; local76 = (Class2_Sub8) local31.aClass135_34.method3551()) {
-			local54 = Static313.aClass107_2.method2759(local76.anInt1717);
-			@Pc(87) int local87 = local54.anInt5220;
-			if (local54.anInt5247 == 1) {
+			local54 = Static313.aClass107_2.get(local76.anInt1717);
+			@Pc(87) int local87 = local54.cost;
+			if (local54.stackable == 1) {
 				local87 *= local76.anInt1719 + 1;
 			}
 			if (local57 > local87) {

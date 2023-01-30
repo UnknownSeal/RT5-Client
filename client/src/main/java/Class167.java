@@ -29,7 +29,7 @@ public final class Class167 {
 	}
 
 	@OriginalMember(owner = "client!oc", name = "a", descriptor = "(II)I")
-	public int method4248(@OriginalArg(0) int arg0) {
+	public int get(@OriginalArg(0) int arg0) {
 		@Pc(16) int local16 = (this.anIntArray294.length >> 1) - 1;
 		@Pc(20) int local20 = arg0 & local16;
 		while (true) {

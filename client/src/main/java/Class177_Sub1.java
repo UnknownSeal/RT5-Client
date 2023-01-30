@@ -31,7 +31,7 @@ public final class Class177_Sub1 extends Class177 {
 		super.anInt4893 = 0;
 		super.aBoolean358 = true;
 		super.aBoolean348 = true;
-		super.anInt4889 = 255;
+		super.musicVolume = 255;
 		super.aBoolean352 = true;
 		super.aBoolean350 = true;
 		super.aBoolean359 = true;
@@ -53,9 +53,9 @@ public final class Class177_Sub1 extends Class177 {
 		super.aBoolean351 = false;
 		@Pc(125) Class204 local125 = null;
 		try {
-			@Pc(129) Class32 local129 = arg0.method3749();
+			@Pc(129) PrivelegedRequest local129 = arg0.method3749();
 			while (local129.anInt993 == 0) {
-				Static231.method4022(1L);
+				Static231.sleep(1L);
 			}
 			if (local129.anInt993 == 1) {
 				local125 = (Class204) local129.anObject2;
@@ -118,7 +118,7 @@ public final class Class177_Sub1 extends Class177 {
 		local8.p1(super.anInt4891);
 		local8.p1(super.aBoolean352 ? 1 : 0);
 		local8.p1(super.anInt4888);
-		local8.p1(super.anInt4889);
+		local8.p1(super.musicVolume);
 		local8.p1(super.anInt4882);
 		local8.p2(super.anInt4884);
 		local8.p2(super.anInt4893);
@@ -152,9 +152,9 @@ public final class Class177_Sub1 extends Class177 {
 	public void method4496(@OriginalArg(1) Class152 arg0) {
 		@Pc(7) Class204 local7 = null;
 		try {
-			@Pc(17) Class32 local17 = arg0.method3749();
+			@Pc(17) PrivelegedRequest local17 = arg0.method3749();
 			while (local17.anInt993 == 0) {
-				Static231.method4022(1L);
+				Static231.sleep(1L);
 			}
 			if (local17.anInt993 == 1) {
 				local7 = (Class204) local17.anObject2;
@@ -255,7 +255,7 @@ public final class Class177_Sub1 extends Class177 {
 		if (super.anInt4888 > 127) {
 			super.anInt4888 = 127;
 		}
-		super.anInt4889 = arg0.g1();
+		super.musicVolume = arg0.g1();
 		super.anInt4882 = arg0.g1();
 		if (super.anInt4882 > 127) {
 			super.anInt4882 = 127;

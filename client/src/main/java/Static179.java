@@ -14,7 +14,7 @@ public final class Static179 {
 	public static final Class89 aClass89_143 = new Class89(11, -1);
 
 	@OriginalMember(owner = "client!kg", name = "v", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_73 = new Class79("Opened title screen", "Titelbild geöffnet.", "Écran-titre ouvert", "Tela título aberta");
+	public static final LocalisedText A_TRANSLATABLE_STRING___73 = new LocalisedText("Opened title screen", "Titelbild geöffnet.", "Écran-titre ouvert", "Tela título aberta");
 
 	@OriginalMember(owner = "client!kg", name = "a", descriptor = "(BI)V")
 	public static void method3363(@OriginalArg(1) int arg0) {

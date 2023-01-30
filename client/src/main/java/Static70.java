@@ -11,10 +11,10 @@ public final class Static70 {
 	public static final Class89 aClass89_58 = new Class89(48, 5);
 
 	@OriginalMember(owner = "client!e", name = "l", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_36 = new Class79("Loaded client variable data", "Client-Variablen geladen", "Variables du client chargées", "As variáveis do sistema foram carregadas");
+	public static final LocalisedText A_TRANSLATABLE_STRING___36 = new LocalisedText("Loaded client variable data", "Client-Variablen geladen", "Variables du client chargées", "As variáveis do sistema foram carregadas");
 
 	@OriginalMember(owner = "client!e", name = "m", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_37 = new Class79("M", "M", "M", "M");
+	public static final LocalisedText A_TRANSLATABLE_STRING___37 = new LocalisedText("M", "M", "M", "M");
 
 	@OriginalMember(owner = "client!e", name = "n", descriptor = "Lclient!mc;")
 	public static final Class145 aClass145_57 = new Class145(15, -1);

@@ -37,10 +37,10 @@ public final class Static2 {
 		Static367.method6145();
 		Static180.method3369();
 		Static33.method4201();
-		Static306.aClass98_49.method2615(5);
-		Static139.aClass98_18.method2615(5);
-		Static61.aClass98_5.method2615(5);
-		Static210.aClass98_31.method2615(5);
-		Static198.aClass98_30.method2615(5);
+		Static306.A_SOFT_LRU_HASH_TABLE___49.clean(5);
+		Static139.A_SOFT_LRU_HASH_TABLE___18.clean(5);
+		Static61.A_SOFT_LRU_HASH_TABLE___5.clean(5);
+		Static210.A_SOFT_LRU_HASH_TABLE___31.clean(5);
+		Static198.A_SOFT_LRU_HASH_TABLE___30.clean(5);
 	}
 }

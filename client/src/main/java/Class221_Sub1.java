@@ -46,11 +46,11 @@ public final class Class221_Sub1 extends Class221 {
 			this.aSourceDataLine1.start();
 			this.anInt6765 = arg0;
 		} catch (@Pc(36) LineUnavailableException local36) {
-			if (Static29.method941(arg0) == 1) {
+			if (Static29.bitCountFast(arg0) == 1) {
 				this.aSourceDataLine1 = null;
 				throw local36;
 			} else {
-				this.method6331(Static162.method2976(arg0));
+				this.method6331(Static162.clp2(arg0));
 			}
 		}
 	}

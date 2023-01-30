@@ -10,7 +10,7 @@ public final class Static401 {
 		} else if (arg0.aBoolean41) {
 			return new Class8_Sub1_Sub1(arg0, 34037, arg2, arg3, false, arg1);
 		} else {
-			return new Class8_Sub1_Sub1(arg0, arg2, arg3, Static162.method2976(arg2), Static162.method2976(arg3), arg1);
+			return new Class8_Sub1_Sub1(arg0, arg2, arg3, Static162.clp2(arg2), Static162.clp2(arg3), arg1);
 		}
 	}
 
@@ -21,7 +21,7 @@ public final class Static401 {
 		} else if (arg0.aBoolean41) {
 			return new Class8_Sub1_Sub1(arg0, 34037, 6406, arg3, arg2, false, arg1, 6406);
 		} else {
-			return new Class8_Sub1_Sub1(arg0, 6406, arg3, arg2, Static162.method2976(arg3), Static162.method2976(arg2), arg1, 6406);
+			return new Class8_Sub1_Sub1(arg0, 6406, arg3, arg2, Static162.clp2(arg3), Static162.clp2(arg2), arg1, 6406);
 		}
 	}
 
@@ -32,7 +32,7 @@ public final class Static401 {
 		} else if (arg4.aBoolean41) {
 			return new Class8_Sub1_Sub1(arg4, 34037, arg0, arg1, arg2, arg3, true);
 		} else {
-			return new Class8_Sub1_Sub1(arg4, arg0, arg1, arg2, arg3, Static162.method2976(arg2), Static162.method2976(arg3), true);
+			return new Class8_Sub1_Sub1(arg4, arg0, arg1, arg2, arg3, Static162.clp2(arg2), Static162.clp2(arg3), true);
 		}
 	}
 }

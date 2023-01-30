@@ -7,13 +7,13 @@ import org.openrs2.deob.annotation.Pc;
 public final class Class109 {
 
 	@OriginalMember(owner = "client!is", name = "h", descriptor = "Lclient!hu;")
-	private final Class98 aClass98_23 = new Class98(128);
+	private final SoftLruHashTable aSoftLruHashTable_23 = new SoftLruHashTable(128);
 
 	@OriginalMember(owner = "client!is", name = "f", descriptor = "Lclient!r;")
 	private final Class197 aClass197_43;
 
 	static {
-		new Class79("You do not have permission to kick this user.", "Du darfst diesen Benutzer nicht rauswerfen.", "Vous n'êtes pas autorisé à expulser cet utilisateur.", "Você não tem permissão para expulsar este usuário.");
+		new LocalisedText("You do not have permission to kick this user.", "Du darfst diesen Benutzer nicht rauswerfen.", "Vous n'êtes pas autorisé à expulser cet utilisateur.", "Você não tem permissão para expulsar este usuário.");
 	}
 
 	@OriginalMember(owner = "client!is", name = "<init>", descriptor = "(Lclient!dn;ILclient!r;)V")
@@ -27,22 +27,22 @@ public final class Class109 {
 
 	@OriginalMember(owner = "client!is", name = "a", descriptor = "(IB)Lclient!ds;")
 	public Class52 method2779(@OriginalArg(0) int arg0) {
-		@Pc(6) Class98 local6 = this.aClass98_23;
+		@Pc(6) SoftLruHashTable local6 = this.aSoftLruHashTable_23;
 		@Pc(16) Class52 local16;
-		synchronized (this.aClass98_23) {
-			local16 = (Class52) this.aClass98_23.method2612((long) arg0);
+		synchronized (this.aSoftLruHashTable_23) {
+			local16 = (Class52) this.aSoftLruHashTable_23.method2612((long) arg0);
 		}
 		if (local16 != null) {
 			return local16;
 		}
-		@Pc(37) byte[] local37 = this.aClass197_43.method5088(Static121.method2393(arg0), Static266.method4497(arg0));
+		@Pc(37) byte[] local37 = this.aClass197_43.fetchFile(Static266.method4497(arg0), Static121.method2393(arg0));
 		local16 = new Class52();
 		if (local37 != null) {
 			local16.method1774(new Buffer(local37));
 		}
-		@Pc(61) Class98 local61 = this.aClass98_23;
-		synchronized (this.aClass98_23) {
-			this.aClass98_23.method2624((long) arg0, local16);
+		@Pc(61) SoftLruHashTable local61 = this.aSoftLruHashTable_23;
+		synchronized (this.aSoftLruHashTable_23) {
+			this.aSoftLruHashTable_23.method2624((long) arg0, local16);
 			return local16;
 		}
 	}

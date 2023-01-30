@@ -12,7 +12,7 @@ public final class Static161 {
 	public static final Class89 aClass89_123 = new Class89(10, -1);
 
 	@OriginalMember(owner = "client!jg", name = "F", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_67 = new Class79(" ", ": ", " ", " ");
+	public static final LocalisedText A_TRANSLATABLE_STRING___67 = new LocalisedText(" ", ": ", " ", " ");
 
 	@OriginalMember(owner = "client!jg", name = "H", descriptor = "I")
 	public static int anInt2954 = 100;
@@ -22,7 +22,7 @@ public final class Static161 {
 
 	@OriginalMember(owner = "client!jg", name = "b", descriptor = "(B)V")
 	public static void method2968() {
-		Static119.aClass98_16.method2614();
+		Static119.A_SOFT_LRU_HASH_TABLE___16.method2614();
 	}
 
 	@OriginalMember(owner = "client!jg", name = "a", descriptor = "([BI)[B")
@@ -137,7 +137,7 @@ public final class Static161 {
 			}
 			if (arg0.equalsIgnoreCase("breakcon")) {
 				Static328.aClass152_5.method3759();
-				Static335.aClass111_4.method2801();
+				Static335.aBufferedSocket_4.method2801();
 				Static287.aClass183_3.method4632();
 				Static158.method2939("Breaking new connections for 5 seconds");
 				return;
@@ -368,14 +368,14 @@ public final class Static161 {
 				return;
 			}
 			if (arg0.startsWith("cachespace")) {
-				Static158.method2939("I(s): " + Static335.aClass98_57.method2616() + "/" + Static335.aClass98_57.method2620());
-				Static158.method2939("I(m): " + Static124.aClass98_63.method2616() + "/" + Static124.aClass98_63.method2620());
+				Static158.method2939("I(s): " + Static335.A_SOFT_LRU_HASH_TABLE___57.method2616() + "/" + Static335.A_SOFT_LRU_HASH_TABLE___57.method2620());
+				Static158.method2939("I(m): " + Static124.A_SOFT_LRU_HASH_TABLE___63.method2616() + "/" + Static124.A_SOFT_LRU_HASH_TABLE___63.method2620());
 				Static158.method2939("O(s): " + Static313.aClass107_2.aClass97_1.method2587() + "/" + Static313.aClass107_2.aClass97_1.method2592());
 				return;
 			}
 			if (arg0.equalsIgnoreCase("getcamerapos")) {
-				Static158.method2939("Pos: " + Static17.aClass11_Sub5_Sub2_Sub1_3.aByte78 + "," + (Static164.anInt3140 + (Static136.anInt6778 >> 7) >> 6) + "," + ((Static211.anInt3777 >> 7) + Static148.anInt2719 >> 6) + "," + (Static164.anInt3140 + (Static136.anInt6778 >> 7) & 0x3F) + "," + (Static148.anInt2719 + (Static211.anInt3777 >> 7) & 0x3F) + " Height: " + (Static386.method6031(Static136.anInt6778, Static211.anInt3777, Static17.aClass11_Sub5_Sub2_Sub1_3.aByte78) - Static102.anInt3592));
-				Static158.method2939("Look: " + Static17.aClass11_Sub5_Sub2_Sub1_3.aByte78 + "," + (Static164.anInt3140 + Static254.anInt4698 >> 6) + "," + (Static123.anInt2420 + Static148.anInt2719 >> 6) + "," + (Static254.anInt4698 + Static164.anInt3140 & 0x3F) + "," + (Static148.anInt2719 + Static123.anInt2420 & 0x3F) + " Height: " + (Static386.method6031(Static254.anInt4698, Static123.anInt2420, Static17.aClass11_Sub5_Sub2_Sub1_3.aByte78) - Static57.anInt1464));
+				Static158.method2939("Pos: " + Static17.aClass11_Sub5_Sub2_Sub1_3.aByte78 + "," + (Static164.originX + (Static136.anInt6778 >> 7) >> 6) + "," + ((Static211.anInt3777 >> 7) + Static148.originZ >> 6) + "," + (Static164.originX + (Static136.anInt6778 >> 7) & 0x3F) + "," + (Static148.originZ + (Static211.anInt3777 >> 7) & 0x3F) + " Height: " + (Static386.method6031(Static136.anInt6778, Static211.anInt3777, Static17.aClass11_Sub5_Sub2_Sub1_3.aByte78) - Static102.anInt3592));
+				Static158.method2939("Look: " + Static17.aClass11_Sub5_Sub2_Sub1_3.aByte78 + "," + (Static164.originX + Static254.anInt4698 >> 6) + "," + (Static123.anInt2420 + Static148.originZ >> 6) + "," + (Static254.anInt4698 + Static164.originX & 0x3F) + "," + (Static148.originZ + Static123.anInt2420 & 0x3F) + " Height: " + (Static386.method6031(Static254.anInt4698, Static123.anInt2420, Static17.aClass11_Sub5_Sub2_Sub1_3.aByte78) - Static57.anInt1464));
 				return;
 			}
 			if (arg0.equals("showocc")) {
@@ -499,10 +499,10 @@ public final class Static161 {
 			return;
 		}
 		Static367.anInt6876 = 0;
-		if (!Static101.aBoolean158 && Static335.aClass111_4 != null) {
+		if (!Static101.aBoolean158 && Static335.aBufferedSocket_4 != null) {
 			Static91.method1960(Static326.aClass145_228);
 			try {
-				Static335.aClass111_4.method2797(Static257.aClass2_Sub4_Sub2_4.offset, Static257.aClass2_Sub4_Sub2_4.data);
+				Static335.aBufferedSocket_4.write(Static257.aClass2_Sub4_Sub2_4.data, Static257.aClass2_Sub4_Sub2_4.offset);
 				Static257.aClass2_Sub4_Sub2_4.offset = 0;
 			} catch (@Pc(57) IOException local57) {
 				Static101.aBoolean158 = true;

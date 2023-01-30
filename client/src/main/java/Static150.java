@@ -14,7 +14,7 @@ public final class Static150 {
 	public static final Class145 aClass145_107 = new Class145(17, 8);
 
 	@OriginalMember(owner = "client!il", name = "W", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_64 = new Class79("Please remove ", "Bitte entferne ", "Veuillez commencer par supprimer ", "Remova ");
+	public static final LocalisedText A_TRANSLATABLE_STRING___64 = new LocalisedText("Please remove ", "Bitte entferne ", "Veuillez commencer par supprimer ", "Remova ");
 
 	@OriginalMember(owner = "client!il", name = "X", descriptor = "[I")
 	public static final int[] anIntArray174 = new int[] { 0, 0, 0, 0, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3 };

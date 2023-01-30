@@ -12,7 +12,7 @@ public final class Static369 {
 	public static final int[] anIntArray479 = new int[] { -1, 8192, 0, -1, 12288, 10240, 14336, -1, 4096, 6144, 2048 };
 
 	@OriginalMember(owner = "client!vm", name = "S", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_144 = new Class79("Prepared sound engine", "Musik-Engine vorbereitet.", "Moteur son préparé", "Mecanismo de som preparado");
+	public static final LocalisedText A_TRANSLATABLE_STRING___144 = new LocalisedText("Prepared sound engine", "Musik-Engine vorbereitet.", "Moteur son préparé", "Mecanismo de som preparado");
 
 	@OriginalMember(owner = "client!vm", name = "W", descriptor = "Lclient!mc;")
 	public static final Class145 aClass145_248 = new Class145(19, -1);
@@ -22,9 +22,9 @@ public final class Static369 {
 
 	@OriginalMember(owner = "client!vm", name = "f", descriptor = "(I)V")
 	public static void method6216() {
-		@Pc(5) Class98 local5 = Static98.aClass98_10;
-		synchronized (Static98.aClass98_10) {
-			Static98.aClass98_10.method2614();
+		@Pc(5) SoftLruHashTable local5 = Static98.A_SOFT_LRU_HASH_TABLE___10;
+		synchronized (Static98.A_SOFT_LRU_HASH_TABLE___10) {
+			Static98.A_SOFT_LRU_HASH_TABLE___10.method2614();
 		}
 	}
 

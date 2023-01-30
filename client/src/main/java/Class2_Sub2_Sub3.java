@@ -4,16 +4,16 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!ck")
-public final class Class2_Sub2_Sub3 extends Class2_Sub2 {
+public final class Class2_Sub2_Sub3 extends SecondaryNode {
 
 	@OriginalMember(owner = "client!ck", name = "T", descriptor = "[Lclient!vr;")
 	private static final Class242[] aClass242Array1;
 
 	@OriginalMember(owner = "client!ck", name = "E", descriptor = "Lclient!ad;")
-	private Class4 aClass4_20;
+	private HashTable aClass4_20;
 
 	static {
-		new Class79("Select", "Auswählen", "Sélectionner", "Selecionar");
+		new LocalisedText("Select", "Auswählen", "Sélectionner", "Selecionar");
 		aClass242Array1 = new Class242[32];
 		@Pc(80) Class242[] local80 = Static180.method3370();
 		for (@Pc(82) int local82 = 0; local82 < local80.length; local82++) {
@@ -29,19 +29,19 @@ public final class Class2_Sub2_Sub3 extends Class2_Sub2 {
 		@Pc(23) int local23 = arg0.g1();
 		@Pc(30) int local30;
 		if (this.aClass4_20 == null) {
-			local30 = Static162.method2976(local23);
-			this.aClass4_20 = new Class4(local30);
+			local30 = Static162.clp2(local23);
+			this.aClass4_20 = new HashTable(local30);
 		}
 		for (local30 = 0; local30 < local23; local30++) {
 			@Pc(49) boolean local49 = arg0.g1() == 1;
 			@Pc(53) int local53 = arg0.ig3();
-			@Pc(62) Class2 local62;
+			@Pc(62) Node local62;
 			if (local49) {
-				local62 = new Class2_Sub40(arg0.gjstr());
+				local62 = new StringNode(arg0.gjstr());
 			} else {
-				local62 = new Class2_Sub39(arg0.mg4());
+				local62 = new IntNode(arg0.mg4());
 			}
-			this.aClass4_20.method87(local62, (long) local53);
+			this.aClass4_20.put(local62, (long) local53);
 		}
 	}
 
@@ -50,8 +50,8 @@ public final class Class2_Sub2_Sub3 extends Class2_Sub2 {
 		if (this.aClass4_20 == null) {
 			return arg1;
 		} else {
-			@Pc(16) Class2_Sub39 local16 = (Class2_Sub39) this.aClass4_20.method90((long) arg0);
-			return local16 == null ? arg1 : local16.anInt6818;
+			@Pc(16) IntNode local16 = (IntNode) this.aClass4_20.method90((long) arg0);
+			return local16 == null ? arg1 : local16.value;
 		}
 	}
 
@@ -71,8 +71,8 @@ public final class Class2_Sub2_Sub3 extends Class2_Sub2 {
 		if (this.aClass4_20 == null) {
 			return arg1;
 		} else {
-			@Pc(16) Class2_Sub40 local16 = (Class2_Sub40) this.aClass4_20.method90((long) arg0);
-			return local16 == null ? arg1 : local16.aString65;
+			@Pc(16) StringNode local16 = (StringNode) this.aClass4_20.method90((long) arg0);
+			return local16 == null ? arg1 : local16.value;
 		}
 	}
 }

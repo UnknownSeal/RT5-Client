@@ -13,5 +13,5 @@ public final class Static23 {
 	public static final Class89 aClass89_22 = new Class89(30, 2);
 
 	@OriginalMember(owner = "client!bg", name = "h", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_17 = new Class79("white:", "weiss:", "blanc:", "branco:");
+	public static final LocalisedText A_TRANSLATABLE_STRING___17 = new LocalisedText("white:", "weiss:", "blanc:", "branco:");
 }

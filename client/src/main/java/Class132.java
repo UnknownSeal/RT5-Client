@@ -7,7 +7,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Class132 {
 
 	@OriginalMember(owner = "client!ks", name = "c", descriptor = "Lclient!hu;")
-	private final Class98 aClass98_29 = new Class98(256);
+	private final SoftLruHashTable aSoftLruHashTable_29 = new SoftLruHashTable(256);
 
 	@OriginalMember(owner = "client!ks", name = "a", descriptor = "Lclient!r;")
 	private final Class197 aClass197_53;
@@ -20,47 +20,47 @@ public final class Class132 {
 
 	@OriginalMember(owner = "client!ks", name = "a", descriptor = "(BI)Lclient!ck;")
 	public Class2_Sub2_Sub3 method3470(@OriginalArg(1) int arg0) {
-		@Pc(6) Class98 local6 = this.aClass98_29;
+		@Pc(6) SoftLruHashTable local6 = this.aSoftLruHashTable_29;
 		@Pc(16) Class2_Sub2_Sub3 local16;
-		synchronized (this.aClass98_29) {
-			local16 = (Class2_Sub2_Sub3) this.aClass98_29.method2612((long) arg0);
+		synchronized (this.aSoftLruHashTable_29) {
+			local16 = (Class2_Sub2_Sub3) this.aSoftLruHashTable_29.method2612((long) arg0);
 		}
 		if (local16 != null) {
 			return local16;
 		}
-		@Pc(38) byte[] local38 = this.aClass197_53.method5088(arg0, 26);
+		@Pc(38) byte[] local38 = this.aClass197_53.fetchFile(26, arg0);
 		local16 = new Class2_Sub2_Sub3();
 		if (local38 != null) {
 			local16.method1345(new Buffer(local38));
 		}
-		@Pc(54) Class98 local54 = this.aClass98_29;
-		synchronized (this.aClass98_29) {
-			this.aClass98_29.method2624((long) arg0, local16);
+		@Pc(54) SoftLruHashTable local54 = this.aSoftLruHashTable_29;
+		synchronized (this.aSoftLruHashTable_29) {
+			this.aSoftLruHashTable_29.method2624((long) arg0, local16);
 			return local16;
 		}
 	}
 
 	@OriginalMember(owner = "client!ks", name = "b", descriptor = "(BI)V")
 	public void method3471() {
-		@Pc(6) Class98 local6 = this.aClass98_29;
-		synchronized (this.aClass98_29) {
-			this.aClass98_29.method2615(5);
+		@Pc(6) SoftLruHashTable local6 = this.aSoftLruHashTable_29;
+		synchronized (this.aSoftLruHashTable_29) {
+			this.aSoftLruHashTable_29.clean(5);
 		}
 	}
 
 	@OriginalMember(owner = "client!ks", name = "a", descriptor = "(B)V")
 	public void method3472() {
-		@Pc(11) Class98 local11 = this.aClass98_29;
-		synchronized (this.aClass98_29) {
-			this.aClass98_29.method2621();
+		@Pc(11) SoftLruHashTable local11 = this.aSoftLruHashTable_29;
+		synchronized (this.aSoftLruHashTable_29) {
+			this.aSoftLruHashTable_29.method2621();
 		}
 	}
 
 	@OriginalMember(owner = "client!ks", name = "a", descriptor = "(I)V")
 	public void method3474() {
-		@Pc(6) Class98 local6 = this.aClass98_29;
-		synchronized (this.aClass98_29) {
-			this.aClass98_29.method2614();
+		@Pc(6) SoftLruHashTable local6 = this.aSoftLruHashTable_29;
+		synchronized (this.aSoftLruHashTable_29) {
+			this.aSoftLruHashTable_29.method2614();
 		}
 	}
 }

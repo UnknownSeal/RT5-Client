@@ -59,7 +59,7 @@ public class Class221 {
 	private int anInt7101 = 0;
 
 	static {
-		new Class79("You do not have permission to kick users in this channel.", "Du darfst keine Benutzer aus diesem Chatraum rauswerfen.", "Vous n'êtes pas autorisé à expulser des utilisateurs de ce canal.", "Você não tem permissão para expulsar usuários neste canal.");
+		new LocalisedText("You do not have permission to kick users in this channel.", "Du darfst keine Benutzer aus diesem Chatraum rauswerfen.", "Vous n'êtes pas autorisé à expulser des utilisateurs de ce canal.", "Você não tem permissão para expulsar usuários neste canal.");
 	}
 
 	@OriginalMember(owner = "client!tg", name = "a", descriptor = "(I)V")
@@ -293,7 +293,7 @@ public class Class221 {
 			if (local9) {
 				Static67.aClass129_1.aBoolean227 = true;
 				while (Static67.aClass129_1.aBoolean226) {
-					Static231.method4022(50L);
+					Static231.sleep(50L);
 				}
 				Static67.aClass129_1 = null;
 			}

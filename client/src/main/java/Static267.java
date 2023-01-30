@@ -135,7 +135,7 @@ public final class Static267 {
 				local136[local138 * 2 + 1] = -((float) Math.sin((double) (local138 * 4 + 2) * 3.141592653589793D / (double) local24));
 			}
 			@Pc(185) int[] local185 = new int[local36];
-			local191 = Static287.method4928(local36 - 1);
+			local191 = Static287.bitCount(local36 - 1);
 			for (@Pc(193) int local193 = 0; local193 < local36; local193++) {
 				local185[local193] = Static136.method6070(local193, local191);
 			}
@@ -196,7 +196,7 @@ public final class Static267 {
 	@OriginalMember(owner = "client!pf", name = "a", descriptor = "(Lclient!r;II)Lclient!pf;")
 	public static Class2_Sub27 method4519(@OriginalArg(0) Class197 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
 		if (method4520(arg0)) {
-			@Pc(16) byte[] local16 = arg0.method5088(arg2, arg1);
+			@Pc(16) byte[] local16 = arg0.fetchFile(arg1, arg2);
 			return local16 == null ? null : new Class2_Sub27(local16);
 		} else {
 			arg0.method5087(arg2, arg1);
@@ -207,7 +207,7 @@ public final class Static267 {
 	@OriginalMember(owner = "client!pf", name = "a", descriptor = "(Lclient!r;)Z")
 	private static boolean method4520(@OriginalArg(0) Class197 arg0) {
 		if (!aBoolean368) {
-			@Pc(7) byte[] local7 = arg0.method5088(0, 0);
+			@Pc(7) byte[] local7 = arg0.fetchFile(0, 0);
 			if (local7 == null) {
 				return false;
 			}

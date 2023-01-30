@@ -105,8 +105,8 @@ public final class Static257 {
 			local31 = 0;
 			local30 = 3;
 		} else {
-			local30 = Static44.anInt1115;
-			local31 = Static44.anInt1115;
+			local30 = Static44.visibleLevel;
+			local31 = Static44.visibleLevel;
 		}
 		Static45.method1398();
 		for (@Pc(40) int local40 = local31; local40 <= local30; local40++) {

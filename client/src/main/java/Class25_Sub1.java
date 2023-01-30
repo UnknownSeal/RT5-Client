@@ -19,7 +19,7 @@ public final class Class25_Sub1 extends Class25 {
 	private int anInt685 = 0;
 
 	@OriginalMember(owner = "client!bl", name = "r", descriptor = "Lclient!ad;")
-	private final Class4 aClass4_13 = new Class4(16);
+	private final HashTable aClass4_13 = new HashTable(16);
 
 	@OriginalMember(owner = "client!bl", name = "I", descriptor = "I")
 	private int anInt688 = 0;
@@ -89,10 +89,10 @@ public final class Class25_Sub1 extends Class25 {
 		if (this.aClass135_11 == null || this.method884() == null) {
 			return;
 		}
-		for (@Pc(24) Class2 local24 = this.aClass135_12.method3550(); local24 != null; local24 = this.aClass135_12.method3551()) {
-			@Pc(30) int local30 = (int) local24.aLong232;
+		for (@Pc(24) Node local24 = this.aClass135_12.method3550(); local24 != null; local24 = this.aClass135_12.method3551()) {
+			@Pc(30) int local30 = (int) local24.key;
 			if (local30 < 0 || local30 >= this.aClass198_1.anInt5592 || this.aClass198_1.anIntArray376[local30] == 0) {
-				local24.method6467();
+				local24.unlink();
 			} else {
 				if (this.aByteArray5[local30] == 0) {
 					this.method901(local30, 1);
@@ -101,7 +101,7 @@ public final class Class25_Sub1 extends Class25 {
 					this.method901(local30, 2);
 				}
 				if (this.aByteArray5[local30] == 1) {
-					local24.method6467();
+					local24.unlink();
 				}
 			}
 		}
@@ -114,20 +114,20 @@ public final class Class25_Sub1 extends Class25 {
 				return;
 			}
 			@Pc(25) boolean local25;
-			@Pc(30) Class2 local30;
+			@Pc(30) Node local30;
 			@Pc(36) int local36;
-			@Pc(129) Class2 local129;
+			@Pc(129) Node local129;
 			if (this.aBoolean57) {
 				local25 = true;
 				for (local30 = this.aClass135_11.method3550(); local30 != null; local30 = this.aClass135_11.method3551()) {
-					local36 = (int) local30.aLong232;
+					local36 = (int) local30.key;
 					if (this.aByteArray5[local36] == 0) {
 						this.method901(local36, 1);
 					}
 					if (this.aByteArray5[local36] == 0) {
 						local25 = false;
 					} else {
-						local30.method6467();
+						local30.unlink();
 					}
 				}
 				while (this.anInt688 < this.aClass198_1.anIntArray376.length) {
@@ -142,8 +142,8 @@ public final class Class25_Sub1 extends Class25 {
 							this.method901(this.anInt688, 1);
 						}
 						if (this.aByteArray5[this.anInt688] == 0) {
-							local129 = new Class2();
-							local129.aLong232 = this.anInt688;
+							local129 = new Node();
+							local129.key = this.anInt688;
 							this.aClass135_11.method3539(local129);
 							local25 = false;
 						}
@@ -157,12 +157,12 @@ public final class Class25_Sub1 extends Class25 {
 			} else if (this.aBoolean56) {
 				local25 = true;
 				for (local30 = this.aClass135_11.method3550(); local30 != null; local30 = this.aClass135_11.method3551()) {
-					local36 = (int) local30.aLong232;
+					local36 = (int) local30.key;
 					if (this.aByteArray5[local36] != 1) {
 						this.method901(local36, 2);
 					}
 					if (this.aByteArray5[local36] == 1) {
-						local30.method6467();
+						local30.unlink();
 					} else {
 						local25 = false;
 					}
@@ -179,8 +179,8 @@ public final class Class25_Sub1 extends Class25 {
 							this.method901(this.anInt688, 2);
 						}
 						if (this.aByteArray5[this.anInt688] != 1) {
-							local129 = new Class2();
-							local129.aLong232 = this.anInt688;
+							local129 = new Node();
+							local129.key = this.anInt688;
 							this.aClass135_11.method3539(local129);
 							local25 = false;
 						}
@@ -204,7 +204,7 @@ public final class Class25_Sub1 extends Class25 {
 					if (!local329.aBoolean418) {
 						throw new RuntimeException();
 					}
-					local329.method6467();
+					local329.unlink();
 				} else {
 					local329.aBoolean417 = true;
 				}
@@ -235,7 +235,7 @@ public final class Class25_Sub1 extends Class25 {
 			return null;
 		} else {
 			@Pc(17) byte[] local17 = local9.method5647();
-			local9.method6467();
+			local9.unlink();
 			return local17;
 		}
 	}
@@ -245,8 +245,8 @@ public final class Class25_Sub1 extends Class25 {
 		if (this.aClass198_1 == null) {
 			return 0;
 		} else if (this.aBoolean57) {
-			@Pc(20) Class2 local20 = this.aClass135_11.method3550();
-			return local20 == null ? 0 : (int) local20.aLong232;
+			@Pc(20) Node local20 = this.aClass135_11.method3550();
+			return local20 == null ? 0 : (int) local20.key;
 		} else {
 			return this.aClass198_1.anInt5591;
 		}
@@ -271,7 +271,7 @@ public final class Class25_Sub1 extends Class25 {
 	private Class2_Sub2_Sub10 method901(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
 		@Pc(13) Class2_Sub2_Sub10 local13 = (Class2_Sub2_Sub10) this.aClass4_13.method90((long) arg0);
 		if (local13 != null && arg1 == 0 && !local13.aBoolean418 && local13.aBoolean416) {
-			local13.method6467();
+			local13.unlink();
 			local13 = null;
 		}
 		if (local13 == null) {
@@ -303,7 +303,7 @@ public final class Class25_Sub1 extends Class25 {
 			} else {
 				throw new RuntimeException();
 			}
-			this.aClass4_13.method87(local13, (long) arg0);
+			this.aClass4_13.put(local13, (long) arg0);
 		}
 		if (local13.aBoolean416) {
 			return null;
@@ -326,10 +326,10 @@ public final class Class25_Sub1 extends Class25 {
 				this.aClass183_1.anInt5062 = 0;
 			} catch (@Pc(350) RuntimeException local350) {
 				this.aClass183_1.method4642();
-				local13.method6467();
+				local13.unlink();
 				if (local13.aBoolean418 && !this.aClass183_1.method4643()) {
 					local292 = this.aClass183_1.method4641(true, this.anInt668, (byte) 2, arg0);
-					this.aClass4_13.method87(local292, (long) arg0);
+					this.aClass4_13.put(local292, (long) arg0);
 				}
 				return null;
 			}
@@ -343,7 +343,7 @@ public final class Class25_Sub1 extends Class25 {
 				}
 			}
 			if (!local13.aBoolean418) {
-				local13.method6467();
+				local13.unlink();
 			}
 			return local13;
 		}
@@ -366,15 +366,15 @@ public final class Class25_Sub1 extends Class25 {
 				this.aByteArray5[arg0] = 1;
 			}
 			if (!local13.aBoolean418) {
-				local13.method6467();
+				local13.unlink();
 			}
 			return local13;
 		} catch (@Pc(266) Exception local266) {
 			this.aByteArray5[arg0] = -1;
-			local13.method6467();
+			local13.unlink();
 			if (local13.aBoolean418 && !this.aClass183_1.method4643()) {
 				local292 = this.aClass183_1.method4641(true, this.anInt668, (byte) 2, arg0);
-				this.aClass4_13.method87(local292, (long) arg0);
+				this.aClass4_13.put(local292, (long) arg0);
 			}
 			return null;
 		}
@@ -386,13 +386,13 @@ public final class Class25_Sub1 extends Class25 {
 		if (this.aClass207_3 == null) {
 			return;
 		}
-		for (@Pc(20) Class2 local20 = this.aClass135_12.method3550(); local20 != null; local20 = this.aClass135_12.method3551()) {
-			if ((long) arg0 == local20.aLong232) {
+		for (@Pc(20) Node local20 = this.aClass135_12.method3550(); local20 != null; local20 = this.aClass135_12.method3551()) {
+			if ((long) arg0 == local20.key) {
 				return;
 			}
 		}
-		@Pc(46) Class2 local46 = new Class2();
-		local46.aLong232 = arg0;
+		@Pc(46) Node local46 = new Node();
+		local46.key = arg0;
 		this.aClass135_12.method3539(local46);
 	}
 

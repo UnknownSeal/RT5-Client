@@ -6,7 +6,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public abstract class Class25 {
 
 	static {
-		new Class79("You can report that person under a different rule.", "Diese Person kann bezüglich einer anderen Regel gemeldet werden.", "Vous pouvez signaler cette personne pour une autre infraction aux règles.", "Você não pode denunciar essa pessoa de acordo com uma regra diferente.");
+		new LocalisedText("You can report that person under a different rule.", "Diese Person kann bezüglich einer anderen Regel gemeldet werden.", "Vous pouvez signaler cette personne pour une autre infraction aux règles.", "Você não pode denunciar essa pessoa de acordo com uma regra diferente.");
 	}
 
 	@OriginalMember(owner = "client!di", name = "<init>", descriptor = "()V")

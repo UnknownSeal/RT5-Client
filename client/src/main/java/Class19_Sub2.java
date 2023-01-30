@@ -58,7 +58,7 @@ public final class Class19_Sub2 extends Class19 {
 	public int anInt2865;
 
 	@OriginalMember(owner = "client!j", name = "fb", descriptor = "Lclient!hu;")
-	private Class98 aClass98_25;
+	private SoftLruHashTable aSoftLruHashTable_25;
 
 	@OriginalMember(owner = "client!j", name = "lb", descriptor = "Lclient!aa;")
 	private Class2_Sub1 aClass2_Sub1_1;
@@ -133,7 +133,7 @@ public final class Class19_Sub2 extends Class19 {
 	private boolean aBoolean202 = false;
 
 	@OriginalMember(owner = "client!j", name = "cb", descriptor = "Lclient!hu;")
-	private final Class98 aClass98_24 = new Class98(16);
+	private final SoftLruHashTable aSoftLruHashTable_24 = new SoftLruHashTable(16);
 
 	@OriginalMember(owner = "client!j", name = "N", descriptor = "Ljava/awt/Canvas;")
 	private Canvas aCanvas3;
@@ -261,14 +261,14 @@ public final class Class19_Sub2 extends Class19 {
 
 	@OriginalMember(owner = "client!j", name = "a", descriptor = "([Lclient!gn;Lclient!on;[Lclient!au;I)V")
 	@Override
-	public void method2881(@OriginalArg(0) Class31[] arg0, @OriginalArg(1) Class14 arg1, @OriginalArg(2) Class12_Sub2[] arg2, @OriginalArg(3) int arg3) {
-		@Pc(3) Class31_Sub1[] local3 = new Class31_Sub1[arg0.length];
+	public void method2881(@OriginalArg(0) Model[] arg0, @OriginalArg(1) Class14 arg1, @OriginalArg(2) Class12_Sub2[] arg2, @OriginalArg(3) int arg3) {
+		@Pc(3) Model_Sub1[] local3 = new Model_Sub1[arg0.length];
 		for (@Pc(5) int local5 = 0; local5 < arg0.length; local5++) {
 			if (arg0[local5] != null) {
-				local3[local5] = (Class31_Sub1) arg0[local5];
+				local3[local5] = (Model_Sub1) arg0[local5];
 			}
 		}
-		@Pc(26) Class31_Sub1 local26 = Static38.method1259(this, local3);
+		@Pc(26) Model_Sub1 local26 = Static38.method1259(this, local3);
 		local26.method1249(arg1, arg2 == null ? null : arg2[0], null, arg3);
 	}
 
@@ -352,8 +352,8 @@ public final class Class19_Sub2 extends Class19 {
 
 	@OriginalMember(owner = "client!j", name = "a", descriptor = "(Lclient!gn;Lclient!tp;Lclient!on;Lclient!au;I)V")
 	@Override
-	public void method2824(@OriginalArg(0) Class31 arg0, @OriginalArg(1) Class224 arg1, @OriginalArg(2) Class14 arg2, @OriginalArg(3) Class12_Sub2 arg3) {
-		((Class31_Sub1) arg0).method1249(arg2, arg3, arg1, 0);
+	public void method2824(@OriginalArg(0) Model arg0, @OriginalArg(1) Class224 arg1, @OriginalArg(2) Class14 arg2, @OriginalArg(3) Class12_Sub2 arg3) {
+		((Model_Sub1) arg0).method1249(arg2, arg3, arg1, 0);
 	}
 
 	@OriginalMember(owner = "client!j", name = "a", descriptor = "(II)I")
@@ -511,8 +511,8 @@ public final class Class19_Sub2 extends Class19 {
 			this.method2816(arg1, arg2, local3, arg0.anInt4469);
 			return;
 		}
-		if (this.aClass2_Sub1_1 == null || this.aClass2_Sub1_1.aLong232 != (long) local6) {
-			this.aClass2_Sub1_1 = (Class2_Sub1) this.aClass98_24.method2612((long) local6);
+		if (this.aClass2_Sub1_1 == null || this.aClass2_Sub1_1.key != (long) local6) {
+			this.aClass2_Sub1_1 = (Class2_Sub1) this.aSoftLruHashTable_24.method2612((long) local6);
 		}
 		if (this.aClass2_Sub1_1 == null) {
 			@Pc(44) int[] local44 = this.method2910(local6);
@@ -523,7 +523,7 @@ public final class Class19_Sub2 extends Class19 {
 			this.aClass2_Sub1_1.aBoolean2 = this.method2914(local6);
 			@Pc(65) int local65 = this.aClass2_Sub1_1.aBoolean2 ? 64 : 128;
 			this.aClass2_Sub1_1.aClass13_1 = this.method2884(local44, local65, local65, local65);
-			this.aClass98_24.method2624((long) local6, this.aClass2_Sub1_1);
+			this.aSoftLruHashTable_24.method2624((long) local6, this.aClass2_Sub1_1);
 		}
 		if (this.aClass2_Sub1_1.aBoolean2) {
 			local3 <<= 0x1;
@@ -740,10 +740,10 @@ public final class Class19_Sub2 extends Class19 {
 
 	@OriginalMember(owner = "client!j", name = "k", descriptor = "(I)[I")
 	private int[] method2910(@OriginalArg(0) int arg0) {
-		@Pc(2) Class98 local2 = this.aClass98_25;
+		@Pc(2) SoftLruHashTable local2 = this.aSoftLruHashTable_25;
 		@Pc(12) Class2_Sub14 local12;
-		synchronized (this.aClass98_25) {
-			local12 = (Class2_Sub14) this.aClass98_25.method2612((long) arg0);
+		synchronized (this.aSoftLruHashTable_25) {
+			local12 = (Class2_Sub14) this.aSoftLruHashTable_25.method2612((long) arg0);
 			if (local12 == null) {
 				if (!super.anInterface2_5.method2657(arg0)) {
 					return null;
@@ -751,7 +751,7 @@ public final class Class19_Sub2 extends Class19 {
 				@Pc(32) Class229 local32 = super.anInterface2_5.method2658(arg0);
 				@Pc(42) int local42 = local32.aBoolean441 || this.aBoolean201 ? 64 : 128;
 				local12 = new Class2_Sub14(arg0, local42, super.anInterface2_5.method2656(0.7F, local42, local42, arg0), local32.aBoolean440);
-				this.aClass98_25.method2624((long) arg0, local12);
+				this.aSoftLruHashTable_25.method2624((long) arg0, local12);
 			}
 		}
 		local12.aBoolean165 = true;
@@ -842,10 +842,10 @@ public final class Class19_Sub2 extends Class19 {
 
 	@OriginalMember(owner = "client!j", name = "l", descriptor = "(I)[I")
 	public int[] method2911(@OriginalArg(0) int arg0) {
-		@Pc(2) Class98 local2 = this.aClass98_25;
+		@Pc(2) SoftLruHashTable local2 = this.aSoftLruHashTable_25;
 		@Pc(12) Class2_Sub14 local12;
-		synchronized (this.aClass98_25) {
-			local12 = (Class2_Sub14) this.aClass98_25.method2612((long) arg0);
+		synchronized (this.aSoftLruHashTable_25) {
+			local12 = (Class2_Sub14) this.aSoftLruHashTable_25.method2612((long) arg0);
 			if (local12 == null) {
 				if (!super.anInterface2_5.method2657(arg0)) {
 					return null;
@@ -853,7 +853,7 @@ public final class Class19_Sub2 extends Class19 {
 				@Pc(32) Class229 local32 = super.anInterface2_5.method2658(arg0);
 				@Pc(42) int local42 = local32.aBoolean441 || this.aBoolean201 ? 64 : 128;
 				local12 = new Class2_Sub14(arg0, local42, super.anInterface2_5.method2659(arg0, true, local42, 0.7F, local42), local32.aBoolean440);
-				this.aClass98_25.method2624((long) arg0, local12);
+				this.aSoftLruHashTable_25.method2624((long) arg0, local12);
 			}
 		}
 		local12.aBoolean165 = true;
@@ -938,13 +938,13 @@ public final class Class19_Sub2 extends Class19 {
 	@Override
 	public void method2874(@OriginalArg(0) boolean arg0) {
 		this.aBoolean201 = arg0;
-		this.aClass98_25.method2614();
+		this.aSoftLruHashTable_25.method2614();
 	}
 
 	@OriginalMember(owner = "client!j", name = "a", descriptor = "(Lclient!pr;IIII)Lclient!gn;")
 	@Override
-	public Class31 method2864(@OriginalArg(0) Class185 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
-		return new Class31_Sub1(this, arg0, arg1, arg3, arg4, arg2);
+	public Model method2864(@OriginalArg(0) Class185 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
+		return new Model_Sub1(this, arg0, arg1, arg3, arg4, arg2);
 	}
 
 	@OriginalMember(owner = "client!j", name = "a", descriptor = "(F)V")
@@ -1456,14 +1456,14 @@ public final class Class19_Sub2 extends Class19 {
 
 	@OriginalMember(owner = "client!j", name = "a", descriptor = "([Lclient!gn;Lclient!tp;Lclient!on;[Lclient!au;I)V")
 	@Override
-	public void method2830(@OriginalArg(0) Class31[] arg0, @OriginalArg(1) Class224 arg1, @OriginalArg(2) Class14 arg2, @OriginalArg(3) Class12_Sub2[] arg3, @OriginalArg(4) int arg4) {
-		@Pc(3) Class31_Sub1[] local3 = new Class31_Sub1[arg0.length];
+	public void method2830(@OriginalArg(0) Model[] arg0, @OriginalArg(1) Class224 arg1, @OriginalArg(2) Class14 arg2, @OriginalArg(3) Class12_Sub2[] arg3, @OriginalArg(4) int arg4) {
+		@Pc(3) Model_Sub1[] local3 = new Model_Sub1[arg0.length];
 		for (@Pc(5) int local5 = 0; local5 < arg0.length; local5++) {
 			if (arg0[local5] != null) {
-				local3[local5] = (Class31_Sub1) arg0[local5];
+				local3[local5] = (Model_Sub1) arg0[local5];
 			}
 		}
-		@Pc(26) Class31_Sub1 local26 = Static38.method1259(this, local3);
+		@Pc(26) Model_Sub1 local26 = Static38.method1259(this, local3);
 		local26.method1249(arg2, arg3 == null ? null : arg3[0], arg1, arg4);
 	}
 
@@ -1556,7 +1556,7 @@ public final class Class19_Sub2 extends Class19 {
 	@Override
 	public void method2848(@OriginalArg(0) int arg0) {
 		@Pc(4) int local4 = arg0 - this.anInt2849;
-		for (@Pc(9) Object local9 = this.aClass98_25.method2619(); local9 != null; local9 = this.aClass98_25.method2618()) {
+		for (@Pc(9) Object local9 = this.aSoftLruHashTable_25.method2619(); local9 != null; local9 = this.aSoftLruHashTable_25.method2618()) {
 			@Pc(13) Class2_Sub14 local13 = (Class2_Sub14) local9;
 			if (local13.aBoolean165) {
 				local13.anInt2233 += local4;
@@ -1570,7 +1570,7 @@ public final class Class19_Sub2 extends Class19 {
 			}
 		}
 		this.anInt2849 = arg0;
-		this.aClass98_24.method2615(5);
+		this.aSoftLruHashTable_24.clean(5);
 	}
 
 	@OriginalMember(owner = "client!j", name = "b", descriptor = "(IIIII)V")
@@ -1626,7 +1626,7 @@ public final class Class19_Sub2 extends Class19 {
 	@OriginalMember(owner = "client!j", name = "L", descriptor = "()V")
 	@Override
 	public void method2903() {
-		this.aClass98_25.method2614();
+		this.aSoftLruHashTable_25.method2614();
 	}
 
 	@OriginalMember(owner = "client!j", name = "y", descriptor = "()Z")
@@ -1808,7 +1808,7 @@ public final class Class19_Sub2 extends Class19 {
 
 	@OriginalMember(owner = "client!j", name = "M", descriptor = "()V")
 	private void method2915() {
-		this.aClass98_25 = new Class98(20);
+		this.aSoftLruHashTable_25 = new SoftLruHashTable(20);
 		this.aClass14_Sub1_2 = new Class14_Sub1();
 		Static280.method4765(false);
 		this.aBoolean202 = true;

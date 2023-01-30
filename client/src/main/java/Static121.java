@@ -13,7 +13,7 @@ public final class Static121 {
 	public static Class127 aClass127_4;
 
 	@OriginalMember(owner = "client!gu", name = "w", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_53 = new Class79("Loaded core fonts", "Schriftarten geladen", "Polices chargées", "Fontes principais carregadas");
+	public static final LocalisedText A_TRANSLATABLE_STRING___53 = new LocalisedText("Loaded core fonts", "Schriftarten geladen", "Polices chargées", "Fontes principais carregadas");
 
 	@OriginalMember(owner = "client!gu", name = "a", descriptor = "(ZI)I")
 	public static int method2393(@OriginalArg(1) int arg0) {

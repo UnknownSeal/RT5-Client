@@ -12,7 +12,7 @@ public final class Static353 {
 	public static int[] anIntArray450;
 
 	@OriginalMember(owner = "client!ui", name = "a", descriptor = "Lclient!ad;")
-	public static final Class4 aClass4_136 = new Class4(32);
+	public static final HashTable aClass4_136 = new HashTable(32);
 
 	@OriginalMember(owner = "client!ui", name = "l", descriptor = "Lclient!h;")
 	public static final Class89 aClass89_230 = new Class89(104, 4);

@@ -45,7 +45,7 @@ public final class Class2_Sub12_Sub2 extends Class2_Sub12 {
 					this.method2078(local60);
 				} else {
 					local60.anInt5127 = local68;
-					this.method2080(local60.aClass2_243, local60);
+					this.method2080(local60.next, local60);
 				}
 			}
 		} while (arg2 != 0);
@@ -71,9 +71,9 @@ public final class Class2_Sub12_Sub2 extends Class2_Sub12 {
 
 	@OriginalMember(owner = "client!fi", name = "a", descriptor = "(Lclient!qa;)V")
 	private void method2078(@OriginalArg(0) Class2_Sub30 arg0) {
-		arg0.method6467();
+		arg0.unlink();
 		arg0.method4694();
-		@Pc(9) Class2 local9 = this.aClass135_17.aClass2_130.aClass2_243;
+		@Pc(9) Node local9 = this.aClass135_17.aClass2_130.next;
 		if (local9 == this.aClass135_17.aClass2_130) {
 			this.anInt1999 = -1;
 		} else {
@@ -107,7 +107,7 @@ public final class Class2_Sub12_Sub2 extends Class2_Sub12 {
 					this.method2078(local50);
 				} else {
 					local50.anInt5127 = local58;
-					this.method2080(local50.aClass2_243, local50);
+					this.method2080(local50.next, local50);
 				}
 			}
 		} while (arg0 != 0);
@@ -127,17 +127,17 @@ public final class Class2_Sub12_Sub2 extends Class2_Sub12 {
 	}
 
 	@OriginalMember(owner = "client!fi", name = "a", descriptor = "(Lclient!ag;Lclient!qa;)V")
-	private void method2080(@OriginalArg(0) Class2 arg0, @OriginalArg(1) Class2_Sub30 arg1) {
+	private void method2080(@OriginalArg(0) Node arg0, @OriginalArg(1) Class2_Sub30 arg1) {
 		while (arg0 != this.aClass135_17.aClass2_130 && ((Class2_Sub30) arg0).anInt5127 <= arg1.anInt5127) {
-			arg0 = arg0.aClass2_243;
+			arg0 = arg0.next;
 		}
 		Static97.method2100(arg1, arg0);
-		this.anInt1999 = ((Class2_Sub30) this.aClass135_17.aClass2_130.aClass2_243).anInt5127;
+		this.anInt1999 = ((Class2_Sub30) this.aClass135_17.aClass2_130.next).anInt5127;
 	}
 
 	@OriginalMember(owner = "client!fi", name = "a", descriptor = "(Lclient!ll;)V")
 	public synchronized void method2081(@OriginalArg(0) Class2_Sub12 arg0) {
-		arg0.method6467();
+		arg0.unlink();
 	}
 
 	@OriginalMember(owner = "client!fi", name = "c", descriptor = "([III)V")

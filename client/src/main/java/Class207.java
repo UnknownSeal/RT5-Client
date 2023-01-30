@@ -21,8 +21,8 @@ public final class Class207 {
 	private final int anInt5772;
 
 	static {
-		new Class79(null, "bevor du die Option 'Regelverstoß melden' benutzt.", null, null);
-		new Class79(null, "geschickt werden.", null, null);
+		new LocalisedText(null, "bevor du die Option 'Regelverstoß melden' benutzt.", null, null);
+		new LocalisedText(null, "geschickt werden.", null, null);
 	}
 
 	@OriginalMember(owner = "client!rq", name = "<init>", descriptor = "(ILclient!rn;Lclient!rn;I)V")

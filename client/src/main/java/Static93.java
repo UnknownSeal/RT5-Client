@@ -20,9 +20,9 @@ public final class Static93 {
 	public static void method1999(@OriginalArg(0) Class11_Sub5_Sub2 arg0, @OriginalArg(2) int arg1) {
 		@Pc(7) int local7 = -1;
 		@Pc(9) int local9 = 0;
-		if (arg0.anInt4622 > Static114.anInt2348) {
+		if (arg0.anInt4622 > Static114.loop) {
 			Static297.method5112(arg0);
-		} else if (arg0.anInt4584 < Static114.anInt2348) {
+		} else if (arg0.anInt4584 < Static114.loop) {
 			Static317.method5547(arg0, false);
 			local9 = Static16.anInt4756;
 			local7 = Static170.anInt3229;

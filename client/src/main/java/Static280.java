@@ -19,9 +19,9 @@ public final class Static280 {
 				local32 = arg1.anApplet1.getParameter("haveie6");
 			}
 			if (local32 == null || !local32.equals("1")) {
-				@Pc(52) Class32 local52 = Static234.method4094(arg1, 0, arg0);
+				@Pc(52) PrivelegedRequest local52 = Static234.method4094(arg1, 0, arg0);
 				Static257.aString39 = arg0;
-				Static18.aClass32_2 = local52;
+				Static18.aPrivelegedRequest_2 = local52;
 				Static17.aClass152_4 = arg1;
 				return;
 			}

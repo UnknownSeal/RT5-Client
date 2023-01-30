@@ -8,7 +8,7 @@ public final class Static239 {
 	public static final int[] anIntArray284 = new int[2048];
 
 	@OriginalMember(owner = "client!nn", name = "U", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_95 = new Class79("Drop", "Fallen lassen", "Poser", "Largar");
+	public static final LocalisedText A_TRANSLATABLE_STRING___95 = new LocalisedText("Drop", "Fallen lassen", "Poser", "Largar");
 
 	@OriginalMember(owner = "client!nn", name = "V", descriptor = "Lclient!mc;")
 	public static final Class145 aClass145_158 = new Class145(78, 5);
@@ -27,7 +27,7 @@ public final class Static239 {
 				Static227.aClass2_Sub12_Sub2_2.method2081(local12.aClass2_Sub12_Sub4_2);
 				local12.aClass2_Sub12_Sub4_2 = null;
 			}
-			local12.method6467();
+			local12.unlink();
 		}
 		if (!arg0) {
 			return;
@@ -37,14 +37,14 @@ public final class Static239 {
 				Static227.aClass2_Sub12_Sub2_2.method2081(local55.aClass2_Sub12_Sub4_3);
 				local55.aClass2_Sub12_Sub4_3 = null;
 			}
-			local55.method6467();
+			local55.unlink();
 		}
 		for (@Pc(82) Class2_Sub19 local82 = (Class2_Sub19) Static232.aClass4_86.method80(); local82 != null; local82 = (Class2_Sub19) Static232.aClass4_86.method79()) {
 			if (local82.aClass2_Sub12_Sub4_3 != null) {
 				Static227.aClass2_Sub12_Sub2_2.method2081(local82.aClass2_Sub12_Sub4_3);
 				local82.aClass2_Sub12_Sub4_3 = null;
 			}
-			local82.method6467();
+			local82.unlink();
 		}
 	}
 

@@ -12,25 +12,25 @@ public final class Static145 {
 		}
 		if (Static148.aBoolean192 && Static174.aClass123_2.method3342(81) && Static268.anInt4959 > 2) {
 			if (local18) {
-				Static32.aClass2_Sub5_2 = (Class2_Sub5) Static129.aClass135_19.aClass2_130.aClass2_244.aClass2_244;
+				Static32.aClass2_Sub5_2 = (Class2_Sub5) Static129.aClass135_19.aClass2_130.previous.previous;
 			} else {
-				Static259.method4426((Class2_Sub5) Static129.aClass135_19.aClass2_130.aClass2_244.aClass2_244, Static370.aClass2_Sub24_1.method5242(), Static370.aClass2_Sub24_1.method5241());
+				Static259.method4426((Class2_Sub5) Static129.aClass135_19.aClass2_130.previous.previous, Static370.aClass2_Sub24_1.method5242(), Static370.aClass2_Sub24_1.method5241());
 			}
 		} else if (local18) {
-			Static32.aClass2_Sub5_2 = (Class2_Sub5) Static129.aClass135_19.aClass2_130.aClass2_244;
+			Static32.aClass2_Sub5_2 = (Class2_Sub5) Static129.aClass135_19.aClass2_130.previous;
 		} else {
-			Static259.method4426((Class2_Sub5) Static129.aClass135_19.aClass2_130.aClass2_244, Static370.aClass2_Sub24_1.method5242(), Static370.aClass2_Sub24_1.method5241());
+			Static259.method4426((Class2_Sub5) Static129.aClass135_19.aClass2_130.previous, Static370.aClass2_Sub24_1.method5242(), Static370.aClass2_Sub24_1.method5241());
 		}
 	}
 
 	@OriginalMember(owner = "client!ig", name = "a", descriptor = "(Lclient!tl;Lclient!tl;Z)V")
-	public static void method2696(@OriginalArg(0) Class2_Sub2 arg0, @OriginalArg(1) Class2_Sub2 arg1) {
-		if (arg1.aClass2_Sub2_52 != null) {
-			arg1.method6142();
+	public static void insertAfter(@OriginalArg(1) SecondaryNode arg1, @OriginalArg(0) SecondaryNode arg0) {
+		if (arg1.secondaryPrevious != null) {
+			arg1.unlinkSecondary();
 		}
-		arg1.aClass2_Sub2_51 = arg0.aClass2_Sub2_51;
-		arg1.aClass2_Sub2_52 = arg0;
-		arg1.aClass2_Sub2_52.aClass2_Sub2_51 = arg1;
-		arg1.aClass2_Sub2_51.aClass2_Sub2_52 = arg1;
+		arg1.secondaryNext = arg0.secondaryNext;
+		arg1.secondaryPrevious = arg0;
+		arg1.secondaryPrevious.secondaryNext = arg1;
+		arg1.secondaryNext.secondaryPrevious = arg1;
 	}
 }

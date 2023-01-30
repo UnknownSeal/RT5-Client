@@ -25,7 +25,7 @@ public final class Class164 {
 	public int anInt4417;
 
 	@OriginalMember(owner = "client!np", name = "t", descriptor = "Lclient!ad;")
-	private Class4 aClass4_89;
+	private HashTable aClass4_89;
 
 	@OriginalMember(owner = "client!np", name = "x", descriptor = "Ljava/lang/String;")
 	public String aString48;
@@ -141,13 +141,13 @@ public final class Class164 {
 			if (local5 == 0) {
 				return;
 			}
-			this.method4185(local5, arg0);
+			this.decode(local5, arg0);
 		}
 	}
 
 	@OriginalMember(owner = "client!np", name = "a", descriptor = "(BLclient!wm;)Lclient!jd;")
 	public Class13 method4182(@OriginalArg(1) Class19 arg0) {
-		@Pc(28) Class13 local28 = (Class13) this.aClass125_2.aClass98_27.method2612((long) (this.anInt4413 | 0x20000 | arg0.anInt2836 << 29));
+		@Pc(28) Class13 local28 = (Class13) this.aClass125_2.aSoftLruHashTable_27.method2612((long) (this.anInt4413 | 0x20000 | arg0.anInt2836 << 29));
 		if (local28 != null) {
 			return local28;
 		}
@@ -155,7 +155,7 @@ public final class Class164 {
 		@Pc(48) Class48 local48 = Static396.method1682(this.aClass125_2.aClass197_50, this.anInt4413, 0);
 		if (local48 != null) {
 			local28 = arg0.method2891(local48);
-			this.aClass125_2.aClass98_27.method2624((long) (this.anInt4413 | 0x20000 | arg0.anInt2836 << 29), local28);
+			this.aClass125_2.aSoftLruHashTable_27.method2624((long) (this.anInt4413 | 0x20000 | arg0.anInt2836 << 29), local28);
 		}
 		return local28;
 	}
@@ -165,100 +165,98 @@ public final class Class164 {
 		if (this.aClass4_89 == null) {
 			return arg1;
 		} else {
-			@Pc(22) Class2_Sub40 local22 = (Class2_Sub40) this.aClass4_89.method90((long) arg0);
-			return local22 == null ? arg1 : local22.aString65;
+			@Pc(22) StringNode local22 = (StringNode) this.aClass4_89.method90((long) arg0);
+			return local22 == null ? arg1 : local22.value;
 		}
 	}
 
 	@OriginalMember(owner = "client!np", name = "a", descriptor = "(IILclient!bt;)V")
-	private void method4185(@OriginalArg(0) int arg0, @OriginalArg(2) Buffer arg1) {
-		if (arg0 == 1) {
-			this.anInt4420 = arg1.g2();
-		} else if (arg0 == 2) {
-			this.anInt4438 = arg1.g2();
-		} else if (arg0 == 3) {
-			this.aString48 = arg1.gjstr();
-		} else if (arg0 == 4) {
-			this.anInt4431 = arg1.ig3();
-		} else if (arg0 == 5) {
-			this.anInt4406 = arg1.ig3();
-		} else if (arg0 == 6) {
-			this.anInt4418 = arg1.g1();
+	private void decode(@OriginalArg(0) int opcode, @OriginalArg(2) Buffer buffer) {
+		@Pc(57) int local57;
+		if (opcode == 1) {
+			this.anInt4420 = buffer.g2();
+		} else if (opcode == 2) {
+			this.anInt4438 = buffer.g2();
+		} else if (opcode == 3) {
+			this.aString48 = buffer.gjstr();
+		} else if (opcode == 4) {
+			this.anInt4431 = buffer.ig3();
+		} else if (opcode == 5) {
+			this.anInt4406 = buffer.ig3();
+		} else if (opcode == 6) {
+			this.anInt4418 = buffer.g1();
+		} else if (opcode == 7) {
+			local57 = buffer.g1();
+			if ((local57 & 0x1) == 0) {
+				this.aBoolean305 = false;
+			}
+			if ((local57 & 0x2) == 2) {
+				this.aBoolean304 = true;
+			}
+		} else if (opcode == 8) {
+			this.aBoolean303 = buffer.g1() == 1;
+		} else if (opcode == 9) {
+			this.anInt4433 = buffer.g2();
+			if (this.anInt4433 == 65535) {
+				this.anInt4433 = -1;
+			}
+			this.anInt4410 = buffer.g2();
+			if (this.anInt4410 == 65535) {
+				this.anInt4410 = -1;
+			}
+			this.anInt4407 = buffer.mg4();
+			this.anInt4404 = buffer.mg4();
+		} else if (opcode >= 10 && opcode <= 14) {
+			this.aStringArray41[opcode - 10] = buffer.gjstr();
 		} else {
-			@Pc(57) int local57;
-			if (arg0 == 7) {
-				local57 = arg1.g1();
-				if ((local57 & 0x1) == 0) {
-					this.aBoolean305 = false;
+			@Pc(196) int local196;
+			if (opcode == 15) {
+				local57 = buffer.g1();
+				this.anIntArray290 = new int[local57 * 2];
+				for (local196 = 0; local196 < local57 * 2; local196++) {
+					this.anIntArray290[local196] = buffer.g2b_dup();
 				}
-				if ((local57 & 0x2) == 2) {
-					this.aBoolean304 = true;
+				this.anInt4422 = buffer.mg4();
+				this.anInt4414 = buffer.mg4();
+			} else if (opcode == 16) {
+				this.aBoolean302 = false;
+			} else if (opcode == 17) {
+				this.aString49 = buffer.gjstr();
+			} else if (opcode == 18) {
+				this.anInt4413 = buffer.g2();
+			} else if (opcode == 19) {
+				this.anInt4424 = buffer.g2();
+			} else if (opcode == 20) {
+				this.anInt4435 = buffer.g2();
+				if (this.anInt4435 == 65535) {
+					this.anInt4435 = -1;
 				}
-			} else if (arg0 == 8) {
-				this.aBoolean303 = arg1.g1() == 1;
-			} else if (arg0 == 9) {
-				this.anInt4433 = arg1.g2();
-				if (this.anInt4433 == 65535) {
-					this.anInt4433 = -1;
+				this.anInt4411 = buffer.g2();
+				if (this.anInt4411 == 65535) {
+					this.anInt4411 = -1;
 				}
-				this.anInt4410 = arg1.g2();
-				if (this.anInt4410 == 65535) {
-					this.anInt4410 = -1;
+				this.anInt4427 = buffer.mg4();
+				this.anInt4439 = buffer.mg4();
+			} else if (opcode == 21) {
+				this.anInt4417 = buffer.mg4();
+			} else if (opcode == 22) {
+				this.anInt4437 = buffer.mg4();
+			} else if (opcode == 249) {
+				local57 = buffer.g1();
+				if (this.aClass4_89 == null) {
+					local196 = Static162.clp2(local57);
+					this.aClass4_89 = new HashTable(local196);
 				}
-				this.anInt4407 = arg1.mg4();
-				this.anInt4404 = arg1.mg4();
-			} else if (arg0 >= 10 && arg0 <= 14) {
-				this.aStringArray41[arg0 - 10] = arg1.gjstr();
-			} else {
-				@Pc(196) int local196;
-				if (arg0 == 15) {
-					local57 = arg1.g1();
-					this.anIntArray290 = new int[local57 * 2];
-					for (local196 = 0; local196 < local57 * 2; local196++) {
-						this.anIntArray290[local196] = arg1.g2b_dup();
+				for (local196 = 0; local196 < local57; local196++) {
+					@Pc(215) boolean local215 = buffer.g1() == 1;
+					@Pc(219) int local219 = buffer.ig3();
+					@Pc(228) Node local228;
+					if (local215) {
+						local228 = new StringNode(buffer.gjstr());
+					} else {
+						local228 = new IntNode(buffer.mg4());
 					}
-					this.anInt4422 = arg1.mg4();
-					this.anInt4414 = arg1.mg4();
-				} else if (arg0 == 16) {
-					this.aBoolean302 = false;
-				} else if (arg0 == 17) {
-					this.aString49 = arg1.gjstr();
-				} else if (arg0 == 18) {
-					this.anInt4413 = arg1.g2();
-				} else if (arg0 == 19) {
-					this.anInt4424 = arg1.g2();
-				} else if (arg0 == 20) {
-					this.anInt4435 = arg1.g2();
-					if (this.anInt4435 == 65535) {
-						this.anInt4435 = -1;
-					}
-					this.anInt4411 = arg1.g2();
-					if (this.anInt4411 == 65535) {
-						this.anInt4411 = -1;
-					}
-					this.anInt4427 = arg1.mg4();
-					this.anInt4439 = arg1.mg4();
-				} else if (arg0 == 21) {
-					this.anInt4417 = arg1.mg4();
-				} else if (arg0 == 22) {
-					this.anInt4437 = arg1.mg4();
-				} else if (arg0 == 249) {
-					local57 = arg1.g1();
-					if (this.aClass4_89 == null) {
-						local196 = Static162.method2976(local57);
-						this.aClass4_89 = new Class4(local196);
-					}
-					for (local196 = 0; local196 < local57; local196++) {
-						@Pc(215) boolean local215 = arg1.g1() == 1;
-						@Pc(219) int local219 = arg1.ig3();
-						@Pc(228) Class2 local228;
-						if (local215) {
-							local228 = new Class2_Sub40(arg1.gjstr());
-						} else {
-							local228 = new Class2_Sub39(arg1.mg4());
-						}
-						this.aClass4_89.method87(local228, (long) local219);
-					}
+					this.aClass4_89.put(local228, (long) local219);
 				}
 			}
 		}
@@ -288,8 +286,8 @@ public final class Class164 {
 		if (this.aClass4_89 == null) {
 			return arg0;
 		} else {
-			@Pc(25) Class2_Sub39 local25 = (Class2_Sub39) this.aClass4_89.method90((long) arg1);
-			return local25 == null ? arg0 : local25.anInt6818;
+			@Pc(25) IntNode local25 = (IntNode) this.aClass4_89.method90((long) arg1);
+			return local25 == null ? arg0 : local25.value;
 		}
 	}
 
@@ -297,14 +295,14 @@ public final class Class164 {
 	public Class13 method4188(@OriginalArg(0) Class19 arg0, @OriginalArg(2) boolean arg1) {
 		@Pc(17) int local17 = arg1 ? this.anInt4438 : this.anInt4420;
 		@Pc(24) int local24 = local17 | arg0.anInt2836 << 29;
-		@Pc(33) Class13 local33 = (Class13) this.aClass125_2.aClass98_27.method2612((long) local24);
+		@Pc(33) Class13 local33 = (Class13) this.aClass125_2.aSoftLruHashTable_27.method2612((long) local24);
 		if (local33 != null) {
 			return local33;
 		} else if (this.aClass125_2.aClass197_50.method5086(local17)) {
 			@Pc(53) Class48 local53 = Static396.method1682(this.aClass125_2.aClass197_50, local17, 0);
 			if (local53 != null) {
 				local33 = arg0.method2891(local53);
-				this.aClass125_2.aClass98_27.method2624((long) local24, local33);
+				this.aClass125_2.aSoftLruHashTable_27.method2624((long) local24, local33);
 			}
 			return local33;
 		} else {

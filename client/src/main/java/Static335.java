@@ -5,10 +5,10 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static335 {
 
 	@OriginalMember(owner = "client!ti", name = "A", descriptor = "Lclient!iu;")
-	public static Class111 aClass111_4;
+	public static BufferedSocket aBufferedSocket_4;
 
 	@OriginalMember(owner = "client!ti", name = "r", descriptor = "Lclient!hu;")
-	public static final Class98 aClass98_57 = new Class98(200);
+	public static final SoftLruHashTable A_SOFT_LRU_HASH_TABLE___57 = new SoftLruHashTable(200);
 
 	@OriginalMember(owner = "client!ti", name = "L", descriptor = "[B")
 	public static final byte[] aByteArray92 = new byte[2048];
@@ -31,21 +31,21 @@ public final class Static335 {
 		Static211.method3720();
 		Static155.method2790();
 		Static241.method4191(false);
-		Static67.method1772();
+		Static67.clear();
 		for (@Pc(41) int local41 = 0; local41 < 2048; local41++) {
 			@Pc(47) Class11_Sub5_Sub2_Sub1 local47 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local41];
 			if (local47 != null) {
 				local47.aClass2_Sub6_3 = null;
-				for (@Pc(54) int local54 = 0; local54 < local47.aClass31Array3.length; local54++) {
-					local47.aClass31Array3[local54] = null;
+				for (@Pc(54) int local54 = 0; local54 < local47.aModelArray3.length; local54++) {
+					local47.aModelArray3[local54] = null;
 				}
 			}
 		}
-		for (@Pc(73) int local73 = 0; local73 < Static365.aClass11_Sub5_Sub2_Sub2Array1.length; local73++) {
-			@Pc(79) Class11_Sub5_Sub2_Sub2 local79 = Static365.aClass11_Sub5_Sub2_Sub2Array1[local73];
+		for (@Pc(73) int local73 = 0; local73 < Static365.npcs.length; local73++) {
+			@Pc(79) Npc local79 = Static365.npcs[local73];
 			if (local79 != null) {
-				for (@Pc(83) int local83 = 0; local83 < local79.aClass31Array3.length; local83++) {
-					local79.aClass31Array3[local83] = null;
+				for (@Pc(83) int local83 = 0; local83 < local79.aModelArray3.length; local83++) {
+					local79.aModelArray3[local83] = null;
 				}
 			}
 		}

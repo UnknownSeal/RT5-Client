@@ -17,20 +17,20 @@ public final class Static69 {
 		@Pc(24) int local24;
 		for (@Pc(18) int local18 = 0; local18 < Static242.anInt4450; local18++) {
 			local24 = Static17.anIntArray291[local18];
-			if (Static114.anInt2348 != Static365.aClass11_Sub5_Sub2_Sub2Array1[local24].anInt4610) {
-				if (Static365.aClass11_Sub5_Sub2_Sub2Array1[local24].aClass71_1.method2099()) {
-					Static154.method2781(Static365.aClass11_Sub5_Sub2_Sub2Array1[local24]);
+			if (Static114.loop != Static365.npcs[local24].lastSeenLoop) {
+				if (Static365.npcs[local24].type.method2099()) {
+					Static154.method2781(Static365.npcs[local24]);
 				}
-				Static365.aClass11_Sub5_Sub2_Sub2Array1[local24].method4341(null);
-				Static365.aClass11_Sub5_Sub2_Sub2Array1[local24] = null;
+				Static365.npcs[local24].setType(null);
+				Static365.npcs[local24] = null;
 			}
 		}
 		if (Static212.aClass2_Sub4_Sub2_3.offset != Static82.anInt1836) {
 			throw new RuntimeException("gnp1 pos:" + Static212.aClass2_Sub4_Sub2_3.offset + " psize:" + Static82.anInt1836);
 		}
-		for (local24 = 0; local24 < Static166.anInt3187; local24++) {
-			if (Static365.aClass11_Sub5_Sub2_Sub2Array1[Static211.anIntArray230[local24]] == null) {
-				throw new RuntimeException("gnp2 pos:" + local24 + " size:" + Static166.anInt3187);
+		for (local24 = 0; local24 < Static166.size; local24++) {
+			if (Static365.npcs[Static211.ids[local24]] == null) {
+				throw new RuntimeException("gnp2 pos:" + local24 + " size:" + Static166.size);
 			}
 		}
 	}

@@ -8,13 +8,13 @@ public final class Static44 {
 	public static int anInt1105;
 
 	@OriginalMember(owner = "client!cl", name = "u", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_26 = new Class79(" is already on your ignore list.", " steht bereits auf deiner Ignorieren-Liste!", " est déjà dans votre liste noire.", " já está na sua lista de ignorados.");
+	public static final LocalisedText A_TRANSLATABLE_STRING___26 = new LocalisedText(" is already on your ignore list.", " steht bereits auf deiner Ignorieren-Liste!", " est déjà dans votre liste noire.", " já está na sua lista de ignorados.");
 
 	@OriginalMember(owner = "client!cl", name = "B", descriptor = "I")
 	public static int anInt1106 = 20;
 
 	@OriginalMember(owner = "client!cl", name = "L", descriptor = "I")
-	public static int anInt1115 = 0;
+	public static int visibleLevel = 0;
 
 	@OriginalMember(owner = "client!cl", name = "M", descriptor = "[Z")
 	public static final boolean[] aBooleanArray11 = new boolean[8];
@@ -92,7 +92,7 @@ public final class Static44 {
 
 	@OriginalMember(owner = "client!cl", name = "a", descriptor = "(Lclient!r;I)V")
 	public static void method1359(@OriginalArg(0) Class197 arg0) {
-		Static75.anInt1736 = arg0.method5074("titlebg");
-		Static265.anInt4856 = arg0.method5074("logo");
+		Static75.anInt1736 = arg0.getGroupID("titlebg");
+		Static265.anInt4856 = arg0.getGroupID("logo");
 	}
 }

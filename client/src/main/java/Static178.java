@@ -14,7 +14,7 @@ public final class Static178 {
 	public static Class51 aClass51_3;
 
 	@OriginalMember(owner = "client!kf", name = "a", descriptor = "(IIIILclient!nb;IILclient!gn;ILclient!wm;IZIII)Lclient!gn;")
-	public static Class31 method2340(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) Class157 arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) Class31 arg7, @OriginalArg(8) int arg8, @OriginalArg(9) Class19 arg9, @OriginalArg(10) int arg10, @OriginalArg(11) boolean arg11, @OriginalArg(12) int arg12, @OriginalArg(13) int arg13) {
+	public static Model method2340(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) Class157 arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) Model arg7, @OriginalArg(8) int arg8, @OriginalArg(9) Class19 arg9, @OriginalArg(10) int arg10, @OriginalArg(11) boolean arg11, @OriginalArg(12) int arg12, @OriginalArg(13) int arg13) {
 		if (arg7 == null) {
 			return null;
 		}
@@ -24,10 +24,10 @@ public final class Static178 {
 			local11 &= 0xFFFFFDFF;
 		}
 		@Pc(48) long local48 = ((long) arg10 << 32) + ((long) ((arg1 << 24) + (arg2 << 16) + arg5) + ((long) arg6 << 48));
-		@Pc(50) Class98 local50 = Static98.aClass98_10;
-		@Pc(58) Class31 local58;
-		synchronized (Static98.aClass98_10) {
-			local58 = (Class31) Static98.aClass98_10.method2612(local48);
+		@Pc(50) SoftLruHashTable local50 = Static98.A_SOFT_LRU_HASH_TABLE___10;
+		@Pc(58) Model local58;
+		synchronized (Static98.A_SOFT_LRU_HASH_TABLE___10) {
+			local58 = (Model) Static98.A_SOFT_LRU_HASH_TABLE___10.method2612(local48);
 		}
 		@Pc(157) int local157;
 		@Pc(163) int local163;
@@ -80,9 +80,9 @@ public final class Static178 {
 				}
 			}
 			local58 = arg9.method2864(local150, local11, Static199.anInt5756, 64, 768);
-			@Pc(411) Class98 local411 = Static98.aClass98_10;
-			synchronized (Static98.aClass98_10) {
-				Static98.aClass98_10.method2624(local48, local58);
+			@Pc(411) SoftLruHashTable local411 = Static98.A_SOFT_LRU_HASH_TABLE___10;
+			synchronized (Static98.A_SOFT_LRU_HASH_TABLE___10) {
+				Static98.A_SOFT_LRU_HASH_TABLE___10.method2624(local48, local58);
 			}
 		}
 		@Pc(430) int local430 = arg5 * 64 - 1;

@@ -38,7 +38,7 @@ public final class Class2_Sub3_Sub36 extends Class2_Sub3 {
 	private int anInt6928 = 1024;
 
 	static {
-		new Class79("You are temporarily blocked from joining channels - please try again later!", "Du darfst derzeit keine Chaträume betreten - bitte versuch es später.", "Vous êtes temporairement exclu des canaux - veuillez réessayer ultérieurement.", "Você está temporariamente impedido de entrar em canais. Tente de novo depois!");
+		new LocalisedText("You are temporarily blocked from joining channels - please try again later!", "Du darfst derzeit keine Chaträume betreten - bitte versuch es später.", "Vous êtes temporairement exclu des canaux - veuillez réessayer ultérieurement.", "Você está temporariamente impedido de entrar em canais. Tente de novo depois!");
 	}
 
 	@OriginalMember(owner = "client!vl", name = "<init>", descriptor = "()V")

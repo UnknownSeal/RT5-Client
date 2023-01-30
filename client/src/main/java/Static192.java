@@ -42,6 +42,6 @@ public final class Static192 {
 
 	@OriginalMember(owner = "client!l", name = "a", descriptor = "(I)V")
 	public static void method3507() {
-		Static233.aClass98_37.method2614();
+		Static233.A_SOFT_LRU_HASH_TABLE___37.method2614();
 	}
 }

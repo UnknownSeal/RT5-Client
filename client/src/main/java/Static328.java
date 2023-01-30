@@ -10,7 +10,7 @@ public final class Static328 {
 	public static Class152 aClass152_5;
 
 	@OriginalMember(owner = "client!tb", name = "B", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_127 = new Class79(" more options", " weitere Optionen", " autres options", " mais opções");
+	public static final LocalisedText A_TRANSLATABLE_STRING___127 = new LocalisedText(" more options", " weitere Optionen", " autres options", " mais opções");
 
 	@OriginalMember(owner = "client!tb", name = "E", descriptor = "[I")
 	public static final int[] anIntArray416 = new int[] { 8, 11, 4, 6, 9, 7, 10, 0 };

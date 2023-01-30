@@ -106,7 +106,7 @@ public final class Class91 {
 	}
 
 	@OriginalMember(owner = "client!hf", name = "a", descriptor = "(IILclient!wm;BILclient!gp;I)Lclient!gn;")
-	public Class31 method2433(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Class19 arg2, @OriginalArg(4) int arg3, @OriginalArg(5) Class85 arg4, @OriginalArg(6) int arg5) {
+	public Model method2433(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Class19 arg2, @OriginalArg(4) int arg3, @OriginalArg(5) Class85 arg4, @OriginalArg(6) int arg5) {
 		@Pc(7) int local7 = arg3;
 		@Pc(23) Class157 local23 = this.anInt2448 == -1 || arg5 == -1 ? null : arg4.method2371(this.anInt2448);
 		if (local23 != null) {
@@ -118,10 +118,10 @@ public final class Class91 {
 		if (this.anInt2454 != 128 || this.anInt2445 != 0) {
 			local7 |= 0x5;
 		}
-		@Pc(62) Class98 local62 = this.aClass211_1.aClass98_51;
-		@Pc(82) Class31 local82;
-		synchronized (this.aClass211_1.aClass98_51) {
-			local82 = (Class31) this.aClass211_1.aClass98_51.method2612((long) (this.anInt2453 |= arg2.anInt2836 << 29));
+		@Pc(62) SoftLruHashTable local62 = this.aClass211_1.aSoftLruHashTable_51;
+		@Pc(82) Model local82;
+		synchronized (this.aClass211_1.aSoftLruHashTable_51) {
+			local82 = (Model) this.aClass211_1.aSoftLruHashTable_51.method2612((long) (this.anInt2453 |= arg2.anInt2836 << 29));
 		}
 		if (local82 == null || arg2.method2863(local82.method3826(), local7) != 0) {
 			if (local82 != null) {
@@ -151,12 +151,12 @@ public final class Class91 {
 				}
 			}
 			local82.method3813(local7);
-			@Pc(209) Class98 local209 = this.aClass211_1.aClass98_51;
-			synchronized (this.aClass211_1.aClass98_51) {
-				this.aClass211_1.aClass98_51.method2624((long) (this.anInt2453 |= arg2.anInt2836 << 29), local82);
+			@Pc(209) SoftLruHashTable local209 = this.aClass211_1.aSoftLruHashTable_51;
+			synchronized (this.aClass211_1.aSoftLruHashTable_51) {
+				this.aClass211_1.aSoftLruHashTable_51.method2624((long) (this.anInt2453 |= arg2.anInt2836 << 29), local82);
 			}
 		}
-		@Pc(253) Class31 local253 = local23 == null ? local82.method3799((byte) 2, local7, true) : local23.method3986(arg0, (byte) 2, arg5, 0, arg1, local7, local82);
+		@Pc(253) Model local253 = local23 == null ? local82.method3799((byte) 2, local7, true) : local23.method3986(arg0, (byte) 2, arg5, 0, arg1, local7, local82);
 		if (this.anInt2454 != 128 || this.anInt2447 != 128) {
 			local253.method3841(this.anInt2454, this.anInt2447, this.anInt2454);
 		}

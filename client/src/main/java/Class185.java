@@ -987,7 +987,7 @@ public final class Class185 {
 	}
 
 	@OriginalMember(owner = "client!pr", name = "a", descriptor = "(IIII)V")
-	public void method4655(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2) {
+	public void translate(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2) {
 		for (@Pc(7) int local7 = 0; local7 < this.anInt5075; local7++) {
 			this.anIntArray354[local7] += arg0;
 			this.anIntArray355[local7] += arg2;

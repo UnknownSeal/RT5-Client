@@ -44,7 +44,7 @@ public final class Static298 {
 			Static227.aClass2_Sub12_Sub2_2.method2081(local11.aClass2_Sub12_Sub4_3);
 			local11.aClass2_Sub12_Sub4_3 = null;
 		}
-		local11.method6467();
+		local11.unlink();
 	}
 
 	@OriginalMember(owner = "client!rc", name = "a", descriptor = "(II)Z")
@@ -58,7 +58,7 @@ public final class Static298 {
 
 	@OriginalMember(owner = "client!rc", name = "a", descriptor = "(IZLclient!r;I)Lclient!pr;")
 	public static Class185 method2426(@OriginalArg(2) Class197 arg0, @OriginalArg(3) int arg1) {
-		@Pc(9) byte[] local9 = arg0.method5088(0, arg1);
+		@Pc(9) byte[] local9 = arg0.fetchFile(arg1, 0);
 		return local9 == null ? null : new Class185(local9);
 	}
 

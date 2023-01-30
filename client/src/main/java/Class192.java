@@ -7,7 +7,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Class192 {
 
 	@OriginalMember(owner = "client!ql", name = "a", descriptor = "Lclient!gn;")
-	private Class31 aClass31_7;
+	private Model aModel_7;
 
 	@OriginalMember(owner = "client!ql", name = "c", descriptor = "[Z")
 	private boolean[] aBooleanArray49;
@@ -140,7 +140,7 @@ public final class Class192 {
 			this.aClass157_2 = null;
 			return;
 		}
-		this.aClass31_7 = null;
+		this.aModel_7 = null;
 		if (this.aClass157_2 == null || local11 != this.aClass157_2.anInt4028) {
 			this.aClass157_2 = Static39.aClass85_1.method2371(local11);
 		} else if (this.aClass157_2.anInt4022 == 0) {
@@ -161,7 +161,7 @@ public final class Class192 {
 		if (this.anInt5423 < 0 || this.anInt5423 >= this.aClass157_2.anIntArray262.length) {
 			this.anInt5423 = -1;
 		}
-		this.anInt5441 = Static114.anInt2348 - this.anInt5431;
+		this.anInt5441 = Static114.loop - this.anInt5431;
 	}
 
 	@OriginalMember(owner = "client!ql", name = "a", descriptor = "(IIB)V")
@@ -176,7 +176,7 @@ public final class Class192 {
 					return;
 				}
 			}
-			@Pc(31) int local31 = Static114.anInt2348 - this.anInt5441;
+			@Pc(31) int local31 = Static114.loop - this.anInt5441;
 			if (local31 > 100 && this.aClass157_2.anInt4032 > 0) {
 				@Pc(53) int local53 = this.aClass157_2.anIntArray262.length - this.aClass157_2.anInt4032;
 				while (this.anInt5426 < local53 && this.aClass157_2.anIntArray261[this.anInt5426] < local31) {
@@ -218,7 +218,7 @@ public final class Class192 {
 				}
 			}
 			this.anInt5431 = local31;
-			this.anInt5441 = Static114.anInt2348 - local31;
+			this.anInt5441 = Static114.loop - local31;
 			return;
 		}
 	}
@@ -230,7 +230,7 @@ public final class Class192 {
 	}
 
 	@OriginalMember(owner = "client!ql", name = "a", descriptor = "(Lclient!wm;ILclient!gn;IIZBI)V")
-	public void method4934(@OriginalArg(0) Class19 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Class31 arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) boolean arg5, @OriginalArg(7) int arg6) {
+	public void method4934(@OriginalArg(0) Class19 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Model arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) boolean arg5, @OriginalArg(7) int arg6) {
 		@Pc(6) Class114[] local6 = arg2.method3807();
 		@Pc(9) Class163[] local9 = arg2.method3839();
 		if ((this.aClass12_Sub5_5 == null || this.aClass12_Sub5_5.aBoolean322) && (local6 != null || local9 != null)) {
@@ -239,16 +239,16 @@ public final class Class192 {
 				local26 = local26.method1533(Static214.aClass226_1);
 			}
 			if (local26 != null) {
-				this.aClass12_Sub5_5 = new Class12_Sub5(Static114.anInt2348);
+				this.aClass12_Sub5_5 = new Class12_Sub5(Static114.loop);
 			}
 		}
 		if (this.aClass12_Sub5_5 == null) {
 			return;
 		}
 		if (arg5) {
-			this.aClass12_Sub5_5.method4356(arg0, (long) Static114.anInt2348, local6, local9);
+			this.aClass12_Sub5_5.method4356(arg0, (long) Static114.loop, local6, local9);
 		} else {
-			this.aClass12_Sub5_5.method4354((long) Static114.anInt2348);
+			this.aClass12_Sub5_5.method4354((long) Static114.loop);
 		}
 		this.aClass12_Sub5_5.method4360(this.aByte59, arg3, arg6, arg1, arg4);
 	}
@@ -281,7 +281,7 @@ public final class Class192 {
 	}
 
 	@OriginalMember(owner = "client!ql", name = "a", descriptor = "(ZZLclient!wm;IIIB)Lclient!gn;")
-	public Class31 method4940(@OriginalArg(0) boolean arg0, @OriginalArg(1) boolean arg1, @OriginalArg(2) Class19 arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5) {
+	public Model method4940(@OriginalArg(0) boolean arg0, @OriginalArg(1) boolean arg1, @OriginalArg(2) Class19 arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5) {
 		@Pc(11) Class41 local11 = Static359.aClass202_4.method5162(this.anInt5432);
 		if (local11.anIntArray94 != null) {
 			local11 = local11.method1533(Static214.aClass226_1);
@@ -293,7 +293,7 @@ public final class Class192 {
 			return null;
 		}
 		if (!this.aBoolean385 && this.anInt5428 != local11.anInt1351) {
-			this.aClass31_7 = null;
+			this.aModel_7 = null;
 			this.method4931(-1);
 		}
 		this.method4932(arg5, arg4);
@@ -314,7 +314,7 @@ public final class Class192 {
 		} else {
 			local167 = this.aByte58 < 3 ? Static365.aClass6Array4[this.aByte58 + 1] : null;
 		}
-		@Pc(175) Class31 local175 = null;
+		@Pc(175) Model local175 = null;
 		if (this.aClass157_2 != null) {
 			if (local117) {
 				arg3 |= 0x20000;
@@ -334,22 +334,22 @@ public final class Class192 {
 				}
 				this.anInt5421 = local175.method3801();
 			}
-			this.aClass31_7 = null;
-		} else if (this.aClass31_7 != null && arg3 == (arg3 & this.aClass31_7.method3826()) && this.anInt5428 == local11.anInt1351) {
-			local175 = this.aClass31_7;
+			this.aModel_7 = null;
+		} else if (this.aModel_7 != null && arg3 == (arg3 & this.aModel_7.method3826()) && this.anInt5428 == local11.anInt1351) {
+			local175 = this.aModel_7;
 		} else {
-			if (this.aClass31_7 != null) {
-				arg3 |= this.aClass31_7.method3826();
+			if (this.aModel_7 != null) {
+				arg3 |= this.aModel_7.method3826();
 			}
 			@Pc(247) Class105 local247 = local11.method1519(local149.method5727(this.anInt5422, this.anInt5438), local149, this.anInt5433 == 11 ? this.anInt5429 + 4 : this.anInt5429, this.anInt5438, this.anInt5422, arg3, local117, arg2, local167, this.anInt5433 == 11 ? 10 : this.anInt5433);
 			if (local247 == null) {
 				this.aClass2_Sub2_Sub4_6 = null;
 				this.anInt5421 = 0;
 				this.aBooleanArray49 = null;
-				this.aClass31_7 = null;
+				this.aModel_7 = null;
 			} else {
-				local175 = local247.aClass31_3;
-				this.aClass31_7 = local247.aClass31_3;
+				local175 = local247.aModel_3;
+				this.aModel_7 = local247.aModel_3;
 				if (local117) {
 					this.aBooleanArray49 = null;
 					this.aClass2_Sub2_Sub4_6 = local247.aClass2_Sub2_Sub4_3;

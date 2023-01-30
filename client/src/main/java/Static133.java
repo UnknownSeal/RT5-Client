@@ -8,7 +8,7 @@ public final class Static133 {
 	public static Class197 aClass197_32;
 
 	@OriginalMember(owner = "client!hl", name = "H", descriptor = "Lclient!hu;")
-	public static final Class98 aClass98_17 = new Class98(4);
+	public static final SoftLruHashTable A_SOFT_LRU_HASH_TABLE___17 = new SoftLruHashTable(4);
 
 	@OriginalMember(owner = "client!hl", name = "I", descriptor = "Lclient!h;")
 	public static final Class89 aClass89_103 = new Class89(61, 4);
@@ -28,7 +28,7 @@ public final class Static133 {
 				Static256.method4394(arg0);
 			}
 		}
-		Static371.method6256((long) Static114.anInt2348, Static190.aClass19_8);
+		Static371.method6256((long) Static114.loop, Static190.aClass19_8);
 		if (Static139.anInt2595 != -1) {
 			Static232.method4027(Static139.anInt2595);
 		}
@@ -39,7 +39,7 @@ public final class Static133 {
 			Static20.aBooleanArray6[local42] = Static357.aBooleanArray59[local42];
 			Static357.aBooleanArray59[local42] = false;
 		}
-		Static132.anInt2468 = Static114.anInt2348;
+		Static132.anInt2468 = Static114.loop;
 		if (Static190.aClass19_8.method2871()) {
 			Static106.aBoolean164 = true;
 		}

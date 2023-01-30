@@ -117,13 +117,13 @@ public final class Static140 {
 
 	@OriginalMember(owner = "client!hu", name = "h", descriptor = "(I)V")
 	public static void method2627() {
-		@Pc(1) Class98 local1 = Static92.aClass98_9;
-		synchronized (Static92.aClass98_9) {
-			Static92.aClass98_9.method2614();
+		@Pc(1) SoftLruHashTable local1 = Static92.A_SOFT_LRU_HASH_TABLE___9;
+		synchronized (Static92.A_SOFT_LRU_HASH_TABLE___9) {
+			Static92.A_SOFT_LRU_HASH_TABLE___9.method2614();
 		}
-		local1 = Static349.aClass98_58;
-		synchronized (Static349.aClass98_58) {
-			Static349.aClass98_58.method2614();
+		local1 = Static349.A_SOFT_LRU_HASH_TABLE___58;
+		synchronized (Static349.A_SOFT_LRU_HASH_TABLE___58) {
+			Static349.A_SOFT_LRU_HASH_TABLE___58.method2614();
 		}
 	}
 }

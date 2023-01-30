@@ -13,7 +13,7 @@ public final class Static378 {
 	public static int anInt7077 = 0;
 
 	@OriginalMember(owner = "client!wa", name = "j", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_146 = new Class79("Attack", "Angreifen", "Attaquer", "Atacar");
+	public static final LocalisedText A_TRANSLATABLE_STRING___146 = new LocalisedText("Attack", "Angreifen", "Attaquer", "Atacar");
 
 	@OriginalMember(owner = "client!wa", name = "a", descriptor = "(I)Lclient!vj;")
 	public static Class2_Sub2_Sub17 method6311() {

@@ -5,7 +5,6 @@ import java.awt.Container;
 import java.awt.Frame;
 import java.awt.Graphics;
 import java.awt.Insets;
-import java.awt.LayoutManager;
 import java.awt.Rectangle;
 import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
@@ -86,9 +85,9 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 			return;
 		}
 		try {
-			@Pc(21) Class32 local21 = Static328.aClass152_5.method3751(Static253.anApplet_Sub1_1.getClass());
+			@Pc(21) PrivelegedRequest local21 = Static328.aClass152_5.method3751(Static253.anApplet_Sub1_1.getClass());
 			while (local21.anInt993 == 0) {
-				Static231.method4022(100L);
+				Static231.sleep(100L);
 			}
 			if (local21.anObject2 != null) {
 				throw (Throwable) local21.anObject2;
@@ -120,9 +119,9 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 			@Pc(48) Insets local48 = Static222.aFrame1.getInsets();
 			Static222.aFrame1.setSize(local48.right + local48.left + Static142.anInt2663, local48.bottom + local48.top + Static178.anInt2319);
 			Static392.aClass152_6 = Static328.aClass152_5 = new Class152(null, arg1, arg0, 29);
-			@Pc(82) Class32 local82 = Static328.aClass152_5.method3768(1, this);
+			@Pc(82) PrivelegedRequest local82 = Static328.aClass152_5.startThread(this, 1);
 			while (local82.anInt993 == 0) {
-				Static231.method4022(10L);
+				Static231.sleep(10L);
 			}
 		} catch (@Pc(95) Exception local95) {
 			Static262.method6252(local95, null);
@@ -225,7 +224,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 	public final void destroy() {
 		if (Static253.anApplet_Sub1_1 == this && !Static111.aBoolean167) {
 			Static393.aLong231 = Static204.method3684();
-			Static231.method4022(5000L);
+			Static231.sleep(5000L);
 			Static392.aClass152_6 = null;
 			this.method1395(false);
 		}
@@ -294,9 +293,9 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 				if (Static328.aClass152_5 == null) {
 					Static392.aClass152_6 = Static328.aClass152_5 = new Class152(this, arg1, null, 0);
 				}
-				@Pc(66) Class32 local66 = Static328.aClass152_5.method3768(1, this);
+				@Pc(66) PrivelegedRequest local66 = Static328.aClass152_5.startThread(this, 1);
 				while (local66.anInt993 == 0) {
-					Static231.method4022(10L);
+					Static231.sleep(10L);
 				}
 			} else {
 				Static373.anInt7032++;
@@ -334,9 +333,9 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 			}
 			this.aBoolean94 = false;
 		}
-		@Pc(48) Class32 local48 = Static328.aClass152_5.method3770(Static253.anApplet_Sub1_1.getClass());
+		@Pc(48) PrivelegedRequest local48 = Static328.aClass152_5.method3770(Static253.anApplet_Sub1_1.getClass());
 		while (local48.anInt993 == 0) {
-			Static231.method4022(100L);
+			Static231.sleep(100L);
 		}
 		if (Static21.aCanvas1 != null) {
 			try {

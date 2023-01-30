@@ -17,7 +17,7 @@ public final class Static129 {
 	public static final Class135 aClass135_19 = new Class135();
 
 	@OriginalMember(owner = "client!hg", name = "l", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_57 = new Class79("flash2:", "blinken2:", "clignotant2:", "flash2:");
+	public static final LocalisedText A_TRANSLATABLE_STRING___57 = new LocalisedText("flash2:", "blinken2:", "clignotant2:", "flash2:");
 
 	@OriginalMember(owner = "client!hg", name = "m", descriptor = "Lclient!ld;")
 	public static final Class135 aClass135_20 = new Class135();
@@ -40,22 +40,22 @@ public final class Static129 {
 
 	@OriginalMember(owner = "client!hg", name = "a", descriptor = "(I)Lclient!gg;")
 	public static Class2_Sub2_Sub7 method2437() {
-		@Pc(16) Class2_Sub2_Sub7 local16 = (Class2_Sub2_Sub7) Static368.aClass246_10.method6336();
+		@Pc(16) Class2_Sub2_Sub7 local16 = (Class2_Sub2_Sub7) Static368.aClass246_10.head();
 		if (local16 != null) {
-			local16.method6467();
-			local16.method6142();
+			local16.unlink();
+			local16.unlinkSecondary();
 			return local16;
 		}
 		do {
-			local16 = (Class2_Sub2_Sub7) Static208.aClass246_4.method6336();
+			local16 = (Class2_Sub2_Sub7) Static208.aClass246_4.head();
 			if (local16 == null) {
 				return null;
 			}
 			if (local16.method2308() > Static204.method3684()) {
 				return null;
 			}
-			local16.method6467();
-			local16.method6142();
+			local16.unlink();
+			local16.unlinkSecondary();
 		} while ((local16.aLong215 & Long.MIN_VALUE) == 0L);
 		return local16;
 	}
@@ -95,7 +95,7 @@ public final class Static129 {
 			Static313.anIntArray388[local35] = (int) (Math.random() * 48.0D) + 8;
 		}
 		try {
-			Static23.aClipboard1 = Static144.aClient1.getToolkit().getSystemClipboard();
+			Static23.aClipboard1 = Static144.instance.getToolkit().getSystemClipboard();
 		} catch (@Pc(84) Exception local84) {
 		}
 	}

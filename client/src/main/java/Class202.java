@@ -13,16 +13,16 @@ public final class Class202 {
 	public boolean aBoolean400 = false;
 
 	@OriginalMember(owner = "client!rh", name = "h", descriptor = "Lclient!hu;")
-	private Class98 aClass98_45 = new Class98(64);
+	private SoftLruHashTable aSoftLruHashTable_45 = new SoftLruHashTable(64);
 
 	@OriginalMember(owner = "client!rh", name = "q", descriptor = "Lclient!hu;")
-	public final Class98 aClass98_46 = new Class98(500);
+	public final SoftLruHashTable aSoftLruHashTable_46 = new SoftLruHashTable(500);
 
 	@OriginalMember(owner = "client!rh", name = "t", descriptor = "Lclient!hu;")
-	public final Class98 aClass98_47 = new Class98(30);
+	public final SoftLruHashTable aSoftLruHashTable_47 = new SoftLruHashTable(30);
 
 	@OriginalMember(owner = "client!rh", name = "u", descriptor = "Lclient!hu;")
-	public final Class98 aClass98_48 = new Class98(50);
+	public final SoftLruHashTable aSoftLruHashTable_48 = new SoftLruHashTable(50);
 
 	@OriginalMember(owner = "client!rh", name = "n", descriptor = "Lclient!r;")
 	private final Class197 aClass197_79;
@@ -34,7 +34,7 @@ public final class Class202 {
 	public final Class197 aClass197_78;
 
 	static {
-		new Class79("Unable to send message - system busy.", "Deine Nachricht konnte nicht verschickt werden, das System ist derzeit ausgelastet.", "Impossible d'envoyer un message - système occupé.", "Não foi possível enviar a mensagem. O sistema está ocupado.");
+		new LocalisedText("Unable to send message - system busy.", "Deine Nachricht konnte nicht verschickt werden, das System ist derzeit ausgelastet.", "Impossible d'envoyer un message - système occupé.", "Não foi possível enviar a mensagem. O sistema está ocupado.");
 	}
 
 	@OriginalMember(owner = "client!rh", name = "<init>", descriptor = "(Lclient!dn;IZLclient!r;Lclient!r;)V")
@@ -51,17 +51,17 @@ public final class Class202 {
 	@OriginalMember(owner = "client!rh", name = "a", descriptor = "(II)V")
 	public void method5154(@OriginalArg(0) int arg0) {
 		this.anInt5669 = arg0;
-		@Pc(9) Class98 local9 = this.aClass98_46;
-		synchronized (this.aClass98_46) {
-			this.aClass98_46.method2614();
+		@Pc(9) SoftLruHashTable local9 = this.aSoftLruHashTable_46;
+		synchronized (this.aSoftLruHashTable_46) {
+			this.aSoftLruHashTable_46.method2614();
 		}
-		local9 = this.aClass98_47;
-		synchronized (this.aClass98_47) {
-			this.aClass98_47.method2614();
+		local9 = this.aSoftLruHashTable_47;
+		synchronized (this.aSoftLruHashTable_47) {
+			this.aSoftLruHashTable_47.method2614();
 		}
-		local9 = this.aClass98_48;
-		synchronized (this.aClass98_48) {
-			this.aClass98_48.method2614();
+		local9 = this.aSoftLruHashTable_48;
+		synchronized (this.aSoftLruHashTable_48) {
+			this.aSoftLruHashTable_48.method2614();
 		}
 	}
 
@@ -75,41 +75,41 @@ public final class Class202 {
 
 	@OriginalMember(owner = "client!rh", name = "a", descriptor = "(B)V")
 	public void method5157() {
-		@Pc(2) Class98 local2 = this.aClass98_45;
-		synchronized (this.aClass98_45) {
-			this.aClass98_45.method2621();
+		@Pc(2) SoftLruHashTable local2 = this.aSoftLruHashTable_45;
+		synchronized (this.aSoftLruHashTable_45) {
+			this.aSoftLruHashTable_45.method2621();
 		}
-		local2 = this.aClass98_46;
-		synchronized (this.aClass98_46) {
-			this.aClass98_46.method2621();
+		local2 = this.aSoftLruHashTable_46;
+		synchronized (this.aSoftLruHashTable_46) {
+			this.aSoftLruHashTable_46.method2621();
 		}
-		local2 = this.aClass98_47;
-		synchronized (this.aClass98_47) {
-			this.aClass98_47.method2621();
+		local2 = this.aSoftLruHashTable_47;
+		synchronized (this.aSoftLruHashTable_47) {
+			this.aSoftLruHashTable_47.method2621();
 		}
-		local2 = this.aClass98_48;
-		synchronized (this.aClass98_48) {
-			this.aClass98_48.method2621();
+		local2 = this.aSoftLruHashTable_48;
+		synchronized (this.aSoftLruHashTable_48) {
+			this.aSoftLruHashTable_48.method2621();
 		}
 	}
 
 	@OriginalMember(owner = "client!rh", name = "a", descriptor = "(I)V")
 	public void method5158() {
-		@Pc(2) Class98 local2 = this.aClass98_45;
-		synchronized (this.aClass98_45) {
-			this.aClass98_45.method2614();
+		@Pc(2) SoftLruHashTable local2 = this.aSoftLruHashTable_45;
+		synchronized (this.aSoftLruHashTable_45) {
+			this.aSoftLruHashTable_45.method2614();
 		}
-		local2 = this.aClass98_46;
-		synchronized (this.aClass98_46) {
-			this.aClass98_46.method2614();
+		local2 = this.aSoftLruHashTable_46;
+		synchronized (this.aSoftLruHashTable_46) {
+			this.aSoftLruHashTable_46.method2614();
 		}
-		local2 = this.aClass98_47;
-		synchronized (this.aClass98_47) {
-			this.aClass98_47.method2614();
+		local2 = this.aSoftLruHashTable_47;
+		synchronized (this.aSoftLruHashTable_47) {
+			this.aSoftLruHashTable_47.method2614();
 		}
-		local2 = this.aClass98_48;
-		synchronized (this.aClass98_48) {
-			this.aClass98_48.method2614();
+		local2 = this.aSoftLruHashTable_48;
+		synchronized (this.aSoftLruHashTable_48) {
+			this.aSoftLruHashTable_48.method2614();
 		}
 	}
 
@@ -123,40 +123,40 @@ public final class Class202 {
 
 	@OriginalMember(owner = "client!rh", name = "a", descriptor = "(IB)V")
 	public void method5160(@OriginalArg(0) int arg0) {
-		this.aClass98_45 = new Class98(arg0);
+		this.aSoftLruHashTable_45 = new SoftLruHashTable(arg0);
 	}
 
 	@OriginalMember(owner = "client!rh", name = "b", descriptor = "(II)V")
 	public void method5161() {
-		@Pc(6) Class98 local6 = this.aClass98_45;
-		synchronized (this.aClass98_45) {
-			this.aClass98_45.method2615(5);
+		@Pc(6) SoftLruHashTable local6 = this.aSoftLruHashTable_45;
+		synchronized (this.aSoftLruHashTable_45) {
+			this.aSoftLruHashTable_45.clean(5);
 		}
-		local6 = this.aClass98_46;
-		synchronized (this.aClass98_46) {
-			this.aClass98_46.method2615(5);
+		local6 = this.aSoftLruHashTable_46;
+		synchronized (this.aSoftLruHashTable_46) {
+			this.aSoftLruHashTable_46.clean(5);
 		}
-		local6 = this.aClass98_47;
-		synchronized (this.aClass98_47) {
-			this.aClass98_47.method2615(5);
+		local6 = this.aSoftLruHashTable_47;
+		synchronized (this.aSoftLruHashTable_47) {
+			this.aSoftLruHashTable_47.clean(5);
 		}
-		local6 = this.aClass98_48;
-		synchronized (this.aClass98_48) {
-			this.aClass98_48.method2615(5);
+		local6 = this.aSoftLruHashTable_48;
+		synchronized (this.aSoftLruHashTable_48) {
+			this.aSoftLruHashTable_48.clean(5);
 		}
 	}
 
 	@OriginalMember(owner = "client!rh", name = "b", descriptor = "(IB)Lclient!ct;")
 	public Class41 method5162(@OriginalArg(0) int arg0) {
-		@Pc(6) Class98 local6 = this.aClass98_45;
+		@Pc(6) SoftLruHashTable local6 = this.aSoftLruHashTable_45;
 		@Pc(16) Class41 local16;
-		synchronized (this.aClass98_45) {
-			local16 = (Class41) this.aClass98_45.method2612((long) arg0);
+		synchronized (this.aSoftLruHashTable_45) {
+			local16 = (Class41) this.aSoftLruHashTable_45.method2612((long) arg0);
 		}
 		if (local16 != null) {
 			return local16;
 		}
-		@Pc(37) byte[] local37 = this.aClass197_79.method5088(Static381.method6347(arg0), Static324.method5539(arg0));
+		@Pc(37) byte[] local37 = this.aClass197_79.fetchFile(Static324.method5539(arg0), Static381.method6347(arg0));
 		local16 = new Class41();
 		local16.anInt1351 = arg0;
 		local16.aClass202_1 = this;
@@ -172,9 +172,9 @@ public final class Class202 {
 			local16.anIntArray96 = null;
 			local16.aStringArray10 = null;
 		}
-		@Pc(91) Class98 local91 = this.aClass98_45;
-		synchronized (this.aClass98_45) {
-			this.aClass98_45.method2624((long) arg0, local16);
+		@Pc(91) SoftLruHashTable local91 = this.aSoftLruHashTable_45;
+		synchronized (this.aSoftLruHashTable_45) {
+			this.aSoftLruHashTable_45.method2624((long) arg0, local16);
 			return local16;
 		}
 	}

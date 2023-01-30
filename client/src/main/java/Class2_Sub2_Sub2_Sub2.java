@@ -9,7 +9,7 @@ public final class Class2_Sub2_Sub2_Sub2 extends Class2_Sub2_Sub2 {
 	private final Object anObject5;
 
 	static {
-		new Class79("From", "Von:", "De", "De");
+		new LocalisedText("From", "Von:", "De", "De");
 	}
 
 	@OriginalMember(owner = "client!pn", name = "<init>", descriptor = "(Lclient!iq;Ljava/lang/Object;I)V")

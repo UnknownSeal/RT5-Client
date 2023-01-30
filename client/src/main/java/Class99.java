@@ -19,14 +19,14 @@ public final class Class99 implements Interface2 {
 	private final Class229[] aClass229Array1;
 
 	static {
-		new Class79("To prevent further mutes please read the rules.", "Um eine erneute Stummschaltung zu verhindern, lies bitte die Regeln.", "Pour éviter un nouveau blocage, lisez le règlement.", "Para evitar outros vetos, leia as regras.");
+		new LocalisedText("To prevent further mutes please read the rules.", "Um eine erneute Stummschaltung zu verhindern, lies bitte die Regeln.", "Pour éviter un nouveau blocage, lisez le règlement.", "Para evitar outros vetos, leia as regras.");
 	}
 
 	@OriginalMember(owner = "client!ia", name = "<init>", descriptor = "(Lclient!r;Lclient!r;Lclient!r;)V")
 	public Class99(@OriginalArg(0) Class197 arg0, @OriginalArg(1) Class197 arg1, @OriginalArg(2) Class197 arg2) {
 		this.aClass197_36 = arg2;
 		this.aClass197_38 = arg1;
-		@Pc(24) Buffer local24 = new Buffer(arg0.method5088(0, 0));
+		@Pc(24) Buffer local24 = new Buffer(arg0.fetchFile(0, 0));
 		@Pc(28) int local28 = local24.g2();
 		this.aClass229Array1 = new Class229[local28];
 		for (@Pc(34) int local34 = 0; local34 < local28; local34++) {
@@ -136,7 +136,7 @@ public final class Class99 implements Interface2 {
 
 	@OriginalMember(owner = "client!ia", name = "c", descriptor = "(II)Lclient!qm;")
 	private Class2_Sub2_Sub14 method2664(@OriginalArg(1) int arg0) {
-		@Pc(15) Class2_Sub2 local15 = this.aClass116_4.method3151((long) arg0);
+		@Pc(15) SecondaryNode local15 = this.aClass116_4.method3151((long) arg0);
 		if (local15 != null) {
 			return (Class2_Sub2_Sub14) local15;
 		}

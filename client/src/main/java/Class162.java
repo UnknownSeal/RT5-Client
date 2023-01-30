@@ -38,7 +38,7 @@ public final class Class162 implements Runnable {
 		if (this.aThread2 == null) {
 			return;
 		}
-		this.method4116(new Class2());
+		this.method4116(new Node());
 		try {
 			this.aThread2.join();
 		} catch (@Pc(20) InterruptedException local20) {
@@ -53,7 +53,7 @@ public final class Class162 implements Runnable {
 			@Pc(8) Class135 local8 = this.aClass135_28;
 			@Pc(38) Class2_Sub16 local38;
 			synchronized (this.aClass135_28) {
-				@Pc(15) Class2 local15;
+				@Pc(15) Node local15;
 				for (local15 = this.aClass135_28.method3548(); local15 == null; local15 = this.aClass135_28.method3548()) {
 					try {
 						this.aClass135_28.wait();
@@ -77,7 +77,7 @@ public final class Class162 implements Runnable {
 	}
 
 	@OriginalMember(owner = "client!nl", name = "a", descriptor = "(ILclient!ag;)V")
-	private void method4116(@OriginalArg(1) Class2 arg0) {
+	private void method4116(@OriginalArg(1) Node arg0) {
 		@Pc(18) Class135 local18 = this.aClass135_28;
 		synchronized (this.aClass135_28) {
 			this.aClass135_28.method3539(arg0);

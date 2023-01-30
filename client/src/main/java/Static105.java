@@ -1,4 +1,3 @@
-import java.awt.datatransfer.ClipboardOwner;
 import java.awt.datatransfer.DataFlavor;
 import java.awt.datatransfer.StringSelection;
 import java.awt.datatransfer.Transferable;
@@ -15,7 +14,7 @@ public final class Static105 {
 	public static int anInt2187;
 
 	@OriginalMember(owner = "client!ft", name = "S", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_45 = new Class79("flash1:", "blinken1:", "clignotant1:", "flash1:");
+	public static final LocalisedText A_TRANSLATABLE_STRING___45 = new LocalisedText("flash1:", "blinken1:", "clignotant1:", "flash1:");
 
 	@OriginalMember(owner = "client!ft", name = "U", descriptor = "Lclient!mc;")
 	public static final Class145 aClass145_79 = new Class145(11, 16);

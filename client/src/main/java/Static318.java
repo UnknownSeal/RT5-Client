@@ -14,16 +14,16 @@ public final class Static318 {
 
 	@OriginalMember(owner = "client!sj", name = "a", descriptor = "(BLclient!cf;)Ljava/lang/String;")
 	public static String method5420(@OriginalArg(1) Class2_Sub5 arg0) {
-		return arg0.aString11 == null || arg0.aString11.length() <= 0 ? arg0.aString10 : arg0.aString10 + Static161.aClass79_67.method2267(Static295.anInt5581) + arg0.aString11;
+		return arg0.aString11 == null || arg0.aString11.length() <= 0 ? arg0.aString10 : arg0.aString10 + Static161.A_TRANSLATABLE_STRING___67.getLocalisedText(Static295.anInt5581) + arg0.aString11;
 	}
 
 	@OriginalMember(owner = "client!sj", name = "b", descriptor = "(I)V")
 	public static void method5424() {
 		@Pc(12) Class204 local12 = null;
 		try {
-			@Pc(16) Class32 local16 = Static328.aClass152_5.method3755();
+			@Pc(16) PrivelegedRequest local16 = Static328.aClass152_5.method3755();
 			while (local16.anInt993 == 0) {
-				Static231.method4022(1L);
+				Static231.sleep(1L);
 			}
 			if (local16.anInt993 == 1) {
 				local12 = (Class204) local16.anObject2;
@@ -61,8 +61,8 @@ public final class Static318 {
 		@Pc(50) Class2_Sub17 local50;
 		if (Static77.anInt1762 == 0) {
 			for (local50 = (Class2_Sub17) Static142.aClass135_21.method3550(); local50 != null; local50 = (Class2_Sub17) Static142.aClass135_21.method3551()) {
-				Static313.aClass107_2.method2769(local50.anInt2541, Static200.aClass130_3, local50.anInt2539, arg0, false, local50.anInt2535, false, local50.aBoolean183 ? Static17.aClass11_Sub5_Sub2_Sub1_3.aClass117_1 : null, local50.anInt2537, arg0, local50.anInt2538);
-				local50.method6467();
+				Static313.aClass107_2.method2769(local50.anInt2541, Static200.aClass130_3, local50.anInt2539, arg0, false, local50.anInt2535, false, local50.aBoolean183 ? Static17.aClass11_Sub5_Sub2_Sub1_3.appearance : null, local50.anInt2537, arg0, local50.anInt2538);
+				local50.unlink();
 			}
 			Static98.method2107();
 			return;
@@ -74,8 +74,8 @@ public final class Static318 {
 			Static76.aClass130_2 = Static179.aClass19_5.method2857(Static101.method2165(Static183.anInt80, Static255.aClass197_64), Static396.method1688(Static30.aClass197_5, Static183.anInt80));
 		}
 		for (local50 = (Class2_Sub17) Static142.aClass135_21.method3550(); local50 != null; local50 = (Class2_Sub17) Static142.aClass135_21.method3551()) {
-			Static313.aClass107_2.method2769(local50.anInt2541, Static76.aClass130_2, local50.anInt2539, arg0, false, local50.anInt2535, false, local50.aBoolean183 ? Static17.aClass11_Sub5_Sub2_Sub1_3.aClass117_1 : null, local50.anInt2537, Static179.aClass19_5, local50.anInt2538);
-			local50.method6467();
+			Static313.aClass107_2.method2769(local50.anInt2541, Static76.aClass130_2, local50.anInt2539, arg0, false, local50.anInt2535, false, local50.aBoolean183 ? Static17.aClass11_Sub5_Sub2_Sub1_3.appearance : null, local50.anInt2537, Static179.aClass19_5, local50.anInt2538);
+			local50.unlink();
 		}
 	}
 }

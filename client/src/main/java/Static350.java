@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static350 {
 
 	@OriginalMember(owner = "client!ue", name = "a", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_135 = new Class79("K", "T", "K", "K");
+	public static final LocalisedText A_TRANSLATABLE_STRING___135 = new LocalisedText("K", "T", "K", "K");
 
 	@OriginalMember(owner = "client!ue", name = "a", descriptor = "(I)V")
 	public static void method5836() {
@@ -22,68 +22,68 @@ public final class Static350 {
 	}
 
 	@OriginalMember(owner = "client!ue", name = "a", descriptor = "(BILjava/lang/String;[BII)I")
-	public static int encodeString(@OriginalArg(1) int arg0, @OriginalArg(2) String arg1, @OriginalArg(3) byte[] arg2, @OriginalArg(4) int arg3) {
+	public static int encodeString(@OriginalArg(1) int arg0, @OriginalArg(2) String arg1, @OriginalArg(3) byte[] destination, @OriginalArg(4) int arg3) {
 		@Pc(8) int local8 = arg0;
 		for (@Pc(15) int local15 = 0; local15 < local8; local15++) {
-			@Pc(22) char local22 = arg1.charAt(local15);
-			if (local22 > '\u0000' && local22 < '\u0080' || !(local22 < ' ' || local22 > 'ÿ')) {
-				arg2[local15 + arg3] = (byte) local22;
-			} else if (local22 == '€') {
-				arg2[local15 + arg3] = -128;
-			} else if (local22 == '‚') {
-				arg2[arg3 + local15] = -126;
-			} else if (local22 == 'ƒ') {
-				arg2[arg3 + local15] = -125;
-			} else if (local22 == '„') {
-				arg2[local15 + arg3] = -124;
-			} else if (local22 == '…') {
-				arg2[arg3 + local15] = -123;
-			} else if (local22 == '†') {
-				arg2[arg3 + local15] = -122;
-			} else if (local22 == '‡') {
-				arg2[arg3 + local15] = -121;
-			} else if (local22 == 'ˆ') {
-				arg2[local15 + arg3] = -120;
-			} else if (local22 == '‰') {
-				arg2[local15 + arg3] = -119;
-			} else if (local22 == 'Š') {
-				arg2[arg3 + local15] = -118;
-			} else if (local22 == '‹') {
-				arg2[local15 + arg3] = -117;
-			} else if (local22 == 'Œ') {
-				arg2[local15 + arg3] = -116;
-			} else if (local22 == 'Ž') {
-				arg2[local15 + arg3] = -114;
-			} else if (local22 == '‘') {
-				arg2[local15 + arg3] = -111;
-			} else if (local22 == '’') {
-				arg2[local15 + arg3] = -110;
-			} else if (local22 == '“') {
-				arg2[arg3 + local15] = -109;
-			} else if (local22 == '”') {
-				arg2[local15 + arg3] = -108;
-			} else if (local22 == '•') {
-				arg2[local15 + arg3] = -107;
-			} else if (local22 == '–') {
-				arg2[local15 + arg3] = -106;
-			} else if (local22 == '—') {
-				arg2[local15 + arg3] = -105;
-			} else if (local22 == '˜') {
-				arg2[local15 + arg3] = -104;
-			} else if (local22 == '™') {
-				arg2[arg3 + local15] = -103;
-			} else if (local22 == 'š') {
-				arg2[local15 + arg3] = -102;
-			} else if (local22 == '›') {
-				arg2[arg3 + local15] = -101;
-			} else if (local22 == 'œ') {
-				arg2[arg3 + local15] = -100;
-			} else if (local22 == 'ž') {
-				arg2[arg3 + local15] = -98;
-			} else if (local22 == 'Ÿ') {
-				arg2[local15 + arg3] = -97;
+			@Pc(22) char c = arg1.charAt(local15);
+			if (c > '\u0000' && c < '\u0080' || !(c < ' ' || c > 'ÿ')) {
+				destination[local15 + arg3] = (byte) c;
+			} else if (c == '€') {
+				destination[local15 + arg3] = -128;
+			} else if (c == '‚') {
+				destination[arg3 + local15] = -126;
+			} else if (c == 'ƒ') {
+				destination[arg3 + local15] = -125;
+			} else if (c == '„') {
+				destination[local15 + arg3] = -124;
+			} else if (c == '…') {
+				destination[arg3 + local15] = -123;
+			} else if (c == '†') {
+				destination[arg3 + local15] = -122;
+			} else if (c == '‡') {
+				destination[arg3 + local15] = -121;
+			} else if (c == 'ˆ') {
+				destination[local15 + arg3] = -120;
+			} else if (c == '‰') {
+				destination[local15 + arg3] = -119;
+			} else if (c == 'Š') {
+				destination[arg3 + local15] = -118;
+			} else if (c == '‹') {
+				destination[local15 + arg3] = -117;
+			} else if (c == 'Œ') {
+				destination[local15 + arg3] = -116;
+			} else if (c == 'Ž') {
+				destination[local15 + arg3] = -114;
+			} else if (c == '‘') {
+				destination[local15 + arg3] = -111;
+			} else if (c == '’') {
+				destination[local15 + arg3] = -110;
+			} else if (c == '“') {
+				destination[arg3 + local15] = -109;
+			} else if (c == '”') {
+				destination[local15 + arg3] = -108;
+			} else if (c == '•') {
+				destination[local15 + arg3] = -107;
+			} else if (c == '–') {
+				destination[local15 + arg3] = -106;
+			} else if (c == '—') {
+				destination[local15 + arg3] = -105;
+			} else if (c == '˜') {
+				destination[local15 + arg3] = -104;
+			} else if (c == '™') {
+				destination[arg3 + local15] = -103;
+			} else if (c == 'š') {
+				destination[local15 + arg3] = -102;
+			} else if (c == '›') {
+				destination[arg3 + local15] = -101;
+			} else if (c == 'œ') {
+				destination[arg3 + local15] = -100;
+			} else if (c == 'ž') {
+				destination[arg3 + local15] = -98;
+			} else if (c == 'Ÿ') {
+				destination[local15 + arg3] = -97;
 			} else {
-				arg2[local15 + arg3] = 63;
+				destination[local15 + arg3] = 63;
 			}
 		}
 		return local8;

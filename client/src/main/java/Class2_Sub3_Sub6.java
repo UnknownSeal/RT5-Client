@@ -34,7 +34,7 @@ public final class Class2_Sub3_Sub6 extends Class2_Sub3 {
 	public int anInt1051 = 4;
 
 	static {
-		new Class79("You do not have a high enough rank to join this clan channel.", "Dein Rang reicht nicht aus, um diesen Chatraum zu betreten.", "Votre rang n'est pas assez élevé pour rejoindre ce canal de clan.", "Sua posição não é alta o suficiente para você entrar nesse canal de clã.");
+		new LocalisedText("You do not have a high enough rank to join this clan channel.", "Dein Rang reicht nicht aus, um diesen Chatraum zu betreten.", "Votre rang n'est pas assez élevé pour rejoindre ce canal de clan.", "Sua posição não é alta o suficiente para você entrar nesse canal de clã.");
 	}
 
 	@OriginalMember(owner = "client!ch", name = "<init>", descriptor = "()V")

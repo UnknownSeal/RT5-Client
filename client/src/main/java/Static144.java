@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static144 {
 
 	@OriginalMember(owner = "client!ie", name = "q", descriptor = "Lclient!client;")
-	public static client aClient1;
+	public static client instance;
 
 	@OriginalMember(owner = "client!ie", name = "j", descriptor = "I")
 	public static int anInt2694 = 0;
@@ -20,7 +20,7 @@ public final class Static144 {
 				local14.anInt6488 = 0;
 				Static83.method1906(local14);
 			} else {
-				local14.method6467();
+				local14.unlink();
 			}
 		}
 	}

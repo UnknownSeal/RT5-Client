@@ -8,7 +8,7 @@ public final class Static306 {
 	public static Class2_Sub26_Sub1[] aClass2_Sub26_Sub1Array2;
 
 	@OriginalMember(owner = "client!rp", name = "z", descriptor = "Lclient!hu;")
-	public static final Class98 aClass98_49 = new Class98(4);
+	public static final SoftLruHashTable A_SOFT_LRU_HASH_TABLE___49 = new SoftLruHashTable(4);
 
 	@OriginalMember(owner = "client!rp", name = "G", descriptor = "[I")
 	public static final int[] anIntArray387 = new int[] { 19, 55, 38, 155, 255, 110, 137, 205, 76 };
@@ -41,7 +41,7 @@ public final class Static306 {
 	@OriginalMember(owner = "client!rp", name = "a", descriptor = "(IIIIBII)V")
 	public static void method5252(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(5) int arg3) {
 		for (@Pc(6) Class12_Sub3 local6 = (Class12_Sub3) Static284.aClass36_7.method1415(); local6 != null; local6 = (Class12_Sub3) Static284.aClass36_7.method1420()) {
-			if (Static114.anInt2348 >= local6.anInt3201) {
+			if (Static114.loop >= local6.anInt3201) {
 				local6.method5683();
 			} else {
 				Static121.method2394(local6.anInt3207, arg2 >> 1, (local6.anInt3200 << 7) + 64, local6.anInt3204 * 2, arg1 >> 1, (local6.anInt3208 << 7) + 64);

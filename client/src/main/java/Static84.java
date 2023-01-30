@@ -8,7 +8,7 @@ public final class Static84 {
 	public static final Class145 aClass145_65 = new Class145(10, 8);
 
 	@OriginalMember(owner = "client!eo", name = "d", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_40 = new Class79("Please wait - attempting to reestablish.", "Bitte warte - es wird versucht, die Verbindung wiederherzustellen.", "Veuillez patienter - tentative de rétablissement.", "Tentando reestabelecer conexão. Aguarde.");
+	public static final LocalisedText A_TRANSLATABLE_STRING___40 = new LocalisedText("Please wait - attempting to reestablish.", "Bitte warte - es wird versucht, die Verbindung wiederherzustellen.", "Veuillez patienter - tentative de rétablissement.", "Tentando reestabelecer conexão. Aguarde.");
 
 	@OriginalMember(owner = "client!eo", name = "e", descriptor = "Lclient!h;")
 	public static final Class89 aClass89_70 = new Class89(21, 3);
@@ -22,7 +22,7 @@ public final class Static84 {
 			return true;
 		}
 		if (arg0 != '\u0000') {
-			@Pc(37) char[] local37 = Static172.aCharArray2;
+			@Pc(37) char[] local37 = Static172.CP1252_TABLE;
 			for (@Pc(39) int local39 = 0; local39 < local37.length; local39++) {
 				@Pc(45) char local45 = local37[local39];
 				if (arg0 == local45) {

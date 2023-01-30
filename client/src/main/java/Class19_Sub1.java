@@ -60,7 +60,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 	private boolean aBoolean34;
 
 	@OriginalMember(owner = "client!bf", name = "kb", descriptor = "Lclient!mp;")
-	public Class31_Sub2 aClass31_Sub2_1;
+	public Model_Sub2 aClass31_Sub2_1;
 
 	@OriginalMember(owner = "client!bf", name = "mb", descriptor = "F")
 	public float aFloat7;
@@ -84,7 +84,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 	public int anInt597;
 
 	@OriginalMember(owner = "client!bf", name = "Cb", descriptor = "Lclient!mp;")
-	public Class31_Sub2 aClass31_Sub2_2;
+	public Model_Sub2 aClass31_Sub2_2;
 
 	@OriginalMember(owner = "client!bf", name = "Db", descriptor = "I")
 	private int anInt598;
@@ -99,7 +99,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 	private long aLong20;
 
 	@OriginalMember(owner = "client!bf", name = "Ib", descriptor = "Lclient!mp;")
-	public Class31_Sub2 aClass31_Sub2_3;
+	public Model_Sub2 aClass31_Sub2_3;
 
 	@OriginalMember(owner = "client!bf", name = "Kb", descriptor = "Lclient!al;")
 	public Class8_Sub1 aClass8_Sub1_1;
@@ -159,7 +159,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 	private Interface4 anInterface4_1;
 
 	@OriginalMember(owner = "client!bf", name = "jc", descriptor = "Lclient!mp;")
-	public Class31_Sub2 aClass31_Sub2_4;
+	public Model_Sub2 aClass31_Sub2_4;
 
 	@OriginalMember(owner = "client!bf", name = "mc", descriptor = "Z")
 	private boolean aBoolean47;
@@ -177,7 +177,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 	public boolean aBoolean50;
 
 	@OriginalMember(owner = "client!bf", name = "vc", descriptor = "Lclient!mp;")
-	public Class31_Sub2 aClass31_Sub2_5;
+	public Model_Sub2 aClass31_Sub2_5;
 
 	@OriginalMember(owner = "client!bf", name = "wc", descriptor = "I")
 	private int anInt609;
@@ -192,13 +192,13 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 	public boolean aBoolean53;
 
 	@OriginalMember(owner = "client!bf", name = "Gc", descriptor = "Lclient!mp;")
-	public Class31_Sub2 aClass31_Sub2_6;
+	public Model_Sub2 aClass31_Sub2_6;
 
 	@OriginalMember(owner = "client!bf", name = "Jc", descriptor = "F")
 	public float aFloat20;
 
 	@OriginalMember(owner = "client!bf", name = "Lc", descriptor = "Lclient!mp;")
-	public Class31_Sub2 aClass31_Sub2_7;
+	public Model_Sub2 aClass31_Sub2_7;
 
 	@OriginalMember(owner = "client!bf", name = "Mc", descriptor = "Z")
 	private boolean aBoolean54;
@@ -207,7 +207,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 	public Class8_Sub1 aClass8_Sub1_3;
 
 	@OriginalMember(owner = "client!bf", name = "Tc", descriptor = "Lclient!mp;")
-	public Class31_Sub2 aClass31_Sub2_8;
+	public Model_Sub2 aClass31_Sub2_8;
 
 	@OriginalMember(owner = "client!bf", name = "Uc", descriptor = "Lclient!dl;")
 	private Class42_Sub1 aClass42_Sub1_1;
@@ -428,7 +428,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 			if (local185++ > 5) {
 				throw new RuntimeException("");
 			}
-			Static231.method4022(1000L);
+			Static231.sleep(1000L);
 		}
 		this.aCanvas2.setIgnoreRepaint(true);
 		try {
@@ -438,9 +438,9 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 					System.loadLibrary("jaggl");
 					Static22.aBoolean31 = Boolean.TRUE;
 				} else {
-					@Pc(219) Class32 local219 = arg4.method3753(this.getClass());
+					@Pc(219) PrivelegedRequest local219 = arg4.method3753(this.getClass());
 					while (local219.anInt993 == 0) {
-						Static231.method4022(100L);
+						Static231.sleep(100L);
 					}
 					if (local219.anInt993 == 1) {
 						Static22.aBoolean31 = Boolean.TRUE;
@@ -538,7 +538,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 						if (local185++ > 5) {
 							throw new RuntimeException("");
 						}
-						Static231.method4022(100L);
+						Static231.sleep(100L);
 					}
 				}
 				this.anOpengl1.glClear(GL.GL_COLOR_BUFFER_BIT);
@@ -775,8 +775,8 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 
 	@OriginalMember(owner = "client!bf", name = "e", descriptor = "(II)V")
 	public synchronized void method785(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
-		@Pc(4) Class2_Sub39 local4 = new Class2_Sub39(arg1);
-		local4.aLong232 = arg0;
+		@Pc(4) IntNode local4 = new IntNode(arg1);
+		local4.key = arg0;
 		this.aClass135_7.method3539(local4);
 	}
 
@@ -1282,11 +1282,11 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 	public synchronized void method2848(@OriginalArg(0) int arg0) {
 		@Pc(1) int local1 = 0;
 		@Pc(5) int local5 = arg0 & Integer.MAX_VALUE;
-		@Pc(16) Class2_Sub39 local16;
+		@Pc(16) IntNode local16;
 		while (!this.aClass135_5.method3549()) {
-			local16 = (Class2_Sub39) this.aClass135_5.method3548();
-			Static22.anIntArray32[local1++] = (int) local16.aLong232;
-			this.anInt581 -= local16.anInt6818;
+			local16 = (IntNode) this.aClass135_5.method3548();
+			Static22.anIntArray32[local1++] = (int) local16.key;
+			this.anInt581 -= local16.value;
 			if (local1 == 1000) {
 				this.anOpengl1.glDeleteBuffersARB(local1, Static22.anIntArray32, 0);
 				local1 = 0;
@@ -1297,9 +1297,9 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 			local1 = 0;
 		}
 		while (!this.aClass135_6.method3549()) {
-			local16 = (Class2_Sub39) this.aClass135_6.method3548();
-			Static22.anIntArray32[local1++] = (int) local16.aLong232;
-			this.anInt585 -= local16.anInt6818;
+			local16 = (IntNode) this.aClass135_6.method3548();
+			Static22.anIntArray32[local1++] = (int) local16.key;
+			this.anInt585 -= local16.value;
 			if (local1 == 1000) {
 				this.anOpengl1.glDeleteTextures(local1, Static22.anIntArray32, 0);
 				local1 = 0;
@@ -1310,8 +1310,8 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 			local1 = 0;
 		}
 		while (!this.aClass135_7.method3549()) {
-			local16 = (Class2_Sub39) this.aClass135_7.method3548();
-			Static22.anIntArray32[local1++] = local16.anInt6818;
+			local16 = (IntNode) this.aClass135_7.method3548();
+			Static22.anIntArray32[local1++] = local16.value;
 			if (local1 == 1000) {
 				this.anOpengl1.glDeleteFramebuffersEXT(local1, Static22.anIntArray32, 0);
 				local1 = 0;
@@ -1322,9 +1322,9 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 			local1 = 0;
 		}
 		while (!this.aClass135_8.method3549()) {
-			local16 = (Class2_Sub39) this.aClass135_8.method3548();
-			Static22.anIntArray32[local1++] = (int) local16.aLong232;
-			this.anInt586 -= local16.anInt6818;
+			local16 = (IntNode) this.aClass135_8.method3548();
+			Static22.anIntArray32[local1++] = (int) local16.key;
+			this.anInt586 -= local16.value;
 			if (local1 == 1000) {
 				this.anOpengl1.glDeleteRenderbuffersEXT(local1, Static22.anIntArray32, 0);
 				local1 = 0;
@@ -1335,8 +1335,8 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 			local1 = 0;
 		}
 		while (!this.aClass135_9.method3549()) {
-			local16 = (Class2_Sub39) this.aClass135_9.method3548();
-			Static22.anIntArray32[local1++] = (int) local16.aLong232;
+			local16 = (IntNode) this.aClass135_9.method3548();
+			Static22.anIntArray32[local1++] = (int) local16.key;
 			if (local1 == 1000) {
 				this.anOpengl1.glDeleteProgramsARB(local1, Static22.anIntArray32, 0);
 				local1 = 0;
@@ -1346,16 +1346,16 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 			this.anOpengl1.glDeleteProgramsARB(local1, Static22.anIntArray32, 0);
 		}
 		while (!this.aClass135_4.method3549()) {
-			local16 = (Class2_Sub39) this.aClass135_4.method3548();
-			this.anOpengl1.glDeleteLists((int) local16.aLong232, local16.anInt6818);
+			local16 = (IntNode) this.aClass135_4.method3548();
+			this.anOpengl1.glDeleteLists((int) local16.key, local16.value);
 		}
 		while (!this.aClass135_10.method3549()) {
-			local16 = (Class2_Sub39) this.aClass135_10.method3548();
-			this.anOpengl1.glDeleteObjectARB(local16.anInt6818);
+			local16 = (IntNode) this.aClass135_10.method3548();
+			this.anOpengl1.glDeleteObjectARB(local16.value);
 		}
 		while (!this.aClass135_4.method3549()) {
-			local16 = (Class2_Sub39) this.aClass135_4.method3548();
-			this.anOpengl1.glDeleteLists((int) local16.aLong232, local16.anInt6818);
+			local16 = (IntNode) this.aClass135_4.method3548();
+			this.anOpengl1.glDeleteLists((int) local16.key, local16.value);
 		}
 		if (this.method2899() > 100663296 && Static204.method3684() > this.aLong20 + 60000L) {
 			System.gc();
@@ -1544,8 +1544,8 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 
 	@OriginalMember(owner = "client!bf", name = "g", descriptor = "(II)V")
 	public synchronized void method803(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
-		@Pc(4) Class2_Sub39 local4 = new Class2_Sub39(arg1);
-		local4.aLong232 = arg0;
+		@Pc(4) IntNode local4 = new IntNode(arg1);
+		local4.key = arg0;
 		this.aClass135_6.method3539(local4);
 	}
 
@@ -1781,14 +1781,14 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 		this.aClass8_Sub1_1 = new Class8_Sub1(this, 3553, 6408, 1, 1);
 		this.aClass8_Sub1_2 = new Class8_Sub1(this, 3553, 6408, 1, 1);
 		this.aClass8_Sub1_3 = new Class8_Sub1(this, 3553, 6408, 1, 1);
-		this.aClass31_Sub2_4 = new Class31_Sub2(this);
-		this.aClass31_Sub2_1 = new Class31_Sub2(this);
-		this.aClass31_Sub2_2 = new Class31_Sub2(this);
-		this.aClass31_Sub2_8 = new Class31_Sub2(this);
-		this.aClass31_Sub2_5 = new Class31_Sub2(this);
-		this.aClass31_Sub2_3 = new Class31_Sub2(this);
-		this.aClass31_Sub2_7 = new Class31_Sub2(this);
-		this.aClass31_Sub2_6 = new Class31_Sub2(this);
+		this.aClass31_Sub2_4 = new Model_Sub2(this);
+		this.aClass31_Sub2_1 = new Model_Sub2(this);
+		this.aClass31_Sub2_2 = new Model_Sub2(this);
+		this.aClass31_Sub2_8 = new Model_Sub2(this);
+		this.aClass31_Sub2_5 = new Model_Sub2(this);
+		this.aClass31_Sub2_3 = new Model_Sub2(this);
+		this.aClass31_Sub2_7 = new Model_Sub2(this);
+		this.aClass31_Sub2_6 = new Model_Sub2(this);
 		if (this.aBoolean36) {
 			this.aClass228_1 = new Class228(this);
 		}
@@ -1813,7 +1813,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 
 	@OriginalMember(owner = "client!bf", name = "o", descriptor = "(I)V")
 	public synchronized void method820(@OriginalArg(0) int arg0) {
-		@Pc(4) Class2_Sub39 local4 = new Class2_Sub39(arg0);
+		@Pc(4) IntNode local4 = new IntNode(arg0);
 		this.aClass135_10.method3539(local4);
 	}
 
@@ -1913,7 +1913,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 
 	@OriginalMember(owner = "client!bf", name = "a", descriptor = "(Lclient!gn;Lclient!tp;Lclient!on;Lclient!au;I)V")
 	@Override
-	public void method2824(@OriginalArg(0) Class31 arg0, @OriginalArg(1) Class224 arg1, @OriginalArg(2) Class14 arg2, @OriginalArg(3) Class12_Sub2 arg3) {
+	public void method2824(@OriginalArg(0) Model arg0, @OriginalArg(1) Class224 arg1, @OriginalArg(2) Class14 arg2, @OriginalArg(3) Class12_Sub2 arg3) {
 		arg0.method3834(arg2, arg3, 0);
 		this.method2833(arg1);
 	}
@@ -1934,7 +1934,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 
 	@OriginalMember(owner = "client!bf", name = "p", descriptor = "(I)V")
 	public synchronized void method822(@OriginalArg(0) int arg0) {
-		@Pc(4) Class2_Sub39 local4 = new Class2_Sub39(arg0);
+		@Pc(4) IntNode local4 = new IntNode(arg0);
 		this.aClass135_7.method3539(local4);
 	}
 
@@ -2017,7 +2017,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 			if (local1++ > 5) {
 				throw new RuntimeException("");
 			}
-			Static231.method4022(1000L);
+			Static231.sleep(1000L);
 		}
 	}
 
@@ -2108,7 +2108,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 
 	@OriginalMember(owner = "client!bf", name = "r", descriptor = "(I)V")
 	public synchronized void method836(@OriginalArg(0) int arg0) {
-		@Pc(4) Class2_Sub39 local4 = new Class2_Sub39(arg0);
+		@Pc(4) IntNode local4 = new IntNode(arg0);
 		this.aClass135_9.method3539(local4);
 	}
 
@@ -2205,7 +2205,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 
 	@OriginalMember(owner = "client!bf", name = "a", descriptor = "([Lclient!gn;Lclient!tp;Lclient!on;[Lclient!au;I)V")
 	@Override
-	public void method2830(@OriginalArg(0) Class31[] arg0, @OriginalArg(1) Class224 arg1, @OriginalArg(2) Class14 arg2, @OriginalArg(3) Class12_Sub2[] arg3, @OriginalArg(4) int arg4) {
+	public void method2830(@OriginalArg(0) Model[] arg0, @OriginalArg(1) Class224 arg1, @OriginalArg(2) Class14 arg2, @OriginalArg(3) Class12_Sub2[] arg3, @OriginalArg(4) int arg4) {
 		this.method2881(arg0, arg2, arg3, arg4);
 		this.method2833(arg1);
 	}
@@ -2296,8 +2296,8 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 
 	@OriginalMember(owner = "client!bf", name = "h", descriptor = "(II)V")
 	public synchronized void method841(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
-		@Pc(4) Class2_Sub39 local4 = new Class2_Sub39(arg1);
-		local4.aLong232 = arg0;
+		@Pc(4) IntNode local4 = new IntNode(arg1);
+		local4.key = arg0;
 		this.aClass135_5.method3539(local4);
 	}
 
@@ -2343,8 +2343,8 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 
 	@OriginalMember(owner = "client!bf", name = "a", descriptor = "(Lclient!pr;IIII)Lclient!gn;")
 	@Override
-	public Class31 method2864(@OriginalArg(0) Class185 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
-		return new Class31_Sub2(this, arg0, arg1, arg3, arg4, arg2);
+	public Model method2864(@OriginalArg(0) Class185 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
+		return new Model_Sub2(this, arg0, arg1, arg3, arg4, arg2);
 	}
 
 	@OriginalMember(owner = "client!bf", name = "pb", descriptor = "()V")
@@ -2477,7 +2477,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 
 	@OriginalMember(owner = "client!bf", name = "a", descriptor = "([Lclient!gn;Lclient!on;[Lclient!au;I)V")
 	@Override
-	public void method2881(@OriginalArg(0) Class31[] arg0, @OriginalArg(1) Class14 arg1, @OriginalArg(2) Class12_Sub2[] arg2, @OriginalArg(3) int arg3) {
+	public void method2881(@OriginalArg(0) Model[] arg0, @OriginalArg(1) Class14 arg1, @OriginalArg(2) Class12_Sub2[] arg2, @OriginalArg(3) int arg3) {
 		for (@Pc(1) int local1 = 0; local1 < arg0.length; local1++) {
 			if (arg0[local1] != null) {
 				arg0[local1].method3834(arg1, arg2 == null ? null : arg2[local1], arg3);

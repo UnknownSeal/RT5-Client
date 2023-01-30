@@ -7,7 +7,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Class241 {
 
 	@OriginalMember(owner = "client!vq", name = "h", descriptor = "Lclient!hu;")
-	private final Class98 aClass98_64 = new Class98(128);
+	private final SoftLruHashTable aSoftLruHashTable_64 = new SoftLruHashTable(128);
 
 	@OriginalMember(owner = "client!vq", name = "f", descriptor = "Lclient!r;")
 	private final Class197 aClass197_93;
@@ -20,46 +20,46 @@ public final class Class241 {
 
 	@OriginalMember(owner = "client!vq", name = "a", descriptor = "(I)V")
 	public void method6267() {
-		@Pc(14) Class98 local14 = this.aClass98_64;
-		synchronized (this.aClass98_64) {
-			this.aClass98_64.method2621();
+		@Pc(14) SoftLruHashTable local14 = this.aSoftLruHashTable_64;
+		synchronized (this.aSoftLruHashTable_64) {
+			this.aSoftLruHashTable_64.method2621();
 		}
 	}
 
 	@OriginalMember(owner = "client!vq", name = "a", descriptor = "(IB)V")
 	public void method6268() {
-		@Pc(6) Class98 local6 = this.aClass98_64;
-		synchronized (this.aClass98_64) {
-			this.aClass98_64.method2615(5);
+		@Pc(6) SoftLruHashTable local6 = this.aSoftLruHashTable_64;
+		synchronized (this.aSoftLruHashTable_64) {
+			this.aSoftLruHashTable_64.clean(5);
 		}
 	}
 
 	@OriginalMember(owner = "client!vq", name = "a", descriptor = "(B)V")
 	public void method6269() {
-		@Pc(2) Class98 local2 = this.aClass98_64;
-		synchronized (this.aClass98_64) {
-			this.aClass98_64.method2614();
+		@Pc(2) SoftLruHashTable local2 = this.aSoftLruHashTable_64;
+		synchronized (this.aSoftLruHashTable_64) {
+			this.aSoftLruHashTable_64.method2614();
 		}
 	}
 
 	@OriginalMember(owner = "client!vq", name = "a", descriptor = "(II)Lclient!tq;")
 	public Class225 method6270(@OriginalArg(1) int arg0) {
-		@Pc(6) Class98 local6 = this.aClass98_64;
+		@Pc(6) SoftLruHashTable local6 = this.aSoftLruHashTable_64;
 		@Pc(16) Class225 local16;
-		synchronized (this.aClass98_64) {
-			local16 = (Class225) this.aClass98_64.method2612((long) arg0);
+		synchronized (this.aSoftLruHashTable_64) {
+			local16 = (Class225) this.aSoftLruHashTable_64.method2612((long) arg0);
 		}
 		if (local16 != null) {
 			return local16;
 		}
-		@Pc(33) byte[] local33 = this.aClass197_93.method5088(arg0, 1);
+		@Pc(33) byte[] local33 = this.aClass197_93.fetchFile(1, arg0);
 		local16 = new Class225();
 		if (local33 != null) {
 			local16.method5772(new Buffer(local33));
 		}
-		@Pc(49) Class98 local49 = this.aClass98_64;
-		synchronized (this.aClass98_64) {
-			this.aClass98_64.method2624((long) arg0, local16);
+		@Pc(49) SoftLruHashTable local49 = this.aSoftLruHashTable_64;
+		synchronized (this.aSoftLruHashTable_64) {
+			this.aSoftLruHashTable_64.method2624((long) arg0, local16);
 			return local16;
 		}
 	}

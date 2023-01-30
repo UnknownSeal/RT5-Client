@@ -51,16 +51,16 @@ public final class Static56 {
 
 	@OriginalMember(owner = "client!dd", name = "a", descriptor = "(I)V")
 	public static void method1614() {
-		if (Static18.aClass32_2 == null) {
+		if (Static18.aPrivelegedRequest_2 == null) {
 			return;
 		}
-		if (Static18.aClass32_2.anInt993 == 1) {
-			Static18.aClass32_2 = null;
+		if (Static18.aPrivelegedRequest_2.anInt993 == 1) {
+			Static18.aPrivelegedRequest_2 = null;
 			return;
 		}
-		if (Static18.aClass32_2.anInt993 == 2) {
+		if (Static18.aPrivelegedRequest_2.anInt993 == 2) {
 			Static234.method4094(Static17.aClass152_4, 2, Static257.aString39);
-			Static18.aClass32_2 = null;
+			Static18.aPrivelegedRequest_2 = null;
 			return;
 		}
 	}
@@ -72,12 +72,12 @@ public final class Static56 {
 		}
 		for (@Pc(33) Class2_Sub19 local33 = (Class2_Sub19) Static363.aClass135_39.method3550(); local33 != null; local33 = (Class2_Sub19) Static363.aClass135_39.method3551()) {
 			@Pc(37) byte local37 = 1;
-			@Pc(42) Class222 local42 = local33.aClass11_Sub5_Sub2_Sub2_1.method4331();
+			@Pc(42) BasType local42 = local33.aClass11_Sub5_Sub2_Sub2_1.method4331();
 			if (local33.aClass11_Sub5_Sub2_Sub2_1.aBoolean317) {
 				local37 = 0;
-			} else if (local42.anInt6263 == local33.aClass11_Sub5_Sub2_Sub2_1.anInt4585 || local42.anInt6292 == local33.aClass11_Sub5_Sub2_Sub2_1.anInt4585 || local42.anInt6301 == local33.aClass11_Sub5_Sub2_Sub2_1.anInt4585 || local42.anInt6271 == local33.aClass11_Sub5_Sub2_Sub2_1.anInt4585) {
+			} else if (local42.runSeqID == local33.aClass11_Sub5_Sub2_Sub2_1.anInt4585 || local42.anInt6292 == local33.aClass11_Sub5_Sub2_Sub2_1.anInt4585 || local42.anInt6301 == local33.aClass11_Sub5_Sub2_Sub2_1.anInt4585 || local42.anInt6271 == local33.aClass11_Sub5_Sub2_Sub2_1.anInt4585) {
 				local37 = 2;
-			} else if (local42.anInt6265 == local33.aClass11_Sub5_Sub2_Sub2_1.anInt4585 || local33.aClass11_Sub5_Sub2_Sub2_1.anInt4585 == local42.anInt6299 || local42.anInt6267 == local33.aClass11_Sub5_Sub2_Sub2_1.anInt4585 || local42.anInt6284 == local33.aClass11_Sub5_Sub2_Sub2_1.anInt4585) {
+			} else if (local42.crawlSeqID == local33.aClass11_Sub5_Sub2_Sub2_1.anInt4585 || local33.aClass11_Sub5_Sub2_Sub2_1.anInt4585 == local42.anInt6299 || local42.anInt6267 == local33.aClass11_Sub5_Sub2_Sub2_1.anInt4585 || local42.anInt6284 == local33.aClass11_Sub5_Sub2_Sub2_1.anInt4585) {
 				local37 = 3;
 			}
 			if (local37 != local33.anInt2900) {
@@ -99,12 +99,12 @@ public final class Static56 {
 		}
 		for (@Pc(208) Class2_Sub19 local208 = (Class2_Sub19) Static232.aClass4_86.method80(); local208 != null; local208 = (Class2_Sub19) Static232.aClass4_86.method79()) {
 			@Pc(212) byte local212 = 1;
-			@Pc(217) Class222 local217 = local208.aClass11_Sub5_Sub2_Sub1_2.method4331();
+			@Pc(217) BasType local217 = local208.aClass11_Sub5_Sub2_Sub1_2.method4331();
 			if (local208.aClass11_Sub5_Sub2_Sub1_2.aBoolean317) {
 				local212 = 0;
-			} else if (local208.aClass11_Sub5_Sub2_Sub1_2.anInt4585 == local217.anInt6263 || local208.aClass11_Sub5_Sub2_Sub1_2.anInt4585 == local217.anInt6292 || local208.aClass11_Sub5_Sub2_Sub1_2.anInt4585 == local217.anInt6301 || local217.anInt6271 == local208.aClass11_Sub5_Sub2_Sub1_2.anInt4585) {
+			} else if (local208.aClass11_Sub5_Sub2_Sub1_2.anInt4585 == local217.runSeqID || local208.aClass11_Sub5_Sub2_Sub1_2.anInt4585 == local217.anInt6292 || local208.aClass11_Sub5_Sub2_Sub1_2.anInt4585 == local217.anInt6301 || local217.anInt6271 == local208.aClass11_Sub5_Sub2_Sub1_2.anInt4585) {
 				local212 = 2;
-			} else if (local217.anInt6265 == local208.aClass11_Sub5_Sub2_Sub1_2.anInt4585 || local217.anInt6299 == local208.aClass11_Sub5_Sub2_Sub1_2.anInt4585 || local208.aClass11_Sub5_Sub2_Sub1_2.anInt4585 == local217.anInt6267 || local217.anInt6284 == local208.aClass11_Sub5_Sub2_Sub1_2.anInt4585) {
+			} else if (local217.crawlSeqID == local208.aClass11_Sub5_Sub2_Sub1_2.anInt4585 || local217.anInt6299 == local208.aClass11_Sub5_Sub2_Sub1_2.anInt4585 || local208.aClass11_Sub5_Sub2_Sub1_2.anInt4585 == local217.anInt6267 || local217.anInt6284 == local208.aClass11_Sub5_Sub2_Sub1_2.anInt4585) {
 				local212 = 3;
 			}
 			if (local212 != local208.anInt2900) {

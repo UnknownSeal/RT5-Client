@@ -50,12 +50,12 @@ public final class Static29 {
 	}
 
 	@OriginalMember(owner = "client!bm", name = "a", descriptor = "(II)I")
-	public static int method941(@OriginalArg(0) int arg0) {
-		@Pc(14) int local14 = (arg0 & 0x55555555) + (arg0 >>> 1 & 0xD5555555);
-		@Pc(24) int local24 = (local14 & 0x33333333) + ((local14 & 0xCCCCCCCD) >>> 2);
-		@Pc(32) int local32 = local24 + (local24 >>> 4) & 0xF0F0F0F;
-		@Pc(43) int local43 = local32 + (local32 >>> 8);
-		@Pc(49) int local49 = local43 + (local43 >>> 16);
-		return local49 & 0xFF;
+	public static int bitCountFast(@OriginalArg(0) int v) {
+		@Pc(14) int a = (v >>> 1 & 0xD5555555) + (v & 0x55555555);
+		@Pc(24) int b = ((a & 0xCCCCCCCD) >>> 2) + (a & 0x33333333);
+		@Pc(32) int c = (b >>> 4) + b & 0xF0F0F0F;
+		@Pc(43) int d = (c >>> 8) + c;
+		@Pc(49) int e = (d >>> 16) + d;
+		return e & 0xFF;
 	}
 }

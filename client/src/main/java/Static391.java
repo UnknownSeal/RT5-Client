@@ -122,7 +122,7 @@ public final class Static391 {
 	@OriginalMember(owner = "client!wq", name = "a", descriptor = "(Lclient!cf;B)V")
 	public static void method6453(@OriginalArg(0) Class2_Sub5 arg0) {
 		if (!Static375.aBoolean477) {
-			arg0.method6467();
+			arg0.unlink();
 			Static268.anInt4959--;
 		}
 	}

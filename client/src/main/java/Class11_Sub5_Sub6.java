@@ -9,7 +9,7 @@ public final class Class11_Sub5_Sub6 extends Class11_Sub5 implements Interface6 
 	public Class11_Sub5 aClass11_Sub5_2;
 
 	static {
-		new Class79("Unable to delete friend - system busy.", "Der Freund konnte nicht entfernt werden, das System ist derzeit ausgelastet.", "Impossible de supprimer un ami - système occupé.", "Não foi possível excluir o amigo. O sistema está ocupado.");
+		new LocalisedText("Unable to delete friend - system busy.", "Der Freund konnte nicht entfernt werden, das System ist derzeit ausgelastet.", "Impossible de supprimer un ami - système occupé.", "Não foi possível excluir o amigo. O sistema está ocupado.");
 	}
 
 	@OriginalMember(owner = "client!vf", name = "<init>", descriptor = "(IIIIIIIIIILclient!hb;)V")
@@ -48,7 +48,7 @@ public final class Class11_Sub5_Sub6 extends Class11_Sub5 implements Interface6 
 
 	@OriginalMember(owner = "client!vf", name = "a", descriptor = "(ILclient!wm;I)Lclient!gn;")
 	@Override
-	public Class31 method6087(@OriginalArg(0) int arg0, @OriginalArg(1) Class19 arg1) {
+	public Model method6087(@OriginalArg(0) int arg0, @OriginalArg(1) Class19 arg1) {
 		return null;
 	}
 

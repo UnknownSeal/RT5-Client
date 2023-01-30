@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static51 {
 
 	@OriginalMember(owner = "client!cu", name = "s", descriptor = "[I")
-	public static int[] anIntArray98;
+	public static int[] underwaterMapGroupIDs;
 
 	@OriginalMember(owner = "client!cu", name = "v", descriptor = "Lclient!on;")
 	public static Class14 aClass14_2;
@@ -14,7 +14,7 @@ public final class Static51 {
 	public static long[][][] aLongArrayArrayArray1;
 
 	@OriginalMember(owner = "client!cu", name = "u", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_28 = new Class79("red:", "rot:", "rouge:", "vermelho:");
+	public static final LocalisedText A_TRANSLATABLE_STRING___28 = new LocalisedText("red:", "rot:", "rouge:", "vermelho:");
 
 	@OriginalMember(owner = "client!cu", name = "w", descriptor = "I")
 	public static int anInt1369 = 0;
@@ -35,72 +35,72 @@ public final class Static51 {
 	}
 
 	@OriginalMember(owner = "client!cu", name = "a", descriptor = "(Ljava/lang/String;B)[B")
-	public static byte[] method1546(@OriginalArg(0) String arg0) {
-		@Pc(13) int local13 = arg0.length();
-		@Pc(16) byte[] local16 = new byte[local13];
-		for (@Pc(18) int local18 = 0; local18 < local13; local18++) {
-			@Pc(24) char local24 = arg0.charAt(local18);
-			if (local24 > '\u0000' && local24 < '\u0080' || !(local24 < ' ' || local24 > 'ÿ')) {
-				local16[local18] = (byte) local24;
-			} else if (local24 == '€') {
-				local16[local18] = -128;
-			} else if (local24 == '‚') {
-				local16[local18] = -126;
-			} else if (local24 == 'ƒ') {
-				local16[local18] = -125;
-			} else if (local24 == '„') {
-				local16[local18] = -124;
-			} else if (local24 == '…') {
-				local16[local18] = -123;
-			} else if (local24 == '†') {
-				local16[local18] = -122;
-			} else if (local24 == '‡') {
-				local16[local18] = -121;
-			} else if (local24 == 'ˆ') {
-				local16[local18] = -120;
-			} else if (local24 == '‰') {
-				local16[local18] = -119;
-			} else if (local24 == 'Š') {
-				local16[local18] = -118;
-			} else if (local24 == '‹') {
-				local16[local18] = -117;
-			} else if (local24 == 'Œ') {
-				local16[local18] = -116;
-			} else if (local24 == 'Ž') {
-				local16[local18] = -114;
-			} else if (local24 == '‘') {
-				local16[local18] = -111;
-			} else if (local24 == '’') {
-				local16[local18] = -110;
-			} else if (local24 == '“') {
-				local16[local18] = -109;
-			} else if (local24 == '”') {
-				local16[local18] = -108;
-			} else if (local24 == '•') {
-				local16[local18] = -107;
-			} else if (local24 == '–') {
-				local16[local18] = -106;
-			} else if (local24 == '—') {
-				local16[local18] = -105;
-			} else if (local24 == '˜') {
-				local16[local18] = -104;
-			} else if (local24 == '™') {
-				local16[local18] = -103;
-			} else if (local24 == 'š') {
-				local16[local18] = -102;
-			} else if (local24 == '›') {
-				local16[local18] = -101;
-			} else if (local24 == 'œ') {
-				local16[local18] = -100;
-			} else if (local24 == 'ž') {
-				local16[local18] = -98;
-			} else if (local24 == 'Ÿ') {
-				local16[local18] = -97;
+	public static byte[] encodeString(@OriginalArg(0) String sourceString) {
+		@Pc(13) int stringLength = sourceString.length();
+		@Pc(16) byte[] destination = new byte[stringLength];
+		for (@Pc(18) int i = 0; i < stringLength; i++) {
+			@Pc(24) char c = sourceString.charAt(i);
+			if (c > '\u0000' && c < '\u0080' || !(c < ' ' || c > 'ÿ')) {
+				destination[i] = (byte) c;
+			} else if (c == '€') {
+				destination[i] = -128;
+			} else if (c == '‚') {
+				destination[i] = -126;
+			} else if (c == 'ƒ') {
+				destination[i] = -125;
+			} else if (c == '„') {
+				destination[i] = -124;
+			} else if (c == '…') {
+				destination[i] = -123;
+			} else if (c == '†') {
+				destination[i] = -122;
+			} else if (c == '‡') {
+				destination[i] = -121;
+			} else if (c == 'ˆ') {
+				destination[i] = -120;
+			} else if (c == '‰') {
+				destination[i] = -119;
+			} else if (c == 'Š') {
+				destination[i] = -118;
+			} else if (c == '‹') {
+				destination[i] = -117;
+			} else if (c == 'Œ') {
+				destination[i] = -116;
+			} else if (c == 'Ž') {
+				destination[i] = -114;
+			} else if (c == '‘') {
+				destination[i] = -111;
+			} else if (c == '’') {
+				destination[i] = -110;
+			} else if (c == '“') {
+				destination[i] = -109;
+			} else if (c == '”') {
+				destination[i] = -108;
+			} else if (c == '•') {
+				destination[i] = -107;
+			} else if (c == '–') {
+				destination[i] = -106;
+			} else if (c == '—') {
+				destination[i] = -105;
+			} else if (c == '˜') {
+				destination[i] = -104;
+			} else if (c == '™') {
+				destination[i] = -103;
+			} else if (c == 'š') {
+				destination[i] = -102;
+			} else if (c == '›') {
+				destination[i] = -101;
+			} else if (c == 'œ') {
+				destination[i] = -100;
+			} else if (c == 'ž') {
+				destination[i] = -98;
+			} else if (c == 'Ÿ') {
+				destination[i] = -97;
 			} else {
-				local16[local18] = 63;
+				destination[i] = 63;
 			}
 		}
-		return local16;
+		return destination;
 	}
 
 	@OriginalMember(owner = "client!cu", name = "a", descriptor = "(IIIIIIB)V")

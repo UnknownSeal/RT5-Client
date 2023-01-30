@@ -9,7 +9,7 @@ public final class Static283 {
 	public static int anInt5351;
 
 	@OriginalMember(owner = "client!qh", name = "b", descriptor = "Z")
-	public static boolean aBoolean383;
+	public static boolean loaded;
 
 	@OriginalMember(owner = "client!qh", name = "c", descriptor = "I")
 	public static int anInt5352;
@@ -34,7 +34,7 @@ public final class Static283 {
 			return;
 		}
 		for (@Pc(11) int local11 = 0; local11 < 50 && arg0.anEventQueue1.peekEvent() != null; local11++) {
-			Static231.method4022(1L);
+			Static231.sleep(1L);
 		}
 		if (arg1 != null) {
 			arg0.anEventQueue1.postEvent(new ActionEvent(arg1, 1001, "dummy"));

@@ -15,7 +15,7 @@ public final class Static382 {
 	public static final int[] anIntArray490 = new int[13];
 
 	@OriginalMember(owner = "client!we", name = "C", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_147 = new Class79("Face here", "Hierhin drehen", "Regarder dans cette direction", "Virar para cá");
+	public static final LocalisedText A_TRANSLATABLE_STRING___147 = new LocalisedText("Face here", "Hierhin drehen", "Regarder dans cette direction", "Virar para cá");
 
 	@OriginalMember(owner = "client!we", name = "D", descriptor = "Lclient!mc;")
 	public static final Class145 aClass145_258 = new Class145(49, -1);
@@ -75,7 +75,7 @@ public final class Static382 {
 		@Pc(7) Class2_Sub7 local7 = new Class2_Sub7();
 		local7.anInt1370 = arg3;
 		local7.anInt1373 = arg1;
-		Static329.aClass4_130.method87(local7, (long) arg0);
+		Static329.aClass4_130.put(local7, (long) arg0);
 		Static160.method2956(arg3);
 		@Pc(26) Class161 local26 = Static6.method140(arg0);
 		if (local26 != null) {

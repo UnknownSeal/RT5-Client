@@ -28,7 +28,7 @@ public final class Static183 {
 
 	@OriginalMember(owner = "client!kl", name = "a", descriptor = "(Z)V")
 	public static void method68() {
-		if (Static218.aClass177_Sub1_2.method4494(Static77.anInt1762) || Static44.anInt1115 == Static355.anInt6585) {
+		if (Static218.aClass177_Sub1_2.method4494(Static77.anInt1762) || Static44.visibleLevel == Static355.anInt6585) {
 			Static239.method4155(Static190.aClass19_8);
 			if (Static272.anInt5022 != Static355.anInt6585) {
 				Static226.method3981();

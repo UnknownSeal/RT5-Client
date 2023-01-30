@@ -7,9 +7,6 @@ public final class Static308 {
 	@OriginalMember(owner = "client!rr", name = "x", descriptor = "Lclient!r;")
 	public static Class197 aClass197_80;
 
-	@OriginalMember(owner = "client!rr", name = "w", descriptor = "Lclient!hi;")
-	public static final Class93 aClass93_1 = Static172.method3290();
-
 	@OriginalMember(owner = "client!rr", name = "a", descriptor = "(IIZIIB)V")
 	public static void method5272(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) boolean arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
 		if (arg3 < 1) {
@@ -86,14 +83,14 @@ public final class Static308 {
 					Static79.method1871(local10.anInt6481, local10.anInt6484, local10.anInt6480, local10.anInt6494, local10.anInt6491, -1, local10.anInt6479, local10.anInt6486);
 					local10.anInt6488 = -1;
 					if (local10.anInt6480 == local10.anInt6492 && local10.anInt6492 == -1) {
-						local10.method6467();
+						local10.unlink();
 					} else if (local10.anInt6480 == local10.anInt6492 && local10.anInt6493 == local10.anInt6494 && local10.anInt6482 == local10.anInt6479) {
-						local10.method6467();
+						local10.unlink();
 					}
 				}
 			} else if (local10.anInt6492 < 0 || Static287.method4930(local10.anInt6492, local10.anInt6482)) {
 				Static79.method1871(local10.anInt6481, local10.anInt6484, local10.anInt6492, local10.anInt6493, local10.anInt6491, -1, local10.anInt6482, local10.anInt6486);
-				local10.method6467();
+				local10.unlink();
 			}
 		}
 	}

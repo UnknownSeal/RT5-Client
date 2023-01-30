@@ -29,7 +29,7 @@ public final class Static322 {
 	public static final Class145 aClass145_218 = new Class145(14, 8);
 
 	@OriginalMember(owner = "client!so", name = "k", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_125 = new Class79("Your ignore list is full, max of 100.", "Deine Ignorieren-Liste ist voll, du kannst nur 100 Spieler darauf eintragen.", "Votre liste noire est pleine (100 noms maximum).", "Sua lista de ignorados está cheia. O máx. é 100.");
+	public static final LocalisedText A_TRANSLATABLE_STRING___125 = new LocalisedText("Your ignore list is full, max of 100.", "Deine Ignorieren-Liste ist voll, du kannst nur 100 Spieler darauf eintragen.", "Votre liste noire est pleine (100 noms maximum).", "Sua lista de ignorados está cheia. O máx. é 100.");
 
 	@OriginalMember(owner = "client!so", name = "a", descriptor = "(III)V")
 	public static void method5480(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
@@ -65,36 +65,36 @@ public final class Static322 {
 		Static144.anInt2694 = 0;
 		@Pc(12) boolean local12 = true;
 		for (@Pc(14) int local14 = 0; local14 < Static106.aByteArrayArray6.length; local14++) {
-			if (Static221.anIntArray314[local14] != -1 && Static106.aByteArrayArray6[local14] == null) {
-				Static106.aByteArrayArray6[local14] = Static288.aClass197_70.method5088(0, Static221.anIntArray314[local14]);
+			if (Static221.mapGroupIDs[local14] != -1 && Static106.aByteArrayArray6[local14] == null) {
+				Static106.aByteArrayArray6[local14] = Static288.js5Archive5.fetchFile(Static221.mapGroupIDs[local14], 0);
 				if (Static106.aByteArrayArray6[local14] == null) {
 					local12 = false;
 					Static144.anInt2694++;
 				}
 			}
-			if (Static374.anIntArray480[local14] != -1 && Static82.aByteArrayArray5[local14] == null) {
-				Static82.aByteArrayArray5[local14] = Static288.aClass197_70.method5079(Static277.anIntArrayArray43[local14], 0, Static374.anIntArray480[local14]);
+			if (Static374.locGroupIDs[local14] != -1 && Static82.aByteArrayArray5[local14] == null) {
+				Static82.aByteArrayArray5[local14] = Static288.js5Archive5.fetchFile(Static374.locGroupIDs[local14], 0, Static277.xteaKeys[local14]);
 				if (Static82.aByteArrayArray5[local14] == null) {
 					local12 = false;
 					Static144.anInt2694++;
 				}
 			}
-			if (Static51.anIntArray98[local14] != -1 && Static232.aByteArrayArray9[local14] == null) {
-				Static232.aByteArrayArray9[local14] = Static288.aClass197_70.method5088(0, Static51.anIntArray98[local14]);
+			if (Static51.underwaterMapGroupIDs[local14] != -1 && Static232.aByteArrayArray9[local14] == null) {
+				Static232.aByteArrayArray9[local14] = Static288.js5Archive5.fetchFile(Static51.underwaterMapGroupIDs[local14], 0);
 				if (Static232.aByteArrayArray9[local14] == null) {
 					local12 = false;
 					Static144.anInt2694++;
 				}
 			}
-			if (Static62.anIntArray155[local14] != -1 && Static270.aByteArrayArray15[local14] == null) {
-				Static270.aByteArrayArray15[local14] = Static288.aClass197_70.method5088(0, Static62.anIntArray155[local14]);
+			if (Static62.underwaterLocGroupIDs[local14] != -1 && Static270.aByteArrayArray15[local14] == null) {
+				Static270.aByteArrayArray15[local14] = Static288.js5Archive5.fetchFile(Static62.underwaterLocGroupIDs[local14], 0);
 				if (Static270.aByteArrayArray15[local14] == null) {
 					Static144.anInt2694++;
 					local12 = false;
 				}
 			}
-			if (Static190.anIntArray208 != null && Static210.aByteArrayArray7[local14] == null && Static190.anIntArray208[local14] != -1) {
-				Static210.aByteArrayArray7[local14] = Static288.aClass197_70.method5079(Static277.anIntArrayArray43[local14], 0, Static190.anIntArray208[local14]);
+			if (Static190.npcGroupIDs != null && Static210.aByteArrayArray7[local14] == null && Static190.npcGroupIDs[local14] != -1) {
+				Static210.aByteArrayArray7[local14] = Static288.js5Archive5.fetchFile(Static190.npcGroupIDs[local14], 0, Static277.xteaKeys[local14]);
 				if (Static210.aByteArrayArray7[local14] == null) {
 					Static144.anInt2694++;
 					local12 = false;
@@ -122,8 +122,8 @@ public final class Static322 {
 		for (@Pc(249) int local249 = 0; local249 < Static106.aByteArrayArray6.length; local249++) {
 			@Pc(255) byte[] local255 = Static82.aByteArrayArray5[local249];
 			if (local255 != null) {
-				local268 = (Static291.anIntArray372[local249] >> 8) * 64 - Static164.anInt3140;
-				local279 = (Static291.anIntArray372[local249] & 0xFF) * 64 - Static148.anInt2719;
+				local268 = (Static291.mapSquares[local249] >> 8) * 64 - Static164.originX;
+				local279 = (Static291.mapSquares[local249] & 0xFF) * 64 - Static148.originZ;
 				if (Static220.aBoolean252) {
 					local268 = 10;
 					local279 = 10;
@@ -132,8 +132,8 @@ public final class Static322 {
 			}
 			local255 = Static270.aByteArrayArray15[local249];
 			if (local255 != null) {
-				local268 = (Static291.anIntArray372[local249] >> 8) * 64 - Static164.anInt3140;
-				local279 = (Static291.anIntArray372[local249] & 0xFF) * 64 - Static148.anInt2719;
+				local268 = (Static291.mapSquares[local249] >> 8) * 64 - Static164.originX;
+				local279 = (Static291.mapSquares[local249] & 0xFF) * 64 - Static148.originZ;
 				if (Static220.aBoolean252) {
 					local279 = 10;
 					local268 = 10;
@@ -146,7 +146,7 @@ public final class Static322 {
 			return;
 		}
 		if (Static246.anInt4505 != 0) {
-			Static351.method5856(Static276.aClass130_4, true, Static256.aClass79_102.method2267(Static295.anInt5581) + "<br>(100%)");
+			Static351.method5856(Static276.aClass130_4, true, Static256.A_TRANSLATABLE_STRING___102.getLocalisedText(Static295.anInt5581) + "<br>(100%)");
 		}
 		Static37.method1135();
 		Static211.method3720();
@@ -183,7 +183,7 @@ public final class Static322 {
 		Static183.aBoolean8 = Static309.anInt5802 >= 96;
 		Static174.anInt1300 = Static218.aClass177_Sub1_2.anInt4886;
 		Static141.aBoolean190 = !Static218.aClass177_Sub1_2.aBoolean355;
-		Static158.anInt2911 = Static218.aClass177_Sub1_2.method4494(Static77.anInt1762) ? -1 : Static44.anInt1115;
+		Static158.anInt2911 = Static218.aClass177_Sub1_2.method4494(Static77.anInt1762) ? -1 : Static44.visibleLevel;
 		Static132.aBoolean179 = Static77.anInt1762 == 1 || Static218.aClass177_Sub1_2.aBoolean357;
 		Static190.aClass29_Sub1_63 = new Class29_Sub1(4, Static373.anInt7033, Static242.anInt4449, false);
 		if (!Static220.aBoolean252) {
@@ -270,7 +270,7 @@ public final class Static322 {
 		Static211.method3720();
 		Static3.aBoolean5 = false;
 		Static50.method1530();
-		if (Static222.aFrame1 != null && Static335.aClass111_4 != null && Static347.anInt6442 == 25) {
+		if (Static222.aFrame1 != null && Static335.aBufferedSocket_4 != null && Static347.anInt6442 == 25) {
 			Static91.method1960(Static30.aClass145_28);
 			Static257.aClass2_Sub4_Sub2_4.p4(1057001181);
 		}
@@ -282,8 +282,8 @@ public final class Static322 {
 			for (@Pc(823) int local823 = local731 - 1; local823 <= local735 + 1; local823++) {
 				for (@Pc(829) int local829 = local811 - 1; local829 <= local819 + 1; local829++) {
 					if (local823 < local731 || local823 > local735 || local829 < local811 || local819 < local829) {
-						Static288.aClass197_70.method5075("m" + local823 + "_" + local829);
-						Static288.aClass197_70.method5075("l" + local823 + "_" + local829);
+						Static288.js5Archive5.method5075("m" + local823 + "_" + local829);
+						Static288.js5Archive5.method5075("l" + local823 + "_" + local829);
 					}
 				}
 			}
@@ -292,7 +292,7 @@ public final class Static322 {
 			Static336.method5704(10);
 		} else {
 			Static336.method5704(30);
-			if (Static335.aClass111_4 != null) {
+			if (Static335.aBufferedSocket_4 != null) {
 				Static91.method1960(Static42.aClass145_230);
 			}
 		}
@@ -302,11 +302,11 @@ public final class Static322 {
 	}
 
 	@OriginalMember(owner = "client!so", name = "b", descriptor = "(I)V")
-	public static void method5484() {
+	public static void topBannerRefresh() {
 		if (Static121.aClass127_4 != Static231.aClass127_7) {
 			try {
-				Static404.method4627(Static144.aClient1, "tbrefresh");
-			} catch (@Pc(14) Throwable local14) {
+				Static404.method4627(Static144.instance, "tbrefresh");
+			} catch (@Pc(14) Throwable exception) {
 			}
 		}
 	}

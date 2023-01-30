@@ -17,9 +17,9 @@ public final class Static366 {
 		@Pc(33) byte local33 = (byte) (local28 >> 28);
 		@Pc(39) int local39 = local28 >> 14 & 0x3FFF;
 		@Pc(43) int local43 = local28 & 0x3FFF;
-		local20.anIntArray316[0] = local39 - Static164.anInt3140;
+		local20.anIntArray316[0] = local39 - Static164.originX;
 		local20.anInt6781 = (local20.anIntArray316[0] << 7) + (local20.method4327() << 6);
-		local20.anIntArray317[0] = local43 - Static148.anInt2719;
+		local20.anIntArray317[0] = local43 - Static148.originZ;
 		local20.anInt6783 = (local20.anIntArray317[0] << 7) + (local20.method4327() << 6);
 		Static355.anInt6585 = local20.aByte78 = local33;
 		if (Static231.aClass2_Sub4Array1[local10] != null) {
