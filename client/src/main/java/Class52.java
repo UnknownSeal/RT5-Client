@@ -34,7 +34,7 @@ public final class Class52 {
 		if (this.aClass4_31 == null) {
 			return this.anInt1634;
 		} else {
-			@Pc(23) IntNode local23 = (IntNode) this.aClass4_31.method90((long) arg0);
+			@Pc(23) IntNode local23 = (IntNode) this.aClass4_31.get((long) arg0);
 			return local23 == null ? this.anInt1634 : local23.value;
 		}
 	}
@@ -82,7 +82,7 @@ public final class Class52 {
 		if (this.aClass4_30 == null) {
 			this.method1773();
 		}
-		for (@Pc(37) Class2_Sub28 local37 = (Class2_Sub28) this.aClass4_30.method90(Static80.method5981(arg0)); local37 != null; local37 = (Class2_Sub28) this.aClass4_30.method82()) {
+		for (@Pc(37) Class2_Sub28 local37 = (Class2_Sub28) this.aClass4_30.get(Static80.method5981(arg0)); local37 != null; local37 = (Class2_Sub28) this.aClass4_30.method82()) {
 			if (local37.aString54.equals(arg0)) {
 				return true;
 			}
@@ -98,7 +98,7 @@ public final class Class52 {
 		if (this.aClass4_30 == null) {
 			this.method1768();
 		}
-		@Pc(29) IntNode local29 = (IntNode) this.aClass4_30.method90((long) arg0);
+		@Pc(29) IntNode local29 = (IntNode) this.aClass4_30.get((long) arg0);
 		return local29 != null;
 	}
 
@@ -127,7 +127,7 @@ public final class Class52 {
 		if (this.aClass4_31 == null) {
 			return this.aString16;
 		} else {
-			@Pc(19) StringNode local19 = (StringNode) this.aClass4_31.method90((long) arg0);
+			@Pc(19) StringNode local19 = (StringNode) this.aClass4_31.get((long) arg0);
 			return local19 == null ? this.aString16 : local19.value;
 		}
 	}

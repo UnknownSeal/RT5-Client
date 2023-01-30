@@ -107,14 +107,14 @@ public final class Class112 {
 		@Pc(94) int local94;
 		if (this.anInt2875 != 0) {
 			local79 = Class19.anIntArray178[this.anInt2875];
-			local84 = Class19.anIntArray177[this.anInt2875];
+			local84 = Class19.COSINE[this.anInt2875];
 			local94 = local33 * local84 - local35 * local79 >> 15;
 			local35 = local33 * local79 + local35 * local84 >> 15;
 			local33 = local94;
 		}
 		if (this.anInt2871 != 0) {
 			local79 = Class19.anIntArray178[this.anInt2871];
-			local84 = Class19.anIntArray177[this.anInt2871];
+			local84 = Class19.COSINE[this.anInt2871];
 			local94 = local35 * local79 + local31 * local84 >> 15;
 			local35 = local35 * local84 - local31 * local79 >> 15;
 			local31 = local94;
@@ -150,7 +150,7 @@ public final class Class112 {
 
 	@OriginalMember(owner = "client!ja", name = "b", descriptor = "(Lclient!wm;Lclient!ja;)V")
 	private void method2919(@OriginalArg(0) Class19 arg0, @OriginalArg(1) Class112 arg1) {
-		@Pc(6) Class185 local6 = Static298.method2426(Static336.aClass197_90, this.anInt2876);
+		@Pc(6) Class185 local6 = Static298.method2426(Static336.aJs5_90, this.anInt2876);
 		if (local6 == null) {
 			return;
 		}
@@ -178,7 +178,7 @@ public final class Class112 {
 		if (this.anInt2875 != 0) {
 			local81 = -this.anInt2875 & 0x3FFF;
 			local85 = Class19.anIntArray178[local81];
-			local89 = Class19.anIntArray177[local81];
+			local89 = Class19.COSINE[local81];
 			local99 = local34 * local89 - local36 * local85 >> 15;
 			local36 = local34 * local85 + local36 * local89 >> 15;
 			local34 = local99;
@@ -186,7 +186,7 @@ public final class Class112 {
 		if (this.anInt2871 != 0) {
 			local81 = -this.anInt2871 & 0x3FFF;
 			local85 = Class19.anIntArray178[local81];
-			local89 = Class19.anIntArray177[local81];
+			local89 = Class19.COSINE[local81];
 			local99 = local36 * local85 + local32 * local89 >> 15;
 			local36 = local36 * local89 - local32 * local85 >> 15;
 			local32 = local99;

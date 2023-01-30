@@ -33,7 +33,7 @@ public final class Static353 {
 	public static void method5882() {
 		if (Static190.aClass19_8.method2859()) {
 			Static296.method5103();
-			Static190.aClass19_8.method2828(Static21.aCanvas1);
+			Static190.aClass19_8.method2828(GameShell.canvas);
 			Static98.method2107();
 		} else {
 			Static78.method5700(Static77.anInt1762);

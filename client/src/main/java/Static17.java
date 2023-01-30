@@ -6,7 +6,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static17 {
 
 	@OriginalMember(owner = "client!at", name = "N", descriptor = "Lclient!nh;")
-	public static Class11_Sub5_Sub2_Sub1 aClass11_Sub5_Sub2_Sub1_3;
+	public static Class11_Sub5_Sub2_Sub1 self;
 
 	@OriginalMember(owner = "client!at", name = "P", descriptor = "Lclient!ml;")
 	public static Class152 aClass152_4;
@@ -25,8 +25,8 @@ public final class Static17 {
 
 	@OriginalMember(owner = "client!at", name = "a", descriptor = "(BII)V")
 	public static void method4207(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
-		@Pc(8) Class2_Sub2_Sub7 local8 = Static316.method5412(7, arg0);
-		local8.method2311();
+		@Pc(8) DelayedStateChange local8 = Static316.create(7, arg0);
+		local8.pushServer();
 		local8.anInt2289 = arg1;
 	}
 
@@ -87,7 +87,7 @@ public final class Static17 {
 					} else if (local21) {
 						local42.method4329(local151);
 					}
-					local42.method4338(local42.method4327(), local156, aClass11_Sub5_Sub2_Sub1_3.anIntArray316[0] + local97, local161 == 1, aClass11_Sub5_Sub2_Sub1_3.anIntArray317[0] + local71);
+					local42.method4338(local42.method4327(), local156, self.anIntArray316[0] + local97, local161 == 1, self.anIntArray317[0] + local71);
 					if (local42.type.method2099()) {
 						Static211.method3723(null, local42.anIntArray317[0], 0, null, local42, local42.anIntArray316[0], local42.aByte78);
 					}
@@ -155,8 +155,8 @@ public final class Static17 {
 
 	@OriginalMember(owner = "client!at", name = "a", descriptor = "(II)V")
 	public static void method4212(@OriginalArg(1) int arg0) {
-		@Pc(8) Class2_Sub2_Sub7 local8 = Static316.method5412(4, arg0);
-		local8.method2312();
+		@Pc(8) DelayedStateChange local8 = Static316.create(4, arg0);
+		local8.pushClient();
 	}
 
 	@OriginalMember(owner = "client!at", name = "c", descriptor = "(B)Lclient!wj;")

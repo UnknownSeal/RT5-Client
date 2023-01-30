@@ -17,12 +17,12 @@ public final class Class2_Sub3_Sub3 extends TextureOp {
 	@OriginalMember(owner = "client!aj", name = "a", descriptor = "(BI)[I")
 	@Override
 	public int[] getMonochromeOutput(@OriginalArg(1) int y) {
-		@Pc(16) int[] local16 = super.aClass158_41.method3995(y);
-		if (super.aClass158_41.aBoolean265) {
-			@Pc(30) int[] local30 = this.method6472(0, Static148.anInt2718 & y - 1);
-			@Pc(36) int[] local36 = this.method6472(0, y);
-			@Pc(46) int[] local46 = this.method6472(0, Static148.anInt2718 & y + 1);
-			for (@Pc(48) int local48 = 0; local48 < Static227.anInt4036; local48++) {
+		@Pc(16) int[] local16 = super.monochromeImageCache.get(y);
+		if (super.monochromeImageCache.invalid) {
+			@Pc(30) int[] local30 = this.getChildMonochromeOutput(0, Static148.heightMask & y - 1);
+			@Pc(36) int[] local36 = this.getChildMonochromeOutput(0, y);
+			@Pc(46) int[] local46 = this.getChildMonochromeOutput(0, Static148.heightMask & y + 1);
+			for (@Pc(48) int local48 = 0; local48 < Static227.width; local48++) {
 				@Pc(62) int local62 = (local46[local48] - local30[local48]) * this.anInt246;
 				@Pc(82) int local82 = (local36[Static73.anInt1721 & local48 + 1] - local36[Static73.anInt1721 & local48 - 1]) * this.anInt246;
 				@Pc(86) int local86 = local82 >> 12;
@@ -39,7 +39,7 @@ public final class Class2_Sub3_Sub3 extends TextureOp {
 
 	@OriginalMember(owner = "client!aj", name = "a", descriptor = "(ILclient!bt;I)V")
 	@Override
-	public void method6483(@OriginalArg(0) int arg0, @OriginalArg(1) Buffer arg1) {
+	public void decode(@OriginalArg(0) int arg0, @OriginalArg(1) Buffer arg1) {
 		if (arg0 == 0) {
 			this.anInt246 = arg1.g2();
 		}

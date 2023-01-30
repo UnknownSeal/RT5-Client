@@ -10,16 +10,16 @@ public final class Static274 {
 	public static int[] anIntArray352;
 
 	@OriginalMember(owner = "client!pp", name = "w", descriptor = "Lclient!ld;")
-	public static final Class135 aClass135_30 = new Class135();
+	public static final LinkedList A_LINKED_LIST___30 = new LinkedList();
 
 	@OriginalMember(owner = "client!pp", name = "a", descriptor = "(ZLclient!nk;I)I")
-	public static int method4630(@OriginalArg(1) Class161 arg0, @OriginalArg(2) int arg1) {
+	public static int method4630(@OriginalArg(1) Component arg0, @OriginalArg(2) int arg1) {
 		if (!Static45.method1404(arg0).method1854(arg1) && arg0.anObjectArray27 == null) {
 			return -1;
-		} else if (arg0.anIntArray279 == null || arg0.anIntArray279.length <= arg1) {
+		} else if (arg0.opCursors == null || arg0.opCursors.length <= arg1) {
 			return -1;
 		} else {
-			return arg0.anIntArray279[arg1];
+			return arg0.opCursors[arg1];
 		}
 	}
 

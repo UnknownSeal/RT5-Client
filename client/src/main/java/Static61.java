@@ -9,10 +9,10 @@ public final class Static61 {
 	public static String aString14;
 
 	@OriginalMember(owner = "client!dj", name = "db", descriptor = "Lclient!r;")
-	public static Class197 aClass197_11;
+	public static Js5 aJs5_11;
 
 	@OriginalMember(owner = "client!dj", name = "eb", descriptor = "Lclient!r;")
-	public static Class197 aClass197_12;
+	public static Js5 aJs5_12;
 
 	@OriginalMember(owner = "client!dj", name = "Y", descriptor = "Lclient!hu;")
 	public static final SoftLruHashTable A_SOFT_LRU_HASH_TABLE___5 = new SoftLruHashTable(8);
@@ -62,7 +62,7 @@ public final class Static61 {
 				}
 			}
 		}
-		if (Static135.method2537(Static17.aClass11_Sub5_Sub2_Sub1_3.aString41).equals(local33)) {
+		if (Static135.method2537(Static17.self.aString41).equals(local33)) {
 			Static207.method3699(Static122.A_TRANSLATABLE_STRING___54.getLocalisedText(client.language));
 		} else {
 			Static91.method1960(Static148.aClass145_104);
@@ -103,12 +103,12 @@ public final class Static61 {
 	}
 
 	@OriginalMember(owner = "client!dj", name = "a", descriptor = "(IIBLclient!r;)Lclient!vj;")
-	public static Class2_Sub2_Sub17 method1672(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) Class197 arg2) {
+	public static Class2_Sub2_Sub17 method1672(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) Js5 arg2) {
 		@Pc(14) Buffer local14 = new Buffer(arg2.fetchFile(arg1, arg0));
 		@Pc(54) Class2_Sub2_Sub17 local54 = new Class2_Sub2_Sub17(arg0, local14.gjstr(), local14.gjstr(), local14.mg4(), local14.mg4(), local14.g1() == 1, local14.g1(), local14.g1());
 		@Pc(58) int local58 = local14.g1();
 		for (@Pc(60) int local60 = 0; local60 < local58; local60++) {
-			local54.aClass135_41.method3539(new Class2_Sub31(local14.g1(), local14.g2(), local14.g2(), local14.g2(), local14.g2(), local14.g2(), local14.g2(), local14.g2(), local14.g2()));
+			local54.aLinkedList_41.method3539(new Class2_Sub31(local14.g1(), local14.g2(), local14.g2(), local14.g2(), local14.g2(), local14.g2(), local14.g2(), local14.g2(), local14.g2()));
 		}
 		local54.method6149();
 		return local54;

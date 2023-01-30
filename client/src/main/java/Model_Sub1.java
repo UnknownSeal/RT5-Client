@@ -1753,7 +1753,7 @@ public final class Model_Sub1 extends Model {
 			throw new IllegalStateException();
 		}
 		@Pc(13) int local13 = Class19.anIntArray178[arg0];
-		@Pc(17) int local17 = Class19.anIntArray177[arg0];
+		@Pc(17) int local17 = Class19.COSINE[arg0];
 		for (@Pc(19) int local19 = 0; local19 < this.anInt987; local19++) {
 			@Pc(36) int local36 = this.anIntArray56[local19] * local13 + this.anIntArray68[local19] * local17 >> 15;
 			this.anIntArray56[local19] = this.anIntArray56[local19] * local17 - this.anIntArray68[local19] * local13 >> 15;
@@ -1777,7 +1777,7 @@ public final class Model_Sub1 extends Model {
 			this.method1256();
 		} else {
 			@Pc(34) int local34 = Class19.anIntArray178[arg0];
-			@Pc(38) int local38 = Class19.anIntArray177[arg0];
+			@Pc(38) int local38 = Class19.COSINE[arg0];
 			@Pc(57) int local57;
 			for (@Pc(40) int local40 = 0; local40 < this.anInt981; local40++) {
 				local57 = this.anIntArray47[local40] * local34 + this.anIntArray68[local40] * local38 >> 15;
@@ -2117,21 +2117,21 @@ public final class Model_Sub1 extends Model {
 							this.anIntArray47[local84] -= this.anInt990;
 							if (arg4 != 0) {
 								local89 = Class19.anIntArray178[arg4];
-								local342 = Class19.anIntArray177[arg4];
+								local342 = Class19.COSINE[arg4];
 								local360 = this.anIntArray56[local84] * local89 + this.anIntArray68[local84] * local342 + 32767 >> 15;
 								this.anIntArray56[local84] = this.anIntArray56[local84] * local342 + 32767 - this.anIntArray68[local84] * local89 >> 15;
 								this.anIntArray68[local84] = local360;
 							}
 							if (arg2 != 0) {
 								local89 = Class19.anIntArray178[arg2];
-								local342 = Class19.anIntArray177[arg2];
+								local342 = Class19.COSINE[arg2];
 								local360 = this.anIntArray56[local84] * local342 + 32767 - this.anIntArray47[local84] * local89 >> 15;
 								this.anIntArray47[local84] = this.anIntArray56[local84] * local89 + this.anIntArray47[local84] * local342 + 32767 >> 15;
 								this.anIntArray56[local84] = local360;
 							}
 							if (arg3 != 0) {
 								local89 = Class19.anIntArray178[arg3];
-								local342 = Class19.anIntArray177[arg3];
+								local342 = Class19.COSINE[arg3];
 								local360 = this.anIntArray47[local84] * local89 + this.anIntArray68[local84] * local342 + 32767 >> 15;
 								this.anIntArray47[local84] = this.anIntArray47[local84] * local342 + 32767 - this.anIntArray68[local84] * local89 >> 15;
 								this.anIntArray68[local84] = local360;
@@ -2148,21 +2148,21 @@ public final class Model_Sub1 extends Model {
 							this.anIntArray47[local84] -= this.anInt990;
 							if (arg2 != 0) {
 								local89 = Class19.anIntArray178[arg2];
-								local342 = Class19.anIntArray177[arg2];
+								local342 = Class19.COSINE[arg2];
 								local360 = this.anIntArray56[local84] * local342 + 32767 - this.anIntArray47[local84] * local89 >> 15;
 								this.anIntArray47[local84] = this.anIntArray56[local84] * local89 + this.anIntArray47[local84] * local342 + 32767 >> 15;
 								this.anIntArray56[local84] = local360;
 							}
 							if (arg4 != 0) {
 								local89 = Class19.anIntArray178[arg4];
-								local342 = Class19.anIntArray177[arg4];
+								local342 = Class19.COSINE[arg4];
 								local360 = this.anIntArray56[local84] * local89 + this.anIntArray68[local84] * local342 + 32767 >> 15;
 								this.anIntArray56[local84] = this.anIntArray56[local84] * local342 + 32767 - this.anIntArray68[local84] * local89 >> 15;
 								this.anIntArray68[local84] = local360;
 							}
 							if (arg3 != 0) {
 								local89 = Class19.anIntArray178[arg3];
-								local342 = Class19.anIntArray177[arg3];
+								local342 = Class19.COSINE[arg3];
 								local360 = this.anIntArray47[local84] * local89 + this.anIntArray68[local84] * local342 + 32767 >> 15;
 								this.anIntArray47[local84] = this.anIntArray47[local84] * local342 + 32767 - this.anIntArray68[local84] * local89 >> 15;
 								this.anIntArray68[local84] = local360;
@@ -2441,21 +2441,21 @@ public final class Model_Sub1 extends Model {
 								this.anIntArray47[local84] -= this.anInt990;
 								if (arg4 != 0) {
 									local89 = Class19.anIntArray178[arg4];
-									local478 = Class19.anIntArray177[arg4];
+									local478 = Class19.COSINE[arg4];
 									local503 = this.anIntArray56[local84] * local89 + this.anIntArray68[local84] * local478 + 32767 >> 15;
 									this.anIntArray56[local84] = this.anIntArray56[local84] * local478 + 32767 - this.anIntArray68[local84] * local89 >> 15;
 									this.anIntArray68[local84] = local503;
 								}
 								if (arg2 != 0) {
 									local89 = Class19.anIntArray178[arg2];
-									local478 = Class19.anIntArray177[arg2];
+									local478 = Class19.COSINE[arg2];
 									local503 = this.anIntArray56[local84] * local478 + 32767 - this.anIntArray47[local84] * local89 >> 15;
 									this.anIntArray47[local84] = this.anIntArray56[local84] * local89 + this.anIntArray47[local84] * local478 + 32767 >> 15;
 									this.anIntArray56[local84] = local503;
 								}
 								if (arg3 != 0) {
 									local89 = Class19.anIntArray178[arg3];
-									local478 = Class19.anIntArray177[arg3];
+									local478 = Class19.COSINE[arg3];
 									local503 = this.anIntArray47[local84] * local89 + this.anIntArray68[local84] * local478 + 32767 >> 15;
 									this.anIntArray47[local84] = this.anIntArray47[local84] * local478 + 32767 - this.anIntArray68[local84] * local89 >> 15;
 									this.anIntArray68[local84] = local503;
@@ -2495,11 +2495,11 @@ public final class Model_Sub1 extends Model {
 					this.aBoolean81 = false;
 				}
 				@Pc(555) int[] local555 = new int[9];
-				local503 = Class19.anIntArray177[arg2];
+				local503 = Class19.COSINE[arg2];
 				local528 = Class19.anIntArray178[arg2];
-				local567 = Class19.anIntArray177[arg3];
+				local567 = Class19.COSINE[arg3];
 				local571 = Class19.anIntArray178[arg3];
-				local575 = Class19.anIntArray177[arg4];
+				local575 = Class19.COSINE[arg4];
 				local579 = Class19.anIntArray178[arg4];
 				local587 = local528 * local575 + 16384 >> 15;
 				local595 = local528 * local579 + 16384 >> 15;
@@ -2856,7 +2856,7 @@ public final class Model_Sub1 extends Model {
 			this.method1247();
 		} else {
 			@Pc(31) int local31 = Class19.anIntArray178[arg0];
-			@Pc(35) int local35 = Class19.anIntArray177[arg0];
+			@Pc(35) int local35 = Class19.COSINE[arg0];
 			for (@Pc(37) int local37 = 0; local37 < this.anInt987; local37++) {
 				@Pc(54) int local54 = this.anIntArray47[local37] * local31 + this.anIntArray68[local37] * local35 >> 15;
 				this.anIntArray47[local37] = this.anIntArray47[local37] * local35 - this.anIntArray68[local37] * local31 >> 15;
@@ -2925,21 +2925,21 @@ public final class Model_Sub1 extends Model {
 					this.anIntArray47[local3] -= this.anInt990;
 					if (arg3 != 0) {
 						local14 = Class19.anIntArray178[arg3];
-						local164 = Class19.anIntArray177[arg3];
+						local164 = Class19.COSINE[arg3];
 						local182 = this.anIntArray56[local3] * local14 + this.anIntArray68[local3] * local164 + 32767 >> 15;
 						this.anIntArray56[local3] = this.anIntArray56[local3] * local164 + 32767 - this.anIntArray68[local3] * local14 >> 15;
 						this.anIntArray68[local3] = local182;
 					}
 					if (arg1 != 0) {
 						local14 = Class19.anIntArray178[arg1];
-						local164 = Class19.anIntArray177[arg1];
+						local164 = Class19.COSINE[arg1];
 						local182 = this.anIntArray56[local3] * local164 + 32767 - this.anIntArray47[local3] * local14 >> 15;
 						this.anIntArray47[local3] = this.anIntArray56[local3] * local14 + this.anIntArray47[local3] * local164 + 32767 >> 15;
 						this.anIntArray56[local3] = local182;
 					}
 					if (arg2 != 0) {
 						local14 = Class19.anIntArray178[arg2];
-						local164 = Class19.anIntArray177[arg2];
+						local164 = Class19.COSINE[arg2];
 						local182 = this.anIntArray47[local3] * local14 + this.anIntArray68[local3] * local164 + 32767 >> 15;
 						this.anIntArray47[local3] = this.anIntArray47[local3] * local164 + 32767 - this.anIntArray68[local3] * local14 >> 15;
 						this.anIntArray68[local3] = local182;
@@ -3781,7 +3781,7 @@ public final class Model_Sub1 extends Model {
 			throw new IllegalStateException();
 		}
 		@Pc(13) int local13 = Class19.anIntArray178[arg0];
-		@Pc(17) int local17 = Class19.anIntArray177[arg0];
+		@Pc(17) int local17 = Class19.COSINE[arg0];
 		for (@Pc(19) int local19 = 0; local19 < this.anInt987; local19++) {
 			@Pc(36) int local36 = this.anIntArray56[local19] * local17 - this.anIntArray47[local19] * local13 >> 15;
 			this.anIntArray47[local19] = this.anIntArray56[local19] * local13 + this.anIntArray47[local19] * local17 >> 15;

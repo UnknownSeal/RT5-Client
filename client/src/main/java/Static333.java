@@ -37,7 +37,7 @@ public final class Static333 {
 	}
 
 	@OriginalMember(owner = "client!tg", name = "a", descriptor = "(ILclient!r;)I")
-	public static int method6332(@OriginalArg(1) Class197 arg0) {
+	public static int method6332(@OriginalArg(1) Js5 arg0) {
 		@Pc(5) int local5 = 0;
 		if (arg0.method5086(Static75.anInt1736)) {
 			local5++;

@@ -24,12 +24,12 @@ public final class Class2_Sub2_Sub5 extends SecondaryNode {
 	public final Class163 aClass163_1;
 
 	@OriginalMember(owner = "client!d", name = "K", descriptor = "Lclient!bp;")
-	public final Class28 aClass28_1;
+	public final ParticleEffectorType aParticleEffectorType_1;
 
 	@OriginalMember(owner = "client!d", name = "<init>", descriptor = "(Lclient!nm;Lclient!oh;)V")
 	public Class2_Sub2_Sub5(@OriginalArg(0) Class163 arg0, @OriginalArg(1) Class12_Sub5 arg1) {
 		this.aClass163_1 = arg0;
-		this.aClass28_1 = Static314.method5366(arg0.anInt4330);
+		this.aParticleEffectorType_1 = Static314.method5366(arg0.anInt4330);
 		this.method1564();
 	}
 
@@ -39,7 +39,7 @@ public final class Class2_Sub2_Sub5 extends SecondaryNode {
 		this.anInt1390 = this.aClass163_1.anInt4335;
 		this.anInt1396 = this.aClass163_1.anInt4337;
 		if (this.aClass163_1.aClass14_5 != null) {
-			this.aClass163_1.aClass14_5.method3933(this.aClass28_1.anInt754, this.aClass28_1.anInt748, this.aClass28_1.anInt741, Static329.anIntArray420);
+			this.aClass163_1.aClass14_5.method3933(this.aParticleEffectorType_1.anInt754, this.aParticleEffectorType_1.anInt748, this.aParticleEffectorType_1.anInt741, Static329.anIntArray420);
 		}
 		this.anInt1389 = Static329.anIntArray420[0];
 		this.anInt1391 = Static329.anIntArray420[2];

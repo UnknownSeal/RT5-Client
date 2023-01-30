@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static64 {
 
 	@OriginalMember(owner = "client!dp", name = "a", descriptor = "Lclient!nk;")
-	public static Class161 aClass161_2;
+	public static Component aComponent_2;
 
 	@OriginalMember(owner = "client!dp", name = "d", descriptor = "I")
 	public static int anInt1555 = 0;
@@ -16,7 +16,7 @@ public final class Static64 {
 	}
 
 	@OriginalMember(owner = "client!dp", name = "a", descriptor = "(ILclient!r;Lclient!r;)I")
-	public static int method1707(@OriginalArg(1) Class197 arg0, @OriginalArg(2) Class197 arg1) {
+	public static int method1707(@OriginalArg(1) Js5 arg0, @OriginalArg(2) Js5 arg1) {
 		@Pc(5) int local5 = 0;
 		if (arg1.method5086(Static183.anInt80)) {
 			local5++;

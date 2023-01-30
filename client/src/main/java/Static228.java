@@ -34,7 +34,7 @@ public final class Static228 {
 			} else {
 				local33 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local11[local13]];
 			}
-			if (local33.anInt4638 >= 0 && (Static163.anInt3086 == local33.anInt4603 || Static17.aClass11_Sub5_Sub2_Sub1_3.aByte78 == local33.aByte78)) {
+			if (local33.anInt4638 >= 0 && (Static163.anInt3086 == local33.anInt4603 || Static17.self.aByte78 == local33.aByte78)) {
 				Static250.method4343(local33.method4322(), local33, arg1 >> 1, arg2 >> 1);
 				if (Static216.anIntArray231[0] >= 0) {
 					if (local33.aString50 != null && (local13 >= local7 || Static20.anInt545 == 0 || Static20.anInt545 == 3 || Static20.anInt545 == 1 && Static391.method6450(((Class11_Sub5_Sub2_Sub1) local33).aString41)) && Static319.anInt5977 > Static45.anInt1196) {
@@ -62,15 +62,15 @@ public final class Static228 {
 							local217 = local33.method4331().anInt6304;
 						}
 						if (local217 != -1) {
-							@Pc(246) Class13[] local246 = (Class13[]) Static306.A_SOFT_LRU_HASH_TABLE___49.method2612((long) local217);
+							@Pc(246) Class13[] local246 = (Class13[]) Static306.A_SOFT_LRU_HASH_TABLE___49.get((long) local217);
 							if (local246 == null) {
-								@Pc(253) Class48[] local253 = Static396.method1688(Static30.aClass197_5, local217);
+								@Pc(253) SoftwareSprite[] local253 = Static396.method1688(Static30.aJs5_5, local217);
 								if (local253 != null) {
 									local246 = new Class13[local253.length];
 									for (local261 = 0; local261 < local253.length; local261++) {
 										local246[local261] = Static190.aClass19_8.method2891(local253[local261]);
 									}
-									Static306.A_SOFT_LRU_HASH_TABLE___49.method2624((long) local217, local246);
+									Static306.A_SOFT_LRU_HASH_TABLE___49.put((long) local217, local246);
 								}
 							}
 							if (local246 != null && local246.length == 2) {
@@ -102,15 +102,15 @@ public final class Static228 {
 								local310 = local33.method4331().anInt6288;
 							}
 							if (local310 != -1) {
-								@Pc(420) Class13[] local420 = (Class13[]) Static139.A_SOFT_LRU_HASH_TABLE___18.method2612((long) local310);
+								@Pc(420) Class13[] local420 = (Class13[]) Static139.A_SOFT_LRU_HASH_TABLE___18.get((long) local310);
 								if (local420 == null) {
-									@Pc(427) Class48[] local427 = Static396.method1688(Static30.aClass197_5, local310);
+									@Pc(427) SoftwareSprite[] local427 = Static396.method1688(Static30.aJs5_5, local310);
 									if (local427 != null) {
 										local420 = new Class13[local427.length];
 										for (local435 = 0; local435 < local427.length; local435++) {
 											local420[local435] = Static190.aClass19_8.method2891(local427[local435]);
 										}
-										Static139.A_SOFT_LRU_HASH_TABLE___18.method2624((long) local310, local420);
+										Static139.A_SOFT_LRU_HASH_TABLE___18.put((long) local310, local420);
 									}
 								}
 								if (local420 != null && local420.length == 4) {
@@ -344,10 +344,10 @@ public final class Static228 {
 			if (local31 instanceof Class11_Sub5_Sub2) {
 				@Pc(37) Class11_Sub5_Sub2 local37 = (Class11_Sub5_Sub2) local31;
 				@Pc(47) int local47 = (local37.method4327() - 1) * 64 + 60;
-				@Pc(55) int local55 = local37.anInt6781 - local47 >> 7;
-				@Pc(63) int local63 = local37.anInt6783 - local47 >> 7;
-				@Pc(70) int local70 = local47 + local37.anInt6781 >> 7;
-				@Pc(77) int local77 = local37.anInt6783 + local47 >> 7;
+				@Pc(55) int local55 = local37.xFine - local47 >> 7;
+				@Pc(63) int local63 = local37.zFine - local47 >> 7;
+				@Pc(70) int local70 = local47 + local37.xFine >> 7;
+				@Pc(77) int local77 = local37.zFine + local47 >> 7;
 				if (arg1 >= local55 && local63 <= arg2 && arg1 <= local70 && local77 >= arg2) {
 					@Pc(106) int local106 = (local70 + 1 - arg1) * (local77 + 1 + -arg2);
 					if (local24 < local106) {

@@ -16,10 +16,10 @@ public final class Class211 {
 	public final SoftLruHashTable aSoftLruHashTable_51 = new SoftLruHashTable(30);
 
 	@OriginalMember(owner = "client!sg", name = "d", descriptor = "Lclient!r;")
-	private final Class197 aClass197_82;
+	private final Js5 aJs5_82;
 
 	@OriginalMember(owner = "client!sg", name = "b", descriptor = "Lclient!r;")
-	public final Class197 aClass197_81;
+	public final Js5 aJs5_81;
 
 	static {
 		new LocalisedText(null, "Spieler nicht auf deiner Freunde-Liste.", null, null);
@@ -27,11 +27,11 @@ public final class Class211 {
 	}
 
 	@OriginalMember(owner = "client!sg", name = "<init>", descriptor = "(Lclient!dn;ILclient!r;Lclient!r;)V")
-	public Class211(@OriginalArg(0) Class50 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Class197 arg2, @OriginalArg(3) Class197 arg3) {
-		this.aClass197_82 = arg2;
-		this.aClass197_81 = arg3;
-		@Pc(26) int local26 = this.aClass197_82.method5091() - 1;
-		this.aClass197_82.method5080(local26);
+	public Class211(@OriginalArg(0) Class50 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5 arg2, @OriginalArg(3) Js5 arg3) {
+		this.aJs5_82 = arg2;
+		this.aJs5_81 = arg3;
+		@Pc(26) int local26 = this.aJs5_82.method5091() - 1;
+		this.aJs5_82.method5080(local26);
 	}
 
 	@OriginalMember(owner = "client!sg", name = "a", descriptor = "(II)Lclient!hf;")
@@ -39,12 +39,12 @@ public final class Class211 {
 		@Pc(6) SoftLruHashTable local6 = this.aSoftLruHashTable_50;
 		@Pc(25) Class91 local25;
 		synchronized (this.aSoftLruHashTable_50) {
-			local25 = (Class91) this.aSoftLruHashTable_50.method2612((long) arg0);
+			local25 = (Class91) this.aSoftLruHashTable_50.get((long) arg0);
 		}
 		if (local25 != null) {
 			return local25;
 		}
-		@Pc(48) byte[] local48 = this.aClass197_82.fetchFile(Static117.method2370(arg0), Static298.method2427(arg0));
+		@Pc(48) byte[] local48 = this.aJs5_82.fetchFile(Static117.method2370(arg0), Static298.method2427(arg0));
 		local25 = new Class91();
 		local25.aClass211_1 = this;
 		local25.anInt2453 = arg0;
@@ -53,7 +53,7 @@ public final class Class211 {
 		}
 		local6 = this.aSoftLruHashTable_50;
 		synchronized (this.aSoftLruHashTable_50) {
-			this.aSoftLruHashTable_50.method2624((long) arg0, local25);
+			this.aSoftLruHashTable_50.put((long) arg0, local25);
 			return local25;
 		}
 	}

@@ -312,11 +312,11 @@ public final class Static7 {
 	}
 
 	@OriginalMember(owner = "client!ag", name = "a", descriptor = "(Lclient!nk;B)Lclient!nk;")
-	public static Class161 method6464(@OriginalArg(0) Class161 arg0) {
-		if (arg0.anInt4275 != -1) {
-			return Static6.method140(arg0.anInt4275);
+	public static Component method6464(@OriginalArg(0) Component arg0) {
+		if (arg0.layer != -1) {
+			return Static6.method140(arg0.layer);
 		}
-		@Pc(25) int local25 = arg0.anInt4317 >>> 16;
+		@Pc(25) int local25 = arg0.id >>> 16;
 		@Pc(30) Class137 local30 = new Class137(Static329.aClass4_130);
 		for (@Pc(35) Class2_Sub7 local35 = (Class2_Sub7) local30.method3560(); local35 != null; local35 = (Class2_Sub7) local30.method3559()) {
 			if (local35.anInt1370 == local25) {
@@ -339,27 +339,27 @@ public final class Static7 {
 	}
 
 	@OriginalMember(owner = "client!ag", name = "a", descriptor = "(IB)Lclient!ac;")
-	public static Class3_Sub1 method6466(@OriginalArg(0) int arg0) {
-		return Static70.aBoolean130 && arg0 >= Static375.anInt7042 && Static312.anInt5843 >= arg0 ? Static295.aClass3_Sub1Array1[arg0 - Static375.anInt7042] : null;
+	public static World get(@OriginalArg(0) int arg0) {
+		return Static70.aBoolean130 && arg0 >= Static375.minID && Static312.maxID >= arg0 ? Static295.worlds[arg0 - Static375.minID] : null;
 	}
 
 	@OriginalMember(owner = "client!ag", name = "a", descriptor = "(III)V")
 	public static void method6468(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
-		@Pc(12) Class2_Sub2_Sub7 local12 = Static316.method5412(14, arg1);
-		local12.method2311();
+		@Pc(12) DelayedStateChange local12 = Static316.create(14, arg1);
+		local12.pushServer();
 		local12.anInt2289 = arg0;
 	}
 
 	@OriginalMember(owner = "client!ag", name = "a", descriptor = "(Lclient!bh;IZ)V")
-	public static void method6469(@OriginalArg(0) Class21 arg0, @OriginalArg(1) int arg1) {
+	public static void method6469(@OriginalArg(0) Environment arg0, @OriginalArg(1) int arg1) {
 		if (Static237.aBoolean297) {
 			Static237.aBoolean297 = false;
 			arg1 = 0;
 		}
-		if (Static311.aClass21_2 != null && Static311.aClass21_2.method854(arg0)) {
+		if (Static311.aEnvironment_2 != null && Static311.aEnvironment_2.method854(arg0)) {
 			return;
 		}
-		Static311.aClass21_2 = arg0;
+		Static311.aEnvironment_2 = arg0;
 		Static1.aLong1 = MonotonicClock.currentTimeMillis();
 		Static52.anInt1394 = arg1;
 		Static261.anInt4803 = arg1;
@@ -380,7 +380,7 @@ public final class Static7 {
 	}
 
 	@OriginalMember(owner = "client!ag", name = "a", descriptor = "(Lclient!nk;I)Z")
-	public static boolean method6471(@OriginalArg(0) Class161 arg0) {
+	public static boolean method6471(@OriginalArg(0) Component arg0) {
 		if (arg0.anInt4273 == Static180.anInt3410) {
 			Static86.anInt1870 = 250;
 			return true;

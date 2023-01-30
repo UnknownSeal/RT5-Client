@@ -14,7 +14,7 @@ public abstract class Class5 {
 	public abstract long method4404();
 
 	@OriginalMember(owner = "client!as", name = "c", descriptor = "(I)V")
-	public abstract void method4407();
+	public abstract void reset();
 
 	@OriginalMember(owner = "client!as", name = "a", descriptor = "(ZI)I")
 	public abstract int method4408(@OriginalArg(1) int arg0);

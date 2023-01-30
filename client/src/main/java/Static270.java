@@ -26,6 +26,6 @@ public final class Static270 {
 
 	@OriginalMember(owner = "client!pi", name = "a", descriptor = "(I)Z")
 	public static boolean method4554() {
-		return Static268.anInt4959 > 0;
+		return Static268.size > 0;
 	}
 }

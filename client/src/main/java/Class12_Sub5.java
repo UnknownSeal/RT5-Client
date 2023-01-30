@@ -37,7 +37,7 @@ public final class Class12_Sub5 extends Class12 {
 	private int anInt4674 = 0;
 
 	@OriginalMember(owner = "client!oh", name = "s", descriptor = "Lclient!ld;")
-	public Class135 aClass135_29 = new Class135();
+	public LinkedList aLinkedList_29 = new LinkedList();
 
 	@OriginalMember(owner = "client!oh", name = "y", descriptor = "I")
 	private int anInt4678 = 0;
@@ -93,7 +93,7 @@ public final class Class12_Sub5 extends Class12 {
 		@Pc(36) Class12_Sub8 local36;
 		if (this.aBoolean324) {
 			for (local36 = (Class12_Sub8) this.aClass36_5.method1415(); local36 != null; local36 = (Class12_Sub8) this.aClass36_5.method1420()) {
-				for (@Pc(39) int local39 = 0; local39 < local36.aClass235_1.anInt6604; local39++) {
+				for (@Pc(39) int local39 = 0; local39 < local36.type.anInt6604; local39++) {
 					local36.method5685(arg1, arg0, 1, !this.aBoolean323);
 				}
 			}
@@ -156,8 +156,8 @@ public final class Class12_Sub5 extends Class12 {
 	@OriginalMember(owner = "client!oh", name = "d", descriptor = "()V")
 	public void method4355() {
 		this.aBoolean322 = true;
-		for (@Pc(8) Class2_Sub2_Sub5 local8 = (Class2_Sub2_Sub5) this.aClass135_29.method3550(); local8 != null; local8 = (Class2_Sub2_Sub5) this.aClass135_29.method3551()) {
-			if (local8.aClass28_1.anInt737 == 1) {
+		for (@Pc(8) Class2_Sub2_Sub5 local8 = (Class2_Sub2_Sub5) this.aLinkedList_29.method3550(); local8 != null; local8 = (Class2_Sub2_Sub5) this.aLinkedList_29.method3551()) {
+			if (local8.aParticleEffectorType_1.anInt737 == 1) {
 				local8.unlinkSecondary();
 			}
 		}
@@ -165,7 +165,7 @@ public final class Class12_Sub5 extends Class12 {
 		this.anInt4673 = 0;
 		this.aClass36_5 = new Class36();
 		this.anInt4674 = 0;
-		this.aClass135_29 = new Class135();
+		this.aLinkedList_29 = new LinkedList();
 		this.anInt4678 = 0;
 		this.method5683();
 	}
@@ -204,7 +204,7 @@ public final class Class12_Sub5 extends Class12 {
 			Static251.aBooleanArray38[local1] = false;
 		}
 		@Pc(21) int local21;
-		label68: for (@Pc(16) Class2_Sub2_Sub5 local16 = (Class2_Sub2_Sub5) this.aClass135_29.method3550(); local16 != null; local16 = (Class2_Sub2_Sub5) this.aClass135_29.method3551()) {
+		label68: for (@Pc(16) Class2_Sub2_Sub5 local16 = (Class2_Sub2_Sub5) this.aLinkedList_29.method3550(); local16 != null; local16 = (Class2_Sub2_Sub5) this.aLinkedList_29.method3551()) {
 			if (arg0 != null) {
 				for (local21 = 0; local21 < arg0.length; local21++) {
 					if (local16.aClass163_1 == arg0[local21] || local16.aClass163_1 == arg0[local21].aClass163_2) {
@@ -235,7 +235,7 @@ public final class Class12_Sub5 extends Class12 {
 				if (local93 == null) {
 					local93 = new Class2_Sub2_Sub5(arg0[local21], this);
 				}
-				this.aClass135_29.method3539(local93);
+				this.aLinkedList_29.method3539(local93);
 				this.anInt4678++;
 				Static251.aBooleanArray38[local21] = true;
 			}

@@ -33,19 +33,19 @@ public final class Static322 {
 
 	@OriginalMember(owner = "client!so", name = "a", descriptor = "(III)V")
 	public static void method5480(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
-		@Pc(12) Class2_Sub2_Sub7 local12 = Static316.method5412(1, arg0);
-		local12.method2311();
+		@Pc(12) DelayedStateChange local12 = Static316.create(1, arg0);
+		local12.pushServer();
 		local12.anInt2289 = arg1;
 	}
 
 	@OriginalMember(owner = "client!so", name = "a", descriptor = "(ZIIIIIIII)Z")
 	public static boolean method5481(@OriginalArg(0) boolean arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(8) int arg7) {
-		@Pc(13) int local13 = Static17.aClass11_Sub5_Sub2_Sub1_3.anIntArray316[0];
-		@Pc(18) int local18 = Static17.aClass11_Sub5_Sub2_Sub1_3.anIntArray317[0];
+		@Pc(13) int local13 = Static17.self.anIntArray316[0];
+		@Pc(18) int local18 = Static17.self.anIntArray317[0];
 		if (local13 < 0 || Static373.anInt7033 <= local13 || local18 < 0 || Static242.anInt4449 <= local18) {
 			return false;
 		} else if (arg5 >= 0 && arg5 < Static373.anInt7033 && arg2 >= 0 && arg2 < Static242.anInt4449) {
-			@Pc(88) int local88 = Static141.method2654(arg0, Static52.anIntArray99, arg6, arg1, arg7, arg3, Static171.aClass46Array1[Static17.aClass11_Sub5_Sub2_Sub1_3.aByte78], local13, arg4, arg5, Static59.anIntArray105, Static17.aClass11_Sub5_Sub2_Sub1_3.method4327(), arg2, local18);
+			@Pc(88) int local88 = Static141.method2654(arg0, Static52.anIntArray99, arg6, arg1, arg7, arg3, Static171.aClass46Array1[Static17.self.aByte78], local13, arg4, arg5, Static59.anIntArray105, Static17.self.method4327(), arg2, local18);
 			if (local88 < 1) {
 				return false;
 			}
@@ -101,11 +101,11 @@ public final class Static322 {
 				}
 			}
 		}
-		if (Static34.aClass103_3 == null) {
-			if (Static91.aClass2_Sub2_Sub17_1 == null || !Static389.aClass197_66.method5100(Static91.aClass2_Sub2_Sub17_1.aString67 + "_staticelements")) {
-				Static34.aClass103_3 = new Class103(0);
-			} else if (Static389.aClass197_66.method5071(Static91.aClass2_Sub2_Sub17_1.aString67 + "_staticelements")) {
-				Static34.aClass103_3 = Static317.method5551(Static389.aClass197_66, Static91.aClass2_Sub2_Sub17_1.aString67 + "_staticelements", Static206.mapMembers);
+		if (Static34.aMapElementList_3 == null) {
+			if (Static91.aClass2_Sub2_Sub17_1 == null || !Static389.aJs5_66.isGroupNameValid(Static91.aClass2_Sub2_Sub17_1.aString67 + "_staticelements")) {
+				Static34.aMapElementList_3 = new MapElementList(0);
+			} else if (Static389.aJs5_66.isGroupReady(Static91.aClass2_Sub2_Sub17_1.aString67 + "_staticelements")) {
+				Static34.aMapElementList_3 = MapElementList.create(Static389.aJs5_66, Static91.aClass2_Sub2_Sub17_1.aString67 + "_staticelements", Static206.mapMembers);
 			} else {
 				Static144.anInt2694++;
 				ready = false;
@@ -180,7 +180,7 @@ public final class Static322 {
 		Static375.method6280();
 		Static246.aBoolean312 = Static218.aClass177_Sub1_2.aBoolean364;
 		Static105.aBoolean162 = Static218.aClass177_Sub1_2.aBoolean361;
-		Static183.aBoolean8 = Static309.anInt5802 >= 96;
+		Static183.aBoolean8 = GameShell.maxMemory >= 96;
 		Static174.anInt1300 = Static218.aClass177_Sub1_2.anInt4886;
 		Static141.aBoolean190 = !Static218.aClass177_Sub1_2.aBoolean355;
 		Static158.anInt2911 = Static218.aClass177_Sub1_2.method4494(Static77.anInt1762) ? -1 : Static44.visibleLevel;
@@ -298,7 +298,7 @@ public final class Static322 {
 		}
 		Static253.method4368();
 		Static37.method1135();
-		Static142.method2662();
+		GameShell.resetTimer();
 	}
 
 	@OriginalMember(owner = "client!so", name = "b", descriptor = "(I)V")

@@ -6,7 +6,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static375 {
 
 	@OriginalMember(owner = "client!vs", name = "g", descriptor = "I")
-	public static int anInt7042;
+	public static int minID;
 
 	@OriginalMember(owner = "client!vs", name = "j", descriptor = "[I")
 	public static int[] anIntArray481;
@@ -18,7 +18,7 @@ public final class Static375 {
 	public static long aLong222;
 
 	@OriginalMember(owner = "client!vs", name = "a", descriptor = "Lclient!nk;")
-	public static Class161 aClass161_14 = null;
+	public static Component aComponent_14 = null;
 
 	@OriginalMember(owner = "client!vs", name = "c", descriptor = "[[Z")
 	public static final boolean[][] aBooleanArrayArray6 = new boolean[][] { { true, true, true, true, true, true, true, true, true, true, true, true, true }, { true, true, true, false, false, false, true, true, false, false, false, false, true }, { true, false, false, false, false, true, true, true, false, false, false, false, false }, { false, false, true, true, true, true, false, false, false, false, false, false, false }, { true, true, true, true, true, true, false, false, false, false, false, false, false }, { true, true, true, false, false, true, true, true, false, false, false, false, false }, { true, true, false, false, false, true, true, true, false, false, false, false, true }, { true, true, false, false, false, false, false, true, false, false, false, false, false }, { false, true, true, true, true, true, true, true, false, false, false, false, false }, { true, false, false, false, true, true, true, true, true, true, false, false, false }, { true, true, true, true, true, false, false, false, true, true, false, false, false }, { true, true, true, false, false, false, false, false, false, false, true, true, false }, new boolean[13], { true, true, true, true, true, true, true, true, true, true, true, true, true }, new boolean[13] };
@@ -42,32 +42,32 @@ public final class Static375 {
 	public static int anInt7051 = 0;
 
 	@OriginalMember(owner = "client!vs", name = "a", descriptor = "(IB)Z")
-	public static boolean method6278(@OriginalArg(0) int arg0) {
-		@Pc(7) Class3_Sub1 local7 = Static7.method6466(arg0);
-		if (local7 == null) {
+	public static boolean switchWorld(@OriginalArg(0) int id) {
+		@Pc(7) World world = Static7.get(id);
+		if (world == null) {
 			return false;
 		} else if (Static215.anInt3795 == 3) {
 			@Pc(39) String local39 = "";
 			if (Static121.aClass127_4 != Static189.aClass127_6) {
-				local39 = ":" + (local7.anInt81 + 7000);
+				local39 = ":" + (world.worldID + 7000);
 			}
 			@Pc(55) String local55 = "";
 			if (client.settings != null) {
 				local55 = "/p=" + client.settings;
 			}
-			@Pc(109) String local109 = "http://" + local7.aString2 + local39 + "/l=" + client.language + "/a=" + Static165.anInt3149 + local55 + "/j" + (Static276.aBoolean375 ? "1" : "0") + ",o" + (Static237.aBoolean298 ? "1" : "0") + ",a2";
+			@Pc(109) String url = "http://" + world.hostname + local39 + "/l=" + client.language + "/a=" + Static165.anInt3149 + local55 + "/j" + (Static276.aBoolean375 ? "1" : "0") + ",o" + (Static237.aBoolean298 ? "1" : "0") + ",a2";
 			try {
-				Static144.instance.getAppletContext().showDocument(new URL(local109), "_self");
+				Static144.instance.getAppletContext().showDocument(new URL(url), "_self");
 				return true;
-			} catch (@Pc(119) Exception local119) {
+			} catch (@Pc(119) Exception exception) {
 				return false;
 			}
 		} else {
-			Static120.anInt2385 = local7.anInt81;
-			client.hostname = local7.aString2;
+			client.worldID = world.worldID;
+			client.hostname = world.hostname;
 			if (Static121.aClass127_4 != Static189.aClass127_6) {
-				client.defaultPort = Static120.anInt2385 + 40000;
-				client.alternatePort = Static120.anInt2385 + 50000;
+				client.defaultPort = client.worldID + 40000;
+				client.alternatePort = client.worldID + 50000;
 				client.port = client.defaultPort;
 			}
 			return true;
@@ -81,8 +81,8 @@ public final class Static375 {
 
 	@OriginalMember(owner = "client!vs", name = "a", descriptor = "(BII)V")
 	public static void method6281(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
-		@Pc(8) Class2_Sub2_Sub7 local8 = Static316.method5412(13, arg1);
-		local8.method2311();
+		@Pc(8) DelayedStateChange local8 = Static316.create(13, arg1);
+		local8.pushServer();
 		local8.anInt2289 = arg0;
 	}
 }

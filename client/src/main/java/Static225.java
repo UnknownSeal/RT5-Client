@@ -130,7 +130,7 @@ public final class Static225 {
 		local13.aBoolean85 = false;
 		local13.anInt1049 = (int) (arg0 * 4096.0F);
 		local13.anInt1050 = 4;
-		local13.method6479();
+		local13.postDecode();
 		Static155.method2789(64, 256);
 		for (@Pc(40) int local40 = 0; local40 < 256; local40++) {
 			local13.method1308(local9[local40], local40);

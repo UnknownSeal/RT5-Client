@@ -124,10 +124,10 @@ public final class Class183 {
 		this.ingoingBuffer.offset = 0;
 		this.current = null;
 		while (true) {
-			@Pc(44) Js5NetRequest prefetchRequest = (Js5NetRequest) this.aClass246_6.method6338();
+			@Pc(44) Js5NetRequest prefetchRequest = (Js5NetRequest) this.aClass246_6.removeHead();
 			if (prefetchRequest == null) {
 				while (true) {
-					prefetchRequest = (Js5NetRequest) this.aClass246_8.method6338();
+					prefetchRequest = (Js5NetRequest) this.aClass246_8.removeHead();
 					if (prefetchRequest == null) {
 						if (this.encryptionKey != 0) {
 							try {
@@ -184,14 +184,14 @@ public final class Class183 {
 			for (@Pc(74) Js5NetRequest local74 = (Js5NetRequest) this.aClass246_5.head(); local74 != null; local74 = (Js5NetRequest) this.aClass246_5.next()) {
 				this.outBuffer.offset = 0;
 				this.outBuffer.p1(1);
-				this.outBuffer.p3((int) local74.aLong215);
+				this.outBuffer.p3((int) local74.secondaryKey);
 				this.socket.write(this.outBuffer.data, 4);
 				this.aClass246_6.addTail(local74);
 			}
 			for (@Pc(126) Js5NetRequest local126 = (Js5NetRequest) this.pendingPrefetchRequests.head(); local126 != null; local126 = (Js5NetRequest) this.pendingPrefetchRequests.next()) {
 				this.outBuffer.offset = 0;
 				this.outBuffer.p1(0);
-				this.outBuffer.p3((int) local126.aLong215);
+				this.outBuffer.p3((int) local126.secondaryKey);
 				this.socket.write(this.outBuffer.data, 4);
 				this.aClass246_8.addTail(local126);
 			}
@@ -237,10 +237,10 @@ public final class Class183 {
 							@Pc(333) long local333 = (long) ((local243 << 16) + local301);
 							@Pc(343) Js5NetRequest local343;
 							if (local326) {
-								for (local343 = (Js5NetRequest) this.aClass246_8.head(); local343 != null && local333 != local343.aLong215; local343 = (Js5NetRequest) this.aClass246_8.next()) {
+								for (local343 = (Js5NetRequest) this.aClass246_8.head(); local343 != null && local333 != local343.secondaryKey; local343 = (Js5NetRequest) this.aClass246_8.next()) {
 								}
 							} else {
-								for (local343 = (Js5NetRequest) this.aClass246_6.head(); local343 != null && local343.aLong215 != local333; local343 = (Js5NetRequest) this.aClass246_6.next()) {
+								for (local343 = (Js5NetRequest) this.aClass246_6.head(); local343 != null && local343.secondaryKey != local333; local343 = (Js5NetRequest) this.aClass246_6.next()) {
 								}
 							}
 							if (local343 == null) {
@@ -306,7 +306,7 @@ public final class Class183 {
 		@Pc(16) long local16 = (long) ((arg1 << 16) + arg3);
 		@Pc(20) Js5NetRequest local20 = new Js5NetRequest();
 		local20.aBoolean418 = arg0;
-		local20.aLong215 = local16;
+		local20.secondaryKey = local16;
 		local20.aByte27 = arg2;
 		if (arg0) {
 			if (this.method4636() >= 20) {

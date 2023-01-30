@@ -121,7 +121,7 @@ public final class Class91 {
 		@Pc(62) SoftLruHashTable local62 = this.aClass211_1.aSoftLruHashTable_51;
 		@Pc(82) Model local82;
 		synchronized (this.aClass211_1.aSoftLruHashTable_51) {
-			local82 = (Model) this.aClass211_1.aSoftLruHashTable_51.method2612((long) (this.anInt2453 |= arg2.anInt2836 << 29));
+			local82 = (Model) this.aClass211_1.aSoftLruHashTable_51.get((long) (this.anInt2453 |= arg2.anInt2836 << 29));
 		}
 		if (local82 == null || arg2.method2863(local82.method3826(), local7) != 0) {
 			if (local82 != null) {
@@ -134,7 +134,7 @@ public final class Class91 {
 			if (this.aShortArray51 != null) {
 				local109 |= 0x4000;
 			}
-			@Pc(132) Class185 local132 = Static298.method2426(this.aClass211_1.aClass197_81, this.anInt2452);
+			@Pc(132) Class185 local132 = Static298.method2426(this.aClass211_1.aJs5_81, this.anInt2452);
 			if (local132 == null) {
 				return null;
 			}
@@ -153,7 +153,7 @@ public final class Class91 {
 			local82.method3813(local7);
 			@Pc(209) SoftLruHashTable local209 = this.aClass211_1.aSoftLruHashTable_51;
 			synchronized (this.aClass211_1.aSoftLruHashTable_51) {
-				this.aClass211_1.aSoftLruHashTable_51.method2624((long) (this.anInt2453 |= arg2.anInt2836 << 29), local82);
+				this.aClass211_1.aSoftLruHashTable_51.put((long) (this.anInt2453 |= arg2.anInt2836 << 29), local82);
 			}
 		}
 		@Pc(253) Model local253 = local23 == null ? local82.method3799((byte) 2, local7, true) : local23.method3986(arg0, (byte) 2, arg5, 0, arg1, local7, local82);

@@ -11,23 +11,23 @@ public final class Static314 {
 	public static int anInt5911;
 
 	@OriginalMember(owner = "client!sd", name = "b", descriptor = "(II)Lclient!bp;")
-	public static Class28 method5366(@OriginalArg(0) int arg0) {
-		@Pc(10) Class28 local10 = (Class28) Static119.A_SOFT_LRU_HASH_TABLE___16.method2612((long) arg0);
+	public static ParticleEffectorType method5366(@OriginalArg(0) int arg0) {
+		@Pc(10) ParticleEffectorType local10 = (ParticleEffectorType) Static119.types.get((long) arg0);
 		if (local10 != null) {
 			return local10;
 		}
-		@Pc(20) byte[] local20 = Static188.aClass197_52.fetchFile(1, arg0);
-		local10 = new Class28();
+		@Pc(20) byte[] bytes = Static188.aJs5_52.fetchFile(1, arg0);
+		local10 = new ParticleEffectorType();
 		local10.anInt749 = arg0;
-		if (local20 != null) {
-			local10.method949(new Buffer(local20));
+		if (bytes != null) {
+			local10.decode(new Buffer(bytes));
 		}
-		local10.method945();
-		if (local10.anInt737 == 2 && Static7.aClass4_151.method90((long) arg0) == null) {
-			Static7.aClass4_151.put(new IntNode(Static307.anInt5780), (long) arg0);
-			Static278.aClass28Array1[Static307.anInt5780++] = local10;
+		local10.postDecode();
+		if (local10.anInt737 == 2 && Static7.aClass4_151.get(arg0) == null) {
+			Static7.aClass4_151.put(new IntNode(Static307.anInt5780), arg0);
+			Static278.A_PARTICLE_EFFECTOR_TYPE_ARRAY_1[Static307.anInt5780++] = local10;
 		}
-		Static119.A_SOFT_LRU_HASH_TABLE___16.method2624((long) arg0, local10);
+		Static119.types.put(arg0, local10);
 		return local10;
 	}
 

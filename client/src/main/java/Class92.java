@@ -8,7 +8,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Class92 {
 
 	@OriginalMember(owner = "client!hg", name = "c", descriptor = "Ljava/util/zip/Inflater;")
-	private Inflater anInflater1;
+	private Inflater inflater;
 
 	@OriginalMember(owner = "client!hg", name = "<init>", descriptor = "()V")
 	public Class92() {
@@ -20,20 +20,20 @@ public final class Class92 {
 	}
 
 	@OriginalMember(owner = "client!hg", name = "a", descriptor = "([BILclient!bt;)V")
-	public void method2436(@OriginalArg(0) byte[] arg0, @OriginalArg(2) Buffer arg1) {
-		if (arg1.data[arg1.offset] != 31 || arg1.data[arg1.offset + 1] != -117) {
+	public void method2436(@OriginalArg(0) byte[] arg0, @OriginalArg(2) Buffer buffer) {
+		if (buffer.data[buffer.offset] != 31 || buffer.data[buffer.offset + 1] != -117) {
 			throw new RuntimeException("Invalid GZIP header!");
 		}
-		if (this.anInflater1 == null) {
-			this.anInflater1 = new Inflater(true);
+		if (this.inflater == null) {
+			this.inflater = new Inflater(true);
 		}
 		try {
-			this.anInflater1.setInput(arg1.data, arg1.offset + 10, -arg1.offset + -18 + arg1.data.length);
-			this.anInflater1.inflate(arg0);
-		} catch (@Pc(60) Exception local60) {
-			this.anInflater1.reset();
+			this.inflater.setInput(buffer.data, buffer.offset + 10, -buffer.offset + -18 + buffer.data.length);
+			this.inflater.inflate(arg0);
+		} catch (@Pc(60) Exception exception) {
+			this.inflater.reset();
 			throw new RuntimeException("Invalid GZIP compressed data!");
 		}
-		this.anInflater1.reset();
+		this.inflater.reset();
 	}
 }

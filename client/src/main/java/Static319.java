@@ -118,12 +118,12 @@ public final class Static319 {
 			if (Static290.anInt5496 > Static218.anInt914) {
 				return -1;
 			} else if (Static158.method2943(Static298.aByteArray27)) {
-				Static300.aClass3_Sub1Array2 = new Class3_Sub1[Static299.anInt5643];
+				Static300.aWorldArray2 = new World[Static299.size];
 				@Pc(234) int local234 = 0;
-				for (@Pc(236) int local236 = Static375.anInt7042; local236 <= Static312.anInt5843; local236++) {
-					@Pc(242) Class3_Sub1 local242 = Static7.method6466(local236);
+				for (@Pc(236) int local236 = Static375.minID; local236 <= Static312.maxID; local236++) {
+					@Pc(242) World local242 = Static7.get(local236);
 					if (local242 != null) {
-						Static300.aClass3_Sub1Array2[local234++] = local242;
+						Static300.aWorldArray2[local234++] = local242;
 					}
 				}
 				Static279.aClass2_Sub16_1 = null;
@@ -150,8 +150,8 @@ public final class Static319 {
 
 	@OriginalMember(owner = "client!sk", name = "a", descriptor = "(ILjava/lang/String;I)V")
 	public static void method5431(@OriginalArg(0) int arg0, @OriginalArg(1) String arg1) {
-		@Pc(10) Class2_Sub2_Sub7 local10 = Static316.method5412(3, arg0);
-		local10.method2311();
+		@Pc(10) DelayedStateChange local10 = Static316.create(3, arg0);
+		local10.pushServer();
 		local10.aString21 = arg1;
 	}
 

@@ -8,10 +8,10 @@ public final class Static139 {
 	public static int anInt2594;
 
 	@OriginalMember(owner = "client!hs", name = "w", descriptor = "Lclient!r;")
-	public static Class197 aClass197_34;
+	public static Js5 aJs5_34;
 
 	@OriginalMember(owner = "client!hs", name = "y", descriptor = "Lclient!r;")
-	public static Class197 aClass197_35;
+	public static Js5 aJs5_35;
 
 	@OriginalMember(owner = "client!hs", name = "r", descriptor = "Lclient!h;")
 	public static final Class89 aClass89_108 = new Class89(59, -2);
@@ -33,8 +33,8 @@ public final class Static139 {
 
 	@OriginalMember(owner = "client!hs", name = "a", descriptor = "(II)V")
 	public static void method2585(@OriginalArg(0) int arg0) {
-		@Pc(13) Class2_Sub2_Sub7 local13 = Static316.method5412(11, arg0);
-		local13.method2312();
+		@Pc(13) DelayedStateChange local13 = Static316.create(11, arg0);
+		local13.pushClient();
 	}
 
 	@OriginalMember(owner = "client!hs", name = "a", descriptor = "(ZIII)Ljava/lang/String;")
@@ -63,8 +63,8 @@ public final class Static139 {
 
 	@OriginalMember(owner = "client!hs", name = "a", descriptor = "(BII)V")
 	public static void method2595(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
-		@Pc(14) Class2_Sub2_Sub7 local14 = Static316.method5412(16, arg0);
-		local14.method2311();
+		@Pc(14) DelayedStateChange local14 = Static316.create(16, arg0);
+		local14.pushServer();
 		local14.anInt2289 = arg1;
 	}
 }

@@ -16,12 +16,12 @@ public final class Static262 {
 	public static int anInt6999 = 2;
 
 	@OriginalMember(owner = "client!pa", name = "a", descriptor = "(IIIIILclient!nk;Lclient!kf;IB)V")
-	public static void method6248(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) Class161 arg5, @OriginalArg(6) Class78 arg6, @OriginalArg(7) int arg7) {
+	public static void method6248(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) Component arg5, @OriginalArg(6) Class78 arg6, @OriginalArg(7) int arg7) {
 		@Pc(19) int local19 = arg2 * arg2 + arg3 * arg3;
 		if (local19 > arg1) {
 			return;
 		}
-		@Pc(37) int local37 = Math.min(arg5.anInt4248 / 2, arg5.anInt4261 / 2);
+		@Pc(37) int local37 = Math.min(arg5.width / 2, arg5.height / 2);
 		if (local37 * local37 >= local19) {
 			Static376.renderDot(arg6, arg2, arg7, arg3, Static123.aClass13Array10[arg0], arg4, arg5);
 			return;
@@ -34,7 +34,7 @@ public final class Static262 {
 			local66 = (int) Static277.aFloat67 + Static6.anInt158 & 0x3FFF;
 		}
 		@Pc(77) int local77 = Class19.anIntArray178[local66];
-		@Pc(81) int local81 = Class19.anIntArray177[local66];
+		@Pc(81) int local81 = Class19.COSINE[local66];
 		if (Static314.anInt5911 != 4) {
 			local77 = local77 * 256 / (Static97.anInt2005 + 256);
 			local81 = local81 * 256 / (Static97.anInt2005 + 256);
@@ -44,7 +44,7 @@ public final class Static262 {
 		@Pc(129) double local129 = Math.atan2((double) local112, (double) local123);
 		@Pc(136) int local136 = (int) (Math.sin(local129) * (double) local37);
 		@Pc(143) int local143 = (int) ((double) local37 * Math.cos(local129));
-		Static116.aClass13Array8[arg0].method6385((float) arg5.anInt4248 / 2.0F + (float) arg7 + (float) local136, (float) -local143 + (float) arg5.anInt4261 / 2.0F + (float) arg4, 4096, (int) (-local129 / 6.283185307179586D * 65535.0D));
+		Static116.aClass13Array8[arg0].method6385((float) arg5.width / 2.0F + (float) arg7 + (float) local136, (float) -local143 + (float) arg5.height / 2.0F + (float) arg4, 4096, (int) (-local129 / 6.283185307179586D * 65535.0D));
 	}
 
 	@OriginalMember(owner = "client!pa", name = "a", descriptor = "(ILclient!qg;)V")
@@ -98,8 +98,8 @@ public final class Static262 {
 		Static217.method3794(Static218.aClass177_Sub1_2.anInt4883);
 		@Pc(18) int local18 = (Static136.anInt6778 >> 10) + (Static164.originX >> 3);
 		@Pc(27) int local27 = (Static211.anInt3777 >> 10) + (Static148.originZ >> 3);
-		Static355.anInt6585 = Static17.aClass11_Sub5_Sub2_Sub1_3.aByte78 = 0;
-		Static17.aClass11_Sub5_Sub2_Sub1_3.method4063(8, 8);
+		Static355.anInt6585 = Static17.self.aByte78 = 0;
+		Static17.self.method4063(8, 8);
 		Static51.underwaterMapGroupIDs = new int[18];
 		Static106.mapBytes = new byte[18][];
 		Static232.underwaterMapBytes = new byte[18][];

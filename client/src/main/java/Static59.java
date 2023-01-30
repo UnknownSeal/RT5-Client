@@ -56,6 +56,6 @@ public final class Static59 {
 		Static139.A_SOFT_LRU_HASH_TABLE___18.method2621();
 		Static61.A_SOFT_LRU_HASH_TABLE___5.method2621();
 		Static210.A_SOFT_LRU_HASH_TABLE___31.method2621();
-		Static198.A_SOFT_LRU_HASH_TABLE___30.method2621();
+		ScriptRunner.A_SOFT_LRU_HASH_TABLE___30.method2621();
 	}
 }

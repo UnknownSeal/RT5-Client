@@ -26,12 +26,12 @@ public final class Static158 {
 		for (@Pc(13) int local13 = 0; local13 < arg0.length; local13++) {
 			@Pc(27) Class230 local27 = Static287.aClass233_1.method5884(arg0[local13]);
 			if (local27.anInt6454 != -1) {
-				@Pc(39) Class13 local39 = (Class13) Static210.A_SOFT_LRU_HASH_TABLE___31.method2612((long) local27.anInt6454);
+				@Pc(39) Class13 local39 = (Class13) Static210.A_SOFT_LRU_HASH_TABLE___31.get((long) local27.anInt6454);
 				if (local39 == null) {
-					@Pc(47) Class48 local47 = Static396.method1682(Static30.aClass197_5, local27.anInt6454, 0);
+					@Pc(47) SoftwareSprite local47 = Static396.loadSoftwareSprite(Static30.aJs5_5, local27.anInt6454, 0);
 					if (local47 != null) {
 						local39 = Static190.aClass19_8.method2891(local47);
-						Static210.A_SOFT_LRU_HASH_TABLE___31.method2624((long) local27.anInt6454, local39);
+						Static210.A_SOFT_LRU_HASH_TABLE___31.put((long) local27.anInt6454, local39);
 					}
 				}
 				if (local39 != null) {
@@ -96,7 +96,7 @@ public final class Static158 {
 		}
 		@Pc(34) boolean local34 = local8.g1() == 1;
 		if (local34) {
-			Static317.method5550(local8);
+			Static317.decodeWorlds(local8);
 		}
 		Static4.method76(local8);
 		return true;

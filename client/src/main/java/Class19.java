@@ -12,7 +12,7 @@ public abstract class Class19 {
 	public static final int[] anIntArray178 = new int[16384];
 
 	@OriginalMember(owner = "client!wm", name = "f", descriptor = "[I")
-	public static final int[] anIntArray177 = new int[16384];
+	public static final int[] COSINE = new int[16384];
 
 	@OriginalMember(owner = "client!wm", name = "m", descriptor = "I")
 	public final int anInt2836;
@@ -24,7 +24,7 @@ public abstract class Class19 {
 		@Pc(9) double local9 = 3.834951969714103E-4D;
 		for (@Pc(11) int local11 = 0; local11 < 16384; local11++) {
 			anIntArray178[local11] = (int) (Math.sin(local9 * (double) local11) * 32768.0D);
-			anIntArray177[local11] = (int) (Math.cos(local9 * (double) local11) * 32768.0D);
+			COSINE[local11] = (int) (Math.cos(local9 * (double) local11) * 32768.0D);
 		}
 	}
 
@@ -209,7 +209,7 @@ public abstract class Class19 {
 	}
 
 	@OriginalMember(owner = "client!wm", name = "a", descriptor = "(Lclient!vi;[Lclient!dk;Z)Lclient!ur;")
-	public abstract Class130 method2857(@OriginalArg(0) Class239 arg0, @OriginalArg(1) Class48[] arg1);
+	public abstract Class130 method2857(@OriginalArg(0) Class239 arg0, @OriginalArg(1) SoftwareSprite[] arg1);
 
 	@OriginalMember(owner = "client!wm", name = "u", descriptor = "()Z")
 	public abstract boolean method2858();
@@ -314,7 +314,7 @@ public abstract class Class19 {
 	}
 
 	@OriginalMember(owner = "client!wm", name = "a", descriptor = "(Lclient!dk;Z)Lclient!jd;")
-	public abstract Class13 method2891(@OriginalArg(0) Class48 arg0);
+	public abstract Class13 method2891(@OriginalArg(0) SoftwareSprite arg0);
 
 	@OriginalMember(owner = "client!wm", name = "G", descriptor = "()Z")
 	public abstract boolean method2892();

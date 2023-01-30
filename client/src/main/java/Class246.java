@@ -52,7 +52,7 @@ public final class Class246 {
 	}
 
 	@OriginalMember(owner = "client!wc", name = "c", descriptor = "(I)Lclient!tl;")
-	public SecondaryNode method6338() {
+	public SecondaryNode removeHead() {
 		@Pc(7) SecondaryNode local7 = this.sentinel.secondaryNext;
 		if (this.sentinel == local7) {
 			return null;
@@ -74,14 +74,14 @@ public final class Class246 {
 	}
 
 	@OriginalMember(owner = "client!wc", name = "b", descriptor = "(B)V")
-	public void method6341() {
+	public void clear() {
 		while (true) {
-			@Pc(9) SecondaryNode local9 = this.sentinel.secondaryNext;
-			if (local9 == this.sentinel) {
+			@Pc(9) SecondaryNode node = this.sentinel.secondaryNext;
+			if (node == this.sentinel) {
 				this.cursor = null;
 				return;
 			}
-			local9.unlinkSecondary();
+			node.unlinkSecondary();
 		}
 	}
 }

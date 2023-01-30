@@ -38,7 +38,7 @@ public final class Static232 {
 	@OriginalMember(owner = "client!ng", name = "a", descriptor = "(II)V")
 	public static void method4027(@OriginalArg(1) int arg0) {
 		if (Static222.method3915(arg0)) {
-			Static181.method3377(Static26.aClass161ArrayArray1[arg0], -1);
+			Static181.method3377(Static26.aComponentArrayArray1[arg0], -1);
 		}
 	}
 }

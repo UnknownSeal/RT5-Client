@@ -17,7 +17,7 @@ public final class Static278 {
 	public static boolean aBoolean377 = false;
 
 	@OriginalMember(owner = "client!qb", name = "V", descriptor = "[Lclient!bp;")
-	public static final Class28[] aClass28Array1 = new Class28[16];
+	public static final ParticleEffectorType[] A_PARTICLE_EFFECTOR_TYPE_ARRAY_1 = new ParticleEffectorType[16];
 
 	@OriginalMember(owner = "client!qb", name = "X", descriptor = "[I")
 	public static final int[] anIntArray362 = new int[] { 4, 4, 1, 2, 6, 4, 2, 48, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 };
@@ -34,7 +34,7 @@ public final class Static278 {
 
 	@OriginalMember(owner = "client!qb", name = "b", descriptor = "(II)V")
 	public static void method4722(@OriginalArg(1) int arg0) {
-		@Pc(12) Class2_Sub2_Sub7 local12 = Static316.method5412(6, arg0);
-		local12.method2312();
+		@Pc(12) DelayedStateChange local12 = Static316.create(6, arg0);
+		local12.pushClient();
 	}
 }

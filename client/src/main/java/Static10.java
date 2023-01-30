@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static10 {
 
-	@OriginalMember(owner = "client!aj", name = "T", descriptor = "I")
-	public static int anInt247;
-
 	@OriginalMember(owner = "client!aj", name = "U", descriptor = "[S")
 	public static short[] aShortArray1;
 
@@ -43,8 +40,8 @@ public final class Static10 {
 
 	@OriginalMember(owner = "client!aj", name = "a", descriptor = "(IILjava/lang/String;)V")
 	public static void method239(@OriginalArg(1) int arg0, @OriginalArg(2) String arg1) {
-		@Pc(8) Class2_Sub2_Sub7 local8 = Static316.method5412(2, arg0);
-		local8.method2311();
+		@Pc(8) DelayedStateChange local8 = Static316.create(2, arg0);
+		local8.pushServer();
 		local8.aString21 = arg1;
 	}
 }

@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static389 {
 
 	@OriginalMember(owner = "client!wo", name = "M", descriptor = "Lclient!r;")
-	public static Class197 aClass197_66;
+	public static Js5 aJs5_66;
 
 	@OriginalMember(owner = "client!wo", name = "J", descriptor = "I")
 	public static int anInt4896 = 0;
@@ -73,7 +73,7 @@ public final class Static389 {
 		Static286.method4920();
 		Static65.aClass19_3 = null;
 		Static24.aClass42_2 = null;
-		Static332.aClass21ArrayArray3 = null;
+		Static332.aEnvironmentArrayArray3 = null;
 		Static79.aClass42_4 = null;
 		Static62.aClass42_5 = null;
 	}

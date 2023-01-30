@@ -9,7 +9,15 @@ public final class LocalisedText {
     public static final LocalisedText LENT_ITEM_RETURN = new LocalisedText("Discard", "Ablegen", "Jeter", "Descartar");
     @OriginalMember(owner = "client!we", name = "C", descriptor = "Lclient!gd;")
     public static final LocalisedText FACEHERE = new LocalisedText("Face here", "Hierhin drehen", "Regarder dans cette direction", "Virar para cá");
-    @OriginalMember(owner = "client!gd", name = "f", descriptor = "[Ljava/lang/String;")
+    @OriginalMember(owner = "client!wa", name = "j", descriptor = "Lclient!gd;")
+    public static final LocalisedText ATTACK = new LocalisedText("Attack", "Angreifen", "Attaquer", "Atacar");
+	@OriginalMember(owner = "client!vj", name = "W", descriptor = "Lclient!gd;")
+	public static final LocalisedText RATING = new LocalisedText("rating: ", "Kampfstufe: ", "classement ", "qualificação: ");
+	@OriginalMember(owner = "client!bs", name = "q", descriptor = "Lclient!gd;")
+	public static final LocalisedText LEVEL = new LocalisedText("level: ", "Stufe: ", "niveau ", "nível: ");
+	@OriginalMember(owner = "client!vl", name = "gb", descriptor = "Lclient!gd;")
+	public static final LocalisedText EXAMINE = new LocalisedText("Examine", "Untersuchen", "Examiner", "Examinar");
+	@OriginalMember(owner = "client!gd", name = "f", descriptor = "[Ljava/lang/String;")
 	private final String[] localisedText;
 
 	@OriginalMember(owner = "client!gd", name = "<init>", descriptor = "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V")

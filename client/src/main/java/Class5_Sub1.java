@@ -35,7 +35,7 @@ public final class Class5_Sub1 extends Class5 {
 
 	@OriginalMember(owner = "client!af", name = "c", descriptor = "(I)V")
 	@Override
-	public void method4407() {
+	public void reset() {
 		if (this.aLong14 > this.aLong15) {
 			this.aLong15 += this.aLong14 - this.aLong15;
 		}

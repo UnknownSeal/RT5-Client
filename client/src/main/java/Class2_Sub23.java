@@ -221,7 +221,7 @@ public final class Class2_Sub23 extends Node {
 		@Pc(23) int local23 = this.aClass6_Sub1_2.method5727(local9, local17);
 		if ((arg0 & 0x7F) == 0 || (arg5 & 0x7F) == 0) {
 			local1 = ((long) local17 & 0xFFFFL) << 16 | (long) local9 & 0xFFFFL;
-			@Pc(53) Node local53 = this.aClass4_78.method90(local1);
+			@Pc(53) Node local53 = this.aClass4_78.get(local1);
 			if (local53 != null) {
 				this.method3524(((Class2_Sub9) local53).aShort20);
 				return;

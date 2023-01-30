@@ -7,9 +7,6 @@ public final class Static33 {
 	@OriginalMember(owner = "client!bs", name = "u", descriptor = "I")
 	public static int anInt4463;
 
-	@OriginalMember(owner = "client!bs", name = "q", descriptor = "Lclient!gd;")
-	public static final LocalisedText A_TRANSLATABLE_STRING___96 = new LocalisedText("level: ", "Stufe: ", "niveau ", "nível: ");
-
 	@OriginalMember(owner = "client!bs", name = "s", descriptor = "Lclient!h;")
 	public static final Class89 aClass89_171 = new Class89(74, 4);
 
@@ -23,12 +20,12 @@ public final class Static33 {
 
 	@OriginalMember(owner = "client!bs", name = "b", descriptor = "(I)I")
 	public static int method4200() {
-		if (Static375.aClass161_14 == null) {
-			if (!Static375.aBoolean477 && Static268.anInt4959 > 0) {
-				if (Static148.aBoolean192 && Static174.aClass123_2.method3342(81) && Static268.anInt4959 > 2) {
-					return ((Class2_Sub5) Static129.aClass135_19.aClass2_130.previous.previous).anInt1007;
+		if (Static375.aComponent_14 == null) {
+			if (!Static375.aBoolean477 && Static268.size > 0) {
+				if (Static148.aBoolean192 && Static174.aClass123_2.method3342(81) && Static268.size > 2) {
+					return ((Class2_Sub5) Static129.A_LINKED_LIST___19.sentinel.previous.previous).anInt1007;
 				}
-				return ((Class2_Sub5) Static129.aClass135_19.aClass2_130.previous).anInt1007;
+				return ((Class2_Sub5) Static129.A_LINKED_LIST___19.sentinel.previous).anInt1007;
 			}
 			@Pc(23) int local23 = Static226.aClass119_1.method3303();
 			@Pc(27) int local27 = Static226.aClass119_1.method3312();
@@ -38,14 +35,14 @@ public final class Static33 {
 			if (local29 < local23 && local23 < local33 + local29) {
 				@Pc(47) int local47 = -1;
 				@Pc(66) int local66;
-				for (@Pc(49) int local49 = 0; local49 < Static268.anInt4959; local49++) {
+				for (@Pc(49) int local49 = 0; local49 < Static268.size; local49++) {
 					if (Static270.aBoolean371) {
-						local66 = local31 + (-local49 + Static268.anInt4959 + -1) * 16 + 33;
+						local66 = local31 + (-local49 + Static268.size + -1) * 16 + 33;
 						if (local66 - 13 < local27 && local66 + 3 >= local27) {
 							local47 = local49;
 						}
 					} else {
-						local66 = local31 + (-local49 + -1 + Static268.anInt4959) * 16 + 31;
+						local66 = local31 + (-local49 + -1 + Static268.size) * 16 + 31;
 						if (local27 > local66 - 13 && local66 + 3 >= local27) {
 							local47 = local49;
 						}
@@ -53,7 +50,7 @@ public final class Static33 {
 				}
 				if (local47 != -1) {
 					local66 = 0;
-					@Pc(137) Class75 local137 = new Class75(Static129.aClass135_19);
+					@Pc(137) Class75 local137 = new Class75(Static129.A_LINKED_LIST___19);
 					for (@Pc(142) Class2_Sub5 local142 = (Class2_Sub5) local137.method2181(); local142 != null; local142 = (Class2_Sub5) local137.method2178()) {
 						if (local47 == local66++) {
 							return local142.anInt1007;

@@ -11,7 +11,7 @@ public final class Static385 {
 	public static Class2_Sub16 aClass2_Sub16_2;
 
 	@OriginalMember(owner = "client!wi", name = "z", descriptor = "Lclient!r;")
-	public static Class197 aClass197_94;
+	public static Js5 aJs5_94;
 
 	@OriginalMember(owner = "client!wi", name = "x", descriptor = "Lclient!h;")
 	public static final Class89 aClass89_255 = new Class89(71, 20);
@@ -48,7 +48,7 @@ public final class Static385 {
 			local19 = Static105.anIntArray134[4] + 128;
 		}
 		@Pc(53) int local53 = (int) Static277.aFloat67 + Static53.anInt3966 & 0x3FFF;
-		Static349.method5832((local19 >> 3) * 3 + 600, Static288.anInt5463, arg0, Static386.method6031(Static17.aClass11_Sub5_Sub2_Sub1_3.anInt6781, Static17.aClass11_Sub5_Sub2_Sub1_3.anInt6783, Static355.anInt6585) - 50, Static62.anInt2395, local53, local19);
+		Static349.method5832((local19 >> 3) * 3 + 600, Static288.anInt5463, arg0, Static386.method6031(Static17.self.xFine, Static17.self.zFine, Static355.anInt6585) - 50, Static62.anInt2395, local53, local19);
 		@Pc(96) float local96 = 1.0F - (float) ((100 - local8) * (-local8 + 100) * (100 - local8)) / 1000000.0F;
 		Static211.anInt3777 = (int) (local96 * (float) (Static211.anInt3777 - Static196.anInt3318) + (float) Static196.anInt3318);
 		Static136.anInt6778 = (int) ((float) Static106.anInt2218 + local96 * (float) (Static136.anInt6778 - Static106.anInt2218));

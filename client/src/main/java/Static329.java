@@ -29,18 +29,18 @@ public final class Static329 {
 		}
 		@Pc(22) int local22 = (arg4 + arg2) / 2;
 		@Pc(24) int local24 = arg2;
-		@Pc(28) Class3_Sub1 local28 = Static300.aClass3_Sub1Array2[local22];
-		Static300.aClass3_Sub1Array2[local22] = Static300.aClass3_Sub1Array2[arg4];
-		Static300.aClass3_Sub1Array2[arg4] = local28;
+		@Pc(28) World local28 = Static300.aWorldArray2[local22];
+		Static300.aWorldArray2[local22] = Static300.aWorldArray2[arg4];
+		Static300.aWorldArray2[arg4] = local28;
 		for (@Pc(40) int local40 = arg2; local40 < arg4; local40++) {
-			if (Static212.method3729(arg1, arg0, Static300.aClass3_Sub1Array2[local40], local28, arg3, arg5) <= 0) {
-				@Pc(57) Class3_Sub1 local57 = Static300.aClass3_Sub1Array2[local40];
-				Static300.aClass3_Sub1Array2[local40] = Static300.aClass3_Sub1Array2[local24];
-				Static300.aClass3_Sub1Array2[local24++] = local57;
+			if (Static212.method3729(arg1, arg0, Static300.aWorldArray2[local40], local28, arg3, arg5) <= 0) {
+				@Pc(57) World local57 = Static300.aWorldArray2[local40];
+				Static300.aWorldArray2[local40] = Static300.aWorldArray2[local24];
+				Static300.aWorldArray2[local24++] = local57;
 			}
 		}
-		Static300.aClass3_Sub1Array2[arg4] = Static300.aClass3_Sub1Array2[local24];
-		Static300.aClass3_Sub1Array2[local24] = local28;
+		Static300.aWorldArray2[arg4] = Static300.aWorldArray2[local24];
+		Static300.aWorldArray2[local24] = local28;
 		method5628(arg0, arg1, arg2, arg3, local24 - 1, arg5);
 		method5628(arg0, arg1, local24 + 1, arg3, arg4, arg5);
 	}

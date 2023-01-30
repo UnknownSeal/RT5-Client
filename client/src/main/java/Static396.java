@@ -5,25 +5,25 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static396 {
 
 	@OriginalMember(owner = "client!dk", name = "a", descriptor = "(Lclient!r;I)Lclient!dk;")
-	public static Class48 method1676(@OriginalArg(0) Class197 arg0, @OriginalArg(1) int arg1) {
+	public static SoftwareSprite loadSoftwareSpriteAutoDetect(@OriginalArg(0) Js5 arg0, @OriginalArg(1) int arg1) {
 		@Pc(4) byte[] local4 = arg0.method5081(arg1);
 		return local4 == null ? null : method1679(local4)[0];
 	}
 
 	@OriginalMember(owner = "client!dk", name = "b", descriptor = "(Lclient!r;I)[Lclient!dk;")
-	public static Class48[] method1678(@OriginalArg(0) Class197 arg0, @OriginalArg(1) int arg1) {
+	public static SoftwareSprite[] method1678(@OriginalArg(0) Js5 arg0, @OriginalArg(1) int arg1) {
 		@Pc(4) byte[] local4 = arg0.method5081(arg1);
 		return local4 == null ? null : method1679(local4);
 	}
 
 	@OriginalMember(owner = "client!dk", name = "a", descriptor = "([B)[Lclient!dk;")
-	private static Class48[] method1679(@OriginalArg(0) byte[] arg0) {
+	private static SoftwareSprite[] method1679(@OriginalArg(0) byte[] arg0) {
 		@Pc(4) Buffer local4 = new Buffer(arg0);
 		local4.offset = arg0.length - 2;
 		@Pc(14) int local14 = local4.g2();
-		@Pc(17) Class48[] local17 = new Class48[local14];
+		@Pc(17) SoftwareSprite[] local17 = new SoftwareSprite[local14];
 		for (@Pc(19) int local19 = 0; local19 < local14; local19++) {
-			local17[local19] = new Class48();
+			local17[local19] = new SoftwareSprite();
 		}
 		local4.offset = arg0.length - local14 * 8 - 7;
 		@Pc(44) int local44 = local4.g2();
@@ -42,7 +42,7 @@ public final class Static396 {
 			local17[local100].anInt1533 = local4.g2();
 		}
 		for (@Pc(114) int local114 = 0; local114 < local14; local114++) {
-			@Pc(119) Class48 local119 = local17[local114];
+			@Pc(119) SoftwareSprite local119 = local17[local114];
 			local119.anInt1532 = local44 - local119.anInt1531 - local119.anInt1535;
 			local119.anInt1534 = local48 - local119.anInt1533 - local119.anInt1530;
 		}
@@ -59,7 +59,7 @@ public final class Static396 {
 		}
 		local4.offset = 0;
 		for (@Pc(198) int local198 = 0; local198 < local14; local198++) {
-			@Pc(203) Class48 local203 = local17[local198];
+			@Pc(203) SoftwareSprite local203 = local17[local198];
 			@Pc(209) int local209 = local203.anInt1531 * local203.anInt1533;
 			local203.aByteArray21 = new byte[local209];
 			@Pc(217) int local217 = local4.g1();
@@ -111,13 +111,13 @@ public final class Static396 {
 	}
 
 	@OriginalMember(owner = "client!dk", name = "a", descriptor = "(Lclient!r;II)Lclient!dk;")
-	public static Class48 method1682(@OriginalArg(0) Class197 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
+	public static SoftwareSprite loadSoftwareSprite(@OriginalArg(0) Js5 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
 		@Pc(5) byte[] local5 = arg0.fetchFile(arg1, arg2);
 		return local5 == null ? null : method1679(local5)[0];
 	}
 
 	@OriginalMember(owner = "client!dk", name = "b", descriptor = "(Lclient!r;II)[Lclient!dk;")
-	public static Class48[] method1688(@OriginalArg(0) Class197 arg0, @OriginalArg(1) int arg1) {
+	public static SoftwareSprite[] method1688(@OriginalArg(0) Js5 arg0, @OriginalArg(1) int arg1) {
 		@Pc(5) byte[] local5 = arg0.fetchFile(arg1, 0);
 		return local5 == null ? null : method1679(local5);
 	}

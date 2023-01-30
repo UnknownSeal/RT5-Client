@@ -25,13 +25,13 @@ public final class Class25_Sub1 extends Class25 {
 	private int anInt688 = 0;
 
 	@OriginalMember(owner = "client!bl", name = "K", descriptor = "Lclient!ld;")
-	private final Class135 aClass135_12 = new Class135();
+	private final LinkedList aLinkedList_12 = new LinkedList();
 
 	@OriginalMember(owner = "client!bl", name = "P", descriptor = "J")
 	private long aLong21 = 0L;
 
 	@OriginalMember(owner = "client!bl", name = "G", descriptor = "Lclient!rq;")
-	private final Class207 aClass207_3;
+	private final Cache aCache_3;
 
 	@OriginalMember(owner = "client!bl", name = "g", descriptor = "I")
 	private final int anInt668;
@@ -40,7 +40,7 @@ public final class Class25_Sub1 extends Class25 {
 	private boolean aBoolean57;
 
 	@OriginalMember(owner = "client!bl", name = "J", descriptor = "Lclient!ld;")
-	private Class135 aClass135_11;
+	private LinkedList aLinkedList_11;
 
 	@OriginalMember(owner = "client!bl", name = "C", descriptor = "I")
 	private final int anInt683;
@@ -49,13 +49,13 @@ public final class Class25_Sub1 extends Class25 {
 	private final boolean aBoolean58;
 
 	@OriginalMember(owner = "client!bl", name = "w", descriptor = "Lclient!rq;")
-	private final Class207 aClass207_2;
+	private final Cache aCache_2;
 
 	@OriginalMember(owner = "client!bl", name = "y", descriptor = "Lclient!pp;")
 	private final Class183 aClass183_1;
 
 	@OriginalMember(owner = "client!bl", name = "n", descriptor = "Lclient!ro;")
-	private final Class206 aClass206_2;
+	private final Js5CacheQueue aJs5CacheQueue_2;
 
 	@OriginalMember(owner = "client!bl", name = "i", descriptor = "I")
 	private final int anInt670;
@@ -64,32 +64,32 @@ public final class Class25_Sub1 extends Class25 {
 	private Class2_Sub2_Sub10 aClass2_Sub2_Sub10_1;
 
 	@OriginalMember(owner = "client!bl", name = "<init>", descriptor = "(ILclient!rq;Lclient!rq;Lclient!pp;Lclient!ro;IIZ)V")
-	public Class25_Sub1(@OriginalArg(0) int arg0, @OriginalArg(1) Class207 arg1, @OriginalArg(2) Class207 arg2, @OriginalArg(3) Class183 arg3, @OriginalArg(4) Class206 arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) boolean arg7) {
-		this.aClass207_3 = arg1;
+	public Class25_Sub1(@OriginalArg(0) int arg0, @OriginalArg(1) Cache arg1, @OriginalArg(2) Cache arg2, @OriginalArg(3) Class183 arg3, @OriginalArg(4) Js5CacheQueue arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) boolean arg7) {
+		this.aCache_3 = arg1;
 		this.anInt668 = arg0;
-		if (this.aClass207_3 == null) {
+		if (this.aCache_3 == null) {
 			this.aBoolean57 = false;
 		} else {
 			this.aBoolean57 = true;
-			this.aClass135_11 = new Class135();
+			this.aLinkedList_11 = new LinkedList();
 		}
 		this.anInt683 = arg6;
 		this.aBoolean58 = arg7;
-		this.aClass207_2 = arg2;
+		this.aCache_2 = arg2;
 		this.aClass183_1 = arg3;
-		this.aClass206_2 = arg4;
+		this.aJs5CacheQueue_2 = arg4;
 		this.anInt670 = arg5;
-		if (this.aClass207_2 != null) {
-			this.aClass2_Sub2_Sub10_1 = this.aClass206_2.method5225(this.anInt668, this.aClass207_2);
+		if (this.aCache_2 != null) {
+			this.aClass2_Sub2_Sub10_1 = this.aJs5CacheQueue_2.method5225(this.anInt668, this.aCache_2);
 		}
 	}
 
 	@OriginalMember(owner = "client!bl", name = "a", descriptor = "(B)V")
 	public void method892() {
-		if (this.aClass135_11 == null || this.method884() == null) {
+		if (this.aLinkedList_11 == null || this.method884() == null) {
 			return;
 		}
-		for (@Pc(24) Node local24 = this.aClass135_12.method3550(); local24 != null; local24 = this.aClass135_12.method3551()) {
+		for (@Pc(24) Node local24 = this.aLinkedList_12.method3550(); local24 != null; local24 = this.aLinkedList_12.method3551()) {
 			@Pc(30) int local30 = (int) local24.key;
 			if (local30 < 0 || local30 >= this.aClass198_1.anInt5592 || this.aClass198_1.anIntArray376[local30] == 0) {
 				local24.unlink();
@@ -109,7 +109,7 @@ public final class Class25_Sub1 extends Class25 {
 
 	@OriginalMember(owner = "client!bl", name = "b", descriptor = "(B)V")
 	public void method894() {
-		if (this.aClass135_11 != null) {
+		if (this.aLinkedList_11 != null) {
 			if (this.method884() == null) {
 				return;
 			}
@@ -119,7 +119,7 @@ public final class Class25_Sub1 extends Class25 {
 			@Pc(129) Node local129;
 			if (this.aBoolean57) {
 				local25 = true;
-				for (local30 = this.aClass135_11.method3550(); local30 != null; local30 = this.aClass135_11.method3551()) {
+				for (local30 = this.aLinkedList_11.method3550(); local30 != null; local30 = this.aLinkedList_11.method3551()) {
 					local36 = (int) local30.key;
 					if (this.aByteArray5[local36] == 0) {
 						this.method901(local36, 1);
@@ -134,7 +134,7 @@ public final class Class25_Sub1 extends Class25 {
 					if (this.aClass198_1.anIntArray376[this.anInt688] == 0) {
 						this.anInt688++;
 					} else {
-						if (this.aClass206_2.anInt5741 >= 250) {
+						if (this.aJs5CacheQueue_2.size >= 250) {
 							local25 = false;
 							break;
 						}
@@ -144,7 +144,7 @@ public final class Class25_Sub1 extends Class25 {
 						if (this.aByteArray5[this.anInt688] == 0) {
 							local129 = new Node();
 							local129.key = this.anInt688;
-							this.aClass135_11.method3539(local129);
+							this.aLinkedList_11.method3539(local129);
 							local25 = false;
 						}
 						this.anInt688++;
@@ -156,7 +156,7 @@ public final class Class25_Sub1 extends Class25 {
 				}
 			} else if (this.aBoolean56) {
 				local25 = true;
-				for (local30 = this.aClass135_11.method3550(); local30 != null; local30 = this.aClass135_11.method3551()) {
+				for (local30 = this.aLinkedList_11.method3550(); local30 != null; local30 = this.aLinkedList_11.method3551()) {
 					local36 = (int) local30.key;
 					if (this.aByteArray5[local36] != 1) {
 						this.method901(local36, 2);
@@ -181,7 +181,7 @@ public final class Class25_Sub1 extends Class25 {
 						if (this.aByteArray5[this.anInt688] != 1) {
 							local129 = new Node();
 							local129.key = this.anInt688;
-							this.aClass135_11.method3539(local129);
+							this.aLinkedList_11.method3539(local129);
 							local25 = false;
 						}
 						this.anInt688++;
@@ -192,7 +192,7 @@ public final class Class25_Sub1 extends Class25 {
 					this.aBoolean56 = false;
 				}
 			} else {
-				this.aClass135_11 = null;
+				this.aLinkedList_11 = null;
 			}
 		}
 		if (!this.aBoolean58 || MonotonicClock.currentTimeMillis() < this.aLong21) {
@@ -229,8 +229,8 @@ public final class Class25_Sub1 extends Class25 {
 
 	@OriginalMember(owner = "client!bl", name = "b", descriptor = "(II)[B")
 	@Override
-	public byte[] method889(@OriginalArg(0) int arg0) {
-		@Pc(9) Class2_Sub2_Sub10 local9 = this.method901(arg0, 0);
+	public byte[] fetchGroup(@OriginalArg(0) int group) {
+		@Pc(9) Class2_Sub2_Sub10 local9 = this.method901(group, 0);
 		if (local9 == null) {
 			return null;
 		} else {
@@ -245,7 +245,7 @@ public final class Class25_Sub1 extends Class25 {
 		if (this.aClass198_1 == null) {
 			return 0;
 		} else if (this.aBoolean57) {
-			@Pc(20) Node local20 = this.aClass135_11.method3550();
+			@Pc(20) Node local20 = this.aLinkedList_11.method3550();
 			return local20 == null ? 0 : (int) local20.key;
 		} else {
 			return this.aClass198_1.anInt5591;
@@ -259,38 +259,38 @@ public final class Class25_Sub1 extends Class25 {
 
 	@OriginalMember(owner = "client!bl", name = "d", descriptor = "(I)V")
 	public void method899() {
-		if (this.aClass207_3 != null) {
+		if (this.aCache_3 != null) {
 			this.aBoolean56 = true;
-			if (this.aClass135_11 == null) {
-				this.aClass135_11 = new Class135();
+			if (this.aLinkedList_11 == null) {
+				this.aLinkedList_11 = new LinkedList();
 			}
 		}
 	}
 
 	@OriginalMember(owner = "client!bl", name = "b", descriptor = "(III)Lclient!ut;")
 	private Class2_Sub2_Sub10 method901(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
-		@Pc(13) Class2_Sub2_Sub10 local13 = (Class2_Sub2_Sub10) this.aClass4_13.method90((long) arg0);
+		@Pc(13) Class2_Sub2_Sub10 local13 = (Class2_Sub2_Sub10) this.aClass4_13.get((long) arg0);
 		if (local13 != null && arg1 == 0 && !local13.aBoolean418 && local13.aBoolean416) {
 			local13.unlink();
 			local13 = null;
 		}
 		if (local13 == null) {
 			if (arg1 == 0) {
-				if (this.aClass207_3 == null || this.aByteArray5[arg0] == -1) {
+				if (this.aCache_3 == null || this.aByteArray5[arg0] == -1) {
 					if (this.aClass183_1.method4643()) {
 						return null;
 					}
 					local13 = this.aClass183_1.method4641(true, this.anInt668, (byte) 2, arg0);
 				} else {
-					local13 = this.aClass206_2.method5225(arg0, this.aClass207_3);
+					local13 = this.aJs5CacheQueue_2.method5225(arg0, this.aCache_3);
 				}
 			} else if (arg1 == 1) {
-				if (this.aClass207_3 == null) {
+				if (this.aCache_3 == null) {
 					throw new RuntimeException();
 				}
-				local13 = this.aClass206_2.method5226(arg0, this.aClass207_3);
+				local13 = this.aJs5CacheQueue_2.method5226(arg0, this.aCache_3);
 			} else if (arg1 == 2) {
-				if (this.aClass207_3 == null) {
+				if (this.aCache_3 == null) {
 					throw new RuntimeException();
 				}
 				if (this.aByteArray5[arg0] != -1) {
@@ -311,7 +311,7 @@ public final class Class25_Sub1 extends Class25 {
 		@Pc(162) byte[] local162 = local13.method5647();
 		@Pc(189) int local189;
 		@Pc(292) Js5NetRequest local292;
-		if (!(local13 instanceof Class2_Sub2_Sub10_Sub2)) {
+		if (!(local13 instanceof Js5CacheRequest)) {
 			try {
 				if (local162 == null || local162.length <= 2) {
 					throw new RuntimeException();
@@ -335,8 +335,8 @@ public final class Class25_Sub1 extends Class25 {
 			}
 			local162[local162.length - 2] = (byte) (this.aClass198_1.anIntArray378[arg0] >>> 8);
 			local162[local162.length - 1] = (byte) this.aClass198_1.anIntArray378[arg0];
-			if (this.aClass207_3 != null) {
-				this.aClass206_2.method5228(local162, arg0, this.aClass207_3);
+			if (this.aCache_3 != null) {
+				this.aJs5CacheQueue_2.method5228(local162, arg0, this.aCache_3);
 				if (this.aByteArray5[arg0] != 1) {
 					this.anInt685++;
 					this.aByteArray5[arg0] = 1;
@@ -383,23 +383,23 @@ public final class Class25_Sub1 extends Class25 {
 	@OriginalMember(owner = "client!bl", name = "a", descriptor = "(II)V")
 	@Override
 	public void method885(@OriginalArg(0) int arg0) {
-		if (this.aClass207_3 == null) {
+		if (this.aCache_3 == null) {
 			return;
 		}
-		for (@Pc(20) Node local20 = this.aClass135_12.method3550(); local20 != null; local20 = this.aClass135_12.method3551()) {
+		for (@Pc(20) Node local20 = this.aLinkedList_12.method3550(); local20 != null; local20 = this.aLinkedList_12.method3551()) {
 			if ((long) arg0 == local20.key) {
 				return;
 			}
 		}
 		@Pc(46) Node local46 = new Node();
 		local46.key = arg0;
-		this.aClass135_12.method3539(local46);
+		this.aLinkedList_12.method3539(local46);
 	}
 
 	@OriginalMember(owner = "client!bl", name = "a", descriptor = "(IB)I")
 	@Override
 	public int method887(@OriginalArg(0) int arg0) {
-		@Pc(19) Class2_Sub2_Sub10 local19 = (Class2_Sub2_Sub10) this.aClass4_13.method90((long) arg0);
+		@Pc(19) Class2_Sub2_Sub10 local19 = (Class2_Sub2_Sub10) this.aClass4_13.get((long) arg0);
 		return local19 == null ? 0 : local19.method5650();
 	}
 
@@ -419,7 +419,7 @@ public final class Class25_Sub1 extends Class25 {
 			return null;
 		}
 		@Pc(48) byte[] local48 = this.aClass2_Sub2_Sub10_1.method5647();
-		if (this.aClass2_Sub2_Sub10_1 instanceof Class2_Sub2_Sub10_Sub2) {
+		if (this.aClass2_Sub2_Sub10_1 instanceof Js5CacheRequest) {
 			try {
 				if (local48 == null) {
 					throw new RuntimeException();
@@ -453,12 +453,12 @@ public final class Class25_Sub1 extends Class25 {
 				}
 				return null;
 			}
-			if (this.aClass207_2 != null) {
-				this.aClass206_2.method5228(local48, this.anInt668, this.aClass207_2);
+			if (this.aCache_2 != null) {
+				this.aJs5CacheQueue_2.method5228(local48, this.anInt668, this.aCache_2);
 			}
 		}
 		this.aClass2_Sub2_Sub10_1 = null;
-		if (this.aClass207_3 != null) {
+		if (this.aCache_3 != null) {
 			this.anInt685 = 0;
 			this.aByteArray5 = new byte[this.aClass198_1.anInt5592];
 		}

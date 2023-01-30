@@ -6,7 +6,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static27 {
 
 	@OriginalMember(owner = "client!bk", name = "l", descriptor = "Lclient!je;")
-	public static Class113 aClass113_2;
+	public static WorldMapFont font26;
 
 	@OriginalMember(owner = "client!bk", name = "g", descriptor = "Lclient!s;")
 	public static final Class210 aClass210_2 = new Class210(11, 3);
@@ -39,11 +39,11 @@ public final class Static27 {
 	@OriginalMember(owner = "client!bk", name = "a", descriptor = "(Lclient!bt;B)V")
 	public static void method875(@OriginalArg(0) Buffer arg0) {
 		@Pc(8) byte[] local8 = new byte[24];
-		if (Static317.aClass205_6 != null) {
+		if (Static317.aBufferedFile_6 != null) {
 			@Pc(20) int local20;
 			try {
-				Static317.aClass205_6.method5213(0L);
-				Static317.aClass205_6.method5219(local8);
+				Static317.aBufferedFile_6.seek(0L);
+				Static317.aBufferedFile_6.method5219(local8);
 				for (local20 = 0; local20 < 24 && local8[local20] == 0; local20++) {
 				}
 				if (local20 >= 24) {

@@ -10,10 +10,10 @@ public final class Class7 {
 	private final SoftLruHashTable types = new SoftLruHashTable(64);
 
 	@OriginalMember(owner = "client!ak", name = "e", descriptor = "Lclient!r;")
-	private final Class197 archive;
+	private final Js5 archive;
 
 	@OriginalMember(owner = "client!ak", name = "<init>", descriptor = "(Lclient!dn;ILclient!r;)V")
-	public Class7(@OriginalArg(0) Class50 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Class197 arg2) {
+	public Class7(@OriginalArg(0) Class50 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5 arg2) {
 		this.archive = arg2;
 		this.archive.method5080(32);
 	}
@@ -47,7 +47,7 @@ public final class Class7 {
 		@Pc(6) SoftLruHashTable local6 = this.types;
 		@Pc(16) BasType local16;
 		synchronized (this.types) {
-			local16 = (BasType) this.types.method2612((long) arg0);
+			local16 = (BasType) this.types.get((long) arg0);
 		}
 		if (local16 != null) {
 			return local16;
@@ -59,7 +59,7 @@ public final class Class7 {
 		}
 		@Pc(49) SoftLruHashTable local49 = this.types;
 		synchronized (this.types) {
-			this.types.method2624((long) arg0, local16);
+			this.types.put((long) arg0, local16);
 			return local16;
 		}
 	}

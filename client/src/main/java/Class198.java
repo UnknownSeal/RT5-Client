@@ -13,7 +13,7 @@ public final class Class198 {
 	public Class167[] aClass167Array1;
 
 	@OriginalMember(owner = "client!ra", name = "d", descriptor = "[[I")
-	public int[][] anIntArrayArray46;
+	public int[][] fileIDs;
 
 	@OriginalMember(owner = "client!ra", name = "e", descriptor = "I")
 	public int anInt5587;
@@ -86,7 +86,7 @@ public final class Class198 {
 		}
 		this.anInt5592 = local59 + 1;
 		this.groupCapacities = new int[this.anInt5592];
-		this.anIntArrayArray46 = new int[this.anInt5592][];
+		this.fileIDs = new int[this.anInt5592][];
 		this.anIntArray378 = new int[this.anInt5592];
 		this.anIntArray382 = new int[this.anInt5592];
 		this.anIntArray376 = new int[this.anInt5592];
@@ -120,17 +120,17 @@ public final class Class198 {
 			local253 = this.anIntArray380[local246];
 			local52 = 0;
 			local260 = this.anIntArray376[local253];
-			this.anIntArrayArray46[local253] = new int[local260];
+			this.fileIDs[local253] = new int[local260];
 			local268 = -1;
 			for (local270 = 0; local270 < local260; local270++) {
-				local287 = this.anIntArrayArray46[local253][local270] = local52 += local12.g2();
+				local287 = this.fileIDs[local253][local270] = local52 += local12.g2();
 				if (local287 > local268) {
 					local268 = local287;
 				}
 			}
 			this.groupCapacities[local253] = local268 + 1;
 			if (local268 + 1 == local260) {
-				this.anIntArrayArray46[local253] = null;
+				this.fileIDs[local253] = null;
 			}
 		}
 		if (local45 == 0) {
@@ -147,10 +147,10 @@ public final class Class198 {
 			}
 			for (local287 = 0; local287 < local268; local287++) {
 				@Pc(408) int local408;
-				if (this.anIntArrayArray46[local260] == null) {
+				if (this.fileIDs[local260] == null) {
 					local408 = local287;
 				} else {
-					local408 = this.anIntArrayArray46[local260][local287];
+					local408 = this.fileIDs[local260][local287];
 				}
 				this.anIntArrayArray47[local260][local408] = local12.mg4();
 			}

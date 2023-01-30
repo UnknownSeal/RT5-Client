@@ -46,7 +46,7 @@ public final class Static174 {
 		Static384.aBoolean485 = false;
 		Static235.anInt3365 = 1;
 		Static105.anInt2183 = -1;
-		Static116.aClass197_26 = null;
+		Static116.aJs5_26 = null;
 		Static341.anInt6376 = -1;
 		Static356.anInt6641 = 0;
 		Static28.anInt672 = 2;

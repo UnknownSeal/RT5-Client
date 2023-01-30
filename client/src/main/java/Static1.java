@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static1 {
 
 	@OriginalMember(owner = "client!a", name = "g", descriptor = "Lclient!ro;")
-	public static Class206 aClass206_1;
+	public static Js5CacheQueue aJs5CacheQueue_1;
 
 	@OriginalMember(owner = "client!a", name = "d", descriptor = "J")
 	public static long aLong1 = 0L;
@@ -62,12 +62,12 @@ public final class Static1 {
 	}
 
 	@OriginalMember(owner = "client!a", name = "a", descriptor = "(IZIZBLjava/lang/String;IILjava/lang/String;IJ)V")
-	public static void method3(@OriginalArg(0) int arg0, @OriginalArg(1) boolean arg1, @OriginalArg(2) int arg2, @OriginalArg(3) boolean arg3, @OriginalArg(5) String arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6, @OriginalArg(8) String arg7, @OriginalArg(9) int arg8, @OriginalArg(10) long arg9) {
-		if (!Static375.aBoolean477 && Static268.anInt4959 < 500) {
+	public static void add(@OriginalArg(0) int arg0, @OriginalArg(1) boolean arg1, @OriginalArg(2) int arg2, @OriginalArg(3) boolean arg3, @OriginalArg(5) String arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6, @OriginalArg(8) String arg7, @OriginalArg(9) int arg8, @OriginalArg(10) long arg9) {
+		if (!Static375.aBoolean477 && Static268.size < 500) {
 			@Pc(16) int local16 = arg8 == -1 ? Static107.anInt2219 : arg8;
 			@Pc(30) Class2_Sub5 local30 = new Class2_Sub5(arg4, arg7, local16, arg6, arg0, arg9, arg5, arg2, arg1, arg3);
-			Static129.aClass135_19.method3539(local30);
-			Static268.anInt4959++;
+			Static129.A_LINKED_LIST___19.method3539(local30);
+			Static268.size++;
 		}
 	}
 

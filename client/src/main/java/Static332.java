@@ -9,10 +9,10 @@ public final class Static332 {
 	public static Class13[] aClass13Array23;
 
 	@OriginalMember(owner = "client!tf", name = "g", descriptor = "[[Lclient!bh;")
-	public static Class21[][] aClass21ArrayArray3;
+	public static Environment[][] aEnvironmentArrayArray3;
 
 	@OriginalMember(owner = "client!tf", name = "b", descriptor = "Lclient!ld;")
-	public static final Class135 aClass135_38 = new Class135();
+	public static final LinkedList A_LINKED_LIST___38 = new LinkedList();
 
 	@OriginalMember(owner = "client!tf", name = "e", descriptor = "Lclient!gd;")
 	public static final LocalisedText A_TRANSLATABLE_STRING___131 = new LocalisedText(" is already on your friend list.", " steht bereits auf deiner Freunde-Liste!", " est déjà dans votre liste d'amis.", " já está na sua lista de amigos.");

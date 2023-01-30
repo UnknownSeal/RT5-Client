@@ -15,11 +15,11 @@ public final class Static191 {
 		if (arg0 instanceof Npc) {
 			@Pc(5) Npc local5 = (Npc) arg0;
 			if (local5.type != null) {
-				Static241.method4190(local5, local5.aByte78 != Static17.aClass11_Sub5_Sub2_Sub1_3.aByte78);
+				Static241.addNpcEntries(local5, local5.aByte78 != Static17.self.aByte78);
 			}
 		} else if (arg0 instanceof Class11_Sub5_Sub2_Sub1) {
 			@Pc(27) Class11_Sub5_Sub2_Sub1 local27 = (Class11_Sub5_Sub2_Sub1) arg0;
-			Static184.method3396(Static17.aClass11_Sub5_Sub2_Sub1_3.aByte78 != local27.aByte78, local27);
+			Static184.method3396(Static17.self.aByte78 != local27.aByte78, local27);
 		}
 	}
 }

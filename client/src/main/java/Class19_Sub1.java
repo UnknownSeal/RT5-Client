@@ -246,25 +246,25 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 	public final int anInt583 = 3;
 
 	@OriginalMember(owner = "client!bf", name = "M", descriptor = "Lclient!ld;")
-	private final Class135 aClass135_4 = new Class135();
+	private final LinkedList aLinkedList_4 = new LinkedList();
 
 	@OriginalMember(owner = "client!bf", name = "R", descriptor = "Lclient!ld;")
-	private final Class135 aClass135_5 = new Class135();
+	private final LinkedList aLinkedList_5 = new LinkedList();
 
 	@OriginalMember(owner = "client!bf", name = "S", descriptor = "Lclient!ld;")
-	private final Class135 aClass135_6 = new Class135();
+	private final LinkedList aLinkedList_6 = new LinkedList();
 
 	@OriginalMember(owner = "client!bf", name = "T", descriptor = "Lclient!ld;")
-	private final Class135 aClass135_7 = new Class135();
+	private final LinkedList aLinkedList_7 = new LinkedList();
 
 	@OriginalMember(owner = "client!bf", name = "U", descriptor = "Lclient!ld;")
-	private final Class135 aClass135_8 = new Class135();
+	private final LinkedList aLinkedList_8 = new LinkedList();
 
 	@OriginalMember(owner = "client!bf", name = "V", descriptor = "Lclient!ld;")
-	private final Class135 aClass135_9 = new Class135();
+	private final LinkedList aLinkedList_9 = new LinkedList();
 
 	@OriginalMember(owner = "client!bf", name = "W", descriptor = "Lclient!ld;")
-	private final Class135 aClass135_10 = new Class135();
+	private final LinkedList aLinkedList_10 = new LinkedList();
 
 	@OriginalMember(owner = "client!bf", name = "Y", descriptor = "[F")
 	private final float[] aFloatArray6 = new float[4];
@@ -777,7 +777,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 	public synchronized void method785(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
 		@Pc(4) IntNode local4 = new IntNode(arg1);
 		local4.key = arg0;
-		this.aClass135_7.method3539(local4);
+		this.aLinkedList_7.method3539(local4);
 	}
 
 	@OriginalMember(owner = "client!bf", name = "s", descriptor = "()Z")
@@ -1283,8 +1283,8 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 		@Pc(1) int local1 = 0;
 		@Pc(5) int local5 = arg0 & Integer.MAX_VALUE;
 		@Pc(16) IntNode local16;
-		while (!this.aClass135_5.method3549()) {
-			local16 = (IntNode) this.aClass135_5.method3548();
+		while (!this.aLinkedList_5.method3549()) {
+			local16 = (IntNode) this.aLinkedList_5.method3548();
 			Static22.anIntArray32[local1++] = (int) local16.key;
 			this.anInt581 -= local16.value;
 			if (local1 == 1000) {
@@ -1296,8 +1296,8 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 			this.anOpengl1.glDeleteBuffersARB(local1, Static22.anIntArray32, 0);
 			local1 = 0;
 		}
-		while (!this.aClass135_6.method3549()) {
-			local16 = (IntNode) this.aClass135_6.method3548();
+		while (!this.aLinkedList_6.method3549()) {
+			local16 = (IntNode) this.aLinkedList_6.method3548();
 			Static22.anIntArray32[local1++] = (int) local16.key;
 			this.anInt585 -= local16.value;
 			if (local1 == 1000) {
@@ -1309,8 +1309,8 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 			this.anOpengl1.glDeleteTextures(local1, Static22.anIntArray32, 0);
 			local1 = 0;
 		}
-		while (!this.aClass135_7.method3549()) {
-			local16 = (IntNode) this.aClass135_7.method3548();
+		while (!this.aLinkedList_7.method3549()) {
+			local16 = (IntNode) this.aLinkedList_7.method3548();
 			Static22.anIntArray32[local1++] = local16.value;
 			if (local1 == 1000) {
 				this.anOpengl1.glDeleteFramebuffersEXT(local1, Static22.anIntArray32, 0);
@@ -1321,8 +1321,8 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 			this.anOpengl1.glDeleteFramebuffersEXT(local1, Static22.anIntArray32, 0);
 			local1 = 0;
 		}
-		while (!this.aClass135_8.method3549()) {
-			local16 = (IntNode) this.aClass135_8.method3548();
+		while (!this.aLinkedList_8.method3549()) {
+			local16 = (IntNode) this.aLinkedList_8.method3548();
 			Static22.anIntArray32[local1++] = (int) local16.key;
 			this.anInt586 -= local16.value;
 			if (local1 == 1000) {
@@ -1334,8 +1334,8 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 			this.anOpengl1.glDeleteRenderbuffersEXT(local1, Static22.anIntArray32, 0);
 			local1 = 0;
 		}
-		while (!this.aClass135_9.method3549()) {
-			local16 = (IntNode) this.aClass135_9.method3548();
+		while (!this.aLinkedList_9.method3549()) {
+			local16 = (IntNode) this.aLinkedList_9.method3548();
 			Static22.anIntArray32[local1++] = (int) local16.key;
 			if (local1 == 1000) {
 				this.anOpengl1.glDeleteProgramsARB(local1, Static22.anIntArray32, 0);
@@ -1345,16 +1345,16 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 		if (local1 > 0) {
 			this.anOpengl1.glDeleteProgramsARB(local1, Static22.anIntArray32, 0);
 		}
-		while (!this.aClass135_4.method3549()) {
-			local16 = (IntNode) this.aClass135_4.method3548();
+		while (!this.aLinkedList_4.method3549()) {
+			local16 = (IntNode) this.aLinkedList_4.method3548();
 			this.anOpengl1.glDeleteLists((int) local16.key, local16.value);
 		}
-		while (!this.aClass135_10.method3549()) {
-			local16 = (IntNode) this.aClass135_10.method3548();
+		while (!this.aLinkedList_10.method3549()) {
+			local16 = (IntNode) this.aLinkedList_10.method3548();
 			this.anOpengl1.glDeleteObjectARB(local16.value);
 		}
-		while (!this.aClass135_4.method3549()) {
-			local16 = (IntNode) this.aClass135_4.method3548();
+		while (!this.aLinkedList_4.method3549()) {
+			local16 = (IntNode) this.aLinkedList_4.method3548();
 			this.anOpengl1.glDeleteLists((int) local16.key, local16.value);
 		}
 		if (this.method2899() > 100663296 && MonotonicClock.currentTimeMillis() > this.aLong20 + 60000L) {
@@ -1546,7 +1546,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 	public synchronized void method803(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
 		@Pc(4) IntNode local4 = new IntNode(arg1);
 		local4.key = arg0;
-		this.aClass135_6.method3539(local4);
+		this.aLinkedList_6.method3539(local4);
 	}
 
 	@OriginalMember(owner = "client!bf", name = "a", descriptor = "(FFFF)V")
@@ -1814,7 +1814,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 	@OriginalMember(owner = "client!bf", name = "o", descriptor = "(I)V")
 	public synchronized void method820(@OriginalArg(0) int arg0) {
 		@Pc(4) IntNode local4 = new IntNode(arg0);
-		this.aClass135_10.method3539(local4);
+		this.aLinkedList_10.method3539(local4);
 	}
 
 	@OriginalMember(owner = "client!bf", name = "m", descriptor = "()I")
@@ -1885,7 +1885,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 
 	@OriginalMember(owner = "client!bf", name = "a", descriptor = "(Lclient!dk;Z)Lclient!jd;")
 	@Override
-	public Class13 method2891(@OriginalArg(0) Class48 arg0) {
+	public Class13 method2891(@OriginalArg(0) SoftwareSprite arg0) {
 		@Pc(6) int[] local6 = new int[arg0.anInt1531 * arg0.anInt1533];
 		@Pc(8) int local8 = 0;
 		@Pc(10) int local10 = 0;
@@ -1935,7 +1935,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 	@OriginalMember(owner = "client!bf", name = "p", descriptor = "(I)V")
 	public synchronized void method822(@OriginalArg(0) int arg0) {
 		@Pc(4) IntNode local4 = new IntNode(arg0);
-		this.aClass135_7.method3539(local4);
+		this.aLinkedList_7.method3539(local4);
 	}
 
 	@OriginalMember(owner = "client!bf", name = "fb", descriptor = "()V")
@@ -2109,7 +2109,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 	@OriginalMember(owner = "client!bf", name = "r", descriptor = "(I)V")
 	public synchronized void method836(@OriginalArg(0) int arg0) {
 		@Pc(4) IntNode local4 = new IntNode(arg0);
-		this.aClass135_9.method3539(local4);
+		this.aLinkedList_9.method3539(local4);
 	}
 
 	@OriginalMember(owner = "client!bf", name = "b", descriptor = "(IIIII)V")
@@ -2264,7 +2264,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 
 	@OriginalMember(owner = "client!bf", name = "a", descriptor = "(Lclient!vi;[Lclient!dk;Z)Lclient!ur;")
 	@Override
-	public Class130 method2857(@OriginalArg(0) Class239 arg0, @OriginalArg(1) Class48[] arg1) {
+	public Class130 method2857(@OriginalArg(0) Class239 arg0, @OriginalArg(1) SoftwareSprite[] arg1) {
 		return new Class130_Sub1(this, arg0, arg1, true);
 	}
 
@@ -2298,7 +2298,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 	public synchronized void method841(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
 		@Pc(4) IntNode local4 = new IntNode(arg1);
 		local4.key = arg0;
-		this.aClass135_5.method3539(local4);
+		this.aLinkedList_5.method3539(local4);
 	}
 
 	@OriginalMember(owner = "client!bf", name = "a", descriptor = "(II[[I[[IIII)Lclient!tf;")

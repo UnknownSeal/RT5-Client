@@ -27,10 +27,10 @@ public final class Static257 {
 		if (!Static222.method3915(arg6)) {
 			return;
 		}
-		if (Static113.aClass161ArrayArray2[arg6] == null) {
-			Static45.method1400(Static26.aClass161ArrayArray1[arg6], -1, arg8, arg3, arg2, arg1, arg0, arg4, arg5, arg7);
+		if (Static113.aComponentArrayArray2[arg6] == null) {
+			Static45.method1400(Static26.aComponentArrayArray1[arg6], -1, arg8, arg3, arg2, arg1, arg0, arg4, arg5, arg7);
 		} else {
-			Static45.method1400(Static113.aClass161ArrayArray2[arg6], -1, arg8, arg3, arg2, arg1, arg0, arg4, arg5, arg7);
+			Static45.method1400(Static113.aComponentArrayArray2[arg6], -1, arg8, arg3, arg2, arg1, arg0, arg4, arg5, arg7);
 		}
 	}
 
@@ -38,7 +38,7 @@ public final class Static257 {
 	public static void method3927(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) Class19 arg4) {
 		arg4.method2895(arg0, arg2, arg0 + arg3, arg1 + arg2);
 		arg4.method2868(arg1, arg0, arg2, -16777216, arg3);
-		if (Static355.anInt6581 < 100) {
+		if (Static355.loadPercentage < 100) {
 			return;
 		}
 		@Pc(40) float local40 = (float) Static344.anInt6052 / (float) Static344.anInt6056;
@@ -76,7 +76,7 @@ public final class Static257 {
 		} else {
 			local194 = Static90.anInt6637 * 5;
 		}
-		for (@Pc(205) Class2_Sub20 local205 = (Class2_Sub20) Static344.aClass135_36.method3550(); local205 != null; local205 = (Class2_Sub20) Static344.aClass135_36.method3551()) {
+		for (@Pc(205) Class2_Sub20 local205 = (Class2_Sub20) Static344.A_LINKED_LIST___36.method3550(); local205 != null; local205 = (Class2_Sub20) Static344.A_LINKED_LIST___36.method3551()) {
 			@Pc(213) Class164 local213 = Static344.aClass125_4.method3378(local205.anInt2947);
 			if (Static101.method2164(local213)) {
 				@Pc(242) int local242;

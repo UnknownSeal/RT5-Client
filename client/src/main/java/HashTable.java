@@ -60,15 +60,15 @@ public final class HashTable {
 	}
 
 	@OriginalMember(owner = "client!ad", name = "c", descriptor = "(I)V")
-	public void method81() {
-		for (@Pc(3) int local3 = 0; local3 < this.bucketCount; local3++) {
-			@Pc(10) Node local10 = this.buckets[local3];
+	public void clear() {
+		for (@Pc(3) int i = 0; i < this.bucketCount; i++) {
+			@Pc(10) Node sentinel = this.buckets[i];
 			while (true) {
-				@Pc(13) Node local13 = local10.next;
-				if (local13 == local10) {
+				@Pc(13) Node node = sentinel.next;
+				if (node == sentinel) {
 					break;
 				}
-				local13.unlink();
+				node.unlink();
 			}
 		}
 		this.aClass2_10 = null;
@@ -136,7 +136,7 @@ public final class HashTable {
 	}
 
 	@OriginalMember(owner = "client!ad", name = "a", descriptor = "(JI)Lclient!ag;")
-	public Node method90(@OriginalArg(0) long arg0) {
+	public Node get(@OriginalArg(0) long arg0) {
 		this.aLong10 = arg0;
 		@Pc(23) Node local23 = this.buckets[(int) (arg0 & (long) (this.bucketCount - 1))];
 		for (this.aClass2_9 = local23.next; this.aClass2_9 != local23; this.aClass2_9 = this.aClass2_9.next) {

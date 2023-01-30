@@ -138,22 +138,22 @@ public final class Static181 {
 	}
 
 	@OriginalMember(owner = "client!ki", name = "a", descriptor = "([Lclient!nk;II)V")
-	public static void method3377(@OriginalArg(0) Class161[] arg0, @OriginalArg(1) int arg1) {
+	public static void method3377(@OriginalArg(0) Component[] arg0, @OriginalArg(1) int arg1) {
 		for (@Pc(7) int local7 = 0; local7 < arg0.length; local7++) {
-			@Pc(13) Class161 local13 = arg0[local7];
-			if (local13 != null && arg1 == local13.anInt4275 && !Static45.method1403(local13)) {
-				if (local13.anInt4272 == 0) {
-					method3377(arg0, local13.anInt4317);
-					if (local13.aClass161Array2 != null) {
-						method3377(local13.aClass161Array2, local13.anInt4317);
+			@Pc(13) Component local13 = arg0[local7];
+			if (local13 != null && arg1 == local13.layer && !Static45.method1403(local13)) {
+				if (local13.type == 0) {
+					method3377(arg0, local13.id);
+					if (local13.aComponentArray2 != null) {
+						method3377(local13.aComponentArray2, local13.id);
 					}
-					@Pc(51) Class2_Sub7 local51 = (Class2_Sub7) Static329.aClass4_130.method90((long) local13.anInt4317);
+					@Pc(51) Class2_Sub7 local51 = (Class2_Sub7) Static329.aClass4_130.get((long) local13.id);
 					if (local51 != null) {
 						Static232.method4027(local51.anInt1370);
 					}
 				}
-				if (local13.anInt4272 == 6 && local13.anInt4299 != -1) {
-					@Pc(71) Class157 local71 = Static39.aClass85_1.method2371(local13.anInt4299);
+				if (local13.type == 6 && local13.modelSeqID != -1) {
+					@Pc(71) Class157 local71 = Static39.aClass85_1.method2371(local13.modelSeqID);
 					if (local71 != null) {
 						local13.anInt4283 += Static165.anInt3148;
 						while (local71.anIntArray261[local13.anInt4247] < local13.anInt4283) {
@@ -172,7 +172,7 @@ public final class Static181 {
 									local13.anInt4316 = -1;
 								}
 							}
-							Static200.method3644(local13);
+							Static200.redraw(local13);
 						}
 					}
 				}

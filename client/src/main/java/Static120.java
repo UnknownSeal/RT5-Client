@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static120 {
 
 	@OriginalMember(owner = "client!gs", name = "n", descriptor = "Lclient!r;")
-	public static Class197 aClass197_28;
+	public static Js5 aJs5_28;
 
 	@OriginalMember(owner = "client!gs", name = "d", descriptor = "Lclient!gd;")
 	public static final LocalisedText A_TRANSLATABLE_STRING___50 = new LocalisedText(" from your friend list first.", " zuerst von deiner Freunde-Liste!", " de votre liste d'amis.", " da sua lista de amigos primeiro.");
@@ -15,9 +15,6 @@ public final class Static120 {
 
 	@OriginalMember(owner = "client!gs", name = "h", descriptor = "Lclient!ad;")
 	public static HashTable aClass4_49 = new HashTable(64);
-
-	@OriginalMember(owner = "client!gs", name = "i", descriptor = "I")
-	public static int anInt2385 = -1;
 
 	@OriginalMember(owner = "client!gs", name = "j", descriptor = "S")
 	public static short aShort35 = 32767;
@@ -89,8 +86,8 @@ public final class Static120 {
 
 	@OriginalMember(owner = "client!gs", name = "a", descriptor = "(IBI)V")
 	public static void method2383(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
-		@Pc(13) Class2_Sub2_Sub7 local13 = Static316.method5412(12, arg1);
-		local13.method2311();
+		@Pc(13) DelayedStateChange local13 = Static316.create(12, arg1);
+		local13.pushServer();
 		local13.anInt2289 = arg0;
 	}
 

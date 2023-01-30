@@ -14,7 +14,7 @@ public final class Static390 {
 
 	@OriginalMember(owner = "client!wp", name = "a", descriptor = "(I)V")
 	public static void method6448() {
-		Static289.aClass197_71.discardUnpacked = 1;
+		Static289.aJs5_71.discardUnpacked = 1;
 		Static144.instance.method1382();
 		Static242.aBoolean306 = true;
 		Static343.aBoolean431 = true;
@@ -51,15 +51,15 @@ public final class Static390 {
 		for (@Pc(4464) int local4464 = 0; local4464 < 32768; local4464++) {
 			Static365.npcs[local4464] = null;
 		}
-		Static332.aClass135_38.method3543();
-		Static129.aClass135_20.method3543();
+		Static332.A_LINKED_LIST___38.clear();
+		Static129.A_LINKED_LIST___20.clear();
 		Static284.aClass36_7.method1416();
-		Static120.aClass4_49.method81();
-		Static207.aClass135_26 = new Class135();
+		Static120.aClass4_49.clear();
+		Static207.aLinkedList_26 = new LinkedList();
 		Static235.anInt3363 = 0;
 		Static384.anInt7178 = 0;
 		Static214.aClass226_1.method5780();
-		Static252.method4362();
+		DelayedStateChange.clear();
 		Static236.anInt4309 = 0;
 		Static254.anInt4698 = 0;
 		Static123.anInt2420 = 0;
@@ -90,7 +90,7 @@ public final class Static390 {
 		Static139.anInt2595 = -1;
 		Static329.aClass4_130 = new HashTable(8);
 		Static210.method3719();
-		Static192.aClass161_8 = null;
+		Static192.aComponent_8 = null;
 		for (@Pc(4594) int local4594 = 0; local4594 < 8; local4594++) {
 			Static243.aStringArray44[local4594] = null;
 			Static44.aBooleanArray11[local4594] = false;
@@ -123,6 +123,6 @@ public final class Static390 {
 		Static93.method2002();
 		Static375.aLong222 = 0L;
 		Static385.aClass2_Sub16_2 = null;
-		Static289.aClass197_71.discardUnpacked = 2;
+		Static289.aJs5_71.discardUnpacked = 2;
 	}
 }

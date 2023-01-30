@@ -26,25 +26,25 @@ public final class Static364 {
 	}
 
 	@OriginalMember(owner = "client!vg", name = "a", descriptor = "(ZII[Lclient!nk;ZI)V")
-	public static void method6104(@OriginalArg(0) boolean arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class161[] arg3, @OriginalArg(5) int arg4) {
+	public static void method6104(@OriginalArg(0) boolean arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Component[] arg3, @OriginalArg(5) int arg4) {
 		for (@Pc(3) int local3 = 0; local3 < arg3.length; local3++) {
-			@Pc(9) Class161 local9 = arg3[local3];
-			if (local9 != null && arg2 == local9.anInt4275) {
+			@Pc(9) Component local9 = arg3[local3];
+			if (local9 != null && arg2 == local9.layer) {
 				Static371.method6255(arg1, arg4, arg0, local9);
 				Static287.method4938(local9, arg4, arg1);
-				if (local9.anInt4281 - local9.anInt4248 < local9.anInt4258) {
-					local9.anInt4258 = local9.anInt4281 - local9.anInt4248;
+				if (local9.scrollWidth - local9.width < local9.scrollX) {
+					local9.scrollX = local9.scrollWidth - local9.width;
 				}
-				if (local9.anInt4258 < 0) {
-					local9.anInt4258 = 0;
+				if (local9.scrollX < 0) {
+					local9.scrollX = 0;
 				}
-				if (local9.anInt4259 > local9.anInt4266 - local9.anInt4261) {
-					local9.anInt4259 = local9.anInt4266 - local9.anInt4261;
+				if (local9.scrollY > local9.scrollHeight - local9.height) {
+					local9.scrollY = local9.scrollHeight - local9.height;
 				}
-				if (local9.anInt4259 < 0) {
-					local9.anInt4259 = 0;
+				if (local9.scrollY < 0) {
+					local9.scrollY = 0;
 				}
-				if (local9.anInt4272 == 0) {
+				if (local9.type == 0) {
 					Static85.method1911(arg0, local9);
 				}
 			}

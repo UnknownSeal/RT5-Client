@@ -22,15 +22,15 @@ public final class Static325 {
 	public static final int[] anIntArray414 = new int[25];
 
 	@OriginalMember(owner = "client!sr", name = "a", descriptor = "(Lclient!o;Lclient!r;Lclient!r;B)V")
-	public static void method5543(@OriginalArg(0) Interface9 arg0, @OriginalArg(1) Class197 arg1, @OriginalArg(2) Class197 arg2) {
-		Static137.aClass197_33 = arg1;
+	public static void method5543(@OriginalArg(0) Interface9 arg0, @OriginalArg(1) Js5 arg1, @OriginalArg(2) Js5 arg2) {
+		Static137.aJs5_33 = arg1;
 		anInterface9_1 = arg0;
-		Static308.aClass197_80 = arg2;
-		if (Static137.aClass197_33 != null) {
-			Static21.anInt554 = Static137.aClass197_33.method5080(1);
+		Static308.aJs5_80 = arg2;
+		if (Static137.aJs5_33 != null) {
+			Static21.anInt554 = Static137.aJs5_33.method5080(1);
 		}
-		if (Static308.aClass197_80 != null) {
-			Static361.anInt6769 = Static308.aClass197_80.method5080(1);
+		if (Static308.aJs5_80 != null) {
+			Static361.anInt6769 = Static308.aJs5_80.method5080(1);
 		}
 	}
 

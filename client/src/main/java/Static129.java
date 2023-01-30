@@ -14,13 +14,13 @@ public final class Static129 {
 	public static int anInt2460 = -1;
 
 	@OriginalMember(owner = "client!hg", name = "j", descriptor = "Lclient!ld;")
-	public static final Class135 aClass135_19 = new Class135();
+	public static final LinkedList A_LINKED_LIST___19 = new LinkedList();
 
 	@OriginalMember(owner = "client!hg", name = "l", descriptor = "Lclient!gd;")
 	public static final LocalisedText A_TRANSLATABLE_STRING___57 = new LocalisedText("flash2:", "blinken2:", "clignotant2:", "flash2:");
 
 	@OriginalMember(owner = "client!hg", name = "m", descriptor = "Lclient!ld;")
-	public static final Class135 aClass135_20 = new Class135();
+	public static final LinkedList A_LINKED_LIST___20 = new LinkedList();
 
 	@OriginalMember(owner = "client!hg", name = "a", descriptor = "(IIZII)V")
 	public static void method2434(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {
@@ -34,44 +34,22 @@ public final class Static129 {
 	@OriginalMember(owner = "client!hg", name = "a", descriptor = "(IIZBI)V")
 	public static void method2435(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) boolean arg2, @OriginalArg(4) int arg3) {
 		if (Static222.method3915(arg1)) {
-			Static364.method6104(arg2, arg0, -1, Static26.aClass161ArrayArray1[arg1], arg3);
+			Static364.method6104(arg2, arg0, -1, Static26.aComponentArrayArray1[arg1], arg3);
 		}
-	}
-
-	@OriginalMember(owner = "client!hg", name = "a", descriptor = "(I)Lclient!gg;")
-	public static Class2_Sub2_Sub7 method2437() {
-		@Pc(16) Class2_Sub2_Sub7 local16 = (Class2_Sub2_Sub7) Static368.aClass246_10.head();
-		if (local16 != null) {
-			local16.unlink();
-			local16.unlinkSecondary();
-			return local16;
-		}
-		do {
-			local16 = (Class2_Sub2_Sub7) Static208.aClass246_4.head();
-			if (local16 == null) {
-				return null;
-			}
-			if (local16.method2308() > MonotonicClock.currentTimeMillis()) {
-				return null;
-			}
-			local16.unlink();
-			local16.unlinkSecondary();
-		} while ((local16.aLong215 & Long.MIN_VALUE) == 0L);
-		return local16;
 	}
 
 	@OriginalMember(owner = "client!hg", name = "a", descriptor = "(IIBI)V")
 	public static void method2438(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2) {
-		@Pc(13) Class2_Sub2_Sub7 local13 = Static316.method5412(11, arg2);
-		local13.method2311();
+		@Pc(13) DelayedStateChange local13 = Static316.create(11, arg2);
+		local13.pushServer();
 		local13.anInt2290 = arg1;
 		local13.anInt2289 = arg0;
 	}
 
 	@OriginalMember(owner = "client!hg", name = "a", descriptor = "(BI)V")
 	public static void method2439(@OriginalArg(1) int arg0) {
-		@Pc(17) Class2_Sub2_Sub7 local17 = Static316.method5412(16, arg0);
-		local17.method2312();
+		@Pc(17) DelayedStateChange local17 = Static316.create(16, arg0);
+		local17.pushClient();
 	}
 
 	@OriginalMember(owner = "client!hg", name = "b", descriptor = "(I)V")

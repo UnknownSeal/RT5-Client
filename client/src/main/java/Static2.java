@@ -3,7 +3,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class Static2 {
 
 	@OriginalMember(owner = "client!aa", name = "w", descriptor = "Lclient!je;")
-	public static Class113 aClass113_1;
+	public static WorldMapFont font14;
 
 	@OriginalMember(owner = "client!aa", name = "t", descriptor = "Lclient!mc;")
 	public static final Class145 aClass145_3 = new Class145(53, -1);
@@ -41,6 +41,6 @@ public final class Static2 {
 		Static139.A_SOFT_LRU_HASH_TABLE___18.clean(5);
 		Static61.A_SOFT_LRU_HASH_TABLE___5.clean(5);
 		Static210.A_SOFT_LRU_HASH_TABLE___31.clean(5);
-		Static198.A_SOFT_LRU_HASH_TABLE___30.clean(5);
+		ScriptRunner.A_SOFT_LRU_HASH_TABLE___30.clean(5);
 	}
 }

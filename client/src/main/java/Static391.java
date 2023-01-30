@@ -8,10 +8,10 @@ public final class Static391 {
 	public static int anInt7216;
 
 	@OriginalMember(owner = "client!wq", name = "j", descriptor = "Lclient!r;")
-	public static Class197 aClass197_95;
+	public static Js5 aJs5_95;
 
 	@OriginalMember(owner = "client!wq", name = "m", descriptor = "Lclient!r;")
-	public static Class197 aClass197_96;
+	public static Js5 aJs5_96;
 
 	@OriginalMember(owner = "client!wq", name = "h", descriptor = "[I")
 	public static final int[] anIntArray495 = new int[] { 16, 32, 64, 128 };
@@ -29,7 +29,7 @@ public final class Static391 {
 				return true;
 			}
 		}
-		return arg0.equalsIgnoreCase(Static17.aClass11_Sub5_Sub2_Sub1_3.aString41);
+		return arg0.equalsIgnoreCase(Static17.self.aString41);
 	}
 
 	@OriginalMember(owner = "client!wq", name = "a", descriptor = "(IIBIIIII)V")
@@ -123,22 +123,22 @@ public final class Static391 {
 	public static void method6453(@OriginalArg(0) Class2_Sub5 arg0) {
 		if (!Static375.aBoolean477) {
 			arg0.unlink();
-			Static268.anInt4959--;
+			Static268.size--;
 		}
 	}
 
 	@OriginalMember(owner = "client!wq", name = "a", descriptor = "(CI)C")
-	public static char method6454(@OriginalArg(0) char arg0) {
-		if (arg0 == 'Æ') {
+	public static char getSecondChar(@OriginalArg(0) char c) {
+		if (c == 'Æ') {
 			return 'E';
-		} else if (arg0 == 'æ') {
+		} else if (c == 'æ') {
 			return 'e';
-		} else if (arg0 == 'ß') {
+		} else if (c == 'ß') {
 			return 's';
-		} else if (arg0 == 'Œ') {
+		} else if (c == 'Œ') {
 			return 'E';
 		} else {
-			return (char) (arg0 == 'œ' ? 'e' : '\u0000');
+			return (char) (c == 'œ' ? 'e' : '\u0000');
 		}
 	}
 

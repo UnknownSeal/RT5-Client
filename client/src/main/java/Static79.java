@@ -8,7 +8,7 @@ public final class Static79 {
 	public static Class42 aClass42_4;
 
 	@OriginalMember(owner = "client!ej", name = "H", descriptor = "Lclient!r;")
-	public static Class197 aClass197_19;
+	public static Js5 aJs5_19;
 
 	@OriginalMember(owner = "client!ej", name = "C", descriptor = "Lclient!h;")
 	public static final Class89 aClass89_63 = new Class89(43, -1);

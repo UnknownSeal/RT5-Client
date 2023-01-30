@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class Static312 {
 
 	@OriginalMember(owner = "client!sa", name = "V", descriptor = "I")
-	public static int anInt5843;
+	public static int maxID;
 
 	@OriginalMember(owner = "client!sa", name = "P", descriptor = "Lclient!gd;")
 	public static final LocalisedText A_TRANSLATABLE_STRING___123 = new LocalisedText("Loaded textures", "Texturen geladen.", "Textures chargées", "Texturas carregadas");

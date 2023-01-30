@@ -272,7 +272,7 @@ public final class Class2_Sub12_Sub3 extends Class2_Sub12 {
 			local14.anInt1791 = 0;
 			return;
 		}
-		for (@Pc(41) Class2_Sub11 local41 = (Class2_Sub11) this.aClass2_Sub12_Sub1_1.aClass135_15.method3550(); local41 != null; local41 = (Class2_Sub11) this.aClass2_Sub12_Sub1_1.aClass135_15.method3551()) {
+		for (@Pc(41) Class2_Sub11 local41 = (Class2_Sub11) this.aClass2_Sub12_Sub1_1.aLinkedList_15.method3550(); local41 != null; local41 = (Class2_Sub11) this.aClass2_Sub12_Sub1_1.aLinkedList_15.method3551()) {
 			if (local41.anInt1793 == local14.anInt1793 && local41.anInt1791 < 0 && local41 != local14) {
 				local14.anInt1791 = 0;
 				return;
@@ -281,13 +281,13 @@ public final class Class2_Sub12_Sub3 extends Class2_Sub12 {
 	}
 
 	@OriginalMember(owner = "client!od", name = "a", descriptor = "(Lclient!bk;Lclient!sl;Lclient!r;II)Z")
-	public synchronized boolean method4280(@OriginalArg(0) Class24 arg0, @OriginalArg(1) Class2_Sub34 arg1, @OriginalArg(2) Class197 arg2) {
+	public synchronized boolean method4280(@OriginalArg(0) Class24 arg0, @OriginalArg(1) Class2_Sub34 arg1, @OriginalArg(2) Js5 arg2) {
 		arg1.method5448();
 		@Pc(9) boolean local9 = true;
 		@Pc(23) int[] local23 = new int[] { 22050 };
 		for (@Pc(34) Class2_Sub44 local34 = (Class2_Sub44) arg1.aClass4_119.method80(); local34 != null; local34 = (Class2_Sub44) arg1.aClass4_119.method79()) {
 			@Pc(40) int local40 = (int) local34.key;
-			@Pc(48) Class2_Sub25 local48 = (Class2_Sub25) this.aClass4_92.method90((long) local40);
+			@Pc(48) Class2_Sub25 local48 = (Class2_Sub25) this.aClass4_92.get((long) local40);
 			if (local48 == null) {
 				local48 = Static294.method5061(local40, arg2);
 				if (local48 == null) {
@@ -381,7 +381,7 @@ public final class Class2_Sub12_Sub3 extends Class2_Sub12 {
 
 	@OriginalMember(owner = "client!od", name = "b", descriptor = "(IB)V")
 	private void method4285(@OriginalArg(0) int arg0) {
-		for (@Pc(6) Class2_Sub11 local6 = (Class2_Sub11) this.aClass2_Sub12_Sub1_1.aClass135_15.method3550(); local6 != null; local6 = (Class2_Sub11) this.aClass2_Sub12_Sub1_1.aClass135_15.method3551()) {
+		for (@Pc(6) Class2_Sub11 local6 = (Class2_Sub11) this.aClass2_Sub12_Sub1_1.aLinkedList_15.method3550(); local6 != null; local6 = (Class2_Sub11) this.aClass2_Sub12_Sub1_1.aLinkedList_15.method3551()) {
 			if (arg0 < 0 || arg0 == local6.anInt1793) {
 				if (local6.aClass2_Sub12_Sub4_1 != null) {
 					local6.aClass2_Sub12_Sub4_1.method4989(Static356.anInt6643 / 100);
@@ -403,7 +403,7 @@ public final class Class2_Sub12_Sub3 extends Class2_Sub12 {
 		if ((this.anIntArray308[arg0] & 0x2) == 0) {
 			return;
 		}
-		for (@Pc(13) Class2_Sub11 local13 = (Class2_Sub11) this.aClass2_Sub12_Sub1_1.aClass135_15.method3550(); local13 != null; local13 = (Class2_Sub11) this.aClass2_Sub12_Sub1_1.aClass135_15.method3551()) {
+		for (@Pc(13) Class2_Sub11 local13 = (Class2_Sub11) this.aClass2_Sub12_Sub1_1.aLinkedList_15.method3550(); local13 != null; local13 = (Class2_Sub11) this.aClass2_Sub12_Sub1_1.aLinkedList_15.method3551()) {
 			if (local13.anInt1793 == arg0 && this.aClass2_Sub11ArrayArray1[arg0][local13.anInt1781] == null && local13.anInt1791 < 0) {
 				local13.anInt1791 = 0;
 			}
@@ -705,7 +705,7 @@ public final class Class2_Sub12_Sub3 extends Class2_Sub12 {
 
 	@OriginalMember(owner = "client!od", name = "b", descriptor = "(IZ)V")
 	private void method4296(@OriginalArg(0) int arg0) {
-		for (@Pc(10) Class2_Sub11 local10 = (Class2_Sub11) this.aClass2_Sub12_Sub1_1.aClass135_15.method3550(); local10 != null; local10 = (Class2_Sub11) this.aClass2_Sub12_Sub1_1.aClass135_15.method3551()) {
+		for (@Pc(10) Class2_Sub11 local10 = (Class2_Sub11) this.aClass2_Sub12_Sub1_1.aLinkedList_15.method3550(); local10 != null; local10 = (Class2_Sub11) this.aClass2_Sub12_Sub1_1.aLinkedList_15.method3551()) {
 			if ((arg0 < 0 || arg0 == local10.anInt1793) && local10.anInt1791 < 0) {
 				this.aClass2_Sub11ArrayArray1[local10.anInt1793][local10.anInt1781] = null;
 				local10.anInt1791 = 0;
@@ -770,7 +770,7 @@ public final class Class2_Sub12_Sub3 extends Class2_Sub12 {
 	private void method4299(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
 		this.method4278(arg0, arg1, 64);
 		if ((this.anIntArray308[arg0] & 0x2) != 0) {
-			for (@Pc(26) Class2_Sub11 local26 = (Class2_Sub11) this.aClass2_Sub12_Sub1_1.aClass135_15.method3547(); local26 != null; local26 = (Class2_Sub11) this.aClass2_Sub12_Sub1_1.aClass135_15.method3546()) {
+			for (@Pc(26) Class2_Sub11 local26 = (Class2_Sub11) this.aClass2_Sub12_Sub1_1.aLinkedList_15.tail(); local26 != null; local26 = (Class2_Sub11) this.aClass2_Sub12_Sub1_1.aLinkedList_15.method3546()) {
 				if (local26.anInt1793 == arg0 && local26.anInt1791 < 0) {
 					this.aClass2_Sub11ArrayArray1[arg0][local26.anInt1781] = null;
 					this.aClass2_Sub11ArrayArray1[arg0][arg1] = local26;
@@ -783,7 +783,7 @@ public final class Class2_Sub12_Sub3 extends Class2_Sub12 {
 				}
 			}
 		}
-		@Pc(105) Class2_Sub25 local105 = (Class2_Sub25) this.aClass4_92.method90((long) this.anIntArray295[arg0]);
+		@Pc(105) Class2_Sub25 local105 = (Class2_Sub25) this.aClass4_92.get((long) this.anIntArray295[arg0]);
 		if (local105 == null) {
 			return;
 		}
@@ -823,7 +823,7 @@ public final class Class2_Sub12_Sub3 extends Class2_Sub12 {
 			}
 			this.aClass2_Sub11ArrayArray2[arg0][local120.anInt1788] = local120;
 		}
-		this.aClass2_Sub12_Sub1_1.aClass135_15.method3539(local120);
+		this.aClass2_Sub12_Sub1_1.aLinkedList_15.method3539(local120);
 		this.aClass2_Sub11ArrayArray1[arg0][arg1] = local120;
 	}
 
@@ -851,7 +851,7 @@ public final class Class2_Sub12_Sub3 extends Class2_Sub12 {
 		if ((this.anIntArray308[arg0] & 0x4) == 0) {
 			return;
 		}
-		for (@Pc(17) Class2_Sub11 local17 = (Class2_Sub11) this.aClass2_Sub12_Sub1_1.aClass135_15.method3550(); local17 != null; local17 = (Class2_Sub11) this.aClass2_Sub12_Sub1_1.aClass135_15.method3551()) {
+		for (@Pc(17) Class2_Sub11 local17 = (Class2_Sub11) this.aClass2_Sub12_Sub1_1.aLinkedList_15.method3550(); local17 != null; local17 = (Class2_Sub11) this.aClass2_Sub12_Sub1_1.aLinkedList_15.method3551()) {
 			if (arg0 == local17.anInt1793) {
 				local17.anInt1792 = 0;
 			}

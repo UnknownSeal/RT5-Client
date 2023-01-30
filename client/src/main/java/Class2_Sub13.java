@@ -8,7 +8,7 @@ public final class Class2_Sub13 extends Node {
 	public Object[] anObjectArray4;
 
 	@OriginalMember(owner = "client!fn", name = "u", descriptor = "Lclient!nk;")
-	public Class161 aClass161_3;
+	public Component aComponent_3;
 
 	@OriginalMember(owner = "client!fn", name = "x", descriptor = "I")
 	public int anInt2114;
@@ -23,7 +23,7 @@ public final class Class2_Sub13 extends Node {
 	public int anInt2117;
 
 	@OriginalMember(owner = "client!fn", name = "C", descriptor = "Lclient!nk;")
-	public Class161 aClass161_4;
+	public Component aComponent_4;
 
 	@OriginalMember(owner = "client!fn", name = "E", descriptor = "I")
 	public int anInt2118;

@@ -6,7 +6,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static369 {
 
 	@OriginalMember(owner = "client!vm", name = "O", descriptor = "Lclient!je;")
-	public static Class113 aClass113_9;
+	public static WorldMapFont font30;
 
 	@OriginalMember(owner = "client!vm", name = "N", descriptor = "[I")
 	public static final int[] anIntArray479 = new int[] { -1, 8192, 0, -1, 12288, 10240, 14336, -1, 4096, 6144, 2048 };
@@ -29,9 +29,9 @@ public final class Static369 {
 	}
 
 	@OriginalMember(owner = "client!vm", name = "c", descriptor = "(IB)V")
-	public static void method6219(@OriginalArg(0) int arg0) {
-		@Pc(16) Class2_Sub2_Sub7 local16 = Static316.method5412(12, arg0);
-		local16.method2312();
+	public static void setComponentScrollPositionClient(@OriginalArg(0) int arg0) {
+		@Pc(16) DelayedStateChange change = Static316.create(12, arg0);
+		change.pushClient();
 	}
 
 	@OriginalMember(owner = "client!vm", name = "a", descriptor = "(IIIII)V")

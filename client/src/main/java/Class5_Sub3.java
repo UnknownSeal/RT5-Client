@@ -74,7 +74,7 @@ public final class Class5_Sub3 extends Class5 {
 
 	@OriginalMember(owner = "client!op", name = "c", descriptor = "(I)V")
 	@Override
-	public void method4407() {
+	public void reset() {
 		if (this.aLong140 > this.aLong139) {
 			this.aLong139 += this.aLong140 - this.aLong139;
 		}

@@ -70,20 +70,20 @@ public final class Static4 {
 
 	@OriginalMember(owner = "client!ac", name = "a", descriptor = "(ZLclient!bt;)V")
 	public static void method76(@OriginalArg(1) Buffer arg0) {
-		for (@Pc(16) int local16 = 0; local16 < Static299.anInt5643; local16++) {
+		for (@Pc(16) int local16 = 0; local16 < Static299.size; local16++) {
 			@Pc(22) int local22 = arg0.gsmarts();
 			@Pc(26) int local26 = arg0.g2();
 			if (local26 == 65535) {
 				local26 = -1;
 			}
-			if (Static295.aClass3_Sub1Array1[local22] != null) {
-				Static295.aClass3_Sub1Array1[local22].anInt78 = local26;
+			if (Static295.worlds[local22] != null) {
+				Static295.worlds[local22].anInt78 = local26;
 			}
 		}
 	}
 
 	@OriginalMember(owner = "client!ac", name = "b", descriptor = "(B)V")
 	public static void method77() {
-		Static337.aClass135_37 = new Class135();
+		Static337.aLinkedList_37 = new LinkedList();
 	}
 }

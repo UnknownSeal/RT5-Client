@@ -43,15 +43,15 @@ public final class Static374 {
 	}
 
 	@OriginalMember(owner = "client!vr", name = "a", descriptor = "(ILclient!nk;II)V")
-	public static void method6273(@OriginalArg(0) int arg0, @OriginalArg(1) Class161 arg1, @OriginalArg(2) int arg2) {
+	public static void method6273(@OriginalArg(0) int arg0, @OriginalArg(1) Component arg1, @OriginalArg(2) int arg2) {
 		Static63.anInt1549 = arg0;
 		Static290.anInt5498 = arg2;
-		Static179.aClass161_6 = arg1;
+		Static179.aComponent_6 = arg1;
 	}
 
 	@OriginalMember(owner = "client!vr", name = "a", descriptor = "(ZII)Lclient!we;")
 	public static Class2_Sub41 method6274(@OriginalArg(0) boolean arg0, @OriginalArg(2) int arg1) {
 		@Pc(12) long local12 = (long) ((arg0 ? Integer.MIN_VALUE : 0) | arg1);
-		return (Class2_Sub41) Static353.aClass4_136.method90(local12);
+		return (Class2_Sub41) Static353.aClass4_136.get(local12);
 	}
 }

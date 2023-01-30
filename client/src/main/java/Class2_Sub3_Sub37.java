@@ -16,21 +16,21 @@ public final class Class2_Sub3_Sub37 extends TextureOp {
 
 	@OriginalMember(owner = "client!vm", name = "b", descriptor = "(IB)[[I")
 	@Override
-	public int[][] method6478(@OriginalArg(0) int arg0) {
-		@Pc(11) int[][] local11 = super.aClass243_41.method6276(arg0);
-		if (super.aClass243_41.aBoolean478) {
-			@Pc(22) int local22 = Static227.anInt4036;
-			@Pc(24) int local24 = Static24.anInt638;
+	public int[][] getColorOutput(@OriginalArg(0) int arg0) {
+		@Pc(11) int[][] local11 = super.colorImageCache.get(arg0);
+		if (super.colorImageCache.invalid) {
+			@Pc(22) int local22 = Static227.width;
+			@Pc(24) int local24 = Static24.height;
 			@Pc(28) int[][] local28 = new int[local24][local22];
-			@Pc(33) int[][][] local33 = super.aClass243_41.method6279();
+			@Pc(33) int[][][] local33 = super.colorImageCache.get();
 			this.method6217(local28);
-			for (@Pc(39) int local39 = 0; local39 < Static24.anInt638; local39++) {
+			for (@Pc(39) int local39 = 0; local39 < Static24.height; local39++) {
 				@Pc(45) int[] local45 = local28[local39];
 				@Pc(49) int[][] local49 = local33[local39];
 				@Pc(53) int[] local53 = local49[0];
 				@Pc(57) int[] local57 = local49[1];
 				@Pc(61) int[] local61 = local49[2];
-				for (@Pc(63) int local63 = 0; local63 < Static227.anInt4036; local63++) {
+				for (@Pc(63) int local63 = 0; local63 < Static227.width; local63++) {
 					@Pc(69) int local69 = local45[local63];
 					local61[local63] = (local69 & 0xFF) << 4;
 					local57[local63] = local69 >> 4 & 0xFF0;
@@ -43,7 +43,7 @@ public final class Class2_Sub3_Sub37 extends TextureOp {
 
 	@OriginalMember(owner = "client!vm", name = "a", descriptor = "(ILclient!bt;I)V")
 	@Override
-	public void method6483(@OriginalArg(0) int arg0, @OriginalArg(1) Buffer arg1) {
+	public void decode(@OriginalArg(0) int arg0, @OriginalArg(1) Buffer arg1) {
 		if (arg0 == 0) {
 			this.aClass173Array1 = new Class173[arg1.g1()];
 			for (@Pc(33) int local33 = 0; local33 < this.aClass173Array1.length; local33++) {
@@ -65,10 +65,10 @@ public final class Class2_Sub3_Sub37 extends TextureOp {
 
 	@OriginalMember(owner = "client!vm", name = "a", descriptor = "([[II)V")
 	private void method6217(@OriginalArg(0) int[][] arg0) {
-		@Pc(7) int local7 = Static227.anInt4036;
-		@Pc(9) int local9 = Static24.anInt638;
+		@Pc(7) int local7 = Static227.width;
+		@Pc(9) int local9 = Static24.height;
 		Static37.method1133(arg0);
-		Static19.method557(Static148.anInt2718, Static73.anInt1721);
+		Static19.method557(Static148.heightMask, Static73.anInt1721);
 		if (this.aClass173Array1 == null) {
 			return;
 		}
@@ -91,9 +91,9 @@ public final class Class2_Sub3_Sub37 extends TextureOp {
 	@OriginalMember(owner = "client!vm", name = "a", descriptor = "(BI)[I")
 	@Override
 	public int[] getMonochromeOutput(@OriginalArg(1) int y) {
-		@Pc(9) int[] local9 = super.aClass158_41.method3995(y);
-		if (super.aClass158_41.aBoolean265) {
-			this.method6217(super.aClass158_41.method3997());
+		@Pc(9) int[] local9 = super.monochromeImageCache.get(y);
+		if (super.monochromeImageCache.invalid) {
+			this.method6217(super.monochromeImageCache.get());
 		}
 		return local9;
 	}

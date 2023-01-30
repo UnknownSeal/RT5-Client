@@ -10,21 +10,21 @@ public final class Class75 {
 	private Node aClass2_69;
 
 	@OriginalMember(owner = "client!fr", name = "c", descriptor = "Lclient!ld;")
-	private Class135 aClass135_18;
+	private LinkedList aLinkedList_18;
 
 	@OriginalMember(owner = "client!fr", name = "<init>", descriptor = "()V")
 	public Class75() {
 	}
 
 	@OriginalMember(owner = "client!fr", name = "<init>", descriptor = "(Lclient!ld;)V")
-	public Class75(@OriginalArg(0) Class135 arg0) {
-		this.aClass135_18 = arg0;
+	public Class75(@OriginalArg(0) LinkedList arg0) {
+		this.aLinkedList_18 = arg0;
 	}
 
 	@OriginalMember(owner = "client!fr", name = "b", descriptor = "(I)Lclient!ag;")
 	public Node method2178() {
 		@Pc(6) Node local6 = this.aClass2_69;
-		if (this.aClass135_18.aClass2_130 == local6) {
+		if (this.aLinkedList_18.sentinel == local6) {
 			this.aClass2_69 = null;
 			return null;
 		} else {
@@ -34,14 +34,14 @@ public final class Class75 {
 	}
 
 	@OriginalMember(owner = "client!fr", name = "a", descriptor = "(Lclient!ld;I)V")
-	public void method2180(@OriginalArg(0) Class135 arg0) {
-		this.aClass135_18 = arg0;
+	public void method2180(@OriginalArg(0) LinkedList arg0) {
+		this.aLinkedList_18 = arg0;
 	}
 
 	@OriginalMember(owner = "client!fr", name = "a", descriptor = "(B)Lclient!ag;")
 	public Node method2181() {
-		@Pc(8) Node local8 = this.aClass135_18.aClass2_130.next;
-		if (this.aClass135_18.aClass2_130 == local8) {
+		@Pc(8) Node local8 = this.aLinkedList_18.sentinel.next;
+		if (this.aLinkedList_18.sentinel == local8) {
 			this.aClass2_69 = null;
 			return null;
 		} else {

@@ -106,7 +106,7 @@ public final class Class117 {
 		@Pc(163) SoftLruHashTable local163 = Static349.A_SOFT_LRU_HASH_TABLE___58;
 		@Pc(172) Model local172;
 		synchronized (Static349.A_SOFT_LRU_HASH_TABLE___58) {
-			local172 = (Model) Static349.A_SOFT_LRU_HASH_TABLE___58.method2612(this.aLong107);
+			local172 = (Model) Static349.A_SOFT_LRU_HASH_TABLE___58.get(this.aLong107);
 		}
 		if (local172 == null || arg7.method2863(local172.method3826(), local27) != 0) {
 			if (local172 != null) {
@@ -157,7 +157,7 @@ public final class Class117 {
 			local172.method3813(local27);
 			@Pc(398) SoftLruHashTable local398 = Static349.A_SOFT_LRU_HASH_TABLE___58;
 			synchronized (Static349.A_SOFT_LRU_HASH_TABLE___58) {
-				Static349.A_SOFT_LRU_HASH_TABLE___58.method2624(this.aLong107, local172);
+				Static349.A_SOFT_LRU_HASH_TABLE___58.put(this.aLong107, local172);
 			}
 		}
 		if (arg4 == null) {
@@ -216,7 +216,7 @@ public final class Class117 {
 		@Pc(162) SoftLruHashTable local162 = Static349.A_SOFT_LRU_HASH_TABLE___58;
 		@Pc(170) Model local170;
 		synchronized (Static349.A_SOFT_LRU_HASH_TABLE___58) {
-			local170 = (Model) Static349.A_SOFT_LRU_HASH_TABLE___58.method2612(local160);
+			local170 = (Model) Static349.A_SOFT_LRU_HASH_TABLE___58.get(local160);
 		}
 		if (local170 == null || arg7.method2863(local170.method3826(), local7) != 0) {
 			if (local170 != null) {
@@ -254,7 +254,7 @@ public final class Class117 {
 			local170.method3813(local7);
 			@Pc(347) SoftLruHashTable local347 = Static349.A_SOFT_LRU_HASH_TABLE___58;
 			synchronized (Static349.A_SOFT_LRU_HASH_TABLE___58) {
-				Static349.A_SOFT_LRU_HASH_TABLE___58.method2624(local160, local170);
+				Static349.A_SOFT_LRU_HASH_TABLE___58.put(local160, local170);
 			}
 		}
 		if (arg3 == null) {
@@ -430,7 +430,7 @@ public final class Class117 {
 		@Pc(581) SoftLruHashTable local581 = Static92.A_SOFT_LRU_HASH_TABLE___9;
 		@Pc(589) Model local589;
 		synchronized (Static92.A_SOFT_LRU_HASH_TABLE___9) {
-			local589 = (Model) Static92.A_SOFT_LRU_HASH_TABLE___9.method2612(local36);
+			local589 = (Model) Static92.A_SOFT_LRU_HASH_TABLE___9.get(local36);
 		}
 		@Pc(597) BasType local597 = null;
 		if (this.anInt3190 != -1) {
@@ -450,7 +450,7 @@ public final class Class117 {
 						if (this.aLong106 != -1L) {
 							@Pc(696) SoftLruHashTable local696 = Static92.A_SOFT_LRU_HASH_TABLE___9;
 							synchronized (Static92.A_SOFT_LRU_HASH_TABLE___9) {
-								local589 = (Model) Static92.A_SOFT_LRU_HASH_TABLE___9.method2612(this.aLong106);
+								local589 = (Model) Static92.A_SOFT_LRU_HASH_TABLE___9.get(this.aLong106);
 							}
 						}
 						if (local589 == null || arg13.method2863(local589.method3826(), local33) != 0 || local597 != null && local597.equipmentTransforms != null && this.anIntArrayArray24 == null) {
@@ -495,11 +495,11 @@ public final class Class117 {
 											local884[0] = local884[4] = local884[8] = 32768;
 											local884[14] = -local835;
 										} else {
-											@Pc(894) int local894 = Class19.anIntArray177[local844];
+											@Pc(894) int local894 = Class19.COSINE[local844];
 											@Pc(898) int local898 = Class19.anIntArray178[local844];
-											@Pc(902) int local902 = Class19.anIntArray177[local853];
+											@Pc(902) int local902 = Class19.COSINE[local853];
 											@Pc(906) int local906 = Class19.anIntArray178[local853];
-											@Pc(910) int local910 = Class19.anIntArray177[local862];
+											@Pc(910) int local910 = Class19.COSINE[local862];
 											@Pc(914) int local914 = Class19.anIntArray178[local862];
 											@Pc(922) int local922 = local910 * local898 + 16384 >> 15;
 											@Pc(930) int local930 = local898 * local914 + 16384 >> 15;
@@ -543,7 +543,7 @@ public final class Class117 {
 						local589.method3813(local33);
 						@Pc(1288) SoftLruHashTable local1288 = Static92.A_SOFT_LRU_HASH_TABLE___9;
 						synchronized (Static92.A_SOFT_LRU_HASH_TABLE___9) {
-							Static92.A_SOFT_LRU_HASH_TABLE___9.method2624(local36, local589);
+							Static92.A_SOFT_LRU_HASH_TABLE___9.put(local36, local589);
 						}
 						this.aLong106 = local36;
 					}

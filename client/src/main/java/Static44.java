@@ -20,8 +20,8 @@ public final class Static44 {
 	public static final boolean[] aBooleanArray11 = new boolean[8];
 
 	@OriginalMember(owner = "client!cl", name = "a", descriptor = "(Lclient!wm;BLclient!r;)V")
-	public static void method1358(@OriginalArg(0) Class19 arg0, @OriginalArg(2) Class197 arg1) {
-		@Pc(10) Class48[] local10 = Static396.method1688(arg1, Static373.anInt7028);
+	public static void method1358(@OriginalArg(0) Class19 arg0, @OriginalArg(2) Js5 arg1) {
+		@Pc(10) SoftwareSprite[] local10 = Static396.method1688(arg1, Static373.anInt7028);
 		Static15.aClass13Array3 = new Class13[local10.length];
 		for (@Pc(16) int local16 = 0; local16 < local10.length; local16++) {
 			Static15.aClass13Array3[local16] = arg0.method2891(local10[local16]);
@@ -67,9 +67,9 @@ public final class Static44 {
 			Static288.aClass13Array21[local257] = arg0.method2891(local10[local257]);
 		}
 		local10 = Static396.method1688(arg1, Static326.anInt6236);
-		Static76.aClass13Array5 = new Class13[local10.length];
+		Static76.mapDots = new Class13[local10.length];
 		for (@Pc(288) int local288 = 0; local288 < local10.length; local288++) {
-			Static76.aClass13Array5[local288] = arg0.method2891(local10[local288]);
+			Static76.mapDots[local288] = arg0.method2891(local10[local288]);
 		}
 		local10 = Static396.method1688(arg1, Static169.anInt3205);
 		Static126.aClass13Array22 = new Class13[local10.length];
@@ -81,8 +81,8 @@ public final class Static44 {
 		for (@Pc(346) int local346 = 0; local346 < local10.length; local346++) {
 			Static124.aClass13Array27[local346] = arg0.method2891(local10[local346]);
 		}
-		Static12.aClass13_2 = arg0.method2891(Static396.method1682(arg1, Static139.anInt2594, 0));
-		Static119.aClass13_7 = arg0.method2891(Static396.method1682(arg1, Static322.anInt6031, 0));
+		Static12.aClass13_2 = arg0.method2891(Static396.loadSoftwareSprite(arg1, Static139.anInt2594, 0));
+		Static119.aClass13_7 = arg0.method2891(Static396.loadSoftwareSprite(arg1, Static322.anInt6031, 0));
 		local10 = Static396.method1688(arg1, Static373.anInt7030);
 		Static116.aClass13Array8 = new Class13[local10.length];
 		for (@Pc(393) int local393 = 0; local393 < local10.length; local393++) {
@@ -91,7 +91,7 @@ public final class Static44 {
 	}
 
 	@OriginalMember(owner = "client!cl", name = "a", descriptor = "(Lclient!r;I)V")
-	public static void method1359(@OriginalArg(0) Class197 arg0) {
+	public static void method1359(@OriginalArg(0) Js5 arg0) {
 		Static75.anInt1736 = arg0.getGroupID("titlebg");
 		Static265.anInt4856 = arg0.getGroupID("logo");
 	}

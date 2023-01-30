@@ -5,10 +5,10 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static34 {
 
 	@OriginalMember(owner = "client!bt", name = "F", descriptor = "Lclient!r;")
-	public static Class197 aClass197_67;
+	public static Js5 aJs5_67;
 
 	@OriginalMember(owner = "client!bt", name = "xb", descriptor = "Lclient!ih;")
-	public static Class103 aClass103_3;
+	public static MapElementList aMapElementList_3;
 
 	@OriginalMember(owner = "client!bt", name = "Ab", descriptor = "Lclient!cm;")
 	public static final Class36 aClass36_6 = new Class36();

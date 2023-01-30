@@ -5,10 +5,10 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static216 {
 
 	@OriginalMember(owner = "client!mm", name = "b", descriptor = "Lclient!r;")
-	public static Class197 aClass197_57;
+	public static Js5 aJs5_57;
 
     @OriginalMember(owner = "client!mm", name = "j", descriptor = "Lclient!r;")
-	public static Class197 aClass197_58;
+	public static Js5 aJs5_58;
 
 	@OriginalMember(owner = "client!mm", name = "c", descriptor = "[I")
 	public static final int[] anIntArray231 = new int[3];
@@ -21,14 +21,14 @@ public final class Static216 {
 
 	@OriginalMember(owner = "client!mm", name = "a", descriptor = "(IIII)V")
 	public static void method3773(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		@Pc(8) Class2_Sub2_Sub7 local8 = Static316.method5412(9, arg1);
-		local8.method2311();
+		@Pc(8) DelayedStateChange local8 = Static316.create(9, arg1);
+		local8.pushServer();
 		local8.anInt2289 = arg0;
 		local8.anInt2290 = arg2;
 	}
 
 	@OriginalMember(owner = "client!mm", name = "a", descriptor = "(ILclient!nk;ILclient!wm;IILclient!kf;II)V")
-	public static void method3775(@OriginalArg(0) int arg0, @OriginalArg(1) Class161 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class19 arg3, @OriginalArg(4) int arg4, @OriginalArg(6) Class78 arg5, @OriginalArg(7) int arg6, @OriginalArg(8) int arg7) {
+	public static void method3775(@OriginalArg(0) int arg0, @OriginalArg(1) Component arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class19 arg3, @OriginalArg(4) int arg4, @OriginalArg(6) Class78 arg5, @OriginalArg(7) int arg6, @OriginalArg(8) int arg7) {
 		@Pc(14) Class164 local14 = Static236.aClass125_1.method3378(arg2);
 		if (local14 == null || !local14.aBoolean304 || !local14.method4179(Static214.aClass226_1)) {
 			return;
@@ -44,13 +44,13 @@ public final class Static216 {
 					local44 = (int) Static277.aFloat67 + Static6.anInt158 & 0x3FFF;
 				}
 				@Pc(58) int local58 = Class19.anIntArray178[local44];
-				@Pc(62) int local62 = Class19.anIntArray177[local44];
+				@Pc(62) int local62 = Class19.COSINE[local44];
 				if (Static314.anInt5911 != 4) {
 					local62 = local62 * 256 / (Static97.anInt2005 + 256);
 					local58 = local58 * 256 / (Static97.anInt2005 + 256);
 				}
-				local32[local34 * 2] = ((local14.anIntArray290[local34 * 2] * 4 + arg6) * local62 + (local14.anIntArray290[local34 * 2 + 1] * 4 + arg4) * local58 >> 15) + arg1.anInt4248 / 2 + arg0;
-				local32[local34 * 2 + 1] = arg7 + arg1.anInt4261 / 2 - (local62 * (arg4 + local14.anIntArray290[local34 * 2 + 1] * 4) - (local14.anIntArray290[local34 * 2] * 4 + arg6) * local58 >> 15);
+				local32[local34 * 2] = ((local14.anIntArray290[local34 * 2] * 4 + arg6) * local62 + (local14.anIntArray290[local34 * 2 + 1] * 4 + arg4) * local58 >> 15) + arg1.width / 2 + arg0;
+				local32[local34 * 2 + 1] = arg7 + arg1.height / 2 - (local62 * (arg4 + local14.anIntArray290[local34 * 2 + 1] * 4) - (local14.anIntArray290[local34 * 2] * 4 + arg6) * local58 >> 15);
 			}
 			Static293.method5046(arg3, local32, local14.anInt4414, arg1.anIntArray282, arg1.anIntArray280);
 			for (local44 = 0; local44 < local32.length / 2 - 1; local44++) {
@@ -93,7 +93,7 @@ public final class Static216 {
 			if (Static237.anIntArray283[local7] >= -10) {
 				@Pc(90) Class247 local90 = Static196.aClass247Array2[local7];
 				if (local90 == null) {
-					local90 = Static408.method6434(Static85.aClass197_21, Static256.anIntArray321[local7], 0);
+					local90 = Static408.method6434(Static85.aJs5_21, Static256.anIntArray321[local7], 0);
 					if (local90 == null) {
 						continue;
 					}
@@ -106,15 +106,15 @@ public final class Static216 {
 						local143 = Static218.aClass177_Sub1_2.anInt4888 * Static223.anIntArray256[local7] >> 8;
 					} else {
 						@Pc(133) int local133 = Static162.anIntArray188[local7] >> 24 & 0x3;
-						if (Static17.aClass11_Sub5_Sub2_Sub1_3.aByte78 == local133) {
+						if (Static17.self.aByte78 == local133) {
 							@Pc(153) int local153 = (Static162.anIntArray188[local7] & 0xFF) * 128;
 							@Pc(161) int local161 = Static162.anIntArray188[local7] >> 16 & 0xFF;
-							@Pc(171) int local171 = local161 * 128 + 64 - Static17.aClass11_Sub5_Sub2_Sub1_3.anInt6781;
+							@Pc(171) int local171 = local161 * 128 + 64 - Static17.self.xFine;
 							if (local171 < 0) {
 								local171 = -local171;
 							}
 							@Pc(187) int local187 = Static162.anIntArray188[local7] >> 8 & 0xFF;
-							@Pc(197) int local197 = local187 * 128 + 64 - Static17.aClass11_Sub5_Sub2_Sub1_3.anInt6783;
+							@Pc(197) int local197 = local187 * 128 + 64 - Static17.self.zFine;
 							if (local197 < 0) {
 								local197 = -local197;
 							}
@@ -154,7 +154,7 @@ public final class Static216 {
 		}
 		if (Static393.aBoolean486 && !Static64.method1704()) {
 			if (Static218.aClass177_Sub1_2.musicVolume != 0 && Static171.anInt3268 != -1) {
-				Static94.method2042(Static218.aClass177_Sub1_2.musicVolume, Static171.anInt3268, Static101.aClass197_23);
+				Static94.method2042(Static218.aClass177_Sub1_2.musicVolume, Static171.anInt3268, Static101.aJs5_23);
 			}
 			Static393.aBoolean486 = false;
 		} else if (Static218.aClass177_Sub1_2.musicVolume != 0 && Static171.anInt3268 != -1 && !Static64.method1704()) {
@@ -166,7 +166,7 @@ public final class Static216 {
 
 	@OriginalMember(owner = "client!mm", name = "a", descriptor = "(II)V")
 	public static void method3777(@OriginalArg(1) int arg0) {
-		@Pc(12) Class2_Sub2_Sub7 local12 = Static316.method5412(7, arg0);
-		local12.method2312();
+		@Pc(12) DelayedStateChange local12 = Static316.create(7, arg0);
+		local12.pushClient();
 	}
 }

@@ -14,7 +14,7 @@ public final class Static337 {
 	public static int anInt6317;
 
 	@OriginalMember(owner = "client!tk", name = "b", descriptor = "Lclient!ld;")
-	public static Class135 aClass135_37 = new Class135();
+	public static LinkedList aLinkedList_37 = new LinkedList();
 
 	@OriginalMember(owner = "client!tk", name = "a", descriptor = "(IILclient!jc;III)V")
 	public static void method5705(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Class2_Sub19 arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
@@ -52,7 +52,7 @@ public final class Static337 {
 		if (arg2.aClass2_Sub12_Sub4_3 != null) {
 			arg2.aClass2_Sub12_Sub4_3.method4978(local140);
 		} else if (arg2.anInt2894 >= 0) {
-			@Pc(155) Class247 local155 = Static408.method6434(Static85.aClass197_21, arg2.anInt2894, 0);
+			@Pc(155) Class247 local155 = Static408.method6434(Static85.aJs5_21, arg2.anInt2894, 0);
 			if (local155 != null) {
 				@Pc(162) Class2_Sub21_Sub1 local162 = local155.method6433().method3178(Static300.aClass249_1);
 				@Pc(167) Class2_Sub12_Sub4 local167 = Static405.method5005(local162, local140);
@@ -69,7 +69,7 @@ public final class Static337 {
 			arg2.aClass2_Sub12_Sub4_2 = null;
 		} else if (arg2.anIntArray181 != null && (arg2.anInt2907 -= arg0) <= 0) {
 			@Pc(204) int local204 = (int) ((double) arg2.anIntArray181.length * Math.random());
-			@Pc(212) Class247 local212 = Static408.method6434(Static85.aClass197_21, arg2.anIntArray181[local204], 0);
+			@Pc(212) Class247 local212 = Static408.method6434(Static85.aJs5_21, arg2.anIntArray181[local204], 0);
 			if (local212 != null) {
 				@Pc(219) Class2_Sub21_Sub1 local219 = local212.method6433().method3178(Static300.aClass249_1);
 				@Pc(224) Class2_Sub12_Sub4 local224 = Static405.method5005(local219, local140);
@@ -93,7 +93,7 @@ public final class Static337 {
 				arg0.anInt4592 = 1;
 				arg0.anInt4598 = 0;
 				arg0.anInt4624 = 0;
-				Static1.method4(local18, arg0 == Static17.aClass11_Sub5_Sub2_Sub1_3, arg0.aByte78, arg0.anInt6781, arg0.anInt6783, arg0.anInt4607);
+				Static1.method4(local18, arg0 == Static17.self, arg0.aByte78, arg0.xFine, arg0.zFine, arg0.anInt4607);
 			}
 			if (local21 == 2) {
 				arg0.anInt4598 = 0;
@@ -107,7 +107,7 @@ public final class Static337 {
 			arg0.anInt4592 = 1;
 			arg0.anInt4607 = 0;
 			if (arg0.anInt4597 != -1) {
-				Static1.method4(Static39.aClass85_1.method2371(arg0.anInt4597), arg0 == Static17.aClass11_Sub5_Sub2_Sub1_3, arg0.aByte78, arg0.anInt6781, arg0.anInt6783, arg0.anInt4607);
+				Static1.method4(Static39.aClass85_1.method2371(arg0.anInt4597), arg0 == Static17.self, arg0.aByte78, arg0.xFine, arg0.zFine, arg0.anInt4607);
 			}
 		}
 	}

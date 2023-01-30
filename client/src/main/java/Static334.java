@@ -7,7 +7,7 @@ public final class Static334 {
 	public static int anInt6242;
 
 	@OriginalMember(owner = "client!th", name = "t", descriptor = "[I")
-	public static int[] anIntArray424;
+	public static int[] normalizedX;
 
 	@OriginalMember(owner = "client!th", name = "F", descriptor = "Lclient!h;")
 	public static Class89 aClass89_222;

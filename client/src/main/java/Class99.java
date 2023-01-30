@@ -10,10 +10,10 @@ public final class Class99 implements Interface2 {
 	private final Class116 aClass116_4 = new Class116(256);
 
 	@OriginalMember(owner = "client!ia", name = "j", descriptor = "Lclient!r;")
-	private final Class197 aClass197_36;
+	private final Js5 aJs5_36;
 
 	@OriginalMember(owner = "client!ia", name = "l", descriptor = "Lclient!r;")
-	private final Class197 aClass197_38;
+	private final Js5 aJs5_38;
 
 	@OriginalMember(owner = "client!ia", name = "m", descriptor = "[Lclient!uc;")
 	private final Class229[] aClass229Array1;
@@ -23,9 +23,9 @@ public final class Class99 implements Interface2 {
 	}
 
 	@OriginalMember(owner = "client!ia", name = "<init>", descriptor = "(Lclient!r;Lclient!r;Lclient!r;)V")
-	public Class99(@OriginalArg(0) Class197 arg0, @OriginalArg(1) Class197 arg1, @OriginalArg(2) Class197 arg2) {
-		this.aClass197_36 = arg2;
-		this.aClass197_38 = arg1;
+	public Class99(@OriginalArg(0) Js5 arg0, @OriginalArg(1) Js5 arg1, @OriginalArg(2) Js5 arg2) {
+		this.aJs5_36 = arg2;
+		this.aJs5_38 = arg1;
 		@Pc(24) Buffer local24 = new Buffer(arg0.fetchFile(0, 0));
 		@Pc(28) int local28 = local24.g2();
 		this.aClass229Array1 = new Class229[local28];
@@ -124,14 +124,14 @@ public final class Class99 implements Interface2 {
 	@OriginalMember(owner = "client!ia", name = "a", descriptor = "(FIIZII)[I")
 	@Override
 	public int[] method2656(@OriginalArg(0) float arg0, @OriginalArg(2) int arg1, @OriginalArg(4) int arg2, @OriginalArg(5) int arg3) {
-		return this.method2664(arg3).method4959(this, this.aClass197_36, (double) arg0, this.aClass229Array1[arg3].aBoolean443, arg2, arg1);
+		return this.method2664(arg3).method4959(this, this.aJs5_36, (double) arg0, this.aClass229Array1[arg3].aBoolean443, arg2, arg1);
 	}
 
 	@OriginalMember(owner = "client!ia", name = "a", descriptor = "(II)Z")
 	@Override
 	public boolean method2657(@OriginalArg(1) int arg0) {
 		@Pc(13) Class2_Sub2_Sub14 local13 = this.method2664(arg0);
-		return local13 != null && local13.method4956(this, this.aClass197_36);
+		return local13 != null && local13.method4956(this, this.aJs5_36);
 	}
 
 	@OriginalMember(owner = "client!ia", name = "c", descriptor = "(II)Lclient!qm;")
@@ -140,7 +140,7 @@ public final class Class99 implements Interface2 {
 		if (local15 != null) {
 			return (Class2_Sub2_Sub14) local15;
 		}
-		@Pc(26) byte[] local26 = this.aClass197_38.method5081(arg0);
+		@Pc(26) byte[] local26 = this.aJs5_38.method5081(arg0);
 		if (local26 == null) {
 			return null;
 		} else {
@@ -159,12 +159,12 @@ public final class Class99 implements Interface2 {
 	@OriginalMember(owner = "client!ia", name = "a", descriptor = "(BZIIFI)[F")
 	@Override
 	public float[] method2660(@OriginalArg(2) int arg0, @OriginalArg(3) int arg1, @OriginalArg(4) float arg2, @OriginalArg(5) int arg3) {
-		return this.method2664(arg0).method4955(this.aClass197_36, this, this.aClass229Array1[arg0].aBoolean443, arg1, arg3);
+		return this.method2664(arg0).method4955(this.aJs5_36, this, this.aClass229Array1[arg0].aBoolean443, arg1, arg3);
 	}
 
 	@OriginalMember(owner = "client!ia", name = "a", descriptor = "(IZIIFI)[I")
 	@Override
 	public int[] method2659(@OriginalArg(0) int arg0, @OriginalArg(1) boolean arg1, @OriginalArg(3) int arg2, @OriginalArg(4) float arg3, @OriginalArg(5) int arg4) {
-		return this.method2664(arg0).method4957(this.aClass229Array1[arg0].aBoolean443, (double) arg3, arg4, arg2, this.aClass197_36, arg1, this);
+		return this.method2664(arg0).method4957(this.aClass229Array1[arg0].aBoolean443, (double) arg3, arg4, arg2, this.aJs5_36, arg1, this);
 	}
 }

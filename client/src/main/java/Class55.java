@@ -14,10 +14,10 @@ public final class Class55 {
 	private final SoftLruHashTable aSoftLruHashTable_7 = new SoftLruHashTable(64);
 
 	@OriginalMember(owner = "client!e", name = "g", descriptor = "Lclient!r;")
-	private final Class197 aClass197_17;
+	private final Js5 aJs5_17;
 
 	@OriginalMember(owner = "client!e", name = "f", descriptor = "Lclient!r;")
-	public final Class197 aClass197_16;
+	public final Js5 aJs5_16;
 
 	static {
 		for (@Pc(6) int local6 = 0; local6 < 100; local6++) {
@@ -26,10 +26,10 @@ public final class Class55 {
 	}
 
 	@OriginalMember(owner = "client!e", name = "<init>", descriptor = "(Lclient!dn;ILclient!r;Lclient!r;)V")
-	public Class55(@OriginalArg(0) Class50 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Class197 arg2, @OriginalArg(3) Class197 arg3) {
-		this.aClass197_17 = arg2;
-		this.aClass197_16 = arg3;
-		this.aClass197_17.method5080(3);
+	public Class55(@OriginalArg(0) Class50 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5 arg2, @OriginalArg(3) Js5 arg3) {
+		this.aJs5_17 = arg2;
+		this.aJs5_16 = arg3;
+		this.aJs5_17.method5080(3);
 	}
 
 	@OriginalMember(owner = "client!e", name = "a", descriptor = "(B)V")
@@ -53,12 +53,12 @@ public final class Class55 {
 		@Pc(6) SoftLruHashTable local6 = this.aSoftLruHashTable_7;
 		@Pc(16) Class80 local16;
 		synchronized (this.aSoftLruHashTable_7) {
-			local16 = (Class80) this.aSoftLruHashTable_7.method2612((long) arg0);
+			local16 = (Class80) this.aSoftLruHashTable_7.get((long) arg0);
 		}
 		if (local16 != null) {
 			return local16;
 		}
-		@Pc(33) byte[] local33 = this.aClass197_17.fetchFile(3, arg0);
+		@Pc(33) byte[] local33 = this.aJs5_17.fetchFile(3, arg0);
 		local16 = new Class80();
 		local16.aClass55_2 = this;
 		if (local33 != null) {
@@ -66,7 +66,7 @@ public final class Class55 {
 		}
 		@Pc(57) SoftLruHashTable local57 = this.aSoftLruHashTable_7;
 		synchronized (this.aSoftLruHashTable_7) {
-			this.aSoftLruHashTable_7.method2624((long) arg0, local16);
+			this.aSoftLruHashTable_7.put((long) arg0, local16);
 			return local16;
 		}
 	}

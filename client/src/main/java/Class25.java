@@ -23,5 +23,5 @@ public abstract class Class25 {
 	public abstract int method887(@OriginalArg(0) int arg0);
 
 	@OriginalMember(owner = "client!di", name = "b", descriptor = "(II)[B")
-	public abstract byte[] method889(@OriginalArg(0) int arg0);
+	public abstract byte[] fetchGroup(@OriginalArg(0) int group);
 }

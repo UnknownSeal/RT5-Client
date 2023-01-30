@@ -11,7 +11,7 @@ public final class Static277 {
 	public static int clientVersion;
 
 	@OriginalMember(owner = "client!q", name = "h", descriptor = "Lclient!ld;")
-	public static final Class135 aClass135_31 = new Class135();
+	public static final LinkedList A_LINKED_LIST___31 = new LinkedList();
 
 	@OriginalMember(owner = "client!q", name = "o", descriptor = "[I")
 	public static final int[] anIntArray361 = new int[250];
@@ -21,8 +21,8 @@ public final class Static277 {
 
 	@OriginalMember(owner = "client!q", name = "a", descriptor = "(IIIIB)V")
 	public static void method4679(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
-		@Pc(12) Class2_Sub2_Sub7 local12 = Static316.method5412(8, arg2);
-		local12.method2311();
+		@Pc(12) DelayedStateChange local12 = Static316.create(8, arg2);
+		local12.pushServer();
 		local12.anInt2289 = arg1;
 		local12.anInt2284 = arg3;
 		local12.anInt2290 = arg0;
@@ -30,7 +30,7 @@ public final class Static277 {
 
 	@OriginalMember(owner = "client!q", name = "a", descriptor = "(IIILjava/lang/String;I)V")
 	public static void method4680(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) String arg2, @OriginalArg(4) int arg3) {
-		@Pc(8) Class161 local8 = Static207.method3704(arg0, arg3);
+		@Pc(8) Component local8 = Static207.method3704(arg0, arg3);
 		if (local8 == null) {
 			return;
 		}
@@ -38,9 +38,9 @@ public final class Static277 {
 			@Pc(18) Class2_Sub13 local18 = new Class2_Sub13();
 			local18.anObjectArray4 = local8.anObjectArray27;
 			local18.anInt2118 = arg1;
-			local18.aClass161_3 = local8;
+			local18.aComponent_3 = local8;
 			local18.aString20 = arg2;
-			Static198.method3590(local18);
+			ScriptRunner.method3590(local18);
 		}
 		@Pc(35) boolean local35 = true;
 		if (local8.anInt4273 != 0) {
@@ -109,8 +109,8 @@ public final class Static277 {
 			@Pc(86) int local86 = arg0.anInt4588 * 128 + arg0.method4327() * 64;
 			@Pc(97) int local97 = arg0.anInt4577 * 128 + arg0.method4327() * 64;
 			@Pc(109) int local109 = arg0.anInt4599 * 128 + arg0.method4327() * 64;
-			arg0.anInt6781 = ((local57 - local63) * local75 + local63 * local97) / local57;
-			arg0.anInt6783 = ((local57 - local63) * local86 + local63 * local109) / local57;
+			arg0.xFine = ((local57 - local63) * local75 + local63 * local97) / local57;
+			arg0.zFine = ((local57 - local63) * local86 + local63 * local109) / local57;
 		}
 		arg0.anInt4641 = 0;
 		if (arg0.anInt4614 == 0) {

@@ -92,15 +92,15 @@ public final class Static376 {
 
 	@OriginalMember(owner = "client!vt", name = "a", descriptor = "(IIIII)V")
 	public static void method6286(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(4) int arg3) {
-		@Pc(8) Class2_Sub2_Sub7 local8 = Static316.method5412(10, arg0);
-		local8.method2311();
+		@Pc(8) DelayedStateChange local8 = Static316.create(10, arg0);
+		local8.pushServer();
 		local8.anInt2290 = arg3;
 		local8.anInt2284 = arg1;
 		local8.anInt2289 = arg2;
 	}
 
 	@OriginalMember(owner = "client!vt", name = "a", descriptor = "(Lclient!kf;IIILclient!jd;ILclient!nk;B)V")
-	public static void renderDot(@OriginalArg(0) Class78 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) Class13 arg4, @OriginalArg(5) int arg5, @OriginalArg(6) Class161 arg6) {
+	public static void renderDot(@OriginalArg(0) Class78 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) Class13 arg4, @OriginalArg(5) int arg5, @OriginalArg(6) Component arg6) {
 		if (arg4 == null) {
 			return;
 		}
@@ -110,19 +110,19 @@ public final class Static376 {
 		} else {
 			local16 = Static6.anInt158 + (int) Static277.aFloat67 & 0x3FFF;
 		}
-		@Pc(37) int local37 = Math.max(arg6.anInt4248 / 2, arg6.anInt4261 / 2) + 10;
+		@Pc(37) int local37 = Math.max(arg6.width / 2, arg6.height / 2) + 10;
 		@Pc(45) int local45 = arg3 * arg3 + arg1 * arg1;
 		if (local45 > local37 * local37) {
 			return;
 		}
 		@Pc(63) int local63 = Class19.anIntArray178[local16];
-		@Pc(67) int local67 = Class19.anIntArray177[local16];
+		@Pc(67) int local67 = Class19.COSINE[local16];
 		if (Static314.anInt5911 != 4) {
 			local67 = local67 * 256 / (Static97.anInt2005 + 256);
 			local63 = local63 * 256 / (Static97.anInt2005 + 256);
 		}
 		@Pc(97) int local97 = local63 * arg3 + local67 * arg1 >> 15;
 		@Pc(107) int local107 = local67 * arg3 - local63 * arg1 >> 15;
-		arg4.method6382(local97 + arg2 + arg6.anInt4248 / 2 - arg4.method6398() / 2, -local107 + arg6.anInt4261 / 2 + arg5 + -(arg4.method6383() / 2), arg0, arg2, arg5);
+		arg4.method6382(local97 + arg2 + arg6.width / 2 - arg4.method6398() / 2, -local107 + arg6.height / 2 + arg5 + -(arg4.method6383() / 2), arg0, arg2, arg5);
 	}
 }

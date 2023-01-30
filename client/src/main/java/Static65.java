@@ -36,8 +36,8 @@ public final class Static65 {
 	}
 
 	@OriginalMember(owner = "client!dq", name = "a", descriptor = "(IILclient!nk;I)V")
-	public static void method1735(@OriginalArg(0) int arg0, @OriginalArg(2) Class161 arg1, @OriginalArg(3) int arg2) {
-		Static164.aClass161_5 = arg1;
+	public static void method1735(@OriginalArg(0) int arg0, @OriginalArg(2) Component arg1, @OriginalArg(3) int arg2) {
+		Static164.aComponent_5 = arg1;
 		Static129.anInt2460 = arg0;
 		Static288.anInt5464 = arg2;
 	}

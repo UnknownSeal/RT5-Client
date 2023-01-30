@@ -9,7 +9,7 @@ public final class Static355 {
 	public static int anInt6585;
 
 	@OriginalMember(owner = "client!uo", name = "u", descriptor = "I")
-	public static int anInt6581 = 0;
+	public static int loadPercentage = 0;
 
 	@OriginalMember(owner = "client!uo", name = "J", descriptor = "[I")
 	public static final int[] anIntArray457 = new int[] { 7, 8, 9, 10, 11, 12, 13, 15 };

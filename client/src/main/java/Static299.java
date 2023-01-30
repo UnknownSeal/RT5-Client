@@ -3,7 +3,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class Static299 {
 
 	@OriginalMember(owner = "client!rf", name = "S", descriptor = "I")
-	public static int anInt5643;
+	public static int size;
 
 	@OriginalMember(owner = "client!rf", name = "db", descriptor = "I")
 	public static int anInt5653;

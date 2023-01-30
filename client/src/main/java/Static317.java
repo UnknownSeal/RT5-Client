@@ -8,7 +8,7 @@ public final class Static317 {
 	public static float aFloat74;
 
 	@OriginalMember(owner = "client!sh", name = "d", descriptor = "Lclient!rn;")
-	public static Class205 aClass205_6;
+	public static BufferedFile aBufferedFile_6;
 
 	@OriginalMember(owner = "client!sh", name = "a", descriptor = "(Lclient!mr;BZ)V")
 	public static void method5547(@OriginalArg(0) Class11_Sub5_Sub2 arg0, @OriginalArg(2) boolean arg1) {
@@ -52,8 +52,8 @@ public final class Static317 {
 				}
 			}
 		}
-		@Pc(154) int local154 = arg0.anInt6781;
-		@Pc(157) int local157 = arg0.anInt6783;
+		@Pc(154) int local154 = arg0.xFine;
+		@Pc(157) int local157 = arg0.zFine;
 		@Pc(174) int local174 = arg0.anIntArray316[arg0.movementQueueSize - 1] * 128 + arg0.method4327() * 64;
 		@Pc(191) int local191 = arg0.anIntArray317[arg0.movementQueueSize - 1] * 128 + arg0.method4327() * 64;
 		if (local174 > local154) {
@@ -79,8 +79,8 @@ public final class Static317 {
 		}
 		@Pc(289) byte local289 = arg0.aByteArray51[arg0.movementQueueSize - 1];
 		if (!arg1 && (local174 - local154 > 256 || local174 - local154 < -256 || local191 - local157 > 256 || local191 - local157 < -256)) {
-			arg0.anInt6783 = local191;
-			arg0.anInt6781 = local174;
+			arg0.zFine = local191;
+			arg0.xFine = local174;
 			arg0.method4329(arg0.anInt4616);
 			arg0.movementQueueSize--;
 			Static170.anInt3229 = -1;
@@ -129,8 +129,8 @@ public final class Static317 {
 			local354 <<= 0x7;
 			if (arg0.movementQueueSize == 1) {
 				local396 = arg0.anInt4640 * arg0.anInt4640;
-				@Pc(554) int local554 = (local174 >= arg0.anInt6781 ? local174 - arg0.anInt6781 : -local174 + arg0.anInt6781) << 7;
-				@Pc(572) int local572 = (arg0.anInt6783 <= local191 ? local191 - arg0.anInt6783 : -local191 + arg0.anInt6783) << 7;
+				@Pc(554) int local554 = (local174 >= arg0.xFine ? local174 - arg0.xFine : -local174 + arg0.xFine) << 7;
+				@Pc(572) int local572 = (arg0.zFine <= local191 ? local191 - arg0.zFine : -local191 + arg0.zFine) << 7;
 				@Pc(583) int local583 = local572 < local554 ? local554 : local572;
 				@Pc(590) int local590 = local9.anInt6274 * 2 * local583;
 				if (local396 > local590) {
@@ -164,28 +164,28 @@ public final class Static317 {
 		}
 		if (local154 < local174) {
 			Static16.anInt4756 |= 0x4;
-			arg0.anInt6781 += local354;
-			if (local174 < arg0.anInt6781) {
-				arg0.anInt6781 = local174;
+			arg0.xFine += local354;
+			if (local174 < arg0.xFine) {
+				arg0.xFine = local174;
 			}
 		} else if (local174 < local154) {
 			Static16.anInt4756 |= 0x8;
-			arg0.anInt6781 -= local354;
-			if (local174 > arg0.anInt6781) {
-				arg0.anInt6781 = local174;
+			arg0.xFine -= local354;
+			if (local174 > arg0.xFine) {
+				arg0.xFine = local174;
 			}
 		}
 		if (local157 < local191) {
-			arg0.anInt6783 += local354;
+			arg0.zFine += local354;
 			Static16.anInt4756 |= 0x1;
-			if (local191 < arg0.anInt6783) {
-				arg0.anInt6783 = local191;
+			if (local191 < arg0.zFine) {
+				arg0.zFine = local191;
 			}
 		} else if (local157 > local191) {
 			Static16.anInt4756 |= 0x2;
-			arg0.anInt6783 -= local354;
-			if (local191 > arg0.anInt6783) {
-				arg0.anInt6783 = local191;
+			arg0.zFine -= local354;
+			if (local191 > arg0.zFine) {
+				arg0.zFine = local191;
 			}
 		}
 		if (local354 < 8) {
@@ -193,7 +193,7 @@ public final class Static317 {
 		} else {
 			Static170.anInt3229 = 2;
 		}
-		if (local174 != arg0.anInt6781 || local191 != arg0.anInt6783) {
+		if (local174 != arg0.xFine || local191 != arg0.zFine) {
 			return;
 		}
 		arg0.movementQueueSize--;
@@ -217,56 +217,29 @@ public final class Static317 {
 	}
 
 	@OriginalMember(owner = "client!sh", name = "a", descriptor = "(Lclient!bt;I)V")
-	public static void method5550(@OriginalArg(0) Buffer arg0) {
-		@Pc(9) int local9 = arg0.gsmarts();
-		Static363.aClass124Array1 = new Class124[local9];
-		for (@Pc(22) int local22 = 0; local22 < local9; local22++) {
-			Static363.aClass124Array1[local22] = new Class124();
-			Static363.aClass124Array1[local22].anInt3405 = arg0.gsmarts();
-			Static363.aClass124Array1[local22].aString28 = arg0.gjstr2();
+	public static void decodeWorlds(@OriginalArg(0) Buffer buffer) {
+		@Pc(9) int countryCount = buffer.gsmarts();
+		Static363.countries = new Country[countryCount];
+		for (@Pc(22) int i = 0; i < countryCount; i++) {
+			Static363.countries[i] = new Country();
+			Static363.countries[i].flag = buffer.gsmarts();
+			Static363.countries[i].name = buffer.gjstr2();
 		}
-		Static375.anInt7042 = arg0.gsmarts();
-		Static312.anInt5843 = arg0.gsmarts();
-		Static299.anInt5643 = arg0.gsmarts();
-		Static295.aClass3_Sub1Array1 = new Class3_Sub1[Static312.anInt5843 + 1 - Static375.anInt7042];
-		for (@Pc(70) int local70 = 0; local70 < Static299.anInt5643; local70++) {
-			@Pc(76) int local76 = arg0.gsmarts();
-			@Pc(84) Class3_Sub1 local84 = Static295.aClass3_Sub1Array1[local76] = new Class3_Sub1();
-			local84.anInt76 = arg0.g1();
-			local84.anInt74 = arg0.mg4();
-			local84.anInt81 = local76 + Static375.anInt7042;
-			local84.aString1 = arg0.gjstr2();
-			local84.aString2 = arg0.gjstr2();
+		Static375.minID = buffer.gsmarts();
+		Static312.maxID = buffer.gsmarts();
+		Static299.size = buffer.gsmarts();
+		Static295.worlds = new World[Static312.maxID + 1 - Static375.minID];
+		for (@Pc(70) int i = 0; i < Static299.size; i++) {
+			@Pc(76) int offset = buffer.gsmarts();
+			@Pc(84) World world = Static295.worlds[offset] = new World();
+			world.country = buffer.g1();
+			world.flags = buffer.mg4();
+			world.worldID = Static375.minID + offset;
+			world.activity = buffer.gjstr2();
+			world.hostname = buffer.gjstr2();
 		}
-		Static361.anInt6767 = arg0.mg4();
+		Static361.anInt6767 = buffer.mg4();
 		Static70.aBoolean130 = true;
 	}
 
-	@OriginalMember(owner = "client!sh", name = "a", descriptor = "(Lclient!r;Ljava/lang/String;ZI)Lclient!ih;")
-	public static Class103 method5551(@OriginalArg(0) Class197 arg0, @OriginalArg(1) String arg1, @OriginalArg(2) boolean arg2) {
-		@Pc(10) int local10 = arg0.getGroupID(arg1);
-		if (local10 == -1) {
-			return new Class103(0);
-		}
-		@Pc(28) int[] local28 = arg0.method5076(local10);
-		@Pc(34) Class103 local34 = new Class103(local28.length);
-		@Pc(36) int local36 = 0;
-		@Pc(38) int local38 = 0;
-		while (true) {
-			while (local36 < local34.anInt2702) {
-				@Pc(52) Buffer local52 = new Buffer(arg0.fetchFile(local10, local28[local38++]));
-				@Pc(58) int local58 = local52.mg4();
-				@Pc(62) int local62 = local52.g2();
-				@Pc(66) int local66 = local52.g1();
-				if (!arg2 && local66 == 1) {
-					local34.anInt2702--;
-				} else {
-					local34.anIntArray170[local36] = local58;
-					local34.anIntArray171[local36] = local62;
-					local36++;
-				}
-			}
-			return local34;
-		}
-	}
 }

@@ -247,27 +247,27 @@ public abstract class Class11_Sub5_Sub2 extends Class11_Sub5 {
 		@Pc(11) int local11 = super.aShort103 + super.aShort104 >> 1;
 		@Pc(19) int local19 = super.aShort102 + super.aShort101 >> 1;
 		@Pc(23) int local23 = Class19.anIntArray178[arg2];
-		@Pc(27) int local27 = Class19.anIntArray177[arg2];
+		@Pc(27) int local27 = Class19.COSINE[arg2];
 		@Pc(38) int local38 = -arg1 / 2;
 		@Pc(43) int local43 = -arg0 / 2;
 		@Pc(53) int local53 = local38 * local27 + local43 * local23 >> 15;
 		@Pc(64) int local64 = local43 * local27 - local23 * local38 >> 15;
-		@Pc(79) int local79 = Static210.method3718(local19, super.aByte78, local11, local53 + super.anInt6781, local64 + super.anInt6783);
+		@Pc(79) int local79 = Static210.method3718(local19, super.aByte78, local11, local53 + super.xFine, local64 + super.zFine);
 		@Pc(83) int local83 = arg1 / 2;
 		@Pc(88) int local88 = -arg0 / 2;
 		@Pc(98) int local98 = local83 * local27 + local88 * local23 >> 15;
 		@Pc(109) int local109 = local27 * local88 - local83 * local23 >> 15;
-		@Pc(125) int local125 = Static210.method3718(local19, super.aByte78, local11, super.anInt6781 + local98, local109 + super.anInt6783);
+		@Pc(125) int local125 = Static210.method3718(local19, super.aByte78, local11, super.xFine + local98, local109 + super.zFine);
 		@Pc(130) int local130 = -arg1 / 2;
 		@Pc(134) int local134 = arg0 / 2;
 		@Pc(145) int local145 = local134 * local23 + local27 * local130 >> 15;
 		@Pc(155) int local155 = local134 * local27 - local130 * local23 >> 15;
-		@Pc(172) int local172 = Static210.method3718(local19, super.aByte78, local11, super.anInt6781 + local145, super.anInt6783 - -local155);
+		@Pc(172) int local172 = Static210.method3718(local19, super.aByte78, local11, super.xFine + local145, super.zFine - -local155);
 		@Pc(176) int local176 = arg1 / 2;
 		@Pc(180) int local180 = arg0 / 2;
 		@Pc(190) int local190 = local27 * local176 + local180 * local23 >> 15;
 		@Pc(201) int local201 = local180 * local27 - local176 * local23 >> 15;
-		@Pc(218) int local218 = Static210.method3718(local19, super.aByte78, local11, super.anInt6781 + local190, super.anInt6783 - -local201);
+		@Pc(218) int local218 = Static210.method3718(local19, super.aByte78, local11, super.xFine + local190, super.zFine - -local201);
 		@Pc(225) int local225 = local79 >= local125 ? local125 : local79;
 		@Pc(236) int local236 = local218 <= local172 ? local218 : local172;
 		@Pc(243) int local243 = local218 > local125 ? local125 : local218;
@@ -285,10 +285,10 @@ public abstract class Class11_Sub5_Sub2 extends Class11_Sub5 {
 	@Override
 	public final void method6077() {
 		@Pc(12) int local12 = (this.size - 1) * 64 + 60;
-		super.aShort101 = (short) (super.anInt6783 - local12 >> 7);
-		super.aShort102 = (short) (local12 + super.anInt6783 >> 7);
-		super.aShort103 = (short) (super.anInt6781 - local12 >> 7);
-		super.aShort104 = (short) (super.anInt6781 + local12 >> 7);
+		super.aShort101 = (short) (super.zFine - local12 >> 7);
+		super.aShort102 = (short) (local12 + super.zFine >> 7);
+		super.aShort103 = (short) (super.xFine - local12 >> 7);
+		super.aShort104 = (short) (super.xFine + local12 >> 7);
 		if (this.aBoolean318) {
 			@Pc(65) int local65 = this.aClass248_7.method6440();
 			if (local65 > 1024 && local65 < 7168) {

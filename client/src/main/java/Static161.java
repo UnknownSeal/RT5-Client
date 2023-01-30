@@ -22,7 +22,7 @@ public final class Static161 {
 
 	@OriginalMember(owner = "client!jg", name = "b", descriptor = "(B)V")
 	public static void method2968() {
-		Static119.A_SOFT_LRU_HASH_TABLE___16.method2614();
+		Static119.types.method2614();
 	}
 
 	@OriginalMember(owner = "client!jg", name = "a", descriptor = "([BI)[B")
@@ -260,7 +260,7 @@ public final class Static161 {
 					return;
 				}
 				local76 = Static146.method2698(arg0.substring(6));
-				if (local76 >= 0 && local76 <= Static289.method5018(Static309.anInt5802)) {
+				if (local76 >= 0 && local76 <= Static289.method5018(GameShell.maxMemory)) {
 					Static218.aClass177_Sub1_2.anInt4883 = local76;
 					Static218.aClass177_Sub1_2.method4496(GameShell.signlink);
 					Static236.sentToServer = false;
@@ -334,16 +334,16 @@ public final class Static161 {
 				return;
 			}
 			if (arg0.equalsIgnoreCase("getcgcoord")) {
-				Static158.method2939("x:" + (Static17.aClass11_Sub5_Sub2_Sub1_3.anInt6781 >> 7) + " z:" + (Static17.aClass11_Sub5_Sub2_Sub1_3.anInt6783 >> 7));
+				Static158.method2939("x:" + (Static17.self.xFine >> 7) + " z:" + (Static17.self.zFine >> 7));
 				return;
 			}
 			if (arg0.equalsIgnoreCase("getheight")) {
-				Static158.method2939("Height: " + Static365.aClass6Array4[Static17.aClass11_Sub5_Sub2_Sub1_3.aByte78].method5718(Static17.aClass11_Sub5_Sub2_Sub1_3.anInt6781 >> 7, Static17.aClass11_Sub5_Sub2_Sub1_3.anInt6783 >> 7));
+				Static158.method2939("Height: " + Static365.aClass6Array4[Static17.self.aByte78].method5718(Static17.self.xFine >> 7, Static17.self.zFine >> 7));
 				return;
 			}
 			if (arg0.equalsIgnoreCase("resetminimap")) {
-				Static30.aClass197_5.method5089();
-				Static30.aClass197_5.method5067();
+				Static30.aJs5_5.method5089();
+				Static30.aJs5_5.method5067();
 				Static320.aClass104_2.method2707();
 				Static236.aClass125_1.method3379();
 				Static247.method4298();
@@ -374,8 +374,8 @@ public final class Static161 {
 				return;
 			}
 			if (arg0.equalsIgnoreCase("getcamerapos")) {
-				Static158.method2939("Pos: " + Static17.aClass11_Sub5_Sub2_Sub1_3.aByte78 + "," + (Static164.originX + (Static136.anInt6778 >> 7) >> 6) + "," + ((Static211.anInt3777 >> 7) + Static148.originZ >> 6) + "," + (Static164.originX + (Static136.anInt6778 >> 7) & 0x3F) + "," + (Static148.originZ + (Static211.anInt3777 >> 7) & 0x3F) + " Height: " + (Static386.method6031(Static136.anInt6778, Static211.anInt3777, Static17.aClass11_Sub5_Sub2_Sub1_3.aByte78) - Static102.anInt3592));
-				Static158.method2939("Look: " + Static17.aClass11_Sub5_Sub2_Sub1_3.aByte78 + "," + (Static164.originX + Static254.anInt4698 >> 6) + "," + (Static123.anInt2420 + Static148.originZ >> 6) + "," + (Static254.anInt4698 + Static164.originX & 0x3F) + "," + (Static148.originZ + Static123.anInt2420 & 0x3F) + " Height: " + (Static386.method6031(Static254.anInt4698, Static123.anInt2420, Static17.aClass11_Sub5_Sub2_Sub1_3.aByte78) - Static57.anInt1464));
+				Static158.method2939("Pos: " + Static17.self.aByte78 + "," + (Static164.originX + (Static136.anInt6778 >> 7) >> 6) + "," + ((Static211.anInt3777 >> 7) + Static148.originZ >> 6) + "," + (Static164.originX + (Static136.anInt6778 >> 7) & 0x3F) + "," + (Static148.originZ + (Static211.anInt3777 >> 7) & 0x3F) + " Height: " + (Static386.method6031(Static136.anInt6778, Static211.anInt3777, Static17.self.aByte78) - Static102.anInt3592));
+				Static158.method2939("Look: " + Static17.self.aByte78 + "," + (Static164.originX + Static254.anInt4698 >> 6) + "," + (Static123.anInt2420 + Static148.originZ >> 6) + "," + (Static254.anInt4698 + Static164.originX & 0x3F) + "," + (Static148.originZ + Static123.anInt2420 & 0x3F) + " Height: " + (Static386.method6031(Static254.anInt4698, Static123.anInt2420, Static17.self.aByte78) - Static57.anInt1464));
 				return;
 			}
 			if (arg0.equals("showocc")) {
@@ -408,7 +408,7 @@ public final class Static161 {
 				return;
 			}
 			if (arg0.equals("heap")) {
-				Static158.method2939("Heap: " + Static309.anInt5802 + "MB");
+				Static158.method2939("Heap: " + GameShell.maxMemory + "MB");
 				return;
 			}
 			if (arg0.equals("savevarcs")) {

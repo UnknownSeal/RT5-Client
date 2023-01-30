@@ -8,14 +8,14 @@ public final class Static24 {
 	public static Class42 aClass42_2;
 
 	@OriginalMember(owner = "client!bh", name = "o", descriptor = "I")
-	public static int anInt638;
+	public static int height;
 
 	@OriginalMember(owner = "client!bh", name = "u", descriptor = "I")
 	public static int anInt642 = 0;
 
 	@OriginalMember(owner = "client!bh", name = "a", descriptor = "(ILclient!nk;)V")
-	public static void method852(@OriginalArg(1) Class161 arg0) {
-		if (arg0.anInt4272 == 5 && arg0.anInt4300 != -1) {
+	public static void method852(@OriginalArg(1) Component arg0) {
+		if (arg0.type == 5 && arg0.anInt4300 != -1) {
 			Static46.method1422(Static190.aClass19_8, arg0);
 		}
 	}

@@ -20,7 +20,7 @@ public final class Static134 {
 	public static final LocalisedText A_TRANSLATABLE_STRING___59 = new LocalisedText("Loaded wordpack", "Wordpack geladen.", "Module texte chargé", "Pacote de palavras carregado");
 
 	@OriginalMember(owner = "client!hn", name = "a", descriptor = "(BLclient!r;)I")
-	public static int method2509(@OriginalArg(1) Class197 arg0) {
+	public static int method2509(@OriginalArg(1) Js5 arg0) {
 		@Pc(5) int local5 = 0;
 		if (arg0.method5086(Static373.anInt7028)) {
 			local5++;

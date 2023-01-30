@@ -85,7 +85,7 @@ public final class Class12_Sub8 extends Class12 {
 	public final Class12_Sub5 aClass12_Sub5_6;
 
 	@OriginalMember(owner = "client!th", name = "P", descriptor = "Lclient!uo;")
-	public Class235 aClass235_1;
+	public ParticleEmitterType type;
 
 	@OriginalMember(owner = "client!th", name = "v", descriptor = "Lclient!cm;")
 	public final Class36 aClass36_8;
@@ -99,9 +99,9 @@ public final class Class12_Sub8 extends Class12 {
 		this.aClass114_2 = arg1;
 		this.aLong198 = arg3;
 		this.aClass12_Sub5_6 = arg2;
-		this.aClass235_1 = Static330.method5654(this.aClass114_2.anInt2930);
-		if (!arg0.method2813() && this.aClass235_1.anInt6608 != -1) {
-			this.aClass235_1 = Static330.method5654(this.aClass235_1.anInt6608);
+		this.type = Static330.method5654(this.aClass114_2.anInt2930);
+		if (!arg0.method2813() && this.type.softwareID != -1) {
+			this.type = Static330.method5654(this.type.softwareID);
 		}
 		this.aClass36_8 = new Class36();
 		this.anInt6244 = (int) ((double) this.anInt6244 + Math.random() * 64.0D);
@@ -113,28 +113,28 @@ public final class Class12_Sub8 extends Class12 {
 		@Pc(54) int local54;
 		if (this.aBoolean422) {
 			arg3 = false;
-		} else if (this.aClass235_1.anInt6578 > Static153.anInt2794) {
+		} else if (this.type.anInt6578 > Static153.anInt2794) {
 			arg3 = false;
 		} else if (Static336.anInt6313 > Static360.anIntArray421[Static153.anInt2794]) {
 			arg3 = false;
 		} else if (this.aBoolean423) {
 			arg3 = false;
-		} else if (this.aClass235_1.anInt6601 != -1) {
+		} else if (this.type.anInt6601 != -1) {
 			local54 = (int) (arg0 - this.aLong198);
-			if (this.aClass235_1.aBoolean451 || local54 <= this.aClass235_1.anInt6601) {
-				local54 %= this.aClass235_1.anInt6601;
+			if (this.type.aBoolean451 || local54 <= this.type.anInt6601) {
+				local54 %= this.type.anInt6601;
 			} else {
 				arg3 = false;
 			}
-			if (!this.aClass235_1.aBoolean454 && local54 < this.aClass235_1.anInt6597) {
+			if (!this.type.aBoolean454 && local54 < this.type.anInt6597) {
 				arg3 = false;
 			}
-			if (this.aClass235_1.aBoolean454 && this.aClass235_1.anInt6597 <= local54) {
+			if (this.type.aBoolean454 && this.type.anInt6597 <= local54) {
 				arg3 = false;
 			}
 		}
 		if (arg3) {
-			this.anInt6244 += (int) (((double) this.aClass235_1.anInt6566 + (double) (this.aClass235_1.anInt6573 - this.aClass235_1.anInt6566) * Math.random()) * (double) arg2);
+			this.anInt6244 += (int) (((double) this.type.anInt6566 + (double) (this.type.anInt6573 - this.type.anInt6566) * Math.random()) * (double) arg2);
 			if (this.anInt6244 > 63) {
 				local54 = this.anInt6244 >> 6;
 				this.anInt6244 &= 0x3F;
@@ -148,7 +148,7 @@ public final class Class12_Sub8 extends Class12 {
 					@Pc(189) int local189;
 					@Pc(197) int local197;
 					@Pc(201) int local201;
-					if (this.aClass235_1.aShort95 <= 0 && this.aClass235_1.aShort96 <= 0) {
+					if (this.type.aShort95 <= 0 && this.type.aShort96 <= 0) {
 						local207 = this.anInt6239;
 						local217 = this.anInt6246;
 						local213 = this.anInt6256;
@@ -156,11 +156,11 @@ public final class Class12_Sub8 extends Class12 {
 						local167 = (int) (Math.random() * (double) this.anInt6250) + this.anInt6247;
 						@Pc(171) int local171 = local167 & 0x3FFF;
 						local175 = Class19.anIntArray178[local171];
-						local179 = Class19.anIntArray177[local171];
+						local179 = Class19.COSINE[local171];
 						local189 = (int) ((double) this.anInt6237 * Math.random()) + this.anInt6260;
 						@Pc(193) int local193 = local189 & 0x1FFF;
 						local197 = Class19.anIntArray178[local193];
-						local201 = Class19.anIntArray177[local193];
+						local201 = Class19.COSINE[local193];
 						local207 = local197 * local179 >> 15;
 						local213 = local197 * local175 >> 15;
 						local217 = local201 * -1;
@@ -175,26 +175,26 @@ public final class Class12_Sub8 extends Class12 {
 					local189 = local167 * this.anInt6249 + this.anInt6259 * local175 + local179 * this.anInt6243 >> 16;
 					local197 = local179 * this.anInt6245 + this.anInt6258 * local167 + local175 * this.anInt6257 >> 16;
 					local201 = local175 * this.anInt6248 + this.anInt6240 * local167 + this.anInt6252 * local179 >> 16;
-					@Pc(334) int local334 = this.aClass235_1.anInt6612 + (int) ((double) (this.aClass235_1.anInt6616 - this.aClass235_1.anInt6612) * Math.random());
-					@Pc(351) int local351 = (int) (Math.random() * (double) (this.aClass235_1.anInt6570 - this.aClass235_1.anInt6586)) + this.aClass235_1.anInt6586;
-					@Pc(368) int local368 = (int) ((double) (this.aClass235_1.anInt6610 - this.aClass235_1.anInt6598) * Math.random()) + this.aClass235_1.anInt6598;
+					@Pc(334) int local334 = this.type.anInt6612 + (int) ((double) (this.type.anInt6616 - this.type.anInt6612) * Math.random());
+					@Pc(351) int local351 = (int) (Math.random() * (double) (this.type.anInt6570 - this.type.anInt6586)) + this.type.anInt6586;
+					@Pc(368) int local368 = (int) ((double) (this.type.anInt6610 - this.type.anInt6598) * Math.random()) + this.type.anInt6598;
 					@Pc(430) int local430;
-					if (this.aClass235_1.aBoolean449) {
+					if (this.type.aBoolean449) {
 						@Pc(434) double local434 = Math.random();
-						local430 = (int) ((double) this.aClass235_1.anInt6615 + Math.random() * (double) this.aClass235_1.anInt6599) << 24 | (int) ((double) this.aClass235_1.anInt6605 + local434 * (double) this.aClass235_1.anInt6583) << 8 | (int) (local434 * (double) this.aClass235_1.anInt6575 + (double) this.aClass235_1.anInt6620) << 16 | (int) (local434 * (double) this.aClass235_1.anInt6582 + (double) this.aClass235_1.anInt6590);
+						local430 = (int) ((double) this.type.anInt6615 + Math.random() * (double) this.type.anInt6599) << 24 | (int) ((double) this.type.anInt6605 + local434 * (double) this.type.anInt6583) << 8 | (int) (local434 * (double) this.type.anInt6575 + (double) this.type.anInt6620) << 16 | (int) (local434 * (double) this.type.anInt6582 + (double) this.type.anInt6590);
 					} else {
-						local430 = (int) ((double) this.aClass235_1.anInt6590 + Math.random() * (double) this.aClass235_1.anInt6582) | (int) ((double) this.aClass235_1.anInt6620 + (double) this.aClass235_1.anInt6575 * Math.random()) << 16 | (int) ((double) this.aClass235_1.anInt6605 + Math.random() * (double) this.aClass235_1.anInt6583) << 8 | (int) ((double) this.aClass235_1.anInt6615 + (double) this.aClass235_1.anInt6599 * Math.random()) << 24;
+						local430 = (int) ((double) this.type.anInt6590 + Math.random() * (double) this.type.anInt6582) | (int) ((double) this.type.anInt6620 + (double) this.type.anInt6575 * Math.random()) << 16 | (int) ((double) this.type.anInt6605 + Math.random() * (double) this.type.anInt6583) << 8 | (int) ((double) this.type.anInt6615 + (double) this.type.anInt6599 * Math.random()) << 24;
 					}
-					@Pc(496) int local496 = this.aClass235_1.anInt6576;
-					if (!arg1.method2813() && !this.aClass235_1.aBoolean453) {
+					@Pc(496) int local496 = this.type.texture;
+					if (!arg1.method2813() && !this.type.aBoolean453) {
 						local496 = -1;
 					}
 					if (Static82.anInt1835 == Static146.anInt2706) {
-						new Class12_Sub1_Sub1_Sub1(this, local189, local197, local201, local207, local217, local213, local334, local351, local430, local368, local496, this.aClass235_1.aBoolean452, this.aClass235_1.aBoolean450);
+						new Class12_Sub1_Sub1_Sub1(this, local189, local197, local201, local207, local217, local213, local334, local351, local430, local368, local496, this.type.aBoolean452, this.type.aBoolean450);
 					} else {
 						@Pc(536) Class12_Sub1_Sub1_Sub1 local536 = Static98.aClass12_Sub1_Sub1_Sub1Array1[Static146.anInt2706];
 						Static146.anInt2706 = Static146.anInt2706 + 1 & 0x3FF;
-						local536.method4217(this, local189, local197, local201, local207, local217, local213, local334, local351, local430, local368, local496, this.aClass235_1.aBoolean452, this.aClass235_1.aBoolean450);
+						local536.method4217(this, local189, local197, local201, local207, local217, local213, local334, local351, local430, local368, local496, this.type.aBoolean452, this.type.aBoolean450);
 					}
 				}
 			}
@@ -260,14 +260,14 @@ public final class Class12_Sub8 extends Class12 {
 		this.anInt6246 = this.anInt6246 * 32767 / local299;
 		this.anInt6256 = this.anInt6256 * 32767 / local299;
 		this.anInt6239 = this.anInt6239 * 32767 / local299;
-		if (this.aClass235_1.aShort95 <= 0 && this.aClass235_1.aShort96 <= 0) {
+		if (this.type.aShort95 <= 0 && this.type.aShort96 <= 0) {
 			return;
 		}
 		@Pc(355) int local355 = (int) (Math.atan2((double) this.anInt6256, (double) this.anInt6239) * 2607.5945876176133D);
 		@Pc(376) int local376 = (int) (Math.atan2((double) this.anInt6246, Math.sqrt((double) (this.anInt6256 * this.anInt6256 + this.anInt6239 * this.anInt6239))) * 2607.5945876176133D);
-		this.anInt6250 = this.aClass235_1.aShort95 - this.aClass235_1.aShort93;
-		this.anInt6247 = this.aClass235_1.aShort93 + local355 - (this.anInt6250 >> 1);
-		this.anInt6237 = this.aClass235_1.aShort96 - this.aClass235_1.aShort94;
-		this.anInt6260 = local376 + this.aClass235_1.aShort94 - (this.anInt6237 >> 1);
+		this.anInt6250 = this.type.aShort95 - this.type.aShort93;
+		this.anInt6247 = this.type.aShort93 + local355 - (this.anInt6250 >> 1);
+		this.anInt6237 = this.type.aShort96 - this.type.aShort94;
+		this.anInt6260 = local376 + this.type.aShort94 - (this.anInt6237 >> 1);
 	}
 }

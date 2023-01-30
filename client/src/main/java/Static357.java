@@ -15,9 +15,6 @@ public final class Static357 {
 	@OriginalMember(owner = "client!uq", name = "gb", descriptor = "Lclient!gd;")
 	public static final LocalisedText A_TRANSLATABLE_STRING___138 = new LocalisedText("Started 3d Library", "3D-Softwarebibliothek gestartet.", "Librairie 3D démarrée", "Biblioteca 3D iniciada");
 
-	@OriginalMember(owner = "client!uq", name = "hb", descriptor = "[J")
-	public static final long[] aLongArray12 = new long[32];
-
 	@OriginalMember(owner = "client!uq", name = "ib", descriptor = "I")
 	public static int anInt6683 = 0;
 

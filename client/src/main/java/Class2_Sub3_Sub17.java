@@ -26,7 +26,7 @@ public final class Class2_Sub3_Sub17 extends TextureOp {
 
 	@OriginalMember(owner = "client!jl", name = "a", descriptor = "(ILclient!bt;I)V")
 	@Override
-	public void method6483(@OriginalArg(0) int arg0, @OriginalArg(1) Buffer arg1) {
+	public void decode(@OriginalArg(0) int arg0, @OriginalArg(1) Buffer arg1) {
 		if (arg0 == 0) {
 			this.anInt3132 = arg1.g1();
 		} else if (arg0 == 1) {
@@ -38,19 +38,19 @@ public final class Class2_Sub3_Sub17 extends TextureOp {
 
 	@OriginalMember(owner = "client!jl", name = "d", descriptor = "(I)V")
 	@Override
-	public void method6479() {
+	public void postDecode() {
 		TextureOp.createTrigonometryTables();
 	}
 
 	@OriginalMember(owner = "client!jl", name = "a", descriptor = "(BI)[I")
 	@Override
 	public int[] getMonochromeOutput(@OriginalArg(1) int y) {
-		@Pc(16) int[] local16 = super.aClass158_41.method3995(y);
-		if (super.aClass158_41.aBoolean265) {
-			@Pc(24) int local24 = Static16.anIntArray322[y];
+		@Pc(16) int[] local16 = super.monochromeImageCache.get(y);
+		if (super.monochromeImageCache.invalid) {
+			@Pc(24) int local24 = Static16.normalizedY[y];
 			@Pc(30) int local30 = local24 - 2048 >> 1;
-			for (@Pc(32) int local32 = 0; local32 < Static227.anInt4036; local32++) {
-				@Pc(38) int local38 = Static334.anIntArray424[local32];
+			for (@Pc(32) int local32 = 0; local32 < Static227.width; local32++) {
+				@Pc(38) int local38 = Static334.normalizedX[local32];
 				@Pc(44) int local44 = local38 - 2048 >> 1;
 				@Pc(58) int local58;
 				if (this.anInt3132 == 0) {

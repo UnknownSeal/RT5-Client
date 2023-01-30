@@ -45,8 +45,8 @@ public final class Class2_Sub3_Sub6 extends TextureOp {
 	@OriginalMember(owner = "client!ch", name = "a", descriptor = "(BI)[I")
 	@Override
 	public int[] getMonochromeOutput(@OriginalArg(1) int y) {
-		@Pc(9) int[] local9 = super.aClass158_41.method3995(y);
-		if (super.aClass158_41.aBoolean265) {
+		@Pc(9) int[] local9 = super.monochromeImageCache.get(y);
+		if (super.monochromeImageCache.invalid) {
 			this.method1308(local9, y);
 		}
 		return local9;
@@ -54,7 +54,7 @@ public final class Class2_Sub3_Sub6 extends TextureOp {
 
 	@OriginalMember(owner = "client!ch", name = "d", descriptor = "(I)V")
 	@Override
-	public void method6479() {
+	public void postDecode() {
 		this.aByteArray12 = Static116.method2364(this.anInt1045);
 		this.method1309();
 		for (@Pc(23) int local23 = this.anInt1043 - 1; local23 >= 1; local23--) {
@@ -112,7 +112,7 @@ public final class Class2_Sub3_Sub6 extends TextureOp {
 
 	@OriginalMember(owner = "client!ch", name = "a", descriptor = "(ILclient!bt;I)V")
 	@Override
-	public void method6483(@OriginalArg(0) int arg0, @OriginalArg(1) Buffer arg1) {
+	public void decode(@OriginalArg(0) int arg0, @OriginalArg(1) Buffer arg1) {
 		if (arg0 == 0) {
 			this.aBoolean85 = arg1.g1() == 1;
 		} else if (arg0 == 1) {
@@ -143,7 +143,7 @@ public final class Class2_Sub3_Sub6 extends TextureOp {
 
 	@OriginalMember(owner = "client!ch", name = "a", descriptor = "([III)V")
 	public void method1308(@OriginalArg(0) int[] arg0, @OriginalArg(2) int arg1) {
-		@Pc(12) int local12 = this.anInt1050 * Static16.anIntArray322[arg1];
+		@Pc(12) int local12 = this.anInt1050 * Static16.normalizedY[arg1];
 		@Pc(116) int local116;
 		@Pc(130) int local130;
 		@Pc(46) int local46;
@@ -173,15 +173,15 @@ public final class Class2_Sub3_Sub6 extends TextureOp {
 			local87 = Class187.anIntArray360[local379];
 			local105 = this.aByteArray12[local74 & 0xFF] & 0xFF;
 			if (this.aBoolean85) {
-				for (local107 = 0; local107 < Static227.anInt4036; local107++) {
-					local116 = this.anInt1051 * Static334.anIntArray424[local107];
+				for (local107 = 0; local107 < Static227.width; local107++) {
+					local116 = this.anInt1051 * Static334.normalizedX[local107];
 					local130 = this.method1307(local379, local66, local105, local96, local87, local116 * local46 >> 12);
 					@Pc(478) int local478 = local29 * local130 >> 12;
 					arg0[local107] = (local478 >> 1) + 2048;
 				}
 			} else {
-				for (local107 = 0; local107 < Static227.anInt4036; local107++) {
-					local116 = this.anInt1051 * Static334.anIntArray424[local107];
+				for (local107 = 0; local107 < Static227.width; local107++) {
+					local116 = this.anInt1051 * Static334.normalizedX[local107];
 					local130 = this.method1307(local379, local66, local105, local96, local87, local46 * local116 >> 12);
 					arg0[local107] = local130 * local29 >> 12;
 				}
@@ -203,8 +203,8 @@ public final class Class2_Sub3_Sub6 extends TextureOp {
 			local87 = Class187.anIntArray360[local59];
 			local96 = this.aByteArray12[local70 & 0xFF] & 0xFF;
 			local105 = this.aByteArray12[local74 & 0xFF] & 0xFF;
-			for (local107 = 0; local107 < Static227.anInt4036; local107++) {
-				local116 = this.anInt1051 * Static334.anIntArray424[local107];
+			for (local107 = 0; local107 < Static227.width; local107++) {
+				local116 = this.anInt1051 * Static334.normalizedX[local107];
 				local130 = this.method1307(local59, local66, local105, local96, local87, local46 * local116 >> 12);
 				arg0[local107] = local130 * local29 >> 12;
 			}
@@ -226,15 +226,15 @@ public final class Class2_Sub3_Sub6 extends TextureOp {
 				local96 = this.aByteArray12[local70 & 0xFF] & 0xFF;
 				local105 = this.aByteArray12[local74 & 0xFF] & 0xFF;
 				if (this.aBoolean85 && local148 == this.anInt1043 - 1) {
-					for (local107 = 0; local107 < Static227.anInt4036; local107++) {
-						local116 = this.anInt1051 * Static334.anIntArray424[local107];
+					for (local107 = 0; local107 < Static227.width; local107++) {
+						local116 = this.anInt1051 * Static334.normalizedX[local107];
 						local130 = this.method1307(local59, local66, local105, local96, local87, local116 * local46 >> 12);
 						local130 = arg0[local107] + (local29 * local130 >> 12);
 						arg0[local107] = (local130 >> 1) + 2048;
 					}
 				} else {
-					for (local107 = 0; local107 < Static227.anInt4036; local107++) {
-						local116 = Static334.anIntArray424[local107] * this.anInt1051;
+					for (local107 = 0; local107 < Static227.width; local107++) {
+						local116 = Static334.normalizedX[local107] * this.anInt1051;
 						local130 = this.method1307(local59, local66, local105, local96, local87, local116 * local46 >> 12);
 						arg0[local107] += local130 * local29 >> 12;
 					}

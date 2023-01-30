@@ -40,7 +40,7 @@ public final class Class2_Sub2_Sub17 extends SecondaryNode {
 	public final String aString67;
 
 	@OriginalMember(owner = "client!vj", name = "H", descriptor = "Lclient!ld;")
-	public final Class135 aClass135_41;
+	public final LinkedList aLinkedList_41;
 
 	@OriginalMember(owner = "client!vj", name = "<init>", descriptor = "(ILjava/lang/String;Ljava/lang/String;IIZII)V")
 	public Class2_Sub2_Sub17(@OriginalArg(0) int arg0, @OriginalArg(1) String arg1, @OriginalArg(2) String arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) boolean arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7) {
@@ -54,12 +54,12 @@ public final class Class2_Sub2_Sub17 extends SecondaryNode {
 		if (this.anInt6875 == 255) {
 			this.anInt6875 = 0;
 		}
-		this.aClass135_41 = new Class135();
+		this.aLinkedList_41 = new LinkedList();
 	}
 
 	@OriginalMember(owner = "client!vj", name = "a", descriptor = "(II[III)Z")
 	public boolean method6144(@OriginalArg(0) int arg0, @OriginalArg(2) int[] arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {
-		for (@Pc(17) Class2_Sub31 local17 = (Class2_Sub31) this.aClass135_41.method3550(); local17 != null; local17 = (Class2_Sub31) this.aClass135_41.method3551()) {
+		for (@Pc(17) Class2_Sub31 local17 = (Class2_Sub31) this.aLinkedList_41.method3550(); local17 != null; local17 = (Class2_Sub31) this.aLinkedList_41.method3551()) {
 			if (local17.method5062(arg0, arg3, arg2)) {
 				local17.method5058(arg3, arg1, arg2);
 				return true;
@@ -70,7 +70,7 @@ public final class Class2_Sub2_Sub17 extends SecondaryNode {
 
 	@OriginalMember(owner = "client!vj", name = "a", descriptor = "(IBI)Z")
 	public boolean method6146(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
-		for (@Pc(11) Class2_Sub31 local11 = (Class2_Sub31) this.aClass135_41.method3550(); local11 != null; local11 = (Class2_Sub31) this.aClass135_41.method3551()) {
+		for (@Pc(11) Class2_Sub31 local11 = (Class2_Sub31) this.aLinkedList_41.method3550(); local11 != null; local11 = (Class2_Sub31) this.aLinkedList_41.method3551()) {
 			if (local11.method5065(arg0, arg1)) {
 				return true;
 			}
@@ -80,7 +80,7 @@ public final class Class2_Sub2_Sub17 extends SecondaryNode {
 
 	@OriginalMember(owner = "client!vj", name = "a", descriptor = "([IIII)Z")
 	public boolean method6148(@OriginalArg(0) int[] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		for (@Pc(11) Class2_Sub31 local11 = (Class2_Sub31) this.aClass135_41.method3550(); local11 != null; local11 = (Class2_Sub31) this.aClass135_41.method3551()) {
+		for (@Pc(11) Class2_Sub31 local11 = (Class2_Sub31) this.aLinkedList_41.method3550(); local11 != null; local11 = (Class2_Sub31) this.aLinkedList_41.method3551()) {
 			if (local11.method5059(arg1, arg2)) {
 				local11.method5060(arg2, arg0, arg1);
 				return true;
@@ -95,7 +95,7 @@ public final class Class2_Sub2_Sub17 extends SecondaryNode {
 		this.anInt6863 = 12800;
 		this.anInt6868 = 0;
 		this.anInt6874 = 0;
-		for (@Pc(28) Class2_Sub31 local28 = (Class2_Sub31) this.aClass135_41.method3550(); local28 != null; local28 = (Class2_Sub31) this.aClass135_41.method3551()) {
+		for (@Pc(28) Class2_Sub31 local28 = (Class2_Sub31) this.aLinkedList_41.method3550(); local28 != null; local28 = (Class2_Sub31) this.aLinkedList_41.method3551()) {
 			if (this.anInt6874 < local28.anInt5537) {
 				this.anInt6874 = local28.anInt5537;
 			}
@@ -113,7 +113,7 @@ public final class Class2_Sub2_Sub17 extends SecondaryNode {
 
 	@OriginalMember(owner = "client!vj", name = "a", descriptor = "(ZII[I)Z")
 	public boolean method6150(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int[] arg2) {
-		for (@Pc(16) Class2_Sub31 local16 = (Class2_Sub31) this.aClass135_41.method3550(); local16 != null; local16 = (Class2_Sub31) this.aClass135_41.method3551()) {
+		for (@Pc(16) Class2_Sub31 local16 = (Class2_Sub31) this.aLinkedList_41.method3550(); local16 != null; local16 = (Class2_Sub31) this.aLinkedList_41.method3551()) {
 			if (local16.method5065(arg1, arg0)) {
 				local16.method5058(arg1, arg2, arg0);
 				return true;

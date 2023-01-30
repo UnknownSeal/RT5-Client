@@ -13,16 +13,16 @@ public final class Class125 {
 	public SoftLruHashTable aSoftLruHashTable_27 = new SoftLruHashTable(64);
 
 	@OriginalMember(owner = "client!ki", name = "b", descriptor = "Lclient!r;")
-	private final Class197 aClass197_49;
+	private final Js5 aJs5_49;
 
 	@OriginalMember(owner = "client!ki", name = "j", descriptor = "Lclient!r;")
-	public final Class197 aClass197_50;
+	public final Js5 aJs5_50;
 
 	@OriginalMember(owner = "client!ki", name = "<init>", descriptor = "(Lclient!dn;ILclient!r;Lclient!r;)V")
-	public Class125(@OriginalArg(0) Class50 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Class197 arg2, @OriginalArg(3) Class197 arg3) {
-		this.aClass197_49 = arg2;
-		this.aClass197_50 = arg3;
-		this.aClass197_49.method5080(36);
+	public Class125(@OriginalArg(0) Class50 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5 arg2, @OriginalArg(3) Js5 arg3) {
+		this.aJs5_49 = arg2;
+		this.aJs5_50 = arg3;
+		this.aJs5_49.method5080(36);
 	}
 
 	@OriginalMember(owner = "client!ki", name = "a", descriptor = "(I)V")
@@ -60,12 +60,12 @@ public final class Class125 {
 		@Pc(6) SoftLruHashTable local6 = this.aSoftLruHashTable_26;
 		@Pc(16) Class164 local16;
 		synchronized (this.aSoftLruHashTable_26) {
-			local16 = (Class164) this.aSoftLruHashTable_26.method2612((long) arg0);
+			local16 = (Class164) this.aSoftLruHashTable_26.get((long) arg0);
 		}
 		if (local16 != null) {
 			return local16;
 		}
-		@Pc(33) byte[] local33 = this.aClass197_49.fetchFile(36, arg0);
+		@Pc(33) byte[] local33 = this.aJs5_49.fetchFile(36, arg0);
 		local16 = new Class164();
 		local16.anInt4430 = arg0;
 		local16.aClass125_2 = this;
@@ -75,7 +75,7 @@ public final class Class125 {
 		local16.method4186();
 		@Pc(65) SoftLruHashTable local65 = this.aSoftLruHashTable_26;
 		synchronized (this.aSoftLruHashTable_26) {
-			this.aSoftLruHashTable_26.method2624((long) arg0, local16);
+			this.aSoftLruHashTable_26.put((long) arg0, local16);
 			return local16;
 		}
 	}

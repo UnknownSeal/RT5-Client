@@ -10,9 +10,6 @@ public final class Static309 {
 	@OriginalMember(owner = "client!rs", name = "g", descriptor = "I")
 	public static int anInt5801 = 0;
 
-	@OriginalMember(owner = "client!rs", name = "h", descriptor = "I")
-	public static int anInt5802 = 64;
-
 	@OriginalMember(owner = "client!rs", name = "a", descriptor = "(III)I")
 	public static int method5276(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
 		@Pc(9) int local9 = arg0 * 57 + arg1;
@@ -33,7 +30,7 @@ public final class Static309 {
 			local24 = Static370.aClass2_Sub24_1.method5241();
 		}
 		Static257.method3926(0, Static172.anInt3299, Static250.anInt4665, 0, 0, local20, Static139.anInt2595, local24, 0);
-		if (Static227.aClass161_11 != null) {
+		if (Static227.aComponent_11 != null) {
 			Static12.method280(local20, local24);
 		}
 	}
@@ -80,7 +77,7 @@ public final class Static309 {
 				}
 			}
 		}
-		if (Static135.method2537(Static17.aClass11_Sub5_Sub2_Sub1_3.aString41).equals(local22)) {
+		if (Static135.method2537(Static17.self.aString41).equals(local22)) {
 			Static207.method3699(Static47.A_TRANSLATABLE_STRING___27.getLocalisedText(client.language));
 		} else {
 			Static91.method1960(Static192.aClass145_139);

@@ -9,7 +9,7 @@ public final class Static288 {
 	public static Class13[] aClass13Array21;
 
 	@OriginalMember(owner = "client!qm", name = "Q", descriptor = "Lclient!r;")
-	public static Class197 js5Archive5;
+	public static Js5 js5Archive5;
 
 	@OriginalMember(owner = "client!qm", name = "J", descriptor = "Lclient!hu;")
 	public static final SoftLruHashTable A_SOFT_LRU_HASH_TABLE___42 = new SoftLruHashTable(4);

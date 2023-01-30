@@ -11,10 +11,10 @@ public final class Static123 {
 	public static int anInt2420;
 
 	@OriginalMember(owner = "client!ha", name = "y", descriptor = "Lclient!r;")
-	public static Class197 aClass197_30;
+	public static Js5 aJs5_30;
 
 	@OriginalMember(owner = "client!ha", name = "z", descriptor = "I")
-	public static final int anInt2421 = -1;
+	public static final int spriteGroupID = -1;
 
 	@OriginalMember(owner = "client!ha", name = "a", descriptor = "(ZIIIIIII)V")
 	public static void method2412(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6) {

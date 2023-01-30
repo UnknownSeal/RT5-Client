@@ -34,14 +34,14 @@ public final class Static157 {
 		for (@Pc(37) int local37 = 0; local37 <= 24; local37++) {
 			@Pc(44) int local44 = local37 * 8192 / 24;
 			@Pc(48) int local48 = Class19.anIntArray178[local44];
-			@Pc(52) int local52 = Class19.anIntArray177[local44];
+			@Pc(52) int local52 = Class19.COSINE[local44];
 			@Pc(61) int local61;
 			@Pc(67) int local67;
 			@Pc(75) int local75;
 			@Pc(83) int local83;
 			for (@Pc(54) int local54 = 1; local54 < 24; local54++) {
 				local61 = local54 * 8192 / 24;
-				local67 = Class19.anIntArray177[local61] >> 8;
+				local67 = Class19.COSINE[local61] >> 8;
 				local75 = Class19.anIntArray178[local61] * local48 >> 23;
 				local83 = Class19.anIntArray178[local61] * local52 >> 23;
 				local8.method4664(local67, local83, -local75);

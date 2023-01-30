@@ -26,7 +26,7 @@ public final class Class2_Sub3_Sub22 extends TextureOp {
 
 	@OriginalMember(owner = "client!na", name = "a", descriptor = "(ILclient!bt;I)V")
 	@Override
-	public void method6483(@OriginalArg(0) int arg0, @OriginalArg(1) Buffer arg1) {
+	public void decode(@OriginalArg(0) int arg0, @OriginalArg(1) Buffer arg1) {
 		if (arg0 == 0) {
 			this.anInt4019 = arg1.g2();
 		} else if (arg0 == 1) {
@@ -38,17 +38,17 @@ public final class Class2_Sub3_Sub22 extends TextureOp {
 
 	@OriginalMember(owner = "client!na", name = "b", descriptor = "(IB)[[I")
 	@Override
-	public int[][] method6478(@OriginalArg(0) int arg0) {
-		@Pc(17) int[][] local17 = super.aClass243_41.method6276(arg0);
-		if (super.aClass243_41.aBoolean478) {
-			@Pc(27) int[][] local27 = this.method6482(0, arg0);
+	public int[][] getColorOutput(@OriginalArg(0) int arg0) {
+		@Pc(17) int[][] local17 = super.colorImageCache.get(arg0);
+		if (super.colorImageCache.invalid) {
+			@Pc(27) int[][] local27 = this.getChildColorOutput(0, arg0);
 			@Pc(31) int[] local31 = local27[0];
 			@Pc(35) int[] local35 = local27[1];
 			@Pc(39) int[] local39 = local27[2];
 			@Pc(43) int[] local43 = local17[0];
 			@Pc(47) int[] local47 = local17[1];
 			@Pc(51) int[] local51 = local17[2];
-			for (@Pc(53) int local53 = 0; local53 < Static227.anInt4036; local53++) {
+			for (@Pc(53) int local53 = 0; local53 < Static227.width; local53++) {
 				@Pc(59) int local59 = local31[local53];
 				@Pc(63) int local63 = local39[local53];
 				@Pc(67) int local67 = local35[local53];

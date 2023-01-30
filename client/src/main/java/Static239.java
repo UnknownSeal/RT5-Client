@@ -18,7 +18,7 @@ public final class Static239 {
 
 	@OriginalMember(owner = "client!nn", name = "a", descriptor = "(IZ)V")
 	public static void method4151(@OriginalArg(1) boolean arg0) {
-		for (@Pc(12) Class2_Sub19 local12 = (Class2_Sub19) Static83.aClass135_14.method3550(); local12 != null; local12 = (Class2_Sub19) Static83.aClass135_14.method3551()) {
+		for (@Pc(12) Class2_Sub19 local12 = (Class2_Sub19) Static83.A_LINKED_LIST___14.method3550(); local12 != null; local12 = (Class2_Sub19) Static83.A_LINKED_LIST___14.method3551()) {
 			if (local12.aClass2_Sub12_Sub4_3 != null) {
 				Static227.aClass2_Sub12_Sub2_2.method2081(local12.aClass2_Sub12_Sub4_3);
 				local12.aClass2_Sub12_Sub4_3 = null;
@@ -32,7 +32,7 @@ public final class Static239 {
 		if (!arg0) {
 			return;
 		}
-		for (@Pc(55) Class2_Sub19 local55 = (Class2_Sub19) Static363.aClass135_39.method3550(); local55 != null; local55 = (Class2_Sub19) Static363.aClass135_39.method3551()) {
+		for (@Pc(55) Class2_Sub19 local55 = (Class2_Sub19) Static363.A_LINKED_LIST___39.method3550(); local55 != null; local55 = (Class2_Sub19) Static363.A_LINKED_LIST___39.method3551()) {
 			if (local55.aClass2_Sub12_Sub4_3 != null) {
 				Static227.aClass2_Sub12_Sub2_2.method2081(local55.aClass2_Sub12_Sub4_3);
 				local55.aClass2_Sub12_Sub4_3 = null;
@@ -50,8 +50,8 @@ public final class Static239 {
 
 	@OriginalMember(owner = "client!nn", name = "a", descriptor = "(Lclient!wm;B)V")
 	public static void method4155(@OriginalArg(0) Class19 arg0) {
-		if (Static17.aClass11_Sub5_Sub2_Sub1_3.aByte78 != Static343.anInt6389 && (Static330.aClass67ArrayArrayArray3 != null && Static49.method1472(arg0, Static17.aClass11_Sub5_Sub2_Sub1_3.aByte78))) {
-			Static343.anInt6389 = Static17.aClass11_Sub5_Sub2_Sub1_3.aByte78;
+		if (Static17.self.aByte78 != Static343.anInt6389 && (Static330.aClass67ArrayArrayArray3 != null && Static49.method1472(arg0, Static17.self.aByte78))) {
+			Static343.anInt6389 = Static17.self.aByte78;
 		}
 	}
 }

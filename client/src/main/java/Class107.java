@@ -22,7 +22,7 @@ public final class Class107 {
 	private final Class53 aClass53_1 = new Class53();
 
 	@OriginalMember(owner = "client!io", name = "e", descriptor = "Lclient!r;")
-	public final Class197 aClass197_41;
+	public final Js5 aJs5_41;
 
 	@OriginalMember(owner = "client!io", name = "f", descriptor = "I")
 	public final int anInt2781;
@@ -31,7 +31,7 @@ public final class Class107 {
 	private final Class18 aClass18_1;
 
 	@OriginalMember(owner = "client!io", name = "r", descriptor = "Lclient!r;")
-	private final Class197 aClass197_42;
+	private final Js5 aJs5_42;
 
 	@OriginalMember(owner = "client!io", name = "o", descriptor = "Z")
 	private boolean allowMembers;
@@ -46,17 +46,17 @@ public final class Class107 {
 	private final String[] aStringArray22;
 
 	@OriginalMember(owner = "client!io", name = "<init>", descriptor = "(Lclient!dn;IZLclient!be;Lclient!r;Lclient!r;)V")
-	public Class107(@OriginalArg(0) Class50 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) boolean arg2, @OriginalArg(3) Class18 arg3, @OriginalArg(4) Class197 arg4, @OriginalArg(5) Class197 arg5) {
-		this.aClass197_41 = arg5;
+	public Class107(@OriginalArg(0) Class50 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) boolean arg2, @OriginalArg(3) Class18 arg3, @OriginalArg(4) Js5 arg4, @OriginalArg(5) Js5 arg5) {
+		this.aJs5_41 = arg5;
 		this.anInt2781 = arg1;
 		this.aClass18_1 = arg3;
-		this.aClass197_42 = arg4;
+		this.aJs5_42 = arg4;
 		this.allowMembers = arg2;
-		if (this.aClass197_42 == null) {
+		if (this.aJs5_42 == null) {
 			this.anInt2779 = 0;
 		} else {
-			@Pc(54) int local54 = this.aClass197_42.method5091() - 1;
-			this.anInt2779 = local54 * 256 + this.aClass197_42.method5080(local54);
+			@Pc(54) int local54 = this.aJs5_42.method5091() - 1;
+			this.anInt2779 = local54 * 256 + this.aJs5_42.method5080(local54);
 		}
 		this.aStringArray21 = new String[] { null, null, Static220.A_TRANSLATABLE_STRING___83.getLocalisedText(this.anInt2781), null, null };
 		this.aStringArray22 = new String[] { null, null, null, null, Static239.A_TRANSLATABLE_STRING___95.getLocalisedText(this.anInt2781) };
@@ -95,12 +95,12 @@ public final class Class107 {
 		@Pc(8) SoftLruHashTable local8 = this.aSoftLruHashTable_21;
 		@Pc(18) ObjType newType;
 		synchronized (this.aSoftLruHashTable_21) {
-			newType = (ObjType) this.aSoftLruHashTable_21.method2612((long) id);
+			newType = (ObjType) this.aSoftLruHashTable_21.get((long) id);
 		}
 		if (newType != null) {
 			return newType;
 		}
-		@Pc(44) byte[] bytes = this.aClass197_42.fetchFile(Static274.method4640(id), Static240.method4178(id));
+		@Pc(44) byte[] bytes = this.aJs5_42.fetchFile(Static274.method4640(id), Static240.method4178(id));
 		newType = new ObjType();
 		newType.anInt5255 = id;
 		newType.aClass107_1 = this;
@@ -140,7 +140,7 @@ public final class Class107 {
 		}
 		@Pc(238) SoftLruHashTable local238 = this.aSoftLruHashTable_21;
 		synchronized (this.aSoftLruHashTable_21) {
-			this.aSoftLruHashTable_21.method2624((long) id, newType);
+			this.aSoftLruHashTable_21.put((long) id, newType);
 			return newType;
 		}
 	}

@@ -41,13 +41,13 @@ public final class Class2_Sub2_Sub13 extends SecondaryNode {
 		}
 		@Pc(34) int local34;
 		if (this.aByteArrayArray11 == null) {
-			if (!Static392.aClass197_97.method5070(this.anInt4499)) {
+			if (!Static392.aJs5_97.isGroupReady(this.anInt4499)) {
 				return false;
 			}
-			@Pc(27) int[] local27 = Static392.aClass197_97.method5076(this.anInt4499);
+			@Pc(27) int[] local27 = Static392.aJs5_97.getFileIDs(this.anInt4499);
 			this.aByteArrayArray11 = new byte[local27.length][];
 			for (local34 = 0; local34 < local27.length; local34++) {
-				this.aByteArrayArray11[local34] = Static392.aClass197_97.fetchFile(this.anInt4499, local27[local34]);
+				this.aByteArrayArray11[local34] = Static392.aJs5_97.fetchFile(this.anInt4499, local27[local34]);
 			}
 		}
 		@Pc(55) boolean local55 = true;
@@ -55,15 +55,15 @@ public final class Class2_Sub2_Sub13 extends SecondaryNode {
 		for (local34 = 0; local34 < this.aByteArrayArray11.length; local34++) {
 			@Pc(64) byte[] local64 = this.aByteArrayArray11[local34];
 			local78 = local64[1] & 0xFF | (local64[0] & 0xFF) << 8;
-			local55 &= Static78.aClass197_89.method5086(local78);
+			local55 &= Static78.aJs5_89.method5086(local78);
 		}
 		if (!local55) {
 			return false;
 		}
-		@Pc(103) Class135 local103 = new Class135();
-		local78 = Static392.aClass197_97.method5080(this.anInt4499);
+		@Pc(103) LinkedList local103 = new LinkedList();
+		local78 = Static392.aJs5_97.method5080(this.anInt4499);
 		this.aClass159Array1 = new Class159[local78];
-		@Pc(119) int[] local119 = Static392.aClass197_97.method5076(this.anInt4499);
+		@Pc(119) int[] local119 = Static392.aJs5_97.getFileIDs(this.anInt4499);
 		for (@Pc(121) int local121 = 0; local121 < local119.length; local121++) {
 			@Pc(128) byte[] local128 = this.aByteArrayArray11[local121];
 			@Pc(142) int local142 = local128[1] & 0xFF | (local128[0] & 0xFF) << 8;
@@ -75,7 +75,7 @@ public final class Class2_Sub2_Sub13 extends SecondaryNode {
 				}
 			}
 			if (local144 == null) {
-				local144 = new Class2_Sub18(local142, Static78.aClass197_89.method5081(local142));
+				local144 = new Class2_Sub18(local142, Static78.aJs5_89.method5081(local142));
 				local103.method3539(local144);
 			}
 			this.aClass159Array1[local119[local121]] = new Class159(local128, local144);

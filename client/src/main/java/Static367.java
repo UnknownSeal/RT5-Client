@@ -13,16 +13,13 @@ public final class Static367 {
 	public static int anInt6879;
 
 	@OriginalMember(owner = "client!vj", name = "ab", descriptor = "Lclient!r;")
-	public static Class197 aClass197_92;
+	public static Js5 aJs5_92;
 
 	@OriginalMember(owner = "client!vj", name = "J", descriptor = "Lclient!eh;")
-	public static final Class2_Sub10 aClass2_Sub10_2 = new Class2_Sub10(0, -1);
+	public static final ServerActiveProperties A_CLASS_2___SUB_10___2 = new ServerActiveProperties(0, -1);
 
 	@OriginalMember(owner = "client!vj", name = "S", descriptor = "I")
 	public static int anInt6876 = 0;
-
-	@OriginalMember(owner = "client!vj", name = "W", descriptor = "Lclient!gd;")
-	public static final LocalisedText A_TRANSLATABLE_STRING___142 = new LocalisedText("rating: ", "Kampfstufe: ", "classement ", "qualificação: ");
 
 	@OriginalMember(owner = "client!vj", name = "a", descriptor = "([Ljava/lang/Object;[JB)V")
 	public static void method6143(@OriginalArg(0) Object[] arg0, @OriginalArg(1) long[] arg1) {

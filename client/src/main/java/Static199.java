@@ -60,10 +60,10 @@ public final class Static199 {
 	@OriginalMember(owner = "client!lm", name = "a", descriptor = "(IIIIIIIII)V")
 	public static void method5245(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6, @OriginalArg(8) int arg7) {
 		if (Static222.method3915(arg3)) {
-			if (Static113.aClass161ArrayArray2[arg3] == null) {
-				Static201.method3652(arg1, -1, Static26.aClass161ArrayArray1[arg3], arg0, arg5, arg6, arg2, arg4, arg7);
+			if (Static113.aComponentArrayArray2[arg3] == null) {
+				Static201.method3652(arg1, -1, Static26.aComponentArrayArray1[arg3], arg0, arg5, arg6, arg2, arg4, arg7);
 			} else {
-				Static201.method3652(arg1, -1, Static113.aClass161ArrayArray2[arg3], arg0, arg5, arg6, arg2, arg4, arg7);
+				Static201.method3652(arg1, -1, Static113.aComponentArrayArray2[arg3], arg0, arg5, arg6, arg2, arg4, arg7);
 			}
 		} else if (arg4 == -1) {
 			for (@Pc(23) int local23 = 0; local23 < 100; local23++) {

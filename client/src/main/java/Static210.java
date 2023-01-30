@@ -68,8 +68,8 @@ public final class Static210 {
 
 	@OriginalMember(owner = "client!mg", name = "b", descriptor = "(I)V")
 	public static void method3719() {
-		Static26.aClass161ArrayArray1 = new Class161[Static283.aClass197_68.method5091()][];
-		Static113.aClass161ArrayArray2 = new Class161[Static283.aClass197_68.method5091()][];
-		Static128.aBooleanArray21 = new boolean[Static283.aClass197_68.method5091()];
+		Static26.aComponentArrayArray1 = new Component[Static283.aJs5_68.method5091()][];
+		Static113.aComponentArrayArray2 = new Component[Static283.aJs5_68.method5091()][];
+		Static128.aBooleanArray21 = new boolean[Static283.aJs5_68.method5091()];
 	}
 }

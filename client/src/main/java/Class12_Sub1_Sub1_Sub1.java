@@ -62,7 +62,7 @@ public final class Class12_Sub1_Sub1_Sub1 extends Class12_Sub1_Sub1 {
 			return;
 		}
 		@Pc(36) Class12_Sub5 local36 = this.aClass12_Sub8_1.aClass12_Sub5_6;
-		@Pc(40) Class235 local40 = this.aClass12_Sub8_1.aClass235_1;
+		@Pc(40) ParticleEmitterType local40 = this.aClass12_Sub8_1.type;
 		@Pc(42) Class6[] local42 = Static365.aClass6Array4;
 		@Pc(50) int local50 = local42[local36.anInt4679].method5718(local4, local9);
 		@Pc(66) int local66;
@@ -174,7 +174,7 @@ public final class Class12_Sub1_Sub1_Sub1 extends Class12_Sub1_Sub1 {
 		@Pc(22) int local22 = super.anInt4470 >> Static111.anInt2254;
 		@Pc(27) int local27 = super.anInt4467 >> Static111.anInt2254;
 		@Pc(31) Class12_Sub5 local31 = this.aClass12_Sub8_1.aClass12_Sub5_6;
-		@Pc(35) Class235 local35 = this.aClass12_Sub8_1.aClass235_1;
+		@Pc(35) ParticleEmitterType local35 = this.aClass12_Sub8_1.type;
 		@Pc(65) int local65;
 		@Pc(82) int local82;
 		@Pc(99) int local99;
@@ -252,10 +252,10 @@ public final class Class12_Sub1_Sub1_Sub1 extends Class12_Sub1_Sub1 {
 		@Pc(501) int local501;
 		@Pc(537) int local537;
 		if (local35.anIntArray456 != null) {
-			@Pc(426) Node local426 = local31.aClass135_29.aClass2_130;
+			@Pc(426) Node local426 = local31.aLinkedList_29.sentinel;
 			for (@Pc(429) Node local429 = local426.next; local429 != local426; local429 = local429.next) {
 				@Pc(433) Class2_Sub2_Sub5 local433 = (Class2_Sub2_Sub5) local429;
-				@Pc(436) Class28 local436 = local433.aClass28_1;
+				@Pc(436) ParticleEffectorType local436 = local433.aParticleEffectorType_1;
 				if (local436.anInt737 != 1) {
 					@Pc(442) boolean local442 = false;
 					for (local444 = 0; local444 < local35.anIntArray456.length; local444++) {
@@ -316,7 +316,7 @@ public final class Class12_Sub1_Sub1_Sub1 extends Class12_Sub1_Sub1 {
 			for (local313 = 0; local313 < local35.anIntArray459.length; local313++) {
 				@Pc(743) Class2_Sub2_Sub5 local743 = (Class2_Sub2_Sub5) Static141.aClass115_1.method2973((long) local35.anIntArray459[local313]);
 				while (local743 != null) {
-					@Pc(747) Class28 local747 = local743.aClass28_1;
+					@Pc(747) ParticleEffectorType local747 = local743.aParticleEffectorType_1;
 					local340 = local17 - local743.anInt1395;
 					@Pc(757) int local757 = local22 - local743.anInt1390;
 					local444 = local27 - local743.anInt1396;
@@ -373,11 +373,11 @@ public final class Class12_Sub1_Sub1_Sub1 extends Class12_Sub1_Sub1 {
 				local35.anIntArray455 = new int[local35.anIntArray458.length];
 				for (local313 = 0; local313 < local35.anIntArray458.length; local313++) {
 					Static314.method5366(local35.anIntArray458[local313]);
-					local35.anIntArray455[local313] = ((IntNode) Static7.aClass4_151.method90((long) local35.anIntArray458[local313])).value;
+					local35.anIntArray455[local313] = ((IntNode) Static7.aClass4_151.get((long) local35.anIntArray458[local313])).value;
 				}
 			}
 			for (local313 = 0; local313 < local35.anIntArray455.length; local313++) {
-				@Pc(1082) Class28 local1082 = Static278.aClass28Array1[local35.anIntArray455[local313]];
+				@Pc(1082) ParticleEffectorType local1082 = Static278.A_PARTICLE_EFFECTOR_TYPE_ARRAY_1[local35.anIntArray455[local313]];
 				if (local1082.anInt743 == 0) {
 					local65 += local1082.anInt754 * arg1;
 					local82 += local1082.anInt748 * arg1;

@@ -100,7 +100,7 @@ public final class NpcType {
 	public boolean aBoolean148 = false;
 
 	@OriginalMember(owner = "client!fk", name = "G", descriptor = "I")
-	public int attackcursor = -1;
+	public int cursor = -1;
 
 	@OriginalMember(owner = "client!fk", name = "E", descriptor = "I")
 	public int soundradius = 0;
@@ -124,7 +124,7 @@ public final class NpcType {
 	public int walksound = -1;
 
 	@OriginalMember(owner = "client!fk", name = "fb", descriptor = "I")
-	public int vislevel = -1;
+	public int combatLevel = -1;
 
 	@OriginalMember(owner = "client!fk", name = "gb", descriptor = "Z")
 	public boolean minimapdisplay = true;
@@ -311,7 +311,7 @@ public final class NpcType {
 		@Pc(520) SoftLruHashTable local520 = this.aClass219_2.aSoftLruHashTable_54;
 		@Pc(537) Model local537;
 		synchronized (this.aClass219_2.aSoftLruHashTable_54) {
-			local537 = (Model) this.aClass219_2.aSoftLruHashTable_54.method2612((long) (this.anInt2048 | arg3.anInt2836 << 16));
+			local537 = (Model) this.aClass219_2.aSoftLruHashTable_54.get((long) (this.anInt2048 | arg3.anInt2836 << 16));
 		}
 		if (local537 == null || (local537.method3826() & local37) != local37) {
 			if (local537 != null) {
@@ -319,15 +319,15 @@ public final class NpcType {
 			}
 			local359 = local37;
 			@Pc(566) boolean local566 = false;
-			@Pc(570) Class197 local570 = this.aClass219_2.aClass197_88;
+			@Pc(570) Js5 local570 = this.aClass219_2.aJs5_88;
 			@Pc(574) int i;
-			synchronized (this.aClass219_2.aClass197_88) {
+			synchronized (this.aClass219_2.aJs5_88) {
 				i = 0;
 				while (true) {
 					if (i >= this.modelids.length) {
 						break;
 					}
-					if (this.modelids[i] != -1 && !this.aClass219_2.aClass197_88.method5087(0, this.modelids[i])) {
+					if (this.modelids[i] != -1 && !this.aClass219_2.aJs5_88.method5087(0, this.modelids[i])) {
 						local566 = true;
 					}
 					i++;
@@ -339,9 +339,9 @@ public final class NpcType {
 			@Pc(621) Class185[] models = new Class185[this.modelids.length];
 			for (i = 0; i < this.modelids.length; i++) {
 				if (this.modelids[i] != -1) {
-					@Pc(636) Class197 local636 = this.aClass219_2.aClass197_88;
-					synchronized (this.aClass219_2.aClass197_88) {
-						models[i] = Static298.method2426(this.aClass219_2.aClass197_88, this.modelids[i]);
+					@Pc(636) Js5 local636 = this.aClass219_2.aJs5_88;
+					synchronized (this.aClass219_2.aJs5_88) {
+						models[i] = Static298.method2426(this.aClass219_2.aJs5_88, this.modelids[i]);
 					}
 					if (this.modeloffsets != null && this.modeloffsets[i] != null && models[i] != null) {
 						models[i].translate(this.modeloffsets[i][0], this.modeloffsets[i][2], this.modeloffsets[i][1]);
@@ -373,11 +373,11 @@ public final class NpcType {
 								local805[14] = -local756;
 								local805[13] = -local749;
 							} else {
-								@Pc(821) int local821 = Class19.anIntArray177[local765];
+								@Pc(821) int local821 = Class19.COSINE[local765];
 								@Pc(825) int local825 = Class19.anIntArray178[local765];
-								@Pc(829) int local829 = Class19.anIntArray177[local774];
+								@Pc(829) int local829 = Class19.COSINE[local774];
 								@Pc(833) int local833 = Class19.anIntArray178[local774];
-								@Pc(837) int local837 = Class19.anIntArray177[local783];
+								@Pc(837) int local837 = Class19.COSINE[local783];
 								@Pc(841) int local841 = Class19.anIntArray178[local783];
 								@Pc(849) int local849 = local825 * local837 + 16384 >> 15;
 								@Pc(857) int local857 = local841 * local825 + 16384 >> 15;
@@ -437,7 +437,7 @@ public final class NpcType {
 			local537.method3813(local37);
 			@Pc(1272) SoftLruHashTable local1272 = this.aClass219_2.aSoftLruHashTable_54;
 			synchronized (this.aClass219_2.aSoftLruHashTable_54) {
-				this.aClass219_2.aSoftLruHashTable_54.method2624((long) (arg3.anInt2836 << 16 | this.anInt2048), local537);
+				this.aClass219_2.aSoftLruHashTable_54.put((long) (arg3.anInt2836 << 16 | this.anInt2048), local537);
 			}
 		}
 		@Pc(1300) Model local1300 = local537.method3799((byte) 4, local37, true);
@@ -487,7 +487,7 @@ public final class NpcType {
 			@Pc(63) SoftLruHashTable local63 = this.aClass219_2.aSoftLruHashTable_55;
 			@Pc(80) Model local80;
 			synchronized (this.aClass219_2.aSoftLruHashTable_55) {
-				local80 = (Model) this.aClass219_2.aSoftLruHashTable_55.method2612((long) arg3.anInt2836 << 16 | this.anInt2048);
+				local80 = (Model) this.aClass219_2.aSoftLruHashTable_55.get((long) arg3.anInt2836 << 16 | this.anInt2048);
 			}
 			if (local80 == null || local36 != (local36 & local80.method3826())) {
 				if (local80 != null) {
@@ -495,15 +495,15 @@ public final class NpcType {
 				}
 				@Pc(107) int local107 = local36;
 				@Pc(109) boolean local109 = false;
-				@Pc(113) Class197 local113 = this.aClass219_2.aClass197_88;
+				@Pc(113) Js5 local113 = this.aClass219_2.aJs5_88;
 				@Pc(117) int local117;
-				synchronized (this.aClass219_2.aClass197_88) {
+				synchronized (this.aClass219_2.aJs5_88) {
 					local117 = 0;
 					while (true) {
 						if (this.headmodels.length <= local117) {
 							break;
 						}
-						if (!this.aClass219_2.aClass197_88.method5087(0, this.headmodels[local117])) {
+						if (!this.aClass219_2.aJs5_88.method5087(0, this.headmodels[local117])) {
 							local109 = true;
 						}
 						local117++;
@@ -513,10 +513,10 @@ public final class NpcType {
 					return null;
 				}
 				@Pc(157) Class185[] local157 = new Class185[this.headmodels.length];
-				@Pc(161) Class197 local161 = this.aClass219_2.aClass197_88;
-				synchronized (this.aClass219_2.aClass197_88) {
+				@Pc(161) Js5 local161 = this.aClass219_2.aJs5_88;
+				synchronized (this.aClass219_2.aJs5_88) {
 					for (@Pc(165) int local165 = 0; local165 < this.headmodels.length; local165++) {
-						local157[local165] = Static298.method2426(this.aClass219_2.aClass197_88, this.headmodels[local165]);
+						local157[local165] = Static298.method2426(this.aClass219_2.aJs5_88, this.headmodels[local165]);
 					}
 				}
 				@Pc(209) Class185 local209;
@@ -549,7 +549,7 @@ public final class NpcType {
 				local80.method3813(local36);
 				@Pc(319) SoftLruHashTable local319 = this.aClass219_2.aSoftLruHashTable_55;
 				synchronized (this.aClass219_2.aSoftLruHashTable_55) {
-					this.aClass219_2.aSoftLruHashTable_55.method2624((long) arg3.anInt2836 << 16 | this.anInt2048, local80);
+					this.aClass219_2.aSoftLruHashTable_55.put((long) arg3.anInt2836 << 16 | this.anInt2048, local80);
 				}
 			}
 			if (arg4 != null && arg2 != -1) {
@@ -572,7 +572,7 @@ public final class NpcType {
 		if (this.params == null) {
 			return arg0;
 		} else {
-			@Pc(22) StringNode local22 = (StringNode) this.params.method90((long) arg1);
+			@Pc(22) StringNode local22 = (StringNode) this.params.get((long) arg1);
 			return local22 == null ? arg0 : local22.value;
 		}
 	}
@@ -662,7 +662,7 @@ public final class NpcType {
 		} else if (opcode == 93) {
 			this.minimapdisplay = false;
 		} else if (opcode == 95) {
-			this.vislevel = buffer.g2();
+			this.combatLevel = buffer.g2();
 		} else if (opcode == 97) {
 			this.resize_x = buffer.g2();
 		} else if (opcode == 98) {
@@ -774,7 +774,7 @@ public final class NpcType {
 				this.cursor2op = buffer.g1();
 				this.cursor2 = buffer.g2();
 			} else if (opcode == 137) {
-				this.attackcursor = buffer.g2();
+				this.cursor = buffer.g2();
 			} else if (opcode == 138) {
 				this.opcode138 = buffer.g2();
 			} else if (opcode == 139) {
@@ -835,7 +835,7 @@ public final class NpcType {
 		if (this.params == null) {
 			return arg0;
 		} else {
-			@Pc(22) IntNode local22 = (IntNode) this.params.method90((long) arg1);
+			@Pc(22) IntNode local22 = (IntNode) this.params.get((long) arg1);
 			return local22 == null ? arg0 : local22.value;
 		}
 	}

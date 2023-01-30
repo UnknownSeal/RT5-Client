@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static316 {
 
-	@OriginalMember(owner = "client!sg", name = "k", descriptor = "Lclient!as;")
-	public static Class5 aClass5_1;
-
 	@OriginalMember(owner = "client!sg", name = "j", descriptor = "[I")
 	public static final int[] anIntArray396 = new int[14];
 
@@ -14,12 +11,12 @@ public final class Static316 {
 	public static final Class145 aClass145_214 = new Class145(31, 3);
 
 	@OriginalMember(owner = "client!sg", name = "a", descriptor = "(III)Lclient!gg;")
-	public static Class2_Sub2_Sub7 method5412(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
-		@Pc(15) Class2_Sub2_Sub7 local15 = (Class2_Sub2_Sub7) Static296.aClass4_109.method90((long) arg1 | (long) arg0 << 32);
-		if (local15 == null) {
-			local15 = new Class2_Sub2_Sub7(arg0, arg1);
-			Static296.aClass4_109.put(local15, local15.key);
+	public static DelayedStateChange create(@OriginalArg(0) int type, @OriginalArg(2) int id) {
+		@Pc(15) DelayedStateChange change = (DelayedStateChange) DelayedStateChange.changes.get((long) id | (long) type << 32);
+		if (change == null) {
+			change = new DelayedStateChange(type, id);
+			DelayedStateChange.changes.put(change, change.key);
 		}
-		return local15;
+		return change;
 	}
 }

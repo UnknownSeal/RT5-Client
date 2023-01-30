@@ -34,7 +34,7 @@ public final class Class115 {
 		this.aLong92 = arg0;
 		@Pc(26) SecondaryNode local26 = this.aClass2_Sub2Array1[(int) (arg0 & (long) (this.anInt2961 - 1))];
 		for (this.aClass2_Sub2_25 = local26.secondaryNext; this.aClass2_Sub2_25 != local26; this.aClass2_Sub2_25 = this.aClass2_Sub2_25.secondaryNext) {
-			if (this.aClass2_Sub2_25.aLong215 == arg0) {
+			if (this.aClass2_Sub2_25.secondaryKey == arg0) {
 				@Pc(41) SecondaryNode local41 = this.aClass2_Sub2_25;
 				this.aClass2_Sub2_25 = this.aClass2_Sub2_25.secondaryNext;
 				return local41;
@@ -51,7 +51,7 @@ public final class Class115 {
 		}
 		@Pc(28) SecondaryNode local28 = this.aClass2_Sub2Array1[(int) ((long) (this.anInt2961 - 1) & this.aLong92)];
 		while (local28 != this.aClass2_Sub2_25) {
-			if (this.aLong92 == this.aClass2_Sub2_25.aLong215) {
+			if (this.aLong92 == this.aClass2_Sub2_25.secondaryKey) {
 				@Pc(40) SecondaryNode local40 = this.aClass2_Sub2_25;
 				this.aClass2_Sub2_25 = this.aClass2_Sub2_25.secondaryNext;
 				return local40;
@@ -72,6 +72,6 @@ public final class Class115 {
 		arg1.secondaryNext = local21;
 		arg1.secondaryPrevious.secondaryNext = arg1;
 		arg1.secondaryNext.secondaryPrevious = arg1;
-		arg1.aLong215 = arg0;
+		arg1.secondaryKey = arg0;
 	}
 }

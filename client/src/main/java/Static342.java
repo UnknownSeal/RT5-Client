@@ -7,7 +7,7 @@ public final class Static342 {
 	public static int anInt5657;
 
 	@OriginalMember(owner = "client!tr", name = "h", descriptor = "Lclient!r;")
-	public static Class197 aClass197_77;
+	public static Js5 aJs5_77;
 
 	@OriginalMember(owner = "client!tr", name = "b", descriptor = "I")
 	public static int anInt5655 = 0;

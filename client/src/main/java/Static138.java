@@ -16,7 +16,7 @@ public final class Static138 {
 		if (arg2 == -1 && !Static393.aBoolean486) {
 			Static368.method6191();
 		} else if (arg2 != -1 && (Static171.anInt3268 != arg2 || !Static64.method1704()) && local6 != 0 && !Static393.aBoolean486) {
-			Static180.method3366(arg2, arg0, local6, Static101.aClass197_23);
+			Static180.method3366(arg2, arg0, local6, Static101.aJs5_23);
 		}
 		Static171.anInt3268 = arg2;
 	}
@@ -46,9 +46,9 @@ public final class Static138 {
 		}
 		@Pc(25) byte[] local25;
 		if (arg0 >= 32768) {
-			local25 = Static43.aClass197_7.fetchFile(0, arg0 & 0x7FFF);
+			local25 = Static43.aJs5_7.fetchFile(0, arg0 & 0x7FFF);
 		} else {
-			local25 = Static367.aClass197_92.fetchFile(0, arg0);
+			local25 = Static367.aJs5_92.fetchFile(0, arg0);
 		}
 		local10 = new Class2_Sub2_Sub12();
 		if (local25 != null) {

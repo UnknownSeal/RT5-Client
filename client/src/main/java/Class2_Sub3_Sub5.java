@@ -19,7 +19,7 @@ public final class Class2_Sub3_Sub5 extends TextureOp {
 
 	@OriginalMember(owner = "client!br", name = "a", descriptor = "(ILclient!bt;I)V")
 	@Override
-	public void method6483(@OriginalArg(0) int arg0, @OriginalArg(1) Buffer arg1) {
+	public void decode(@OriginalArg(0) int arg0, @OriginalArg(1) Buffer arg1) {
 		if (arg0 == 0) {
 			this.anInt796 = arg1.g2();
 		} else if (arg0 == 1) {
@@ -29,16 +29,16 @@ public final class Class2_Sub3_Sub5 extends TextureOp {
 
 	@OriginalMember(owner = "client!br", name = "b", descriptor = "(IB)[[I")
 	@Override
-	public int[][] method6478(@OriginalArg(0) int arg0) {
-		@Pc(16) int[][] local16 = super.aClass243_41.method6276(arg0);
-		if (super.aClass243_41.aBoolean478) {
-			@Pc(30) int[] local30 = this.method6472(0, arg0 - 1 & Static148.anInt2718);
-			@Pc(36) int[] local36 = this.method6472(0, arg0);
-			@Pc(46) int[] local46 = this.method6472(0, Static148.anInt2718 & arg0 + 1);
+	public int[][] getColorOutput(@OriginalArg(0) int arg0) {
+		@Pc(16) int[][] local16 = super.colorImageCache.get(arg0);
+		if (super.colorImageCache.invalid) {
+			@Pc(30) int[] local30 = this.getChildMonochromeOutput(0, arg0 - 1 & Static148.heightMask);
+			@Pc(36) int[] local36 = this.getChildMonochromeOutput(0, arg0);
+			@Pc(46) int[] local46 = this.getChildMonochromeOutput(0, Static148.heightMask & arg0 + 1);
 			@Pc(50) int[] local50 = local16[0];
 			@Pc(54) int[] local54 = local16[1];
 			@Pc(58) int[] local58 = local16[2];
-			for (@Pc(60) int local60 = 0; local60 < Static227.anInt4036; local60++) {
+			for (@Pc(60) int local60 = 0; local60 < Static227.width; local60++) {
 				@Pc(74) int local74 = this.anInt796 * (local46[local60] - local30[local60]);
 				@Pc(94) int local94 = (local36[Static73.anInt1721 & local60 + 1] - local36[local60 - 1 & Static73.anInt1721]) * this.anInt796;
 				@Pc(98) int local98 = local94 >> 12;

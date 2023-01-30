@@ -19,7 +19,7 @@ public final class Static13 {
 	}
 
 	@OriginalMember(owner = "client!ao", name = "a", descriptor = "(IB)I")
-	public static int method346(@OriginalArg(0) int arg0) {
-		return arg0 >> 11 & 0x7F;
+	public static int getTargetMask(@OriginalArg(0) int events) {
+		return events >> 11 & 0x7F;
 	}
 }

@@ -7,7 +7,7 @@ public final class Static354 {
 	public static boolean aBoolean93;
 
 	@OriginalMember(owner = "client!un", name = "H", descriptor = "Lclient!r;")
-	public static Class197 aClass197_9;
+	public static Js5 aJs5_9;
 
 	@OriginalMember(owner = "client!un", name = "I", descriptor = "Lclient!cc;")
 	public static PrivelegedRequest aPrivelegedRequest_5;

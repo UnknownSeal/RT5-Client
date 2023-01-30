@@ -5,16 +5,13 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static133 {
 
 	@OriginalMember(owner = "client!hl", name = "D", descriptor = "Lclient!r;")
-	public static Class197 aClass197_32;
+	public static Js5 aJs5_32;
 
 	@OriginalMember(owner = "client!hl", name = "H", descriptor = "Lclient!hu;")
 	public static final SoftLruHashTable A_SOFT_LRU_HASH_TABLE___17 = new SoftLruHashTable(4);
 
 	@OriginalMember(owner = "client!hl", name = "I", descriptor = "Lclient!h;")
 	public static final Class89 aClass89_103 = new Class89(61, 4);
-
-	@OriginalMember(owner = "client!hl", name = "J", descriptor = "Lclient!se;")
-	public static final Class2_Sub33 aClass2_Sub33_1 = new Class2_Sub33(0, 0);
 
 	@OriginalMember(owner = "client!hl", name = "K", descriptor = "I")
 	public static final int anInt2489 = 1406;
@@ -54,7 +51,7 @@ public final class Static133 {
 			local97 = Static394.anInt7263;
 		}
 		Static307.method5254(local97);
-		Static56.method1616(Static17.aClass11_Sub5_Sub2_Sub1_3.anInt6781, Static17.aClass11_Sub5_Sub2_Sub1_3.anInt6783, Static165.anInt3148, Static17.aClass11_Sub5_Sub2_Sub1_3.aByte78);
+		Static56.method1616(Static17.self.xFine, Static17.self.zFine, Static165.anInt3148, Static17.self.aByte78);
 		Static165.anInt3148 = 0;
 	}
 }

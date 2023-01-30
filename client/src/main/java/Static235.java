@@ -6,7 +6,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static235 {
 
 	@OriginalMember(owner = "client!nj", name = "i", descriptor = "Lclient!r;")
-	public static Class197 aClass197_47;
+	public static Js5 aJs5_47;
 
 	@OriginalMember(owner = "client!nj", name = "c", descriptor = "I")
 	public static int anInt3363 = 0;
@@ -87,7 +87,7 @@ public final class Static235 {
 				local9.anIntArray491[local56] = -5;
 			}
 		}
-		Static337.aClass135_37.method3539(local9);
+		Static337.aLinkedList_37.method3539(local9);
 	}
 
 	@OriginalMember(owner = "client!nj", name = "a", descriptor = "(IIII)Z")
@@ -116,7 +116,7 @@ public final class Static235 {
 			Static211.method3724();
 			return true;
 		} catch (@Pc(21) Exception local21) {
-			@Pc(81) String local81 = "T2 - " + (Static231.aClass89_164 == null ? -1 : Static231.aClass89_164.method2399()) + "," + (Static66.aClass89_57 == null ? -1 : Static66.aClass89_57.method2399()) + "," + (Static39.aClass89_35 == null ? -1 : Static39.aClass89_35.method2399()) + " - " + Static82.anInt1836 + "," + (Static164.originX + Static17.aClass11_Sub5_Sub2_Sub1_3.anIntArray316[0]) + "," + (Static148.originZ + Static17.aClass11_Sub5_Sub2_Sub1_3.anIntArray317[0]) + " - ";
+			@Pc(81) String local81 = "T2 - " + (Static231.aClass89_164 == null ? -1 : Static231.aClass89_164.method2399()) + "," + (Static66.aClass89_57 == null ? -1 : Static66.aClass89_57.method2399()) + "," + (Static39.aClass89_35 == null ? -1 : Static39.aClass89_35.method2399()) + " - " + Static82.anInt1836 + "," + (Static164.originX + Static17.self.anIntArray316[0]) + "," + (Static148.originZ + Static17.self.anIntArray317[0]) + " - ";
 			for (@Pc(83) int local83 = 0; local83 < Static82.anInt1836 && local83 < 50; local83++) {
 				local81 = local81 + Static212.inboundBuffer.data[local83] + ",";
 			}

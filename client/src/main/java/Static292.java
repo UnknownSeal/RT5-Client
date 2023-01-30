@@ -10,9 +10,6 @@ public final class Static292 {
 	@OriginalMember(owner = "client!qr", name = "r", descriptor = "I")
 	public static int anInt5512;
 
-	@OriginalMember(owner = "client!qr", name = "m", descriptor = "[J")
-	public static final long[] aLongArray9 = new long[32];
-
 	@OriginalMember(owner = "client!qr", name = "n", descriptor = "I")
 	public static int anInt5510 = 0;
 
@@ -81,8 +78,8 @@ public final class Static292 {
 	}
 
 	@OriginalMember(owner = "client!qr", name = "a", descriptor = "(Lclient!ci;BLclient!r;)V")
-	public static void method5036(@OriginalArg(0) Interface2 arg0, @OriginalArg(2) Class197 arg1) {
+	public static void method5036(@OriginalArg(0) Interface2 arg0, @OriginalArg(2) Js5 arg1) {
 		Static274.anInterface2_7 = arg0;
-		Static336.aClass197_90 = arg1;
+		Static336.aJs5_90 = arg1;
 	}
 }

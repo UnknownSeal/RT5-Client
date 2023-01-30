@@ -33,12 +33,12 @@ public final class Class11_Sub5_Sub5 extends Class11_Sub5 implements Interface6 
 	@OriginalMember(owner = "client!us", name = "b", descriptor = "(Lclient!wm;B)Lclient!nf;")
 	@Override
 	public Class12_Sub4 method6072(@OriginalArg(0) Class19 arg0) {
-		@Pc(16) Model local16 = this.aClass192_4.method4940(true, false, arg0, 1024, super.anInt6783, super.anInt6781);
+		@Pc(16) Model local16 = this.aClass192_4.method4940(true, false, arg0, 1024, super.zFine, super.xFine);
 		if (local16 == null) {
 			return null;
 		}
 		@Pc(23) Class14 local23 = arg0.method2808();
-		local23.method3921(super.anInt6781, super.anInt6782, super.anInt6783);
+		local23.method3921(super.xFine, super.anInt6782, super.zFine);
 		@Pc(38) Class12_Sub4 local38 = null;
 		if (this.aBoolean459) {
 			local38 = Static147.method2706(1);
@@ -86,7 +86,7 @@ public final class Class11_Sub5_Sub5 extends Class11_Sub5 implements Interface6 
 	@OriginalMember(owner = "client!us", name = "a", descriptor = "(Lclient!wm;B)V")
 	@Override
 	public void method6069(@OriginalArg(0) Class19 arg0) {
-		@Pc(16) Model local16 = this.aClass192_4.method4940(true, true, arg0, 131072, super.anInt6783, super.anInt6781);
+		@Pc(16) Model local16 = this.aClass192_4.method4940(true, true, arg0, 131072, super.zFine, super.xFine);
 		if (local16 != null) {
 			this.aClass192_4.method4934(arg0, super.aShort101, local16, super.aShort103, super.aShort102, false, super.aShort104);
 		}
@@ -107,12 +107,12 @@ public final class Class11_Sub5_Sub5 extends Class11_Sub5 implements Interface6 
 	@OriginalMember(owner = "client!us", name = "a", descriptor = "(IIBLclient!wm;)Z")
 	@Override
 	public boolean method6067(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) Class19 arg2) {
-		@Pc(23) Model local23 = this.aClass192_4.method4940(false, false, arg2, 65536, super.anInt6783, super.anInt6781);
+		@Pc(23) Model local23 = this.aClass192_4.method4940(false, false, arg2, 65536, super.zFine, super.xFine);
 		if (local23 == null) {
 			return false;
 		} else {
 			@Pc(30) Class14 local30 = arg2.method2808();
-			local30.method3921(super.anInt6781, super.anInt6782, super.anInt6783);
+			local30.method3921(super.xFine, super.anInt6782, super.zFine);
 			return local23.method3819(arg0, arg1, local30, false);
 		}
 	}

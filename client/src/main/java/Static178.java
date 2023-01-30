@@ -27,7 +27,7 @@ public final class Static178 {
 		@Pc(50) SoftLruHashTable local50 = Static98.A_SOFT_LRU_HASH_TABLE___10;
 		@Pc(58) Model local58;
 		synchronized (Static98.A_SOFT_LRU_HASH_TABLE___10) {
-			local58 = (Model) Static98.A_SOFT_LRU_HASH_TABLE___10.method2612(local48);
+			local58 = (Model) Static98.A_SOFT_LRU_HASH_TABLE___10.get(local48);
 		}
 		@Pc(157) int local157;
 		@Pc(163) int local163;
@@ -61,7 +61,7 @@ public final class Static178 {
 				for (local175 = 0; local175 < local93; local175++) {
 					@Pc(183) int local183 = (local175 << 14) / local93;
 					@Pc(191) int local191 = Class19.anIntArray178[local183] * local169 >> 15;
-					local199 = local173 * Class19.anIntArray177[local183] >> 15;
+					local199 = local173 * Class19.COSINE[local183] >> 15;
 					local161[local163][local175] = local150.method4664(0, local191, local199);
 				}
 			}
@@ -82,7 +82,7 @@ public final class Static178 {
 			local58 = arg9.method2864(local150, local11, Static199.anInt5756, 64, 768);
 			@Pc(411) SoftLruHashTable local411 = Static98.A_SOFT_LRU_HASH_TABLE___10;
 			synchronized (Static98.A_SOFT_LRU_HASH_TABLE___10) {
-				Static98.A_SOFT_LRU_HASH_TABLE___10.method2624(local48, local58);
+				Static98.A_SOFT_LRU_HASH_TABLE___10.put(local48, local58);
 			}
 		}
 		@Pc(430) int local430 = arg5 * 64 - 1;
@@ -157,30 +157,30 @@ public final class Static178 {
 			Static190.aClass221_1.method6325();
 		}
 		Static84.method1909(Static218.aClass177_Sub1_2.aBoolean352);
-		Static303.aClass221_2 = Static381.method6346(0, GameShell.signlink, Static21.aCanvas1, 22050);
+		Static303.aClass221_2 = Static381.method6346(0, GameShell.signlink, GameShell.canvas, 22050);
 		Static303.aClass221_2.method6329(Static385.aClass2_Sub12_Sub3_3);
-		Static190.aClass221_1 = Static381.method6346(1, GameShell.signlink, Static21.aCanvas1, 2048);
+		Static190.aClass221_1 = Static381.method6346(1, GameShell.signlink, GameShell.canvas, 2048);
 		Static190.aClass221_1.method6329(Static227.aClass2_Sub12_Sub2_2);
 	}
 
 	@OriginalMember(owner = "client!kf", name = "a", descriptor = "(III)Ljava/lang/String;")
-	public static String method2343(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
-		@Pc(8) int local8 = arg0 - arg1;
-		if (local8 < -9) {
+	public static String getCombatLevelColor(@OriginalArg(1) int selfLevel, @OriginalArg(2) int otherLevel) {
+		@Pc(8) int delta = selfLevel - otherLevel;
+		if (delta < -9) {
 			return "<col=ff0000>";
-		} else if (local8 < -6) {
+		} else if (delta < -6) {
 			return "<col=ff3000>";
-		} else if (local8 < -3) {
+		} else if (delta < -3) {
 			return "<col=ff7000>";
-		} else if (local8 < 0) {
+		} else if (delta < 0) {
 			return "<col=ffb000>";
-		} else if (local8 > 9) {
+		} else if (delta > 9) {
 			return "<col=00ff00>";
-		} else if (local8 > 6) {
+		} else if (delta > 6) {
 			return "<col=40ff00>";
-		} else if (local8 > 3) {
+		} else if (delta > 3) {
 			return "<col=80ff00>";
-		} else if (local8 > 0) {
+		} else if (delta > 0) {
 			return "<col=c0ff00>";
 		} else {
 			return "<col=ffff00>";

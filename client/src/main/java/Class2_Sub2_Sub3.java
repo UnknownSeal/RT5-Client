@@ -50,7 +50,7 @@ public final class Class2_Sub2_Sub3 extends SecondaryNode {
 		if (this.aClass4_20 == null) {
 			return arg1;
 		} else {
-			@Pc(16) IntNode local16 = (IntNode) this.aClass4_20.method90((long) arg0);
+			@Pc(16) IntNode local16 = (IntNode) this.aClass4_20.get((long) arg0);
 			return local16 == null ? arg1 : local16.value;
 		}
 	}
@@ -71,7 +71,7 @@ public final class Class2_Sub2_Sub3 extends SecondaryNode {
 		if (this.aClass4_20 == null) {
 			return arg1;
 		} else {
-			@Pc(16) StringNode local16 = (StringNode) this.aClass4_20.method90((long) arg0);
+			@Pc(16) StringNode local16 = (StringNode) this.aClass4_20.get((long) arg0);
 			return local16 == null ? arg1 : local16.value;
 		}
 	}

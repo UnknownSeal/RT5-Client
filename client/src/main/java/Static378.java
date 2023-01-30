@@ -7,13 +7,10 @@ public final class Static378 {
 	public static int anInt7079;
 
 	@OriginalMember(owner = "client!wa", name = "c", descriptor = "Lclient!ld;")
-	public static final Class135 aClass135_43 = new Class135();
+	public static final LinkedList A_LINKED_LIST___43 = new LinkedList();
 
 	@OriginalMember(owner = "client!wa", name = "g", descriptor = "I")
 	public static int anInt7077 = 0;
-
-	@OriginalMember(owner = "client!wa", name = "j", descriptor = "Lclient!gd;")
-	public static final LocalisedText A_TRANSLATABLE_STRING___146 = new LocalisedText("Attack", "Angreifen", "Attaquer", "Atacar");
 
 	@OriginalMember(owner = "client!wa", name = "a", descriptor = "(I)Lclient!vj;")
 	public static Class2_Sub2_Sub17 method6311() {

@@ -7,13 +7,13 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static142 {
 
 	@OriginalMember(owner = "client!ia", name = "k", descriptor = "Lclient!r;")
-	public static Class197 aClass197_37;
+	public static Js5 aJs5_37;
 
 	@OriginalMember(owner = "client!ia", name = "n", descriptor = "I")
 	public static int anInt2663;
 
 	@OriginalMember(owner = "client!ia", name = "o", descriptor = "Lclient!ld;")
-	public static final Class135 aClass135_21 = new Class135();
+	public static final LinkedList A_LINKED_LIST___21 = new LinkedList();
 
 	@OriginalMember(owner = "client!ia", name = "p", descriptor = "Lclient!h;")
 	public static final Class89 aClass89_110 = new Class89(8, 2);
@@ -27,18 +27,6 @@ public final class Static142 {
 		} else {
 			return false;
 		}
-	}
-
-	@OriginalMember(owner = "client!ia", name = "a", descriptor = "(B)V")
-	public static void method2662() {
-		Static316.aClass5_1.method4407();
-		for (@Pc(12) int local12 = 0; local12 < 32; local12++) {
-			Static357.aLongArray12[local12] = 0L;
-		}
-		for (@Pc(24) int local24 = 0; local24 < 32; local24++) {
-			Static292.aLongArray9[local24] = 0L;
-		}
-		Static10.anInt247 = 0;
 	}
 
 	@OriginalMember(owner = "client!ia", name = "a", descriptor = "(I)V")

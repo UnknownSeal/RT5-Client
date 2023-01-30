@@ -44,7 +44,7 @@ public final class Static243 {
 		if (arg8 < 0) {
 			local18 = -arg8 - 1;
 			if (Static234.anInt4226 == local18) {
-				local27 = Static17.aClass11_Sub5_Sub2_Sub1_3;
+				local27 = Static17.self;
 			} else {
 				local27 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local18];
 			}
@@ -98,7 +98,7 @@ public final class Static243 {
 		local142.anInt1101 = (local65 << 6) + (local142.anInt1109 << 7);
 		local142.anInt1113 = arg11 + arg2;
 		local142.anInt1114 = local138;
-		Static366.aClass135_40.method3539(local142);
+		Static366.A_LINKED_LIST___40.method3539(local142);
 		local27.aClass2_Sub6_3 = local142;
 	}
 }

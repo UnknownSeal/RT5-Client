@@ -21,7 +21,7 @@ public final class Class226 implements Interface11 {
 		@Pc(11) int local11 = local8.anInt3554;
 		@Pc(14) int local14 = local8.anInt3548;
 		@Pc(17) int local17 = local8.anInt3549;
-		@Pc(24) int local24 = Class2_Sub3_Sub28.anIntArray368[local17 - local14];
+		@Pc(24) int local24 = TextureOp37.anIntArray368[local17 - local14];
 		if (arg1 < 0 || local24 < arg1) {
 			arg1 = 0;
 		}
@@ -32,7 +32,7 @@ public final class Class226 implements Interface11 {
 	@OriginalMember(owner = "client!ts", name = "a", descriptor = "(ZII)V")
 	public void method5779(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
 		this.anIntArray430[arg0] = arg1;
-		@Pc(16) Class2_Sub35 local16 = (Class2_Sub35) this.aClass4_132.method90((long) arg0);
+		@Pc(16) Class2_Sub35 local16 = (Class2_Sub35) this.aClass4_132.get((long) arg0);
 		if (local16 == null) {
 			local16 = new Class2_Sub35(MonotonicClock.currentTimeMillis() + 500L);
 			this.aClass4_132.put(local16, (long) arg0);
@@ -60,7 +60,7 @@ public final class Class226 implements Interface11 {
 		@Pc(11) int local11 = local8.anInt3554;
 		@Pc(20) int local20 = local8.anInt3548;
 		@Pc(23) int local23 = local8.anInt3549;
-		@Pc(30) int local30 = Class2_Sub3_Sub28.anIntArray368[local23 - local20];
+		@Pc(30) int local30 = TextureOp37.anIntArray368[local23 - local20];
 		return this.anIntArray430[local11] >> local20 & local30;
 	}
 
@@ -90,7 +90,7 @@ public final class Class226 implements Interface11 {
 	@OriginalMember(owner = "client!ts", name = "a", descriptor = "(IBI)V")
 	public void method5784(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
 		this.anIntArray431[arg1] = arg0;
-		@Pc(24) Class2_Sub35 local24 = (Class2_Sub35) this.aClass4_132.method90((long) arg1);
+		@Pc(24) Class2_Sub35 local24 = (Class2_Sub35) this.aClass4_132.get((long) arg1);
 		if (local24 == null) {
 			local24 = new Class2_Sub35(4611686018427387905L);
 			this.aClass4_132.put(local24, (long) arg1);
@@ -106,7 +106,7 @@ public final class Class226 implements Interface11 {
 		@Pc(11) int local11 = local8.anInt3554;
 		@Pc(14) int local14 = local8.anInt3548;
 		@Pc(17) int local17 = local8.anInt3549;
-		@Pc(28) int local28 = Class2_Sub3_Sub28.anIntArray368[local17 - local14];
+		@Pc(28) int local28 = TextureOp37.anIntArray368[local17 - local14];
 		if (arg1 < 0 || arg1 > local28) {
 			arg1 = 0;
 		}

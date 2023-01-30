@@ -5,10 +5,10 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static289 {
 
 	@OriginalMember(owner = "client!qo", name = "b", descriptor = "Lclient!r;")
-	public static Class197 aClass197_71;
+	public static Js5 aJs5_71;
 
 	@OriginalMember(owner = "client!qo", name = "i", descriptor = "Lclient!r;")
-	public static Class197 aClass197_73;
+	public static Js5 archive;
 
 	@OriginalMember(owner = "client!qo", name = "f", descriptor = "Z")
 	public static final boolean aBoolean391 = false;
@@ -40,7 +40,7 @@ public final class Static289 {
 	}
 
 	@OriginalMember(owner = "client!qo", name = "a", descriptor = "(ILclient!bh;IB)V")
-	public static void method5020(@OriginalArg(0) int arg0, @OriginalArg(1) Class21 arg1, @OriginalArg(2) int arg2) {
-		Static332.aClass21ArrayArray3[arg2][arg0] = arg1;
+	public static void method5020(@OriginalArg(0) int arg0, @OriginalArg(1) Environment arg1, @OriginalArg(2) int arg2) {
+		Static332.aEnvironmentArrayArray3[arg2][arg0] = arg1;
 	}
 }

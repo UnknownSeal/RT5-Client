@@ -14,16 +14,10 @@ public final class Static368 {
 	@OriginalMember(owner = "client!vl", name = "X", descriptor = "J")
 	public static long aLong217 = -1L;
 
-	@OriginalMember(owner = "client!vl", name = "bb", descriptor = "Lclient!wc;")
-	public static final Class246 aClass246_10 = new Class246();
-
-	@OriginalMember(owner = "client!vl", name = "gb", descriptor = "Lclient!gd;")
-	public static final LocalisedText A_TRANSLATABLE_STRING___143 = new LocalisedText("Examine", "Untersuchen", "Examiner", "Examinar");
-
 	@OriginalMember(owner = "client!vl", name = "g", descriptor = "(I)V")
 	public static void method6191() {
 		Static91.aClass2_Sub12_Sub3_1.method4273();
-		Static116.aClass197_26 = null;
+		Static116.aJs5_26 = null;
 		Static235.anInt3365 = 1;
 	}
 }

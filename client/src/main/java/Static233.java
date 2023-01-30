@@ -11,7 +11,7 @@ public final class Static233 {
 	public static float aFloat63;
 
 	@OriginalMember(owner = "client!nh", name = "qc", descriptor = "Lclient!hu;")
-	public static final SoftLruHashTable A_SOFT_LRU_HASH_TABLE___37 = new SoftLruHashTable(64);
+	public static final SoftLruHashTable types = new SoftLruHashTable(64);
 
 	@OriginalMember(owner = "client!nh", name = "c", descriptor = "(ZI)I")
 	public static int method4062(@OriginalArg(1) int arg0) {
@@ -48,7 +48,7 @@ public final class Static233 {
 	}
 
 	@OriginalMember(owner = "client!nh", name = "a", descriptor = "(Ljava/lang/String;BLjava/lang/String;I)I")
-	public static int method4068(@OriginalArg(0) String arg0, @OriginalArg(2) String arg1, @OriginalArg(3) int arg2) {
+	public static int compare(@OriginalArg(0) String arg0, @OriginalArg(2) String arg1, @OriginalArg(3) int language) {
 		@Pc(8) int local8 = arg1.length();
 		@Pc(11) int local11 = arg0.length();
 		@Pc(13) int local13 = 0;
@@ -74,21 +74,21 @@ public final class Static233 {
 			} else {
 				local74 = local24;
 			}
-			local22 = Static391.method6454(local61);
-			local24 = Static391.method6454(local74);
-			local61 = Static135.method2536(arg2, local61);
-			local74 = Static135.method2536(arg2, local74);
+			local22 = Static391.getSecondChar(local61);
+			local24 = Static391.getSecondChar(local74);
+			local61 = Static135.getFirstChar(local61, language);
+			local74 = Static135.getFirstChar(local74, language);
 			if (local61 != local74 && Character.toUpperCase(local61) != Character.toUpperCase(local74)) {
 				local61 = Character.toLowerCase(local61);
 				local74 = Character.toLowerCase(local74);
 				if (local61 != local74) {
-					return Static172.method3287(local61, arg2) - Static172.method3287(local74, arg2);
+					return Static172.getRank(local61, language) - Static172.getRank(local74, language);
 				}
 			}
 		}
 		@Pc(145) int local145 = Math.min(local8, local11);
 		for (@Pc(147) int local147 = 0; local147 < local145; local147++) {
-			if (arg2 == 2) {
+			if (language == 2) {
 				local15 = local11 - local147 - 1;
 				local13 = local8 - local147 - 1;
 			} else {
@@ -101,7 +101,7 @@ public final class Static233 {
 				local178 = Character.toLowerCase(local178);
 				local182 = Character.toLowerCase(local182);
 				if (local178 != local182) {
-					return Static172.method3287(local178, arg2) - Static172.method3287(local182, arg2);
+					return Static172.getRank(local178, language) - Static172.getRank(local182, language);
 				}
 			}
 		}
@@ -113,7 +113,7 @@ public final class Static233 {
 			@Pc(241) char local241 = arg1.charAt(local235);
 			@Pc(245) char local245 = arg0.charAt(local235);
 			if (local245 != local241) {
-				return Static172.method3287(local241, arg2) - Static172.method3287(local245, arg2);
+				return Static172.getRank(local241, language) - Static172.getRank(local245, language);
 			}
 		}
 		return 0;

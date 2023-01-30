@@ -18,18 +18,18 @@ public final class Static284 {
 
 	@OriginalMember(owner = "client!qi", name = "a", descriptor = "(ILclient!ci;IIIILclient!wm;)V")
 	public static void method4880(@OriginalArg(1) Interface2 arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) Class19 arg5) {
-		if (Static355.anInt6581 < 100) {
+		if (Static355.loadPercentage < 100) {
 			Static209.method3713(arg5, arg0);
 		}
 		arg5.method2895(arg4, arg2, arg4 + arg3, arg2 - -arg1);
 		@Pc(36) int local36;
 		@Pc(47) int local47;
-		if (Static355.anInt6581 < 100) {
+		if (Static355.loadPercentage < 100) {
 			local36 = arg3 / 2 + arg4;
 			local47 = arg1 / 2 + arg2 - 18 - 20;
 			arg5.method2901(arg4, arg2, arg3, arg1, -16777216, 0);
 			arg5.method2836(local36 - 152, local47, 304, 34, Static291.aColorArray4[Static64.anInt1555].getRGB(), 0);
-			arg5.method2901(local36 - 150, local47 - -2, Static355.anInt6581 * 3, 30, Static174.aColorArray2[Static64.anInt1555].getRGB(), 0);
+			arg5.method2901(local36 - 150, local47 - -2, Static355.loadPercentage * 3, 30, Static174.aColorArray2[Static64.anInt1555].getRGB(), 0);
 			Static52.aClass130_1.method5899(Static32.A_TRANSLATABLE_STRING___21.getLocalisedText(client.language), -1, local47 + 20, Static286.aColorArray3[Static64.anInt1555].getRGB(), local36);
 			return;
 		}
@@ -43,7 +43,7 @@ public final class Static284 {
 		Static178.anInt2317 = Static151.anInt2772 - (int) ((float) arg3 / Static344.aFloat72);
 		Static344.method5529(local111 + Static344.anInt6057, local36 - -Static344.anInt6055, Static344.anInt6057 + local47, Static344.anInt6055 + local160, arg4, arg2, arg3 + arg4, arg2 - (-arg1 - 1));
 		Static344.method5521(arg5);
-		@Pc(203) Class135 local203 = Static344.method5523(arg5);
+		@Pc(203) LinkedList local203 = Static344.method5523(arg5);
 		Static303.method5207(local203, arg5);
 		if (Static243.anInt4495 > 0) {
 			Static90.anInt6637--;
@@ -90,13 +90,13 @@ public final class Static284 {
 	}
 
 	@OriginalMember(owner = "client!qi", name = "a", descriptor = "(Lclient!nk;ZI)Ljava/lang/String;")
-	public static String method4882(@OriginalArg(0) Class161 arg0, @OriginalArg(2) int arg1) {
+	public static String method4882(@OriginalArg(0) Component arg0, @OriginalArg(2) int arg1) {
 		if (!Static45.method1404(arg0).method1854(arg1) && arg0.anObjectArray27 == null) {
 			return null;
-		} else if (arg0.aStringArray40 == null || arg1 >= arg0.aStringArray40.length || arg0.aStringArray40[arg1] == null || arg0.aStringArray40[arg1].trim().length() == 0) {
+		} else if (arg0.ops == null || arg1 >= arg0.ops.length || arg0.ops[arg1] == null || arg0.ops[arg1].trim().length() == 0) {
 			return Static18.aBoolean30 ? "Hidden-" + arg1 : null;
 		} else {
-			return arg0.aStringArray40[arg1];
+			return arg0.ops[arg1];
 		}
 	}
 }

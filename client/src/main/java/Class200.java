@@ -27,7 +27,7 @@ public final class Class200 {
 	private int anInt5606 = 0;
 
 	@OriginalMember(owner = "client!rd", name = "c", descriptor = "Lclient!ld;")
-	private final Class135 aClass135_33 = new Class135();
+	private final LinkedList aLinkedList_33 = new LinkedList();
 
 	@OriginalMember(owner = "client!rd", name = "h", descriptor = "I")
 	private int anInt5607 = -1;
@@ -72,7 +72,7 @@ public final class Class200 {
 					arg0.method6305(this.anInt5603, this.anInt5605);
 				}
 				arg0.aBoolean479 = true;
-				this.aClass135_33.method3539(arg0);
+				this.aLinkedList_33.method3539(arg0);
 				this.method5115();
 				return true;
 			}
@@ -87,7 +87,7 @@ public final class Class200 {
 		@Pc(3) int local3 = 0;
 		@Pc(5) boolean local5 = false;
 		@Pc(16) int local16;
-		for (@Pc(11) Class2_Sub38 local11 = (Class2_Sub38) this.aClass135_33.method3550(); local11 != null; local11 = (Class2_Sub38) this.aClass135_33.method3551()) {
+		for (@Pc(11) Class2_Sub38 local11 = (Class2_Sub38) this.aLinkedList_33.method3550(); local11 != null; local11 = (Class2_Sub38) this.aLinkedList_33.method3551()) {
 			local16 = local11.method6300();
 			if (local16 > local1) {
 				local1 = local16;
@@ -131,8 +131,8 @@ public final class Class200 {
 		@Pc(19) int local19 = 0;
 		@Pc(21) int local21 = 1;
 		@Pc(35) Class2_Sub38 local35;
-		for (@Pc(27) Class2_Sub38 local27 = (Class2_Sub38) this.aClass135_33.method3550(); local27 != null; local27 = local35) {
-			local35 = (Class2_Sub38) this.aClass135_33.method3551();
+		for (@Pc(27) Class2_Sub38 local27 = (Class2_Sub38) this.aLinkedList_33.method3550(); local27 != null; local27 = local35) {
+			local35 = (Class2_Sub38) this.aLinkedList_33.method3551();
 			@Pc(39) int local39 = local27.method6302();
 			for (@Pc(41) int local41 = 0; local41 < local39; local41++) {
 				local27.method6308(local41, this.aClass8_Sub1Array3[local19], this.aClass8_Sub1_4);
@@ -200,8 +200,8 @@ public final class Class200 {
 			this.aBoolean397 = true;
 			this.aBoolean395 = true;
 			this.aBoolean394 = true;
-			if (!this.aClass135_33.method3549()) {
-				for (@Pc(33) Node local33 = this.aClass135_33.method3550(); local33 != this.aClass135_33.aClass2_130; local33 = local33.next) {
+			if (!this.aLinkedList_33.method3549()) {
+				for (@Pc(33) Node local33 = this.aLinkedList_33.method3550(); local33 != this.aLinkedList_33.sentinel; local33 = local33.next) {
 					((Class2_Sub38) local33).method6304();
 				}
 			}
@@ -211,14 +211,14 @@ public final class Class200 {
 
 	@OriginalMember(owner = "client!rd", name = "a", descriptor = "(IIII)Z")
 	public boolean method5120(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
-		if (this.aClass228_2 == null || this.aClass135_33.method3549()) {
+		if (this.aClass228_2 == null || this.aLinkedList_33.method3549()) {
 			return false;
 		}
 		@Pc(11) boolean local11 = false;
 		if (this.anInt5603 != arg2 || this.anInt5605 != arg3) {
 			this.anInt5603 = arg2;
 			this.anInt5605 = arg3;
-			for (@Pc(30) Node local30 = this.aClass135_33.method3550(); local30 != this.aClass135_33.aClass2_130; local30 = local30.next) {
+			for (@Pc(30) Node local30 = this.aLinkedList_33.method3550(); local30 != this.aLinkedList_33.sentinel; local30 = local30.next) {
 				((Class2_Sub38) local30).method6305(this.anInt5603, this.anInt5605);
 			}
 			this.aBoolean397 = true;

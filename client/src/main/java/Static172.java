@@ -55,16 +55,16 @@ public final class Static172 {
 	}
 
 	@OriginalMember(owner = "client!ju", name = "a", descriptor = "(ICI)I")
-	public static int method3287(@OriginalArg(1) char arg0, @OriginalArg(2) int arg1) {
-		@Pc(7) int local7 = arg0 << 4;
-		if (Character.isUpperCase(arg0) || Character.isTitleCase(arg0)) {
-			arg0 = Character.toLowerCase(arg0);
-			local7 = (arg0 << 4) + 1;
+	public static int getRank(@OriginalArg(1) char c, @OriginalArg(2) int language) {
+		@Pc(7) int rank = c << 4;
+		if (Character.isUpperCase(c) || Character.isTitleCase(c)) {
+			c = Character.toLowerCase(c);
+			rank = (c << 4) + 1;
 		}
-		if (arg0 == 'ñ' && arg1 == 0) {
-			local7 = 1762;
+		if (c == 'ñ' && language == 0) {
+			rank = 1762;
 		}
-		return local7;
+		return rank;
 	}
 
 	@OriginalMember(owner = "client!ju", name = "a", descriptor = "(JIZZI)Ljava/lang/String;")
@@ -117,7 +117,7 @@ public final class Static172 {
 	@OriginalMember(owner = "client!ju", name = "a", descriptor = "(Ljava/awt/Color;IZILjava/lang/String;Ljava/awt/Color;Ljava/awt/Color;)V")
 	public static void method3289(@OriginalArg(0) Color arg0, @OriginalArg(2) boolean arg1, @OriginalArg(3) int arg2, @OriginalArg(4) String arg3, @OriginalArg(5) Color arg4, @OriginalArg(6) Color arg5) {
 		try {
-			@Pc(6) Graphics local6 = Static21.aCanvas1.getGraphics();
+			@Pc(6) Graphics local6 = GameShell.canvas.getGraphics();
 			if (Static90.aFont3 == null) {
 				Static90.aFont3 = new Font("Helvetica", 1, 13);
 			}
@@ -136,7 +136,7 @@ public final class Static172 {
 			}
 			try {
 				if (Static89.anImage1 == null) {
-					Static89.anImage1 = Static21.aCanvas1.createImage(304, 34);
+					Static89.anImage1 = GameShell.canvas.createImage(304, 34);
 				}
 				@Pc(68) Graphics local68 = Static89.anImage1.getGraphics();
 				local68.setColor(arg0);
@@ -170,7 +170,7 @@ public final class Static172 {
 				local6.drawString(Static290.aString56, Static250.anInt4665 / 2 - Static290.aString56.length() * 6 / 2, anInt3299 / 2 + -26);
 			}
 		} catch (@Pc(267) Exception local267) {
-			Static21.aCanvas1.repaint();
+			GameShell.canvas.repaint();
 		}
 	}
 

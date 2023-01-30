@@ -5,10 +5,10 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static111 {
 
 	@OriginalMember(owner = "client!ge", name = "e", descriptor = "Lclient!r;")
-	public static Class197 aClass197_24;
+	public static Js5 spritesArchive;
 
 	@OriginalMember(owner = "client!ge", name = "k", descriptor = "Lclient!r;")
-	public static Class197 aClass197_25;
+	public static Js5 aJs5_25;
 
 	@OriginalMember(owner = "client!ge", name = "c", descriptor = "I")
 	public static final int anInt2254 = 12;
@@ -18,7 +18,7 @@ public final class Static111 {
 
 	@OriginalMember(owner = "client!ge", name = "a", descriptor = "(I)V")
 	public static void method2274() {
-		for (@Pc(15) Class2_Sub6 local15 = (Class2_Sub6) Static366.aClass135_40.method3550(); local15 != null; local15 = (Class2_Sub6) Static366.aClass135_40.method3551()) {
+		for (@Pc(15) Class2_Sub6 local15 = (Class2_Sub6) Static366.A_LINKED_LIST___40.method3550(); local15 != null; local15 = (Class2_Sub6) Static366.A_LINKED_LIST___40.method3551()) {
 			if (Static330.aClass67ArrayArrayArray3 == null) {
 				local15.unlink();
 			} else {

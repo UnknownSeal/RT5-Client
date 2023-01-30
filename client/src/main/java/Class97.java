@@ -35,8 +35,8 @@ public final class Class97 {
 
 	@OriginalMember(owner = "client!hs", name = "a", descriptor = "(I)V")
 	public void method2584() {
-		this.aClass246_1.method6341();
-		this.aClass4_55.method81();
+		this.aClass246_1.clear();
+		this.aClass4_55.clear();
 		this.anInt2579 = this.anInt2588;
 	}
 
@@ -62,13 +62,13 @@ public final class Class97 {
 		this.method2593(arg0);
 		this.anInt2579--;
 		while (this.anInt2579 < 0) {
-			@Pc(36) Class2_Sub2_Sub2 local36 = (Class2_Sub2_Sub2) this.aClass246_1.method6338();
+			@Pc(36) Class2_Sub2_Sub2 local36 = (Class2_Sub2_Sub2) this.aClass246_1.removeHead();
 			this.method2586(local36);
 		}
 		@Pc(61) Class2_Sub2_Sub2_Sub2 local61 = new Class2_Sub2_Sub2_Sub2(arg0, arg1, 1);
 		this.aClass4_55.put(local61, arg0.method1779());
 		this.aClass246_1.addTail(local61);
-		local61.aLong215 = 0L;
+		local61.secondaryKey = 0L;
 	}
 
 	@OriginalMember(owner = "client!hs", name = "b", descriptor = "(II)V")
@@ -83,7 +83,7 @@ public final class Class97 {
 					local19.unlinkSecondary();
 					this.anInt2579 += local19.anInt5040;
 				}
-			} else if ((long) 5 < ++local19.aLong215) {
+			} else if ((long) 5 < ++local19.secondaryKey) {
 				@Pc(66) Class2_Sub2_Sub2 local66 = Static281.aClass236_1.method6029(local19);
 				this.aClass4_55.put(local66, local19.key);
 				Static145.insertAfter(local66, local19);
@@ -112,7 +112,7 @@ public final class Class97 {
 	@OriginalMember(owner = "client!hs", name = "a", descriptor = "(ILclient!iq;)V")
 	private void method2593(@OriginalArg(1) Interface7 arg0) {
 		@Pc(11) long local11 = arg0.method1779();
-		for (@Pc(25) Class2_Sub2_Sub2 local25 = (Class2_Sub2_Sub2) this.aClass4_55.method90(local11); local25 != null; local25 = (Class2_Sub2_Sub2) this.aClass4_55.method82()) {
+		for (@Pc(25) Class2_Sub2_Sub2 local25 = (Class2_Sub2_Sub2) this.aClass4_55.get(local11); local25 != null; local25 = (Class2_Sub2_Sub2) this.aClass4_55.method82()) {
 			if (local25.anInterface7_3.method1778(arg0)) {
 				this.method2586(local25);
 				return;
@@ -123,7 +123,7 @@ public final class Class97 {
 	@OriginalMember(owner = "client!hs", name = "a", descriptor = "(Lclient!iq;I)Ljava/lang/Object;")
 	public Object method2596(@OriginalArg(0) Interface7 arg0) {
 		@Pc(11) long local11 = arg0.method1779();
-		for (@Pc(18) Class2_Sub2_Sub2 local18 = (Class2_Sub2_Sub2) this.aClass4_55.method90(local11); local18 != null; local18 = (Class2_Sub2_Sub2) this.aClass4_55.method82()) {
+		for (@Pc(18) Class2_Sub2_Sub2 local18 = (Class2_Sub2_Sub2) this.aClass4_55.get(local11); local18 != null; local18 = (Class2_Sub2_Sub2) this.aClass4_55.method82()) {
 			if (local18.anInterface7_3.method1778(arg0)) {
 				@Pc(30) Object local30 = local18.method4625();
 				if (local30 != null) {
@@ -131,12 +131,12 @@ public final class Class97 {
 						@Pc(59) Class2_Sub2_Sub2_Sub2 local59 = new Class2_Sub2_Sub2_Sub2(arg0, local30, local18.anInt5040);
 						this.aClass4_55.put(local59, local18.key);
 						this.aClass246_1.addTail(local59);
-						local59.aLong215 = 0L;
+						local59.secondaryKey = 0L;
 						local18.unlink();
 						local18.unlinkSecondary();
 					} else {
 						this.aClass246_1.addTail(local18);
-						local18.aLong215 = 0L;
+						local18.secondaryKey = 0L;
 					}
 					return local30;
 				}

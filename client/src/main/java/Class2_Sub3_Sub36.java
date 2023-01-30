@@ -48,17 +48,17 @@ public final class Class2_Sub3_Sub36 extends TextureOp {
 
 	@OriginalMember(owner = "client!vl", name = "d", descriptor = "(I)V")
 	@Override
-	public void method6479() {
+	public void postDecode() {
 	}
 
 	@OriginalMember(owner = "client!vl", name = "a", descriptor = "(BI)[I")
 	@Override
 	public int[] getMonochromeOutput(@OriginalArg(1) int y) {
-		@Pc(11) int[] local11 = super.aClass158_41.method3995(y);
-		if (!super.aClass158_41.aBoolean265) {
+		@Pc(11) int[] local11 = super.monochromeImageCache.get(y);
+		if (!super.monochromeImageCache.invalid) {
 			return local11;
 		}
-		@Pc(26) int[][] local26 = super.aClass158_41.method3997();
+		@Pc(26) int[][] local26 = super.monochromeImageCache.get();
 		@Pc(28) int local28 = 0;
 		@Pc(30) int local30 = 0;
 		@Pc(32) int local32 = 0;
@@ -68,15 +68,15 @@ public final class Class2_Sub3_Sub36 extends TextureOp {
 		@Pc(40) boolean local40 = true;
 		@Pc(42) int local42 = 0;
 		@Pc(44) int local44 = 0;
-		@Pc(51) int local51 = this.anInt6915 * Static227.anInt4036 >> 12;
-		@Pc(58) int local58 = this.anInt6918 * Static227.anInt4036 >> 12;
-		@Pc(65) int local65 = Static24.anInt638 * this.anInt6916 >> 12;
-		@Pc(72) int local72 = this.anInt6921 * Static24.anInt638 >> 12;
+		@Pc(51) int local51 = this.anInt6915 * Static227.width >> 12;
+		@Pc(58) int local58 = this.anInt6918 * Static227.width >> 12;
+		@Pc(65) int local65 = Static24.height * this.anInt6916 >> 12;
+		@Pc(72) int local72 = this.anInt6921 * Static24.height >> 12;
 		if (local72 <= 1) {
 			return local26[y];
 		}
-		this.anInt6927 = Static227.anInt4036 / 8 * this.anInt6922 >> 12;
-		@Pc(97) int local97 = Static227.anInt4036 / local51 + 1;
+		this.anInt6927 = Static227.width / 8 * this.anInt6922 >> 12;
+		@Pc(97) int local97 = Static227.width / local51 + 1;
 		@Pc(101) int[][] local101 = new int[local97][3];
 		@Pc(105) int[][] local105 = new int[local97][3];
 		@Pc(112) Random local112 = new Random((long) this.anInt6919);
@@ -85,9 +85,9 @@ public final class Class2_Sub3_Sub36 extends TextureOp {
 				@Pc(121) int local121 = local51 + Static382.nextInt(local112, local58 - local51);
 				@Pc(131) int local131 = local65 + Static382.nextInt(local112, local72 - local65);
 				@Pc(135) int local135 = local34 + local121;
-				if (Static227.anInt4036 < local135) {
-					local135 = Static227.anInt4036;
-					local121 = Static227.anInt4036 - local34;
+				if (Static227.width < local135) {
+					local135 = Static227.width;
+					local121 = Static227.width - local34;
 				}
 				@Pc(176) int local176;
 				@Pc(155) int local155;
@@ -99,10 +99,10 @@ public final class Class2_Sub3_Sub36 extends TextureOp {
 					local155 = 0;
 					@Pc(159) int local159 = local28 + local135;
 					if (local159 < 0) {
-						local159 += Static227.anInt4036;
+						local159 += Static227.width;
 					}
-					if (Static227.anInt4036 < local159) {
-						local159 -= Static227.anInt4036;
+					if (Static227.width < local159) {
+						local159 -= Static227.width;
 					}
 					local176 = local153[2];
 					while (true) {
@@ -111,10 +111,10 @@ public final class Class2_Sub3_Sub36 extends TextureOp {
 							if (local149 != local36) {
 								@Pc(222) int local222 = local28 + local34;
 								if (local222 < 0) {
-									local222 += Static227.anInt4036;
+									local222 += Static227.width;
 								}
-								if (local222 > Static227.anInt4036) {
-									local222 -= Static227.anInt4036;
+								if (local222 > Static227.width) {
+									local222 -= Static227.width;
 								}
 								for (@Pc(241) int local241 = 1; local241 <= local155; local241++) {
 									@Pc(252) int[] local252 = local105[(local36 + local241) % local42];
@@ -136,7 +136,7 @@ public final class Class2_Sub3_Sub36 extends TextureOp {
 											local305 = 0;
 										} else {
 											local305 = Math.max(local222, local294);
-											local309 = Static227.anInt4036;
+											local309 = Static227.width;
 										}
 										this.method6190(local283, local309 - local305, local112, local305 + local32, local176 + -local283, local26);
 									}
@@ -152,13 +152,13 @@ public final class Class2_Sub3_Sub36 extends TextureOp {
 						}
 					}
 				}
-				if (Static24.anInt638 >= local131 + local176) {
+				if (Static24.height >= local131 + local176) {
 					local38 = false;
 				} else {
-					local131 = Static24.anInt638 - local176;
+					local131 = Static24.height - local176;
 				}
 				@Pc(385) int[] local385;
-				if (Static227.anInt4036 == local135) {
+				if (Static227.width == local135) {
 					this.method6190(local176, local121, local112, local30 + local34, local131, local26);
 					if (local38) {
 						return local11;
@@ -174,15 +174,15 @@ public final class Class2_Sub3_Sub36 extends TextureOp {
 					local42 = local44;
 					local44 = 0;
 					local32 = local30;
-					local30 = Static382.nextInt(local112, Static227.anInt4036);
+					local30 = Static382.nextInt(local112, Static227.width);
 					local28 = local30 - local32;
 					local34 = 0;
 					local155 = local28;
 					if (local28 < 0) {
-						local155 = local28 + Static227.anInt4036;
+						local155 = local28 + Static227.width;
 					}
-					if (local155 > Static227.anInt4036) {
-						local155 -= Static227.anInt4036;
+					if (local155 > Static227.width) {
+						local155 -= Static227.width;
 					}
 					local36 = 0;
 					while (true) {
@@ -213,22 +213,22 @@ public final class Class2_Sub3_Sub36 extends TextureOp {
 		@Pc(21) int local21 = this.anInt6920 > 0 ? 4096 - Static382.nextInt(arg2, this.anInt6920) : 4096;
 		@Pc(29) int local29 = this.anInt6928 * this.anInt6927 >> 12;
 		@Pc(50) int local50 = this.anInt6927 - (local29 > 0 ? Static382.nextInt(arg2, local29) : 0);
-		if (Static227.anInt4036 <= arg3) {
-			arg3 -= Static227.anInt4036;
+		if (Static227.width <= arg3) {
+			arg3 -= Static227.width;
 		}
 		@Pc(77) int local77;
 		@Pc(104) int local104;
 		if (local50 <= 0) {
-			if (Static227.anInt4036 >= arg3 + arg1) {
+			if (Static227.width >= arg3 + arg1) {
 				for (local77 = 0; local77 < arg4; local77++) {
-					Static403.method4609(arg5[arg0 + local77], arg3, arg1, local21);
+					Static403.fill(arg5[arg0 + local77], arg3, arg1, local21);
 				}
 			} else {
-				local77 = Static227.anInt4036 - arg3;
+				local77 = Static227.width - arg3;
 				for (local104 = 0; local104 < arg4; local104++) {
 					@Pc(112) int[] local112 = arg5[local104 + arg0];
-					Static403.method4609(local112, arg3, local77, local21);
-					Static403.method4609(local112, 0, arg1 - local77, local21);
+					Static403.fill(local112, arg3, local77, local21);
+					Static403.fill(local112, 0, arg1 - local77, local21);
 				}
 			}
 		} else if (arg4 > 0 && arg1 > 0) {
@@ -256,12 +256,12 @@ public final class Class2_Sub3_Sub36 extends TextureOp {
 							local192[arg3 + local213 & Static73.anInt1721] = local192[arg1 + arg3 - local213 - 1 & Static73.anInt1721] = local205 <= local221 ? local205 : local221;
 						}
 					}
-					if (local175 + local182 > Static227.anInt4036) {
-						local213 = Static227.anInt4036 - local175;
-						Static403.method4609(local192, local175, local213, local205);
-						Static403.method4609(local192, 0, local182 - local213, local205);
+					if (local175 + local182 > Static227.width) {
+						local213 = Static227.width - local175;
+						Static403.fill(local192, local175, local213, local205);
+						Static403.fill(local192, 0, local182 - local213, local205);
 					} else {
-						Static403.method4609(local192, local175, local182, local205);
+						Static403.fill(local192, local175, local182, local205);
 					}
 				} else {
 					local205 = arg4 - local184 - 1;
@@ -279,23 +279,23 @@ public final class Class2_Sub3_Sub36 extends TextureOp {
 								local192[arg3 + local221 & Static73.anInt1721] = local192[arg1 + arg3 - local221 - 1 & Static73.anInt1721] = local378 < local213 ? local378 : local213;
 							}
 						}
-						if (Static227.anInt4036 < local182 + local175) {
-							local221 = Static227.anInt4036 - local175;
-							Static403.method4609(local192, local175, local221, local213);
-							Static403.method4609(local192, 0, local182 - local221, local213);
+						if (Static227.width < local182 + local175) {
+							local221 = Static227.width - local175;
+							Static403.fill(local192, local175, local221, local213);
+							Static403.fill(local192, 0, local182 - local221, local213);
 						} else {
-							Static403.method4609(local192, local175, local182, local213);
+							Static403.fill(local192, local175, local182, local213);
 						}
 					} else {
 						for (local213 = 0; local213 < local160; local213++) {
 							local192[arg3 + local213 & Static73.anInt1721] = local192[Static73.anInt1721 & arg3 + arg1 - local213 - 1] = local21 * local213 / local160;
 						}
-						if (Static227.anInt4036 < local182 + local175) {
-							local221 = Static227.anInt4036 - local175;
-							Static403.method4609(local192, local175, local221, local21);
-							Static403.method4609(local192, 0, local182 - local221, local21);
+						if (Static227.width < local182 + local175) {
+							local221 = Static227.width - local175;
+							Static403.fill(local192, local175, local221, local21);
+							Static403.fill(local192, 0, local182 - local221, local21);
 						} else {
-							Static403.method4609(local192, local175, local182, local21);
+							Static403.fill(local192, local175, local182, local21);
 						}
 					}
 				}
@@ -305,7 +305,7 @@ public final class Class2_Sub3_Sub36 extends TextureOp {
 
 	@OriginalMember(owner = "client!vl", name = "a", descriptor = "(ILclient!bt;I)V")
 	@Override
-	public void method6483(@OriginalArg(0) int arg0, @OriginalArg(1) Buffer arg1) {
+	public void decode(@OriginalArg(0) int arg0, @OriginalArg(1) Buffer arg1) {
 		if (arg0 == 0) {
 			this.anInt6919 = arg1.g1();
 		} else if (arg0 == 1) {

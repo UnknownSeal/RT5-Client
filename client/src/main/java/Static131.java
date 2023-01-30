@@ -15,7 +15,7 @@ public final class Static131 {
 
 	@OriginalMember(owner = "client!hi", name = "a", descriptor = "(Ljava/lang/String;BZ)V")
 	public static void findObjs(@OriginalArg(0) String query, @OriginalArg(2) boolean stockMarketOnly) {
-		Static61.aClass197_12.discardUnpacked = 1;
+		Static61.aJs5_12.discardUnpacked = 1;
 		@Pc(18) String queryLowercase = query.toLowerCase();
 		@Pc(23) int size = 0;
 		@Pc(21) short[] results = new short[16];
@@ -45,7 +45,7 @@ public final class Static131 {
 			names[local130] = Static313.aClass107_2.get(results[local130]).name;
 		}
 		Static135.method2534(names, Static177.results);
-		Static61.aClass197_12.method5067();
-		Static61.aClass197_12.discardUnpacked = 2;
+		Static61.aJs5_12.method5067();
+		Static61.aJs5_12.discardUnpacked = 2;
 	}
 }

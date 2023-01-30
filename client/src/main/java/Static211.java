@@ -52,39 +52,39 @@ public final class Static211 {
 		Static369.method6216();
 		Static192.method3507();
 		Static161.method2968();
-		Static198.A_SOFT_LRU_HASH_TABLE___30.method2614();
+		ScriptRunner.A_SOFT_LRU_HASH_TABLE___30.method2614();
 		Static190.aClass19_8.method2903();
 		Static261.aClass116_7.method3152();
 		Static194.method3540();
-		Static342.aClass197_77.method5067();
-		Static34.aClass197_67.method5067();
-		Static289.aClass197_71.method5067();
-		Static354.aClass197_9.method5067();
-		Static85.aClass197_21.method5067();
+		Static342.aJs5_77.method5067();
+		Static34.aJs5_67.method5067();
+		Static289.aJs5_71.method5067();
+		Static354.aJs5_9.method5067();
+		Static85.aJs5_21.method5067();
 		Static288.js5Archive5.method5067();
-		Static101.aClass197_23.method5067();
-		Static237.aClass197_63.method5067();
-		Static30.aClass197_5.method5067();
-		Static324.aClass197_86.method5067();
-		Static75.aClass197_18.method5067();
-		Static216.aClass197_58.method5067();
-		Static195.aClass197_54.method5067();
-		Static255.aClass197_64.method5067();
-		Static133.aClass197_32.method5067();
-		Static120.aClass197_28.method5067();
-		Static391.aClass197_96.method5067();
-		Static226.aClass197_61.method5067();
-		Static216.aClass197_57.method5067();
-		Static61.aClass197_12.method5067();
-		Static139.aClass197_35.method5067();
-		Static173.aClass197_45.method5067();
-		Static294.aClass197_75.method5067();
-		Static389.aClass197_66.method5067();
-		Static385.aClass197_94.method5067();
-		Static139.aClass197_34.method5067();
-		Static235.aClass197_47.method5067();
-		Static61.aClass197_11.method5067();
-		Static85.aClass197_20.method5067();
+		Static101.aJs5_23.method5067();
+		Static237.aJs5_63.method5067();
+		Static30.aJs5_5.method5067();
+		Static324.aJs5_86.method5067();
+		Static75.aJs5_18.method5067();
+		Static216.aJs5_58.method5067();
+		Static195.aJs5_54.method5067();
+		Static255.aJs5_64.method5067();
+		Static133.aJs5_32.method5067();
+		Static120.aJs5_28.method5067();
+		Static391.aJs5_96.method5067();
+		Static226.aJs5_61.method5067();
+		Static216.aJs5_57.method5067();
+		Static61.aJs5_12.method5067();
+		Static139.aJs5_35.method5067();
+		Static173.aJs5_45.method5067();
+		Static294.aJs5_75.method5067();
+		Static389.aJs5_66.method5067();
+		Static385.aJs5_94.method5067();
+		Static139.aJs5_34.method5067();
+		Static235.aJs5_47.method5067();
+		Static61.aJs5_11.method5067();
+		Static85.aJs5_20.method5067();
 		Static306.A_SOFT_LRU_HASH_TABLE___49.method2614();
 		Static139.A_SOFT_LRU_HASH_TABLE___18.method2614();
 		Static61.A_SOFT_LRU_HASH_TABLE___5.method2614();
@@ -137,7 +137,7 @@ public final class Static211 {
 			if (local7.anIntArray181 != null) {
 				local7.anInt2907 = local7.anInt2903 + (int) ((double) (local7.anInt2897 - local7.anInt2903) * Math.random());
 			}
-			Static83.aClass135_14.method3539(local7);
+			Static83.A_LINKED_LIST___14.method3539(local7);
 		} else if (arg4 != null) {
 			local7.aClass11_Sub5_Sub2_Sub2_1 = arg4;
 			@Pc(131) NpcType local131 = arg4.type;
@@ -152,7 +152,7 @@ public final class Static211 {
 				local7.anInt2901 = local131.soundradius * 128;
 				local7.anInt2906 = local131.soundvolume;
 			}
-			Static363.aClass135_39.method3539(local7);
+			Static363.A_LINKED_LIST___39.method3539(local7);
 		} else if (arg3 != null) {
 			local7.aClass11_Sub5_Sub2_Sub1_2 = arg3;
 			local7.anInt2896 = (arg5 + arg3.method4327()) * 128;

@@ -82,7 +82,7 @@ public final class Class2_Sub41 extends Node {
 		}
 		@Pc(230) long local230 = this.method6362(arg6 == null ? null : arg6.anIntArray194, local23, arg3, arg2);
 		if (Static48.A_SOFT_LRU_HASH_TABLE___3 != null) {
-			local7 = (Model) Static48.A_SOFT_LRU_HASH_TABLE___3.method2612(local230);
+			local7 = (Model) Static48.A_SOFT_LRU_HASH_TABLE___3.get(local230);
 		}
 		if (local7 == null || arg7.method2863(local7.method3826(), local9) != 0) {
 			if (local7 != null) {
@@ -140,7 +140,7 @@ public final class Class2_Sub41 extends Node {
 			}
 			if (Static48.A_SOFT_LRU_HASH_TABLE___3 != null) {
 				local7.method3813(local9);
-				Static48.A_SOFT_LRU_HASH_TABLE___3.method2624(local230, local7);
+				Static48.A_SOFT_LRU_HASH_TABLE___3.put(local230, local7);
 			}
 		}
 		if (arg4 == null || local87 == null) {

@@ -29,8 +29,8 @@ public final class SoftLruHashTable {
 	}
 
 	@OriginalMember(owner = "client!hu", name = "a", descriptor = "(BJ)Ljava/lang/Object;")
-	public Object method2612(@OriginalArg(1) long arg0) {
-		@Pc(10) ReferenceNode local10 = (ReferenceNode) this.table.method90(arg0);
+	public Object get(@OriginalArg(1) long arg0) {
+		@Pc(10) ReferenceNode local10 = (ReferenceNode) this.table.get(arg0);
 		if (local10 == null) {
 			return null;
 		}
@@ -45,12 +45,12 @@ public final class SoftLruHashTable {
 			@Pc(53) Class2_Sub2_Sub6_Sub2 local53 = new Class2_Sub2_Sub6_Sub2(local25, local10.anInt6636);
 			this.table.put(local53, local10.key);
 			this.queue.addTail(local53);
-			local53.aLong215 = 0L;
+			local53.secondaryKey = 0L;
 			local10.unlink();
 			local10.unlinkSecondary();
 		} else {
 			this.queue.addTail(local10);
-			local10.aLong215 = 0L;
+			local10.secondaryKey = 0L;
 		}
 		return local25;
 	}
@@ -68,8 +68,8 @@ public final class SoftLruHashTable {
 
 	@OriginalMember(owner = "client!hu", name = "b", descriptor = "(I)V")
 	public void method2614() {
-		this.queue.method6341();
-		this.table.method81();
+		this.queue.clear();
+		this.table.clear();
 		this.available = this.anInt2619;
 	}
 
@@ -85,7 +85,7 @@ public final class SoftLruHashTable {
 					node.unlinkSecondary();
 					this.available++;
 				}
-			} else if (++node.aLong215 > (long) maxAge) {
+			} else if (++node.secondaryKey > (long) maxAge) {
 				@Pc(35) ReferenceNode softNode = ReferenceNodeFactory.SOFT_REFERENCE_NODE_FACTORY.create(node);
 				this.table.put(softNode, node.key);
 				Static145.insertAfter(softNode, node);
@@ -108,13 +108,13 @@ public final class SoftLruHashTable {
 		this.method2626(arg1);
 		this.available--;
 		while (this.available < 0) {
-			@Pc(36) ReferenceNode local36 = (ReferenceNode) this.queue.method6338();
+			@Pc(36) ReferenceNode local36 = (ReferenceNode) this.queue.removeHead();
 			this.method2625(local36);
 		}
 		@Pc(49) Class2_Sub2_Sub6_Sub2 local49 = new Class2_Sub2_Sub6_Sub2(arg0, 1);
 		this.table.put(local49, arg1);
 		this.queue.addTail(local49);
-		local49.aLong215 = 0;
+		local49.secondaryKey = 0;
 	}
 
 	@OriginalMember(owner = "client!hu", name = "a", descriptor = "(Z)Ljava/lang/Object;")
@@ -168,7 +168,7 @@ public final class SoftLruHashTable {
 	}
 
 	@OriginalMember(owner = "client!hu", name = "a", descriptor = "(JLjava/lang/Object;I)V")
-	public void method2624(@OriginalArg(0) long arg0, @OriginalArg(1) Object arg1) {
+	public void put(@OriginalArg(0) long arg0, @OriginalArg(1) Object arg1) {
 		this.method2617(arg1, arg0);
 	}
 
@@ -183,7 +183,7 @@ public final class SoftLruHashTable {
 
 	@OriginalMember(owner = "client!hu", name = "a", descriptor = "(JI)V")
 	private void method2626(@OriginalArg(0) long arg0) {
-		@Pc(14) ReferenceNode local14 = (ReferenceNode) this.table.method90(arg0);
+		@Pc(14) ReferenceNode local14 = (ReferenceNode) this.table.get(arg0);
 		this.method2625(local14);
 	}
 }

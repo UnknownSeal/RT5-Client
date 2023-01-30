@@ -34,7 +34,7 @@ public final class Static341 {
 		@Pc(11) boolean local11 = false;
 		for (@Pc(13) int local13 = 0; local13 < local7; local13++) {
 			@Pc(21) Class11_Sub5_Sub2_Sub1 local21 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local9[local13]];
-			if (local21 != null && Static17.aClass11_Sub5_Sub2_Sub1_3 != local21 && local21.aString41 != null && local21.aString41.equalsIgnoreCase(arg1)) {
+			if (local21 != null && Static17.self != local21 && local21.aString41 != null && local21.aString41.equalsIgnoreCase(arg1)) {
 				if (arg0 == 1) {
 					Static91.method1960(Static7.aClass145_267);
 					Static257.aClass2_Sub4_Sub2_4.p1(0);

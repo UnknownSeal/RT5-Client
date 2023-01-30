@@ -25,26 +25,26 @@ public final class Class202 {
 	public final SoftLruHashTable aSoftLruHashTable_48 = new SoftLruHashTable(50);
 
 	@OriginalMember(owner = "client!rh", name = "n", descriptor = "Lclient!r;")
-	private final Class197 aClass197_79;
+	private final Js5 aJs5_79;
 
 	@OriginalMember(owner = "client!rh", name = "o", descriptor = "Z")
 	public boolean aBoolean401;
 
 	@OriginalMember(owner = "client!rh", name = "d", descriptor = "Lclient!r;")
-	public final Class197 aClass197_78;
+	public final Js5 aJs5_78;
 
 	static {
 		new LocalisedText("Unable to send message - system busy.", "Deine Nachricht konnte nicht verschickt werden, das System ist derzeit ausgelastet.", "Impossible d'envoyer un message - système occupé.", "Não foi possível enviar a mensagem. O sistema está ocupado.");
 	}
 
 	@OriginalMember(owner = "client!rh", name = "<init>", descriptor = "(Lclient!dn;IZLclient!r;Lclient!r;)V")
-	public Class202(@OriginalArg(0) Class50 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) boolean arg2, @OriginalArg(3) Class197 arg3, @OriginalArg(4) Class197 arg4) {
-		this.aClass197_79 = arg3;
+	public Class202(@OriginalArg(0) Class50 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) boolean arg2, @OriginalArg(3) Js5 arg3, @OriginalArg(4) Js5 arg4) {
+		this.aJs5_79 = arg3;
 		this.aBoolean401 = arg2;
-		this.aClass197_78 = arg4;
-		if (this.aClass197_79 != null) {
-			@Pc(47) int local47 = this.aClass197_79.method5091() - 1;
-			this.aClass197_79.method5080(local47);
+		this.aJs5_78 = arg4;
+		if (this.aJs5_79 != null) {
+			@Pc(47) int local47 = this.aJs5_79.method5091() - 1;
+			this.aJs5_79.method5080(local47);
 		}
 	}
 
@@ -151,12 +151,12 @@ public final class Class202 {
 		@Pc(6) SoftLruHashTable local6 = this.aSoftLruHashTable_45;
 		@Pc(16) Class41 local16;
 		synchronized (this.aSoftLruHashTable_45) {
-			local16 = (Class41) this.aSoftLruHashTable_45.method2612((long) arg0);
+			local16 = (Class41) this.aSoftLruHashTable_45.get((long) arg0);
 		}
 		if (local16 != null) {
 			return local16;
 		}
-		@Pc(37) byte[] local37 = this.aClass197_79.fetchFile(Static324.method5539(arg0), Static381.method6347(arg0));
+		@Pc(37) byte[] local37 = this.aJs5_79.fetchFile(Static324.method5539(arg0), Static381.method6347(arg0));
 		local16 = new Class41();
 		local16.anInt1351 = arg0;
 		local16.aClass202_1 = this;
@@ -174,7 +174,7 @@ public final class Class202 {
 		}
 		@Pc(91) SoftLruHashTable local91 = this.aSoftLruHashTable_45;
 		synchronized (this.aSoftLruHashTable_45) {
-			this.aSoftLruHashTable_45.method2624((long) arg0, local16);
+			this.aSoftLruHashTable_45.put((long) arg0, local16);
 			return local16;
 		}
 	}

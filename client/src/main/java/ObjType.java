@@ -361,13 +361,13 @@ public final class ObjType {
 			return true;
 		}
 		@Pc(36) boolean local36 = true;
-		if (!this.aClass107_1.aClass197_41.method5087(0, local6)) {
+		if (!this.aClass107_1.aJs5_41.method5087(0, local6)) {
 			local36 = false;
 		}
-		if (local14 != -1 && !this.aClass107_1.aClass197_41.method5087(0, local14)) {
+		if (local14 != -1 && !this.aClass107_1.aJs5_41.method5087(0, local14)) {
 			local36 = false;
 		}
-		if (local17 != -1 && !this.aClass107_1.aClass197_41.method5087(0, local17)) {
+		if (local17 != -1 && !this.aClass107_1.aJs5_41.method5087(0, local17)) {
 			local36 = false;
 		}
 		return local36;
@@ -389,7 +389,7 @@ public final class ObjType {
 		if (this.params == null) {
 			return arg0;
 		} else {
-			@Pc(22) IntNode local22 = (IntNode) this.params.method90((long) arg1);
+			@Pc(22) IntNode local22 = (IntNode) this.params.get((long) arg1);
 			return local22 == null ? arg0 : local22.value;
 		}
 	}
@@ -399,7 +399,7 @@ public final class ObjType {
 		if (this.params == null) {
 			return arg0;
 		} else {
-			@Pc(24) StringNode local24 = (StringNode) this.params.method90((long) arg1);
+			@Pc(24) StringNode local24 = (StringNode) this.params.get((long) arg1);
 			return local24 == null ? arg0 : local24.value;
 		}
 	}
@@ -461,7 +461,7 @@ public final class ObjType {
 		@Pc(85) SoftLruHashTable local85 = this.aClass107_1.aSoftLruHashTable_22;
 		@Pc(102) Model local102;
 		synchronized (this.aClass107_1.aSoftLruHashTable_22) {
-			local102 = (Model) this.aClass107_1.aSoftLruHashTable_22.method2612((long) (arg4.anInt2836 << 29 | this.anInt5255));
+			local102 = (Model) this.aClass107_1.aSoftLruHashTable_22.get((long) (arg4.anInt2836 << 29 | this.anInt5255));
 		}
 		if (local102 == null || arg4.method2863(local102.method3826(), local15) != 0) {
 			if (local102 != null) {
@@ -483,7 +483,7 @@ public final class ObjType {
 			if (this.resizeX != 128) {
 				local129 |= 0x4;
 			}
-			@Pc(178) Class185 local178 = Static298.method2426(this.aClass107_1.aClass197_41, this.model);
+			@Pc(178) Class185 local178 = Static298.method2426(this.aClass107_1.aJs5_41, this.model);
 			if (local178 == null) {
 				return null;
 			}
@@ -519,7 +519,7 @@ public final class ObjType {
 			local102.method3813(local15);
 			@Pc(371) SoftLruHashTable local371 = this.aClass107_1.aSoftLruHashTable_22;
 			synchronized (this.aClass107_1.aSoftLruHashTable_22) {
-				this.aClass107_1.aSoftLruHashTable_22.method2624((long) (this.anInt5255 | arg4.anInt2836 << 29), local102);
+				this.aClass107_1.aSoftLruHashTable_22.put((long) (this.anInt5255 | arg4.anInt2836 << 29), local102);
 			}
 		}
 		if (arg3 != null) {
@@ -544,9 +544,9 @@ public final class ObjType {
 		if (local8 == -1) {
 			return null;
 		}
-		@Pc(32) Class185 local32 = Static298.method2426(this.aClass107_1.aClass197_41, local8);
+		@Pc(32) Class185 local32 = Static298.method2426(this.aClass107_1.aJs5_41, local8);
 		if (local11 != -1) {
-			@Pc(44) Class185 local44 = Static298.method2426(this.aClass107_1.aClass197_41, local11);
+			@Pc(44) Class185 local44 = Static298.method2426(this.aClass107_1.aJs5_41, local11);
 			@Pc(55) Class185[] local55 = new Class185[] { local32, local44 };
 			local32 = new Class185(local55, 2);
 		}
@@ -577,14 +577,14 @@ public final class ObjType {
 		if (local8 == -1) {
 			return null;
 		}
-		@Pc(46) Class185 local46 = Static298.method2426(this.aClass107_1.aClass197_41, local8);
+		@Pc(46) Class185 local46 = Static298.method2426(this.aClass107_1.aJs5_41, local8);
 		if (local11 != -1) {
-			@Pc(58) Class185 local58 = Static298.method2426(this.aClass107_1.aClass197_41, local11);
+			@Pc(58) Class185 local58 = Static298.method2426(this.aClass107_1.aJs5_41, local11);
 			if (local14 == -1) {
 				@Pc(104) Class185[] local104 = new Class185[] { local46, local58 };
 				local46 = new Class185(local104, 2);
 			} else {
-				@Pc(70) Class185 local70 = Static298.method2426(this.aClass107_1.aClass197_41, local14);
+				@Pc(70) Class185 local70 = Static298.method2426(this.aClass107_1.aJs5_41, local14);
 				@Pc(85) Class185[] local85 = new Class185[] { local46, local58, local70 };
 				local46 = new Class185(local85, 3);
 			}
@@ -634,7 +634,7 @@ public final class ObjType {
 
 	@OriginalMember(owner = "client!qf", name = "a", descriptor = "(Lclient!ur;Lclient!jo;BLclient!wm;ILclient!wm;IIIZ)[I")
 	public int[] method4780(@OriginalArg(0) Class130 arg0, @OriginalArg(1) Class117 arg1, @OriginalArg(3) Class19 arg2, @OriginalArg(4) int arg3, @OriginalArg(5) Class19 arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6, @OriginalArg(8) int arg7, @OriginalArg(9) boolean arg8) {
-		@Pc(14) Class185 local14 = Static298.method2426(this.aClass107_1.aClass197_41, this.model);
+		@Pc(14) Class185 local14 = Static298.method2426(this.aClass107_1.aJs5_41, this.model);
 		if (local14 == null) {
 			return null;
 		}
@@ -705,7 +705,7 @@ public final class ObjType {
 		@Pc(333) Class14 local333 = arg4.method2808();
 		local333.method3930(-this.anInt5249 << 3);
 		local333.method3925(this.anInt5215 << 3);
-		local333.method3935(this.anInt5252, (Class19.anIntArray178[this.anInt5245 << 3] * local287 >> 15) + (this.anInt5232 - (local210.method3801() / 2)), this.anInt5232 + (local287 * Class19.anIntArray177[this.anInt5245 << 3] >> 15));
+		local333.method3935(this.anInt5252, (Class19.anIntArray178[this.anInt5245 << 3] * local287 >> 15) + (this.anInt5232 - (local210.method3801() / 2)), this.anInt5232 + (local287 * Class19.COSINE[this.anInt5245 << 3] >> 15));
 		local333.method3928(this.anInt5245 << 3);
 		@Pc(392) int local392 = arg4.method2814();
 		@Pc(395) int local395 = arg4.method2875();
@@ -773,10 +773,10 @@ public final class ObjType {
 			return true;
 		}
 		@Pc(29) boolean local29 = true;
-		if (!this.aClass107_1.aClass197_41.method5087(0, local6)) {
+		if (!this.aClass107_1.aJs5_41.method5087(0, local6)) {
 			local29 = false;
 		}
-		if (local9 != -1 && !this.aClass107_1.aClass197_41.method5087(0, local9)) {
+		if (local9 != -1 && !this.aClass107_1.aJs5_41.method5087(0, local9)) {
 			local29 = false;
 		}
 		return local29;

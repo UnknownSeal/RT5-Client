@@ -194,7 +194,7 @@ public final class Static267 {
 	}
 
 	@OriginalMember(owner = "client!pf", name = "a", descriptor = "(Lclient!r;II)Lclient!pf;")
-	public static Class2_Sub27 method4519(@OriginalArg(0) Class197 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
+	public static Class2_Sub27 method4519(@OriginalArg(0) Js5 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
 		if (method4520(arg0)) {
 			@Pc(16) byte[] local16 = arg0.fetchFile(arg1, arg2);
 			return local16 == null ? null : new Class2_Sub27(local16);
@@ -205,7 +205,7 @@ public final class Static267 {
 	}
 
 	@OriginalMember(owner = "client!pf", name = "a", descriptor = "(Lclient!r;)Z")
-	private static boolean method4520(@OriginalArg(0) Class197 arg0) {
+	private static boolean method4520(@OriginalArg(0) Js5 arg0) {
 		if (!aBoolean368) {
 			@Pc(7) byte[] local7 = arg0.fetchFile(0, 0);
 			if (local7 == null) {

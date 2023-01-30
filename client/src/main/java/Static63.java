@@ -25,7 +25,7 @@ public final class Static63 {
 			@Pc(81) Class169 local81;
 			label63: for (@Pc(23) int local23 = 0; local23 < local15.length; local23++) {
 				@Pc(29) Class169 local29 = local15[local23];
-				if ((local29.anInt4687 <= 0 || local29.anInt4687 >= 24) && local29.anInt4685 >= 800 && local29.anInt4684 >= 600 && (Static309.anInt5802 >= 96 || Static77.anInt1762 != 0 || local29.anInt4685 <= 1024 && local29.anInt4684 <= 768)) {
+				if ((local29.anInt4687 <= 0 || local29.anInt4687 >= 24) && local29.anInt4685 >= 800 && local29.anInt4684 >= 600 && (GameShell.maxMemory >= 96 || Static77.anInt1762 != 0 || local29.anInt4685 <= 1024 && local29.anInt4684 <= 768)) {
 					for (local75 = 0; local75 < local21; local75++) {
 						local81 = local19[local75];
 						if (local29.anInt4685 == local81.anInt4685 && local81.anInt4684 == local29.anInt4684) {

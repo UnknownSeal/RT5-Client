@@ -6,7 +6,7 @@ public final class Static43 {
 	public static short[] aShortArray20;
 
 	@OriginalMember(owner = "client!ck", name = "U", descriptor = "Lclient!r;")
-	public static Class197 aClass197_7;
+	public static Js5 aJs5_7;
 
 	@OriginalMember(owner = "client!ck", name = "B", descriptor = "Lclient!h;")
 	public static final Class89 aClass89_39 = new Class89(34, 15);

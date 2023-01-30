@@ -25,7 +25,7 @@ public final class Class130_Sub4 extends Class130 {
 	private final int[] anIntArray454;
 
 	@OriginalMember(owner = "client!uj", name = "<init>", descriptor = "(Lclient!j;Lclient!vi;[Lclient!dk;[I[I)V")
-	public Class130_Sub4(@OriginalArg(0) Class19_Sub2 arg0, @OriginalArg(1) Class239 arg1, @OriginalArg(2) Class48[] arg2, @OriginalArg(3) int[] arg3, @OriginalArg(4) int[] arg4) {
+	public Class130_Sub4(@OriginalArg(0) Class19_Sub2 arg0, @OriginalArg(1) Class239 arg1, @OriginalArg(2) SoftwareSprite[] arg2, @OriginalArg(3) int[] arg3, @OriginalArg(4) int[] arg4) {
 		super(arg0, arg1);
 		this.aClass19_Sub2_10 = arg0;
 		this.anIntArray452 = arg3;

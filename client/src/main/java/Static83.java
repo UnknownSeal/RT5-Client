@@ -11,7 +11,7 @@ public final class Static83 {
 	public static final Class89 aClass89_69 = new Class89(70, -2);
 
 	@OriginalMember(owner = "client!en", name = "c", descriptor = "Lclient!ld;")
-	public static final Class135 aClass135_14 = new Class135();
+	public static final LinkedList A_LINKED_LIST___14 = new LinkedList();
 
 	@OriginalMember(owner = "client!en", name = "d", descriptor = "I")
 	public static final int anInt1838 = 2;

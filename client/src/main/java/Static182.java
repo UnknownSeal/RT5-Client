@@ -17,12 +17,12 @@ public final class Static182 {
 	public static int anInt3423 = 0;
 
 	@OriginalMember(owner = "client!kk", name = "j", descriptor = "Lclient!nk;")
-	public static Class161 aClass161_7 = null;
+	public static Component aComponent_7 = null;
 
 	@OriginalMember(owner = "client!kk", name = "a", descriptor = "(IJ)V")
 	public static void method3385(@OriginalArg(1) long arg0) {
-		@Pc(10) int local10 = Static17.aClass11_Sub5_Sub2_Sub1_3.anInt6781 + Static24.anInt642;
-		@Pc(15) int local15 = Static14.anInt327 + Static17.aClass11_Sub5_Sub2_Sub1_3.anInt6783;
+		@Pc(10) int local10 = Static17.self.xFine + Static24.anInt642;
+		@Pc(15) int local15 = Static14.anInt327 + Static17.self.zFine;
 		if (Static288.anInt5463 - local10 < -500 || Static288.anInt5463 - local10 > 500 || Static62.anInt2395 - local15 < -500 || Static62.anInt2395 - local15 > 500) {
 			Static288.anInt5463 = local10;
 			Static62.anInt2395 = local15;
@@ -70,7 +70,7 @@ public final class Static182 {
 
 	@OriginalMember(owner = "client!kk", name = "a", descriptor = "(B)V")
 	public static void method3386() {
-		for (@Pc(15) Class2_Sub2_Sub1 local15 = (Class2_Sub2_Sub1) Static129.aClass135_20.method3550(); local15 != null; local15 = (Class2_Sub2_Sub1) Static129.aClass135_20.method3551()) {
+		for (@Pc(15) Class2_Sub2_Sub1 local15 = (Class2_Sub2_Sub1) Static129.A_LINKED_LIST___20.method3550(); local15 != null; local15 = (Class2_Sub2_Sub1) Static129.A_LINKED_LIST___20.method3551()) {
 			@Pc(20) Class11_Sub5_Sub4 local20 = local15.aClass11_Sub5_Sub4_1;
 			if (local20.aBoolean445) {
 				local15.unlink();
@@ -102,7 +102,7 @@ public final class Static182 {
 		for (@Pc(35) int local35 = 0; local35 < 2048; local35++) {
 			Static12.aClass11_Sub5_Sub2_Sub1Array1[local35] = null;
 		}
-		Static17.aClass11_Sub5_Sub2_Sub1_3 = null;
+		Static17.self = null;
 		for (@Pc(51) int local51 = 0; local51 < Static365.npcs.length; local51++) {
 			@Pc(57) Npc local57 = Static365.npcs[local51];
 			if (local57 != null) {

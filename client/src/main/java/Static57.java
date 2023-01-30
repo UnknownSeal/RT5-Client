@@ -1,4 +1,3 @@
-import java.lang.reflect.Method;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
@@ -9,7 +8,7 @@ public final class Static57 {
 	public static int anInt1464;
 
 	@OriginalMember(owner = "client!df", name = "g", descriptor = "[Lclient!nk;")
-	public static Class161[] aClass161Array1;
+	public static Component[] aComponentArray1;
 
 	@OriginalMember(owner = "client!df", name = "e", descriptor = "[I")
 	public static final int[] anIntArray104 = new int[] { 1, -1, -1, 1 };
@@ -38,29 +37,6 @@ public final class Static57 {
 			}
 		}
 		return local1;
-	}
-
-	@OriginalMember(owner = "client!df", name = "a", descriptor = "(I)V")
-	public static void method1620() {
-		if (Static215.anInt3795 == 2) {
-			Static309.anInt5802 = 96;
-			return;
-		}
-		try {
-			@Pc(29) Method local29 = Runtime.class.getMethod("maxMemory");
-			if (local29 != null) {
-				try {
-					@Pc(33) Runtime local33 = Runtime.getRuntime();
-					@Pc(39) Long local39 = (Long) local29.invoke(local33, (Object[]) null);
-					Static309.anInt5802 = (int) (local39 / 1048576L) + 1;
-					return;
-				} catch (@Pc(49) Throwable local49) {
-					return;
-				}
-			}
-		} catch (@Pc(51) Exception local51) {
-			return;
-		}
 	}
 
 	@OriginalMember(owner = "client!df", name = "a", descriptor = "(IIIIII)V")

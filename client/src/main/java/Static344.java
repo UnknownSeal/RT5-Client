@@ -20,7 +20,7 @@ public final class Static344 {
 	private static Class72 aClass72_6;
 
 	@OriginalMember(owner = "client!tt", name = "g", descriptor = "Lclient!r;")
-	public static Class197 aClass197_85;
+	public static Js5 archive;
 
 	@OriginalMember(owner = "client!tt", name = "h", descriptor = "Lclient!vq;")
 	private static Class241 aClass241_4;
@@ -38,7 +38,7 @@ public final class Static344 {
 	public static byte[][][] aByteArrayArrayArray15;
 
 	@OriginalMember(owner = "client!tt", name = "q", descriptor = "Lclient!ih;")
-	public static Class103 aClass103_5;
+	public static MapElementList labels;
 
 	@OriginalMember(owner = "client!tt", name = "r", descriptor = "F")
 	public static float aFloat73;
@@ -113,7 +113,7 @@ public final class Static344 {
 	private static final HashTable aClass4_124 = new HashTable(16);
 
 	@OriginalMember(owner = "client!tt", name = "j", descriptor = "Lclient!ld;")
-	public static final Class135 aClass135_36 = new Class135();
+	public static final LinkedList A_LINKED_LIST___36 = new LinkedList();
 
 	@OriginalMember(owner = "client!tt", name = "l", descriptor = "I")
 	public static int anInt6048 = (int) (Math.random() * 11.0D) - 5;
@@ -304,31 +304,31 @@ public final class Static344 {
 	@OriginalMember(owner = "client!tt", name = "a", descriptor = "()V")
 	public static void method5510() {
 		@Pc(2) int[] local2 = new int[3];
-		for (@Pc(4) int local4 = 0; local4 < aClass103_5.anInt2702; local4++) {
-			@Pc(32) boolean local32 = aClass2_Sub2_Sub17_3.method6144(aClass103_5.anIntArray170[local4] >> 28 & 0x3, local2, aClass103_5.anIntArray170[local4] >> 14 & 0x3FFF, aClass103_5.anIntArray170[local4] & 0x3FFF);
+		for (@Pc(4) int local4 = 0; local4 < labels.size; local4++) {
+			@Pc(32) boolean local32 = aClass2_Sub2_Sub17_3.method6144(labels.positions[local4] >> 28 & 0x3, local2, labels.positions[local4] >> 14 & 0x3FFF, labels.positions[local4] & 0x3FFF);
 			if (local32) {
-				@Pc(42) Class2_Sub20 local42 = new Class2_Sub20(aClass103_5.anIntArray171[local4]);
+				@Pc(42) Class2_Sub20 local42 = new Class2_Sub20(labels.elements[local4]);
 				local42.anInt2949 = local2[1] - anInt6057;
 				local42.anInt2952 = local2[2] - anInt6055;
-				aClass135_36.method3539(local42);
+				A_LINKED_LIST___36.method3539(local42);
 			}
 		}
 	}
 
 	@OriginalMember(owner = "client!tt", name = "a", descriptor = "(Lclient!r;Lclient!fl;Lclient!vq;Lclient!rh;Lclient!ki;Lclient!ii;Lclient!wl;)V")
-	public static void method5511(@OriginalArg(0) Class197 arg0, @OriginalArg(1) Class72 arg1, @OriginalArg(2) Class241 arg2, @OriginalArg(3) Class202 arg3, @OriginalArg(4) Class125 arg4, @OriginalArg(5) Class104 arg5, @OriginalArg(6) Interface11 arg6) {
-		aClass197_85 = arg0;
+	public static void method5511(@OriginalArg(0) Js5 arg0, @OriginalArg(1) Class72 arg1, @OriginalArg(2) Class241 arg2, @OriginalArg(3) Class202 arg3, @OriginalArg(4) Class125 arg4, @OriginalArg(5) Class104 arg5, @OriginalArg(6) Interface11 arg6) {
+		archive = arg0;
 		aClass72_6 = arg1;
 		aClass241_4 = arg2;
 		aClass202_3 = arg3;
 		aClass125_4 = arg4;
 		aClass104_4 = arg5;
 		anInterface11_2 = arg6;
-		aClass4_124.method81();
-		@Pc(21) int local21 = aClass197_85.getGroupID("details");
-		@Pc(26) int[] local26 = aClass197_85.method5076(local21);
+		aClass4_124.clear();
+		@Pc(21) int local21 = archive.getGroupID("details");
+		@Pc(26) int[] local26 = archive.getFileIDs(local21);
 		for (@Pc(28) int local28 = 0; local28 < local26.length; local28++) {
-			@Pc(37) Class2_Sub2_Sub17 local37 = Static61.method1672(local26[local28], local21, aClass197_85);
+			@Pc(37) Class2_Sub2_Sub17 local37 = Static61.method1672(local26[local28], local21, archive);
 			aClass4_124.put(local37, (long) local37.anInt6869);
 		}
 		Static280.method4765(false);
@@ -350,7 +350,7 @@ public final class Static344 {
 
 	@OriginalMember(owner = "client!tt", name = "a", descriptor = "(I)Lclient!vj;")
 	public static Class2_Sub2_Sub17 method5513(@OriginalArg(0) int arg0) {
-		return (Class2_Sub2_Sub17) aClass4_124.method90((long) arg0);
+		return (Class2_Sub2_Sub17) aClass4_124.get((long) arg0);
 	}
 
 	@OriginalMember(owner = "client!tt", name = "a", descriptor = "(Lclient!ci;III)I")
@@ -407,16 +407,16 @@ public final class Static344 {
 	}
 
 	@OriginalMember(owner = "client!tt", name = "a", descriptor = "(Lclient!wm;IIII)Lclient!ld;")
-	private static Class135 method5516(@OriginalArg(0) Class19 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		for (@Pc(4) Class2_Sub20 local4 = (Class2_Sub20) aClass135_36.method3550(); local4 != null; local4 = (Class2_Sub20) aClass135_36.method3551()) {
+	private static LinkedList method5516(@OriginalArg(0) Class19 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
+		for (@Pc(4) Class2_Sub20 local4 = (Class2_Sub20) A_LINKED_LIST___36.method3550(); local4 != null; local4 = (Class2_Sub20) A_LINKED_LIST___36.method3551()) {
 			method5528(arg0, local4, arg1, arg2);
 		}
-		return aClass135_36;
+		return A_LINKED_LIST___36;
 	}
 
 	@OriginalMember(owner = "client!tt", name = "b", descriptor = "(I)V")
 	public static void method5517(@OriginalArg(0) int arg0) {
-		aClass2_Sub2_Sub17_3 = (Class2_Sub2_Sub17) aClass4_124.method90((long) arg0);
+		aClass2_Sub2_Sub17_3 = (Class2_Sub2_Sub17) aClass4_124.get((long) arg0);
 	}
 
 	@OriginalMember(owner = "client!tt", name = "c", descriptor = "()V")
@@ -519,7 +519,7 @@ public final class Static344 {
 
 	@OriginalMember(owner = "client!tt", name = "a", descriptor = "(Lclient!wm;II)V")
 	public static void method5520(@OriginalArg(0) Class19 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		@Pc(9) Buffer local9 = new Buffer(aClass197_85.method5083(aClass2_Sub2_Sub17_3.aString67, "area"));
+		@Pc(9) Buffer local9 = new Buffer(archive.method5083(aClass2_Sub2_Sub17_3.aString67, "area"));
 		@Pc(13) int local13 = local9.g1();
 		@Pc(16) int[] local16 = new int[local13];
 		for (@Pc(18) int local18 = 0; local18 < local13; local18++) {
@@ -610,7 +610,7 @@ public final class Static344 {
 	}
 
 	@OriginalMember(owner = "client!tt", name = "b", descriptor = "(Lclient!wm;)Lclient!ld;")
-	public static Class135 method5523(@OriginalArg(0) Class19 arg0) {
+	public static LinkedList method5523(@OriginalArg(0) Class19 arg0) {
 		@Pc(3) int local3 = anInt6054 - anInt6058;
 		@Pc(7) int local7 = anInt6060 - anInt6059;
 		@Pc(15) int local15 = (anInt6051 - anInt6050 << 16) / local3;
@@ -681,7 +681,7 @@ public final class Static344 {
 							} else if (local179 <= 0) {
 								method5508(arg0, local28, local70, local44, local84, local175, local177, aByteArray89[local173], null, null, true);
 							} else if (local179 == 65535) {
-								@Pc(282) Class2_Sub29 local282 = (Class2_Sub29) aClass4_125.method90((long) (local50 << 16 | local93));
+								@Pc(282) Class2_Sub29 local282 = (Class2_Sub29) aClass4_125.get((long) (local50 << 16 | local93));
 								if (local282 != null) {
 									method5508(arg0, local28, local70, local44, local84, local175, local177, aByteArray89[local173], local282.aShortArray109, local282.aByteArray71, true);
 								}
@@ -730,7 +730,7 @@ public final class Static344 {
 								if (local175 <= 0) {
 									method5525(arg0, local40, local80, local50, local93, null, null);
 								} else if (local175 == 65535) {
-									@Pc(459) Class2_Sub29 local459 = (Class2_Sub29) aClass4_125.method90((long) (local57 << 16 | local173));
+									@Pc(459) Class2_Sub29 local459 = (Class2_Sub29) aClass4_125.get((long) (local57 << 16 | local173));
 									if (local459 != null) {
 										method5525(arg0, local40, local80, local50, local93, local459.aShortArray109, local459.aByteArray71);
 									}
@@ -889,7 +889,7 @@ public final class Static344 {
 				if (local15 != 0) {
 					@Pc(35) int local35;
 					if (local15 == 65535) {
-						@Pc(31) Class2_Sub29 local31 = (Class2_Sub29) aClass4_125.method90((long) (local1 << 16 | local4));
+						@Pc(31) Class2_Sub29 local31 = (Class2_Sub29) aClass4_125.get((long) (local1 << 16 | local4));
 						if (local31 != null) {
 							for (local35 = 0; local35 < local31.aShortArray109.length; local35++) {
 								@Pc(46) Class41 local46 = aClass202_3.method5162(local31.aShortArray109[local35] & 0xFFFF);
@@ -904,7 +904,7 @@ public final class Static344 {
 									@Pc(70) Class2_Sub20 local70 = new Class2_Sub20(local49);
 									local70.anInt2949 = local1;
 									local70.anInt2952 = local4;
-									aClass135_36.method3539(local70);
+									A_LINKED_LIST___36.method3539(local70);
 								}
 							}
 						}
@@ -921,7 +921,7 @@ public final class Static344 {
 							@Pc(118) Class2_Sub20 local118 = new Class2_Sub20(local35);
 							local118.anInt2949 = local1;
 							local118.anInt2952 = local4;
-							aClass135_36.method3539(local118);
+							A_LINKED_LIST___36.method3539(local118);
 						}
 					}
 				}
@@ -947,7 +947,7 @@ public final class Static344 {
 										@Pc(201) Class2_Sub20 local201 = new Class2_Sub20(local180);
 										local201.anInt2949 = (local15 + (anInt6057 >> 6)) * 64 + local160.aByte62 - anInt6057;
 										local201.anInt2952 = (local144 + (anInt6055 >> 6)) * 64 + local160.aByte61 - anInt6055;
-										aClass135_36.method3539(local201);
+										A_LINKED_LIST___36.method3539(local201);
 									}
 								}
 							}

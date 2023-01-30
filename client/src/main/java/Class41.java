@@ -250,7 +250,7 @@ public final class Class41 {
 		@Pc(107) SoftLruHashTable local107 = this.aClass202_1.aSoftLruHashTable_48;
 		@Pc(117) Model local117;
 		synchronized (this.aClass202_1.aSoftLruHashTable_48) {
-			local117 = (Model) this.aClass202_1.aSoftLruHashTable_48.method2612(local36);
+			local117 = (Model) this.aClass202_1.aSoftLruHashTable_48.get(local36);
 		}
 		if (local117 == null || arg6.method2863(local117.method3826(), arg12) != 0) {
 			if (local117 != null) {
@@ -262,7 +262,7 @@ public final class Class41 {
 			}
 			local107 = this.aClass202_1.aSoftLruHashTable_48;
 			synchronized (this.aClass202_1.aSoftLruHashTable_48) {
-				this.aClass202_1.aSoftLruHashTable_48.method2624(local36, local117);
+				this.aClass202_1.aSoftLruHashTable_48.put(local36, local117);
 			}
 		}
 		@Pc(172) boolean local172 = false;
@@ -309,7 +309,7 @@ public final class Class41 {
 		@Pc(85) SoftLruHashTable local85 = this.aClass202_1.aSoftLruHashTable_47;
 		@Pc(95) Class105 local95;
 		synchronized (this.aClass202_1.aSoftLruHashTable_47) {
-			local95 = (Class105) this.aClass202_1.aSoftLruHashTable_47.method2612(local53);
+			local95 = (Class105) this.aClass202_1.aSoftLruHashTable_47.get(local53);
 		}
 		@Pc(108) Model local108 = local95 == null ? null : local95.aModel_3;
 		@Pc(110) Class2_Sub2_Sub4 local110 = null;
@@ -343,7 +343,7 @@ public final class Class41 {
 			local95.aClass2_Sub2_Sub4_3 = local110;
 			@Pc(186) SoftLruHashTable local186 = this.aClass202_1.aSoftLruHashTable_47;
 			synchronized (this.aClass202_1.aSoftLruHashTable_47) {
-				this.aClass202_1.aSoftLruHashTable_47.method2624(local53, local95);
+				this.aClass202_1.aSoftLruHashTable_47.put(local53, local95);
 			}
 		}
 		if (this.aByte6 == 0 || arg1 == null && arg8 == null) {
@@ -363,21 +363,21 @@ public final class Class41 {
 		if (this.aClass4_24 == null) {
 			return arg0;
 		} else {
-			@Pc(21) StringNode local21 = (StringNode) this.aClass4_24.method90((long) arg1);
+			@Pc(21) StringNode local21 = (StringNode) this.aClass4_24.get((long) arg1);
 			return local21 == null ? arg0 : local21.value;
 		}
 	}
 
 	@OriginalMember(owner = "client!ct", name = "a", descriptor = "(II)Z")
 	public boolean method1521(@OriginalArg(1) int arg0) {
-		@Pc(31) Class197 local31;
+		@Pc(31) Js5 local31;
 		@Pc(35) int local35;
 		if (this.anIntArray97 != null) {
-			local31 = this.aClass202_1.aClass197_78;
-			synchronized (this.aClass202_1.aClass197_78) {
+			local31 = this.aClass202_1.aJs5_78;
+			synchronized (this.aClass202_1.aJs5_78) {
 				for (local35 = 0; local35 < this.anIntArray97.length; local35++) {
 					if (this.anIntArray97[local35] == arg0) {
-						return this.aClass202_1.aClass197_78.method5087(0, this.anIntArray92[local35] & 0xFFFF);
+						return this.aClass202_1.aJs5_78.method5087(0, this.anIntArray92[local35] & 0xFFFF);
 					}
 				}
 				return true;
@@ -386,10 +386,10 @@ public final class Class41 {
 			return true;
 		} else if (arg0 == 10) {
 			@Pc(27) boolean local27 = true;
-			local31 = this.aClass202_1.aClass197_78;
-			synchronized (this.aClass202_1.aClass197_78) {
+			local31 = this.aClass202_1.aJs5_78;
+			synchronized (this.aClass202_1.aJs5_78) {
 				for (local35 = 0; local35 < this.anIntArray92.length; local35++) {
-					local27 &= this.aClass202_1.aClass197_78.method5087(0, this.anIntArray92[local35] & 0xFFFF);
+					local27 &= this.aClass202_1.aJs5_78.method5087(0, this.anIntArray92[local35] & 0xFFFF);
 				}
 				return local27;
 			}
@@ -699,7 +699,7 @@ public final class Class41 {
 			}
 			@Pc(155) SoftLruHashTable local155 = this.aClass202_1.aSoftLruHashTable_46;
 			synchronized (this.aClass202_1.aSoftLruHashTable_46) {
-				local165 = (Model) this.aClass202_1.aSoftLruHashTable_46.method2612(local128);
+				local165 = (Model) this.aClass202_1.aSoftLruHashTable_46.get(local128);
 			}
 			if (local165 != null) {
 				if (local165.method3804() != local10) {
@@ -725,9 +725,9 @@ public final class Class41 {
 							}
 							break;
 						}
-						@Pc(230) Class197 local230 = this.aClass202_1.aClass197_78;
-						synchronized (this.aClass202_1.aClass197_78) {
-							local219 = Static298.method2426(this.aClass202_1.aClass197_78, this.anIntArray92[local225] & 0xFFFF);
+						@Pc(230) Js5 local230 = this.aClass202_1.aJs5_78;
+						synchronized (this.aClass202_1.aJs5_78) {
+							local219 = Static298.method2426(this.aClass202_1.aJs5_78, this.anIntArray92[local225] & 0xFFFF);
 						}
 						if (local219 == null) {
 							return null;
@@ -741,7 +741,7 @@ public final class Class41 {
 				local165 = arg3.method2864(local219, local209, this.aClass202_1.anInt5669, local10, local15);
 				@Pc(303) SoftLruHashTable local303 = this.aClass202_1.aSoftLruHashTable_46;
 				synchronized (this.aClass202_1.aSoftLruHashTable_46) {
-					this.aClass202_1.aSoftLruHashTable_46.method2624(local128, local165);
+					this.aClass202_1.aSoftLruHashTable_46.put(local128, local165);
 				}
 			}
 		} else {
@@ -758,7 +758,7 @@ public final class Class41 {
 			@Pc(364) int local364 = this.anIntArray92[local120] | arg3.anInt2836 << 29;
 			@Pc(368) SoftLruHashTable local368 = this.aClass202_1.aSoftLruHashTable_46;
 			synchronized (this.aClass202_1.aSoftLruHashTable_46) {
-				local165 = (Model) this.aClass202_1.aSoftLruHashTable_46.method2612((long) local364);
+				local165 = (Model) this.aClass202_1.aSoftLruHashTable_46.get((long) local364);
 			}
 			if (local165 != null) {
 				if (local10 != local165.method3804()) {
@@ -773,10 +773,10 @@ public final class Class41 {
 				if (local165 != null) {
 					local130 = arg3.method2806(local130, local165.method3826());
 				}
-				@Pc(435) Class197 local435 = this.aClass202_1.aClass197_78;
+				@Pc(435) Js5 local435 = this.aClass202_1.aJs5_78;
 				@Pc(447) Class185 local447;
-				synchronized (this.aClass202_1.aClass197_78) {
-					local447 = Static298.method2426(this.aClass202_1.aClass197_78, local364 & 0xFFFF);
+				synchronized (this.aClass202_1.aJs5_78) {
+					local447 = Static298.method2426(this.aClass202_1.aJs5_78, local364 & 0xFFFF);
 				}
 				if (local447 == null) {
 					return null;
@@ -784,7 +784,7 @@ public final class Class41 {
 				local165 = arg3.method2864(local447, local130, this.aClass202_1.anInt5669, local10, local15);
 				@Pc(471) SoftLruHashTable local471 = this.aClass202_1.aSoftLruHashTable_46;
 				synchronized (this.aClass202_1.aSoftLruHashTable_46) {
-					this.aClass202_1.aSoftLruHashTable_46.method2624((long) local364, local165);
+					this.aClass202_1.aSoftLruHashTable_46.put((long) local364, local165);
 				}
 			}
 		}
@@ -860,10 +860,10 @@ public final class Class41 {
 			return true;
 		}
 		@Pc(12) boolean local12 = true;
-		@Pc(16) Class197 local16 = this.aClass202_1.aClass197_78;
-		synchronized (this.aClass202_1.aClass197_78) {
+		@Pc(16) Js5 local16 = this.aClass202_1.aJs5_78;
+		synchronized (this.aClass202_1.aJs5_78) {
 			for (@Pc(28) int local28 = 0; local28 < this.anIntArray92.length; local28++) {
-				local12 &= this.aClass202_1.aClass197_78.method5087(0, this.anIntArray92[local28] & 0xFFFF);
+				local12 &= this.aClass202_1.aJs5_78.method5087(0, this.anIntArray92[local28] & 0xFFFF);
 			}
 			return local12;
 		}
@@ -892,7 +892,7 @@ public final class Class41 {
 		if (this.aClass4_24 == null) {
 			return arg0;
 		} else {
-			@Pc(21) IntNode local21 = (IntNode) this.aClass4_24.method90((long) arg1);
+			@Pc(21) IntNode local21 = (IntNode) this.aClass4_24.get((long) arg1);
 			return local21 == null ? arg0 : local21.value;
 		}
 	}

@@ -17,9 +17,9 @@ public final class Static180 {
 	public static final int anInt3410 = 205;
 
 	@OriginalMember(owner = "client!kh", name = "a", descriptor = "(IIIZIILclient!r;)V")
-	public static void method3366(@OriginalArg(2) int arg0, @OriginalArg(4) int arg1, @OriginalArg(5) int arg2, @OriginalArg(6) Class197 arg3) {
+	public static void method3366(@OriginalArg(2) int arg0, @OriginalArg(4) int arg1, @OriginalArg(5) int arg2, @OriginalArg(6) Js5 arg3) {
 		Static384.aBoolean485 = false;
-		Static116.aClass197_26 = arg3;
+		Static116.aJs5_26 = arg3;
 		Static105.anInt2183 = arg0;
 		Static341.anInt6376 = 0;
 		Static356.anInt6641 = arg2;
@@ -62,11 +62,11 @@ public final class Static180 {
 	}
 
 	@OriginalMember(owner = "client!kh", name = "a", descriptor = "(Lclient!r;Lclient!r;Lclient!r;Lclient!od;I)Z")
-	public static boolean method3368(@OriginalArg(0) Class197 arg0, @OriginalArg(1) Class197 arg1, @OriginalArg(2) Class197 arg2, @OriginalArg(3) Class2_Sub12_Sub3 arg3) {
+	public static boolean method3368(@OriginalArg(0) Js5 arg0, @OriginalArg(1) Js5 arg1, @OriginalArg(2) Js5 arg2, @OriginalArg(3) Class2_Sub12_Sub3 arg3) {
 		Static91.aClass2_Sub12_Sub3_1 = arg3;
-		Static123.aClass197_30 = arg2;
-		Static177.aClass197_48 = arg0;
-		Static111.aClass197_25 = arg1;
+		Static123.aJs5_30 = arg2;
+		Static177.aJs5_48 = arg0;
+		Static111.aJs5_25 = arg1;
 		return true;
 	}
 

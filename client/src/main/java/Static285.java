@@ -26,24 +26,24 @@ public final class Static285 {
 	public static final int[][] anIntArrayArray44 = new int[][] { { 2, 4, 6, 0 }, { 0, 2, 4, 6 }, { 0, 2, 4 }, { 4, 0, 2 }, { 2, 4, 0 }, { 0, 2, 4 }, { 6, 0, 1, 2, 4, 5 }, { 0, 4, 7, 6 }, { 4, 7, 6, 0 }, { 0, 8, 6, 2, 9, 4 }, { 2, 9, 4, 0, 8, 6 }, { 2, 11, 4, 6, 10, 0 }, { 2, 4, 6, 0 } };
 
 	@OriginalMember(owner = "client!qj", name = "a", descriptor = "(BLclient!nk;)V")
-	public static void method4885(@OriginalArg(1) Class161 arg0) {
+	public static void method4885(@OriginalArg(1) Component arg0) {
 		if (arg0.anInt4273 != Static76.anInt1738) {
 			return;
 		}
-		if (Static17.aClass11_Sub5_Sub2_Sub1_3.aString41 == null) {
-			arg0.anInt4313 = 0;
+		if (Static17.self.aString41 == null) {
+			arg0.modelID = 0;
 			arg0.anInt4236 = 0;
 			return;
 		}
 		arg0.anInt4320 = 150;
 		arg0.anInt4274 = (int) (Math.sin((double) Static114.loop / 40.0D) * 256.0D) & 0x7FF;
-		arg0.anInt4313 = Static234.anInt4226;
-		arg0.anInt4288 = 5;
-		arg0.anInt4236 = Static276.method4650(Static17.aClass11_Sub5_Sub2_Sub1_3.aString41);
-		arg0.anInt4316 = Static17.aClass11_Sub5_Sub2_Sub1_3.anInt4593;
-		arg0.anInt4247 = Static17.aClass11_Sub5_Sub2_Sub1_3.anInt4626;
+		arg0.modelID = Static234.anInt4226;
+		arg0.modelType = 5;
+		arg0.anInt4236 = Static276.method4650(Static17.self.aString41);
+		arg0.anInt4316 = Static17.self.anInt4593;
+		arg0.anInt4247 = Static17.self.anInt4626;
 		arg0.anInt4283 = 0;
-		arg0.anInt4299 = Static17.aClass11_Sub5_Sub2_Sub1_3.anInt4585;
+		arg0.modelSeqID = Static17.self.anInt4585;
 	}
 
 	@OriginalMember(owner = "client!qj", name = "a", descriptor = "(Z)V")
@@ -105,7 +105,7 @@ public final class Static285 {
 	}
 
 	@OriginalMember(owner = "client!qj", name = "a", descriptor = "(ILclient!r;)V")
-	public static void method4894(@OriginalArg(1) Class197 arg0) {
-		Static289.aClass197_73 = arg0;
+	public static void method4894(@OriginalArg(1) Js5 arg0) {
+		Static289.archive = arg0;
 	}
 }

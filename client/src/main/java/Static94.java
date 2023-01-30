@@ -11,12 +11,12 @@ public final class Static94 {
 	public static final Class89 aClass89_79 = new Class89(53, -1);
 
 	@OriginalMember(owner = "client!ff", name = "a", descriptor = "(IBIZILclient!r;)V")
-	public static void method2042(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(5) Class197 arg2) {
+	public static void method2042(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(5) Js5 arg2) {
 		Static341.anInt6376 = 0;
 		Static105.anInt2183 = arg1;
 		Static28.anInt672 = 10000;
 		Static384.aBoolean485 = false;
-		Static116.aClass197_26 = arg2;
+		Static116.aJs5_26 = arg2;
 		Static235.anInt3365 = 1;
 		Static356.anInt6641 = arg0;
 	}

@@ -9,7 +9,7 @@ public final class Static268 {
 	public static final byte[] aByteArray60 = new byte[] { 1, 1, 0, 0, 0, 8, 0, 0, 8 };
 
 	@OriginalMember(owner = "client!pg", name = "S", descriptor = "I")
-	public static int anInt4959 = 0;
+	public static int size = 0;
 
 	@OriginalMember(owner = "client!pg", name = "T", descriptor = "Lclient!h;")
 	public static final Class89 aClass89_180 = new Class89(92, 6);
@@ -18,7 +18,7 @@ public final class Static268 {
 	public static final int[] anIntArray338 = new int[25];
 
 	@OriginalMember(owner = "client!pg", name = "g", descriptor = "(I)Lclient!ac;")
-	public static Class3_Sub1 method4547() {
-		return Static300.aClass3_Sub1Array2.length > Static231.anInt4079 ? Static300.aClass3_Sub1Array2[Static231.anInt4079++] : null;
+	public static World method4547() {
+		return Static300.aWorldArray2.length > Static231.anInt4079 ? Static300.aWorldArray2[Static231.anInt4079++] : null;
 	}
 }

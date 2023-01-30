@@ -65,7 +65,7 @@ public final class Static163 {
 			Static250.anInt4665 = Static254.anInt4701;
 			Static172.anInt3299 = Static263.anInt4834;
 			Static68.anInt1646 = 0;
-		} else if (Static309.anInt5802 < 96 && Static77.anInt1762 == 0) {
+		} else if (GameShell.maxMemory < 96 && Static77.anInt1762 == 0) {
 			local159 = Static142.anInt2663 > 1024 ? 1024 : Static142.anInt2663;
 			Static250.anInt4665 = local159;
 			@Pc(170) int local170 = Static178.anInt2319 <= 768 ? Static178.anInt2319 : 768;
@@ -89,15 +89,15 @@ public final class Static163 {
 		if (arg4) {
 			Static78.method5700(Static77.anInt1762);
 		} else {
-			Static21.aCanvas1.setSize(Static250.anInt4665, Static172.anInt3299);
+			GameShell.canvas.setSize(Static250.anInt4665, Static172.anInt3299);
 			if (Static190.aClass19_8 != null) {
 				Static190.aClass19_8.method2803();
 			}
 			if (GameShell.frame == local81) {
 				local88 = GameShell.frame.getInsets();
-				Static21.aCanvas1.setLocation(Static84.anInt1842 + local88.left, local88.top + Static68.anInt1646);
+				GameShell.canvas.setLocation(Static84.anInt1842 + local88.left, local88.top + Static68.anInt1646);
 			} else {
-				Static21.aCanvas1.setLocation(Static84.anInt1842, Static68.anInt1646);
+				GameShell.canvas.setLocation(Static84.anInt1842, Static68.anInt1646);
 			}
 		}
 		if (arg3 >= 2) {
@@ -118,16 +118,16 @@ public final class Static163 {
 	}
 
 	@OriginalMember(owner = "client!jj", name = "a", descriptor = "(IZBIZ)Lclient!r;")
-	public static Class197 method3100(@OriginalArg(1) boolean arg0, @OriginalArg(3) int arg1, @OriginalArg(4) boolean arg2) {
-		@Pc(5) Class207 local5 = null;
-		if (Static110.aClass205_1 != null) {
-			local5 = new Class207(arg1, Static110.aClass205_1, Static185.aClass205Array1[arg1], 1000000);
+	public static Js5 method3100(@OriginalArg(1) boolean arg0, @OriginalArg(3) int arg1, @OriginalArg(4) boolean arg2) {
+		@Pc(5) Cache local5 = null;
+		if (Static110.aBufferedFile_1 != null) {
+			local5 = new Cache(arg1, Static110.aBufferedFile_1, Static185.A_BUFFERED_FILE_ARRAY_1[arg1], 1000000);
 		}
-		Static374.aClass25_Sub1Array2[arg1] = Static54.aClass154_1.method3870(arg1, Static18.aClass207_1, local5);
+		Static374.aClass25_Sub1Array2[arg1] = Static54.aClass154_1.method3870(arg1, Static18.aCache_1, local5);
 		if (arg0) {
 			Static374.aClass25_Sub1Array2[arg1].method899();
 		}
-		return new Class197(Static374.aClass25_Sub1Array2[arg1], arg2, 1);
+		return new Js5(Static374.aClass25_Sub1Array2[arg1], arg2, 1);
 	}
 
 	@OriginalMember(owner = "client!jj", name = "a", descriptor = "(ILjava/lang/String;)V")
@@ -140,7 +140,7 @@ public final class Static163 {
 	}
 
 	@OriginalMember(owner = "client!jj", name = "a", descriptor = "(ILclient!nk;)Ljava/lang/String;")
-	public static String method3103(@OriginalArg(1) Class161 arg0) {
+	public static String method3103(@OriginalArg(1) Component arg0) {
 		if (Static45.method1404(arg0).method1852() == 0) {
 			return null;
 		} else if (arg0.aString44 == null || arg0.aString44.trim().length() == 0) {

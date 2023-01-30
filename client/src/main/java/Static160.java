@@ -114,8 +114,8 @@ public final class Static160 {
 
 	@OriginalMember(owner = "client!jf", name = "b", descriptor = "(I)V")
 	public static void method2955() {
-		Static268.anInt4959 = 0;
-		Static129.aClass135_19.method3543();
+		Static268.size = 0;
+		Static129.A_LINKED_LIST___19.clear();
 		Static375.aBoolean477 = false;
 	}
 
@@ -124,9 +124,9 @@ public final class Static160 {
 		if (!Static222.method3915(arg0)) {
 			return;
 		}
-		@Pc(14) Class161[] local14 = Static26.aClass161ArrayArray1[arg0];
+		@Pc(14) Component[] local14 = Static26.aComponentArrayArray1[arg0];
 		for (@Pc(16) int local16 = 0; local16 < local14.length; local16++) {
-			@Pc(22) Class161 local22 = local14[local16];
+			@Pc(22) Component local22 = local14[local16];
 			if (local22 != null) {
 				local22.anInt4247 = 0;
 				local22.anInt4283 = 0;

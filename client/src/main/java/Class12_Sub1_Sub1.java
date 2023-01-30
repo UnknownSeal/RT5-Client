@@ -33,12 +33,12 @@ public class Class12_Sub1_Sub1 extends Class12_Sub1 {
 	public byte aByte48 = 5;
 
 	static {
-		@Pc(12) int local12 = 0;
-		for (@Pc(14) int local14 = 0; local14 < 99; local14++) {
-			@Pc(19) int local19 = local14 + 1;
-			@Pc(32) int local32 = (int) (Math.pow(2.0D, (double) local19 / 7.0D) * 300.0D + (double) local19);
-			local12 += local32;
-			anIntArray292[local14] = local12 / 4;
+		@Pc(12) int experience = 0;
+		for (@Pc(14) int i = 0; i < 99; i++) {
+			@Pc(19) int level = i + 1;
+			@Pc(32) int delta = (int) (Math.pow(2.0D, (double) level / 7.0D) * 300.0D + (double) level);
+			experience += delta;
+			anIntArray292[i] = experience / 4;
 		}
 	}
 

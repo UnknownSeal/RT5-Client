@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static101 {
 
 	@OriginalMember(owner = "client!fo", name = "h", descriptor = "Lclient!r;")
-	public static Class197 aClass197_23;
+	public static Js5 aJs5_23;
 
 	@OriginalMember(owner = "client!fo", name = "e", descriptor = "Lclient!gd;")
 	public static final LocalisedText A_TRANSLATABLE_STRING___44 = new LocalisedText("Members object", "Gegenstand für Mitglieder", "Objet d'abonnés", "Objeto para membros");
@@ -56,15 +56,15 @@ public final class Static101 {
 			return false;
 		} else if (!arg0.method4179(Static344.anInterface11_2)) {
 			return false;
-		} else if (Static220.aClass4_83.method90((long) arg0.anInt4430) == null) {
-			return Static141.aClass4_58.method90((long) arg0.anInt4424) == null;
+		} else if (Static220.aClass4_83.get((long) arg0.anInt4430) == null) {
+			return Static141.aClass4_58.get((long) arg0.anInt4424) == null;
 		} else {
 			return false;
 		}
 	}
 
 	@OriginalMember(owner = "client!fo", name = "a", descriptor = "(IIILclient!r;)Lclient!vi;")
-	public static Class239 method2165(@OriginalArg(2) int arg0, @OriginalArg(3) Class197 arg1) {
+	public static Class239 method2165(@OriginalArg(2) int arg0, @OriginalArg(3) Js5 arg1) {
 		@Pc(13) byte[] local13 = arg1.fetchFile(arg0, 0);
 		return local13 == null ? null : new Class239(local13);
 	}

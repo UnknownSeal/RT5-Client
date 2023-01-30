@@ -86,31 +86,31 @@ public final class Static140 {
 			@Pc(31) int local31 = (Static52.anInt1394 << 8) / Static261.anInt4803;
 			@Pc(36) int local36 = 255 - local31;
 			@Pc(41) float local41 = (float) local31 / 255.0F;
-			Static113.anInt2337 = (local31 * (Static355.anInt6565 & 0xFF00) + local36 * (Static311.aClass21_2.anInt637 & 0xFF00) & 0xFF0000) + (local36 * (Static311.aClass21_2.anInt637 & 0xFF00FF) + (Static355.anInt6565 & 0xFF00FF) * local31 & 0xFF00FF00) >>> 8;
+			Static113.anInt2337 = (local31 * (Static355.anInt6565 & 0xFF00) + local36 * (Static311.aEnvironment_2.anInt637 & 0xFF00) & 0xFF0000) + (local36 * (Static311.aEnvironment_2.anInt637 & 0xFF00FF) + (Static355.anInt6565 & 0xFF00FF) * local31 & 0xFF00FF00) >>> 8;
 			@Pc(77) float local77 = 1.0F - local41;
-			Static134.aFloat33 = Static192.aFloat40 + local77 * (Static311.aClass21_2.aFloat25 - Static192.aFloat40);
-			Static364.anInt6817 = local36 * Static311.aClass21_2.anInt634 + Static175.anInt3351 * local31 >> 8;
-			Static99.anInt2095 = ((Static311.aClass21_2.anInt641 & 0xFF00FF) * local36 + local31 * (Static228.anInt4046 & 0xFF00FF) & 0xFF00FF00) + (local36 * (Static311.aClass21_2.anInt641 & 0xFF00) + (Static228.anInt4046 & 0xFF00) * local31 & 0xFF0000) >>> 8;
-			Static317.aFloat74 = (Static311.aClass21_2.aFloat23 - Static233.aFloat63) * local77 + Static233.aFloat63;
-			Static347.aFloat77 = (Static311.aClass21_2.aFloat24 - Static218.aFloat30) * local77 + Static218.aFloat30;
-			Static164.aFloat38 = Static339.aFloat76 + (Static311.aClass21_2.aFloat26 - Static339.aFloat76) * local77;
-			Static156.aFloat35 = Static67.aFloat31 + local77 * (Static311.aClass21_2.aFloat27 - Static67.aFloat31);
-			Static141.aFloat34 = Static102.aFloat41 + (Static311.aClass21_2.aFloat22 - Static102.aFloat41) * local77;
-			if (Static311.aClass21_2.aClass42_1 != Static79.aClass42_4) {
-				Static24.aClass42_2 = Static65.aClass19_3.method2827(Static79.aClass42_4, Static311.aClass21_2.aClass42_1, local77, Static24.aClass42_2);
+			Static134.aFloat33 = Static192.aFloat40 + local77 * (Static311.aEnvironment_2.aFloat25 - Static192.aFloat40);
+			Static364.anInt6817 = local36 * Static311.aEnvironment_2.anInt634 + Static175.anInt3351 * local31 >> 8;
+			Static99.anInt2095 = ((Static311.aEnvironment_2.anInt641 & 0xFF00FF) * local36 + local31 * (Static228.anInt4046 & 0xFF00FF) & 0xFF00FF00) + (local36 * (Static311.aEnvironment_2.anInt641 & 0xFF00) + (Static228.anInt4046 & 0xFF00) * local31 & 0xFF0000) >>> 8;
+			Static317.aFloat74 = (Static311.aEnvironment_2.aFloat23 - Static233.aFloat63) * local77 + Static233.aFloat63;
+			Static347.aFloat77 = (Static311.aEnvironment_2.aFloat24 - Static218.aFloat30) * local77 + Static218.aFloat30;
+			Static164.aFloat38 = Static339.aFloat76 + (Static311.aEnvironment_2.aFloat26 - Static339.aFloat76) * local77;
+			Static156.aFloat35 = Static67.aFloat31 + local77 * (Static311.aEnvironment_2.aFloat27 - Static67.aFloat31);
+			Static141.aFloat34 = Static102.aFloat41 + (Static311.aEnvironment_2.aFloat22 - Static102.aFloat41) * local77;
+			if (Static311.aEnvironment_2.aClass42_1 != Static79.aClass42_4) {
+				Static24.aClass42_2 = Static65.aClass19_3.method2827(Static79.aClass42_4, Static311.aEnvironment_2.aClass42_1, local77, Static24.aClass42_2);
 			}
 		} else {
-			Static24.aClass42_2 = Static311.aClass21_2.aClass42_1;
-			Static364.anInt6817 = Static311.aClass21_2.anInt634;
-			Static99.anInt2095 = Static311.aClass21_2.anInt641;
+			Static24.aClass42_2 = Static311.aEnvironment_2.aClass42_1;
+			Static364.anInt6817 = Static311.aEnvironment_2.anInt634;
+			Static99.anInt2095 = Static311.aEnvironment_2.anInt641;
 			Static52.anInt1394 = -1;
-			Static317.aFloat74 = Static311.aClass21_2.aFloat23;
-			Static156.aFloat35 = Static311.aClass21_2.aFloat27;
-			Static164.aFloat38 = Static311.aClass21_2.aFloat26;
-			Static113.anInt2337 = Static311.aClass21_2.anInt637;
-			Static347.aFloat77 = Static311.aClass21_2.aFloat24;
-			Static134.aFloat33 = Static311.aClass21_2.aFloat25;
-			Static141.aFloat34 = Static311.aClass21_2.aFloat22;
+			Static317.aFloat74 = Static311.aEnvironment_2.aFloat23;
+			Static156.aFloat35 = Static311.aEnvironment_2.aFloat27;
+			Static164.aFloat38 = Static311.aEnvironment_2.aFloat26;
+			Static113.anInt2337 = Static311.aEnvironment_2.anInt637;
+			Static347.aFloat77 = Static311.aEnvironment_2.aFloat24;
+			Static134.aFloat33 = Static311.aEnvironment_2.aFloat25;
+			Static141.aFloat34 = Static311.aEnvironment_2.aFloat22;
 		}
 		Static1.aLong1 = local11;
 	}

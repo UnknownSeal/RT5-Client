@@ -11,16 +11,16 @@ public final class Static58 {
 	public static int anInt1483 = 0;
 
 	@OriginalMember(owner = "client!dg", name = "a", descriptor = "(Lclient!nk;B)V")
-	public static void method1624(@OriginalArg(0) Class161 arg0) {
-		@Pc(7) Class161 local7 = Static7.method6464(arg0);
+	public static void method1624(@OriginalArg(0) Component arg0) {
+		@Pc(7) Component local7 = Static7.method6464(arg0);
 		@Pc(13) int local13;
 		@Pc(11) int local11;
 		if (local7 == null) {
 			local11 = Static172.anInt3299;
 			local13 = Static250.anInt4665;
 		} else {
-			local11 = local7.anInt4261;
-			local13 = local7.anInt4248;
+			local11 = local7.height;
+			local13 = local7.width;
 		}
 		Static371.method6255(local11, local13, false, arg0);
 		Static287.method4938(arg0, local13, local11);

@@ -19,17 +19,17 @@ public final class Class2_Sub3_Sub38 extends TextureOp {
 
 	@OriginalMember(owner = "client!vn", name = "b", descriptor = "(IB)[[I")
 	@Override
-	public int[][] method6478(@OriginalArg(0) int arg0) {
-		@Pc(11) int[][] local11 = super.aClass243_41.method6276(arg0);
-		if (super.aClass243_41.aBoolean478) {
-			@Pc(25) int local25 = Static227.anInt4036 / this.anInt6991;
-			@Pc(30) int local30 = Static24.anInt638 / this.anInt6990;
+	public int[][] getColorOutput(@OriginalArg(0) int arg0) {
+		@Pc(11) int[][] local11 = super.colorImageCache.get(arg0);
+		if (super.colorImageCache.invalid) {
+			@Pc(25) int local25 = Static227.width / this.anInt6991;
+			@Pc(30) int local30 = Static24.height / this.anInt6990;
 			@Pc(49) int[][] local49;
 			if (local30 > 0) {
 				@Pc(39) int local39 = arg0 % local30;
-				local49 = this.method6482(0, Static24.anInt638 * local39 / local30);
+				local49 = this.getChildColorOutput(0, Static24.height * local39 / local30);
 			} else {
-				local49 = this.method6482(0, 0);
+				local49 = this.getChildColorOutput(0, 0);
 			}
 			@Pc(61) int[] local61 = local49[0];
 			@Pc(65) int[] local65 = local49[1];
@@ -37,13 +37,13 @@ public final class Class2_Sub3_Sub38 extends TextureOp {
 			@Pc(73) int[] local73 = local11[0];
 			@Pc(77) int[] local77 = local11[1];
 			@Pc(81) int[] local81 = local11[2];
-			for (@Pc(83) int local83 = 0; local83 < Static227.anInt4036; local83++) {
+			for (@Pc(83) int local83 = 0; local83 < Static227.width; local83++) {
 				@Pc(89) int local89;
 				if (local25 <= 0) {
 					local89 = 0;
 				} else {
 					@Pc(95) int local95 = local83 % local25;
-					local89 = Static227.anInt4036 * local95 / local25;
+					local89 = Static227.width * local95 / local25;
 				}
 				local73[local83] = local61[local89];
 				local77[local83] = local65[local89];
@@ -56,22 +56,22 @@ public final class Class2_Sub3_Sub38 extends TextureOp {
 	@OriginalMember(owner = "client!vn", name = "a", descriptor = "(BI)[I")
 	@Override
 	public int[] getMonochromeOutput(@OriginalArg(1) int y) {
-		@Pc(11) int[] local11 = super.aClass158_41.method3995(y);
-		if (super.aClass158_41.aBoolean265) {
-			@Pc(28) int local28 = Static227.anInt4036 / this.anInt6991;
-			@Pc(33) int local33 = Static24.anInt638 / this.anInt6990;
+		@Pc(11) int[] local11 = super.monochromeImageCache.get(y);
+		if (super.monochromeImageCache.invalid) {
+			@Pc(28) int local28 = Static227.width / this.anInt6991;
+			@Pc(33) int local33 = Static24.height / this.anInt6990;
 			@Pc(49) int[] local49;
 			@Pc(39) int local39;
 			if (local33 > 0) {
 				local39 = y % local33;
-				local49 = this.method6472(0, local39 * Static24.anInt638 / local33);
+				local49 = this.getChildMonochromeOutput(0, local39 * Static24.height / local33);
 			} else {
-				local49 = this.method6472(0, 0);
+				local49 = this.getChildMonochromeOutput(0, 0);
 			}
-			for (local39 = 0; local39 < Static227.anInt4036; local39++) {
+			for (local39 = 0; local39 < Static227.width; local39++) {
 				if (local28 > 0) {
 					@Pc(67) int local67 = local39 % local28;
-					local11[local39] = local49[local67 * Static227.anInt4036 / local28];
+					local11[local39] = local49[local67 * Static227.width / local28];
 				} else {
 					local11[local39] = local49[0];
 				}
@@ -82,7 +82,7 @@ public final class Class2_Sub3_Sub38 extends TextureOp {
 
 	@OriginalMember(owner = "client!vn", name = "a", descriptor = "(ILclient!bt;I)V")
 	@Override
-	public void method6483(@OriginalArg(0) int arg0, @OriginalArg(1) Buffer arg1) {
+	public void decode(@OriginalArg(0) int arg0, @OriginalArg(1) Buffer arg1) {
 		if (arg0 == 0) {
 			this.anInt6991 = arg1.g1();
 		} else if (arg0 == 1) {

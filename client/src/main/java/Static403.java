@@ -74,7 +74,7 @@ public final class Static403 {
 	}
 
 	@OriginalMember(owner = "client!pm", name = "a", descriptor = "([BI[BII)V")
-	public static void method4606(@OriginalArg(0) byte[] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) byte[] arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
+	public static void copy(@OriginalArg(0) byte[] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) byte[] arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
 		@Pc(15) int local15;
 		if (arg0 == arg2) {
 			if (arg1 == arg3) {
@@ -189,21 +189,21 @@ public final class Static403 {
 	}
 
 	@OriginalMember(owner = "client!pm", name = "a", descriptor = "([IIII)V")
-	public static void method4609(@OriginalArg(0) int[] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
-		@Pc(5) int local5 = arg1 + arg2 - 7;
-		while (arg1 < local5) {
-			arg0[arg1++] = arg3;
-			arg0[arg1++] = arg3;
-			arg0[arg1++] = arg3;
-			arg0[arg1++] = arg3;
-			arg0[arg1++] = arg3;
-			arg0[arg1++] = arg3;
-			arg0[arg1++] = arg3;
-			arg0[arg1++] = arg3;
+	public static void fill(@OriginalArg(0) int[] destination, @OriginalArg(1) int offset, @OriginalArg(2) int arg2, @OriginalArg(3) int value) {
+		@Pc(5) int length = offset + arg2 - 7;
+		while (offset < length) {
+			destination[offset++] = value;
+			destination[offset++] = value;
+			destination[offset++] = value;
+			destination[offset++] = value;
+			destination[offset++] = value;
+			destination[offset++] = value;
+			destination[offset++] = value;
+			destination[offset++] = value;
 		}
-		local5 += 7;
-		while (arg1 < local5) {
-			arg0[arg1++] = arg3;
+		length += 7;
+		while (offset < length) {
+			destination[offset++] = value;
 		}
 	}
 }

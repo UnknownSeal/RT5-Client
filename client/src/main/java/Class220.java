@@ -19,14 +19,14 @@ public final class Class220 {
 	public int anInt6203;
 
 	@OriginalMember(owner = "client!te", name = "a", descriptor = "(B)Lclient!dk;")
-	public synchronized Class48 method5657() {
-		@Pc(13) Class48 local13 = (Class48) this.aClass150_4.aSoftLruHashTable_33.method2612((long) this.anInt6201);
+	public synchronized SoftwareSprite method5657() {
+		@Pc(13) SoftwareSprite local13 = (SoftwareSprite) this.aClass150_4.aSoftLruHashTable_33.get((long) this.anInt6201);
 		if (local13 != null) {
 			return local13;
 		}
-		local13 = Static396.method1682(this.aClass150_4.aClass197_56, this.anInt6201, 0);
+		local13 = Static396.loadSoftwareSprite(this.aClass150_4.aJs5_56, this.anInt6201, 0);
 		if (local13 != null) {
-			this.aClass150_4.aSoftLruHashTable_33.method2624((long) this.anInt6201, local13);
+			this.aClass150_4.aSoftLruHashTable_33.put((long) this.anInt6201, local13);
 		}
 		return local13;
 	}

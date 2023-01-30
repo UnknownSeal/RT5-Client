@@ -46,7 +46,7 @@ public final class Static382 {
 	}
 
 	@OriginalMember(owner = "client!we", name = "a", descriptor = "(Lclient!r;I)V")
-	public static void method6361(@OriginalArg(0) Class197 arg0) {
+	public static void method6361(@OriginalArg(0) Js5 arg0) {
 		Static146.anInt2706 = 0;
 		Static82.anInt1835 = 0;
 		Static131.aClass36_4 = new Class36();
@@ -74,20 +74,20 @@ public final class Static382 {
 		local7.anInt1373 = arg1;
 		Static329.aClass4_130.put(local7, (long) arg0);
 		Static160.method2956(arg3);
-		@Pc(26) Class161 local26 = Static6.method140(arg0);
+		@Pc(26) Component local26 = Static6.method140(arg0);
 		if (local26 != null) {
-			Static200.method3644(local26);
+			Static200.redraw(local26);
 		}
-		if (Static192.aClass161_8 != null) {
-			Static200.method3644(Static192.aClass161_8);
-			Static192.aClass161_8 = null;
+		if (Static192.aComponent_8 != null) {
+			Static200.redraw(Static192.aComponent_8);
+			Static192.aComponent_8 = null;
 		}
 		Static227.method3988();
 		if (local26 != null) {
 			Static85.method1911(!arg2, local26);
 		}
 		if (!arg2) {
-			Static198.method3597(arg3);
+			ScriptRunner.method3597(arg3);
 		}
 		if (!arg2 && Static139.anInt2595 != -1) {
 			Static392.method6459(Static139.anInt2595, 1);

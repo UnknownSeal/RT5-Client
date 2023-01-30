@@ -43,9 +43,9 @@ public final class Static146 {
 		}
 		@Pc(28) byte[] local28;
 		if (arg0 < 32768) {
-			local28 = Static137.aClass197_33.fetchFile(1, arg0);
+			local28 = Static137.aJs5_33.fetchFile(1, arg0);
 		} else {
-			local28 = Static308.aClass197_80.fetchFile(1, arg0 & 0x7FFF);
+			local28 = Static308.aJs5_80.fetchFile(1, arg0 & 0x7FFF);
 		}
 		local10 = new Class2_Sub2_Sub16();
 		if (local28 != null) {

@@ -43,8 +43,8 @@ public final class Static361 {
 		@Pc(72) int local72 = Static226.aClass119_1.method3303();
 		@Pc(76) int local76 = Static226.aClass119_1.method3312();
 		@Pc(78) int local78 = 0;
-		for (@Pc(88) Class2_Sub5 local88 = (Class2_Sub5) Static129.aClass135_19.method3550(); local88 != null; local88 = (Class2_Sub5) Static129.aClass135_19.method3551()) {
-			@Pc(102) int local102 = (Static268.anInt4959 - local78 - 1) * 16 + local9 + 31;
+		for (@Pc(88) Class2_Sub5 local88 = (Class2_Sub5) Static129.A_LINKED_LIST___19.method3550(); local88 != null; local88 = (Class2_Sub5) Static129.A_LINKED_LIST___19.method3551()) {
+			@Pc(102) int local102 = (Static268.size - local78 - 1) * 16 + local9 + 31;
 			@Pc(104) short local104 = -1;
 			if (local72 > local7 && local7 + local11 > local72 && local76 > local102 - 13 && local76 < local102 + 3 && local88.aBoolean83) {
 				local104 = -256;

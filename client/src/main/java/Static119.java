@@ -10,10 +10,10 @@ public final class Static119 {
 	public static Class13 aClass13_7;
 
 	@OriginalMember(owner = "client!gr", name = "f", descriptor = "Lclient!bh;")
-	public static Class21 aClass21_1;
+	public static Environment aEnvironment_1;
 
 	@OriginalMember(owner = "client!gr", name = "h", descriptor = "Lclient!hu;")
-	public static final SoftLruHashTable A_SOFT_LRU_HASH_TABLE___16 = new SoftLruHashTable(64);
+	public static final SoftLruHashTable types = new SoftLruHashTable(64);
 
 	@OriginalMember(owner = "client!gr", name = "j", descriptor = "[I")
 	public static final int[] anIntArray152 = new int[] { 16, 32, 64, 128 };

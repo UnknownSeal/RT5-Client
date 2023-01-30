@@ -8,7 +8,7 @@ public final class Static110 {
 	public static Class13 aClass13_6;
 
 	@OriginalMember(owner = "client!gd", name = "i", descriptor = "Lclient!rn;")
-	public static Class205 aClass205_1;
+	public static BufferedFile aBufferedFile_1;
 
 	@OriginalMember(owner = "client!gd", name = "e", descriptor = "Lclient!s;")
 	public static final Class210 aClass210_5 = new Class210(3, -1);

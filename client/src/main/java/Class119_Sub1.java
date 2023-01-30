@@ -32,10 +32,10 @@ public final class Class119_Sub1 extends Class119 implements MouseListener, Mous
 	private Component aComponent1;
 
 	@OriginalMember(owner = "client!k", name = "p", descriptor = "Lclient!ld;")
-	private Class135 aClass135_22 = new Class135();
+	private LinkedList aLinkedList_22 = new LinkedList();
 
 	@OriginalMember(owner = "client!k", name = "N", descriptor = "Lclient!ld;")
-	private Class135 aClass135_23 = new Class135();
+	private LinkedList aLinkedList_23 = new LinkedList();
 
 	@OriginalMember(owner = "client!k", name = "O", descriptor = "Z")
 	private final boolean aBoolean224;
@@ -82,7 +82,7 @@ public final class Class119_Sub1 extends Class119 implements MouseListener, Mous
 		local7.anInt5764 = arg0;
 		local7.anInt5766 = arg2;
 		local7.aLong175 = MonotonicClock.currentTimeMillis();
-		this.aClass135_23.method3539(local7);
+		this.aLinkedList_23.method3539(local7);
 	}
 
 	@OriginalMember(owner = "client!k", name = "h", descriptor = "(I)I")
@@ -181,10 +181,10 @@ public final class Class119_Sub1 extends Class119 implements MouseListener, Mous
 		}
 		this.aComponent1.removeMouseListener(this);
 		this.aComponent1.removeMouseMotionListener(this);
-		this.aClass135_23 = null;
+		this.aLinkedList_23 = null;
 		this.aComponent1 = null;
 		this.anInt3343 = this.anInt3323 = this.anInt3333 = 0;
-		this.aClass135_22 = null;
+		this.aLinkedList_22 = null;
 		this.anInt3346 = this.anInt3345 = this.anInt3347 = 0;
 	}
 
@@ -217,10 +217,10 @@ public final class Class119_Sub1 extends Class119 implements MouseListener, Mous
 		this.anInt3323 = this.anInt3345;
 		this.anInt3343 = this.anInt3346;
 		this.anInt3333 = this.anInt3347;
-		@Pc(25) Class135 local25 = this.aClass135_22;
-		this.aClass135_22 = this.aClass135_23;
-		this.aClass135_23 = local25;
-		this.aClass135_23.method3543();
+		@Pc(25) LinkedList local25 = this.aLinkedList_22;
+		this.aLinkedList_22 = this.aLinkedList_23;
+		this.aLinkedList_23 = local25;
+		this.aLinkedList_23.clear();
 	}
 
 	@OriginalMember(owner = "client!k", name = "f", descriptor = "(I)Z")
@@ -232,6 +232,6 @@ public final class Class119_Sub1 extends Class119 implements MouseListener, Mous
 	@OriginalMember(owner = "client!k", name = "d", descriptor = "(I)Lclient!lm;")
 	@Override
 	public Class2_Sub24 method3307() {
-		return (Class2_Sub24) this.aClass135_22.method3548();
+		return (Class2_Sub24) this.aLinkedList_22.method3548();
 	}
 }

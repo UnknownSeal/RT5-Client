@@ -42,7 +42,7 @@ public final class Class2_Sub3_Sub18 extends TextureOp {
 
 	@OriginalMember(owner = "client!jt", name = "a", descriptor = "(ILclient!bt;I)V")
 	@Override
-	public void method6483(@OriginalArg(0) int arg0, @OriginalArg(1) Buffer arg1) {
+	public void decode(@OriginalArg(0) int arg0, @OriginalArg(1) Buffer arg1) {
 		if (arg0 == 0) {
 			this.anInt3263 = this.anInt3265 = arg1.g1();
 		} else if (arg0 == 1) {
@@ -74,17 +74,17 @@ public final class Class2_Sub3_Sub18 extends TextureOp {
 	@OriginalMember(owner = "client!jt", name = "a", descriptor = "(BI)[I")
 	@Override
 	public int[] getMonochromeOutput(@OriginalArg(1) int y) {
-		@Pc(11) int[] local11 = super.aClass158_41.method3995(y);
-		if (super.aClass158_41.aBoolean265) {
-			@Pc(30) int local30 = this.anInt3265 * Static16.anIntArray322[y] + 2048;
+		@Pc(11) int[] local11 = super.monochromeImageCache.get(y);
+		if (super.monochromeImageCache.invalid) {
+			@Pc(30) int local30 = this.anInt3265 * Static16.normalizedY[y] + 2048;
 			@Pc(34) int local34 = local30 >> 12;
 			@Pc(38) int local38 = local34 + 1;
-			for (@Pc(40) int local40 = 0; local40 < Static227.anInt4036; local40++) {
+			for (@Pc(40) int local40 = 0; local40 < Static227.width; local40++) {
 				Static41.anInt1052 = Integer.MAX_VALUE;
 				Static367.anInt6879 = Integer.MAX_VALUE;
 				Static378.anInt7079 = Integer.MAX_VALUE;
 				Static65.anInt1584 = Integer.MAX_VALUE;
-				@Pc(59) int local59 = Static334.anIntArray424[local40] * this.anInt3263 + 2048;
+				@Pc(59) int local59 = Static334.normalizedX[local40] * this.anInt3263 + 2048;
 				@Pc(63) int local63 = local59 >> 12;
 				@Pc(67) int local67 = local63 + 1;
 				@Pc(156) int local156;
@@ -153,7 +153,7 @@ public final class Class2_Sub3_Sub18 extends TextureOp {
 
 	@OriginalMember(owner = "client!jt", name = "d", descriptor = "(I)V")
 	@Override
-	public void method6479() {
+	public void postDecode() {
 		this.aByteArray34 = Static116.method2364(this.anInt3261);
 		this.method3258();
 	}

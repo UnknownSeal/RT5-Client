@@ -1101,7 +1101,7 @@ public final class Class185 {
 		@Pc(32) int local32;
 		if (arg1 != 0) {
 			local7 = Class19.anIntArray178[arg1];
-			local11 = Class19.anIntArray177[arg1];
+			local11 = Class19.COSINE[arg1];
 			for (local13 = 0; local13 < this.anInt5075; local13++) {
 				local32 = local7 * this.anIntArray355[local13] + this.anIntArray354[local13] * local11 >> 15;
 				this.anIntArray355[local13] = local11 * this.anIntArray355[local13] - local7 * this.anIntArray354[local13] >> 15;
@@ -1110,7 +1110,7 @@ public final class Class185 {
 		}
 		if (arg2 != 0) {
 			local7 = Class19.anIntArray178[arg2];
-			local11 = Class19.anIntArray177[arg2];
+			local11 = Class19.COSINE[arg2];
 			for (local13 = 0; local13 < this.anInt5075; local13++) {
 				local32 = local11 * this.anIntArray355[local13] - this.anIntArray356[local13] * local7 >> 15;
 				this.anIntArray356[local13] = this.anIntArray355[local13] * local7 + local11 * this.anIntArray356[local13] >> 15;
@@ -1121,7 +1121,7 @@ public final class Class185 {
 			return;
 		}
 		local7 = Class19.anIntArray178[arg0];
-		local11 = Class19.anIntArray177[arg0];
+		local11 = Class19.COSINE[arg0];
 		for (local13 = 0; local13 < this.anInt5075; local13++) {
 			local32 = local7 * this.anIntArray356[local13] + this.anIntArray354[local13] * local11 >> 15;
 			this.anIntArray356[local13] = this.anIntArray356[local13] * local11 - local7 * this.anIntArray354[local13] >> 15;

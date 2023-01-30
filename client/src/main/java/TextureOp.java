@@ -11,13 +11,13 @@ public abstract class TextureOp extends Node {
 	@OriginalMember(owner = "client!il", name = "V", descriptor = "[I")
 	public static int[] SINE;
 	@OriginalMember(owner = "client!jq", name = "x", descriptor = "Lclient!vs;")
-	protected Class243 aClass243_41;
+	protected ColorImageCache colorImageCache;
 
 	@OriginalMember(owner = "client!jq", name = "y", descriptor = "Lclient!nc;")
-	protected Class158 aClass158_41;
+	protected MonochromeImageCache monochromeImageCache;
 
 	@OriginalMember(owner = "client!jq", name = "G", descriptor = "I")
-	public int anInt7251;
+	public int imageCacheCapacity;
 
 	@OriginalMember(owner = "client!jq", name = "u", descriptor = "[Lclient!jq;")
 	public final TextureOp[] childOps;
@@ -38,27 +38,27 @@ public abstract class TextureOp extends Node {
 	@OriginalMember(owner = "client!oc", name = "a", descriptor = "(IB)Lclient!jq;")
 	public static TextureOp create(@OriginalArg(0) int type) {
 		if (type == 0) {
-			return new Class2_Sub3_Sub1();
+			return new TextureOpMonochromeFill();
 		} else if (type == 1) {
-			return new Class2_Sub3_Sub23();
+			return new TextureOpColorFill();
 		} else if (type == 2) {
-			return new Class2_Sub3_Sub27();
+			return new TextureOpHorizontalGradient();
 		} else if (type == 3) {
-			return new Class2_Sub3_Sub13();
+			return new TextureOpVerticalGradient();
 		} else if (type == 4) {
-			return new Class2_Sub3_Sub25();
+			return new TextureOpBricks();
 		} else if (type == 5) {
-			return new Class2_Sub3_Sub4();
+			return new TextureOpBoxBlur();
 		} else if (type == 6) {
-			return new Class2_Sub3_Sub15();
+			return new TextureOpClamp();
 		} else if (type == 7) {
-			return new Class2_Sub3_Sub30();
+			return new TextureOpCombine();
 		} else if (type == 8) {
-			return new Class2_Sub3_Sub39();
+			return new TextureOpCurve();
 		} else if (type == 9) {
-			return new Class2_Sub3_Sub2();
+			return new TextureOpFlip();
 		} else if (type == 10) {
-			return new Class2_Sub3_Sub20();
+			return new TextureOpColorGradient();
 		} else if (type == 11) {
 			return new Class2_Sub3_Sub22();
 		} else if (type == 12) {
@@ -112,11 +112,11 @@ public abstract class TextureOp extends Node {
 		} else if (type == 36) {
 			return new Class2_Sub3_Sub35();
 		} else if (type == 37) {
-			return new Class2_Sub3_Sub28();
+			return new TextureOp37();
 		} else if (type == 38) {
-			return new Class2_Sub3_Sub7();
+			return new TextureOpLineNoise();
 		} else if (type == 39) {
-			return new Class2_Sub3_Sub10();
+			return new TextureOpSprite();
 		} else {
 			return null;
 		}
@@ -145,62 +145,62 @@ public abstract class TextureOp extends Node {
 	}
 
 	@OriginalMember(owner = "client!jq", name = "b", descriptor = "(IZI)[I")
-	protected final int[] method6472(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
-		return this.childOps[arg0].monochrome ? this.childOps[arg0].getMonochromeOutput(arg1) : this.childOps[arg0].method6478(arg1)[0];
+	protected final int[] getChildMonochromeOutput(@OriginalArg(0) int index, @OriginalArg(2) int y) {
+		return this.childOps[index].monochrome ? this.childOps[index].getMonochromeOutput(y) : this.childOps[index].getColorOutput(y)[0];
 	}
 
 	@OriginalMember(owner = "client!jq", name = "a", descriptor = "(IIB)V")
-	public void method6474(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
-		@Pc(12) int local12 = this.anInt7251 == 255 ? arg0 : this.anInt7251;
+	public void createImageCache(@OriginalArg(0) int height, @OriginalArg(1) int width) {
+		@Pc(12) int capacity = this.imageCacheCapacity == 255 ? height : this.imageCacheCapacity;
 		if (this.monochrome) {
-			this.aClass158_41 = new Class158(local12, arg0, arg1);
+			this.monochromeImageCache = new MonochromeImageCache(capacity, height, width);
 		} else {
-			this.aClass243_41 = new Class243(local12, arg0, arg1);
+			this.colorImageCache = new ColorImageCache(capacity, height, width);
 		}
 	}
 
 	@OriginalMember(owner = "client!jq", name = "b", descriptor = "(I)V")
-	public void method6476() {
+	public void clearImageCache() {
 		if (this.monochrome) {
-			this.aClass158_41.method3993();
-			this.aClass158_41 = null;
+			this.monochromeImageCache.clear();
+			this.monochromeImageCache = null;
 		} else {
-			this.aClass243_41.method6282();
-			this.aClass243_41 = null;
+			this.colorImageCache.clear();
+			this.colorImageCache = null;
 		}
 	}
 
 	@OriginalMember(owner = "client!jq", name = "c", descriptor = "(I)I")
-	public int method6477() {
+	public int getSpriteID() {
 		return -1;
 	}
 
 	@OriginalMember(owner = "client!jq", name = "b", descriptor = "(IB)[[I")
-	public int[][] method6478(@OriginalArg(0) int arg0) {
+	public int[][] getColorOutput(@OriginalArg(0) int arg0) {
 		throw new IllegalStateException("This operation does not have a colour output");
 	}
 
 	@OriginalMember(owner = "client!jq", name = "d", descriptor = "(I)V")
-	public void method6479() {
+	public void postDecode() {
 	}
 
 	@OriginalMember(owner = "client!jq", name = "b", descriptor = "(Z)I")
-	public int method6481() {
+	public int getTextureID() {
 		return -1;
 	}
 
 	@OriginalMember(owner = "client!jq", name = "c", descriptor = "(IZI)[[I")
-	protected final int[][] method6482(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
+	protected final int[][] getChildColorOutput(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
 		if (this.childOps[arg0].monochrome) {
 			@Pc(22) int[] local22 = this.childOps[arg0].getMonochromeOutput(arg1);
 			return new int[][] { local22, local22, local22 };
 		} else {
-			return this.childOps[arg0].method6478(arg1);
+			return this.childOps[arg0].getColorOutput(arg1);
 		}
 	}
 
 	@OriginalMember(owner = "client!jq", name = "a", descriptor = "(ILclient!bt;I)V")
-	public void method6483(@OriginalArg(0) int arg0, @OriginalArg(1) Buffer arg1) {
+	public void decode(@OriginalArg(0) int arg0, @OriginalArg(1) Buffer arg1) {
 	}
 
 	@OriginalMember(owner = "client!jq", name = "a", descriptor = "(BI)[I")

@@ -147,15 +147,15 @@ public final class Class164 {
 
 	@OriginalMember(owner = "client!np", name = "a", descriptor = "(BLclient!wm;)Lclient!jd;")
 	public Class13 method4182(@OriginalArg(1) Class19 arg0) {
-		@Pc(28) Class13 local28 = (Class13) this.aClass125_2.aSoftLruHashTable_27.method2612((long) (this.anInt4413 | 0x20000 | arg0.anInt2836 << 29));
+		@Pc(28) Class13 local28 = (Class13) this.aClass125_2.aSoftLruHashTable_27.get((long) (this.anInt4413 | 0x20000 | arg0.anInt2836 << 29));
 		if (local28 != null) {
 			return local28;
 		}
-		this.aClass125_2.aClass197_50.method5086(this.anInt4413);
-		@Pc(48) Class48 local48 = Static396.method1682(this.aClass125_2.aClass197_50, this.anInt4413, 0);
+		this.aClass125_2.aJs5_50.method5086(this.anInt4413);
+		@Pc(48) SoftwareSprite local48 = Static396.loadSoftwareSprite(this.aClass125_2.aJs5_50, this.anInt4413, 0);
 		if (local48 != null) {
 			local28 = arg0.method2891(local48);
-			this.aClass125_2.aSoftLruHashTable_27.method2624((long) (this.anInt4413 | 0x20000 | arg0.anInt2836 << 29), local28);
+			this.aClass125_2.aSoftLruHashTable_27.put((long) (this.anInt4413 | 0x20000 | arg0.anInt2836 << 29), local28);
 		}
 		return local28;
 	}
@@ -165,7 +165,7 @@ public final class Class164 {
 		if (this.aClass4_89 == null) {
 			return arg1;
 		} else {
-			@Pc(22) StringNode local22 = (StringNode) this.aClass4_89.method90((long) arg0);
+			@Pc(22) StringNode local22 = (StringNode) this.aClass4_89.get((long) arg0);
 			return local22 == null ? arg1 : local22.value;
 		}
 	}
@@ -286,7 +286,7 @@ public final class Class164 {
 		if (this.aClass4_89 == null) {
 			return arg0;
 		} else {
-			@Pc(25) IntNode local25 = (IntNode) this.aClass4_89.method90((long) arg1);
+			@Pc(25) IntNode local25 = (IntNode) this.aClass4_89.get((long) arg1);
 			return local25 == null ? arg0 : local25.value;
 		}
 	}
@@ -295,14 +295,14 @@ public final class Class164 {
 	public Class13 method4188(@OriginalArg(0) Class19 arg0, @OriginalArg(2) boolean arg1) {
 		@Pc(17) int local17 = arg1 ? this.anInt4438 : this.anInt4420;
 		@Pc(24) int local24 = local17 | arg0.anInt2836 << 29;
-		@Pc(33) Class13 local33 = (Class13) this.aClass125_2.aSoftLruHashTable_27.method2612((long) local24);
+		@Pc(33) Class13 local33 = (Class13) this.aClass125_2.aSoftLruHashTable_27.get((long) local24);
 		if (local33 != null) {
 			return local33;
-		} else if (this.aClass125_2.aClass197_50.method5086(local17)) {
-			@Pc(53) Class48 local53 = Static396.method1682(this.aClass125_2.aClass197_50, local17, 0);
+		} else if (this.aClass125_2.aJs5_50.method5086(local17)) {
+			@Pc(53) SoftwareSprite local53 = Static396.loadSoftwareSprite(this.aClass125_2.aJs5_50, local17, 0);
 			if (local53 != null) {
 				local33 = arg0.method2891(local53);
-				this.aClass125_2.aSoftLruHashTable_27.method2624((long) local24, local33);
+				this.aClass125_2.aSoftLruHashTable_27.put((long) local24, local33);
 			}
 			return local33;
 		} else {

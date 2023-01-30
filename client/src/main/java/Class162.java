@@ -9,7 +9,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Class162 implements Runnable {
 
 	@OriginalMember(owner = "client!nl", name = "f", descriptor = "Lclient!ld;")
-	private final Class135 aClass135_28 = new Class135();
+	private final LinkedList aLinkedList_28 = new LinkedList();
 
 	@OriginalMember(owner = "client!nl", name = "k", descriptor = "Ljava/lang/Thread;")
 	private Thread aThread2 = new Thread(this);
@@ -50,13 +50,13 @@ public final class Class162 implements Runnable {
 	@Override
 	public void run() {
 		while (true) {
-			@Pc(8) Class135 local8 = this.aClass135_28;
+			@Pc(8) LinkedList local8 = this.aLinkedList_28;
 			@Pc(38) Class2_Sub16 local38;
-			synchronized (this.aClass135_28) {
+			synchronized (this.aLinkedList_28) {
 				@Pc(15) Node local15;
-				for (local15 = this.aClass135_28.method3548(); local15 == null; local15 = this.aClass135_28.method3548()) {
+				for (local15 = this.aLinkedList_28.method3548(); local15 == null; local15 = this.aLinkedList_28.method3548()) {
 					try {
-						this.aClass135_28.wait();
+						this.aLinkedList_28.wait();
 					} catch (@Pc(22) InterruptedException local22) {
 					}
 				}
@@ -78,10 +78,10 @@ public final class Class162 implements Runnable {
 
 	@OriginalMember(owner = "client!nl", name = "a", descriptor = "(ILclient!ag;)V")
 	private void method4116(@OriginalArg(1) Node arg0) {
-		@Pc(18) Class135 local18 = this.aClass135_28;
-		synchronized (this.aClass135_28) {
-			this.aClass135_28.method3539(arg0);
-			this.aClass135_28.notify();
+		@Pc(18) LinkedList local18 = this.aLinkedList_28;
+		synchronized (this.aLinkedList_28) {
+			this.aLinkedList_28.method3539(arg0);
+			this.aLinkedList_28.notify();
 		}
 	}
 }

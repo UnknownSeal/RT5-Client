@@ -30,11 +30,11 @@ public final class Class2_Sub3_Sub11 extends TextureOp {
 	@OriginalMember(owner = "client!ft", name = "a", descriptor = "(BI)[I")
 	@Override
 	public int[] getMonochromeOutput(@OriginalArg(1) int y) {
-		@Pc(16) int[] local16 = super.aClass158_41.method3995(y);
-		if (super.aClass158_41.aBoolean265) {
-			for (@Pc(22) int local22 = 0; local22 < Static227.anInt4036; local22++) {
-				@Pc(36) int local36 = this.anInt2184 + (Static334.anIntArray424[local22] << 12) / this.anInt2178;
-				@Pc(48) int local48 = (Static16.anIntArray322[y] << 12) / this.anInt2178 + this.anInt2182;
+		@Pc(16) int[] local16 = super.monochromeImageCache.get(y);
+		if (super.monochromeImageCache.invalid) {
+			for (@Pc(22) int local22 = 0; local22 < Static227.width; local22++) {
+				@Pc(36) int local36 = this.anInt2184 + (Static334.normalizedX[local22] << 12) / this.anInt2178;
+				@Pc(48) int local48 = (Static16.normalizedY[y] << 12) / this.anInt2178 + this.anInt2182;
 				@Pc(54) int local54 = local36;
 				@Pc(56) int local56 = local48;
 				@Pc(62) int local62 = local36 * local36 >> 12;
@@ -55,7 +55,7 @@ public final class Class2_Sub3_Sub11 extends TextureOp {
 
 	@OriginalMember(owner = "client!ft", name = "a", descriptor = "(ILclient!bt;I)V")
 	@Override
-	public void method6483(@OriginalArg(0) int arg0, @OriginalArg(1) Buffer arg1) {
+	public void decode(@OriginalArg(0) int arg0, @OriginalArg(1) Buffer arg1) {
 		if (arg0 == 0) {
 			this.anInt2178 = arg1.g2();
 		} else if (arg0 == 1) {

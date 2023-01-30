@@ -4,10 +4,10 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class Static30 {
 
 	@OriginalMember(owner = "client!bo", name = "e", descriptor = "Lclient!r;")
-	public static Class197 aClass197_5;
+	public static Js5 aJs5_5;
 
 	@OriginalMember(owner = "client!bo", name = "h", descriptor = "Lclient!je;")
-	public static Class113 aClass113_3;
+	public static WorldMapFont font22;
 
 	@OriginalMember(owner = "client!bo", name = "a", descriptor = "Lclient!h;")
 	public static final Class89 aClass89_25 = new Class89(88, -2);

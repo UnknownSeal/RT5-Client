@@ -77,7 +77,7 @@ public final class Npc extends Class11_Sub5_Sub2 {
 			} else if (Static114.loop >= super.aClass2_Sub6_3.anInt1100) {
 				@Pc(331) Model local331 = super.aClass2_Sub6_3.method1360(arg1, local7 | 0x7);
 				if (local331 != null) {
-					local331.method3812(-super.anInt6781 + super.aClass2_Sub6_3.anInt1104, super.aClass2_Sub6_3.anInt1114 + -super.anInt6782, -super.anInt6783 + super.aClass2_Sub6_3.anInt1101);
+					local331.method3812(-super.xFine + super.aClass2_Sub6_3.anInt1104, super.aClass2_Sub6_3.anInt1114 + -super.anInt6782, -super.zFine + super.aClass2_Sub6_3.anInt1101);
 					if (local119 != 0) {
 						local331.method3832(local119);
 					}
@@ -186,7 +186,7 @@ public final class Npc extends Class11_Sub5_Sub2 {
 		@Pc(17) Class14 local17 = arg0.method2808();
 		@Pc(22) int local22 = super.aClass248_7.method6440();
 		local17.method3924(local22);
-		local17.method3935(super.anInt6781, super.anInt6782, super.anInt6783);
+		local17.method3935(super.xFine, super.anInt6782, super.zFine);
 		@Pc(37) BasType local37 = this.method4331();
 		@Pc(50) NpcType local50 = this.type.multiNpcs == null ? this.type : this.type.getMultiNpc(Static214.aClass226_1);
 		if (Static218.aClass177_Sub1_2.aBoolean358 && local50.hasshadow && local37.aBoolean424) {
@@ -218,7 +218,7 @@ public final class Npc extends Class11_Sub5_Sub2 {
 			if (local22 != 0) {
 				super.aModelArray3[2].method3832(local22);
 			}
-			super.aModelArray3[2].method3812(-super.aClass2_Sub6_3.anInt1104 + super.anInt6781, super.anInt6782 + -super.aClass2_Sub6_3.anInt1114, super.anInt6783 - super.aClass2_Sub6_3.anInt1101);
+			super.aModelArray3[2].method3812(-super.aClass2_Sub6_3.anInt1104 + super.xFine, super.anInt6782 + -super.aClass2_Sub6_3.anInt1114, super.zFine - super.aClass2_Sub6_3.anInt1101);
 		}
 		super.anInt4603 = Static163.anInt3086;
 		return local175;
@@ -259,8 +259,8 @@ public final class Npc extends Class11_Sub5_Sub2 {
 		super.anInt4641 = 0;
 		super.anInt4642 = 0;
 		super.anIntArray317[0] = arg4;
-		super.anInt6781 = arg0 * 64 + super.anIntArray316[0] * 128;
-		super.anInt6783 = super.anIntArray317[0] * 128 + arg0 * 64;
+		super.xFine = arg0 * 64 + super.anIntArray316[0] * 128;
+		super.zFine = super.anIntArray317[0] * 128 + arg0 * 64;
 		if (super.particleSystem != null) {
 			super.particleSystem.method4358();
 		}
@@ -281,7 +281,7 @@ public final class Npc extends Class11_Sub5_Sub2 {
 		@Pc(19) Class14 local19 = arg2.method2808();
 		@Pc(24) int local24 = super.aClass248_7.method6440();
 		local19.method3924(local24);
-		local19.method3935(super.anInt6781, super.anInt6782, super.anInt6783);
+		local19.method3935(super.xFine, super.anInt6782, super.zFine);
 		for (@Pc(43) int local43 = 0; super.aModelArray3.length > local43; local43++) {
 			if (super.aModelArray3[local43] != null && super.aModelArray3[local43].method3819(arg0, arg1, local19, this.type.size == 1)) {
 				return true;

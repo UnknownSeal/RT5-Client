@@ -42,12 +42,12 @@ public final class Static240 {
 				if (local51 < local33 - 1) {
 					local57 = local57.substring(0, local57.length() - 4);
 				}
-				local78 = Static2.aClass113_1.method2949(local57);
+				local78 = Static2.font14.method2949(local57);
 				if (local35 < local78) {
 					local35 = local78;
 				}
 			}
-			local37 = local33 * Static2.aClass113_1.method2947() + Static2.aClass113_1.method2946() / 2;
+			local37 = local33 * Static2.font14.method2947() + Static2.font14.method2946() / 2;
 		}
 		local51 = arg0.anInt2948 + local16 / 2;
 		@Pc(112) int local112 = arg0.anInt2944;
@@ -75,7 +75,7 @@ public final class Static240 {
 			local263 = local112;
 			local261 = local51 - local35 / 2 - 5;
 			local265 = local261 + local35 + 10;
-			local267 = local112 + Static2.aClass113_1.method2947() * local33 + 3;
+			local267 = local112 + Static2.font14.method2947() * local33 + 3;
 			if (arg1.anInt4437 != 0) {
 				arg2.method2868(local267 - local112, local261, local112, arg1.anInt4437, local265 - local261);
 			}
@@ -87,8 +87,8 @@ public final class Static240 {
 				if (local335 < local33 - 1) {
 					local341 = local341.substring(0, local341.length() - 4);
 				}
-				Static2.aClass113_1.method2950(arg2, local341, local51, local112, arg1.anInt4431);
-				local112 += Static2.aClass113_1.method2947();
+				Static2.font14.method2950(arg2, local341, local51, local112, arg1.anInt4431);
+				local112 += Static2.font14.method2947();
 			}
 		}
 		if (arg1.anInt4420 == -1 && arg1.aString48 == null) {
@@ -104,6 +104,6 @@ public final class Static240 {
 		local385.anInt2343 = local267;
 		local385.anInt2340 = local28 + local16;
 		local385.anInt2338 = local28 - local16;
-		Static197.aClass135_24.method3539(local385);
+		Static197.aLinkedList_24.method3539(local385);
 	}
 }

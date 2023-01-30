@@ -36,7 +36,7 @@ public final class Class177_Sub1 extends Class177 {
 		super.aBoolean350 = true;
 		super.aBoolean359 = true;
 		super.aBoolean349 = true;
-		if (Static309.anInt5802 < 96) {
+		if (GameShell.maxMemory < 96) {
 			Static26.method864(0);
 		} else {
 			Static26.method864(2);
@@ -273,7 +273,7 @@ public final class Class177_Sub1 extends Class177 {
 			if (local437 < 0 || local437 > 2) {
 				local437 = 0;
 			}
-			if (Static309.anInt5802 < 96) {
+			if (GameShell.maxMemory < 96) {
 				local437 = 0;
 			}
 			Static26.method864(local437);
@@ -297,7 +297,7 @@ public final class Class177_Sub1 extends Class177 {
 		if (local21 >= 9) {
 			super.anInt4883 = arg0.g1();
 		}
-		if (super.anInt4883 < 0 || super.anInt4883 > Static289.method5018(Static309.anInt5802)) {
+		if (super.anInt4883 < 0 || super.anInt4883 > Static289.method5018(GameShell.maxMemory)) {
 			super.anInt4883 = 0;
 		}
 		if (local21 >= 10) {

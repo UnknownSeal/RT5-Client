@@ -5,13 +5,13 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static295 {
 
 	@OriginalMember(owner = "client!r", name = "Q", descriptor = "[Lclient!ac;")
-	public static Class3_Sub1[] aClass3_Sub1Array1;
+	public static World[] worlds;
 
 	@OriginalMember(owner = "client!r", name = "w", descriptor = "I")
 	public static int anInt5567 = 0;
 
 	@OriginalMember(owner = "client!r", name = "H", descriptor = "Lclient!ld;")
-	public static final Class135 aClass135_32 = new Class135();
+	public static final LinkedList A_LINKED_LIST___32 = new LinkedList();
 
 	@OriginalMember(owner = "client!r", name = "O", descriptor = "[I")
 	public static final int[] anIntArray375 = new int[] { 1, 2, 4, 8 };
@@ -27,14 +27,14 @@ public final class Static295 {
 	}
 
 	@OriginalMember(owner = "client!r", name = "a", descriptor = "(Lclient!nk;ZLclient!nk;)V")
-	public static void method5095(@OriginalArg(0) Class161 arg0, @OriginalArg(2) Class161 arg1) {
+	public static void method5095(@OriginalArg(0) Component arg0, @OriginalArg(2) Component arg1) {
 		Static91.method1960(Static387.aClass145_110);
-		Static257.aClass2_Sub4_Sub2_4.p4(arg1.anInt4317);
+		Static257.aClass2_Sub4_Sub2_4.p4(arg1.id);
 		Static257.aClass2_Sub4_Sub2_4.ip2add(arg1.anInt4300);
-		Static257.aClass2_Sub4_Sub2_4.p2add(arg1.anInt4297);
-		Static257.aClass2_Sub4_Sub2_4.mp4(arg0.anInt4317);
+		Static257.aClass2_Sub4_Sub2_4.p2add(arg1.createdComponentID);
+		Static257.aClass2_Sub4_Sub2_4.mp4(arg0.id);
 		Static257.aClass2_Sub4_Sub2_4.ip2add(arg0.anInt4300);
-		Static257.aClass2_Sub4_Sub2_4.ip2_dup(arg0.anInt4297);
+		Static257.aClass2_Sub4_Sub2_4.ip2_dup(arg0.createdComponentID);
 	}
 
 	@OriginalMember(owner = "client!r", name = "c", descriptor = "(III)I")
@@ -57,7 +57,7 @@ public final class Static295 {
 		if (local15 != null) {
 			return local15;
 		}
-		@Pc(25) byte[] local25 = Static195.aClass197_54.fetchFile(arg0, 0);
+		@Pc(25) byte[] local25 = Static195.aJs5_54.fetchFile(arg0, 0);
 		if (local25 == null || local25.length <= 1) {
 			return null;
 		} else {

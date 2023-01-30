@@ -8,8 +8,8 @@ public final class Static303 {
 	public static Class221 aClass221_2;
 
 	@OriginalMember(owner = "client!rm", name = "a", descriptor = "(Lclient!ld;BLclient!wm;II)V")
-	public static void method5207(@OriginalArg(0) Class135 arg0, @OriginalArg(2) Class19 arg1) {
-		Static197.aClass135_24.method3543();
+	public static void method5207(@OriginalArg(0) LinkedList arg0, @OriginalArg(2) Class19 arg1) {
+		Static197.aLinkedList_24.clear();
 		if (Static175.aBoolean225) {
 			return;
 		}
@@ -97,7 +97,7 @@ public final class Static303 {
 						local59 = true;
 					}
 				}
-				if (!local59 && Static212.anInt3785 == 0) {
+				if (!local59 && Static212.inTutorialIsland == 0) {
 					Static89.aClass2_Sub4_2.offset = 0;
 					arg0.ipadata(Static89.aClass2_Sub4_2.data, local40);
 					Static89.aClass2_Sub4_2.offset = 0;
@@ -216,7 +216,7 @@ public final class Static303 {
 			if (arg2.aString50.charAt(0) == '~') {
 				arg2.aString50 = arg2.aString50.substring(1);
 				Static33.method4199(arg2.method4071(), 0, arg2.aString50, 2, arg2.method4069());
-			} else if (Static17.aClass11_Sub5_Sub2_Sub1_3 == arg2) {
+			} else if (Static17.self == arg2) {
 				Static33.method4199(arg2.method4071(), 0, arg2.aString50, 2, arg2.method4069());
 			}
 			arg2.anInt4600 = 0;
@@ -275,7 +275,7 @@ public final class Static303 {
 					if (local283 != -1) {
 						local780 = Static39.aClass85_1.method2371(local283);
 						if (local780 != null && local780.anIntArray262 != null) {
-							Static1.method4(local780, arg2 == Static17.aClass11_Sub5_Sub2_Sub1_3, arg2.aByte78, arg2.anInt6781, arg2.anInt6783, 0);
+							Static1.method4(local780, arg2 == Static17.self, arg2.aByte78, arg2.xFine, arg2.zFine, 0);
 						}
 					}
 				}

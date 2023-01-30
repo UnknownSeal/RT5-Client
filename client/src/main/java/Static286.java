@@ -65,7 +65,7 @@ public final class Static286 {
 				}
 			}
 		}
-		@Pc(232) Class113 local232 = null;
+		@Pc(232) WorldMapFont local232 = null;
 		@Pc(234) int local234 = 0;
 		@Pc(236) int local236 = 0;
 		@Pc(238) int local238 = 0;
@@ -160,7 +160,7 @@ public final class Static286 {
 			local760.anInt2340 = local127;
 			local760.anInt2342 = local242;
 			local760.anInt2341 = local129;
-			Static197.aClass135_24.method3539(local760);
+			Static197.aLinkedList_24.method3539(local760);
 		}
 		return false;
 	}
@@ -383,17 +383,17 @@ public final class Static286 {
 	}
 
 	@OriginalMember(owner = "client!qk", name = "a", descriptor = "(Lclient!bt;I)Lclient!jq;")
-	public static TextureOp method4927(@OriginalArg(0) Buffer arg0) {
+	public static TextureOp decode(@OriginalArg(0) Buffer arg0) {
 		arg0.g1();
 		@Pc(13) int local13 = arg0.g1();
 		@Pc(17) TextureOp local17 = TextureOp.create(local13);
-		local17.anInt7251 = arg0.g1();
+		local17.imageCacheCapacity = arg0.g1();
 		@Pc(26) int local26 = arg0.g1();
 		for (@Pc(28) int local28 = 0; local28 < local26; local28++) {
 			@Pc(34) int local34 = arg0.g1();
-			local17.method6483(local34, arg0);
+			local17.decode(local34, arg0);
 		}
-		local17.method6479();
+		local17.postDecode();
 		return local17;
 	}
 }

@@ -6,7 +6,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static148 {
 
 	@OriginalMember(owner = "client!ij", name = "b", descriptor = "I")
-	public static int anInt2718;
+	public static int heightMask;
 
 	@OriginalMember(owner = "client!ij", name = "d", descriptor = "I")
 	public static int originZ;

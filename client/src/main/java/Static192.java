@@ -20,7 +20,7 @@ public final class Static192 {
 	public static int anInt3547 = 0;
 
 	@OriginalMember(owner = "client!l", name = "i", descriptor = "Lclient!nk;")
-	public static Class161 aClass161_8 = null;
+	public static Component aComponent_8 = null;
 
 	@OriginalMember(owner = "client!l", name = "a", descriptor = "(IZIB)I")
 	public static int method3505(@OriginalArg(0) int arg0, @OriginalArg(1) boolean arg1, @OriginalArg(2) int arg2) {
@@ -42,6 +42,6 @@ public final class Static192 {
 
 	@OriginalMember(owner = "client!l", name = "a", descriptor = "(I)V")
 	public static void method3507() {
-		Static233.A_SOFT_LRU_HASH_TABLE___37.method2614();
+		Static233.types.method2614();
 	}
 }

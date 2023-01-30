@@ -40,7 +40,7 @@ public final class Static154 {
 
 	@OriginalMember(owner = "client!is", name = "a", descriptor = "(Lclient!oe;B)V")
 	public static void method2781(@OriginalArg(0) Npc arg0) {
-		for (@Pc(16) Class2_Sub19 local16 = (Class2_Sub19) Static363.aClass135_39.method3550(); local16 != null; local16 = (Class2_Sub19) Static363.aClass135_39.method3551()) {
+		for (@Pc(16) Class2_Sub19 local16 = (Class2_Sub19) Static363.A_LINKED_LIST___39.method3550(); local16 != null; local16 = (Class2_Sub19) Static363.A_LINKED_LIST___39.method3551()) {
 			if (local16.aClass11_Sub5_Sub2_Sub2_1 == arg0) {
 				if (local16.aClass2_Sub12_Sub4_3 != null) {
 					Static227.aClass2_Sub12_Sub2_2.method2081(local16.aClass2_Sub12_Sub4_3);
@@ -100,7 +100,7 @@ public final class Static154 {
 									local54.anInt625 = 0;
 									local54.anInt627 = 1;
 									local54.anInt626 = 0;
-									Static1.method4(local46, Static17.aClass11_Sub5_Sub2_Sub1_3 == arg3, arg3.aByte78, arg3.anInt6781, arg3.anInt6783, 0);
+									Static1.method4(local46, Static17.self == arg3, arg3.aByte78, arg3.xFine, arg3.zFine, 0);
 								} else if (local49 == 2) {
 									local54.anInt626 = 0;
 								}
@@ -116,7 +116,7 @@ public final class Static154 {
 							local54.anInt626 = 0;
 							local54.anInt625 = 0;
 							local54.anInt629 = local19;
-							Static1.method4(local46, Static17.aClass11_Sub5_Sub2_Sub1_3 == arg3, arg3.aByte78, arg3.anInt6781, arg3.anInt6783, 0);
+							Static1.method4(local46, Static17.self == arg3, arg3.aByte78, arg3.xFine, arg3.zFine, 0);
 						}
 					}
 				}

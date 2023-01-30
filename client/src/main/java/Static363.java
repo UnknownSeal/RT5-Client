@@ -21,7 +21,7 @@ public final class Static363 {
 	public static Frame aFrame2;
 
 	@OriginalMember(owner = "client!vf", name = "Y", descriptor = "[Lclient!kh;")
-	public static Class124[] aClass124Array1;
+	public static Country[] countries;
 
 	@OriginalMember(owner = "client!vf", name = "N", descriptor = "Z")
 	public static boolean aBoolean464 = true;
@@ -30,7 +30,7 @@ public final class Static363 {
 	public static final Class145 aClass145_239 = new Class145(67, 4);
 
 	@OriginalMember(owner = "client!vf", name = "U", descriptor = "Lclient!ld;")
-	public static final Class135 aClass135_39 = new Class135();
+	public static final LinkedList A_LINKED_LIST___39 = new LinkedList();
 
 	@OriginalMember(owner = "client!vf", name = "W", descriptor = "Lclient!mc;")
 	public static final Class145 aClass145_240 = new Class145(37, 6);
@@ -81,16 +81,16 @@ public final class Static363 {
 			}
 			return;
 		}
-		if ((Static359.aByteArrayArrayArray16[Static355.anInt6585][Static17.aClass11_Sub5_Sub2_Sub1_3.anInt6781 >> 7][Static17.aClass11_Sub5_Sub2_Sub1_3.anInt6783 >> 7] & 0x4) != 0) {
-			Static81.method3666(Static330.aClass67ArrayArrayArray3, false, Static17.aClass11_Sub5_Sub2_Sub1_3.anInt6781 >> 7, Static17.aClass11_Sub5_Sub2_Sub1_3.anInt6783 >> 7, 0);
+		if ((Static359.aByteArrayArrayArray16[Static355.anInt6585][Static17.self.xFine >> 7][Static17.self.zFine >> 7] & 0x4) != 0) {
+			Static81.method3666(Static330.aClass67ArrayArrayArray3, false, Static17.self.xFine >> 7, Static17.self.zFine >> 7, 0);
 		}
 		if (Static265.anInt4857 >= 2560) {
 			return;
 		}
 		local94 = Static136.anInt6778 >> 7;
 		@Pc(175) int local175 = Static211.anInt3777 >> 7;
-		@Pc(180) int local180 = Static17.aClass11_Sub5_Sub2_Sub1_3.anInt6781 >> 7;
-		@Pc(185) int local185 = Static17.aClass11_Sub5_Sub2_Sub1_3.anInt6783 >> 7;
+		@Pc(180) int local180 = Static17.self.xFine >> 7;
+		@Pc(185) int local185 = Static17.self.zFine >> 7;
 		@Pc(196) int local196;
 		if (local180 <= local94) {
 			local196 = local94 - local180;

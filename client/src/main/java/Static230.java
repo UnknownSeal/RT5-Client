@@ -80,7 +80,7 @@ public final class Static230 {
 		if (Static93.anInt1951 == 2) {
 			Static288.aClass13Array21[Static313.anInt5878 / 100 + 4].method6384(Static320.anInt6005 - 8, Static291.anInt5504 - 8);
 		}
-		Static290.method5024();
+		Static290.setTutorialIsland();
 	}
 
 	@OriginalMember(owner = "client!ne", name = "a", descriptor = "(IIIIIIIILclient!dg;II)Z")

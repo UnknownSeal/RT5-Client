@@ -46,7 +46,7 @@ public final class Static99 {
 		for (@Pc(91) int local91 = 0; local91 < 32768; local91++) {
 			Static365.npcs[local91] = null;
 		}
-		Static120.aClass4_49.method81();
+		Static120.aClass4_49.clear();
 		Static117.method2369();
 		Static292.anInt5510 = 0;
 		Static214.aClass226_1.method5780();

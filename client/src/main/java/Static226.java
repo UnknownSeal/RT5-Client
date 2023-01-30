@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static226 {
 
 	@OriginalMember(owner = "client!na", name = "U", descriptor = "Lclient!r;")
-	public static Class197 aClass197_61;
+	public static Js5 aJs5_61;
 
 	@OriginalMember(owner = "client!na", name = "Y", descriptor = "Lclient!lh;")
 	public static Class119 aClass119_1;
@@ -40,8 +40,8 @@ public final class Static226 {
 
 	@OriginalMember(owner = "client!na", name = "b", descriptor = "(II)V")
 	public static void method3982(@OriginalArg(0) int arg0) {
-		@Pc(10) Class2_Sub2_Sub7 local10 = Static316.method5412(1, arg0);
-		local10.method2312();
+		@Pc(10) DelayedStateChange local10 = Static316.create(1, arg0);
+		local10.pushClient();
 	}
 
 	@OriginalMember(owner = "client!na", name = "a", descriptor = "([Ljava/lang/Object;[II)V")

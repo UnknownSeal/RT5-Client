@@ -33,7 +33,7 @@ public final class Class116 {
 
 	@OriginalMember(owner = "client!jm", name = "a", descriptor = "(JB)Lclient!tl;")
 	public SecondaryNode method3151(@OriginalArg(0) long arg0) {
-		@Pc(15) SecondaryNode local15 = (SecondaryNode) this.aClass4_69.method90(arg0);
+		@Pc(15) SecondaryNode local15 = (SecondaryNode) this.aClass4_69.get(arg0);
 		if (local15 != null) {
 			this.aClass246_3.addTail(local15);
 		}
@@ -42,8 +42,8 @@ public final class Class116 {
 
 	@OriginalMember(owner = "client!jm", name = "b", descriptor = "(B)V")
 	public void method3152() {
-		this.aClass246_3.method6341();
-		this.aClass4_69.method81();
+		this.aClass246_3.clear();
+		this.aClass4_69.clear();
 		this.aClass2_Sub2_32 = new SecondaryNode();
 		this.anInt3151 = this.anInt3150;
 	}
@@ -51,11 +51,11 @@ public final class Class116 {
 	@OriginalMember(owner = "client!jm", name = "a", descriptor = "(BLclient!tl;J)V")
 	public void method3154(@OriginalArg(1) SecondaryNode arg0, @OriginalArg(2) long arg1) {
 		if (this.anInt3151 == 0) {
-			@Pc(7) SecondaryNode local7 = this.aClass246_3.method6338();
+			@Pc(7) SecondaryNode local7 = this.aClass246_3.removeHead();
 			local7.unlink();
 			local7.unlinkSecondary();
 			if (this.aClass2_Sub2_32 == local7) {
-				local7 = this.aClass246_3.method6338();
+				local7 = this.aClass246_3.removeHead();
 				local7.unlink();
 				local7.unlinkSecondary();
 			}

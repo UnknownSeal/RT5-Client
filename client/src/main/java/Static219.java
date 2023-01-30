@@ -58,7 +58,7 @@ public final class Static219 {
 	@OriginalMember(owner = "client!mp", name = "a", descriptor = "([BBI)[B")
 	public static byte[] method3849(@OriginalArg(0) byte[] arg0, @OriginalArg(2) int arg1) {
 		@Pc(2) byte[] local2 = new byte[arg1];
-		Static403.method4606(arg0, 0, local2, 0, arg1);
+		Static403.copy(arg0, 0, local2, 0, arg1);
 		return local2;
 	}
 

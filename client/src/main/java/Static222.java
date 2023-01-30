@@ -14,25 +14,25 @@ public final class Static222 {
 	public static boolean method3915(@OriginalArg(0) int arg0) {
 		if (Static128.aBooleanArray21[arg0]) {
 			return true;
-		} else if (Static283.aClass197_68.method5070(arg0)) {
-			@Pc(23) int local23 = Static283.aClass197_68.method5080(arg0);
+		} else if (Static283.aJs5_68.isGroupReady(arg0)) {
+			@Pc(23) int local23 = Static283.aJs5_68.method5080(arg0);
 			if (local23 == 0) {
 				Static128.aBooleanArray21[arg0] = true;
 				return true;
 			}
-			if (Static26.aClass161ArrayArray1[arg0] == null) {
-				Static26.aClass161ArrayArray1[arg0] = new Class161[local23];
+			if (Static26.aComponentArrayArray1[arg0] == null) {
+				Static26.aComponentArrayArray1[arg0] = new Component[local23];
 			}
 			for (@Pc(45) int local45 = 0; local45 < local23; local45++) {
-				if (Static26.aClass161ArrayArray1[arg0][local45] == null) {
-					@Pc(59) byte[] local59 = Static283.aClass197_68.fetchFile(arg0, local45);
+				if (Static26.aComponentArrayArray1[arg0][local45] == null) {
+					@Pc(59) byte[] local59 = Static283.aJs5_68.fetchFile(arg0, local45);
 					if (local59 != null) {
-						@Pc(71) Class161 local71 = Static26.aClass161ArrayArray1[arg0][local45] = new Class161();
-						local71.anInt4317 = local45 + (arg0 << 16);
+						@Pc(71) Component local71 = Static26.aComponentArrayArray1[arg0][local45] = new Component();
+						local71.id = local45 + (arg0 << 16);
 						if (local59[0] != -1) {
 							throw new IllegalStateException("if1");
 						}
-						local71.method4105(new Buffer(local59));
+						local71.decodeIf3(new Buffer(local59));
 					}
 				}
 			}

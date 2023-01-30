@@ -354,7 +354,7 @@ public final class Class2_Sub34 extends Node {
 						local99 = local64 >> 16 & 0x7F;
 						if (local99 > 0) {
 							@Pc(174) int local174 = local15[local87];
-							@Pc(182) Class2_Sub44 local182 = (Class2_Sub44) this.aClass4_119.method90((long) local174);
+							@Pc(182) Class2_Sub44 local182 = (Class2_Sub44) this.aClass4_119.get((long) local174);
 							if (local182 == null) {
 								local182 = new Class2_Sub44(new byte[128]);
 								this.aClass4_119.put(local182, (long) local174);

@@ -61,9 +61,9 @@ public final class Static82 {
 				Static276.method4654(true, local21, true);
 			}
 		}
-		if (Static192.aClass161_8 != null) {
-			Static200.method3644(Static192.aClass161_8);
-			Static192.aClass161_8 = null;
+		if (Static192.aComponent_8 != null) {
+			Static200.redraw(Static192.aComponent_8);
+			Static192.aComponent_8 = null;
 		}
 	}
 }

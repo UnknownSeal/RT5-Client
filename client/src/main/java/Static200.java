@@ -39,14 +39,14 @@ public final class Static200 {
 	@OriginalMember(owner = "client!lo", name = "a", descriptor = "(I)V")
 	public static void method3643() {
 		if (Static215.anInt3795 != 3) {
-			Static120.anInt2385 = -1;
+			client.worldID = -1;
 		}
 	}
 
 	@OriginalMember(owner = "client!lo", name = "a", descriptor = "(Lclient!nk;B)V")
-	public static void method3644(@OriginalArg(0) Class161 arg0) {
-		if (Static132.anInt2468 == arg0.anInt4268) {
-			Static357.aBooleanArray59[arg0.anInt4257] = true;
+	public static void redraw(@OriginalArg(0) Component component) {
+		if (Static132.anInt2468 == component.rectangleLoop) {
+			Static357.aBooleanArray59[component.rectangle] = true;
 		}
 	}
 

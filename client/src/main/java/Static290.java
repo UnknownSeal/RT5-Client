@@ -21,23 +21,23 @@ public final class Static290 {
 
 	@OriginalMember(owner = "client!qp", name = "a", descriptor = "(II)V")
 	public static void method5022(@OriginalArg(0) int arg0) {
-		@Pc(8) Class2_Sub2_Sub7 local8 = Static316.method5412(2, arg0);
-		local8.method2312();
+		@Pc(8) DelayedStateChange local8 = Static316.create(2, arg0);
+		local8.pushClient();
 	}
 
 	@OriginalMember(owner = "client!qp", name = "a", descriptor = "(I)V")
-	public static void method5024() {
-		Static212.anInt3785 = 0;
-		@Pc(17) int local17 = (Static17.aClass11_Sub5_Sub2_Sub1_3.anInt6781 >> 7) + Static164.originX;
-		@Pc(24) int local24 = Static148.originZ + (Static17.aClass11_Sub5_Sub2_Sub1_3.anInt6783 >> 7);
-		if (local17 >= 3053 && local17 <= 3156 && local24 >= 3056 && local24 <= 3136) {
-			Static212.anInt3785 = 1;
+	public static void setTutorialIsland() {
+		Static212.inTutorialIsland = 0;
+		@Pc(17) int x = (Static17.self.xFine >> 7) + Static164.originX;
+		@Pc(24) int z = Static148.originZ + (Static17.self.zFine >> 7);
+		if (x >= 3053 && x <= 3156 && z >= 3056 && z <= 3136) {
+			Static212.inTutorialIsland = 1;
 		}
-		if (local17 >= 3072 && local17 <= 3118 && local24 >= 9492 && local24 <= 9535) {
-			Static212.anInt3785 = 1;
+		if (x >= 3072 && x <= 3118 && z >= 9492 && z <= 9535) {
+			Static212.inTutorialIsland = 1;
 		}
-		if (Static212.anInt3785 == 1 && local17 >= 3139 && local17 <= 3199 && local24 >= 3008 && local24 <= 3062) {
-			Static212.anInt3785 = 0;
+		if (Static212.inTutorialIsland == 1 && x >= 3139 && x <= 3199 && z >= 3008 && z <= 3062) {
+			Static212.inTutorialIsland = 0;
 		}
 	}
 

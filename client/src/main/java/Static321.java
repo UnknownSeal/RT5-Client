@@ -28,7 +28,7 @@ public final class Static321 {
 		local15.anInt1045 = 35;
 		local15.aBoolean85 = true;
 		local15.anInt1050 = 8;
-		local15.method6479();
+		local15.postDecode();
 		Static155.method2789(2048, 1);
 		local15.method1308(local11, 0);
 		return local11;

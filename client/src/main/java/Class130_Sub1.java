@@ -21,14 +21,14 @@ public final class Class130_Sub1 extends Class130 {
 	private final Class203 aClass203_3;
 
 	@OriginalMember(owner = "client!ko", name = "<init>", descriptor = "(Lclient!bf;Lclient!vi;[Lclient!dk;Z)V")
-	public Class130_Sub1(@OriginalArg(0) Class19_Sub1 arg0, @OriginalArg(1) Class239 arg1, @OriginalArg(2) Class48[] arg2, @OriginalArg(3) boolean arg3) {
+	public Class130_Sub1(@OriginalArg(0) Class19_Sub1 arg0, @OriginalArg(1) Class239 arg1, @OriginalArg(2) SoftwareSprite[] arg2, @OriginalArg(3) boolean arg3) {
 		super(arg0, arg1);
 		this.aClass19_Sub1_19 = arg0;
 		@Pc(9) opengl local9 = arg0.anOpengl1;
 		@Pc(11) int local11 = 0;
 		@Pc(13) int local13;
 		for (local13 = 0; local13 < 256; local13++) {
-			@Pc(20) Class48 local20 = arg2[local13];
+			@Pc(20) SoftwareSprite local20 = arg2[local13];
 			if (local20.anInt1533 > local11) {
 				local11 = local20.anInt1533;
 			}
@@ -43,7 +43,7 @@ public final class Class130_Sub1 extends Class130 {
 		@Pc(71) int local71;
 		@Pc(77) int local77;
 		for (@Pc(49) int local49 = 0; local49 < 256; local49++) {
-			@Pc(56) Class48 local56 = arg2[local49];
+			@Pc(56) SoftwareSprite local56 = arg2[local49];
 			@Pc(59) byte[] local59 = local56.aByteArray21;
 			local62 = local56.anInt1533;
 			local65 = local56.anInt1531;
@@ -65,7 +65,7 @@ public final class Class130_Sub1 extends Class130 {
 		@Pc(292) float local292 = this.aClass8_Sub1_Sub1_3.aFloat42 / (float) this.aClass8_Sub1_Sub1_3.anInt3688;
 		@Pc(301) float local301 = this.aClass8_Sub1_Sub1_3.aFloat43 / (float) this.aClass8_Sub1_Sub1_3.anInt3687;
 		for (@Pc(303) int local303 = 0; local303 < 256; local303++) {
-			@Pc(310) Class48 local310 = arg2[local303];
+			@Pc(310) SoftwareSprite local310 = arg2[local303];
 			local62 = local310.anInt1533;
 			local65 = local310.anInt1531;
 			local71 = local310.anInt1530;

@@ -44,7 +44,7 @@ public final class Class6_Sub1 extends Class6 {
 	public Class126 aClass126_4;
 
 	@OriginalMember(owner = "client!ah", name = "A", descriptor = "Lclient!ld;")
-	private final Class135 aClass135_3 = new Class135();
+	private final LinkedList aLinkedList_3 = new LinkedList();
 
 	@OriginalMember(owner = "client!ah", name = "s", descriptor = "Lclient!bf;")
 	public final Class19_Sub1 aClass19_Sub1_1;
@@ -231,7 +231,7 @@ public final class Class6_Sub1 extends Class6 {
 		for (@Pc(84) int local84 = 0; local84 < arg6.length; local84++) {
 			@Pc(115) long local115 = (long) arg12 << 48 | (long) arg11 << 42 | (long) arg10 << 28 | (long) (arg9[local84] << 14) | (long) arg8[local84];
 			@Pc(121) Node local121;
-			for (local121 = this.aClass4_7.method90(local115); local121 != null; local121 = this.aClass4_7.method82()) {
+			for (local121 = this.aClass4_7.get(local115); local121 != null; local121 = this.aClass4_7.method82()) {
 				@Pc(126) Class2_Sub36 local126 = (Class2_Sub36) local121;
 				if (local126.anInt6095 == arg8[local84] && local126.aFloat75 == (float) arg9[local84] && local126.anInt6097 == arg10 && local126.anInt6096 == arg11 && local126.anInt6098 == arg12) {
 					break;
@@ -330,7 +330,7 @@ public final class Class6_Sub1 extends Class6 {
 		for (local97 = 0; local97 < this.aClass2_Sub36Array1.length; local97++) {
 			this.aClass2_Sub36Array1[local97].method5568(Static8.anIntArray10, Static8.anInt184);
 		}
-		if (!this.aClass135_3.method3549()) {
+		if (!this.aLinkedList_3.method3549()) {
 			local97 = this.aClass19_Sub1_1.anInt613;
 			@Pc(180) int local180 = this.aClass19_Sub1_1.anInt601;
 			this.aClass19_Sub1_1.method2879(0, local180);
@@ -343,7 +343,7 @@ public final class Class6_Sub1 extends Class6 {
 			this.aClass19_Sub1_1.method794(8448, 7681);
 			this.aClass19_Sub1_1.method793(0, 34166, 770);
 			this.aClass19_Sub1_1.method833(0, 34167);
-			for (@Pc(236) Node local236 = this.aClass135_3.method3550(); local236 != null; local236 = this.aClass135_3.method3551()) {
+			for (@Pc(236) Node local236 = this.aLinkedList_3.method3550(); local236 != null; local236 = this.aLinkedList_3.method3551()) {
 				@Pc(241) Class2_Sub23 local241 = (Class2_Sub23) local236;
 				local241.method3525(arg2, arg0, arg3, arg1);
 			}
@@ -552,7 +552,7 @@ public final class Class6_Sub1 extends Class6 {
 									local502 = this.aClass19_Sub1_1.aFloat3 + local502 * (local502 > 0.0F ? this.aClass19_Sub1_1.aFloat8 : this.aClass19_Sub1_1.aFloat16);
 								}
 							}
-							@Pc(773) Node local773 = local149.method90(local488);
+							@Pc(773) Node local773 = local149.get(local488);
 							@Pc(805) int local805;
 							if (local773 == null) {
 								if (local462 == local458) {
@@ -725,7 +725,7 @@ public final class Class6_Sub1 extends Class6 {
 	@OriginalMember(owner = "client!ah", name = "a", descriptor = "(Lclient!of;[I)V")
 	@Override
 	public void method5720(@OriginalArg(0) Class2_Sub26 arg0, @OriginalArg(1) int[] arg1) {
-		this.aClass135_3.method3539(new Class2_Sub23(this.aClass19_Sub1_1, this, arg0, arg1));
+		this.aLinkedList_3.method3539(new Class2_Sub23(this.aClass19_Sub1_1, this, arg0, arg1));
 	}
 
 	@OriginalMember(owner = "client!ah", name = "a", descriptor = "(IILclient!kb;)Lclient!kb;")

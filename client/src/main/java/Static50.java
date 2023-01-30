@@ -34,16 +34,16 @@ public final class Static50 {
 			Static139.anInt2595 = Static391.anInt7216;
 			Static60.method891(false);
 			Static98.method2107();
-			Static198.method3597(Static139.anInt2595);
+			ScriptRunner.method3597(Static139.anInt2595);
 		}
 		Static310.method5282();
 		Static107.anInt2219 = -1;
 		Static307.method5254(Static394.anInt7263);
-		Static17.aClass11_Sub5_Sub2_Sub1_3 = new Class11_Sub5_Sub2_Sub1();
-		Static17.aClass11_Sub5_Sub2_Sub1_3.anInt6781 = 6656;
-		Static17.aClass11_Sub5_Sub2_Sub1_3.anIntArray316[0] = 52;
-		Static17.aClass11_Sub5_Sub2_Sub1_3.anInt6783 = 6656;
-		Static17.aClass11_Sub5_Sub2_Sub1_3.anIntArray317[0] = 52;
+		Static17.self = new Class11_Sub5_Sub2_Sub1();
+		Static17.self.xFine = 6656;
+		Static17.self.anIntArray316[0] = 52;
+		Static17.self.zFine = 6656;
+		Static17.self.anIntArray317[0] = 52;
 		Static211.anInt3777 = 0;
 		Static136.anInt6778 = 0;
 		if (Static314.anInt5911 == 2) {

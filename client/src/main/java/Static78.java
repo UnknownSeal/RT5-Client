@@ -8,7 +8,7 @@ public final class Static78 {
 	public static int anInt6309;
 
 	@OriginalMember(owner = "client!ei", name = "j", descriptor = "Lclient!r;")
-	public static Class197 aClass197_89;
+	public static Js5 aJs5_89;
 
 	@OriginalMember(owner = "client!ei", name = "e", descriptor = "Lclient!h;")
 	public static final Class89 aClass89_223 = new Class89(15, 10);
@@ -71,8 +71,8 @@ public final class Static78 {
 		Static335.method5693();
 		Static296.method5103();
 		Static252.method4364(true, arg0);
-		Static236.method4101(Static30.aClass197_5, Static255.aClass197_64, Static190.aClass19_8);
-		Static44.method1358(Static190.aClass19_8, Static30.aClass197_5);
+		Static236.method4101(Static30.aJs5_5, Static255.aJs5_64, Static190.aClass19_8);
+		Static44.method1358(Static190.aClass19_8, Static30.aJs5_5);
 		Static144.method2691(Static124.aClass13Array27);
 		Static190.method3501();
 		Static98.method2107();
@@ -82,7 +82,7 @@ public final class Static78 {
 			Static336.method5704(25);
 			return;
 		} else if (Static347.anInt6442 == 5) {
-			Static348.method5829(Static30.aClass197_5, Static190.aClass19_8);
+			Static348.method5829(Static30.aJs5_5, Static190.aClass19_8);
 			return;
 		}
 	}
