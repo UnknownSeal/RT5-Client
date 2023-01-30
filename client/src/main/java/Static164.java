@@ -72,13 +72,13 @@ public final class Static164 {
 		}
 		try {
 			if (++Static193.anInt3557 > 1500) {
-				if (Static335.aBufferedSocket_4 != null) {
-					Static335.aBufferedSocket_4.method2799();
-					Static335.aBufferedSocket_4 = null;
+				if (Static335.socket != null) {
+					Static335.socket.close();
+					Static335.socket = null;
 				}
 				if (Static60.anInt666 >= 1) {
 					Static154.anInt2803 = 0;
-					Static41.anInt1046 = -5;
+					Static41.reply = -5;
 					return;
 				}
 				Static154.anInt2803 = 1;
@@ -91,27 +91,27 @@ public final class Static164 {
 				Static193.anInt3557 = 0;
 			}
 			if (Static154.anInt2803 == 1) {
-				Static5.aPrivelegedRequest_1 = Static328.aClass152_5.method3750(Static61.aString14, Static278.anInt5154);
+				Static5.sockerRequest = GameShell.signlink.openSocket(Static61.aString14, Static278.anInt5154);
 				Static154.anInt2803 = 2;
 			}
 			@Pc(125) int local125;
 			if (Static154.anInt2803 == 2) {
-				if (Static5.aPrivelegedRequest_1.anInt993 == 2) {
+				if (Static5.sockerRequest.status == 2) {
 					throw new IOException();
 				}
-				if (Static5.aPrivelegedRequest_1.anInt993 != 1) {
+				if (Static5.sockerRequest.status != 1) {
 					return;
 				}
-				Static335.aBufferedSocket_4 = new BufferedSocket((Socket) Static5.aPrivelegedRequest_1.anObject2, Static328.aClass152_5);
-				Static5.aPrivelegedRequest_1 = null;
-				Static335.aBufferedSocket_4.write(Static257.aClass2_Sub4_Sub2_4.data, Static257.aClass2_Sub4_Sub2_4.offset);
+				Static335.socket = new BufferedSocket((Socket) Static5.sockerRequest.result, GameShell.signlink);
+				Static5.sockerRequest = null;
+				Static335.socket.write(Static257.aClass2_Sub4_Sub2_4.data, Static257.aClass2_Sub4_Sub2_4.offset);
 				if (Static303.aClass221_2 != null) {
 					Static303.aClass221_2.method6324();
 				}
 				if (Static190.aClass221_1 != null) {
 					Static190.aClass221_1.method6324();
 				}
-				local125 = Static335.aBufferedSocket_4.method2800();
+				local125 = Static335.socket.read();
 				if (Static303.aClass221_2 != null) {
 					Static303.aClass221_2.method6324();
 				}
@@ -119,37 +119,37 @@ public final class Static164 {
 					Static190.aClass221_1.method6324();
 				}
 				if (local125 != 101) {
-					Static41.anInt1046 = local125;
+					Static41.reply = local125;
 					Static154.anInt2803 = 0;
-					Static335.aBufferedSocket_4.method2799();
-					Static335.aBufferedSocket_4 = null;
+					Static335.socket.close();
+					Static335.socket = null;
 					return;
 				}
 				Static154.anInt2803 = 3;
 			}
-			if (Static154.anInt2803 == 3 && Static335.aBufferedSocket_4.method2795() >= 2) {
-				local125 = Static335.aBufferedSocket_4.method2800() << 8 | Static335.aBufferedSocket_4.method2800();
+			if (Static154.anInt2803 == 3 && Static335.socket.available() >= 2) {
+				local125 = Static335.socket.read() << 8 | Static335.socket.read();
 				Static375.method6278(local125);
 				if (Static120.anInt2385 == -1) {
 					Static154.anInt2803 = 0;
-					Static41.anInt1046 = 6;
-					Static335.aBufferedSocket_4.method2799();
-					Static335.aBufferedSocket_4 = null;
+					Static41.reply = 6;
+					Static335.socket.close();
+					Static335.socket = null;
 				} else {
 					Static154.anInt2803 = 0;
-					Static335.aBufferedSocket_4.method2799();
-					Static335.aBufferedSocket_4 = null;
+					Static335.socket.close();
+					Static335.socket = null;
 					Static230.method4013();
 				}
 			}
 		} catch (@Pc(208) IOException local208) {
-			if (Static335.aBufferedSocket_4 != null) {
-				Static335.aBufferedSocket_4.method2799();
-				Static335.aBufferedSocket_4 = null;
+			if (Static335.socket != null) {
+				Static335.socket.close();
+				Static335.socket = null;
 			}
 			if (Static60.anInt666 >= 1) {
 				Static154.anInt2803 = 0;
-				Static41.anInt1046 = -4;
+				Static41.reply = -4;
 			} else {
 				Static154.anInt2803 = 1;
 				Static193.anInt3557 = 0;

@@ -195,7 +195,7 @@ public final class Class25_Sub1 extends Class25 {
 				this.aClass135_11 = null;
 			}
 		}
-		if (!this.aBoolean58 || Static204.method3684() < this.aLong21) {
+		if (!this.aBoolean58 || MonotonicClock.currentTimeMillis() < this.aLong21) {
 			return;
 		}
 		for (@Pc(329) Class2_Sub2_Sub10 local329 = (Class2_Sub2_Sub10) this.aClass4_13.method80(); local329 != null; local329 = (Class2_Sub2_Sub10) this.aClass4_13.method79()) {
@@ -210,7 +210,7 @@ public final class Class25_Sub1 extends Class25 {
 				}
 			}
 		}
-		this.aLong21 = Static204.method3684() + 1000L;
+		this.aLong21 = MonotonicClock.currentTimeMillis() + 1000L;
 	}
 
 	@OriginalMember(owner = "client!bl", name = "c", descriptor = "(B)I")
@@ -310,7 +310,7 @@ public final class Class25_Sub1 extends Class25 {
 		}
 		@Pc(162) byte[] local162 = local13.method5647();
 		@Pc(189) int local189;
-		@Pc(292) Class2_Sub2_Sub10_Sub1 local292;
+		@Pc(292) Js5NetRequest local292;
 		if (!(local13 instanceof Class2_Sub2_Sub10_Sub2)) {
 			try {
 				if (local162 == null || local162.length <= 2) {
@@ -322,8 +322,8 @@ public final class Class25_Sub1 extends Class25 {
 				if (this.aClass198_1.anIntArray382[arg0] != local189) {
 					throw new RuntimeException();
 				}
-				this.aClass183_1.anInt5063 = 0;
-				this.aClass183_1.anInt5062 = 0;
+				this.aClass183_1.errors = 0;
+				this.aClass183_1.response = 0;
 			} catch (@Pc(350) RuntimeException local350) {
 				this.aClass183_1.method4642();
 				local13.unlink();

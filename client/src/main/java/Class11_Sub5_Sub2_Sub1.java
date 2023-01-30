@@ -531,7 +531,7 @@ public final class Class11_Sub5_Sub2_Sub1 extends Class11_Sub5_Sub2 {
 			if (local59.aChar3 == 's') {
 				local17 = local17 + local59.method1775(this.aByte38 & 0xFF);
 			} else {
-				Static262.method6252(new Throwable(), "gdn1");
+				Static262.report(new Throwable(), "gdn1");
 				local39[this.aByte40] = -1;
 			}
 		}

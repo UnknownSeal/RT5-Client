@@ -53,15 +53,15 @@ public final class Class2_Sub27 extends Node {
 	@OriginalMember(owner = "client!pf", name = "d", descriptor = "(I)[F")
 	private float[] method4514(@OriginalArg(0) int arg0) {
 		Static267.method4516(this.aByteArrayArray14[arg0]);
-		Static267.method4521();
-		@Pc(15) int local15 = Static267.method4512(Static287.bitCount(Static267.anIntArray336.length - 1));
+		Static267.readBit();
+		@Pc(15) int local15 = Static267.readBits(Static287.bitCount(Static267.anIntArray336.length - 1));
 		@Pc(19) boolean local19 = Static267.aBooleanArray43[local15];
 		@Pc(25) int local25 = local19 ? Static267.anInt4923 : Static267.anInt4926;
 		@Pc(27) boolean local27 = false;
 		@Pc(29) boolean local29 = false;
 		if (local19) {
-			local27 = Static267.method4521() != 0;
-			local29 = Static267.method4521() != 0;
+			local27 = Static267.readBit() != 0;
+			local29 = Static267.readBit() != 0;
 		}
 		@Pc(47) int local47 = local25 >> 1;
 		@Pc(59) int local59;

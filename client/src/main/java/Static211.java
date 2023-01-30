@@ -10,9 +10,6 @@ public final class Static211 {
 	@OriginalMember(owner = "client!mh", name = "f", descriptor = "Lclient!jd;")
 	public static Class13 aClass13_13;
 
-	@OriginalMember(owner = "client!mh", name = "g", descriptor = "Lclient!cc;")
-	public static PrivelegedRequest aPrivelegedRequest_8;
-
 	@OriginalMember(owner = "client!mh", name = "j", descriptor = "I")
 	public static int anInt3780;
 
@@ -172,8 +169,8 @@ public final class Static211 {
 		if (Static86.anInt1870 > 0) {
 			Static99.method2144();
 		} else {
-			Static246.aBufferedSocket_2 = Static335.aBufferedSocket_4;
-			Static335.aBufferedSocket_4 = null;
+			Static246.aBufferedSocket_2 = Static335.socket;
+			Static335.socket = null;
 			Static336.method5704(40);
 		}
 	}

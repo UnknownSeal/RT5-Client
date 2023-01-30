@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!br")
-public final class Class2_Sub3_Sub5 extends Class2_Sub3 {
+public final class Class2_Sub3_Sub5 extends TextureOp {
 
 	@OriginalMember(owner = "client!br", name = "O", descriptor = "Z")
 	private boolean aBoolean71 = true;

@@ -14,9 +14,9 @@ public final class Static187 {
 
 	@OriginalMember(owner = "client!kq", name = "a", descriptor = "(Lclient!jaggl/opengl;IIIII[F)V")
 	public static void method6152(@OriginalArg(0) opengl arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) float[] arg6) {
-		if (arg3 > 0 && !Static246.method4250(arg3)) {
+		if (arg3 > 0 && !Static246.isPowerOfTwo(arg3)) {
 			throw new IllegalArgumentException("");
-		} else if (arg4 <= 0 || Static246.method4250(arg4)) {
+		} else if (arg4 <= 0 || Static246.isPowerOfTwo(arg4)) {
 			@Pc(24) int local24 = method6162(6408);
 			@Pc(26) int local26 = 0;
 			@Pc(33) int local33 = arg3 < arg4 ? arg3 : arg4;
@@ -87,9 +87,9 @@ public final class Static187 {
 
 	@OriginalMember(owner = "client!kq", name = "a", descriptor = "(Lclient!jaggl/opengl;IIIII[B)V")
 	public static void method6156(@OriginalArg(0) opengl arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) byte[] arg6) {
-		if (arg3 > 0 && !Static246.method4250(arg3)) {
+		if (arg3 > 0 && !Static246.isPowerOfTwo(arg3)) {
 			throw new IllegalArgumentException("");
-		} else if (arg4 <= 0 || Static246.method4250(arg4)) {
+		} else if (arg4 <= 0 || Static246.isPowerOfTwo(arg4)) {
 			@Pc(24) int local24 = method6162(arg5);
 			@Pc(26) int local26 = 0;
 			@Pc(33) int local33 = arg3 < arg4 ? arg3 : arg4;
@@ -160,9 +160,9 @@ public final class Static187 {
 
 	@OriginalMember(owner = "client!kq", name = "a", descriptor = "(Lclient!jaggl/opengl;IIIIII[I)V")
 	public static void method6163(@OriginalArg(0) opengl arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int[] arg6) {
-		if (arg3 > 0 && !Static246.method4250(arg3)) {
+		if (arg3 > 0 && !Static246.isPowerOfTwo(arg3)) {
 			throw new IllegalArgumentException("");
-		} else if (arg4 <= 0 || Static246.method4250(arg4)) {
+		} else if (arg4 <= 0 || Static246.isPowerOfTwo(arg4)) {
 			@Pc(31) int local31 = 0;
 			@Pc(38) int local38 = arg3 < arg4 ? arg3 : arg4;
 			@Pc(42) int local42 = arg3 >> 1;

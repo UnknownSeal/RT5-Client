@@ -14,9 +14,6 @@ public final class Static382 {
 	@OriginalMember(owner = "client!we", name = "y", descriptor = "[I")
 	public static final int[] anIntArray490 = new int[13];
 
-	@OriginalMember(owner = "client!we", name = "C", descriptor = "Lclient!gd;")
-	public static final LocalisedText A_TRANSLATABLE_STRING___147 = new LocalisedText("Face here", "Hierhin drehen", "Regarder dans cette direction", "Virar para cá");
-
 	@OriginalMember(owner = "client!we", name = "D", descriptor = "Lclient!mc;")
 	public static final Class145 aClass145_258 = new Class145(49, -1);
 
@@ -33,18 +30,18 @@ public final class Static382 {
 	public static final Class145 aClass145_262 = new Class145(79, 7);
 
 	@OriginalMember(owner = "client!we", name = "a", descriptor = "(IILjava/util/Random;)I")
-	public static int method6360(@OriginalArg(1) int arg0, @OriginalArg(2) Random arg1) {
-		if (arg0 <= 0) {
+	public static int nextInt(@OriginalArg(2) Random random, @OriginalArg(1) int bound) {
+		if (bound <= 0) {
 			throw new IllegalArgumentException();
-		} else if (Static246.method4250(arg0)) {
-			return (int) (((long) arg1.nextInt() & 0xFFFFFFFFL) * (long) arg0 >> 32);
+		} else if (Static246.isPowerOfTwo(bound)) {
+			return (int) (((long) random.nextInt() & 0xFFFFFFFFL) * (long) bound >> 32);
 		} else {
-			@Pc(42) int local42 = Integer.MIN_VALUE - (int) (4294967296L % (long) arg0);
+			@Pc(42) int local42 = Integer.MIN_VALUE - (int) (4294967296L % (long) bound);
 			@Pc(45) int local45;
 			do {
-				local45 = arg1.nextInt();
+				local45 = random.nextInt();
 			} while (local45 >= local42);
-			return Static11.method244(arg0, local45);
+			return Static11.method244(bound, local45);
 		}
 	}
 
@@ -59,13 +56,13 @@ public final class Static382 {
 	}
 
 	@OriginalMember(owner = "client!we", name = "a", descriptor = "(Ljava/lang/Throwable;Ljava/lang/String;)Lclient!hk;")
-	public static RuntimeException_Sub1 method6363(@OriginalArg(0) Throwable arg0, @OriginalArg(1) String arg1) {
-		@Pc(9) RuntimeException_Sub1 local9;
-		if (arg0 instanceof RuntimeException_Sub1) {
-			local9 = (RuntimeException_Sub1) arg0;
-			local9.aString23 = local9.aString23 + ' ' + arg1;
+	public static TracingException method6363(@OriginalArg(0) Throwable arg0, @OriginalArg(1) String arg1) {
+		@Pc(9) TracingException local9;
+		if (arg0 instanceof TracingException) {
+			local9 = (TracingException) arg0;
+			local9.cause = local9.cause + ' ' + arg1;
 		} else {
-			local9 = new RuntimeException_Sub1(arg0, arg1);
+			local9 = new TracingException(arg0, arg1);
 		}
 		return local9;
 	}

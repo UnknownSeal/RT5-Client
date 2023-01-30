@@ -27,7 +27,7 @@ public final class Class152 implements Runnable {
 	private Interface3 anInterface3_1;
 
 	@OriginalMember(owner = "client!ml", name = "e", descriptor = "Ljava/applet/Applet;")
-	public Applet anApplet1 = null;
+	public Applet applet = null;
 
 	@OriginalMember(owner = "client!ml", name = "j", descriptor = "Lclient!rl;")
 	public Class204 aClass204_2 = null;
@@ -60,7 +60,7 @@ public final class Class152 implements Runnable {
 	@OriginalMember(owner = "client!ml", name = "<init>", descriptor = "(Ljava/applet/Applet;ILjava/lang/String;I)V")
 	public Class152(@OriginalArg(0) Applet arg0, @OriginalArg(1) int arg1, @OriginalArg(2) String arg2, @OriginalArg(3) int arg3) throws Exception {
 		Static215.aString34 = "1.1";
-		this.anApplet1 = arg0;
+		this.applet = arg0;
 		Static215.aString33 = "Unknown";
 		try {
 			Static215.aString33 = System.getProperty("java.vendor");
@@ -136,8 +136,8 @@ public final class Class152 implements Runnable {
 	}
 
 	@OriginalMember(owner = "client!ml", name = "a", descriptor = "(Ljava/lang/String;II)Lclient!cc;")
-	public PrivelegedRequest method3750(@OriginalArg(0) String arg0, @OriginalArg(1) int arg1) {
-		return this.enqueue(arg0, arg1, 1, 0);
+	public PrivelegedRequest openSocket(@OriginalArg(0) String hostname, @OriginalArg(1) int port) {
+		return this.enqueue(hostname, port, 1, 0);
 	}
 
 	@OriginalMember(owner = "client!ml", name = "a", descriptor = "(ILjava/lang/Class;)Lclient!cc;")
@@ -177,45 +177,45 @@ public final class Class152 implements Runnable {
 			try {
 				@Pc(41) int local41 = local15.anInt991;
 				if (local41 == 1) {
-					if (Static204.method3684() < Static215.aLong122) {
+					if (MonotonicClock.currentTimeMillis() < Static215.aLong122) {
 						throw new IOException();
 					}
-					local15.anObject2 = new Socket(InetAddress.getByName((String) local15.anObject3), local15.anInt992);
+					local15.result = new Socket(InetAddress.getByName((String) local15.objectArg), local15.anInt992);
 				} else if (local41 == 2) {
-					@Pc(81) Thread local81 = new Thread((Runnable) local15.anObject3);
+					@Pc(81) Thread local81 = new Thread((Runnable) local15.objectArg);
 					local81.setDaemon(true);
 					local81.start();
 					local81.setPriority(local15.anInt992);
-					local15.anObject2 = local81;
+					local15.result = local81;
 				} else if (local41 == 4) {
-					if (Static204.method3684() < Static215.aLong122) {
+					if (MonotonicClock.currentTimeMillis() < Static215.aLong122) {
 						throw new IOException();
 					}
-					local15.anObject2 = new DataInputStream(((URL) local15.anObject3).openStream());
+					local15.result = new DataInputStream(((URL) local15.objectArg).openStream());
 				} else {
 					@Pc(166) Object[] local166;
 					if (local41 == 8) {
-						local166 = (Object[]) local15.anObject3;
-						local15.anObject2 = ((Class) local166[0]).getDeclaredMethod((String) local166[1], (Class[]) local166[2]);
+						local166 = (Object[]) local15.objectArg;
+						local15.result = ((Class) local166[0]).getDeclaredMethod((String) local166[1], (Class[]) local166[2]);
 					} else if (local41 == 9) {
-						local166 = (Object[]) local15.anObject3;
-						local15.anObject2 = ((Class) local166[0]).getDeclaredField((String) local166[1]);
+						local166 = (Object[]) local15.objectArg;
+						local15.result = ((Class) local166[0]).getDeclaredField((String) local166[1]);
 					} else if (local41 == 18) {
 						@Pc(134) Clipboard local134 = Toolkit.getDefaultToolkit().getSystemClipboard();
-						local15.anObject2 = local134.getContents(null);
+						local15.result = local134.getContents(null);
 					} else if (local41 == 19) {
-						@Pc(149) Transferable local149 = (Transferable) local15.anObject3;
+						@Pc(149) Transferable local149 = (Transferable) local15.objectArg;
 						@Pc(152) Clipboard local152 = Toolkit.getDefaultToolkit().getSystemClipboard();
 						local152.setContents(local149, null);
 					} else {
 						throw new Exception("");
 					}
 				}
-				local15.anInt993 = 1;
+				local15.status = 1;
 			} catch (@Pc(202) ThreadDeath local202) {
 				throw local202;
 			} catch (@Pc(205) Throwable local205) {
-				local15.anInt993 = 2;
+				local15.status = 2;
 			}
 			synchronized (local15) {
 				local15.notify();
@@ -235,7 +235,7 @@ public final class Class152 implements Runnable {
 
 	@OriginalMember(owner = "client!ml", name = "b", descriptor = "(B)V")
 	public void method3759() {
-		Static215.aLong122 = Static204.method3684() + 5000L;
+		Static215.aLong122 = MonotonicClock.currentTimeMillis() + 5000L;
 	}
 
 	@OriginalMember(owner = "client!ml", name = "a", descriptor = "(Ljava/lang/String;B)Lclient!cc;")
@@ -269,9 +269,9 @@ public final class Class152 implements Runnable {
 	}
 
 	@OriginalMember(owner = "client!ml", name = "a", descriptor = "(Ljava/lang/Object;IIII)Lclient!cc;")
-	private PrivelegedRequest enqueue(@OriginalArg(0) Object arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {
+	private PrivelegedRequest enqueue(@OriginalArg(0) Object objectArg, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {
 		@Pc(3) PrivelegedRequest request = new PrivelegedRequest();
-		request.anObject3 = arg0;
+		request.objectArg = objectArg;
 		request.anInt991 = arg2;
 		request.anInt992 = arg1;
 		synchronized (this) {

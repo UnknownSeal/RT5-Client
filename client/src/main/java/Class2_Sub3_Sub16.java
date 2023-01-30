@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!il")
-public final class Class2_Sub3_Sub16 extends Class2_Sub3 {
+public final class Class2_Sub3_Sub16 extends TextureOp {
 
 	@OriginalMember(owner = "client!il", name = "<init>", descriptor = "()V")
 	public Class2_Sub3_Sub16() {
@@ -15,18 +15,18 @@ public final class Class2_Sub3_Sub16 extends Class2_Sub3 {
 	@Override
 	public void method6483(@OriginalArg(0) int arg0, @OriginalArg(1) Buffer arg1) {
 		if (arg0 == 0) {
-			super.aBoolean487 = arg1.g1() == 1;
+			super.monochrome = arg1.g1() == 1;
 		}
 	}
 
 	@OriginalMember(owner = "client!il", name = "a", descriptor = "(BI)[I")
 	@Override
-	public int[] method6484(@OriginalArg(1) int arg0) {
-		@Pc(18) int[] local18 = super.aClass158_41.method3995(arg0);
+	public int[] getMonochromeOutput(@OriginalArg(1) int y) {
+		@Pc(18) int[] local18 = super.aClass158_41.method3995(y);
 		if (super.aClass158_41.aBoolean265) {
-			@Pc(28) int[] local28 = this.method6472(0, arg0);
-			@Pc(34) int[] local34 = this.method6472(1, arg0);
-			@Pc(40) int[] local40 = this.method6472(2, arg0);
+			@Pc(28) int[] local28 = this.method6472(0, y);
+			@Pc(34) int[] local34 = this.method6472(1, y);
+			@Pc(40) int[] local40 = this.method6472(2, y);
 			for (@Pc(42) int local42 = 0; local42 < Static227.anInt4036; local42++) {
 				@Pc(48) int local48 = local40[local42];
 				if (local48 == 4096) {

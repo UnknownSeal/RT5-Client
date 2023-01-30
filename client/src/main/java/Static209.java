@@ -124,7 +124,7 @@ public final class Static209 {
 				if (!Static344.aClass197_85.method5071(Static344.aClass2_Sub2_Sub17_3.aString67 + "_staticelements")) {
 					return;
 				}
-				Static344.aClass103_5 = Static317.method5551(Static344.aClass197_85, Static344.aClass2_Sub2_Sub17_3.aString67 + "_staticelements", Static206.aBoolean241);
+				Static344.aClass103_5 = Static317.method5551(Static344.aClass197_85, Static344.aClass2_Sub2_Sub17_3.aString67 + "_staticelements", Static206.mapMembers);
 			} else {
 				Static344.aClass103_5 = new Class103(0);
 			}

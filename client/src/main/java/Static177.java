@@ -8,10 +8,7 @@ public final class Static177 {
 	public static Class197 aClass197_48;
 
 	@OriginalMember(owner = "client!ke", name = "F", descriptor = "[S")
-	public static short[] aShortArray56;
-
-	@OriginalMember(owner = "client!ke", name = "t", descriptor = "I")
-	public static int anInt3372 = 1;
+	public static short[] results;
 
 	@OriginalMember(owner = "client!ke", name = "y", descriptor = "Lclient!h;")
 	public static final Class89 aClass89_141 = new Class89(68, 4);

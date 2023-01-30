@@ -7,10 +7,7 @@ public final class Static216 {
 	@OriginalMember(owner = "client!mm", name = "b", descriptor = "Lclient!r;")
 	public static Class197 aClass197_57;
 
-	@OriginalMember(owner = "client!mm", name = "d", descriptor = "Ljava/lang/String;")
-	public static String aString36;
-
-	@OriginalMember(owner = "client!mm", name = "j", descriptor = "Lclient!r;")
+    @OriginalMember(owner = "client!mm", name = "j", descriptor = "Lclient!r;")
 	public static Class197 aClass197_58;
 
 	@OriginalMember(owner = "client!mm", name = "c", descriptor = "[I")
@@ -20,7 +17,7 @@ public final class Static216 {
 	public static int anInt3798 = 0;
 
 	@OriginalMember(owner = "client!mm", name = "h", descriptor = "I")
-	public static int anInt3800 = 0;
+	public static int errors = 0;
 
 	@OriginalMember(owner = "client!mm", name = "a", descriptor = "(IIII)V")
 	public static void method3773(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {

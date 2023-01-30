@@ -400,7 +400,7 @@ public final class Static344 {
 		@Pc(3) Class246 local3 = new Class246();
 		for (@Pc(8) Class2_Sub2_Sub17 local8 = (Class2_Sub2_Sub17) aClass4_124.method80(); local8 != null; local8 = (Class2_Sub2_Sub17) aClass4_124.method79()) {
 			if (local8.aBoolean466 && local8.method6146(arg1, arg0)) {
-				local3.method6340(local8);
+				local3.addTail(local8);
 			}
 		}
 		return local3;

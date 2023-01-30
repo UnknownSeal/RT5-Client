@@ -157,9 +157,9 @@ public final class Static178 {
 			Static190.aClass221_1.method6325();
 		}
 		Static84.method1909(Static218.aClass177_Sub1_2.aBoolean352);
-		Static303.aClass221_2 = Static381.method6346(0, Static328.aClass152_5, Static21.aCanvas1, 22050);
+		Static303.aClass221_2 = Static381.method6346(0, GameShell.signlink, Static21.aCanvas1, 22050);
 		Static303.aClass221_2.method6329(Static385.aClass2_Sub12_Sub3_3);
-		Static190.aClass221_1 = Static381.method6346(1, Static328.aClass152_5, Static21.aCanvas1, 2048);
+		Static190.aClass221_1 = Static381.method6346(1, GameShell.signlink, Static21.aCanvas1, 2048);
 		Static190.aClass221_1.method6329(Static227.aClass2_Sub12_Sub2_2);
 	}
 

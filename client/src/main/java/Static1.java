@@ -15,9 +15,9 @@ public final class Static1 {
 
 	@OriginalMember(owner = "client!a", name = "b", descriptor = "(I)V")
 	public static void method2() {
-		@Pc(8) int local8 = Static210.aByteArrayArray7.length;
+		@Pc(8) int local8 = Static210.npcBytes.length;
 		for (@Pc(10) int local10 = 0; local10 < local8; local10++) {
-			if (Static210.aByteArrayArray7[local10] != null) {
+			if (Static210.npcBytes[local10] != null) {
 				@Pc(23) int local23 = -1;
 				for (@Pc(25) int local25 = 0; local25 < Static48.anInt1254; local25++) {
 					if (Static266.anIntArray334[local25] == Static291.mapSquares[local10]) {
@@ -29,9 +29,9 @@ public final class Static1 {
 					Static266.anIntArray334[Static48.anInt1254] = Static291.mapSquares[local10];
 					local23 = Static48.anInt1254++;
 				}
-				@Pc(65) Buffer local65 = new Buffer(Static210.aByteArrayArray7[local10]);
+				@Pc(65) Buffer local65 = new Buffer(Static210.npcBytes[local10]);
 				@Pc(67) int local67 = 0;
-				while (Static210.aByteArrayArray7[local10].length > local65.offset && local67 < 511 && Static166.size < 1023) {
+				while (Static210.npcBytes[local10].length > local65.offset && local67 < 511 && Static166.size < 1023) {
 					@Pc(88) int id = local23 | local67++ << 6;
 					@Pc(92) int local92 = local65.g2();
 					@Pc(96) int local96 = local92 >> 14;

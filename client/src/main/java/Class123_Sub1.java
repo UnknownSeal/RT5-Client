@@ -49,7 +49,7 @@ public final class Class123_Sub1 extends Class123 implements KeyListener, FocusL
 		local7.anInt1245 = arg1;
 		local7.anInt1250 = arg2;
 		local7.aChar1 = arg0;
-		local7.aLong36 = Static204.method3684();
+		local7.aLong36 = MonotonicClock.currentTimeMillis();
 		if (this.aClass37_Sub1_4 == null) {
 			this.aClass37_Sub1_3 = local7;
 		} else {

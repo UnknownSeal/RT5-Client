@@ -14,37 +14,37 @@ public final class Static131 {
 	public static final short[] aShortArray65 = new short[] { -10304, 9104, -1, -1, -1 };
 
 	@OriginalMember(owner = "client!hi", name = "a", descriptor = "(Ljava/lang/String;BZ)V")
-	public static void method3696(@OriginalArg(0) String arg0, @OriginalArg(2) boolean arg1) {
+	public static void findObjs(@OriginalArg(0) String query, @OriginalArg(2) boolean stockMarketOnly) {
 		Static61.aClass197_12.discardUnpacked = 1;
-		@Pc(18) String local18 = arg0.toLowerCase();
-		@Pc(21) short[] local21 = new short[16];
-		@Pc(23) int local23 = 0;
-		for (@Pc(25) int local25 = 0; local25 < Static313.aClass107_2.anInt2779; local25++) {
-			@Pc(34) ObjType local34 = Static313.aClass107_2.get(local25);
-			if ((!arg1 || local34.aBoolean381) && local34.certificateTemplate == -1 && local34.lentLink == -1 && local34.anInt5214 == 0 && local34.aString55.toLowerCase().indexOf(local18) != -1) {
-				if (local23 >= 250) {
-					Static328.anInt6127 = -1;
-					Static177.aShortArray56 = null;
+		@Pc(18) String queryLowercase = query.toLowerCase();
+		@Pc(23) int size = 0;
+		@Pc(21) short[] results = new short[16];
+		for (@Pc(25) int i = 0; i < Static313.aClass107_2.anInt2779; i++) {
+			@Pc(34) ObjType type = Static313.aClass107_2.get(i);
+			if ((!stockMarketOnly || type.stockMarket) && type.certificateTemplate == -1 && type.lentLink == -1 && type.dummyItem == 0 && type.name.toLowerCase().indexOf(queryLowercase) != -1) {
+				if (size >= 250) {
+					Static328.size = -1;
+					Static177.results = null;
 					return;
 				}
-				if (local21.length <= local23) {
-					@Pc(84) short[] local84 = new short[local21.length * 2];
-					for (@Pc(86) int local86 = 0; local86 < local23; local86++) {
-						local84[local86] = local21[local86];
+				if (results.length <= size) {
+					@Pc(84) short[] newResults = new short[results.length * 2];
+					for (@Pc(86) int j = 0; j < size; j++) {
+						newResults[j] = results[j];
 					}
-					local21 = local84;
+					results = newResults;
 				}
-				local21[local23++] = (short) local25;
+				results[size++] = (short) i;
 			}
 		}
-		Static12.anInt266 = 0;
-		Static177.aShortArray56 = local21;
-		Static328.anInt6127 = local23;
-		@Pc(128) String[] local128 = new String[Static328.anInt6127];
-		for (@Pc(130) int local130 = 0; local130 < Static328.anInt6127; local130++) {
-			local128[local130] = Static313.aClass107_2.get(local21[local130]).aString55;
+		Static12.index = 0;
+		Static177.results = results;
+		Static328.size = size;
+		@Pc(128) String[] names = new String[Static328.size];
+		for (@Pc(130) int local130 = 0; local130 < Static328.size; local130++) {
+			names[local130] = Static313.aClass107_2.get(results[local130]).name;
 		}
-		Static135.method2534(local128, Static177.aShortArray56);
+		Static135.method2534(names, Static177.results);
 		Static61.aClass197_12.method5067();
 		Static61.aClass197_12.discardUnpacked = 2;
 	}

@@ -137,7 +137,7 @@ public final class Static49 {
 							}
 							if (local621 != null) {
 								@Pc(662) Class41 local662 = Static359.aClass202_4.method5162(local621.method6084());
-								if (!local662.aBoolean111 || Static206.aBoolean241) {
+								if (!local662.aBoolean111 || Static206.mapMembers) {
 									local284 = local662.anInt1306;
 									if (local662.anIntArray94 != null) {
 										for (local288 = 0; local288 < local662.anIntArray94.length; local288++) {

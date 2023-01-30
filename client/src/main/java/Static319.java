@@ -46,25 +46,25 @@ public final class Static319 {
 	public static int method5429() {
 		try {
 			if (Static77.anInt1751 == 0) {
-				if (Static349.aLong200 > Static204.method3684() - 5000L) {
+				if (Static349.aLong200 > MonotonicClock.currentTimeMillis() - 5000L) {
 					return 0;
 				}
-				Static158.aPrivelegedRequest_7 = Static328.aClass152_5.method3750(Static61.aString14, Static278.anInt5154);
-				Static284.aLong157 = Static204.method3684();
+				Static158.aPrivelegedRequest_7 = GameShell.signlink.openSocket(Static61.aString14, Static278.anInt5154);
+				Static284.aLong157 = MonotonicClock.currentTimeMillis();
 				Static77.anInt1751 = 1;
 			}
-			if (Static204.method3684() > Static284.aLong157 + 30000L) {
+			if (MonotonicClock.currentTimeMillis() > Static284.aLong157 + 30000L) {
 				return Static101.method2166(1000);
 			}
 			@Pc(114) int local114;
 			if (Static77.anInt1751 == 1) {
-				if (Static158.aPrivelegedRequest_7.anInt993 == 2) {
+				if (Static158.aPrivelegedRequest_7.status == 2) {
 					return Static101.method2166(1001);
 				}
-				if (Static158.aPrivelegedRequest_7.anInt993 != 1) {
+				if (Static158.aPrivelegedRequest_7.status != 1) {
 					return -1;
 				}
-				Static335.aBufferedSocket_4 = new BufferedSocket((Socket) Static158.aPrivelegedRequest_7.anObject2, Static328.aClass152_5);
+				Static335.socket = new BufferedSocket((Socket) Static158.aPrivelegedRequest_7.result, GameShell.signlink);
 				Static158.aPrivelegedRequest_7 = null;
 				@Pc(76) int local76 = 0;
 				Static257.aClass2_Sub4_Sub2_4.offset = 0;
@@ -73,14 +73,14 @@ public final class Static319 {
 				}
 				Static257.aClass2_Sub4_Sub2_4.p1(Static43.aClass242_9.anInt7038);
 				Static257.aClass2_Sub4_Sub2_4.p4(local76);
-				Static335.aBufferedSocket_4.write(Static257.aClass2_Sub4_Sub2_4.data, Static257.aClass2_Sub4_Sub2_4.offset);
+				Static335.socket.write(Static257.aClass2_Sub4_Sub2_4.data, Static257.aClass2_Sub4_Sub2_4.offset);
 				if (Static303.aClass221_2 != null) {
 					Static303.aClass221_2.method6324();
 				}
 				if (Static190.aClass221_1 != null) {
 					Static190.aClass221_1.method6324();
 				}
-				local114 = Static335.aBufferedSocket_4.method2800();
+				local114 = Static335.socket.read();
 				if (Static303.aClass221_2 != null) {
 					Static303.aClass221_2.method6324();
 				}
@@ -93,12 +93,12 @@ public final class Static319 {
 				Static77.anInt1751 = 2;
 			}
 			if (Static77.anInt1751 == 2) {
-				if (Static335.aBufferedSocket_4.method2795() < 2) {
+				if (Static335.socket.available() < 2) {
 					return -1;
 				}
-				Static290.anInt5496 = Static335.aBufferedSocket_4.method2800();
+				Static290.anInt5496 = Static335.socket.read();
 				Static290.anInt5496 <<= 0x8;
-				Static290.anInt5496 += Static335.aBufferedSocket_4.method2800();
+				Static290.anInt5496 += Static335.socket.read();
 				Static298.aByteArray27 = new byte[Static290.anInt5496];
 				Static218.anInt914 = 0;
 				Static77.anInt1751 = 3;
@@ -106,14 +106,14 @@ public final class Static319 {
 			if (Static77.anInt1751 != 3) {
 				return -1;
 			}
-			local114 = Static335.aBufferedSocket_4.method2795();
+			local114 = Static335.socket.available();
 			if (local114 < 1) {
 				return -1;
 			}
 			if (local114 > Static290.anInt5496 - Static218.anInt914) {
 				local114 = Static290.anInt5496 - Static218.anInt914;
 			}
-			Static335.aBufferedSocket_4.method2793(Static298.aByteArray27, local114, Static218.anInt914);
+			Static335.socket.read(Static298.aByteArray27, local114, Static218.anInt914);
 			Static218.anInt914 += local114;
 			if (Static290.anInt5496 > Static218.anInt914) {
 				return -1;
@@ -128,12 +128,12 @@ public final class Static319 {
 				}
 				Static279.aClass2_Sub16_1 = null;
 				Static92.anInt1913 = 0;
-				Static335.aBufferedSocket_4.method2799();
+				Static335.socket.close();
 				Static77.anInt1751 = 0;
 				Static12.anInt270 = 0;
 				Static298.aByteArray27 = null;
-				Static335.aBufferedSocket_4 = null;
-				Static349.aLong200 = Static204.method3684();
+				Static335.socket = null;
+				Static349.aLong200 = MonotonicClock.currentTimeMillis();
 				return 0;
 			} else {
 				return Static101.method2166(1002);
@@ -203,8 +203,8 @@ public final class Static319 {
 
 	@OriginalMember(owner = "client!sk", name = "c", descriptor = "(B)V")
 	public static void method5434() {
-		if (Static347.anInt6441 == 5) {
-			Static347.anInt6441 = 6;
+		if (Static347.step == 5) {
+			Static347.step = 6;
 		}
 	}
 }

@@ -126,19 +126,19 @@ public final class Static161 {
 				return;
 			}
 			if (arg0.equalsIgnoreCase("clientjs5drop")) {
-				Static287.aClass183_3.method4644();
+				client.js5NetQueue.method4644();
 				Static158.method2939("Dropped client js5 net queue");
 				return;
 			}
 			if (arg0.equalsIgnoreCase("serverjs5drop")) {
-				Static287.aClass183_3.method4634();
+				client.js5NetQueue.method4634();
 				Static158.method2939("Dropped server js5 net queue");
 				return;
 			}
 			if (arg0.equalsIgnoreCase("breakcon")) {
-				Static328.aClass152_5.method3759();
-				Static335.aBufferedSocket_4.method2801();
-				Static287.aClass183_3.method4632();
+				GameShell.signlink.method3759();
+				Static335.socket.method2801();
+				client.js5NetQueue.method4632();
 				Static158.method2939("Breaking new connections for 5 seconds");
 				return;
 			}
@@ -180,8 +180,8 @@ public final class Static161 {
 				if (Static77.anInt1762 == 0) {
 					Static158.method2939("Entered tk0");
 					Static218.aClass177_Sub1_2.anInt4878 = 0;
-					Static218.aClass177_Sub1_2.method4496(Static328.aClass152_5);
-					Static236.aBoolean288 = false;
+					Static218.aClass177_Sub1_2.method4496(GameShell.signlink);
+					Static236.sentToServer = false;
 					return;
 				}
 				Static158.method2939("Failed to enter tk0");
@@ -195,8 +195,8 @@ public final class Static161 {
 				}
 				Static158.method2939("Entered tk1");
 				Static218.aClass177_Sub1_2.anInt4878 = 1;
-				Static218.aClass177_Sub1_2.method4496(Static328.aClass152_5);
-				Static236.aBoolean288 = false;
+				Static218.aClass177_Sub1_2.method4496(GameShell.signlink);
+				Static236.sentToServer = false;
 				return;
 			}
 			if (arg0.equalsIgnoreCase("tk2")) {
@@ -207,8 +207,8 @@ public final class Static161 {
 				}
 				Static158.method2939("Entered tk2");
 				Static218.aClass177_Sub1_2.anInt4878 = 2;
-				Static218.aClass177_Sub1_2.method4496(Static328.aClass152_5);
-				Static236.aBoolean288 = false;
+				Static218.aClass177_Sub1_2.method4496(GameShell.signlink);
+				Static236.sentToServer = false;
 				return;
 			}
 			if (arg0.equalsIgnoreCase("tk3")) {
@@ -222,16 +222,16 @@ public final class Static161 {
 			}
 			if (arg0.equalsIgnoreCase("ot")) {
 				Static218.aClass177_Sub1_2.aBoolean355 = !Static218.aClass177_Sub1_2.aBoolean355;
-				Static218.aClass177_Sub1_2.method4496(Static328.aClass152_5);
-				Static236.aBoolean288 = false;
+				Static218.aClass177_Sub1_2.method4496(GameShell.signlink);
+				Static236.sentToServer = false;
 				Static347.method5826();
 				Static158.method2939("ot=" + Static218.aClass177_Sub1_2.aBoolean355);
 				return;
 			}
 			if (arg0.equalsIgnoreCase("gb")) {
 				Static218.aClass177_Sub1_2.aBoolean357 = !Static218.aClass177_Sub1_2.aBoolean357;
-				Static218.aClass177_Sub1_2.method4496(Static328.aClass152_5);
-				Static236.aBoolean288 = false;
+				Static218.aClass177_Sub1_2.method4496(GameShell.signlink);
+				Static236.sentToServer = false;
 				Static347.method5826();
 				Static158.method2939("gb=" + Static218.aClass177_Sub1_2.aBoolean357);
 				return;
@@ -245,8 +245,8 @@ public final class Static161 {
 				@Pc(531) int local531 = Static132.method2485(local521) ? Static146.method2698(local521) : -1;
 				if (local531 >= 0 && local531 <= 2) {
 					Static218.aClass177_Sub1_2.anInt4886 = local531;
-					Static218.aClass177_Sub1_2.method4496(Static328.aClass152_5);
-					Static236.aBoolean288 = false;
+					Static218.aClass177_Sub1_2.method4496(GameShell.signlink);
+					Static236.sentToServer = false;
 					Static347.method5826();
 					Static158.method2939("shadows=" + local531);
 					return;
@@ -262,8 +262,8 @@ public final class Static161 {
 				local76 = Static146.method2698(arg0.substring(6));
 				if (local76 >= 0 && local76 <= Static289.method5018(Static309.anInt5802)) {
 					Static218.aClass177_Sub1_2.anInt4883 = local76;
-					Static218.aClass177_Sub1_2.method4496(Static328.aClass152_5);
-					Static236.aBoolean288 = false;
+					Static218.aClass177_Sub1_2.method4496(GameShell.signlink);
+					Static236.sentToServer = false;
 					Static158.method2939("maxbuildarea=" + Static218.aClass177_Sub1_2.anInt4883);
 					return;
 				}
@@ -276,8 +276,8 @@ public final class Static161 {
 					return;
 				}
 				Static26.method864(Static146.method2698(arg0.substring(13)));
-				Static218.aClass177_Sub1_2.method4496(Static328.aClass152_5);
-				Static236.aBoolean288 = false;
+				Static218.aClass177_Sub1_2.method4496(GameShell.signlink);
+				Static236.sentToServer = false;
 				Static158.method2939("particles=" + Static184.method3390());
 				return;
 			}
@@ -499,10 +499,10 @@ public final class Static161 {
 			return;
 		}
 		Static367.anInt6876 = 0;
-		if (!Static101.aBoolean158 && Static335.aBufferedSocket_4 != null) {
+		if (!Static101.aBoolean158 && Static335.socket != null) {
 			Static91.method1960(Static326.aClass145_228);
 			try {
-				Static335.aBufferedSocket_4.write(Static257.aClass2_Sub4_Sub2_4.data, Static257.aClass2_Sub4_Sub2_4.offset);
+				Static335.socket.write(Static257.aClass2_Sub4_Sub2_4.data, Static257.aClass2_Sub4_Sub2_4.offset);
 				Static257.aClass2_Sub4_Sub2_4.offset = 0;
 			} catch (@Pc(57) IOException local57) {
 				Static101.aBoolean158 = true;

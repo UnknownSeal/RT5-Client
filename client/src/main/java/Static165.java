@@ -111,7 +111,7 @@ public final class Static165 {
 		}
 		@Pc(41) String local41;
 		if (Static330.aBoolean419 && Static268.anInt4959 < 2) {
-			local41 = Static91.aString18 + Static161.A_TRANSLATABLE_STRING___67.getLocalisedText(Static295.anInt5581) + Static371.aString68 + " ->";
+			local41 = Static91.aString18 + Static161.A_TRANSLATABLE_STRING___67.getLocalisedText(client.language) + Static371.aString68 + " ->";
 		} else if (Static148.aBoolean192 && Static174.aClass123_2.method3342(81) && Static268.anInt4959 > 2) {
 			local41 = Static318.method5420((Class2_Sub5) Static129.aClass135_19.aClass2_130.previous.previous);
 		} else {
@@ -152,7 +152,7 @@ public final class Static165 {
 			}
 		}
 		if (Static268.anInt4959 > 2) {
-			local41 = local41 + "<col=ffffff> / " + (Static268.anInt4959 - 2) + Static328.A_TRANSLATABLE_STRING___127.getLocalisedText(Static295.anInt5581);
+			local41 = local41 + "<col=ffffff> / " + (Static268.anInt4959 - 2) + Static328.A_TRANSLATABLE_STRING___127.getLocalisedText(client.language);
 		}
 		if (Static164.aClass161_5 != null) {
 			@Pc(218) Class130 local218 = Static164.aClass161_5.method4100(arg0);
@@ -161,7 +161,7 @@ public final class Static165 {
 			}
 			local218.method5902(Static129.anInt2460, local41, Static288.anInt5464, Static61.aRandom1, Static164.aClass161_5.anInt4293, Static210.anIntArray229, Static164.aClass161_5.anInt4252, Static164.aClass161_5.anInt4248, Static164.aClass161_5.anInt4290, Static283.anInt5352, Static134.aClass13Array12, Static164.aClass161_5.anInt4261, Static164.aClass161_5.anInt4298, Static72.anIntArray114);
 			Static369.method6220(Static210.anIntArray229[2], Static210.anIntArray229[0], Static210.anIntArray229[3], Static210.anIntArray229[1]);
-		} else if (Static179.aClass161_6 != null && Static249.aClass50_3 == Static343.aClass50_4) {
+		} else if (Static179.aClass161_6 != null && Static249.aClass50_3 == client.game) {
 			@Pc(287) int local287 = Static52.aClass130_1.method5898(Static290.anInt5498 + 4, Static283.anInt5352, Static134.aClass13Array12, Static61.aRandom1, Static63.anInt1549 + 16, Static72.anIntArray114, local41);
 			Static369.method6220(Static113.aClass239_2.method6125(local41) + local287, Static290.anInt5498 + 4, 16, Static63.anInt1549);
 		}

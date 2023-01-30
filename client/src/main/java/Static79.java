@@ -152,7 +152,7 @@ public final class Static79 {
 	public static boolean method1870() {
 		if (Static276.aBoolean375) {
 			try {
-				Static404.method4627(Static328.aClass152_5.anApplet1, "showVideoAd");
+				BrowserControl.call(GameShell.signlink.applet, "showVideoAd");
 				return true;
 			} catch (@Pc(14) Throwable local14) {
 			}

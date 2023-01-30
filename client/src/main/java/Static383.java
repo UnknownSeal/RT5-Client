@@ -11,22 +11,22 @@ public final class Static383 {
 	public static final Class16 aClass16_9 = new Class16("", 15);
 
 	@OriginalMember(owner = "client!wf", name = "a", descriptor = "(Ljava/lang/String;I)V")
-	public static void method6378(@OriginalArg(0) String arg0) {
-		Static74.aString17 = arg0;
-		if (Static328.aClass152_5.anApplet1 == null) {
+	public static void setSettings(@OriginalArg(0) String settings) {
+		client.settings = settings;
+		if (GameShell.signlink.applet == null) {
 			return;
 		}
 		try {
-			@Pc(20) String local20 = Static328.aClass152_5.anApplet1.getParameter("cookieprefix");
-			@Pc(25) String local25 = Static328.aClass152_5.anApplet1.getParameter("cookiehost");
-			@Pc(40) String local40 = local20 + "settings=" + arg0 + "; version=1; path=/; domain=" + local25;
-			if (arg0.length() == 0) {
-				local40 = local40 + "; Expires=Thu, 01-Jan-1970 00:00:00 GMT; Max-Age=0";
+			@Pc(20) String cookiePrefix = GameShell.signlink.applet.getParameter("cookieprefix");
+			@Pc(25) String cookieHost = GameShell.signlink.applet.getParameter("cookiehost");
+			@Pc(40) String cookie = cookiePrefix + "settings=" + settings + "; version=1; path=/; domain=" + cookieHost;
+			if (settings.length() == 0) {
+				cookie = cookie + "; Expires=Thu, 01-Jan-1970 00:00:00 GMT; Max-Age=0";
 			} else {
-				local40 = local40 + "; Expires=" + Static15.method393(Static204.method3684() + 94608000000L) + "; Max-Age=" + 94608000L;
+				cookie = cookie + "; Expires=" + Static15.method393(MonotonicClock.currentTimeMillis() + 94608000000L) + "; Max-Age=" + 94608000L;
 			}
-			Static404.method4628("document.cookie=\"" + local40 + "\"", Static328.aClass152_5.anApplet1);
-		} catch (@Pc(89) Throwable local89) {
+			BrowserControl.eval(GameShell.signlink.applet, "document.cookie=\"" + cookie + "\"");
+		} catch (@Pc(89) Throwable exception) {
 		}
 	}
 

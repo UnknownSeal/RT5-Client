@@ -148,7 +148,7 @@ public abstract class Class57 {
 		}
 		for (@Pc(39) int local39 = 0; local39 < 255; local39++) {
 			@Pc(46) int local46 = 255 - local39;
-			@Pc(51) int local51 = Static382.method6360(local46, local12);
+			@Pc(51) int local51 = Static382.nextInt(local12, local46);
 			@Pc(56) short local56 = this.aShortArray127[local51];
 			this.aShortArray127[local51] = this.aShortArray127[local46];
 			this.aShortArray127[local46] = this.aShortArray127[local46 + 256] = local56;

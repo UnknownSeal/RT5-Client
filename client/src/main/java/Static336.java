@@ -31,7 +31,7 @@ public final class Static336 {
 			Static230.method4013();
 		}
 		if (arg0 != 40 && Static246.aBufferedSocket_2 != null) {
-			Static246.aBufferedSocket_2.method2799();
+			Static246.aBufferedSocket_2.close();
 			Static246.aBufferedSocket_2 = null;
 		}
 		if (Static347.anInt6442 == 25 || Static347.anInt6442 == 28) {
@@ -76,10 +76,10 @@ public final class Static336 {
 				} else {
 					Static249.playFadeOut(Static218.aClass177_Sub1_2.musicVolume, Static101.aClass197_23, Static97.anInt2049);
 				}
-				Static287.aClass183_3.writeLoggedIn(false);
+				client.js5NetQueue.writeLoggedIn(false);
 			} else {
 				Static174.method1507();
-				Static287.aClass183_3.writeLoggedIn(true);
+				client.js5NetQueue.writeLoggedIn(true);
 			}
 		}
 		if (arg0 == 25 || arg0 == 28 || arg0 == 40) {

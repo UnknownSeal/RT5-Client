@@ -8,7 +8,7 @@ public final class Static106 {
 	public static int anInt2218;
 
 	@OriginalMember(owner = "client!fu", name = "U", descriptor = "[[B")
-	public static byte[][] aByteArrayArray6;
+	public static byte[][] mapBytes;
 
 	@OriginalMember(owner = "client!fu", name = "P", descriptor = "Lclient!dn;")
 	public static final Class50 aClass50_1 = new Class50("stellardawn", 1);

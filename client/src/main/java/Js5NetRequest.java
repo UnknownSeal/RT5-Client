@@ -2,7 +2,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!jj")
-public final class Class2_Sub2_Sub10_Sub1 extends Class2_Sub2_Sub10 {
+public final class Js5NetRequest extends Class2_Sub2_Sub10 {
 
 	@OriginalMember(owner = "client!jj", name = "O", descriptor = "I")
 	public int anInt3083;

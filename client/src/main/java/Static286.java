@@ -383,10 +383,10 @@ public final class Static286 {
 	}
 
 	@OriginalMember(owner = "client!qk", name = "a", descriptor = "(Lclient!bt;I)Lclient!jq;")
-	public static Class2_Sub3 method4927(@OriginalArg(0) Buffer arg0) {
+	public static TextureOp method4927(@OriginalArg(0) Buffer arg0) {
 		arg0.g1();
 		@Pc(13) int local13 = arg0.g1();
-		@Pc(17) Class2_Sub3 local17 = Static246.method4247(local13);
+		@Pc(17) TextureOp local17 = TextureOp.create(local13);
 		local17.anInt7251 = arg0.g1();
 		@Pc(26) int local26 = arg0.g1();
 		for (@Pc(28) int local28 = 0; local28 < local26; local28++) {

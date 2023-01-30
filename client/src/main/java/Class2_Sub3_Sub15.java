@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!i")
-public final class Class2_Sub3_Sub15 extends Class2_Sub3 {
+public final class Class2_Sub3_Sub15 extends TextureOp {
 
 	@OriginalMember(owner = "client!i", name = "O", descriptor = "I")
 	private int anInt2646 = 4096;
@@ -61,10 +61,10 @@ public final class Class2_Sub3_Sub15 extends Class2_Sub3 {
 
 	@OriginalMember(owner = "client!i", name = "a", descriptor = "(BI)[I")
 	@Override
-	public int[] method6484(@OriginalArg(1) int arg0) {
-		@Pc(16) int[] local16 = super.aClass158_41.method3995(arg0);
+	public int[] getMonochromeOutput(@OriginalArg(1) int y) {
+		@Pc(16) int[] local16 = super.aClass158_41.method3995(y);
 		if (super.aClass158_41.aBoolean265) {
-			@Pc(26) int[] local26 = this.method6472(0, arg0);
+			@Pc(26) int[] local26 = this.method6472(0, y);
 			for (@Pc(28) int local28 = 0; local28 < Static227.anInt4036; local28++) {
 				@Pc(34) int local34 = local26[local28];
 				if (this.anInt2649 > local34) {
@@ -87,7 +87,7 @@ public final class Class2_Sub3_Sub15 extends Class2_Sub3 {
 		} else if (arg0 == 1) {
 			this.anInt2646 = arg1.g2();
 		} else if (arg0 == 2) {
-			super.aBoolean487 = arg1.g1() == 1;
+			super.monochrome = arg1.g1() == 1;
 		}
 	}
 }

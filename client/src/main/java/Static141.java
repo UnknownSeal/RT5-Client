@@ -33,7 +33,7 @@ public final class Static141 {
 		for (@Pc(3) int local3 = 0; local3 < 128; local3++) {
 			for (@Pc(7) int local7 = 0; local7 < 128; local7++) {
 				Static301.anIntArrayArray49[local3][local7] = 0;
-				Static13.anIntArrayArray4[local3][local7] = 99999999;
+				Static13.anIntArrayArray4[local3][local7] =  99999999;
 			}
 		}
 		@Pc(55) boolean local55;

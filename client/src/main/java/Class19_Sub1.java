@@ -439,10 +439,10 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 					Static22.aBoolean31 = Boolean.TRUE;
 				} else {
 					@Pc(219) PrivelegedRequest local219 = arg4.method3753(this.getClass());
-					while (local219.anInt993 == 0) {
+					while (local219.status == 0) {
 						Static231.sleep(100L);
 					}
-					if (local219.anInt993 == 1) {
+					if (local219.status == 1) {
 						Static22.aBoolean31 = Boolean.TRUE;
 					}
 				}
@@ -1357,9 +1357,9 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 			local16 = (IntNode) this.aClass135_4.method3548();
 			this.anOpengl1.glDeleteLists((int) local16.key, local16.value);
 		}
-		if (this.method2899() > 100663296 && Static204.method3684() > this.aLong20 + 60000L) {
+		if (this.method2899() > 100663296 && MonotonicClock.currentTimeMillis() > this.aLong20 + 60000L) {
 			System.gc();
-			this.aLong20 = Static204.method3684();
+			this.aLong20 = MonotonicClock.currentTimeMillis();
 		}
 		this.anInt584 = local5;
 	}

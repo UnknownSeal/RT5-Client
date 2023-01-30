@@ -159,7 +159,7 @@ public final class Class197 {
 			try {
 				local157 = Static161.method2969(local128);
 			} catch (@Pc(159) RuntimeException local159) {
-				throw Static382.method6363(local159, "T3 - " + (arg2 != null) + "," + arg1 + "," + local128.length + "," + Static36.method1111(local128, local128.length) + "," + Static36.method1111(local128, local128.length - 2) + "," + this.index.anIntArray382[arg1] + "," + this.index.anInt5589);
+				throw Static382.method6363(local159, "T3 - " + (arg2 != null) + "," + arg1 + "," + local128.length + "," + Static36.method1111(local128, local128.length) + "," + Static36.method1111(local128, local128.length - 2) + "," + this.index.anIntArray382[arg1] + "," + this.index.checksum);
 			}
 			if (this.aBoolean393) {
 				this.anObjectArray35[arg1] = null;
@@ -321,11 +321,11 @@ public final class Class197 {
 	}
 
 	@OriginalMember(owner = "client!r", name = "a", descriptor = "(B)I")
-	public int method5077() {
+	public int getChecksum() {
 		if (!this.isIndexReady()) {
 			throw new IllegalStateException("");
 		}
-		return this.index.anInt5589;
+		return this.index.checksum;
 	}
 
 	@OriginalMember(owner = "client!r", name = "c", descriptor = "(BI)V")

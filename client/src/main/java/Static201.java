@@ -14,7 +14,7 @@ public final class Static201 {
 	public static int anInt3701 = 0;
 
 	@OriginalMember(owner = "client!lp", name = "e", descriptor = "J")
-	public static long aLong119 = 0L;
+	public static long serverKey = 0L;
 
 	@OriginalMember(owner = "client!lp", name = "f", descriptor = "Lclient!gd;")
 	public static final LocalisedText A_TRANSLATABLE_STRING___80 = new LocalisedText("Loaded title screen", "Titelbild geladen.", "Écran-titre chargé", "Tela título carregada");
@@ -235,7 +235,7 @@ public final class Static201 {
 									@Pc(970) String local970 = local19.aString47;
 									if (local19.anInt4300 != -1) {
 										@Pc(981) ObjType local981 = Static313.aClass107_2.get(local19.anInt4300);
-										local970 = local981.aString55;
+										local970 = local981.name;
 										if (local970 == null) {
 											local970 = "null";
 										}
@@ -244,7 +244,7 @@ public final class Static201 {
 										}
 									}
 									if (Static192.aClass161_8 == local19) {
-										local970 = Static131.A_TRANSLATABLE_STRING___82.getLocalisedText(Static295.anInt5581);
+										local970 = Static131.A_TRANSLATABLE_STRING___82.getLocalisedText(client.language);
 										local248 = local19.anInt4290;
 									}
 									if (Static88.aBoolean134) {

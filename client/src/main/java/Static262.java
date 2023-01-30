@@ -61,30 +61,30 @@ public final class Static262 {
 	}
 
 	@OriginalMember(owner = "client!pa", name = "a", descriptor = "(Ljava/lang/Throwable;Ljava/lang/String;I)V")
-	public static void method6252(@OriginalArg(0) Throwable arg0, @OriginalArg(1) String arg1) {
+	public static void report(@OriginalArg(0) Throwable arg0, @OriginalArg(1) String suffix) {
 		try {
-			@Pc(7) String local7 = "";
+			@Pc(7) String message = "";
 			if (arg0 != null) {
-				local7 = Static174.method1509(arg0);
+				message = Static174.toString(arg0);
 			}
-			if (arg1 != null) {
+			if (suffix != null) {
 				if (arg0 != null) {
-					local7 = local7 + " | ";
+					message = message + " | ";
 				}
-				local7 = local7 + arg1;
+				message = message + suffix;
 			}
-			Static342.method5152(local7);
-			local7 = Static200.method3646(local7, "%3a", ":");
-			local7 = Static200.method3646(local7, "%40", "@");
-			local7 = Static200.method3646(local7, "%26", "&");
-			local7 = Static200.method3646(local7, "%23", "#");
-			if (Static392.aClass152_6.anApplet1 != null) {
-				@Pc(103) PrivelegedRequest local103 = Static392.aClass152_6.method3765(new URL(Static392.aClass152_6.anApplet1.getCodeBase(), "clienterror.ws?c=" + Static277.anInt5115 + "&u=" + Static241.aLong130 + "&v1=" + Static215.aString33 + "&v2=" + Static215.aString34 + "&e=" + local7));
-				while (local103.anInt993 == 0) {
+			Static342.method5152(message);
+			message = Static200.method3646(message, "%3a", ":");
+			message = Static200.method3646(message, "%40", "@");
+			message = Static200.method3646(message, "%26", "&");
+			message = Static200.method3646(message, "%23", "#");
+			if (Static392.aClass152_6.applet != null) {
+				@Pc(103) PrivelegedRequest local103 = Static392.aClass152_6.method3765(new URL(Static392.aClass152_6.applet.getCodeBase(), "clienterror.ws?c=" + Static277.clientVersion + "&u=" + Static241.aLong130 + "&v1=" + Static215.aString33 + "&v2=" + Static215.aString34 + "&e=" + message));
+				while (local103.status == 0) {
 					Static231.sleep(1L);
 				}
-				if (local103.anInt993 == 1) {
-					@Pc(121) DataInputStream local121 = (DataInputStream) local103.anObject2;
+				if (local103.status == 1) {
+					@Pc(121) DataInputStream local121 = (DataInputStream) local103.result;
 					local121.read();
 					local121.close();
 				}
@@ -101,14 +101,14 @@ public final class Static262 {
 		Static355.anInt6585 = Static17.aClass11_Sub5_Sub2_Sub1_3.aByte78 = 0;
 		Static17.aClass11_Sub5_Sub2_Sub1_3.method4063(8, 8);
 		Static51.underwaterMapGroupIDs = new int[18];
-		Static106.aByteArrayArray6 = new byte[18][];
-		Static232.aByteArrayArray9 = new byte[18][];
-		Static82.aByteArrayArray5 = new byte[18][];
+		Static106.mapBytes = new byte[18][];
+		Static232.underwaterMapBytes = new byte[18][];
+		Static82.locBytes = new byte[18][];
 		Static62.underwaterLocGroupIDs = new int[18];
-		Static270.aByteArrayArray15 = new byte[18][];
+		Static270.underwaterLocBytes = new byte[18][];
 		Static190.npcGroupIDs = new int[18];
 		Static221.mapGroupIDs = new int[18];
-		Static210.aByteArrayArray7 = new byte[18][];
+		Static210.npcBytes = new byte[18][];
 		Static374.locGroupIDs = new int[18];
 		Static291.mapSquares = new int[18];
 		Static277.xteaKeys = new int[18][4];

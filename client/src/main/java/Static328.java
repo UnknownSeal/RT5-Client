@@ -4,12 +4,9 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class Static328 {
 
 	@OriginalMember(owner = "client!tb", name = "H", descriptor = "I")
-	public static int anInt6127;
+	public static int size;
 
-	@OriginalMember(owner = "client!tb", name = "W", descriptor = "Lclient!ml;")
-	public static Class152 aClass152_5;
-
-	@OriginalMember(owner = "client!tb", name = "B", descriptor = "Lclient!gd;")
+    @OriginalMember(owner = "client!tb", name = "B", descriptor = "Lclient!gd;")
 	public static final LocalisedText A_TRANSLATABLE_STRING___127 = new LocalisedText(" more options", " weitere Optionen", " autres options", " mais opções");
 
 	@OriginalMember(owner = "client!tb", name = "E", descriptor = "[I")

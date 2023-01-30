@@ -37,7 +37,7 @@ public final class ObjType {
 	private short[] aShortArray113;
 
 	@OriginalMember(owner = "client!qf", name = "ab", descriptor = "I")
-	private int anInt5237;
+	private int model;
 
 	@OriginalMember(owner = "client!qf", name = "gb", descriptor = "[Ljava/lang/String;")
 	public String[] iOps;
@@ -46,7 +46,7 @@ public final class ObjType {
 	public int anInt5255;
 
 	@OriginalMember(owner = "client!qf", name = "wb", descriptor = "Lclient!ad;")
-	public HashTable aClass4_103;
+	public HashTable params;
 
 	@OriginalMember(owner = "client!qf", name = "b", descriptor = "I")
 	private int anInt5200 = -1;
@@ -64,7 +64,7 @@ public final class ObjType {
 	private int anInt5213 = 0;
 
 	@OriginalMember(owner = "client!qf", name = "K", descriptor = "I")
-	private int anInt5226 = 128;
+	private int resizeY = 128;
 
 	@OriginalMember(owner = "client!qf", name = "y", descriptor = "I")
 	public int anInt5216 = -1;
@@ -94,13 +94,13 @@ public final class ObjType {
 	private int contrast = 0;
 
 	@OriginalMember(owner = "client!qf", name = "w", descriptor = "I")
-	public int anInt5214 = 0;
+	public int dummyItem = 0;
 
 	@OriginalMember(owner = "client!qf", name = "x", descriptor = "I")
 	public int anInt5215 = 0;
 
 	@OriginalMember(owner = "client!qf", name = "s", descriptor = "Z")
-	public boolean aBoolean381 = false;
+	public boolean stockMarket = false;
 
 	@OriginalMember(owner = "client!qf", name = "bb", descriptor = "I")
 	public int anInt5238 = -1;
@@ -139,10 +139,10 @@ public final class ObjType {
 	public int anInt5249 = 0;
 
 	@OriginalMember(owner = "client!qf", name = "W", descriptor = "I")
-	private int anInt5233 = 128;
+	private int resizeX = 128;
 
 	@OriginalMember(owner = "client!qf", name = "eb", descriptor = "I")
-	public int anInt5241 = 2000;
+	public int zoom2d = 2000;
 
 	@OriginalMember(owner = "client!qf", name = "tb", descriptor = "I")
 	private int anInt5254 = 0;
@@ -154,7 +154,7 @@ public final class ObjType {
 	private int anInt5248 = -1;
 
 	@OriginalMember(owner = "client!qf", name = "R", descriptor = "Ljava/lang/String;")
-	public String aString55 = "null";
+	public String name = "null";
 
 	@OriginalMember(owner = "client!qf", name = "rb", descriptor = "I")
 	public int anInt5252 = 0;
@@ -181,7 +181,7 @@ public final class ObjType {
 	private int ambient = 0;
 
 	@OriginalMember(owner = "client!qf", name = "Bb", descriptor = "I")
-	private int anInt5261 = 128;
+	private int resizeZ = 128;
 
 	@OriginalMember(owner = "client!qf", name = "ob", descriptor = "I")
 	public int anInt5250 = -1;
@@ -193,11 +193,11 @@ public final class ObjType {
 	@OriginalMember(owner = "client!qf", name = "a", descriptor = "(ILclient!bt;I)V")
 	private void decode(@OriginalArg(0) int opcode, @OriginalArg(1) Buffer buffer) {
 		if (opcode == 1) {
-			this.anInt5237 = buffer.g2();
+			this.model = buffer.g2();
 		} else if (opcode == 2) {
-			this.aString55 = buffer.gjstr();
+			this.name = buffer.gjstr();
 		} else if (opcode == 4) {
-			this.anInt5241 = buffer.g2();
+			this.zoom2d = buffer.g2();
 		} else if (opcode == 5) {
 			this.anInt5245 = buffer.g2();
 		} else if (opcode == 6) {
@@ -256,7 +256,7 @@ public final class ObjType {
 					this.aByteArray72[local172] = buffer.g1b();
 				}
 			} else if (opcode == 65) {
-				this.aBoolean381 = true;
+				this.stockMarket = true;
 			} else if (opcode == 78) {
 				this.anInt5201 = buffer.g2();
 			} else if (opcode == 79) {
@@ -272,7 +272,7 @@ public final class ObjType {
 			} else if (opcode == 95) {
 				this.anInt5249 = buffer.g2();
 			} else if (opcode == 96) {
-				this.anInt5214 = buffer.g1();
+				this.dummyItem = buffer.g1();
 			} else if (opcode == 97) {
 				this.certificateLink = buffer.g2();
 			} else if (opcode == 98) {
@@ -285,11 +285,11 @@ public final class ObjType {
 				this.countObj[opcode - 100] = buffer.g2();
 				this.countCount[opcode - 100] = buffer.g2();
 			} else if (opcode == 110) {
-				this.anInt5233 = buffer.g2();
+				this.resizeX = buffer.g2();
 			} else if (opcode == 111) {
-				this.anInt5226 = buffer.g2();
+				this.resizeY = buffer.g2();
 			} else if (opcode == 112) {
-				this.anInt5261 = buffer.g2();
+				this.resizeZ = buffer.g2();
 			} else if (opcode == 113) {
 				this.ambient = buffer.g1b();
 			} else if (opcode == 114) {
@@ -328,20 +328,20 @@ public final class ObjType {
 				}
 			} else if (opcode == 249) {
 				local162 = buffer.g1();
-				if (this.aClass4_103 == null) {
+				if (this.params == null) {
 					local172 = Static162.clp2(local162);
-					this.aClass4_103 = new HashTable(local172);
+					this.params = new HashTable(local172);
 				}
 				for (local172 = 0; local172 < local162; local172++) {
-					@Pc(503) boolean local503 = buffer.g1() == 1;
-					@Pc(507) int local507 = buffer.ig3();
-					@Pc(516) Node local516;
-					if (local503) {
-						local516 = new StringNode(buffer.gjstr());
+					@Pc(503) boolean isString = buffer.g1() == 1;
+					@Pc(507) int id = buffer.ig3();
+					@Pc(516) Node node;
+					if (isString) {
+						node = new StringNode(buffer.gjstr());
 					} else {
-						local516 = new IntNode(buffer.mg4());
+						node = new IntNode(buffer.mg4());
 					}
-					this.aClass4_103.put(local516, (long) local507);
+					this.params.put(node, (long) id);
 				}
 			}
 		}
@@ -386,20 +386,20 @@ public final class ObjType {
 
 	@OriginalMember(owner = "client!qf", name = "a", descriptor = "(III)I")
 	public int method4771(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
-		if (this.aClass4_103 == null) {
+		if (this.params == null) {
 			return arg0;
 		} else {
-			@Pc(22) IntNode local22 = (IntNode) this.aClass4_103.method90((long) arg1);
+			@Pc(22) IntNode local22 = (IntNode) this.params.method90((long) arg1);
 			return local22 == null ? arg0 : local22.value;
 		}
 	}
 
 	@OriginalMember(owner = "client!qf", name = "a", descriptor = "(Ljava/lang/String;II)Ljava/lang/String;")
 	public String method4772(@OriginalArg(0) String arg0, @OriginalArg(1) int arg1) {
-		if (this.aClass4_103 == null) {
+		if (this.params == null) {
 			return arg0;
 		} else {
-			@Pc(24) StringNode local24 = (StringNode) this.aClass4_103.method90((long) arg1);
+			@Pc(24) StringNode local24 = (StringNode) this.params.method90((long) arg1);
 			return local24 == null ? arg0 : local24.value;
 		}
 	}
@@ -474,22 +474,22 @@ public final class ObjType {
 			if (this.aShortArray113 != null || arg6 != null) {
 				local129 |= 0x2000;
 			}
-			if (this.anInt5233 != 128) {
+			if (this.resizeX != 128) {
 				local129 |= 0x1;
 			}
-			if (this.anInt5233 != 128) {
+			if (this.resizeX != 128) {
 				local129 |= 0x2;
 			}
-			if (this.anInt5233 != 128) {
+			if (this.resizeX != 128) {
 				local129 |= 0x4;
 			}
-			@Pc(178) Class185 local178 = Static298.method2426(this.aClass107_1.aClass197_41, this.anInt5237);
+			@Pc(178) Class185 local178 = Static298.method2426(this.aClass107_1.aClass197_41, this.model);
 			if (local178 == null) {
 				return null;
 			}
 			local102 = arg4.method2864(local178, local129, this.aClass107_1.anInt2790, this.ambient + 64, this.contrast + 850);
-			if (this.anInt5233 != 128 || this.anInt5226 != 128 || this.anInt5261 != 128) {
-				local102.method3841(this.anInt5233, this.anInt5226, this.anInt5261);
+			if (this.resizeX != 128 || this.resizeY != 128 || this.resizeZ != 128) {
+				local102.method3841(this.resizeX, this.resizeY, this.resizeZ);
 			}
 			@Pc(229) int local229;
 			if (this.aShortArray113 != null) {
@@ -617,7 +617,7 @@ public final class ObjType {
 		this.aShortArray110 = arg1.aShortArray110;
 		this.aByteArray72 = arg1.aByteArray72;
 		this.anInt5245 = arg1.anInt5245;
-		this.anInt5237 = arg1.anInt5237;
+		this.model = arg1.model;
 		this.anInt5249 = arg1.anInt5249;
 		this.aShortArray112 = arg1.aShortArray112;
 		this.aShortArray113 = arg1.aShortArray113;
@@ -626,15 +626,15 @@ public final class ObjType {
 		this.cost = arg0.cost;
 		this.anInt5215 = arg1.anInt5215;
 		this.anInt5252 = arg1.anInt5252;
-		this.aString55 = arg0.aString55;
+		this.name = arg0.name;
 		this.stackable = 1;
-		this.anInt5241 = arg1.anInt5241;
+		this.zoom2d = arg1.zoom2d;
 		this.members = arg0.members;
 	}
 
 	@OriginalMember(owner = "client!qf", name = "a", descriptor = "(Lclient!ur;Lclient!jo;BLclient!wm;ILclient!wm;IIIZ)[I")
 	public int[] method4780(@OriginalArg(0) Class130 arg0, @OriginalArg(1) Class117 arg1, @OriginalArg(3) Class19 arg2, @OriginalArg(4) int arg3, @OriginalArg(5) Class19 arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6, @OriginalArg(8) int arg7, @OriginalArg(9) boolean arg8) {
-		@Pc(14) Class185 local14 = Static298.method2426(this.aClass107_1.aClass197_41, this.anInt5237);
+		@Pc(14) Class185 local14 = Static298.method2426(this.aClass107_1.aClass197_41, this.model);
 		if (local14 == null) {
 			return null;
 		}
@@ -665,7 +665,7 @@ public final class ObjType {
 		}
 		@Pc(174) short local174 = 1024;
 		@Pc(176) boolean local176 = false;
-		if (this.anInt5233 != 128 || this.anInt5226 != 128 || this.anInt5261 != 128) {
+		if (this.resizeX != 128 || this.resizeY != 128 || this.resizeZ != 128) {
 			local176 = true;
 			local174 = 1031;
 		}
@@ -674,7 +674,7 @@ public final class ObjType {
 			return null;
 		}
 		if (local176) {
-			local210.method3841(this.anInt5233, this.anInt5226, this.anInt5261);
+			local210.method3841(this.resizeX, this.resizeY, this.resizeZ);
 		}
 		@Pc(227) Class13 local227 = null;
 		if (this.certificateTemplate != -1) {
@@ -690,11 +690,11 @@ public final class ObjType {
 		}
 		@Pc(287) int local287;
 		if (arg8) {
-			local287 = (int) ((double) this.anInt5241 * 1.5D);
+			local287 = (int) ((double) this.zoom2d * 1.5D);
 		} else if (arg6 == 2) {
-			local287 = (int) ((double) this.anInt5241 * 1.04D);
+			local287 = (int) ((double) this.zoom2d * 1.04D);
 		} else {
-			local287 = this.anInt5241;
+			local287 = this.zoom2d;
 		}
 		arg4.method2821(16, 16, 512, 512);
 		@Pc(314) Class14 local314 = arg4.method2897();
@@ -790,7 +790,7 @@ public final class ObjType {
 		this.aShortArray110 = link.aShortArray110;
 		this.anInt5208 = link.anInt5208;
 		this.aShortArray113 = link.aShortArray113;
-		this.aString55 = link.aString55;
+		this.name = link.name;
 		this.anInt5231 = link.anInt5231;
 		this.anInt5243 = link.anInt5243;
 		this.iOps = new String[5];
@@ -798,13 +798,13 @@ public final class ObjType {
 		this.aStringArray50 = link.aStringArray50;
 		this.anInt5251 = link.anInt5251;
 		this.anInt5211 = link.anInt5211;
-		this.anInt5241 = arg0.anInt5241;
+		this.zoom2d = arg0.zoom2d;
 		this.anInt5207 = link.anInt5207;
-		this.aClass4_103 = link.aClass4_103;
+		this.params = link.params;
 		this.anInt5252 = arg0.anInt5252;
 		this.anInt5232 = arg0.anInt5232;
 		this.anInt5254 = link.anInt5254;
-		this.anInt5237 = arg0.anInt5237;
+		this.model = arg0.model;
 		this.members = link.members;
 		this.anInt5249 = arg0.anInt5249;
 		this.anInt5201 = link.anInt5201;

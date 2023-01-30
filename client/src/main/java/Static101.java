@@ -71,9 +71,9 @@ public final class Static101 {
 
 	@OriginalMember(owner = "client!fo", name = "a", descriptor = "(II)I")
 	public static int method2166(@OriginalArg(1) int arg0) {
-		if (Static335.aBufferedSocket_4 != null) {
-			Static335.aBufferedSocket_4.method2799();
-			Static335.aBufferedSocket_4 = null;
+		if (Static335.socket != null) {
+			Static335.socket.close();
+			Static335.socket = null;
 		}
 		Static12.anInt270++;
 		if (Static12.anInt270 > 4) {

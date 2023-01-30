@@ -54,11 +54,11 @@ public final class Class177_Sub1 extends Class177 {
 		@Pc(125) Class204 local125 = null;
 		try {
 			@Pc(129) PrivelegedRequest local129 = arg0.method3749();
-			while (local129.anInt993 == 0) {
+			while (local129.status == 0) {
 				Static231.sleep(1L);
 			}
-			if (local129.anInt993 == 1) {
-				local125 = (Class204) local129.anObject2;
+			if (local129.status == 1) {
+				local125 = (Class204) local129.result;
 				@Pc(153) byte[] local153 = new byte[(int) local125.method5195()];
 				@Pc(168) int local168;
 				for (@Pc(155) int local155 = 0; local155 < local153.length; local155 += local168) {
@@ -153,11 +153,11 @@ public final class Class177_Sub1 extends Class177 {
 		@Pc(7) Class204 local7 = null;
 		try {
 			@Pc(17) PrivelegedRequest local17 = arg0.method3749();
-			while (local17.anInt993 == 0) {
+			while (local17.status == 0) {
 				Static231.sleep(1L);
 			}
-			if (local17.anInt993 == 1) {
-				local7 = (Class204) local17.anObject2;
+			if (local17.status == 1) {
+				local7 = (Class204) local17.result;
 				@Pc(39) Buffer local39 = this.method4493();
 				local7.method5194(local39.data, local39.offset, 0);
 			}

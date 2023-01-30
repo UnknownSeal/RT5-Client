@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!vl")
-public final class Class2_Sub3_Sub36 extends Class2_Sub3 {
+public final class Class2_Sub3_Sub36 extends TextureOp {
 
 	@OriginalMember(owner = "client!vl", name = "db", descriptor = "I")
 	private int anInt6927;
@@ -53,8 +53,8 @@ public final class Class2_Sub3_Sub36 extends Class2_Sub3 {
 
 	@OriginalMember(owner = "client!vl", name = "a", descriptor = "(BI)[I")
 	@Override
-	public int[] method6484(@OriginalArg(1) int arg0) {
-		@Pc(11) int[] local11 = super.aClass158_41.method3995(arg0);
+	public int[] getMonochromeOutput(@OriginalArg(1) int y) {
+		@Pc(11) int[] local11 = super.aClass158_41.method3995(y);
 		if (!super.aClass158_41.aBoolean265) {
 			return local11;
 		}
@@ -73,7 +73,7 @@ public final class Class2_Sub3_Sub36 extends Class2_Sub3 {
 		@Pc(65) int local65 = Static24.anInt638 * this.anInt6916 >> 12;
 		@Pc(72) int local72 = this.anInt6921 * Static24.anInt638 >> 12;
 		if (local72 <= 1) {
-			return local26[arg0];
+			return local26[y];
 		}
 		this.anInt6927 = Static227.anInt4036 / 8 * this.anInt6922 >> 12;
 		@Pc(97) int local97 = Static227.anInt4036 / local51 + 1;
@@ -82,8 +82,8 @@ public final class Class2_Sub3_Sub36 extends Class2_Sub3 {
 		@Pc(112) Random local112 = new Random((long) this.anInt6919);
 		while (true) {
 			while (true) {
-				@Pc(121) int local121 = local51 + Static382.method6360(local58 - local51, local112);
-				@Pc(131) int local131 = local65 + Static382.method6360(local72 - local65, local112);
+				@Pc(121) int local121 = local51 + Static382.nextInt(local112, local58 - local51);
+				@Pc(131) int local131 = local65 + Static382.nextInt(local112, local72 - local65);
 				@Pc(135) int local135 = local34 + local121;
 				if (Static227.anInt4036 < local135) {
 					local135 = Static227.anInt4036;
@@ -174,7 +174,7 @@ public final class Class2_Sub3_Sub36 extends Class2_Sub3 {
 					local42 = local44;
 					local44 = 0;
 					local32 = local30;
-					local30 = Static382.method6360(Static227.anInt4036, local112);
+					local30 = Static382.nextInt(local112, Static227.anInt4036);
 					local28 = local30 - local32;
 					local34 = 0;
 					local155 = local28;
@@ -210,9 +210,9 @@ public final class Class2_Sub3_Sub36 extends Class2_Sub3 {
 
 	@OriginalMember(owner = "client!vl", name = "a", descriptor = "(IIILjava/util/Random;II[[I)V")
 	private void method6190(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) Random arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int[][] arg5) {
-		@Pc(21) int local21 = this.anInt6920 > 0 ? 4096 - Static382.method6360(this.anInt6920, arg2) : 4096;
+		@Pc(21) int local21 = this.anInt6920 > 0 ? 4096 - Static382.nextInt(arg2, this.anInt6920) : 4096;
 		@Pc(29) int local29 = this.anInt6928 * this.anInt6927 >> 12;
-		@Pc(50) int local50 = this.anInt6927 - (local29 > 0 ? Static382.method6360(local29, arg2) : 0);
+		@Pc(50) int local50 = this.anInt6927 - (local29 > 0 ? Static382.nextInt(arg2, local29) : 0);
 		if (Static227.anInt4036 <= arg3) {
 			arg3 -= Static227.anInt4036;
 		}

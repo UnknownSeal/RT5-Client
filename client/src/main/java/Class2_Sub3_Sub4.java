@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!ar")
-public final class Class2_Sub3_Sub4 extends Class2_Sub3 {
+public final class Class2_Sub3_Sub4 extends TextureOp {
 
 	@OriginalMember(owner = "client!ar", name = "Q", descriptor = "I")
 	private int anInt369 = 1;
@@ -19,8 +19,8 @@ public final class Class2_Sub3_Sub4 extends Class2_Sub3 {
 
 	@OriginalMember(owner = "client!ar", name = "a", descriptor = "(BI)[I")
 	@Override
-	public int[] method6484(@OriginalArg(1) int arg0) {
-		@Pc(11) int[] local11 = super.aClass158_41.method3995(arg0);
+	public int[] getMonochromeOutput(@OriginalArg(1) int y) {
+		@Pc(11) int[] local11 = super.aClass158_41.method3995(y);
 		if (super.aClass158_41.aBoolean265) {
 			@Pc(31) int local31 = this.anInt371 + this.anInt371 + 1;
 			@Pc(35) int local35 = 65536 / local31;
@@ -28,7 +28,7 @@ public final class Class2_Sub3_Sub4 extends Class2_Sub3 {
 			@Pc(48) int local48 = 65536 / local44;
 			@Pc(51) int[][] local51 = new int[local31][];
 			@Pc(72) int local72;
-			for (@Pc(57) int local57 = arg0 - this.anInt371; local57 <= arg0 + this.anInt371; local57++) {
+			for (@Pc(57) int local57 = y - this.anInt371; local57 <= y + this.anInt371; local57++) {
 				@Pc(67) int[] local67 = this.method6472(0, Static148.anInt2718 & local57);
 				@Pc(70) int[] local70 = new int[Static227.anInt4036];
 				local72 = 0;
@@ -42,7 +42,7 @@ public final class Class2_Sub3_Sub4 extends Class2_Sub3 {
 					local93++;
 					local72 += local67[Static73.anInt1721 & local93 + this.anInt369];
 				}
-				local51[local57 + this.anInt371 - arg0] = local70;
+				local51[local57 + this.anInt371 - y] = local70;
 			}
 			for (@Pc(154) int local154 = 0; local154 < Static227.anInt4036; local154++) {
 				@Pc(158) int local158 = 0;
@@ -63,7 +63,7 @@ public final class Class2_Sub3_Sub4 extends Class2_Sub3 {
 		} else if (arg0 == 1) {
 			this.anInt371 = arg1.g1();
 		} else if (arg0 == 2) {
-			super.aBoolean487 = arg1.g1() == 1;
+			super.monochrome = arg1.g1() == 1;
 		}
 	}
 

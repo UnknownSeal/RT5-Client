@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static181 {
 
-	@OriginalMember(owner = "client!ki", name = "m", descriptor = "[I")
-	public static int[] anIntArray203;
-
 	@OriginalMember(owner = "client!ki", name = "p", descriptor = "[I")
 	public static int[] anIntArray204;
 
@@ -34,28 +31,28 @@ public final class Static181 {
 		@Pc(52) int local52;
 		@Pc(59) int local59;
 		if (!Static220.aBoolean252) {
-			local13 = Static212.aClass2_Sub4_Sub2_3.ig2();
-			local17 = Static212.aClass2_Sub4_Sub2_3.g2();
-			local23 = Static212.aClass2_Sub4_Sub2_3.g1();
-			local36 = Static212.aClass2_Sub4_Sub2_3.g1bneg() == 1;
+			local13 = Static212.inboundBuffer.ig2();
+			local17 = Static212.inboundBuffer.g2();
+			local23 = Static212.inboundBuffer.g1();
+			local36 = Static212.inboundBuffer.g1bneg() == 1;
 			Static217.method3794(local23);
-			local44 = (Static82.anInt1836 - Static212.aClass2_Sub4_Sub2_3.offset) / 16;
+			local44 = (Static82.anInt1836 - Static212.inboundBuffer.offset) / 16;
 			Static277.xteaKeys = new int[local44][4];
 			for (local48 = 0; local48 < local44; local48++) {
 				for (local52 = 0; local52 < 4; local52++) {
-					Static277.xteaKeys[local48][local52] = Static212.aClass2_Sub4_Sub2_3.mg4();
+					Static277.xteaKeys[local48][local52] = Static212.inboundBuffer.mg4();
 				}
 			}
-			Static106.aByteArrayArray6 = new byte[local44][];
+			Static106.mapBytes = new byte[local44][];
 			Static51.underwaterMapGroupIDs = new int[local44];
-			Static82.aByteArrayArray5 = new byte[local44][];
-			Static232.aByteArrayArray9 = new byte[local44][];
+			Static82.locBytes = new byte[local44][];
+			Static232.underwaterMapBytes = new byte[local44][];
 			Static374.locGroupIDs = new int[local44];
 			Static221.mapGroupIDs = new int[local44];
 			Static291.mapSquares = new int[local44];
 			Static62.underwaterLocGroupIDs = new int[local44];
-			Static270.aByteArrayArray15 = new byte[local44][];
-			Static210.aByteArrayArray7 = null;
+			Static270.underwaterLocBytes = new byte[local44][];
+			Static210.npcBytes = null;
 			Static190.npcGroupIDs = null;
 			local44 = 0;
 			for (local52 = (local13 - (Static373.anInt7033 >> 4)) / 8; local52 <= (local13 + (Static373.anInt7033 >> 4)) / 8; local52++) {
@@ -71,43 +68,43 @@ public final class Static181 {
 			Static373.method6266(false, local13, local36, local17);
 			return;
 		}
-		local13 = Static212.aClass2_Sub4_Sub2_3.g2();
-		local17 = Static212.aClass2_Sub4_Sub2_3.ig2();
-		local23 = Static212.aClass2_Sub4_Sub2_3.g1bneg();
-		local36 = Static212.aClass2_Sub4_Sub2_3.g1bneg() == 1;
+		local13 = Static212.inboundBuffer.g2();
+		local17 = Static212.inboundBuffer.ig2();
+		local23 = Static212.inboundBuffer.g1bneg();
+		local36 = Static212.inboundBuffer.g1bneg() == 1;
 		Static217.method3794(local23);
-		Static212.aClass2_Sub4_Sub2_3.accessBits();
+		Static212.inboundBuffer.accessBits();
 		for (local44 = 0; local44 < 4; local44++) {
 			for (local48 = 0; local48 < Static373.anInt7033 >> 3; local48++) {
 				for (local52 = 0; local52 < Static242.anInt4449 >> 3; local52++) {
-					local59 = Static212.aClass2_Sub4_Sub2_3.gBit(1);
+					local59 = Static212.inboundBuffer.gBit(1);
 					if (local59 == 1) {
-						Static310.anIntArrayArrayArray12[local44][local48][local52] = Static212.aClass2_Sub4_Sub2_3.gBit(26);
+						Static310.anIntArrayArrayArray12[local44][local48][local52] = Static212.inboundBuffer.gBit(26);
 					} else {
 						Static310.anIntArrayArrayArray12[local44][local48][local52] = -1;
 					}
 				}
 			}
 		}
-		Static212.aClass2_Sub4_Sub2_3.accessBytes();
-		local48 = (Static82.anInt1836 - Static212.aClass2_Sub4_Sub2_3.offset) / 16;
+		Static212.inboundBuffer.accessBytes();
+		local48 = (Static82.anInt1836 - Static212.inboundBuffer.offset) / 16;
 		Static277.xteaKeys = new int[local48][4];
 		for (local52 = 0; local52 < local48; local52++) {
 			for (local59 = 0; local59 < 4; local59++) {
-				Static277.xteaKeys[local52][local59] = Static212.aClass2_Sub4_Sub2_3.mg4();
+				Static277.xteaKeys[local52][local59] = Static212.inboundBuffer.mg4();
 			}
 		}
 		Static374.locGroupIDs = new int[local48];
 		Static62.underwaterLocGroupIDs = new int[local48];
-		Static232.aByteArrayArray9 = new byte[local48][];
-		Static270.aByteArrayArray15 = new byte[local48][];
-		Static106.aByteArrayArray6 = new byte[local48][];
+		Static232.underwaterMapBytes = new byte[local48][];
+		Static270.underwaterLocBytes = new byte[local48][];
+		Static106.mapBytes = new byte[local48][];
 		Static190.npcGroupIDs = null;
 		Static221.mapGroupIDs = new int[local48];
-		Static210.aByteArrayArray7 = null;
+		Static210.npcBytes = null;
 		Static51.underwaterMapGroupIDs = new int[local48];
 		Static291.mapSquares = new int[local48];
-		Static82.aByteArrayArray5 = new byte[local48][];
+		Static82.locBytes = new byte[local48][];
 		local48 = 0;
 		for (local59 = 0; local59 < 4; local59++) {
 			for (@Pc(195) int local195 = 0; local195 < Static373.anInt7033 >> 3; local195++) {

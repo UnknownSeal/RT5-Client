@@ -8,7 +8,7 @@ public final class Static277 {
 	public static int[][] xteaKeys;
 
 	@OriginalMember(owner = "client!q", name = "p", descriptor = "I")
-	public static int anInt5115;
+	public static int clientVersion;
 
 	@OriginalMember(owner = "client!q", name = "h", descriptor = "Lclient!ld;")
 	public static final Class135 aClass135_31 = new Class135();

@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!jl")
-public final class Class2_Sub3_Sub17 extends Class2_Sub3 {
+public final class Class2_Sub3_Sub17 extends TextureOp {
 
 	@OriginalMember(owner = "client!jl", name = "P", descriptor = "I")
 	private int anInt3132 = 0;
@@ -39,15 +39,15 @@ public final class Class2_Sub3_Sub17 extends Class2_Sub3 {
 	@OriginalMember(owner = "client!jl", name = "d", descriptor = "(I)V")
 	@Override
 	public void method6479() {
-		Static29.method937();
+		TextureOp.createTrigonometryTables();
 	}
 
 	@OriginalMember(owner = "client!jl", name = "a", descriptor = "(BI)[I")
 	@Override
-	public int[] method6484(@OriginalArg(1) int arg0) {
-		@Pc(16) int[] local16 = super.aClass158_41.method3995(arg0);
+	public int[] getMonochromeOutput(@OriginalArg(1) int y) {
+		@Pc(16) int[] local16 = super.aClass158_41.method3995(y);
 		if (super.aClass158_41.aBoolean265) {
-			@Pc(24) int local24 = Static16.anIntArray322[arg0];
+			@Pc(24) int local24 = Static16.anIntArray322[y];
 			@Pc(30) int local30 = local24 - 2048 >> 1;
 			for (@Pc(32) int local32 = 0; local32 < Static227.anInt4036; local32++) {
 				@Pc(38) int local38 = Static334.anIntArray424[local32];
@@ -62,7 +62,7 @@ public final class Class2_Sub3_Sub17 extends Class2_Sub3 {
 				}
 				local58 -= local58 & 0xFFFFF000;
 				if (this.anInt3135 == 0) {
-					local58 = Static150.anIntArray173[local58 >> 4 & 0xFF] + 4096 >> 1;
+					local58 = TextureOp.SINE[local58 >> 4 & 0xFF] + 4096 >> 1;
 				} else if (this.anInt3135 == 2) {
 					local58 -= 2048;
 					if (local58 < 0) {

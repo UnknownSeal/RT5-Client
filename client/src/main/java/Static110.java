@@ -22,13 +22,13 @@ public final class Static110 {
 			return new Class169[0];
 		}
 		@Pc(21) PrivelegedRequest local21 = arg0.method3771();
-		while (local21.anInt993 == 0) {
+		while (local21.status == 0) {
 			Static231.sleep(10L);
 		}
-		if (local21.anInt993 == 2) {
+		if (local21.status == 2) {
 			return new Class169[0];
 		}
-		@Pc(45) int[] local45 = (int[]) local21.anObject2;
+		@Pc(45) int[] local45 = (int[]) local21.result;
 		@Pc(51) Class169[] local51 = new Class169[local45.length >> 2];
 		for (@Pc(53) int local53 = 0; local53 < local51.length; local53++) {
 			@Pc(59) Class169 local59 = new Class169();

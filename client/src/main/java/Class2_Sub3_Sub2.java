@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!ai")
-public final class Class2_Sub3_Sub2 extends Class2_Sub3 {
+public final class Class2_Sub3_Sub2 extends TextureOp {
 
 	@OriginalMember(owner = "client!ai", name = "U", descriptor = "Z")
 	private boolean aBoolean16 = true;
@@ -19,10 +19,10 @@ public final class Class2_Sub3_Sub2 extends Class2_Sub3 {
 
 	@OriginalMember(owner = "client!ai", name = "a", descriptor = "(BI)[I")
 	@Override
-	public int[] method6484(@OriginalArg(1) int arg0) {
-		@Pc(16) int[] local16 = super.aClass158_41.method3995(arg0);
+	public int[] getMonochromeOutput(@OriginalArg(1) int y) {
+		@Pc(16) int[] local16 = super.aClass158_41.method3995(y);
 		if (super.aClass158_41.aBoolean265) {
-			@Pc(33) int[] local33 = this.method6472(0, this.aBoolean16 ? Static148.anInt2718 - arg0 : arg0);
+			@Pc(33) int[] local33 = this.method6472(0, this.aBoolean16 ? Static148.anInt2718 - y : y);
 			if (this.aBoolean15) {
 				for (@Pc(46) int local46 = 0; local46 < Static227.anInt4036; local46++) {
 					local16[local46] = local33[Static73.anInt1721 - local46];
@@ -42,7 +42,7 @@ public final class Class2_Sub3_Sub2 extends Class2_Sub3 {
 		} else if (arg0 == 1) {
 			this.aBoolean16 = arg1.g1() == 1;
 		} else if (arg0 == 2) {
-			super.aBoolean487 = arg1.g1() == 1;
+			super.monochrome = arg1.g1() == 1;
 		}
 	}
 

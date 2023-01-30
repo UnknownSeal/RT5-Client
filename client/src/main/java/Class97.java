@@ -67,7 +67,7 @@ public final class Class97 {
 		}
 		@Pc(61) Class2_Sub2_Sub2_Sub2 local61 = new Class2_Sub2_Sub2_Sub2(arg0, arg1, 1);
 		this.aClass4_55.put(local61, arg0.method1779());
-		this.aClass246_1.method6340(local61);
+		this.aClass246_1.addTail(local61);
 		local61.aLong215 = 0L;
 	}
 
@@ -130,12 +130,12 @@ public final class Class97 {
 					if (local18.method4624()) {
 						@Pc(59) Class2_Sub2_Sub2_Sub2 local59 = new Class2_Sub2_Sub2_Sub2(arg0, local30, local18.anInt5040);
 						this.aClass4_55.put(local59, local18.key);
-						this.aClass246_1.method6340(local59);
+						this.aClass246_1.addTail(local59);
 						local59.aLong215 = 0L;
 						local18.unlink();
 						local18.unlinkSecondary();
 					} else {
-						this.aClass246_1.method6340(local18);
+						this.aClass246_1.addTail(local18);
 						local18.aLong215 = 0L;
 					}
 					return local30;

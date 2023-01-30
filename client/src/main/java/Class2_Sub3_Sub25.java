@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!pk")
-public final class Class2_Sub3_Sub25 extends Class2_Sub3 {
+public final class Class2_Sub3_Sub25 extends TextureOp {
 
 	@OriginalMember(owner = "client!pk", name = "N", descriptor = "[[I")
 	private int[][] anIntArrayArray41;
@@ -62,12 +62,12 @@ public final class Class2_Sub3_Sub25 extends Class2_Sub3 {
 
 	@OriginalMember(owner = "client!pk", name = "a", descriptor = "(BI)[I")
 	@Override
-	public int[] method6484(@OriginalArg(1) int arg0) {
-		@Pc(11) int[] local11 = super.aClass158_41.method3995(arg0);
+	public int[] getMonochromeOutput(@OriginalArg(1) int y) {
+		@Pc(11) int[] local11 = super.aClass158_41.method3995(y);
 		if (super.aClass158_41.aBoolean265) {
 			@Pc(22) int local22 = 0;
 			@Pc(29) int local29;
-			for (local29 = Static16.anIntArray322[arg0] + this.anInt5009; local29 < 0; local29 += 4096) {
+			for (local29 = Static16.anIntArray322[y] + this.anInt5009; local29 < 0; local29 += 4096) {
 			}
 			while (local29 > 4096) {
 				local29 -= 4096;
@@ -147,7 +147,7 @@ public final class Class2_Sub3_Sub25 extends Class2_Sub3 {
 			@Pc(95) int local95;
 			if (local76 > 0) {
 				local83 = this.anInt5008;
-				local95 = (Static382.method6360(4096, local12) - 2048) * this.anInt5015 >> 12;
+				local95 = (Static382.nextInt(local12, 4096) - 2048) * this.anInt5015 >> 12;
 				@Pc(103) int local103 = local83 + (local95 * local46 >> 12);
 				this.anIntArray350[local76] = this.anIntArray350[local76 - 1] + local103;
 			}
@@ -155,11 +155,11 @@ public final class Class2_Sub3_Sub25 extends Class2_Sub3 {
 			for (local83 = 0; local83 < this.anInt5021; local83++) {
 				if (local83 > 0) {
 					local95 = this.anInt5011;
-					@Pc(144) int local144 = (Static382.method6360(4096, local12) - 2048) * this.anInt5006 >> 12;
+					@Pc(144) int local144 = (Static382.nextInt(local12, 4096) - 2048) * this.anInt5006 >> 12;
 					local95 += local144 * local35 >> 12;
 					this.anIntArrayArray42[local76][local83] = this.anIntArrayArray42[local76][local83 - 1] + local95;
 				}
-				this.anIntArrayArray41[local76][local83] = this.anInt5010 > 0 ? 4096 - Static382.method6360(this.anInt5010, local12) : 4096;
+				this.anIntArrayArray41[local76][local83] = this.anInt5010 > 0 ? 4096 - Static382.nextInt(local12, this.anInt5010) : 4096;
 			}
 			this.anIntArrayArray42[local76][this.anInt5021] = 4096;
 		}

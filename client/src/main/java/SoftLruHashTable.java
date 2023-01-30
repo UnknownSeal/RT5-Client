@@ -44,12 +44,12 @@ public final class SoftLruHashTable {
 		if (local10.isSoft()) {
 			@Pc(53) Class2_Sub2_Sub6_Sub2 local53 = new Class2_Sub2_Sub6_Sub2(local25, local10.anInt6636);
 			this.table.put(local53, local10.key);
-			this.queue.method6340(local53);
+			this.queue.addTail(local53);
 			local53.aLong215 = 0L;
 			local10.unlink();
 			local10.unlinkSecondary();
 		} else {
-			this.queue.method6340(local10);
+			this.queue.addTail(local10);
 			local10.aLong215 = 0L;
 		}
 		return local25;
@@ -113,7 +113,7 @@ public final class SoftLruHashTable {
 		}
 		@Pc(49) Class2_Sub2_Sub6_Sub2 local49 = new Class2_Sub2_Sub6_Sub2(arg0, 1);
 		this.table.put(local49, arg1);
-		this.queue.method6340(local49);
+		this.queue.addTail(local49);
 		local49.aLong215 = 0;
 	}
 

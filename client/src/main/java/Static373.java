@@ -38,7 +38,7 @@ public final class Static373 {
 		} else {
 			Static336.method5704(25);
 		}
-		Static351.method5856(Static276.aClass130_4, true, Static256.A_TRANSLATABLE_STRING___102.getLocalisedText(Static295.anInt5581));
+		Static351.method5856(Static276.aClass130_4, true, Static256.A_TRANSLATABLE_STRING___102.getLocalisedText(client.language));
 		@Pc(59) int local59 = Static164.originX;
 		Static164.originX = (Static105.anInt2187 - (anInt7033 >> 4)) * 8;
 		@Pc(70) int local70 = Static148.originZ;

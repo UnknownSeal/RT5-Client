@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!vm")
-public final class Class2_Sub3_Sub37 extends Class2_Sub3 {
+public final class Class2_Sub3_Sub37 extends TextureOp {
 
 	@OriginalMember(owner = "client!vm", name = "X", descriptor = "[Lclient!pa;")
 	private Class173[] aClass173Array1;
@@ -59,7 +59,7 @@ public final class Class2_Sub3_Sub37 extends Class2_Sub3 {
 				}
 			}
 		} else if (arg0 == 1) {
-			super.aBoolean487 = arg1.g1() == 1;
+			super.monochrome = arg1.g1() == 1;
 		}
 	}
 
@@ -90,8 +90,8 @@ public final class Class2_Sub3_Sub37 extends Class2_Sub3 {
 
 	@OriginalMember(owner = "client!vm", name = "a", descriptor = "(BI)[I")
 	@Override
-	public int[] method6484(@OriginalArg(1) int arg0) {
-		@Pc(9) int[] local9 = super.aClass158_41.method3995(arg0);
+	public int[] getMonochromeOutput(@OriginalArg(1) int y) {
+		@Pc(9) int[] local9 = super.aClass158_41.method3995(y);
 		if (super.aClass158_41.aBoolean265) {
 			this.method6217(super.aClass158_41.method3997());
 		}

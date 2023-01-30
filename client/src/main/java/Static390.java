@@ -25,7 +25,7 @@ public final class Static390 {
 		Static334.aClass89_222 = null;
 		Static39.aClass89_35 = null;
 		Static268.anInt4955 = 0;
-		Static212.aClass2_Sub4_Sub2_3.offset = 0;
+		Static212.inboundBuffer.offset = 0;
 		Static151.anInt2773 = 0;
 		Static66.aClass89_57 = null;
 		for (@Pc(4365) int local4365 = 0; local4365 < Static50.aClass84Array1.length; local4365++) {
@@ -115,7 +115,7 @@ public final class Static390 {
 		Static348.method5827();
 		Static257.aShortArray79 = Static223.aShortArray78 = Static258.aShortArray95 = Static147.aShortArray54 = new short[256];
 		Static100.aBoolean156 = true;
-		Static330.aString62 = Static66.A_TRANSLATABLE_STRING___34.getLocalisedText(Static295.anInt5581);
+		Static330.aString62 = Static66.A_TRANSLATABLE_STRING___34.getLocalisedText(client.language);
 		Static292.anInt5510 = 0;
 		Static218.aClass177_Sub1_2.aBoolean365 = false;
 		Static218.aClass177_Sub1_2.aBoolean366 = false;

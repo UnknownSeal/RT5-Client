@@ -64,12 +64,12 @@ public final class Static340 {
 	public static void method5764() {
 		@Pc(7) Class204 local7 = null;
 		try {
-			@Pc(11) PrivelegedRequest local11 = Static328.aClass152_5.method3755();
-			while (local11.anInt993 == 0) {
+			@Pc(11) PrivelegedRequest local11 = GameShell.signlink.method3755();
+			while (local11.status == 0) {
 				Static231.sleep(1L);
 			}
-			if (local11.anInt993 == 1) {
-				local7 = (Class204) local11.anObject2;
+			if (local11.status == 1) {
+				local7 = (Class204) local11.result;
 				@Pc(41) Buffer local41 = new Buffer(Static112.anInt2294 * 6 + 3);
 				local41.p1(1);
 				local41.p2(Static112.anInt2294);
@@ -89,7 +89,7 @@ public final class Static340 {
 			}
 		} catch (@Pc(89) Exception local89) {
 		}
-		Static375.aLong221 = Static204.method3684();
+		Static375.aLong221 = MonotonicClock.currentTimeMillis();
 		Static273.aBoolean374 = false;
 	}
 

@@ -41,16 +41,16 @@ public final class Static352 {
 			return;
 		}
 		@Pc(13) Container local13;
-		if (Static222.aFrame1 == null) {
-			local13 = Static328.aClass152_5.anApplet1;
+		if (GameShell.frame == null) {
+			local13 = GameShell.signlink.applet;
 		} else {
-			local13 = Static222.aFrame1;
+			local13 = GameShell.frame;
 		}
 		Static142.anInt2663 = local13.getSize().width;
 		Static178.anInt2319 = local13.getSize().height;
 		@Pc(31) Insets local31;
-		if (local13 == Static222.aFrame1) {
-			local31 = Static222.aFrame1.getInsets();
+		if (local13 == GameShell.frame) {
+			local31 = GameShell.frame.getInsets();
 			Static178.anInt2319 -= local31.bottom + local31.top;
 			Static142.anInt2663 -= local31.right + local31.left;
 		}
@@ -84,8 +84,8 @@ public final class Static352 {
 		if (Static190.aClass19_8 != null) {
 			Static190.aClass19_8.method2803();
 		}
-		if (local13 == Static222.aFrame1) {
-			local31 = Static222.aFrame1.getInsets();
+		if (local13 == GameShell.frame) {
+			local31 = GameShell.frame.getInsets();
 			Static21.aCanvas1.setLocation(Static84.anInt1842 + local31.left, local31.top - -Static68.anInt1646);
 		} else {
 			Static21.aCanvas1.setLocation(Static84.anInt1842, Static68.anInt1646);

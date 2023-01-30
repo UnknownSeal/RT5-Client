@@ -52,10 +52,10 @@ public final class Static375 {
 				local39 = ":" + (local7.anInt81 + 7000);
 			}
 			@Pc(55) String local55 = "";
-			if (Static74.aString17 != null) {
-				local55 = "/p=" + Static74.aString17;
+			if (client.settings != null) {
+				local55 = "/p=" + client.settings;
 			}
-			@Pc(109) String local109 = "http://" + local7.aString2 + local39 + "/l=" + Static295.anInt5581 + "/a=" + Static165.anInt3149 + local55 + "/j" + (Static276.aBoolean375 ? "1" : "0") + ",o" + (Static237.aBoolean298 ? "1" : "0") + ",a2";
+			@Pc(109) String local109 = "http://" + local7.aString2 + local39 + "/l=" + client.language + "/a=" + Static165.anInt3149 + local55 + "/j" + (Static276.aBoolean375 ? "1" : "0") + ",o" + (Static237.aBoolean298 ? "1" : "0") + ",a2";
 			try {
 				Static144.instance.getAppletContext().showDocument(new URL(local109), "_self");
 				return true;
@@ -64,11 +64,11 @@ public final class Static375 {
 			}
 		} else {
 			Static120.anInt2385 = local7.anInt81;
-			Static216.aString36 = local7.aString2;
+			client.hostname = local7.aString2;
 			if (Static121.aClass127_4 != Static189.aClass127_6) {
-				Static16.anInt4758 = Static120.anInt2385 + 40000;
-				Static330.anInt6193 = Static120.anInt2385 + 50000;
-				Static85.anInt1843 = Static16.anInt4758;
+				client.defaultPort = Static120.anInt2385 + 40000;
+				client.alternatePort = Static120.anInt2385 + 50000;
+				client.port = client.defaultPort;
 			}
 			return true;
 		}

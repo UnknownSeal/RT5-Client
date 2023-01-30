@@ -19,28 +19,28 @@ public final class Static234 {
 		@Pc(79) PrivelegedRequest local79;
 		if (arg1 == 2) {
 			try {
-				arg0.anApplet1.getAppletContext().showDocument(new URL(arg0.anApplet1.getCodeBase(), arg2), "_blank");
+				arg0.applet.getAppletContext().showDocument(new URL(arg0.applet.getCodeBase(), arg2), "_blank");
 				local79 = new PrivelegedRequest();
-				local79.anInt993 = 1;
+				local79.status = 1;
 				return local79;
 			} catch (@Pc(85) Exception local85) {
 				local79 = new PrivelegedRequest();
-				local79.anInt993 = 2;
+				local79.status = 2;
 				return local79;
 			}
 		} else if (arg1 == 3) {
 			try {
-				Static404.method4627(arg0.anApplet1, "loggedout");
+				BrowserControl.call(arg0.applet, "loggedout");
 			} catch (@Pc(105) Throwable local105) {
 			}
 			try {
-				arg0.anApplet1.getAppletContext().showDocument(new URL(arg0.anApplet1.getCodeBase(), arg2), "_top");
+				arg0.applet.getAppletContext().showDocument(new URL(arg0.applet.getCodeBase(), arg2), "_top");
 				local79 = new PrivelegedRequest();
-				local79.anInt993 = 1;
+				local79.status = 1;
 				return local79;
 			} catch (@Pc(127) Exception local127) {
 				local79 = new PrivelegedRequest();
-				local79.anInt993 = 2;
+				local79.status = 2;
 				return local79;
 			}
 		} else {

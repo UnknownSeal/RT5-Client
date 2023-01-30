@@ -14,19 +14,19 @@ public final class Static318 {
 
 	@OriginalMember(owner = "client!sj", name = "a", descriptor = "(BLclient!cf;)Ljava/lang/String;")
 	public static String method5420(@OriginalArg(1) Class2_Sub5 arg0) {
-		return arg0.aString11 == null || arg0.aString11.length() <= 0 ? arg0.aString10 : arg0.aString10 + Static161.A_TRANSLATABLE_STRING___67.getLocalisedText(Static295.anInt5581) + arg0.aString11;
+		return arg0.aString11 == null || arg0.aString11.length() <= 0 ? arg0.aString10 : arg0.aString10 + Static161.A_TRANSLATABLE_STRING___67.getLocalisedText(client.language) + arg0.aString11;
 	}
 
 	@OriginalMember(owner = "client!sj", name = "b", descriptor = "(I)V")
 	public static void method5424() {
 		@Pc(12) Class204 local12 = null;
 		try {
-			@Pc(16) PrivelegedRequest local16 = Static328.aClass152_5.method3755();
-			while (local16.anInt993 == 0) {
+			@Pc(16) PrivelegedRequest local16 = GameShell.signlink.method3755();
+			while (local16.status == 0) {
 				Static231.sleep(1L);
 			}
-			if (local16.anInt993 == 1) {
-				local12 = (Class204) local16.anObject2;
+			if (local16.status == 1) {
+				local12 = (Class204) local16.result;
 				@Pc(40) byte[] local40 = new byte[(int) local12.method5195()];
 				@Pc(55) int local55;
 				for (@Pc(42) int local42 = 0; local42 < local40.length; local42 += local55) {
@@ -70,7 +70,7 @@ public final class Static318 {
 		if (Static179.aClass19_5 == null) {
 			@Pc(18) Canvas local18 = new Canvas();
 			local18.setSize(36, 32);
-			Static179.aClass19_5 = Static387.method2822(0, Static328.aClass152_5, Static128.anInterface2_4, local18, 0);
+			Static179.aClass19_5 = Static387.method2822(0, GameShell.signlink, Static128.anInterface2_4, local18, 0);
 			Static76.aClass130_2 = Static179.aClass19_5.method2857(Static101.method2165(Static183.anInt80, Static255.aClass197_64), Static396.method1688(Static30.aClass197_5, Static183.anInt80));
 		}
 		for (local50 = (Class2_Sub17) Static142.aClass135_21.method3550(); local50 != null; local50 = (Class2_Sub17) Static142.aClass135_21.method3551()) {

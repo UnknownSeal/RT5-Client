@@ -21,13 +21,13 @@ public final class Class206 implements Runnable {
 	@OriginalMember(owner = "client!ro", name = "<init>", descriptor = "(Lclient!ml;)V")
 	public Class206(@OriginalArg(0) Class152 arg0) {
 		@Pc(20) PrivelegedRequest local20 = arg0.startThread(this, 5);
-		while (local20.anInt993 == 0) {
+		while (local20.status == 0) {
 			Static231.sleep(10L);
 		}
-		if (local20.anInt993 == 2) {
+		if (local20.status == 2) {
 			throw new RuntimeException();
 		}
-		this.aThread3 = (Thread) local20.anObject2;
+		this.aThread3 = (Thread) local20.result;
 	}
 
 	@OriginalMember(owner = "client!ro", name = "run", descriptor = "()V")
@@ -54,7 +54,7 @@ public final class Class206 implements Runnable {
 					local14.aByteArray91 = local14.aClass207_4.method5260((int) local14.aLong215);
 				}
 			} catch (@Pc(74) Exception local74) {
-				Static262.method6252(local74, null);
+				Static262.report(local74, null);
 			}
 			local14.aBoolean416 = false;
 		}
@@ -64,7 +64,7 @@ public final class Class206 implements Runnable {
 	private void method5223(@OriginalArg(1) Class2_Sub2_Sub10_Sub2 arg0) {
 		@Pc(2) Class246 local2 = this.aClass246_9;
 		synchronized (this.aClass246_9) {
-			this.aClass246_9.method6340(arg0);
+			this.aClass246_9.addTail(arg0);
 			this.anInt5741++;
 			this.aClass246_9.notifyAll();
 		}

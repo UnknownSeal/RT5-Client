@@ -3,7 +3,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!qe")
-public final class Class2_Sub3_Sub27 extends Class2_Sub3 {
+public final class Class2_Sub3_Sub27 extends TextureOp {
 
 	@OriginalMember(owner = "client!qe", name = "<init>", descriptor = "()V")
 	public Class2_Sub3_Sub27() {
@@ -12,7 +12,7 @@ public final class Class2_Sub3_Sub27 extends Class2_Sub3 {
 
 	@OriginalMember(owner = "client!qe", name = "a", descriptor = "(BI)[I")
 	@Override
-	public int[] method6484(@OriginalArg(1) int arg0) {
+	public int[] getMonochromeOutput(@OriginalArg(1) int y) {
 		return Static334.anIntArray424;
 	}
 }

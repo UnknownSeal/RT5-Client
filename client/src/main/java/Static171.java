@@ -144,12 +144,12 @@ public final class Static171 {
 			Static136.anInt6778 = local118;
 			Static265.anInt4857 = local256;
 			Static4.anInt87 = local258;
-			if (Static17.aBoolean308 && Static287.aClass183_3.method4636() == 0) {
+			if (Static17.aBoolean308 && client.js5NetQueue.method4636() == 0) {
 				Static17.aBoolean308 = false;
 			}
 			if (Static17.aBoolean308) {
 				Static190.aClass19_8.method2868(local108, local104, local110, -16777216, local106);
-				Static351.method5856(Static276.aClass130_4, false, Static256.A_TRANSLATABLE_STRING___102.getLocalisedText(Static295.anInt5581));
+				Static351.method5856(Static276.aClass130_4, false, Static256.A_TRANSLATABLE_STRING___102.getLocalisedText(client.language));
 			}
 		} else {
 			Static190.aClass19_8.method2868(arg4, arg1, arg0, -16777216, arg3);

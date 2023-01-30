@@ -35,7 +35,7 @@ public final class Class116 {
 	public SecondaryNode method3151(@OriginalArg(0) long arg0) {
 		@Pc(15) SecondaryNode local15 = (SecondaryNode) this.aClass4_69.method90(arg0);
 		if (local15 != null) {
-			this.aClass246_3.method6340(local15);
+			this.aClass246_3.addTail(local15);
 		}
 		return local15;
 	}
@@ -63,6 +63,6 @@ public final class Class116 {
 			this.anInt3151--;
 		}
 		this.aClass4_69.put(arg0, arg1);
-		this.aClass246_3.method6340(arg0);
+		this.aClass246_3.addTail(arg0);
 	}
 }

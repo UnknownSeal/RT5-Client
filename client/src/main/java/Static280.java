@@ -15,8 +15,8 @@ public final class Static280 {
 		}
 		if (Static215.aString30.startsWith("win") && Static215.anInt3795 != 3) {
 			@Pc(32) String local32 = null;
-			if (arg1.anApplet1 != null) {
-				local32 = arg1.anApplet1.getParameter("haveie6");
+			if (arg1.applet != null) {
+				local32 = arg1.applet.getParameter("haveie6");
 			}
 			if (local32 == null || !local32.equals("1")) {
 				@Pc(52) PrivelegedRequest local52 = Static234.method4094(arg1, 0, arg0);

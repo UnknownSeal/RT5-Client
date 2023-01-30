@@ -11,7 +11,7 @@ public final class Static182 {
 	public static int[] anIntArray205;
 
 	@OriginalMember(owner = "client!kk", name = "a", descriptor = "I")
-	public static int anInt3420 = 0;
+	public static int loops = 0;
 
 	@OriginalMember(owner = "client!kk", name = "d", descriptor = "I")
 	public static int anInt3423 = 0;
@@ -95,7 +95,7 @@ public final class Static182 {
 		Static334.aClass89_222 = null;
 		Static231.aClass89_164 = null;
 		Static268.anInt4955 = 0;
-		Static212.aClass2_Sub4_Sub2_3.offset = 0;
+		Static212.inboundBuffer.offset = 0;
 		Static66.aClass89_57 = null;
 		Static160.method2955();
 		Static309.method5279();

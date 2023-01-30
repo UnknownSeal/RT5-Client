@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!sd")
-public final class Class2_Sub3_Sub33 extends Class2_Sub3 {
+public final class Class2_Sub3_Sub33 extends TextureOp {
 
 	@OriginalMember(owner = "client!sd", name = "P", descriptor = "[I")
 	private int[] anIntArray389;
@@ -62,10 +62,10 @@ public final class Class2_Sub3_Sub33 extends Class2_Sub3 {
 
 	@OriginalMember(owner = "client!sd", name = "a", descriptor = "(BI)[I")
 	@Override
-	public int[] method6484(@OriginalArg(1) int arg0) {
-		@Pc(17) int[] local17 = super.aClass158_41.method3995(arg0);
+	public int[] getMonochromeOutput(@OriginalArg(1) int y) {
+		@Pc(17) int[] local17 = super.aClass158_41.method3995(y);
 		if (super.aClass158_41.aBoolean265) {
-			@Pc(25) int local25 = Static16.anIntArray322[arg0];
+			@Pc(25) int local25 = Static16.anIntArray322[y];
 			@Pc(34) int local34;
 			if (this.anInt5917 == 0) {
 				@Pc(138) short local138 = 0;

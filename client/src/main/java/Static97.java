@@ -28,11 +28,11 @@ public final class Static97 {
 		Static202.anInt3714 = arg2;
 		Static16.aString51 = arg0;
 		if (Static374.aString70.equals("") || Static16.aString51.equals("")) {
-			Static41.anInt1046 = 3;
+			Static41.reply = 3;
 		} else if (Static120.anInt2385 == -1) {
 			Static60.anInt666 = 0;
 			Static154.anInt2803 = 1;
-			Static41.anInt1046 = -3;
+			Static41.reply = -3;
 			Static193.anInt3557 = 0;
 			@Pc(40) Buffer local40 = new Buffer(128);
 			local40.p1(10);

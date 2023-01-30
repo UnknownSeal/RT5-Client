@@ -13,16 +13,16 @@ public final class Class2_Sub2_Sub14 extends SecondaryNode {
 	private final int[] anIntArray371;
 
 	@OriginalMember(owner = "client!qm", name = "D", descriptor = "Lclient!jq;")
-	private final Class2_Sub3 aClass2_Sub3_2;
+	private final TextureOp aClass2_Sub3_2;
 
 	@OriginalMember(owner = "client!qm", name = "K", descriptor = "Lclient!jq;")
-	private final Class2_Sub3 aClass2_Sub3_3;
+	private final TextureOp aClass2_Sub3_3;
 
 	@OriginalMember(owner = "client!qm", name = "C", descriptor = "Lclient!jq;")
-	private final Class2_Sub3 aClass2_Sub3_1;
+	private final TextureOp aClass2_Sub3_1;
 
 	@OriginalMember(owner = "client!qm", name = "F", descriptor = "[Lclient!jq;")
-	private final Class2_Sub3[] aClass2_Sub3Array30;
+	private final TextureOp[] aClass2_Sub3Array30;
 
 	static {
 		new LocalisedText("You have been permanently muted due to breaking a rule.", "Du wurdest permanent stumm geschaltet, da du gegen eine Regel verstoßen hast.", "L'accès à la messagerie instantanée vous a définitivement été retiré suite à une infraction.", "Você foi permanentemente vetado por ter violado uma regra.");
@@ -34,17 +34,17 @@ public final class Class2_Sub2_Sub14 extends SecondaryNode {
 		@Pc(9) int local9 = 0;
 		@Pc(11) int local11 = 0;
 		@Pc(14) int[][] local14 = new int[local7][];
-		this.aClass2_Sub3Array30 = new Class2_Sub3[local7];
+		this.aClass2_Sub3Array30 = new TextureOp[local7];
 		@Pc(50) int local50;
 		for (@Pc(20) int local20 = 0; local20 < local7; local20++) {
-			@Pc(26) Class2_Sub3 local26 = Static286.method4927(arg0);
+			@Pc(26) TextureOp local26 = Static286.method4927(arg0);
 			if (local26.method6477() >= 0) {
 				local9++;
 			}
 			if (local26.method6481() >= 0) {
 				local11++;
 			}
-			@Pc(43) int local43 = local26.aClass2_Sub3Array42.length;
+			@Pc(43) int local43 = local26.childOps.length;
 			local14[local20] = new int[local43];
 			for (local50 = 0; local50 < local43; local50++) {
 				local14[local20][local50] = arg0.g1();
@@ -56,10 +56,10 @@ public final class Class2_Sub2_Sub14 extends SecondaryNode {
 		local9 = 0;
 		local11 = 0;
 		for (@Pc(95) int local95 = 0; local95 < local7; local95++) {
-			@Pc(102) Class2_Sub3 local102 = this.aClass2_Sub3Array30[local95];
-			local50 = local102.aClass2_Sub3Array42.length;
+			@Pc(102) TextureOp local102 = this.aClass2_Sub3Array30[local95];
+			local50 = local102.childOps.length;
 			for (@Pc(108) int local108 = 0; local108 < local50; local108++) {
-				local102.aClass2_Sub3Array42[local108] = this.aClass2_Sub3Array30[local14[local95][local108]];
+				local102.childOps[local108] = this.aClass2_Sub3Array30[local14[local95][local108]];
 			}
 			@Pc(130) int local130 = local102.method6477();
 			@Pc(134) int local134 = local102.method6481();
@@ -90,8 +90,8 @@ public final class Class2_Sub2_Sub14 extends SecondaryNode {
 			@Pc(71) int[] local71;
 			@Pc(79) int[] local79;
 			@Pc(75) int[] local75;
-			if (this.aClass2_Sub3_3.aBoolean487) {
-				@Pc(87) int[] local87 = this.aClass2_Sub3_3.method6484(local55);
+			if (this.aClass2_Sub3_3.monochrome) {
+				@Pc(87) int[] local87 = this.aClass2_Sub3_3.getMonochromeOutput(local55);
 				local71 = local87;
 				local75 = local87;
 				local79 = local87;
@@ -102,8 +102,8 @@ public final class Class2_Sub2_Sub14 extends SecondaryNode {
 				local79 = local67[1];
 			}
 			@Pc(105) int[] local105;
-			if (this.aClass2_Sub3_1.aBoolean487) {
-				local105 = this.aClass2_Sub3_1.method6484(local55);
+			if (this.aClass2_Sub3_1.monochrome) {
+				local105 = this.aClass2_Sub3_1.getMonochromeOutput(local55);
 			} else {
 				local105 = this.aClass2_Sub3_1.method6478(local55)[0];
 			}
@@ -111,8 +111,8 @@ public final class Class2_Sub2_Sub14 extends SecondaryNode {
 				local53 = local55 << 2;
 			}
 			@Pc(131) int[] local131;
-			if (this.aClass2_Sub3_2.aBoolean487) {
-				local131 = this.aClass2_Sub3_2.method6484(local55);
+			if (this.aClass2_Sub3_2.monochrome) {
+				local131 = this.aClass2_Sub3_2.getMonochromeOutput(local55);
 			} else {
 				local131 = this.aClass2_Sub3_2.method6478(local55)[0];
 			}
@@ -193,8 +193,8 @@ public final class Class2_Sub2_Sub14 extends SecondaryNode {
 			@Pc(87) int[] local87;
 			@Pc(89) int[] local89;
 			@Pc(91) int[] local91;
-			if (this.aClass2_Sub3_3.aBoolean487) {
-				@Pc(85) int[] local85 = this.aClass2_Sub3_3.method6484(local69);
+			if (this.aClass2_Sub3_3.monochrome) {
+				@Pc(85) int[] local85 = this.aClass2_Sub3_3.getMonochromeOutput(local69);
 				local87 = local85;
 				local89 = local85;
 				local91 = local85;
@@ -261,8 +261,8 @@ public final class Class2_Sub2_Sub14 extends SecondaryNode {
 			@Pc(70) int[] local70;
 			@Pc(72) int[] local72;
 			@Pc(66) int[] local66;
-			if (this.aClass2_Sub3_3.aBoolean487) {
-				local66 = this.aClass2_Sub3_3.method6484(local54);
+			if (this.aClass2_Sub3_3.monochrome) {
+				local66 = this.aClass2_Sub3_3.getMonochromeOutput(local54);
 				local68 = local66;
 				local70 = local66;
 				local72 = local66;
@@ -272,8 +272,8 @@ public final class Class2_Sub2_Sub14 extends SecondaryNode {
 				local70 = local80[1];
 				local72 = local80[2];
 			}
-			if (this.aClass2_Sub3_1.aBoolean487) {
-				local66 = this.aClass2_Sub3_1.method6484(local54);
+			if (this.aClass2_Sub3_1.monochrome) {
+				local66 = this.aClass2_Sub3_1.getMonochromeOutput(local54);
 			} else {
 				local66 = this.aClass2_Sub3_1.method6478(local54)[0];
 			}

@@ -19,14 +19,14 @@ public final class Class154 {
 	private final Class183 aClass183_2;
 
 	@OriginalMember(owner = "client!mq", name = "a", descriptor = "Lclient!jj;")
-	private Class2_Sub2_Sub10_Sub1 aClass2_Sub2_Sub10_Sub1_1;
+	private Js5NetRequest aJs5NetRequest;
 
 	@OriginalMember(owner = "client!mq", name = "<init>", descriptor = "(Lclient!pp;Lclient!ro;)V")
 	public Class154(@OriginalArg(0) Class183 arg0, @OriginalArg(1) Class206 arg1) {
 		this.aClass206_3 = arg1;
 		this.aClass183_2 = arg0;
 		if (!this.aClass183_2.method4643()) {
-			this.aClass2_Sub2_Sub10_Sub1_1 = this.aClass183_2.method4641(true, 255, (byte) 0, 255);
+			this.aJs5NetRequest = this.aClass183_2.method4641(true, 255, (byte) 0, 255);
 		}
 	}
 
@@ -40,16 +40,16 @@ public final class Class154 {
 		if (this.aClass2_Sub4_6 != null) {
 			return true;
 		}
-		if (this.aClass2_Sub2_Sub10_Sub1_1 == null) {
+		if (this.aJs5NetRequest == null) {
 			if (this.aClass183_2.method4643()) {
 				return false;
 			}
-			this.aClass2_Sub2_Sub10_Sub1_1 = this.aClass183_2.method4641(true, 255, (byte) 0, 255);
+			this.aJs5NetRequest = this.aClass183_2.method4641(true, 255, (byte) 0, 255);
 		}
-		if (this.aClass2_Sub2_Sub10_Sub1_1.aBoolean416) {
+		if (this.aJs5NetRequest.aBoolean416) {
 			return false;
 		} else {
-			this.aClass2_Sub4_6 = new Buffer(this.aClass2_Sub2_Sub10_Sub1_1.method5647());
+			this.aClass2_Sub4_6 = new Buffer(this.aJs5NetRequest.method5647());
 			this.aClass25_Sub1Array1 = new Class25_Sub1[(this.aClass2_Sub4_6.data.length - 5) / 8];
 			return true;
 		}

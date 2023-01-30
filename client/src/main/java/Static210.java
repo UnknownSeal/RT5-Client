@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static210 {
 
 	@OriginalMember(owner = "client!mg", name = "x", descriptor = "[[B")
-	public static byte[][] aByteArrayArray7;
+	public static byte[][] npcBytes;
 
 	@OriginalMember(owner = "client!mg", name = "y", descriptor = "I")
 	public static int anInt3773;

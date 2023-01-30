@@ -7,7 +7,7 @@ public final class Static232 {
 	public static Class169[] aClass169Array1;
 
 	@OriginalMember(owner = "client!ng", name = "n", descriptor = "[[B")
-	public static byte[][] aByteArrayArray9;
+	public static byte[][] underwaterMapBytes;
 
 	@OriginalMember(owner = "client!ng", name = "o", descriptor = "Lclient!on;")
 	public static Class14 aClass14_4;

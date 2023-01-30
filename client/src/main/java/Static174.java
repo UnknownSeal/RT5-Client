@@ -58,46 +58,46 @@ public final class Static174 {
 	}
 
 	@OriginalMember(owner = "client!kb", name = "a", descriptor = "(ILjava/lang/Throwable;)Ljava/lang/String;")
-	public static String method1509(@OriginalArg(1) Throwable arg0) throws IOException {
-		@Pc(10) String local10;
-		if (arg0 instanceof RuntimeException_Sub1) {
-			@Pc(15) RuntimeException_Sub1 local15 = (RuntimeException_Sub1) arg0;
-			arg0 = local15.aThrowable1;
-			local10 = local15.aString23 + " | ";
+	public static String toString(@OriginalArg(1) Throwable exception) throws IOException {
+		@Pc(10) String message;
+		if (exception instanceof TracingException) {
+			@Pc(15) TracingException tracingException = (TracingException) exception;
+			exception = tracingException.message;
+			message = tracingException.cause + " | ";
 		} else {
-			local10 = "";
+			message = "";
 		}
-		@Pc(32) StringWriter local32 = new StringWriter();
-		@Pc(37) PrintWriter local37 = new PrintWriter(local32);
-		arg0.printStackTrace(local37);
-		local37.close();
-		@Pc(45) String local45 = local32.toString();
-		@Pc(53) BufferedReader local53 = new BufferedReader(new StringReader(local45));
-		@Pc(56) String local56 = local53.readLine();
+		@Pc(32) StringWriter stringWriter = new StringWriter();
+		@Pc(37) PrintWriter printWriter = new PrintWriter(stringWriter);
+		exception.printStackTrace(printWriter);
+		printWriter.close();
+		@Pc(45) String stackTrace = stringWriter.toString();
+		@Pc(53) BufferedReader reader = new BufferedReader(new StringReader(stackTrace));
+		@Pc(56) String firstLine = reader.readLine();
 		while (true) {
-			@Pc(59) String local59 = local53.readLine();
-			if (local59 == null) {
-				return local10 + "| " + local56;
+			@Pc(59) String line = reader.readLine();
+			if (line == null) {
+				return message + "| " + firstLine;
 			}
-			@Pc(65) int local65 = local59.indexOf(40);
-			@Pc(72) int local72 = local59.indexOf(41, local65 + 1);
+			@Pc(65) int openingBracketIndex = line.indexOf(40);
+			@Pc(72) int closingBracketIndex = line.indexOf(41, openingBracketIndex + 1);
 			@Pc(77) String local77;
-			if (local65 == -1) {
-				local77 = local59;
+			if (openingBracketIndex == -1) {
+				local77 = line;
 			} else {
-				local77 = local59.substring(0, local65);
+				local77 = line.substring(0, openingBracketIndex);
 			}
 			local77 = local77.trim();
 			local77 = local77.substring(local77.lastIndexOf(32) + 1);
 			local77 = local77.substring(local77.lastIndexOf(9) + 1);
-			local10 = local10 + local77;
-			if (local65 != -1 && local72 != -1) {
-				@Pc(123) int local123 = local59.indexOf(".java:", local65);
-				if (local123 >= 0) {
-					local10 = local10 + local59.substring(local123 + 5, local72);
+			message = message + local77;
+			if (openingBracketIndex != -1 && closingBracketIndex != -1) {
+				@Pc(123) int javaSuffixIndex = line.indexOf(".java:", openingBracketIndex);
+				if (javaSuffixIndex >= 0) {
+					message = message + line.substring(javaSuffixIndex + 5, closingBracketIndex);
 				}
 			}
-			local10 = local10 + ' ';
+			message = message + ' ';
 		}
 	}
 }

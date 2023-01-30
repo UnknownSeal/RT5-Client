@@ -63,14 +63,14 @@ public final class Class246 {
 	}
 
 	@OriginalMember(owner = "client!wc", name = "a", descriptor = "(ILclient!tl;)V")
-	public void method6340(@OriginalArg(1) SecondaryNode arg0) {
-		if (arg0.secondaryPrevious != null) {
-			arg0.unlinkSecondary();
+	public void addTail(@OriginalArg(1) SecondaryNode node) {
+		if (node.secondaryPrevious != null) {
+			node.unlinkSecondary();
 		}
-		arg0.secondaryPrevious = this.sentinel.secondaryPrevious;
-		arg0.secondaryNext = this.sentinel;
-		arg0.secondaryPrevious.secondaryNext = arg0;
-		arg0.secondaryNext.secondaryPrevious = arg0;
+		node.secondaryPrevious = this.sentinel.secondaryPrevious;
+		node.secondaryNext = this.sentinel;
+		node.secondaryPrevious.secondaryNext = node;
+		node.secondaryNext.secondaryPrevious = node;
 	}
 
 	@OriginalMember(owner = "client!wc", name = "b", descriptor = "(B)V")

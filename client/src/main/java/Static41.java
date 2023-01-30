@@ -14,7 +14,7 @@ public final class Static41 {
 	public static int anInt1038 = 0;
 
 	@OriginalMember(owner = "client!ch", name = "ab", descriptor = "I")
-	public static int anInt1046 = -2;
+	public static int reply = -2;
 
 	@OriginalMember(owner = "client!ch", name = "cb", descriptor = "I")
 	public static int anInt1048 = 0;

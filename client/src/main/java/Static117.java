@@ -55,7 +55,7 @@ public final class Static117 {
 			Static138.aClass13_8.method6384(local7, local9);
 			Static75.aClass13_5.method6384(local7 + local11 - Static75.aClass13_5.method6388(), local9);
 		}
-		Static52.aClass130_1.method5896(local7 + 3, -1, local9 + 14, Static322.anInt6030 | 0xFF000000, Static180.A_TRANSLATABLE_STRING___74.getLocalisedText(Static295.anInt5581));
+		Static52.aClass130_1.method5896(local7 + 3, -1, local9 + 14, Static322.anInt6030 | 0xFF000000, Static180.A_TRANSLATABLE_STRING___74.getLocalisedText(client.language));
 		arg0.method2901(local7, local9 + 20, local11, local15 - 20, -Static260.anInt6717 + 255 << 24 | Static242.anInt4446, 1);
 		local87 = Static226.aClass119_1.method3303();
 		local89 = Static226.aClass119_1.method3312();

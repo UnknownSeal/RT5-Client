@@ -37,7 +37,7 @@ public final class Static116 {
 			}
 			for (@Pc(38) int local38 = 0; local38 < 255; local38++) {
 				@Pc(45) int local45 = 255 - local38;
-				@Pc(50) int local50 = Static382.method6360(local45, local23);
+				@Pc(50) int local50 = Static382.nextInt(local23, local45);
 				@Pc(54) byte local54 = local17[local50];
 				local17[local50] = local17[local45];
 				local17[local45] = local17[511 - local38] = local54;

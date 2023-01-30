@@ -33,7 +33,7 @@ public final class Class129 implements Runnable {
 				Static283.method4875(this.aClass152_3, null);
 			}
 		} catch (@Pc(43) Exception local43) {
-			Static262.method6252(local43, null);
+			Static262.report(local43, null);
 		} finally {
 			@Pc(53) Object local53 = null;
 			this.aBoolean226 = false;

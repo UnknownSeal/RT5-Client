@@ -7,6 +7,8 @@ public final class LocalisedText {
 
     @OriginalMember(owner = "client!hs", name = "t", descriptor = "Lclient!gd;")
     public static final LocalisedText LENT_ITEM_RETURN = new LocalisedText("Discard", "Ablegen", "Jeter", "Descartar");
+    @OriginalMember(owner = "client!we", name = "C", descriptor = "Lclient!gd;")
+    public static final LocalisedText FACEHERE = new LocalisedText("Face here", "Hierhin drehen", "Regarder dans cette direction", "Virar para cá");
     @OriginalMember(owner = "client!gd", name = "f", descriptor = "[Ljava/lang/String;")
 	private final String[] localisedText;
 

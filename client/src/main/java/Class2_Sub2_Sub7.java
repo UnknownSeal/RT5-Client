@@ -45,13 +45,13 @@ public final class Class2_Sub2_Sub7 extends SecondaryNode {
 	public void method2311() {
 		super.aLong215 |= Long.MIN_VALUE;
 		if (this.method2308() == 0L) {
-			Static368.aClass246_10.method6340(this);
+			Static368.aClass246_10.addTail(this);
 		}
 	}
 
 	@OriginalMember(owner = "client!gg", name = "d", descriptor = "(I)V")
 	public void method2312() {
-		super.aLong215 = Static204.method3684() + 500L | super.aLong215 & Long.MIN_VALUE;
-		Static208.aClass246_4.method6340(this);
+		super.aLong215 = MonotonicClock.currentTimeMillis() + 500L | super.aLong215 & Long.MIN_VALUE;
+		Static208.aClass246_4.addTail(this);
 	}
 }

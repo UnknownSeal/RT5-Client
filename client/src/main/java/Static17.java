@@ -33,8 +33,8 @@ public final class Static17 {
 	@OriginalMember(owner = "client!at", name = "a", descriptor = "(ZZ)V")
 	public static void method4209(@OriginalArg(1) boolean arg0) {
 		while (true) {
-			if (Static212.aClass2_Sub4_Sub2_3.method4872(Static82.anInt1836) >= 15) {
-				@Pc(16) int local16 = Static212.aClass2_Sub4_Sub2_3.gBit(15);
+			if (Static212.inboundBuffer.method4872(Static82.anInt1836) >= 15) {
+				@Pc(16) int local16 = Static212.inboundBuffer.gBit(15);
 				if (local16 != 32767) {
 					@Pc(21) boolean local21 = false;
 					if (Static365.npcs[local16] == null) {
@@ -50,36 +50,36 @@ public final class Static17 {
 					}
 					@Pc(71) int local71;
 					if (arg0) {
-						local71 = Static212.aClass2_Sub4_Sub2_3.gBit(8);
+						local71 = Static212.inboundBuffer.gBit(8);
 						if (local71 > 127) {
 							local71 -= 256;
 						}
 					} else {
-						local71 = Static212.aClass2_Sub4_Sub2_3.gBit(5);
+						local71 = Static212.inboundBuffer.gBit(5);
 						if (local71 > 15) {
 							local71 -= 32;
 						}
 					}
 					@Pc(97) int local97;
 					if (arg0) {
-						local97 = Static212.aClass2_Sub4_Sub2_3.gBit(8);
+						local97 = Static212.inboundBuffer.gBit(8);
 						if (local97 > 127) {
 							local97 -= 256;
 						}
 					} else {
-						local97 = Static212.aClass2_Sub4_Sub2_3.gBit(5);
+						local97 = Static212.inboundBuffer.gBit(5);
 						if (local97 > 15) {
 							local97 -= 32;
 						}
 					}
-					@Pc(119) int local119 = Static212.aClass2_Sub4_Sub2_3.gBit(1);
+					@Pc(119) int local119 = Static212.inboundBuffer.gBit(1);
 					if (local119 == 1) {
 						Static277.anIntArray361[Static343.anInt6390++] = local16;
 					}
-					local42.setType(Static6.aClass219_1.get(Static212.aClass2_Sub4_Sub2_3.gBit(14)));
-					@Pc(151) int local151 = Static212.aClass2_Sub4_Sub2_3.gBit(3) + 4 << 11 & 0x3929;
-					@Pc(156) int local156 = Static212.aClass2_Sub4_Sub2_3.gBit(2);
-					@Pc(161) int local161 = Static212.aClass2_Sub4_Sub2_3.gBit(1);
+					local42.setType(Static6.aClass219_1.get(Static212.inboundBuffer.gBit(14)));
+					@Pc(151) int local151 = Static212.inboundBuffer.gBit(3) + 4 << 11 & 0x3929;
+					@Pc(156) int local156 = Static212.inboundBuffer.gBit(2);
+					@Pc(161) int local161 = Static212.inboundBuffer.gBit(1);
 					local42.setSize(local42.type.size);
 					local42.anInt4604 = local42.type.rotationspeed << 3;
 					if (local42.anInt4604 == 0) {
@@ -94,7 +94,7 @@ public final class Static17 {
 					continue;
 				}
 			}
-			Static212.aClass2_Sub4_Sub2_3.accessBytes();
+			Static212.inboundBuffer.accessBytes();
 			return;
 		}
 	}
@@ -172,10 +172,10 @@ public final class Static17 {
 	public static void method4214(@OriginalArg(0) Frame arg0, @OriginalArg(2) Class152 arg1) {
 		while (true) {
 			@Pc(19) PrivelegedRequest local19 = arg1.method3762(arg0);
-			while (local19.anInt993 == 0) {
+			while (local19.status == 0) {
 				Static231.sleep(10L);
 			}
-			if (local19.anInt993 == 1) {
+			if (local19.status == 1) {
 				arg0.setVisible(false);
 				arg0.dispose();
 				return;

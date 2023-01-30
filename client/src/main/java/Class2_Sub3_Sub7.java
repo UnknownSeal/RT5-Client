@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!dj")
-public final class Class2_Sub3_Sub7 extends Class2_Sub3 {
+public final class Class2_Sub3_Sub7 extends TextureOp {
 
 	@OriginalMember(owner = "client!dj", name = "Z", descriptor = "I")
 	private int anInt1528 = 4096;
@@ -29,19 +29,19 @@ public final class Class2_Sub3_Sub7 extends Class2_Sub3 {
 
 	@OriginalMember(owner = "client!dj", name = "a", descriptor = "(BI)[I")
 	@Override
-	public int[] method6484(@OriginalArg(1) int arg0) {
-		@Pc(11) int[] local11 = super.aClass158_41.method3995(arg0);
+	public int[] getMonochromeOutput(@OriginalArg(1) int y) {
+		@Pc(11) int[] local11 = super.aClass158_41.method3995(y);
 		if (super.aClass158_41.aBoolean265) {
 			@Pc(28) int local28 = this.anInt1528 >> 1;
 			@Pc(33) int[][] local33 = super.aClass158_41.method3997();
 			@Pc(40) Random local40 = new Random((long) this.anInt1529);
 			for (@Pc(42) int local42 = 0; local42 < this.anInt1519; local42++) {
-				@Pc(62) int local62 = this.anInt1528 <= 0 ? this.anInt1524 : this.anInt1524 + Static382.method6360(this.anInt1528, local40) - local28;
+				@Pc(62) int local62 = this.anInt1528 <= 0 ? this.anInt1524 : this.anInt1524 + Static382.nextInt(local40, this.anInt1528) - local28;
 				@Pc(68) int local68 = local62 >> 4 & 0xFF;
-				@Pc(73) int local73 = Static382.method6360(Static227.anInt4036, local40);
-				@Pc(78) int local78 = Static382.method6360(Static24.anInt638, local40);
-				@Pc(90) int local90 = local73 + (this.anInt1527 * Static181.anIntArray203[local68] >> 12);
-				@Pc(102) int local102 = local78 + (this.anInt1527 * Static150.anIntArray173[local68] >> 12);
+				@Pc(73) int local73 = Static382.nextInt(local40, Static227.anInt4036);
+				@Pc(78) int local78 = Static382.nextInt(local40, Static24.anInt638);
+				@Pc(90) int local90 = local73 + (this.anInt1527 * TextureOp.COSINE[local68] >> 12);
+				@Pc(102) int local102 = local78 + (this.anInt1527 * TextureOp.SINE[local68] >> 12);
 				@Pc(107) int local107 = local102 - local78;
 				@Pc(112) int local112 = local90 - local73;
 				if (local112 != 0 || local107 != 0) {
@@ -75,7 +75,7 @@ public final class Class2_Sub3_Sub7 extends Class2_Sub3 {
 					@Pc(184) int local184 = local102 - local78;
 					@Pc(189) int local189 = -local149 / 2;
 					@Pc(193) int local193 = 2048 / local149;
-					@Pc(202) int local202 = 1024 - (Static382.method6360(4096, local40) >> 2);
+					@Pc(202) int local202 = 1024 - (Static382.nextInt(local40, 4096) >> 2);
 					if (local184 < 0) {
 						local184 = -local184;
 					}
@@ -120,6 +120,6 @@ public final class Class2_Sub3_Sub7 extends Class2_Sub3 {
 	@OriginalMember(owner = "client!dj", name = "d", descriptor = "(I)V")
 	@Override
 	public void method6479() {
-		Static29.method937();
+		TextureOp.createTrigonometryTables();
 	}
 }

@@ -12,7 +12,7 @@ public final class Static347 {
 	public static boolean aBoolean434 = false;
 
 	@OriginalMember(owner = "client!ub", name = "Z", descriptor = "I")
-	public static int anInt6441 = 0;
+	public static int step = 0;
 
 	@OriginalMember(owner = "client!ub", name = "bb", descriptor = "I")
 	public static int anInt6442 = 0;

@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static335 {
 
 	@OriginalMember(owner = "client!ti", name = "A", descriptor = "Lclient!iu;")
-	public static BufferedSocket aBufferedSocket_4;
+	public static BufferedSocket socket;
 
 	@OriginalMember(owner = "client!ti", name = "r", descriptor = "Lclient!hu;")
 	public static final SoftLruHashTable A_SOFT_LRU_HASH_TABLE___57 = new SoftLruHashTable(200);

@@ -39,7 +39,7 @@ public final class Static70 {
 			}
 			return local11 - local14;
 		} else if (arg3 == 2) {
-			return Static233.method4068(arg2.method75().aString28, arg1.method75().aString28, Static295.anInt5581);
+			return Static233.method4068(arg2.method75().aString28, arg1.method75().aString28, client.language);
 		} else if (arg3 == 3) {
 			if (arg1.aString1.equals("-")) {
 				if (arg2.aString1.equals("-")) {
@@ -52,7 +52,7 @@ public final class Static70 {
 			} else if (arg2.aString1.equals("-")) {
 				return arg0 ? 1 : -1;
 			} else {
-				return Static233.method4068(arg2.aString1, arg1.aString1, Static295.anInt5581);
+				return Static233.method4068(arg2.aString1, arg1.aString1, client.language);
 			}
 		} else if (arg3 == 4) {
 			if (arg1.method67()) {

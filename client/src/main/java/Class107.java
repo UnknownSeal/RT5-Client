@@ -117,15 +117,15 @@ public final class Class107 {
 			newType.generateLent(this.get(newType.lentLink), this.get(newType.lentTemplate));
 		}
 		if (!this.allowMembers && newType.members) {
-			newType.aString55 = Static101.A_TRANSLATABLE_STRING___44.getLocalisedText(this.anInt2781);
+			newType.name = Static101.A_TRANSLATABLE_STRING___44.getLocalisedText(this.anInt2781);
 			newType.iOps = this.aStringArray22;
 			newType.anIntArray364 = null;
 			newType.team = 0;
-			newType.aBoolean381 = false;
+			newType.stockMarket = false;
 			newType.aStringArray50 = this.aStringArray21;
-			if (newType.aClass4_103 != null) {
+			if (newType.params != null) {
 				@Pc(194) boolean local194 = false;
-				for (@Pc(199) Node local199 = newType.aClass4_103.method80(); local199 != null; local199 = newType.aClass4_103.method79()) {
+				for (@Pc(199) Node local199 = newType.params.method80(); local199 != null; local199 = newType.params.method79()) {
 					@Pc(211) Class240 local211 = this.aClass18_1.method565((int) local199.key);
 					if (local211.aBoolean476) {
 						local199.unlink();
@@ -134,7 +134,7 @@ public final class Class107 {
 					}
 				}
 				if (!local194) {
-					newType.aClass4_103 = null;
+					newType.params = null;
 				}
 			}
 		}
@@ -170,7 +170,7 @@ public final class Class107 {
 	}
 
 	@OriginalMember(owner = "client!io", name = "a", descriptor = "(ZB)V")
-	public void method2762(@OriginalArg(0) boolean arg0) {
+	public void setAllowMembers(@OriginalArg(0) boolean arg0) {
 		if (this.allowMembers != arg0) {
 			this.allowMembers = arg0;
 			this.method2761();

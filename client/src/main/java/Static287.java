@@ -7,9 +7,6 @@ public final class Static287 {
 	@OriginalMember(owner = "client!ql", name = "g", descriptor = "Lclient!ui;")
 	public static Class233 aClass233_1;
 
-	@OriginalMember(owner = "client!ql", name = "z", descriptor = "Lclient!pp;")
-	public static Class183 aClass183_3;
-
 	@OriginalMember(owner = "client!ql", name = "k", descriptor = "[Ljava/lang/String;")
 	public static final String[] aStringArray52 = new String[5];
 
@@ -17,29 +14,29 @@ public final class Static287 {
 	public static final int[] anIntArray369 = new int[] { 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99 };
 
 	@OriginalMember(owner = "client!ql", name = "a", descriptor = "(BI)I")
-	public static int bitCount(@OriginalArg(1) int arg0) {
-		@Pc(5) int local5 = 0;
-		if (arg0 < 0 || arg0 >= 65536) {
-			local5 += 16;
-			arg0 >>>= 0x10;
+	public static int bitCount(@OriginalArg(1) int v) {
+		@Pc(5) int bits = 0;
+		if (v < 0 || v >= 65536) {
+			bits += 16;
+			v >>>= 0x10;
 		}
-		if (arg0 >= 256) {
-			arg0 >>>= 0x8;
-			local5 += 8;
+		if (v >= 256) {
+			v >>>= 0x8;
+			bits += 8;
 		}
-		if (arg0 >= 16) {
-			arg0 >>>= 0x4;
-			local5 += 4;
+		if (v >= 16) {
+			v >>>= 0x4;
+			bits += 4;
 		}
-		if (arg0 >= 4) {
-			arg0 >>>= 0x2;
-			local5 += 2;
+		if (v >= 4) {
+			v >>>= 0x2;
+			bits += 2;
 		}
-		if (arg0 >= 1) {
-			local5++;
-			arg0 >>>= 0x1;
+		if (v >= 1) {
+			bits++;
+			v >>>= 0x1;
 		}
-		return arg0 + local5;
+		return v + bits;
 	}
 
 	@OriginalMember(owner = "client!ql", name = "a", descriptor = "(III)Z")

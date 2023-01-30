@@ -29,7 +29,7 @@ public final class Class187 {
 
 	static {
 		for (@Pc(11) int local11 = 0; local11 < 4096; local11++) {
-			anIntArray360[local11] = Static271.method4566(local11);
+			anIntArray360[local11] = TextureOp.perlinFade(local11);
 		}
 	}
 

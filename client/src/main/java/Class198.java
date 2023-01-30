@@ -46,7 +46,7 @@ public final class Class198 {
 	public int[] anIntArray382;
 
 	@OriginalMember(owner = "client!ra", name = "i", descriptor = "I")
-	public final int anInt5589;
+	public final int checksum;
 
 	static {
 		new LocalisedText("Unable to add name - unknown player.", "Name konnte nicht hinzugefügt werden - Spieler unbekannt.", "Impossible d'ajouter le nom - joueur inconnu.", "Não foi possível adicionar um nome - jogador desconhecido.");
@@ -54,8 +54,8 @@ public final class Class198 {
 
 	@OriginalMember(owner = "client!ra", name = "<init>", descriptor = "([BI)V")
 	public Class198(@OriginalArg(0) byte[] arg0, @OriginalArg(1) int arg1) {
-		this.anInt5589 = Static36.method1111(arg0, arg0.length);
-		if (arg1 != this.anInt5589) {
+		this.checksum = Static36.method1111(arg0, arg0.length);
+		if (arg1 != this.checksum) {
 			throw new RuntimeException();
 		}
 		this.method5104(arg0);

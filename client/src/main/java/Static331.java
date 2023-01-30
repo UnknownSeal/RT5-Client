@@ -44,7 +44,7 @@ public final class Static331 {
 	public static boolean method5659() {
 		if (Static276.aBoolean375) {
 			try {
-				if ((Boolean) Static404.method4627(Static328.aClass152_5.anApplet1, "showingVideoAd")) {
+				if ((Boolean) BrowserControl.call(GameShell.signlink.applet, "showingVideoAd")) {
 					return false;
 				}
 				return true;

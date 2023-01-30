@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!pb")
-public final class Class2_Sub3_Sub23 extends Class2_Sub3 {
+public final class Class2_Sub3_Sub23 extends TextureOp {
 
 	@OriginalMember(owner = "client!pb", name = "N", descriptor = "I")
 	private int anInt4831;

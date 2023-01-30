@@ -17,6 +17,4 @@ public final class Static311 {
 	@OriginalMember(owner = "client!s", name = "e", descriptor = "Lclient!gd;")
 	public static final LocalisedText A_TRANSLATABLE_STRING___122 = new LocalisedText("Allocating memory", "Speicher wird zugewiesen.", "Mémoire en cours d'attribution", "Alocando memória");
 
-	@OriginalMember(owner = "client!s", name = "g", descriptor = "I")
-	public static int anInt5811 = 0;
 }

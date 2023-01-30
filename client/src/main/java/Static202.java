@@ -4,10 +4,7 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static202 {
 
-	@OriginalMember(owner = "client!lq", name = "I", descriptor = "Lclient!rt;")
-	public static Class209 aClass209_2;
-
-	@OriginalMember(owner = "client!lq", name = "J", descriptor = "[I")
+    @OriginalMember(owner = "client!lq", name = "J", descriptor = "[I")
 	public static int[] anIntArray220;
 
 	@OriginalMember(owner = "client!lq", name = "s", descriptor = "I")

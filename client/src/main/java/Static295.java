@@ -13,9 +13,6 @@ public final class Static295 {
 	@OriginalMember(owner = "client!r", name = "H", descriptor = "Lclient!ld;")
 	public static final Class135 aClass135_32 = new Class135();
 
-	@OriginalMember(owner = "client!r", name = "M", descriptor = "I")
-	public static int anInt5581 = 0;
-
 	@OriginalMember(owner = "client!r", name = "O", descriptor = "[I")
 	public static final int[] anIntArray375 = new int[] { 1, 2, 4, 8 };
 

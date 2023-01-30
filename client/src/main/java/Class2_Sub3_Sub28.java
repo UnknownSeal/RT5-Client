@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!qk")
-public final class Class2_Sub3_Sub28 extends Class2_Sub3 {
+public final class Class2_Sub3_Sub28 extends TextureOp {
 
 	@OriginalMember(owner = "client!qk", name = "Q", descriptor = "[I")
 	public static final int[] anIntArray368 = new int[32];
@@ -46,7 +46,7 @@ public final class Class2_Sub3_Sub28 extends Class2_Sub3 {
 	@OriginalMember(owner = "client!qk", name = "d", descriptor = "(I)V")
 	@Override
 	public void method6479() {
-		Static29.method937();
+		TextureOp.createTrigonometryTables();
 	}
 
 	@OriginalMember(owner = "client!qk", name = "a", descriptor = "(ILclient!bt;I)V")
@@ -72,7 +72,7 @@ public final class Class2_Sub3_Sub28 extends Class2_Sub3 {
 	@OriginalMember(owner = "client!qk", name = "b", descriptor = "(IIB)Z")
 	private boolean method4923(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
 		@Pc(13) int local13 = this.anInt5404 * (arg1 + arg0) >> 12;
-		@Pc(23) int local23 = Static181.anIntArray203[local13 * 255 >> 12 & 0xFF];
+		@Pc(23) int local23 = TextureOp.COSINE[local13 * 255 >> 12 & 0xFF];
 		@Pc(30) int local30 = (local23 << 12) / this.anInt5404;
 		@Pc(37) int local37 = (local30 << 12) / this.anInt5403;
 		@Pc(44) int local44 = this.anInt5402 * local37 >> 12;
@@ -81,10 +81,10 @@ public final class Class2_Sub3_Sub28 extends Class2_Sub3 {
 
 	@OriginalMember(owner = "client!qk", name = "a", descriptor = "(BI)[I")
 	@Override
-	public int[] method6484(@OriginalArg(1) int arg0) {
-		@Pc(11) int[] local11 = super.aClass158_41.method3995(arg0);
+	public int[] getMonochromeOutput(@OriginalArg(1) int y) {
+		@Pc(11) int[] local11 = super.aClass158_41.method3995(y);
 		if (super.aClass158_41.aBoolean265) {
-			@Pc(26) int local26 = Static16.anIntArray322[arg0] - 2048;
+			@Pc(26) int local26 = Static16.anIntArray322[y] - 2048;
 			for (@Pc(28) int local28 = 0; local28 < Static227.anInt4036; local28++) {
 				@Pc(36) int local36 = Static334.anIntArray424[local28] - 2048;
 				@Pc(41) int local41 = local36 + this.anInt5416;
@@ -108,7 +108,7 @@ public final class Class2_Sub3_Sub28 extends Class2_Sub3 {
 	@OriginalMember(owner = "client!qk", name = "a", descriptor = "(BII)Z")
 	private boolean method4925(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
 		@Pc(13) int local13 = (arg1 - arg0) * this.anInt5404 >> 12;
-		@Pc(34) int local34 = Static181.anIntArray203[local13 * 255 >> 12 & 0xFF];
+		@Pc(34) int local34 = TextureOp.COSINE[local13 * 255 >> 12 & 0xFF];
 		@Pc(41) int local41 = (local34 << 12) / this.anInt5404;
 		@Pc(48) int local48 = (local41 << 12) / this.anInt5403;
 		@Pc(55) int local55 = local48 * this.anInt5402 >> 12;
