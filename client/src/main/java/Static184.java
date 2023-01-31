@@ -81,7 +81,7 @@ public final class Static184 {
 		if (arg0) {
 			return;
 		}
-		for (@Pc(385) Class2_Sub5 local385 = (Class2_Sub5) Static129.A_LINKED_LIST___19.method3550(); local385 != null; local385 = (Class2_Sub5) Static129.A_LINKED_LIST___19.method3551()) {
+		for (@Pc(385) Class2_Sub5 local385 = (Class2_Sub5) Static129.A_LINKED_LIST___19.head(); local385 != null; local385 = (Class2_Sub5) Static129.A_LINKED_LIST___19.next()) {
 			if (local385.anInt1005 == 22) {
 				local385.aString11 = "<col=ffffff>" + local146;
 				return;

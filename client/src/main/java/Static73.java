@@ -316,7 +316,7 @@ public final class Static73 {
 								local536 = local506 * 128 + 64;
 								local542 = local512 * 128 + 64;
 								@Pc(563) Class11_Sub5_Sub4 local563 = new Class11_Sub5_Sub4(local220, 0, Static114.loop, local497, local536, Static386.method6031(local536, local542, local497) - local249, local542, local506, local506, local512, local512);
-								Static129.A_LINKED_LIST___20.method3539(new Class2_Sub2_Sub1(local563));
+								Static129.A_LINKED_LIST___20.addTail(new Class2_Sub2_Sub1(local563));
 							}
 						}
 						Static231.aClass89_164 = null;
@@ -827,7 +827,7 @@ public final class Static73 {
 										Static67.anInt1637 = Static212.inboundBuffer.g1();
 										Static7.anInt7240 = Static212.inboundBuffer.g1bneg();
 										Static243.anInt4502 = Static212.inboundBuffer.g1add();
-										for (@Pc(2839) Class2_Sub32 local2839 = (Class2_Sub32) Static120.aClass4_49.method80(); local2839 != null; local2839 = (Class2_Sub32) Static120.aClass4_49.method79()) {
+										for (@Pc(2839) Class2_Sub32 local2839 = (Class2_Sub32) Static120.aClass4_49.head(); local2839 != null; local2839 = (Class2_Sub32) Static120.aClass4_49.next()) {
 											local74 = (int) (local2839.key & 0x3FFFL);
 											local228 = (int) (local2839.key >> 14 & 0x3FFFL);
 											local249 = (int) (local2839.key >> 28 & 0x3L);
@@ -836,7 +836,7 @@ public final class Static73 {
 												Static165.method3153(local74, Static243.anInt4502, local228);
 											}
 										}
-										for (@Pc(2914) Class2_Sub37 local2914 = (Class2_Sub37) Static207.aLinkedList_26.method3550(); local2914 != null; local2914 = (Class2_Sub37) Static207.aLinkedList_26.method3551()) {
+										for (@Pc(2914) Class2_Sub37 local2914 = (Class2_Sub37) Static207.aLinkedList_26.head(); local2914 != null; local2914 = (Class2_Sub37) Static207.aLinkedList_26.next()) {
 											if (local2914.anInt6484 >= Static67.anInt1637 && local2914.anInt6484 < Static67.anInt1637 + 8 && local2914.anInt6486 >= Static7.anInt7240 && local2914.anInt6486 < Static7.anInt7240 + 8 && Static243.anInt4502 == local2914.anInt6481) {
 												local2914.anInt6485 = 0;
 											}

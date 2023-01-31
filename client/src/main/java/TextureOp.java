@@ -60,23 +60,23 @@ public abstract class TextureOp extends Node {
 		} else if (type == 10) {
 			return new TextureOpColorGradient();
 		} else if (type == 11) {
-			return new Class2_Sub3_Sub22();
+			return new TextureOpColorize();
 		} else if (type == 12) {
-			return new Class2_Sub3_Sub17();
+			return new TextureOpWaveform();
 		} else if (type == 13) {
-			return new Class2_Sub3_Sub21();
+			return new TextureOpNoise();
 		} else if (type == 14) {
-			return new Class2_Sub3_Sub26();
+			return new TextureOpWeave();
 		} else if (type == 15) {
-			return new Class2_Sub3_Sub18();
+			return new TextureOpVoronoiNoise();
 		} else if (type == 16) {
-			return new Class2_Sub3_Sub32();
+			return new TextureOpHerringbone();
 		} else if (type == 17) {
-			return new Class2_Sub3_Sub29();
+			return new TextureOpHslAdjust();
 		} else if (type == 18) {
-			return new Class2_Sub3_Sub10_Sub1();
+			return new TextureOpTiledSprite();
 		} else if (type == 19) {
-			return new Class2_Sub3_Sub31();
+			return new TextureOpPolarDistortion();
 		} else if (type == 20) {
 			return new Class2_Sub3_Sub38();
 		} else if (type == 21) {

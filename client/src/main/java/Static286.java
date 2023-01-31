@@ -160,7 +160,7 @@ public final class Static286 {
 			local760.anInt2340 = local127;
 			local760.anInt2342 = local242;
 			local760.anInt2341 = local129;
-			Static197.aLinkedList_24.method3539(local760);
+			Static197.aLinkedList_24.addTail(local760);
 		}
 		return false;
 	}

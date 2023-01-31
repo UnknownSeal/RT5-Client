@@ -15,7 +15,7 @@ public final class Static111 {
 
 	@OriginalMember(owner = "client!ge", name = "a", descriptor = "(I)V")
 	public static void method2274() {
-		for (@Pc(15) Class2_Sub6 local15 = (Class2_Sub6) Static366.A_LINKED_LIST___40.method3550(); local15 != null; local15 = (Class2_Sub6) Static366.A_LINKED_LIST___40.method3551()) {
+		for (@Pc(15) Class2_Sub6 local15 = (Class2_Sub6) Static366.A_LINKED_LIST___40.head(); local15 != null; local15 = (Class2_Sub6) Static366.A_LINKED_LIST___40.next()) {
 			if (Static330.aClass67ArrayArrayArray3 == null) {
 				local15.unlink();
 			} else {

@@ -71,7 +71,7 @@ public final class Static308 {
 
 	@OriginalMember(owner = "client!rr", name = "b", descriptor = "(I)V")
 	public static void method5273() {
-		for (@Pc(10) Class2_Sub37 local10 = (Class2_Sub37) Static207.aLinkedList_26.method3550(); local10 != null; local10 = (Class2_Sub37) Static207.aLinkedList_26.method3551()) {
+		for (@Pc(10) Class2_Sub37 local10 = (Class2_Sub37) Static207.aLinkedList_26.head(); local10 != null; local10 = (Class2_Sub37) Static207.aLinkedList_26.next()) {
 			if (local10.anInt6485 > 0) {
 				local10.anInt6485--;
 			}

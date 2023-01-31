@@ -4,10 +4,10 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!li")
-public final class Class2_Sub3_Sub21 extends TextureOp {
+public final class TextureOpNoise extends TextureOp {
 
 	@OriginalMember(owner = "client!li", name = "<init>", descriptor = "()V")
-	public Class2_Sub3_Sub21() {
+	public TextureOpNoise() {
 		super(0, true);
 	}
 

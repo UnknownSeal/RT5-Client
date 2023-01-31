@@ -84,7 +84,7 @@ public final class Static235 {
 				local9.anIntArray491[local56] = -5;
 			}
 		}
-		Static337.aLinkedList_37.method3539(local9);
+		Static337.aLinkedList_37.addTail(local9);
 	}
 
 	@OriginalMember(owner = "client!nj", name = "a", descriptor = "(IIII)Z")

@@ -20,7 +20,7 @@ public final class Static147 {
 	public static void method2703() {
 		Static268.size = 0;
 		Static129.A_LINKED_LIST___19.clear();
-		Static129.A_LINKED_LIST___19.method3539(Static23.aClass2_Sub5_1);
+		Static129.A_LINKED_LIST___19.addTail(Static23.aClass2_Sub5_1);
 		Static268.size++;
 	}
 

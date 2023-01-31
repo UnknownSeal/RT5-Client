@@ -57,7 +57,7 @@ public final class Static137 {
 		if (Static370.aClass2_Sub24_1 != null || Static368.aLong217 < MonotonicClock.currentTimeMillis() - 2000L) {
 			@Pc(109) boolean local109 = false;
 			local112 = Static257.aClass2_Sub4_Sub2_4.offset;
-			for (@Pc(117) Class2_Sub24 local117 = (Class2_Sub24) Static277.A_LINKED_LIST___31.method3550(); local117 != null && Static257.aClass2_Sub4_Sub2_4.offset - local112 < 240; local117 = (Class2_Sub24) Static277.A_LINKED_LIST___31.method3551()) {
+			for (@Pc(117) Class2_Sub24 local117 = (Class2_Sub24) Static277.A_LINKED_LIST___31.head(); local117 != null && Static257.aClass2_Sub4_Sub2_4.offset - local112 < 240; local117 = (Class2_Sub24) Static277.A_LINKED_LIST___31.next()) {
 				local117.unlink();
 				local135 = local117.method5241();
 				if (local135 < 0) {
@@ -537,7 +537,7 @@ public final class Static137 {
 		if (local31 == null) {
 			local31 = new Class2_Sub32();
 			Static120.aClass4_49.put(local31, local25);
-			local31.aLinkedList_34.method3539(arg2);
+			local31.aLinkedList_34.addTail(arg2);
 			return;
 		}
 		@Pc(54) ObjType local54 = Static313.aClass107_2.get(arg2.anInt1717);
@@ -545,7 +545,7 @@ public final class Static137 {
 		if (local54.stackable == 1) {
 			local57 *= arg2.anInt1719 + 1;
 		}
-		for (@Pc(76) Class2_Sub8 local76 = (Class2_Sub8) local31.aLinkedList_34.method3550(); local76 != null; local76 = (Class2_Sub8) local31.aLinkedList_34.method3551()) {
+		for (@Pc(76) Class2_Sub8 local76 = (Class2_Sub8) local31.aLinkedList_34.head(); local76 != null; local76 = (Class2_Sub8) local31.aLinkedList_34.next()) {
 			local54 = Static313.aClass107_2.get(local76.anInt1717);
 			@Pc(87) int local87 = local54.cost;
 			if (local54.stackable == 1) {
@@ -556,7 +556,7 @@ public final class Static137 {
 				return;
 			}
 		}
-		local31.aLinkedList_34.method3539(arg2);
+		local31.aLinkedList_34.addTail(arg2);
 	}
 
 	@OriginalMember(owner = "client!hq", name = "a", descriptor = "(IZ)V")

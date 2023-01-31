@@ -449,7 +449,7 @@ public final class client extends GameShell {
 		for (@Pc(163) Class2_Sub24 local163 = Static226.aClass119_1.method3307(); local163 != null; local163 = Static226.aClass119_1.method3307()) {
 			@Pc(169) int local169 = local163.method5246();
 			if (local169 == -1) {
-				Static277.A_LINKED_LIST___31.method3539(local163);
+				Static277.A_LINKED_LIST___31.addTail(local163);
 			} else if (Static330.method5653(local169)) {
 				Static370.aClass2_Sub24_1 = local163;
 			}

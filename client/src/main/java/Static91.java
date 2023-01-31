@@ -8,7 +8,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static91 {
 
 	@OriginalMember(owner = "client!f", name = "x", descriptor = "Lclient!vj;")
-	public static Class2_Sub2_Sub17 aClass2_Sub2_Sub17_1;
+	public static Map aMap_1;
 
 	@OriginalMember(owner = "client!f", name = "F", descriptor = "Lclient!od;")
 	public static Class2_Sub12_Sub3 aClass2_Sub12_Sub3_1;

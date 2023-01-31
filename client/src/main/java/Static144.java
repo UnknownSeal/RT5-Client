@@ -12,7 +12,7 @@ public final class Static144 {
 
 	@OriginalMember(owner = "client!ie", name = "a", descriptor = "(Z)V")
 	public static void method2690() {
-		for (@Pc(14) Class2_Sub37 local14 = (Class2_Sub37) Static207.aLinkedList_26.method3550(); local14 != null; local14 = (Class2_Sub37) Static207.aLinkedList_26.method3551()) {
+		for (@Pc(14) Class2_Sub37 local14 = (Class2_Sub37) Static207.aLinkedList_26.head(); local14 != null; local14 = (Class2_Sub37) Static207.aLinkedList_26.next()) {
 			if (local14.anInt6485 == -1) {
 				local14.anInt6488 = 0;
 				Static83.method1906(local14);

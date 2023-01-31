@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!jt")
-public final class Class2_Sub3_Sub18 extends TextureOp {
+public final class TextureOpVoronoiNoise extends TextureOp {
 
 	@OriginalMember(owner = "client!jt", name = "T", descriptor = "I")
 	private int anInt3261 = 0;
@@ -36,7 +36,7 @@ public final class Class2_Sub3_Sub18 extends TextureOp {
 	}
 
 	@OriginalMember(owner = "client!jt", name = "<init>", descriptor = "()V")
-	public Class2_Sub3_Sub18() {
+	public TextureOpVoronoiNoise() {
 		super(0, true);
 	}
 

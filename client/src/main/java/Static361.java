@@ -11,7 +11,7 @@ public final class Static361 {
 	public static int anInt6770;
 
 	@OriginalMember(owner = "client!vc", name = "d", descriptor = "I")
-	public static int anInt6769 = 0;
+	public static int globalCapacity = 0;
 
 	@OriginalMember(owner = "client!vc", name = "g", descriptor = "[[I")
 	public static final int[][] anIntArrayArray59 = new int[][] { { 0, 2, 4, 6 }, { 6, 0, 2, 3, 5, 3 }, { 6, 0, 2, 4 }, { 2, 5, 6, 1 }, { 0, 2, 6 }, { 6, 0, 2 }, { 5, 6, 0, 1, 2, 4 }, { 7, 7, 1, 2, 4, 6 }, { 2, 4, 4, 7 }, { 6, 6, 4, 0, 1, 1, 3, 3 }, { 0, 2, 2, 6, 6, 4 }, { 0, 2, 2, 3, 7, 0, 4, 3 }, { 0, 2, 4, 6 } };
@@ -43,7 +43,7 @@ public final class Static361 {
 		@Pc(72) int local72 = Static226.aClass119_1.method3303();
 		@Pc(76) int local76 = Static226.aClass119_1.method3312();
 		@Pc(78) int local78 = 0;
-		for (@Pc(88) Class2_Sub5 local88 = (Class2_Sub5) Static129.A_LINKED_LIST___19.method3550(); local88 != null; local88 = (Class2_Sub5) Static129.A_LINKED_LIST___19.method3551()) {
+		for (@Pc(88) Class2_Sub5 local88 = (Class2_Sub5) Static129.A_LINKED_LIST___19.head(); local88 != null; local88 = (Class2_Sub5) Static129.A_LINKED_LIST___19.next()) {
 			@Pc(102) int local102 = (Static268.size - local78 - 1) * 16 + local9 + 31;
 			@Pc(104) short local104 = -1;
 			if (local72 > local7 && local7 + local11 > local72 && local76 > local102 - 13 && local76 < local102 + 3 && local88.aBoolean83) {

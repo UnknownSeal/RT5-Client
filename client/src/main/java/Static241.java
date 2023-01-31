@@ -124,13 +124,13 @@ public final class Static241 {
 
 	@OriginalMember(owner = "client!nq", name = "a", descriptor = "(ZI)V")
 	public static void method4191(@OriginalArg(0) boolean arg0) {
-		if (arg0 && Static344.aClass2_Sub2_Sub17_3 != null) {
-			Static97.anInt2034 = Static344.aClass2_Sub2_Sub17_3.anInt6869;
+		if (arg0 && Static344.aMap_3 != null) {
+			Static97.anInt2034 = Static344.aMap_3.anInt6869;
 		} else {
 			Static97.anInt2034 = -1;
 		}
 		Static227.aComponent_11 = null;
-		Static344.aClass2_Sub2_Sub17_3 = null;
+		Static344.aMap_3 = null;
 		Static355.loadPercentage = 0;
 		Static197.aLinkedList_24 = null;
 		Static344.method5512();

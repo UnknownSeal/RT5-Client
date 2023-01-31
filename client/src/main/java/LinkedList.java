@@ -23,7 +23,7 @@ public final class LinkedList {
 	}
 
 	@OriginalMember(owner = "client!ld", name = "a", descriptor = "(Lclient!ag;B)V")
-	public void method3539(@OriginalArg(0) Node arg0) {
+	public void addTail(@OriginalArg(0) Node arg0) {
 		if (arg0.previous != null) {
 			arg0.unlink();
 		}
@@ -126,26 +126,26 @@ public final class LinkedList {
 	}
 
 	@OriginalMember(owner = "client!ld", name = "f", descriptor = "(B)Lclient!ag;")
-	public Node method3550() {
-		@Pc(14) Node local14 = this.sentinel.next;
-		if (local14 == this.sentinel) {
+	public Node head() {
+		@Pc(14) Node node = this.sentinel.next;
+		if (node == this.sentinel) {
 			this.cursor = null;
 			return null;
 		} else {
-			this.cursor = local14.next;
-			return local14;
+			this.cursor = node.next;
+			return node;
 		}
 	}
 
 	@OriginalMember(owner = "client!ld", name = "d", descriptor = "(I)Lclient!ag;")
-	public Node method3551() {
-		@Pc(13) Node local13 = this.cursor;
-		if (local13 == this.sentinel) {
+	public Node next() {
+		@Pc(13) Node node = this.cursor;
+		if (node == this.sentinel) {
 			this.cursor = null;
 			return null;
 		} else {
-			this.cursor = local13.next;
-			return local13;
+			this.cursor = node.next;
+			return node;
 		}
 	}
 }

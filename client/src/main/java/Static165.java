@@ -67,7 +67,7 @@ public final class Static165 {
 			Static166.method3189(arg1, arg0, arg2);
 			return;
 		}
-		@Pc(41) Class2_Sub8 local41 = (Class2_Sub8) local27.aLinkedList_34.method3550();
+		@Pc(41) Class2_Sub8 local41 = (Class2_Sub8) local27.aLinkedList_34.head();
 		if (local41 == null) {
 			Static166.method3189(arg1, arg0, arg2);
 			return;
@@ -81,7 +81,7 @@ public final class Static165 {
 		local55.anInt3984 = local41.anInt1719;
 		local55.anInt3985 = local41.anInt1717;
 		label44: while (true) {
-			@Pc(85) Class2_Sub8 local85 = (Class2_Sub8) local27.aLinkedList_34.method3551();
+			@Pc(85) Class2_Sub8 local85 = (Class2_Sub8) local27.aLinkedList_34.next();
 			if (local85 == null) {
 				break;
 			}
@@ -89,7 +89,7 @@ public final class Static165 {
 				local55.anInt3978 = local85.anInt1719;
 				local55.anInt3980 = local85.anInt1717;
 				while (true) {
-					@Pc(110) Class2_Sub8 local110 = (Class2_Sub8) local27.aLinkedList_34.method3551();
+					@Pc(110) Class2_Sub8 local110 = (Class2_Sub8) local27.aLinkedList_34.next();
 					if (local110 == null) {
 						break label44;
 					}

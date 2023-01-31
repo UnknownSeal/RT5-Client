@@ -52,7 +52,7 @@ public final class Static117 {
 		local89 = Static226.aClass119_1.method3312();
 		@Pc(169) int local169 = 0;
 		@Pc(192) int local192;
-		for (@Pc(174) Class2_Sub5 local174 = (Class2_Sub5) Static129.A_LINKED_LIST___19.method3550(); local174 != null; local174 = (Class2_Sub5) Static129.A_LINKED_LIST___19.method3551()) {
+		for (@Pc(174) Class2_Sub5 local174 = (Class2_Sub5) Static129.A_LINKED_LIST___19.head(); local174 != null; local174 = (Class2_Sub5) Static129.A_LINKED_LIST___19.next()) {
 			local192 = local9 + (-local169 + -1 + Static268.size) * 16 + 33;
 			local169++;
 			if (local7 < local87 && local87 < local7 + local11 && local89 > local192 - 13 && local192 + 4 > local89 && local174.aBoolean83) {
@@ -86,7 +86,7 @@ public final class Static117 {
 			Static35.aClass13_3.method6384(local7, local9 + local15 - Static35.aClass13_3.method6381());
 			Static110.aClass13_6.method6384(local7 + local11 - Static35.aClass13_3.method6388(), local15 + local9 + -Static35.aClass13_3.method6381());
 		}
-		for (@Pc(436) Class2_Sub5 local436 = (Class2_Sub5) Static129.A_LINKED_LIST___19.method3550(); local436 != null; local436 = (Class2_Sub5) Static129.A_LINKED_LIST___19.method3551()) {
+		for (@Pc(436) Class2_Sub5 local436 = (Class2_Sub5) Static129.A_LINKED_LIST___19.head(); local436 != null; local436 = (Class2_Sub5) Static129.A_LINKED_LIST___19.next()) {
 			local333 = (Static268.size - local169 - 1) * 16 + local9 + 13 + 20;
 			local368 = Static322.anInt6030 | 0xFF000000;
 			if (local7 < local87 && local87 < local7 + local11 && local89 > local333 - 13 && local89 < local333 + 4 && local436.aBoolean83) {

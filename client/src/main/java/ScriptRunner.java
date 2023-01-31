@@ -13,7 +13,7 @@ public final class ScriptRunner {
 	private static String[] aStringArray30;
 
 	@OriginalMember(owner = "client!lk", name = "r", descriptor = "Lclient!gr;")
-	private static Class86 aClass86_1;
+	private static Class86 activePhrase;
 
 	@OriginalMember(owner = "client!lk", name = "v", descriptor = "Lclient!nk;")
 	private static Component staticActiveComponent2;
@@ -2824,10 +2824,10 @@ public final class ScriptRunner {
 				return;
 			}
 			if (opcode == 5058) {
-				aClass86_1 = new Class86();
-				aClass86_1.anInt2377 = intStack[--isp];
-				aClass86_1.aQuickChatPhraseType_1 = Static146.get(aClass86_1.anInt2377);
-				aClass86_1.anIntArray151 = new int[aClass86_1.aQuickChatPhraseType_1.getDynamicCommandCount()];
+				activePhrase = new Class86();
+				activePhrase.anInt2377 = intStack[--isp];
+				activePhrase.aQuickChatPhraseType_1 = Static146.get(activePhrase.anInt2377);
+				activePhrase.values = new int[activePhrase.aQuickChatPhraseType_1.getDynamicCommandCount()];
 				return;
 			}
 			if (opcode == 5059) {
@@ -2835,8 +2835,8 @@ public final class ScriptRunner {
 				Static257.aClass2_Sub4_Sub2_4.p1(0);
 				local157 = Static257.aClass2_Sub4_Sub2_4.offset;
 				Static257.aClass2_Sub4_Sub2_4.p1(0);
-				Static257.aClass2_Sub4_Sub2_4.p2(aClass86_1.anInt2377);
-				aClass86_1.aQuickChatPhraseType_1.encodeMessage(Static257.aClass2_Sub4_Sub2_4, aClass86_1.anIntArray151);
+				Static257.aClass2_Sub4_Sub2_4.p2(activePhrase.anInt2377);
+				activePhrase.aQuickChatPhraseType_1.encodeMessage(Static257.aClass2_Sub4_Sub2_4, activePhrase.values);
 				Static257.aClass2_Sub4_Sub2_4.psize1(Static257.aClass2_Sub4_Sub2_4.offset - local157);
 				return;
 			}
@@ -2846,8 +2846,8 @@ public final class ScriptRunner {
 				Static257.aClass2_Sub4_Sub2_4.p1(0);
 				local192 = Static257.aClass2_Sub4_Sub2_4.offset;
 				Static257.aClass2_Sub4_Sub2_4.pjstr(local75);
-				Static257.aClass2_Sub4_Sub2_4.p2(aClass86_1.anInt2377);
-				aClass86_1.aQuickChatPhraseType_1.encodeMessage(Static257.aClass2_Sub4_Sub2_4, aClass86_1.anIntArray151);
+				Static257.aClass2_Sub4_Sub2_4.p2(activePhrase.anInt2377);
+				activePhrase.aQuickChatPhraseType_1.encodeMessage(Static257.aClass2_Sub4_Sub2_4, activePhrase.values);
 				Static257.aClass2_Sub4_Sub2_4.psize1(Static257.aClass2_Sub4_Sub2_4.offset - local192);
 				return;
 			}
@@ -2856,8 +2856,8 @@ public final class ScriptRunner {
 				Static257.aClass2_Sub4_Sub2_4.p1(0);
 				local157 = Static257.aClass2_Sub4_Sub2_4.offset;
 				Static257.aClass2_Sub4_Sub2_4.p1(1);
-				Static257.aClass2_Sub4_Sub2_4.p2(aClass86_1.anInt2377);
-				aClass86_1.aQuickChatPhraseType_1.encodeMessage(Static257.aClass2_Sub4_Sub2_4, aClass86_1.anIntArray151);
+				Static257.aClass2_Sub4_Sub2_4.p2(activePhrase.anInt2377);
+				activePhrase.aQuickChatPhraseType_1.encodeMessage(Static257.aClass2_Sub4_Sub2_4, activePhrase.values);
 				Static257.aClass2_Sub4_Sub2_4.psize1(Static257.aClass2_Sub4_Sub2_4.offset - local157);
 				return;
 			}
@@ -2894,7 +2894,7 @@ public final class ScriptRunner {
 					intStack[isp++] = -1;
 					return;
 				}
-				intStack[isp++] = Static138.get(local157).method3797((char) local192);
+				intStack[isp++] = Static138.get(local157).getPhraseByShortcut((char) local192);
 				return;
 			}
 			if (opcode == 5066) {
@@ -2914,14 +2914,14 @@ public final class ScriptRunner {
 				isp -= 2;
 				local157 = intStack[isp];
 				local192 = intStack[isp + 1];
-				aClass86_1.anIntArray151[local157] = local192;
+				activePhrase.values[local157] = local192;
 				return;
 			}
 			if (opcode == 5069) {
 				isp -= 2;
 				local157 = intStack[isp];
 				local192 = intStack[isp + 1];
-				aClass86_1.anIntArray151[local157] = local192;
+				activePhrase.values[local157] = local192;
 				return;
 			}
 			if (opcode == 5070) {
@@ -2939,7 +2939,7 @@ public final class ScriptRunner {
 			if (opcode == 5071) {
 				local75 = stringStack[--anInt3652];
 				local1292 = intStack[--isp] == 1;
-				Static272.method4592(local1292, local75);
+				Static272.findQuickChatPhrases(local1292, local75);
 				intStack[isp++] = Static328.size;
 				return;
 			}
@@ -2984,21 +2984,21 @@ public final class ScriptRunner {
 			@Pc(1903) boolean local1903;
 			if (opcode < 5300) {
 				if (opcode == 5200) {
-					Static211.method3721(intStack[--isp]);
+					Static211.setTargetZoom(intStack[--isp]);
 					return;
 				}
 				if (opcode == 5201) {
-					intStack[isp++] = Static333.method6330();
+					intStack[isp++] = Static333.getTargetZoom();
 					return;
 				}
 				if (opcode == 5205) {
 					Static258.method4401(false, -1, intStack[--isp], -1);
 					return;
 				}
-				@Pc(1492) Class2_Sub2_Sub17 local1492;
+				@Pc(1492) Map local1492;
 				if (opcode == 5206) {
-					local157 = intStack[--isp];
-					local1492 = Static344.method5526(local157 >> 14 & 0x3FFF, local157 & 0x3FFF);
+					int coordinate = intStack[--isp];
+					local1492 = Static344.getContainingSource(coordinate >> 14 & 0x3FFF, coordinate & 0x3FFF);
 					if (local1492 == null) {
 						intStack[isp++] = -1;
 						return;
@@ -3006,7 +3006,7 @@ public final class ScriptRunner {
 					intStack[isp++] = local1492.anInt6869;
 					return;
 				}
-				@Pc(1525) Class2_Sub2_Sub17 local1525;
+				@Pc(1525) Map local1525;
 				if (opcode == 5207) {
 					local1525 = Static344.method5513(intStack[--isp]);
 					if (local1525 != null && local1525.aString66 != null) {
@@ -3093,7 +3093,7 @@ public final class ScriptRunner {
 					local192 = intStack[isp + 1];
 					@Pc(1901) Class246 local1901 = Static344.method5515(local157 >> 14 & 0x3FFF, local157 & 0x3FFF);
 					local1903 = false;
-					for (@Pc(1908) Class2_Sub2_Sub17 local1908 = (Class2_Sub2_Sub17) local1901.head(); local1908 != null; local1908 = (Class2_Sub2_Sub17) local1901.next()) {
+					for (@Pc(1908) Map local1908 = (Map) local1901.head(); local1908 != null; local1908 = (Map) local1901.next()) {
 						if (local1908.anInt6869 == local192) {
 							local1903 = true;
 							break;
@@ -3266,7 +3266,7 @@ public final class ScriptRunner {
 					return;
 				}
 				if (opcode == 5235) {
-					intStack[isp++] = Static344.aClass2_Sub2_Sub17_3 == null ? -1 : Static344.aClass2_Sub2_Sub17_3.anInt6869;
+					intStack[isp++] = Static344.aMap_3 == null ? -1 : Static344.aMap_3.anInt6869;
 					return;
 				}
 			} else {
@@ -4360,9 +4360,9 @@ public final class ScriptRunner {
 								}
 								local157--;
 							}
-							@Pc(6577) Class2_Sub7 local6577 = (Class2_Sub7) Static329.aClass4_130.method80();
+							@Pc(6577) Class2_Sub7 local6577 = (Class2_Sub7) Static329.aClass4_130.head();
 							while (local157-- > 0) {
-								local6577 = (Class2_Sub7) Static329.aClass4_130.method79();
+								local6577 = (Class2_Sub7) Static329.aClass4_130.next();
 							}
 							intStack[isp++] = local6577.anInt1370;
 							return;

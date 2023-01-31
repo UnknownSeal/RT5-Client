@@ -41,7 +41,7 @@ public final class Static131 {
 		for (@Pc(130) int local130 = 0; local130 < Static328.size; local130++) {
 			names[local130] = Static313.aClass107_2.get(results[local130]).name;
 		}
-		Static135.method2534(names, Static177.results);
+		Static135.sort(names, Static177.results);
 		Static61.aJs5_12.method5067();
 		Static61.aJs5_12.discardUnpacked = 2;
 	}

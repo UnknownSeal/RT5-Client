@@ -13,10 +13,10 @@ public final class HashTable {
 	private long aLong10;
 
 	@OriginalMember(owner = "client!ad", name = "s", descriptor = "Lclient!ag;")
-	private Node aClass2_10;
+	private Node iteratorCursor;
 
 	@OriginalMember(owner = "client!ad", name = "v", descriptor = "I")
-	private int anInt104 = 0;
+	private int iteratorBucket = 0;
 
 	@OriginalMember(owner = "client!ad", name = "n", descriptor = "[Lclient!ag;")
 	public final Node[] buckets;
@@ -36,27 +36,27 @@ public final class HashTable {
 	}
 
 	@OriginalMember(owner = "client!ad", name = "b", descriptor = "(I)Lclient!ag;")
-	public Node method79() {
-		@Pc(24) Node local24;
-		if (this.anInt104 > 0 && this.buckets[this.anInt104 - 1] != this.aClass2_10) {
-			local24 = this.aClass2_10;
-			this.aClass2_10 = local24.next;
-			return local24;
+	public Node next() {
+		@Pc(24) Node node;
+		if (this.iteratorBucket > 0 && this.buckets[this.iteratorBucket - 1] != this.iteratorCursor) {
+			node = this.iteratorCursor;
+			this.iteratorCursor = node.next;
+			return node;
 		}
-		while (this.bucketCount > this.anInt104) {
-			local24 = this.buckets[this.anInt104++].next;
-			if (this.buckets[this.anInt104 - 1] != local24) {
-				this.aClass2_10 = local24.next;
-				return local24;
+		while (this.bucketCount > this.iteratorBucket) {
+			node = this.buckets[this.iteratorBucket++].next;
+			if (this.buckets[this.iteratorBucket - 1] != node) {
+				this.iteratorCursor = node.next;
+				return node;
 			}
 		}
 		return null;
 	}
 
 	@OriginalMember(owner = "client!ad", name = "a", descriptor = "(B)Lclient!ag;")
-	public Node method80() {
-		this.anInt104 = 0;
-		return this.method79();
+	public Node head() {
+		this.iteratorBucket = 0;
+		return this.next();
 	}
 
 	@OriginalMember(owner = "client!ad", name = "c", descriptor = "(I)V")
@@ -71,7 +71,7 @@ public final class HashTable {
 				node.unlink();
 			}
 		}
-		this.aClass2_10 = null;
+		this.iteratorCursor = null;
 		this.aClass2_9 = null;
 	}
 

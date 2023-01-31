@@ -17,7 +17,7 @@ public final class Static135 {
 	public static int anInt2523 = -1;
 
 	@OriginalMember(owner = "client!ho", name = "a", descriptor = "([Ljava/lang/String;I[S)V")
-	public static void method2534(@OriginalArg(0) String[] arg0, @OriginalArg(2) short[] arg1) {
+	public static void sort(@OriginalArg(0) String[] arg0, @OriginalArg(2) short[] arg1) {
 		Static188.method3467(arg1, 0, arg0.length - 1, arg0);
 	}
 

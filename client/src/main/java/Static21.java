@@ -15,7 +15,7 @@ public final class Static21 {
 	public static final Class145 aClass145_25 = new Class145(27, 3);
 
 	@OriginalMember(owner = "client!be", name = "k", descriptor = "I")
-	public static int anInt554 = 0;
+	public static int capacity = 0;
 
 	@OriginalMember(owner = "client!be", name = "l", descriptor = "[Lclient!nt;")
 	public static final Class2_Sub2_Sub13[] aClass2_Sub2_Sub13Array1 = new Class2_Sub2_Sub13[14];

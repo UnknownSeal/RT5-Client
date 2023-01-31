@@ -68,7 +68,7 @@ public final class Class2_Sub2_Sub13 extends SecondaryNode {
 			@Pc(128) byte[] local128 = this.aByteArrayArray11[local121];
 			@Pc(142) int local142 = local128[1] & 0xFF | (local128[0] & 0xFF) << 8;
 			@Pc(144) Class2_Sub18 local144 = null;
-			for (@Pc(149) Class2_Sub18 local149 = (Class2_Sub18) local103.method3550(); local149 != null; local149 = (Class2_Sub18) local103.method3551()) {
+			for (@Pc(149) Class2_Sub18 local149 = (Class2_Sub18) local103.head(); local149 != null; local149 = (Class2_Sub18) local103.next()) {
 				if (local149.anInt2677 == local142) {
 					local144 = local149;
 					break;
@@ -76,7 +76,7 @@ public final class Class2_Sub2_Sub13 extends SecondaryNode {
 			}
 			if (local144 == null) {
 				local144 = new Class2_Sub18(local142, Static78.aJs5_89.method5081(local142));
-				local103.method3539(local144);
+				local103.addTail(local144);
 			}
 			this.aClass159Array1[local119[local121]] = new Class159(local128, local144);
 		}

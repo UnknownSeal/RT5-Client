@@ -24,7 +24,7 @@ public final class Static281 {
 		@Pc(35) Component local35 = Static26.aComponentArrayArray1[local13][local17];
 		@Pc(51) Class2_Sub5 local51;
 		if (arg0 == -1 && local35.type == 0) {
-			for (local51 = (Class2_Sub5) Static129.A_LINKED_LIST___19.method3550(); local51 != null; local51 = (Class2_Sub5) Static129.A_LINKED_LIST___19.method3551()) {
+			for (local51 = (Class2_Sub5) Static129.A_LINKED_LIST___19.head(); local51 != null; local51 = (Class2_Sub5) Static129.A_LINKED_LIST___19.next()) {
 				if (local51.anInt1005 == 11 || local51.anInt1005 == 1011 || local51.anInt1005 == 49 || local51.anInt1005 == 45 || local51.anInt1005 == 30) {
 					for (@Pc(133) Component local133 = Static6.getComponent(local51.anInt1009); local133 != null; local133 = Static7.method6464(local133)) {
 						if (local35.id == local133.id) {
@@ -34,7 +34,7 @@ public final class Static281 {
 				}
 			}
 		} else {
-			for (local51 = (Class2_Sub5) Static129.A_LINKED_LIST___19.method3550(); local51 != null; local51 = (Class2_Sub5) Static129.A_LINKED_LIST___19.method3551()) {
+			for (local51 = (Class2_Sub5) Static129.A_LINKED_LIST___19.head(); local51 != null; local51 = (Class2_Sub5) Static129.A_LINKED_LIST___19.next()) {
 				if (local51.anInt1006 == arg0 && local35.id == local51.anInt1009 && (local51.anInt1005 == 11 || local51.anInt1005 == 1011 || local51.anInt1005 == 49 || local51.anInt1005 == 45 || local51.anInt1005 == 30)) {
 					return true;
 				}

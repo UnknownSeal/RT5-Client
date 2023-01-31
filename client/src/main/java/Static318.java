@@ -60,7 +60,7 @@ public final class Static318 {
 		}
 		@Pc(50) Class2_Sub17 local50;
 		if (Static77.anInt1762 == 0) {
-			for (local50 = (Class2_Sub17) Static142.A_LINKED_LIST___21.method3550(); local50 != null; local50 = (Class2_Sub17) Static142.A_LINKED_LIST___21.method3551()) {
+			for (local50 = (Class2_Sub17) Static142.A_LINKED_LIST___21.head(); local50 != null; local50 = (Class2_Sub17) Static142.A_LINKED_LIST___21.next()) {
 				Static313.aClass107_2.method2769(local50.anInt2541, Static200.aClass130_3, local50.anInt2539, arg0, false, local50.anInt2535, false, local50.aBoolean183 ? Static17.self.appearance : null, local50.anInt2537, arg0, local50.anInt2538);
 				local50.unlink();
 			}
@@ -73,7 +73,7 @@ public final class Static318 {
 			Static179.aClass19_5 = Static387.method2822(0, GameShell.signlink, Static128.anInterface2_4, local18, 0);
 			Static76.aClass130_2 = Static179.aClass19_5.method2857(Static101.method2165(Static183.anInt80, Static255.aJs5_64), Static396.method1688(Static30.aJs5_5, Static183.anInt80));
 		}
-		for (local50 = (Class2_Sub17) Static142.A_LINKED_LIST___21.method3550(); local50 != null; local50 = (Class2_Sub17) Static142.A_LINKED_LIST___21.method3551()) {
+		for (local50 = (Class2_Sub17) Static142.A_LINKED_LIST___21.head(); local50 != null; local50 = (Class2_Sub17) Static142.A_LINKED_LIST___21.next()) {
 			Static313.aClass107_2.method2769(local50.anInt2541, Static76.aClass130_2, local50.anInt2539, arg0, false, local50.anInt2535, false, local50.aBoolean183 ? Static17.self.appearance : null, local50.anInt2537, Static179.aClass19_5, local50.anInt2538);
 			local50.unlink();
 		}

@@ -29,37 +29,37 @@ public final class Static272 {
 	public static final int[] anIntArray351 = new int[] { 32, 39, 44, 47 };
 
 	@OriginalMember(owner = "client!pk", name = "a", descriptor = "(ZLjava/lang/String;I)V")
-	public static void method4592(@OriginalArg(0) boolean arg0, @OriginalArg(1) String arg1) {
-		@Pc(4) String local4 = arg1.toLowerCase();
-		@Pc(11) short[] local11 = new short[16];
-		@Pc(13) int local13 = 0;
-		@Pc(19) int local19 = arg0 ? 32768 : 0;
-		@Pc(27) int local27 = (arg0 ? Static361.anInt6769 : Static21.anInt554) + local19;
-		for (@Pc(34) int local34 = local19; local34 < local27; local34++) {
-			@Pc(40) QuickChatPhraseType local40 = Static146.get(local34);
-			if (local40.searchable && local40.getText().toLowerCase().indexOf(local4) != -1) {
-				if (local13 >= 50) {
+	public static void findQuickChatPhrases(@OriginalArg(0) boolean global, @OriginalArg(1) String query) {
+		@Pc(4) String queryLowercase = query.toLowerCase();
+		@Pc(11) short[] results = new short[16];
+		@Pc(13) int size = 0;
+		@Pc(19) int start = global ? 32768 : 0;
+		@Pc(27) int end = (global ? Static361.globalCapacity : Static21.capacity) + start;
+		for (@Pc(34) int i = start; i < end; i++) {
+			@Pc(40) QuickChatPhraseType type = Static146.get(i);
+			if (type.searchable && type.getText().toLowerCase().indexOf(queryLowercase) != -1) {
+				if (size >= 50) {
 					Static177.results = null;
 					Static328.size = -1;
 					return;
 				}
-				if (local13 >= local11.length) {
-					@Pc(73) short[] local73 = new short[local11.length * 2];
-					for (@Pc(75) int local75 = 0; local75 < local13; local75++) {
-						local73[local75] = local11[local75];
+				if (size >= results.length) {
+					@Pc(73) short[] newResults = new short[results.length * 2];
+					for (@Pc(75) int j = 0; j < size; j++) {
+						newResults[j] = results[j];
 					}
-					local11 = local73;
+					results = newResults;
 				}
-				local11[local13++] = (short) local34;
+				results[size++] = (short) i;
 			}
 		}
-		Static328.size = local13;
+		Static328.size = size;
 		Static12.index = 0;
-		Static177.results = local11;
-		@Pc(112) String[] local112 = new String[Static328.size];
-		for (@Pc(114) int local114 = 0; local114 < Static328.size; local114++) {
-			local112[local114] = Static146.get(local11[local114]).getText();
+		Static177.results = results;
+		@Pc(112) String[] names = new String[Static328.size];
+		for (@Pc(114) int i = 0; i < Static328.size; i++) {
+			names[i] = Static146.get(results[i]).getText();
 		}
-		Static135.method2534(local112, Static177.results);
+		Static135.sort(names, Static177.results);
 	}
 }

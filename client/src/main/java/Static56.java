@@ -64,10 +64,10 @@ public final class Static56 {
 
 	@OriginalMember(owner = "client!dd", name = "a", descriptor = "(IIIII)V")
 	public static void method1616(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(4) int arg3) {
-		for (@Pc(10) Class2_Sub19 local10 = (Class2_Sub19) Static83.A_LINKED_LIST___14.method3550(); local10 != null; local10 = (Class2_Sub19) Static83.A_LINKED_LIST___14.method3551()) {
+		for (@Pc(10) Class2_Sub19 local10 = (Class2_Sub19) Static83.A_LINKED_LIST___14.head(); local10 != null; local10 = (Class2_Sub19) Static83.A_LINKED_LIST___14.next()) {
 			Static337.method5705(arg2, arg3, local10, arg1, arg0);
 		}
-		for (@Pc(33) Class2_Sub19 local33 = (Class2_Sub19) Static363.A_LINKED_LIST___39.method3550(); local33 != null; local33 = (Class2_Sub19) Static363.A_LINKED_LIST___39.method3551()) {
+		for (@Pc(33) Class2_Sub19 local33 = (Class2_Sub19) Static363.A_LINKED_LIST___39.head(); local33 != null; local33 = (Class2_Sub19) Static363.A_LINKED_LIST___39.next()) {
 			@Pc(37) byte local37 = 1;
 			@Pc(42) BasType local42 = local33.aClass11_Sub5_Sub2_Sub2_1.method4331();
 			if (local33.aClass11_Sub5_Sub2_Sub2_1.aBoolean317) {
@@ -94,7 +94,7 @@ public final class Static56 {
 			local33.anInt2904 = local33.aClass11_Sub5_Sub2_Sub2_1.zFine + local33.aClass11_Sub5_Sub2_Sub2_1.method4327() * 64;
 			Static337.method5705(arg2, arg3, local33, arg1, arg0);
 		}
-		for (@Pc(208) Class2_Sub19 local208 = (Class2_Sub19) Static232.aClass4_86.method80(); local208 != null; local208 = (Class2_Sub19) Static232.aClass4_86.method79()) {
+		for (@Pc(208) Class2_Sub19 local208 = (Class2_Sub19) Static232.aClass4_86.head(); local208 != null; local208 = (Class2_Sub19) Static232.aClass4_86.next()) {
 			@Pc(212) byte local212 = 1;
 			@Pc(217) BasType local217 = local208.aClass11_Sub5_Sub2_Sub1_2.method4331();
 			if (local208.aClass11_Sub5_Sub2_Sub1_2.aBoolean317) {

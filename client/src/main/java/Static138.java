@@ -31,7 +31,7 @@ public final class Static138 {
 
 	@OriginalMember(owner = "client!hr", name = "b", descriptor = "(II)V")
 	public static void method2580(@OriginalArg(0) int arg0) {
-		for (@Pc(16) Node local16 = Static327.aClass4_127.method80(); local16 != null; local16 = Static327.aClass4_127.method79()) {
+		for (@Pc(16) Node local16 = Static327.aClass4_127.head(); local16 != null; local16 = Static327.aClass4_127.next()) {
 			if ((long) arg0 == (local16.key >> 48 & 0xFFFFL)) {
 				local16.unlink();
 			}

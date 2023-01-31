@@ -80,7 +80,7 @@ public final class Class162 implements Runnable {
 	private void method4116(@OriginalArg(1) Node arg0) {
 		@Pc(18) LinkedList local18 = this.aLinkedList_28;
 		synchronized (this.aLinkedList_28) {
-			this.aLinkedList_28.method3539(arg0);
+			this.aLinkedList_28.addTail(arg0);
 			this.aLinkedList_28.notify();
 		}
 	}

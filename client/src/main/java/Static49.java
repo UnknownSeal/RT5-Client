@@ -199,11 +199,11 @@ public final class Static49 {
 						local224 = (local220 >> 14 & 0x3FFF) - Static164.originX;
 						local277 = (local220 & 0x3FFF) - Static148.originZ;
 						if (local224 >= 0 && local224 < Static373.anInt7033 && local277 >= 0 && Static242.anInt4449 > local277) {
-							Static56.A_LINKED_LIST___13.method3539(new IntNode(local216));
+							Static56.A_LINKED_LIST___13.addTail(new IntNode(local216));
 						} else {
 							@Pc(1018) Class164 local1018 = Static236.aClass125_1.method3378(Static34.aMapElementList_3.elements[local216]);
 							if (local1018.anIntArray290 != null && local224 + local1018.anInt4419 >= 0 && local224 + local1018.anInt4434 < Static373.anInt7033 && local1018.anInt4428 + local277 >= 0 && Static242.anInt4449 > local277 + local1018.anInt4432) {
-								Static56.A_LINKED_LIST___13.method3539(new IntNode(local216));
+								Static56.A_LINKED_LIST___13.addTail(new IntNode(local216));
 							}
 						}
 					}

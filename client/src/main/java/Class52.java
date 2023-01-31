@@ -68,7 +68,7 @@ public final class Class52 {
 	@OriginalMember(owner = "client!ds", name = "a", descriptor = "(B)V")
 	private void method1768() {
 		this.aClass4_30 = new HashTable(this.aClass4_31.method89());
-		for (@Pc(20) IntNode local20 = (IntNode) this.aClass4_31.method80(); local20 != null; local20 = (IntNode) this.aClass4_31.method79()) {
+		for (@Pc(20) IntNode local20 = (IntNode) this.aClass4_31.head(); local20 != null; local20 = (IntNode) this.aClass4_31.next()) {
 			@Pc(29) IntNode local29 = new IntNode((int) local20.key);
 			this.aClass4_30.put(local29, (long) local20.value);
 		}
@@ -105,7 +105,7 @@ public final class Class52 {
 	@OriginalMember(owner = "client!ds", name = "d", descriptor = "(B)V")
 	private void method1773() {
 		this.aClass4_30 = new HashTable(this.aClass4_31.method89());
-		for (@Pc(28) StringNode local28 = (StringNode) this.aClass4_31.method80(); local28 != null; local28 = (StringNode) this.aClass4_31.method79()) {
+		for (@Pc(28) StringNode local28 = (StringNode) this.aClass4_31.head(); local28 != null; local28 = (StringNode) this.aClass4_31.next()) {
 			@Pc(39) Class2_Sub28 local39 = new Class2_Sub28(local28.value, (int) local28.key);
 			this.aClass4_30.put(local39, Static80.method5981(local28.value));
 		}

@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static344 {
 
 	@OriginalMember(owner = "client!tt", name = "a", descriptor = "Lclient!vj;")
-	public static Class2_Sub2_Sub17 aClass2_Sub2_Sub17_3;
+	public static Map aMap_3;
 
 	@OriginalMember(owner = "client!tt", name = "b", descriptor = "Lclient!wl;")
 	public static Interface11 anInterface11_2;
@@ -41,7 +41,7 @@ public final class Static344 {
 	public static MapElementList labels;
 
 	@OriginalMember(owner = "client!tt", name = "r", descriptor = "F")
-	public static float aFloat73;
+	public static float targetZoom;
 
 	@OriginalMember(owner = "client!tt", name = "t", descriptor = "I")
 	public static int anInt6050;
@@ -110,7 +110,7 @@ public final class Static344 {
 	private static byte[] aByteArray90;
 
 	@OriginalMember(owner = "client!tt", name = "f", descriptor = "Lclient!ad;")
-	private static final HashTable aClass4_124 = new HashTable(16);
+	private static final HashTable areas = new HashTable(16);
 
 	@OriginalMember(owner = "client!tt", name = "j", descriptor = "Lclient!ld;")
 	public static final LinkedList A_LINKED_LIST___36 = new LinkedList();
@@ -305,12 +305,12 @@ public final class Static344 {
 	public static void method5510() {
 		@Pc(2) int[] local2 = new int[3];
 		for (@Pc(4) int local4 = 0; local4 < labels.size; local4++) {
-			@Pc(32) boolean local32 = aClass2_Sub2_Sub17_3.method6144(labels.positions[local4] >> 28 & 0x3, local2, labels.positions[local4] >> 14 & 0x3FFF, labels.positions[local4] & 0x3FFF);
+			@Pc(32) boolean local32 = aMap_3.method6144(labels.positions[local4] >> 28 & 0x3, local2, labels.positions[local4] >> 14 & 0x3FFF, labels.positions[local4] & 0x3FFF);
 			if (local32) {
 				@Pc(42) Class2_Sub20 local42 = new Class2_Sub20(labels.elements[local4]);
 				local42.anInt2949 = local2[1] - anInt6057;
 				local42.anInt2952 = local2[2] - anInt6055;
-				A_LINKED_LIST___36.method3539(local42);
+				A_LINKED_LIST___36.addTail(local42);
 			}
 		}
 	}
@@ -324,12 +324,12 @@ public final class Static344 {
 		aClass125_4 = arg4;
 		aClass104_4 = arg5;
 		anInterface11_2 = arg6;
-		aClass4_124.clear();
+		areas.clear();
 		@Pc(21) int local21 = archive.getGroupID("details");
 		@Pc(26) int[] local26 = archive.getFileIDs(local21);
 		for (@Pc(28) int local28 = 0; local28 < local26.length; local28++) {
-			@Pc(37) Class2_Sub2_Sub17 local37 = Static61.method1672(local26[local28], local21, archive);
-			aClass4_124.put(local37, (long) local37.anInt6869);
+			@Pc(37) Map local37 = Map.create(local26[local28], local21, archive);
+			areas.put(local37, (long) local37.anInt6869);
 		}
 		Static280.method4765(false);
 	}
@@ -349,8 +349,8 @@ public final class Static344 {
 	}
 
 	@OriginalMember(owner = "client!tt", name = "a", descriptor = "(I)Lclient!vj;")
-	public static Class2_Sub2_Sub17 method5513(@OriginalArg(0) int arg0) {
-		return (Class2_Sub2_Sub17) aClass4_124.get((long) arg0);
+	public static Map method5513(@OriginalArg(0) int arg0) {
+		return (Map) areas.get((long) arg0);
 	}
 
 	@OriginalMember(owner = "client!tt", name = "a", descriptor = "(Lclient!ci;III)I")
@@ -398,8 +398,8 @@ public final class Static344 {
 	@OriginalMember(owner = "client!tt", name = "a", descriptor = "(II)Lclient!wc;")
 	public static Class246 method5515(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
 		@Pc(3) Class246 local3 = new Class246();
-		for (@Pc(8) Class2_Sub2_Sub17 local8 = (Class2_Sub2_Sub17) aClass4_124.method80(); local8 != null; local8 = (Class2_Sub2_Sub17) aClass4_124.method79()) {
-			if (local8.aBoolean466 && local8.method6146(arg1, arg0)) {
+		for (@Pc(8) Map local8 = (Map) areas.head(); local8 != null; local8 = (Map) areas.next()) {
+			if (local8.valid && local8.containsSource(arg0, arg1)) {
 				local3.addTail(local8);
 			}
 		}
@@ -408,7 +408,7 @@ public final class Static344 {
 
 	@OriginalMember(owner = "client!tt", name = "a", descriptor = "(Lclient!wm;IIII)Lclient!ld;")
 	private static LinkedList method5516(@OriginalArg(0) Class19 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		for (@Pc(4) Class2_Sub20 local4 = (Class2_Sub20) A_LINKED_LIST___36.method3550(); local4 != null; local4 = (Class2_Sub20) A_LINKED_LIST___36.method3551()) {
+		for (@Pc(4) Class2_Sub20 local4 = (Class2_Sub20) A_LINKED_LIST___36.head(); local4 != null; local4 = (Class2_Sub20) A_LINKED_LIST___36.next()) {
 			method5528(arg0, local4, arg1, arg2);
 		}
 		return A_LINKED_LIST___36;
@@ -416,7 +416,7 @@ public final class Static344 {
 
 	@OriginalMember(owner = "client!tt", name = "b", descriptor = "(I)V")
 	public static void method5517(@OriginalArg(0) int arg0) {
-		aClass2_Sub2_Sub17_3 = (Class2_Sub2_Sub17) aClass4_124.get((long) arg0);
+		aMap_3 = (Map) areas.get((long) arg0);
 	}
 
 	@OriginalMember(owner = "client!tt", name = "c", descriptor = "()V")
@@ -519,7 +519,7 @@ public final class Static344 {
 
 	@OriginalMember(owner = "client!tt", name = "a", descriptor = "(Lclient!wm;II)V")
 	public static void method5520(@OriginalArg(0) Class19 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		@Pc(9) Buffer local9 = new Buffer(archive.method5083(aClass2_Sub2_Sub17_3.aString67, "area"));
+		@Pc(9) Buffer local9 = new Buffer(archive.method5083(aMap_3.aString67, "area"));
 		@Pc(13) int local13 = local9.g1();
 		@Pc(16) int[] local16 = new int[local13];
 		for (@Pc(18) int local18 = 0; local18 < local13; local18++) {
@@ -667,8 +667,8 @@ public final class Static344 {
 								local179 = aShortArray122[local173] & 0xFFFF;
 							}
 							if (local175 == 0 && local177 == 0 && local179 == 0) {
-								if (aClass2_Sub2_Sub17_3.anInt6864 != -1) {
-									local175 = aClass2_Sub2_Sub17_3.anInt6864 | 0xFF000000;
+								if (aMap_3.anInt6864 != -1) {
+									local175 = aMap_3.anInt6864 | 0xFF000000;
 								} else if ((local17 + anInt6058 & 0x4) == (local57 + anInt6060 & 0x4)) {
 									local175 = anIntArray406[aClass72_6.anInt2060 + 1];
 								} else {
@@ -697,8 +697,8 @@ public final class Static344 {
 						local70 = anInt6061 - (arg2 * (local57 + 1) >> 16);
 						local80 = anInt6061 - (arg2 * local57 >> 16);
 						local84 = local80 - local70;
-						if (aClass2_Sub2_Sub17_3.anInt6864 != -1) {
-							local93 = aClass2_Sub2_Sub17_3.anInt6864 | 0xFF000000;
+						if (aMap_3.anInt6864 != -1) {
+							local93 = aMap_3.anInt6864 | 0xFF000000;
 						} else if ((local17 + anInt6058 & 0x4) == (local57 + anInt6060 & 0x4)) {
 							local93 = anIntArray406[aClass72_6.anInt2060 + 1];
 						} else {
@@ -844,10 +844,10 @@ public final class Static344 {
 	}
 
 	@OriginalMember(owner = "client!tt", name = "b", descriptor = "(II)Lclient!vj;")
-	public static Class2_Sub2_Sub17 method5526(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
-		for (@Pc(4) Class2_Sub2_Sub17 local4 = (Class2_Sub2_Sub17) aClass4_124.method80(); local4 != null; local4 = (Class2_Sub2_Sub17) aClass4_124.method79()) {
-			if (local4.aBoolean466 && local4.method6146(arg1, arg0)) {
-				return local4;
+	public static Map getContainingSource(@OriginalArg(0) int x, @OriginalArg(1) int z) {
+		for (@Pc(4) Map map = (Map) areas.head(); map != null; map = (Map) areas.next()) {
+			if (map.valid && map.containsSource(x, z)) {
+				return map;
 			}
 		}
 		return null;
@@ -904,7 +904,7 @@ public final class Static344 {
 									@Pc(70) Class2_Sub20 local70 = new Class2_Sub20(local49);
 									local70.anInt2949 = local1;
 									local70.anInt2952 = local4;
-									A_LINKED_LIST___36.method3539(local70);
+									A_LINKED_LIST___36.addTail(local70);
 								}
 							}
 						}
@@ -921,7 +921,7 @@ public final class Static344 {
 							@Pc(118) Class2_Sub20 local118 = new Class2_Sub20(local35);
 							local118.anInt2949 = local1;
 							local118.anInt2952 = local4;
-							A_LINKED_LIST___36.method3539(local118);
+							A_LINKED_LIST___36.addTail(local118);
 						}
 					}
 				}
@@ -947,7 +947,7 @@ public final class Static344 {
 										@Pc(201) Class2_Sub20 local201 = new Class2_Sub20(local180);
 										local201.anInt2949 = (local15 + (anInt6057 >> 6)) * 64 + local160.aByte62 - anInt6057;
 										local201.anInt2952 = (local144 + (anInt6055 >> 6)) * 64 + local160.aByte61 - anInt6055;
-										A_LINKED_LIST___36.method3539(local201);
+										A_LINKED_LIST___36.addTail(local201);
 									}
 								}
 							}

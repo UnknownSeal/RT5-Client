@@ -27,7 +27,7 @@ public final class Class2_Sub12_Sub1 extends Class2_Sub12 {
 	@OriginalMember(owner = "client!ff", name = "d", descriptor = "()Lclient!ll;")
 	@Override
 	public Class2_Sub12 method4977() {
-		@Pc(9) Class2_Sub11 local9 = (Class2_Sub11) this.aLinkedList_15.method3550();
+		@Pc(9) Class2_Sub11 local9 = (Class2_Sub11) this.aLinkedList_15.head();
 		if (local9 == null) {
 			return null;
 		} else if (local9.aClass2_Sub12_Sub4_1 == null) {
@@ -64,7 +64,7 @@ public final class Class2_Sub12_Sub1 extends Class2_Sub12 {
 	public Class2_Sub12 method4971() {
 		@Pc(9) Class2_Sub11 local9;
 		do {
-			local9 = (Class2_Sub11) this.aLinkedList_15.method3551();
+			local9 = (Class2_Sub11) this.aLinkedList_15.next();
 			if (local9 == null) {
 				return null;
 			}
@@ -82,7 +82,7 @@ public final class Class2_Sub12_Sub1 extends Class2_Sub12 {
 	@Override
 	public void method4972(@OriginalArg(0) int[] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
 		this.aClass2_Sub12_Sub2_1.method4972(arg0, arg1, arg2);
-		for (@Pc(17) Class2_Sub11 local17 = (Class2_Sub11) this.aLinkedList_15.method3550(); local17 != null; local17 = (Class2_Sub11) this.aLinkedList_15.method3551()) {
+		for (@Pc(17) Class2_Sub11 local17 = (Class2_Sub11) this.aLinkedList_15.head(); local17 != null; local17 = (Class2_Sub11) this.aLinkedList_15.next()) {
 			if (!this.aClass2_Sub12_Sub3_2.method4274(local17)) {
 				@Pc(27) int local27 = arg2;
 				@Pc(29) int local29 = arg1;
@@ -144,7 +144,7 @@ public final class Class2_Sub12_Sub1 extends Class2_Sub12 {
 	@Override
 	public void method4973(@OriginalArg(0) int arg0) {
 		this.aClass2_Sub12_Sub2_1.method4973(arg0);
-		for (@Pc(13) Class2_Sub11 local13 = (Class2_Sub11) this.aLinkedList_15.method3550(); local13 != null; local13 = (Class2_Sub11) this.aLinkedList_15.method3551()) {
+		for (@Pc(13) Class2_Sub11 local13 = (Class2_Sub11) this.aLinkedList_15.head(); local13 != null; local13 = (Class2_Sub11) this.aLinkedList_15.next()) {
 			if (!this.aClass2_Sub12_Sub3_2.method4274(local13)) {
 				@Pc(22) int local22 = arg0;
 				do {

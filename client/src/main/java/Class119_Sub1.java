@@ -82,7 +82,7 @@ public final class Class119_Sub1 extends Class119 implements MouseListener, Mous
 		local7.anInt5764 = arg0;
 		local7.anInt5766 = arg2;
 		local7.aLong175 = MonotonicClock.currentTimeMillis();
-		this.aLinkedList_23.method3539(local7);
+		this.aLinkedList_23.addTail(local7);
 	}
 
 	@OriginalMember(owner = "client!k", name = "h", descriptor = "(I)I")

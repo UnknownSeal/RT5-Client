@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class Class86 {
 
 	@OriginalMember(owner = "client!gr", name = "a", descriptor = "[I")
-	public int[] anIntArray151;
+	public int[] values;
 
 	@OriginalMember(owner = "client!gr", name = "b", descriptor = "I")
 	public int anInt2377;

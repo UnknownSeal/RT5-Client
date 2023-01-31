@@ -56,7 +56,7 @@ public final class Static388 {
 	public static void method6438(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
 		@Pc(13) int local13 = Static113.aClass239_2.method6125(LocalisedText.CHOOSE_OPTION.getLocalisedText(client.language));
 		@Pc(24) int local24;
-		for (@Pc(18) Class2_Sub5 local18 = (Class2_Sub5) Static129.A_LINKED_LIST___19.method3550(); local18 != null; local18 = (Class2_Sub5) Static129.A_LINKED_LIST___19.method3551()) {
+		for (@Pc(18) Class2_Sub5 local18 = (Class2_Sub5) Static129.A_LINKED_LIST___19.head(); local18 != null; local18 = (Class2_Sub5) Static129.A_LINKED_LIST___19.next()) {
 			local24 = Static218.method1096(local18);
 			if (local24 > local13) {
 				local13 = local24;

@@ -9,10 +9,10 @@ public final class Static315 {
 	@OriginalMember(owner = "client!se", name = "b", descriptor = "(B)V")
 	public static void method5380() {
 		Static295.A_LINKED_LIST___32.clear();
-		for (@Pc(13) Class2_Sub5 local13 = (Class2_Sub5) Static129.A_LINKED_LIST___19.method3550(); local13 != null; local13 = (Class2_Sub5) Static129.A_LINKED_LIST___19.method3551()) {
+		for (@Pc(13) Class2_Sub5 local13 = (Class2_Sub5) Static129.A_LINKED_LIST___19.head(); local13 != null; local13 = (Class2_Sub5) Static129.A_LINKED_LIST___19.next()) {
 			if (local13.anInt1005 < 1000) {
 				local13.unlink();
-				Static295.A_LINKED_LIST___32.method3539(local13);
+				Static295.A_LINKED_LIST___32.addTail(local13);
 			}
 		}
 		Static295.A_LINKED_LIST___32.method3541(Static129.A_LINKED_LIST___19);

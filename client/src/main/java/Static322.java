@@ -99,10 +99,10 @@ public final class Static322 {
 			}
 		}
 		if (Static34.aMapElementList_3 == null) {
-			if (Static91.aClass2_Sub2_Sub17_1 == null || !Static389.aJs5_66.isGroupNameValid(Static91.aClass2_Sub2_Sub17_1.aString67 + "_staticelements")) {
+			if (Static91.aMap_1 == null || !Static389.aJs5_66.isGroupNameValid(Static91.aMap_1.aString67 + "_staticelements")) {
 				Static34.aMapElementList_3 = new MapElementList(0);
-			} else if (Static389.aJs5_66.isGroupReady(Static91.aClass2_Sub2_Sub17_1.aString67 + "_staticelements")) {
-				Static34.aMapElementList_3 = MapElementList.create(Static389.aJs5_66, Static91.aClass2_Sub2_Sub17_1.aString67 + "_staticelements", Static206.mapMembers);
+			} else if (Static389.aJs5_66.isGroupReady(Static91.aMap_1.aString67 + "_staticelements")) {
+				Static34.aMapElementList_3 = MapElementList.create(Static389.aJs5_66, Static91.aMap_1.aString67 + "_staticelements", Static206.mapMembers);
 			} else {
 				Static144.anInt2694++;
 				ready = false;

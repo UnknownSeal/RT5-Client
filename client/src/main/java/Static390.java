@@ -78,9 +78,9 @@ public final class Static390 {
 		if (Static139.topLevelInterface != -1) {
 			Static162.method2978(Static139.topLevelInterface);
 		}
-		for (@Pc(4552) Class2_Sub7 local4552 = (Class2_Sub7) Static329.aClass4_130.method80(); local4552 != null; local4552 = (Class2_Sub7) Static329.aClass4_130.method79()) {
+		for (@Pc(4552) Class2_Sub7 local4552 = (Class2_Sub7) Static329.aClass4_130.head(); local4552 != null; local4552 = (Class2_Sub7) Static329.aClass4_130.next()) {
 			if (!local4552.isLinked()) {
-				local4552 = (Class2_Sub7) Static329.aClass4_130.method80();
+				local4552 = (Class2_Sub7) Static329.aClass4_130.head();
 				if (local4552 == null) {
 					break;
 				}

@@ -23,7 +23,7 @@ public final class Static301 {
 
 	@OriginalMember(owner = "client!ri", name = "c", descriptor = "(Z)V")
 	public static void method5187() {
-		for (@Pc(14) Class2_Sub2_Sub9 local14 = (Class2_Sub2_Sub9) Static332.A_LINKED_LIST___38.method3550(); local14 != null; local14 = (Class2_Sub2_Sub9) Static332.A_LINKED_LIST___38.method3551()) {
+		for (@Pc(14) Class2_Sub2_Sub9 local14 = (Class2_Sub2_Sub9) Static332.A_LINKED_LIST___38.head(); local14 != null; local14 = (Class2_Sub2_Sub9) Static332.A_LINKED_LIST___38.next()) {
 			@Pc(19) Class11_Sub5_Sub3 local19 = local14.aClass11_Sub5_Sub3_1;
 			if (local19.aByte78 != Static355.anInt6585 || local19.anInt4722 < Static114.loop) {
 				local14.unlink();

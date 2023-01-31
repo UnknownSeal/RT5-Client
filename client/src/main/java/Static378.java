@@ -13,8 +13,8 @@ public final class Static378 {
 	public static int anInt7077 = 0;
 
 	@OriginalMember(owner = "client!wa", name = "a", descriptor = "(I)Lclient!vj;")
-	public static Class2_Sub2_Sub17 method6311() {
-		return Static344.aClass2_Sub2_Sub17_3;
+	public static Map method6311() {
+		return Static344.aMap_3;
 	}
 
 	@OriginalMember(owner = "client!wa", name = "a", descriptor = "(BI)Z")

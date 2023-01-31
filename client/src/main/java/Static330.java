@@ -86,7 +86,7 @@ public final class Static330 {
 				local32 *= 64;
 				local181 = new Class11_Sub5_Sub3(local57, Static243.anInt4502, local23, local32, Static386.method6031(local23, local32, Static243.anInt4502) - local63, local73 - -Static114.loop, Static114.loop + local77, local81, local85, local53, local69);
 				local181.method4396(Static386.method6031(local40, local49, Static243.anInt4502) - local69, local40, Static114.loop + local73, local49);
-				Static332.A_LINKED_LIST___38.method3539(new Class2_Sub2_Sub9(local181));
+				Static332.A_LINKED_LIST___38.addTail(new Class2_Sub2_Sub9(local181));
 			}
 		} else if (arg0 == Static285.aClass210_12) {
 			local12 = Static212.inboundBuffer.g1();
@@ -98,7 +98,7 @@ public final class Static330 {
 			if (Static120.aClass4_49 != null && local23 >= 0 && local32 >= 0 && local23 < Static373.anInt7033 && Static242.anInt4449 > local32) {
 				@Pc(269) Class2_Sub32 local269 = (Class2_Sub32) Static120.aClass4_49.get((long) (local23 | Static243.anInt4502 << 28 | local32 << 14));
 				if (local269 != null) {
-					for (@Pc(277) Class2_Sub8 local277 = (Class2_Sub8) local269.aLinkedList_34.method3550(); local277 != null; local277 = (Class2_Sub8) local269.aLinkedList_34.method3551()) {
+					for (@Pc(277) Class2_Sub8 local277 = (Class2_Sub8) local269.aLinkedList_34.head(); local277 != null; local277 = (Class2_Sub8) local269.aLinkedList_34.next()) {
 						if (local277.anInt1717 == (local40 & 0x7FFF) && local49 == local277.anInt1719) {
 							local277.unlink();
 							local277.anInt1719 = local53;
@@ -172,7 +172,7 @@ public final class Static330 {
 					}
 					@Pc(628) Class11_Sub5_Sub3 local628 = new Class11_Sub5_Sub3(local63, Static243.anInt4502, local23, local32, Static386.method6031(local23, local32, Static243.anInt4502) - local69, Static114.loop + local77, local81 + Static114.loop, local85, local403, local57, local73);
 					local628.method4396(Static386.method6031(local40, local49, Static243.anInt4502) - local73, local40, Static114.loop + local77, local49);
-					Static332.A_LINKED_LIST___38.method3539(new Class2_Sub2_Sub9(local628));
+					Static332.A_LINKED_LIST___38.addTail(new Class2_Sub2_Sub9(local628));
 				}
 			} else if (Static27.aClass210_2 == arg0) {
 				local12 = Static212.inboundBuffer.g1bneg();
@@ -182,7 +182,7 @@ public final class Static330 {
 				if (local23 >= 0 && local32 >= 0 && local23 < Static373.anInt7033 && local32 < Static242.anInt4449) {
 					@Pc(713) Class2_Sub32 local713 = (Class2_Sub32) Static120.aClass4_49.get((long) (local23 | Static243.anInt4502 << 28 | local32 << 14));
 					if (local713 != null) {
-						for (@Pc(721) Class2_Sub8 local721 = (Class2_Sub8) local713.aLinkedList_34.method3550(); local721 != null; local721 = (Class2_Sub8) local713.aLinkedList_34.method3551()) {
+						for (@Pc(721) Class2_Sub8 local721 = (Class2_Sub8) local713.aLinkedList_34.head(); local721 != null; local721 = (Class2_Sub8) local713.aLinkedList_34.next()) {
 							if ((local40 & 0x7FFF) == local721.anInt1717) {
 								local721.unlink();
 								break;
@@ -273,7 +273,7 @@ public final class Static330 {
 					local57 = local23 * 128 + 64;
 					local63 = local32 * 128 + 64;
 					@Pc(1208) Class11_Sub5_Sub4 local1208 = new Class11_Sub5_Sub4(local40, local53, Static114.loop, Static243.anInt4502, local57, Static386.method6031(local57, local63, Static243.anInt4502) - local49, local63, local23, local23, local32, local32);
-					Static129.A_LINKED_LIST___20.method3539(new Class2_Sub2_Sub1(local1208));
+					Static129.A_LINKED_LIST___20.addTail(new Class2_Sub2_Sub1(local1208));
 				}
 			} else if (Static333.aClass210_17 == arg0) {
 				local12 = Static212.inboundBuffer.g1();
@@ -335,7 +335,7 @@ public final class Static330 {
 					local40 = local40 * 128 + 64;
 					local181 = new Class11_Sub5_Sub3(local57, Static243.anInt4502, local23, local32, Static386.method6031(local23, local32, Static243.anInt4502) - local63, local73 + Static114.loop, local77 + Static114.loop, local81, local85, local53, local69);
 					local181.method4396(Static386.method6031(local40, local49, Static243.anInt4502) - local69, local40, Static114.loop + local73, local49);
-					Static332.A_LINKED_LIST___38.method3539(new Class2_Sub2_Sub9(local181));
+					Static332.A_LINKED_LIST___38.addTail(new Class2_Sub2_Sub9(local181));
 				}
 			} else if (Static109.aClass210_4 == arg0) {
 				local12 = Static212.inboundBuffer.g2();

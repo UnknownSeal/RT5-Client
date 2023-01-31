@@ -66,7 +66,7 @@ public final class Static371 {
 			@Pc(191) Class2_Sub13 local191 = new Class2_Sub13();
 			local191.aComponent_3 = arg3;
 			local191.anObjectArray4 = arg3.onResize;
-			Static274.A_LINKED_LIST___30.method3539(local191);
+			Static274.A_LINKED_LIST___30.addTail(local191);
 		}
 	}
 

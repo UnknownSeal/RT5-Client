@@ -92,18 +92,18 @@ public final class Static211 {
 	}
 
 	@OriginalMember(owner = "client!mh", name = "a", descriptor = "(II)V")
-	public static void method3721(@OriginalArg(1) int arg0) {
+	public static void setTargetZoom(@OriginalArg(1) int targetZoom) {
 		Static77.anInt1763 = -1;
-		if (arg0 == 37) {
-			Static344.aFloat73 = 3.0F;
-		} else if (arg0 == 50) {
-			Static344.aFloat73 = 4.0F;
-		} else if (arg0 == 75) {
-			Static344.aFloat73 = 6.0F;
-		} else if (arg0 == 100) {
-			Static344.aFloat73 = 8.0F;
-		} else if (arg0 == 200) {
-			Static344.aFloat73 = 16.0F;
+		if (targetZoom == 37) {
+			Static344.targetZoom = 3.0F;
+		} else if (targetZoom == 50) {
+			Static344.targetZoom = 4.0F;
+		} else if (targetZoom == 75) {
+			Static344.targetZoom = 6.0F;
+		} else if (targetZoom == 100) {
+			Static344.targetZoom = 8.0F;
+		} else if (targetZoom == 200) {
+			Static344.targetZoom = 16.0F;
 		}
 		Static77.anInt1763 = -1;
 	}
@@ -137,7 +137,7 @@ public final class Static211 {
 			if (local7.anIntArray181 != null) {
 				local7.anInt2907 = local7.anInt2903 + (int) ((double) (local7.anInt2897 - local7.anInt2903) * Math.random());
 			}
-			Static83.A_LINKED_LIST___14.method3539(local7);
+			Static83.A_LINKED_LIST___14.addTail(local7);
 		} else if (arg4 != null) {
 			local7.aClass11_Sub5_Sub2_Sub2_1 = arg4;
 			@Pc(131) NpcType local131 = arg4.type;
@@ -152,7 +152,7 @@ public final class Static211 {
 				local7.anInt2901 = local131.soundradius * 128;
 				local7.anInt2906 = local131.soundvolume;
 			}
-			Static363.A_LINKED_LIST___39.method3539(local7);
+			Static363.A_LINKED_LIST___39.addTail(local7);
 		} else if (arg3 != null) {
 			local7.aClass11_Sub5_Sub2_Sub1_2 = arg3;
 			local7.anInt2896 = (arg5 + arg3.method4327()) * 128;

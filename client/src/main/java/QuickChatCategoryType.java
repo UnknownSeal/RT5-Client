@@ -86,13 +86,13 @@ public final class QuickChatCategoryType extends SecondaryNode {
 	}
 
 	@OriginalMember(owner = "client!mn", name = "a", descriptor = "(ZC)I")
-	public int method3797(@OriginalArg(1) char arg0) {
+	public int getPhraseByShortcut(@OriginalArg(1) char shortcut) {
 		if (this.phrases == null) {
 			return -1;
 		}
-		for (@Pc(17) int local17 = 0; local17 < this.phrases.length; local17++) {
-			if (this.phraseShortcuts[local17] == arg0) {
-				return this.phrases[local17];
+		for (@Pc(17) int i = 0; i < this.phrases.length; i++) {
+			if (this.phraseShortcuts[i] == shortcut) {
+				return this.phrases[i];
 			}
 		}
 		return -1;

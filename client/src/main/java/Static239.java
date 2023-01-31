@@ -15,7 +15,7 @@ public final class Static239 {
 
 	@OriginalMember(owner = "client!nn", name = "a", descriptor = "(IZ)V")
 	public static void method4151(@OriginalArg(1) boolean arg0) {
-		for (@Pc(12) Class2_Sub19 local12 = (Class2_Sub19) Static83.A_LINKED_LIST___14.method3550(); local12 != null; local12 = (Class2_Sub19) Static83.A_LINKED_LIST___14.method3551()) {
+		for (@Pc(12) Class2_Sub19 local12 = (Class2_Sub19) Static83.A_LINKED_LIST___14.head(); local12 != null; local12 = (Class2_Sub19) Static83.A_LINKED_LIST___14.next()) {
 			if (local12.aClass2_Sub12_Sub4_3 != null) {
 				Static227.aClass2_Sub12_Sub2_2.method2081(local12.aClass2_Sub12_Sub4_3);
 				local12.aClass2_Sub12_Sub4_3 = null;
@@ -29,14 +29,14 @@ public final class Static239 {
 		if (!arg0) {
 			return;
 		}
-		for (@Pc(55) Class2_Sub19 local55 = (Class2_Sub19) Static363.A_LINKED_LIST___39.method3550(); local55 != null; local55 = (Class2_Sub19) Static363.A_LINKED_LIST___39.method3551()) {
+		for (@Pc(55) Class2_Sub19 local55 = (Class2_Sub19) Static363.A_LINKED_LIST___39.head(); local55 != null; local55 = (Class2_Sub19) Static363.A_LINKED_LIST___39.next()) {
 			if (local55.aClass2_Sub12_Sub4_3 != null) {
 				Static227.aClass2_Sub12_Sub2_2.method2081(local55.aClass2_Sub12_Sub4_3);
 				local55.aClass2_Sub12_Sub4_3 = null;
 			}
 			local55.unlink();
 		}
-		for (@Pc(82) Class2_Sub19 local82 = (Class2_Sub19) Static232.aClass4_86.method80(); local82 != null; local82 = (Class2_Sub19) Static232.aClass4_86.method79()) {
+		for (@Pc(82) Class2_Sub19 local82 = (Class2_Sub19) Static232.aClass4_86.head(); local82 != null; local82 = (Class2_Sub19) Static232.aClass4_86.next()) {
 			if (local82.aClass2_Sub12_Sub4_3 != null) {
 				Static227.aClass2_Sub12_Sub2_2.method2081(local82.aClass2_Sub12_Sub4_3);
 				local82.aClass2_Sub12_Sub4_3 = null;

@@ -78,7 +78,7 @@ public final class Static5 {
 	@OriginalMember(owner = "client!ad", name = "a", descriptor = "(ILclient!qg;I)V")
 	public static void method88(@OriginalArg(1) Packet arg0, @OriginalArg(2) int arg1) {
 		while (true) {
-			@Pc(16) Class2_Sub42 local16 = (Class2_Sub42) Static337.aLinkedList_37.method3550();
+			@Pc(16) Class2_Sub42 local16 = (Class2_Sub42) Static337.aLinkedList_37.head();
 			if (local16 == null) {
 				return;
 			}

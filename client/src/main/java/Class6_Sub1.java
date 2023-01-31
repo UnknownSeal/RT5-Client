@@ -343,7 +343,7 @@ public final class Class6_Sub1 extends Class6 {
 			this.aClass19_Sub1_1.method794(8448, 7681);
 			this.aClass19_Sub1_1.method793(0, 34166, 770);
 			this.aClass19_Sub1_1.method833(0, 34167);
-			for (@Pc(236) Node local236 = this.aLinkedList_3.method3550(); local236 != null; local236 = this.aLinkedList_3.method3551()) {
+			for (@Pc(236) Node local236 = this.aLinkedList_3.head(); local236 != null; local236 = this.aLinkedList_3.next()) {
 				@Pc(241) Class2_Sub23 local241 = (Class2_Sub23) local236;
 				local241.method3525(arg2, arg0, arg3, arg1);
 			}
@@ -725,7 +725,7 @@ public final class Class6_Sub1 extends Class6 {
 	@OriginalMember(owner = "client!ah", name = "a", descriptor = "(Lclient!of;[I)V")
 	@Override
 	public void method5720(@OriginalArg(0) Class2_Sub26 arg0, @OriginalArg(1) int[] arg1) {
-		this.aLinkedList_3.method3539(new Class2_Sub23(this.aClass19_Sub1_1, this, arg0, arg1));
+		this.aLinkedList_3.addTail(new Class2_Sub23(this.aClass19_Sub1_1, this, arg0, arg1));
 	}
 
 	@OriginalMember(owner = "client!ah", name = "a", descriptor = "(IILclient!kb;)Lclient!kb;")

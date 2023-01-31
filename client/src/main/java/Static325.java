@@ -24,10 +24,10 @@ public final class Static325 {
 		anInterface9_1 = arg0;
 		Static308.globalArchive = arg2;
 		if (Static137.archive != null) {
-			Static21.anInt554 = Static137.archive.method5080(1);
+			Static21.capacity = Static137.archive.method5080(1);
 		}
 		if (Static308.globalArchive != null) {
-			Static361.anInt6769 = Static308.globalArchive.method5080(1);
+			Static361.globalCapacity = Static308.globalArchive.method5080(1);
 		}
 	}
 

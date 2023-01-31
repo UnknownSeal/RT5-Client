@@ -70,7 +70,7 @@ public final class Static182 {
 
 	@OriginalMember(owner = "client!kk", name = "a", descriptor = "(B)V")
 	public static void method3386() {
-		for (@Pc(15) Class2_Sub2_Sub1 local15 = (Class2_Sub2_Sub1) Static129.A_LINKED_LIST___20.method3550(); local15 != null; local15 = (Class2_Sub2_Sub1) Static129.A_LINKED_LIST___20.method3551()) {
+		for (@Pc(15) Class2_Sub2_Sub1 local15 = (Class2_Sub2_Sub1) Static129.A_LINKED_LIST___20.head(); local15 != null; local15 = (Class2_Sub2_Sub1) Static129.A_LINKED_LIST___20.next()) {
 			@Pc(20) Class11_Sub5_Sub4 local20 = local15.aClass11_Sub5_Sub4_1;
 			if (local20.aBoolean445) {
 				local15.unlink();

@@ -4,13 +4,13 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!qb")
-public final class Class2_Sub3_Sub26 extends TextureOp {
+public final class TextureOpWeave extends TextureOp {
 
 	@OriginalMember(owner = "client!qb", name = "Q", descriptor = "I")
 	private int anInt5155 = 585;
 
 	@OriginalMember(owner = "client!qb", name = "<init>", descriptor = "()V")
-	public Class2_Sub3_Sub26() {
+	public TextureOpWeave() {
 		super(0, true);
 	}
 

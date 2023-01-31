@@ -119,14 +119,14 @@ public final class SoftLruHashTable {
 
 	@OriginalMember(owner = "client!hu", name = "a", descriptor = "(Z)Ljava/lang/Object;")
 	public Object method2618() {
-		@Pc(17) ReferenceNode local17 = (ReferenceNode) this.table.method79();
+		@Pc(17) ReferenceNode local17 = (ReferenceNode) this.table.next();
 		while (local17 != null) {
 			@Pc(23) Object local23 = local17.get();
 			if (local23 != null) {
 				return local23;
 			}
 			@Pc(27) ReferenceNode local27 = local17;
-			local17 = (ReferenceNode) this.table.method79();
+			local17 = (ReferenceNode) this.table.next();
 			local27.unlink();
 			local27.unlinkSecondary();
 			this.available += local17.anInt6636;
@@ -136,14 +136,14 @@ public final class SoftLruHashTable {
 
 	@OriginalMember(owner = "client!hu", name = "d", descriptor = "(I)Ljava/lang/Object;")
 	public Object method2619() {
-		@Pc(11) ReferenceNode local11 = (ReferenceNode) this.table.method80();
+		@Pc(11) ReferenceNode local11 = (ReferenceNode) this.table.head();
 		while (local11 != null) {
 			@Pc(17) Object local17 = local11.get();
 			if (local17 != null) {
 				return local17;
 			}
 			@Pc(23) ReferenceNode local23 = local11;
-			local11 = (ReferenceNode) this.table.method79();
+			local11 = (ReferenceNode) this.table.next();
 			local23.unlink();
 			local23.unlinkSecondary();
 			this.available += local11.anInt6636;

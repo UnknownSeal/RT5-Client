@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!jl")
-public final class Class2_Sub3_Sub17 extends TextureOp {
+public final class TextureOpWaveform extends TextureOp {
 
 	@OriginalMember(owner = "client!jl", name = "P", descriptor = "I")
 	private int anInt3132 = 0;
@@ -20,7 +20,7 @@ public final class Class2_Sub3_Sub17 extends TextureOp {
 	}
 
 	@OriginalMember(owner = "client!jl", name = "<init>", descriptor = "()V")
-	public Class2_Sub3_Sub17() {
+	public TextureOpWaveform() {
 		super(0, true);
 	}
 

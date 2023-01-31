@@ -777,7 +777,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 	public synchronized void method785(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
 		@Pc(4) IntNode local4 = new IntNode(arg1);
 		local4.key = arg0;
-		this.aLinkedList_7.method3539(local4);
+		this.aLinkedList_7.addTail(local4);
 	}
 
 	@OriginalMember(owner = "client!bf", name = "s", descriptor = "()Z")
@@ -1546,7 +1546,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 	public synchronized void method803(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
 		@Pc(4) IntNode local4 = new IntNode(arg1);
 		local4.key = arg0;
-		this.aLinkedList_6.method3539(local4);
+		this.aLinkedList_6.addTail(local4);
 	}
 
 	@OriginalMember(owner = "client!bf", name = "a", descriptor = "(FFFF)V")
@@ -1814,7 +1814,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 	@OriginalMember(owner = "client!bf", name = "o", descriptor = "(I)V")
 	public synchronized void method820(@OriginalArg(0) int arg0) {
 		@Pc(4) IntNode local4 = new IntNode(arg0);
-		this.aLinkedList_10.method3539(local4);
+		this.aLinkedList_10.addTail(local4);
 	}
 
 	@OriginalMember(owner = "client!bf", name = "m", descriptor = "()I")
@@ -1935,7 +1935,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 	@OriginalMember(owner = "client!bf", name = "p", descriptor = "(I)V")
 	public synchronized void method822(@OriginalArg(0) int arg0) {
 		@Pc(4) IntNode local4 = new IntNode(arg0);
-		this.aLinkedList_7.method3539(local4);
+		this.aLinkedList_7.addTail(local4);
 	}
 
 	@OriginalMember(owner = "client!bf", name = "fb", descriptor = "()V")
@@ -2109,7 +2109,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 	@OriginalMember(owner = "client!bf", name = "r", descriptor = "(I)V")
 	public synchronized void method836(@OriginalArg(0) int arg0) {
 		@Pc(4) IntNode local4 = new IntNode(arg0);
-		this.aLinkedList_9.method3539(local4);
+		this.aLinkedList_9.addTail(local4);
 	}
 
 	@OriginalMember(owner = "client!bf", name = "b", descriptor = "(IIIII)V")
@@ -2298,7 +2298,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 	public synchronized void method841(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
 		@Pc(4) IntNode local4 = new IntNode(arg1);
 		local4.key = arg0;
-		this.aLinkedList_5.method3539(local4);
+		this.aLinkedList_5.addTail(local4);
 	}
 
 	@OriginalMember(owner = "client!bf", name = "a", descriptor = "(II[[I[[IIII)Lclient!tf;")

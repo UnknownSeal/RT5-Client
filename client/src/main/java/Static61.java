@@ -102,18 +102,6 @@ public final class Static61 {
 		method1671(arg0, arg1, arg2, local16 + 1);
 	}
 
-	@OriginalMember(owner = "client!dj", name = "a", descriptor = "(IIBLclient!r;)Lclient!vj;")
-	public static Class2_Sub2_Sub17 method1672(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) Js5 arg2) {
-		@Pc(14) Buffer local14 = new Buffer(arg2.fetchFile(arg1, arg0));
-		@Pc(54) Class2_Sub2_Sub17 local54 = new Class2_Sub2_Sub17(arg0, local14.gjstr(), local14.gjstr(), local14.mg4(), local14.mg4(), local14.g1() == 1, local14.g1(), local14.g1());
-		@Pc(58) int local58 = local14.g1();
-		for (@Pc(60) int local60 = 0; local60 < local58; local60++) {
-			local54.aLinkedList_41.method3539(new Class2_Sub31(local14.g1(), local14.g2(), local14.g2(), local14.g2(), local14.g2(), local14.g2(), local14.g2(), local14.g2(), local14.g2()));
-		}
-		local54.method6149();
-		return local54;
-	}
-
 	@OriginalMember(owner = "client!dj", name = "c", descriptor = "(B)V")
 	public static void method1673() {
 		for (@Pc(5) int local5 = 0; local5 < Static166.size; local5++) {

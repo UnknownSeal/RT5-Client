@@ -22,14 +22,14 @@ public final class Static333 {
 	}
 
 	@OriginalMember(owner = "client!tg", name = "f", descriptor = "(I)I")
-	public static int method6330() {
-		if ((double) Static344.aFloat73 == 3.0D) {
+	public static int getTargetZoom() {
+		if ((double) Static344.targetZoom == 3.0D) {
 			return 37;
-		} else if ((double) Static344.aFloat73 == 4.0D) {
+		} else if ((double) Static344.targetZoom == 4.0D) {
 			return 50;
-		} else if ((double) Static344.aFloat73 == 6.0D) {
+		} else if ((double) Static344.targetZoom == 6.0D) {
 			return 75;
-		} else if ((double) Static344.aFloat73 == 8.0D) {
+		} else if ((double) Static344.targetZoom == 8.0D) {
 			return 100;
 		} else {
 			return 200;

@@ -37,7 +37,7 @@ public final class Class2_Sub12_Sub2 extends Class2_Sub12 {
 			arg2 -= local33;
 			this.anInt2000 += local33;
 			this.method2077();
-			@Pc(60) Class2_Sub30 local60 = (Class2_Sub30) this.aLinkedList_17.method3550();
+			@Pc(60) Class2_Sub30 local60 = (Class2_Sub30) this.aLinkedList_17.head();
 			synchronized (local60) {
 				@Pc(68) int local68 = local60.method4695(this);
 				if (local68 < 0) {
@@ -54,7 +54,7 @@ public final class Class2_Sub12_Sub2 extends Class2_Sub12 {
 	@OriginalMember(owner = "client!fi", name = "d", descriptor = "()Lclient!ll;")
 	@Override
 	public Class2_Sub12 method4977() {
-		return (Class2_Sub12) this.aLinkedList_16.method3550();
+		return (Class2_Sub12) this.aLinkedList_16.head();
 	}
 
 	@OriginalMember(owner = "client!fi", name = "e", descriptor = "()V")
@@ -62,7 +62,7 @@ public final class Class2_Sub12_Sub2 extends Class2_Sub12 {
 		if (this.anInt2000 <= 0) {
 			return;
 		}
-		for (@Pc(8) Class2_Sub30 local8 = (Class2_Sub30) this.aLinkedList_17.method3550(); local8 != null; local8 = (Class2_Sub30) this.aLinkedList_17.method3551()) {
+		for (@Pc(8) Class2_Sub30 local8 = (Class2_Sub30) this.aLinkedList_17.head(); local8 != null; local8 = (Class2_Sub30) this.aLinkedList_17.next()) {
 			local8.anInt5127 -= this.anInt2000;
 		}
 		this.anInt1999 -= this.anInt2000;
@@ -99,7 +99,7 @@ public final class Class2_Sub12_Sub2 extends Class2_Sub12 {
 			arg0 -= local29;
 			this.anInt2000 += local29;
 			this.method2077();
-			@Pc(50) Class2_Sub30 local50 = (Class2_Sub30) this.aLinkedList_17.method3550();
+			@Pc(50) Class2_Sub30 local50 = (Class2_Sub30) this.aLinkedList_17.head();
 			synchronized (local50) {
 				@Pc(58) int local58 = local50.method4695(this);
 				if (local58 < 0) {
@@ -115,7 +115,7 @@ public final class Class2_Sub12_Sub2 extends Class2_Sub12 {
 
 	@OriginalMember(owner = "client!fi", name = "c", descriptor = "(I)V")
 	private void method2079(@OriginalArg(0) int arg0) {
-		for (@Pc(5) Class2_Sub12 local5 = (Class2_Sub12) this.aLinkedList_16.method3550(); local5 != null; local5 = (Class2_Sub12) this.aLinkedList_16.method3551()) {
+		for (@Pc(5) Class2_Sub12 local5 = (Class2_Sub12) this.aLinkedList_16.head(); local5 != null; local5 = (Class2_Sub12) this.aLinkedList_16.next()) {
 			local5.method4973(arg0);
 		}
 	}
@@ -142,7 +142,7 @@ public final class Class2_Sub12_Sub2 extends Class2_Sub12 {
 
 	@OriginalMember(owner = "client!fi", name = "c", descriptor = "([III)V")
 	private void method2082(@OriginalArg(0) int[] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		for (@Pc(5) Class2_Sub12 local5 = (Class2_Sub12) this.aLinkedList_16.method3550(); local5 != null; local5 = (Class2_Sub12) this.aLinkedList_16.method3551()) {
+		for (@Pc(5) Class2_Sub12 local5 = (Class2_Sub12) this.aLinkedList_16.head(); local5 != null; local5 = (Class2_Sub12) this.aLinkedList_16.next()) {
 			local5.method4974(arg0, arg1, arg2);
 		}
 	}
@@ -150,7 +150,7 @@ public final class Class2_Sub12_Sub2 extends Class2_Sub12 {
 	@OriginalMember(owner = "client!fi", name = "a", descriptor = "()Lclient!ll;")
 	@Override
 	public Class2_Sub12 method4971() {
-		return (Class2_Sub12) this.aLinkedList_16.method3551();
+		return (Class2_Sub12) this.aLinkedList_16.next();
 	}
 
 	@OriginalMember(owner = "client!fi", name = "b", descriptor = "(Lclient!ll;)V")

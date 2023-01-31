@@ -100,7 +100,7 @@ public final class Static92 {
 		@Pc(174) int local174;
 		@Pc(185) int local185;
 		@Pc(196) int local196;
-		for (@Pc(149) IntNode local149 = (IntNode) Static56.A_LINKED_LIST___13.method3550(); local149 != null; local149 = (IntNode) Static56.A_LINKED_LIST___13.method3551()) {
+		for (@Pc(149) IntNode local149 = (IntNode) Static56.A_LINKED_LIST___13.head(); local149 != null; local149 = (IntNode) Static56.A_LINKED_LIST___13.next()) {
 			@Pc(154) int local154 = local149.value;
 			local165 = (Static34.aMapElementList_3.positions[local154] >> 14 & 0x3FFF) - Static164.originX;
 			local174 = (Static34.aMapElementList_3.positions[local154] & 0x3FFF) - Static148.originZ;
@@ -120,7 +120,7 @@ public final class Static92 {
 			}
 			Static216.method3775(arg3, arg0, local253.anInt1306, arg1, local185, local14, local174, arg2);
 		}
-		for (@Pc(293) Class2_Sub32 local293 = (Class2_Sub32) Static120.aClass4_49.method80(); local293 != null; local293 = (Class2_Sub32) Static120.aClass4_49.method79()) {
+		for (@Pc(293) Class2_Sub32 local293 = (Class2_Sub32) Static120.aClass4_49.head(); local293 != null; local293 = (Class2_Sub32) Static120.aClass4_49.next()) {
 			local185 = (int) (local293.key >> 28 & 0x3L);
 			if (local185 == Static343.anInt6389) {
 				local196 = (int) (local293.key & 0x3FFFL) * 4 + 2 - local61 / 32;
