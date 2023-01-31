@@ -10,9 +10,6 @@ public final class Static210 {
 	@OriginalMember(owner = "client!mg", name = "y", descriptor = "I")
 	public static int anInt3773;
 
-	@OriginalMember(owner = "client!mg", name = "h", descriptor = "I")
-	public static int anInt3761 = 500;
-
 	@OriginalMember(owner = "client!mg", name = "v", descriptor = "Lclient!hu;")
 	public static final SoftLruHashTable A_SOFT_LRU_HASH_TABLE___31 = new SoftLruHashTable(8);
 

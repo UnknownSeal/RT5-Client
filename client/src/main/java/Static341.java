@@ -66,7 +66,7 @@ public final class Static341 {
 	}
 
 	@OriginalMember(owner = "client!tq", name = "a", descriptor = "(I[IIJ)Ljava/lang/String;")
-	public static String method5769(@OriginalArg(1) int[] arg0, @OriginalArg(2) int arg1, @OriginalArg(3) long arg2) {
+	public static String decodeCommand(@OriginalArg(1) int[] arg0, @OriginalArg(2) int arg1, @OriginalArg(3) long arg2) {
 		if (Static325.anInterface9_1 != null) {
 			@Pc(17) String local17 = Static325.anInterface9_1.method2360(arg2, arg0, arg1);
 			if (local17 != null) {

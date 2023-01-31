@@ -11,5 +11,5 @@ public final class Class86 {
 	public int anInt2377;
 
 	@OriginalMember(owner = "client!gr", name = "c", descriptor = "Lclient!tb;")
-	public Class2_Sub2_Sub16 aClass2_Sub2_Sub16_1;
+	public QuickChatPhraseType aQuickChatPhraseType_1;
 }

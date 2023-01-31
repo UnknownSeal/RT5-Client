@@ -11,7 +11,7 @@ public final class Static193 {
 	public static final Class89 aClass89_146 = new Class89(63, -1);
 
 	@OriginalMember(owner = "client!la", name = "j", descriptor = "I")
-	public static int anInt3555 = 0;
+	public static int uidsWriterIndex = 0;
 
 	@OriginalMember(owner = "client!la", name = "l", descriptor = "I")
 	public static int anInt3557 = 0;
@@ -65,15 +65,15 @@ public final class Static193 {
 	@OriginalMember(owner = "client!la", name = "a", descriptor = "(ILclient!wm;Lclient!ur;ZIII)V")
 	public static void method3511(@OriginalArg(0) int arg0, @OriginalArg(1) Class19 arg1, @OriginalArg(2) Class130 arg2, @OriginalArg(3) boolean arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5) {
 		if (arg3) {
-			Static252.aClass13_14.method6384((Static250.anInt4665 - Static252.aClass13_14.method6398()) / 2, (Static172.anInt3299 - Static252.aClass13_14.method6383()) / 2);
-			Static333.aClass13_21.method6384((Static250.anInt4665 - Static333.aClass13_21.method6398()) / 2, 18);
+			Static252.aClass13_14.method6384((GameShell.canvasWidth - Static252.aClass13_14.method6398()) / 2, (GameShell.canvasHeight - Static252.aClass13_14.method6383()) / 2);
+			Static333.aClass13_21.method6384((GameShell.canvasWidth - Static333.aClass13_21.method6398()) / 2, 18);
 		}
-		arg2.method5899((Static249.aClass50_3 == client.game ? LocalisedText.RUNESCAPE_IS_LOADING : LocalisedText.ALTERNATE_GAME_IS_LOADING).getLocalisedText(client.language), -1, Static172.anInt3299 / 2 - 26, arg0, Static250.anInt4665 / 2);
-		@Pc(58) int local58 = Static172.anInt3299 / 2 - 18;
-		arg1.method2836(Static250.anInt4665 / 2 - 152, local58, 304, 34, arg4, 0);
-		arg1.method2836(Static250.anInt4665 / 2 - 151, local58 + 1, 302, 32, 0, 0);
-		arg1.method2901(Static250.anInt4665 / 2 - 150, local58 + 2, Static141.anInt2650 * 3, 30, arg5, 0);
-		arg1.method2901(Static250.anInt4665 / 2 + Static141.anInt2650 * 3 - 150, local58 + 2, 300 - Static141.anInt2650 * 3, 30, 0, 0);
-		arg2.method5899(Static56.aString13, -1, Static172.anInt3299 / 2 + 4, arg0, Static250.anInt4665 / 2);
+		arg2.method5899((GameType.GAME_TYPE_RUNESCAPE == client.game ? LocalisedText.RUNESCAPE_IS_LOADING : LocalisedText.ALTERNATE_GAME_IS_LOADING).getLocalisedText(client.language), -1, GameShell.canvasHeight / 2 - 26, arg0, GameShell.canvasWidth / 2);
+		@Pc(58) int local58 = GameShell.canvasHeight / 2 - 18;
+		arg1.method2836(GameShell.canvasWidth / 2 - 152, local58, 304, 34, arg4, 0);
+		arg1.method2836(GameShell.canvasWidth / 2 - 151, local58 + 1, 302, 32, 0, 0);
+		arg1.method2901(GameShell.canvasWidth / 2 - 150, local58 + 2, client.mainLoadPercentage * 3, 30, arg5, 0);
+		arg1.method2901(GameShell.canvasWidth / 2 + client.mainLoadPercentage * 3 - 150, local58 + 2, 300 - client.mainLoadPercentage * 3, 30, 0, 0);
+		arg2.method5899(client.mainLoadSecondaryState, -1, GameShell.canvasHeight / 2 + 4, arg0, GameShell.canvasWidth / 2);
 	}
 }

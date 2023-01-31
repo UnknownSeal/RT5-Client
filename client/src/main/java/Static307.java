@@ -65,8 +65,4 @@ public final class Static307 {
 		}
 	}
 
-	@OriginalMember(owner = "client!rq", name = "a", descriptor = "(Z)J")
-	public static long method5256() {
-		return GameShell.timer.method4404();
-	}
 }

@@ -177,7 +177,7 @@ public final class Static161 {
 				if (Static77.anInt1762 == 0) {
 					Static158.method2939("Entered tk0");
 					Static218.aClass177_Sub1_2.anInt4878 = 0;
-					Static218.aClass177_Sub1_2.method4496(GameShell.signlink);
+					Static218.aClass177_Sub1_2.write(GameShell.signlink);
 					Static236.sentToServer = false;
 					return;
 				}
@@ -192,7 +192,7 @@ public final class Static161 {
 				}
 				Static158.method2939("Entered tk1");
 				Static218.aClass177_Sub1_2.anInt4878 = 1;
-				Static218.aClass177_Sub1_2.method4496(GameShell.signlink);
+				Static218.aClass177_Sub1_2.write(GameShell.signlink);
 				Static236.sentToServer = false;
 				return;
 			}
@@ -204,7 +204,7 @@ public final class Static161 {
 				}
 				Static158.method2939("Entered tk2");
 				Static218.aClass177_Sub1_2.anInt4878 = 2;
-				Static218.aClass177_Sub1_2.method4496(GameShell.signlink);
+				Static218.aClass177_Sub1_2.write(GameShell.signlink);
 				Static236.sentToServer = false;
 				return;
 			}
@@ -219,7 +219,7 @@ public final class Static161 {
 			}
 			if (arg0.equalsIgnoreCase("ot")) {
 				Static218.aClass177_Sub1_2.aBoolean355 = !Static218.aClass177_Sub1_2.aBoolean355;
-				Static218.aClass177_Sub1_2.method4496(GameShell.signlink);
+				Static218.aClass177_Sub1_2.write(GameShell.signlink);
 				Static236.sentToServer = false;
 				Static347.method5826();
 				Static158.method2939("ot=" + Static218.aClass177_Sub1_2.aBoolean355);
@@ -227,7 +227,7 @@ public final class Static161 {
 			}
 			if (arg0.equalsIgnoreCase("gb")) {
 				Static218.aClass177_Sub1_2.aBoolean357 = !Static218.aClass177_Sub1_2.aBoolean357;
-				Static218.aClass177_Sub1_2.method4496(GameShell.signlink);
+				Static218.aClass177_Sub1_2.write(GameShell.signlink);
 				Static236.sentToServer = false;
 				Static347.method5826();
 				Static158.method2939("gb=" + Static218.aClass177_Sub1_2.aBoolean357);
@@ -242,7 +242,7 @@ public final class Static161 {
 				@Pc(531) int local531 = Static132.method2485(local521) ? Static146.method2698(local521) : -1;
 				if (local531 >= 0 && local531 <= 2) {
 					Static218.aClass177_Sub1_2.anInt4886 = local531;
-					Static218.aClass177_Sub1_2.method4496(GameShell.signlink);
+					Static218.aClass177_Sub1_2.write(GameShell.signlink);
 					Static236.sentToServer = false;
 					Static347.method5826();
 					Static158.method2939("shadows=" + local531);
@@ -259,7 +259,7 @@ public final class Static161 {
 				local76 = Static146.method2698(arg0.substring(6));
 				if (local76 >= 0 && local76 <= Static289.method5018(GameShell.maxMemory)) {
 					Static218.aClass177_Sub1_2.anInt4883 = local76;
-					Static218.aClass177_Sub1_2.method4496(GameShell.signlink);
+					Static218.aClass177_Sub1_2.write(GameShell.signlink);
 					Static236.sentToServer = false;
 					Static158.method2939("maxbuildarea=" + Static218.aClass177_Sub1_2.anInt4883);
 					return;
@@ -273,7 +273,7 @@ public final class Static161 {
 					return;
 				}
 				Static26.method864(Static146.method2698(arg0.substring(13)));
-				Static218.aClass177_Sub1_2.method4496(GameShell.signlink);
+				Static218.aClass177_Sub1_2.write(GameShell.signlink);
 				Static236.sentToServer = false;
 				Static158.method2939("particles=" + Static184.method3390());
 				return;
@@ -499,7 +499,7 @@ public final class Static161 {
 		if (!Static101.aBoolean158 && Static335.socket != null) {
 			Static91.method1960(Static326.aClass145_228);
 			try {
-				Static335.socket.write(Static257.aClass2_Sub4_Sub2_4.data, Static257.aClass2_Sub4_Sub2_4.offset);
+				Static335.socket.write(Static257.aClass2_Sub4_Sub2_4.bytes, Static257.aClass2_Sub4_Sub2_4.offset);
 				Static257.aClass2_Sub4_Sub2_4.offset = 0;
 			} catch (@Pc(57) IOException local57) {
 				Static101.aBoolean158 = true;

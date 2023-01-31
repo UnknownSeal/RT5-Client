@@ -536,7 +536,7 @@ public final class Static344 {
 			@Pc(67) int local67;
 			@Pc(76) int local76;
 			@Pc(148) int local148;
-			while (local9.offset < local9.data.length) {
+			while (local9.offset < local9.bytes.length) {
 				@Pc(62) int local62;
 				@Pc(84) int local84;
 				if (local9.g1() == 0) {

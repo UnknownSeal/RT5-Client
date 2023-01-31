@@ -19,7 +19,7 @@ public final class Js5CacheQueue implements Runnable {
 	private Thread thread;
 
 	@OriginalMember(owner = "client!ro", name = "<init>", descriptor = "(Lclient!ml;)V")
-	public Js5CacheQueue(@OriginalArg(0) Class152 arg0) {
+	public Js5CacheQueue(@OriginalArg(0) SignLink arg0) {
 		@Pc(20) PrivelegedRequest request = arg0.startThread(this, 5);
 		while (request.status == 0) {
 			Static231.sleep(10L);
@@ -56,7 +56,7 @@ public final class Js5CacheQueue implements Runnable {
 			} catch (@Pc(74) Exception local74) {
 				Static262.report(local74, null);
 			}
-			request.aBoolean416 = false;
+			request.incomplete = false;
 		}
 	}
 
@@ -71,28 +71,28 @@ public final class Js5CacheQueue implements Runnable {
 	}
 
 	@OriginalMember(owner = "client!ro", name = "a", descriptor = "(IBLclient!rq;)Lclient!td;")
-	public Js5CacheRequest method5225(@OriginalArg(0) int arg0, @OriginalArg(2) Cache arg1) {
-		@Pc(15) Js5CacheRequest local15 = new Js5CacheRequest();
-		local15.type = 1;
+	public Js5CacheRequest readSynchronous(@OriginalArg(2) Cache cache, @OriginalArg(0) int group) {
+		@Pc(15) Js5CacheRequest request = new Js5CacheRequest();
+		request.type = 1;
 		@Pc(21) Class246 local21 = this.queue;
 		synchronized (this.queue) {
-			@Pc(29) Js5CacheRequest local29 = (Js5CacheRequest) this.queue.head();
+			@Pc(29) Js5CacheRequest otherRequest = (Js5CacheRequest) this.queue.head();
 			while (true) {
-				if (local29 == null) {
+				if (otherRequest == null) {
 					break;
 				}
-				if (local29.secondaryKey == (long) arg0 && local29.cache == arg1 && local29.type == 2) {
-					local15.data = local29.data;
-					local15.aBoolean416 = false;
-					return local15;
+				if (otherRequest.secondaryKey == (long) group && otherRequest.cache == cache && otherRequest.type == 2) {
+					request.data = otherRequest.data;
+					request.incomplete = false;
+					return request;
 				}
-				local29 = (Js5CacheRequest) this.queue.next();
+				otherRequest = (Js5CacheRequest) this.queue.next();
 			}
 		}
-		local15.data = arg1.read(arg0);
-		local15.aBoolean416 = false;
-		local15.aBoolean418 = true;
-		return local15;
+		request.data = cache.read(group);
+		request.incomplete = false;
+		request.urgent = true;
+		return request;
 	}
 
 	@OriginalMember(owner = "client!ro", name = "a", descriptor = "(ILclient!rq;Z)Lclient!td;")
@@ -100,7 +100,7 @@ public final class Js5CacheQueue implements Runnable {
 		@Pc(12) Js5CacheRequest local12 = new Js5CacheRequest();
 		local12.cache = arg1;
 		local12.type = 3;
-		local12.aBoolean418 = false;
+		local12.urgent = false;
 		local12.secondaryKey = arg0;
 		this.method5223(local12);
 		return local12;
@@ -124,7 +124,7 @@ public final class Js5CacheQueue implements Runnable {
 	public Js5CacheRequest method5228(@OriginalArg(0) byte[] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Cache arg2) {
 		@Pc(13) Js5CacheRequest local13 = new Js5CacheRequest();
 		local13.data = arg0;
-		local13.aBoolean418 = false;
+		local13.urgent = false;
 		local13.secondaryKey = arg1;
 		local13.cache = arg2;
 		local13.type = 2;

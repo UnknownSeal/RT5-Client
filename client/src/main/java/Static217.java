@@ -21,7 +21,7 @@ public final class Static217 {
 		Static319.anIntArrayArray51 = new int[Static373.anInt7033][Static242.anInt4449];
 		Static310.anIntArrayArrayArray12 = new int[4][Static373.anInt7033 >> 3][Static242.anInt4449 >> 3];
 		for (@Pc(42) int local42 = 0; local42 < 4; local42++) {
-			Static171.aClass46Array1[local42] = Static24.method853(Static242.anInt4449, Static373.anInt7033);
+			Static171.collisionMap[local42] = Static24.method853(Static373.anInt7033, Static242.anInt4449);
 		}
 		Static230.aByteArrayArrayArray13 = new byte[4][Static373.anInt7033][Static242.anInt4449];
 		Static236.method4103(Static373.anInt7033, Static242.anInt4449);

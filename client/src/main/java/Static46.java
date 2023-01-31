@@ -10,9 +10,9 @@ public final class Static46 {
 	@OriginalMember(owner = "client!cm", name = "c", descriptor = "(I)V")
 	public static void method1421() {
 		Static57.aComponentArray1 = null;
-		Static199.method5245(0, Static172.anInt3299, Static250.anInt4665, Static139.anInt2595, -1, 0, 0, 0);
+		Static199.method5245(0, GameShell.canvasHeight, GameShell.canvasWidth, Static139.topLevelInterface, -1, 0, 0, 0);
 		if (Static57.aComponentArray1 != null) {
-			Static201.method3652(Static172.anInt3299, -1412584499, Static57.aComponentArray1, 0, Static253.anInt4689, 0, Static250.anInt4665, Static301.aComponent_13.rectangle, Static48.anInt1256);
+			Static201.method3652(GameShell.canvasHeight, -1412584499, Static57.aComponentArray1, 0, Static253.anInt4689, 0, GameShell.canvasWidth, Static301.aComponent_13.rectangle, Static48.anInt1256);
 			Static57.aComponentArray1 = null;
 		}
 	}

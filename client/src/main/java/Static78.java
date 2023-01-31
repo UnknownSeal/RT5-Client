@@ -31,19 +31,19 @@ public final class Static78 {
 	}
 
 	@OriginalMember(owner = "client!ei", name = "a", descriptor = "(IB)C")
-	public static char method5697(@OriginalArg(1) byte arg0) {
-		@Pc(12) int local12 = arg0 & 0xFF;
-		if (local12 == 0) {
-			throw new IllegalArgumentException("Non cp1252 character 0x" + Integer.toString(local12, 16) + " provided");
+	public static char decodeChar(@OriginalArg(1) byte charByte) {
+		@Pc(12) int codepoint = charByte & 0xFF;
+		if (codepoint == 0) {
+			throw new IllegalArgumentException("Non cp1252 character 0x" + Integer.toString(codepoint, 16) + " provided");
 		}
-		if (local12 >= 128 && local12 < 160) {
-			@Pc(43) char local43 = Static172.CP1252_TABLE[local12 - 128];
-			if (local43 == '\u0000') {
-				local43 = '?';
+		if (codepoint >= 128 && codepoint < 160) {
+			@Pc(43) char c = Static172.CP1252_TABLE[codepoint - 128];
+			if (c == '\u0000') {
+				c = '?';
 			}
-			local12 = local43;
+			codepoint = c;
 		}
-		return (char) local12;
+		return (char) codepoint;
 	}
 
 	@OriginalMember(owner = "client!ei", name = "a", descriptor = "(Lclient!wm;ILclient!mg;)I")

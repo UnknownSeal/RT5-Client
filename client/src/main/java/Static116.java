@@ -28,7 +28,7 @@ public final class Static116 {
 
 	@OriginalMember(owner = "client!go", name = "a", descriptor = "(BI)[B")
 	public static byte[] method2364(@OriginalArg(1) int arg0) {
-		@Pc(12) Class2_Sub2_Sub15 local12 = (Class2_Sub2_Sub15) Static17.aClass116_6.method3151((long) arg0);
+		@Pc(12) Class2_Sub2_Sub15 local12 = (Class2_Sub2_Sub15) Static17.aClass116_6.get((long) arg0);
 		if (local12 == null) {
 			@Pc(17) byte[] local17 = new byte[512];
 			@Pc(23) Random local23 = new Random((long) arg0);
@@ -43,7 +43,7 @@ public final class Static116 {
 				local17[local45] = local17[511 - local38] = local54;
 			}
 			local12 = new Class2_Sub2_Sub15(local17);
-			Static17.aClass116_6.method3154(local12, (long) arg0);
+			Static17.aClass116_6.put((long) arg0, local12);
 		}
 		return local12.aByteArray78;
 	}

@@ -150,7 +150,7 @@ public final class Static201 {
 								local243 = local19.width + local90;
 								local248 = local95 + 15;
 								if (Static356.aBoolean456) {
-									Static276.aClass130_4.method5897(local243, local248, "Fps:" + Static3.anInt62, -256);
+									Static276.aClass130_4.method5897(local243, local248, "Fps:" + GameShell.framesPerSecond, -256);
 									local248 += 15;
 									@Pc(504) Runtime local504 = Runtime.getRuntime();
 									local514 = (int) ((local504.totalMemory() - local504.freeMemory()) / 1024L);
@@ -169,9 +169,9 @@ public final class Static201 {
 									local590 = 0;
 									@Pc(592) int local592 = 0;
 									for (@Pc(594) int local594 = 0; local594 < 29; local594++) {
-										local588 += Static374.aClass25_Sub1Array2[local594].method895();
-										local590 += Static374.aClass25_Sub1Array2[local594].method898();
-										local592 += Static374.aClass25_Sub1Array2[local594].method897();
+										local588 += client.js5Providers[local594].method895();
+										local590 += client.js5Providers[local594].method898();
+										local592 += client.js5Providers[local594].method897();
 									}
 									@Pc(632) int local632 = local592 * 100 / local588;
 									@Pc(638) int local638 = local590 * 10000 / local588;

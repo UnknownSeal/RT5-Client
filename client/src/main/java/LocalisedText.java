@@ -136,7 +136,7 @@ public final class LocalisedText {
 	@OriginalMember(owner = "client!tj", name = "u", descriptor = "Lclient!gd;")
 	public static final LocalisedText LOADED_CONFIG = new LocalisedText("Loaded config", "Konfig geladen.", "Fichiers config chargés", "Config carregada");
 	@OriginalMember(owner = "client!jg", name = "F", descriptor = "Lclient!gd;")
-	public static final LocalisedText A_TRANSLATABLE_STRING___67 = new LocalisedText(" ", ": ", " ", " ");
+	public static final LocalisedText MINI_SEPARATOR = new LocalisedText(" ", ": ", " ", " ");
 	@OriginalMember(owner = "client!fo", name = "e", descriptor = "Lclient!gd;")
 	public static final LocalisedText MEMBERS_OBJECT = new LocalisedText("Members object", "Gegenstand für Mitglieder", "Objet d'abonnés", "Objeto para membros");
 	@OriginalMember(owner = "client!im", name = "E", descriptor = "Lclient!gd;")
@@ -175,8 +175,6 @@ public final class LocalisedText {
 	public static final LocalisedText GLOW3 = new LocalisedText("glow3:", "leuchten3:", "brillant3:", "brilho3:");
 	@OriginalMember(owner = "client!e", name = "l", descriptor = "Lclient!gd;")
 	public static final LocalisedText LOADED_CLIENT_VARIABLE_DATA = new LocalisedText("Loaded client variable data", "Client-Variablen geladen", "Variables du client chargées", "As variáveis do sistema foram carregadas");
-	@OriginalMember(owner = "client!e", name = "m", descriptor = "Lclient!gd;")
-	public static final LocalisedText A_TRANSLATABLE_STRING___37 = new LocalisedText("M", "M", "M", "M");
 	@OriginalMember(owner = "client!sr", name = "b", descriptor = "Lclient!gd;")
 	public static final LocalisedText LOADING_ADDITIONAL_FONTS = new LocalisedText("Loading additional fonts - ", "Lade Zusatzschriftarten - ", "Chargement de polices secondaires - ", "Carregando fontes principais - ");
 	@OriginalMember(owner = "client!h", name = "h", descriptor = "Lclient!gd;")

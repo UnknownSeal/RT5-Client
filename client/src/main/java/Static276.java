@@ -34,8 +34,8 @@ public final class Static276 {
 			Static200.redraw(local27);
 		}
 		Static227.method3988();
-		if (!arg0 && Static139.anInt2595 != -1) {
-			Static392.method6459(Static139.anInt2595, 1);
+		if (!arg0 && Static139.topLevelInterface != -1) {
+			Static392.method6459(Static139.topLevelInterface, 1);
 		}
 		@Pc(49) Class137 local49 = new Class137(Static329.aClass4_130);
 		for (@Pc(54) Class2_Sub7 local54 = (Class2_Sub7) local49.method3560(); local54 != null; local54 = (Class2_Sub7) local49.method3559()) {

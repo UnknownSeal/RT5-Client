@@ -19,9 +19,6 @@ public final class Static371 {
 	@OriginalMember(owner = "client!vo", name = "z", descriptor = "Lclient!h;")
 	public static final Class89 aClass89_244 = new Class89(33, 15);
 
-	@OriginalMember(owner = "client!vo", name = "C", descriptor = "Z")
-	public static volatile boolean aBoolean475 = true;
-
 	@OriginalMember(owner = "client!vo", name = "D", descriptor = "[Ljava/lang/String;")
 	public static final String[] aStringArray66 = new String[100];
 

@@ -77,7 +77,7 @@ public abstract class Class177 {
 	public boolean aBoolean363 = true;
 
 	@OriginalMember(owner = "client!wo", name = "A", descriptor = "Z")
-	public boolean aBoolean362 = false;
+	public boolean safeMode = false;
 
 	@OriginalMember(owner = "client!wo", name = "C", descriptor = "I")
 	public int anInt4891 = 0;

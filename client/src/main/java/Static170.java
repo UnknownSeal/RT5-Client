@@ -51,7 +51,7 @@ public final class Static170 {
 				@Pc(37) int local37 = (Static291.mapSquares[local18] >> 8) * 64 - Static164.originX;
 				@Pc(48) int local48 = (Static291.mapSquares[local18] & 0xFF) * 64 - Static148.originZ;
 				Static37.method1135();
-				arg0.method1109(Static171.aClass46Array1, local48, local24, local37, Static190.aClass19_8);
+				arg0.method1109(Static171.collisionMap, local48, local24, local37, Static190.aClass19_8);
 			}
 		}
 	}

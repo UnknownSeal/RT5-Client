@@ -21,14 +21,14 @@ public final class Class92 {
 
 	@OriginalMember(owner = "client!hg", name = "a", descriptor = "([BILclient!bt;)V")
 	public void method2436(@OriginalArg(0) byte[] arg0, @OriginalArg(2) Buffer buffer) {
-		if (buffer.data[buffer.offset] != 31 || buffer.data[buffer.offset + 1] != -117) {
+		if (buffer.bytes[buffer.offset] != 31 || buffer.bytes[buffer.offset + 1] != -117) {
 			throw new RuntimeException("Invalid GZIP header!");
 		}
 		if (this.inflater == null) {
 			this.inflater = new Inflater(true);
 		}
 		try {
-			this.inflater.setInput(buffer.data, buffer.offset + 10, -buffer.offset + -18 + buffer.data.length);
+			this.inflater.setInput(buffer.bytes, buffer.offset + 10, -buffer.offset + -18 + buffer.bytes.length);
 			this.inflater.inflate(arg0);
 		} catch (@Pc(60) Exception exception) {
 			this.inflater.reset();

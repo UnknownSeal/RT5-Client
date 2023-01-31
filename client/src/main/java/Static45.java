@@ -306,7 +306,7 @@ public final class Static45 {
 											}
 											continue;
 										}
-										if (client.game == Static106.aClass50_1) {
+										if (client.game == GameType.GAME_TYPE_STELLARDAWN) {
 											Static1.add(-1, true, local727, false, LocalisedText.FACE_HERE.getLocalisedText(client.language), local719, 59, "", -1, 1L);
 										}
 										Static1.add(-1, true, local727, false, Static330.aString62, local719, 22, "", -1, 1L);
@@ -629,7 +629,7 @@ public final class Static45 {
 								}
 								@Pc(2017) Class2_Sub7 local2017 = (Class2_Sub7) Static329.aClass4_130.get((long) local6.id);
 								if (local2017 != null) {
-									if (client.game == Static249.aClass50_3 && local2017.anInt1373 == 0 && !Static375.aBoolean477 && local207 && !Static18.aBoolean30) {
+									if (client.game == GameType.GAME_TYPE_RUNESCAPE && local2017.anInt1373 == 0 && !Static375.aBoolean477 && local207 && !Static18.aBoolean30) {
 										Static147.method2703();
 									}
 									Static257.method3926(local17, local34, local32, local30, local22, arg8, local2017.anInt1370, arg9, local28);

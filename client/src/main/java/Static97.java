@@ -46,7 +46,7 @@ public final class Static97 {
 			Static257.aClass2_Sub4_Sub2_4.p1(Static43.aClass242_10.anInt7038);
 			Static257.aClass2_Sub4_Sub2_4.p1(local40.offset + 2);
 			Static257.aClass2_Sub4_Sub2_4.p2(578);
-			Static257.aClass2_Sub4_Sub2_4.pdata(local40.data, local40.offset);
+			Static257.aClass2_Sub4_Sub2_4.pdata(local40.bytes, local40.offset);
 		} else {
 			Static230.method4013();
 		}

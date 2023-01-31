@@ -420,7 +420,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 	private final Class2_Sub38_Sub1 aClass2_Sub38_Sub1_1;
 
 	@OriginalMember(owner = "client!bf", name = "<init>", descriptor = "(Ljava/awt/Canvas;Lclient!ci;IILclient!ml;)V")
-	public Class19_Sub1(@OriginalArg(0) Canvas arg0, @OriginalArg(1) Interface2 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) Class152 arg4) {
+	public Class19_Sub1(@OriginalArg(0) Canvas arg0, @OriginalArg(1) Interface2 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) SignLink arg4) {
 		super(arg2, arg1);
 		this.aCanvas2 = arg0;
 		@Pc(185) int local185 = 0;
@@ -467,7 +467,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 					@Pc(316) int local316 = 0;
 					@Pc(318) boolean local318 = false;
 					@Pc(320) boolean local320 = false;
-					@Pc(328) String[] local328 = Static200.method3642(' ', local309.replace('/', ' '));
+					@Pc(328) String[] local328 = Static200.split(local309.replace('/', ' '), ' ');
 					for (@Pc(330) int local330 = 0; local330 < local328.length; local330++) {
 						@Pc(338) String local338 = local328[local330];
 						try {
@@ -900,7 +900,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 			local1 |= 0x1;
 		}
 		@Pc(45) String local45 = this.anOpengl1.glGetString(GL.GL_VERSION);
-		@Pc(53) String[] local53 = Static200.method3642(' ', local45.replace('.', ' '));
+		@Pc(53) String[] local53 = Static200.split(local45.replace('.', ' '), ' ');
 		if (local53.length >= 2) {
 			try {
 				@Pc(63) int local63 = Static146.method2698(local53[0]);

@@ -35,7 +35,7 @@ public final class Static119 {
 
 	@OriginalMember(owner = "client!gr", name = "a", descriptor = "(I)V")
 	public static void method2378() {
-		if (Static215.aString33.toLowerCase().indexOf("microsoft") != -1) {
+		if (SignLink.javaVendor.toLowerCase().indexOf("microsoft") != -1) {
 			Static239.anIntArray285[191] = 73;
 			Static239.anIntArray285[221] = 43;
 			Static239.anIntArray285[222] = 59;

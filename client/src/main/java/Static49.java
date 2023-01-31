@@ -91,12 +91,12 @@ public final class Static49 {
 					}
 				}
 				if (Static46.aBoolean100) {
-					@Pc(358) Class46 local358 = Static171.aClass46Array1[arg1];
+					@Pc(358) CollisionMap local358 = Static171.collisionMap[arg1];
 					for (local224 = 0; local224 < Static285.anInt5368; local224++) {
 						for (local277 = 0; local277 < Static285.anInt5368; local277++) {
 							local284 = local224 + local195;
 							local288 = local199 + local277;
-							local303 = local358.anIntArrayArray14[local284 - local358.anInt1468][local288 - local358.anInt1484];
+							local303 = local358.flags[local284 - local358.anInt1468][local288 - local358.anInt1484];
 							if ((local303 & 0x40240000) != 0) {
 								arg0.method2868(4, local224 * 4, (Static285.anInt5368 - local277) * 4 - 4, -1713569622, 4);
 							} else if ((local303 & 0x800000) != 0) {
@@ -160,9 +160,9 @@ public final class Static49 {
 										local303 = local199;
 										@Pc(731) int local731 = local216;
 										if (local713) {
-											@Pc(738) int[][] local738 = Static171.aClass46Array1[local220].anIntArrayArray14;
-											@Pc(743) int local743 = Static171.aClass46Array1[local220].anInt1468;
-											@Pc(748) int local748 = Static171.aClass46Array1[local220].anInt1484;
+											@Pc(738) int[][] local738 = Static171.collisionMap[local220].flags;
+											@Pc(743) int local743 = Static171.collisionMap[local220].anInt1468;
+											@Pc(748) int local748 = Static171.collisionMap[local220].anInt1484;
 											for (@Pc(750) int local750 = 0; local750 < 10; local750++) {
 												@Pc(757) int local757 = (int) (Math.random() * 4.0D);
 												if (local757 == 0 && local303 > local11 && local303 > local199 - 3 && (local738[local303 - local743 - 1][local731 - local748] & 0x2C0108) == 0) {

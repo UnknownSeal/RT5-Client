@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static308 {
 
 	@OriginalMember(owner = "client!rr", name = "x", descriptor = "Lclient!r;")
-	public static Js5 aJs5_80;
+	public static Js5 globalArchive;
 
 	@OriginalMember(owner = "client!rr", name = "a", descriptor = "(IIZIIB)V")
 	public static void method5272(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) boolean arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {

@@ -20,19 +20,19 @@ public final class Static200 {
 	public static final Class210 aClass210_9 = new Class210(7, 4);
 
 	@OriginalMember(owner = "client!lo", name = "a", descriptor = "(ICLjava/lang/String;)[Ljava/lang/String;")
-	public static String[] method3642(@OriginalArg(1) char arg0, @OriginalArg(2) String arg1) {
-		@Pc(10) int local10 = Static93.method2000(arg0, arg1);
+	public static String[] split(@OriginalArg(2) String string, @OriginalArg(1) char deliminator) {
+		@Pc(10) int local10 = Static93.method2000(deliminator, string);
 		@Pc(15) String[] local15 = new String[local10 + 1];
 		@Pc(17) int local17 = 0;
 		@Pc(19) int local19 = 0;
 		for (@Pc(21) int local21 = 0; local21 < local10; local21++) {
 			@Pc(25) int local25;
-			for (local25 = local19; arg0 != arg1.charAt(local25); local25++) {
+			for (local25 = local19; deliminator != string.charAt(local25); local25++) {
 			}
-			local15[local17++] = arg1.substring(local19, local25);
+			local15[local17++] = string.substring(local19, local25);
 			local19 = local25 + 1;
 		}
-		local15[local10] = arg1.substring(local19);
+		local15[local10] = string.substring(local19);
 		return local15;
 	}
 
@@ -91,6 +91,6 @@ public final class Static200 {
 		if (client.settings != null) {
 			local28 = "/p=" + client.settings;
 		}
-		return "http://" + local7 + "." + client.game.aString15 + ".com/l=" + client.language + "/a=" + Static165.anInt3149 + local28 + "/";
+		return "http://" + local7 + "." + client.game.gameTypeString + ".com/l=" + client.language + "/a=" + Static165.anInt3149 + local28 + "/";
 	}
 }

@@ -11,7 +11,7 @@ public final class Static151 {
 
 	@OriginalMember(owner = "client!im", name = "b", descriptor = "(III)V")
 	public static void method2756(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
-		if (client.game == Static106.aClass50_1) {
+		if (client.game == GameType.GAME_TYPE_STELLARDAWN) {
 			if (Static322.method5481(false, -2, arg0, 0, 1, arg1, 1, 0)) {
 				return;
 			}

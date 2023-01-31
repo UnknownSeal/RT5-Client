@@ -11,7 +11,7 @@ public final class Static190 {
 	public static Class19 aClass19_8;
 
 	@OriginalMember(owner = "client!kt", name = "Z", descriptor = "Lclient!tg;")
-	public static Class221 aClass221_1;
+	public static AudioChannel aAudioChannel_1;
 
 	@OriginalMember(owner = "client!kt", name = "db", descriptor = "Lclient!bu;")
 	public static Class29_Sub1 aClass29_Sub1_63;

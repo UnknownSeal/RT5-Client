@@ -74,19 +74,19 @@ public final class Static91 {
 				Static257.aClass2_Sub4_Sub2_4.offset = 0;
 				Static257.aClass2_Sub4_Sub2_4.p1(Static43.aClass242_1.anInt7038);
 				Static257.aClass2_Sub4_Sub2_4.p1(local112);
-				Static335.socket.write(Static257.aClass2_Sub4_Sub2_4.data, 2);
-				if (Static303.aClass221_2 != null) {
-					Static303.aClass221_2.method6324();
+				Static335.socket.write(Static257.aClass2_Sub4_Sub2_4.bytes, 2);
+				if (client.musicChannel != null) {
+					client.musicChannel.method6324();
 				}
-				if (Static190.aClass221_1 != null) {
-					Static190.aClass221_1.method6324();
+				if (Static190.aAudioChannel_1 != null) {
+					Static190.aAudioChannel_1.method6324();
 				}
 				@Pc(145) int local145 = Static335.socket.read();
-				if (Static303.aClass221_2 != null) {
-					Static303.aClass221_2.method6324();
+				if (client.musicChannel != null) {
+					client.musicChannel.method6324();
 				}
-				if (Static190.aClass221_1 != null) {
-					Static190.aClass221_1.method6324();
+				if (Static190.aAudioChannel_1 != null) {
+					Static190.aAudioChannel_1.method6324();
 				}
 				if (local145 != 0) {
 					Static347.step = 0;
@@ -101,7 +101,7 @@ public final class Static91 {
 				if (Static335.socket.available() < 8) {
 					return;
 				}
-				Static335.socket.read(Static212.inboundBuffer.data, 8, 0);
+				Static335.socket.read(Static212.inboundBuffer.bytes, 8, 0);
 				Static212.inboundBuffer.offset = 0;
 				Static201.serverKey = Static212.inboundBuffer.g8();
 				@Pc(208) Buffer local208 = new Buffer(70);
@@ -125,15 +125,15 @@ public final class Static91 {
 				Static257.aClass2_Sub4_Sub2_4.p4(578);
 				Static257.aClass2_Sub4_Sub2_4.p1(Static202.anInt3714);
 				Static257.aClass2_Sub4_Sub2_4.p1(Static144.method2692());
-				Static257.aClass2_Sub4_Sub2_4.p2(Static250.anInt4665);
-				Static257.aClass2_Sub4_Sub2_4.p2(Static172.anInt3299);
+				Static257.aClass2_Sub4_Sub2_4.p2(GameShell.canvasWidth);
+				Static257.aClass2_Sub4_Sub2_4.p2(GameShell.canvasHeight);
 				Static257.aClass2_Sub4_Sub2_4.p1(Static218.aClass177_Sub1_2.anInt4885);
 				Static27.method875(Static257.aClass2_Sub4_Sub2_4);
 				Static257.aClass2_Sub4_Sub2_4.pjstr(client.settings);
 				Static257.aClass2_Sub4_Sub2_4.p4(Static165.anInt3149);
 				@Pc(354) Buffer local354 = Static218.aClass177_Sub1_2.method4493();
 				Static257.aClass2_Sub4_Sub2_4.p1(local354.offset);
-				Static257.aClass2_Sub4_Sub2_4.pdata(local354.data, local354.offset);
+				Static257.aClass2_Sub4_Sub2_4.pdata(local354.bytes, local354.offset);
 				Static236.sentToServer = true;
 				Static257.aClass2_Sub4_Sub2_4.p2(Static292.anInt5510);
 				Static257.aClass2_Sub4_Sub2_4.p4(Static342.aJs5_77.getChecksum());
@@ -165,9 +165,9 @@ public final class Static91 {
 				Static257.aClass2_Sub4_Sub2_4.p4(Static235.aJs5_47.getChecksum());
 				Static257.aClass2_Sub4_Sub2_4.p4(Static61.aJs5_11.getChecksum());
 				Static257.aClass2_Sub4_Sub2_4.p4(Static85.aJs5_20.getChecksum());
-				Static257.aClass2_Sub4_Sub2_4.pdata(local208.data, local208.offset);
+				Static257.aClass2_Sub4_Sub2_4.pdata(local208.bytes, local208.offset);
 				Static257.aClass2_Sub4_Sub2_4.psize2(Static257.aClass2_Sub4_Sub2_4.offset - local112);
-				Static335.socket.write(Static257.aClass2_Sub4_Sub2_4.data, Static257.aClass2_Sub4_Sub2_4.offset);
+				Static335.socket.write(Static257.aClass2_Sub4_Sub2_4.bytes, Static257.aClass2_Sub4_Sub2_4.offset);
 				Static257.aClass2_Sub4_Sub2_4.initIsaac(local211);
 				for (@Pc(579) int local579 = 0; local579 < 4; local579++) {
 					local211[local579] += 50;
@@ -212,7 +212,7 @@ public final class Static91 {
 			if (Static347.step == 6) {
 				Static257.aClass2_Sub4_Sub2_4.offset = 0;
 				Static257.aClass2_Sub4_Sub2_4.p1isaac(Static43.aClass242_4.anInt7038);
-				Static335.socket.write(Static257.aClass2_Sub4_Sub2_4.data, Static257.aClass2_Sub4_Sub2_4.offset);
+				Static335.socket.write(Static257.aClass2_Sub4_Sub2_4.bytes, Static257.aClass2_Sub4_Sub2_4.offset);
 				Static347.step = 4;
 			} else if (Static347.step == 7) {
 				if (Static335.socket.available() >= 1) {
@@ -227,7 +227,7 @@ public final class Static91 {
 					if (Static335.socket.available() < 13) {
 						return;
 					}
-					Static335.socket.read(Static212.inboundBuffer.data, 13, 0);
+					Static335.socket.read(Static212.inboundBuffer.bytes, 13, 0);
 					Static212.inboundBuffer.offset = 0;
 					Static4.anInt90 = Static212.inboundBuffer.g1();
 					Static210.anInt3774 = Static212.inboundBuffer.g1();
@@ -271,7 +271,7 @@ public final class Static91 {
 						if (Static335.socket.available() < 1) {
 							return;
 						}
-						Static335.socket.read(Static212.inboundBuffer.data, 1, Static212.inboundBuffer.offset + 2);
+						Static335.socket.read(Static212.inboundBuffer.bytes, 1, Static212.inboundBuffer.offset + 2);
 					}
 					Static231.aClass89_164 = Static166.method3187()[Static212.inboundBuffer.method4863()];
 					Static82.anInt1836 = Static212.inboundBuffer.g2();
@@ -279,7 +279,7 @@ public final class Static91 {
 				}
 				if (Static347.step == 9) {
 					if (Static335.socket.available() >= Static82.anInt1836) {
-						Static335.socket.read(Static212.inboundBuffer.data, Static82.anInt1836, 0);
+						Static335.socket.read(Static212.inboundBuffer.bytes, Static82.anInt1836, 0);
 						Static212.inboundBuffer.offset = 0;
 						Static41.reply = 2;
 						local619 = Static82.anInt1836;
@@ -298,12 +298,12 @@ public final class Static91 {
 						if (Static335.socket.available() < 2) {
 							return;
 						}
-						Static335.socket.read(Static212.inboundBuffer.data, 2, 0);
+						Static335.socket.read(Static212.inboundBuffer.bytes, 2, 0);
 						Static212.inboundBuffer.offset = 0;
 						Static82.anInt1836 = Static212.inboundBuffer.g2();
 					}
 					if (Static335.socket.available() >= Static82.anInt1836) {
-						Static335.socket.read(Static212.inboundBuffer.data, Static82.anInt1836, 0);
+						Static335.socket.read(Static212.inboundBuffer.bytes, Static82.anInt1836, 0);
 						Static212.inboundBuffer.offset = 0;
 						Static41.reply = 15;
 						Static347.step = 0;

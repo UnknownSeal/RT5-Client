@@ -32,7 +32,7 @@ public class Buffer extends Node {
 	public static int allocatedMaxCount = 0;
 
 	@OriginalMember(owner = "client!bt", name = "kb", descriptor = "[B")
-	public byte[] data;
+	public byte[] bytes;
 
 	@OriginalMember(owner = "client!bt", name = "U", descriptor = "I")
 	public int offset;
@@ -69,14 +69,14 @@ public class Buffer extends Node {
 
 	@OriginalMember(owner = "client!bt", name = "<init>", descriptor = "(I)V")
 	public Buffer(@OriginalArg(0) int size) {
-		this.data = allocate(size);
+		this.bytes = allocate(size);
 		this.offset = 0;
 	}
 
 	@OriginalMember(owner = "client!bt", name = "<init>", descriptor = "([B)V")
 	public Buffer(@OriginalArg(0) byte[] src) {
 		this.offset = 0;
-		this.data = src;
+		this.bytes = src;
 	}
 
 	@OriginalMember(owner = "client!cq", name = "a", descriptor = "(II)[B")
@@ -124,7 +124,7 @@ public class Buffer extends Node {
 	@OriginalMember(owner = "client!bt", name = "a", descriptor = "([BIIZ)V")
 	public final void gdata(@OriginalArg(0) byte[] src, @OriginalArg(2) int length) {
 		for (@Pc(11) int i = 0; i < length; i++) {
-			src[i] = this.data[this.offset++];
+			src[i] = this.bytes[this.offset++];
 		}
 	}
 
@@ -132,7 +132,7 @@ public class Buffer extends Node {
 	@OriginalMember(owner = "client!bt", name = "c", descriptor = "(I)I")
 	public final int g2bsub() {
 		this.offset += 2;
-		@Pc(38) int value = (this.data[this.offset - 1] - 128 & 0xFF) + ((this.data[this.offset - 2] & 0xFF) << 8);
+		@Pc(38) int value = (this.bytes[this.offset - 1] - 128 & 0xFF) + ((this.bytes[this.offset - 2] & 0xFF) << 8);
 		if (value > 32767) {
 			value -= 65536;
 		}
@@ -142,13 +142,13 @@ public class Buffer extends Node {
 	// get, 1 byte, negate
 	@OriginalMember(owner = "client!bt", name = "b", descriptor = "(B)B")
 	public final byte g1neg() {
-		return (byte) -this.data[this.offset++];
+		return (byte) -this.bytes[this.offset++];
 	}
 
 	// add checksum
 	@OriginalMember(owner = "client!bt", name = "a", descriptor = "(II)I")
 	public final int addcrc(@OriginalArg(0) int off) {
-		@Pc(18) int checksum = crc32(this.offset, off, this.data);
+		@Pc(18) int checksum = crc32(this.offset, off, this.bytes);
 		this.p4(checksum);
 		return checksum;
 	}
@@ -157,29 +157,29 @@ public class Buffer extends Node {
 	@OriginalMember(owner = "client!bt", name = "b", descriptor = "(Z)I")
 	public final int ig2() {
 		this.offset += 2;
-		return (this.data[this.offset - 2] & 0xFF) + ((this.data[this.offset - 1] & 0xFF) << 8);
+		return (this.bytes[this.offset - 2] & 0xFF) + ((this.bytes[this.offset - 1] & 0xFF) << 8);
 	}
 
 	// get, 1 byte, negate
 	@OriginalMember(owner = "client!bt", name = "d", descriptor = "(I)I")
 	public final int g1bneg() {
-		return -this.data[this.offset++] & 0xFF;
+		return -this.bytes[this.offset++] & 0xFF;
 	}
 
 	// middle, put, 4 bytes
 	@OriginalMember(owner = "client!bt", name = "b", descriptor = "(II)V")
 	public final void mp4(@OriginalArg(1) int value) {
-		this.data[this.offset++] = (byte) (value >> 16);
-		this.data[this.offset++] = (byte) (value >> 24);
-		this.data[this.offset++] = (byte) value;
-		this.data[this.offset++] = (byte) (value >> 8);
+		this.bytes[this.offset++] = (byte) (value >> 16);
+		this.bytes[this.offset++] = (byte) (value >> 24);
+		this.bytes[this.offset++] = (byte) value;
+		this.bytes[this.offset++] = (byte) (value >> 8);
 	}
 
 	// get, 2 bytes, add to
 	@OriginalMember(owner = "client!bt", name = "c", descriptor = "(B)I")
 	public final int g2add() {
 		this.offset += 2;
-		return (this.data[this.offset - 1] - 128 & 0xFF) + ((this.data[this.offset - 2] & 0xFF) << 8);
+		return (this.bytes[this.offset - 1] - 128 & 0xFF) + ((this.bytes[this.offset - 2] & 0xFF) << 8);
 	}
 
 	// put, VarLong
@@ -191,7 +191,7 @@ public class Buffer extends Node {
 		}
 
 		for (@Pc(25) int shift = bytes * 8; shift >= 0; shift -= 8) {
-			this.data[this.offset++] = (byte) (value >> shift);
+			this.bytes[this.offset++] = (byte) (value >> shift);
 		}
 	}
 
@@ -200,7 +200,7 @@ public class Buffer extends Node {
 	public final boolean checkcrc() {
 		this.offset -= 4;
 
-		@Pc(23) int thisCrc = crc32(this.offset, 0, this.data);
+		@Pc(23) int thisCrc = crc32(this.offset, 0, this.bytes);
 		@Pc(27) int otherCrc = this.mg4();
 		return otherCrc == thisCrc;
 	}
@@ -209,26 +209,26 @@ public class Buffer extends Node {
 	@OriginalMember(owner = "client!bt", name = "e", descriptor = "(I)Ljava/lang/String;")
 	public final String gjstr() {
 		@Pc(14) int start = this.offset;
-		while (this.data[this.offset++] != 0) {}
+		while (this.bytes[this.offset++] != 0) {}
 		@Pc(37) int length = this.offset - start - 1;
-		return length == 0 ? "" : Static47.decodeString(start, this.data, length);
+		return length == 0 ? "" : Static47.decodeString(start, this.bytes, length);
 	}
 
 	// get, 1 byte, subtract from
 	@OriginalMember(owner = "client!bt", name = "f", descriptor = "(I)I")
 	public final int g1sub() {
-		return 128 - this.data[this.offset++] & 0xFF;
+		return 128 - this.bytes[this.offset++] & 0xFF;
 	}
 
 	// get, VarInt
 	@OriginalMember(owner = "client!bt", name = "d", descriptor = "(B)I")
 	public final int gVarInt() {
-		@Pc(21) byte b = this.data[this.offset++];
+		@Pc(21) byte b = this.bytes[this.offset++];
 		@Pc(23) int value = 0;
 
 		while (b < 0) {
 			value = (b & 0x7F | value) << 7;
-			b = this.data[this.offset++];
+			b = this.bytes[this.offset++];
 		}
 
 		return value | b;
@@ -237,29 +237,29 @@ public class Buffer extends Node {
 	// put, 4 bytes
 	@OriginalMember(owner = "client!bt", name = "a", descriptor = "(BI)V")
 	public final void p4(@OriginalArg(1) int value) {
-		this.data[this.offset++] = (byte) (value >> 24);
-		this.data[this.offset++] = (byte) (value >> 16);
-		this.data[this.offset++] = (byte) (value >> 8);
-		this.data[this.offset++] = (byte) value;
+		this.bytes[this.offset++] = (byte) (value >> 24);
+		this.bytes[this.offset++] = (byte) (value >> 16);
+		this.bytes[this.offset++] = (byte) (value >> 8);
+		this.bytes[this.offset++] = (byte) value;
 	}
 
 	// put, 1 byte, negate
 	@OriginalMember(owner = "client!bt", name = "b", descriptor = "(IB)V")
 	public final void p1neg(@OriginalArg(0) int value) {
-		this.data[this.offset++] = (byte) -value;
+		this.bytes[this.offset++] = (byte) -value;
 	}
 
 	// get, 1 byte
 	@OriginalMember(owner = "client!bt", name = "e", descriptor = "(B)I")
 	public final int g1() {
-		return this.data[this.offset++] & 0xFF;
+		return this.bytes[this.offset++] & 0xFF;
 	}
 
 	// inverse, get, 2 bytes, signed, add to
 	@OriginalMember(owner = "client!bt", name = "f", descriptor = "(B)I")
 	public final int ig2badd() {
 		this.offset += 2;
-		@Pc(33) int value = (this.data[this.offset - 2] - 128 & 0xFF) + ((this.data[this.offset - 1] & 0xFF) << 8);
+		@Pc(33) int value = (this.bytes[this.offset - 2] - 128 & 0xFF) + ((this.bytes[this.offset - 1] & 0xFF) << 8);
 		if (value > 32767) {
 			value -= 65536;
 		}
@@ -269,21 +269,21 @@ public class Buffer extends Node {
 	// get, smart, signed
 	@OriginalMember(owner = "client!bt", name = "g", descriptor = "(B)I")
 	public final int gsmarts() {
-		@Pc(16) int value = this.data[this.offset] & 0xFF;
+		@Pc(16) int value = this.bytes[this.offset] & 0xFF;
 		return value >= 128 ? this.g2() - 32768 : this.g1();
 	}
 
 	// get, smart
 	@OriginalMember(owner = "client!bt", name = "h", descriptor = "(B)I")
 	public final int gsmart() {
-		@Pc(19) int value = this.data[this.offset] & 0xFF;
+		@Pc(19) int value = this.bytes[this.offset] & 0xFF;
 		return value >= 128 ? this.g2() - 49152 : this.g1() + -64;
 	}
 
 	// put, 1 byte, subtract from
 	@OriginalMember(owner = "client!bt", name = "c", descriptor = "(II)V")
 	public final void p1sub(@OriginalArg(0) int value) {
-		this.data[this.offset++] = (byte) (128 - value);
+		this.bytes[this.offset++] = (byte) (128 - value);
 	}
 
 	// (extended) tiny (encryption algorithm) (XTEA), decrypt
@@ -321,15 +321,15 @@ public class Buffer extends Node {
 			throw new IllegalArgumentException("NUL character at " + firstNul + " - cannot pjstr");
 		}
 
-		this.offset += Static350.encodeString(str.length(), str, this.data, this.offset);
-		this.data[this.offset++] = 0;
+		this.offset += Static350.encodeString(str.length(), str, this.bytes, this.offset);
+		this.bytes[this.offset++] = 0;
 	}
 
 	// get, 2 bytes, signed, duplicate (redundant - as g2b)
 	@OriginalMember(owner = "client!bt", name = "i", descriptor = "(B)I")
 	public final int g2b_dup() {
 		this.offset += 2;
-		@Pc(37) int value = ((this.data[this.offset - 2] & 0xFF) << 8) + (this.data[this.offset - 1] & 0xFF);
+		@Pc(37) int value = ((this.bytes[this.offset - 2] & 0xFF) << 8) + (this.bytes[this.offset - 1] & 0xFF);
 		if (value > 32767) {
 			value -= 65536;
 		}
@@ -351,64 +351,64 @@ public class Buffer extends Node {
 	// get, 1 byte, as byte
 	@OriginalMember(owner = "client!bt", name = "g", descriptor = "(I)B")
 	public final byte g1b() {
-		return this.data[this.offset++];
+		return this.bytes[this.offset++];
 	}
 
 	// put, size, 4 bytes
 	@OriginalMember(owner = "client!bt", name = "a", descriptor = "(ZI)V")
 	public final void psize4(@OriginalArg(1) int length) {
-		this.data[this.offset - length - 4] = (byte) (length >> 24);
-		this.data[this.offset - length - 3] = (byte) (length >> 16);
-		this.data[this.offset - length - 2] = (byte) (length >> 8);
-		this.data[this.offset - length - 1] = (byte) length;
+		this.bytes[this.offset - length - 4] = (byte) (length >> 24);
+		this.bytes[this.offset - length - 3] = (byte) (length >> 16);
+		this.bytes[this.offset - length - 2] = (byte) (length >> 8);
+		this.bytes[this.offset - length - 1] = (byte) length;
 	}
 
 	// put, 1 byte, add to
 	@OriginalMember(owner = "client!bt", name = "c", descriptor = "(BI)V")
 	public final void p1add(@OriginalArg(1) int value) {
-		this.data[this.offset++] = (byte) (value + 128);
+		this.bytes[this.offset++] = (byte) (value + 128);
 	}
 
 	// get, 2 bytes
 	@OriginalMember(owner = "client!bt", name = "j", descriptor = "(B)I")
 	public final int g2() {
 		this.offset += 2;
-		return ((this.data[this.offset - 2] & 0xFF) << 8) + (this.data[this.offset - 1] & 0xFF);
+		return ((this.bytes[this.offset - 2] & 0xFF) << 8) + (this.bytes[this.offset - 1] & 0xFF);
 	}
 
 	// inverse, put 2 bytes, duplicate (redundant - as ip2)
 	@OriginalMember(owner = "client!bt", name = "d", descriptor = "(II)V")
 	public final void ip2_dup(@OriginalArg(0) int value) {
-		this.data[this.offset++] = (byte) value;
-		this.data[this.offset++] = (byte) (value >> 8);
+		this.bytes[this.offset++] = (byte) value;
+		this.bytes[this.offset++] = (byte) (value >> 8);
 	}
 
 	// inverse, get, data
 	@OriginalMember(owner = "client!bt", name = "a", descriptor = "(II[BI)V")
 	public final void igdata(@OriginalArg(2) byte[] src, @OriginalArg(3) int length) {
 		for (@Pc(15) int i = length - 1; i >= 0; i--) {
-			src[i] = this.data[this.offset++];
+			src[i] = this.bytes[this.offset++];
 		}
 	}
 
 	// put, 8 bytes
 	@OriginalMember(owner = "client!bt", name = "a", descriptor = "(IJ)V")
 	public final void p8(@OriginalArg(1) long value) {
-		this.data[this.offset++] = (byte) (value >> 56);
-		this.data[this.offset++] = (byte) (value >> 48);
-		this.data[this.offset++] = (byte) (value >> 40);
-		this.data[this.offset++] = (byte) (value >> 32);
-		this.data[this.offset++] = (byte) (value >> 24);
-		this.data[this.offset++] = (byte) (value >> 16);
-		this.data[this.offset++] = (byte) (value >> 8);
-		this.data[this.offset++] = (byte) value;
+		this.bytes[this.offset++] = (byte) (value >> 56);
+		this.bytes[this.offset++] = (byte) (value >> 48);
+		this.bytes[this.offset++] = (byte) (value >> 40);
+		this.bytes[this.offset++] = (byte) (value >> 32);
+		this.bytes[this.offset++] = (byte) (value >> 24);
+		this.bytes[this.offset++] = (byte) (value >> 16);
+		this.bytes[this.offset++] = (byte) (value >> 8);
+		this.bytes[this.offset++] = (byte) value;
 	}
 
 	// inverse, get, 3 bytes
 	@OriginalMember(owner = "client!bt", name = "h", descriptor = "(I)I")
 	public final int ig3() {
 		this.offset += 3;
-		return (this.data[this.offset - 1] & 0xFF) + (((this.data[this.offset - 3] & 0xFF) << 16) + ((this.data[this.offset - 2] & 0xFF) << 8));
+		return (this.bytes[this.offset - 1] & 0xFF) + (((this.bytes[this.offset - 3] & 0xFF) << 16) + ((this.bytes[this.offset - 2] & 0xFF) << 8));
 	}
 
 	// rsa, encrypt
@@ -433,30 +433,30 @@ public class Buffer extends Node {
 	@OriginalMember(owner = "client!bt", name = "d", descriptor = "(Z)I")
 	public final int g4() {
 		this.offset += 4;
-		return ((this.data[this.offset - 4] & 0xFF) << 16) + (((this.data[this.offset - 3] & 0xFF) << 24) + ((this.data[this.offset - 1] & 0xFF) << 8) + (this.data[this.offset + -2] & 0xFF));
+		return ((this.bytes[this.offset - 4] & 0xFF) << 16) + (((this.bytes[this.offset - 3] & 0xFF) << 24) + ((this.bytes[this.offset - 1] & 0xFF) << 8) + (this.bytes[this.offset + -2] & 0xFF));
 	}
 
 	// middle, get, 4 bytes
 	@OriginalMember(owner = "client!bt", name = "i", descriptor = "(I)I")
 	public final int mg4() {
 		this.offset += 4;
-		return ((this.data[this.offset - 3] & 0xFF) << 16) + ((this.data[this.offset - 4] & 0xFF) << 24) + ((this.data[this.offset + -2] & 0xFF) << 8) + (this.data[this.offset + -1] & 0xFF);
+		return ((this.bytes[this.offset - 3] & 0xFF) << 16) + ((this.bytes[this.offset - 4] & 0xFF) << 24) + ((this.bytes[this.offset + -2] & 0xFF) << 8) + (this.bytes[this.offset + -1] & 0xFF);
 	}
 
 	// inverse, put, 4 bytes
 	@OriginalMember(owner = "client!bt", name = "d", descriptor = "(BI)V")
 	public final void ip4(@OriginalArg(1) int value) {
-		this.data[this.offset++] = (byte) value;
-		this.data[this.offset++] = (byte) (value >> 8);
-		this.data[this.offset++] = (byte) (value >> 16);
-		this.data[this.offset++] = (byte) (value >> 24);
+		this.bytes[this.offset++] = (byte) value;
+		this.bytes[this.offset++] = (byte) (value >> 8);
+		this.bytes[this.offset++] = (byte) (value >> 16);
+		this.bytes[this.offset++] = (byte) (value >> 24);
 	}
 
 	// inverse, put, 2 bytes, add to
 	@OriginalMember(owner = "client!bt", name = "e", descriptor = "(II)V")
 	public final void ip2add(@OriginalArg(0) int value) {
-		this.data[this.offset++] = (byte) (value + 128);
-		this.data[this.offset++] = (byte) (value >> 8);
+		this.bytes[this.offset++] = (byte) (value + 128);
+		this.bytes[this.offset++] = (byte) (value >> 8);
 	}
 
 	// get, VarSmart
@@ -474,60 +474,60 @@ public class Buffer extends Node {
 	// inverse, middle, put, 4 bytes
 	@OriginalMember(owner = "client!bt", name = "e", descriptor = "(BI)V")
 	public final void imp4(@OriginalArg(1) int value) {
-		this.data[this.offset++] = (byte) (value >> 8);
-		this.data[this.offset++] = (byte) value;
-		this.data[this.offset++] = (byte) (value >> 24);
-		this.data[this.offset++] = (byte) (value >> 16);
+		this.bytes[this.offset++] = (byte) (value >> 8);
+		this.bytes[this.offset++] = (byte) value;
+		this.bytes[this.offset++] = (byte) (value >> 24);
+		this.bytes[this.offset++] = (byte) (value >> 16);
 	}
 
 	// get, 1 byte, as byte, subtract from
 	@OriginalMember(owner = "client!bt", name = "j", descriptor = "(I)B")
 	public final byte g1bsub() {
-		return (byte) (128 - this.data[this.offset++]);
+		return (byte) (128 - this.bytes[this.offset++]);
 	}
 
 	// put, 1 byte
 	@OriginalMember(owner = "client!bt", name = "f", descriptor = "(II)V")
 	public final void p1(@OriginalArg(0) int value) {
-		this.data[this.offset++] = (byte) value;
+		this.bytes[this.offset++] = (byte) value;
 	}
 
 	// put, 2 bytes
 	@OriginalMember(owner = "client!bt", name = "g", descriptor = "(II)V")
 	public final void p2(@OriginalArg(0) int value) {
-		this.data[this.offset++] = (byte) (value >> 8);
-		this.data[this.offset++] = (byte) value;
+		this.bytes[this.offset++] = (byte) (value >> 8);
+		this.bytes[this.offset++] = (byte) value;
 	}
 
 	// inverse, get, 4 bytes
 	@OriginalMember(owner = "client!bt", name = "l", descriptor = "(B)I")
 	public final int ig4() {
 		this.offset += 4;
-		return ((this.data[this.offset - 1] & 0xFF) << 24) + ((this.data[this.offset - 2] & 0xFF) << 16) + ((this.data[this.offset - 3] & 0xFF) << 8) + (this.data[this.offset - 4] & 0xFF);
+		return ((this.bytes[this.offset - 1] & 0xFF) << 24) + ((this.bytes[this.offset - 2] & 0xFF) << 16) + ((this.bytes[this.offset - 3] & 0xFF) << 8) + (this.bytes[this.offset - 4] & 0xFF);
 	}
 
 	// inverse, put, 2 bytes
 	@OriginalMember(owner = "client!bt", name = "h", descriptor = "(II)V")
 	public final void ip2(@OriginalArg(1) int value) {
-		this.data[this.offset++] = (byte) value;
-		this.data[this.offset++] = (byte) (value >> 8);
+		this.bytes[this.offset++] = (byte) value;
+		this.bytes[this.offset++] = (byte) (value >> 8);
 	}
 
 	// put, 3 bytes
 	@OriginalMember(owner = "client!bt", name = "i", descriptor = "(II)V")
 	public final void p3(@OriginalArg(1) int value) {
-		this.data[this.offset++] = (byte) (value >> 16);
-		this.data[this.offset++] = (byte) (value >> 8);
-		this.data[this.offset++] = (byte) value;
+		this.bytes[this.offset++] = (byte) (value >> 16);
+		this.bytes[this.offset++] = (byte) (value >> 8);
+		this.bytes[this.offset++] = (byte) value;
 	}
 
 	// inverse, put, 4 bytes, duplicate (redundant - as ip4)
 	@OriginalMember(owner = "client!bt", name = "f", descriptor = "(BI)V")
 	public final void ip4_dup(@OriginalArg(1) int value) {
-		this.data[this.offset++] = (byte) value;
-		this.data[this.offset++] = (byte) (value >> 8);
-		this.data[this.offset++] = (byte) (value >> 16);
-		this.data[this.offset++] = (byte) (value >> 24);
+		this.bytes[this.offset++] = (byte) value;
+		this.bytes[this.offset++] = (byte) (value >> 8);
+		this.bytes[this.offset++] = (byte) (value >> 16);
+		this.bytes[this.offset++] = (byte) (value >> 24);
 	}
 
 	// put, VarInt
@@ -552,7 +552,7 @@ public class Buffer extends Node {
 	@OriginalMember(owner = "client!bt", name = "m", descriptor = "(B)I")
 	public final int g2b() {
 		this.offset += 2;
-		@Pc(31) int value = (this.data[this.offset - 2] & 0xFF) + ((this.data[this.offset - 1] & 0xFF) << 8);
+		@Pc(31) int value = (this.bytes[this.offset - 2] & 0xFF) + ((this.bytes[this.offset - 1] & 0xFF) << 8);
 		if (value > 32767) {
 			value -= 65536;
 		}
@@ -562,56 +562,56 @@ public class Buffer extends Node {
 	// put, size, 2 bytes
 	@OriginalMember(owner = "client!bt", name = "j", descriptor = "(II)V")
 	public final void psize2(@OriginalArg(1) int length) {
-		this.data[this.offset - length - 2] = (byte) (length >> 8);
-		this.data[this.offset - length - 1] = (byte) length;
+		this.bytes[this.offset - length - 2] = (byte) (length >> 8);
+		this.bytes[this.offset - length - 1] = (byte) length;
 	}
 
 	// inverse, middle, get, 4 bytes
 	@OriginalMember(owner = "client!bt", name = "l", descriptor = "(I)I")
 	public final int img4() {
 		this.offset += 4;
-		return ((this.data[this.offset - 2] & 0xFF) << 24) + (((this.data[this.offset - 1] & 0xFF) << 16) + (this.data[this.offset - 4] << 8 & 0xFF00)) + (this.data[this.offset + -3] & 0xFF);
+		return ((this.bytes[this.offset - 2] & 0xFF) << 24) + (((this.bytes[this.offset - 1] & 0xFF) << 16) + (this.bytes[this.offset - 4] << 8 & 0xFF00)) + (this.bytes[this.offset + -3] & 0xFF);
 	}
 
 	// inverse, get, 2 bytes, add to
 	@OriginalMember(owner = "client!bt", name = "n", descriptor = "(B)I")
 	public final int ig2add() {
 		this.offset += 2;
-		return ((this.data[this.offset - 1] & 0xFF) << 8) + (this.data[this.offset - 2] - 128 & 0xFF);
+		return ((this.bytes[this.offset - 1] & 0xFF) << 8) + (this.bytes[this.offset - 2] - 128 & 0xFF);
 	}
 
 	// get, 1 byte, add to
 	@OriginalMember(owner = "client!bt", name = "o", descriptor = "(B)B")
 	public final byte g1badd() {
-		return (byte) (this.data[this.offset++] - 128);
+		return (byte) (this.bytes[this.offset++] - 128);
 	}
 
 	// put, 2 bytes, add to
 	@OriginalMember(owner = "client!bt", name = "c", descriptor = "(IB)V")
 	public final void p2add(@OriginalArg(0) int value) {
-		this.data[this.offset++] = (byte) (value >> 8);
-		this.data[this.offset++] = (byte) (value + 128);
+		this.bytes[this.offset++] = (byte) (value >> 8);
+		this.bytes[this.offset++] = (byte) (value + 128);
 	}
 
 	// get, jstr (variant 2, versioned?)
 	@OriginalMember(owner = "client!bt", name = "m", descriptor = "(I)Ljava/lang/String;")
 	public final String gjstr2() {
-		@Pc(14) byte version = this.data[this.offset++];
+		@Pc(14) byte version = this.bytes[this.offset++];
 		if (version != 0) {
 			throw new IllegalStateException("Bad version number in gjstr2");
 		}
 
 		@Pc(27) int start = this.offset;
-		while (this.data[this.offset++] != 0) {}
+		while (this.bytes[this.offset++] != 0) {}
 		@Pc(55) int length = this.offset - start - 1;
-		return length == 0 ? "" : Static47.decodeString(start, this.data, length);
+		return length == 0 ? "" : Static47.decodeString(start, this.bytes, length);
 	}
 
 	// put, data
 	@OriginalMember(owner = "client!bt", name = "a", descriptor = "(BI[BI)V")
 	public final void pdata(@OriginalArg(2) byte[] src, @OriginalArg(3) int length) {
 		for (@Pc(8) int i = 0; i < length; i++) {
-			this.data[this.offset++] = src[i];
+			this.bytes[this.offset++] = src[i];
 		}
 	}
 
@@ -619,14 +619,14 @@ public class Buffer extends Node {
 	@OriginalMember(owner = "client!bt", name = "a", descriptor = "([BIII)V")
 	public final void ipadata(@OriginalArg(0) byte[] src, @OriginalArg(2) int length) {
 		for (@Pc(11) int i = length - 1; i >= 0; i--) {
-			src[i] = (byte) (this.data[this.offset++] - 128);
+			src[i] = (byte) (this.bytes[this.offset++] - 128);
 		}
 	}
 
 	// (fast) get, str
 	@OriginalMember(owner = "client!bt", name = "p", descriptor = "(B)Ljava/lang/String;")
 	public final String fastgstr() {
-		if (this.data[this.offset] == 0) {
+		if (this.bytes[this.offset] == 0) {
 			this.offset++;
 			return null;
 		} else {
@@ -644,7 +644,7 @@ public class Buffer extends Node {
 
 		@Pc(24) long value = 0L;
 		for (@Pc(22) int shift = bytes * 8; shift >= 0; shift -= 8) {
-			value |= ((long) this.data[this.offset++] & 0xFFL) << shift;
+			value |= ((long) this.bytes[this.offset++] & 0xFFL) << shift;
 		}
 		return value;
 	}
@@ -652,7 +652,7 @@ public class Buffer extends Node {
 	// put, size, 1 byte
 	@OriginalMember(owner = "client!bt", name = "c", descriptor = "(ZI)V")
 	public final void psize1(@OriginalArg(1) int length) {
-		this.data[this.offset - length - 1] = (byte) length;
+		this.bytes[this.offset - length - 1] = (byte) length;
 	}
 
 	// (extended) tiny (encryption algorithm) (XTEA), encrypt
@@ -682,7 +682,7 @@ public class Buffer extends Node {
 	// get, 1 byte, add to
 	@OriginalMember(owner = "client!bt", name = "q", descriptor = "(B)I")
 	public final int g1add() {
-		return this.data[this.offset++] - 128 & 0xFF;
+		return this.bytes[this.offset++] - 128 & 0xFF;
 	}
 
 }

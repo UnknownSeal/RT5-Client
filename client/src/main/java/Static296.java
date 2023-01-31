@@ -54,7 +54,7 @@ public final class Static296 {
 		if (Static337.aClass131_1 != null) {
 			Static337.aClass131_1.method3690(GameShell.canvas);
 		}
-		Static144.instance.method1379();
+		client.instance.method1379();
 		GameShell.canvas.setBackground(Color.black);
 		Static29.anInt721 = -1;
 		Static174.aClass123_2 = Static18.method556(GameShell.canvas);

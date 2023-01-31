@@ -16,7 +16,7 @@ public final class Class45 {
 	public final int anInt1466;
 
 	@OriginalMember(owner = "client!df", name = "<init>", descriptor = "(Lclient!dn;ILclient!r;)V")
-	public Class45(@OriginalArg(0) Class50 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5 arg2) {
+	public Class45(@OriginalArg(0) GameType arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5 arg2) {
 		this.aJs5_10 = arg2;
 		this.anInt1466 = this.aJs5_10.method5080(19);
 	}

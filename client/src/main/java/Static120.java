@@ -27,7 +27,7 @@ public final class Static120 {
 		@Pc(6) int local6 = arg1.offset;
 		@Pc(10) byte[] local10 = Static51.encodeString(arg0);
 		arg1.psmarts(local10.length);
-		arg1.offset += Static370.aClass140_1.method3647(arg1.data, local10, 0, arg1.offset, local10.length);
+		arg1.offset += Static370.aClass140_1.method3647(arg1.bytes, local10, 0, arg1.offset, local10.length);
 		return arg1.offset - local6;
 	}
 
@@ -59,7 +59,7 @@ public final class Static120 {
 							for (@Pc(85) int local85 = 0; local85 < Static291.mapSquares.length; local85++) {
 								if (Static291.mapSquares[local85] == local83 && arg0[local85] != null) {
 									@Pc(107) Buffer local107 = new Buffer(arg0[local85]);
-									arg1.method1091(local24 * 8, local73, local107, Static171.aClass46Array1, local67, local28 * 8, local61, local50, local18);
+									arg1.method1091(local24 * 8, local73, local107, Static171.collisionMap, local67, local28 * 8, local61, local50, local18);
 									arg1.method1101(local107, local28 * 8, local18, local50, local73, local67, Static190.aClass19_8, local16[0] == -1 ? local16 : null, local24 * 8, local61);
 									local32 = true;
 									break;
@@ -96,7 +96,7 @@ public final class Static120 {
 				local7 = 32767;
 			}
 			@Pc(23) byte[] local23 = new byte[local7];
-			arg0.offset += Static370.aClass140_1.method3650(local7, local23, 0, arg0.offset, arg0.data);
+			arg0.offset += Static370.aClass140_1.method3650(local7, local23, 0, arg0.offset, arg0.bytes);
 			return Static47.decodeString(0, local23, local7);
 		} catch (@Pc(47) Exception local47) {
 			return "Cabbage";

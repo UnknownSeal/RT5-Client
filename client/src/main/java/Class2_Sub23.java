@@ -168,8 +168,8 @@ public final class Class2_Sub23 extends Node {
 				}
 				local131++;
 			}
-			this.anInterface4_3 = this.aClass19_Sub1_20.method839(this.aClass2_Sub4_5.data, this.aClass2_Sub4_5.offset, false);
-			this.anInterface5_4 = this.aClass19_Sub1_20.method816(16, this.aClass2_Sub4_Sub1_1.data, this.aClass2_Sub4_Sub1_1.offset, false);
+			this.anInterface4_3 = this.aClass19_Sub1_20.method839(this.aClass2_Sub4_5.bytes, this.aClass2_Sub4_5.offset, false);
+			this.anInterface5_4 = this.aClass19_Sub1_20.method816(16, this.aClass2_Sub4_Sub1_1.bytes, this.aClass2_Sub4_Sub1_1.offset, false);
 			this.aClass126_5 = new Class126(this.aClass19_Sub1_20, this.anInterface5_4, 5126, 3, 0);
 			this.aClass126_6 = new Class126(this.aClass19_Sub1_20, this.anInterface5_4, 5121, 4, 12);
 		} else {

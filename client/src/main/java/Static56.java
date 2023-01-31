@@ -13,9 +13,6 @@ public final class Static56 {
 	@OriginalMember(owner = "client!dd", name = "r", descriptor = "Lclient!ld;")
 	public static final LinkedList A_LINKED_LIST___13 = new LinkedList();
 
-	@OriginalMember(owner = "client!dd", name = "t", descriptor = "Ljava/lang/String;")
-	public static String aString13 = "";
-
 	@OriginalMember(owner = "client!dd", name = "y", descriptor = "I")
 	public static final int anInt1462 = 1401;
 
@@ -59,7 +56,7 @@ public final class Static56 {
 			return;
 		}
 		if (Static18.aPrivelegedRequest_2.status == 2) {
-			Static234.method4094(Static17.aClass152_4, 2, Static257.aString39);
+			Static234.method4094(Static17.aSignLink_4, 2, Static257.aString39);
 			Static18.aPrivelegedRequest_2 = null;
 			return;
 		}

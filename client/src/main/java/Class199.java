@@ -16,7 +16,7 @@ public final class Class199 {
 	public final int anInt5596;
 
 	@OriginalMember(owner = "client!rb", name = "<init>", descriptor = "(Lclient!dn;ILclient!r;)V")
-	public Class199(@OriginalArg(0) Class50 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5 arg2) {
+	public Class199(@OriginalArg(0) GameType arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5 arg2) {
 		this.aJs5_76 = arg2;
 		if (this.aJs5_76 == null) {
 			this.anInt5596 = 0;

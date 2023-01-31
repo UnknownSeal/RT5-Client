@@ -13,9 +13,9 @@ public final class Static138 {
 	@OriginalMember(owner = "client!hr", name = "a", descriptor = "(BIII)V")
 	public static void method2578(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
 		@Pc(6) int local6 = arg1 * Static218.aClass177_Sub1_2.musicVolume >> 8;
-		if (arg2 == -1 && !Static393.aBoolean486) {
+		if (arg2 == -1 && !Static393.jingle) {
 			Static368.method6191();
-		} else if (arg2 != -1 && (Static171.anInt3268 != arg2 || !Static64.method1704()) && local6 != 0 && !Static393.aBoolean486) {
+		} else if (arg2 != -1 && (Static171.anInt3268 != arg2 || !Static64.method1704()) && local6 != 0 && !Static393.jingle) {
 			Static180.method3366(arg2, arg0, local6, Static101.aJs5_23);
 		}
 		Static171.anInt3268 = arg2;
@@ -39,25 +39,25 @@ public final class Static138 {
 	}
 
 	@OriginalMember(owner = "client!hr", name = "c", descriptor = "(II)Lclient!mn;")
-	public static Class2_Sub2_Sub12 method2581(@OriginalArg(1) int arg0) {
-		@Pc(10) Class2_Sub2_Sub12 local10 = (Class2_Sub2_Sub12) Static257.aClass116_5.method3151((long) arg0);
-		if (local10 != null) {
-			return local10;
+	public static QuickChatCategoryType get(@OriginalArg(1) int id) {
+		@Pc(10) QuickChatCategoryType type = (QuickChatCategoryType) Static257.types.get(id);
+		if (type != null) {
+			return type;
 		}
-		@Pc(25) byte[] local25;
-		if (arg0 >= 32768) {
-			local25 = Static43.aJs5_7.fetchFile(0, arg0 & 0x7FFF);
+		@Pc(25) byte[] bytes;
+		if (id >= 32768) {
+			bytes = Static43.globalArchive.fetchFile(0, id & 0x7FFF);
 		} else {
-			local25 = Static367.aJs5_92.fetchFile(0, arg0);
+			bytes = Static367.archive.fetchFile(0, id);
 		}
-		local10 = new Class2_Sub2_Sub12();
-		if (local25 != null) {
-			local10.method3796(new Buffer(local25));
+		type = new QuickChatCategoryType();
+		if (bytes != null) {
+			type.decode(new Buffer(bytes));
 		}
-		if (arg0 >= 32768) {
-			local10.method3792();
+		if (id >= 32768) {
+			type.method3792();
 		}
-		Static257.aClass116_5.method3154(local10, (long) arg0);
-		return local10;
+		Static257.types.put(id, type);
+		return type;
 	}
 }

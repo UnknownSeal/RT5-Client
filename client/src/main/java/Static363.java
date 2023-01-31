@@ -1,4 +1,3 @@
-import java.awt.Frame;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
@@ -16,9 +15,6 @@ public final class Static363 {
 
 	@OriginalMember(owner = "client!vf", name = "V", descriptor = "I")
 	public static int anInt6804;
-
-	@OriginalMember(owner = "client!vf", name = "X", descriptor = "Ljava/awt/Frame;")
-	public static Frame aFrame2;
 
 	@OriginalMember(owner = "client!vf", name = "Y", descriptor = "[Lclient!kh;")
 	public static Country[] countries;

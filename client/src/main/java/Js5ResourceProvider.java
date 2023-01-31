@@ -3,14 +3,14 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!di")
-public abstract class Class25 {
+public abstract class Js5ResourceProvider {
 
 	static {
 		new LocalisedText("You can report that person under a different rule.", "Diese Person kann bezüglich einer anderen Regel gemeldet werden.", "Vous pouvez signaler cette personne pour une autre infraction aux règles.", "Você não pode denunciar essa pessoa de acordo com uma regra diferente.");
 	}
 
 	@OriginalMember(owner = "client!di", name = "<init>", descriptor = "()V")
-	protected Class25() {
+	protected Js5ResourceProvider() {
 	}
 
 	@OriginalMember(owner = "client!di", name = "a", descriptor = "(Z)Lclient!ra;")

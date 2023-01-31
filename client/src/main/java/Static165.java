@@ -111,7 +111,7 @@ public final class Static165 {
 		}
 		@Pc(41) String local41;
 		if (Static330.aBoolean419 && Static268.size < 2) {
-			local41 = Static91.aString18 + LocalisedText.A_TRANSLATABLE_STRING___67.getLocalisedText(client.language) + Static371.aString68 + " ->";
+			local41 = Static91.aString18 + LocalisedText.MINI_SEPARATOR.getLocalisedText(client.language) + Static371.aString68 + " ->";
 		} else if (Static148.aBoolean192 && Static174.aClass123_2.method3342(81) && Static268.size > 2) {
 			local41 = Static318.method5420((Class2_Sub5) Static129.A_LINKED_LIST___19.sentinel.previous.previous);
 		} else {
@@ -161,7 +161,7 @@ public final class Static165 {
 			}
 			local218.method5902(Static129.anInt2460, local41, Static288.anInt5464, Static61.aRandom1, Static164.aComponent_5.anInt4293, Static210.anIntArray229, Static164.aComponent_5.graphicShadow, Static164.aComponent_5.width, Static164.aComponent_5.color, Static283.anInt5352, Static134.aClass13Array12, Static164.aComponent_5.height, Static164.aComponent_5.anInt4298, Static72.anIntArray114);
 			Static369.method6220(Static210.anIntArray229[2], Static210.anIntArray229[0], Static210.anIntArray229[3], Static210.anIntArray229[1]);
-		} else if (Static179.aComponent_6 != null && Static249.aClass50_3 == client.game) {
+		} else if (Static179.aComponent_6 != null && GameType.GAME_TYPE_RUNESCAPE == client.game) {
 			@Pc(287) int local287 = Static52.aClass130_1.method5898(Static290.anInt5498 + 4, Static283.anInt5352, Static134.aClass13Array12, Static61.aRandom1, Static63.anInt1549 + 16, Static72.anIntArray114, local41);
 			Static369.method6220(Static113.aClass239_2.method6125(local41) + local287, Static290.anInt5498 + 4, 16, Static63.anInt1549);
 		}

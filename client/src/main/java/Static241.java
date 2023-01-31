@@ -39,7 +39,7 @@ public final class Static241 {
 		}
 		@Pc(34) String nameWithLevel = type.name;
 		if (type.combatLevel != 0) {
-			@Pc(50) String levelPrefix = client.game == Static106.aClass50_1 ? LocalisedText.RATING.getLocalisedText(client.language) : LocalisedText.LEVEL.getLocalisedText(client.language);
+			@Pc(50) String levelPrefix = client.game == GameType.GAME_TYPE_STELLARDAWN ? LocalisedText.RATING.getLocalisedText(client.language) : LocalisedText.LEVEL.getLocalisedText(client.language);
 			nameWithLevel = nameWithLevel + Static178.getCombatLevelColor(Static17.self.combatLevel, type.combatLevel) + " (" + levelPrefix + type.combatLevel + ")";
 		}
 		if (!Static330.aBoolean419) {
@@ -51,7 +51,7 @@ public final class Static241 {
 				@Pc(90) int i;
 				if (ops != null) {
 					for (i = 4; i >= 0; i--) {
-						if (ops[i] != null && (client.game != Static249.aClass50_3 || !ops[i].equalsIgnoreCase(LocalisedText.ATTACK.getLocalisedText(client.language)))) {
+						if (ops[i] != null && (client.game != GameType.GAME_TYPE_RUNESCAPE || !ops[i].equalsIgnoreCase(LocalisedText.ATTACK.getLocalisedText(client.language)))) {
 							@Pc(110) byte local110 = 0;
 							@Pc(112) int local112 = Static91.anInt1910;
 							if (i == 0) {
@@ -79,7 +79,7 @@ public final class Static241 {
 						}
 					}
 				}
-				if (client.game == Static249.aClass50_3 && ops != null) {
+				if (client.game == GameType.GAME_TYPE_RUNESCAPE && ops != null) {
 					for (i = 4; i >= 0; i--) {
 						if (ops[i] != null && ops[i].equalsIgnoreCase(LocalisedText.ATTACK.getLocalisedText(client.language))) {
 							@Pc(211) short priority = 0;

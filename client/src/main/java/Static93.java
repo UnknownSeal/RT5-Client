@@ -78,8 +78,8 @@ public final class Static93 {
 	public static void method2002() {
 		Static91.method1960(Static101.aClass145_75);
 		Static257.aClass2_Sub4_Sub2_4.p1(Static144.method2692());
-		Static257.aClass2_Sub4_Sub2_4.p2(Static250.anInt4665);
-		Static257.aClass2_Sub4_Sub2_4.p2(Static172.anInt3299);
+		Static257.aClass2_Sub4_Sub2_4.p2(GameShell.canvasWidth);
+		Static257.aClass2_Sub4_Sub2_4.p2(GameShell.canvasHeight);
 		Static257.aClass2_Sub4_Sub2_4.p1(Static218.aClass177_Sub1_2.anInt4885);
 	}
 

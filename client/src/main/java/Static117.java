@@ -15,8 +15,8 @@ public final class Static117 {
 
 	@OriginalMember(owner = "client!gp", name = "a", descriptor = "(Lclient!r;Lclient!r;Z)V")
 	public static void method2366(@OriginalArg(0) Js5 arg0, @OriginalArg(1) Js5 arg1) {
-		Static43.aJs5_7 = arg1;
-		Static367.aJs5_92 = arg0;
+		Static43.globalArchive = arg1;
+		Static367.archive = arg0;
 	}
 
 	@OriginalMember(owner = "client!gp", name = "a", descriptor = "(ILclient!wm;)V")

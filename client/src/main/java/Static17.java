@@ -9,7 +9,7 @@ public final class Static17 {
 	public static Class11_Sub5_Sub2_Sub1 self;
 
 	@OriginalMember(owner = "client!at", name = "P", descriptor = "Lclient!ml;")
-	public static Class152 aClass152_4;
+	public static SignLink aSignLink_4;
 
 	@OriginalMember(owner = "client!at", name = "A", descriptor = "Lclient!jm;")
 	public static final Class116 aClass116_6 = new Class116(16);
@@ -169,7 +169,7 @@ public final class Static17 {
 	}
 
 	@OriginalMember(owner = "client!at", name = "a", descriptor = "(Ljava/awt/Frame;ILclient!ml;)V")
-	public static void method4214(@OriginalArg(0) Frame arg0, @OriginalArg(2) Class152 arg1) {
+	public static void method4214(@OriginalArg(0) Frame arg0, @OriginalArg(2) SignLink arg1) {
 		while (true) {
 			@Pc(19) PrivelegedRequest local19 = arg1.method3762(arg0);
 			while (local19.status == 0) {

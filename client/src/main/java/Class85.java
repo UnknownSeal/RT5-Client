@@ -16,7 +16,7 @@ public final class Class85 {
 	private final Js5 aJs5_27;
 
 	@OriginalMember(owner = "client!gp", name = "<init>", descriptor = "(Lclient!dn;ILclient!r;Lclient!r;Lclient!r;)V")
-	public Class85(@OriginalArg(0) Class50 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5 arg2, @OriginalArg(3) Js5 arg3, @OriginalArg(4) Js5 arg4) {
+	public Class85(@OriginalArg(0) GameType arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5 arg2, @OriginalArg(3) Js5 arg3, @OriginalArg(4) Js5 arg4) {
 		this.aJs5_27 = arg2;
 		if (this.aJs5_27 != null) {
 			@Pc(26) int local26 = this.aJs5_27.method5091() - 1;

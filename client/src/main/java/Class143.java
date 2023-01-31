@@ -307,7 +307,7 @@ public final class Class143 {
 			}
 		}
 		if (this.aClass2_Sub4_Sub1_2.offset != 0) {
-			this.anInterface5_5.method4601(24, this.aClass2_Sub4_Sub1_2.data, this.aClass2_Sub4_Sub1_2.offset);
+			this.anInterface5_5.method4601(24, this.aClass2_Sub4_Sub1_2.bytes, this.aClass2_Sub4_Sub1_2.offset);
 			arg0.method790(this.aClass126_9, null, this.aClass126_7, this.aClass126_8);
 			arg0.method835(this.aClass2_Sub4_Sub1_2.offset / 24);
 		}

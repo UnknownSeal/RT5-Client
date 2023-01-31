@@ -26,8 +26,8 @@ public final class Static133 {
 			}
 		}
 		Static371.method6256((long) Static114.loop, Static190.aClass19_8);
-		if (Static139.anInt2595 != -1) {
-			Static232.method4027(Static139.anInt2595);
+		if (Static139.topLevelInterface != -1) {
+			Static232.method4027(Static139.topLevelInterface);
 		}
 		for (@Pc(42) int local42 = 0; local42 < Static154.anInt2806; local42++) {
 			if (Static357.aBooleanArray59[local42]) {
@@ -40,7 +40,7 @@ public final class Static133 {
 		if (Static190.aClass19_8.method2871()) {
 			Static106.aBoolean164 = true;
 		}
-		if (Static139.anInt2595 != -1) {
+		if (Static139.topLevelInterface != -1) {
 			Static154.anInt2806 = 0;
 			Static46.method1421();
 		}

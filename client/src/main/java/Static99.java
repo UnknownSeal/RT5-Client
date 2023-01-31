@@ -22,12 +22,12 @@ public final class Static99 {
 		Static211.method3720();
 		Static253.method4365();
 		for (@Pc(17) int local17 = 0; local17 < 4; local17++) {
-			Static171.aClass46Array1[local17].method1626();
+			Static171.collisionMap[local17].clear();
 		}
 		Static241.method4191(false);
 		System.gc();
 		Static174.method1507();
-		Static393.aBoolean486 = false;
+		Static393.jingle = false;
 		Static171.anInt3268 = -1;
 		Static239.method4151(true);
 		Static164.originX = 0;

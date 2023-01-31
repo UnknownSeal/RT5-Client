@@ -8,7 +8,7 @@ public final class Static280 {
 	public static int anInt5197 = 0;
 
 	@OriginalMember(owner = "client!qe", name = "a", descriptor = "(Ljava/lang/String;Lclient!ml;BZZ)V")
-	public static void method4764(@OriginalArg(0) String arg0, @OriginalArg(1) Class152 arg1, @OriginalArg(3) boolean arg2, @OriginalArg(4) boolean arg3) {
+	public static void method4764(@OriginalArg(0) String arg0, @OriginalArg(1) SignLink arg1, @OriginalArg(3) boolean arg2, @OriginalArg(4) boolean arg3) {
 		if (!arg3) {
 			Static234.method4094(arg1, 3, arg0);
 			return;
@@ -22,7 +22,7 @@ public final class Static280 {
 				@Pc(52) PrivelegedRequest local52 = Static234.method4094(arg1, 0, arg0);
 				Static257.aString39 = arg0;
 				Static18.aPrivelegedRequest_2 = local52;
-				Static17.aClass152_4 = arg1;
+				Static17.aSignLink_4 = arg1;
 				return;
 			}
 		}

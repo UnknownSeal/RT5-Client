@@ -14,7 +14,7 @@ public final class Class2_Sub34 extends Node {
 
 	@OriginalMember(owner = "client!sl", name = "<init>", descriptor = "(Lclient!bt;)V")
 	public Class2_Sub34(@OriginalArg(0) Buffer arg0) {
-		arg0.offset = arg0.data.length - 3;
+		arg0.offset = arg0.bytes.length - 3;
 		@Pc(12) int local12 = arg0.g1();
 		@Pc(16) int local16 = arg0.g2();
 		@Pc(22) int local22 = local12 * 10 + 14;
@@ -183,7 +183,7 @@ public final class Class2_Sub34 extends Node {
 				while (true) {
 					@Pc(568) int local568 = arg0.gVarInt();
 					local499.pVarInt(local568);
-					@Pc(580) int local580 = arg0.data[local294++] & 0xFF;
+					@Pc(580) int local580 = arg0.bytes[local294++] & 0xFF;
 					@Pc(587) boolean local587 = local580 != local564;
 					local564 = local580 & 0xF;
 					if (local580 == 7) {
@@ -201,60 +201,60 @@ public final class Class2_Sub34 extends Node {
 						}
 						local499.p1(81);
 						local499.p1(3);
-						local499.p1(arg0.data[local481++]);
-						local499.p1(arg0.data[local481++]);
-						local499.p1(arg0.data[local481++]);
+						local499.p1(arg0.bytes[local481++]);
+						local499.p1(arg0.bytes[local481++]);
+						local499.p1(arg0.bytes[local481++]);
 					} else {
 						local529 ^= local580 >> 4;
 						if (local564 == 0) {
 							if (local587) {
 								local499.p1(local529 + 144);
 							}
-							local531 += arg0.data[local360++];
-							local533 += arg0.data[local373++];
+							local531 += arg0.bytes[local360++];
+							local533 += arg0.bytes[local373++];
 							local499.p1(local531 & 0x7F);
 							local499.p1(local533 & 0x7F);
 						} else if (local564 == 1) {
 							if (local587) {
 								local499.p1(local529 + 128);
 							}
-							local531 += arg0.data[local360++];
-							local535 += arg0.data[local391++];
+							local531 += arg0.bytes[local360++];
+							local535 += arg0.bytes[local391++];
 							local499.p1(local531 & 0x7F);
 							local499.p1(local535 & 0x7F);
 						} else if (local564 == 2) {
 							if (local587) {
 								local499.p1(local529 + 176);
 							}
-							local202 = local202 + arg0.data[local176++] & 0x7F;
+							local202 = local202 + arg0.bytes[local176++] & 0x7F;
 							local499.p1(local202);
 							@Pc(772) byte local772;
 							if (local202 == 0 || local202 == 32) {
-								local772 = arg0.data[local427++];
+								local772 = arg0.bytes[local427++];
 							} else if (local202 == 1) {
-								local772 = arg0.data[local333++];
+								local772 = arg0.bytes[local333++];
 							} else if (local202 == 33) {
-								local772 = arg0.data[local400++];
+								local772 = arg0.bytes[local400++];
 							} else if (local202 == 7) {
-								local772 = arg0.data[local342++];
+								local772 = arg0.bytes[local342++];
 							} else if (local202 == 39) {
-								local772 = arg0.data[local409++];
+								local772 = arg0.bytes[local409++];
 							} else if (local202 == 10) {
-								local772 = arg0.data[local351++];
+								local772 = arg0.bytes[local351++];
 							} else if (local202 == 42) {
-								local772 = arg0.data[local418++];
+								local772 = arg0.bytes[local418++];
 							} else if (local202 == 99) {
-								local772 = arg0.data[local445++];
+								local772 = arg0.bytes[local445++];
 							} else if (local202 == 98) {
-								local772 = arg0.data[local454++];
+								local772 = arg0.bytes[local454++];
 							} else if (local202 == 101) {
-								local772 = arg0.data[local463++];
+								local772 = arg0.bytes[local463++];
 							} else if (local202 == 100) {
-								local772 = arg0.data[local472++];
+								local772 = arg0.bytes[local472++];
 							} else if (local202 == 64 || local202 == 65 || local202 == 120 || local202 == 121 || local202 == 123) {
-								local772 = arg0.data[local297++];
+								local772 = arg0.bytes[local297++];
 							} else {
-								local772 = arg0.data[local382++];
+								local772 = arg0.bytes[local382++];
 							}
 							@Pc(907) int local907 = local772 + local544[local202];
 							local544[local202] = local907;
@@ -263,29 +263,29 @@ public final class Class2_Sub34 extends Node {
 							if (local587) {
 								local499.p1(local529 + 224);
 							}
-							local537 += arg0.data[local436++];
-							local537 += arg0.data[local324++] << 7;
+							local537 += arg0.bytes[local436++];
+							local537 += arg0.bytes[local324++] << 7;
 							local499.p1(local537 & 0x7F);
 							local499.p1(local537 >> 7 & 0x7F);
 						} else if (local564 == 4) {
 							if (local587) {
 								local499.p1(local529 + 208);
 							}
-							local539 += arg0.data[local315++];
+							local539 += arg0.bytes[local315++];
 							local499.p1(local539 & 0x7F);
 						} else if (local564 == 5) {
 							if (local587) {
 								local499.p1(local529 + 160);
 							}
-							local531 += arg0.data[local360++];
-							local541 += arg0.data[local306++];
+							local531 += arg0.bytes[local360++];
+							local541 += arg0.bytes[local306++];
 							local499.p1(local531 & 0x7F);
 							local499.p1(local541 & 0x7F);
 						} else if (local564 == 6) {
 							if (local587) {
 								local499.p1(local529 + 192);
 							}
-							local499.p1(arg0.data[local427++]);
+							local499.p1(arg0.bytes[local427++]);
 						} else {
 							throw new RuntimeException();
 						}

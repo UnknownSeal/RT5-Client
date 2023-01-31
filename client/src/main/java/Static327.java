@@ -75,7 +75,7 @@ public final class Static327 {
 						Static1.add(-1, true, local56, false, Static91.aString18, local54, 51, " ->", Static41.anInt1044, 0L);
 					}
 				} else {
-					if (Static106.aClass50_1 == client.game) {
+					if (GameType.GAME_TYPE_STELLARDAWN == client.game) {
 						Static1.add(-1, true, local56, false, LocalisedText.FACE_HERE.getLocalisedText(client.language), local54, 59, "", -1, 0L);
 					}
 					Static1.add(-1, true, local56, false, Static330.aString62, local54, 22, "", -1, 0L);

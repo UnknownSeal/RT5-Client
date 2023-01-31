@@ -75,8 +75,8 @@ public final class Static262 {
 			message = Static200.method3646(message, "%40", "@");
 			message = Static200.method3646(message, "%26", "&");
 			message = Static200.method3646(message, "%23", "#");
-			if (Static392.aClass152_6.applet != null) {
-				@Pc(103) PrivelegedRequest local103 = Static392.aClass152_6.method3765(new URL(Static392.aClass152_6.applet.getCodeBase(), "clienterror.ws?c=" + Static277.clientVersion + "&u=" + Static241.aLong130 + "&v1=" + Static215.aString33 + "&v2=" + Static215.aString34 + "&e=" + message));
+			if (Static392.signlink.applet != null) {
+				@Pc(103) PrivelegedRequest local103 = Static392.signlink.method3765(new URL(Static392.signlink.applet.getCodeBase(), "clienterror.ws?c=" + Static277.clientVersion + "&u=" + Static241.aLong130 + "&v1=" + SignLink.javaVendor + "&v2=" + SignLink.javaVersion + "&e=" + message));
 				while (local103.status == 0) {
 					Static231.sleep(1L);
 				}

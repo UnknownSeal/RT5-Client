@@ -22,8 +22,8 @@ public final class Packet extends Buffer {
 
 	@OriginalMember(owner = "client!qg", name = "n", descriptor = "(I)I")
 	public int method4863() {
-		@Pc(22) int local22 = super.data[super.offset++] - this.isaac.getNext() & 0xFF;
-		return local22 < 128 ? local22 : (super.data[super.offset++] - this.isaac.getNext() & 0xFF) + (local22 - 128 << 8);
+		@Pc(22) int local22 = super.bytes[super.offset++] - this.isaac.getNext() & 0xFF;
+		return local22 < 128 ? local22 : (super.bytes[super.offset++] - this.isaac.getNext() & 0xFF) + (local22 - 128 << 8);
 	}
 
 	@OriginalMember(owner = "client!qg", name = "r", descriptor = "(B)V")
@@ -34,14 +34,14 @@ public final class Packet extends Buffer {
 	@OriginalMember(owner = "client!qg", name = "b", descriptor = "([BIII)V")
 	public void method4865(@OriginalArg(0) byte[] src, @OriginalArg(1) int len) {
 		for (@Pc(12) int i = 0; i < len; i++) {
-			src[i] = (byte) (super.data[super.offset++] - this.isaac.getNext());
+			src[i] = (byte) (super.bytes[super.offset++] - this.isaac.getNext());
 		}
 	}
 
 	// put, 1 byte, isaac encrypted
 	@OriginalMember(owner = "client!qg", name = "k", descriptor = "(II)V")
 	public void p1isaac(@OriginalArg(0) int opcode) {
-		super.data[super.offset++] = (byte) (opcode + this.isaac.getNext());
+		super.bytes[super.offset++] = (byte) (opcode + this.isaac.getNext());
 	}
 
 	// get, n bits
@@ -53,15 +53,15 @@ public final class Packet extends Buffer {
 
 		@Pc(32) int val = 0;
 		while (msb < n) {
-			val += (super.data[byteOffset++] & BITMASK[msb]) << n - msb;
+			val += (super.bytes[byteOffset++] & BITMASK[msb]) << n - msb;
 			n -= msb;
 			msb = 8;
 		}
 
 		if (n == msb) {
-			val += super.data[byteOffset] & BITMASK[msb];
+			val += super.bytes[byteOffset] & BITMASK[msb];
 		} else {
-			val += super.data[byteOffset] >> msb - n & BITMASK[n];
+			val += super.bytes[byteOffset] >> msb - n & BITMASK[n];
 		}
 
 		return val;
@@ -74,7 +74,7 @@ public final class Packet extends Buffer {
 
 	@OriginalMember(owner = "client!qg", name = "s", descriptor = "(B)Z")
 	public boolean method4869() {
-		@Pc(17) int value = super.data[super.offset] - this.isaac.peekNext() & 0xFF;
+		@Pc(17) int value = super.bytes[super.offset] - this.isaac.peekNext() & 0xFF;
 		return value >= 128;
 	}
 

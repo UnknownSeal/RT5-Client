@@ -8,7 +8,7 @@ public final class Static171 {
 	public static final Class145 aClass145_127 = new Class145(38, 4);
 
 	@OriginalMember(owner = "client!jt", name = "X", descriptor = "[Lclient!dg;")
-	public static final Class46[] aClass46Array1 = new Class46[4];
+	public static final CollisionMap[] collisionMap = new CollisionMap[4];
 
 	@OriginalMember(owner = "client!jt", name = "db", descriptor = "I")
 	public static int anInt3268 = -1;
@@ -144,7 +144,7 @@ public final class Static171 {
 			Static136.anInt6778 = local118;
 			Static265.anInt4857 = local256;
 			Static4.anInt87 = local258;
-			if (Static17.aBoolean308 && client.js5NetQueue.method4636() == 0) {
+			if (Static17.aBoolean308 && client.js5NetQueue.getUrgentRequestCount() == 0) {
 				Static17.aBoolean308 = false;
 			}
 			if (Static17.aBoolean308) {

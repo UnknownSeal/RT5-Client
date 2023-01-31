@@ -8,23 +8,23 @@ public final class Js5NetRequest extends Class2_Sub2_Sub10 {
 	public int anInt3083;
 
 	@OriginalMember(owner = "client!jj", name = "Q", descriptor = "B")
-	public byte aByte27;
+	public byte trailerLength;
 
 	@OriginalMember(owner = "client!jj", name = "T", descriptor = "Lclient!bt;")
-	public Buffer aClass2_Sub4_3;
+	public Buffer data;
 
 	@OriginalMember(owner = "client!jj", name = "e", descriptor = "(B)[B")
 	@Override
-	public byte[] method5647() {
-		if (super.aBoolean416 || this.aClass2_Sub4_3.offset < this.aClass2_Sub4_3.data.length - this.aByte27) {
+	public byte[] getData() {
+		if (super.incomplete || this.data.bytes.length - this.trailerLength > this.data.offset) {
 			throw new RuntimeException();
 		}
-		return this.aClass2_Sub4_3.data;
+		return this.data.bytes;
 	}
 
 	@OriginalMember(owner = "client!jj", name = "b", descriptor = "(I)I")
 	@Override
 	public int method5650() {
-		return this.aClass2_Sub4_3 == null ? 0 : this.aClass2_Sub4_3.offset * 100 / (this.aClass2_Sub4_3.data.length - this.aByte27);
+		return this.data == null ? 0 : this.data.offset * 100 / (this.data.bytes.length - this.trailerLength);
 	}
 }

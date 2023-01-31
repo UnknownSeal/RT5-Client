@@ -39,7 +39,7 @@ public final class Static184 {
 					local23 = false;
 				}
 			}
-			@Pc(109) String local109 = Static106.aClass50_1 == client.game ? LocalisedText.RATING.getLocalisedText(client.language) : LocalisedText.LEVEL.getLocalisedText(client.language);
+			@Pc(109) String local109 = GameType.GAME_TYPE_STELLARDAWN == client.game ? LocalisedText.RATING.getLocalisedText(client.language) : LocalisedText.LEVEL.getLocalisedText(client.language);
 			if (arg1.anInt4171 <= arg1.combatLevel) {
 				local146 = arg1.method4071() + (local23 ? Static178.getCombatLevelColor(Static17.self.combatLevel, arg1.combatLevel) : "<col=ffffff>") + " (" + local109 + arg1.combatLevel + ")";
 			} else {
@@ -58,7 +58,7 @@ public final class Static184 {
 			for (@Pc(272) int local272 = 7; local272 >= 0; local272--) {
 				if (Static243.aStringArray44[local272] != null) {
 					@Pc(280) short local280 = 0;
-					if (client.game == Static249.aClass50_3 && Static243.aStringArray44[local272].equalsIgnoreCase(LocalisedText.ATTACK.getLocalisedText(client.language))) {
+					if (client.game == GameType.GAME_TYPE_RUNESCAPE && Static243.aStringArray44[local272].equalsIgnoreCase(LocalisedText.ATTACK.getLocalisedText(client.language))) {
 						if (Static17.self.combatLevel < arg1.combatLevel) {
 							local280 = 2000;
 						}

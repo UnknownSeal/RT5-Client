@@ -17,7 +17,7 @@ public final class Class128 {
 	}
 
 	@OriginalMember(owner = "client!km", name = "<init>", descriptor = "(Lclient!dn;ILclient!r;)V")
-	public Class128(@OriginalArg(0) Class50 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5 arg2) {
+	public Class128(@OriginalArg(0) GameType arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5 arg2) {
 		this.aJs5_51 = arg2;
 		if (this.aJs5_51 != null) {
 			@Pc(20) int local20 = this.aJs5_51.method5091() - 1;

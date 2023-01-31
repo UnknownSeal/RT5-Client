@@ -42,9 +42,9 @@ public final class Class52 {
 	@OriginalMember(owner = "client!ds", name = "a", descriptor = "(Lclient!bt;BI)V")
 	private void method1767(@OriginalArg(0) Buffer arg0, @OriginalArg(2) int arg1) {
 		if (arg1 == 1) {
-			this.aChar4 = Static78.method5697(arg0.g1b());
+			this.aChar4 = Static78.decodeChar(arg0.g1b());
 		} else if (arg1 == 2) {
-			this.aChar3 = Static78.method5697(arg0.g1b());
+			this.aChar3 = Static78.decodeChar(arg0.g1b());
 		} else if (arg1 == 3) {
 			this.aString16 = arg0.gjstr();
 		} else if (arg1 == 4) {

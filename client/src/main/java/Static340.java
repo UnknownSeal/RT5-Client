@@ -59,14 +59,14 @@ public final class Static340 {
 
 	@OriginalMember(owner = "client!tp", name = "a", descriptor = "(Z)V")
 	public static void method5764() {
-		@Pc(7) Class204 local7 = null;
+		@Pc(7) FileOnDisk local7 = null;
 		try {
 			@Pc(11) PrivelegedRequest local11 = GameShell.signlink.method3755();
 			while (local11.status == 0) {
 				Static231.sleep(1L);
 			}
 			if (local11.status == 1) {
-				local7 = (Class204) local11.result;
+				local7 = (FileOnDisk) local11.result;
 				@Pc(41) Buffer local41 = new Buffer(Static112.anInt2294 * 6 + 3);
 				local41.p1(1);
 				local41.p2(Static112.anInt2294);
@@ -76,13 +76,13 @@ public final class Static340 {
 						local41.p4(Static75.anIntArray117[local51]);
 					}
 				}
-				local7.method5194(local41.data, local41.offset, 0);
+				local7.write(local41.bytes, local41.offset, 0);
 			}
 		} catch (@Pc(82) Exception local82) {
 		}
 		try {
 			if (local7 != null) {
-				local7.method5192();
+				local7.close();
 			}
 		} catch (@Pc(89) Exception local89) {
 		}

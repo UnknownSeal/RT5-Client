@@ -1204,7 +1204,7 @@ public final class Model_Sub2 extends Model {
 		if (local105 == 0) {
 			return;
 		}
-		if (local105 * this.anInt3841 <= Static219.aClass2_Sub4_Sub1_3.data.length) {
+		if (local105 * this.anInt3841 <= Static219.aClass2_Sub4_Sub1_3.bytes.length) {
 			Static219.aClass2_Sub4_Sub1_3.offset = 0;
 		} else {
 			Static219.aClass2_Sub4_Sub1_3 = new Class2_Sub4_Sub1((this.anInt3841 + 100) * local105);
@@ -1459,14 +1459,14 @@ public final class Model_Sub2 extends Model {
 		@Pc(1390) Interface5 local1390;
 		if (arg0) {
 			if (this.anInterface5_6 == null) {
-				this.anInterface5_6 = this.aClass19_Sub1_24.method816(local105, Static219.aClass2_Sub4_Sub1_3.data, Static219.aClass2_Sub4_Sub1_3.offset, true);
+				this.anInterface5_6 = this.aClass19_Sub1_24.method816(local105, Static219.aClass2_Sub4_Sub1_3.bytes, Static219.aClass2_Sub4_Sub1_3.offset, true);
 			} else {
-				this.anInterface5_6.method4601(local105, Static219.aClass2_Sub4_Sub1_3.data, Static219.aClass2_Sub4_Sub1_3.offset);
+				this.anInterface5_6.method4601(local105, Static219.aClass2_Sub4_Sub1_3.bytes, Static219.aClass2_Sub4_Sub1_3.offset);
 			}
 			this.aByte33 = 0;
 			local1390 = this.anInterface5_6;
 		} else {
-			local1390 = this.aClass19_Sub1_24.method816(local105, Static219.aClass2_Sub4_Sub1_3.data, Static219.aClass2_Sub4_Sub1_3.offset, false);
+			local1390 = this.aClass19_Sub1_24.method816(local105, Static219.aClass2_Sub4_Sub1_3.bytes, Static219.aClass2_Sub4_Sub1_3.offset, false);
 			this.aBoolean250 = true;
 		}
 		if (local34) {
@@ -1857,7 +1857,7 @@ public final class Model_Sub2 extends Model {
 
 	@OriginalMember(owner = "client!mp", name = "a", descriptor = "(ZI)V")
 	private void method3855(@OriginalArg(0) boolean arg0) {
-		if (Static219.aClass2_Sub4_Sub1_3.data.length < this.anInt3843 * 6) {
+		if (Static219.aClass2_Sub4_Sub1_3.bytes.length < this.anInt3843 * 6) {
 			Static219.aClass2_Sub4_Sub1_3 = new Class2_Sub4_Sub1((this.anInt3843 + 100) * 6);
 		} else {
 			Static219.aClass2_Sub4_Sub1_3.offset = 0;
@@ -1878,13 +1878,13 @@ public final class Model_Sub2 extends Model {
 		}
 		if (arg0) {
 			if (this.anInterface4_4 == null) {
-				this.anInterface4_4 = this.aClass19_Sub1_24.method839(Static219.aClass2_Sub4_Sub1_3.data, Static219.aClass2_Sub4_Sub1_3.offset, true);
+				this.anInterface4_4 = this.aClass19_Sub1_24.method839(Static219.aClass2_Sub4_Sub1_3.bytes, Static219.aClass2_Sub4_Sub1_3.offset, true);
 			} else {
-				this.anInterface4_4.method6066(Static219.aClass2_Sub4_Sub1_3.data, Static219.aClass2_Sub4_Sub1_3.offset);
+				this.anInterface4_4.method6066(Static219.aClass2_Sub4_Sub1_3.bytes, Static219.aClass2_Sub4_Sub1_3.offset);
 			}
 			this.aClass82_1.anInterface4_2 = this.anInterface4_4;
 		} else {
-			this.aClass82_1.anInterface4_2 = this.aClass19_Sub1_24.method839(Static219.aClass2_Sub4_Sub1_3.data, Static219.aClass2_Sub4_Sub1_3.offset, false);
+			this.aClass82_1.anInterface4_2 = this.aClass19_Sub1_24.method839(Static219.aClass2_Sub4_Sub1_3.bytes, Static219.aClass2_Sub4_Sub1_3.offset, false);
 		}
 		if (!arg0) {
 			this.aBoolean250 = true;

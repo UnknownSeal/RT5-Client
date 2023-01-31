@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static1 {
 
-	@OriginalMember(owner = "client!a", name = "g", descriptor = "Lclient!ro;")
-	public static Js5CacheQueue aJs5CacheQueue_1;
-
 	@OriginalMember(owner = "client!a", name = "d", descriptor = "J")
 	public static long aLong1 = 0L;
 

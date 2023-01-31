@@ -11,9 +11,6 @@ public final class Static76 {
 	@OriginalMember(owner = "client!eg", name = "e", descriptor = "[Lclient!jd;")
 	public static Class13[] mapDots;
 
-	@OriginalMember(owner = "client!eg", name = "f", descriptor = "I")
-	public static int anInt1739;
-
 	@OriginalMember(owner = "client!eg", name = "c", descriptor = "I")
 	public static final int anInt1738 = 328;
 }

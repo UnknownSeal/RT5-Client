@@ -91,7 +91,7 @@ public final class Static105 {
 						try {
 							@Pc(83) String local83 = (String) local76.getTransferData(DataFlavor.stringFlavor);
 							if (local83 != null) {
-								@Pc(90) String[] local90 = Static200.method3642('\n', local83);
+								@Pc(90) String[] local90 = Static200.split(local83, '\n');
 								if (local90.length <= 1) {
 									Static25.aString9 = Static25.aString9 + local83;
 								} else {
@@ -135,7 +135,7 @@ public final class Static105 {
 		for (local43 = 0; local43 < 100; local43++) {
 			Static121.anIntArray156[local43] += Static313.anIntArray388[local43];
 			if (Static121.anIntArray156[local43] >> 4 >= 350) {
-				Static121.anIntArray157[local43] = (int) (Math.random() * (double) Static250.anInt4665) << 4;
+				Static121.anIntArray157[local43] = (int) (Math.random() * (double) GameShell.canvasWidth) << 4;
 				Static121.anIntArray156[local43] = 0;
 				Static353.anIntArray450[local43] = (int) (Math.random() * 102.0D) + 51;
 				Static313.anIntArray388[local43] = (int) (Math.random() * 48.0D) + 8;

@@ -10,7 +10,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!vb")
-public final class Class221_Sub1 extends Class221 {
+public final class AudioChannel_Sub1 extends AudioChannel {
 
 	@OriginalMember(owner = "client!vb", name = "L", descriptor = "Ljavax/sound/sampled/SourceDataLine;")
 	private SourceDataLine aSourceDataLine1;

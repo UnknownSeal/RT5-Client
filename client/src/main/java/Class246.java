@@ -43,12 +43,12 @@ public final class Class246 {
 	}
 
 	@OriginalMember(owner = "client!wc", name = "b", descriptor = "(I)I")
-	public int method6337() {
-		@Pc(7) int local7 = 0;
-		for (@Pc(11) SecondaryNode local11 = this.sentinel.secondaryNext; local11 != this.sentinel; local11 = local11.secondaryNext) {
-			local7++;
+	public int size() {
+		@Pc(7) int size = 0;
+		for (@Pc(11) SecondaryNode node = this.sentinel.secondaryNext; node != this.sentinel; node = node.secondaryNext) {
+			size++;
 		}
-		return local7;
+		return size;
 	}
 
 	@OriginalMember(owner = "client!wc", name = "c", descriptor = "(I)Lclient!tl;")

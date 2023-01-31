@@ -15,20 +15,11 @@ public final class Static215 {
 	@OriginalMember(owner = "client!ml", name = "h", descriptor = "Ljava/lang/String;")
 	public static String aString32;
 
-	@OriginalMember(owner = "client!ml", name = "i", descriptor = "Ljava/lang/String;")
-	public static String aString33;
-
-	@OriginalMember(owner = "client!ml", name = "l", descriptor = "Ljava/lang/String;")
-	public static String aString34;
-
 	@OriginalMember(owner = "client!ml", name = "q", descriptor = "Ljava/lang/String;")
 	public static String aString35;
 
 	@OriginalMember(owner = "client!ml", name = "t", descriptor = "Ljava/lang/reflect/Method;")
 	public static Method aMethod1;
-
-	@OriginalMember(owner = "client!ml", name = "u", descriptor = "Ljava/lang/reflect/Method;")
-	public static Method aMethod2;
 
 	@OriginalMember(owner = "client!ml", name = "g", descriptor = "I")
 	public static final int anInt3795 = 3;

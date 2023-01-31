@@ -46,7 +46,7 @@ public final class Class107 {
 	private final String[] aStringArray22;
 
 	@OriginalMember(owner = "client!io", name = "<init>", descriptor = "(Lclient!dn;IZLclient!be;Lclient!r;Lclient!r;)V")
-	public Class107(@OriginalArg(0) Class50 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) boolean arg2, @OriginalArg(3) Class18 arg3, @OriginalArg(4) Js5 arg4, @OriginalArg(5) Js5 arg5) {
+	public Class107(@OriginalArg(0) GameType arg0, @OriginalArg(1) int arg1, @OriginalArg(2) boolean arg2, @OriginalArg(3) Class18 arg3, @OriginalArg(4) Js5 arg4, @OriginalArg(5) Js5 arg5) {
 		this.aJs5_41 = arg5;
 		this.anInt2781 = arg1;
 		this.aClass18_1 = arg3;

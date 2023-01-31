@@ -37,7 +37,7 @@ public final class Class240 {
 	@OriginalMember(owner = "client!vp", name = "a", descriptor = "(IILclient!bt;)V")
 	private void method6263(@OriginalArg(0) int arg0, @OriginalArg(2) Buffer arg1) {
 		if (arg0 == 1) {
-			this.aChar5 = Static78.method5697(arg1.g1b());
+			this.aChar5 = Static78.decodeChar(arg1.g1b());
 		} else if (arg0 == 2) {
 			this.anInt7023 = arg1.mg4();
 		} else if (arg0 == 4) {

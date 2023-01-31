@@ -20,7 +20,7 @@ public final class Static139 {
 	public static int anInt2593 = -50;
 
 	@OriginalMember(owner = "client!hs", name = "z", descriptor = "I")
-	public static int anInt2595 = -1;
+	public static int topLevelInterface = -1;
 
 	@OriginalMember(owner = "client!hs", name = "A", descriptor = "Lclient!hu;")
 	public static final SoftLruHashTable A_SOFT_LRU_HASH_TABLE___18 = new SoftLruHashTable(4);

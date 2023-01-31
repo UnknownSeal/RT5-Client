@@ -17,9 +17,9 @@ public final class Static214 {
 	public static Class2_Sub2_Sub11 method3744(@OriginalArg(0) byte[] arg0) {
 		@Pc(16) Class2_Sub2_Sub11 local16 = new Class2_Sub2_Sub11();
 		@Pc(21) Buffer local21 = new Buffer(arg0);
-		local21.offset = local21.data.length - 2;
+		local21.offset = local21.bytes.length - 2;
 		@Pc(32) int local32 = local21.g2();
-		@Pc(43) int local43 = local21.data.length - local32 - 2 - 12;
+		@Pc(43) int local43 = local21.bytes.length - local32 - 2 - 12;
 		local21.offset = local43;
 		@Pc(50) int local50 = local21.mg4();
 		local16.anInt3225 = local21.g2();

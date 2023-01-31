@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!pp")
-public final class Class183 {
+public final class Js5NetQueue {
 
 	@OriginalMember(owner = "client!pp", name = "x", descriptor = "Lclient!iu;")
 	private BufferedSocket socket;
@@ -20,16 +20,16 @@ public final class Class183 {
 	private Js5NetRequest current;
 
 	@OriginalMember(owner = "client!pp", name = "o", descriptor = "Lclient!wc;")
-	private final Class246 aClass246_5 = new Class246();
+	private final Class246 pendingUrgentRequests = new Class246();
 
 	@OriginalMember(owner = "client!pp", name = "r", descriptor = "Lclient!wc;")
-	private final Class246 aClass246_6 = new Class246();
+	private final Class246 inFlightUrgentRequests = new Class246();
 
 	@OriginalMember(owner = "client!pp", name = "u", descriptor = "Lclient!wc;")
 	private final Class246 pendingPrefetchRequests = new Class246();
 
 	@OriginalMember(owner = "client!pp", name = "v", descriptor = "Lclient!wc;")
-	private final Class246 aClass246_8 = new Class246();
+	private final Class246 inFlightPrefetchRequests = new Class246();
 
 	@OriginalMember(owner = "client!pp", name = "B", descriptor = "Lclient!bt;")
 	private final Buffer outBuffer = new Buffer(4);
@@ -59,7 +59,7 @@ public final class Class183 {
 			this.outBuffer.offset = 0;
 			this.outBuffer.p1(6);
 			this.outBuffer.p3(3);
-			this.socket.write(this.outBuffer.data, 4);
+			this.socket.write(this.outBuffer.bytes, 4);
 		} catch (@Pc(40) IOException ioException) {
 			try {
 				this.socket.close();
@@ -87,7 +87,7 @@ public final class Class183 {
 			this.outBuffer.offset = 0;
 			this.outBuffer.p1(7);
 			this.outBuffer.p3(0);
-			this.socket.write(this.outBuffer.data, 4);
+			this.socket.write(this.outBuffer.bytes, 4);
 		} catch (@Pc(34) IOException local34) {
 			try {
 				this.socket.close();
@@ -101,12 +101,12 @@ public final class Class183 {
 
 	@OriginalMember(owner = "client!pp", name = "a", descriptor = "(Z)Z")
 	public boolean method4635() {
-		return this.method4645() >= 20;
+		return this.getPrefetchRequestCount() >= 20;
 	}
 
 	@OriginalMember(owner = "client!pp", name = "c", descriptor = "(I)I")
-	public int method4636() {
-		return this.aClass246_5.method6337() + this.aClass246_6.method6337();
+	public int getUrgentRequestCount() {
+		return this.pendingUrgentRequests.size() + this.inFlightUrgentRequests.size();
 	}
 
 	@OriginalMember(owner = "client!pp", name = "a", descriptor = "(Lclient!iu;ZI)V")
@@ -124,10 +124,10 @@ public final class Class183 {
 		this.ingoingBuffer.offset = 0;
 		this.current = null;
 		while (true) {
-			@Pc(44) Js5NetRequest prefetchRequest = (Js5NetRequest) this.aClass246_6.removeHead();
+			@Pc(44) Js5NetRequest prefetchRequest = (Js5NetRequest) this.inFlightUrgentRequests.removeHead();
 			if (prefetchRequest == null) {
 				while (true) {
-					prefetchRequest = (Js5NetRequest) this.aClass246_8.removeHead();
+					prefetchRequest = (Js5NetRequest) this.inFlightPrefetchRequests.removeHead();
 					if (prefetchRequest == null) {
 						if (this.encryptionKey != 0) {
 							try {
@@ -135,7 +135,7 @@ public final class Class183 {
 								this.outBuffer.p1(4);
 								this.outBuffer.p1(this.encryptionKey);
 								this.outBuffer.p2(0);
-								this.socket.write(this.outBuffer.data, 4);
+								this.socket.write(this.outBuffer.bytes, 4);
 							} catch (@Pc(103) IOException local103) {
 								try {
 									this.socket.close();
@@ -153,7 +153,7 @@ public final class Class183 {
 					this.pendingPrefetchRequests.addTail(prefetchRequest);
 				}
 			}
-			this.aClass246_5.addTail(prefetchRequest);
+			this.pendingUrgentRequests.addTail(prefetchRequest);
 		}
 	}
 
@@ -177,23 +177,23 @@ public final class Class183 {
 			}
 		}
 		if (this.socket == null) {
-			return this.method4636() == 0 && this.method4645() == 0;
+			return this.getUrgentRequestCount() == 0 && this.getPrefetchRequestCount() == 0;
 		}
 		try {
 			this.socket.method2792();
-			for (@Pc(74) Js5NetRequest local74 = (Js5NetRequest) this.aClass246_5.head(); local74 != null; local74 = (Js5NetRequest) this.aClass246_5.next()) {
+			for (@Pc(74) Js5NetRequest local74 = (Js5NetRequest) this.pendingUrgentRequests.head(); local74 != null; local74 = (Js5NetRequest) this.pendingUrgentRequests.next()) {
 				this.outBuffer.offset = 0;
 				this.outBuffer.p1(1);
 				this.outBuffer.p3((int) local74.secondaryKey);
-				this.socket.write(this.outBuffer.data, 4);
-				this.aClass246_6.addTail(local74);
+				this.socket.write(this.outBuffer.bytes, 4);
+				this.inFlightUrgentRequests.addTail(local74);
 			}
 			for (@Pc(126) Js5NetRequest local126 = (Js5NetRequest) this.pendingPrefetchRequests.head(); local126 != null; local126 = (Js5NetRequest) this.pendingPrefetchRequests.next()) {
 				this.outBuffer.offset = 0;
 				this.outBuffer.p1(0);
 				this.outBuffer.p3((int) local126.secondaryKey);
-				this.socket.write(this.outBuffer.data, 4);
-				this.aClass246_8.addTail(local126);
+				this.socket.write(this.outBuffer.bytes, 4);
+				this.inFlightPrefetchRequests.addTail(local126);
 			}
 			for (local18 = 0; local18 < 100; local18++) {
 				@Pc(175) int local175 = this.socket.available();
@@ -218,10 +218,10 @@ public final class Class183 {
 					if (local175 < local219) {
 						local219 = local175;
 					}
-					this.socket.read(this.ingoingBuffer.data, local219, this.ingoingBuffer.offset);
+					this.socket.read(this.ingoingBuffer.bytes, local219, this.ingoingBuffer.offset);
 					if (this.encryptionKey != 0) {
 						for (local243 = 0; local243 < local219; local243++) {
-							this.ingoingBuffer.data[this.ingoingBuffer.offset + local243] = (byte) (this.ingoingBuffer.data[this.ingoingBuffer.offset + local243] ^ this.encryptionKey);
+							this.ingoingBuffer.bytes[this.ingoingBuffer.offset + local243] = (byte) (this.ingoingBuffer.bytes[this.ingoingBuffer.offset + local243] ^ this.encryptionKey);
 						}
 					}
 					this.ingoingBuffer.offset += local219;
@@ -237,10 +237,10 @@ public final class Class183 {
 							@Pc(333) long local333 = (long) ((local243 << 16) + local301);
 							@Pc(343) Js5NetRequest local343;
 							if (local326) {
-								for (local343 = (Js5NetRequest) this.aClass246_8.head(); local343 != null && local333 != local343.secondaryKey; local343 = (Js5NetRequest) this.aClass246_8.next()) {
+								for (local343 = (Js5NetRequest) this.inFlightPrefetchRequests.head(); local343 != null && local333 != local343.secondaryKey; local343 = (Js5NetRequest) this.inFlightPrefetchRequests.next()) {
 								}
 							} else {
-								for (local343 = (Js5NetRequest) this.aClass246_6.head(); local343 != null && local343.secondaryKey != local333; local343 = (Js5NetRequest) this.aClass246_6.next()) {
+								for (local343 = (Js5NetRequest) this.inFlightUrgentRequests.head(); local343 != null && local343.secondaryKey != local333; local343 = (Js5NetRequest) this.inFlightUrgentRequests.next()) {
 								}
 							}
 							if (local343 == null) {
@@ -248,14 +248,14 @@ public final class Class183 {
 							}
 							this.current = local343;
 							@Pc(399) int local399 = local315 == 0 ? 5 : 9;
-							this.current.aClass2_Sub4_3 = new Buffer(local311 + local399 + this.current.aByte27);
-							this.current.aClass2_Sub4_3.p1(local315);
-							this.current.aClass2_Sub4_3.p4(local311);
+							this.current.data = new Buffer(local311 + local399 + this.current.trailerLength);
+							this.current.data.p1(local315);
+							this.current.data.p4(local311);
 							this.current.anInt3083 = 8;
 							this.ingoingBuffer.offset = 0;
 						} else if (this.current.anInt3083 != 0) {
 							throw new IOException();
-						} else if (this.ingoingBuffer.data[0] == -1) {
+						} else if (this.ingoingBuffer.bytes[0] == -1) {
 							this.current.anInt3083 = 1;
 							this.ingoingBuffer.offset = 0;
 						} else {
@@ -263,25 +263,25 @@ public final class Class183 {
 						}
 					}
 				} else {
-					local219 = this.current.aClass2_Sub4_3.data.length - this.current.aByte27;
+					local219 = this.current.data.bytes.length - this.current.trailerLength;
 					local243 = 512 - this.current.anInt3083;
-					if (local219 - this.current.aClass2_Sub4_3.offset < local243) {
-						local243 = local219 - this.current.aClass2_Sub4_3.offset;
+					if (local219 - this.current.data.offset < local243) {
+						local243 = local219 - this.current.data.offset;
 					}
 					if (local175 < local243) {
 						local243 = local175;
 					}
-					this.socket.read(this.current.aClass2_Sub4_3.data, local243, this.current.aClass2_Sub4_3.offset);
+					this.socket.read(this.current.data.bytes, local243, this.current.data.offset);
 					if (this.encryptionKey != 0) {
 						for (local301 = 0; local301 < local243; local301++) {
-							this.current.aClass2_Sub4_3.data[local301 + this.current.aClass2_Sub4_3.offset] ^= this.encryptionKey;
+							this.current.data.bytes[local301 + this.current.data.offset] ^= this.encryptionKey;
 						}
 					}
-					this.current.aClass2_Sub4_3.offset += local243;
+					this.current.data.offset += local243;
 					this.current.anInt3083 += local243;
-					if (local219 == this.current.aClass2_Sub4_3.offset) {
+					if (local219 == this.current.data.offset) {
 						this.current.unlinkSecondary();
-						this.current.aBoolean416 = false;
+						this.current.incomplete = false;
 						this.current = null;
 					} else if (this.current.anInt3083 == 512) {
 						this.current.anInt3083 = 0;
@@ -297,28 +297,28 @@ public final class Class183 {
 			this.socket = null;
 			this.errors++;
 			this.response = -2;
-			return this.method4636() == 0 && this.method4645() == 0;
+			return this.getUrgentRequestCount() == 0 && this.getPrefetchRequestCount() == 0;
 		}
 	}
 
 	@OriginalMember(owner = "client!pp", name = "a", descriptor = "(ZIBBI)Lclient!jj;")
-	public Js5NetRequest method4641(@OriginalArg(0) boolean arg0, @OriginalArg(1) int arg1, @OriginalArg(3) byte arg2, @OriginalArg(4) int arg3) {
-		@Pc(16) long local16 = (long) ((arg1 << 16) + arg3);
-		@Pc(20) Js5NetRequest local20 = new Js5NetRequest();
-		local20.aBoolean418 = arg0;
-		local20.secondaryKey = local16;
-		local20.aByte27 = arg2;
-		if (arg0) {
-			if (this.method4636() >= 20) {
+	public Js5NetRequest read(@OriginalArg(1) int archive, @OriginalArg(4) int group, @OriginalArg(0) boolean urgent, @OriginalArg(3) byte trailerLength) {
+		@Pc(16) long key = group + (archive << 16);
+		@Pc(20) Js5NetRequest request = new Js5NetRequest();
+		request.urgent = urgent;
+		request.secondaryKey = key;
+		request.trailerLength = trailerLength;
+		if (urgent) {
+			if (this.getUrgentRequestCount() >= 20) {
 				throw new RuntimeException();
 			}
-			this.aClass246_5.addTail(local20);
-		} else if (this.method4645() < 20) {
-			this.pendingPrefetchRequests.addTail(local20);
+			this.pendingUrgentRequests.addTail(request);
+		} else if (this.getPrefetchRequestCount() < 20) {
+			this.pendingPrefetchRequests.addTail(request);
 		} else {
 			throw new RuntimeException();
 		}
-		return local20;
+		return request;
 	}
 
 	@OriginalMember(owner = "client!pp", name = "c", descriptor = "(B)V")
@@ -334,8 +334,8 @@ public final class Class183 {
 	}
 
 	@OriginalMember(owner = "client!pp", name = "d", descriptor = "(I)Z")
-	public boolean method4643() {
-		return this.method4636() >= 20;
+	public boolean isUrgentRequestQueueFull() {
+		return this.getUrgentRequestCount() >= 20;
 	}
 
 	@OriginalMember(owner = "client!pp", name = "e", descriptor = "(I)V")
@@ -346,8 +346,8 @@ public final class Class183 {
 	}
 
 	@OriginalMember(owner = "client!pp", name = "c", descriptor = "(Z)I")
-	private int method4645() {
-		return this.pendingPrefetchRequests.method6337() + this.aClass246_8.method6337();
+	private int getPrefetchRequestCount() {
+		return this.pendingPrefetchRequests.size() + this.inFlightPrefetchRequests.size();
 	}
 
 	@OriginalMember(owner = "client!pp", name = "a", descriptor = "(ZI)V")
@@ -359,7 +359,7 @@ public final class Class183 {
 			this.outBuffer.offset = 0;
 			this.outBuffer.p1(loggedIn ? 2 : 3);
 			this.outBuffer.p3(0);
-			this.socket.write(this.outBuffer.data, 4);
+			this.socket.write(this.outBuffer.bytes, 4);
 		} catch (@Pc(41) IOException local41) {
 			try {
 				this.socket.close();

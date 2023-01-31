@@ -51,7 +51,7 @@ public final class Static290 {
 	public static Class86 method5026(@OriginalArg(1) Buffer arg0) {
 		@Pc(15) Class86 local15 = new Class86();
 		local15.anInt2377 = arg0.g2();
-		local15.aClass2_Sub2_Sub16_1 = Static146.method2699(local15.anInt2377);
+		local15.aQuickChatPhraseType_1 = Static146.get(local15.anInt2377);
 		return local15;
 	}
 }

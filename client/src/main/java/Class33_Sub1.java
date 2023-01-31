@@ -56,7 +56,7 @@ public final class Class33_Sub1 extends Class33 {
 				}
 			}
 			@Pc(137) ByteBuffer local137 = ByteBuffer.allocateDirect(local52.offset).order(ByteOrder.nativeOrder());
-			local137.put(local52.data, 0, local52.offset);
+			local137.put(local52.bytes, 0, local52.offset);
 			local137.flip();
 			this.aFloatBuffer1 = local137.asFloatBuffer().asReadOnlyBuffer();
 			this.method2058();

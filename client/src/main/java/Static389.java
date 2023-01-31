@@ -60,8 +60,8 @@ public final class Static389 {
 		Static257.aClass2_Sub4_Sub2_4.p1(Static43.aClass242_8.anInt7038);
 		Static257.aClass2_Sub4_Sub2_4.p2(local28.offset + local118.offset + 2);
 		Static257.aClass2_Sub4_Sub2_4.p2(578);
-		Static257.aClass2_Sub4_Sub2_4.pdata(local28.data, local28.offset);
-		Static257.aClass2_Sub4_Sub2_4.pdata(local118.data, local118.offset);
+		Static257.aClass2_Sub4_Sub2_4.pdata(local28.bytes, local28.offset);
+		Static257.aClass2_Sub4_Sub2_4.pdata(local118.bytes, local118.offset);
 		Static141.anInt2652 = 1;
 		Static66.anInt1625 = 0;
 		Static318.anInt5968 = -3;

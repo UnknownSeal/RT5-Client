@@ -33,7 +33,7 @@ public final class Static177 {
 				@Pc(53) int local53 = local40 * 64 - Static164.originX;
 				@Pc(59) int local59 = local46 * 64 - Static148.originZ;
 				Static37.method1135();
-				arg0.method1087(local53, Static171.aClass46Array1, local34, local59, Static148.originZ, Static164.originX);
+				arg0.method1087(local53, Static171.collisionMap, local34, local59, Static148.originZ, Static164.originX);
 				arg0.method1100(local16, local59, local53, Static190.aClass19_8, local34);
 				if (!arg0.aBoolean73 && Static105.anInt2187 / 8 == local40 && Static9.anInt212 / 8 == local46) {
 					if (local16[0] == -1) {

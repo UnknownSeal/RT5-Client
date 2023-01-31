@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.OriginalMember;
 
 public final class Static18 {
 
-	@OriginalMember(owner = "client!bb", name = "z", descriptor = "Lclient!rq;")
-	public static Cache aCache_1;
-
 	@OriginalMember(owner = "client!bb", name = "F", descriptor = "Lclient!cc;")
 	public static PrivelegedRequest aPrivelegedRequest_2;
 

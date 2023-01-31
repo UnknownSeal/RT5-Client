@@ -9,7 +9,7 @@ public final class Static137 {
 	public static Class13[] aClass13Array13;
 
 	@OriginalMember(owner = "client!hq", name = "C", descriptor = "Lclient!r;")
-	public static Js5 aJs5_33;
+	public static Js5 archive;
 
 	@OriginalMember(owner = "client!hq", name = "x", descriptor = "Lclient!h;")
 	public static final Class89 aClass89_106 = new Class89(14, 6);
@@ -187,12 +187,12 @@ public final class Static137 {
 			Static257.aClass2_Sub4_Sub2_4.p2((int) Static277.aFloat67 >> 3);
 			Static257.aClass2_Sub4_Sub2_4.ip2_dup((int) Static31.aFloat28 >> 3);
 		}
-		if (Static242.aBoolean306 && !Static343.aBoolean431) {
+		if (GameShell.focus && !Static343.aBoolean431) {
 			Static343.aBoolean431 = true;
 			Static91.method1960(Static242.aClass145_159);
 			Static257.aClass2_Sub4_Sub2_4.p1(1);
 		}
-		if (!Static242.aBoolean306 && Static343.aBoolean431) {
+		if (!GameShell.focus && Static343.aBoolean431) {
 			Static343.aBoolean431 = false;
 			Static91.method1960(Static242.aClass145_159);
 			Static257.aClass2_Sub4_Sub2_4.p1(0);
@@ -202,7 +202,7 @@ public final class Static137 {
 			Static257.aClass2_Sub4_Sub2_4.p1(0);
 			local483 = Static257.aClass2_Sub4_Sub2_4.offset;
 			@Pc(672) Buffer local672 = Static218.aClass177_Sub1_2.method4493();
-			Static257.aClass2_Sub4_Sub2_4.pdata(local672.data, local672.offset);
+			Static257.aClass2_Sub4_Sub2_4.pdata(local672.bytes, local672.offset);
 			Static257.aClass2_Sub4_Sub2_4.psize1(Static257.aClass2_Sub4_Sub2_4.offset - local483);
 			Static236.sentToServer = true;
 		}
@@ -491,7 +491,7 @@ public final class Static137 {
 											try {
 												if (Static335.socket != null && Static257.aClass2_Sub4_Sub2_4.offset > 0) {
 													Static175.anInt3348 += Static257.aClass2_Sub4_Sub2_4.offset;
-													Static335.socket.write(Static257.aClass2_Sub4_Sub2_4.data, Static257.aClass2_Sub4_Sub2_4.offset);
+													Static335.socket.write(Static257.aClass2_Sub4_Sub2_4.bytes, Static257.aClass2_Sub4_Sub2_4.offset);
 													Static367.anInt6876 = 0;
 													Static257.aClass2_Sub4_Sub2_4.offset = 0;
 													return;

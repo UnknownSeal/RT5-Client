@@ -6,10 +6,10 @@ import org.openrs2.deob.annotation.Pc;
 public final class Class129 implements Runnable {
 
 	@OriginalMember(owner = "client!kn", name = "e", descriptor = "Lclient!ml;")
-	public Class152 aClass152_3;
+	public SignLink aSignLink_3;
 
 	@OriginalMember(owner = "client!kn", name = "b", descriptor = "[Lclient!tg;")
-	public final Class221[] aClass221Array1 = new Class221[2];
+	public final AudioChannel[] aAudioChannelArray1 = new AudioChannel[2];
 
 	@OriginalMember(owner = "client!kn", name = "i", descriptor = "Z")
 	public volatile boolean aBoolean227 = false;
@@ -24,13 +24,13 @@ public final class Class129 implements Runnable {
 		try {
 			while (!this.aBoolean227) {
 				for (@Pc(12) int local12 = 0; local12 < 2; local12++) {
-					@Pc(19) Class221 local19 = this.aClass221Array1[local12];
+					@Pc(19) AudioChannel local19 = this.aAudioChannelArray1[local12];
 					if (local19 != null) {
 						local19.method6315();
 					}
 				}
 				Static231.sleep(10L);
-				Static283.method4875(this.aClass152_3, null);
+				GameShell.flush(this.aSignLink_3, null);
 			}
 		} catch (@Pc(43) Exception local43) {
 			Static262.report(local43, null);

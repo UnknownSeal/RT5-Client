@@ -38,7 +38,7 @@ public final class Class2_Sub25 extends Node {
 	public Class2_Sub25(@OriginalArg(0) byte[] arg0) {
 		@Pc(36) Buffer local36 = new Buffer(arg0);
 		@Pc(38) int local38;
-		for (local38 = 0; local36.data[local36.offset + local38] != 0; local38++) {
+		for (local38 = 0; local36.bytes[local36.offset + local38] != 0; local38++) {
 		}
 		@Pc(52) byte[] local52 = new byte[local38];
 		for (@Pc(54) int local54 = 0; local54 < local38; local54++) {
@@ -49,7 +49,7 @@ public final class Class2_Sub25 extends Node {
 		@Pc(80) int local80 = local36.offset;
 		local36.offset += local38;
 		@Pc(88) int local88;
-		for (local88 = 0; local36.data[local36.offset + local88] != 0; local88++) {
+		for (local88 = 0; local36.bytes[local36.offset + local88] != 0; local88++) {
 		}
 		@Pc(102) byte[] local102 = new byte[local88];
 		for (@Pc(104) int local104 = 0; local104 < local88; local104++) {
@@ -60,7 +60,7 @@ public final class Class2_Sub25 extends Node {
 		@Pc(130) int local130 = local36.offset;
 		local36.offset += local88;
 		@Pc(138) int local138;
-		for (local138 = 0; local36.data[local138 + local36.offset] != 0; local138++) {
+		for (local138 = 0; local36.bytes[local138 + local36.offset] != 0; local138++) {
 		}
 		@Pc(152) byte[] local152 = new byte[local138];
 		for (@Pc(154) int local154 = 0; local154 < local138; local154++) {
@@ -109,7 +109,7 @@ public final class Class2_Sub25 extends Node {
 		local195 = local36.g1();
 		@Pc(310) byte[] local310 = local195 > 0 ? new byte[local195 * 2] : null;
 		@Pc(312) int local312;
-		for (local312 = 0; local36.data[local312 + local36.offset] != 0; local312++) {
+		for (local312 = 0; local36.bytes[local312 + local36.offset] != 0; local312++) {
 		}
 		@Pc(329) byte[] local329 = new byte[local312];
 		for (@Pc(331) int local331 = 0; local331 < local312; local331++) {
@@ -154,7 +154,7 @@ public final class Class2_Sub25 extends Node {
 					} else {
 						local405 = local52[local407++];
 					}
-					local468 = local36.data[local80++] - 1;
+					local468 = local36.bytes[local80++] - 1;
 				}
 				this.aByteArray46[local470] = (byte) local468;
 				local405--;
@@ -171,7 +171,7 @@ public final class Class2_Sub25 extends Node {
 					} else {
 						local405 = -1;
 					}
-					local524 = local36.data[local130++] + 16 << 2;
+					local524 = local36.bytes[local130++] + 16 << 2;
 				}
 				local405--;
 				this.aByteArray45[local526] = (byte) local524;

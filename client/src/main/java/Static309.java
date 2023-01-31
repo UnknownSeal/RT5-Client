@@ -7,9 +7,6 @@ public final class Static309 {
 	@OriginalMember(owner = "client!rs", name = "e", descriptor = "Lclient!bc;")
 	public static final Class16 aClass16_7 = new Class16("", 17);
 
-	@OriginalMember(owner = "client!rs", name = "g", descriptor = "I")
-	public static int anInt5801 = 0;
-
 	@OriginalMember(owner = "client!rs", name = "a", descriptor = "(III)I")
 	public static int method5276(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
 		@Pc(9) int local9 = arg0 * 57 + arg1;
@@ -20,7 +17,7 @@ public final class Static309 {
 
 	@OriginalMember(owner = "client!rs", name = "a", descriptor = "(I)V")
 	public static void method5277() {
-		if (Static139.anInt2595 == -1) {
+		if (Static139.topLevelInterface == -1) {
 			return;
 		}
 		@Pc(20) int local20 = Static226.aClass119_1.method3303();
@@ -29,7 +26,7 @@ public final class Static309 {
 			local20 = Static370.aClass2_Sub24_1.method5242();
 			local24 = Static370.aClass2_Sub24_1.method5241();
 		}
-		Static257.method3926(0, Static172.anInt3299, Static250.anInt4665, 0, 0, local20, Static139.anInt2595, local24, 0);
+		Static257.method3926(0, GameShell.canvasHeight, GameShell.canvasWidth, 0, 0, local20, Static139.topLevelInterface, local24, 0);
 		if (Static227.aComponent_11 != null) {
 			Static12.method280(local20, local24);
 		}

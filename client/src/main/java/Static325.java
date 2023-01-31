@@ -20,14 +20,14 @@ public final class Static325 {
 
 	@OriginalMember(owner = "client!sr", name = "a", descriptor = "(Lclient!o;Lclient!r;Lclient!r;B)V")
 	public static void method5543(@OriginalArg(0) Interface9 arg0, @OriginalArg(1) Js5 arg1, @OriginalArg(2) Js5 arg2) {
-		Static137.aJs5_33 = arg1;
+		Static137.archive = arg1;
 		anInterface9_1 = arg0;
-		Static308.aJs5_80 = arg2;
-		if (Static137.aJs5_33 != null) {
-			Static21.anInt554 = Static137.aJs5_33.method5080(1);
+		Static308.globalArchive = arg2;
+		if (Static137.archive != null) {
+			Static21.anInt554 = Static137.archive.method5080(1);
 		}
-		if (Static308.aJs5_80 != null) {
-			Static361.anInt6769 = Static308.aJs5_80.method5080(1);
+		if (Static308.globalArchive != null) {
+			Static361.anInt6769 = Static308.globalArchive.method5080(1);
 		}
 	}
 

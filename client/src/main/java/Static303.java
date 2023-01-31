@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static303 {
 
-	@OriginalMember(owner = "client!rm", name = "n", descriptor = "Lclient!tg;")
-	public static Class221 aClass221_2;
-
 	@OriginalMember(owner = "client!rm", name = "a", descriptor = "(Lclient!ld;BLclient!wm;II)V")
 	public static void method5207(@OriginalArg(0) LinkedList arg0, @OriginalArg(2) Class19 arg1) {
 		Static197.aLinkedList_24.clear();
@@ -99,7 +96,7 @@ public final class Static303 {
 				}
 				if (!local59 && Static212.inTutorialIsland == 0) {
 					Static89.aClass2_Sub4_2.offset = 0;
-					arg0.ipadata(Static89.aClass2_Sub4_2.data, local40);
+					arg0.ipadata(Static89.aClass2_Sub4_2.bytes, local40);
 					Static89.aClass2_Sub4_2.offset = 0;
 					@Pc(107) int local107 = -1;
 					@Pc(117) String local117;
@@ -107,7 +104,7 @@ public final class Static303 {
 						local32 &= 0x7FFF;
 						@Pc(127) Class86 local127 = Static290.method5026(Static89.aClass2_Sub4_2);
 						local107 = local127.anInt2377;
-						local117 = local127.aClass2_Sub2_Sub16_1.method5601(Static89.aClass2_Sub4_2);
+						local117 = local127.aQuickChatPhraseType_1.decodeMessage(Static89.aClass2_Sub4_2);
 					} else {
 						local117 = Static153.method2772(Static308.method5275(Static89.aClass2_Sub4_2));
 					}
@@ -122,11 +119,11 @@ public final class Static303 {
 						local167 = local51 ? 17 : 2;
 					}
 					if (local36 == 2) {
-						Static220.method3873(0, null, local117, local107, local167, "<img=1>" + arg2.method4069(), "<img=1>" + arg2.method4071());
+						Static220.add(0, null, local117, local107, local167, "<img=1>" + arg2.method4069(), "<img=1>" + arg2.method4071());
 					} else if (local36 == 1) {
-						Static220.method3873(0, null, local117, local107, local167, "<img=0>" + arg2.method4069(), "<img=0>" + arg2.method4071());
+						Static220.add(0, null, local117, local107, local167, "<img=0>" + arg2.method4069(), "<img=0>" + arg2.method4071());
 					} else {
-						Static220.method3873(0, null, local117, local107, local167, arg2.method4069(), arg2.method4071());
+						Static220.add(0, null, local117, local107, local167, arg2.method4069(), arg2.method4071());
 					}
 				}
 			}

@@ -90,7 +90,7 @@ public final class Class227 {
 					}
 				}
 			}
-			this.anInterface4_5 = this.aClass19_Sub1_36.method839(local91.data, local91.offset, false);
+			this.anInterface4_5 = this.aClass19_Sub1_36.method839(local91.bytes, local91.offset, false);
 			this.aClass180_Sub2_2 = new Class180_Sub2(this.aClass19_Sub1_36, 5123, null, 1);
 		}
 	}

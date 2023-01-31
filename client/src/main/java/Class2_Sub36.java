@@ -211,7 +211,7 @@ public final class Class2_Sub36 extends Node {
 			return;
 		}
 		@Pc(185) opengl local185 = this.aClass19_Sub1_34.anOpengl1;
-		this.aClass180_Sub2_1.method6066(local3.data, local3.offset);
+		this.aClass180_Sub2_1.method6066(local3.bytes, local3.offset);
 		this.aClass19_Sub1_34.method790(this.aClass6_Sub1_3.aClass126_1, this.aClass6_Sub1_3.aClass126_4, this.aClass126_14, this.aClass6_Sub1_3.aClass126_2);
 		this.aClass19_Sub1_34.method846(this.anInt6095, (this.aClass6_Sub1_3.anInt181 & 0x7) != 0, (this.aClass6_Sub1_3.anInt181 & 0x8) != 0);
 		if (this.aClass19_Sub1_34.aBoolean50) {

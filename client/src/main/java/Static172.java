@@ -11,9 +11,6 @@ public final class Static172 {
 	@OriginalMember(owner = "client!ju", name = "R", descriptor = "I")
 	public static int anInt3298;
 
-	@OriginalMember(owner = "client!ju", name = "T", descriptor = "I")
-	public static int anInt3299;
-
 	@OriginalMember(owner = "client!ju", name = "S", descriptor = "[C")
 	public static final char[] CP1252_TABLE = new char[] { '€', '\u0000', '‚', 'ƒ', '„', '…', '†', '‡', 'ˆ', '‰', 'Š', '‹', 'Œ', '\u0000', 'Ž', '\u0000', '\u0000', '‘', '’', '“', '”', '•', '–', '—', '˜', '™', 'š', '›', 'œ', '\u0000', 'ž', 'Ÿ' };
 
@@ -123,7 +120,7 @@ public final class Static172 {
 			}
 			if (arg1) {
 				local6.setColor(Color.black);
-				local6.fillRect(0, 0, Static250.anInt4665, anInt3299);
+				local6.fillRect(0, 0, GameShell.canvasWidth, GameShell.canvasHeight);
 			}
 			if (arg5 == null) {
 				arg5 = new Color(140, 17, 17);
@@ -149,10 +146,10 @@ public final class Static172 {
 				local68.setFont(Static90.aFont3);
 				local68.setColor(arg4);
 				local68.drawString(arg3, (304 - arg3.length() * 6) / 2, 22);
-				local6.drawImage(Static89.anImage1, Static250.anInt4665 / 2 - 152, anInt3299 / 2 + -18, null);
+				local6.drawImage(Static89.anImage1, GameShell.canvasWidth / 2 - 152, GameShell.canvasHeight / 2 + -18, null);
 			} catch (@Pc(146) Exception local146) {
-				@Pc(152) int local152 = Static250.anInt4665 / 2 - 152;
-				@Pc(158) int local158 = anInt3299 / 2 - 18;
+				@Pc(152) int local152 = GameShell.canvasWidth / 2 - 152;
+				@Pc(158) int local158 = GameShell.canvasHeight / 2 - 18;
 				local6.setColor(arg0);
 				local6.drawRect(0, 0, 303, 33);
 				local6.setColor(arg5);
@@ -167,7 +164,7 @@ public final class Static172 {
 			if (Static290.aString56 != null) {
 				local6.setFont(Static90.aFont3);
 				local6.setColor(arg4);
-				local6.drawString(Static290.aString56, Static250.anInt4665 / 2 - Static290.aString56.length() * 6 / 2, anInt3299 / 2 + -26);
+				local6.drawString(Static290.aString56, GameShell.canvasWidth / 2 - Static290.aString56.length() * 6 / 2, GameShell.canvasHeight / 2 + -26);
 			}
 		} catch (@Pc(267) Exception local267) {
 			GameShell.canvas.repaint();

@@ -25,7 +25,7 @@ public final class BufferedFile {
 	private long writePosition = -1L;
 
 	@OriginalMember(owner = "client!rn", name = "h", descriptor = "Lclient!rl;")
-	private final Class204 aClass204_4;
+	private final FileOnDisk aFileOnDisk_4;
 
 	@OriginalMember(owner = "client!rn", name = "n", descriptor = "J")
 	private long aLong172;
@@ -43,8 +43,8 @@ public final class BufferedFile {
 	private long virtualPosition;
 
 	@OriginalMember(owner = "client!rn", name = "<init>", descriptor = "(Lclient!rl;II)V")
-	public BufferedFile(@OriginalArg(0) Class204 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) throws IOException {
-		this.aClass204_4 = arg0;
+	public BufferedFile(@OriginalArg(0) FileOnDisk arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) throws IOException {
+		this.aFileOnDisk_4 = arg0;
 		this.aLong173 = this.aLong172 = arg0.method5195();
 		this.readBuffer = new byte[arg1];
 		this.aByteArray74 = new byte[arg2];
@@ -79,10 +79,10 @@ public final class BufferedFile {
 			}
 			if (arg2 > this.aByteArray74.length) {
 				if (this.virtualPosition != this.aLong169) {
-					this.aClass204_4.method5196(this.virtualPosition);
+					this.aFileOnDisk_4.method5196(this.virtualPosition);
 					this.aLong169 = this.virtualPosition;
 				}
-				this.aClass204_4.method5194(arg1, arg2, arg0);
+				this.aFileOnDisk_4.write(arg1, arg2, arg0);
 				this.aLong169 += arg2;
 				if (this.aLong169 > this.aLong172) {
 					this.aLong172 = this.aLong169;
@@ -124,7 +124,7 @@ public final class BufferedFile {
 	private void method5215() throws IOException {
 		this.anInt5728 = 0;
 		if (this.virtualPosition != this.aLong169) {
-			this.aClass204_4.method5196(this.virtualPosition);
+			this.aFileOnDisk_4.method5196(this.virtualPosition);
 			this.aLong169 = this.virtualPosition;
 		}
 		this.readPosition = this.virtualPosition;
@@ -133,7 +133,7 @@ public final class BufferedFile {
 			if (local49 > 200000000) {
 				local49 = 200000000;
 			}
-			@Pc(66) int local66 = this.aClass204_4.method5193(local49, this.anInt5728, this.readBuffer);
+			@Pc(66) int local66 = this.aFileOnDisk_4.method5193(local49, this.anInt5728, this.readBuffer);
 			if (local66 == -1) {
 				break;
 			}
@@ -144,7 +144,7 @@ public final class BufferedFile {
 
 	@OriginalMember(owner = "client!rn", name = "a", descriptor = "(I)Ljava/io/File;")
 	private File getFile() {
-		return this.aClass204_4.method5197();
+		return this.aFileOnDisk_4.method5197();
 	}
 
 	@OriginalMember(owner = "client!rn", name = "b", descriptor = "(B)J")
@@ -158,10 +158,10 @@ public final class BufferedFile {
 			return;
 		}
 		if (this.aLong169 != this.writePosition) {
-			this.aClass204_4.method5196(this.writePosition);
+			this.aFileOnDisk_4.method5196(this.writePosition);
 			this.aLong169 = this.writePosition;
 		}
-		this.aClass204_4.method5194(this.aByteArray74, this.anInt5724, 0);
+		this.aFileOnDisk_4.write(this.aByteArray74, this.anInt5724, 0);
 		this.aLong169 += this.anInt5724;
 		if (this.aLong172 < this.aLong169) {
 			this.aLong172 = this.aLong169;
@@ -215,10 +215,10 @@ public final class BufferedFile {
 				length -= n;
 			}
 			if (this.readBuffer.length < length) {
-				this.aClass204_4.method5196(this.virtualPosition);
+				this.aFileOnDisk_4.method5196(this.virtualPosition);
 				this.aLong169 = this.virtualPosition;
 				while (length > 0) {
-					int local119 = this.aClass204_4.method5193(length, arg1, bytes);
+					int local119 = this.aFileOnDisk_4.method5193(length, arg1, bytes);
 					if (local119 == -1) {
 						break;
 					}

@@ -11,7 +11,7 @@ public final class Static29 {
 	public static int anInt721 = -1;
 
 	@OriginalMember(owner = "client!bm", name = "S", descriptor = "J")
-	public static long aLong22 = 0L;
+	public static long previousGC = 0L;
 
 	@OriginalMember(owner = "client!bm", name = "a", descriptor = "(IIILclient!el;)V")
 	public static void method938(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class11_Sub2 arg3) {

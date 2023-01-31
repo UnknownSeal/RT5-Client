@@ -14,19 +14,19 @@ public final class Static318 {
 
 	@OriginalMember(owner = "client!sj", name = "a", descriptor = "(BLclient!cf;)Ljava/lang/String;")
 	public static String method5420(@OriginalArg(1) Class2_Sub5 arg0) {
-		return arg0.aString11 == null || arg0.aString11.length() <= 0 ? arg0.aString10 : arg0.aString10 + LocalisedText.A_TRANSLATABLE_STRING___67.getLocalisedText(client.language) + arg0.aString11;
+		return arg0.aString11 == null || arg0.aString11.length() <= 0 ? arg0.aString10 : arg0.aString10 + LocalisedText.MINI_SEPARATOR.getLocalisedText(client.language) + arg0.aString11;
 	}
 
 	@OriginalMember(owner = "client!sj", name = "b", descriptor = "(I)V")
 	public static void method5424() {
-		@Pc(12) Class204 local12 = null;
+		@Pc(12) FileOnDisk local12 = null;
 		try {
 			@Pc(16) PrivelegedRequest local16 = GameShell.signlink.method3755();
 			while (local16.status == 0) {
 				Static231.sleep(1L);
 			}
 			if (local16.status == 1) {
-				local12 = (Class204) local16.result;
+				local12 = (FileOnDisk) local16.result;
 				@Pc(40) byte[] local40 = new byte[(int) local12.method5195()];
 				@Pc(55) int local55;
 				for (@Pc(42) int local42 = 0; local42 < local40.length; local42 += local55) {
@@ -41,7 +41,7 @@ public final class Static318 {
 		}
 		try {
 			if (local12 != null) {
-				local12.method5192();
+				local12.close();
 			}
 		} catch (@Pc(89) Exception local89) {
 		}

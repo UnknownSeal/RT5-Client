@@ -36,8 +36,8 @@ public final class Static272 {
 		@Pc(19) int local19 = arg0 ? 32768 : 0;
 		@Pc(27) int local27 = (arg0 ? Static361.anInt6769 : Static21.anInt554) + local19;
 		for (@Pc(34) int local34 = local19; local34 < local27; local34++) {
-			@Pc(40) Class2_Sub2_Sub16 local40 = Static146.method2699(local34);
-			if (local40.aBoolean413 && local40.method5600().toLowerCase().indexOf(local4) != -1) {
+			@Pc(40) QuickChatPhraseType local40 = Static146.get(local34);
+			if (local40.searchable && local40.getText().toLowerCase().indexOf(local4) != -1) {
 				if (local13 >= 50) {
 					Static177.results = null;
 					Static328.size = -1;
@@ -58,7 +58,7 @@ public final class Static272 {
 		Static177.results = local11;
 		@Pc(112) String[] local112 = new String[Static328.size];
 		for (@Pc(114) int local114 = 0; local114 < Static328.size; local114++) {
-			local112[local114] = Static146.method2699(local11[local114]).method5600();
+			local112[local114] = Static146.get(local11[local114]).getText();
 		}
 		Static135.method2534(local112, Static177.results);
 	}

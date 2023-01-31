@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static250 {
 
-	@OriginalMember(owner = "client!og", name = "a", descriptor = "I")
-	public static int anInt4665;
-
 	@OriginalMember(owner = "client!og", name = "b", descriptor = "Lclient!bc;")
 	public static final Class16 aClass16_6 = new Class16("", 12);
 
@@ -23,6 +20,6 @@ public final class Static250 {
 
 	@OriginalMember(owner = "client!og", name = "b", descriptor = "(IB)V")
 	public static void method4345(@OriginalArg(0) int arg0) {
-		Static44.anInt1106 = 1000 / arg0;
+		GameShell.timeParFrame = 1000 / arg0;
 	}
 }

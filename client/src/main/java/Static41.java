@@ -25,9 +25,6 @@ public final class Static41 {
 	@OriginalMember(owner = "client!ch", name = "gb", descriptor = "[Lclient!nt;")
 	public static final Class2_Sub2_Sub13[] aClass2_Sub2_Sub13Array2 = new Class2_Sub2_Sub13[14];
 
-	@OriginalMember(owner = "client!ch", name = "ib", descriptor = "[I")
-	public static final int[] anIntArray86 = new int[] { 1, 0, 0, 0, 1, 0, 2, 1, 1, 1, 0, 2, 0, 0, 1, 0 };
-
 	@OriginalMember(owner = "client!ch", name = "a", descriptor = "(ZIII)I")
 	public static int method1305(@OriginalArg(0) boolean arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
 		@Pc(13) Class2_Sub41 local13 = Static374.method6274(arg0, arg1);

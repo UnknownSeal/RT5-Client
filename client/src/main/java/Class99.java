@@ -136,7 +136,7 @@ public final class Class99 implements Interface2 {
 
 	@OriginalMember(owner = "client!ia", name = "c", descriptor = "(II)Lclient!qm;")
 	private Class2_Sub2_Sub14 method2664(@OriginalArg(1) int arg0) {
-		@Pc(15) SecondaryNode local15 = this.aClass116_4.method3151((long) arg0);
+		@Pc(15) SecondaryNode local15 = this.aClass116_4.get((long) arg0);
 		if (local15 != null) {
 			return (Class2_Sub2_Sub14) local15;
 		}
@@ -145,7 +145,7 @@ public final class Class99 implements Interface2 {
 			return null;
 		} else {
 			@Pc(38) Class2_Sub2_Sub14 local38 = new Class2_Sub2_Sub14(new Buffer(local26));
-			this.aClass116_4.method3154(local38, (long) arg0);
+			this.aClass116_4.put((long) arg0, local38);
 			return local38;
 		}
 	}

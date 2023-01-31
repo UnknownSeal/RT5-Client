@@ -7,9 +7,6 @@ public final class Static44 {
 	@OriginalMember(owner = "client!cl", name = "A", descriptor = "I")
 	public static int anInt1105;
 
-	@OriginalMember(owner = "client!cl", name = "B", descriptor = "I")
-	public static int anInt1106 = 20;
-
 	@OriginalMember(owner = "client!cl", name = "L", descriptor = "I")
 	public static int visibleLevel = 0;
 

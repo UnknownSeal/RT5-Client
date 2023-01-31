@@ -16,8 +16,8 @@ public final class Static50 {
 	@OriginalMember(owner = "client!ct", name = "a", descriptor = "(ZZ)V")
 	public static void method1525(@OriginalArg(0) boolean arg0) {
 		if (arg0) {
-			if (Static139.anInt2595 != -1) {
-				Static162.method2978(Static139.anInt2595);
+			if (Static139.topLevelInterface != -1) {
+				Static162.method2978(Static139.topLevelInterface);
 			}
 			for (@Pc(19) Class2_Sub7 local19 = (Class2_Sub7) Static329.aClass4_130.method80(); local19 != null; local19 = (Class2_Sub7) Static329.aClass4_130.method79()) {
 				if (!local19.isLinked()) {
@@ -28,13 +28,13 @@ public final class Static50 {
 				}
 				Static276.method4654(false, local19, true);
 			}
-			Static139.anInt2595 = -1;
+			Static139.topLevelInterface = -1;
 			Static329.aClass4_130 = new HashTable(8);
 			Static210.method3719();
-			Static139.anInt2595 = Static391.anInt7216;
+			Static139.topLevelInterface = Static391.anInt7216;
 			Static60.method891(false);
 			Static98.method2107();
-			ScriptRunner.method3597(Static139.anInt2595);
+			ScriptRunner.method3597(Static139.topLevelInterface);
 		}
 		Static310.method5282();
 		Static107.anInt2219 = -1;

@@ -53,7 +53,7 @@ public final class Static295 {
 
 	@OriginalMember(owner = "client!r", name = "b", descriptor = "(IB)Lclient!js;")
 	public static Class2_Sub2_Sub11 method5099(@OriginalArg(0) int arg0) {
-		@Pc(15) Class2_Sub2_Sub11 local15 = (Class2_Sub2_Sub11) Static261.aClass116_7.method3151((long) arg0);
+		@Pc(15) Class2_Sub2_Sub11 local15 = (Class2_Sub2_Sub11) Static261.aClass116_7.get((long) arg0);
 		if (local15 != null) {
 			return local15;
 		}
@@ -62,7 +62,7 @@ public final class Static295 {
 			return null;
 		} else {
 			local15 = Static214.method3744(local25);
-			Static261.aClass116_7.method3154(local15, (long) arg0);
+			Static261.aClass116_7.put((long) arg0, local15);
 			return local15;
 		}
 	}

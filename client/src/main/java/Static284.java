@@ -57,7 +57,7 @@ public final class Static284 {
 		}
 		@Pc(237) int local237 = arg3 + arg4 - 5;
 		@Pc(243) int local243 = arg1 + arg2 - 8;
-		Static276.aClass130_4.method5897(local237, local243, "Fps:" + Static3.anInt62, 16776960);
+		Static276.aClass130_4.method5897(local237, local243, "Fps:" + GameShell.framesPerSecond, 16776960);
 		@Pc(258) int local258 = local243 - 15;
 		@Pc(260) Runtime local260 = Runtime.getRuntime();
 		@Pc(270) int local270 = (int) ((local260.totalMemory() - local260.freeMemory()) / 1024L);
@@ -84,7 +84,7 @@ public final class Static284 {
 			return false;
 		} else {
 			Static218.aClass177_Sub1_2.aBoolean356 = arg0;
-			Static218.aClass177_Sub1_2.method4496(GameShell.signlink);
+			Static218.aClass177_Sub1_2.write(GameShell.signlink);
 			return true;
 		}
 	}

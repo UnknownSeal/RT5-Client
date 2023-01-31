@@ -19,15 +19,12 @@ public final class Static175 {
 	@OriginalMember(owner = "client!kc", name = "e", descriptor = "Lclient!mc;")
 	public static final Class145 aClass145_132 = new Class145(9, 15);
 
-	@OriginalMember(owner = "client!kc", name = "i", descriptor = "Lclient!rt;")
-	public static final Class209 aClass209_1 = new Class209("RC", 1);
-
-	@OriginalMember(owner = "client!kc", name = "a", descriptor = "(IIII)V")
+    @OriginalMember(owner = "client!kc", name = "a", descriptor = "(IIII)V")
 	public static void method3323(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
 		@Pc(15) int local15 = arg2 * Static218.aClass177_Sub1_2.musicVolume >> 8;
 		if (local15 != 0 && arg0 != -1) {
 			Static94.method2042(local15, arg0, Static216.aJs5_58);
-			Static393.aBoolean486 = true;
+			Static393.jingle = true;
 		}
 	}
 

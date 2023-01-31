@@ -8,6 +8,7 @@ import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.Transferable;
 import java.io.DataInputStream;
 import java.io.IOException;
+import java.lang.reflect.Method;
 import java.net.InetAddress;
 import java.net.Socket;
 import java.net.URL;
@@ -18,10 +19,16 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!ml")
-public final class Class152 implements Runnable {
+public final class SignLink implements Runnable {
 
+	@OriginalMember(owner = "client!ml", name = "l", descriptor = "Ljava/lang/String;")
+	public static String javaVersion;
+	@OriginalMember(owner = "client!ml", name = "u", descriptor = "Ljava/lang/reflect/Method;")
+	public static Method setFocusCycleRoot;
+	@OriginalMember(owner = "client!ml", name = "i", descriptor = "Ljava/lang/String;")
+	public static String javaVendor;
 	@OriginalMember(owner = "client!ml", name = "p", descriptor = "[Lclient!rl;")
-	public Class204[] aClass204Array1;
+	public FileOnDisk[] aFileOnDiskArray1;
 
 	@OriginalMember(owner = "client!ml", name = "r", descriptor = "Lclient!fc;")
 	private Interface3 anInterface3_1;
@@ -30,16 +37,16 @@ public final class Class152 implements Runnable {
 	public Applet applet = null;
 
 	@OriginalMember(owner = "client!ml", name = "j", descriptor = "Lclient!rl;")
-	public Class204 aClass204_2 = null;
+	public FileOnDisk aFileOnDisk_2 = null;
 
 	@OriginalMember(owner = "client!ml", name = "a", descriptor = "Lclient!cc;")
 	private PrivelegedRequest requestQueueHead = null;
 
 	@OriginalMember(owner = "client!ml", name = "b", descriptor = "Lclient!rl;")
-	public Class204 aClass204_1 = null;
+	public FileOnDisk aFileOnDisk_1 = null;
 
 	@OriginalMember(owner = "client!ml", name = "m", descriptor = "Lclient!rl;")
-	public Class204 aClass204_3 = null;
+	public FileOnDisk aFileOnDisk_3 = null;
 
 	@OriginalMember(owner = "client!ml", name = "n", descriptor = "Z")
 	private boolean aBoolean247 = false;
@@ -48,7 +55,7 @@ public final class Class152 implements Runnable {
 	private PrivelegedRequest requestQueueTail = null;
 
 	@OriginalMember(owner = "client!ml", name = "k", descriptor = "Ljava/awt/EventQueue;")
-	public EventQueue anEventQueue1;
+	public EventQueue eventQueue;
 
 	@OriginalMember(owner = "client!ml", name = "o", descriptor = "Ljava/lang/Thread;")
 	private final Thread aThread1;
@@ -58,13 +65,13 @@ public final class Class152 implements Runnable {
 	}
 
 	@OriginalMember(owner = "client!ml", name = "<init>", descriptor = "(Ljava/applet/Applet;ILjava/lang/String;I)V")
-	public Class152(@OriginalArg(0) Applet arg0, @OriginalArg(1) int arg1, @OriginalArg(2) String arg2, @OriginalArg(3) int arg3) throws Exception {
-		Static215.aString34 = "1.1";
+	public SignLink(@OriginalArg(0) Applet arg0, @OriginalArg(1) int arg1, @OriginalArg(2) String arg2, @OriginalArg(3) int arg3) throws Exception {
+		javaVersion = "1.1";
 		this.applet = arg0;
-		Static215.aString33 = "Unknown";
+		javaVendor = "Unknown";
 		try {
-			Static215.aString33 = System.getProperty("java.vendor");
-			Static215.aString34 = System.getProperty("java.version");
+			javaVendor = System.getProperty("java.vendor");
+			javaVersion = System.getProperty("java.version");
 		} catch (@Pc(37) Exception local37) {
 		}
 		try {
@@ -94,7 +101,7 @@ public final class Class152 implements Runnable {
 			Static215.aString29 = "~/";
 		}
 		try {
-			this.anEventQueue1 = Toolkit.getDefaultToolkit().getSystemEventQueue();
+			this.eventQueue = Toolkit.getDefaultToolkit().getSystemEventQueue();
 		} catch (@Pc(89) Throwable local89) {
 		}
 		try {
@@ -107,9 +114,9 @@ public final class Class152 implements Runnable {
 		}
 		try {
 			if (arg0 == null) {
-				Static215.aMethod2 = Class.forName("java.awt.Container").getDeclaredMethod("setFocusCycleRoot", Boolean.TYPE);
+				setFocusCycleRoot = Class.forName("java.awt.Container").getDeclaredMethod("setFocusCycleRoot", Boolean.TYPE);
 			} else {
-				Static215.aMethod2 = arg0.getClass().getMethod("setFocusCycleRoot", Boolean.TYPE);
+				setFocusCycleRoot = arg0.getClass().getMethod("setFocusCycleRoot", Boolean.TYPE);
 			}
 		} catch (@Pc(143) Exception local143) {
 		}
@@ -141,7 +148,7 @@ public final class Class152 implements Runnable {
 	}
 
 	@OriginalMember(owner = "client!ml", name = "a", descriptor = "(ILjava/lang/Class;)Lclient!cc;")
-	public PrivelegedRequest method3751(@OriginalArg(1) Class arg0) {
+	public PrivelegedRequest loadMiscNatives(@OriginalArg(1) Class arg0) {
 		return this.enqueue(arg0, 0, 20, 0);
 	}
 
@@ -287,7 +294,7 @@ public final class Class152 implements Runnable {
 	}
 
 	@OriginalMember(owner = "client!ml", name = "d", descriptor = "(I)V")
-	public void method3767() {
+	public void stop() {
 		synchronized (this) {
 			this.aBoolean247 = true;
 			this.notifyAll();
@@ -296,31 +303,31 @@ public final class Class152 implements Runnable {
 			this.aThread1.join();
 		} catch (@Pc(24) InterruptedException local24) {
 		}
-		if (this.aClass204_2 != null) {
+		if (this.aFileOnDisk_2 != null) {
 			try {
-				this.aClass204_2.method5192();
+				this.aFileOnDisk_2.close();
 			} catch (@Pc(33) IOException local33) {
 			}
 		}
-		if (this.aClass204_3 != null) {
+		if (this.aFileOnDisk_3 != null) {
 			try {
-				this.aClass204_3.method5192();
+				this.aFileOnDisk_3.close();
 			} catch (@Pc(43) IOException local43) {
 			}
 		}
-		if (this.aClass204Array1 != null) {
-			for (@Pc(49) int local49 = 0; local49 < this.aClass204Array1.length; local49++) {
-				if (this.aClass204Array1[local49] != null) {
+		if (this.aFileOnDiskArray1 != null) {
+			for (@Pc(49) int local49 = 0; local49 < this.aFileOnDiskArray1.length; local49++) {
+				if (this.aFileOnDiskArray1[local49] != null) {
 					try {
-						this.aClass204Array1[local49].method5192();
+						this.aFileOnDiskArray1[local49].close();
 					} catch (@Pc(63) IOException local63) {
 					}
 				}
 			}
 		}
-		if (this.aClass204_1 != null) {
+		if (this.aFileOnDisk_1 != null) {
 			try {
-				this.aClass204_1.method5192();
+				this.aFileOnDisk_1.close();
 			} catch (@Pc(79) IOException local79) {
 			}
 		}

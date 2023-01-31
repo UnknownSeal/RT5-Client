@@ -20,7 +20,7 @@ public final class Static7 {
 	public static final Class145 aClass145_267 = new Class145(39, 3);
 
 	@OriginalMember(owner = "client!ag", name = "a", descriptor = "(Lclient!dg;IIIIIIIIII)Z")
-	public static boolean method6462(@OriginalArg(0) Class46 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(8) int arg7, @OriginalArg(9) int arg8, @OriginalArg(10) int arg9) {
+	public static boolean method6462(@OriginalArg(0) CollisionMap arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(8) int arg7, @OriginalArg(9) int arg8, @OriginalArg(10) int arg9) {
 		@Pc(7) int local7 = arg9;
 		@Pc(9) int local9 = arg3;
 		@Pc(18) int local18 = arg9 - 64;
@@ -32,7 +32,7 @@ public final class Static7 {
 		@Pc(47) int local47 = 0;
 		@Pc(50) int local50 = local41 + 1;
 		Static257.anIntArray257[0] = arg3;
-		@Pc(55) int[][] local55 = arg0.anIntArrayArray14;
+		@Pc(55) int[][] local55 = arg0.flags;
 		while (local50 != local47) {
 			local7 = Static47.anIntArray90[local47];
 			local9 = Static257.anIntArray257[local47];

@@ -29,15 +29,15 @@ public final class Static180 {
 
 	@OriginalMember(owner = "client!kh", name = "a", descriptor = "(ILclient!bt;)V")
 	public static void method3367(@OriginalArg(1) Buffer arg0) {
-		if (arg0.data.length - arg0.offset < 1) {
+		if (arg0.bytes.length - arg0.offset < 1) {
 			return;
 		}
 		@Pc(21) int local21 = arg0.g1();
-		if (local21 < 0 || local21 > 1 || arg0.data.length - arg0.offset < 2) {
+		if (local21 < 0 || local21 > 1 || arg0.bytes.length - arg0.offset < 2) {
 			return;
 		}
 		@Pc(43) int local43 = arg0.g2();
-		if (arg0.data.length - arg0.offset != local43 * 6) {
+		if (arg0.bytes.length - arg0.offset != local43 * 6) {
 			return;
 		}
 		while (true) {
@@ -46,7 +46,7 @@ public final class Static180 {
 			do {
 				do {
 					do {
-						if (arg0.offset >= arg0.data.length) {
+						if (arg0.offset >= arg0.bytes.length) {
 							return;
 						}
 						local59 = arg0.g2();

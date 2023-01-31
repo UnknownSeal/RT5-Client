@@ -13,9 +13,6 @@ public final class Static253 {
 	@OriginalMember(owner = "client!oj", name = "a", descriptor = "Lclient!mc;")
 	public static final Class145 aClass145_166 = new Class145(42, -1);
 
-	@OriginalMember(owner = "client!oj", name = "f", descriptor = "Lclient!un;")
-	public static GameShell anGameShell = null;
-
 	@OriginalMember(owner = "client!oj", name = "a", descriptor = "()V")
 	public static void method4365() {
 		@Pc(3) int local3;

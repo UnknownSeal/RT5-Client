@@ -68,19 +68,19 @@ public final class Static142 {
 				}
 				Static335.socket = new BufferedSocket((Socket) Static5.sockerRequest.result, GameShell.signlink);
 				Static5.sockerRequest = null;
-				Static335.socket.write(Static257.aClass2_Sub4_Sub2_4.data, Static257.aClass2_Sub4_Sub2_4.offset);
-				if (Static303.aClass221_2 != null) {
-					Static303.aClass221_2.method6324();
+				Static335.socket.write(Static257.aClass2_Sub4_Sub2_4.bytes, Static257.aClass2_Sub4_Sub2_4.offset);
+				if (client.musicChannel != null) {
+					client.musicChannel.method6324();
 				}
-				if (Static190.aClass221_1 != null) {
-					Static190.aClass221_1.method6324();
+				if (Static190.aAudioChannel_1 != null) {
+					Static190.aAudioChannel_1.method6324();
 				}
 				local119 = Static335.socket.read();
-				if (Static303.aClass221_2 != null) {
-					Static303.aClass221_2.method6324();
+				if (client.musicChannel != null) {
+					client.musicChannel.method6324();
 				}
-				if (Static190.aClass221_1 != null) {
-					Static190.aClass221_1.method6324();
+				if (Static190.aAudioChannel_1 != null) {
+					Static190.aAudioChannel_1.method6324();
 				}
 				if (local119 != 21) {
 					Static318.anInt5968 = local119;
@@ -100,7 +100,7 @@ public final class Static142 {
 			}
 			if (Static141.anInt2652 == 4 && Static335.socket.available() >= Static163.aStringArray23.length * 8) {
 				Static212.inboundBuffer.offset = 0;
-				Static335.socket.read(Static212.inboundBuffer.data, Static163.aStringArray23.length * 8, 0);
+				Static335.socket.read(Static212.inboundBuffer.bytes, Static163.aStringArray23.length * 8, 0);
 				for (local119 = 0; local119 < Static163.aStringArray23.length; local119++) {
 					Static163.aStringArray23[local119] = Static202.method3675(Static212.inboundBuffer.g8());
 				}

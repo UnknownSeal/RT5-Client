@@ -1,4 +1,3 @@
-import java.awt.event.ActionEvent;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
@@ -28,16 +27,4 @@ public final class Static283 {
 		local16.anInt2289 = arg0;
 	}
 
-	@OriginalMember(owner = "client!qh", name = "a", descriptor = "(Lclient!ml;Ljava/lang/Object;I)V")
-	public static void method4875(@OriginalArg(0) Class152 arg0, @OriginalArg(1) Object arg1) {
-		if (arg0.anEventQueue1 == null) {
-			return;
-		}
-		for (@Pc(11) int local11 = 0; local11 < 50 && arg0.anEventQueue1.peekEvent() != null; local11++) {
-			Static231.sleep(1L);
-		}
-		if (arg1 != null) {
-			arg0.anEventQueue1.postEvent(new ActionEvent(arg1, 1001, "dummy"));
-		}
-	}
 }

@@ -18,7 +18,7 @@ public final class Js5 {
 	private Class198 index = null;
 
 	@OriginalMember(owner = "client!r", name = "g", descriptor = "Lclient!di;")
-	private final Class25 provider;
+	private final Js5ResourceProvider provider;
 
 	@OriginalMember(owner = "client!r", name = "x", descriptor = "Z")
 	private final boolean discardPacked;
@@ -27,10 +27,10 @@ public final class Js5 {
 	public int discardUnpacked;
 
 	@OriginalMember(owner = "client!r", name = "<init>", descriptor = "(Lclient!di;ZI)V")
-	public Js5(@OriginalArg(0) Class25 arg0, @OriginalArg(1) boolean arg1, @OriginalArg(2) int arg2) {
-		this.provider = arg0;
-		this.discardPacked = arg1;
-		this.discardUnpacked = arg2;
+	public Js5(@OriginalArg(0) Js5ResourceProvider provider, @OriginalArg(1) boolean discardPacked, @OriginalArg(2) int discardUnpacked) {
+		this.provider = provider;
+		this.discardPacked = discardPacked;
+		this.discardUnpacked = discardUnpacked;
 	}
 
 	@OriginalMember(owner = "client!r", name = "a", descriptor = "(BI)I")
@@ -153,7 +153,7 @@ public final class Js5 {
 			} else {
 				local128 = ByteArray.unwrap(true, this.packed[arg1]);
 				@Pc(133) Buffer local133 = new Buffer(local128);
-				local133.tinydec(arg2, local133.data.length);
+				local133.tinydec(arg2, local133.bytes.length);
 			}
 			@Pc(157) byte[] local157;
 			try {

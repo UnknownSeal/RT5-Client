@@ -29,7 +29,7 @@ public final class Static386 {
 	public static void method6030() {
 		Static253.method4365();
 		for (@Pc(8) int local8 = 0; local8 < 4; local8++) {
-			Static171.aClass46Array1[local8].method1626();
+			Static171.collisionMap[local8].clear();
 		}
 		Static247.method4298();
 		Static211.method3720();

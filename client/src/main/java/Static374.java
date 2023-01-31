@@ -11,9 +11,6 @@ public final class Static374 {
 	@OriginalMember(owner = "client!vr", name = "d", descriptor = "Lclient!s;")
 	public static final Class210 aClass210_16 = new Class210(9, 17);
 
-	@OriginalMember(owner = "client!vr", name = "e", descriptor = "[Lclient!bl;")
-	public static final Class25_Sub1[] aClass25_Sub1Array2 = new Class25_Sub1[29];
-
 	@OriginalMember(owner = "client!vr", name = "j", descriptor = "Ljava/lang/String;")
 	public static String aString70 = "";
 

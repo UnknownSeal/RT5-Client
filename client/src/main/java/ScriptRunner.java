@@ -2582,7 +2582,7 @@ public final class ScriptRunner {
 	}
 
 	@OriginalMember(owner = "client!lk", name = "b", descriptor = "(IZ)V")
-	private static void method3598(@OriginalArg(0) int arg0, @OriginalArg(1) boolean arg1) {
+	private static void method3598(@OriginalArg(0) int opcode, @OriginalArg(1) boolean arg1) {
 		@Pc(157) int local157;
 		@Pc(1292) boolean local1292;
 		@Pc(192) int local192;
@@ -2590,12 +2590,12 @@ public final class ScriptRunner {
 		@Pc(89) int local89;
 		@Pc(81) String local81;
 		@Pc(75) String local75;
-		if (arg0 < 5100) {
-			if (arg0 == 5000) {
+		if (opcode < 5100) {
+			if (opcode == 5000) {
 				intStack[isp++] = Static20.anInt545;
 				return;
 			}
-			if (arg0 == 5001) {
+			if (opcode == 5001) {
 				isp -= 3;
 				Static20.anInt545 = intStack[isp];
 				Static154.aClass170_2 = Static335.method5694(intStack[isp + 1]);
@@ -2609,7 +2609,7 @@ public final class ScriptRunner {
 				Static257.aClass2_Sub4_Sub2_4.p1(Static331.anInt6206);
 				return;
 			}
-			if (arg0 == 5002) {
+			if (opcode == 5002) {
 				anInt3652 -= 2;
 				local75 = stringStack[anInt3652];
 				local81 = stringStack[anInt3652 + 1];
@@ -2630,7 +2630,7 @@ public final class ScriptRunner {
 				Static257.aClass2_Sub4_Sub2_4.pjstr(local81);
 				return;
 			}
-			if (arg0 == 5003) {
+			if (opcode == 5003) {
 				local157 = intStack[--isp];
 				local81 = null;
 				if (local157 < 100) {
@@ -2642,7 +2642,7 @@ public final class ScriptRunner {
 				stringStack[anInt3652++] = local81;
 				return;
 			}
-			if (arg0 == 5004) {
+			if (opcode == 5004) {
 				local157 = intStack[--isp];
 				local192 = -1;
 				if (local157 < 100 && Static88.aStringArray13[local157] != null) {
@@ -2651,7 +2651,7 @@ public final class ScriptRunner {
 				intStack[isp++] = local192;
 				return;
 			}
-			if (arg0 == 5005) {
+			if (opcode == 5005) {
 				if (Static154.aClass170_2 == null) {
 					intStack[isp++] = -1;
 					return;
@@ -2659,12 +2659,12 @@ public final class ScriptRunner {
 				intStack[isp++] = Static154.aClass170_2.anInt4690;
 				return;
 			}
-			if (arg0 == 5008 || arg0 == 5021) {
+			if (opcode == 5008 || opcode == 5021) {
 				local75 = stringStack[--anInt3652];
-				method3591(local75, arg0);
+				method3591(local75, opcode);
 				return;
 			}
-			if (arg0 == 5009) {
+			if (opcode == 5009) {
 				anInt3652 -= 2;
 				local75 = stringStack[anInt3652];
 				local81 = stringStack[anInt3652 + 1];
@@ -2679,7 +2679,7 @@ public final class ScriptRunner {
 				}
 				return;
 			}
-			if (arg0 == 5010) {
+			if (opcode == 5010) {
 				local157 = intStack[--isp];
 				local81 = null;
 				if (local157 < 100) {
@@ -2691,7 +2691,7 @@ public final class ScriptRunner {
 				stringStack[anInt3652++] = local81;
 				return;
 			}
-			if (arg0 == 5011) {
+			if (opcode == 5011) {
 				local157 = intStack[--isp];
 				local81 = null;
 				if (local157 < 100) {
@@ -2703,7 +2703,7 @@ public final class ScriptRunner {
 				stringStack[anInt3652++] = local81;
 				return;
 			}
-			if (arg0 == 5012) {
+			if (opcode == 5012) {
 				local157 = intStack[--isp];
 				local192 = -1;
 				if (local157 < 100) {
@@ -2712,7 +2712,7 @@ public final class ScriptRunner {
 				intStack[isp++] = local192;
 				return;
 			}
-			if (arg0 == 5015) {
+			if (opcode == 5015) {
 				if (Static17.self == null || Static17.self.aString42 == null) {
 					local75 = Static374.aString70;
 				} else {
@@ -2721,15 +2721,15 @@ public final class ScriptRunner {
 				stringStack[anInt3652++] = local75;
 				return;
 			}
-			if (arg0 == 5016) {
+			if (opcode == 5016) {
 				intStack[isp++] = Static331.anInt6206;
 				return;
 			}
-			if (arg0 == 5017) {
+			if (opcode == 5017) {
 				intStack[isp++] = Static226.anInt4016;
 				return;
 			}
-			if (arg0 == 5018) {
+			if (opcode == 5018) {
 				local157 = intStack[--isp];
 				local192 = 0;
 				if (local157 < 100 && Static88.aStringArray13[local157] != null) {
@@ -2738,7 +2738,7 @@ public final class ScriptRunner {
 				intStack[isp++] = local192;
 				return;
 			}
-			if (arg0 == 5019) {
+			if (opcode == 5019) {
 				local157 = intStack[--isp];
 				local81 = null;
 				if (local157 < 100) {
@@ -2750,7 +2750,7 @@ public final class ScriptRunner {
 				stringStack[anInt3652++] = local81;
 				return;
 			}
-			if (arg0 == 5020) {
+			if (opcode == 5020) {
 				if (Static17.self == null || Static17.self.aString42 == null) {
 					local75 = Static374.aString70;
 				} else {
@@ -2759,134 +2759,123 @@ public final class ScriptRunner {
 				stringStack[anInt3652++] = local75;
 				return;
 			}
-			if (arg0 == 5050) {
+			if (opcode == 5050) {
 				local157 = intStack[--isp];
-				stringStack[anInt3652++] = Static138.method2581(local157).aString37;
+				stringStack[anInt3652++] = Static138.get(local157).description;
 				return;
 			}
-			@Pc(584) Class2_Sub2_Sub12 local584;
-			if (arg0 == 5051) {
+			@Pc(584) QuickChatCategoryType local584;
+			if (opcode == 5051) {
 				local157 = intStack[--isp];
-				local584 = Static138.method2581(local157);
-				if (local584.anIntArray233 == null) {
+				local584 = Static138.get(local157);
+				if (local584.subcategories == null) {
 					intStack[isp++] = 0;
 					return;
 				}
-				intStack[isp++] = local584.anIntArray233.length;
+				intStack[isp++] = local584.subcategories.length;
 				return;
 			}
-			if (arg0 == 5052) {
+			if (opcode == 5052) {
 				isp -= 2;
 				local157 = intStack[isp];
 				local192 = intStack[isp + 1];
-				@Pc(628) Class2_Sub2_Sub12 local628 = Static138.method2581(local157);
-				local95 = local628.anIntArray233[local192];
+				@Pc(628) QuickChatCategoryType local628 = Static138.get(local157);
+				local95 = local628.subcategories[local192];
 				intStack[isp++] = local95;
 				return;
 			}
-			if (arg0 == 5053) {
+			if (opcode == 5053) {
 				local157 = intStack[--isp];
-				local584 = Static138.method2581(local157);
-				if (local584.anIntArray232 == null) {
+				local584 = Static138.get(local157);
+				if (local584.phrases == null) {
 					intStack[isp++] = 0;
 					return;
 				}
-				intStack[isp++] = local584.anIntArray232.length;
+				intStack[isp++] = local584.phrases.length;
 				return;
 			}
-			if (arg0 == 5054) {
+			if (opcode == 5054) {
 				isp -= 2;
 				local157 = intStack[isp];
 				local192 = intStack[isp + 1];
-				intStack[isp++] = Static138.method2581(local157).anIntArray232[local192];
+				intStack[isp++] = Static138.get(local157).phrases[local192];
 				return;
 			}
-			if (arg0 == 5055) {
+			if (opcode == 5055) {
 				local157 = intStack[--isp];
-				stringStack[anInt3652++] = Static146.method2699(local157).method5600();
+				stringStack[anInt3652++] = Static146.get(local157).getText();
 				return;
 			}
-			if (arg0 == 5056) {
+			if (opcode == 5056) {
 				local157 = intStack[--isp];
-				@Pc(750) Class2_Sub2_Sub16 local750 = Static146.method2699(local157);
-				if (local750.anIntArray418 == null) {
+				@Pc(750) QuickChatPhraseType type = Static146.get(local157);
+				if (type.automaticResponse == null) {
 					intStack[isp++] = 0;
 					return;
 				}
-				intStack[isp++] = local750.anIntArray418.length;
+				intStack[isp++] = type.automaticResponse.length;
 				return;
 			}
-			if (arg0 == 5057) {
+			if (opcode == 5057) {
 				isp -= 2;
 				local157 = intStack[isp];
 				local192 = intStack[isp + 1];
-				intStack[isp++] = Static146.method2699(local157).anIntArray418[local192];
+				intStack[isp++] = Static146.get(local157).automaticResponse[local192];
 				return;
 			}
-			if (arg0 == 5058) {
+			if (opcode == 5058) {
 				aClass86_1 = new Class86();
 				aClass86_1.anInt2377 = intStack[--isp];
-				aClass86_1.aClass2_Sub2_Sub16_1 = Static146.method2699(aClass86_1.anInt2377);
-				aClass86_1.anIntArray151 = new int[aClass86_1.aClass2_Sub2_Sub16_1.method5602()];
+				aClass86_1.aQuickChatPhraseType_1 = Static146.get(aClass86_1.anInt2377);
+				aClass86_1.anIntArray151 = new int[aClass86_1.aQuickChatPhraseType_1.getDynamicCommandCount()];
 				return;
 			}
-			if (arg0 == 5059) {
+			if (opcode == 5059) {
 				Static91.method1960(Static369.aClass145_248);
 				Static257.aClass2_Sub4_Sub2_4.p1(0);
 				local157 = Static257.aClass2_Sub4_Sub2_4.offset;
 				Static257.aClass2_Sub4_Sub2_4.p1(0);
 				Static257.aClass2_Sub4_Sub2_4.p2(aClass86_1.anInt2377);
-				aClass86_1.aClass2_Sub2_Sub16_1.method5596(Static257.aClass2_Sub4_Sub2_4, aClass86_1.anIntArray151);
+				aClass86_1.aQuickChatPhraseType_1.encodeMessage(Static257.aClass2_Sub4_Sub2_4, aClass86_1.anIntArray151);
 				Static257.aClass2_Sub4_Sub2_4.psize1(Static257.aClass2_Sub4_Sub2_4.offset - local157);
 				return;
 			}
-			if (arg0 == 5060) {
+			if (opcode == 5060) {
 				local75 = stringStack[--anInt3652];
 				Static91.method1960(Static325.aClass145_220);
 				Static257.aClass2_Sub4_Sub2_4.p1(0);
 				local192 = Static257.aClass2_Sub4_Sub2_4.offset;
 				Static257.aClass2_Sub4_Sub2_4.pjstr(local75);
 				Static257.aClass2_Sub4_Sub2_4.p2(aClass86_1.anInt2377);
-				aClass86_1.aClass2_Sub2_Sub16_1.method5596(Static257.aClass2_Sub4_Sub2_4, aClass86_1.anIntArray151);
+				aClass86_1.aQuickChatPhraseType_1.encodeMessage(Static257.aClass2_Sub4_Sub2_4, aClass86_1.anIntArray151);
 				Static257.aClass2_Sub4_Sub2_4.psize1(Static257.aClass2_Sub4_Sub2_4.offset - local192);
 				return;
 			}
-			if (arg0 == 5061) {
+			if (opcode == 5061) {
 				Static91.method1960(Static369.aClass145_248);
 				Static257.aClass2_Sub4_Sub2_4.p1(0);
 				local157 = Static257.aClass2_Sub4_Sub2_4.offset;
 				Static257.aClass2_Sub4_Sub2_4.p1(1);
 				Static257.aClass2_Sub4_Sub2_4.p2(aClass86_1.anInt2377);
-				aClass86_1.aClass2_Sub2_Sub16_1.method5596(Static257.aClass2_Sub4_Sub2_4, aClass86_1.anIntArray151);
+				aClass86_1.aQuickChatPhraseType_1.encodeMessage(Static257.aClass2_Sub4_Sub2_4, aClass86_1.anIntArray151);
 				Static257.aClass2_Sub4_Sub2_4.psize1(Static257.aClass2_Sub4_Sub2_4.offset - local157);
 				return;
 			}
-			if (arg0 == 5062) {
+			if (opcode == 5062) {
 				isp -= 2;
 				local157 = intStack[isp];
 				local192 = intStack[isp + 1];
-				intStack[isp++] = Static138.method2581(local157).aCharArray4[local192];
+				intStack[isp++] = Static138.get(local157).subcategoryShortcuts[local192];
 				return;
 			}
-			if (arg0 == 5063) {
+			if (opcode == 5063) {
 				isp -= 2;
 				local157 = intStack[isp];
 				local192 = intStack[isp + 1];
-				intStack[isp++] = Static138.method2581(local157).aCharArray5[local192];
+				intStack[isp++] = Static138.get(local157).phraseShortcuts[local192];
 				return;
 			}
-			if (arg0 == 5064) {
-				isp -= 2;
-				local157 = intStack[isp];
-				local192 = intStack[isp + 1];
-				if (local192 == -1) {
-					intStack[isp++] = -1;
-					return;
-				}
-				intStack[isp++] = Static138.method2581(local157).method3793((char) local192);
-				return;
-			}
-			if (arg0 == 5065) {
+			if (opcode == 5064) {
 				isp -= 2;
 				local157 = intStack[isp];
 				local192 = intStack[isp + 1];
@@ -2894,56 +2883,67 @@ public final class ScriptRunner {
 					intStack[isp++] = -1;
 					return;
 				}
-				intStack[isp++] = Static138.method2581(local157).method3797((char) local192);
+				intStack[isp++] = Static138.get(local157).method3793((char) local192);
 				return;
 			}
-			if (arg0 == 5066) {
+			if (opcode == 5065) {
+				isp -= 2;
+				local157 = intStack[isp];
+				local192 = intStack[isp + 1];
+				if (local192 == -1) {
+					intStack[isp++] = -1;
+					return;
+				}
+				intStack[isp++] = Static138.get(local157).method3797((char) local192);
+				return;
+			}
+			if (opcode == 5066) {
 				local157 = intStack[--isp];
-				intStack[isp++] = Static146.method2699(local157).method5602();
+				intStack[isp++] = Static146.get(local157).getDynamicCommandCount();
 				return;
 			}
-			if (arg0 == 5067) {
+			if (opcode == 5067) {
 				isp -= 2;
 				local157 = intStack[isp];
 				local192 = intStack[isp + 1];
-				local89 = Static146.method2699(local157).method5595(local192);
+				local89 = Static146.get(local157).getDynamicCommand(local192);
 				intStack[isp++] = local89;
 				return;
 			}
-			if (arg0 == 5068) {
+			if (opcode == 5068) {
 				isp -= 2;
 				local157 = intStack[isp];
 				local192 = intStack[isp + 1];
 				aClass86_1.anIntArray151[local157] = local192;
 				return;
 			}
-			if (arg0 == 5069) {
+			if (opcode == 5069) {
 				isp -= 2;
 				local157 = intStack[isp];
 				local192 = intStack[isp + 1];
 				aClass86_1.anIntArray151[local157] = local192;
 				return;
 			}
-			if (arg0 == 5070) {
+			if (opcode == 5070) {
 				isp -= 3;
 				local157 = intStack[isp];
 				local192 = intStack[isp + 1];
 				local89 = intStack[isp + 2];
-				@Pc(1245) Class2_Sub2_Sub16 local1245 = Static146.method2699(local157);
-				if (local1245.method5595(local192) != 0) {
+				@Pc(1245) QuickChatPhraseType local1245 = Static146.get(local157);
+				if (local1245.getDynamicCommand(local192) != 0) {
 					throw new RuntimeException("bad command");
 				}
-				intStack[isp++] = local1245.method5599(local192, local89);
+				intStack[isp++] = local1245.getDynamicCommandParam(local192, local89);
 				return;
 			}
-			if (arg0 == 5071) {
+			if (opcode == 5071) {
 				local75 = stringStack[--anInt3652];
 				local1292 = intStack[--isp] == 1;
 				Static272.method4592(local1292, local75);
 				intStack[isp++] = Static328.size;
 				return;
 			}
-			if (arg0 == 5072) {
+			if (opcode == 5072) {
 				if (Static177.results != null && Static12.index < Static328.size) {
 					intStack[isp++] = Static177.results[Static12.index++] & 0xFFFF;
 					return;
@@ -2951,12 +2951,12 @@ public final class ScriptRunner {
 				intStack[isp++] = -1;
 				return;
 			}
-			if (arg0 == 5073) {
+			if (opcode == 5073) {
 				Static12.index = 0;
 				return;
 			}
-		} else if (arg0 < 5200) {
-			if (arg0 == 5100) {
+		} else if (opcode < 5200) {
+			if (opcode == 5100) {
 				if (Static174.aClass123_2.method3342(86)) {
 					intStack[isp++] = 1;
 					return;
@@ -2964,7 +2964,7 @@ public final class ScriptRunner {
 				intStack[isp++] = 0;
 				return;
 			}
-			if (arg0 == 5101) {
+			if (opcode == 5101) {
 				if (Static174.aClass123_2.method3342(82)) {
 					intStack[isp++] = 1;
 					return;
@@ -2972,7 +2972,7 @@ public final class ScriptRunner {
 				intStack[isp++] = 0;
 				return;
 			}
-			if (arg0 == 5102) {
+			if (opcode == 5102) {
 				if (Static174.aClass123_2.method3342(81)) {
 					intStack[isp++] = 1;
 					return;
@@ -2982,21 +2982,21 @@ public final class ScriptRunner {
 			}
 		} else {
 			@Pc(1903) boolean local1903;
-			if (arg0 < 5300) {
-				if (arg0 == 5200) {
+			if (opcode < 5300) {
+				if (opcode == 5200) {
 					Static211.method3721(intStack[--isp]);
 					return;
 				}
-				if (arg0 == 5201) {
+				if (opcode == 5201) {
 					intStack[isp++] = Static333.method6330();
 					return;
 				}
-				if (arg0 == 5205) {
+				if (opcode == 5205) {
 					Static258.method4401(false, -1, intStack[--isp], -1);
 					return;
 				}
 				@Pc(1492) Class2_Sub2_Sub17 local1492;
-				if (arg0 == 5206) {
+				if (opcode == 5206) {
 					local157 = intStack[--isp];
 					local1492 = Static344.method5526(local157 >> 14 & 0x3FFF, local157 & 0x3FFF);
 					if (local1492 == null) {
@@ -3007,7 +3007,7 @@ public final class ScriptRunner {
 					return;
 				}
 				@Pc(1525) Class2_Sub2_Sub17 local1525;
-				if (arg0 == 5207) {
+				if (opcode == 5207) {
 					local1525 = Static344.method5513(intStack[--isp]);
 					if (local1525 != null && local1525.aString66 != null) {
 						stringStack[anInt3652++] = local1525.aString66;
@@ -3016,17 +3016,17 @@ public final class ScriptRunner {
 					stringStack[anInt3652++] = "";
 					return;
 				}
-				if (arg0 == 5208) {
+				if (opcode == 5208) {
 					intStack[isp++] = Static44.anInt1105;
 					intStack[isp++] = Static368.anInt6930;
 					return;
 				}
-				if (arg0 == 5209) {
+				if (opcode == 5209) {
 					intStack[isp++] = Static151.anInt2772 + Static344.anInt6057;
 					intStack[isp++] = Static96.anInt2003 + Static344.anInt6055;
 					return;
 				}
-				if (arg0 == 5210) {
+				if (opcode == 5210) {
 					local157 = intStack[--isp];
 					local1492 = Static344.method5513(local157);
 					if (local1492 == null) {
@@ -3038,7 +3038,7 @@ public final class ScriptRunner {
 					intStack[isp++] = local1492.anInt6872 & 0x3FFF;
 					return;
 				}
-				if (arg0 == 5211) {
+				if (opcode == 5211) {
 					local157 = intStack[--isp];
 					local1492 = Static344.method5513(local157);
 					if (local1492 == null) {
@@ -3051,7 +3051,7 @@ public final class ScriptRunner {
 					return;
 				}
 				@Pc(1715) Class2_Sub20 local1715;
-				if (arg0 == 5212) {
+				if (opcode == 5212) {
 					local1715 = Static209.method3712();
 					if (local1715 == null) {
 						intStack[isp++] = -1;
@@ -3063,7 +3063,7 @@ public final class ScriptRunner {
 					intStack[isp++] = local192;
 					return;
 				}
-				if (arg0 == 5213) {
+				if (opcode == 5213) {
 					local1715 = Static115.method3828();
 					if (local1715 == null) {
 						intStack[isp++] = -1;
@@ -3076,7 +3076,7 @@ public final class ScriptRunner {
 					return;
 				}
 				@Pc(1863) boolean local1863;
-				if (arg0 == 5214) {
+				if (opcode == 5214) {
 					local157 = intStack[--isp];
 					local1492 = Static378.method6311();
 					if (local1492 != null) {
@@ -3087,7 +3087,7 @@ public final class ScriptRunner {
 					}
 					return;
 				}
-				if (arg0 == 5215) {
+				if (opcode == 5215) {
 					isp -= 2;
 					local157 = intStack[isp];
 					local192 = intStack[isp + 1];
@@ -3106,7 +3106,7 @@ public final class ScriptRunner {
 					intStack[isp++] = 0;
 					return;
 				}
-				if (arg0 == 5218) {
+				if (opcode == 5218) {
 					local157 = intStack[--isp];
 					local1492 = Static344.method5513(local157);
 					if (local1492 == null) {
@@ -3116,16 +3116,16 @@ public final class ScriptRunner {
 					intStack[isp++] = local1492.anInt6875;
 					return;
 				}
-				if (arg0 == 5220) {
+				if (opcode == 5220) {
 					intStack[isp++] = Static355.loadPercentage == 100 ? 1 : 0;
 					return;
 				}
-				if (arg0 == 5221) {
+				if (opcode == 5221) {
 					local157 = intStack[--isp];
 					Static15.method394(local157 & 0x3FFF, local157 >> 14 & 0x3FFF);
 					return;
 				}
-				if (arg0 == 5222) {
+				if (opcode == 5222) {
 					local1525 = Static378.method6311();
 					if (local1525 != null) {
 						local1292 = local1525.method6148(anIntArray215, Static96.anInt2003 + Static344.anInt6055, Static151.anInt2772 + Static344.anInt6057);
@@ -3142,14 +3142,14 @@ public final class ScriptRunner {
 					intStack[isp++] = -1;
 					return;
 				}
-				if (arg0 == 5223) {
+				if (opcode == 5223) {
 					isp -= 2;
 					local157 = intStack[isp];
 					local192 = intStack[isp + 1];
 					Static258.method4401(false, local192 >> 14 & 0x3FFF, local157, local192 & 0x3FFF);
 					return;
 				}
-				if (arg0 == 5224) {
+				if (opcode == 5224) {
 					local157 = intStack[--isp];
 					local1492 = Static378.method6311();
 					if (local1492 != null) {
@@ -3167,7 +3167,7 @@ public final class ScriptRunner {
 					intStack[isp++] = -1;
 					return;
 				}
-				if (arg0 == 5225) {
+				if (opcode == 5225) {
 					local157 = intStack[--isp];
 					local1492 = Static378.method6311();
 					if (local1492 != null) {
@@ -3185,32 +3185,32 @@ public final class ScriptRunner {
 					intStack[isp++] = -1;
 					return;
 				}
-				if (arg0 == 5226) {
+				if (opcode == 5226) {
 					Static225.method3954(intStack[--isp]);
 					return;
 				}
-				if (arg0 == 5227) {
+				if (opcode == 5227) {
 					isp -= 2;
 					local157 = intStack[isp];
 					local192 = intStack[isp + 1];
 					Static258.method4401(true, local192 >> 14 & 0x3FFF, local157, local192 & 0x3FFF);
 					return;
 				}
-				if (arg0 == 5228) {
+				if (opcode == 5228) {
 					Static175.aBoolean225 = intStack[--isp] == 1;
 					return;
 				}
-				if (arg0 == 5229) {
+				if (opcode == 5229) {
 					intStack[isp++] = Static175.aBoolean225 ? 1 : 0;
 					return;
 				}
-				if (arg0 == 5230) {
+				if (opcode == 5230) {
 					local157 = intStack[--isp];
 					Static232.method4026(local157);
 					return;
 				}
 				@Pc(2421) Node local2421;
-				if (arg0 == 5231) {
+				if (opcode == 5231) {
 					isp -= 2;
 					local157 = intStack[isp];
 					local1292 = intStack[isp + 1] == 1;
@@ -3228,7 +3228,7 @@ public final class ScriptRunner {
 					return;
 				}
 				@Pc(2463) Node local2463;
-				if (arg0 == 5232) {
+				if (opcode == 5232) {
 					local157 = intStack[--isp];
 					if (Static141.aClass4_58 != null) {
 						local2463 = Static141.aClass4_58.get((long) local157);
@@ -3238,7 +3238,7 @@ public final class ScriptRunner {
 					intStack[isp++] = 0;
 					return;
 				}
-				if (arg0 == 5233) {
+				if (opcode == 5233) {
 					isp -= 2;
 					local157 = intStack[isp];
 					local1292 = intStack[isp + 1] == 1;
@@ -3255,7 +3255,7 @@ public final class ScriptRunner {
 					}
 					return;
 				}
-				if (arg0 == 5234) {
+				if (opcode == 5234) {
 					local157 = intStack[--isp];
 					if (Static220.aClass4_83 != null) {
 						local2463 = Static220.aClass4_83.get((long) local157);
@@ -3265,40 +3265,40 @@ public final class ScriptRunner {
 					intStack[isp++] = 0;
 					return;
 				}
-				if (arg0 == 5235) {
+				if (opcode == 5235) {
 					intStack[isp++] = Static344.aClass2_Sub2_Sub17_3 == null ? -1 : Static344.aClass2_Sub2_Sub17_3.anInt6869;
 					return;
 				}
 			} else {
 				@Pc(2717) int local2717;
-				if (arg0 < 5400) {
-					if (arg0 == 5300) {
+				if (opcode < 5400) {
+					if (opcode == 5300) {
 						isp -= 2;
 						local157 = intStack[isp];
 						local192 = intStack[isp + 1];
 						Static143.method2677(local192, 3, false, local157);
-						intStack[isp++] = Static363.aFrame2 == null ? 0 : 1;
+						intStack[isp++] = GameShell.fullScreenFrame == null ? 0 : 1;
 						return;
 					}
-					if (arg0 == 5301) {
-						if (Static363.aFrame2 != null) {
+					if (opcode == 5301) {
+						if (GameShell.fullScreenFrame != null) {
 							Static143.method2677(-1, Static218.aClass177_Sub1_2.anInt4894, false, -1);
 						}
 						return;
 					}
-					if (arg0 == 5302) {
+					if (opcode == 5302) {
 						@Pc(2654) Class169[] local2654 = Static63.method1703();
 						intStack[isp++] = local2654.length;
 						return;
 					}
-					if (arg0 == 5303) {
+					if (opcode == 5303) {
 						local157 = intStack[--isp];
 						@Pc(2678) Class169[] local2678 = Static63.method1703();
 						intStack[isp++] = local2678[local157].anInt4685;
 						intStack[isp++] = local2678[local157].anInt4684;
 						return;
 					}
-					if (arg0 == 5305) {
+					if (opcode == 5305) {
 						local157 = Static218.aClass177_Sub1_2.anInt4884;
 						local192 = Static218.aClass177_Sub1_2.anInt4893;
 						local89 = -1;
@@ -3313,11 +3313,11 @@ public final class ScriptRunner {
 						intStack[isp++] = local89;
 						return;
 					}
-					if (arg0 == 5306) {
+					if (opcode == 5306) {
 						intStack[isp++] = Static144.method2692();
 						return;
 					}
-					if (arg0 == 5307) {
+					if (opcode == 5307) {
 						local157 = intStack[--isp];
 						if (local157 >= 1 && local157 <= 2) {
 							Static143.method2677(-1, local157, false, -1);
@@ -3325,23 +3325,23 @@ public final class ScriptRunner {
 						}
 						return;
 					}
-					if (arg0 == 5308) {
+					if (opcode == 5308) {
 						intStack[isp++] = Static218.aClass177_Sub1_2.anInt4894;
 						return;
 					}
-					if (arg0 == 5309) {
+					if (opcode == 5309) {
 						local157 = intStack[--isp];
 						if (local157 >= 1 && local157 <= 2) {
 							Static218.aClass177_Sub1_2.anInt4894 = local157;
-							Static218.aClass177_Sub1_2.method4496(GameShell.signlink);
+							Static218.aClass177_Sub1_2.write(GameShell.signlink);
 							return;
 						}
 						return;
 					}
 				} else {
 					@Pc(3230) String local3230;
-					if (arg0 < 5500) {
-						if (arg0 == 5400) {
+					if (opcode < 5500) {
+						if (opcode == 5400) {
 							anInt3652 -= 2;
 							local75 = stringStack[anInt3652];
 							local81 = stringStack[anInt3652 + 1];
@@ -3353,7 +3353,7 @@ public final class ScriptRunner {
 							Static257.aClass2_Sub4_Sub2_4.p1(local89);
 							return;
 						}
-						if (arg0 == 5401) {
+						if (opcode == 5401) {
 							isp -= 2;
 							Static257.aShortArray79[intStack[isp]] = (short) Static376.method6284(intStack[isp + 1]);
 							Static313.aClass107_2.method2767();
@@ -3362,7 +3362,7 @@ public final class ScriptRunner {
 							Static98.method2107();
 							return;
 						}
-						if (arg0 == 5405) {
+						if (opcode == 5405) {
 							isp -= 2;
 							local157 = intStack[isp];
 							local192 = intStack[isp + 1];
@@ -3371,7 +3371,7 @@ public final class ScriptRunner {
 							}
 							return;
 						}
-						if (arg0 == 5406) {
+						if (opcode == 5406) {
 							isp -= 7;
 							local157 = intStack[isp];
 							local192 = intStack[isp + 1] << 1;
@@ -3386,13 +3386,13 @@ public final class ScriptRunner {
 							}
 							return;
 						}
-						if (arg0 == 5407) {
+						if (opcode == 5407) {
 							local157 = Static364.anIntArrayArrayArray13[intStack[--isp]].length >> 1;
 							intStack[isp++] = local157;
 							return;
 						}
-						if (arg0 == 5411) {
-							if (Static363.aFrame2 != null) {
+						if (opcode == 5411) {
+							if (GameShell.fullScreenFrame != null) {
 								Static143.method2677(-1, Static218.aClass177_Sub1_2.anInt4894, false, -1);
 							}
 							if (GameShell.frame != null) {
@@ -3404,7 +3404,7 @@ public final class ScriptRunner {
 							Static280.method4764(local75, GameShell.signlink, Static77.anInt1762 == 1, false);
 							return;
 						}
-						if (arg0 == 5419) {
+						if (opcode == 5419) {
 							local75 = "";
 							if (Static354.aPrivelegedRequest_5 != null) {
 								if (Static354.aPrivelegedRequest_5.result == null) {
@@ -3416,12 +3416,12 @@ public final class ScriptRunner {
 							stringStack[anInt3652++] = local75;
 							return;
 						}
-						if (arg0 == 5420) {
+						if (opcode == 5420) {
 							intStack[isp++] = Static215.anInt3795 == 3 ? 1 : 0;
 							return;
 						}
-						if (arg0 == 5421) {
-							if (Static363.aFrame2 != null) {
+						if (opcode == 5421) {
+							if (GameShell.fullScreenFrame != null) {
 								Static143.method2677(-1, Static218.aClass177_Sub1_2.anInt4894, false, -1);
 							}
 							local75 = stringStack[--anInt3652];
@@ -3430,30 +3430,30 @@ public final class ScriptRunner {
 							Static280.method4764(local3230, GameShell.signlink, Static77.anInt1762 == 1, local1292);
 							return;
 						}
-						if (arg0 == 5422) {
+						if (opcode == 5422) {
 							anInt3652 -= 2;
 							local75 = stringStack[anInt3652];
 							local81 = stringStack[anInt3652 + 1];
 							local89 = intStack[--isp];
 							if (local75.length() > 0) {
 								if (Static129.aStringArray19 == null) {
-									Static129.aStringArray19 = new String[Static342.anIntArray384[client.game.anInt1553]];
+									Static129.aStringArray19 = new String[Static342.anIntArray384[client.game.gameTypeID]];
 								}
 								Static129.aStringArray19[local89] = local75;
 							}
 							if (local81.length() > 0) {
 								if (Static333.aStringArray67 == null) {
-									Static333.aStringArray67 = new String[Static342.anIntArray384[client.game.anInt1553]];
+									Static333.aStringArray67 = new String[Static342.anIntArray384[client.game.gameTypeID]];
 								}
 								Static333.aStringArray67[local89] = local81;
 							}
 							return;
 						}
-						if (arg0 == 5423) {
+						if (opcode == 5423) {
 							System.out.println(stringStack[--anInt3652]);
 							return;
 						}
-						if (arg0 == 5424) {
+						if (opcode == 5424) {
 							isp -= 11;
 							Static242.anInt4446 = intStack[isp];
 							Static260.anInt6717 = intStack[isp + 1];
@@ -3482,35 +3482,35 @@ public final class ScriptRunner {
 							Static270.aBoolean371 = true;
 							return;
 						}
-						if (arg0 == 5425) {
+						if (opcode == 5425) {
 							Static190.method3501();
 							Static270.aBoolean371 = false;
 							return;
 						}
-						if (arg0 == 5426) {
+						if (opcode == 5426) {
 							isp -= 2;
 							Static394.anInt7263 = intStack[isp];
 							Static91.anInt1910 = intStack[isp + 1];
 							return;
 						}
-						if (arg0 == 5427) {
+						if (opcode == 5427) {
 							isp -= 2;
 							Static135.anInt2523 = intStack[isp + 1];
 							return;
 						}
-						if (arg0 == 5428) {
+						if (opcode == 5428) {
 							isp -= 2;
 							local157 = intStack[isp];
 							local192 = intStack[isp + 1];
 							intStack[isp++] = Static281.method4784(local192, local157) ? 1 : 0;
 							return;
 						}
-						if (arg0 == 5429) {
+						if (opcode == 5429) {
 							Static161.method2971(stringStack[--anInt3652], false);
 							return;
 						}
-					} else if (arg0 < 5600) {
-						if (arg0 == 5500) {
+					} else if (opcode < 5600) {
+						if (opcode == 5500) {
 							isp -= 4;
 							local157 = intStack[isp];
 							local192 = intStack[isp + 1];
@@ -3519,7 +3519,7 @@ public final class ScriptRunner {
 							Static51.method1545((local157 & 0x3FFF) - Static148.originZ, local89, local95, false, local192, (local157 >> 14 & 0x3FFF) - Static164.originX);
 							return;
 						}
-						if (arg0 == 5501) {
+						if (opcode == 5501) {
 							isp -= 4;
 							local157 = intStack[isp];
 							local192 = intStack[isp + 1];
@@ -3528,7 +3528,7 @@ public final class ScriptRunner {
 							Static33.method4202(local89, local192, (local157 & 0x3FFF) - Static148.originZ, local95, (local157 >> 14 & 0x3FFF) - Static164.originX);
 							return;
 						}
-						if (arg0 == 5502) {
+						if (opcode == 5502) {
 							isp -= 6;
 							local157 = intStack[isp];
 							if (local157 >= 2) {
@@ -3556,40 +3556,40 @@ public final class ScriptRunner {
 							Static314.anInt5911 = 3;
 							return;
 						}
-						if (arg0 == 5503) {
+						if (opcode == 5503) {
 							Static117.method2369();
 							return;
 						}
-						if (arg0 == 5504) {
+						if (opcode == 5504) {
 							isp -= 2;
 							Static231.method4021(intStack[isp], intStack[isp + 1]);
 							return;
 						}
-						if (arg0 == 5505) {
+						if (opcode == 5505) {
 							intStack[isp++] = (int) Static31.aFloat28 >> 3;
 							return;
 						}
-						if (arg0 == 5506) {
+						if (opcode == 5506) {
 							intStack[isp++] = (int) Static277.aFloat67 >> 3;
 							return;
 						}
-						if (arg0 == 5507) {
+						if (opcode == 5507) {
 							Static350.method5836();
 							return;
 						}
-						if (arg0 == 5508) {
+						if (opcode == 5508) {
 							Static121.method2396();
 							return;
 						}
-						if (arg0 == 5509) {
+						if (opcode == 5509) {
 							Static352.method5879();
 							return;
 						}
-						if (arg0 == 5510) {
+						if (opcode == 5510) {
 							Static26.method862();
 							return;
 						}
-						if (arg0 == 5511) {
+						if (opcode == 5511) {
 							local157 = intStack[--isp];
 							local192 = local157 >> 14 & 0x3FFF;
 							local89 = local157 & 0x3FFF;
@@ -3610,12 +3610,12 @@ public final class ScriptRunner {
 							Static314.anInt5911 = 4;
 							return;
 						}
-						if (arg0 == 5512) {
+						if (opcode == 5512) {
 							Static351.method5858();
 							return;
 						}
-					} else if (arg0 < 5700) {
-						if (arg0 == 5600) {
+					} else if (opcode < 5700) {
+						if (opcode == 5600) {
 							anInt3652 -= 2;
 							local75 = stringStack[anInt3652];
 							local81 = stringStack[anInt3652 + 1];
@@ -3629,17 +3629,17 @@ public final class ScriptRunner {
 							}
 							return;
 						}
-						if (arg0 == 5601) {
+						if (opcode == 5601) {
 							Static319.method5434();
 							return;
 						}
-						if (arg0 == 5602) {
+						if (opcode == 5602) {
 							if (Static347.step == 0) {
 								Static41.reply = -2;
 							}
 							return;
 						}
-						if (arg0 == 5603) {
+						if (opcode == 5603) {
 							isp -= 4;
 							if (Static347.anInt6442 != 10) {
 								return;
@@ -3650,7 +3650,7 @@ public final class ScriptRunner {
 							}
 							return;
 						}
-						if (arg0 == 5604) {
+						if (opcode == 5604) {
 							anInt3652--;
 							if (Static347.anInt6442 != 10) {
 								return;
@@ -3661,7 +3661,7 @@ public final class ScriptRunner {
 							}
 							return;
 						}
-						if (arg0 == 5605) {
+						if (opcode == 5605) {
 							anInt3652 -= 3;
 							isp -= 7;
 							if (Static347.anInt6442 != 10) {
@@ -3673,37 +3673,37 @@ public final class ScriptRunner {
 							}
 							return;
 						}
-						if (arg0 == 5606) {
+						if (opcode == 5606) {
 							if (Static141.anInt2652 == 0) {
 								Static318.anInt5968 = -2;
 							}
 							return;
 						}
-						if (arg0 == 5607) {
+						if (opcode == 5607) {
 							intStack[isp++] = Static41.reply;
 							return;
 						}
-						if (arg0 == 5608) {
+						if (opcode == 5608) {
 							intStack[isp++] = Static47.hopTime;
 							return;
 						}
-						if (arg0 == 5609) {
+						if (opcode == 5609) {
 							intStack[isp++] = Static318.anInt5968;
 							return;
 						}
-						if (arg0 == 5610) {
+						if (opcode == 5610) {
 							for (local157 = 0; local157 < 5; local157++) {
 								stringStack[anInt3652++] = Static163.aStringArray23.length > local157 ? Static330.method5656(Static163.aStringArray23[local157]) : "";
 							}
 							Static163.aStringArray23 = null;
 							return;
 						}
-						if (arg0 == 5611) {
+						if (opcode == 5611) {
 							intStack[isp++] = Static360.anInt6186;
 							return;
 						}
-					} else if (arg0 < 6100) {
-						if (arg0 == 6001) {
+					} else if (opcode < 6100) {
+						if (opcode == 6001) {
 							local157 = intStack[--isp];
 							if (local157 < 1) {
 								local157 = 1;
@@ -3713,114 +3713,114 @@ public final class ScriptRunner {
 							}
 							Static218.aClass177_Sub1_2.anInt4879 = local157;
 							Static347.method5826();
-							Static218.aClass177_Sub1_2.method4496(GameShell.signlink);
+							Static218.aClass177_Sub1_2.write(GameShell.signlink);
 							Static236.sentToServer = false;
 							return;
 						}
-						if (arg0 == 6002) {
+						if (opcode == 6002) {
 							Static218.aClass177_Sub1_2.method4492(intStack[--isp] == 1);
 							Static347.method5826();
 							Static226.method3981();
-							Static218.aClass177_Sub1_2.method4496(GameShell.signlink);
+							Static218.aClass177_Sub1_2.write(GameShell.signlink);
 							Static236.sentToServer = false;
 							return;
 						}
-						if (arg0 == 6003) {
+						if (opcode == 6003) {
 							Static218.aClass177_Sub1_2.aBoolean349 = intStack[--isp] == 1;
 							Static226.method3981();
-							Static218.aClass177_Sub1_2.method4496(GameShell.signlink);
+							Static218.aClass177_Sub1_2.write(GameShell.signlink);
 							Static236.sentToServer = false;
 							return;
 						}
-						if (arg0 == 6005) {
+						if (opcode == 6005) {
 							Static218.aClass177_Sub1_2.aBoolean359 = intStack[--isp] == 1;
 							Static347.method5826();
-							Static218.aClass177_Sub1_2.method4496(GameShell.signlink);
+							Static218.aClass177_Sub1_2.write(GameShell.signlink);
 							Static236.sentToServer = false;
 							return;
 						}
-						if (arg0 == 6006) {
+						if (opcode == 6006) {
 							Static218.aClass177_Sub1_2.aBoolean350 = intStack[--isp] == 1;
 							Static190.aClass19_8.method2874(!Static218.aClass177_Sub1_2.aBoolean350);
-							Static218.aClass177_Sub1_2.method4496(GameShell.signlink);
+							Static218.aClass177_Sub1_2.write(GameShell.signlink);
 							Static236.sentToServer = false;
 							return;
 						}
-						if (arg0 == 6007) {
+						if (opcode == 6007) {
 							Static218.aClass177_Sub1_2.anInt4895 = intStack[--isp];
-							Static218.aClass177_Sub1_2.method4496(GameShell.signlink);
+							Static218.aClass177_Sub1_2.write(GameShell.signlink);
 							Static236.sentToServer = false;
 							return;
 						}
-						if (arg0 == 6008) {
+						if (opcode == 6008) {
 							Static218.aClass177_Sub1_2.aBoolean353 = intStack[--isp] == 1;
-							Static218.aClass177_Sub1_2.method4496(GameShell.signlink);
+							Static218.aClass177_Sub1_2.write(GameShell.signlink);
 							Static236.sentToServer = false;
 							return;
 						}
-						if (arg0 == 6009) {
+						if (opcode == 6009) {
 							Static218.aClass177_Sub1_2.aBoolean355 = intStack[--isp] == 1;
 							Static347.method5826();
-							Static218.aClass177_Sub1_2.method4496(GameShell.signlink);
+							Static218.aClass177_Sub1_2.write(GameShell.signlink);
 							Static236.sentToServer = false;
 							return;
 						}
-						if (arg0 == 6010) {
+						if (opcode == 6010) {
 							Static218.aClass177_Sub1_2.aBoolean358 = intStack[--isp] == 1;
-							Static218.aClass177_Sub1_2.method4496(GameShell.signlink);
+							Static218.aClass177_Sub1_2.write(GameShell.signlink);
 							Static236.sentToServer = false;
 							return;
 						}
-						if (arg0 == 6011) {
+						if (opcode == 6011) {
 							local157 = intStack[--isp];
 							if (local157 < 0 || local157 > 2) {
 								local157 = 0;
 							}
 							Static218.aClass177_Sub1_2.anInt4886 = local157;
 							Static347.method5826();
-							Static218.aClass177_Sub1_2.method4496(GameShell.signlink);
+							Static218.aClass177_Sub1_2.write(GameShell.signlink);
 							Static236.sentToServer = false;
 							return;
 						}
-						if (arg0 == 6012) {
+						if (opcode == 6012) {
 							Static218.aClass177_Sub1_2.aBoolean364 = intStack[--isp] == 1;
 							Static174.method1506();
-							Static218.aClass177_Sub1_2.method4496(GameShell.signlink);
+							Static218.aClass177_Sub1_2.write(GameShell.signlink);
 							Static236.sentToServer = false;
 							return;
 						}
-						if (arg0 == 6014) {
+						if (opcode == 6014) {
 							Static218.aClass177_Sub1_2.aBoolean361 = intStack[--isp] == 1;
 							Static347.method5826();
-							Static218.aClass177_Sub1_2.method4496(GameShell.signlink);
+							Static218.aClass177_Sub1_2.write(GameShell.signlink);
 							Static236.sentToServer = false;
 							return;
 						}
-						if (arg0 == 6015) {
+						if (opcode == 6015) {
 							Static218.aClass177_Sub1_2.aBoolean348 = intStack[--isp] == 1;
 							Static347.method5826();
-							Static218.aClass177_Sub1_2.method4496(GameShell.signlink);
+							Static218.aClass177_Sub1_2.write(GameShell.signlink);
 							Static236.sentToServer = false;
 							return;
 						}
-						if (arg0 == 6016) {
+						if (opcode == 6016) {
 							local157 = intStack[--isp];
 							if (local157 < 0 || local157 > 2) {
 								local157 = 0;
 							}
 							Static218.aClass177_Sub1_2.anInt4885 = local157;
 							Static353.method5882();
-							Static218.aClass177_Sub1_2.method4496(GameShell.signlink);
+							Static218.aClass177_Sub1_2.write(GameShell.signlink);
 							return;
 						}
-						if (arg0 == 6017) {
+						if (opcode == 6017) {
 							Static218.aClass177_Sub1_2.aBoolean352 = intStack[--isp] == 1;
 							Static178.method2342();
-							Static218.aClass177_Sub1_2.method4496(GameShell.signlink);
+							Static218.aClass177_Sub1_2.write(GameShell.signlink);
 							Static236.sentToServer = false;
 							return;
 						}
-						if (arg0 == 6018) {
+						if (opcode == 6018) {
 							local157 = intStack[--isp];
 							if (local157 < 0) {
 								local157 = 0;
@@ -3829,11 +3829,11 @@ public final class ScriptRunner {
 								local157 = 127;
 							}
 							Static218.aClass177_Sub1_2.anInt4888 = local157;
-							Static218.aClass177_Sub1_2.method4496(GameShell.signlink);
+							Static218.aClass177_Sub1_2.write(GameShell.signlink);
 							Static236.sentToServer = false;
 							return;
 						}
-						if (arg0 == 6019) {
+						if (opcode == 6019) {
 							local157 = intStack[--isp];
 							if (local157 < 0) {
 								local157 = 0;
@@ -3844,20 +3844,20 @@ public final class ScriptRunner {
 							if (local157 != Static218.aClass177_Sub1_2.musicVolume) {
 								if (Static218.aClass177_Sub1_2.musicVolume == 0 && Static171.anInt3268 != -1) {
 									Static94.method2042(local157, Static171.anInt3268, Static101.aJs5_23);
-									Static393.aBoolean486 = false;
+									Static393.jingle = false;
 								} else if (local157 == 0) {
 									Static368.method6191();
-									Static393.aBoolean486 = false;
+									Static393.jingle = false;
 								} else {
 									Static303.method5210(local157);
 								}
 								Static218.aClass177_Sub1_2.musicVolume = local157;
 							}
-							Static218.aClass177_Sub1_2.method4496(GameShell.signlink);
+							Static218.aClass177_Sub1_2.write(GameShell.signlink);
 							Static236.sentToServer = false;
 							return;
 						}
-						if (arg0 == 6020) {
+						if (opcode == 6020) {
 							local157 = intStack[--isp];
 							if (local157 < 0) {
 								local157 = 0;
@@ -3866,16 +3866,16 @@ public final class ScriptRunner {
 								local157 = 127;
 							}
 							Static218.aClass177_Sub1_2.anInt4882 = local157;
-							Static218.aClass177_Sub1_2.method4496(GameShell.signlink);
+							Static218.aClass177_Sub1_2.write(GameShell.signlink);
 							Static236.sentToServer = false;
 							return;
 						}
-						if (arg0 == 6021) {
+						if (opcode == 6021) {
 							Static218.aClass177_Sub1_2.aBoolean366 = intStack[--isp] == 1;
 							Static226.method3981();
 							return;
 						}
-						if (arg0 == 6023) {
+						if (opcode == 6023) {
 							local157 = intStack[--isp];
 							local1292 = false;
 							if (local157 < 0) {
@@ -3889,31 +3889,31 @@ public final class ScriptRunner {
 								local1292 = true;
 							}
 							Static26.method864(local157);
-							Static218.aClass177_Sub1_2.method4496(GameShell.signlink);
+							Static218.aClass177_Sub1_2.write(GameShell.signlink);
 							Static236.sentToServer = false;
 							intStack[isp++] = local1292 ? 0 : 1;
 							return;
 						}
-						if (arg0 == 6024) {
+						if (opcode == 6024) {
 							local157 = intStack[--isp];
 							if (local157 < 0 || local157 > 2) {
 								local157 = 0;
 							}
 							Static218.aClass177_Sub1_2.anInt4891 = local157;
-							Static218.aClass177_Sub1_2.method4496(GameShell.signlink);
+							Static218.aClass177_Sub1_2.write(GameShell.signlink);
 							return;
 						}
-						if (arg0 == 6025) {
+						if (opcode == 6025) {
 							local157 = intStack[--isp];
 							if (local157 < 0 || local157 > Static289.method5018(GameShell.maxMemory)) {
 								local157 = 0;
 							}
 							Static218.aClass177_Sub1_2.anInt4883 = local157;
-							Static218.aClass177_Sub1_2.method4496(GameShell.signlink);
+							Static218.aClass177_Sub1_2.write(GameShell.signlink);
 							Static236.sentToServer = false;
 							return;
 						}
-						if (arg0 == 6027) {
+						if (opcode == 6027) {
 							local157 = intStack[--isp];
 							if (local157 < 0 || local157 > 1) {
 								local157 = 0;
@@ -3921,23 +3921,23 @@ public final class ScriptRunner {
 							Static284.method4881(local157 == 1);
 							return;
 						}
-						if (arg0 == 6028) {
+						if (opcode == 6028) {
 							Static218.aClass177_Sub1_2.aBoolean363 = intStack[--isp] != 0;
-							Static218.aClass177_Sub1_2.method4496(GameShell.signlink);
+							Static218.aClass177_Sub1_2.write(GameShell.signlink);
 							return;
 						}
-						if (arg0 == 6029) {
+						if (opcode == 6029) {
 							Static218.aClass177_Sub1_2.anInt4895 = intStack[--isp];
-							Static218.aClass177_Sub1_2.method4496(GameShell.signlink);
+							Static218.aClass177_Sub1_2.write(GameShell.signlink);
 							return;
 						}
-						if (arg0 == 6030) {
+						if (opcode == 6030) {
 							Static218.aClass177_Sub1_2.aBoolean357 = intStack[--isp] != 0;
-							Static218.aClass177_Sub1_2.method4496(GameShell.signlink);
+							Static218.aClass177_Sub1_2.write(GameShell.signlink);
 							Static347.method5826();
 							return;
 						}
-						if (arg0 == 6031) {
+						if (opcode == 6031) {
 							local157 = intStack[--isp];
 							if (local157 < 0 || local157 > 3) {
 								local157 = 2;
@@ -3945,162 +3945,162 @@ public final class ScriptRunner {
 							Static78.method5700(local157);
 							return;
 						}
-						if (arg0 == 6032) {
+						if (opcode == 6032) {
 							local157 = intStack[--isp];
 							if (local157 < 0 || local157 > 3) {
 								local157 = 2;
 							}
 							Static218.aClass177_Sub1_2.anInt4878 = local157;
-							Static218.aClass177_Sub1_2.method4496(GameShell.signlink);
+							Static218.aClass177_Sub1_2.write(GameShell.signlink);
 							Static236.sentToServer = false;
 							return;
 						}
-						if (arg0 == 6033) {
+						if (opcode == 6033) {
 							local157 = intStack[--isp];
 							if (local157 < 0 || local157 > 4) {
 								local157 = 2;
 							}
 							Static218.aClass177_Sub1_2.anInt4881 = local157;
-							Static218.aClass177_Sub1_2.method4496(GameShell.signlink);
+							Static218.aClass177_Sub1_2.write(GameShell.signlink);
 							return;
 						}
-						if (arg0 == 6035) {
+						if (opcode == 6035) {
 							Static218.aClass177_Sub1_2.aBoolean365 = intStack[--isp] == 1;
 							Static347.method5826();
 							Static226.method3981();
 							return;
 						}
-					} else if (arg0 < 6200) {
-						if (arg0 == 6101) {
+					} else if (opcode < 6200) {
+						if (opcode == 6101) {
 							intStack[isp++] = Static218.aClass177_Sub1_2.anInt4879;
 							return;
 						}
-						if (arg0 == 6102) {
+						if (opcode == 6102) {
 							intStack[isp++] = Static218.aClass177_Sub1_2.method4495(Static77.anInt1762) ? 1 : 0;
 							return;
 						}
-						if (arg0 == 6103) {
+						if (opcode == 6103) {
 							intStack[isp++] = Static218.aClass177_Sub1_2.aBoolean349 ? 1 : 0;
 							return;
 						}
-						if (arg0 == 6105) {
+						if (opcode == 6105) {
 							intStack[isp++] = Static218.aClass177_Sub1_2.aBoolean359 ? 1 : 0;
 							return;
 						}
-						if (arg0 == 6106) {
+						if (opcode == 6106) {
 							intStack[isp++] = Static218.aClass177_Sub1_2.aBoolean350 ? 1 : 0;
 							return;
 						}
-						if (arg0 == 6107) {
+						if (opcode == 6107) {
 							intStack[isp++] = Static218.aClass177_Sub1_2.anInt4895;
 							return;
 						}
-						if (arg0 == 6108) {
+						if (opcode == 6108) {
 							intStack[isp++] = Static218.aClass177_Sub1_2.aBoolean353 ? 1 : 0;
 							return;
 						}
-						if (arg0 == 6109) {
+						if (opcode == 6109) {
 							intStack[isp++] = Static218.aClass177_Sub1_2.aBoolean355 ? 1 : 0;
 							return;
 						}
-						if (arg0 == 6110) {
+						if (opcode == 6110) {
 							intStack[isp++] = Static218.aClass177_Sub1_2.aBoolean358 ? 1 : 0;
 							return;
 						}
-						if (arg0 == 6111) {
+						if (opcode == 6111) {
 							intStack[isp++] = Static218.aClass177_Sub1_2.anInt4886;
 							return;
 						}
-						if (arg0 == 6112) {
+						if (opcode == 6112) {
 							intStack[isp++] = Static218.aClass177_Sub1_2.aBoolean364 ? 1 : 0;
 							return;
 						}
-						if (arg0 == 6114) {
+						if (opcode == 6114) {
 							intStack[isp++] = Static218.aClass177_Sub1_2.aBoolean361 ? 1 : 0;
 							return;
 						}
-						if (arg0 == 6115) {
+						if (opcode == 6115) {
 							intStack[isp++] = Static218.aClass177_Sub1_2.aBoolean348 ? 1 : 0;
 							return;
 						}
-						if (arg0 == 6116) {
+						if (opcode == 6116) {
 							intStack[isp++] = Static218.aClass177_Sub1_2.anInt4885;
 							return;
 						}
-						if (arg0 == 6117) {
+						if (opcode == 6117) {
 							intStack[isp++] = Static218.aClass177_Sub1_2.aBoolean352 ? 1 : 0;
 							return;
 						}
-						if (arg0 == 6118) {
+						if (opcode == 6118) {
 							intStack[isp++] = Static218.aClass177_Sub1_2.anInt4888;
 							return;
 						}
-						if (arg0 == 6119) {
+						if (opcode == 6119) {
 							intStack[isp++] = Static218.aClass177_Sub1_2.musicVolume;
 							return;
 						}
-						if (arg0 == 6120) {
+						if (opcode == 6120) {
 							intStack[isp++] = Static218.aClass177_Sub1_2.anInt4882;
 							return;
 						}
-						if (arg0 == 6121) {
+						if (opcode == 6121) {
 							intStack[isp++] = Static190.aClass19_8.method2894() ? 1 : 0;
 							return;
 						}
-						if (arg0 == 6123) {
+						if (opcode == 6123) {
 							intStack[isp++] = Static184.method3390();
 							return;
 						}
-						if (arg0 == 6124) {
+						if (opcode == 6124) {
 							intStack[isp++] = Static218.aClass177_Sub1_2.anInt4891;
 							return;
 						}
-						if (arg0 == 6125) {
+						if (opcode == 6125) {
 							intStack[isp++] = Static218.aClass177_Sub1_2.anInt4883;
 							return;
 						}
-						if (arg0 == 6126) {
+						if (opcode == 6126) {
 							intStack[isp++] = Static190.aClass19_8.method2858() ? 1 : 0;
 							return;
 						}
-						if (arg0 == 6127) {
+						if (opcode == 6127) {
 							intStack[isp++] = Static218.aClass177_Sub1_2.aBoolean356 ? 1 : 0;
 							return;
 						}
-						if (arg0 == 6128) {
+						if (opcode == 6128) {
 							intStack[isp++] = Static218.aClass177_Sub1_2.aBoolean363 ? 1 : 0;
 							return;
 						}
-						if (arg0 == 6129) {
+						if (opcode == 6129) {
 							intStack[isp++] = Static218.aClass177_Sub1_2.anInt4895;
 							return;
 						}
-						if (arg0 == 6130) {
+						if (opcode == 6130) {
 							intStack[isp++] = Static218.aClass177_Sub1_2.aBoolean357 ? 1 : 0;
 							return;
 						}
-						if (arg0 == 6131) {
+						if (opcode == 6131) {
 							intStack[isp++] = Static77.anInt1762;
 							return;
 						}
-						if (arg0 == 6132) {
+						if (opcode == 6132) {
 							intStack[isp++] = Static218.aClass177_Sub1_2.anInt4878;
 							return;
 						}
-						if (arg0 == 6133) {
+						if (opcode == 6133) {
 							intStack[isp++] = Static215.anInt3795 == 1 || Static215.anInt3795 == 4 ? 1 : 0;
 							return;
 						}
-						if (arg0 == 6134) {
+						if (opcode == 6134) {
 							intStack[isp++] = Static289.method5018(GameShell.maxMemory);
 							return;
 						}
-						if (arg0 == 6135) {
+						if (opcode == 6135) {
 							intStack[isp++] = Static218.aClass177_Sub1_2.anInt4881;
 							return;
 						}
-					} else if (arg0 < 6300) {
-						if (arg0 == 6200) {
+					} else if (opcode < 6300) {
+						if (opcode == 6200) {
 							isp -= 2;
 							Static254.aShort73 = (short) intStack[isp];
 							if (Static254.aShort73 <= 0) {
@@ -4112,7 +4112,7 @@ public final class ScriptRunner {
 							}
 							return;
 						}
-						if (arg0 == 6201) {
+						if (opcode == 6201) {
 							isp -= 2;
 							Static271.aShort79 = (short) intStack[isp];
 							if (Static271.aShort79 <= 0) {
@@ -4124,7 +4124,7 @@ public final class ScriptRunner {
 							}
 							return;
 						}
-						if (arg0 == 6202) {
+						if (opcode == 6202) {
 							isp -= 4;
 							Static78.aShort86 = (short) intStack[isp];
 							if (Static78.aShort86 <= 0) {
@@ -4150,32 +4150,32 @@ public final class ScriptRunner {
 							}
 							return;
 						}
-						if (arg0 == 6203) {
+						if (opcode == 6203) {
 							Static308.method5272(0, Static20.aComponent_1.height, false, Static20.aComponent_1.width, 0);
 							intStack[isp++] = Static155.anInt2808;
 							intStack[isp++] = Static180.anInt3408;
 							return;
 						}
-						if (arg0 == 6204) {
+						if (opcode == 6204) {
 							intStack[isp++] = Static271.aShort79;
 							intStack[isp++] = Static120.aShort36;
 							return;
 						}
-						if (arg0 == 6205) {
+						if (opcode == 6205) {
 							intStack[isp++] = Static254.aShort73;
 							intStack[isp++] = Static258.aShort78;
 							return;
 						}
-					} else if (arg0 < 6400) {
-						if (arg0 == 6300) {
+					} else if (opcode < 6400) {
+						if (opcode == 6300) {
 							intStack[isp++] = (int) (MonotonicClock.currentTimeMillis() / 60000L);
 							return;
 						}
-						if (arg0 == 6301) {
+						if (opcode == 6301) {
 							intStack[isp++] = (int) (MonotonicClock.currentTimeMillis() / 86400000L) - 11745;
 							return;
 						}
-						if (arg0 == 6302) {
+						if (opcode == 6302) {
 							isp -= 3;
 							local157 = intStack[isp];
 							local192 = intStack[isp + 1];
@@ -4186,13 +4186,13 @@ public final class ScriptRunner {
 							intStack[isp++] = (int) (calendar.getTime().getTime() / 86400000L) - 11745;
 							return;
 						}
-						if (arg0 == 6303) {
+						if (opcode == 6303) {
 							calendar.clear();
 							calendar.setTime(new Date(MonotonicClock.currentTimeMillis()));
 							intStack[isp++] = calendar.get(1);
 							return;
 						}
-						if (arg0 == 6304) {
+						if (opcode == 6304) {
 							local157 = intStack[--isp];
 							local1292 = true;
 							if (local157 < 0) {
@@ -4209,17 +4209,17 @@ public final class ScriptRunner {
 							intStack[isp++] = local1292 ? 1 : 0;
 							return;
 						}
-					} else if (arg0 < 6500) {
-						if (arg0 == 6405) {
+					} else if (opcode < 6500) {
+						if (opcode == 6405) {
 							intStack[isp++] = Static79.method1870() ? 1 : 0;
 							return;
 						}
-						if (arg0 == 6406) {
+						if (opcode == 6406) {
 							intStack[isp++] = Static331.method5659() ? 1 : 0;
 							return;
 						}
-					} else if (arg0 < 6600) {
-						if (arg0 == 6500) {
+					} else if (opcode < 6600) {
+						if (opcode == 6500) {
 							if (Static347.anInt6442 == 10 && Static154.anInt2803 == 0 && Static347.step == 0 && Static141.anInt2652 == 0) {
 								intStack[isp++] = Static319.method5429() == -1 ? 0 : 1;
 								return;
@@ -4229,7 +4229,7 @@ public final class ScriptRunner {
 						}
 						@Pc(5979) Country local5979;
 						@Pc(5946) World local5946;
-						if (arg0 == 6501) {
+						if (opcode == 6501) {
 							local5946 = Static19.method559();
 							if (local5946 != null) {
 								intStack[isp++] = local5946.worldID;
@@ -4251,7 +4251,7 @@ public final class ScriptRunner {
 							intStack[isp++] = 0;
 							return;
 						}
-						if (arg0 == 6502) {
+						if (opcode == 6502) {
 							local5946 = Static268.method4547();
 							if (local5946 != null) {
 								intStack[isp++] = local5946.worldID;
@@ -4273,7 +4273,7 @@ public final class ScriptRunner {
 							intStack[isp++] = 0;
 							return;
 						}
-						if (arg0 == 6503) {
+						if (opcode == 6503) {
 							local157 = intStack[--isp];
 							if (Static347.anInt6442 == 10 && Static154.anInt2803 == 0 && Static347.step == 0 && Static141.anInt2652 == 0) {
 								intStack[isp++] = Static375.switchWorld(local157) ? 1 : 0;
@@ -4282,16 +4282,16 @@ public final class ScriptRunner {
 							intStack[isp++] = 0;
 							return;
 						}
-						if (arg0 == 6504) {
+						if (opcode == 6504) {
 							Static218.aClass177_Sub1_2.anInt4887 = intStack[--isp];
-							Static218.aClass177_Sub1_2.method4496(GameShell.signlink);
+							Static218.aClass177_Sub1_2.write(GameShell.signlink);
 							return;
 						}
-						if (arg0 == 6505) {
+						if (opcode == 6505) {
 							intStack[isp++] = Static218.aClass177_Sub1_2.anInt4887;
 							return;
 						}
-						if (arg0 == 6506) {
+						if (opcode == 6506) {
 							local157 = intStack[--isp];
 							@Pc(6295) World local6295 = Static7.get(local157);
 							if (local6295 != null) {
@@ -4312,7 +4312,7 @@ public final class ScriptRunner {
 							intStack[isp++] = 0;
 							return;
 						}
-						if (arg0 == 6507) {
+						if (opcode == 6507) {
 							isp -= 4;
 							local157 = intStack[isp];
 							local1292 = intStack[isp + 1] == 1;
@@ -4321,41 +4321,41 @@ public final class ScriptRunner {
 							Static343.method5783(local1292, local1903, local89, local157);
 							return;
 						}
-						if (arg0 == 6508) {
+						if (opcode == 6508) {
 							Static200.method3643();
 							return;
 						}
-						if (arg0 == 6509) {
+						if (opcode == 6509) {
 							if (Static347.anInt6442 != 10) {
 								return;
 							}
 							Static36.aBoolean74 = intStack[--isp] == 1;
 							return;
 						}
-					} else if (arg0 < 6700) {
-						if (arg0 == 6600) {
+					} else if (opcode < 6700) {
+						if (opcode == 6600) {
 							Static218.aClass177_Sub1_2.aBoolean351 = intStack[--isp] == 1;
-							Static218.aClass177_Sub1_2.method4496(GameShell.signlink);
+							Static218.aClass177_Sub1_2.write(GameShell.signlink);
 							return;
 						}
-						if (arg0 == 6601) {
+						if (opcode == 6601) {
 							intStack[isp++] = Static218.aClass177_Sub1_2.aBoolean351 ? 1 : 0;
 							return;
 						}
-					} else if (arg0 < 6800 && client.modeWhat == Static359.aClass209_4) {
-						if (arg0 == 6700) {
+					} else if (opcode < 6800 && client.modeWhat == GameMode.GAME_MODE_WIP) {
+						if (opcode == 6700) {
 							local157 = Static329.aClass4_130.method83();
-							if (Static139.anInt2595 != -1) {
+							if (Static139.topLevelInterface != -1) {
 								local157++;
 							}
 							intStack[isp++] = local157;
 							return;
 						}
-						if (arg0 == 6701) {
+						if (opcode == 6701) {
 							local157 = intStack[--isp];
-							if (Static139.anInt2595 != -1) {
+							if (Static139.topLevelInterface != -1) {
 								if (local157 == 0) {
-									intStack[isp++] = Static139.anInt2595;
+									intStack[isp++] = Static139.topLevelInterface;
 									return;
 								}
 								local157--;
@@ -4367,7 +4367,7 @@ public final class ScriptRunner {
 							intStack[isp++] = local6577.anInt1370;
 							return;
 						}
-						if (arg0 == 6702) {
+						if (opcode == 6702) {
 							local157 = intStack[--isp];
 							if (Static26.aComponentArrayArray1[local157] == null) {
 								stringStack[anInt3652++] = "";
@@ -4381,7 +4381,7 @@ public final class ScriptRunner {
 							stringStack[anInt3652++] = local81.substring(0, local81.indexOf(58));
 							return;
 						}
-						if (arg0 == 6703) {
+						if (opcode == 6703) {
 							local157 = intStack[--isp];
 							if (Static26.aComponentArrayArray1[local157] == null) {
 								intStack[isp++] = 0;
@@ -4390,7 +4390,7 @@ public final class ScriptRunner {
 							intStack[isp++] = Static26.aComponentArrayArray1[local157].length;
 							return;
 						}
-						if (arg0 == 6704) {
+						if (opcode == 6704) {
 							isp -= 2;
 							local157 = intStack[isp];
 							local192 = intStack[isp + 1];
@@ -4406,7 +4406,7 @@ public final class ScriptRunner {
 							stringStack[anInt3652++] = local3230;
 							return;
 						}
-						if (arg0 == 6705) {
+						if (opcode == 6705) {
 							isp -= 2;
 							local157 = intStack[isp];
 							local192 = intStack[isp + 1];
@@ -4417,10 +4417,10 @@ public final class ScriptRunner {
 							intStack[isp++] = Static26.aComponentArrayArray1[local157][local192].anInt4246;
 							return;
 						}
-						if (arg0 == 6706) {
+						if (opcode == 6706) {
 							return;
 						}
-						if (arg0 == 6707) {
+						if (opcode == 6707) {
 							isp -= 3;
 							local157 = intStack[isp];
 							local192 = intStack[isp + 1];
@@ -4428,7 +4428,7 @@ public final class ScriptRunner {
 							Static277.method4680(local157 << 16 | local192, 1, "", local89);
 							return;
 						}
-						if (arg0 == 6708) {
+						if (opcode == 6708) {
 							isp -= 3;
 							local157 = intStack[isp];
 							local192 = intStack[isp + 1];
@@ -4436,7 +4436,7 @@ public final class ScriptRunner {
 							Static277.method4680(local157 << 16 | local192, 2, "", local89);
 							return;
 						}
-						if (arg0 == 6709) {
+						if (opcode == 6709) {
 							isp -= 3;
 							local157 = intStack[isp];
 							local192 = intStack[isp + 1];
@@ -4444,7 +4444,7 @@ public final class ScriptRunner {
 							Static277.method4680(local157 << 16 | local192, 3, "", local89);
 							return;
 						}
-						if (arg0 == 6710) {
+						if (opcode == 6710) {
 							isp -= 3;
 							local157 = intStack[isp];
 							local192 = intStack[isp + 1];
@@ -4452,7 +4452,7 @@ public final class ScriptRunner {
 							Static277.method4680(local157 << 16 | local192, 4, "", local89);
 							return;
 						}
-						if (arg0 == 6711) {
+						if (opcode == 6711) {
 							isp -= 3;
 							local157 = intStack[isp];
 							local192 = intStack[isp + 1];
@@ -4460,7 +4460,7 @@ public final class ScriptRunner {
 							Static277.method4680(local157 << 16 | local192, 5, "", local89);
 							return;
 						}
-						if (arg0 == 6712) {
+						if (opcode == 6712) {
 							isp -= 3;
 							local157 = intStack[isp];
 							local192 = intStack[isp + 1];
@@ -4468,7 +4468,7 @@ public final class ScriptRunner {
 							Static277.method4680(local157 << 16 | local192, 6, "", local89);
 							return;
 						}
-						if (arg0 == 6713) {
+						if (opcode == 6713) {
 							isp -= 3;
 							local157 = intStack[isp];
 							local192 = intStack[isp + 1];
@@ -4476,7 +4476,7 @@ public final class ScriptRunner {
 							Static277.method4680(local157 << 16 | local192, 7, "", local89);
 							return;
 						}
-						if (arg0 == 6714) {
+						if (opcode == 6714) {
 							isp -= 3;
 							local157 = intStack[isp];
 							local192 = intStack[isp + 1];
@@ -4484,7 +4484,7 @@ public final class ScriptRunner {
 							Static277.method4680(local157 << 16 | local192, 8, "", local89);
 							return;
 						}
-						if (arg0 == 6715) {
+						if (opcode == 6715) {
 							isp -= 3;
 							local157 = intStack[isp];
 							local192 = intStack[isp + 1];
@@ -4492,7 +4492,7 @@ public final class ScriptRunner {
 							Static277.method4680(local157 << 16 | local192, 9, "", local89);
 							return;
 						}
-						if (arg0 == 6716) {
+						if (opcode == 6716) {
 							isp -= 3;
 							local157 = intStack[isp];
 							local192 = intStack[isp + 1];
@@ -4500,7 +4500,7 @@ public final class ScriptRunner {
 							Static277.method4680(local157 << 16 | local192, 10, "", local89);
 							return;
 						}
-						if (arg0 == 6717) {
+						if (opcode == 6717) {
 							isp -= 3;
 							local157 = intStack[isp];
 							local192 = intStack[isp + 1];
@@ -4511,9 +4511,9 @@ public final class ScriptRunner {
 							Static185.method3399(local7165.anInt4238, local7170.method1852(), local157 << 16 | local192, local89, local7165.anInt4286, local7170.anInt1759);
 							return;
 						}
-					} else if (arg0 < 6900) {
+					} else if (opcode < 6900) {
 						@Pc(7207) Class164 local7207;
-						if (arg0 == 6800) {
+						if (opcode == 6800) {
 							local157 = intStack[--isp];
 							local7207 = Static236.aClass125_1.method3378(local157);
 							if (local7207.aString48 == null) {
@@ -4523,25 +4523,25 @@ public final class ScriptRunner {
 							stringStack[anInt3652++] = local7207.aString48;
 							return;
 						}
-						if (arg0 == 6801) {
+						if (opcode == 6801) {
 							local157 = intStack[--isp];
 							local7207 = Static236.aClass125_1.method3378(local157);
 							intStack[isp++] = local7207.anInt4420;
 							return;
 						}
-						if (arg0 == 6802) {
+						if (opcode == 6802) {
 							local157 = intStack[--isp];
 							local7207 = Static236.aClass125_1.method3378(local157);
 							intStack[isp++] = local7207.anInt4418;
 							return;
 						}
-						if (arg0 == 6803) {
+						if (opcode == 6803) {
 							local157 = intStack[--isp];
 							local7207 = Static236.aClass125_1.method3378(local157);
 							intStack[isp++] = local7207.anInt4424;
 							return;
 						}
-						if (arg0 == 6804) {
+						if (opcode == 6804) {
 							isp -= 2;
 							local157 = intStack[isp];
 							local192 = intStack[isp + 1];

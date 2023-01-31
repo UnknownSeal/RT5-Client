@@ -8,7 +8,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!rl")
-public final class Class204 {
+public final class FileOnDisk {
 
 	@OriginalMember(owner = "client!rl", name = "a", descriptor = "Ljava/io/RandomAccessFile;")
 	private RandomAccessFile aRandomAccessFile1;
@@ -23,7 +23,7 @@ public final class Class204 {
 	private long aLong167;
 
 	@OriginalMember(owner = "client!rl", name = "a", descriptor = "(B)V")
-	public void method5192() throws IOException {
+	public void close() throws IOException {
 		if (this.aRandomAccessFile1 != null) {
 			this.aRandomAccessFile1.close();
 			this.aRandomAccessFile1 = null;
@@ -44,12 +44,12 @@ public final class Class204 {
 	public void finalize() throws Throwable {
 		if (this.aRandomAccessFile1 != null) {
 			System.out.println("Warning! fileondisk " + this.aFile1 + " not closed correctly using close(). Auto-closing instead. ");
-			this.method5192();
+			this.close();
 		}
 	}
 
 	@OriginalMember(owner = "client!rl", name = "a", descriptor = "(I[BII)V")
-	public void method5194(@OriginalArg(1) byte[] arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) throws IOException {
+	public void write(@OriginalArg(1) byte[] arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) throws IOException {
 		if (this.aLong166 < (long) arg1 + this.aLong167) {
 			this.aRandomAccessFile1.seek(this.aLong166);
 			this.aRandomAccessFile1.write(1);

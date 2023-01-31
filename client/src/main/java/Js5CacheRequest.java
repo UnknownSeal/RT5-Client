@@ -16,13 +16,13 @@ public final class Js5CacheRequest extends Class2_Sub2_Sub10 {
 	@OriginalMember(owner = "client!td", name = "b", descriptor = "(I)I")
 	@Override
 	public int method5650() {
-		return super.aBoolean416 ? 0 : 100;
+		return super.incomplete ? 0 : 100;
 	}
 
 	@OriginalMember(owner = "client!td", name = "e", descriptor = "(B)[B")
 	@Override
-	public byte[] method5647() {
-		if (super.aBoolean416) {
+	public byte[] getData() {
+		if (super.incomplete) {
 			throw new RuntimeException();
 		}
 		return this.data;

@@ -7,9 +7,6 @@ public final class Static110 {
 	@OriginalMember(owner = "client!gd", name = "c", descriptor = "Lclient!jd;")
 	public static Class13 aClass13_6;
 
-	@OriginalMember(owner = "client!gd", name = "i", descriptor = "Lclient!rn;")
-	public static BufferedFile aBufferedFile_1;
-
 	@OriginalMember(owner = "client!gd", name = "e", descriptor = "Lclient!s;")
 	public static final Class210 aClass210_5 = new Class210(3, -1);
 
@@ -17,7 +14,7 @@ public final class Static110 {
 	public static final Class145 aClass145_84 = new Class145(3, 7);
 
 	@OriginalMember(owner = "client!gd", name = "a", descriptor = "(Lclient!ml;I)[Lclient!oi;")
-	public static Class169[] method2265(@OriginalArg(0) Class152 arg0) {
+	public static Class169[] method2265(@OriginalArg(0) SignLink arg0) {
 		if (!arg0.method3764()) {
 			return new Class169[0];
 		}

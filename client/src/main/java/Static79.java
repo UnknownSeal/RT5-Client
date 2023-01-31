@@ -175,13 +175,13 @@ public final class Static79 {
 		if (Static330.aClass67ArrayArrayArray3 == null) {
 			return;
 		}
-		Static190.aClass29_Sub1_63.method1108(arg0, arg1, Static171.aClass46Array1[arg0], arg4, arg7, Static190.aClass19_8);
+		Static190.aClass29_Sub1_63.method1108(arg0, arg1, Static171.collisionMap[arg0], arg4, arg7, Static190.aClass19_8);
 		if (arg2 < 0) {
 			return;
 		}
 		@Pc(76) boolean local76 = Static218.aClass177_Sub1_2.aBoolean359;
 		Static218.aClass177_Sub1_2.aBoolean359 = true;
-		Static190.aClass29_Sub1_63.method1105(arg3, arg1, arg7, arg2, local30, arg0, Static190.aClass19_8, Static171.aClass46Array1[arg0], arg6, arg5);
+		Static190.aClass29_Sub1_63.method1105(arg3, arg1, arg7, arg2, local30, arg0, Static190.aClass19_8, Static171.collisionMap[arg0], arg6, arg5);
 		Static218.aClass177_Sub1_2.aBoolean359 = local76;
 		return;
 	}

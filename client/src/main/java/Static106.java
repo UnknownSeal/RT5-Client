@@ -10,10 +10,7 @@ public final class Static106 {
 	@OriginalMember(owner = "client!fu", name = "U", descriptor = "[[B")
 	public static byte[][] mapBytes;
 
-	@OriginalMember(owner = "client!fu", name = "P", descriptor = "Lclient!dn;")
-	public static final Class50 aClass50_1 = new Class50("stellardawn", 1);
-
-	@OriginalMember(owner = "client!fu", name = "V", descriptor = "Z")
+    @OriginalMember(owner = "client!fu", name = "V", descriptor = "Z")
 	public static boolean aBoolean164 = false;
 
 	@OriginalMember(owner = "client!fu", name = "W", descriptor = "[I")

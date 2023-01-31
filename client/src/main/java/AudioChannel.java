@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!tg")
-public class Class221 {
+public class AudioChannel {
 
 	@OriginalMember(owner = "client!tg", name = "g", descriptor = "[I")
 	public int[] anIntArray485;
@@ -283,10 +283,10 @@ public class Class221 {
 		if (Static67.aClass129_1 != null) {
 			@Pc(9) boolean local9 = true;
 			for (@Pc(11) int local11 = 0; local11 < 2; local11++) {
-				if (Static67.aClass129_1.aClass221Array1[local11] == this) {
-					Static67.aClass129_1.aClass221Array1[local11] = null;
+				if (Static67.aClass129_1.aAudioChannelArray1[local11] == this) {
+					Static67.aClass129_1.aAudioChannelArray1[local11] = null;
 				}
-				if (Static67.aClass129_1.aClass221Array1[local11] != null) {
+				if (Static67.aClass129_1.aAudioChannelArray1[local11] != null) {
 					local9 = false;
 				}
 			}

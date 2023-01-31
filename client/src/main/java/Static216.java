@@ -152,11 +152,11 @@ public final class Static216 {
 				local7--;
 			}
 		}
-		if (Static393.aBoolean486 && !Static64.method1704()) {
+		if (Static393.jingle && !Static64.method1704()) {
 			if (Static218.aClass177_Sub1_2.musicVolume != 0 && Static171.anInt3268 != -1) {
 				Static94.method2042(Static218.aClass177_Sub1_2.musicVolume, Static171.anInt3268, Static101.aJs5_23);
 			}
-			Static393.aBoolean486 = false;
+			Static393.jingle = false;
 		} else if (Static218.aClass177_Sub1_2.musicVolume != 0 && Static171.anInt3268 != -1 && !Static64.method1704()) {
 			Static91.method1960(Static67.aClass145_56);
 			Static257.aClass2_Sub4_Sub2_4.p4(Static171.anInt3268);

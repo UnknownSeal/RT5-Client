@@ -13,7 +13,7 @@ public final class Static367 {
 	public static int anInt6879;
 
 	@OriginalMember(owner = "client!vj", name = "ab", descriptor = "Lclient!r;")
-	public static Js5 aJs5_92;
+	public static Js5 archive;
 
 	@OriginalMember(owner = "client!vj", name = "J", descriptor = "Lclient!eh;")
 	public static final ServerActiveProperties A_CLASS_2___SUB_10___2 = new ServerActiveProperties(0, -1);

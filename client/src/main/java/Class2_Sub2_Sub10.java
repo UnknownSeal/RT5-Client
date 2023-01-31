@@ -8,13 +8,13 @@ public abstract class Class2_Sub2_Sub10 extends SecondaryNode {
 	public boolean aBoolean417;
 
 	@OriginalMember(owner = "client!ut", name = "H", descriptor = "Z")
-	public boolean aBoolean418;
+	public boolean urgent;
 
 	@OriginalMember(owner = "client!ut", name = "E", descriptor = "Z")
-	public volatile boolean aBoolean416 = true;
+	public volatile boolean incomplete = true;
 
 	@OriginalMember(owner = "client!ut", name = "e", descriptor = "(B)[B")
-	public abstract byte[] method5647();
+	public abstract byte[] getData();
 
 	@OriginalMember(owner = "client!ut", name = "b", descriptor = "(I)I")
 	public abstract int method5650();

@@ -13,7 +13,7 @@ public final class Class160 {
 	private final Js5 aJs5_62;
 
 	@OriginalMember(owner = "client!ng", name = "<init>", descriptor = "(Lclient!dn;ILclient!r;)V")
-	public Class160(@OriginalArg(0) Class50 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5 arg2) {
+	public Class160(@OriginalArg(0) GameType arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5 arg2) {
 		this.aJs5_62 = arg2;
 		this.aJs5_62.method5080(30);
 	}

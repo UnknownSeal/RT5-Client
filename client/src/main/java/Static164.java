@@ -28,7 +28,7 @@ public final class Static164 {
 	public static Component aComponent_5 = null;
 
 	@OriginalMember(owner = "client!jl", name = "Y", descriptor = "[Ljava/lang/String;")
-	public static final String[] aStringArray24 = new String[] { "en", "de", "fr", "pt", "nl" };
+	public static final String[] ISO_CODES = new String[] { "en", "de", "fr", "pt", "nl" };
 
 	@OriginalMember(owner = "client!jl", name = "cb", descriptor = "Lclient!s;")
 	public static final Class210 aClass210_8 = new Class210(8, 6);
@@ -104,19 +104,19 @@ public final class Static164 {
 				}
 				Static335.socket = new BufferedSocket((Socket) Static5.sockerRequest.result, GameShell.signlink);
 				Static5.sockerRequest = null;
-				Static335.socket.write(Static257.aClass2_Sub4_Sub2_4.data, Static257.aClass2_Sub4_Sub2_4.offset);
-				if (Static303.aClass221_2 != null) {
-					Static303.aClass221_2.method6324();
+				Static335.socket.write(Static257.aClass2_Sub4_Sub2_4.bytes, Static257.aClass2_Sub4_Sub2_4.offset);
+				if (client.musicChannel != null) {
+					client.musicChannel.method6324();
 				}
-				if (Static190.aClass221_1 != null) {
-					Static190.aClass221_1.method6324();
+				if (Static190.aAudioChannel_1 != null) {
+					Static190.aAudioChannel_1.method6324();
 				}
 				local125 = Static335.socket.read();
-				if (Static303.aClass221_2 != null) {
-					Static303.aClass221_2.method6324();
+				if (client.musicChannel != null) {
+					client.musicChannel.method6324();
 				}
-				if (Static190.aClass221_1 != null) {
-					Static190.aClass221_1.method6324();
+				if (Static190.aAudioChannel_1 != null) {
+					Static190.aAudioChannel_1.method6324();
 				}
 				if (local125 != 101) {
 					Static41.reply = local125;

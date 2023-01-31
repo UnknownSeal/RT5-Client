@@ -15,8 +15,8 @@ public final class Static390 {
 	@OriginalMember(owner = "client!wp", name = "a", descriptor = "(I)V")
 	public static void method6448() {
 		Static289.aJs5_71.discardUnpacked = 1;
-		Static144.instance.method1382();
-		Static242.aBoolean306 = true;
+		client.instance.loadMiscNatives();
+		GameShell.focus = true;
 		Static343.aBoolean431 = true;
 		Static4.method77();
 		Static257.aClass2_Sub4_Sub2_4.offset = 0;
@@ -75,8 +75,8 @@ public final class Static390 {
 				Static75.anIntArray117[local4521] = -1;
 			}
 		}
-		if (Static139.anInt2595 != -1) {
-			Static162.method2978(Static139.anInt2595);
+		if (Static139.topLevelInterface != -1) {
+			Static162.method2978(Static139.topLevelInterface);
 		}
 		for (@Pc(4552) Class2_Sub7 local4552 = (Class2_Sub7) Static329.aClass4_130.method80(); local4552 != null; local4552 = (Class2_Sub7) Static329.aClass4_130.method79()) {
 			if (!local4552.isLinked()) {
@@ -87,7 +87,7 @@ public final class Static390 {
 			}
 			Static276.method4654(false, local4552, true);
 		}
-		Static139.anInt2595 = -1;
+		Static139.topLevelInterface = -1;
 		Static329.aClass4_130 = new HashTable(8);
 		Static210.method3719();
 		Static192.aComponent_8 = null;

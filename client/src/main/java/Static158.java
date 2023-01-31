@@ -49,7 +49,7 @@ public final class Static158 {
 		if (Static124.aStringArray65 == null) {
 			Static148.method2709();
 		}
-		@Pc(22) String[] local22 = Static200.method3642('\n', arg0);
+		@Pc(22) String[] local22 = Static200.split(arg0, '\n');
 		for (@Pc(24) int local24 = 0; local24 < local22.length; local24++) {
 			for (@Pc(28) int local28 = Static368.anInt6917; local28 > 0; local28--) {
 				Static124.aStringArray65[local28] = Static124.aStringArray65[local28 - 1];

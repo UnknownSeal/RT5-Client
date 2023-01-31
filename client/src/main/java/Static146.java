@@ -33,25 +33,25 @@ public final class Static146 {
 	}
 
 	@OriginalMember(owner = "client!ih", name = "a", descriptor = "(BI)Lclient!tb;")
-	public static Class2_Sub2_Sub16 method2699(@OriginalArg(1) int arg0) {
-		@Pc(10) Class2_Sub2_Sub16 local10 = (Class2_Sub2_Sub16) Static388.aClass116_8.method3151((long) arg0);
-		if (local10 != null) {
-			return local10;
+	public static QuickChatPhraseType get(@OriginalArg(1) int id) {
+		@Pc(10) QuickChatPhraseType type = (QuickChatPhraseType) Static388.types.get(id);
+		if (type != null) {
+			return type;
 		}
-		@Pc(28) byte[] local28;
-		if (arg0 < 32768) {
-			local28 = Static137.aJs5_33.fetchFile(1, arg0);
+		@Pc(28) byte[] bytes;
+		if (id < 32768) {
+			bytes = Static137.archive.fetchFile(1, id);
 		} else {
-			local28 = Static308.aJs5_80.fetchFile(1, arg0 & 0x7FFF);
+			bytes = Static308.globalArchive.fetchFile(1, id & 0x7FFF);
 		}
-		local10 = new Class2_Sub2_Sub16();
-		if (local28 != null) {
-			local10.method5598(new Buffer(local28));
+		type = new QuickChatPhraseType();
+		if (bytes != null) {
+			type.decode(new Buffer(bytes));
 		}
-		if (arg0 >= 32768) {
-			local10.method5603();
+		if (id >= 32768) {
+			type.method5603();
 		}
-		Static388.aClass116_8.method3154(local10, (long) arg0);
-		return local10;
+		Static388.types.put(id, type);
+		return type;
 	}
 }

@@ -10,9 +10,6 @@ public final class Static115 {
 	@OriginalMember(owner = "client!gn", name = "j", descriptor = "Lclient!mc;")
 	public static final Class145 aClass145_147 = new Class145(54, 8);
 
-	@OriginalMember(owner = "client!gn", name = "n", descriptor = "[I")
-	public static final int[] anIntArray234 = new int[] { 2, 2, 4, 0, 1, 8, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0 };
-
 	@OriginalMember(owner = "client!gn", name = "a", descriptor = "(IIII)V")
 	public static void method3808(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
 		if (arg1 == 1008) {

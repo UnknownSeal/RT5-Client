@@ -73,19 +73,19 @@ public final class Static319 {
 				}
 				Static257.aClass2_Sub4_Sub2_4.p1(Static43.aClass242_9.anInt7038);
 				Static257.aClass2_Sub4_Sub2_4.p4(local76);
-				Static335.socket.write(Static257.aClass2_Sub4_Sub2_4.data, Static257.aClass2_Sub4_Sub2_4.offset);
-				if (Static303.aClass221_2 != null) {
-					Static303.aClass221_2.method6324();
+				Static335.socket.write(Static257.aClass2_Sub4_Sub2_4.bytes, Static257.aClass2_Sub4_Sub2_4.offset);
+				if (client.musicChannel != null) {
+					client.musicChannel.method6324();
 				}
-				if (Static190.aClass221_1 != null) {
-					Static190.aClass221_1.method6324();
+				if (Static190.aAudioChannel_1 != null) {
+					Static190.aAudioChannel_1.method6324();
 				}
 				local114 = Static335.socket.read();
-				if (Static303.aClass221_2 != null) {
-					Static303.aClass221_2.method6324();
+				if (client.musicChannel != null) {
+					client.musicChannel.method6324();
 				}
-				if (Static190.aClass221_1 != null) {
-					Static190.aClass221_1.method6324();
+				if (Static190.aAudioChannel_1 != null) {
+					Static190.aAudioChannel_1.method6324();
 				}
 				if (local114 != 0) {
 					return Static101.method2166(local114);

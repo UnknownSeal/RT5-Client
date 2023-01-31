@@ -42,7 +42,7 @@ public final class Static322 {
 		if (local13 < 0 || Static373.anInt7033 <= local13 || local18 < 0 || Static242.anInt4449 <= local18) {
 			return false;
 		} else if (arg5 >= 0 && arg5 < Static373.anInt7033 && arg2 >= 0 && arg2 < Static242.anInt4449) {
-			@Pc(88) int local88 = Static141.method2654(arg0, Static52.anIntArray99, arg6, arg1, arg7, arg3, Static171.aClass46Array1[Static17.self.aByte78], local13, arg4, arg5, Static59.anIntArray105, Static17.self.method4327(), arg2, local18);
+			@Pc(88) int local88 = Static141.method2654(arg0, Static52.anIntArray99, arg6, arg1, arg7, arg3, Static171.collisionMap[Static17.self.aByte78], local13, arg4, arg5, Static59.anIntArray105, Static17.self.method4327(), arg2, local18);
 			if (local88 < 1) {
 				return false;
 			}
@@ -166,7 +166,7 @@ public final class Static322 {
 		}
 		Static354.method1381(Static373.anInt7033, Static242.anInt4449, local268, local375, Static190.aClass19_8.method2886() > 0);
 		for (local279 = 0; local279 < 4; local279++) {
-			Static171.aClass46Array1[local279].method1626();
+			Static171.collisionMap[local279].clear();
 		}
 		Static285.method4886();
 		Static239.method4151(false);
@@ -206,7 +206,7 @@ public final class Static322 {
 			Static7.aClass29_Sub1_120.method1085(null, null, Static190.aClass19_8);
 			Static341.method5766(false);
 		}
-		Static190.aClass29_Sub1_63.method1085(local375 ? Static7.aClass29_Sub1_120.anIntArrayArrayArray8 : null, Static171.aClass46Array1, Static190.aClass19_8);
+		Static190.aClass29_Sub1_63.method1085(local375 ? Static7.aClass29_Sub1_120.anIntArrayArrayArray8 : null, Static171.collisionMap, Static190.aClass19_8);
 		if (!Static220.aBoolean252) {
 			Static161.method2972(true);
 			Static170.method3230(Static190.aClass29_Sub1_63, Static82.locBytes);
@@ -302,7 +302,7 @@ public final class Static322 {
 	public static void topBannerRefresh() {
 		if (Static121.aClass127_4 != Static231.aClass127_7) {
 			try {
-				BrowserControl.call(Static144.instance, "tbrefresh");
+				BrowserControl.call(client.instance, "tbrefresh");
 			} catch (@Pc(14) Throwable exception) {
 			}
 		}

@@ -23,8 +23,8 @@ public final class Static153 {
 	public static int anInt2794 = 2;
 
 	@OriginalMember(owner = "client!ip", name = "a", descriptor = "(I)[Lclient!rt;")
-	public static Class209[] method2770() {
-		return new Class209[] { Static232.aClass209_3, Static175.aClass209_1, Static359.aClass209_4 };
+	public static GameMode[] method2770() {
+		return new GameMode[] { GameMode.GAME_MODE_LIVE, GameMode.GAME_MODE_RC, GameMode.GAME_MODE_WIP};
 	}
 
 	@OriginalMember(owner = "client!ip", name = "a", descriptor = "(ILjava/lang/String;)Ljava/lang/String;")

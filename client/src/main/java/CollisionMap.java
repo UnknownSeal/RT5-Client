@@ -4,22 +4,22 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!dg")
-public final class Class46 {
+public final class CollisionMap {
 
 	@OriginalMember(owner = "client!dg", name = "a", descriptor = "I")
 	public int anInt1468;
 
 	@OriginalMember(owner = "client!dg", name = "d", descriptor = "[[I")
-	public int[][] anIntArrayArray14;
+	public int[][] flags;
 
 	@OriginalMember(owner = "client!dg", name = "f", descriptor = "I")
-	public int anInt1472;
+	public int width;
 
 	@OriginalMember(owner = "client!dg", name = "s", descriptor = "I")
 	public int anInt1484;
 
 	@OriginalMember(owner = "client!dg", name = "v", descriptor = "I")
-	public int anInt1487;
+	public int length;
 
 	@OriginalMember(owner = "client!dg", name = "a", descriptor = "(ZZIIIII)V")
 	public void method1625(@OriginalArg(0) boolean arg0, @OriginalArg(1) boolean arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5) {
@@ -209,13 +209,13 @@ public final class Class46 {
 	}
 
 	@OriginalMember(owner = "client!dg", name = "a", descriptor = "(I)V")
-	public void method1626() {
-		for (@Pc(3) int local3 = 0; local3 < this.anInt1472; local3++) {
-			for (@Pc(9) int local9 = 0; local9 < this.anInt1487; local9++) {
-				if (local3 == 0 || local9 == 0 || this.anInt1472 - 5 <= local3 || this.anInt1487 - 5 <= local9) {
-					this.anIntArrayArray14[local3][local9] = -1;
+	public void clear() {
+		for (@Pc(3) int x = 0; x < this.width; x++) {
+			for (@Pc(9) int z = 0; z < this.length; z++) {
+				if (x == 0 || z == 0 || this.width - 5 <= x || this.length - 5 <= z) {
+					this.flags[x][z] = -1;
 				} else {
-					this.anIntArrayArray14[local3][local9] = 2097152;
+					this.flags[x][z] = 2097152;
 				}
 			}
 		}
@@ -225,14 +225,14 @@ public final class Class46 {
 	public void method1627(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
 		@Pc(8) int local8 = arg1 - this.anInt1484;
 		@Pc(21) int local21 = arg0 - this.anInt1468;
-		this.anIntArrayArray14[local21][local8] &= 0xFFDFFFFF;
+		this.flags[local21][local8] &= 0xFFDFFFFF;
 	}
 
 	@OriginalMember(owner = "client!dg", name = "b", descriptor = "(III)V")
 	public void method1628(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
 		@Pc(11) int local11 = arg1 - this.anInt1484;
 		@Pc(16) int local16 = arg0 - this.anInt1468;
-		this.anIntArrayArray14[local16][local11] &= 0xFFFBFFFF;
+		this.flags[local16][local11] &= 0xFFFBFFFF;
 	}
 
 	@OriginalMember(owner = "client!dg", name = "a", descriptor = "(IIZIIIII)Z")
@@ -254,40 +254,40 @@ public final class Class46 {
 					if (local76 - 1 == local71 && local61 == local66) {
 						return true;
 					}
-					if (local76 == local71 && local66 == local61 + 1 && (this.anIntArrayArray14[local71][local66] & 0x2C0120) == 0) {
+					if (local76 == local71 && local66 == local61 + 1 && (this.flags[local71][local66] & 0x2C0120) == 0) {
 						return true;
 					}
-					if (local76 == local71 && local66 == local61 - 1 && (this.anIntArrayArray14[local71][local66] & 0x2C0102) == 0) {
+					if (local76 == local71 && local66 == local61 - 1 && (this.flags[local71][local66] & 0x2C0102) == 0) {
 						return true;
 					}
 				} else if (arg4 == 1) {
 					if (local71 == local76 && local61 + 1 == local66) {
 						return true;
 					}
-					if (local71 == local76 - 1 && local66 == local61 && (this.anIntArrayArray14[local71][local66] & 0x2C0108) == 0) {
+					if (local71 == local76 - 1 && local66 == local61 && (this.flags[local71][local66] & 0x2C0108) == 0) {
 						return true;
 					}
-					if (local76 + 1 == local71 && local61 == local66 && (this.anIntArrayArray14[local71][local66] & 0x2C0180) == 0) {
+					if (local76 + 1 == local71 && local61 == local66 && (this.flags[local71][local66] & 0x2C0180) == 0) {
 						return true;
 					}
 				} else if (arg4 == 2) {
 					if (local71 == local76 + 1 && local61 == local66) {
 						return true;
 					}
-					if (local76 == local71 && local61 + 1 == local66 && (this.anIntArrayArray14[local71][local66] & 0x2C0120) == 0) {
+					if (local76 == local71 && local61 + 1 == local66 && (this.flags[local71][local66] & 0x2C0120) == 0) {
 						return true;
 					}
-					if (local76 == local71 && local61 - 1 == local66 && (this.anIntArrayArray14[local71][local66] & 0x2C0102) == 0) {
+					if (local76 == local71 && local61 - 1 == local66 && (this.flags[local71][local66] & 0x2C0102) == 0) {
 						return true;
 					}
 				} else if (arg4 == 3) {
 					if (local71 == local76 && local66 == local61 - 1) {
 						return true;
 					}
-					if (local76 - 1 == local71 && local66 == local61 && (this.anIntArrayArray14[local71][local66] & 0x2C0108) == 0) {
+					if (local76 - 1 == local71 && local66 == local61 && (this.flags[local71][local66] & 0x2C0108) == 0) {
 						return true;
 					}
-					if (local76 + 1 == local71 && local61 == local66 && (this.anIntArrayArray14[local71][local66] & 0x2C0180) == 0) {
+					if (local76 + 1 == local71 && local61 == local66 && (this.flags[local71][local66] & 0x2C0180) == 0) {
 						return true;
 					}
 				}
@@ -300,14 +300,14 @@ public final class Class46 {
 					if (local76 == local71 && local61 + 1 == local66) {
 						return true;
 					}
-					if (local71 == local76 + 1 && local66 == local61 && (this.anIntArrayArray14[local71][local66] & 0x2C0180) == 0) {
+					if (local71 == local76 + 1 && local66 == local61 && (this.flags[local71][local66] & 0x2C0180) == 0) {
 						return true;
 					}
-					if (local71 == local76 && local61 - 1 == local66 && (this.anIntArrayArray14[local71][local66] & 0x2C0102) == 0) {
+					if (local71 == local76 && local61 - 1 == local66 && (this.flags[local71][local66] & 0x2C0102) == 0) {
 						return true;
 					}
 				} else if (arg4 == 1) {
-					if (local71 == local76 - 1 && local66 == local61 && (this.anIntArrayArray14[local71][local66] & 0x2C0108) == 0) {
+					if (local71 == local76 - 1 && local66 == local61 && (this.flags[local71][local66] & 0x2C0108) == 0) {
 						return true;
 					}
 					if (local71 == local76 && local61 + 1 == local66) {
@@ -316,14 +316,14 @@ public final class Class46 {
 					if (local76 + 1 == local71 && local66 == local61) {
 						return true;
 					}
-					if (local71 == local76 && local61 - 1 == local66 && (this.anIntArrayArray14[local71][local66] & 0x2C0102) == 0) {
+					if (local71 == local76 && local61 - 1 == local66 && (this.flags[local71][local66] & 0x2C0102) == 0) {
 						return true;
 					}
 				} else if (arg4 == 2) {
-					if (local76 - 1 == local71 && local66 == local61 && (this.anIntArrayArray14[local71][local66] & 0x2C0108) == 0) {
+					if (local76 - 1 == local71 && local66 == local61 && (this.flags[local71][local66] & 0x2C0108) == 0) {
 						return true;
 					}
-					if (local71 == local76 && local66 == local61 + 1 && (this.anIntArrayArray14[local71][local66] & 0x2C0120) == 0) {
+					if (local71 == local76 && local66 == local61 + 1 && (this.flags[local71][local66] & 0x2C0120) == 0) {
 						return true;
 					}
 					if (local76 + 1 == local71 && local66 == local61) {
@@ -336,10 +336,10 @@ public final class Class46 {
 					if (local71 == local76 - 1 && local61 == local66) {
 						return true;
 					}
-					if (local76 == local71 && local66 == local61 + 1 && (this.anIntArrayArray14[local71][local66] & 0x2C0120) == 0) {
+					if (local76 == local71 && local66 == local61 + 1 && (this.flags[local71][local66] & 0x2C0120) == 0) {
 						return true;
 					}
-					if (local71 == local76 + 1 && local66 == local61 && (this.anIntArrayArray14[local71][local66] & 0x2C0180) == 0) {
+					if (local71 == local76 + 1 && local66 == local61 && (this.flags[local71][local66] & 0x2C0180) == 0) {
 						return true;
 					}
 					if (local76 == local71 && local61 - 1 == local66) {
@@ -348,16 +348,16 @@ public final class Class46 {
 				}
 			}
 			if (arg2 == 9) {
-				if (local76 == local71 && local61 + 1 == local66 && (this.anIntArrayArray14[local71][local66] & 0x20) == 0) {
+				if (local76 == local71 && local61 + 1 == local66 && (this.flags[local71][local66] & 0x20) == 0) {
 					return true;
 				}
-				if (local76 == local71 && local61 - 1 == local66 && (this.anIntArrayArray14[local71][local66] & 0x2) == 0) {
+				if (local76 == local71 && local61 - 1 == local66 && (this.flags[local71][local66] & 0x2) == 0) {
 					return true;
 				}
-				if (local71 == local76 - 1 && local66 == local61 && (this.anIntArrayArray14[local71][local66] & 0x8) == 0) {
+				if (local71 == local76 - 1 && local66 == local61 && (this.flags[local71][local66] & 0x8) == 0) {
 					return true;
 				}
-				if (local76 + 1 == local71 && local66 == local61 && (this.anIntArrayArray14[local71][local66] & 0x80) == 0) {
+				if (local76 + 1 == local71 && local66 == local61 && (this.flags[local71][local66] & 0x80) == 0) {
 					return true;
 				}
 			}
@@ -369,40 +369,40 @@ public final class Class46 {
 					if (local71 == local76 - arg0 && local66 <= local61 && local61 <= local776) {
 						return true;
 					}
-					if (local71 <= local76 && local76 <= local769 && local61 + 1 == local66 && (this.anIntArrayArray14[local76][local66] & 0x2C0120) == 0) {
+					if (local71 <= local76 && local76 <= local769 && local61 + 1 == local66 && (this.flags[local76][local66] & 0x2C0120) == 0) {
 						return true;
 					}
-					if (local71 <= local76 && local769 >= local76 && local61 - arg0 == local66 && (this.anIntArrayArray14[local76][local776] & 0x2C0102) == 0) {
+					if (local71 <= local76 && local769 >= local76 && local61 - arg0 == local66 && (this.flags[local76][local776] & 0x2C0102) == 0) {
 						return true;
 					}
 				} else if (arg4 == 1) {
 					if (local76 >= local71 && local76 <= local769 && local61 + 1 == local66) {
 						return true;
 					}
-					if (local76 - arg0 == local71 && local61 >= local66 && local61 <= local776 && (this.anIntArrayArray14[local769][local61] & 0x2C0108) == 0) {
+					if (local76 - arg0 == local71 && local61 >= local66 && local61 <= local776 && (this.flags[local769][local61] & 0x2C0108) == 0) {
 						return true;
 					}
-					if (local76 + 1 == local71 && local61 >= local66 && local776 >= local61 && (this.anIntArrayArray14[local71][local61] & 0x2C0180) == 0) {
+					if (local76 + 1 == local71 && local61 >= local66 && local776 >= local61 && (this.flags[local71][local61] & 0x2C0180) == 0) {
 						return true;
 					}
 				} else if (arg4 == 2) {
 					if (local76 + 1 == local71 && local66 <= local61 && local776 >= local61) {
 						return true;
 					}
-					if (local76 >= local71 && local76 <= local769 && local61 + 1 == local66 && (this.anIntArrayArray14[local76][local66] & 0x2C0120) == 0) {
+					if (local76 >= local71 && local76 <= local769 && local61 + 1 == local66 && (this.flags[local76][local66] & 0x2C0120) == 0) {
 						return true;
 					}
-					if (local76 >= local71 && local76 <= local769 && local61 - arg0 == local66 && (this.anIntArrayArray14[local76][local776] & 0x2C0102) == 0) {
+					if (local76 >= local71 && local76 <= local769 && local61 - arg0 == local66 && (this.flags[local76][local776] & 0x2C0102) == 0) {
 						return true;
 					}
 				} else if (arg4 == 3) {
 					if (local71 <= local76 && local769 >= local76 && local61 - arg0 == local66) {
 						return true;
 					}
-					if (local71 == local76 - arg0 && local61 >= local66 && local61 <= local776 && (this.anIntArrayArray14[local769][local61] & 0x2C0108) == 0) {
+					if (local71 == local76 - arg0 && local61 >= local66 && local61 <= local776 && (this.flags[local769][local61] & 0x2C0108) == 0) {
 						return true;
 					}
-					if (local76 + 1 == local71 && local61 >= local66 && local776 >= local61 && (this.anIntArrayArray14[local71][local61] & 0x2C0180) == 0) {
+					if (local76 + 1 == local71 && local61 >= local66 && local776 >= local61 && (this.flags[local71][local61] & 0x2C0180) == 0) {
 						return true;
 					}
 				}
@@ -415,14 +415,14 @@ public final class Class46 {
 					if (local71 <= local76 && local769 >= local76 && local61 + 1 == local66) {
 						return true;
 					}
-					if (local76 + 1 == local71 && local66 <= local61 && local61 <= local776 && (this.anIntArrayArray14[local71][local61] & 0x2C0180) == 0) {
+					if (local76 + 1 == local71 && local66 <= local61 && local61 <= local776 && (this.flags[local71][local61] & 0x2C0180) == 0) {
 						return true;
 					}
-					if (local76 >= local71 && local76 <= local769 && local66 == local61 - arg0 && (this.anIntArrayArray14[local76][local776] & 0x2C0102) == 0) {
+					if (local76 >= local71 && local76 <= local769 && local66 == local61 - arg0 && (this.flags[local76][local776] & 0x2C0102) == 0) {
 						return true;
 					}
 				} else if (arg4 == 1) {
-					if (local76 - arg0 == local71 && local61 >= local66 && local776 >= local61 && (this.anIntArrayArray14[local769][local61] & 0x2C0108) == 0) {
+					if (local76 - arg0 == local71 && local61 >= local66 && local776 >= local61 && (this.flags[local769][local61] & 0x2C0108) == 0) {
 						return true;
 					}
 					if (local76 >= local71 && local769 >= local76 && local66 == local61 + 1) {
@@ -431,14 +431,14 @@ public final class Class46 {
 					if (local71 == local76 + 1 && local66 <= local61 && local776 >= local61) {
 						return true;
 					}
-					if (local71 <= local76 && local769 >= local76 && local66 == local61 - arg0 && (this.anIntArrayArray14[local76][local776] & 0x2C0102) == 0) {
+					if (local71 <= local76 && local769 >= local76 && local66 == local61 - arg0 && (this.flags[local76][local776] & 0x2C0102) == 0) {
 						return true;
 					}
 				} else if (arg4 == 2) {
-					if (local71 == local76 - arg0 && local66 <= local61 && local61 <= local776 && (this.anIntArrayArray14[local769][local61] & 0x2C0108) == 0) {
+					if (local71 == local76 - arg0 && local66 <= local61 && local61 <= local776 && (this.flags[local769][local61] & 0x2C0108) == 0) {
 						return true;
 					}
-					if (local71 <= local76 && local76 <= local769 && local66 == local61 + 1 && (this.anIntArrayArray14[local76][local66] & 0x2C0120) == 0) {
+					if (local71 <= local76 && local76 <= local769 && local66 == local61 + 1 && (this.flags[local76][local66] & 0x2C0120) == 0) {
 						return true;
 					}
 					if (local76 + 1 == local71 && local66 <= local61 && local776 >= local61) {
@@ -451,10 +451,10 @@ public final class Class46 {
 					if (local76 - arg0 == local71 && local61 >= local66 && local61 <= local776) {
 						return true;
 					}
-					if (local71 <= local76 && local76 <= local769 && local66 == local61 + 1 && (this.anIntArrayArray14[local76][local66] & 0x2C0120) == 0) {
+					if (local71 <= local76 && local76 <= local769 && local66 == local61 + 1 && (this.flags[local76][local66] & 0x2C0120) == 0) {
 						return true;
 					}
-					if (local71 == local76 + 1 && local61 >= local66 && local776 >= local61 && (this.anIntArrayArray14[local71][local61] & 0x2C0180) == 0) {
+					if (local71 == local76 + 1 && local61 >= local66 && local776 >= local61 && (this.flags[local71][local61] & 0x2C0180) == 0) {
 						return true;
 					}
 					if (local76 >= local71 && local76 <= local769 && local66 == local61 - arg0) {
@@ -463,16 +463,16 @@ public final class Class46 {
 				}
 			}
 			if (arg2 == 9) {
-				if (local71 <= local76 && local76 <= local769 && local66 == local61 + 1 && (this.anIntArrayArray14[local76][local66] & 0x2C0120) == 0) {
+				if (local71 <= local76 && local76 <= local769 && local66 == local61 + 1 && (this.flags[local76][local66] & 0x2C0120) == 0) {
 					return true;
 				}
-				if (local76 >= local71 && local76 <= local769 && local66 == local61 - arg0 && (this.anIntArrayArray14[local76][local776] & 0x2C0102) == 0) {
+				if (local76 >= local71 && local76 <= local769 && local66 == local61 - arg0 && (this.flags[local76][local776] & 0x2C0102) == 0) {
 					return true;
 				}
-				if (local76 - arg0 == local71 && local66 <= local61 && local776 >= local61 && (this.anIntArrayArray14[local769][local61] & 0x2C0108) == 0) {
+				if (local76 - arg0 == local71 && local66 <= local61 && local776 >= local61 && (this.flags[local769][local61] & 0x2C0108) == 0) {
 					return true;
 				}
-				if (local76 + 1 == local71 && local66 <= local61 && local61 <= local776 && (this.anIntArrayArray14[local71][local61] & 0x2C0180) == 0) {
+				if (local76 + 1 == local71 && local66 <= local61 && local61 <= local776 && (this.flags[local71][local61] & 0x2C0180) == 0) {
 					return true;
 				}
 			}
@@ -499,46 +499,46 @@ public final class Class46 {
 					arg0 = arg0 + 2 & 0x3;
 				}
 				if (arg0 == 0) {
-					if (local68 == local73 + 1 && local52 == local63 && (this.anIntArrayArray14[local68][local52] & 0x80) == 0) {
+					if (local68 == local73 + 1 && local52 == local63 && (this.flags[local68][local52] & 0x80) == 0) {
 						return true;
 					}
-					if (local73 == local68 && local52 == local63 - 1 && (this.anIntArrayArray14[local68][local52] & 0x2) == 0) {
+					if (local73 == local68 && local52 == local63 - 1 && (this.flags[local68][local52] & 0x2) == 0) {
 						return true;
 					}
 				} else if (arg0 == 1) {
-					if (local68 == local73 - 1 && local52 == local63 && (this.anIntArrayArray14[local68][local52] & 0x8) == 0) {
+					if (local68 == local73 - 1 && local52 == local63 && (this.flags[local68][local52] & 0x8) == 0) {
 						return true;
 					}
-					if (local73 == local68 && local63 - 1 == local52 && (this.anIntArrayArray14[local68][local52] & 0x2) == 0) {
+					if (local73 == local68 && local63 - 1 == local52 && (this.flags[local68][local52] & 0x2) == 0) {
 						return true;
 					}
 				} else if (arg0 == 2) {
-					if (local68 == local73 - 1 && local52 == local63 && (this.anIntArrayArray14[local68][local52] & 0x8) == 0) {
+					if (local68 == local73 - 1 && local52 == local63 && (this.flags[local68][local52] & 0x8) == 0) {
 						return true;
 					}
-					if (local68 == local73 && local52 == local63 + 1 && (this.anIntArrayArray14[local68][local52] & 0x20) == 0) {
+					if (local68 == local73 && local52 == local63 + 1 && (this.flags[local68][local52] & 0x20) == 0) {
 						return true;
 					}
 				} else if (arg0 == 3) {
-					if (local68 == local73 + 1 && local52 == local63 && (this.anIntArrayArray14[local68][local52] & 0x80) == 0) {
+					if (local68 == local73 + 1 && local52 == local63 && (this.flags[local68][local52] & 0x80) == 0) {
 						return true;
 					}
-					if (local68 == local73 && local63 + 1 == local52 && (this.anIntArrayArray14[local68][local52] & 0x20) == 0) {
+					if (local68 == local73 && local63 + 1 == local52 && (this.flags[local68][local52] & 0x20) == 0) {
 						return true;
 					}
 				}
 			}
 			if (arg4 == 8) {
-				if (local68 == local73 && local63 + 1 == local52 && (this.anIntArrayArray14[local68][local52] & 0x20) == 0) {
+				if (local68 == local73 && local63 + 1 == local52 && (this.flags[local68][local52] & 0x20) == 0) {
 					return true;
 				}
-				if (local73 == local68 && local63 - 1 == local52 && (this.anIntArrayArray14[local68][local52] & 0x2) == 0) {
+				if (local73 == local68 && local63 - 1 == local52 && (this.flags[local68][local52] & 0x2) == 0) {
 					return true;
 				}
-				if (local73 - 1 == local68 && local63 == local52 && (this.anIntArrayArray14[local68][local52] & 0x8) == 0) {
+				if (local73 - 1 == local68 && local63 == local52 && (this.flags[local68][local52] & 0x8) == 0) {
 					return true;
 				}
-				if (local68 == local73 + 1 && local63 == local52 && (this.anIntArrayArray14[local68][local52] & 0x80) == 0) {
+				if (local68 == local73 + 1 && local63 == local52 && (this.flags[local68][local52] & 0x80) == 0) {
 					return true;
 				}
 			}
@@ -550,46 +550,46 @@ public final class Class46 {
 					arg0 = arg0 + 2 & 0x3;
 				}
 				if (arg0 == 0) {
-					if (local68 == local73 + 1 && local63 >= local52 && local88 >= local63 && (this.anIntArrayArray14[local68][local63] & 0x80) == 0) {
+					if (local68 == local73 + 1 && local63 >= local52 && local88 >= local63 && (this.flags[local68][local63] & 0x80) == 0) {
 						return true;
 					}
-					if (local73 >= local68 && local73 <= local82 && local63 - arg1 == local52 && (this.anIntArrayArray14[local73][local88] & 0x2) == 0) {
+					if (local73 >= local68 && local73 <= local82 && local63 - arg1 == local52 && (this.flags[local73][local88] & 0x2) == 0) {
 						return true;
 					}
 				} else if (arg0 == 1) {
-					if (local68 == local73 - arg1 && local63 >= local52 && local63 <= local88 && (this.anIntArrayArray14[local82][local63] & 0x8) == 0) {
+					if (local68 == local73 - arg1 && local63 >= local52 && local63 <= local88 && (this.flags[local82][local63] & 0x8) == 0) {
 						return true;
 					}
-					if (local73 >= local68 && local82 >= local73 && local63 - arg1 == local52 && (this.anIntArrayArray14[local73][local88] & 0x2) == 0) {
+					if (local73 >= local68 && local82 >= local73 && local63 - arg1 == local52 && (this.flags[local73][local88] & 0x2) == 0) {
 						return true;
 					}
 				} else if (arg0 == 2) {
-					if (local73 - arg1 == local68 && local63 >= local52 && local63 <= local88 && (this.anIntArrayArray14[local82][local63] & 0x8) == 0) {
+					if (local73 - arg1 == local68 && local63 >= local52 && local63 <= local88 && (this.flags[local82][local63] & 0x8) == 0) {
 						return true;
 					}
-					if (local68 <= local73 && local82 >= local73 && local52 == local63 + 1 && (this.anIntArrayArray14[local73][local52] & 0x20) == 0) {
+					if (local68 <= local73 && local82 >= local73 && local52 == local63 + 1 && (this.flags[local73][local52] & 0x20) == 0) {
 						return true;
 					}
 				} else if (arg0 == 3) {
-					if (local68 == local73 + 1 && local63 >= local52 && local88 >= local63 && (this.anIntArrayArray14[local68][local63] & 0x80) == 0) {
+					if (local68 == local73 + 1 && local63 >= local52 && local88 >= local63 && (this.flags[local68][local63] & 0x80) == 0) {
 						return true;
 					}
-					if (local73 >= local68 && local73 <= local82 && local52 == local63 + 1 && (this.anIntArrayArray14[local73][local52] & 0x20) == 0) {
+					if (local73 >= local68 && local73 <= local82 && local52 == local63 + 1 && (this.flags[local73][local52] & 0x20) == 0) {
 						return true;
 					}
 				}
 			}
 			if (arg4 == 8) {
-				if (local68 <= local73 && local73 <= local82 && local63 + 1 == local52 && (this.anIntArrayArray14[local73][local52] & 0x20) == 0) {
+				if (local68 <= local73 && local73 <= local82 && local63 + 1 == local52 && (this.flags[local73][local52] & 0x20) == 0) {
 					return true;
 				}
-				if (local68 <= local73 && local82 >= local73 && local52 == local63 - arg1 && (this.anIntArrayArray14[local73][local88] & 0x2) == 0) {
+				if (local68 <= local73 && local82 >= local73 && local52 == local63 - arg1 && (this.flags[local73][local88] & 0x2) == 0) {
 					return true;
 				}
-				if (local68 == local73 - arg1 && local52 <= local63 && local63 <= local88 && (this.anIntArrayArray14[local82][local63] & 0x8) == 0) {
+				if (local68 == local73 - arg1 && local52 <= local63 && local63 <= local88 && (this.flags[local82][local63] & 0x8) == 0) {
 					return true;
 				}
-				if (local73 + 1 == local68 && local52 <= local63 && local88 >= local63 && (this.anIntArrayArray14[local68][local63] & 0x80) == 0) {
+				if (local73 + 1 == local68 && local52 <= local63 && local88 >= local63 && (this.flags[local68][local63] & 0x80) == 0) {
 					return true;
 				}
 			}
@@ -599,26 +599,26 @@ public final class Class46 {
 
 	@OriginalMember(owner = "client!dg", name = "a", descriptor = "(IIII)V")
 	private void method1633(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
-		this.anIntArrayArray14[arg0][arg2] |= arg1;
+		this.flags[arg0][arg2] |= arg1;
 	}
 
 	@OriginalMember(owner = "client!dg", name = "d", descriptor = "(III)V")
 	public void method1634(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
 		@Pc(4) int local4 = arg0 - this.anInt1484;
 		@Pc(9) int local9 = arg1 - this.anInt1468;
-		this.anIntArrayArray14[local9][local4] |= 0x40000;
+		this.flags[local9][local4] |= 0x40000;
 	}
 
 	@OriginalMember(owner = "client!dg", name = "a", descriptor = "(IBII)V")
 	private void method1635(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
-		this.anIntArrayArray14[arg2][arg1] &= ~arg0;
+		this.flags[arg2][arg1] &= ~arg0;
 	}
 
 	@OriginalMember(owner = "client!dg", name = "e", descriptor = "(III)V")
 	public void method1636(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
 		@Pc(4) int local4 = arg0 - this.anInt1484;
 		@Pc(9) int local9 = arg1 - this.anInt1468;
-		this.anIntArrayArray14[local9][local4] |= 0x200000;
+		this.flags[local9][local4] |= 0x200000;
 	}
 
 	@OriginalMember(owner = "client!dg", name = "a", descriptor = "(IIIIIIIIII)Z")
@@ -633,7 +633,7 @@ public final class Class46 {
 			local49 = arg2 >= arg6 ? arg2 : arg6;
 			local56 = local28 <= local13 ? local28 : local13;
 			while (local49 < local56) {
-				if ((this.anIntArrayArray14[local23 - this.anInt1468 - 1][local49 - this.anInt1484] & 0x8) == 0) {
+				if ((this.flags[local23 - this.anInt1468 - 1][local49 - this.anInt1484] & 0x8) == 0) {
 					return true;
 				}
 				local49++;
@@ -642,7 +642,7 @@ public final class Class46 {
 			local49 = arg2 < arg6 ? arg6 : arg2;
 			local56 = local28 <= local13 ? local28 : local13;
 			while (local49 < local56) {
-				if ((this.anIntArrayArray14[arg5 - this.anInt1468][local49 - this.anInt1484] & 0x80) == 0) {
+				if ((this.flags[arg5 - this.anInt1468][local49 - this.anInt1484] & 0x80) == 0) {
 					return true;
 				}
 				local49++;
@@ -651,7 +651,7 @@ public final class Class46 {
 			local49 = arg1 <= arg5 ? arg5 : arg1;
 			local56 = local23 <= local9 ? local23 : local9;
 			while (local56 > local49) {
-				if ((this.anIntArrayArray14[local49 - this.anInt1468][local28 - this.anInt1484 - 1] & 0x2) == 0) {
+				if ((this.flags[local49 - this.anInt1468][local28 - this.anInt1484 - 1] & 0x2) == 0) {
 					return true;
 				}
 				local49++;
@@ -660,7 +660,7 @@ public final class Class46 {
 			local49 = arg5 < arg1 ? arg1 : arg5;
 			local56 = local23 <= local9 ? local23 : local9;
 			while (local56 > local49) {
-				if ((this.anIntArrayArray14[local49 - this.anInt1468][arg2 - this.anInt1484] & 0x20) == 0) {
+				if ((this.flags[local49 - this.anInt1468][arg2 - this.anInt1484] & 0x20) == 0) {
 					return true;
 				}
 				local49++;
@@ -868,9 +868,9 @@ public final class Class46 {
 		}
 		@Pc(34) int local34 = arg2 - this.anInt1468;
 		for (@Pc(36) int local36 = local34; local36 < arg5 + local34; local36++) {
-			if (local36 >= 0 && local36 < this.anInt1472) {
+			if (local36 >= 0 && local36 < this.width) {
 				for (@Pc(50) int local50 = local23; local50 < arg1 + local23; local50++) {
-					if (local50 >= 0 && this.anInt1487 > local50) {
+					if (local50 >= 0 && this.length > local50) {
 						this.method1633(local36, local7, local50);
 					}
 				}
@@ -887,14 +887,14 @@ public final class Class46 {
 		@Pc(57) int local57 = arg2 + arg4 - 1;
 		if (arg1 <= arg3 && arg3 <= local51 && arg6 >= arg4 && arg6 <= local57) {
 			return true;
-		} else if (arg1 - 1 == arg3 && arg4 <= arg6 && arg6 <= local57 && (this.anIntArrayArray14[arg3 - this.anInt1468][arg6 - this.anInt1484] & 0x8) == 0 && (arg0 & 0x8) == 0) {
+		} else if (arg1 - 1 == arg3 && arg4 <= arg6 && arg6 <= local57 && (this.flags[arg3 - this.anInt1468][arg6 - this.anInt1484] & 0x8) == 0 && (arg0 & 0x8) == 0) {
 			return true;
-		} else if (arg3 == local51 + 1 && arg4 <= arg6 && local57 >= arg6 && (this.anIntArrayArray14[arg3 - this.anInt1468][arg6 - this.anInt1484] & 0x80) == 0 && (arg0 & 0x2) == 0) {
+		} else if (arg3 == local51 + 1 && arg4 <= arg6 && local57 >= arg6 && (this.flags[arg3 - this.anInt1468][arg6 - this.anInt1484] & 0x80) == 0 && (arg0 & 0x2) == 0) {
 			return true;
-		} else if (arg6 == arg4 - 1 && arg1 <= arg3 && local51 >= arg3 && (this.anIntArrayArray14[arg3 - this.anInt1468][arg6 - this.anInt1484] & 0x2) == 0 && (arg0 & 0x4) == 0) {
+		} else if (arg6 == arg4 - 1 && arg1 <= arg3 && local51 >= arg3 && (this.flags[arg3 - this.anInt1468][arg6 - this.anInt1484] & 0x2) == 0 && (arg0 & 0x4) == 0) {
 			return true;
 		} else {
-			return local57 + 1 == arg6 && arg3 >= arg1 && arg3 <= local51 && (this.anIntArrayArray14[arg3 - this.anInt1468][arg6 - this.anInt1484] & 0x20) == 0 && (arg0 & 0x1) == 0;
+			return local57 + 1 == arg6 && arg3 >= arg1 && arg3 <= local51 && (this.flags[arg3 - this.anInt1468][arg6 - this.anInt1484] & 0x20) == 0 && (arg0 & 0x1) == 0;
 		}
 	}
 
@@ -916,9 +916,9 @@ public final class Class46 {
 			arg6 = local39;
 		}
 		for (local39 = local29; local39 < local29 + arg1; local39++) {
-			if (local39 >= 0 && local39 < this.anInt1472) {
+			if (local39 >= 0 && local39 < this.width) {
 				for (@Pc(64) int local64 = local24; local64 < local24 + arg6; local64++) {
-					if (local64 >= 0 && this.anInt1487 > local64) {
+					if (local64 >= 0 && this.length > local64) {
 						this.method1635(local7, local64, local39);
 					}
 				}

@@ -284,7 +284,7 @@ public final class Class100 {
 						local3.glScalef(local35, local35, 1.0F);
 						local3.glTranslatef((float) -local61 / local35, (float) -local43 / local35, 1.0F);
 						local3.glMatrixMode(GL.GL_MODELVIEW);
-						this.aClass227ArrayArray1[local61][local43].method5788(local233.data, local70);
+						this.aClass227ArrayArray1[local61][local43].method5788(local233.bytes, local70);
 					}
 				}
 			}

@@ -4,10 +4,7 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static144 {
 
-	@OriginalMember(owner = "client!ie", name = "q", descriptor = "Lclient!client;")
-	public static client instance;
-
-	@OriginalMember(owner = "client!ie", name = "j", descriptor = "I")
+    @OriginalMember(owner = "client!ie", name = "j", descriptor = "I")
 	public static int anInt2694 = 0;
 
 	@OriginalMember(owner = "client!ie", name = "n", descriptor = "Lclient!h;")
@@ -41,7 +38,7 @@ public final class Static144 {
 
 	@OriginalMember(owner = "client!ie", name = "a", descriptor = "(B)I")
 	public static int method2692() {
-		if (Static363.aFrame2 == null) {
+		if (GameShell.fullScreenFrame == null) {
 			return Static363.aBoolean464 ? 2 : 1;
 		} else {
 			return 3;
