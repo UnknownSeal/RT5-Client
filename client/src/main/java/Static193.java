@@ -7,9 +7,6 @@ public final class Static193 {
 	@OriginalMember(owner = "client!la", name = "k", descriptor = "I")
 	public static int anInt3556;
 
-	@OriginalMember(owner = "client!la", name = "f", descriptor = "Lclient!gd;")
-	public static final LocalisedText A_TRANSLATABLE_STRING___78 = new LocalisedText("Connecting to update server", "Verbindung mit Update-Server...", "Connexion au serveur de mise à jour en cours", "Conectando ao servidor de atualização");
-
 	@OriginalMember(owner = "client!la", name = "i", descriptor = "Lclient!h;")
 	public static final Class89 aClass89_146 = new Class89(63, -1);
 
@@ -71,7 +68,7 @@ public final class Static193 {
 			Static252.aClass13_14.method6384((Static250.anInt4665 - Static252.aClass13_14.method6398()) / 2, (Static172.anInt3299 - Static252.aClass13_14.method6383()) / 2);
 			Static333.aClass13_21.method6384((Static250.anInt4665 - Static333.aClass13_21.method6398()) / 2, 18);
 		}
-		arg2.method5899((Static249.aClass50_3 == client.game ? Static221.A_TRANSLATABLE_STRING___99 : Static221.A_TRANSLATABLE_STRING___98).getLocalisedText(client.language), -1, Static172.anInt3299 / 2 - 26, arg0, Static250.anInt4665 / 2);
+		arg2.method5899((Static249.aClass50_3 == client.game ? LocalisedText.RUNESCAPE_IS_LOADING : LocalisedText.ALTERNATE_GAME_IS_LOADING).getLocalisedText(client.language), -1, Static172.anInt3299 / 2 - 26, arg0, Static250.anInt4665 / 2);
 		@Pc(58) int local58 = Static172.anInt3299 / 2 - 18;
 		arg1.method2836(Static250.anInt4665 / 2 - 152, local58, 304, 34, arg4, 0);
 		arg1.method2836(Static250.anInt4665 / 2 - 151, local58 + 1, 302, 32, 0, 0);

@@ -28,9 +28,6 @@ public final class Static322 {
 	@OriginalMember(owner = "client!so", name = "h", descriptor = "Lclient!mc;")
 	public static final Class145 aClass145_218 = new Class145(14, 8);
 
-	@OriginalMember(owner = "client!so", name = "k", descriptor = "Lclient!gd;")
-	public static final LocalisedText A_TRANSLATABLE_STRING___125 = new LocalisedText("Your ignore list is full, max of 100.", "Deine Ignorieren-Liste ist voll, du kannst nur 100 Spieler darauf eintragen.", "Votre liste noire est pleine (100 noms maximum).", "Sua lista de ignorados está cheia. O máx. é 100.");
-
 	@OriginalMember(owner = "client!so", name = "a", descriptor = "(III)V")
 	public static void method5480(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
 		@Pc(12) DelayedStateChange local12 = Static316.create(1, arg0);
@@ -146,7 +143,7 @@ public final class Static322 {
 			return;
 		}
 		if (Static246.anInt4505 != 0) {
-			Static351.method5856(Static276.aClass130_4, true, Static256.A_TRANSLATABLE_STRING___102.getLocalisedText(client.language) + "<br>(100%)");
+			Static351.method5856(Static276.aClass130_4, true, LocalisedText.LOADING_PLEASE_WAIT.getLocalisedText(client.language) + "<br>(100%)");
 		}
 		Static37.method1135();
 		Static211.method3720();

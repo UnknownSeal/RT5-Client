@@ -456,10 +456,10 @@ public final class Static73 {
 											if (Static265.anIntArray333[local536] != local249) {
 												Static265.anIntArray333[local536] = local249;
 												if (local249 > 0) {
-													Static33.method4199("", 0, local452 + Static282.A_TRANSLATABLE_STRING___112.getLocalisedText(client.language), 5, "");
+													Static33.method4199("", 0, local452 + LocalisedText.HAS_LOGGED_IN.getLocalisedText(client.language), 5, "");
 												}
 												if (local249 == 0) {
-													Static33.method4199("", 0, local452 + Static359.A_TRANSLATABLE_STRING___140.getLocalisedText(client.language), 5, "");
+													Static33.method4199("", 0, local452 + LocalisedText.HAS_LOGGED_OUT.getLocalisedText(client.language), 5, "");
 												}
 											}
 											Static319.aStringArray54[local536] = local1381;
@@ -980,8 +980,8 @@ public final class Static73 {
 										if (Static378.method6313(local220)) {
 											Static216.method3773(local74, local249, local228);
 											@Pc(3499) ObjType local3499 = Static313.aClass107_2.get(local74);
-											Static277.method4679(local3499.anInt5215, local3499.anInt5245, local249, local3499.zoom2d);
-											Static376.method6286(local249, local3499.anInt5249, local3499.anInt5252, local3499.anInt5232);
+											Static277.method4679(local3499.yAngle2D, local3499.xAngle2D, local249, local3499.zoom2d);
+											Static376.method6286(local249, local3499.zAngle2D, local3499.xOffset2D, local3499.yOffset2D);
 										}
 										Static231.aClass89_164 = null;
 										return true;
@@ -1461,7 +1461,7 @@ public final class Static73 {
 												return true;
 											} else if (Static179.aClass89_143 == Static231.aClass89_164) {
 												if (Static82.anInt1836 == 0) {
-													Static330.aString62 = Static66.A_TRANSLATABLE_STRING___34.getLocalisedText(client.language);
+													Static330.aString62 = LocalisedText.WALK_HERE.getLocalisedText(client.language);
 												} else {
 													Static330.aString62 = Static212.inboundBuffer.gjstr();
 												}

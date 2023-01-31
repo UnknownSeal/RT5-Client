@@ -58,8 +58,8 @@ public final class Class107 {
 			@Pc(54) int local54 = this.aJs5_42.method5091() - 1;
 			this.anInt2779 = local54 * 256 + this.aJs5_42.method5080(local54);
 		}
-		this.aStringArray21 = new String[] { null, null, Static220.A_TRANSLATABLE_STRING___83.getLocalisedText(this.anInt2781), null, null };
-		this.aStringArray22 = new String[] { null, null, null, null, Static239.A_TRANSLATABLE_STRING___95.getLocalisedText(this.anInt2781) };
+		this.aStringArray21 = new String[] { null, null, LocalisedText.TAKE.getLocalisedText(this.anInt2781), null, null };
+		this.aStringArray22 = new String[] { null, null, null, null, LocalisedText.DROP.getLocalisedText(this.anInt2781) };
 	}
 
 	@OriginalMember(owner = "client!io", name = "a", descriptor = "(II)V")
@@ -104,8 +104,8 @@ public final class Class107 {
 		newType = new ObjType();
 		newType.anInt5255 = id;
 		newType.aClass107_1 = this;
-		newType.aStringArray50 = new String[] { null, null, Static220.A_TRANSLATABLE_STRING___83.getLocalisedText(this.anInt2781), null, null };
-		newType.iOps = new String[] { null, null, null, null, Static239.A_TRANSLATABLE_STRING___95.getLocalisedText(this.anInt2781) };
+		newType.ops = new String[] { null, null, LocalisedText.TAKE.getLocalisedText(this.anInt2781), null, null };
+		newType.iOps = new String[] { null, null, null, null, LocalisedText.DROP.getLocalisedText(this.anInt2781) };
 		if (bytes != null) {
 			newType.decode(new Buffer(bytes));
 		}
@@ -117,12 +117,12 @@ public final class Class107 {
 			newType.generateLent(this.get(newType.lentLink), this.get(newType.lentTemplate));
 		}
 		if (!this.allowMembers && newType.members) {
-			newType.name = Static101.A_TRANSLATABLE_STRING___44.getLocalisedText(this.anInt2781);
+			newType.name = LocalisedText.MEMBERS_OBJECT.getLocalisedText(this.anInt2781);
 			newType.iOps = this.aStringArray22;
 			newType.anIntArray364 = null;
 			newType.team = 0;
 			newType.stockMarket = false;
-			newType.aStringArray50 = this.aStringArray21;
+			newType.ops = this.aStringArray21;
 			if (newType.params != null) {
 				@Pc(194) boolean local194 = false;
 				for (@Pc(199) Node local199 = newType.params.method80(); local199 != null; local199 = newType.params.method79()) {

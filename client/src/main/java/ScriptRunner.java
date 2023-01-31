@@ -93,114 +93,114 @@ public final class ScriptRunner {
 		}
 		@Pc(11) String local11 = arg0.toLowerCase();
 		@Pc(13) byte local13 = 0;
-		if (local11.startsWith(Static75.A_TRANSLATABLE_STRING___38.getLocalisedText(0))) {
+		if (local11.startsWith(LocalisedText.YELLOW.getLocalisedText(0))) {
 			local13 = 0;
-			arg0 = arg0.substring(Static75.A_TRANSLATABLE_STRING___38.getLocalisedText(0).length());
-		} else if (local11.startsWith(Static51.A_TRANSLATABLE_STRING___28.getLocalisedText(0))) {
+			arg0 = arg0.substring(LocalisedText.YELLOW.getLocalisedText(0).length());
+		} else if (local11.startsWith(LocalisedText.RED.getLocalisedText(0))) {
 			local13 = 1;
-			arg0 = arg0.substring(Static51.A_TRANSLATABLE_STRING___28.getLocalisedText(0).length());
-		} else if (local11.startsWith(Static3.A_TRANSLATABLE_STRING___1.getLocalisedText(0))) {
+			arg0 = arg0.substring(LocalisedText.RED.getLocalisedText(0).length());
+		} else if (local11.startsWith(LocalisedText.GREEN.getLocalisedText(0))) {
 			local13 = 2;
-			arg0 = arg0.substring(Static3.A_TRANSLATABLE_STRING___1.getLocalisedText(0).length());
-		} else if (local11.startsWith(Static154.A_TRANSLATABLE_STRING___66.getLocalisedText(0))) {
+			arg0 = arg0.substring(LocalisedText.GREEN.getLocalisedText(0).length());
+		} else if (local11.startsWith(LocalisedText.CYAN.getLocalisedText(0))) {
 			local13 = 3;
-			arg0 = arg0.substring(Static154.A_TRANSLATABLE_STRING___66.getLocalisedText(0).length());
-		} else if (local11.startsWith(Static278.A_TRANSLATABLE_STRING___110.getLocalisedText(0))) {
+			arg0 = arg0.substring(LocalisedText.CYAN.getLocalisedText(0).length());
+		} else if (local11.startsWith(LocalisedText.PURPLE.getLocalisedText(0))) {
 			local13 = 4;
-			arg0 = arg0.substring(Static278.A_TRANSLATABLE_STRING___110.getLocalisedText(0).length());
-		} else if (local11.startsWith(Static23.A_TRANSLATABLE_STRING___17.getLocalisedText(0))) {
+			arg0 = arg0.substring(LocalisedText.PURPLE.getLocalisedText(0).length());
+		} else if (local11.startsWith(LocalisedText.WHITE.getLocalisedText(0))) {
 			local13 = 5;
-			arg0 = arg0.substring(Static23.A_TRANSLATABLE_STRING___17.getLocalisedText(0).length());
-		} else if (local11.startsWith(Static105.A_TRANSLATABLE_STRING___45.getLocalisedText(0))) {
+			arg0 = arg0.substring(LocalisedText.WHITE.getLocalisedText(0).length());
+		} else if (local11.startsWith(LocalisedText.FLASH1.getLocalisedText(0))) {
 			local13 = 6;
-			arg0 = arg0.substring(Static105.A_TRANSLATABLE_STRING___45.getLocalisedText(0).length());
-		} else if (local11.startsWith(Static129.A_TRANSLATABLE_STRING___57.getLocalisedText(0))) {
+			arg0 = arg0.substring(LocalisedText.FLASH1.getLocalisedText(0).length());
+		} else if (local11.startsWith(LocalisedText.FLASH2.getLocalisedText(0))) {
 			local13 = 7;
-			arg0 = arg0.substring(Static129.A_TRANSLATABLE_STRING___57.getLocalisedText(0).length());
-		} else if (local11.startsWith(Static199.A_TRANSLATABLE_STRING___120.getLocalisedText(0))) {
+			arg0 = arg0.substring(LocalisedText.FLASH2.getLocalisedText(0).length());
+		} else if (local11.startsWith(LocalisedText.FLASH3.getLocalisedText(0))) {
 			local13 = 8;
-			arg0 = arg0.substring(Static199.A_TRANSLATABLE_STRING___120.getLocalisedText(0).length());
-		} else if (local11.startsWith(Static37.A_TRANSLATABLE_STRING___24.getLocalisedText(0))) {
+			arg0 = arg0.substring(LocalisedText.FLASH3.getLocalisedText(0).length());
+		} else if (local11.startsWith(LocalisedText.GLOW1.getLocalisedText(0))) {
 			local13 = 9;
-			arg0 = arg0.substring(Static37.A_TRANSLATABLE_STRING___24.getLocalisedText(0).length());
-		} else if (local11.startsWith(Static285.A_TRANSLATABLE_STRING___113.getLocalisedText(0))) {
+			arg0 = arg0.substring(LocalisedText.GLOW1.getLocalisedText(0).length());
+		} else if (local11.startsWith(LocalisedText.GLOW2.getLocalisedText(0))) {
 			local13 = 10;
-			arg0 = arg0.substring(Static285.A_TRANSLATABLE_STRING___113.getLocalisedText(0).length());
-		} else if (local11.startsWith(Static139.A_TRANSLATABLE_STRING___62.getLocalisedText(0))) {
+			arg0 = arg0.substring(LocalisedText.GLOW2.getLocalisedText(0).length());
+		} else if (local11.startsWith(LocalisedText.GLOW3.getLocalisedText(0))) {
 			local13 = 11;
-			arg0 = arg0.substring(Static139.A_TRANSLATABLE_STRING___62.getLocalisedText(0).length());
+			arg0 = arg0.substring(LocalisedText.GLOW3.getLocalisedText(0).length());
 		} else if (client.language != 0) {
-			if (local11.startsWith(Static75.A_TRANSLATABLE_STRING___38.getLocalisedText(client.language))) {
+			if (local11.startsWith(LocalisedText.YELLOW.getLocalisedText(client.language))) {
 				local13 = 0;
-				arg0 = arg0.substring(Static75.A_TRANSLATABLE_STRING___38.getLocalisedText(client.language).length());
-			} else if (local11.startsWith(Static51.A_TRANSLATABLE_STRING___28.getLocalisedText(client.language))) {
+				arg0 = arg0.substring(LocalisedText.YELLOW.getLocalisedText(client.language).length());
+			} else if (local11.startsWith(LocalisedText.RED.getLocalisedText(client.language))) {
 				local13 = 1;
-				arg0 = arg0.substring(Static51.A_TRANSLATABLE_STRING___28.getLocalisedText(client.language).length());
-			} else if (local11.startsWith(Static3.A_TRANSLATABLE_STRING___1.getLocalisedText(client.language))) {
+				arg0 = arg0.substring(LocalisedText.RED.getLocalisedText(client.language).length());
+			} else if (local11.startsWith(LocalisedText.GREEN.getLocalisedText(client.language))) {
 				local13 = 2;
-				arg0 = arg0.substring(Static3.A_TRANSLATABLE_STRING___1.getLocalisedText(client.language).length());
-			} else if (local11.startsWith(Static154.A_TRANSLATABLE_STRING___66.getLocalisedText(client.language))) {
+				arg0 = arg0.substring(LocalisedText.GREEN.getLocalisedText(client.language).length());
+			} else if (local11.startsWith(LocalisedText.CYAN.getLocalisedText(client.language))) {
 				local13 = 3;
-				arg0 = arg0.substring(Static154.A_TRANSLATABLE_STRING___66.getLocalisedText(client.language).length());
-			} else if (local11.startsWith(Static278.A_TRANSLATABLE_STRING___110.getLocalisedText(client.language))) {
+				arg0 = arg0.substring(LocalisedText.CYAN.getLocalisedText(client.language).length());
+			} else if (local11.startsWith(LocalisedText.PURPLE.getLocalisedText(client.language))) {
 				local13 = 4;
-				arg0 = arg0.substring(Static278.A_TRANSLATABLE_STRING___110.getLocalisedText(client.language).length());
-			} else if (local11.startsWith(Static23.A_TRANSLATABLE_STRING___17.getLocalisedText(client.language))) {
+				arg0 = arg0.substring(LocalisedText.PURPLE.getLocalisedText(client.language).length());
+			} else if (local11.startsWith(LocalisedText.WHITE.getLocalisedText(client.language))) {
 				local13 = 5;
-				arg0 = arg0.substring(Static23.A_TRANSLATABLE_STRING___17.getLocalisedText(client.language).length());
-			} else if (local11.startsWith(Static105.A_TRANSLATABLE_STRING___45.getLocalisedText(client.language))) {
+				arg0 = arg0.substring(LocalisedText.WHITE.getLocalisedText(client.language).length());
+			} else if (local11.startsWith(LocalisedText.FLASH1.getLocalisedText(client.language))) {
 				local13 = 6;
-				arg0 = arg0.substring(Static105.A_TRANSLATABLE_STRING___45.getLocalisedText(client.language).length());
-			} else if (local11.startsWith(Static129.A_TRANSLATABLE_STRING___57.getLocalisedText(client.language))) {
+				arg0 = arg0.substring(LocalisedText.FLASH1.getLocalisedText(client.language).length());
+			} else if (local11.startsWith(LocalisedText.FLASH2.getLocalisedText(client.language))) {
 				local13 = 7;
-				arg0 = arg0.substring(Static129.A_TRANSLATABLE_STRING___57.getLocalisedText(client.language).length());
-			} else if (local11.startsWith(Static199.A_TRANSLATABLE_STRING___120.getLocalisedText(client.language))) {
+				arg0 = arg0.substring(LocalisedText.FLASH2.getLocalisedText(client.language).length());
+			} else if (local11.startsWith(LocalisedText.FLASH3.getLocalisedText(client.language))) {
 				local13 = 8;
-				arg0 = arg0.substring(Static199.A_TRANSLATABLE_STRING___120.getLocalisedText(client.language).length());
-			} else if (local11.startsWith(Static37.A_TRANSLATABLE_STRING___24.getLocalisedText(client.language))) {
+				arg0 = arg0.substring(LocalisedText.FLASH3.getLocalisedText(client.language).length());
+			} else if (local11.startsWith(LocalisedText.GLOW1.getLocalisedText(client.language))) {
 				local13 = 9;
-				arg0 = arg0.substring(Static37.A_TRANSLATABLE_STRING___24.getLocalisedText(client.language).length());
-			} else if (local11.startsWith(Static285.A_TRANSLATABLE_STRING___113.getLocalisedText(client.language))) {
+				arg0 = arg0.substring(LocalisedText.GLOW1.getLocalisedText(client.language).length());
+			} else if (local11.startsWith(LocalisedText.GLOW2.getLocalisedText(client.language))) {
 				local13 = 10;
-				arg0 = arg0.substring(Static285.A_TRANSLATABLE_STRING___113.getLocalisedText(client.language).length());
-			} else if (local11.startsWith(Static139.A_TRANSLATABLE_STRING___62.getLocalisedText(client.language))) {
+				arg0 = arg0.substring(LocalisedText.GLOW2.getLocalisedText(client.language).length());
+			} else if (local11.startsWith(LocalisedText.GLOW3.getLocalisedText(client.language))) {
 				local13 = 11;
-				arg0 = arg0.substring(Static139.A_TRANSLATABLE_STRING___62.getLocalisedText(client.language).length());
+				arg0 = arg0.substring(LocalisedText.GLOW3.getLocalisedText(client.language).length());
 			}
 		}
 		local11 = arg0.toLowerCase();
 		@Pc(451) byte local451 = 0;
-		if (local11.startsWith(Static136.A_TRANSLATABLE_STRING___141.getLocalisedText(0))) {
+		if (local11.startsWith(LocalisedText.WAVE.getLocalisedText(0))) {
 			local451 = 1;
-			arg0 = arg0.substring(Static136.A_TRANSLATABLE_STRING___141.getLocalisedText(0).length());
-		} else if (local11.startsWith(Static288.A_TRANSLATABLE_STRING___114.getLocalisedText(0))) {
+			arg0 = arg0.substring(LocalisedText.WAVE.getLocalisedText(0).length());
+		} else if (local11.startsWith(LocalisedText.WAVE2.getLocalisedText(0))) {
 			local451 = 2;
-			arg0 = arg0.substring(Static288.A_TRANSLATABLE_STRING___114.getLocalisedText(0).length());
-		} else if (local11.startsWith(Static76.A_TRANSLATABLE_STRING___39.getLocalisedText(0))) {
+			arg0 = arg0.substring(LocalisedText.WAVE2.getLocalisedText(0).length());
+		} else if (local11.startsWith(LocalisedText.SHAKE.getLocalisedText(0))) {
 			local451 = 3;
-			arg0 = arg0.substring(Static76.A_TRANSLATABLE_STRING___39.getLocalisedText(0).length());
-		} else if (local11.startsWith(Static196.A_TRANSLATABLE_STRING___70.getLocalisedText(0))) {
+			arg0 = arg0.substring(LocalisedText.SHAKE.getLocalisedText(0).length());
+		} else if (local11.startsWith(LocalisedText.SCROLL.getLocalisedText(0))) {
 			local451 = 4;
-			arg0 = arg0.substring(Static196.A_TRANSLATABLE_STRING___70.getLocalisedText(0).length());
-		} else if (local11.startsWith(Static223.A_TRANSLATABLE_STRING___87.getLocalisedText(0))) {
+			arg0 = arg0.substring(LocalisedText.SCROLL.getLocalisedText(0).length());
+		} else if (local11.startsWith(LocalisedText.SLIDE.getLocalisedText(0))) {
 			local451 = 5;
-			arg0 = arg0.substring(Static223.A_TRANSLATABLE_STRING___87.getLocalisedText(0).length());
+			arg0 = arg0.substring(LocalisedText.SLIDE.getLocalisedText(0).length());
 		} else if (client.language != 0) {
-			if (local11.startsWith(Static136.A_TRANSLATABLE_STRING___141.getLocalisedText(client.language))) {
+			if (local11.startsWith(LocalisedText.WAVE.getLocalisedText(client.language))) {
 				local451 = 1;
-				arg0 = arg0.substring(Static136.A_TRANSLATABLE_STRING___141.getLocalisedText(client.language).length());
-			} else if (local11.startsWith(Static288.A_TRANSLATABLE_STRING___114.getLocalisedText(client.language))) {
+				arg0 = arg0.substring(LocalisedText.WAVE.getLocalisedText(client.language).length());
+			} else if (local11.startsWith(LocalisedText.WAVE2.getLocalisedText(client.language))) {
 				local451 = 2;
-				arg0 = arg0.substring(Static288.A_TRANSLATABLE_STRING___114.getLocalisedText(client.language).length());
-			} else if (local11.startsWith(Static76.A_TRANSLATABLE_STRING___39.getLocalisedText(client.language))) {
+				arg0 = arg0.substring(LocalisedText.WAVE2.getLocalisedText(client.language).length());
+			} else if (local11.startsWith(LocalisedText.SHAKE.getLocalisedText(client.language))) {
 				local451 = 3;
-				arg0 = arg0.substring(Static76.A_TRANSLATABLE_STRING___39.getLocalisedText(client.language).length());
-			} else if (local11.startsWith(Static196.A_TRANSLATABLE_STRING___70.getLocalisedText(client.language))) {
+				arg0 = arg0.substring(LocalisedText.SHAKE.getLocalisedText(client.language).length());
+			} else if (local11.startsWith(LocalisedText.SCROLL.getLocalisedText(client.language))) {
 				local451 = 4;
-				arg0 = arg0.substring(Static196.A_TRANSLATABLE_STRING___70.getLocalisedText(client.language).length());
-			} else if (local11.startsWith(Static223.A_TRANSLATABLE_STRING___87.getLocalisedText(client.language))) {
+				arg0 = arg0.substring(LocalisedText.SCROLL.getLocalisedText(client.language).length());
+			} else if (local11.startsWith(LocalisedText.SLIDE.getLocalisedText(client.language))) {
 				local451 = 5;
-				arg0 = arg0.substring(Static223.A_TRANSLATABLE_STRING___87.getLocalisedText(client.language).length());
+				arg0 = arg0.substring(LocalisedText.SLIDE.getLocalisedText(client.language).length());
 			}
 		}
 		Static91.method1960(Static102.aClass145_141);
@@ -666,11 +666,11 @@ public final class ScriptRunner {
 							component.aBoolean280 = false;
 						}
 						@Pc(1537) ObjType local1537 = Static313.aClass107_2.get(local19);
-						component.anInt4320 = local1537.anInt5245;
-						component.anInt4274 = local1537.anInt5215;
-						component.anInt4319 = local1537.anInt5249;
-						component.anInt4278 = local1537.anInt5252;
-						component.anInt4250 = local1537.anInt5232;
+						component.anInt4320 = local1537.xAngle2D;
+						component.anInt4274 = local1537.yAngle2D;
+						component.anInt4319 = local1537.zAngle2D;
+						component.anInt4278 = local1537.xOffset2D;
+						component.anInt4250 = local1537.yOffset2D;
 						component.modelZoom = local1537.zoom2d;
 						if (opcode == 1205 || opcode == 1209) {
 							component.anInt4306 = 0;
@@ -2266,8 +2266,8 @@ public final class ScriptRunner {
 										local13 = intStack[isp];
 										local19 = intStack[isp + 1];
 										local7803 = Static313.aClass107_2.get(local13);
-										if (local19 >= 1 && local19 <= 5 && local7803.aStringArray50[local19 - 1] != null) {
-											stringStack[anInt3652++] = local7803.aStringArray50[local19 - 1];
+										if (local19 >= 1 && local19 <= 5 && local7803.ops[local19 - 1] != null) {
+											stringStack[anInt3652++] = local7803.ops[local19 - 1];
 											return;
 										}
 										stringStack[anInt3652++] = "";

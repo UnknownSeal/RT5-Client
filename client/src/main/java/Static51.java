@@ -13,9 +13,6 @@ public final class Static51 {
 	@OriginalMember(owner = "client!cu", name = "B", descriptor = "[[[J")
 	public static long[][][] aLongArrayArrayArray1;
 
-	@OriginalMember(owner = "client!cu", name = "u", descriptor = "Lclient!gd;")
-	public static final LocalisedText A_TRANSLATABLE_STRING___28 = new LocalisedText("red:", "rot:", "rouge:", "vermelho:");
-
 	@OriginalMember(owner = "client!cu", name = "w", descriptor = "I")
 	public static int anInt1369 = 0;
 

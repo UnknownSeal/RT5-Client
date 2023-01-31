@@ -10,9 +10,6 @@ public final class Static26 {
 	@OriginalMember(owner = "client!bj", name = "g", descriptor = "[[Lclient!nk;")
 	public static Component[][] aComponentArrayArray1;
 
-	@OriginalMember(owner = "client!bj", name = "d", descriptor = "Lclient!gd;")
-	public static final LocalisedText A_TRANSLATABLE_STRING___18 = new LocalisedText("Loading defaults - ", "Lade Standardeinstellungen - ", "Chargement des paramètres par défaut - ", "Carregando padrões - ");
-
 	@OriginalMember(owner = "client!bj", name = "a", descriptor = "(I)V")
 	public static void method862() {
 		if (Static369.aBoolean471) {

@@ -13,9 +13,6 @@ public final class Static105 {
 	@OriginalMember(owner = "client!ft", name = "ab", descriptor = "I")
 	public static int anInt2187;
 
-	@OriginalMember(owner = "client!ft", name = "S", descriptor = "Lclient!gd;")
-	public static final LocalisedText A_TRANSLATABLE_STRING___45 = new LocalisedText("flash1:", "blinken1:", "clignotant1:", "flash1:");
-
 	@OriginalMember(owner = "client!ft", name = "U", descriptor = "Lclient!mc;")
 	public static final Class145 aClass145_79 = new Class145(11, 16);
 

@@ -26,7 +26,7 @@ public final class Static61 {
 			return;
 		}
 		if (Static384.anInt7178 >= 100 && !Static381.aBoolean482 || Static384.anInt7178 >= 200) {
-			Static207.method3699(Static78.A_TRANSLATABLE_STRING___129.getLocalisedText(client.language));
+			Static207.method3699(LocalisedText.FRIEND_LIST_FULL.getLocalisedText(client.language));
 			return;
 		}
 		@Pc(33) String local33 = Static135.method2537(arg0);
@@ -37,13 +37,13 @@ public final class Static61 {
 		for (@Pc(38) int local38 = 0; local38 < Static384.anInt7178; local38++) {
 			@Pc(46) String local46 = Static135.method2537(Static17.aStringArray43[local38]);
 			if (local46 != null && local46.equals(local33)) {
-				Static207.method3699(arg0 + Static332.A_TRANSLATABLE_STRING___131.getLocalisedText(client.language));
+				Static207.method3699(arg0 + LocalisedText.FRIEND_LIST_ALREADY_EXISTS.getLocalisedText(client.language));
 				return;
 			}
 			if (Static319.aStringArray54[local38] != null) {
 				local78 = Static135.method2537(Static319.aStringArray54[local38]);
 				if (local78 != null && local78.equals(local33)) {
-					Static207.method3699(arg0 + Static332.A_TRANSLATABLE_STRING___131.getLocalisedText(client.language));
+					Static207.method3699(arg0 + LocalisedText.FRIEND_LIST_ALREADY_EXISTS.getLocalisedText(client.language));
 					return;
 				}
 			}
@@ -51,19 +51,19 @@ public final class Static61 {
 		for (@Pc(108) int local108 = 0; local108 < Static301.anInt5700; local108++) {
 			local78 = Static135.method2537(Static226.aStringArray35[local108]);
 			if (local78 != null && local78.equals(local33)) {
-				Static207.method3699(Static150.A_TRANSLATABLE_STRING___64.getLocalisedText(client.language) + arg0 + Static151.A_TRANSLATABLE_STRING___65.getLocalisedText(client.language));
+				Static207.method3699(LocalisedText.PLEASE_REMOVE_2.getLocalisedText(client.language) + arg0 + LocalisedText.FROM_YOUR_IGNORE_LIST_FIRST.getLocalisedText(client.language));
 				return;
 			}
 			if (Static371.aStringArray66[local108] != null) {
 				@Pc(151) String local151 = Static135.method2537(Static371.aStringArray66[local108]);
 				if (local151 != null && local151.equals(local33)) {
-					Static207.method3699(Static150.A_TRANSLATABLE_STRING___64.getLocalisedText(client.language) + arg0 + Static151.A_TRANSLATABLE_STRING___65.getLocalisedText(client.language));
+					Static207.method3699(LocalisedText.PLEASE_REMOVE_2.getLocalisedText(client.language) + arg0 + LocalisedText.FROM_YOUR_IGNORE_LIST_FIRST.getLocalisedText(client.language));
 					return;
 				}
 			}
 		}
 		if (Static135.method2537(Static17.self.aString41).equals(local33)) {
-			Static207.method3699(Static122.A_TRANSLATABLE_STRING___54.getLocalisedText(client.language));
+			Static207.method3699(LocalisedText.FRIEND_LIST_ADD_SELF.getLocalisedText(client.language));
 		} else {
 			Static91.method1960(Static148.aClass145_104);
 			Static257.aClass2_Sub4_Sub2_4.p1(Static27.method872(arg0));

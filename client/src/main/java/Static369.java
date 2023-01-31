@@ -11,9 +11,6 @@ public final class Static369 {
 	@OriginalMember(owner = "client!vm", name = "N", descriptor = "[I")
 	public static final int[] anIntArray479 = new int[] { -1, 8192, 0, -1, 12288, 10240, 14336, -1, 4096, 6144, 2048 };
 
-	@OriginalMember(owner = "client!vm", name = "S", descriptor = "Lclient!gd;")
-	public static final LocalisedText A_TRANSLATABLE_STRING___144 = new LocalisedText("Prepared sound engine", "Musik-Engine vorbereitet.", "Moteur son préparé", "Mecanismo de som preparado");
-
 	@OriginalMember(owner = "client!vm", name = "W", descriptor = "Lclient!mc;")
 	public static final Class145 aClass145_248 = new Class145(19, -1);
 

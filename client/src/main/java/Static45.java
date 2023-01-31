@@ -307,7 +307,7 @@ public final class Static45 {
 											continue;
 										}
 										if (client.game == Static106.aClass50_1) {
-											Static1.add(-1, true, local727, false, LocalisedText.FACEHERE.getLocalisedText(client.language), local719, 59, "", -1, 1L);
+											Static1.add(-1, true, local727, false, LocalisedText.FACE_HERE.getLocalisedText(client.language), local719, 59, "", -1, 1L);
 										}
 										Static1.add(-1, true, local727, false, Static330.aString62, local719, 22, "", -1, 1L);
 										continue;

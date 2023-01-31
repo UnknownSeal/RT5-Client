@@ -20,9 +20,6 @@ public final class Static235 {
 	@OriginalMember(owner = "client!nj", name = "j", descriptor = "I")
 	public static int anInt3368 = 0;
 
-	@OriginalMember(owner = "client!nj", name = "k", descriptor = "Lclient!gd;")
-	public static final LocalisedText A_TRANSLATABLE_STRING___72 = new LocalisedText("Loaded sprites", "Sprites geladen.", "Sprites chargés", "Sprites carregados");
-
 	@OriginalMember(owner = "client!nj", name = "a", descriptor = "(Lclient!ml;IILclient!bt;)V")
 	public static void method3338(@OriginalArg(0) Class152 arg0, @OriginalArg(1) int arg1, @OriginalArg(3) Buffer arg2) {
 		@Pc(9) Class2_Sub42 local9 = new Class2_Sub42();

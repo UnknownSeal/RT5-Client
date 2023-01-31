@@ -9,11 +9,8 @@ public final class Static3 {
 	@OriginalMember(owner = "client!ab", name = "G", descriptor = "Z")
 	public static boolean aBoolean5 = false;
 
-	@OriginalMember(owner = "client!ab", name = "H", descriptor = "Lclient!gd;")
-	public static final LocalisedText A_TRANSLATABLE_STRING___1 = new LocalisedText("green:", "grün:", "vert:", "verde:");
-
 	@OriginalMember(owner = "client!ab", name = "I", descriptor = "[Ljava/lang/String;")
-	public static final String[] aStringArray1 = new String[] { "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" };
+	public static final String[] MONTHS = new String[] { "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" };
 
 	@OriginalMember(owner = "client!ab", name = "J", descriptor = "I")
 	public static int anInt61 = -1;

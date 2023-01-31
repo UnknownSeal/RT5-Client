@@ -16,9 +16,6 @@ public final class Static129 {
 	@OriginalMember(owner = "client!hg", name = "j", descriptor = "Lclient!ld;")
 	public static final LinkedList A_LINKED_LIST___19 = new LinkedList();
 
-	@OriginalMember(owner = "client!hg", name = "l", descriptor = "Lclient!gd;")
-	public static final LocalisedText A_TRANSLATABLE_STRING___57 = new LocalisedText("flash2:", "blinken2:", "clignotant2:", "flash2:");
-
 	@OriginalMember(owner = "client!hg", name = "m", descriptor = "Lclient!ld;")
 	public static final LinkedList A_LINKED_LIST___20 = new LinkedList();
 

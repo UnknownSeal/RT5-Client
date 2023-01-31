@@ -15,9 +15,6 @@ public final class Static67 {
 	@OriginalMember(owner = "client!ds", name = "u", descriptor = "I")
 	public static int anInt1637;
 
-	@OriginalMember(owner = "client!ds", name = "q", descriptor = "Lclient!gd;")
-	public static final LocalisedText A_TRANSLATABLE_STRING___35 = new LocalisedText("Loading interface scripts - ", "Lade Interface-Skripte - ", "Chargement des interfaces - ", "Carregando interfaces - ");
-
 	@OriginalMember(owner = "client!ds", name = "s", descriptor = "[I")
 	public static final int[] anIntArray111 = new int[6];
 

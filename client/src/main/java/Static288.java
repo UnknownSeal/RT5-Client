@@ -17,6 +17,4 @@ public final class Static288 {
 	@OriginalMember(owner = "client!qm", name = "N", descriptor = "I")
 	public static int anInt5464 = -1;
 
-	@OriginalMember(owner = "client!qm", name = "O", descriptor = "Lclient!gd;")
-	public static final LocalisedText A_TRANSLATABLE_STRING___114 = new LocalisedText("wave2:", "welle2:", "ondulation2:", "onda2:");
 }

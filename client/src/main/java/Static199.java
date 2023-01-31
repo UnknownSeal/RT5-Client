@@ -7,9 +7,6 @@ public final class Static199 {
 	@OriginalMember(owner = "client!lm", name = "u", descriptor = "I")
 	public static int anInt5756;
 
-	@OriginalMember(owner = "client!lm", name = "s", descriptor = "Lclient!gd;")
-	public static final LocalisedText A_TRANSLATABLE_STRING___120 = new LocalisedText("flash3:", "blinken3:", "clignotant3:", "brilho3:");
-
 	@OriginalMember(owner = "client!lm", name = "t", descriptor = "I")
 	public static final int anInt5755 = 1337;
 

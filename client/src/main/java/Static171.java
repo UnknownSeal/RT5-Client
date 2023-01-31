@@ -149,7 +149,7 @@ public final class Static171 {
 			}
 			if (Static17.aBoolean308) {
 				Static190.aClass19_8.method2868(local108, local104, local110, -16777216, local106);
-				Static351.method5856(Static276.aClass130_4, false, Static256.A_TRANSLATABLE_STRING___102.getLocalisedText(client.language));
+				Static351.method5856(Static276.aClass130_4, false, LocalisedText.LOADING_PLEASE_WAIT.getLocalisedText(client.language));
 			}
 		} else {
 			Static190.aClass19_8.method2868(arg4, arg1, arg0, -16777216, arg3);

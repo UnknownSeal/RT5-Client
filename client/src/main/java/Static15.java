@@ -1,3 +1,4 @@
+import java.util.Calendar;
 import java.util.Date;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
@@ -12,16 +13,16 @@ public final class Static15 {
 	public static Class13[] aClass13Array3;
 
 	@OriginalMember(owner = "client!ar", name = "a", descriptor = "(IJ)Ljava/lang/String;")
-	public static String method393(@OriginalArg(1) long arg0) {
-		Static376.aCalendar2.setTime(new Date(arg0));
-		@Pc(13) int local13 = Static376.aCalendar2.get(7);
-		@Pc(24) int local24 = Static376.aCalendar2.get(5);
-		@Pc(28) int local28 = Static376.aCalendar2.get(2);
-		@Pc(32) int local32 = Static376.aCalendar2.get(1);
-		@Pc(36) int local36 = Static376.aCalendar2.get(11);
-		@Pc(40) int local40 = Static376.aCalendar2.get(12);
-		@Pc(44) int local44 = Static376.aCalendar2.get(13);
-		return Static326.aStringArray58[local13 - 1] + ", " + local24 / 10 + local24 % 10 + "-" + Static3.aStringArray1[local28] + "-" + local32 + " " + local36 / 10 + local36 % 10 + ":" + local40 / 10 + local40 % 10 + ":" + local44 / 10 + local44 % 10 + " GMT";
+	public static String formatHttpDate(@OriginalArg(1) long arg0) {
+		Static376.gmtCalendar.setTime(new Date(arg0));
+		@Pc(13) int day = Static376.gmtCalendar.get(Calendar.DAY_OF_WEEK);
+		@Pc(24) int date = Static376.gmtCalendar.get(Calendar.DATE);
+		@Pc(28) int month = Static376.gmtCalendar.get(Calendar.MONTH);
+		@Pc(32) int year = Static376.gmtCalendar.get(Calendar.YEAR);
+		@Pc(36) int hour = Static376.gmtCalendar.get(Calendar.HOUR_OF_DAY);
+		@Pc(40) int minute = Static376.gmtCalendar.get(Calendar.MINUTE);
+		@Pc(44) int second = Static376.gmtCalendar.get(Calendar.SECOND);
+		return Static326.DAYS[day - 1] + ", " + date / 10 + date % 10 + "-" + Static3.MONTHS[month] + "-" + year + " " + hour / 10 + hour % 10 + ":" + minute / 10 + minute % 10 + ":" + second / 10 + second % 10 + " GMT";
 	}
 
 	@OriginalMember(owner = "client!ar", name = "b", descriptor = "(IIB)V")

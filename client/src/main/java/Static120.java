@@ -7,9 +7,6 @@ public final class Static120 {
 	@OriginalMember(owner = "client!gs", name = "n", descriptor = "Lclient!r;")
 	public static Js5 aJs5_28;
 
-	@OriginalMember(owner = "client!gs", name = "d", descriptor = "Lclient!gd;")
-	public static final LocalisedText A_TRANSLATABLE_STRING___50 = new LocalisedText(" from your friend list first.", " zuerst von deiner Freunde-Liste!", " de votre liste d'amis.", " da sua lista de amigos primeiro.");
-
 	@OriginalMember(owner = "client!gs", name = "g", descriptor = "Lclient!h;")
 	public static final Class89 aClass89_95 = new Class89(12, 3);
 

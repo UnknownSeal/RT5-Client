@@ -7,12 +7,6 @@ public final class Static259 {
 	@OriginalMember(owner = "client!oq", name = "w", descriptor = "Lclient!ci;")
 	public static Interface2 anInterface2_6;
 
-	@OriginalMember(owner = "client!oq", name = "r", descriptor = "Lclient!gd;")
-	public static final LocalisedText A_TRANSLATABLE_STRING___105 = new LocalisedText("Cancel", "Abbrechen", "Annuler", "Cancelar");
-
-	@OriginalMember(owner = "client!oq", name = "v", descriptor = "Lclient!gd;")
-	public static final LocalisedText A_TRANSLATABLE_STRING___106 = new LocalisedText("M", "M", "M", "M");
-
 	@OriginalMember(owner = "client!oq", name = "x", descriptor = "[I")
 	public static final int[] anIntArray323 = new int[13];
 

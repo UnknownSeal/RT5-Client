@@ -9,9 +9,6 @@ public final class Static122 {
 	@OriginalMember(owner = "client!h", name = "g", descriptor = "Z")
 	public static volatile boolean aBoolean176 = false;
 
-	@OriginalMember(owner = "client!h", name = "h", descriptor = "Lclient!gd;")
-	public static final LocalisedText A_TRANSLATABLE_STRING___54 = new LocalisedText("You can't add yourself to your own friend list.", "Du kannst dich nicht auf deine eigene Freunde-Liste setzen!", "Vous ne pouvez pas ajouter votre nom à votre liste d'amis.", "Você não pode adicionar a si próprio à sua lista de amigos.");
-
 	@OriginalMember(owner = "client!h", name = "a", descriptor = "(B)V")
 	public static void method2398() {
 		Static200.redraw(Static375.aComponent_14);

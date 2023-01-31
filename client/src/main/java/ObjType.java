@@ -10,19 +10,19 @@ public final class ObjType {
 	public int[] anIntArray364;
 
 	@OriginalMember(owner = "client!qf", name = "j", descriptor = "[S")
-	private short[] aShortArray110;
+	private short[] retex_d;
 
 	@OriginalMember(owner = "client!qf", name = "o", descriptor = "[S")
-	private short[] aShortArray111;
+	private short[] retex_s;
 
 	@OriginalMember(owner = "client!qf", name = "r", descriptor = "[Ljava/lang/String;")
-	public String[] aStringArray50;
+	public String[] ops;
 
 	@OriginalMember(owner = "client!qf", name = "t", descriptor = "[B")
-	private byte[] aByteArray72;
+	private byte[] recol_p;
 
 	@OriginalMember(owner = "client!qf", name = "B", descriptor = "[S")
-	private short[] aShortArray112;
+	private short[] recol_d;
 
 	@OriginalMember(owner = "client!qf", name = "J", descriptor = "[I")
 	public int[] countObj;
@@ -34,7 +34,7 @@ public final class ObjType {
 	public Class107 aClass107_1;
 
 	@OriginalMember(owner = "client!qf", name = "T", descriptor = "[S")
-	private short[] aShortArray113;
+	private short[] recol_s;
 
 	@OriginalMember(owner = "client!qf", name = "ab", descriptor = "I")
 	private int model;
@@ -49,7 +49,7 @@ public final class ObjType {
 	public HashTable params;
 
 	@OriginalMember(owner = "client!qf", name = "b", descriptor = "I")
-	private int anInt5200 = -1;
+	private int womanhead1 = -1;
 
 	@OriginalMember(owner = "client!qf", name = "g", descriptor = "I")
 	public int anInt5204 = -1;
@@ -58,37 +58,37 @@ public final class ObjType {
 	public int certificateLink = -1;
 
 	@OriginalMember(owner = "client!qf", name = "l", descriptor = "I")
-	private int anInt5207 = -1;
+	private int womanwear3 = -1;
 
 	@OriginalMember(owner = "client!qf", name = "v", descriptor = "I")
-	private int anInt5213 = 0;
+	private int manwearXOff = 0;
 
 	@OriginalMember(owner = "client!qf", name = "K", descriptor = "I")
 	private int resizeY = 128;
 
 	@OriginalMember(owner = "client!qf", name = "y", descriptor = "I")
-	public int anInt5216 = -1;
+	public int cursor1Op = -1;
 
 	@OriginalMember(owner = "client!qf", name = "k", descriptor = "I")
-	private int anInt5206 = 0;
+	private int manwearYOff = 0;
 
 	@OriginalMember(owner = "client!qf", name = "D", descriptor = "I")
 	public int cost = 1;
 
 	@OriginalMember(owner = "client!qf", name = "q", descriptor = "I")
-	private int anInt5211 = -1;
+	private int womanwear2 = -1;
 
 	@OriginalMember(owner = "client!qf", name = "A", descriptor = "I")
-	public int anInt5218 = -1;
+	public int cursor2Op = -1;
 
 	@OriginalMember(owner = "client!qf", name = "F", descriptor = "I")
-	private int anInt5222 = 0;
+	private int womanwearXOff = 0;
 
 	@OriginalMember(owner = "client!qf", name = "i", descriptor = "I")
-	public int anInt5205 = -1;
+	public int manwear1 = -1;
 
 	@OriginalMember(owner = "client!qf", name = "I", descriptor = "I")
-	public int anInt5225 = -1;
+	public int cursor2 = -1;
 
 	@OriginalMember(owner = "client!qf", name = "a", descriptor = "I")
 	private int contrast = 0;
@@ -97,13 +97,13 @@ public final class ObjType {
 	public int dummyItem = 0;
 
 	@OriginalMember(owner = "client!qf", name = "x", descriptor = "I")
-	public int anInt5215 = 0;
+	public int yAngle2D = 0;
 
 	@OriginalMember(owner = "client!qf", name = "s", descriptor = "Z")
 	public boolean stockMarket = false;
 
 	@OriginalMember(owner = "client!qf", name = "bb", descriptor = "I")
-	public int anInt5238 = -1;
+	public int cursor1 = -1;
 
 	@OriginalMember(owner = "client!qf", name = "E", descriptor = "I")
 	public int anInt5221 = -1;
@@ -112,31 +112,31 @@ public final class ObjType {
 	public boolean members = false;
 
 	@OriginalMember(owner = "client!qf", name = "U", descriptor = "I")
-	private int anInt5231 = 0;
+	private int womanwearYOff = 0;
 
 	@OriginalMember(owner = "client!qf", name = "hb", descriptor = "I")
-	private int anInt5243 = -1;
+	private int womanhead2 = -1;
 
 	@OriginalMember(owner = "client!qf", name = "c", descriptor = "I")
-	private int anInt5201 = -1;
+	private int manwear3 = -1;
 
 	@OriginalMember(owner = "client!qf", name = "db", descriptor = "I")
 	public int anInt5240 = -1;
 
 	@OriginalMember(owner = "client!qf", name = "jb", descriptor = "I")
-	public int anInt5245 = 0;
+	public int xAngle2D = 0;
 
 	@OriginalMember(owner = "client!qf", name = "Y", descriptor = "I")
 	public int lentLink = -1;
 
 	@OriginalMember(owner = "client!qf", name = "m", descriptor = "I")
-	private int anInt5208 = -1;
+	private int manhead1 = -1;
 
 	@OriginalMember(owner = "client!qf", name = "pb", descriptor = "I")
-	private int anInt5251 = -1;
+	private int manhead2 = -1;
 
 	@OriginalMember(owner = "client!qf", name = "nb", descriptor = "I")
-	public int anInt5249 = 0;
+	public int zAngle2D = 0;
 
 	@OriginalMember(owner = "client!qf", name = "W", descriptor = "I")
 	private int resizeX = 128;
@@ -145,25 +145,25 @@ public final class ObjType {
 	public int zoom2d = 2000;
 
 	@OriginalMember(owner = "client!qf", name = "tb", descriptor = "I")
-	private int anInt5254 = 0;
+	private int womanwearZOff = 0;
 
 	@OriginalMember(owner = "client!qf", name = "ib", descriptor = "I")
 	public int anInt5244 = -1;
 
 	@OriginalMember(owner = "client!qf", name = "mb", descriptor = "I")
-	private int anInt5248 = -1;
+	private int manwear2 = -1;
 
 	@OriginalMember(owner = "client!qf", name = "R", descriptor = "Ljava/lang/String;")
 	public String name = "null";
 
 	@OriginalMember(owner = "client!qf", name = "rb", descriptor = "I")
-	public int anInt5252 = 0;
+	public int xOffset2D = 0;
 
 	@OriginalMember(owner = "client!qf", name = "yb", descriptor = "I")
 	public int certificateTemplate = -1;
 
 	@OriginalMember(owner = "client!qf", name = "Ab", descriptor = "I")
-	private int anInt5260 = 0;
+	private int manwearZOff = 0;
 
 	@OriginalMember(owner = "client!qf", name = "xb", descriptor = "I")
 	public int team = 0;
@@ -175,7 +175,7 @@ public final class ObjType {
 	public int lentTemplate = -1;
 
 	@OriginalMember(owner = "client!qf", name = "V", descriptor = "I")
-	public int anInt5232 = 0;
+	public int yOffset2D = 0;
 
 	@OriginalMember(owner = "client!qf", name = "vb", descriptor = "I")
 	private int ambient = 0;
@@ -184,7 +184,7 @@ public final class ObjType {
 	private int resizeZ = 128;
 
 	@OriginalMember(owner = "client!qf", name = "ob", descriptor = "I")
-	public int anInt5250 = -1;
+	public int womanwear1 = -1;
 
 	static {
 		new LocalisedText("To use this item please login to a members' server.", "Du musst auf einer Mitglieder-Welt sein, um diesen Gegenstand zu benutzen.", "Veuillez vous connecter à un serveur d'abonnés pour utiliser cet objet.", "Acesse um servidor para membros para usar este objeto.");
@@ -192,6 +192,8 @@ public final class ObjType {
 
 	@OriginalMember(owner = "client!qf", name = "a", descriptor = "(ILclient!bt;I)V")
 	private void decode(@OriginalArg(0) int opcode, @OriginalArg(1) Buffer buffer) {
+		@Pc(162) int local162;
+
 		if (opcode == 1) {
 			this.model = buffer.g2();
 		} else if (opcode == 2) {
@@ -199,18 +201,18 @@ public final class ObjType {
 		} else if (opcode == 4) {
 			this.zoom2d = buffer.g2();
 		} else if (opcode == 5) {
-			this.anInt5245 = buffer.g2();
+			this.xAngle2D = buffer.g2();
 		} else if (opcode == 6) {
-			this.anInt5215 = buffer.g2();
+			this.yAngle2D = buffer.g2();
 		} else if (opcode == 7) {
-			this.anInt5252 = buffer.g2();
-			if (this.anInt5252 > 32767) {
-				this.anInt5252 -= 65536;
+			this.xOffset2D = buffer.g2();
+			if (this.xOffset2D > 32767) {
+				this.xOffset2D -= 65536;
 			}
 		} else if (opcode == 8) {
-			this.anInt5232 = buffer.g2();
-			if (this.anInt5232 > 32767) {
-				this.anInt5232 -= 65536;
+			this.yOffset2D = buffer.g2();
+			if (this.yOffset2D > 32767) {
+				this.yOffset2D -= 65536;
 			}
 		} else if (opcode == 11) {
 			this.stackable = 1;
@@ -219,143 +221,139 @@ public final class ObjType {
 		} else if (opcode == 16) {
 			this.members = true;
 		} else if (opcode == 23) {
-			this.anInt5205 = buffer.g2();
+			this.manwear1 = buffer.g2();
 		} else if (opcode == 24) {
-			this.anInt5248 = buffer.g2();
+			this.manwear2 = buffer.g2();
 		} else if (opcode == 25) {
-			this.anInt5250 = buffer.g2();
+			this.womanwear1 = buffer.g2();
 		} else if (opcode == 26) {
-			this.anInt5211 = buffer.g2();
+			this.womanwear2 = buffer.g2();
 		} else if (opcode >= 30 && opcode < 35) {
-			this.aStringArray50[opcode - 30] = buffer.gjstr();
+			this.ops[opcode - 30] = buffer.gjstr();
 		} else if (opcode >= 35 && opcode < 40) {
 			this.iOps[opcode - 35] = buffer.gjstr();
-		} else {
-			@Pc(162) int local162;
-			@Pc(172) int local172;
-			if (opcode == 40) {
-				local162 = buffer.g1();
-				this.aShortArray112 = new short[local162];
-				this.aShortArray113 = new short[local162];
-				for (local172 = 0; local172 < local162; local172++) {
-					this.aShortArray113[local172] = (short) buffer.g2();
-					this.aShortArray112[local172] = (short) buffer.g2();
+		} else if (opcode == 40) {
+			int count = buffer.g1();
+			this.recol_d = new short[count];
+			this.recol_s = new short[count];
+			for (@Pc(172) int i = 0; i < count; i++) {
+				this.recol_s[i] = (short) buffer.g2();
+				this.recol_d[i] = (short) buffer.g2();
+			}
+		} else if (opcode == 41) {
+			int count = buffer.g1();
+			this.retex_d = new short[count];
+			this.retex_s = new short[count];
+			for (int i = 0; i < count; i++) {
+				this.retex_s[i] = (short) buffer.g2();
+				this.retex_d[i] = (short) buffer.g2();
+			}
+		} else if (opcode == 42) {
+			int count = buffer.g1();
+			this.recol_p = new byte[count];
+			for (int i = 0; i < count; i++) {
+				this.recol_p[i] = buffer.g1b();
+			}
+		} else if (opcode == 65) {
+			this.stockMarket = true;
+		} else if (opcode == 78) {
+			this.manwear3 = buffer.g2();
+		} else if (opcode == 79) {
+			this.womanwear3 = buffer.g2();
+		} else if (opcode == 90) {
+			this.manhead1 = buffer.g2();
+		} else if (opcode == 91) {
+			this.womanhead1 = buffer.g2();
+		} else if (opcode == 92) {
+			this.manhead2 = buffer.g2();
+		} else if (opcode == 93) {
+			this.womanhead2 = buffer.g2();
+		} else if (opcode == 95) {
+			this.zAngle2D = buffer.g2();
+		} else if (opcode == 96) {
+			this.dummyItem = buffer.g1();
+		} else if (opcode == 97) {
+			this.certificateLink = buffer.g2();
+		} else if (opcode == 98) {
+			this.certificateTemplate = buffer.g2();
+		} else if (opcode >= 100 && opcode < 110) {
+			if (this.countObj == null) {
+				this.countCount = new int[10];
+				this.countObj = new int[10];
+			}
+			this.countObj[opcode - 100] = buffer.g2();
+			this.countCount[opcode - 100] = buffer.g2();
+		} else if (opcode == 110) {
+			this.resizeX = buffer.g2();
+		} else if (opcode == 111) {
+			this.resizeY = buffer.g2();
+		} else if (opcode == 112) {
+			this.resizeZ = buffer.g2();
+		} else if (opcode == 113) {
+			this.ambient = buffer.g1b();
+		} else if (opcode == 114) {
+			this.contrast = buffer.g1b() * 5;
+		} else if (opcode == 115) {
+			this.team = buffer.g1();
+		} else if (opcode == 121) {
+			this.lentTemplate = buffer.g2();
+		} else if (opcode == 122) {
+			this.lentLink = buffer.g2();
+		} else if (opcode == 125) {
+			this.manwearXOff = buffer.g1b();
+			this.manwearYOff = buffer.g1b();
+			this.manwearZOff = buffer.g1b();
+		} else if (opcode == 126) {
+			this.womanwearXOff = buffer.g1b();
+			this.womanwearYOff = buffer.g1b();
+			this.womanwearZOff = buffer.g1b();
+		} else if (opcode == 127) {
+			this.cursor1Op = buffer.g1();
+			this.cursor1 = buffer.g2();
+		} else if (opcode == 128) {
+			this.cursor2Op = buffer.g1();
+			this.cursor2 = buffer.g2();
+		} else if (opcode == 129) {
+			this.anInt5244 = buffer.g1();
+			this.anInt5204 = buffer.g2();
+		} else if (opcode == 130) {
+			this.anInt5221 = buffer.g1();
+			this.anInt5240 = buffer.g2();
+		} else if (opcode == 132) {
+			int count = buffer.g1();
+			this.anIntArray364 = new int[count];
+			for (int i = 0; i < count; i++) {
+				this.anIntArray364[i] = buffer.g2();
+			}
+		} else if (opcode == 249) {
+			int size = buffer.g1();
+			if (this.params == null) {
+				int buckets = Static162.clp2(size);
+				this.params = new HashTable(buckets);
+			}
+			for (int i = 0; i < size; i++) {
+				@Pc(503) boolean isString = buffer.g1() == 1;
+				@Pc(507) int id = buffer.ig3();
+				@Pc(516) Node node;
+				if (isString) {
+					node = new StringNode(buffer.gjstr());
+				} else {
+					node = new IntNode(buffer.mg4());
 				}
-			} else if (opcode == 41) {
-				local162 = buffer.g1();
-				this.aShortArray110 = new short[local162];
-				this.aShortArray111 = new short[local162];
-				for (local172 = 0; local172 < local162; local172++) {
-					this.aShortArray111[local172] = (short) buffer.g2();
-					this.aShortArray110[local172] = (short) buffer.g2();
-				}
-			} else if (opcode == 42) {
-				local162 = buffer.g1();
-				this.aByteArray72 = new byte[local162];
-				for (local172 = 0; local172 < local162; local172++) {
-					this.aByteArray72[local172] = buffer.g1b();
-				}
-			} else if (opcode == 65) {
-				this.stockMarket = true;
-			} else if (opcode == 78) {
-				this.anInt5201 = buffer.g2();
-			} else if (opcode == 79) {
-				this.anInt5207 = buffer.g2();
-			} else if (opcode == 90) {
-				this.anInt5208 = buffer.g2();
-			} else if (opcode == 91) {
-				this.anInt5200 = buffer.g2();
-			} else if (opcode == 92) {
-				this.anInt5251 = buffer.g2();
-			} else if (opcode == 93) {
-				this.anInt5243 = buffer.g2();
-			} else if (opcode == 95) {
-				this.anInt5249 = buffer.g2();
-			} else if (opcode == 96) {
-				this.dummyItem = buffer.g1();
-			} else if (opcode == 97) {
-				this.certificateLink = buffer.g2();
-			} else if (opcode == 98) {
-				this.certificateTemplate = buffer.g2();
-			} else if (opcode >= 100 && opcode < 110) {
-				if (this.countObj == null) {
-					this.countCount = new int[10];
-					this.countObj = new int[10];
-				}
-				this.countObj[opcode - 100] = buffer.g2();
-				this.countCount[opcode - 100] = buffer.g2();
-			} else if (opcode == 110) {
-				this.resizeX = buffer.g2();
-			} else if (opcode == 111) {
-				this.resizeY = buffer.g2();
-			} else if (opcode == 112) {
-				this.resizeZ = buffer.g2();
-			} else if (opcode == 113) {
-				this.ambient = buffer.g1b();
-			} else if (opcode == 114) {
-				this.contrast = buffer.g1b() * 5;
-			} else if (opcode == 115) {
-				this.team = buffer.g1();
-			} else if (opcode == 121) {
-				this.lentTemplate = buffer.g2();
-			} else if (opcode == 122) {
-				this.lentLink = buffer.g2();
-			} else if (opcode == 125) {
-				this.anInt5213 = buffer.g1b();
-				this.anInt5206 = buffer.g1b();
-				this.anInt5260 = buffer.g1b();
-			} else if (opcode == 126) {
-				this.anInt5222 = buffer.g1b();
-				this.anInt5231 = buffer.g1b();
-				this.anInt5254 = buffer.g1b();
-			} else if (opcode == 127) {
-				this.anInt5216 = buffer.g1();
-				this.anInt5238 = buffer.g2();
-			} else if (opcode == 128) {
-				this.anInt5218 = buffer.g1();
-				this.anInt5225 = buffer.g2();
-			} else if (opcode == 129) {
-				this.anInt5244 = buffer.g1();
-				this.anInt5204 = buffer.g2();
-			} else if (opcode == 130) {
-				this.anInt5221 = buffer.g1();
-				this.anInt5240 = buffer.g2();
-			} else if (opcode == 132) {
-				local162 = buffer.g1();
-				this.anIntArray364 = new int[local162];
-				for (local172 = 0; local172 < local162; local172++) {
-					this.anIntArray364[local172] = buffer.g2();
-				}
-			} else if (opcode == 249) {
-				local162 = buffer.g1();
-				if (this.params == null) {
-					local172 = Static162.clp2(local162);
-					this.params = new HashTable(local172);
-				}
-				for (local172 = 0; local172 < local162; local172++) {
-					@Pc(503) boolean isString = buffer.g1() == 1;
-					@Pc(507) int id = buffer.ig3();
-					@Pc(516) Node node;
-					if (isString) {
-						node = new StringNode(buffer.gjstr());
-					} else {
-						node = new IntNode(buffer.mg4());
-					}
-					this.params.put(node, (long) id);
-				}
+				this.params.put(node, id);
 			}
 		}
 	}
 
 	@OriginalMember(owner = "client!qf", name = "a", descriptor = "(BZ)Z")
 	public boolean method4769(@OriginalArg(1) boolean arg0) {
-		@Pc(6) int local6 = this.anInt5205;
-		@Pc(14) int local14 = this.anInt5248;
-		@Pc(17) int local17 = this.anInt5201;
+		@Pc(6) int local6 = this.manwear1;
+		@Pc(14) int local14 = this.manwear2;
+		@Pc(17) int local17 = this.manwear3;
 		if (arg0) {
-			local17 = this.anInt5207;
-			local6 = this.anInt5250;
-			local14 = this.anInt5211;
+			local17 = this.womanwear3;
+			local6 = this.womanwear1;
+			local14 = this.womanwear2;
 		}
 		if (local6 == -1) {
 			return true;
@@ -468,10 +466,10 @@ public final class ObjType {
 				local15 = arg4.method2806(local15, local102.method3826());
 			}
 			@Pc(129) int local129 = local15;
-			if (this.aShortArray111 != null) {
+			if (this.retex_s != null) {
 				local129 = local15 | 0x4000;
 			}
-			if (this.aShortArray113 != null || arg6 != null) {
+			if (this.recol_s != null || arg6 != null) {
 				local129 |= 0x2000;
 			}
 			if (this.resizeX != 128) {
@@ -492,18 +490,18 @@ public final class ObjType {
 				local102.method3841(this.resizeX, this.resizeY, this.resizeZ);
 			}
 			@Pc(229) int local229;
-			if (this.aShortArray113 != null) {
-				for (local229 = 0; local229 < this.aShortArray113.length; local229++) {
-					if (this.aByteArray72 == null || this.aByteArray72.length <= local229) {
-						local102.method3837(this.aShortArray113[local229], this.aShortArray112[local229]);
+			if (this.recol_s != null) {
+				for (local229 = 0; local229 < this.recol_s.length; local229++) {
+					if (this.recol_p == null || this.recol_p.length <= local229) {
+						local102.method3837(this.recol_s[local229], this.recol_d[local229]);
 					} else {
-						local102.method3837(this.aShortArray113[local229], Static147.aShortArray54[this.aByteArray72[local229] & 0xFF]);
+						local102.method3837(this.recol_s[local229], Static147.aShortArray54[this.recol_p[local229] & 0xFF]);
 					}
 				}
 			}
-			if (this.aShortArray111 != null) {
-				for (local229 = 0; local229 < this.aShortArray111.length; local229++) {
-					local102.method3815(this.aShortArray111[local229], this.aShortArray110[local229]);
+			if (this.retex_s != null) {
+				for (local229 = 0; local229 < this.retex_s.length; local229++) {
+					local102.method3815(this.retex_s[local229], this.retex_d[local229]);
 				}
 			}
 			if (arg6 != null) {
@@ -535,11 +533,11 @@ public final class ObjType {
 
 	@OriginalMember(owner = "client!qf", name = "a", descriptor = "(IZ)Lclient!pr;")
 	public Class185 method4777(@OriginalArg(1) boolean arg0) {
-		@Pc(8) int local8 = this.anInt5208;
-		@Pc(11) int local11 = this.anInt5251;
+		@Pc(8) int local8 = this.manhead1;
+		@Pc(11) int local11 = this.manhead2;
 		if (arg0) {
-			local11 = this.anInt5243;
-			local8 = this.anInt5200;
+			local11 = this.womanhead2;
+			local8 = this.womanhead1;
 		}
 		if (local8 == -1) {
 			return null;
@@ -551,14 +549,14 @@ public final class ObjType {
 			local32 = new Class185(local55, 2);
 		}
 		@Pc(66) int local66;
-		if (this.aShortArray113 != null) {
-			for (local66 = 0; local66 < this.aShortArray113.length; local66++) {
-				local32.method4662(this.aShortArray113[local66], this.aShortArray112[local66]);
+		if (this.recol_s != null) {
+			for (local66 = 0; local66 < this.recol_s.length; local66++) {
+				local32.method4662(this.recol_s[local66], this.recol_d[local66]);
 			}
 		}
-		if (this.aShortArray111 != null) {
-			for (local66 = 0; local66 < this.aShortArray111.length; local66++) {
-				local32.method4657(this.aShortArray110[local66], this.aShortArray111[local66]);
+		if (this.retex_s != null) {
+			for (local66 = 0; local66 < this.retex_s.length; local66++) {
+				local32.method4657(this.retex_d[local66], this.retex_s[local66]);
 			}
 		}
 		return local32;
@@ -566,13 +564,13 @@ public final class ObjType {
 
 	@OriginalMember(owner = "client!qf", name = "b", descriptor = "(BZ)Lclient!pr;")
 	public Class185 method4778(@OriginalArg(1) boolean arg0) {
-		@Pc(8) int local8 = this.anInt5205;
-		@Pc(11) int local11 = this.anInt5248;
-		@Pc(14) int local14 = this.anInt5201;
+		@Pc(8) int local8 = this.manwear1;
+		@Pc(11) int local11 = this.manwear2;
+		@Pc(14) int local14 = this.manwear3;
 		if (arg0) {
-			local8 = this.anInt5250;
-			local11 = this.anInt5211;
-			local14 = this.anInt5207;
+			local8 = this.womanwear1;
+			local11 = this.womanwear2;
+			local14 = this.womanwear3;
 		}
 		if (local8 == -1) {
 			return null;
@@ -592,44 +590,44 @@ public final class ObjType {
 		if (local46 == null) {
 			return null;
 		}
-		if (!arg0 && (this.anInt5213 != 0 || this.anInt5206 != 0 || this.anInt5260 != 0)) {
-			local46.translate(this.anInt5213, this.anInt5260, this.anInt5206);
+		if (!arg0 && (this.manwearXOff != 0 || this.manwearYOff != 0 || this.manwearZOff != 0)) {
+			local46.translate(this.manwearXOff, this.manwearZOff, this.manwearYOff);
 		}
-		if (arg0 && (this.anInt5222 != 0 || this.anInt5231 != 0 || this.anInt5254 != 0)) {
-			local46.translate(this.anInt5222, this.anInt5254, this.anInt5231);
+		if (arg0 && (this.womanwearXOff != 0 || this.womanwearYOff != 0 || this.womanwearZOff != 0)) {
+			local46.translate(this.womanwearXOff, this.womanwearZOff, this.womanwearYOff);
 		}
 		@Pc(171) int local171;
-		if (this.aShortArray113 != null) {
-			for (local171 = 0; local171 < this.aShortArray113.length; local171++) {
-				local46.method4662(this.aShortArray113[local171], this.aShortArray112[local171]);
+		if (this.recol_s != null) {
+			for (local171 = 0; local171 < this.recol_s.length; local171++) {
+				local46.method4662(this.recol_s[local171], this.recol_d[local171]);
 			}
 		}
-		if (this.aShortArray111 != null) {
-			for (local171 = 0; local171 < this.aShortArray111.length; local171++) {
-				local46.method4657(this.aShortArray110[local171], this.aShortArray111[local171]);
+		if (this.retex_s != null) {
+			for (local171 = 0; local171 < this.retex_s.length; local171++) {
+				local46.method4657(this.retex_d[local171], this.retex_s[local171]);
 			}
 		}
 		return local46;
 	}
 
 	@OriginalMember(owner = "client!qf", name = "a", descriptor = "(ILclient!qf;Lclient!qf;)V")
-	public void generateCertificate(@OriginalArg(1) ObjType arg0, @OriginalArg(2) ObjType arg1) {
-		this.aShortArray110 = arg1.aShortArray110;
-		this.aByteArray72 = arg1.aByteArray72;
-		this.anInt5245 = arg1.anInt5245;
-		this.model = arg1.model;
-		this.anInt5249 = arg1.anInt5249;
-		this.aShortArray112 = arg1.aShortArray112;
-		this.aShortArray113 = arg1.aShortArray113;
-		this.anInt5232 = arg1.anInt5232;
-		this.aShortArray111 = arg1.aShortArray111;
-		this.cost = arg0.cost;
-		this.anInt5215 = arg1.anInt5215;
-		this.anInt5252 = arg1.anInt5252;
-		this.name = arg0.name;
+	public void generateCertificate(@OriginalArg(1) ObjType link, @OriginalArg(2) ObjType template) {
+		this.retex_d = template.retex_d;
+		this.recol_p = template.recol_p;
+		this.xAngle2D = template.xAngle2D;
+		this.model = template.model;
+		this.zAngle2D = template.zAngle2D;
+		this.recol_d = template.recol_d;
+		this.recol_s = template.recol_s;
+		this.yOffset2D = template.yOffset2D;
+		this.retex_s = template.retex_s;
+		this.cost = link.cost;
+		this.yAngle2D = template.yAngle2D;
+		this.xOffset2D = template.xOffset2D;
+		this.name = link.name;
 		this.stackable = 1;
-		this.zoom2d = arg1.zoom2d;
-		this.members = arg0.members;
+		this.zoom2d = template.zoom2d;
+		this.members = link.members;
 	}
 
 	@OriginalMember(owner = "client!qf", name = "a", descriptor = "(Lclient!ur;Lclient!jo;BLclient!wm;ILclient!wm;IIIZ)[I")
@@ -639,18 +637,18 @@ public final class ObjType {
 			return null;
 		}
 		@Pc(23) int local23;
-		if (this.aShortArray113 != null) {
-			for (local23 = 0; local23 < this.aShortArray113.length; local23++) {
-				if (this.aByteArray72 == null || this.aByteArray72.length <= local23) {
-					local14.method4662(this.aShortArray113[local23], this.aShortArray112[local23]);
+		if (this.recol_s != null) {
+			for (local23 = 0; local23 < this.recol_s.length; local23++) {
+				if (this.recol_p == null || this.recol_p.length <= local23) {
+					local14.method4662(this.recol_s[local23], this.recol_d[local23]);
 				} else {
-					local14.method4662(this.aShortArray113[local23], Static147.aShortArray54[this.aByteArray72[local23] & 0xFF]);
+					local14.method4662(this.recol_s[local23], Static147.aShortArray54[this.recol_p[local23] & 0xFF]);
 				}
 			}
 		}
-		if (this.aShortArray111 != null) {
-			for (local23 = 0; local23 < this.aShortArray111.length; local23++) {
-				local14.method4657(this.aShortArray110[local23], this.aShortArray111[local23]);
+		if (this.retex_s != null) {
+			for (local23 = 0; local23 < this.retex_s.length; local23++) {
+				local14.method4657(this.retex_d[local23], this.retex_s[local23]);
 			}
 		}
 		if (arg1 != null) {
@@ -703,10 +701,10 @@ public final class ObjType {
 		arg4.method2838(1.0F);
 		arg4.method2832(16777215, 1.0F, 1.0F, -50.0F, -10.0F, -50.0F);
 		@Pc(333) Class14 local333 = arg4.method2808();
-		local333.method3930(-this.anInt5249 << 3);
-		local333.method3925(this.anInt5215 << 3);
-		local333.method3935(this.anInt5252, (Class19.anIntArray178[this.anInt5245 << 3] * local287 >> 15) + (this.anInt5232 - (local210.method3801() / 2)), this.anInt5232 + (local287 * Class19.COSINE[this.anInt5245 << 3] >> 15));
-		local333.method3928(this.anInt5245 << 3);
+		local333.method3930(-this.zAngle2D << 3);
+		local333.method3925(this.yAngle2D << 3);
+		local333.method3935(this.xOffset2D, (Class19.anIntArray178[this.xAngle2D << 3] * local287 >> 15) + (this.yOffset2D - (local210.method3801() / 2)), this.yOffset2D + (local287 * Class19.COSINE[this.xAngle2D << 3] >> 15));
+		local333.method3928(this.xAngle2D << 3);
 		@Pc(392) int local392 = arg4.method2814();
 		@Pc(395) int local395 = arg4.method2875();
 		arg4.method2872(50, Integer.MAX_VALUE);
@@ -732,7 +730,7 @@ public final class ObjType {
 			local227.method6384(0, 0);
 		}
 		if (arg5 == 1 || arg5 == 2 && (this.stackable == 1 || arg7 != 1) && arg7 != -1) {
-			arg0.method5896(0, -16777215, 9, -256, this.method4785(arg7));
+			arg0.method5896(0, -16777215, 9, -256, this.countString(arg7));
 		}
 		local427 = arg4.method2850();
 		for (@Pc(525) int local525 = 0; local525 < local427.length; local525++) {
@@ -746,16 +744,16 @@ public final class ObjType {
 	}
 
 	@OriginalMember(owner = "client!qf", name = "a", descriptor = "(II)Lclient!qf;")
-	public ObjType method4781(@OriginalArg(0) int arg0) {
-		if (this.countObj != null && arg0 > 1) {
-			@Pc(13) int local13 = -1;
-			for (@Pc(15) int local15 = 0; local15 < 10; local15++) {
-				if (arg0 >= this.countCount[local15] && this.countCount[local15] != 0) {
-					local13 = this.countObj[local15];
+	public ObjType getCountObjType(@OriginalArg(0) int count) {
+		if (this.countObj != null && count > 1) {
+			@Pc(13) int id = -1;
+			for (@Pc(15) int i = 0; i < 10; i++) {
+				if (count >= this.countCount[i] && this.countCount[i] != 0) {
+					id = this.countObj[i];
 				}
 			}
-			if (local13 != -1) {
-				return this.aClass107_1.get(local13);
+			if (id != -1) {
+				return this.aClass107_1.get(id);
 			}
 		}
 		return this;
@@ -763,11 +761,11 @@ public final class ObjType {
 
 	@OriginalMember(owner = "client!qf", name = "c", descriptor = "(BZ)Z")
 	public boolean method4782(@OriginalArg(1) boolean arg0) {
-		@Pc(6) int local6 = this.anInt5208;
-		@Pc(9) int local9 = this.anInt5251;
+		@Pc(6) int local6 = this.manhead1;
+		@Pc(9) int local9 = this.manhead2;
 		if (arg0) {
-			local6 = this.anInt5200;
-			local9 = this.anInt5243;
+			local6 = this.womanhead1;
+			local9 = this.womanhead2;
 		}
 		if (local6 == -1) {
 			return true;
@@ -784,57 +782,57 @@ public final class ObjType {
 
 	@OriginalMember(owner = "client!qf", name = "a", descriptor = "(Lclient!qf;Lclient!qf;I)V")
 	public void generateLent(@OriginalArg(0) ObjType arg0, @OriginalArg(1) ObjType link) {
-		this.anInt5213 = link.anInt5213;
-		this.anInt5200 = link.anInt5200;
-		this.anInt5215 = arg0.anInt5215;
-		this.aShortArray110 = link.aShortArray110;
-		this.anInt5208 = link.anInt5208;
-		this.aShortArray113 = link.aShortArray113;
+		this.manwearXOff = link.manwearXOff;
+		this.womanhead1 = link.womanhead1;
+		this.yAngle2D = arg0.yAngle2D;
+		this.retex_d = link.retex_d;
+		this.manhead1 = link.manhead1;
+		this.recol_s = link.recol_s;
 		this.name = link.name;
-		this.anInt5231 = link.anInt5231;
-		this.anInt5243 = link.anInt5243;
+		this.womanwearYOff = link.womanwearYOff;
+		this.womanhead2 = link.womanhead2;
 		this.iOps = new String[5];
-		this.anInt5248 = link.anInt5248;
-		this.aStringArray50 = link.aStringArray50;
-		this.anInt5251 = link.anInt5251;
-		this.anInt5211 = link.anInt5211;
+		this.manwear2 = link.manwear2;
+		this.ops = link.ops;
+		this.manhead2 = link.manhead2;
+		this.womanwear2 = link.womanwear2;
 		this.zoom2d = arg0.zoom2d;
-		this.anInt5207 = link.anInt5207;
+		this.womanwear3 = link.womanwear3;
 		this.params = link.params;
-		this.anInt5252 = arg0.anInt5252;
-		this.anInt5232 = arg0.anInt5232;
-		this.anInt5254 = link.anInt5254;
+		this.xOffset2D = arg0.xOffset2D;
+		this.yOffset2D = arg0.yOffset2D;
+		this.womanwearZOff = link.womanwearZOff;
 		this.model = arg0.model;
 		this.members = link.members;
-		this.anInt5249 = arg0.anInt5249;
-		this.anInt5201 = link.anInt5201;
-		this.anInt5206 = link.anInt5206;
-		this.aShortArray111 = link.aShortArray111;
-		this.anInt5222 = link.anInt5222;
+		this.zAngle2D = arg0.zAngle2D;
+		this.manwear3 = link.manwear3;
+		this.manwearYOff = link.manwearYOff;
+		this.retex_s = link.retex_s;
+		this.womanwearXOff = link.womanwearXOff;
 		this.cost = 0;
-		this.anInt5250 = link.anInt5250;
-		this.aByteArray72 = link.aByteArray72;
-		this.aShortArray112 = link.aShortArray112;
+		this.womanwear1 = link.womanwear1;
+		this.recol_p = link.recol_p;
+		this.recol_d = link.recol_d;
 		this.team = link.team;
-		this.anInt5245 = arg0.anInt5245;
-		this.anInt5205 = link.anInt5205;
-		this.anInt5260 = link.anInt5260;
+		this.xAngle2D = arg0.xAngle2D;
+		this.manwear1 = link.manwear1;
+		this.manwearZOff = link.manwearZOff;
 		if (link.iOps != null) {
-			for (@Pc(149) int local149 = 0; local149 < 4; local149++) {
-				this.iOps[local149] = link.iOps[local149];
+			for (@Pc(149) int i = 0; i < 4; i++) {
+				this.iOps[i] = link.iOps[i];
 			}
 		}
 		this.iOps[4] = LocalisedText.LENT_ITEM_RETURN.getLocalisedText(this.aClass107_1.anInt2781);
 	}
 
 	@OriginalMember(owner = "client!qf", name = "a", descriptor = "(IB)Ljava/lang/String;")
-	private String method4785(@OriginalArg(0) int arg0) {
-		if (arg0 < 100000) {
-			return "<col=ffff00>" + arg0 + "</col>";
-		} else if (arg0 < 10000000) {
-			return "<col=ffffff>" + arg0 / 1000 + Static350.A_TRANSLATABLE_STRING___135.getLocalisedText(this.aClass107_1.anInt2781) + "</col>";
+	private String countString(@OriginalArg(0) int count) {
+		if (count < 100000) {
+			return "<col=ffff00>" + count + "</col>";
+		} else if (count < 10000000) {
+			return "<col=ffffff>" + count / 1000 + LocalisedText.THOUSAND_SHORT.getLocalisedText(this.aClass107_1.anInt2781) + "</col>";
 		} else {
-			return "<col=00ff80>" + arg0 / 1000000 + Static259.A_TRANSLATABLE_STRING___106.getLocalisedText(this.aClass107_1.anInt2781) + "</col>";
+			return "<col=00ff80>" + count / 1000000 + LocalisedText.MILLION_SHORT.getLocalisedText(this.aClass107_1.anInt2781) + "</col>";
 		}
 	}
 }

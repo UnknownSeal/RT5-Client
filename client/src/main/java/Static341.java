@@ -61,7 +61,7 @@ public final class Static341 {
 			}
 		}
 		if (!local11) {
-			Static207.method3699(Static139.A_TRANSLATABLE_STRING___60.getLocalisedText(client.language) + arg1);
+			Static207.method3699(LocalisedText.UNABLE_TO_FIND.getLocalisedText(client.language) + arg1);
 		}
 	}
 

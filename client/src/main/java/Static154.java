@@ -16,9 +16,6 @@ public final class Static154 {
 	@OriginalMember(owner = "client!is", name = "k", descriptor = "I")
 	public static int anInt2807 = 0;
 
-	@OriginalMember(owner = "client!is", name = "l", descriptor = "Lclient!gd;")
-	public static final LocalisedText A_TRANSLATABLE_STRING___66 = new LocalisedText("cyan:", "blaugrün:", "cyan:", "cyan:");
-
 	@OriginalMember(owner = "client!is", name = "m", descriptor = "J")
 	public static long aLong89 = 0L;
 

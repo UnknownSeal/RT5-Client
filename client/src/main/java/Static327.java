@@ -76,7 +76,7 @@ public final class Static327 {
 					}
 				} else {
 					if (Static106.aClass50_1 == client.game) {
-						Static1.add(-1, true, local56, false, LocalisedText.FACEHERE.getLocalisedText(client.language), local54, 59, "", -1, 0L);
+						Static1.add(-1, true, local56, false, LocalisedText.FACE_HERE.getLocalisedText(client.language), local54, 59, "", -1, 0L);
 					}
 					Static1.add(-1, true, local56, false, Static330.aString62, local54, 22, "", -1, 0L);
 				}
@@ -169,7 +169,7 @@ public final class Static327 {
 							@Pc(1054) ObjType local1054 = Static313.aClass107_2.get(local1046.anInt1717);
 							if (!Static330.aBoolean419) {
 								if (local354.anInt4073 == Static17.self.aByte78) {
-									@Pc(1134) String[] local1134 = local1054.aStringArray50;
+									@Pc(1134) String[] local1134 = local1054.ops;
 									for (local88 = 4; local88 >= 0; local88--) {
 										if (local1134 != null && local1134[local88] != null) {
 											@Pc(1146) byte local1146 = 0;
@@ -189,11 +189,11 @@ public final class Static327 {
 											if (local88 == 4) {
 												local1146 = 21;
 											}
-											if (local88 == local1054.anInt5216) {
-												local473 = local1054.anInt5238;
+											if (local88 == local1054.cursor1Op) {
+												local473 = local1054.cursor1;
 											}
-											if (local88 == local1054.anInt5218) {
-												local473 = local1054.anInt5225;
+											if (local88 == local1054.cursor2Op) {
+												local473 = local1054.cursor2;
 											}
 											Static1.add(-1, true, local354.anInt4075, false, local1134[local88], local354.anInt4076, local1146, "<col=ff9040>" + local1054.name, local473, (long) local1046.anInt1717);
 										}

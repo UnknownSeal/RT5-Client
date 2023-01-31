@@ -16,9 +16,6 @@ public final class Static256 {
 	@OriginalMember(owner = "client!om", name = "K", descriptor = "[I")
 	public static final int[] anIntArray321 = new int[50];
 
-	@OriginalMember(owner = "client!om", name = "fb", descriptor = "Lclient!gd;")
-	public static final LocalisedText A_TRANSLATABLE_STRING___102 = new LocalisedText("Loading - please wait.", "Ladevorgang - bitte warte.", "Chargement en cours. Veuillez patienter.", "Carregando. Aguarde.");
-
 	@OriginalMember(owner = "client!om", name = "nb", descriptor = "I")
 	public static final int anInt4744 = anInt4716 >> 2;
 

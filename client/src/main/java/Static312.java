@@ -6,12 +6,6 @@ public final class Static312 {
 	@OriginalMember(owner = "client!sa", name = "V", descriptor = "I")
 	public static int maxID;
 
-	@OriginalMember(owner = "client!sa", name = "P", descriptor = "Lclient!gd;")
-	public static final LocalisedText A_TRANSLATABLE_STRING___123 = new LocalisedText("Loaded textures", "Texturen geladen.", "Textures chargées", "Texturas carregadas");
-
-	@OriginalMember(owner = "client!sa", name = "U", descriptor = "Lclient!gd;")
-	public static final LocalisedText A_TRANSLATABLE_STRING___124 = new LocalisedText("K", "T", "K", "K");
-
 	@OriginalMember(owner = "client!sa", name = "W", descriptor = "I")
 	public static int anInt5844 = -1;
 

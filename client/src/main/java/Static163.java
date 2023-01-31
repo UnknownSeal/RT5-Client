@@ -12,9 +12,6 @@ public final class Static163 {
 	@OriginalMember(owner = "client!jj", name = "Y", descriptor = "Lclient!ku;")
 	public static Class15 aClass15_1;
 
-	@OriginalMember(owner = "client!jj", name = "R", descriptor = "Lclient!gd;")
-	public static final LocalisedText A_TRANSLATABLE_STRING___68 = new LocalisedText("Loading world map - ", "Lade Weltkarte - ", "Chargement de la mappemonde - ", "Carregando mapa-múndi - ");
-
 	@OriginalMember(owner = "client!jj", name = "U", descriptor = "Lclient!mc;")
 	public static final Class145 aClass145_116 = new Class145(34, -1);
 

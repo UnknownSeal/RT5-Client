@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static146 {
 
-	@OriginalMember(owner = "client!ih", name = "b", descriptor = "Lclient!gd;")
-	public static final LocalisedText A_TRANSLATABLE_STRING___63 = new LocalisedText("Allocated memory", "Zugewiesener Speicher.", "Mémoire attribuée", "Memória alocada");
-
 	@OriginalMember(owner = "client!ih", name = "f", descriptor = "I")
 	public static int anInt2703 = 0;
 

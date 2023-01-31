@@ -23,7 +23,7 @@ public final class Static383 {
 			if (settings.length() == 0) {
 				cookie = cookie + "; Expires=Thu, 01-Jan-1970 00:00:00 GMT; Max-Age=0";
 			} else {
-				cookie = cookie + "; Expires=" + Static15.method393(MonotonicClock.currentTimeMillis() + 94608000000L) + "; Max-Age=" + 94608000L;
+				cookie = cookie + "; Expires=" + Static15.formatHttpDate(MonotonicClock.currentTimeMillis() + 94608000000L) + "; Max-Age=" + 94608000L;
 			}
 			BrowserControl.eval(GameShell.signlink.applet, "document.cookie=\"" + cookie + "\"");
 		} catch (@Pc(89) Throwable exception) {

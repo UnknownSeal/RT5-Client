@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static340 {
 
-	@OriginalMember(owner = "client!tp", name = "a", descriptor = "Lclient!gd;")
-	public static final LocalisedText A_TRANSLATABLE_STRING___133 = new LocalisedText("Loaded world list data", "Liste der Welten geladen", "Liste des serveurs chargée", "Dados da lista de mundos carregados");
-
 	@OriginalMember(owner = "client!tp", name = "k", descriptor = "Lclient!h;")
 	public static final Class89 aClass89_227 = new Class89(101, 14);
 

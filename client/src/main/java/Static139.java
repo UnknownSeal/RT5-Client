@@ -16,14 +16,8 @@ public final class Static139 {
 	@OriginalMember(owner = "client!hs", name = "r", descriptor = "Lclient!h;")
 	public static final Class89 aClass89_108 = new Class89(59, -2);
 
-	@OriginalMember(owner = "client!hs", name = "s", descriptor = "Lclient!gd;")
-	public static final LocalisedText A_TRANSLATABLE_STRING___60 = new LocalisedText("Unable to find ", "Spieler kann nicht gefunden werden: ", "Impossible de trouver ", "Não é possível encontrar ");
-
 	@OriginalMember(owner = "client!hs", name = "u", descriptor = "I")
 	public static int anInt2593 = -50;
-
-	@OriginalMember(owner = "client!hs", name = "x", descriptor = "Lclient!gd;")
-	public static final LocalisedText A_TRANSLATABLE_STRING___62 = new LocalisedText("glow3:", "leuchten3:", "brillant3:", "brilho3:");
 
 	@OriginalMember(owner = "client!hs", name = "z", descriptor = "I")
 	public static int anInt2595 = -1;

@@ -13,9 +13,6 @@ public final class Static179 {
 	@OriginalMember(owner = "client!kg", name = "t", descriptor = "Lclient!h;")
 	public static final Class89 aClass89_143 = new Class89(11, -1);
 
-	@OriginalMember(owner = "client!kg", name = "v", descriptor = "Lclient!gd;")
-	public static final LocalisedText A_TRANSLATABLE_STRING___73 = new LocalisedText("Opened title screen", "Titelbild geöffnet.", "Écran-titre ouvert", "Tela título aberta");
-
 	@OriginalMember(owner = "client!kg", name = "a", descriptor = "(BI)V")
 	public static void method3363(@OriginalArg(1) int arg0) {
 		@Pc(16) DelayedStateChange local16 = Static316.create(3, arg0);

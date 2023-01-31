@@ -14,7 +14,7 @@ public final class Static318 {
 
 	@OriginalMember(owner = "client!sj", name = "a", descriptor = "(BLclient!cf;)Ljava/lang/String;")
 	public static String method5420(@OriginalArg(1) Class2_Sub5 arg0) {
-		return arg0.aString11 == null || arg0.aString11.length() <= 0 ? arg0.aString10 : arg0.aString10 + Static161.A_TRANSLATABLE_STRING___67.getLocalisedText(client.language) + arg0.aString11;
+		return arg0.aString11 == null || arg0.aString11.length() <= 0 ? arg0.aString10 : arg0.aString10 + LocalisedText.A_TRANSLATABLE_STRING___67.getLocalisedText(client.language) + arg0.aString11;
 	}
 
 	@OriginalMember(owner = "client!sj", name = "b", descriptor = "(I)V")

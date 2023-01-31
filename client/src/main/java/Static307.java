@@ -8,9 +8,6 @@ public final class Static307 {
 	@OriginalMember(owner = "client!rq", name = "m", descriptor = "Ljava/lang/String;")
 	public static String aString57;
 
-	@OriginalMember(owner = "client!rq", name = "l", descriptor = "Lclient!gd;")
-	public static final LocalisedText A_TRANSLATABLE_STRING___121 = new LocalisedText("Loading wordpack - ", "Lade Wordpack - ", "Chargement du module texte - ", "Carregando pacote de palavras - ");
-
 	@OriginalMember(owner = "client!rq", name = "n", descriptor = "I")
 	public static int anInt5780 = 0;
 

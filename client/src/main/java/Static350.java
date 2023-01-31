@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static350 {
 
-	@OriginalMember(owner = "client!ue", name = "a", descriptor = "Lclient!gd;")
-	public static final LocalisedText A_TRANSLATABLE_STRING___135 = new LocalisedText("K", "T", "K", "K");
-
 	@OriginalMember(owner = "client!ue", name = "a", descriptor = "(I)V")
 	public static void method5836() {
 		if (Static140.aBoolean187) {

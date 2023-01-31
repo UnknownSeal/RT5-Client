@@ -29,9 +29,6 @@ public final class Static5 {
 	@OriginalMember(owner = "client!ad", name = "r", descriptor = "[I")
 	public static final int[] anIntArray3 = new int[] { 0, 1, 2, 3, 4, 5, 6, 14 };
 
-	@OriginalMember(owner = "client!ad", name = "w", descriptor = "Lclient!gd;")
-	public static final LocalisedText A_TRANSLATABLE_STRING___2 = new LocalisedText("skill: ", "Fertigkeit: ", "compétence ", "habilidade: ");
-
 	@OriginalMember(owner = "client!ad", name = "a", descriptor = "(IIILclient!ml;II)Ljava/awt/Frame;")
 	public static Frame method85(@OriginalArg(0) int arg0, @OriginalArg(3) Class152 arg1, @OriginalArg(4) int arg2, @OriginalArg(5) int arg3) {
 		if (!arg1.method3764()) {

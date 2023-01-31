@@ -7,9 +7,6 @@ public final class Static294 {
 	@OriginalMember(owner = "client!qt", name = "v", descriptor = "Lclient!r;")
 	public static Js5 aJs5_75;
 
-	@OriginalMember(owner = "client!qt", name = "u", descriptor = "Lclient!gd;")
-	public static final LocalisedText A_TRANSLATABLE_STRING___117 = new LocalisedText("Loading world list data", "Lade Liste der Welten", "Chargement de la liste des serveurs", "Carregando dados da lista de mundos");
-
 	@OriginalMember(owner = "client!qt", name = "E", descriptor = "Z")
 	public static boolean aBoolean392 = false;
 

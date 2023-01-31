@@ -7,9 +7,6 @@ public final class Static44 {
 	@OriginalMember(owner = "client!cl", name = "A", descriptor = "I")
 	public static int anInt1105;
 
-	@OriginalMember(owner = "client!cl", name = "u", descriptor = "Lclient!gd;")
-	public static final LocalisedText A_TRANSLATABLE_STRING___26 = new LocalisedText(" is already on your ignore list.", " steht bereits auf deiner Ignorieren-Liste!", " est déjà dans votre liste noire.", " já está na sua lista de ignorados.");
-
 	@OriginalMember(owner = "client!cl", name = "B", descriptor = "I")
 	public static int anInt1106 = 20;
 

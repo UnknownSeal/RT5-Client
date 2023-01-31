@@ -6,9 +6,6 @@ public final class Static325 {
 	@OriginalMember(owner = "client!sr", name = "a", descriptor = "Lclient!o;")
 	public static Interface9 anInterface9_1 = null;
 
-	@OriginalMember(owner = "client!sr", name = "b", descriptor = "Lclient!gd;")
-	public static final LocalisedText A_TRANSLATABLE_STRING___126 = new LocalisedText("Loading additional fonts - ", "Lade Zusatzschriftarten - ", "Chargement de polices secondaires - ", "Carregando fontes principais - ");
-
 	@OriginalMember(owner = "client!sr", name = "f", descriptor = "I")
 	public static int anInt6079 = 0;
 

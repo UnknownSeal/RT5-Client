@@ -7,9 +7,6 @@ public final class Static252 {
 	@OriginalMember(owner = "client!oi", name = "i", descriptor = "Lclient!jd;")
 	public static Class13 aClass13_14;
 
-	@OriginalMember(owner = "client!oi", name = "h", descriptor = "Lclient!gd;")
-	public static final LocalisedText A_TRANSLATABLE_STRING___100 = new LocalisedText("Starting 3d Library", "Starte 3D-Softwarebibliothek.", "Démarrage de la librairie 3D", "Iniciando biblioteca 3D");
-
 	@OriginalMember(owner = "client!oi", name = "a", descriptor = "(ZII)V")
 	public static void method4364(@OriginalArg(0) boolean arg0, @OriginalArg(2) int arg1) {
 		if (arg1 == 0) {
@@ -20,7 +17,7 @@ public final class Static252 {
 				Static190.aClass19_8.method2867(0);
 				@Pc(22) Class239 local22 = Static101.method2165(Static371.anInt7014, Static255.aJs5_64);
 				@Pc(31) Class130 local31 = Static190.aClass19_8.method2857(local22, Static396.method1688(Static30.aJs5_5, Static371.anInt7014));
-				Static351.method5856(local31, true, Static256.A_TRANSLATABLE_STRING___102.getLocalisedText(client.language));
+				Static351.method5856(local31, true, LocalisedText.LOADING_PLEASE_WAIT.getLocalisedText(client.language));
 				Static190.aClass19_8.method2883();
 				Static372.method6259();
 				Static190.aClass19_8.method2825();

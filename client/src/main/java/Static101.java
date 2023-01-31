@@ -7,9 +7,6 @@ public final class Static101 {
 	@OriginalMember(owner = "client!fo", name = "h", descriptor = "Lclient!r;")
 	public static Js5 aJs5_23;
 
-	@OriginalMember(owner = "client!fo", name = "e", descriptor = "Lclient!gd;")
-	public static final LocalisedText A_TRANSLATABLE_STRING___44 = new LocalisedText("Members object", "Gegenstand für Mitglieder", "Objet d'abonnés", "Objeto para membros");
-
 	@OriginalMember(owner = "client!fo", name = "f", descriptor = "Lclient!mc;")
 	public static final Class145 aClass145_75 = new Class145(8, 6);
 

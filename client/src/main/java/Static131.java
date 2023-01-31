@@ -7,9 +7,6 @@ public final class Static131 {
 	@OriginalMember(owner = "client!hi", name = "d", descriptor = "Lclient!cm;")
 	public static Class36 aClass36_4;
 
-	@OriginalMember(owner = "client!hi", name = "a", descriptor = "Lclient!gd;")
-	public static final LocalisedText A_TRANSLATABLE_STRING___82 = new LocalisedText("Please wait...", "Bitte warte...", "Veuillez patienter...", "Aguarde...");
-
 	@OriginalMember(owner = "client!hi", name = "c", descriptor = "[S")
 	public static final short[] aShortArray65 = new short[] { -10304, 9104, -1, -1, -1 };
 

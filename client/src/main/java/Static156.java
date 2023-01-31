@@ -44,7 +44,7 @@ public final class Static156 {
 		@Pc(11) int local11 = 0;
 		for (@Pc(13) int local13 = 0; local13 < Static313.aClass107_2.anInt2779; local13++) {
 			@Pc(20) ObjType local20 = Static313.aClass107_2.get(local13);
-			if (local20.anInt5205 >= 0 || local20.anInt5250 >= 0) {
+			if (local20.manwear1 >= 0 || local20.womanwear1 >= 0) {
 				local9[local11++] = local13;
 			}
 		}

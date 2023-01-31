@@ -46,7 +46,7 @@ public final class Static184 {
 				local146 = arg1.method4071() + (local23 ? Static178.getCombatLevelColor(Static17.self.combatLevel, arg1.combatLevel) : "<col=ffffff>") + " (" + local109 + arg1.combatLevel + "+" + (arg1.anInt4171 - arg1.combatLevel) + ")";
 			}
 		} else {
-			local146 = arg1.method4071() + " (" + Static5.A_TRANSLATABLE_STRING___2.getLocalisedText(client.language) + arg1.anInt4173 + ")";
+			local146 = arg1.method4071() + " (" + LocalisedText.SKILL.getLocalisedText(client.language) + arg1.anInt4173 + ")";
 		}
 		if (Static330.aBoolean419) {
 			if (!arg0 && (Static115.anInt3837 & 0x8) != 0) {

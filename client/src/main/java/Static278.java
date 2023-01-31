@@ -10,9 +10,6 @@ public final class Static278 {
 	@OriginalMember(owner = "client!qb", name = "W", descriptor = "Lclient!ng;")
 	public static Class160 aClass160_1;
 
-	@OriginalMember(owner = "client!qb", name = "N", descriptor = "Lclient!gd;")
-	public static final LocalisedText A_TRANSLATABLE_STRING___110 = new LocalisedText("purple:", "lila:", "violet:", "roxo:");
-
 	@OriginalMember(owner = "client!qb", name = "T", descriptor = "Z")
 	public static boolean aBoolean377 = false;
 

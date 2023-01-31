@@ -64,7 +64,7 @@ public final class Static6 {
 			}
 			if (Static45.method1404(arg0).method1855()) {
 				if (arg0.pausText == null) {
-					Static1.add(arg0.anInt4300, true, arg0.id, false, Static262.A_TRANSLATABLE_STRING___145.getLocalisedText(client.language), arg0.createdComponentID, 30, "", -1, 0L);
+					Static1.add(arg0.anInt4300, true, arg0.id, false, LocalisedText.CONTINUE.getLocalisedText(client.language), arg0.createdComponentID, 30, "", -1, 0L);
 				} else {
 					Static1.add(arg0.anInt4300, true, arg0.id, false, arg0.pausText, arg0.createdComponentID, 30, "", -1, 0L);
 				}

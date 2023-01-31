@@ -16,9 +16,6 @@ public final class Static201 {
 	@OriginalMember(owner = "client!lp", name = "e", descriptor = "J")
 	public static long serverKey = 0L;
 
-	@OriginalMember(owner = "client!lp", name = "f", descriptor = "Lclient!gd;")
-	public static final LocalisedText A_TRANSLATABLE_STRING___80 = new LocalisedText("Loaded title screen", "Titelbild geladen.", "Écran-titre chargé", "Tela título carregada");
-
 	@OriginalMember(owner = "client!lp", name = "g", descriptor = "[C")
 	public static final char[] aCharArray3 = new char[] { ' ', ' ', '_', '-', 'à', 'á', 'â', 'ä', 'ã', 'À', 'Á', 'Â', 'Ä', 'Ã', 'è', 'é', 'ê', 'ë', 'È', 'É', 'Ê', 'Ë', 'í', 'î', 'ï', 'Í', 'Î', 'Ï', 'ò', 'ó', 'ô', 'ö', 'õ', 'Ò', 'Ó', 'Ô', 'Ö', 'Õ', 'ù', 'ú', 'û', 'ü', 'Ù', 'Ú', 'Û', 'Ü', 'ç', 'Ç', 'ÿ', 'Ÿ', 'ñ', 'Ñ', 'ß' };
 
@@ -244,7 +241,7 @@ public final class Static201 {
 										}
 									}
 									if (Static192.aComponent_8 == local19) {
-										local970 = Static131.A_TRANSLATABLE_STRING___82.getLocalisedText(client.language);
+										local970 = LocalisedText.PLEASE_WAIT.getLocalisedText(client.language);
 										local248 = local19.color;
 									}
 									if (Static88.aBoolean134) {
@@ -318,7 +315,7 @@ public final class Static201 {
 									if (local19.anInt4300 != -1) {
 										@Pc(1490) ObjType local1490 = Static313.aClass107_2.get(local19.anInt4300);
 										if (local1490 != null) {
-											local1490 = local1490.method4781(local19.anInt4240);
+											local1490 = local1490.getCountObjType(local19.anInt4240);
 											local1511 = local19.modelSeqID == -1 ? null : Static39.aClass85_1.method2371(local19.modelSeqID);
 											local1519 = local19.aBoolean280 ? Static17.self.appearance : null;
 											local1477 = local1490.method4775(local19.anInt4283, 1024, local19.anInt4316, local1511, Static190.aClass19_8, 1, local1519, local19.anInt4247);

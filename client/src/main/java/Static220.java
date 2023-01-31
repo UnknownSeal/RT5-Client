@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static220 {
 
-	@OriginalMember(owner = "client!mq", name = "n", descriptor = "Lclient!gd;")
-	public static final LocalisedText A_TRANSLATABLE_STRING___83 = new LocalisedText("Take", "Nehmen", "Prendre", "Pegar");
-
 	@OriginalMember(owner = "client!mq", name = "o", descriptor = "Lclient!h;")
 	public static final Class89 aClass89_158 = new Class89(55, -1);
 

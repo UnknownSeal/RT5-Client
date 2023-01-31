@@ -7,9 +7,6 @@ public final class Static276 {
 	@OriginalMember(owner = "client!pr", name = "s", descriptor = "Lclient!ur;")
 	public static Class130 aClass130_4;
 
-	@OriginalMember(owner = "client!pr", name = "o", descriptor = "Lclient!gd;")
-	public static final LocalisedText A_TRANSLATABLE_STRING___109 = new LocalisedText("Loading core fonts - ", "Lade Schriftarten - ", "Chargement des polices - ", "Carregando fontes principais - ");
-
 	@OriginalMember(owner = "client!pr", name = "G", descriptor = "Z")
 	public static boolean aBoolean375 = false;
 

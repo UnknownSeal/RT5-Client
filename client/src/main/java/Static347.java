@@ -5,9 +5,6 @@ public final class Static347 {
 	@OriginalMember(owner = "client!ub", name = "ab", descriptor = "F")
 	public static float aFloat77;
 
-	@OriginalMember(owner = "client!ub", name = "S", descriptor = "Lclient!gd;")
-	public static final LocalisedText A_TRANSLATABLE_STRING___134 = new LocalisedText("Loaded interface scripts", "Interface-Skripte geladen", "Interfaces chargées", "Interfaces carregadas");
-
 	@OriginalMember(owner = "client!ub", name = "X", descriptor = "Z")
 	public static boolean aBoolean434 = false;
 

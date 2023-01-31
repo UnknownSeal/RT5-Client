@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static109 {
 
-	@OriginalMember(owner = "client!gb", name = "i", descriptor = "Lclient!gd;")
-	public static final LocalisedText A_TRANSLATABLE_STRING___46 = new LocalisedText("Created gameworld", "Spielwelt erstellt.", "Monde de jeu créé", "Universo de jogo criado");
-
 	@OriginalMember(owner = "client!gb", name = "l", descriptor = "D")
 	public static double aDouble1 = -1.0D;
 

@@ -7,7 +7,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static376 {
 
 	@OriginalMember(owner = "client!vt", name = "a", descriptor = "Ljava/util/Calendar;")
-	public static final Calendar aCalendar2 = Calendar.getInstance(TimeZone.getTimeZone("GMT"));
+	public static final Calendar gmtCalendar = Calendar.getInstance(TimeZone.getTimeZone("GMT"));
 
 	@OriginalMember(owner = "client!vt", name = "d", descriptor = "I")
 	public static int anInt7054 = 0;

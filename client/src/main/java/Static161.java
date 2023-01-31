@@ -11,9 +11,6 @@ public final class Static161 {
 	@OriginalMember(owner = "client!jg", name = "t", descriptor = "Lclient!h;")
 	public static final Class89 aClass89_123 = new Class89(10, -1);
 
-	@OriginalMember(owner = "client!jg", name = "F", descriptor = "Lclient!gd;")
-	public static final LocalisedText A_TRANSLATABLE_STRING___67 = new LocalisedText(" ", ": ", " ", " ");
-
 	@OriginalMember(owner = "client!jg", name = "H", descriptor = "I")
 	public static int anInt2954 = 100;
 

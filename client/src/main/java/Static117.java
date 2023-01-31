@@ -10,17 +10,8 @@ public final class Static117 {
 	@OriginalMember(owner = "client!gp", name = "p", descriptor = "I")
 	public static int anInt2375;
 
-	@OriginalMember(owner = "client!gp", name = "c", descriptor = "Lclient!gd;")
-	public static final LocalisedText A_TRANSLATABLE_STRING___47 = new LocalisedText("Checking for updates - ", "Suche nach Updates - ", "Vérification des mises à jour - ", "Verificando atualizações - ");
-
-	@OriginalMember(owner = "client!gp", name = "o", descriptor = "Lclient!gd;")
-	public static final LocalisedText A_TRANSLATABLE_STRING___48 = new LocalisedText("Loaded defaults", "Standardeinstellungen geladen", "Paramètres par défaut chargés", "Padrões carregados");
-
 	@OriginalMember(owner = "client!gp", name = "r", descriptor = "I")
 	public static int anInt2376 = -1;
-
-	@OriginalMember(owner = "client!gp", name = "s", descriptor = "Lclient!gd;")
-	public static final LocalisedText A_TRANSLATABLE_STRING___49 = new LocalisedText("Loading sprites - ", "Lade Sprites - ", "Chargement des sprites - ", "Carregando sprites - ");
 
 	@OriginalMember(owner = "client!gp", name = "a", descriptor = "(Lclient!r;Lclient!r;Z)V")
 	public static void method2366(@OriginalArg(0) Js5 arg0, @OriginalArg(1) Js5 arg1) {
@@ -55,7 +46,7 @@ public final class Static117 {
 			Static138.aClass13_8.method6384(local7, local9);
 			Static75.aClass13_5.method6384(local7 + local11 - Static75.aClass13_5.method6388(), local9);
 		}
-		Static52.aClass130_1.method5896(local7 + 3, -1, local9 + 14, Static322.anInt6030 | 0xFF000000, Static180.A_TRANSLATABLE_STRING___74.getLocalisedText(client.language));
+		Static52.aClass130_1.method5896(local7 + 3, -1, local9 + 14, Static322.anInt6030 | 0xFF000000, LocalisedText.CHOOSE_OPTION.getLocalisedText(client.language));
 		arg0.method2901(local7, local9 + 20, local11, local15 - 20, -Static260.anInt6717 + 255 << 24 | Static242.anInt4446, 1);
 		local87 = Static226.aClass119_1.method3303();
 		local89 = Static226.aClass119_1.method3312();

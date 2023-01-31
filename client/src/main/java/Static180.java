@@ -7,9 +7,6 @@ public final class Static180 {
 	@OriginalMember(owner = "client!kh", name = "e", descriptor = "I")
 	public static int anInt3404;
 
-	@OriginalMember(owner = "client!kh", name = "i", descriptor = "Lclient!gd;")
-	public static final LocalisedText A_TRANSLATABLE_STRING___74 = new LocalisedText("Choose Option", "Wähl eine Option", "Choisir une option", "Selecionar opção");
-
 	@OriginalMember(owner = "client!kh", name = "k", descriptor = "I")
 	public static int anInt3408 = 0;
 

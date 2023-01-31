@@ -9,9 +9,6 @@ public final class Static262 {
 	@OriginalMember(owner = "client!pa", name = "a", descriptor = "Lclient!mc;")
 	public static final Class145 aClass145_251 = new Class145(72, 7);
 
-	@OriginalMember(owner = "client!pa", name = "f", descriptor = "Lclient!gd;")
-	public static final LocalisedText A_TRANSLATABLE_STRING___145 = new LocalisedText("Continue", "Weiter", "Continuer", "Continuar");
-
 	@OriginalMember(owner = "client!pa", name = "i", descriptor = "I")
 	public static int anInt6999 = 2;
 

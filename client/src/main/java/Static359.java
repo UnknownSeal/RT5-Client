@@ -15,9 +15,6 @@ public final class Static359 {
 	@OriginalMember(owner = "client!us", name = "V", descriptor = "[[[B")
 	public static byte[][][] aByteArrayArrayArray16;
 
-	@OriginalMember(owner = "client!us", name = "y", descriptor = "Lclient!gd;")
-	public static final LocalisedText A_TRANSLATABLE_STRING___140 = new LocalisedText(" has logged out.", " loggt sich aus.", " s'est déconnecté.", " saiu do jogo.");
-
 	@OriginalMember(owner = "client!us", name = "R", descriptor = "Lclient!s;")
 	public static final Class210 aClass210_14 = new Class210(14, 14);
 

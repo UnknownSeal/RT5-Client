@@ -7,9 +7,6 @@ public final class Static239 {
 	@OriginalMember(owner = "client!nn", name = "C", descriptor = "[I")
 	public static final int[] anIntArray284 = new int[2048];
 
-	@OriginalMember(owner = "client!nn", name = "U", descriptor = "Lclient!gd;")
-	public static final LocalisedText A_TRANSLATABLE_STRING___95 = new LocalisedText("Drop", "Fallen lassen", "Poser", "Largar");
-
 	@OriginalMember(owner = "client!nn", name = "V", descriptor = "Lclient!mc;")
 	public static final Class145 aClass145_158 = new Class145(78, 5);
 
