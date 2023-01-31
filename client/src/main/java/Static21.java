@@ -3,7 +3,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class Static21 {
 
 	@OriginalMember(owner = "client!be", name = "a", descriptor = "Lclient!e;")
-	public static Class55 aClass55_1;
+	public static Class55 setIdentikit;
 
 	@OriginalMember(owner = "client!be", name = "b", descriptor = "I")
 	public static int anInt548;

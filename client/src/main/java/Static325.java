@@ -16,7 +16,7 @@ public final class Static325 {
 	public static final int[] anIntArray413 = new int[] { 1, 0, -1, 0 };
 
 	@OriginalMember(owner = "client!sr", name = "i", descriptor = "[I")
-	public static final int[] anIntArray414 = new int[25];
+	public static final int[] baseLevels = new int[25];
 
 	@OriginalMember(owner = "client!sr", name = "a", descriptor = "(Lclient!o;Lclient!r;Lclient!r;B)V")
 	public static void method5543(@OriginalArg(0) Interface9 arg0, @OriginalArg(1) Js5 arg1, @OriginalArg(2) Js5 arg2) {

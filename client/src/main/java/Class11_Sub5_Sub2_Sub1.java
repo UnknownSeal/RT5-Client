@@ -278,7 +278,7 @@ public final class Class11_Sub5_Sub2_Sub1 extends Class11_Sub5_Sub2 {
 		if (local51 != 0 || local54 != 0 || local13.anInt6281 != 0 || local13.anInt6283 != 0) {
 			arg1 |= 0x7;
 		}
-		super.aModelArray3[0] = this.appearance.method3190(super.anInt4624, Static59.aClass7_1, Static39.aClass85_1, Static21.aClass55_1, local28, super.anInt4592, super.anInt4629, arg1, super.anInt4593, super.anInt4626, local48, Static214.aClass226_1, Static313.aClass107_2, arg0, Static6.aClass219_1, super.aClass20Array3, super.anInt4607);
+		super.aModelArray3[0] = this.appearance.method3190(super.anInt4624, Static59.aClass7_1, Static39.aClass85_1, Static21.setIdentikit, local28, super.anInt4592, super.anInt4629, arg1, super.anInt4593, super.anInt4626, local48, Static214.aClass226_1, Static313.aClass107_2, arg0, Static6.aClass219_1, super.aClass20Array3, super.anInt4607);
 		@Pc(116) int local116 = Static365.method6116();
 		if (GameShell.maxMemory < 96 && local116 > 50) {
 			Static163.method3104();

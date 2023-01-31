@@ -88,39 +88,39 @@ public final class Static216 {
 
 	@OriginalMember(owner = "client!mm", name = "a", descriptor = "(I)V")
 	public static void method3776() {
-		for (@Pc(7) int local7 = 0; local7 < Static243.anInt4503; local7++) {
-			@Pc(15) int local15 = Static237.anIntArray283[local7]--;
-			if (Static237.anIntArray283[local7] >= -10) {
-				@Pc(90) Class247 local90 = Static196.aClass247Array2[local7];
+		for (@Pc(7) int local7 = 0; local7 < Static243.size; local7++) {
+			@Pc(15) int local15 = Static237.delays[local7]--;
+			if (Static237.delays[local7] >= -10) {
+				@Pc(90) Class247 local90 = Static196.sounds[local7];
 				if (local90 == null) {
-					local90 = Static408.method6434(Static85.aJs5_21, Static256.anIntArray321[local7], 0);
+					local90 = Static408.method6434(Static85.aJs5_21, Static256.ids[local7], 0);
 					if (local90 == null) {
 						continue;
 					}
-					Static237.anIntArray283[local7] += local90.method6435();
-					Static196.aClass247Array2[local7] = local90;
+					Static237.delays[local7] += local90.method6435();
+					Static196.sounds[local7] = local90;
 				}
-				if (Static237.anIntArray283[local7] < 0) {
+				if (Static237.delays[local7] < 0) {
 					@Pc(143) int local143;
-					if (Static162.anIntArray188[local7] == 0) {
+					if (Static162.positions[local7] == 0) {
 						local143 = Static218.aClass177_Sub1_2.anInt4888 * Static223.anIntArray256[local7] >> 8;
 					} else {
-						@Pc(133) int local133 = Static162.anIntArray188[local7] >> 24 & 0x3;
+						@Pc(133) int local133 = Static162.positions[local7] >> 24 & 0x3;
 						if (Static17.self.aByte78 == local133) {
-							@Pc(153) int local153 = (Static162.anIntArray188[local7] & 0xFF) * 128;
-							@Pc(161) int local161 = Static162.anIntArray188[local7] >> 16 & 0xFF;
+							@Pc(153) int local153 = (Static162.positions[local7] & 0xFF) * 128;
+							@Pc(161) int local161 = Static162.positions[local7] >> 16 & 0xFF;
 							@Pc(171) int local171 = local161 * 128 + 64 - Static17.self.xFine;
 							if (local171 < 0) {
 								local171 = -local171;
 							}
-							@Pc(187) int local187 = Static162.anIntArray188[local7] >> 8 & 0xFF;
+							@Pc(187) int local187 = Static162.positions[local7] >> 8 & 0xFF;
 							@Pc(197) int local197 = local187 * 128 + 64 - Static17.self.zFine;
 							if (local197 < 0) {
 								local197 = -local197;
 							}
 							@Pc(211) int local211 = local197 + local171 - 128;
 							if (local153 < local211) {
-								Static237.anIntArray283[local7] = -100;
+								Static237.delays[local7] = -100;
 								continue;
 							}
 							if (local211 < 0) {
@@ -134,19 +134,19 @@ public final class Static216 {
 					if (local143 > 0) {
 						@Pc(264) Class2_Sub21_Sub1 local264 = local90.method6433().method3178(Static300.aClass249_1);
 						@Pc(269) Class2_Sub12_Sub4 local269 = Static405.method5005(local264, local143);
-						local269.method4983(Static329.anIntArray419[local7] - 1);
+						local269.method4983(Static329.loops[local7] - 1);
 						Static227.aClass2_Sub12_Sub2_2.method2083(local269);
 					}
-					Static237.anIntArray283[local7] = -100;
+					Static237.delays[local7] = -100;
 				}
 			} else {
-				Static243.anInt4503--;
-				for (@Pc(29) int local29 = local7; local29 < Static243.anInt4503; local29++) {
-					Static256.anIntArray321[local29] = Static256.anIntArray321[local29 + 1];
-					Static196.aClass247Array2[local29] = Static196.aClass247Array2[local29 + 1];
-					Static329.anIntArray419[local29] = Static329.anIntArray419[local29 + 1];
-					Static237.anIntArray283[local29] = Static237.anIntArray283[local29 + 1];
-					Static162.anIntArray188[local29] = Static162.anIntArray188[local29 + 1];
+				Static243.size--;
+				for (@Pc(29) int local29 = local7; local29 < Static243.size; local29++) {
+					Static256.ids[local29] = Static256.ids[local29 + 1];
+					Static196.sounds[local29] = Static196.sounds[local29 + 1];
+					Static329.loops[local29] = Static329.loops[local29 + 1];
+					Static237.delays[local29] = Static237.delays[local29 + 1];
+					Static162.positions[local29] = Static162.positions[local29 + 1];
 					Static223.anIntArray256[local29] = Static223.anIntArray256[local29 + 1];
 				}
 				local7--;

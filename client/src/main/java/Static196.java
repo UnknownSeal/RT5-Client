@@ -10,7 +10,7 @@ public final class Static196 {
 	public static final Class145 aClass145_131 = new Class145(52, 12);
 
 	@OriginalMember(owner = "client!lh", name = "d", descriptor = "[Lclient!wk;")
-	public static final Class247[] aClass247Array2 = new Class247[50];
+	public static final Class247[] sounds = new Class247[50];
 
 	@OriginalMember(owner = "client!lh", name = "f", descriptor = "I")
 	public static int anInt3317 = -1;

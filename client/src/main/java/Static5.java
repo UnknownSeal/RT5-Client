@@ -27,7 +27,7 @@ public final class Static5 {
 	public static long firstGC = 0L;
 
 	@OriginalMember(owner = "client!ad", name = "r", descriptor = "[I")
-	public static final int[] anIntArray3 = new int[] { 0, 1, 2, 3, 4, 5, 6, 14 };
+	public static final int[] MALE_FEATURES = new int[] { 0, 1, 2, 3, 4, 5, 6, 14 };
 
 	@OriginalMember(owner = "client!ad", name = "a", descriptor = "(IIILclient!ml;II)Ljava/awt/Frame;")
 	public static Frame method85(@OriginalArg(0) int arg0, @OriginalArg(3) SignLink arg1, @OriginalArg(4) int arg2, @OriginalArg(5) int arg3) {

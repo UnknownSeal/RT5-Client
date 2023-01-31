@@ -314,13 +314,13 @@ public final class Static7 {
 	@OriginalMember(owner = "client!ag", name = "a", descriptor = "(Lclient!nk;B)Lclient!nk;")
 	public static Component method6464(@OriginalArg(0) Component arg0) {
 		if (arg0.layer != -1) {
-			return Static6.method140(arg0.layer);
+			return Static6.getComponent(arg0.layer);
 		}
 		@Pc(25) int local25 = arg0.id >>> 16;
 		@Pc(30) Class137 local30 = new Class137(Static329.aClass4_130);
 		for (@Pc(35) Class2_Sub7 local35 = (Class2_Sub7) local30.method3560(); local35 != null; local35 = (Class2_Sub7) local30.method3559()) {
 			if (local35.anInt1370 == local25) {
-				return Static6.method140((int) local35.key);
+				return Static6.getComponent((int) local35.key);
 			}
 		}
 		return null;

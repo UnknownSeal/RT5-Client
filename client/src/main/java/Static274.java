@@ -14,7 +14,7 @@ public final class Static274 {
 
 	@OriginalMember(owner = "client!pp", name = "a", descriptor = "(ZLclient!nk;I)I")
 	public static int method4630(@OriginalArg(1) Component arg0, @OriginalArg(2) int arg1) {
-		if (!Static45.method1404(arg0).method1854(arg1) && arg0.anObjectArray27 == null) {
+		if (!Static45.getServerActiveProperties(arg0).method1854(arg1) && arg0.onOptionClick == null) {
 			return -1;
 		} else if (arg0.opCursors == null || arg0.opCursors.length <= arg1) {
 			return -1;

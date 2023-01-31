@@ -28,7 +28,7 @@ public final class Static341 {
 	}
 
 	@OriginalMember(owner = "client!tq", name = "a", descriptor = "(IBLjava/lang/String;)V")
-	public static void method5768(@OriginalArg(0) int arg0, @OriginalArg(2) String arg1) {
+	public static void clickPlayerOption(@OriginalArg(0) int arg0, @OriginalArg(2) String arg1) {
 		@Pc(7) int local7 = Static31.anInt751;
 		@Pc(9) int[] local9 = Static85.anIntArray121;
 		@Pc(11) boolean local11 = false;
@@ -61,7 +61,7 @@ public final class Static341 {
 			}
 		}
 		if (!local11) {
-			Static207.method3699(LocalisedText.UNABLE_TO_FIND.getLocalisedText(client.language) + arg1);
+			Static207.add(LocalisedText.UNABLE_TO_FIND.getLocalisedText(client.language) + arg1);
 		}
 	}
 

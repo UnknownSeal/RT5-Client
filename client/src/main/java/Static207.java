@@ -28,10 +28,10 @@ public final class Static207 {
 			return;
 		}
 		@Pc(11) Component local11 = method3704(Static337.anInt6317, Static214.anInt3792);
-		if (local11 != null && local11.anObjectArray32 != null) {
+		if (local11 != null && local11.onUseWith != null) {
 			@Pc(20) Class2_Sub13 local20 = new Class2_Sub13();
 			local20.aComponent_3 = local11;
-			local20.anObjectArray4 = local11.anObjectArray32;
+			local20.anObjectArray4 = local11.onUseWith;
 			ScriptRunner.method3590(local20);
 		}
 		Static330.aBoolean419 = false;
@@ -43,7 +43,7 @@ public final class Static207 {
 	}
 
 	@OriginalMember(owner = "client!mc", name = "a", descriptor = "(ILjava/lang/String;)V")
-	public static void method3699(@OriginalArg(1) String arg0) {
+	public static void add(@OriginalArg(1) String arg0) {
 		Static33.method4199("", 0, arg0, 0, "");
 	}
 
@@ -63,13 +63,13 @@ public final class Static207 {
 
 	@OriginalMember(owner = "client!mc", name = "a", descriptor = "(IIB)Lclient!nk;")
 	public static Component method3704(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
-		@Pc(7) Component local7 = Static6.method140(arg0);
+		@Pc(7) Component local7 = Static6.getComponent(arg0);
 		if (arg1 == -1) {
 			return local7;
-		} else if (local7 == null || local7.aComponentArray2 == null || arg1 >= local7.aComponentArray2.length) {
+		} else if (local7 == null || local7.createdComponent == null || arg1 >= local7.createdComponent.length) {
 			return null;
 		} else {
-			return local7.aComponentArray2[arg1];
+			return local7.createdComponent[arg1];
 		}
 	}
 }

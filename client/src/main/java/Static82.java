@@ -48,7 +48,7 @@ public final class Static82 {
 	}
 
 	@OriginalMember(owner = "client!em", name = "a", descriptor = "(IZ)V")
-	public static void method1904() {
+	public static void closeWidget() {
 		Static91.method1960(Static186.aClass145_145);
 		for (@Pc(21) Class2_Sub7 local21 = (Class2_Sub7) Static329.aClass4_130.method80(); local21 != null; local21 = (Class2_Sub7) Static329.aClass4_130.method79()) {
 			if (!local21.isLinked()) {

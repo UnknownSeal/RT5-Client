@@ -18,8 +18,8 @@ public final class Static85 {
 		@Pc(12) int local12 = arg1.scrollWidth == 0 ? arg1.width : arg1.scrollWidth;
 		@Pc(24) int local24 = arg1.scrollHeight == 0 ? arg1.height : arg1.scrollHeight;
 		Static364.method6104(arg0, local24, arg1.id, Static26.aComponentArrayArray1[arg1.id >> 16], local12);
-		if (arg1.aComponentArray2 != null) {
-			Static364.method6104(arg0, local24, arg1.id, arg1.aComponentArray2, local12);
+		if (arg1.createdComponent != null) {
+			Static364.method6104(arg0, local24, arg1.id, arg1.createdComponent, local12);
 		}
 		@Pc(57) Class2_Sub7 local57 = (Class2_Sub7) Static329.aClass4_130.get((long) arg1.id);
 		if (local57 != null) {

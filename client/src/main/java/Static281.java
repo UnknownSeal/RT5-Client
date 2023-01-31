@@ -26,7 +26,7 @@ public final class Static281 {
 		if (arg0 == -1 && local35.type == 0) {
 			for (local51 = (Class2_Sub5) Static129.A_LINKED_LIST___19.method3550(); local51 != null; local51 = (Class2_Sub5) Static129.A_LINKED_LIST___19.method3551()) {
 				if (local51.anInt1005 == 11 || local51.anInt1005 == 1011 || local51.anInt1005 == 49 || local51.anInt1005 == 45 || local51.anInt1005 == 30) {
-					for (@Pc(133) Component local133 = Static6.method140(local51.anInt1009); local133 != null; local133 = Static7.method6464(local133)) {
+					for (@Pc(133) Component local133 = Static6.getComponent(local51.anInt1009); local133 != null; local133 = Static7.method6464(local133)) {
 						if (local35.id == local133.id) {
 							return true;
 						}

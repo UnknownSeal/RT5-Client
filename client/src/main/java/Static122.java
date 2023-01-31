@@ -34,30 +34,30 @@ public final class Static122 {
 			@Pc(113) int local113 = local30 + Static301.aComponent_13.scrollY - Static100.anInt2111;
 			@Pc(128) Class2_Sub13 local128;
 			if (Static226.aClass119_1.method3304()) {
-				if (Static375.aComponent_14.anInt4271 < Static129.anInt2458) {
+				if (Static375.aComponent_14.dragDeadtime < Static129.anInt2458) {
 					@Pc(205) int local205 = local26 - Static168.anInt7248;
 					@Pc(210) int local210 = local30 - Static3.anInt61;
-					if (Static375.aComponent_14.anInt4239 < local205 || -Static375.aComponent_14.anInt4239 > local205 || local210 > Static375.aComponent_14.anInt4239 || local210 < -Static375.aComponent_14.anInt4239) {
+					if (Static375.aComponent_14.dragDeadzone < local205 || -Static375.aComponent_14.dragDeadzone > local205 || local210 > Static375.aComponent_14.dragDeadzone || local210 < -Static375.aComponent_14.dragDeadzone) {
 						Static57.aBoolean124 = true;
 					}
 				}
-				if (Static375.aComponent_14.anObjectArray31 != null && Static57.aBoolean124) {
+				if (Static375.aComponent_14.onDragStart != null && Static57.aBoolean124) {
 					local128 = new Class2_Sub13();
 					local128.anInt2117 = local113;
 					local128.aComponent_3 = Static375.aComponent_14;
-					local128.anObjectArray4 = Static375.aComponent_14.anObjectArray31;
+					local128.anObjectArray4 = Static375.aComponent_14.onDragStart;
 					local128.anInt2116 = local105;
 					ScriptRunner.method3590(local128);
 				}
 			} else {
 				if (Static57.aBoolean124) {
 					Static207.method3698();
-					if (Static375.aComponent_14.anObjectArray8 != null) {
+					if (Static375.aComponent_14.onDragRelease != null) {
 						local128 = new Class2_Sub13();
 						local128.anInt2116 = local105;
 						local128.aComponent_4 = Static182.aComponent_7;
 						local128.aComponent_3 = Static375.aComponent_14;
-						local128.anObjectArray4 = Static375.aComponent_14.anObjectArray8;
+						local128.anObjectArray4 = Static375.aComponent_14.onDragRelease;
 						local128.anInt2117 = local113;
 						ScriptRunner.method3590(local128);
 					}

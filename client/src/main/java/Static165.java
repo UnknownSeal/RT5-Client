@@ -159,7 +159,7 @@ public final class Static165 {
 			if (local218 == null) {
 				local218 = Static52.aClass130_1;
 			}
-			local218.method5902(Static129.anInt2460, local41, Static288.anInt5464, Static61.aRandom1, Static164.aComponent_5.anInt4293, Static210.anIntArray229, Static164.aComponent_5.graphicShadow, Static164.aComponent_5.width, Static164.aComponent_5.color, Static283.anInt5352, Static134.aClass13Array12, Static164.aComponent_5.height, Static164.aComponent_5.anInt4298, Static72.anIntArray114);
+			local218.method5902(Static129.anInt2460, local41, Static288.anInt5464, Static61.aRandom1, Static164.aComponent_5.valign, Static210.anIntArray229, Static164.aComponent_5.graphicShadow, Static164.aComponent_5.width, Static164.aComponent_5.color, Static283.anInt5352, Static134.aClass13Array12, Static164.aComponent_5.height, Static164.aComponent_5.halign, Static72.anIntArray114);
 			Static369.method6220(Static210.anIntArray229[2], Static210.anIntArray229[0], Static210.anIntArray229[3], Static210.anIntArray229[1]);
 		} else if (Static179.aComponent_6 != null && GameType.GAME_TYPE_RUNESCAPE == client.game) {
 			@Pc(287) int local287 = Static52.aClass130_1.method5898(Static290.anInt5498 + 4, Static283.anInt5352, Static134.aClass13Array12, Static61.aRandom1, Static63.anInt1549 + 16, Static72.anIntArray114, local41);

@@ -15,7 +15,7 @@ public final class Static24 {
 
 	@OriginalMember(owner = "client!bh", name = "a", descriptor = "(ILclient!nk;)V")
 	public static void method852(@OriginalArg(1) Component arg0) {
-		if (arg0.type == 5 && arg0.anInt4300 != -1) {
+		if (arg0.type == 5 && arg0.objId != -1) {
 			Static46.method1422(Static190.aClass19_8, arg0);
 		}
 	}

@@ -146,7 +146,7 @@ public final class client extends GameShell {
 	public static void clean() {
 		Static39.aClass72_3.clean();
 		Static336.aClass241_5.method6268();
-		Static21.aClass55_1.method1785();
+		Static21.setIdentikit.method1785();
 		Static359.aClass202_4.method5161();
 		Static6.aClass219_1.method5574();
 		Static313.aClass107_2.method2757();
@@ -667,8 +667,8 @@ public final class client extends GameShell {
 										if (local303.createdComponentID < 0) {
 											break;
 										}
-										local311 = Static6.method140(local303.layer);
-									} while (local311 == null || local311.aComponentArray2 == null || local303.createdComponentID >= local311.aComponentArray2.length || local303 != local311.aComponentArray2[local303.createdComponentID]);
+										local311 = Static6.getComponent(local303.layer);
+									} while (local311 == null || local311.createdComponent == null || local303.createdComponentID >= local311.createdComponent.length || local303 != local311.createdComponent[local303.createdComponentID]);
 									ScriptRunner.method3590(local298);
 								}
 							}
@@ -676,8 +676,8 @@ public final class client extends GameShell {
 							if (local303.createdComponentID < 0) {
 								break;
 							}
-							local311 = Static6.method140(local303.layer);
-						} while (local311 == null || local311.aComponentArray2 == null || local303.createdComponentID >= local311.aComponentArray2.length || local311.aComponentArray2[local303.createdComponentID] != local303);
+							local311 = Static6.getComponent(local303.layer);
+						} while (local311 == null || local311.createdComponent == null || local303.createdComponentID >= local311.createdComponent.length || local311.createdComponent[local303.createdComponentID] != local303);
 						ScriptRunner.method3590(local298);
 					}
 				}
@@ -685,8 +685,8 @@ public final class client extends GameShell {
 				if (local303.createdComponentID < 0) {
 					break;
 				}
-				local311 = Static6.method140(local303.layer);
-			} while (local311 == null || local311.aComponentArray2 == null || local303.createdComponentID >= local311.aComponentArray2.length || local311.aComponentArray2[local303.createdComponentID] != local303);
+				local311 = Static6.getComponent(local303.layer);
+			} while (local311 == null || local311.createdComponent == null || local303.createdComponentID >= local311.createdComponent.length || local311.createdComponent[local303.createdComponentID] != local303);
 			ScriptRunner.method3590(local298);
 		}
 	}
@@ -1035,7 +1035,7 @@ public final class client extends GameShell {
 				Static140.aClass109_1 = new Class109(game, language, Static226.aJs5_61);
 				Static39.aClass72_3 = new Class72(game, language, Static289.aJs5_71);
 				Static336.aClass241_5 = new Class241(game, language, Static289.aJs5_71);
-				Static21.aClass55_1 = new Class55(game, language, Static289.aJs5_71, Static237.aJs5_63);
+				Static21.setIdentikit = new Class55(game, language, Static289.aJs5_71, Static237.aJs5_63);
 				Static178.aClass51_3 = new Class51(game, language, Static289.aJs5_71);
 				Static90.aClass190_3 = new Class190(game, language, Static289.aJs5_71);
 				Static359.aClass202_4 = new Class202(game, language, true, Static391.aJs5_96, Static237.aJs5_63);

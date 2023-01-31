@@ -30,10 +30,10 @@ public final class Static295 {
 	public static void method5095(@OriginalArg(0) Component arg0, @OriginalArg(2) Component arg1) {
 		Static91.method1960(Static387.aClass145_110);
 		Static257.aClass2_Sub4_Sub2_4.p4(arg1.id);
-		Static257.aClass2_Sub4_Sub2_4.ip2add(arg1.anInt4300);
+		Static257.aClass2_Sub4_Sub2_4.ip2add(arg1.objId);
 		Static257.aClass2_Sub4_Sub2_4.p2add(arg1.createdComponentID);
 		Static257.aClass2_Sub4_Sub2_4.mp4(arg0.id);
-		Static257.aClass2_Sub4_Sub2_4.ip2add(arg0.anInt4300);
+		Static257.aClass2_Sub4_Sub2_4.ip2add(arg0.objId);
 		Static257.aClass2_Sub4_Sub2_4.ip2_dup(arg0.createdComponentID);
 	}
 

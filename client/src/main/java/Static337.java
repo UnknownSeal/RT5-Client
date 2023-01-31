@@ -83,7 +83,7 @@ public final class Static337 {
 	}
 
 	@OriginalMember(owner = "client!tk", name = "a", descriptor = "(ILclient!nh;II)V")
-	public static void method5706(@OriginalArg(1) Class11_Sub5_Sub2_Sub1 arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
+	public static void animate(@OriginalArg(1) Class11_Sub5_Sub2_Sub1 arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
 		if (arg0.anInt4597 == arg2 && arg2 != -1) {
 			@Pc(18) Class157 local18 = Static39.aClass85_1.method2371(arg2);
 			@Pc(21) int local21 = local18.anInt4022;

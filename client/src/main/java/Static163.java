@@ -125,12 +125,12 @@ public final class Static163 {
 
 	@OriginalMember(owner = "client!jj", name = "a", descriptor = "(ILclient!nk;)Ljava/lang/String;")
 	public static String method3103(@OriginalArg(1) Component arg0) {
-		if (Static45.method1404(arg0).method1852() == 0) {
+		if (Static45.getServerActiveProperties(arg0).getTargetMask() == 0) {
 			return null;
-		} else if (arg0.aString44 == null || arg0.aString44.trim().length() == 0) {
+		} else if (arg0.opCircumfix == null || arg0.opCircumfix.trim().length() == 0) {
 			return Static18.aBoolean30 ? "Hidden-use" : null;
 		} else {
-			return arg0.aString44;
+			return arg0.opCircumfix;
 		}
 	}
 

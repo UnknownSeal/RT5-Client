@@ -30,7 +30,7 @@ public final class Static59 {
 	public static void method1643() {
 		Static39.aClass72_3.method2108();
 		Static336.aClass241_5.method6267();
-		Static21.aClass55_1.method1781();
+		Static21.setIdentikit.method1781();
 		Static359.aClass202_4.method5157();
 		Static6.aClass219_1.method5578();
 		Static313.aClass107_2.method2763();

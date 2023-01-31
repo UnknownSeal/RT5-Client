@@ -56,6 +56,6 @@ public final class Static366 {
 		Static257.aClass2_Sub4_Sub2_4.p2add(Static214.anInt3792);
 		Static257.aClass2_Sub4_Sub2_4.p2(Static196.anInt3317);
 		Static257.aClass2_Sub4_Sub2_4.mp4(Static337.anInt6317);
-		Static257.aClass2_Sub4_Sub2_4.p2(arg0.anInt4300);
+		Static257.aClass2_Sub4_Sub2_4.p2(arg0.objId);
 	}
 }

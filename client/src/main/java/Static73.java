@@ -137,11 +137,11 @@ public final class Static73 {
 							local335.unlink();
 							Static329.aClass4_130.put(local335, (long) local74);
 						}
-						@Pc(375) Component local375 = Static6.method140(local220);
+						@Pc(375) Component local375 = Static6.getComponent(local220);
 						if (local375 != null) {
 							Static200.redraw(local375);
 						}
-						local375 = Static6.method140(local74);
+						local375 = Static6.getComponent(local74);
 						if (local375 != null) {
 							Static200.redraw(local375);
 							Static85.method1911(true, local375);
@@ -366,7 +366,7 @@ public final class Static73 {
 										local1118 = new ServerActiveProperties(local1109.anInt1758, local74);
 										local1109.unlink();
 									} else if (local506 == -1) {
-										local1118 = new ServerActiveProperties(Static6.method140(local497).aServerActiveProperties_1.anInt1758, local74);
+										local1118 = new ServerActiveProperties(Static6.getComponent(local497).aServerActiveProperties_1.anInt1758, local74);
 									} else {
 										local1118 = new ServerActiveProperties(0, local74);
 									}
@@ -401,13 +401,13 @@ public final class Static73 {
 							local220 = Static212.inboundBuffer.mg4();
 							local74 = Static212.inboundBuffer.g1bneg();
 							local228 = Static212.inboundBuffer.g1sub();
-							Static80.anIntArray464[local74] = local220;
-							Static268.anIntArray338[local74] = local228;
-							Static325.anIntArray414[local74] = 1;
+							Static80.experience[local74] = local220;
+							Static268.boostedLevels[local74] = local228;
+							Static325.baseLevels[local74] = 1;
 							local249 = Static287.anIntArray369[local74] - 1;
 							for (local497 = 0; local497 < local249; local497++) {
 								if (local220 >= Class12_Sub1_Sub1.anIntArray292[local497]) {
-									Static325.anIntArray414[local74] = local497 + 2;
+									Static325.baseLevels[local74] = local497 + 2;
 								}
 							}
 							Static208.anIntArray226[Static381.anInt7117++ & 0x1F] = local74;
@@ -645,7 +645,7 @@ public final class Static73 {
 									local74 = Static212.inboundBuffer.g1();
 									local228 = Static212.inboundBuffer.g2();
 									local249 = Static212.inboundBuffer.g1();
-									Static29.method939(local74, local249, local228, local220);
+									Static29.play(local74, local249, local228, local220);
 									Static231.aClass89_164 = null;
 									return true;
 								} else if (Static78.aClass89_224 == Static231.aClass89_164) {
@@ -915,7 +915,7 @@ public final class Static73 {
 													local1118 = new ServerActiveProperties(local228, local1109.anInt1759);
 													local1109.unlink();
 												} else if (local506 == -1) {
-													local1118 = new ServerActiveProperties(local228, Static6.method140(local220).aServerActiveProperties_1.anInt1759);
+													local1118 = new ServerActiveProperties(local228, Static6.getComponent(local220).aServerActiveProperties_1.anInt1759);
 												} else {
 													local1118 = new ServerActiveProperties(local228, -1);
 												}
@@ -1198,7 +1198,7 @@ public final class Static73 {
 												local74 = -1;
 											}
 											local228 = Static212.inboundBuffer.g1sub();
-											Static138.method2578(local220, local228, local74);
+											Static138.playMusic(local220, local228, local74);
 											Static231.aClass89_164 = null;
 											return true;
 										} else if (Static231.aClass89_164 == Static42.aClass89_226) {
@@ -1208,7 +1208,7 @@ public final class Static73 {
 											if (local228 == 65535) {
 												local228 = -1;
 											}
-											Static175.method3323(local228, local74, local220);
+											Static175.playJingle(local228, local74, local220);
 											Static231.aClass89_164 = null;
 											return true;
 										} else {

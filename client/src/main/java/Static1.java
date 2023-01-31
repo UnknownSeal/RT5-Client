@@ -70,7 +70,7 @@ public final class Static1 {
 
 	@OriginalMember(owner = "client!a", name = "a", descriptor = "(Lclient!nb;ZIIIII)V")
 	public static void method4(@OriginalArg(0) Class157 arg0, @OriginalArg(1) boolean arg1, @OriginalArg(2) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5) {
-		if (Static243.anInt4503 >= 50 || (arg0 == null || arg0.anIntArrayArray33 == null || arg0.anIntArrayArray33.length <= arg5 || arg0.anIntArrayArray33[arg5] == null)) {
+		if (Static243.size >= 50 || (arg0 == null || arg0.anIntArrayArray33 == null || arg0.anIntArrayArray33.length <= arg5 || arg0.anIntArrayArray33[arg5] == null)) {
 			return;
 		}
 		@Pc(36) int local36 = arg0.anIntArrayArray33[arg5][0];
@@ -86,18 +86,18 @@ public final class Static1 {
 		@Pc(78) int local78 = local36 & 0x1F;
 		if (local78 == 0) {
 			if (arg1) {
-				Static29.method939(local46, 255, 0, local40);
+				Static29.play(local46, 255, 0, local40);
 			}
 		} else if (Static218.aClass177_Sub1_2.anInt4882 != 0) {
-			Static256.anIntArray321[Static243.anInt4503] = local40;
-			Static329.anIntArray419[Static243.anInt4503] = local46;
-			Static237.anIntArray283[Static243.anInt4503] = 0;
-			Static196.aClass247Array2[Static243.anInt4503] = null;
-			Static223.anIntArray256[Static243.anInt4503] = 255;
+			Static256.ids[Static243.size] = local40;
+			Static329.loops[Static243.size] = local46;
+			Static237.delays[Static243.size] = 0;
+			Static196.sounds[Static243.size] = null;
+			Static223.anIntArray256[Static243.size] = 255;
 			local65 = (arg3 - 64) / 128;
 			@Pc(136) int local136 = (arg4 - 64) / 128;
-			Static162.anIntArray188[Static243.anInt4503] = local78 + (local136 << 8) + (arg2 << 24) + (local65 << 16);
-			Static243.anInt4503++;
+			Static162.positions[Static243.size] = local78 + (local136 << 8) + (arg2 << 24) + (local65 << 16);
+			Static243.size++;
 		}
 	}
 

@@ -91,7 +91,7 @@ public final class Static284 {
 
 	@OriginalMember(owner = "client!qi", name = "a", descriptor = "(Lclient!nk;ZI)Ljava/lang/String;")
 	public static String method4882(@OriginalArg(0) Component arg0, @OriginalArg(2) int arg1) {
-		if (!Static45.method1404(arg0).method1854(arg1) && arg0.anObjectArray27 == null) {
+		if (!Static45.getServerActiveProperties(arg0).method1854(arg1) && arg0.onOptionClick == null) {
 			return null;
 		} else if (arg0.ops == null || arg1 >= arg0.ops.length || arg0.ops[arg1] == null || arg0.ops[arg1].trim().length() == 0) {
 			return Static18.aBoolean30 ? "Hidden-" + arg1 : null;

@@ -144,8 +144,8 @@ public final class Static181 {
 			if (local13 != null && arg1 == local13.layer && !Static45.method1403(local13)) {
 				if (local13.type == 0) {
 					method3377(arg0, local13.id);
-					if (local13.aComponentArray2 != null) {
-						method3377(local13.aComponentArray2, local13.id);
+					if (local13.createdComponent != null) {
+						method3377(local13.createdComponent, local13.id);
 					}
 					@Pc(51) Class2_Sub7 local51 = (Class2_Sub7) Static329.aClass4_130.get((long) local13.id);
 					if (local51 != null) {

@@ -22,17 +22,17 @@ public final class Static29 {
 	}
 
 	@OriginalMember(owner = "client!bm", name = "a", descriptor = "(IZIII)V")
-	public static void method939(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {
-		if (Static218.aClass177_Sub1_2.anInt4888 == 0 || arg0 == 0 || Static243.anInt4503 >= 50 || arg3 == -1) {
+	public static void play(@OriginalArg(0) int loops, @OriginalArg(2) int arg1, @OriginalArg(3) int delay, @OriginalArg(4) int id) {
+		if (Static218.aClass177_Sub1_2.anInt4888 == 0 || loops == 0 || Static243.size >= 50 || id == -1) {
 			return;
 		}
-		Static256.anIntArray321[Static243.anInt4503] = arg3;
-		Static329.anIntArray419[Static243.anInt4503] = arg0;
-		Static237.anIntArray283[Static243.anInt4503] = arg2;
-		Static196.aClass247Array2[Static243.anInt4503] = null;
-		Static162.anIntArray188[Static243.anInt4503] = 0;
-		Static223.anIntArray256[Static243.anInt4503] = arg1;
-		Static243.anInt4503++;
+		Static256.ids[Static243.size] = id;
+		Static329.loops[Static243.size] = loops;
+		Static237.delays[Static243.size] = delay;
+		Static196.sounds[Static243.size] = null;
+		Static162.positions[Static243.size] = 0;
+		Static223.anIntArray256[Static243.size] = arg1;
+		Static243.size++;
 	}
 
 	@OriginalMember(owner = "client!bm", name = "a", descriptor = "(II)I")

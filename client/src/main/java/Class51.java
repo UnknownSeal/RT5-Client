@@ -19,7 +19,7 @@ public final class Class51 {
 	}
 
 	@OriginalMember(owner = "client!dp", name = "a", descriptor = "(II)Lclient!hl;")
-	public Class2_Sub2_Sub8 method1706(@OriginalArg(0) int arg0) {
+	public Class2_Sub2_Sub8 get(@OriginalArg(0) int arg0) {
 		@Pc(6) SoftLruHashTable local6 = this.aSoftLruHashTable_6;
 		@Pc(16) Class2_Sub2_Sub8 local16;
 		synchronized (this.aSoftLruHashTable_6) {

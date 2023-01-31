@@ -111,7 +111,7 @@ public final class Static373 {
 				local371.unlink();
 			}
 		}
-		Static243.anInt4503 = 0;
+		Static243.size = 0;
 		if (Static358.anInt6550 != 0) {
 			Static358.anInt6550 -= local94;
 			Static312.anInt5844 -= local99;
