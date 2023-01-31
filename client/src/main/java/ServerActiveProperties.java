@@ -32,7 +32,7 @@ public final class ServerActiveProperties extends Node {
 	}
 
 	@OriginalMember(owner = "client!eh", name = "d", descriptor = "(B)I")
-	public int method1852() {
+	public int getTargetMask() {
 		return Static13.getTargetMask(this.anInt1758);
 	}
 

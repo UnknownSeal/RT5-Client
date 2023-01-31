@@ -408,8 +408,8 @@ public final class Static259 {
 			local1723 = Static207.method3704(local18, local15);
 			if (local1723 != null) {
 				Static207.method3698();
-				@Pc(1730) ServerActiveProperties local1730 = Static45.method1404(local1723);
-				Static185.method3399(local1723.anInt4238, local1730.method1852(), local18, local15, local1723.anInt4286, local1730.anInt1759);
+				@Pc(1730) ServerActiveProperties local1730 = Static45.getServerActiveProperties(local1723);
+				Static185.method3399(local1723.anInt4238, local1730.getTargetMask(), local18, local15, local1723.anInt4286, local1730.anInt1759);
 				Static91.aString18 = Static163.method3103(local1723);
 				if (Static91.aString18 == null) {
 					Static91.aString18 = "Null";

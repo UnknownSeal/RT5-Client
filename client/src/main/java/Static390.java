@@ -36,7 +36,7 @@ public final class Static390 {
 		}
 		Static14.anInt327 = (int) (Math.random() * 110.0D) - 55;
 		Static97.anInt2005 = (int) (Math.random() * 30.0D) - 20;
-		Static243.anInt4503 = 0;
+		Static243.size = 0;
 		Static330.aBoolean419 = false;
 		Static277.aFloat67 = (int) (Math.random() * 160.0D) - 80 & 0x3FFF;
 		Static24.anInt642 = (int) (Math.random() * 100.0D) - 50;
@@ -108,9 +108,9 @@ public final class Static390 {
 			Static290.aClass187Array1[local4636] = new Class187();
 		}
 		for (@Pc(4650) int local4650 = 0; local4650 < 25; local4650++) {
-			Static268.anIntArray338[local4650] = 0;
-			Static325.anIntArray414[local4650] = 0;
-			Static80.anIntArray464[local4650] = 0;
+			Static268.boostedLevels[local4650] = 0;
+			Static325.baseLevels[local4650] = 0;
+			Static80.experience[local4650] = 0;
 		}
 		Static348.method5827();
 		Static257.aShortArray79 = Static223.aShortArray78 = Static258.aShortArray95 = Static147.aShortArray54 = new short[256];

@@ -19,9 +19,9 @@ public final class Static46 {
 
 	@OriginalMember(owner = "client!cm", name = "a", descriptor = "(ILclient!wm;Lclient!nk;)V")
 	public static void method1422(@OriginalArg(1) Class19 arg0, @OriginalArg(2) Component arg1) {
-		@Pc(31) boolean local31 = Static313.aClass107_2.method2758(arg1.anInt4306, arg1.anInt4300, arg1.aBoolean280 ? Static17.self.appearance : null, arg0, arg1.graphicShadow | 0xFF000000, arg1.outline, arg1.anInt4240) == null;
+		@Pc(31) boolean local31 = Static313.aClass107_2.method2758(arg1.anInt4306, arg1.objId, arg1.aBoolean280 ? Static17.self.appearance : null, arg0, arg1.graphicShadow | 0xFF000000, arg1.outline, arg1.objCount) == null;
 		if (local31) {
-			Static142.A_LINKED_LIST___21.method3539(new Class2_Sub17(arg1.anInt4300, arg1.anInt4240, arg1.outline, arg1.graphicShadow | 0xFF000000, arg1.anInt4306, arg1.aBoolean280));
+			Static142.A_LINKED_LIST___21.method3539(new Class2_Sub17(arg1.objId, arg1.objCount, arg1.outline, arg1.graphicShadow | 0xFF000000, arg1.anInt4306, arg1.aBoolean280));
 		}
 	}
 

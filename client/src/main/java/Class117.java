@@ -53,7 +53,7 @@ public final class Class117 {
 	}
 
 	@OriginalMember(owner = "client!jo", name = "a", descriptor = "(ZI)V")
-	public void method3182(@OriginalArg(0) boolean arg0) {
+	public void setGender(@OriginalArg(0) boolean arg0) {
 		this.aBoolean220 = arg0;
 		this.method3188();
 	}
@@ -266,7 +266,7 @@ public final class Class117 {
 	}
 
 	@OriginalMember(owner = "client!jo", name = "a", descriptor = "(III)V")
-	public void method3186(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
+	public void setColor(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
 		this.anIntArray194[arg0] = arg1;
 		this.method3188();
 	}

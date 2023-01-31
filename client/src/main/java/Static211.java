@@ -20,7 +20,7 @@ public final class Static211 {
 	public static void method3720() {
 		Static39.aClass72_3.method2103();
 		Static336.aClass241_5.method6269();
-		Static21.aClass55_1.method1782();
+		Static21.setIdentikit.method1782();
 		Static359.aClass202_4.method5158();
 		Static6.aClass219_1.method5570();
 		Static313.aClass107_2.method2761();

@@ -15,7 +15,7 @@ public final class Static268 {
 	public static final Class89 aClass89_180 = new Class89(92, 6);
 
 	@OriginalMember(owner = "client!pg", name = "U", descriptor = "[I")
-	public static final int[] anIntArray338 = new int[25];
+	public static final int[] boostedLevels = new int[25];
 
 	@OriginalMember(owner = "client!pg", name = "g", descriptor = "(I)Lclient!ac;")
 	public static World method4547() {

@@ -255,13 +255,13 @@ public final class Static137 {
 				Static75.aStringArray11[local135] = local790.aString21;
 				Static349.anIntArray444[Static58.anInt1483++ & 0x1F] = local135;
 			} else if (local410 == 3) {
-				local830 = Static6.method140(local135);
+				local830 = Static6.getComponent(local135);
 				if (!local790.aString21.equals(local830.text)) {
 					local830.text = local790.aString21;
 					Static200.redraw(local830);
 				}
 			} else if (local410 == 4) {
-				local830 = Static6.method140(local135);
+				local830 = Static6.getComponent(local135);
 				local463 = local790.anInt2289;
 				local219 = local790.anInt2290;
 				local225 = local790.anInt2284;
@@ -272,7 +272,7 @@ public final class Static137 {
 					Static200.redraw(local830);
 				}
 			} else if (local410 == 5) {
-				local830 = Static6.method140(local135);
+				local830 = Static6.getComponent(local135);
 				if (local790.anInt2289 != local830.modelSeqID || local790.anInt2289 == -1) {
 					local830.anInt4316 = 1;
 					local830.anInt4247 = 0;
@@ -286,25 +286,25 @@ public final class Static137 {
 				local219 = local153 >> 5 & 0x1F;
 				local225 = local153 & 0x1F;
 				local236 = (local463 << 19) + ((local219 << 11) + (local225 << 3));
-				@Pc(1214) Component local1214 = Static6.method140(local135);
+				@Pc(1214) Component local1214 = Static6.getComponent(local135);
 				if (local1214.color != local236) {
 					local1214.color = local236;
 					Static200.redraw(local1214);
 				}
 			} else if (local410 == 7) {
-				local830 = Static6.method140(local135);
+				local830 = Static6.getComponent(local135);
 				local169 = local790.anInt2289 == 1;
 				if (local830.hidden != local169) {
 					local830.hidden = local169;
 					Static200.redraw(local830);
 				}
 			} else if (local410 == 8) {
-				local830 = Static6.method140(local135);
-				if (local790.anInt2289 != local830.anInt4320 || local830.anInt4274 != local790.anInt2290 || local790.anInt2284 != local830.modelZoom) {
+				local830 = Static6.getComponent(local135);
+				if (local790.anInt2289 != local830.modelXAngle || local830.modelYAngle != local790.anInt2290 || local790.anInt2284 != local830.modelZoom) {
 					local830.modelZoom = local790.anInt2284;
-					local830.anInt4274 = local790.anInt2290;
-					local830.anInt4320 = local790.anInt2289;
-					if (local830.anInt4300 != -1) {
+					local830.modelYAngle = local790.anInt2290;
+					local830.modelXAngle = local790.anInt2289;
+					if (local830.objId != -1) {
 						if (local830.anInt4251 > 0) {
 							local830.modelZoom = local830.modelZoom * 32 / local830.anInt4251;
 						} else if (local830.anInt4294 > 0) {
@@ -314,29 +314,29 @@ public final class Static137 {
 					Static200.redraw(local830);
 				}
 			} else if (local410 == 9) {
-				local830 = Static6.method140(local135);
-				if (local830.anInt4300 != local790.anInt2289 || local830.anInt4240 != local790.anInt2290) {
-					local830.anInt4240 = local790.anInt2290;
-					local830.anInt4300 = local790.anInt2289;
+				local830 = Static6.getComponent(local135);
+				if (local830.objId != local790.anInt2289 || local830.objCount != local790.anInt2290) {
+					local830.objCount = local790.anInt2290;
+					local830.objId = local790.anInt2289;
 					Static200.redraw(local830);
 				}
 			} else if (local410 == 10) {
-				local830 = Static6.method140(local135);
-				if (local790.anInt2289 != local830.anInt4278 || local790.anInt2290 != local830.anInt4250 || local830.anInt4319 != local790.anInt2284) {
-					local830.anInt4319 = local790.anInt2284;
-					local830.anInt4278 = local790.anInt2289;
-					local830.anInt4250 = local790.anInt2290;
+				local830 = Static6.getComponent(local135);
+				if (local790.anInt2289 != local830.modelXOffset || local790.anInt2290 != local830.modelZOffset || local830.modelYOffset != local790.anInt2284) {
+					local830.modelYOffset = local790.anInt2284;
+					local830.modelXOffset = local790.anInt2289;
+					local830.modelZOffset = local790.anInt2290;
 					Static200.redraw(local830);
 				}
 			} else if (local410 == 11) {
-				local830 = Static6.method140(local135);
+				local830 = Static6.getComponent(local135);
 				local830.aByte46 = 0;
 				local830.aByte45 = 0;
-				local830.anInt4254 = local830.anInt4249 = local790.anInt2290;
-				local830.anInt4305 = local830.anInt4241 = local790.anInt2289;
+				local830.y = local830.anInt4249 = local790.anInt2290;
+				local830.x = local830.anInt4241 = local790.anInt2289;
 				Static200.redraw(local830);
 			} else if (local410 == 12) {
-				local830 = Static6.method140(local135);
+				local830 = Static6.getComponent(local135);
 				local463 = local790.anInt2289;
 				if (local830 != null && local830.type == 0) {
 					if (local463 > local830.scrollHeight - local830.height) {
@@ -351,14 +351,14 @@ public final class Static137 {
 					}
 				}
 			} else if (local410 == 14) {
-				local830 = Static6.method140(local135);
+				local830 = Static6.getComponent(local135);
 				local830.graphic = local790.anInt2289;
 			} else if (local410 == 15) {
 				Static312.anInt5844 = local790.anInt2290;
 				Static370.aBoolean474 = true;
 				Static358.anInt6550 = local790.anInt2289;
 			} else if (local410 == 16) {
-				local830 = Static6.method140(local135);
+				local830 = Static6.getComponent(local135);
 				local830.textFont = local790.anInt2289;
 			}
 		}
@@ -506,8 +506,8 @@ public final class Static137 {
 										if (local1421.createdComponentID < 0) {
 											break;
 										}
-										local830 = Static6.method140(local1421.layer);
-									} while (local830 == null || local830.aComponentArray2 == null || local830.aComponentArray2.length <= local1421.createdComponentID || local1421 != local830.aComponentArray2[local1421.createdComponentID]);
+										local830 = Static6.getComponent(local1421.layer);
+									} while (local830 == null || local830.createdComponent == null || local830.createdComponent.length <= local1421.createdComponentID || local1421 != local830.createdComponent[local1421.createdComponentID]);
 									ScriptRunner.method3590(local1416);
 								}
 							}
@@ -515,8 +515,8 @@ public final class Static137 {
 							if (local1421.createdComponentID < 0) {
 								break;
 							}
-							local830 = Static6.method140(local1421.layer);
-						} while (local830 == null || local830.aComponentArray2 == null || local830.aComponentArray2.length <= local1421.createdComponentID || local1421 != local830.aComponentArray2[local1421.createdComponentID]);
+							local830 = Static6.getComponent(local1421.layer);
+						} while (local830 == null || local830.createdComponent == null || local830.createdComponent.length <= local1421.createdComponentID || local1421 != local830.createdComponent[local1421.createdComponentID]);
 						ScriptRunner.method3590(local1416);
 					}
 				}
@@ -524,8 +524,8 @@ public final class Static137 {
 				if (local1421.createdComponentID < 0) {
 					break;
 				}
-				local830 = Static6.method140(local1421.layer);
-			} while (local830 == null || local830.aComponentArray2 == null || local830.aComponentArray2.length <= local1421.createdComponentID || local1421 != local830.aComponentArray2[local1421.createdComponentID]);
+				local830 = Static6.getComponent(local1421.layer);
+			} while (local830 == null || local830.createdComponent == null || local830.createdComponent.length <= local1421.createdComponentID || local1421 != local830.createdComponent[local1421.createdComponentID]);
 			ScriptRunner.method3590(local1416);
 		}
 	}

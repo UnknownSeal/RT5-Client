@@ -168,7 +168,7 @@ public final class Static303 {
 				local32 = -1;
 			}
 			local36 = arg0.g1add();
-			Static337.method5706(arg2, local36, local32);
+			Static337.animate(arg2, local36, local32);
 		}
 		if ((arg3 & 0x100) != 0) {
 			arg2.anInt4615 = arg0.g1badd();

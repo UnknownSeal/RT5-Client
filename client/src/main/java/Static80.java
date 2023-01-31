@@ -11,7 +11,7 @@ public final class Static80 {
 	public static final Class89 aClass89_234 = new Class89(65, 5);
 
 	@OriginalMember(owner = "client!ek", name = "ab", descriptor = "[I")
-	public static final int[] anIntArray464 = new int[25];
+	public static final int[] experience = new int[25];
 
     @OriginalMember(owner = "client!ek", name = "a", descriptor = "(ZLjava/lang/String;)J")
 	public static long method5981(@OriginalArg(1) String arg0) {

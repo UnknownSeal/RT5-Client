@@ -11,7 +11,7 @@ public final class Static138 {
 	public static final Class16 aClass16_3 = new Class16("", 10);
 
 	@OriginalMember(owner = "client!hr", name = "a", descriptor = "(BIII)V")
-	public static void method2578(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
+	public static void playMusic(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
 		@Pc(6) int local6 = arg1 * Static218.aClass177_Sub1_2.musicVolume >> 8;
 		if (arg2 == -1 && !Static393.jingle) {
 			Static368.method6191();

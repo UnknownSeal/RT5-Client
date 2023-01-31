@@ -23,7 +23,7 @@ public final class Static192 {
 	public static Component aComponent_8 = null;
 
 	@OriginalMember(owner = "client!l", name = "a", descriptor = "(IZIB)I")
-	public static int method3505(@OriginalArg(0) int arg0, @OriginalArg(1) boolean arg1, @OriginalArg(2) int arg2) {
+	public static int getSlotTotal(@OriginalArg(0) int arg0, @OriginalArg(1) boolean arg1, @OriginalArg(2) int arg2) {
 		@Pc(10) Class2_Sub41 local10 = Static374.method6274(arg1, arg0);
 		if (local10 == null) {
 			return 0;

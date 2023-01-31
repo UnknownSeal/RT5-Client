@@ -16,10 +16,10 @@ public final class ScriptRunner {
 	private static Class86 aClass86_1;
 
 	@OriginalMember(owner = "client!lk", name = "v", descriptor = "Lclient!nk;")
-	private static Component aComponent_9;
+	private static Component staticActiveComponent2;
 
 	@OriginalMember(owner = "client!lk", name = "w", descriptor = "Lclient!nk;")
-	private static Component aComponent_10;
+	private static Component staticActiveComponent1;
 
 	@OriginalMember(owner = "client!lk", name = "a", descriptor = "I")
 	private static int isp = 0;
@@ -59,7 +59,7 @@ public final class ScriptRunner {
 
 	@OriginalMember(owner = "client!lk", name = "a", descriptor = "(I)V")
 	private static void method3589(@OriginalArg(0) int arg0) {
-		@Pc(3) Component local3 = Static6.method140(arg0);
+		@Pc(3) Component local3 = Static6.getComponent(arg0);
 		if (local3 == null) {
 			return;
 		}
@@ -284,108 +284,108 @@ public final class ScriptRunner {
 	@OriginalMember(owner = "client!lk", name = "a", descriptor = "(IZ)V")
 	private static void run(@OriginalArg(0) int opcode, @OriginalArg(1) boolean arg1) {
 		@Pc(137) Component component;
-		@Pc(25) int local25;
+		@Pc(25) int local25 ;
 		@Pc(35) Component local35;
 		@Pc(56) int local56;
-		@Pc(19) int local19;
+		@Pc(19) int int3;
 		@Pc(210) Component local210;
-		@Pc(13) int local13;
+		@Pc(13) int int1;
 		if (opcode < 300) {
 			if (opcode == 100) {
 				isp -= 3;
-				local13 = intStack[isp];
-				local19 = intStack[isp + 1];
-				local25 = intStack[isp + 2];
-				if (local19 == 0) {
+				int1 = intStack[isp];
+				int3 = intStack[isp + 1];
+				local25  = intStack[isp + 2];
+				if (int3 == 0) {
 					throw new RuntimeException();
 				}
-				local35 = Static6.method140(local13);
-				if (local35.aComponentArray2 == null) {
-					local35.aComponentArray2 = new Component[local25 + 1];
+				local35 = Static6.getComponent(int1);
+				if (local35.createdComponent == null) {
+					local35.createdComponent = new Component[local25  + 1];
 				}
-				if (local35.aComponentArray2.length <= local25) {
-					@Pc(54) Component[] local54 = new Component[local25 + 1];
-					for (local56 = 0; local56 < local35.aComponentArray2.length; local56++) {
-						local54[local56] = local35.aComponentArray2[local56];
+				if (local35.createdComponent.length <= local25 ) {
+					@Pc(54) Component[] local54 = new Component[local25  + 1];
+					for (local56 = 0; local56 < local35.createdComponent.length; local56++) {
+						local54[local56] = local35.createdComponent[local56];
 					}
-					local35.aComponentArray2 = local54;
+					local35.createdComponent = local54;
 				}
-				if (local25 > 0 && local35.aComponentArray2[local25 - 1] == null) {
-					throw new RuntimeException("Gap at:" + (local25 - 1));
+				if (local25  > 0 && local35.createdComponent[local25  - 1] == null) {
+					throw new RuntimeException("Gap at:" + (local25  - 1));
 				}
 				@Pc(99) Component local99 = new Component();
-				local99.type = local19;
+				local99.type = int3;
 				local99.layer = local99.id = local35.id;
-				local99.createdComponentID = local25;
-				local35.aComponentArray2[local25] = local99;
+				local99.createdComponentID = local25 ;
+				local35.createdComponent[local25 ] = local99;
 				if (arg1) {
-					aComponent_10 = local99;
+					staticActiveComponent1 = local99;
 				} else {
-					aComponent_9 = local99;
+					staticActiveComponent2 = local99;
 				}
 				Static200.redraw(local35);
 				return;
 			}
 			@Pc(158) Component local158;
 			if (opcode == 101) {
-				component = arg1 ? aComponent_10 : aComponent_9;
+				component = arg1 ? staticActiveComponent1 : staticActiveComponent2;
 				if (component.createdComponentID == -1) {
 					if (arg1) {
 						throw new RuntimeException("Tried to .cc_delete static .active-component!");
 					}
 					throw new RuntimeException("Tried to cc_delete static active-component!");
 				}
-				local158 = Static6.method140(component.id);
-				local158.aComponentArray2[component.createdComponentID] = null;
+				local158 = Static6.getComponent(component.id);
+				local158.createdComponent[component.createdComponentID] = null;
 				Static200.redraw(local158);
 				return;
 			}
 			if (opcode == 102) {
-				component = Static6.method140(intStack[--isp]);
-				component.aComponentArray2 = null;
+				component = Static6.getComponent(intStack[--isp]);
+				component.createdComponent = null;
 				Static200.redraw(component);
 				return;
 			}
 			if (opcode == 200) {
 				isp -= 2;
-				local13 = intStack[isp];
-				local19 = intStack[isp + 1];
-				local210 = Static207.method3704(local13, local19);
-				if (local210 != null && local19 != -1) {
+				int1 = intStack[isp];
+				int3 = intStack[isp + 1];
+				local210 = Static207.method3704(int1, int3);
+				if (local210 != null && int3 != -1) {
 					intStack[isp++] = 1;
 					if (arg1) {
-						aComponent_10 = local210;
+						staticActiveComponent1 = local210;
 						return;
 					}
-					aComponent_9 = local210;
+					staticActiveComponent2 = local210;
 					return;
 				}
 				intStack[isp++] = 0;
 				return;
 			}
 			if (opcode == 201) {
-				local13 = intStack[--isp];
-				local158 = Static6.method140(local13);
+				int1 = intStack[--isp];
+				local158 = Static6.getComponent(int1);
 				if (local158 != null) {
 					intStack[isp++] = 1;
 					if (arg1) {
-						aComponent_10 = local158;
+						staticActiveComponent1 = local158;
 						return;
 					}
-					aComponent_9 = local158;
+					staticActiveComponent2 = local158;
 					return;
 				}
 				intStack[isp++] = 0;
 				return;
 			}
 			if (opcode == 202) {
-				local13 = intStack[--isp];
-				method3589(local13);
+				int1 = intStack[--isp];
+				method3589(int1);
 				return;
 			}
 			if (opcode == 203) {
-				local13 = intStack[--isp];
-				method3596(local13);
+				int1 = intStack[--isp];
+				method3596(int1);
 				return;
 			}
 		} else {
@@ -394,17 +394,17 @@ public final class ScriptRunner {
 			if (opcode < 500) {
 				if (opcode == 403) {
 					isp -= 2;
-					local13 = intStack[isp];
-					local19 = intStack[isp + 1];
-					for (local25 = 0; local25 < Static5.anIntArray3.length; local25++) {
-						if (Static5.anIntArray3[local25] == local13) {
-							Static17.self.appearance.method3180(Static21.aClass55_1, local25, local19);
+					int1 = intStack[isp];
+					int3 = intStack[isp + 1];
+					for (local25  = 0; local25  < Static5.MALE_FEATURES.length; local25 ++) {
+						if (Static5.MALE_FEATURES[local25 ] == int1) {
+							Static17.self.appearance.method3180(Static21.setIdentikit, local25 , int3);
 							return;
 						}
 					}
-					for (local353 = 0; local353 < Static355.anIntArray457.length; local353++) {
-						if (Static355.anIntArray457[local353] == local13) {
-							Static17.self.appearance.method3180(Static21.aClass55_1, local353, local19);
+					for (local353 = 0; local353 < Static355.FEMALE_FEATURES.length; local353++) {
+						if (Static355.FEMALE_FEATURES[local25 ] == int1) {
+							Static17.self.appearance.method3180(Static21.setIdentikit, local353, int3);
 							return;
 						}
 					}
@@ -412,14 +412,14 @@ public final class ScriptRunner {
 				}
 				if (opcode == 404) {
 					isp -= 2;
-					local13 = intStack[isp];
-					local19 = intStack[isp + 1];
-					Static17.self.appearance.method3186(local13, local19);
+					int1 = intStack[isp];
+					int3 = intStack[isp + 1];
+					Static17.self.appearance.setColor(int1, int3);
 					return;
 				}
 				if (opcode == 410) {
 					local412 = intStack[--isp] != 0;
-					Static17.self.appearance.method3182(local412);
+					Static17.self.appearance.setGender(local412);
 					return;
 				}
 			} else if ((opcode < 1000 || opcode >= 1100) && (opcode < 2000 || opcode >= 2100)) {
@@ -427,9 +427,9 @@ public final class ScriptRunner {
 				if (opcode >= 1100 && opcode < 1200 || !(opcode < 2100 || opcode >= 2200)) {
 					if (opcode >= 2000) {
 						opcode -= 1000;
-						component = Static6.method140(intStack[--isp]);
+						component = Static6.getComponent(intStack[--isp]);
 					} else {
-						component = arg1 ? aComponent_10 : aComponent_9;
+						component = arg1 ? staticActiveComponent1 : staticActiveComponent2;
 					}
 					if (opcode == 1100) {
 						isp -= 2;
@@ -477,9 +477,9 @@ public final class ScriptRunner {
 						return;
 					}
 					if (opcode == 1105) {
-						local19 = intStack[--isp];
-						if (component.graphic != local19) {
-							component.graphic = local19;
+						int3 = intStack[--isp];
+						if (component.graphic != int3) {
+							component.graphic = int3;
 							Static200.redraw(component);
 						}
 						if (component.createdComponentID == -1) {
@@ -508,23 +508,23 @@ public final class ScriptRunner {
 					}
 					if (opcode == 1109) {
 						isp -= 6;
-						component.anInt4278 = intStack[isp];
-						component.anInt4250 = intStack[isp + 1];
-						component.anInt4320 = intStack[isp + 2];
-						component.anInt4274 = intStack[isp + 3];
-						component.anInt4319 = intStack[isp + 4];
+						component.modelXOffset = intStack[isp];
+						component.modelZOffset = intStack[isp + 1];
+						component.modelXAngle = intStack[isp + 2];
+						component.modelYAngle = intStack[isp + 3];
+						component.modelYOffset = intStack[isp + 4];
 						component.modelZoom = intStack[isp + 5];
 						Static200.redraw(component);
 						if (component.createdComponentID == -1) {
-							Static173.method3321(component.id);
+							Static173.setComponentModelAngleClient(component.id);
 							Static86.method1934(component.id);
 						}
 						return;
 					}
 					if (opcode == 1110) {
-						local19 = intStack[--isp];
-						if (component.modelSeqID != local19) {
-							component.modelSeqID = local19;
+						int3 = intStack[--isp];
+						if (component.modelSeqID != int3) {
+							component.modelSeqID = int3;
 							component.anInt4247 = 0;
 							component.anInt4316 = 1;
 							component.anInt4283 = 0;
@@ -561,8 +561,8 @@ public final class ScriptRunner {
 					}
 					if (opcode == 1114) {
 						isp -= 3;
-						component.anInt4298 = intStack[isp];
-						component.anInt4293 = intStack[isp + 1];
+						component.halign = intStack[isp];
+						component.valign = intStack[isp + 1];
 						component.textLineHeight = intStack[isp + 2];
 						Static200.redraw(component);
 						return;
@@ -618,13 +618,13 @@ public final class ScriptRunner {
 						component.modelZoom = intStack[--isp];
 						Static200.redraw(component);
 						if (component.createdComponentID == -1) {
-							Static173.method3321(component.id);
+							Static173.setComponentModelAngleClient(component.id);
 						}
 						return;
 					}
 					if (opcode == 1124) {
-						local19 = intStack[--isp];
-						component.lineDirection = local19 == 1;
+						int3 = intStack[--isp];
+						component.lineDirection = int3 == 1;
 						Static200.redraw(component);
 						return;
 					}
@@ -638,39 +638,39 @@ public final class ScriptRunner {
 				} else if (opcode >= 1200 && opcode < 1300 || opcode >= 2200 && opcode < 2300) {
 					if (opcode >= 2000) {
 						opcode -= 1000;
-						component = Static6.method140(intStack[--isp]);
+						component = Static6.getComponent(intStack[--isp]);
 					} else {
-						component = arg1 ? aComponent_10 : aComponent_9;
+						component = arg1 ? staticActiveComponent1 : staticActiveComponent2;
 					}
 					Static200.redraw(component);
 					if (opcode == 1200 || opcode == 1205 || opcode == 1208 || opcode == 1209 || opcode == 1212 || opcode == 1213) {
 						isp -= 2;
-						local19 = intStack[isp];
-						local25 = intStack[isp + 1];
+						int3 = intStack[isp];
+						local25  = intStack[isp + 1];
 						if (component.createdComponentID == -1) {
 							Static318.method5427(component.id);
-							Static173.method3321(component.id);
+							Static173.setComponentModelAngleClient(component.id);
 							Static86.method1934(component.id);
 						}
-						if (local19 == -1) {
+						if (int3 == -1) {
 							component.modelType = 1;
 							component.modelID = -1;
-							component.anInt4300 = -1;
+							component.objId = -1;
 							return;
 						}
-						component.anInt4300 = local19;
-						component.anInt4240 = local25;
+						component.objId = int3;
+						component.objCount = local25 ;
 						if (opcode == 1208 || opcode == 1209) {
 							component.aBoolean280 = true;
 						} else {
 							component.aBoolean280 = false;
 						}
-						@Pc(1537) ObjType local1537 = Static313.aClass107_2.get(local19);
-						component.anInt4320 = local1537.xAngle2D;
-						component.anInt4274 = local1537.yAngle2D;
-						component.anInt4319 = local1537.zAngle2D;
-						component.anInt4278 = local1537.xOffset2D;
-						component.anInt4250 = local1537.yOffset2D;
+						@Pc(1537) ObjType local1537 = Static313.aClass107_2.get(int3);
+						component.modelXAngle = local1537.xAngle2D;
+						component.modelYAngle = local1537.yAngle2D;
+						component.modelYOffset = local1537.zAngle2D;
+						component.modelXOffset = local1537.xOffset2D;
+						component.modelZOffset = local1537.yOffset2D;
 						component.modelZoom = local1537.zoom2d;
 						if (opcode == 1205 || opcode == 1209) {
 							component.anInt4306 = 0;
@@ -767,14 +767,14 @@ public final class ScriptRunner {
 				} else if (opcode >= 1300 && opcode < 1400 || opcode >= 2300 && opcode < 2400) {
 					if (opcode >= 2000) {
 						opcode -= 1000;
-						component = Static6.method140(intStack[--isp]);
+						component = Static6.getComponent(intStack[--isp]);
 					} else {
-						component = arg1 ? aComponent_10 : aComponent_9;
+						component = arg1 ? staticActiveComponent1 : staticActiveComponent2;
 					}
 					if (opcode == 1300) {
-						local19 = intStack[--isp] - 1;
-						if (local19 >= 0 && local19 <= 9) {
-							component.method4102(local19, stringStack[--anInt3652]);
+						int3 = intStack[--isp] - 1;
+						if (int3 >= 0 && int3 <= 9) {
+							component.method4102(int3, stringStack[--anInt3652]);
 							return;
 						}
 						anInt3652--;
@@ -782,25 +782,25 @@ public final class ScriptRunner {
 					}
 					if (opcode == 1301) {
 						isp -= 2;
-						local19 = intStack[isp];
-						local25 = intStack[isp + 1];
-						component.aComponent_12 = Static207.method3704(local19, local25);
+						int3 = intStack[isp];
+						local25  = intStack[isp + 1];
+						component.aComponent_12 = Static207.method3704(int3, local25 );
 						return;
 					}
 					if (opcode == 1302) {
-						local19 = intStack[--isp];
-						if (local19 != Static164.anInt3138 && local19 != Static158.anInt2895 && local19 != Static83.anInt1838) {
+						int3 = intStack[--isp];
+						if (int3 != Static164.anInt3138 && int3 != Static158.anInt2895 && int3 != Static83.anInt1838) {
 							return;
 						}
-						component.anInt4285 = local19;
+						component.anInt4285 = int3;
 						return;
 					}
 					if (opcode == 1303) {
-						component.anInt4239 = intStack[--isp];
+						component.dragDeadzone = intStack[--isp];
 						return;
 					}
 					if (opcode == 1304) {
-						component.anInt4271 = intStack[--isp];
+						component.dragDeadtime = intStack[--isp];
 						return;
 					}
 					if (opcode == 1305) {
@@ -808,7 +808,7 @@ public final class ScriptRunner {
 						return;
 					}
 					if (opcode == 1306) {
-						component.aString44 = stringStack[--anInt3652];
+						component.opCircumfix = stringStack[--anInt3652];
 						return;
 					}
 					if (opcode == 1307) {
@@ -821,10 +821,10 @@ public final class ScriptRunner {
 						return;
 					}
 					if (opcode == 1309) {
-						local19 = intStack[--isp];
-						local25 = intStack[--isp];
-						if (local25 >= 1 && local25 <= 10) {
-							component.method4109(local19, local25 - 1);
+						int3 = intStack[--isp];
+						local25  = intStack[--isp];
+						if (local25  >= 1 && local25  <= 10) {
+							component.method4109(int3, local25  - 1);
 						}
 						return;
 					}
@@ -841,18 +841,18 @@ public final class ScriptRunner {
 					if (opcode >= 1400 && opcode < 1500 || opcode >= 2400 && opcode < 2500) {
 						if (opcode >= 2000) {
 							opcode -= 1000;
-							component = Static6.method140(intStack[--isp]);
+							component = Static6.getComponent(intStack[--isp]);
 						} else {
-							component = arg1 ? aComponent_10 : aComponent_9;
+							component = arg1 ? staticActiveComponent1 : staticActiveComponent2;
 						}
 						local1101 = stringStack[--anInt3652];
 						@Pc(2137) int[] local2137 = null;
 						if (local1101.length() > 0 && local1101.charAt(local1101.length() - 1) == 'Y') {
 							local353 = intStack[--isp];
-							if (local353 > 0) {
-								local2137 = new int[local353];
-								while (local353-- > 0) {
-									local2137[local353] = intStack[--isp];
+							if (local353  > 0) {
+								local2137 = new int[local353 ];
+								while (local353 -- > 0) {
+									local2137[local353 ] = intStack[--isp];
 								}
 							}
 							local1101 = local1101.substring(0, local1101.length() - 1);
@@ -872,80 +872,80 @@ public final class ScriptRunner {
 							local2189[0] = Integer.valueOf(local56);
 						}
 						if (opcode == 1400) {
-							component.anObjectArray14 = local2189;
+							component.onClickRepeat = local2189;
 						} else if (opcode == 1401) {
-							component.anObjectArray16 = local2189;
+							component.onHold = local2189;
 						} else if (opcode == 1402) {
-							component.anObjectArray30 = local2189;
+							component.onRelease = local2189;
 						} else if (opcode == 1403) {
-							component.anObjectArray13 = local2189;
+							component.onMouseOver = local2189;
 						} else if (opcode == 1404) {
-							component.anObjectArray9 = local2189;
+							component.onMouseLeave = local2189;
 						} else if (opcode == 1405) {
-							component.anObjectArray31 = local2189;
+							component.onDragStart = local2189;
 						} else if (opcode == 1406) {
-							component.anObjectArray32 = local2189;
+							component.onUseWith = local2189;
 						} else if (opcode == 1407) {
-							component.anObjectArray10 = local2189;
-							component.anIntArray273 = local2137;
+							component.onVarpTransmit = local2189;
+							component.varpTriggers = local2137;
 						} else if (opcode == 1408) {
-							component.anObjectArray23 = local2189;
+							component.onTimer = local2189;
 						} else if (opcode == 1409) {
-							component.anObjectArray27 = local2189;
+							component.onOptionClick = local2189;
 						} else if (opcode == 1410) {
-							component.anObjectArray8 = local2189;
+							component.onDragRelease = local2189;
 						} else if (opcode == 1411) {
-							component.anObjectArray28 = local2189;
+							component.onDrag = local2189;
 						} else if (opcode == 1412) {
-							component.anObjectArray12 = local2189;
+							component.onMouseRepeat = local2189;
 						} else if (opcode == 1414) {
-							component.anObjectArray29 = local2189;
-							component.anIntArray281 = local2137;
+							component.onInvTransmit = local2189;
+							component.inventoryTriggers = local2137;
 						} else if (opcode == 1415) {
-							component.anObjectArray5 = local2189;
-							component.anIntArray274 = local2137;
+							component.onStatTransmit = local2189;
+							component.statTriggers = local2137;
 						} else if (opcode == 1416) {
-							component.anObjectArray15 = local2189;
+							component.onUse = local2189;
 						} else if (opcode == 1417) {
-							component.anObjectArray21 = local2189;
+							component.onScroll = local2189;
 						} else if (opcode == 1418) {
-							component.anObjectArray26 = local2189;
+							component.onMsg = local2189;
 						} else if (opcode == 1419) {
-							component.anObjectArray17 = local2189;
+							component.onKey = local2189;
 						} else if (opcode == 1420) {
-							component.anObjectArray25 = local2189;
+							component.onFriendTransmit = local2189;
 						} else if (opcode == 1421) {
-							component.anObjectArray18 = local2189;
+							component.onClanTransmit = local2189;
 						} else if (opcode == 1422) {
-							component.anObjectArray24 = local2189;
+							component.onMiscTransmit = local2189;
 						} else if (opcode == 1423) {
-							component.anObjectArray34 = local2189;
+							component.onDialogAbort = local2189;
 						} else if (opcode == 1424) {
-							component.anObjectArray11 = local2189;
+							component.onWidgetsOpenClose = local2189;
 						} else if (opcode == 1425) {
-							component.anObjectArray33 = local2189;
+							component.onStockTransmit = local2189;
 						} else if (opcode == 1426) {
-							component.anObjectArray20 = local2189;
+							component.onMinimapUnlock = local2189;
 						} else if (opcode == 1427) {
-							component.anObjectArray6 = local2189;
+							component.onResize = local2189;
 						} else if (opcode == 1428) {
-							component.anObjectArray19 = local2189;
-							component.anIntArray278 = local2137;
+							component.onVarcTransmit = local2189;
+							component.varcTriggers = local2137;
 						} else if (opcode == 1429) {
-							component.anObjectArray7 = local2189;
-							component.anIntArray277 = local2137;
+							component.onVarcstrTransmit = local2189;
+							component.varcstrTriggers = local2137;
 						}
 						component.aBoolean296 = true;
 						return;
 					}
 					if (opcode < 1600) {
-						component = arg1 ? aComponent_10 : aComponent_9;
+						component = arg1 ? staticActiveComponent1 : staticActiveComponent2;
 						if (opcode == 1500) {
-							intStack[isp++] = component.anInt4305;
+							intStack[isp++] = component.x;
 							return;
 						}
 						if (opcode == 1501) {
-							intStack[isp++] = component.anInt4254;
+							intStack[isp++] = component.y;
 							return;
 						}
 						if (opcode == 1502) {
@@ -965,7 +965,7 @@ public final class ScriptRunner {
 							return;
 						}
 					} else if (opcode < 1700) {
-						component = arg1 ? aComponent_10 : aComponent_9;
+						component = arg1 ? staticActiveComponent1 : staticActiveComponent2;
 						if (opcode == 1600) {
 							intStack[isp++] = component.scrollX;
 							return;
@@ -991,15 +991,15 @@ public final class ScriptRunner {
 							return;
 						}
 						if (opcode == 1606) {
-							intStack[isp++] = component.anInt4320;
+							intStack[isp++] = component.modelXAngle;
 							return;
 						}
 						if (opcode == 1607) {
-							intStack[isp++] = component.anInt4319;
+							intStack[isp++] = component.modelYOffset;
 							return;
 						}
 						if (opcode == 1608) {
-							intStack[isp++] = component.anInt4274;
+							intStack[isp++] = component.modelYAngle;
 							return;
 						}
 						if (opcode == 1609) {
@@ -1007,11 +1007,11 @@ public final class ScriptRunner {
 							return;
 						}
 						if (opcode == 1610) {
-							intStack[isp++] = component.anInt4278;
+							intStack[isp++] = component.modelXOffset;
 							return;
 						}
 						if (opcode == 1611) {
-							intStack[isp++] = component.anInt4250;
+							intStack[isp++] = component.modelZOffset;
 							return;
 						}
 						if (opcode == 1612) {
@@ -1019,14 +1019,14 @@ public final class ScriptRunner {
 							return;
 						}
 					} else if (opcode < 1800) {
-						component = arg1 ? aComponent_10 : aComponent_9;
+						component = arg1 ? staticActiveComponent1 : staticActiveComponent2;
 						if (opcode == 1700) {
-							intStack[isp++] = component.anInt4300;
+							intStack[isp++] = component.objId;
 							return;
 						}
 						if (opcode == 1701) {
-							if (component.anInt4300 != -1) {
-								intStack[isp++] = component.anInt4240;
+							if (component.objId != -1) {
+								intStack[isp++] = component.objCount;
 								return;
 							}
 							intStack[isp++] = 0;
@@ -1037,16 +1037,16 @@ public final class ScriptRunner {
 							return;
 						}
 					} else if (opcode < 1900) {
-						component = arg1 ? aComponent_10 : aComponent_9;
+						component = arg1 ? staticActiveComponent1 : staticActiveComponent2;
 						if (opcode == 1800) {
-							intStack[isp++] = Static45.method1404(component).method1852();
+							intStack[isp++] = Static45.getServerActiveProperties(component).getTargetMask();
 							return;
 						}
 						if (opcode == 1801) {
-							local19 = intStack[--isp];
-							local19--;
-							if (component.ops != null && local19 < component.ops.length && component.ops[local19] != null) {
-								stringStack[anInt3652++] = component.ops[local19];
+							int3 = intStack[--isp];
+							int3--;
+							if (component.ops != null && int3 < component.ops.length && component.ops[int3] != null) {
+								stringStack[anInt3652++] = component.ops[int3];
 								return;
 							}
 							stringStack[anInt3652++] = "";
@@ -1061,13 +1061,13 @@ public final class ScriptRunner {
 							return;
 						}
 					} else if (opcode < 2600) {
-						component = Static6.method140(intStack[--isp]);
+						component = Static6.getComponent(intStack[--isp]);
 						if (opcode == 2500) {
-							intStack[isp++] = component.anInt4305;
+							intStack[isp++] = component.x;
 							return;
 						}
 						if (opcode == 2501) {
-							intStack[isp++] = component.anInt4254;
+							intStack[isp++] = component.y;
 							return;
 						}
 						if (opcode == 2502) {
@@ -1087,7 +1087,7 @@ public final class ScriptRunner {
 							return;
 						}
 					} else if (opcode < 2700) {
-						component = Static6.method140(intStack[--isp]);
+						component = Static6.getComponent(intStack[--isp]);
 						if (opcode == 2600) {
 							intStack[isp++] = component.scrollX;
 							return;
@@ -1113,15 +1113,15 @@ public final class ScriptRunner {
 							return;
 						}
 						if (opcode == 2606) {
-							intStack[isp++] = component.anInt4320;
+							intStack[isp++] = component.modelXAngle;
 							return;
 						}
 						if (opcode == 2607) {
-							intStack[isp++] = component.anInt4319;
+							intStack[isp++] = component.modelYOffset;
 							return;
 						}
 						if (opcode == 2608) {
-							intStack[isp++] = component.anInt4274;
+							intStack[isp++] = component.modelYAngle;
 							return;
 						}
 						if (opcode == 2609) {
@@ -1129,11 +1129,11 @@ public final class ScriptRunner {
 							return;
 						}
 						if (opcode == 2610) {
-							intStack[isp++] = component.anInt4278;
+							intStack[isp++] = component.modelXOffset;
 							return;
 						}
 						if (opcode == 2611) {
-							intStack[isp++] = component.anInt4250;
+							intStack[isp++] = component.modelZOffset;
 							return;
 						}
 						if (opcode == 2612) {
@@ -1145,22 +1145,22 @@ public final class ScriptRunner {
 						@Pc(3254) Class2_Sub7 local3254;
 						if (opcode < 2800) {
 							if (opcode == 2700) {
-								component = Static6.method140(intStack[--isp]);
-								intStack[isp++] = component.anInt4300;
+								component = Static6.getComponent(intStack[--isp]);
+								intStack[isp++] = component.objId;
 								return;
 							}
 							if (opcode == 2701) {
-								component = Static6.method140(intStack[--isp]);
-								if (component.anInt4300 != -1) {
-									intStack[isp++] = component.anInt4240;
+								component = Static6.getComponent(intStack[--isp]);
+								if (component.objId != -1) {
+									intStack[isp++] = component.objCount;
 									return;
 								}
 								intStack[isp++] = 0;
 								return;
 							}
 							if (opcode == 2702) {
-								local13 = intStack[--isp];
-								local3254 = (Class2_Sub7) Static329.aClass4_130.get((long) local13);
+								int1 = intStack[--isp];
+								local3254 = (Class2_Sub7) Static329.aClass4_130.get((long) int1);
 								if (local3254 != null) {
 									intStack[isp++] = 1;
 									return;
@@ -1169,27 +1169,27 @@ public final class ScriptRunner {
 								return;
 							}
 							if (opcode == 2703) {
-								component = Static6.method140(intStack[--isp]);
-								if (component.aComponentArray2 == null) {
+								component = Static6.getComponent(intStack[--isp]);
+								if (component.createdComponent == null) {
 									intStack[isp++] = 0;
 									return;
 								}
-								local19 = component.aComponentArray2.length;
-								for (local25 = 0; local25 < component.aComponentArray2.length; local25++) {
-									if (component.aComponentArray2[local25] == null) {
-										local19 = local25;
+								int3 = component.createdComponent.length;
+								for (local25  = 0; local25  < component.createdComponent.length; local25 ++) {
+									if (component.createdComponent[local25 ] == null) {
+										int3 = local25 ;
 										break;
 									}
 								}
-								intStack[isp++] = local19;
+								intStack[isp++] = int3;
 								return;
 							}
 							if (opcode == 2704 || opcode == 2705) {
 								isp -= 2;
-								local13 = intStack[isp];
-								local19 = intStack[isp + 1];
-								local3356 = (Class2_Sub7) Static329.aClass4_130.get((long) local13);
-								if (local3356 != null && local3356.anInt1370 == local19) {
+								int1 = intStack[isp];
+								int3 = intStack[isp + 1];
+								local3356 = (Class2_Sub7) Static329.aClass4_130.get((long) int1);
+								if (local3356 != null && local3356.anInt1370 == int3) {
 									intStack[isp++] = 1;
 									return;
 								} else {
@@ -1198,16 +1198,16 @@ public final class ScriptRunner {
 								}
 							}
 						} else if (opcode < 2900) {
-							component = Static6.method140(intStack[--isp]);
+							component = Static6.getComponent(intStack[--isp]);
 							if (opcode == 2800) {
-								intStack[isp++] = Static45.method1404(component).method1852();
+								intStack[isp++] = Static45.getServerActiveProperties(component).getTargetMask();
 								return;
 							}
 							if (opcode == 2801) {
-								local19 = intStack[--isp];
-								local19--;
-								if (component.ops != null && local19 < component.ops.length && component.ops[local19] != null) {
-									stringStack[anInt3652++] = component.ops[local19];
+								int3 = intStack[--isp];
+								int3--;
+								if (component.ops != null && int3 < component.ops.length && component.ops[int3] != null) {
+									stringStack[anInt3652++] = component.ops[int3];
 									return;
 								}
 								stringStack[anInt3652++] = "";
@@ -1226,26 +1226,26 @@ public final class ScriptRunner {
 							if (opcode < 3200) {
 								if (opcode == 3100) {
 									local3493 = stringStack[--anInt3652];
-									Static207.method3699(local3493);
+									Static207.add(local3493);
 									return;
 								}
 								if (opcode == 3101) {
 									isp -= 2;
-									Static337.method5706(Static17.self, intStack[isp + 1], intStack[isp]);
+									Static337.animate(Static17.self, intStack[isp + 1], intStack[isp]);
 									return;
 								}
 								if (opcode == 3103) {
-									Static82.method1904();
+									Static82.closeWidget();
 									return;
 								}
 								if (opcode == 3104) {
 									local3493 = stringStack[--anInt3652];
-									local19 = 0;
+									int3 = 0;
 									if (Static132.method2485(local3493)) {
-										local19 = Static146.method2698(local3493);
+										int3 = Static146.method2698(local3493);
 									}
 									Static91.method1960(Static363.aClass145_239);
-									Static257.aClass2_Sub4_Sub2_4.p4(local19);
+									Static257.aClass2_Sub4_Sub2_4.p4(int3);
 									return;
 								}
 								if (opcode == 3105) {
@@ -1263,49 +1263,49 @@ public final class ScriptRunner {
 									return;
 								}
 								if (opcode == 3107) {
-									local13 = intStack[--isp];
+									int1 = intStack[--isp];
 									local1101 = stringStack[--anInt3652];
-									Static341.method5768(local13, local1101);
+									Static341.clickPlayerOption(int1, local1101);
 									return;
 								}
 								if (opcode == 3108) {
 									isp -= 3;
-									local13 = intStack[isp];
-									local19 = intStack[isp + 1];
-									local25 = intStack[isp + 2];
-									local35 = Static6.method140(local25);
-									Static380.method6334(local13, local19, local35);
+									int1 = intStack[isp];
+									int3 = intStack[isp + 1];
+									local25  = intStack[isp + 2];
+									local35 = Static6.getComponent(local25 );
+									Static380.method6334(int1, int3, local35);
 									return;
 								}
 								if (opcode == 3109) {
 									isp -= 2;
-									local13 = intStack[isp];
-									local19 = intStack[isp + 1];
-									local210 = arg1 ? aComponent_10 : aComponent_9;
-									Static380.method6334(local13, local19, local210);
+									int1 = intStack[isp];
+									int3 = intStack[isp + 1];
+									local210 = arg1 ? staticActiveComponent1 : staticActiveComponent2;
+									Static380.method6334(int1, int3, local210);
 									return;
 								}
 								if (opcode == 3110) {
-									local13 = intStack[--isp];
+									int1 = intStack[--isp];
 									Static91.method1960(Static190.aClass145_138);
-									Static257.aClass2_Sub4_Sub2_4.p2(local13);
+									Static257.aClass2_Sub4_Sub2_4.p2(int1);
 									return;
 								}
 								if (opcode == 3111) {
 									isp -= 2;
-									local13 = intStack[isp];
-									local19 = intStack[isp + 1];
-									local3356 = (Class2_Sub7) Static329.aClass4_130.get((long) local13);
+									int1 = intStack[isp];
+									int3 = intStack[isp + 1];
+									local3356 = (Class2_Sub7) Static329.aClass4_130.get((long) int1);
 									if (local3356 != null) {
-										Static276.method4654(true, local3356, local3356.anInt1370 != local19);
+										Static276.method4654(true, local3356, local3356.anInt1370 != int3);
 									}
-									Static382.method6364(local13, 3, true, local19);
+									Static382.method6364(int1, 3, true, int3);
 									return;
 								}
 								if (opcode == 3112) {
 									isp--;
-									local13 = intStack[isp];
-									local3254 = (Class2_Sub7) Static329.aClass4_130.get((long) local13);
+									int1 = intStack[isp];
+									local3254 = (Class2_Sub7) Static329.aClass4_130.get((long) int1);
 									if (local3254 != null && local3254.anInt1373 == 3) {
 										Static276.method4654(true, local3254, true);
 									}
@@ -1314,31 +1314,31 @@ public final class ScriptRunner {
 							} else if (opcode < 3300) {
 								if (opcode == 3200) {
 									isp -= 3;
-									Static29.method939(intStack[isp + 1], 255, intStack[isp + 2], intStack[isp]);
+									Static29.play(intStack[isp + 1], 255, intStack[isp + 2], intStack[isp]);
 									return;
 								}
 								if (opcode == 3201) {
-									Static138.method2578(50, 255, intStack[--isp]);
+									Static138.playMusic(50, 255, intStack[--isp]);
 									return;
 								}
 								if (opcode == 3202) {
 									isp -= 2;
-									Static175.method3323(intStack[isp], intStack[isp + 1], 255);
+									Static175.playJingle(intStack[isp], intStack[isp + 1], 255);
 									return;
 								}
 								if (opcode == 3203) {
 									isp -= 4;
-									Static29.method939(intStack[isp + 1], intStack[isp + 3], intStack[isp + 2], intStack[isp]);
+									Static29.play(intStack[isp + 1], intStack[isp + 3], intStack[isp + 2], intStack[isp]);
 									return;
 								}
 								if (opcode == 3204) {
 									isp -= 3;
-									Static138.method2578(intStack[isp + 2], intStack[isp + 1], intStack[isp]);
+									Static138.playMusic(intStack[isp + 2], intStack[isp + 1], intStack[isp]);
 									return;
 								}
 								if (opcode == 3205) {
 									isp -= 3;
-									Static175.method3323(intStack[isp], intStack[isp + 1], intStack[isp + 2]);
+									Static175.playJingle(intStack[isp], intStack[isp + 1], intStack[isp + 2]);
 									return;
 								}
 							} else if (opcode < 3400) {
@@ -1348,65 +1348,65 @@ public final class ScriptRunner {
 								}
 								if (opcode == 3301) {
 									isp -= 2;
-									local13 = intStack[isp];
-									local19 = intStack[isp + 1];
-									intStack[isp++] = Static41.method1305(false, local13, local19);
+									int1 = intStack[isp];
+									int3 = intStack[isp + 1];
+									intStack[isp++] = Static41.getItemType(false, int1, int3);
 									return;
 								}
 								if (opcode == 3302) {
 									isp -= 2;
-									local13 = intStack[isp];
-									local19 = intStack[isp + 1];
-									intStack[isp++] = Static243.method4237(local19, false, local13);
+									int1 = intStack[isp];
+									int3 = intStack[isp + 1];
+									intStack[isp++] = Static243.getItemCount(int3, false, int1);
 									return;
 								}
 								if (opcode == 3303) {
 									isp -= 2;
-									local13 = intStack[isp];
-									local19 = intStack[isp + 1];
-									intStack[isp++] = Static192.method3505(local13, false, local19);
+									int1 = intStack[isp];
+									int3 = intStack[isp + 1];
+									intStack[isp++] = Static192.getSlotTotal(int1, false, int3);
 									return;
 								}
 								if (opcode == 3304) {
-									local13 = intStack[--isp];
-									intStack[isp++] = Static178.aClass51_3.method1706(local13).anInt2488;
+									int1 = intStack[--isp];
+									intStack[isp++] = Static178.aClass51_3.get(int1).anInt2488;
 									return;
 								}
 								if (opcode == 3305) {
-									local13 = intStack[--isp];
-									intStack[isp++] = Static268.anIntArray338[local13];
+									int1 = intStack[--isp];
+									intStack[isp++] = Static268.boostedLevels[int1];
 									return;
 								}
 								if (opcode == 3306) {
-									local13 = intStack[--isp];
-									intStack[isp++] = Static325.anIntArray414[local13];
+									int1 = intStack[--isp];
+									intStack[isp++] = Static325.baseLevels[int1];
 									return;
 								}
 								if (opcode == 3307) {
-									local13 = intStack[--isp];
-									intStack[isp++] = Static80.anIntArray464[local13];
+									int1 = intStack[--isp];
+									intStack[isp++] = Static80.experience[int1];
 									return;
 								}
 								if (opcode == 3308) {
 									@Pc(4136) byte local4136 = Static17.self.aByte78;
-									local19 = (Static17.self.xFine >> 7) + Static164.originX;
-									local25 = (Static17.self.zFine >> 7) + Static148.originZ;
-									intStack[isp++] = (local4136 << 28) + (local19 << 14) + local25;
+									int3 = (Static17.self.xFine >> 7) + Static164.originX;
+									local25  = (Static17.self.zFine >> 7) + Static148.originZ;
+									intStack[isp++] = (local4136 << 28) + (int3 << 14) + local25 ;
 									return;
 								}
 								if (opcode == 3309) {
-									local13 = intStack[--isp];
-									intStack[isp++] = local13 >> 14 & 0x3FFF;
+									int1 = intStack[--isp];
+									intStack[isp++] = int1 >> 14 & 0x3FFF;
 									return;
 								}
 								if (opcode == 3310) {
-									local13 = intStack[--isp];
-									intStack[isp++] = local13 >> 28;
+									int1 = intStack[--isp];
+									intStack[isp++] = int1 >> 28;
 									return;
 								}
 								if (opcode == 3311) {
-									local13 = intStack[--isp];
-									intStack[isp++] = local13 & 0x3FFF;
+									int1 = intStack[--isp];
+									intStack[isp++] = int1 & 0x3FFF;
 									return;
 								}
 								if (opcode == 3312) {
@@ -1415,23 +1415,23 @@ public final class ScriptRunner {
 								}
 								if (opcode == 3313) {
 									isp -= 2;
-									local13 = intStack[isp];
-									local19 = intStack[isp + 1];
-									intStack[isp++] = Static41.method1305(true, local13, local19);
+									int1 = intStack[isp];
+									int3 = intStack[isp + 1];
+									intStack[isp++] = Static41.getItemType(true, int1, int3);
 									return;
 								}
 								if (opcode == 3314) {
 									isp -= 2;
-									local13 = intStack[isp];
-									local19 = intStack[isp + 1];
-									intStack[isp++] = Static243.method4237(local19, true, local13);
+									int1 = intStack[isp];
+									int3 = intStack[isp + 1];
+									intStack[isp++] = Static243.getItemCount(int3, true, int1);
 									return;
 								}
 								if (opcode == 3315) {
 									isp -= 2;
-									local13 = intStack[isp];
-									local19 = intStack[isp + 1];
-									intStack[isp++] = Static192.method3505(local13, true, local19);
+									int1 = intStack[isp];
+									int3 = intStack[isp + 1];
+									intStack[isp++] = Static192.getSlotTotal(int1, true, int3);
 									return;
 								}
 								if (opcode == 3316) {
@@ -1495,22 +1495,22 @@ public final class ScriptRunner {
 									return;
 								}
 								if (opcode == 3330) {
-									local13 = intStack[--isp];
-									intStack[isp++] = Static154.method2784(local13);
+									int1 = intStack[--isp];
+									intStack[isp++] = Static154.method2784(int1);
 									return;
 								}
 								if (opcode == 3331) {
 									isp -= 2;
-									local13 = intStack[isp];
-									local19 = intStack[isp + 1];
-									intStack[isp++] = Static165.method3149(local19, false, local13);
+									int1 = intStack[isp];
+									int3 = intStack[isp + 1];
+									intStack[isp++] = Static165.method3149(int3, false, int1);
 									return;
 								}
 								if (opcode == 3332) {
 									isp -= 2;
-									local13 = intStack[isp];
-									local19 = intStack[isp + 1];
-									intStack[isp++] = Static165.method3149(local19, true, local13);
+									int1 = intStack[isp];
+									int3 = intStack[isp + 1];
+									intStack[isp++] = Static165.method3149(int3, true, int1);
 									return;
 								}
 								if (opcode == 3333) {
@@ -1523,14 +1523,14 @@ public final class ScriptRunner {
 								}
 								if (opcode == 3336) {
 									isp -= 4;
-									local13 = intStack[isp];
-									local19 = intStack[isp + 1];
-									local25 = intStack[isp + 2];
+									int1 = intStack[isp];
+									int3 = intStack[isp + 1];
+									local25  = intStack[isp + 2];
 									local353 = intStack[isp + 3];
-									local13 += local19 << 14;
-									local13 += local25 << 28;
-									local13 += local353;
-									intStack[isp++] = local13;
+									int1 += int3 << 14;
+									int1 += local25  << 28;
+									int1 += local353;
+									intStack[isp++] = int1;
 									return;
 								}
 								if (opcode == 3337) {
@@ -1545,21 +1545,21 @@ public final class ScriptRunner {
 								@Pc(4761) Class52 local4761;
 								if (opcode == 3400) {
 									isp -= 2;
-									local13 = intStack[isp];
-									local19 = intStack[isp + 1];
-									local4761 = Static140.aClass109_1.method2779(local13);
-									stringStack[anInt3652++] = local4761.method1775(local19);
+									int1 = intStack[isp];
+									int3 = intStack[isp + 1];
+									local4761 = Static140.aClass109_1.method2779(int1);
+									stringStack[anInt3652++] = local4761.method1775(int3);
 									return;
 								}
 								if (opcode == 3408) {
 									isp -= 4;
-									local13 = intStack[isp];
-									local19 = intStack[isp + 1];
-									local25 = intStack[isp + 2];
+									int1 = intStack[isp];
+									int3 = intStack[isp + 1];
+									local25  = intStack[isp + 2];
 									local353 = intStack[isp + 3];
-									@Pc(4807) Class52 local4807 = Static140.aClass109_1.method2779(local25);
-									if (local4807.aChar4 == local13 && local4807.aChar3 == local19) {
-										if (local19 == 115) {
+									@Pc(4807) Class52 local4807 = Static140.aClass109_1.method2779(local25 );
+									if (local4807.aChar4 == int1 && local4807.aChar3 == int3) {
+										if (int3 == 115) {
 											stringStack[anInt3652++] = local4807.method1775(local353);
 											return;
 										}
@@ -1570,26 +1570,26 @@ public final class ScriptRunner {
 								}
 								if (opcode == 3409) {
 									isp -= 3;
-									local13 = intStack[isp];
-									local19 = intStack[isp + 1];
-									local25 = intStack[isp + 2];
-									if (local19 == -1) {
+									int1 = intStack[isp];
+									int3 = intStack[isp + 1];
+									local25  = intStack[isp + 2];
+									if (int3 == -1) {
 										throw new RuntimeException("C3409-2");
 									}
-									@Pc(4883) Class52 local4883 = Static140.aClass109_1.method2779(local19);
-									if (local4883.aChar3 != local13) {
+									@Pc(4883) Class52 local4883 = Static140.aClass109_1.method2779(int3);
+									if (local4883.aChar3 != int1) {
 										throw new RuntimeException("C3409-1");
 									}
-									intStack[isp++] = local4883.method1771(local25) ? 1 : 0;
+									intStack[isp++] = local4883.method1771(local25 ) ? 1 : 0;
 									return;
 								}
 								if (opcode == 3410) {
-									local13 = intStack[--isp];
+									int1 = intStack[--isp];
 									local1101 = stringStack[--anInt3652];
-									if (local13 == -1) {
+									if (int1 == -1) {
 										throw new RuntimeException("C3410-2");
 									}
-									local4761 = Static140.aClass109_1.method2779(local13);
+									local4761 = Static140.aClass109_1.method2779(int1);
 									if (local4761.aChar3 != 's') {
 										throw new RuntimeException("C3410-1");
 									}
@@ -1597,8 +1597,8 @@ public final class ScriptRunner {
 									return;
 								}
 								if (opcode == 3411) {
-									local13 = intStack[--isp];
-									@Pc(4981) Class52 local4981 = Static140.aClass109_1.method2779(local13);
+									int1 = intStack[--isp];
+									@Pc(4981) Class52 local4981 = Static140.aClass109_1.method2779(int1);
 									intStack[isp++] = local4981.aClass4_31.method83();
 									return;
 								}
@@ -1616,11 +1616,11 @@ public final class ScriptRunner {
 									return;
 								}
 								if (opcode == 3601) {
-									local13 = intStack[--isp];
-									if (Static235.anInt3363 == 2 && local13 < Static384.anInt7178) {
-										stringStack[anInt3652++] = Static17.aStringArray43[local13];
-										if (Static319.aStringArray54[local13] != null) {
-											stringStack[anInt3652++] = Static319.aStringArray54[local13];
+									int1 = intStack[--isp];
+									if (Static235.anInt3363 == 2 && int1 < Static384.anInt7178) {
+										stringStack[anInt3652++] = Static17.aStringArray43[int1];
+										if (Static319.aStringArray54[int1] != null) {
+											stringStack[anInt3652++] = Static319.aStringArray54[int1];
 											return;
 										}
 										stringStack[anInt3652++] = "";
@@ -1631,18 +1631,18 @@ public final class ScriptRunner {
 									return;
 								}
 								if (opcode == 3602) {
-									local13 = intStack[--isp];
-									if (Static235.anInt3363 == 2 && local13 < Static384.anInt7178) {
-										intStack[isp++] = Static265.anIntArray333[local13];
+									int1 = intStack[--isp];
+									if (Static235.anInt3363 == 2 && int1 < Static384.anInt7178) {
+										intStack[isp++] = Static265.anIntArray333[int1];
 										return;
 									}
 									intStack[isp++] = 0;
 									return;
 								}
 								if (opcode == 3603) {
-									local13 = intStack[--isp];
-									if (Static235.anInt3363 == 2 && local13 < Static384.anInt7178) {
-										intStack[isp++] = Static114.anIntArray148[local13];
+									int1 = intStack[--isp];
+									if (Static235.anInt3363 == 2 && int1 < Static384.anInt7178) {
+										intStack[isp++] = Static114.anIntArray148[int1];
 										return;
 									}
 									intStack[isp++] = 0;
@@ -1650,8 +1650,8 @@ public final class ScriptRunner {
 								}
 								if (opcode == 3604) {
 									local3493 = stringStack[--anInt3652];
-									local19 = intStack[--isp];
-									Static171.method3255(local19, local3493);
+									int3 = intStack[--isp];
+									Static171.method3255(int3, local3493);
 									return;
 								}
 								if (opcode == 3605) {
@@ -1683,9 +1683,9 @@ public final class ScriptRunner {
 									return;
 								}
 								if (opcode == 3610) {
-									local13 = intStack[--isp];
-									if (Static235.anInt3363 == 2 && local13 < Static384.anInt7178) {
-										stringStack[anInt3652++] = Static209.aStringArray32[local13];
+									int1 = intStack[--isp];
+									if (Static235.anInt3363 == 2 && int1 < Static384.anInt7178) {
+										stringStack[anInt3652++] = Static209.aStringArray32[int1];
 										return;
 									}
 									stringStack[anInt3652++] = "";
@@ -1708,27 +1708,27 @@ public final class ScriptRunner {
 									return;
 								}
 								if (opcode == 3613) {
-									local13 = intStack[--isp];
-									if (Static389.aString53 != null && local13 < Static186.anInt3730) {
-										stringStack[anInt3652++] = Static47.aClass214Array1[local13].aString58;
+									int1 = intStack[--isp];
+									if (Static389.aString53 != null && int1 < Static186.anInt3730) {
+										stringStack[anInt3652++] = Static47.aClass214Array1[int1].aString58;
 										return;
 									}
 									stringStack[anInt3652++] = "";
 									return;
 								}
 								if (opcode == 3614) {
-									local13 = intStack[--isp];
-									if (Static389.aString53 != null && local13 < Static186.anInt3730) {
-										intStack[isp++] = Static47.aClass214Array1[local13].anInt5978;
+									int1 = intStack[--isp];
+									if (Static389.aString53 != null && int1 < Static186.anInt3730) {
+										intStack[isp++] = Static47.aClass214Array1[int1].anInt5978;
 										return;
 									}
 									intStack[isp++] = 0;
 									return;
 								}
 								if (opcode == 3615) {
-									local13 = intStack[--isp];
-									if (Static389.aString53 != null && local13 < Static186.anInt3730) {
-										intStack[isp++] = Static47.aClass214Array1[local13].aByte65;
+									int1 = intStack[--isp];
+									if (Static389.aString53 != null && int1 < Static186.anInt3730) {
+										intStack[isp++] = Static47.aClass214Array1[int1].aByte65;
 										return;
 									}
 									intStack[isp++] = 0;
@@ -1765,11 +1765,11 @@ public final class ScriptRunner {
 									return;
 								}
 								if (opcode == 3622) {
-									local13 = intStack[--isp];
-									if (Static235.anInt3363 != 0 && local13 < Static301.anInt5700) {
-										stringStack[anInt3652++] = Static226.aStringArray35[local13];
-										if (Static371.aStringArray66[local13] != null) {
-											stringStack[anInt3652++] = Static371.aStringArray66[local13];
+									int1 = intStack[--isp];
+									if (Static235.anInt3363 != 0 && int1 < Static301.anInt5700) {
+										stringStack[anInt3652++] = Static226.aStringArray35[int1];
+										if (Static371.aStringArray66[int1] != null) {
+											stringStack[anInt3652++] = Static371.aStringArray66[int1];
 											return;
 										}
 										stringStack[anInt3652++] = "";
@@ -1788,8 +1788,8 @@ public final class ScriptRunner {
 									return;
 								}
 								if (opcode == 3624) {
-									local13 = intStack[--isp];
-									if (Static47.aClass214Array1 != null && local13 < Static186.anInt3730 && Static47.aClass214Array1[local13].aString60.equalsIgnoreCase(Static17.self.aString41)) {
+									int1 = intStack[--isp];
+									if (Static47.aClass214Array1 != null && int1 < Static186.anInt3730 && Static47.aClass214Array1[int1].aString60.equalsIgnoreCase(Static17.self.aString41)) {
 										intStack[isp++] = 1;
 										return;
 									}
@@ -1805,18 +1805,18 @@ public final class ScriptRunner {
 									return;
 								}
 								if (opcode == 3626) {
-									local13 = intStack[--isp];
-									if (Static389.aString53 != null && local13 < Static186.anInt3730) {
-										stringStack[anInt3652++] = Static47.aClass214Array1[local13].aString61;
+									int1 = intStack[--isp];
+									if (Static389.aString53 != null && int1 < Static186.anInt3730) {
+										stringStack[anInt3652++] = Static47.aClass214Array1[int1].aString61;
 										return;
 									}
 									stringStack[anInt3652++] = "";
 									return;
 								}
 								if (opcode == 3627) {
-									local13 = intStack[--isp];
-									if (Static235.anInt3363 == 2 && local13 >= 0 && local13 < Static384.anInt7178) {
-										intStack[isp++] = Static302.aBooleanArray13[local13] ? 1 : 0;
+									int1 = intStack[--isp];
+									if (Static235.anInt3363 == 2 && int1 >= 0 && int1 < Static384.anInt7178) {
+										intStack[isp++] = Static302.aBooleanArray13[int1] ? 1 : 0;
 										return;
 									}
 									intStack[isp++] = 0;
@@ -1840,23 +1840,23 @@ public final class ScriptRunner {
 									return;
 								}
 								if (opcode == 3631) {
-									local13 = intStack[--isp];
-									intStack[isp++] = Static196.aBooleanArray31[local13] ? 1 : 0;
+									int1 = intStack[--isp];
+									intStack[isp++] = Static196.aBooleanArray31[int1] ? 1 : 0;
 									return;
 								}
 								if (opcode == 3632) {
-									local13 = intStack[--isp];
-									if (Static389.aString53 != null && local13 < Static186.anInt3730) {
-										stringStack[anInt3652++] = Static47.aClass214Array1[local13].aString60;
+									int1 = intStack[--isp];
+									if (Static389.aString53 != null && int1 < Static186.anInt3730) {
+										stringStack[anInt3652++] = Static47.aClass214Array1[int1].aString60;
 										return;
 									}
 									stringStack[anInt3652++] = "";
 									return;
 								}
 								if (opcode == 3633) {
-									local13 = intStack[--isp];
-									if (Static235.anInt3363 != 0 && local13 < Static301.anInt5700) {
-										stringStack[anInt3652++] = Static234.aStringArray39[local13];
+									int1 = intStack[--isp];
+									if (Static235.anInt3363 != 0 && int1 < Static301.anInt5700) {
+										stringStack[anInt3652++] = Static234.aStringArray39[int1];
 										return;
 									}
 									stringStack[anInt3652++] = "";
@@ -1864,106 +1864,106 @@ public final class ScriptRunner {
 								}
 							} else if (opcode < 4000) {
 								if (opcode == 3903) {
-									local13 = intStack[--isp];
-									intStack[isp++] = Static290.aClass187Array1[local13].method4682();
+									int1 = intStack[--isp];
+									intStack[isp++] = Static290.aClass187Array1[int1].method4682();
 									return;
 								}
 								if (opcode == 3904) {
-									local13 = intStack[--isp];
-									intStack[isp++] = Static290.aClass187Array1[local13].anInt5105;
+									int1 = intStack[--isp];
+									intStack[isp++] = Static290.aClass187Array1[int1].anInt5105;
 									return;
 								}
 								if (opcode == 3905) {
-									local13 = intStack[--isp];
-									intStack[isp++] = Static290.aClass187Array1[local13].anInt5108;
+									int1 = intStack[--isp];
+									intStack[isp++] = Static290.aClass187Array1[int1].anInt5108;
 									return;
 								}
 								if (opcode == 3906) {
-									local13 = intStack[--isp];
-									intStack[isp++] = Static290.aClass187Array1[local13].anInt5111;
+									int1 = intStack[--isp];
+									intStack[isp++] = Static290.aClass187Array1[int1].anInt5111;
 									return;
 								}
 								if (opcode == 3907) {
-									local13 = intStack[--isp];
-									intStack[isp++] = Static290.aClass187Array1[local13].anInt5106;
+									int1 = intStack[--isp];
+									intStack[isp++] = Static290.aClass187Array1[int1].anInt5106;
 									return;
 								}
 								if (opcode == 3908) {
-									local13 = intStack[--isp];
-									intStack[isp++] = Static290.aClass187Array1[local13].anInt5114;
+									int1 = intStack[--isp];
+									intStack[isp++] = Static290.aClass187Array1[int1].anInt5114;
 									return;
 								}
 								if (opcode == 3910) {
-									local13 = intStack[--isp];
-									local19 = Static290.aClass187Array1[local13].method4678();
-									intStack[isp++] = local19 == 0 ? 1 : 0;
+									int1 = intStack[--isp];
+									int3 = Static290.aClass187Array1[int1].method4678();
+									intStack[isp++] = int3 == 0 ? 1 : 0;
 									return;
 								}
 								if (opcode == 3911) {
-									local13 = intStack[--isp];
-									local19 = Static290.aClass187Array1[local13].method4678();
-									intStack[isp++] = local19 == 2 ? 1 : 0;
+									int1 = intStack[--isp];
+									int3 = Static290.aClass187Array1[int1].method4678();
+									intStack[isp++] = int3 == 2 ? 1 : 0;
 									return;
 								}
 								if (opcode == 3912) {
-									local13 = intStack[--isp];
-									local19 = Static290.aClass187Array1[local13].method4678();
-									intStack[isp++] = local19 == 5 ? 1 : 0;
+									int1 = intStack[--isp];
+									int3 = Static290.aClass187Array1[int1].method4678();
+									intStack[isp++] = int3 == 5 ? 1 : 0;
 									return;
 								}
 								if (opcode == 3913) {
-									local13 = intStack[--isp];
-									local19 = Static290.aClass187Array1[local13].method4678();
-									intStack[isp++] = local19 == 1 ? 1 : 0;
+									int1 = intStack[--isp];
+									int3 = Static290.aClass187Array1[int1].method4678();
+									intStack[isp++] = int3 == 1 ? 1 : 0;
 									return;
 								}
 							} else if (opcode < 4100) {
 								if (opcode == 4000) {
 									isp -= 2;
-									local13 = intStack[isp];
-									local19 = intStack[isp + 1];
-									intStack[isp++] = local13 + local19;
+									int1 = intStack[isp];
+									int3 = intStack[isp + 1];
+									intStack[isp++] = int1 + int3;
 									return;
 								}
 								if (opcode == 4001) {
 									isp -= 2;
-									local13 = intStack[isp];
-									local19 = intStack[isp + 1];
-									intStack[isp++] = local13 - local19;
+									int1 = intStack[isp];
+									int3 = intStack[isp + 1];
+									intStack[isp++] = int1 - int3;
 									return;
 								}
 								if (opcode == 4002) {
 									isp -= 2;
-									local13 = intStack[isp];
-									local19 = intStack[isp + 1];
-									intStack[isp++] = local13 * local19;
+									int1 = intStack[isp];
+									int3 = intStack[isp + 1];
+									intStack[isp++] = int1 * int3;
 									return;
 								}
 								if (opcode == 4003) {
 									isp -= 2;
-									local13 = intStack[isp];
-									local19 = intStack[isp + 1];
-									intStack[isp++] = local13 / local19;
+									int1 = intStack[isp];
+									int3 = intStack[isp + 1];
+									intStack[isp++] = int1 / int3;
 									return;
 								}
 								if (opcode == 4004) {
-									local13 = intStack[--isp];
-									intStack[isp++] = (int) (Math.random() * (double) local13);
+									int1 = intStack[--isp];
+									intStack[isp++] = (int) (Math.random() * (double) int1);
 									return;
 								}
 								if (opcode == 4005) {
-									local13 = intStack[--isp];
-									intStack[isp++] = (int) (Math.random() * (double) (local13 + 1));
+									int1 = intStack[--isp];
+									intStack[isp++] = (int) (Math.random() * (double) (int1 + 1));
 									return;
 								}
 								if (opcode == 4006) {
 									isp -= 5;
-									local13 = intStack[isp];
-									local19 = intStack[isp + 1];
-									local25 = intStack[isp + 2];
+									int1 = intStack[isp];
+									int3 = intStack[isp + 1];
+									local25  = intStack[isp + 2];
 									local353 = intStack[isp + 3];
 									local2194 = intStack[isp + 4];
-									intStack[isp++] = local13 + (local19 - local13) * (local2194 - local25) / (local353 - local25);
+									intStack[isp++] = int1 + (int3 - int1) * (local2194 - local25 ) / (local353 - local25 );
 									return;
 								}
 								@Pc(6491) long local6491;
@@ -1977,84 +1977,84 @@ public final class ScriptRunner {
 								}
 								if (opcode == 4008) {
 									isp -= 2;
-									local13 = intStack[isp];
-									local19 = intStack[isp + 1];
-									intStack[isp++] = local13 | 0x1 << local19;
+									int1 = intStack[isp];
+									int3 = intStack[isp + 1];
+									intStack[isp++] = int1 | 0x1 << int3;
 									return;
 								}
 								if (opcode == 4009) {
 									isp -= 2;
-									local13 = intStack[isp];
-									local19 = intStack[isp + 1];
-									intStack[isp++] = local13 & -(0x1 << local19) - 1;
+									int1 = intStack[isp];
+									int3 = intStack[isp + 1];
+									intStack[isp++] = int1 & -(0x1 << int3) - 1;
 									return;
 								}
 								if (opcode == 4010) {
 									isp -= 2;
-									local13 = intStack[isp];
-									local19 = intStack[isp + 1];
-									intStack[isp++] = (local13 & 0x1 << local19) == 0 ? 0 : 1;
+									int1 = intStack[isp];
+									int3 = intStack[isp + 1];
+									intStack[isp++] = (int1 & 0x1 << int3) == 0 ? 0 : 1;
 									return;
 								}
 								if (opcode == 4011) {
 									isp -= 2;
-									local13 = intStack[isp];
-									local19 = intStack[isp + 1];
-									intStack[isp++] = local13 % local19;
+									int1 = intStack[isp];
+									int3 = intStack[isp + 1];
+									intStack[isp++] = int1 % int3;
 									return;
 								}
 								if (opcode == 4012) {
 									isp -= 2;
-									local13 = intStack[isp];
-									local19 = intStack[isp + 1];
-									if (local13 == 0) {
+									int1 = intStack[isp];
+									int3 = intStack[isp + 1];
+									if (int1 == 0) {
 										intStack[isp++] = 0;
 										return;
 									}
-									intStack[isp++] = (int) Math.pow((double) local13, (double) local19);
+									intStack[isp++] = (int) Math.pow((double) int1, (double) int3);
 									return;
 								}
 								if (opcode == 4013) {
 									isp -= 2;
-									local13 = intStack[isp];
-									local19 = intStack[isp + 1];
-									if (local13 == 0) {
+									int1 = intStack[isp];
+									int3 = intStack[isp + 1];
+									if (int1 == 0) {
 										intStack[isp++] = 0;
 										return;
 									}
-									if (local19 == 0) {
+									if (int3 == 0) {
 										intStack[isp++] = Integer.MAX_VALUE;
 										return;
 									}
-									intStack[isp++] = (int) Math.pow((double) local13, 1.0D / (double) local19);
+									intStack[isp++] = (int) Math.pow((double) int1, 1.0D / (double) int3);
 									return;
 								}
 								if (opcode == 4014) {
 									isp -= 2;
-									local13 = intStack[isp];
-									local19 = intStack[isp + 1];
-									intStack[isp++] = local13 & local19;
+									int1 = intStack[isp];
+									int3 = intStack[isp + 1];
+									intStack[isp++] = int1 & int3;
 									return;
 								}
 								if (opcode == 4015) {
 									isp -= 2;
-									local13 = intStack[isp];
-									local19 = intStack[isp + 1];
-									intStack[isp++] = local13 | local19;
+									int1 = intStack[isp];
+									int3 = intStack[isp + 1];
+									intStack[isp++] = int1 | int3;
 									return;
 								}
 								if (opcode == 4016) {
 									isp -= 2;
-									local13 = intStack[isp];
-									local19 = intStack[isp + 1];
-									intStack[isp++] = local13 < local19 ? local13 : local19;
+									int1 = intStack[isp];
+									int3 = intStack[isp + 1];
+									intStack[isp++] = int1 < int3 ? int1 : int3;
 									return;
 								}
 								if (opcode == 4017) {
 									isp -= 2;
-									local13 = intStack[isp];
-									local19 = intStack[isp + 1];
-									intStack[isp++] = local13 > local19 ? local13 : local19;
+									int1 = intStack[isp];
+									int3 = intStack[isp + 1];
+									intStack[isp++] = int1 > int3 ? int1 : int3;
 									return;
 								}
 								if (opcode == 4018) {
@@ -2068,8 +2068,8 @@ public final class ScriptRunner {
 							} else if (opcode < 4200) {
 								if (opcode == 4100) {
 									local3493 = stringStack[--anInt3652];
-									local19 = intStack[--isp];
-									stringStack[anInt3652++] = local3493 + local19;
+									int3 = intStack[--isp];
+									stringStack[anInt3652++] = local3493 + int3;
 									return;
 								}
 								if (opcode == 4101) {
@@ -2081,8 +2081,8 @@ public final class ScriptRunner {
 								}
 								if (opcode == 4102) {
 									local3493 = stringStack[--anInt3652];
-									local19 = intStack[--isp];
-									stringStack[anInt3652++] = local3493 + Static320.method5461(local19);
+									int3 = intStack[--isp];
+									stringStack[anInt3652++] = local3493 + Static320.method5461(int3);
 									return;
 								}
 								if (opcode == 4103) {
@@ -2106,8 +2106,8 @@ public final class ScriptRunner {
 									return;
 								}
 								if (opcode == 4106) {
-									local13 = intStack[--isp];
-									stringStack[anInt3652++] = Integer.toString(local13);
+									int1 = intStack[--isp];
+									stringStack[anInt3652++] = Integer.toString(int1);
 									return;
 								}
 								if (opcode == 4107) {
@@ -2119,19 +2119,19 @@ public final class ScriptRunner {
 								if (opcode == 4108) {
 									local3493 = stringStack[--anInt3652];
 									isp -= 2;
-									local19 = intStack[isp];
-									local25 = intStack[isp + 1];
-									local7155 = Static101.method2165(local25, Static255.aJs5_64);
-									intStack[isp++] = local7155.method6122(local3493, local19, Static124.aClass13Array27);
+									int3 = intStack[isp];
+									local25  = intStack[isp + 1];
+									local7155 = Static101.method2165(local25 , Static255.aJs5_64);
+									intStack[isp++] = local7155.method6122(local3493, int3, Static124.aClass13Array27);
 									return;
 								}
 								if (opcode == 4109) {
 									local3493 = stringStack[--anInt3652];
 									isp -= 2;
-									local19 = intStack[isp];
-									local25 = intStack[isp + 1];
-									local7155 = Static101.method2165(local25, Static255.aJs5_64);
-									intStack[isp++] = local7155.method6123(Static124.aClass13Array27, local3493, local19);
+									int3 = intStack[isp];
+									local25  = intStack[isp + 1];
+									local7155 = Static101.method2165(local25 , Static255.aJs5_64);
+									intStack[isp++] = local7155.method6123(Static124.aClass13Array27, local3493, int3);
 									return;
 								}
 								if (opcode == 4110) {
@@ -2152,31 +2152,31 @@ public final class ScriptRunner {
 								}
 								if (opcode == 4112) {
 									local3493 = stringStack[--anInt3652];
-									local19 = intStack[--isp];
-									if (local19 == -1) {
+									int3 = intStack[--isp];
+									if (int3 == -1) {
 										throw new RuntimeException("null char");
 									}
-									stringStack[anInt3652++] = local3493 + (char) local19;
+									stringStack[anInt3652++] = local3493 + (char) int3;
 									return;
 								}
 								if (opcode == 4113) {
-									local13 = intStack[--isp];
-									intStack[isp++] = Static146.method2697((char) local13) ? 1 : 0;
+									int1 = intStack[--isp];
+									intStack[isp++] = Static146.method2697((char) int1) ? 1 : 0;
 									return;
 								}
 								if (opcode == 4114) {
-									local13 = intStack[--isp];
-									intStack[isp++] = Static89.method1939((char) local13) ? 1 : 0;
+									int1 = intStack[--isp];
+									intStack[isp++] = Static89.method1939((char) int1) ? 1 : 0;
 									return;
 								}
 								if (opcode == 4115) {
-									local13 = intStack[--isp];
-									intStack[isp++] = Static35.method1103((char) local13) ? 1 : 0;
+									int1 = intStack[--isp];
+									intStack[isp++] = Static35.method1103((char) int1) ? 1 : 0;
 									return;
 								}
 								if (opcode == 4116) {
-									local13 = intStack[--isp];
-									intStack[isp++] = Static328.method5597((char) local13) ? 1 : 0;
+									int1 = intStack[--isp];
+									intStack[isp++] = Static328.method5597((char) int1) ? 1 : 0;
 									return;
 								}
 								if (opcode == 4117) {
@@ -2191,9 +2191,9 @@ public final class ScriptRunner {
 								if (opcode == 4118) {
 									local3493 = stringStack[--anInt3652];
 									isp -= 2;
-									local19 = intStack[isp];
-									local25 = intStack[isp + 1];
-									stringStack[anInt3652++] = local3493.substring(local19, local25);
+									int3 = intStack[isp];
+									local25  = intStack[isp + 1];
+									stringStack[anInt3652++] = local3493.substring(int3, local25 );
 									return;
 								}
 								if (opcode == 4119) {
@@ -2216,39 +2216,39 @@ public final class ScriptRunner {
 								if (opcode == 4120) {
 									local3493 = stringStack[--anInt3652];
 									isp -= 2;
-									local19 = intStack[isp];
-									local25 = intStack[isp + 1];
-									intStack[isp++] = local3493.indexOf(local19, local25);
+									int3 = intStack[isp];
+									local25  = intStack[isp + 1];
+									intStack[isp++] = local3493.indexOf(int3, local25 );
 									return;
 								}
 								if (opcode == 4121) {
 									anInt3652 -= 2;
 									local3493 = stringStack[anInt3652];
 									local1101 = stringStack[anInt3652 + 1];
-									local25 = intStack[--isp];
-									intStack[isp++] = local3493.indexOf(local1101, local25);
+									local25  = intStack[--isp];
+									intStack[isp++] = local3493.indexOf(local1101, local25 );
 									return;
 								}
 								if (opcode == 4122) {
-									local13 = intStack[--isp];
-									intStack[isp++] = Character.toLowerCase((char) local13);
+									int1 = intStack[--isp];
+									intStack[isp++] = Character.toLowerCase((char) int1);
 									return;
 								}
 								if (opcode == 4123) {
-									local13 = intStack[--isp];
-									intStack[isp++] = Character.toUpperCase((char) local13);
+									int1 = intStack[--isp];
+									intStack[isp++] = Character.toUpperCase((char) int1);
 									return;
 								}
 								if (opcode == 4124) {
 									local412 = intStack[--isp] != 0;
-									local19 = intStack[--isp];
-									stringStack[anInt3652++] = Static172.method3288((long) local19, client.language, local412, 0);
+									int3 = intStack[--isp];
+									stringStack[anInt3652++] = Static172.method3288((long) int3, client.language, local412, 0);
 									return;
 								}
 								if (opcode == 4125) {
 									local3493 = stringStack[--anInt3652];
-									local19 = intStack[--isp];
-									@Pc(7741) Class239 local7741 = Static101.method2165(local19, Static255.aJs5_64);
+									int3 = intStack[--isp];
+									@Pc(7741) Class239 local7741 = Static101.method2165(int3, Static255.aJs5_64);
 									intStack[isp++] = local7741.method6126(Static124.aClass13Array27, local3493);
 									return;
 								}
@@ -2256,18 +2256,18 @@ public final class ScriptRunner {
 								@Pc(8083) Class240 local8083;
 								if (opcode < 4300) {
 									if (opcode == 4200) {
-										local13 = intStack[--isp];
-										stringStack[anInt3652++] = Static313.aClass107_2.get(local13).name;
+										int1 = intStack[--isp];
+										stringStack[anInt3652++] = Static313.aClass107_2.get(int1).name;
 										return;
 									}
 									@Pc(7803) ObjType local7803;
 									if (opcode == 4201) {
 										isp -= 2;
-										local13 = intStack[isp];
-										local19 = intStack[isp + 1];
-										local7803 = Static313.aClass107_2.get(local13);
-										if (local19 >= 1 && local19 <= 5 && local7803.ops[local19 - 1] != null) {
-											stringStack[anInt3652++] = local7803.ops[local19 - 1];
+										int1 = intStack[isp];
+										int3 = intStack[isp + 1];
+										local7803 = Static313.aClass107_2.get(int1);
+										if (int3 >= 1 && int3 <= 5 && local7803.ops[int3 - 1] != null) {
+											stringStack[anInt3652++] = local7803.ops[int3 - 1];
 											return;
 										}
 										stringStack[anInt3652++] = "";
@@ -2275,74 +2275,74 @@ public final class ScriptRunner {
 									}
 									if (opcode == 4202) {
 										isp -= 2;
-										local13 = intStack[isp];
-										local19 = intStack[isp + 1];
-										local7803 = Static313.aClass107_2.get(local13);
-										if (local19 >= 1 && local19 <= 5 && local7803.iOps[local19 - 1] != null) {
-											stringStack[anInt3652++] = local7803.iOps[local19 - 1];
+										int1 = intStack[isp];
+										int3 = intStack[isp + 1];
+										local7803 = Static313.aClass107_2.get(int1);
+										if (int3 >= 1 && int3 <= 5 && local7803.iOps[int3 - 1] != null) {
+											stringStack[anInt3652++] = local7803.iOps[int3 - 1];
 											return;
 										}
 										stringStack[anInt3652++] = "";
 										return;
 									}
 									if (opcode == 4203) {
-										local13 = intStack[--isp];
-										intStack[isp++] = Static313.aClass107_2.get(local13).cost;
+										int1 = intStack[--isp];
+										intStack[isp++] = Static313.aClass107_2.get(int1).cost;
 										return;
 									}
 									if (opcode == 4204) {
-										local13 = intStack[--isp];
-										intStack[isp++] = Static313.aClass107_2.get(local13).stackable == 1 ? 1 : 0;
+										int1 = intStack[--isp];
+										intStack[isp++] = Static313.aClass107_2.get(int1).stackable == 1 ? 1 : 0;
 										return;
 									}
 									@Pc(7966) ObjType local7966;
 									if (opcode == 4205) {
-										local13 = intStack[--isp];
-										local7966 = Static313.aClass107_2.get(local13);
+										int1 = intStack[--isp];
+										local7966 = Static313.aClass107_2.get(int1);
 										if (local7966.certificateTemplate == -1 && local7966.certificateLink >= 0) {
 											intStack[isp++] = local7966.certificateLink;
 											return;
 										}
-										intStack[isp++] = local13;
+										intStack[isp++] = int1;
 										return;
 									}
 									if (opcode == 4206) {
-										local13 = intStack[--isp];
-										local7966 = Static313.aClass107_2.get(local13);
+										int1 = intStack[--isp];
+										local7966 = Static313.aClass107_2.get(int1);
 										if (local7966.certificateTemplate >= 0 && local7966.certificateLink >= 0) {
 											intStack[isp++] = local7966.certificateLink;
 											return;
 										}
-										intStack[isp++] = local13;
+										intStack[isp++] = int1;
 										return;
 									}
 									if (opcode == 4207) {
-										local13 = intStack[--isp];
-										intStack[isp++] = Static313.aClass107_2.get(local13).members ? 1 : 0;
+										int1 = intStack[--isp];
+										intStack[isp++] = Static313.aClass107_2.get(int1).members ? 1 : 0;
 										return;
 									}
 									if (opcode == 4208) {
 										isp -= 2;
-										local13 = intStack[isp];
-										local19 = intStack[isp + 1];
-										local8083 = Static363.aClass18_2.method565(local19);
+										int1 = intStack[isp];
+										int3 = intStack[isp + 1];
+										local8083 = Static363.aClass18_2.method565(int3);
 										if (local8083.method6262()) {
-											stringStack[anInt3652++] = Static313.aClass107_2.get(local13).method4772(local8083.aString69, local19);
+											stringStack[anInt3652++] = Static313.aClass107_2.get(int1).method4772(local8083.aString69, int3);
 											return;
 										}
-										intStack[isp++] = Static313.aClass107_2.get(local13).method4771(local8083.anInt7023, local19);
+										intStack[isp++] = Static313.aClass107_2.get(int1).method4771(local8083.anInt7023, int3);
 										return;
 									}
 									if (opcode == 4209) {
 										isp -= 2;
-										local13 = intStack[isp];
-										local19 = intStack[isp + 1] - 1;
-										local7803 = Static313.aClass107_2.get(local13);
-										if (local7803.anInt5244 == local19) {
+										int1 = intStack[isp];
+										int3 = intStack[isp + 1] - 1;
+										local7803 = Static313.aClass107_2.get(int1);
+										if (local7803.anInt5244 == int3) {
 											intStack[isp++] = local7803.anInt5204;
 											return;
 										}
-										if (local7803.anInt5221 == local19) {
+										if (local7803.anInt5221 == int3) {
 											intStack[isp++] = local7803.anInt5240;
 											return;
 										}
@@ -2351,8 +2351,8 @@ public final class ScriptRunner {
 									}
 									if (opcode == 4210) {
 										local3493 = stringStack[--anInt3652];
-										local19 = intStack[--isp];
-										Static131.findObjs(local3493, local19 == 1);
+										int3 = intStack[--isp];
+										Static131.findObjs(local3493, int3 == 1);
 										intStack[isp++] = Static328.size;
 										return;
 									}
@@ -2371,55 +2371,55 @@ public final class ScriptRunner {
 								} else if (opcode < 4400) {
 									if (opcode == 4300) {
 										isp -= 2;
-										local13 = intStack[isp];
-										local19 = intStack[isp + 1];
-										local8083 = Static363.aClass18_2.method565(local19);
+										int1 = intStack[isp];
+										int3 = intStack[isp + 1];
+										local8083 = Static363.aClass18_2.method565(int3);
 										if (local8083.method6262()) {
-											stringStack[anInt3652++] = Static6.aClass219_1.get(local13).method2090(local8083.aString69, local19);
+											stringStack[anInt3652++] = Static6.aClass219_1.get(int1).method2090(local8083.aString69, int3);
 											return;
 										}
-										intStack[isp++] = Static6.aClass219_1.get(local13).method2098(local8083.anInt7023, local19);
+										intStack[isp++] = Static6.aClass219_1.get(int1).method2098(local8083.anInt7023, int3);
 										return;
 									}
 								} else if (opcode < 4500) {
 									if (opcode == 4400) {
 										isp -= 2;
-										local13 = intStack[isp];
-										local19 = intStack[isp + 1];
-										local8083 = Static363.aClass18_2.method565(local19);
+										int1 = intStack[isp];
+										int3 = intStack[isp + 1];
+										local8083 = Static363.aClass18_2.method565(int3);
 										if (local8083.method6262()) {
-											stringStack[anInt3652++] = Static359.aClass202_4.method5162(local13).method1520(local8083.aString69, local19);
+											stringStack[anInt3652++] = Static359.aClass202_4.method5162(int1).method1520(local8083.aString69, int3);
 											return;
 										}
-										intStack[isp++] = Static359.aClass202_4.method5162(local13).method1532(local8083.anInt7023, local19);
+										intStack[isp++] = Static359.aClass202_4.method5162(int1).method1532(local8083.anInt7023, int3);
 										return;
 									}
 								} else if (opcode < 4600) {
 									if (opcode == 4500) {
 										isp -= 2;
-										local13 = intStack[isp];
-										local19 = intStack[isp + 1];
-										local8083 = Static363.aClass18_2.method565(local19);
+										int1 = intStack[isp];
+										int3 = intStack[isp + 1];
+										local8083 = Static363.aClass18_2.method565(int3);
 										if (local8083.method6262()) {
-											stringStack[anInt3652++] = Static367.aClass132_1.method3470(local13).method1346(local19, local8083.aString69);
+											stringStack[anInt3652++] = Static367.aClass132_1.method3470(int1).method1346(int3, local8083.aString69);
 											return;
 										}
-										intStack[isp++] = Static367.aClass132_1.method3470(local13).method1343(local19, local8083.anInt7023);
+										intStack[isp++] = Static367.aClass132_1.method3470(int1).method1343(int3, local8083.anInt7023);
 										return;
 									}
 								} else if (opcode < 4700 && opcode == 4600) {
-									local13 = intStack[--isp];
-									@Pc(8467) BasType local8467 = Static59.aClass7_1.method245(local13);
+									int1 = intStack[--isp];
+									@Pc(8467) BasType local8467 = Static59.aClass7_1.method245(int1);
 									if (local8467.anIntArray426 != null && local8467.anIntArray426.length > 0) {
-										local25 = 0;
+										local25  = 0;
 										local353 = local8467.anIntArray427[0];
 										for (local2194 = 1; local2194 < local8467.anIntArray426.length; local2194++) {
 											if (local8467.anIntArray427[local2194] > local353) {
-												local25 = local2194;
+												local25  = local2194;
 												local353 = local8467.anIntArray427[local2194];
 											}
 										}
-										intStack[isp++] = local8467.anIntArray426[local25];
+										intStack[isp++] = local8467.anIntArray426[local25 ];
 										return;
 									}
 									intStack[isp++] = local8467.readySeqID;
@@ -2432,28 +2432,28 @@ public final class ScriptRunner {
 			} else {
 				if (opcode >= 2000) {
 					opcode -= 1000;
-					component = Static6.method140(intStack[--isp]);
+					component = Static6.getComponent(intStack[--isp]);
 				} else {
-					component = arg1 ? aComponent_10 : aComponent_9;
+					component = arg1 ? staticActiveComponent1 : staticActiveComponent2;
 				}
 				if (opcode == 1000) {
 					isp -= 4;
 					component.anInt4241 = intStack[isp];
 					component.anInt4249 = intStack[isp + 1];
-					local19 = intStack[isp + 2];
-					if (local19 < 0) {
-						local19 = 0;
-					} else if (local19 > 5) {
-						local19 = 5;
+					int3 = intStack[isp + 2];
+					if (int3 < 0) {
+						int3 = 0;
+					} else if (int3 > 5) {
+						int3 = 5;
 					}
-					local25 = intStack[isp + 3];
-					if (local25 < 0) {
-						local25 = 0;
-					} else if (local25 > 5) {
-						local25 = 5;
+					local25  = intStack[isp + 3];
+					if (local25  < 0) {
+						local25  = 0;
+					} else if (local25  > 5) {
+						local25  = 5;
 					}
-					component.aByte45 = (byte) local19;
-					component.aByte46 = (byte) local25;
+					component.aByte45 = (byte) int3;
+					component.aByte46 = (byte) local25 ;
 					Static200.redraw(component);
 					Static58.method1624(component);
 					if (component.createdComponentID == -1) {
@@ -2467,20 +2467,20 @@ public final class ScriptRunner {
 					component.anInt4289 = intStack[isp + 1];
 					component.anInt4251 = 0;
 					component.anInt4269 = 0;
-					local19 = intStack[isp + 2];
-					if (local19 < 0) {
-						local19 = 0;
-					} else if (local19 > 4) {
-						local19 = 4;
+					int3 = intStack[isp + 2];
+					if (int3 < 0) {
+						int3 = 0;
+					} else if (int3 > 4) {
+						int3 = 4;
 					}
-					local25 = intStack[isp + 3];
-					if (local25 < 0) {
-						local25 = 0;
-					} else if (local25 > 4) {
-						local25 = 4;
+					local25  = intStack[isp + 3];
+					if (local25  < 0) {
+						local25  = 0;
+					} else if (local25  > 4) {
+						local25  = 4;
 					}
-					component.widthMode = (byte) local19;
-					component.heightMode = (byte) local25;
+					component.widthMode = (byte) int3;
+					component.heightMode = (byte) local25 ;
 					Static200.redraw(component);
 					Static58.method1624(component);
 					if (component.type == 0) {
@@ -2531,8 +2531,8 @@ public final class ScriptRunner {
 			@Pc(30) int local30 = 0;
 			@Pc(32) int local32 = 0;
 			if (Static227.aComponent_11 != null) {
-				local30 = Static227.aComponent_11.anInt4305;
-				local32 = Static227.aComponent_11.anInt4254;
+				local30 = Static227.aComponent_11.x;
+				local32 = Static227.aComponent_11.y;
 			}
 			anIntArray212[0] = Static226.aClass119_1.method3303() - local30;
 			anIntArray212[1] = Static226.aClass119_1.method3312() - local32;
@@ -2542,7 +2542,7 @@ public final class ScriptRunner {
 
 	@OriginalMember(owner = "client!lk", name = "c", descriptor = "(I)V")
 	private static void method3596(@OriginalArg(0) int arg0) {
-		@Pc(3) Component local3 = Static6.method140(arg0);
+		@Pc(3) Component local3 = Static6.getComponent(arg0);
 		if (local3 == null) {
 			return;
 		}
@@ -4507,8 +4507,8 @@ public final class ScriptRunner {
 							local89 = intStack[isp + 2];
 							@Pc(7165) Component local7165 = Static207.method3704(local157 << 16 | local192, local89);
 							Static207.method3698();
-							@Pc(7170) ServerActiveProperties local7170 = Static45.method1404(local7165);
-							Static185.method3399(local7165.anInt4238, local7170.method1852(), local157 << 16 | local192, local89, local7165.anInt4286, local7170.anInt1759);
+							@Pc(7170) ServerActiveProperties local7170 = Static45.getServerActiveProperties(local7165);
+							Static185.method3399(local7165.anInt4238, local7170.getTargetMask(), local157 << 16 | local192, local89, local7165.anInt4286, local7170.anInt1759);
 							return;
 						}
 					} else if (opcode < 6900) {
@@ -4777,7 +4777,7 @@ public final class ScriptRunner {
 				local855.append("op: ").append(local13);
 				Static262.report(local837, local855.toString());
 			} else {
-				Static207.method3699("Clientscript error in: " + arg0.aString27);
+				Static207.add("Clientscript error in: " + arg0.aString27);
 				local855 = new StringBuffer(30);
 				local855.append("Clientscript error in: ").append(arg0.aString27).append("\n");
 				for (local603 = anInt3661 - 1; local603 >= 0; local603--) {

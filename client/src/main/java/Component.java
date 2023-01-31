@@ -13,19 +13,19 @@ public final class Component {
 	public String aString43;
 
 	@OriginalMember(owner = "client!nk", name = "c", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray5;
+	public Object[] onStatTransmit;
 
 	@OriginalMember(owner = "client!nk", name = "j", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray6;
+	public Object[] onResize;
 
 	@OriginalMember(owner = "client!nk", name = "k", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray7;
+	public Object[] onVarcstrTransmit;
 
 	@OriginalMember(owner = "client!nk", name = "n", descriptor = "I")
 	public int anInt4242;
 
 	@OriginalMember(owner = "client!nk", name = "p", descriptor = "[I")
-	public int[] anIntArray273;
+	public int[] varpTriggers;
 
 	@OriginalMember(owner = "client!nk", name = "s", descriptor = "[B")
 	public byte[] aByteArray49;
@@ -37,37 +37,37 @@ public final class Component {
 	public boolean horizontalFlip;
 
 	@OriginalMember(owner = "client!nk", name = "z", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray8;
+	public Object[] onDragRelease;
 
 	@OriginalMember(owner = "client!nk", name = "B", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray9;
+	public Object[] onMouseLeave;
 
 	@OriginalMember(owner = "client!nk", name = "D", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray10;
+	public Object[] onVarpTransmit;
 
 	@OriginalMember(owner = "client!nk", name = "E", descriptor = "[I")
-	public int[] anIntArray274;
+	public int[] statTriggers;
 
 	@OriginalMember(owner = "client!nk", name = "G", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray11;
+	public Object[] onWidgetsOpenClose;
 
 	@OriginalMember(owner = "client!nk", name = "N", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray12;
+	public Object[] onMouseRepeat;
 
 	@OriginalMember(owner = "client!nk", name = "O", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray13;
+	public Object[] onMouseOver;
 
 	@OriginalMember(owner = "client!nk", name = "T", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray14;
+	public Object[] onClickRepeat;
 
 	@OriginalMember(owner = "client!nk", name = "U", descriptor = "[I")
 	public int[] anIntArray275;
 
 	@OriginalMember(owner = "client!nk", name = "Y", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray15;
+	public Object[] onUse;
 
 	@OriginalMember(owner = "client!nk", name = "Z", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray16;
+	public Object[] onHold;
 
 	@OriginalMember(owner = "client!nk", name = "ab", descriptor = "[Ljava/lang/String;")
 	public String[] ops;
@@ -79,19 +79,19 @@ public final class Component {
 	public int anInt4267;
 
 	@OriginalMember(owner = "client!nk", name = "nb", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray17;
+	public Object[] onKey;
 
 	@OriginalMember(owner = "client!nk", name = "ob", descriptor = "I")
 	public int anInt4270;
 
 	@OriginalMember(owner = "client!nk", name = "pb", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray18;
+	public Object[] onClanTransmit;
 
 	@OriginalMember(owner = "client!nk", name = "qb", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray19;
+	public Object[] onVarcTransmit;
 
 	@OriginalMember(owner = "client!nk", name = "rb", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray20;
+	public Object[] onMinimapUnlock;
 
 	@OriginalMember(owner = "client!nk", name = "sb", descriptor = "Z")
 	public boolean verticalFlip;
@@ -100,43 +100,43 @@ public final class Component {
 	public int type;
 
 	@OriginalMember(owner = "client!nk", name = "wb", descriptor = "[Lclient!nk;")
-	public Component[] aComponentArray2;
+	public Component[] createdComponent;
 
 	@OriginalMember(owner = "client!nk", name = "Jb", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray21;
+	public Object[] onScroll;
 
 	@OriginalMember(owner = "client!nk", name = "Kb", descriptor = "[B")
 	public byte[] aByteArray50;
 
 	@OriginalMember(owner = "client!nk", name = "Mb", descriptor = "[I")
-	public int[] anIntArray277;
+	public int[] varcstrTriggers;
 
 	@OriginalMember(owner = "client!nk", name = "Ob", descriptor = "[Ljava/lang/Object;")
 	public Object[] anObjectArray22;
 
 	@OriginalMember(owner = "client!nk", name = "Tb", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray23;
+	public Object[] onTimer;
 
 	@OriginalMember(owner = "client!nk", name = "Ub", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray24;
+	public Object[] onMiscTransmit;
 
 	@OriginalMember(owner = "client!nk", name = "Vb", descriptor = "[I")
-	public int[] anIntArray278;
+	public int[] varcTriggers;
 
 	@OriginalMember(owner = "client!nk", name = "Zb", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray25;
+	public Object[] onFriendTransmit;
 
 	@OriginalMember(owner = "client!nk", name = "ac", descriptor = "[I")
 	public int[] opCursors;
 
 	@OriginalMember(owner = "client!nk", name = "ec", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray26;
+	public Object[] onMsg;
 
 	@OriginalMember(owner = "client!nk", name = "fc", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray27;
+	public Object[] onOptionClick;
 
 	@OriginalMember(owner = "client!nk", name = "nc", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray28;
+	public Object[] onDrag;
 
 	@OriginalMember(owner = "client!nk", name = "qc", descriptor = "I")
 	public int anInt4302;
@@ -148,31 +148,31 @@ public final class Component {
 	public String pausText;
 
 	@OriginalMember(owner = "client!nk", name = "xc", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray29;
+	public Object[] onInvTransmit;
 
 	@OriginalMember(owner = "client!nk", name = "zc", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray30;
+	public Object[] onRelease;
 
 	@OriginalMember(owner = "client!nk", name = "Cc", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray31;
+	public Object[] onDragStart;
 
 	@OriginalMember(owner = "client!nk", name = "Fc", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray32;
+	public Object[] onUseWith;
 
 	@OriginalMember(owner = "client!nk", name = "Ic", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray33;
+	public Object[] onStockTransmit;
 
 	@OriginalMember(owner = "client!nk", name = "Pc", descriptor = "I")
 	public int modelID;
 
 	@OriginalMember(owner = "client!nk", name = "Rc", descriptor = "[I")
-	public int[] anIntArray281;
+	public int[] inventoryTriggers;
 
 	@OriginalMember(owner = "client!nk", name = "Tc", descriptor = "[I")
 	public int[] anIntArray282;
 
 	@OriginalMember(owner = "client!nk", name = "cd", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray34;
+	public Object[] onDialogAbort;
 
 	@OriginalMember(owner = "client!nk", name = "x", descriptor = "Z")
 	public boolean aBoolean282 = false;
@@ -196,7 +196,7 @@ public final class Component {
 	public int scrollY = 0;
 
 	@OriginalMember(owner = "client!nk", name = "L", descriptor = "I")
-	public int anInt4254 = 0;
+	public int y = 0;
 
 	@OriginalMember(owner = "client!nk", name = "yb", descriptor = "I")
 	public int layer = -1;
@@ -208,7 +208,7 @@ public final class Component {
 	public int rectangle = -1;
 
 	@OriginalMember(owner = "client!nk", name = "tb", descriptor = "I")
-	public int anInt4271 = 0;
+	public int dragDeadtime = 0;
 
 	@OriginalMember(owner = "client!nk", name = "X", descriptor = "Lclient!nk;")
 	public Component aComponent_12 = null;
@@ -220,7 +220,7 @@ public final class Component {
 	public int graphicShadow = 0;
 
 	@OriginalMember(owner = "client!nk", name = "xb", descriptor = "I")
-	public int anInt4274 = 0;
+	public int modelYAngle = 0;
 
 	@OriginalMember(owner = "client!nk", name = "db", descriptor = "B")
 	public byte heightMode = 0;
@@ -238,10 +238,10 @@ public final class Component {
 	public int anInt4282 = 0;
 
 	@OriginalMember(owner = "client!nk", name = "A", descriptor = "I")
-	public int anInt4250 = 0;
+	public int modelZOffset = 0;
 
 	@OriginalMember(owner = "client!nk", name = "bc", descriptor = "I")
-	public int anInt4293 = 0;
+	public int valign = 0;
 
 	@OriginalMember(owner = "client!nk", name = "Lb", descriptor = "I")
 	public int anInt4286 = -1;
@@ -250,7 +250,7 @@ public final class Component {
 	public int anInt4251 = 0;
 
 	@OriginalMember(owner = "client!nk", name = "Bb", descriptor = "I")
-	public int anInt4278 = 0;
+	public int modelXOffset = 0;
 
 	@OriginalMember(owner = "client!nk", name = "f", descriptor = "I")
 	public int anInt4238 = -1;
@@ -271,7 +271,7 @@ public final class Component {
 	public String opBase = "";
 
 	@OriginalMember(owner = "client!nk", name = "mc", descriptor = "I")
-	public int anInt4300 = -1;
+	public int objId = -1;
 
 	@OriginalMember(owner = "client!nk", name = "Sb", descriptor = "I")
 	public int color = 0;
@@ -289,13 +289,13 @@ public final class Component {
 	public ServerActiveProperties aServerActiveProperties_1 = Static367.A_CLASS_2___SUB_10___2;
 
 	@OriginalMember(owner = "client!nk", name = "ic", descriptor = "I")
-	public int anInt4298 = 0;
+	public int halign = 0;
 
 	@OriginalMember(owner = "client!nk", name = "W", descriptor = "I")
 	public int anInt4260 = -1;
 
 	@OriginalMember(owner = "client!nk", name = "P", descriptor = "Ljava/lang/String;")
-	public String aString44 = "";
+	public String opCircumfix = "";
 
 	@OriginalMember(owner = "client!nk", name = "Pb", descriptor = "Z")
 	public boolean tiled = false;
@@ -325,7 +325,7 @@ public final class Component {
 	public int anInt4306 = 2;
 
 	@OriginalMember(owner = "client!nk", name = "wc", descriptor = "I")
-	public int anInt4305 = 0;
+	public int x = 0;
 
 	@OriginalMember(owner = "client!nk", name = "S", descriptor = "I")
 	public int scrollX = 0;
@@ -373,7 +373,7 @@ public final class Component {
 	public boolean textShadow = false;
 
 	@OriginalMember(owner = "client!nk", name = "h", descriptor = "I")
-	public int anInt4239 = 0;
+	public int dragDeadzone = 0;
 
 	@OriginalMember(owner = "client!nk", name = "Mc", descriptor = "Z")
 	public boolean lineDirection = false;
@@ -406,7 +406,7 @@ public final class Component {
 	public int anInt4285 = Static164.anInt3138;
 
 	@OriginalMember(owner = "client!nk", name = "i", descriptor = "I")
-	public int anInt4240 = 0;
+	public int objCount = 0;
 
 	@OriginalMember(owner = "client!nk", name = "Hc", descriptor = "Z")
 	public boolean modelOrthographic = false;
@@ -424,7 +424,7 @@ public final class Component {
 	public int textFont = -1;
 
 	@OriginalMember(owner = "client!nk", name = "bd", descriptor = "I")
-	public int anInt4319 = 0;
+	public int modelYOffset = 0;
 
 	@OriginalMember(owner = "client!nk", name = "tc", descriptor = "I")
 	public int textLineHeight = 0;
@@ -436,7 +436,7 @@ public final class Component {
 	public boolean aBoolean296 = false;
 
 	@OriginalMember(owner = "client!nk", name = "dd", descriptor = "I")
-	public int anInt4320 = 0;
+	public int modelXAngle = 0;
 
 	@OriginalMember(owner = "client!nk", name = "a", descriptor = "(Lclient!wm;B)Lclient!ur;")
 	public Class130 method4100(@OriginalArg(0) Class19 arg0) {
@@ -617,9 +617,9 @@ public final class Component {
 			}
 			this.anInt4307 = buffer.g2b_dup();
 			this.anInt4253 = buffer.g2b_dup();
-			this.anInt4320 = buffer.g2();
-			this.anInt4274 = buffer.g2();
-			this.anInt4319 = buffer.g2();
+			this.modelXAngle = buffer.g2();
+			this.modelYAngle = buffer.g2();
+			this.modelYOffset = buffer.g2();
 			this.modelZoom = buffer.g2();
 			this.modelSeqID = buffer.g2();
 			if (this.modelSeqID == 65535) {
@@ -643,8 +643,8 @@ public final class Component {
 			}
 			this.text = buffer.gjstr();
 			this.textLineHeight = buffer.g1();
-			this.anInt4298 = buffer.g1();
-			this.anInt4293 = buffer.g1();
+			this.halign = buffer.g1();
+			this.valign = buffer.g1();
 			this.textShadow = buffer.g1() == 1;
 			this.color = buffer.mg4();
 		}
@@ -709,10 +709,10 @@ public final class Component {
 		if (this.pausText.equals("")) {
 			this.pausText = null;
 		}
-		this.anInt4239 = buffer.g1();
-		this.anInt4271 = buffer.g1();
+		this.dragDeadzone = buffer.g1();
+		this.dragDeadtime = buffer.g1();
 		this.anInt4285 = buffer.g1();
-		this.aString44 = buffer.gjstr();
+		this.opCircumfix = buffer.gjstr();
 		local556 = -1;
 		if (Static13.getTargetMask(local155) != 0) {
 			local556 = buffer.g2();
@@ -730,30 +730,30 @@ public final class Component {
 		}
 		this.aServerActiveProperties_1 = new ServerActiveProperties(local155, local556);
 		this.anObjectArray22 = this.method4106(buffer);
-		this.anObjectArray13 = this.method4106(buffer);
-		this.anObjectArray9 = this.method4106(buffer);
-		this.anObjectArray32 = this.method4106(buffer);
-		this.anObjectArray15 = this.method4106(buffer);
-		this.anObjectArray10 = this.method4106(buffer);
-		this.anObjectArray29 = this.method4106(buffer);
-		this.anObjectArray5 = this.method4106(buffer);
-		this.anObjectArray23 = this.method4106(buffer);
-		this.anObjectArray27 = this.method4106(buffer);
-		this.anObjectArray12 = this.method4106(buffer);
-		this.anObjectArray14 = this.method4106(buffer);
-		this.anObjectArray28 = this.method4106(buffer);
-		this.anObjectArray30 = this.method4106(buffer);
-		this.anObjectArray16 = this.method4106(buffer);
-		this.anObjectArray31 = this.method4106(buffer);
-		this.anObjectArray8 = this.method4106(buffer);
-		this.anObjectArray21 = this.method4106(buffer);
-		this.anObjectArray19 = this.method4106(buffer);
-		this.anObjectArray7 = this.method4106(buffer);
-		this.anIntArray273 = this.method4107(buffer);
-		this.anIntArray281 = this.method4107(buffer);
-		this.anIntArray274 = this.method4107(buffer);
-		this.anIntArray278 = this.method4107(buffer);
-		this.anIntArray277 = this.method4107(buffer);
+		this.onMouseOver = this.method4106(buffer);
+		this.onMouseLeave = this.method4106(buffer);
+		this.onUseWith = this.method4106(buffer);
+		this.onUse = this.method4106(buffer);
+		this.onVarpTransmit = this.method4106(buffer);
+		this.onInvTransmit = this.method4106(buffer);
+		this.onStatTransmit = this.method4106(buffer);
+		this.onTimer = this.method4106(buffer);
+		this.onOptionClick = this.method4106(buffer);
+		this.onMouseRepeat = this.method4106(buffer);
+		this.onClickRepeat = this.method4106(buffer);
+		this.onDrag = this.method4106(buffer);
+		this.onRelease = this.method4106(buffer);
+		this.onHold = this.method4106(buffer);
+		this.onDragStart = this.method4106(buffer);
+		this.onDragRelease = this.method4106(buffer);
+		this.onScroll = this.method4106(buffer);
+		this.onVarcTransmit = this.method4106(buffer);
+		this.onVarcstrTransmit = this.method4106(buffer);
+		this.varpTriggers = this.method4107(buffer);
+		this.inventoryTriggers = this.method4107(buffer);
+		this.statTriggers = this.method4107(buffer);
+		this.varcTriggers = this.method4107(buffer);
+		this.varcstrTriggers = this.method4107(buffer);
 	}
 
 	@OriginalMember(owner = "client!nk", name = "b", descriptor = "(ILclient!bt;)[Ljava/lang/Object;")

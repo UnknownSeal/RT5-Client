@@ -226,7 +226,7 @@ public final class Static173 {
 	}
 
 	@OriginalMember(owner = "client!k", name = "a", descriptor = "(II)V")
-	public static void method3321(@OriginalArg(1) int arg0) {
+	public static void setComponentModelAngleClient(@OriginalArg(1) int arg0) {
 		@Pc(13) DelayedStateChange local13 = Static316.create(8, arg0);
 		local13.pushClient();
 	}

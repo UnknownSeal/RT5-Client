@@ -14,7 +14,7 @@ public final class Static256 {
 	public static final int anInt4720 = anInt4716;
 
 	@OriginalMember(owner = "client!om", name = "K", descriptor = "[I")
-	public static final int[] anIntArray321 = new int[50];
+	public static final int[] ids = new int[50];
 
 	@OriginalMember(owner = "client!om", name = "nb", descriptor = "I")
 	public static final int anInt4744 = anInt4716 >> 2;

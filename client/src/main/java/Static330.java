@@ -290,14 +290,14 @@ public final class Static330 {
 				local69 = Static212.inboundBuffer.g1();
 				if (local23 >= 0 && local32 >= 0 && local23 < Static373.anInt7033 && Static242.anInt4449 > local32) {
 					local73 = local53 + 1;
-					if (local23 - local73 <= Static17.self.anIntArray316[0] && Static17.self.anIntArray316[0] <= local23 + local73 && Static17.self.anIntArray317[0] >= local32 - local73 && local32 + local73 >= Static17.self.anIntArray317[0] && Static218.aClass177_Sub1_2.anInt4882 != 0 && local57 > 0 && Static243.anInt4503 < 50 && local40 != -1) {
-						Static256.anIntArray321[Static243.anInt4503] = local40;
-						Static329.anIntArray419[Static243.anInt4503] = local57;
-						Static237.anIntArray283[Static243.anInt4503] = local63;
-						Static196.aClass247Array2[Static243.anInt4503] = null;
-						Static162.anIntArray188[Static243.anInt4503] = local53 + (local32 << 8) + (local23 << 16) + (Static243.anInt4502 << 24);
-						Static223.anIntArray256[Static243.anInt4503] = local69;
-						Static243.anInt4503++;
+					if (local23 - local73 <= Static17.self.anIntArray316[0] && Static17.self.anIntArray316[0] <= local23 + local73 && Static17.self.anIntArray317[0] >= local32 - local73 && local32 + local73 >= Static17.self.anIntArray317[0] && Static218.aClass177_Sub1_2.anInt4882 != 0 && local57 > 0 && Static243.size < 50 && local40 != -1) {
+						Static256.ids[Static243.size] = local40;
+						Static329.loops[Static243.size] = local57;
+						Static237.delays[Static243.size] = local63;
+						Static196.sounds[Static243.size] = null;
+						Static162.positions[Static243.size] = local53 + (local32 << 8) + (local23 << 16) + (Static243.anInt4502 << 24);
+						Static223.anIntArray256[Static243.size] = local69;
+						Static243.size++;
 					}
 				}
 			} else if (arg0 == Static242.aClass210_10) {

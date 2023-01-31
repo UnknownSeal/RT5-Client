@@ -30,7 +30,7 @@ public final class Static201 {
 			if (local19 != null && (local19.layer == arg1 || arg1 == -1412584499 && local19 == Static375.aComponent_14)) {
 				@Pc(66) int local66;
 				if (arg7 == -1) {
-					Class55.aRectangleArray1[Static154.anInt2806].setBounds(local19.anInt4305 + arg8, local19.anInt4254 - -arg4, local19.width, local19.height);
+					Class55.aRectangleArray1[Static154.anInt2806].setBounds(local19.x + arg8, local19.y - -arg4, local19.width, local19.height);
 					local66 = Static154.anInt2806++;
 				} else {
 					local66 = arg7;
@@ -41,10 +41,10 @@ public final class Static201 {
 					if (local19.anInt4273 != 0) {
 						Static285.method4885(local19);
 					}
-					@Pc(90) int local90 = arg8 + local19.anInt4305;
-					@Pc(95) int local95 = arg4 + local19.anInt4254;
+					@Pc(90) int local90 = arg8 + local19.x;
+					@Pc(95) int local95 = arg4 + local19.y;
 					@Pc(98) int local98 = local19.transparency;
-					if (Static18.aBoolean30 && (Static45.method1404(local19).anInt1758 != 0 || local19.type == 0) && local98 > 127) {
+					if (Static18.aBoolean30 && (Static45.getServerActiveProperties(local19).anInt1758 != 0 || local19.type == 0) && local98 > 127) {
 						local98 = 127;
 					}
 					@Pc(151) int local151;
@@ -199,8 +199,8 @@ public final class Static201 {
 								Static190.aClass19_8.method2862(local90, local95, local19.width, local19.height);
 							}
 							method3652(local286, local19.id, arg2, local155, local95 - local19.scrollY, local151, local275, local66, local90 - local19.scrollX);
-							if (local19.aComponentArray2 != null) {
-								method3652(local286, local19.id, local19.aComponentArray2, local155, local95 - local19.scrollY, local151, local275, local66, local90 - local19.scrollX);
+							if (local19.createdComponent != null) {
+								method3652(local286, local19.id, local19.createdComponent, local155, local95 - local19.scrollY, local151, local275, local66, local90 - local19.scrollX);
 							}
 							@Pc(820) Class2_Sub7 local820 = (Class2_Sub7) Static329.aClass4_130.get((long) local19.id);
 							if (local820 != null) {
@@ -230,14 +230,14 @@ public final class Static201 {
 								if (local955 != null) {
 									local248 = local19.color;
 									@Pc(970) String local970 = local19.text;
-									if (local19.anInt4300 != -1) {
-										@Pc(981) ObjType local981 = Static313.aClass107_2.get(local19.anInt4300);
+									if (local19.objId != -1) {
+										@Pc(981) ObjType local981 = Static313.aClass107_2.get(local19.objId);
 										local970 = local981.name;
 										if (local970 == null) {
 											local970 = "null";
 										}
-										if ((local981.stackable == 1 || local19.anInt4240 != 1) && local19.anInt4240 != -1) {
-											local970 = "<col=ff9040>" + local970 + "</col> x" + Static47.method1464(local19.anInt4240);
+										if ((local981.stackable == 1 || local19.objCount != 1) && local19.objCount != -1) {
+											local970 = "<col=ff9040>" + local970 + "</col> x" + Static47.method1464(local19.objCount);
 										}
 									}
 									if (Static192.aComponent_8 == local19) {
@@ -247,7 +247,7 @@ public final class Static201 {
 									if (Static88.aBoolean134) {
 										Static190.aClass19_8.method2817(local90, local95, local90 + local19.width, local19.height + local95);
 									}
-									local955.method5892(0, local19.textLineHeight, local90, local19.anInt4298, local19.textShadow ? 255 - (local98 & 0xFF) << 24 : -1, null, 0, null, local19.height, local970, local19.anInt4293, local95, Static124.aClass13Array27, local248 | 255 - (local98 & 0xFF) << 24, local19.width);
+									local955.method5892(0, local19.textLineHeight, local90, local19.halign, local19.textShadow ? 255 - (local98 & 0xFF) << 24 : -1, null, 0, null, local19.height, local970, local19.valign, local95, Static124.aClass13Array27, local248 | 255 - (local98 & 0xFF) << 24, local19.width);
 									if (Static88.aBoolean134) {
 										Static190.aClass19_8.method2895(arg5, arg3, arg6, arg0);
 									}
@@ -259,11 +259,11 @@ public final class Static201 {
 								if (local19.type == 5) {
 									if (local19.anInt4280 < 0) {
 										@Pc(1139) Class13 local1139;
-										if (local19.anInt4300 == -1) {
+										if (local19.objId == -1) {
 											local1139 = local19.method4112(Static190.aClass19_8);
 										} else {
 											@Pc(1121) Class117 local1121 = local19.aBoolean280 ? Static17.self.appearance : null;
-											local1139 = Static313.aClass107_2.method2758(local19.anInt4306, local19.anInt4300, local1121, Static190.aClass19_8, local19.graphicShadow | 0xFF000000, local19.outline, local19.anInt4240);
+											local1139 = Static313.aClass107_2.method2758(local19.anInt4306, local19.objId, local1121, Static190.aClass19_8, local19.graphicShadow | 0xFF000000, local19.outline, local19.objCount);
 										}
 										if (local1139 != null) {
 											local248 = local1139.method6398();
@@ -312,10 +312,10 @@ public final class Static201 {
 									local248 = 0;
 									@Pc(1511) Class157 local1511;
 									@Pc(1519) Class117 local1519;
-									if (local19.anInt4300 != -1) {
-										@Pc(1490) ObjType local1490 = Static313.aClass107_2.get(local19.anInt4300);
+									if (local19.objId != -1) {
+										@Pc(1490) ObjType local1490 = Static313.aClass107_2.get(local19.objId);
 										if (local1490 != null) {
-											local1490 = local1490.getCountObjType(local19.anInt4240);
+											local1490 = local1490.getCountObjType(local19.objCount);
 											local1511 = local19.modelSeqID == -1 ? null : Static39.aClass85_1.method2371(local19.modelSeqID);
 											local1519 = local19.aBoolean280 ? Static17.self.appearance : null;
 											local1477 = local1490.method4775(local19.anInt4283, 1024, local19.anInt4316, local1511, Static190.aClass19_8, 1, local1519, local19.anInt4247);
@@ -331,7 +331,7 @@ public final class Static201 {
 											@Pc(1566) Class11_Sub5_Sub2_Sub1 local1566 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local1161];
 											@Pc(1579) Class157 local1579 = local19.modelSeqID == -1 ? null : Static39.aClass85_1.method2371(local19.modelSeqID);
 											if (local1566 != null && (local1161 == Static234.anInt4226 || Static276.method4650(local1566.aString41) == local19.anInt4236)) {
-												local1477 = local1566.appearance.method3190(local19.anInt4283, Static59.aClass7_1, Static39.aClass85_1, Static21.aClass55_1, local1579, local19.anInt4316, 0, 1024, -1, 0, null, Static214.aClass226_1, Static313.aClass107_2, Static190.aClass19_8, Static6.aClass219_1, null, local19.anInt4247);
+												local1477 = local1566.appearance.method3190(local19.anInt4283, Static59.aClass7_1, Static39.aClass85_1, Static21.setIdentikit, local1579, local19.anInt4316, 0, 1024, -1, 0, null, Static214.aClass226_1, Static313.aClass107_2, Static190.aClass19_8, Static6.aClass219_1, null, local19.anInt4247);
 											}
 										}
 									} else if (local19.modelType == 8 || local19.modelType == 9) {
@@ -342,13 +342,13 @@ public final class Static201 {
 											local1477 = local1701.method6359(local19.anInt4247, local19.anInt4283, local19.anInt4236, local19.modelType == 9, local1511, local19.anInt4316, local1519, Static190.aClass19_8);
 										}
 									} else if (local19.modelSeqID == -1) {
-										local1477 = local19.method4104(0, -1, Static313.aClass107_2, Static214.aClass226_1, null, Static59.aClass7_1, Static17.self.appearance, Static6.aClass219_1, -1, Static39.aClass85_1, 1024, Static21.aClass55_1, Static190.aClass19_8);
+										local1477 = local19.method4104(0, -1, Static313.aClass107_2, Static214.aClass226_1, null, Static59.aClass7_1, Static17.self.appearance, Static6.aClass219_1, -1, Static39.aClass85_1, 1024, Static21.setIdentikit, Static190.aClass19_8);
 										if (local1477 == null && Static86.aBoolean133) {
 											Static200.redraw(local19);
 										}
 									} else {
 										@Pc(1640) Class157 local1640 = Static39.aClass85_1.method2371(local19.modelSeqID);
-										local1477 = local19.method4104(local19.anInt4283, local19.anInt4316, Static313.aClass107_2, Static214.aClass226_1, local1640, Static59.aClass7_1, Static17.self.appearance, Static6.aClass219_1, local19.anInt4247, Static39.aClass85_1, 1024, Static21.aClass55_1, Static190.aClass19_8);
+										local1477 = local19.method4104(local19.anInt4283, local19.anInt4316, Static313.aClass107_2, Static214.aClass226_1, local1640, Static59.aClass7_1, Static17.self.appearance, Static6.aClass219_1, local19.anInt4247, Static39.aClass85_1, 1024, Static21.setIdentikit, Static190.aClass19_8);
 										if (local1477 == null && Static86.aBoolean133) {
 											Static200.redraw(local19);
 										}
@@ -368,8 +368,8 @@ public final class Static201 {
 										local564 = (local19.anInt4253 * local514 >> 9) + local19.height / 2 + local95;
 										Static76.aClass14_3.method3931();
 										Static190.aClass19_8.method2896(Static76.aClass14_3);
-										local588 = local19.modelZoom * Class19.anIntArray178[local19.anInt4320 << 3] >> 15;
-										local590 = local19.modelZoom * Class19.COSINE[local19.anInt4320 << 3] >> 15;
+										local588 = local19.modelZoom * Class19.anIntArray178[local19.modelXAngle << 3] >> 15;
+										local590 = local19.modelZoom * Class19.COSINE[local19.modelXAngle << 3] >> 15;
 										Static190.aClass19_8.method2821(local516, local564, local1161, local514);
 										Static190.aClass19_8.method2823((float) local19.aShort61, local19.modelOrthographic ? (float) local19.aShort62 : (float) local19.aShort62 * 1.5F);
 										if (arg1 == -1412584499 || Static106.aBoolean164) {
@@ -381,10 +381,10 @@ public final class Static201 {
 										if (local19.aBoolean289) {
 											Static190.aClass19_8.method2852(false);
 										}
-										Static232.aClass14_4.method3930(-local19.anInt4319 << 3);
-										Static232.aClass14_4.method3925(local19.anInt4274 << 3);
-										Static232.aClass14_4.method3935(local19.anInt4278, local19.anInt4250 + local588 + local248, local590 + local19.anInt4250);
-										Static232.aClass14_4.method3928(local19.anInt4320 << 3);
+										Static232.aClass14_4.method3930(-local19.modelYOffset << 3);
+										Static232.aClass14_4.method3925(local19.modelYAngle << 3);
+										Static232.aClass14_4.method3935(local19.modelXOffset, local19.modelZOffset + local588 + local248, local590 + local19.modelZOffset);
+										Static232.aClass14_4.method3928(local19.modelXAngle << 3);
 										if (Static88.aBoolean134) {
 											Static190.aClass19_8.method2817(local90, local95, local90 + local19.width, local95 + local19.height);
 										}

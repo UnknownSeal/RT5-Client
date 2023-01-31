@@ -54,8 +54,8 @@ public final class Static115 {
 			@Pc(9) Component local9 = arg1[local3];
 			if (local9 != null) {
 				if (local9.type == 0) {
-					if (local9.aComponentArray2 != null) {
-						method3846(arg0, local9.aComponentArray2);
+					if (local9.createdComponent != null) {
+						method3846(arg0, local9.createdComponent);
 					}
 					@Pc(30) Class2_Sub7 local30 = (Class2_Sub7) Static329.aClass4_130.get((long) local9.id);
 					if (local30 != null) {
@@ -63,21 +63,21 @@ public final class Static115 {
 					}
 				}
 				@Pc(49) Class2_Sub13 local49;
-				if (arg0 == 0 && local9.anObjectArray34 != null) {
+				if (arg0 == 0 && local9.onDialogAbort != null) {
 					local49 = new Class2_Sub13();
 					local49.aComponent_3 = local9;
-					local49.anObjectArray4 = local9.anObjectArray34;
+					local49.anObjectArray4 = local9.onDialogAbort;
 					ScriptRunner.method3590(local49);
 				}
-				if (arg0 == 1 && local9.anObjectArray11 != null) {
+				if (arg0 == 1 && local9.onWidgetsOpenClose != null) {
 					if (local9.createdComponentID >= 0) {
-						@Pc(75) Component local75 = Static6.method140(local9.id);
-						if (local75 == null || local75.aComponentArray2 == null || local75.aComponentArray2.length <= local9.createdComponentID || local75.aComponentArray2[local9.createdComponentID] != local9) {
+						@Pc(75) Component local75 = Static6.getComponent(local9.id);
+						if (local75 == null || local75.createdComponent == null || local75.createdComponent.length <= local9.createdComponentID || local75.createdComponent[local9.createdComponentID] != local9) {
 							continue;
 						}
 					}
 					local49 = new Class2_Sub13();
-					local49.anObjectArray4 = local9.anObjectArray11;
+					local49.anObjectArray4 = local9.onWidgetsOpenClose;
 					local49.aComponent_3 = local9;
 					ScriptRunner.method3590(local49);
 				}

@@ -62,7 +62,7 @@ public final class Static154 {
 	public static int method2784(@OriginalArg(0) int arg0) {
 		@Pc(14) Class2_Sub41 local14 = Static374.method6274(false, arg0);
 		if (local14 == null) {
-			return Static178.aClass51_3.method1706(arg0).anInt2488;
+			return Static178.aClass51_3.get(arg0).anInt2488;
 		}
 		@Pc(29) int local29 = 0;
 		for (@Pc(31) int local31 = 0; local31 < local14.anIntArray489.length; local31++) {
@@ -70,7 +70,7 @@ public final class Static154 {
 				local29++;
 			}
 		}
-		return local29 + Static178.aClass51_3.method1706(arg0).anInt2488 - local14.anIntArray489.length;
+		return local29 + Static178.aClass51_3.get(arg0).anInt2488 - local14.anIntArray489.length;
 	}
 
 	@OriginalMember(owner = "client!is", name = "a", descriptor = "([I[I[IILclient!nh;)V")

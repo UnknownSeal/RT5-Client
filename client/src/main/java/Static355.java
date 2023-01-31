@@ -12,7 +12,7 @@ public final class Static355 {
 	public static int loadPercentage = 0;
 
 	@OriginalMember(owner = "client!uo", name = "J", descriptor = "[I")
-	public static final int[] anIntArray457 = new int[] { 7, 8, 9, 10, 11, 12, 13, 15 };
+	public static final int[] FEMALE_FEATURES = new int[] { 7, 8, 9, 10, 11, 12, 13, 15 };
 
 	@OriginalMember(owner = "client!uo", name = "a", descriptor = "(I)Z")
 	public static boolean method5933() {
