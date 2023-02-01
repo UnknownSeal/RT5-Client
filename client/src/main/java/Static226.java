@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static226 {
 
-	@OriginalMember(owner = "client!na", name = "U", descriptor = "Lclient!r;")
-	public static Js5 aJs5_61;
-
 	@OriginalMember(owner = "client!na", name = "Y", descriptor = "Lclient!lh;")
 	public static Class119 aClass119_1;
 
@@ -18,7 +15,7 @@ public final class Static226 {
 
 	@OriginalMember(owner = "client!na", name = "f", descriptor = "(I)V")
 	public static void method3981() {
-		@Pc(18) int local18 = Static218.aClass177_Sub1_2.method4491(Static77.anInt1762);
+		@Pc(18) int local18 = Static218.preferences.method4491(Static77.anInt1762);
 		if (local18 == 0) {
 			Static230.aByteArrayArrayArray13 = null;
 			Static136.method6076(0);
@@ -37,7 +34,7 @@ public final class Static226 {
 
 	@OriginalMember(owner = "client!na", name = "b", descriptor = "(II)V")
 	public static void method3982(@OriginalArg(0) int arg0) {
-		@Pc(10) DelayedStateChange local10 = Static316.create(1, arg0);
+		@Pc(10) DelayedStateChange local10 = DelayedStateChange.create(1, arg0);
 		local10.pushClient();
 	}
 

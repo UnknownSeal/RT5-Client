@@ -309,7 +309,7 @@ public final class Class2_Sub34 extends Node {
 		@Pc(12) int[] local12 = new int[16];
 		@Pc(15) int[] local15 = new int[16];
 		local12[9] = local15[9] = 128;
-		@Pc(29) Class118 local29 = new Class118(this.aByteArray77);
+		@Pc(29) MidiDecoder local29 = new MidiDecoder(this.aByteArray77);
 		@Pc(32) int local32 = local29.method3192();
 		for (@Pc(34) int local34 = 0; local34 < local32; local34++) {
 			local29.method3205(local34);

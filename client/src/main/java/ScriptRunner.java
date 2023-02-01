@@ -7,19 +7,19 @@ import org.openrs2.deob.annotation.Pc;
 public final class ScriptRunner {
 
 	@OriginalMember(owner = "client!lk", name = "h", descriptor = "[I")
-	private static int[] anIntArray212;
+	private static int[] intLocals;
 
 	@OriginalMember(owner = "client!lk", name = "o", descriptor = "[Ljava/lang/String;")
-	private static String[] aStringArray30;
+	private static String[] stringLocals;
 
 	@OriginalMember(owner = "client!lk", name = "r", descriptor = "Lclient!gr;")
-	private static Class86 activePhrase;
+	private static QuickChatPhrase activePhrase;
 
 	@OriginalMember(owner = "client!lk", name = "v", descriptor = "Lclient!nk;")
-	private static Component staticActiveComponent2;
+	private static Component primaryActiveComponent;
 
 	@OriginalMember(owner = "client!lk", name = "w", descriptor = "Lclient!nk;")
-	private static Component staticActiveComponent1;
+	private static Component secondaryActiveComponent;
 
 	@OriginalMember(owner = "client!lk", name = "a", descriptor = "I")
 	private static int isp = 0;
@@ -82,7 +82,7 @@ public final class ScriptRunner {
 	}
 
 	@OriginalMember(owner = "client!lk", name = "a", descriptor = "(Lclient!fn;)V")
-	public static void method3590(@OriginalArg(0) Class2_Sub13 arg0) {
+	public static void method3590(@OriginalArg(0) HookRequest arg0) {
 		method3592(arg0, 200000);
 	}
 
@@ -204,71 +204,71 @@ public final class ScriptRunner {
 			}
 		}
 		Static91.method1960(Static102.aClass145_141);
-		Static257.aClass2_Sub4_Sub2_4.p1(0);
-		@Pc(646) int local646 = Static257.aClass2_Sub4_Sub2_4.offset;
+		Static257.outboundBuffer.p1(0);
+		@Pc(646) int local646 = Static257.outboundBuffer.offset;
 		if (arg1 == 5021) {
-			Static257.aClass2_Sub4_Sub2_4.p1(1);
+			Static257.outboundBuffer.p1(1);
 		} else {
-			Static257.aClass2_Sub4_Sub2_4.p1(0);
+			Static257.outboundBuffer.p1(0);
 		}
-		Static257.aClass2_Sub4_Sub2_4.p1(local13);
-		Static257.aClass2_Sub4_Sub2_4.p1(local451);
-		Static120.method2379(arg0, Static257.aClass2_Sub4_Sub2_4);
-		Static257.aClass2_Sub4_Sub2_4.psize1(Static257.aClass2_Sub4_Sub2_4.offset - local646);
+		Static257.outboundBuffer.p1(local13);
+		Static257.outboundBuffer.p1(local451);
+		Static120.method2379(arg0, Static257.outboundBuffer);
+		Static257.outboundBuffer.psize1(Static257.outboundBuffer.offset - local646);
 	}
 
 	@OriginalMember(owner = "client!lk", name = "a", descriptor = "(Lclient!fn;I)V")
-	private static void method3592(@OriginalArg(0) Class2_Sub13 arg0, @OriginalArg(1) int arg1) {
-		@Pc(2) Object[] local2 = arg0.anObjectArray4;
-		@Pc(8) int local8 = (Integer) local2[0];
-		@Pc(12) Class2_Sub2_Sub11 local12 = Static295.method5099(local8);
-		if (local12 == null) {
+	private static void method3592(@OriginalArg(0) HookRequest request, @OriginalArg(1) int maxCycles) {
+		@Pc(2) Object[] arguments = request.arguments;
+		@Pc(8) int scriptID = (Integer) arguments[0];
+		@Pc(12) ClientScript script = Static295.get(scriptID);
+		if (script == null) {
 			return;
 		}
-		anIntArray212 = new int[local12.anInt3225];
-		@Pc(21) int local21 = 0;
-		aStringArray30 = new String[local12.anInt3228];
-		@Pc(27) int local27 = 0;
-		for (@Pc(29) int local29 = 1; local29 < local2.length; local29++) {
-			if (local2[local29] instanceof Integer) {
-				@Pc(41) int local41 = (Integer) local2[local29];
-				if (local41 == -2147483647) {
-					local41 = arg0.anInt2116;
+		intLocals = new int[script.intLocals];
+		@Pc(21) int intLocalIndex = 0;
+		stringLocals = new String[script.stringLocals];
+		@Pc(27) int stringLocalIndex = 0;
+		for (@Pc(29) int i = 1; i < arguments.length; i++) {
+			if (arguments[i] instanceof Integer) {
+				@Pc(41) int value = (Integer) arguments[i];
+				if (value == 0x80000001) {
+					value = request.mouseX;
 				}
-				if (local41 == -2147483646) {
-					local41 = arg0.anInt2117;
+				if (value == 0x80000002) {
+					value = request.mouseY;
 				}
-				if (local41 == -2147483645) {
-					local41 = arg0.aComponent_3 == null ? -1 : arg0.aComponent_3.id;
+				if (value == 0x80000003) {
+					value = request.source == null ? -1 : request.source.id;
 				}
-				if (local41 == -2147483644) {
-					local41 = arg0.anInt2118;
+				if (value == 0x80000004) {
+					value = request.op;
 				}
-				if (local41 == -2147483643) {
-					local41 = arg0.aComponent_3 == null ? -1 : arg0.aComponent_3.createdComponentID;
+				if (value == 0x80000005) {
+					value = request.source == null ? -1 : request.source.createdComponentID;
 				}
-				if (local41 == -2147483642) {
-					local41 = arg0.aComponent_4 == null ? -1 : arg0.aComponent_4.id;
+				if (value == 0x80000006) {
+					value = request.target == null ? -1 : request.target.id;
 				}
-				if (local41 == -2147483641) {
-					local41 = arg0.aComponent_4 == null ? -1 : arg0.aComponent_4.createdComponentID;
+				if (value == 0x80000007) {
+					value = request.target == null ? -1 : request.target.createdComponentID;
 				}
-				if (local41 == -2147483640) {
-					local41 = arg0.anInt2114;
+				if (value == 0x80000008) {
+					value = request.keyCode;
 				}
-				if (local41 == -2147483639) {
-					local41 = arg0.anInt2115;
+				if (value == 0x80000009) {
+					value = request.keyChar;
 				}
-				anIntArray212[local21++] = local41;
-			} else if (local2[local29] instanceof String) {
-				@Pc(135) String local135 = (String) local2[local29];
-				if (local135.equals("event_opbase")) {
-					local135 = arg0.aString20;
+				intLocals[intLocalIndex++] = value;
+			} else if (arguments[i] instanceof String) {
+				@Pc(135) String value = (String) arguments[i];
+				if (value.equals("event_opbase")) {
+					value = request.opBase;
 				}
-				aStringArray30[local27++] = local135;
+				stringLocals[stringLocalIndex++] = value;
 			}
 		}
-		run(local12, arg1);
+		run(script, maxCycles);
 	}
 
 	@OriginalMember(owner = "client!lk", name = "b", descriptor = "(I)Ljava/lang/String;")
@@ -282,7 +282,7 @@ public final class ScriptRunner {
 	}
 
 	@OriginalMember(owner = "client!lk", name = "a", descriptor = "(IZ)V")
-	private static void run(@OriginalArg(0) int opcode, @OriginalArg(1) boolean arg1) {
+	private static void run(@OriginalArg(0) int opcode, @OriginalArg(1) boolean secondary) {
 		@Pc(137) Component component;
 		@Pc(25) int local25 ;
 		@Pc(35) Component local35;
@@ -318,19 +318,19 @@ public final class ScriptRunner {
 				local99.layer = local99.id = local35.id;
 				local99.createdComponentID = local25 ;
 				local35.createdComponent[local25 ] = local99;
-				if (arg1) {
-					staticActiveComponent1 = local99;
+				if (secondary) {
+					secondaryActiveComponent = local99;
 				} else {
-					staticActiveComponent2 = local99;
+					primaryActiveComponent = local99;
 				}
 				Static200.redraw(local35);
 				return;
 			}
 			@Pc(158) Component local158;
 			if (opcode == 101) {
-				component = arg1 ? staticActiveComponent1 : staticActiveComponent2;
+				component = secondary ? secondaryActiveComponent : primaryActiveComponent;
 				if (component.createdComponentID == -1) {
-					if (arg1) {
+					if (secondary) {
 						throw new RuntimeException("Tried to .cc_delete static .active-component!");
 					}
 					throw new RuntimeException("Tried to cc_delete static active-component!");
@@ -350,14 +350,14 @@ public final class ScriptRunner {
 				isp -= 2;
 				int1 = intStack[isp];
 				int3 = intStack[isp + 1];
-				local210 = Static207.method3704(int1, int3);
+				local210 = Static207.getCreatedComponent(int1, int3);
 				if (local210 != null && int3 != -1) {
 					intStack[isp++] = 1;
-					if (arg1) {
-						staticActiveComponent1 = local210;
+					if (secondary) {
+						secondaryActiveComponent = local210;
 						return;
 					}
-					staticActiveComponent2 = local210;
+					primaryActiveComponent = local210;
 					return;
 				}
 				intStack[isp++] = 0;
@@ -368,11 +368,11 @@ public final class ScriptRunner {
 				local158 = Static6.getComponent(int1);
 				if (local158 != null) {
 					intStack[isp++] = 1;
-					if (arg1) {
-						staticActiveComponent1 = local158;
+					if (secondary) {
+						secondaryActiveComponent = local158;
 						return;
 					}
-					staticActiveComponent2 = local158;
+					primaryActiveComponent = local158;
 					return;
 				}
 				intStack[isp++] = 0;
@@ -429,7 +429,7 @@ public final class ScriptRunner {
 						opcode -= 1000;
 						component = Static6.getComponent(intStack[--isp]);
 					} else {
-						component = arg1 ? staticActiveComponent1 : staticActiveComponent2;
+						component = secondary ? secondaryActiveComponent : primaryActiveComponent;
 					}
 					if (opcode == 1100) {
 						isp -= 2;
@@ -502,7 +502,7 @@ public final class ScriptRunner {
 						component.modelID = intStack[--isp];
 						Static200.redraw(component);
 						if (component.createdComponentID == -1) {
-							Static17.method4212(component.id);
+							DelayedStateChange.setComponentModelClient(component.id);
 						}
 						return;
 					}
@@ -516,8 +516,8 @@ public final class ScriptRunner {
 						component.modelZoom = intStack[isp + 5];
 						Static200.redraw(component);
 						if (component.createdComponentID == -1) {
-							Static173.setComponentModelAngleClient(component.id);
-							Static86.method1934(component.id);
+							DelayedStateChange.setComponentModelAngleClient(component.id);
+							DelayedStateChange.setComponentModelOffsetClient(component.id);
 						}
 						return;
 					}
@@ -531,7 +531,7 @@ public final class ScriptRunner {
 							Static200.redraw(component);
 						}
 						if (component.createdComponentID == -1) {
-							Static250.method4342(component.id);
+							DelayedStateChange.setComponentModelAnimClient(component.id);
 						}
 						return;
 					}
@@ -547,7 +547,7 @@ public final class ScriptRunner {
 							Static200.redraw(component);
 						}
 						if (component.createdComponentID == -1) {
-							Static179.method3363(component.id);
+							DelayedStateChange.setComponentTextClient(component.id);
 						}
 						return;
 					}
@@ -555,7 +555,7 @@ public final class ScriptRunner {
 						component.textFont = intStack[--isp];
 						Static200.redraw(component);
 						if (component.createdComponentID == -1) {
-							Static129.method2439(component.id);
+							DelayedStateChange.method2439(component.id);
 						}
 						return;
 					}
@@ -618,7 +618,7 @@ public final class ScriptRunner {
 						component.modelZoom = intStack[--isp];
 						Static200.redraw(component);
 						if (component.createdComponentID == -1) {
-							Static173.setComponentModelAngleClient(component.id);
+							DelayedStateChange.setComponentModelAngleClient(component.id);
 						}
 						return;
 					}
@@ -640,7 +640,7 @@ public final class ScriptRunner {
 						opcode -= 1000;
 						component = Static6.getComponent(intStack[--isp]);
 					} else {
-						component = arg1 ? staticActiveComponent1 : staticActiveComponent2;
+						component = secondary ? secondaryActiveComponent : primaryActiveComponent;
 					}
 					Static200.redraw(component);
 					if (opcode == 1200 || opcode == 1205 || opcode == 1208 || opcode == 1209 || opcode == 1212 || opcode == 1213) {
@@ -648,9 +648,9 @@ public final class ScriptRunner {
 						int3 = intStack[isp];
 						local25  = intStack[isp + 1];
 						if (component.createdComponentID == -1) {
-							Static318.method5427(component.id);
-							Static173.setComponentModelAngleClient(component.id);
-							Static86.method1934(component.id);
+							DelayedStateChange.setComponentObjClient(component.id);
+							DelayedStateChange.setComponentModelAngleClient(component.id);
+							DelayedStateChange.setComponentModelOffsetClient(component.id);
 						}
 						if (int3 == -1) {
 							component.modelType = 1;
@@ -661,17 +661,17 @@ public final class ScriptRunner {
 						component.objId = int3;
 						component.objCount = local25 ;
 						if (opcode == 1208 || opcode == 1209) {
-							component.aBoolean280 = true;
+							component.objWearColor = true;
 						} else {
-							component.aBoolean280 = false;
+							component.objWearColor = false;
 						}
-						@Pc(1537) ObjType local1537 = Static313.aClass107_2.get(int3);
-						component.modelXAngle = local1537.xAngle2D;
-						component.modelYAngle = local1537.yAngle2D;
-						component.modelYOffset = local1537.zAngle2D;
-						component.modelXOffset = local1537.xOffset2D;
-						component.modelZOffset = local1537.yOffset2D;
-						component.modelZoom = local1537.zoom2d;
+						@Pc(1537) ObjType objType = Static313.aClass107_2.get(int3);
+						component.modelXAngle = objType.xAngle2D;
+						component.modelYAngle = objType.yAngle2D;
+						component.modelYOffset = objType.zAngle2D;
+						component.modelXOffset = objType.xOffset2D;
+						component.modelZOffset = objType.yOffset2D;
+						component.modelZoom = objType.zoom2d;
 						if (opcode == 1205 || opcode == 1209) {
 							component.anInt4306 = 0;
 						} else if (opcode == 1212 || opcode == 1213) {
@@ -692,7 +692,7 @@ public final class ScriptRunner {
 						component.modelType = 2;
 						component.modelID = intStack[--isp];
 						if (component.createdComponentID == -1) {
-							Static17.method4212(component.id);
+							DelayedStateChange.setComponentModelClient(component.id);
 						}
 						return;
 					}
@@ -700,7 +700,7 @@ public final class ScriptRunner {
 						component.modelType = 3;
 						component.modelID = -1;
 						if (component.createdComponentID == -1) {
-							Static17.method4212(component.id);
+							DelayedStateChange.setComponentModelClient(component.id);
 						}
 						return;
 					}
@@ -708,7 +708,7 @@ public final class ScriptRunner {
 						component.modelType = 6;
 						component.modelID = intStack[--isp];
 						if (component.createdComponentID == -1) {
-							Static17.method4212(component.id);
+							DelayedStateChange.setComponentModelClient(component.id);
 						}
 						return;
 					}
@@ -716,7 +716,7 @@ public final class ScriptRunner {
 						component.modelType = 5;
 						component.modelID = intStack[--isp];
 						if (component.createdComponentID == -1) {
-							Static17.method4212(component.id);
+							DelayedStateChange.setComponentModelClient(component.id);
 						}
 						return;
 					}
@@ -746,12 +746,12 @@ public final class ScriptRunner {
 							component.modelType = 8;
 						}
 						if (intStack[isp + 3] == 1) {
-							component.aBoolean280 = true;
+							component.objWearColor = true;
 						} else {
-							component.aBoolean280 = false;
+							component.objWearColor = false;
 						}
 						if (component.createdComponentID == -1) {
-							Static17.method4212(component.id);
+							DelayedStateChange.setComponentModelClient(component.id);
 						}
 						return;
 					}
@@ -760,7 +760,7 @@ public final class ScriptRunner {
 						component.modelID = Static234.anInt4226;
 						component.anInt4236 = 0;
 						if (component.createdComponentID == -1) {
-							Static17.method4212(component.id);
+							DelayedStateChange.setComponentModelClient(component.id);
 						}
 						return;
 					}
@@ -769,12 +769,12 @@ public final class ScriptRunner {
 						opcode -= 1000;
 						component = Static6.getComponent(intStack[--isp]);
 					} else {
-						component = arg1 ? staticActiveComponent1 : staticActiveComponent2;
+						component = secondary ? secondaryActiveComponent : primaryActiveComponent;
 					}
 					if (opcode == 1300) {
 						int3 = intStack[--isp] - 1;
 						if (int3 >= 0 && int3 <= 9) {
-							component.method4102(int3, stringStack[--anInt3652]);
+							component.setOp(int3, stringStack[--anInt3652]);
 							return;
 						}
 						anInt3652--;
@@ -784,7 +784,7 @@ public final class ScriptRunner {
 						isp -= 2;
 						int3 = intStack[isp];
 						local25  = intStack[isp + 1];
-						component.aComponent_12 = Static207.method3704(int3, local25 );
+						component.dragComponent = Static207.getCreatedComponent(int3, local25 );
 						return;
 					}
 					if (opcode == 1302) {
@@ -843,7 +843,7 @@ public final class ScriptRunner {
 							opcode -= 1000;
 							component = Static6.getComponent(intStack[--isp]);
 						} else {
-							component = arg1 ? staticActiveComponent1 : staticActiveComponent2;
+							component = secondary ? secondaryActiveComponent : primaryActiveComponent;
 						}
 						local1101 = stringStack[--anInt3652];
 						@Pc(2137) int[] local2137 = null;
@@ -939,7 +939,7 @@ public final class ScriptRunner {
 						return;
 					}
 					if (opcode < 1600) {
-						component = arg1 ? staticActiveComponent1 : staticActiveComponent2;
+						component = secondary ? secondaryActiveComponent : primaryActiveComponent;
 						if (opcode == 1500) {
 							intStack[isp++] = component.x;
 							return;
@@ -965,7 +965,7 @@ public final class ScriptRunner {
 							return;
 						}
 					} else if (opcode < 1700) {
-						component = arg1 ? staticActiveComponent1 : staticActiveComponent2;
+						component = secondary ? secondaryActiveComponent : primaryActiveComponent;
 						if (opcode == 1600) {
 							intStack[isp++] = component.scrollX;
 							return;
@@ -1019,7 +1019,7 @@ public final class ScriptRunner {
 							return;
 						}
 					} else if (opcode < 1800) {
-						component = arg1 ? staticActiveComponent1 : staticActiveComponent2;
+						component = secondary ? secondaryActiveComponent : primaryActiveComponent;
 						if (opcode == 1700) {
 							intStack[isp++] = component.objId;
 							return;
@@ -1037,7 +1037,7 @@ public final class ScriptRunner {
 							return;
 						}
 					} else if (opcode < 1900) {
-						component = arg1 ? staticActiveComponent1 : staticActiveComponent2;
+						component = secondary ? secondaryActiveComponent : primaryActiveComponent;
 						if (opcode == 1800) {
 							intStack[isp++] = Static45.getServerActiveProperties(component).getTargetMask();
 							return;
@@ -1141,8 +1141,8 @@ public final class ScriptRunner {
 							return;
 						}
 					} else {
-						@Pc(3356) Class2_Sub7 local3356;
-						@Pc(3254) Class2_Sub7 local3254;
+						@Pc(3356) SubInterface local3356;
+						@Pc(3254) SubInterface local3254;
 						if (opcode < 2800) {
 							if (opcode == 2700) {
 								component = Static6.getComponent(intStack[--isp]);
@@ -1160,7 +1160,7 @@ public final class ScriptRunner {
 							}
 							if (opcode == 2702) {
 								int1 = intStack[--isp];
-								local3254 = (Class2_Sub7) Static329.aClass4_130.get((long) int1);
+								local3254 = (SubInterface) Static329.subInterfaces.get(int1);
 								if (local3254 != null) {
 									intStack[isp++] = 1;
 									return;
@@ -1188,8 +1188,8 @@ public final class ScriptRunner {
 								isp -= 2;
 								int1 = intStack[isp];
 								int3 = intStack[isp + 1];
-								local3356 = (Class2_Sub7) Static329.aClass4_130.get((long) int1);
-								if (local3356 != null && local3356.anInt1370 == int3) {
+								local3356 = (SubInterface) Static329.subInterfaces.get(int1);
+								if (local3356 != null && local3356.id == int3) {
 									intStack[isp++] = 1;
 									return;
 								} else {
@@ -1241,25 +1241,25 @@ public final class ScriptRunner {
 								if (opcode == 3104) {
 									local3493 = stringStack[--anInt3652];
 									int3 = 0;
-									if (Static132.method2485(local3493)) {
-										int3 = Static146.method2698(local3493);
+									if (Static132.isInt(local3493)) {
+										int3 = Static146.parseInt(local3493);
 									}
 									Static91.method1960(Static363.aClass145_239);
-									Static257.aClass2_Sub4_Sub2_4.p4(int3);
+									Static257.outboundBuffer.p4(int3);
 									return;
 								}
 								if (opcode == 3105) {
 									local3493 = stringStack[--anInt3652];
 									Static91.method1960(Static49.aClass145_44);
-									Static257.aClass2_Sub4_Sub2_4.p1(local3493.length() + 1);
-									Static257.aClass2_Sub4_Sub2_4.pjstr(local3493);
+									Static257.outboundBuffer.p1(local3493.length() + 1);
+									Static257.outboundBuffer.pjstr(local3493);
 									return;
 								}
 								if (opcode == 3106) {
 									local3493 = stringStack[--anInt3652];
 									Static91.method1960(Static221.aClass145_164);
-									Static257.aClass2_Sub4_Sub2_4.p1(local3493.length() + 1);
-									Static257.aClass2_Sub4_Sub2_4.pjstr(local3493);
+									Static257.outboundBuffer.p1(local3493.length() + 1);
+									Static257.outboundBuffer.pjstr(local3493);
 									return;
 								}
 								if (opcode == 3107) {
@@ -1274,30 +1274,30 @@ public final class ScriptRunner {
 									int3 = intStack[isp + 1];
 									local25  = intStack[isp + 2];
 									local35 = Static6.getComponent(local25 );
-									Static380.method6334(int1, int3, local35);
+									Static380.dragPickUp(int1, int3, local35);
 									return;
 								}
 								if (opcode == 3109) {
 									isp -= 2;
 									int1 = intStack[isp];
 									int3 = intStack[isp + 1];
-									local210 = arg1 ? staticActiveComponent1 : staticActiveComponent2;
-									Static380.method6334(int1, int3, local210);
+									local210 = secondary ? secondaryActiveComponent : primaryActiveComponent;
+									Static380.dragPickUp(int1, int3, local210);
 									return;
 								}
 								if (opcode == 3110) {
-									int1 = intStack[--isp];
+									int objID = intStack[--isp];
 									Static91.method1960(Static190.aClass145_138);
-									Static257.aClass2_Sub4_Sub2_4.p2(int1);
+									Static257.outboundBuffer.p2(objID);
 									return;
 								}
 								if (opcode == 3111) {
 									isp -= 2;
 									int1 = intStack[isp];
 									int3 = intStack[isp + 1];
-									local3356 = (Class2_Sub7) Static329.aClass4_130.get((long) int1);
+									local3356 = (SubInterface) Static329.subInterfaces.get((long) int1);
 									if (local3356 != null) {
-										Static276.method4654(true, local3356, local3356.anInt1370 != int3);
+										Static276.method4654(true, local3356, local3356.id != int3);
 									}
 									Static382.method6364(int1, 3, true, int3);
 									return;
@@ -1305,8 +1305,8 @@ public final class ScriptRunner {
 								if (opcode == 3112) {
 									isp--;
 									int1 = intStack[isp];
-									local3254 = (Class2_Sub7) Static329.aClass4_130.get((long) int1);
-									if (local3254 != null && local3254.anInt1373 == 3) {
+									local3254 = (SubInterface) Static329.subInterfaces.get((long) int1);
+									if (local3254 != null && local3254.type == 3) {
 										Static276.method4654(true, local3254, true);
 									}
 									return;
@@ -1314,7 +1314,7 @@ public final class ScriptRunner {
 							} else if (opcode < 3300) {
 								if (opcode == 3200) {
 									isp -= 3;
-									Static29.play(intStack[isp + 1], 255, intStack[isp + 2], intStack[isp]);
+									Static29.play(intStack[isp + 2], intStack[isp], intStack[isp + 1], 255);
 									return;
 								}
 								if (opcode == 3201) {
@@ -1328,7 +1328,7 @@ public final class ScriptRunner {
 								}
 								if (opcode == 3203) {
 									isp -= 4;
-									Static29.play(intStack[isp + 1], intStack[isp + 3], intStack[isp + 2], intStack[isp]);
+									Static29.play(intStack[isp + 2], intStack[isp], intStack[isp + 1], intStack[isp + 3]);
 									return;
 								}
 								if (opcode == 3204) {
@@ -2121,7 +2121,7 @@ public final class ScriptRunner {
 									isp -= 2;
 									int3 = intStack[isp];
 									local25  = intStack[isp + 1];
-									local7155 = Static101.method2165(local25 , Static255.aJs5_64);
+									local7155 = Static101.method2165(local25 , client.js5Archive13);
 									intStack[isp++] = local7155.method6122(local3493, int3, Static124.aClass13Array27);
 									return;
 								}
@@ -2130,7 +2130,7 @@ public final class ScriptRunner {
 									isp -= 2;
 									int3 = intStack[isp];
 									local25  = intStack[isp + 1];
-									local7155 = Static101.method2165(local25 , Static255.aJs5_64);
+									local7155 = Static101.method2165(local25 , client.js5Archive13);
 									intStack[isp++] = local7155.method6123(Static124.aClass13Array27, local3493, int3);
 									return;
 								}
@@ -2248,7 +2248,7 @@ public final class ScriptRunner {
 								if (opcode == 4125) {
 									local3493 = stringStack[--anInt3652];
 									int3 = intStack[--isp];
-									@Pc(7741) Class239 local7741 = Static101.method2165(int3, Static255.aJs5_64);
+									@Pc(7741) Class239 local7741 = Static101.method2165(int3, client.js5Archive13);
 									intStack[isp++] = local7741.method6126(Static124.aClass13Array27, local3493);
 									return;
 								}
@@ -2434,7 +2434,7 @@ public final class ScriptRunner {
 					opcode -= 1000;
 					component = Static6.getComponent(intStack[--isp]);
 				} else {
-					component = arg1 ? staticActiveComponent1 : staticActiveComponent2;
+					component = secondary ? secondaryActiveComponent : primaryActiveComponent;
 				}
 				if (opcode == 1000) {
 					isp -= 4;
@@ -2521,12 +2521,12 @@ public final class ScriptRunner {
 
 	@OriginalMember(owner = "client!lk", name = "a", descriptor = "(Lclient!bc;II)V")
 	public static void method3595(@OriginalArg(0) Class16 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		@Pc(5) Class2_Sub2_Sub11 local5 = Static185.method3398(arg2, arg0, arg1);
+		@Pc(5) ClientScript local5 = Static185.method3398(arg2, arg0, arg1);
 		if (local5 == null) {
 			return;
 		}
-		anIntArray212 = new int[local5.anInt3225];
-		aStringArray30 = new String[local5.anInt3228];
+		intLocals = new int[local5.intLocals];
+		stringLocals = new String[local5.stringLocals];
 		if (local5.aClass16_4 == Static383.aClass16_9 || local5.aClass16_4 == Static309.aClass16_7 || local5.aClass16_4 == Static3.aClass16_1) {
 			@Pc(30) int local30 = 0;
 			@Pc(32) int local32 = 0;
@@ -2534,8 +2534,8 @@ public final class ScriptRunner {
 				local30 = Static227.aComponent_11.x;
 				local32 = Static227.aComponent_11.y;
 			}
-			anIntArray212[0] = Static226.aClass119_1.method3303() - local30;
-			anIntArray212[1] = Static226.aClass119_1.method3312() - local32;
+			intLocals[0] = Static226.aClass119_1.method3303() - local30;
+			intLocals[1] = Static226.aClass119_1.method3312() - local32;
 		}
 		run(local5, 200000);
 	}
@@ -2573,9 +2573,9 @@ public final class ScriptRunner {
 		for (@Pc(14) int local14 = 0; local14 < local12.length; local14++) {
 			@Pc(19) Component local19 = local12[local14];
 			if (local19.anObjectArray22 != null) {
-				@Pc(26) Class2_Sub13 local26 = new Class2_Sub13();
-				local26.aComponent_3 = local19;
-				local26.anObjectArray4 = local19.anObjectArray22;
+				@Pc(26) HookRequest local26 = new HookRequest();
+				local26.source = local19;
+				local26.arguments = local19.anObjectArray22;
 				method3592(local26, 2000000);
 			}
 		}
@@ -2604,9 +2604,9 @@ public final class ScriptRunner {
 				}
 				Static331.anInt6206 = intStack[isp + 2];
 				Static91.method1960(Static32.aClass145_32);
-				Static257.aClass2_Sub4_Sub2_4.p1(Static20.anInt545);
-				Static257.aClass2_Sub4_Sub2_4.p1(Static154.aClass170_2.anInt4690);
-				Static257.aClass2_Sub4_Sub2_4.p1(Static331.anInt6206);
+				Static257.outboundBuffer.p1(Static20.anInt545);
+				Static257.outboundBuffer.p1(Static154.aClass170_2.anInt4690);
+				Static257.outboundBuffer.p1(Static331.anInt6206);
 				return;
 			}
 			if (opcode == 5002) {
@@ -2623,11 +2623,11 @@ public final class ScriptRunner {
 					local81 = local81.substring(0, 80);
 				}
 				Static91.method1960(Static327.aClass145_222);
-				Static257.aClass2_Sub4_Sub2_4.p1(Static27.method872(local75) + Static27.method872(local81) + 2);
-				Static257.aClass2_Sub4_Sub2_4.pjstr(local75);
-				Static257.aClass2_Sub4_Sub2_4.p1(local89 - 1);
-				Static257.aClass2_Sub4_Sub2_4.p1(local95);
-				Static257.aClass2_Sub4_Sub2_4.pjstr(local81);
+				Static257.outboundBuffer.p1(Static27.method872(local75) + Static27.method872(local81) + 2);
+				Static257.outboundBuffer.pjstr(local75);
+				Static257.outboundBuffer.p1(local89 - 1);
+				Static257.outboundBuffer.p1(local95);
+				Static257.outboundBuffer.pjstr(local81);
 				return;
 			}
 			if (opcode == 5003) {
@@ -2670,11 +2670,11 @@ public final class ScriptRunner {
 				local81 = stringStack[anInt3652 + 1];
 				if (Static4.anInt90 != 0 || (!Static56.aBoolean123 || Static101.aBoolean159) && !Static109.aBoolean166) {
 					Static91.method1960(Static382.aClass145_261);
-					Static257.aClass2_Sub4_Sub2_4.p1(0);
-					local89 = Static257.aClass2_Sub4_Sub2_4.offset;
-					Static257.aClass2_Sub4_Sub2_4.pjstr(local75);
-					Static120.method2379(local81, Static257.aClass2_Sub4_Sub2_4);
-					Static257.aClass2_Sub4_Sub2_4.psize1(Static257.aClass2_Sub4_Sub2_4.offset - local89);
+					Static257.outboundBuffer.p1(0);
+					local89 = Static257.outboundBuffer.offset;
+					Static257.outboundBuffer.pjstr(local75);
+					Static120.method2379(local81, Static257.outboundBuffer);
+					Static257.outboundBuffer.psize1(Static257.outboundBuffer.offset - local89);
 					return;
 				}
 				return;
@@ -2707,14 +2707,14 @@ public final class ScriptRunner {
 				local157 = intStack[--isp];
 				local192 = -1;
 				if (local157 < 100) {
-					local192 = Static132.anIntArray162[local157];
+					local192 = Static132.phraseIDs[local157];
 				}
 				intStack[isp++] = local192;
 				return;
 			}
 			if (opcode == 5015) {
-				if (Static17.self == null || Static17.self.aString42 == null) {
-					local75 = Static374.aString70;
+				if (Static17.self == null || Static17.self.username == null) {
+					local75 = Static374.username;
 				} else {
 					local75 = Static17.self.method4071();
 				}
@@ -2751,8 +2751,8 @@ public final class ScriptRunner {
 				return;
 			}
 			if (opcode == 5020) {
-				if (Static17.self == null || Static17.self.aString42 == null) {
-					local75 = Static374.aString70;
+				if (Static17.self == null || Static17.self.username == null) {
+					local75 = Static374.username;
 				} else {
 					local75 = Static17.self.method4069();
 				}
@@ -2824,41 +2824,41 @@ public final class ScriptRunner {
 				return;
 			}
 			if (opcode == 5058) {
-				activePhrase = new Class86();
-				activePhrase.anInt2377 = intStack[--isp];
-				activePhrase.aQuickChatPhraseType_1 = Static146.get(activePhrase.anInt2377);
-				activePhrase.values = new int[activePhrase.aQuickChatPhraseType_1.getDynamicCommandCount()];
+				activePhrase = new QuickChatPhrase();
+				activePhrase.id = intStack[--isp];
+				activePhrase.type = Static146.get(activePhrase.id);
+				activePhrase.values = new int[activePhrase.type.getDynamicCommandCount()];
 				return;
 			}
 			if (opcode == 5059) {
 				Static91.method1960(Static369.aClass145_248);
-				Static257.aClass2_Sub4_Sub2_4.p1(0);
-				local157 = Static257.aClass2_Sub4_Sub2_4.offset;
-				Static257.aClass2_Sub4_Sub2_4.p1(0);
-				Static257.aClass2_Sub4_Sub2_4.p2(activePhrase.anInt2377);
-				activePhrase.aQuickChatPhraseType_1.encodeMessage(Static257.aClass2_Sub4_Sub2_4, activePhrase.values);
-				Static257.aClass2_Sub4_Sub2_4.psize1(Static257.aClass2_Sub4_Sub2_4.offset - local157);
+				Static257.outboundBuffer.p1(0);
+				local157 = Static257.outboundBuffer.offset;
+				Static257.outboundBuffer.p1(0);
+				Static257.outboundBuffer.p2(activePhrase.id);
+				activePhrase.type.encodeMessage(Static257.outboundBuffer, activePhrase.values);
+				Static257.outboundBuffer.psize1(Static257.outboundBuffer.offset - local157);
 				return;
 			}
 			if (opcode == 5060) {
 				local75 = stringStack[--anInt3652];
 				Static91.method1960(Static325.aClass145_220);
-				Static257.aClass2_Sub4_Sub2_4.p1(0);
-				local192 = Static257.aClass2_Sub4_Sub2_4.offset;
-				Static257.aClass2_Sub4_Sub2_4.pjstr(local75);
-				Static257.aClass2_Sub4_Sub2_4.p2(activePhrase.anInt2377);
-				activePhrase.aQuickChatPhraseType_1.encodeMessage(Static257.aClass2_Sub4_Sub2_4, activePhrase.values);
-				Static257.aClass2_Sub4_Sub2_4.psize1(Static257.aClass2_Sub4_Sub2_4.offset - local192);
+				Static257.outboundBuffer.p1(0);
+				local192 = Static257.outboundBuffer.offset;
+				Static257.outboundBuffer.pjstr(local75);
+				Static257.outboundBuffer.p2(activePhrase.id);
+				activePhrase.type.encodeMessage(Static257.outboundBuffer, activePhrase.values);
+				Static257.outboundBuffer.psize1(Static257.outboundBuffer.offset - local192);
 				return;
 			}
 			if (opcode == 5061) {
 				Static91.method1960(Static369.aClass145_248);
-				Static257.aClass2_Sub4_Sub2_4.p1(0);
-				local157 = Static257.aClass2_Sub4_Sub2_4.offset;
-				Static257.aClass2_Sub4_Sub2_4.p1(1);
-				Static257.aClass2_Sub4_Sub2_4.p2(activePhrase.anInt2377);
-				activePhrase.aQuickChatPhraseType_1.encodeMessage(Static257.aClass2_Sub4_Sub2_4, activePhrase.values);
-				Static257.aClass2_Sub4_Sub2_4.psize1(Static257.aClass2_Sub4_Sub2_4.offset - local157);
+				Static257.outboundBuffer.p1(0);
+				local157 = Static257.outboundBuffer.offset;
+				Static257.outboundBuffer.p1(1);
+				Static257.outboundBuffer.p2(activePhrase.id);
+				activePhrase.type.encodeMessage(Static257.outboundBuffer, activePhrase.values);
+				Static257.outboundBuffer.psize1(Static257.outboundBuffer.offset - local157);
 				return;
 			}
 			if (opcode == 5062) {
@@ -2883,7 +2883,7 @@ public final class ScriptRunner {
 					intStack[isp++] = -1;
 					return;
 				}
-				intStack[isp++] = Static138.get(local157).method3793((char) local192);
+				intStack[isp++] = Static138.get(local157).getSubcategoryByShortcut((char) local192);
 				return;
 			}
 			if (opcode == 5065) {
@@ -3003,14 +3003,14 @@ public final class ScriptRunner {
 						intStack[isp++] = -1;
 						return;
 					}
-					intStack[isp++] = local1492.anInt6869;
+					intStack[isp++] = local1492.id;
 					return;
 				}
 				@Pc(1525) Map local1525;
 				if (opcode == 5207) {
-					local1525 = Static344.method5513(intStack[--isp]);
-					if (local1525 != null && local1525.aString66 != null) {
-						stringStack[anInt3652++] = local1525.aString66;
+					local1525 = Static344.get(intStack[--isp]);
+					if (local1525 != null && local1525.name != null) {
+						stringStack[anInt3652++] = local1525.name;
 						return;
 					}
 					stringStack[anInt3652++] = "";
@@ -3028,19 +3028,19 @@ public final class ScriptRunner {
 				}
 				if (opcode == 5210) {
 					local157 = intStack[--isp];
-					local1492 = Static344.method5513(local157);
+					local1492 = Static344.get(local157);
 					if (local1492 == null) {
 						intStack[isp++] = 0;
 						intStack[isp++] = 0;
 						return;
 					}
-					intStack[isp++] = local1492.anInt6872 >> 14 & 0x3FFF;
-					intStack[isp++] = local1492.anInt6872 & 0x3FFF;
+					intStack[isp++] = local1492.origin >> 14 & 0x3FFF;
+					intStack[isp++] = local1492.origin & 0x3FFF;
 					return;
 				}
 				if (opcode == 5211) {
 					local157 = intStack[--isp];
-					local1492 = Static344.method5513(local157);
+					local1492 = Static344.get(local157);
 					if (local1492 == null) {
 						intStack[isp++] = 0;
 						intStack[isp++] = 0;
@@ -3094,7 +3094,7 @@ public final class ScriptRunner {
 					@Pc(1901) Class246 local1901 = Static344.method5515(local157 >> 14 & 0x3FFF, local157 & 0x3FFF);
 					local1903 = false;
 					for (@Pc(1908) Map local1908 = (Map) local1901.head(); local1908 != null; local1908 = (Map) local1901.next()) {
-						if (local1908.anInt6869 == local192) {
+						if (local1908.id == local192) {
 							local1903 = true;
 							break;
 						}
@@ -3108,7 +3108,7 @@ public final class ScriptRunner {
 				}
 				if (opcode == 5218) {
 					local157 = intStack[--isp];
-					local1492 = Static344.method5513(local157);
+					local1492 = Static344.get(local157);
 					if (local1492 == null) {
 						intStack[isp++] = -1;
 						return;
@@ -3215,14 +3215,14 @@ public final class ScriptRunner {
 					local157 = intStack[isp];
 					local1292 = intStack[isp + 1] == 1;
 					if (Static141.aClass4_58 != null) {
-						local2421 = Static141.aClass4_58.get((long) local157);
+						local2421 = Static141.aClass4_58.get(local157);
 						if (local2421 != null && !local1292) {
 							local2421.unlink();
 							return;
 						}
 						if (local2421 == null && local1292) {
 							local2421 = new Node();
-							Static141.aClass4_58.put(local2421, (long) local157);
+							Static141.aClass4_58.put(local2421, local157);
 						}
 					}
 					return;
@@ -3231,7 +3231,7 @@ public final class ScriptRunner {
 				if (opcode == 5232) {
 					local157 = intStack[--isp];
 					if (Static141.aClass4_58 != null) {
-						local2463 = Static141.aClass4_58.get((long) local157);
+						local2463 = Static141.aClass4_58.get(local157);
 						intStack[isp++] = local2463 == null ? 0 : 1;
 						return;
 					}
@@ -3243,14 +3243,14 @@ public final class ScriptRunner {
 					local157 = intStack[isp];
 					local1292 = intStack[isp + 1] == 1;
 					if (Static220.aClass4_83 != null) {
-						local2421 = Static220.aClass4_83.get((long) local157);
+						local2421 = Static220.aClass4_83.get(local157);
 						if (local2421 != null && !local1292) {
 							local2421.unlink();
 							return;
 						}
 						if (local2421 == null && local1292) {
 							local2421 = new Node();
-							Static220.aClass4_83.put(local2421, (long) local157);
+							Static220.aClass4_83.put(local2421, local157);
 						}
 					}
 					return;
@@ -3266,7 +3266,7 @@ public final class ScriptRunner {
 					return;
 				}
 				if (opcode == 5235) {
-					intStack[isp++] = Static344.aMap_3 == null ? -1 : Static344.aMap_3.anInt6869;
+					intStack[isp++] = Static344.aMap_3 == null ? -1 : Static344.aMap_3.id;
 					return;
 				}
 			} else {
@@ -3276,13 +3276,13 @@ public final class ScriptRunner {
 						isp -= 2;
 						local157 = intStack[isp];
 						local192 = intStack[isp + 1];
-						Static143.method2677(local192, 3, false, local157);
+						Static143.setWindowMode(false, 3, local192, local157);
 						intStack[isp++] = GameShell.fullScreenFrame == null ? 0 : 1;
 						return;
 					}
 					if (opcode == 5301) {
 						if (GameShell.fullScreenFrame != null) {
-							Static143.method2677(-1, Static218.aClass177_Sub1_2.anInt4894, false, -1);
+							Static143.setWindowMode(false, Static218.preferences.anInt4894, -1, -1);
 						}
 						return;
 					}
@@ -3299,8 +3299,8 @@ public final class ScriptRunner {
 						return;
 					}
 					if (opcode == 5305) {
-						local157 = Static218.aClass177_Sub1_2.anInt4884;
-						local192 = Static218.aClass177_Sub1_2.anInt4893;
+						local157 = Static218.preferences.anInt4884;
+						local192 = Static218.preferences.anInt4893;
 						local89 = -1;
 						@Pc(2715) Class169[] local2715 = Static63.method1703();
 						for (local2717 = 0; local2717 < local2715.length; local2717++) {
@@ -3314,26 +3314,26 @@ public final class ScriptRunner {
 						return;
 					}
 					if (opcode == 5306) {
-						intStack[isp++] = Static144.method2692();
+						intStack[isp++] = Static144.getWindowMode();
 						return;
 					}
 					if (opcode == 5307) {
 						local157 = intStack[--isp];
 						if (local157 >= 1 && local157 <= 2) {
-							Static143.method2677(-1, local157, false, -1);
+							Static143.setWindowMode(false, local157, -1, -1);
 							return;
 						}
 						return;
 					}
 					if (opcode == 5308) {
-						intStack[isp++] = Static218.aClass177_Sub1_2.anInt4894;
+						intStack[isp++] = Static218.preferences.anInt4894;
 						return;
 					}
 					if (opcode == 5309) {
 						local157 = intStack[--isp];
 						if (local157 >= 1 && local157 <= 2) {
-							Static218.aClass177_Sub1_2.anInt4894 = local157;
-							Static218.aClass177_Sub1_2.write(GameShell.signlink);
+							Static218.preferences.anInt4894 = local157;
+							Static218.preferences.write(GameShell.signlink);
 							return;
 						}
 						return;
@@ -3347,10 +3347,10 @@ public final class ScriptRunner {
 							local81 = stringStack[anInt3652 + 1];
 							local89 = intStack[--isp];
 							Static91.method1960(Static323.aClass145_219);
-							Static257.aClass2_Sub4_Sub2_4.p1(Static27.method872(local75) + Static27.method872(local81) + 1);
-							Static257.aClass2_Sub4_Sub2_4.pjstr(local75);
-							Static257.aClass2_Sub4_Sub2_4.pjstr(local81);
-							Static257.aClass2_Sub4_Sub2_4.p1(local89);
+							Static257.outboundBuffer.p1(Static27.method872(local75) + Static27.method872(local81) + 1);
+							Static257.outboundBuffer.pjstr(local75);
+							Static257.outboundBuffer.pjstr(local81);
+							Static257.outboundBuffer.p1(local89);
 							return;
 						}
 						if (opcode == 5401) {
@@ -3393,7 +3393,7 @@ public final class ScriptRunner {
 						}
 						if (opcode == 5411) {
 							if (GameShell.fullScreenFrame != null) {
-								Static143.method2677(-1, Static218.aClass177_Sub1_2.anInt4894, false, -1);
+								Static143.setWindowMode(false, Static218.preferences.anInt4894, -1, -1);
 							}
 							if (GameShell.frame != null) {
 								Static340.method5764();
@@ -3422,7 +3422,7 @@ public final class ScriptRunner {
 						}
 						if (opcode == 5421) {
 							if (GameShell.fullScreenFrame != null) {
-								Static143.method2677(-1, Static218.aClass177_Sub1_2.anInt4894, false, -1);
+								Static143.setWindowMode(false, Static218.preferences.anInt4894, -1, -1);
 							}
 							local75 = stringStack[--anInt3652];
 							local1292 = intStack[--isp] == 1;
@@ -3466,11 +3466,11 @@ public final class ScriptRunner {
 							Static390.anInt7211 = intStack[isp + 8];
 							Static322.anInt6030 = intStack[isp + 9];
 							Static381.anInt7118 = intStack[isp + 10];
-							Static30.aJs5_5.method5086(Static186.anInt3731);
-							Static30.aJs5_5.method5086(Static67.anInt1636);
-							Static30.aJs5_5.method5086(Static74.anInt1722);
-							Static30.aJs5_5.method5086(Static363.anInt6804);
-							Static30.aJs5_5.method5086(Static390.anInt7211);
+							client.js5Archive8.isFileReady(Static186.anInt3731);
+							client.js5Archive8.isFileReady(Static67.anInt1636);
+							client.js5Archive8.isFileReady(Static74.anInt1722);
+							client.js5Archive8.isFileReady(Static363.anInt6804);
+							client.js5Archive8.isFileReady(Static390.anInt7211);
 							Static337.aClass13_17 = null;
 							Static110.aClass13_6 = null;
 							Static35.aClass13_3 = null;
@@ -3506,7 +3506,7 @@ public final class ScriptRunner {
 							return;
 						}
 						if (opcode == 5429) {
-							Static161.method2971(stringStack[--anInt3652], false);
+							Static161.execute(stringStack[--anInt3652], false);
 							return;
 						}
 					} else if (opcode < 5600) {
@@ -3623,7 +3623,7 @@ public final class ScriptRunner {
 							if (Static347.anInt6442 != 10) {
 								return;
 							}
-							if (Static154.anInt2803 == 0 && Static347.step == 0 && Static141.anInt2652 == 0 && Static77.anInt1751 == 0) {
+							if (Static154.anInt2803 == 0 && Static347.step == 0 && Static141.anInt2652 == 0 && Static77.step == 0) {
 								Static97.method2087(local81, local75, local89);
 								return;
 							}
@@ -3644,7 +3644,7 @@ public final class ScriptRunner {
 							if (Static347.anInt6442 != 10) {
 								return;
 							}
-							if (Static154.anInt2803 == 0 && Static347.step == 0 && Static141.anInt2652 == 0 && Static77.anInt1751 == 0) {
+							if (Static154.anInt2803 == 0 && Static347.step == 0 && Static141.anInt2652 == 0 && Static77.step == 0) {
 								Static352.method5875(intStack[isp + 3], intStack[isp + 2], intStack[isp], intStack[isp + 1]);
 								return;
 							}
@@ -3655,7 +3655,7 @@ public final class ScriptRunner {
 							if (Static347.anInt6442 != 10) {
 								return;
 							}
-							if (Static154.anInt2803 == 0 && Static347.step == 0 && Static141.anInt2652 == 0 && Static77.anInt1751 == 0) {
+							if (Static154.anInt2803 == 0 && Static347.step == 0 && Static141.anInt2652 == 0 && Static77.step == 0) {
 								Static72.method1809(Static80.method5984(stringStack[anInt3652]));
 								return;
 							}
@@ -3667,7 +3667,7 @@ public final class ScriptRunner {
 							if (Static347.anInt6442 != 10) {
 								return;
 							}
-							if (Static154.anInt2803 == 0 && Static347.step == 0 && Static141.anInt2652 == 0 && Static77.anInt1751 == 0) {
+							if (Static154.anInt2803 == 0 && Static347.step == 0 && Static141.anInt2652 == 0 && Static77.step == 0) {
 								Static389.method4487(stringStack[anInt3652 + 1], intStack[isp], intStack[isp + 3], intStack[isp + 4] == 1, Static80.method5984(stringStack[anInt3652]), intStack[isp + 2], intStack[isp + 1], intStack[isp + 6] == 1, intStack[isp + 5] == 1, stringStack[anInt3652 + 2]);
 								return;
 							}
@@ -3711,95 +3711,95 @@ public final class ScriptRunner {
 							if (local157 > 4) {
 								local157 = 4;
 							}
-							Static218.aClass177_Sub1_2.anInt4879 = local157;
+							Static218.preferences.brightness = local157;
 							Static347.method5826();
-							Static218.aClass177_Sub1_2.write(GameShell.signlink);
+							Static218.preferences.write(GameShell.signlink);
 							Static236.sentToServer = false;
 							return;
 						}
 						if (opcode == 6002) {
-							Static218.aClass177_Sub1_2.method4492(intStack[--isp] == 1);
+							Static218.preferences.setAllLevelsVisible(intStack[--isp] == 1);
 							Static347.method5826();
 							Static226.method3981();
-							Static218.aClass177_Sub1_2.write(GameShell.signlink);
+							Static218.preferences.write(GameShell.signlink);
 							Static236.sentToServer = false;
 							return;
 						}
 						if (opcode == 6003) {
-							Static218.aClass177_Sub1_2.aBoolean349 = intStack[--isp] == 1;
+							Static218.preferences.roofsVisible = intStack[--isp] == 1;
 							Static226.method3981();
-							Static218.aClass177_Sub1_2.write(GameShell.signlink);
+							Static218.preferences.write(GameShell.signlink);
 							Static236.sentToServer = false;
 							return;
 						}
 						if (opcode == 6005) {
-							Static218.aClass177_Sub1_2.aBoolean359 = intStack[--isp] == 1;
+							Static218.preferences.groundDecoration = intStack[--isp] == 1;
 							Static347.method5826();
-							Static218.aClass177_Sub1_2.write(GameShell.signlink);
+							Static218.preferences.write(GameShell.signlink);
 							Static236.sentToServer = false;
 							return;
 						}
 						if (opcode == 6006) {
-							Static218.aClass177_Sub1_2.aBoolean350 = intStack[--isp] == 1;
-							Static190.aClass19_8.method2874(!Static218.aClass177_Sub1_2.aBoolean350);
-							Static218.aClass177_Sub1_2.write(GameShell.signlink);
+							Static218.preferences.highDetailTextures = intStack[--isp] == 1;
+							Static190.aClass19_8.method2874(!Static218.preferences.highDetailTextures);
+							Static218.preferences.write(GameShell.signlink);
 							Static236.sentToServer = false;
 							return;
 						}
 						if (opcode == 6007) {
-							Static218.aClass177_Sub1_2.anInt4895 = intStack[--isp];
-							Static218.aClass177_Sub1_2.write(GameShell.signlink);
+							Static218.preferences.manyIdleAnimations = intStack[--isp];
+							Static218.preferences.write(GameShell.signlink);
 							Static236.sentToServer = false;
 							return;
 						}
 						if (opcode == 6008) {
-							Static218.aClass177_Sub1_2.aBoolean353 = intStack[--isp] == 1;
-							Static218.aClass177_Sub1_2.write(GameShell.signlink);
+							Static218.preferences.flickeringEffects = intStack[--isp] == 1;
+							Static218.preferences.write(GameShell.signlink);
 							Static236.sentToServer = false;
 							return;
 						}
 						if (opcode == 6009) {
-							Static218.aClass177_Sub1_2.aBoolean355 = intStack[--isp] == 1;
+							Static218.preferences.groundTextures = intStack[--isp] == 1;
 							Static347.method5826();
-							Static218.aClass177_Sub1_2.write(GameShell.signlink);
+							Static218.preferences.write(GameShell.signlink);
 							Static236.sentToServer = false;
 							return;
 						}
 						if (opcode == 6010) {
-							Static218.aClass177_Sub1_2.aBoolean358 = intStack[--isp] == 1;
-							Static218.aClass177_Sub1_2.write(GameShell.signlink);
+							Static218.preferences.characterShadows = intStack[--isp] == 1;
+							Static218.preferences.write(GameShell.signlink);
 							Static236.sentToServer = false;
 							return;
 						}
 						if (opcode == 6011) {
-							local157 = intStack[--isp];
-							if (local157 < 0 || local157 > 2) {
-								local157 = 0;
+							int sceneryShadows = intStack[--isp];
+							if (sceneryShadows < 0 || sceneryShadows > 2) {
+								sceneryShadows = 0;
 							}
-							Static218.aClass177_Sub1_2.anInt4886 = local157;
+							Static218.preferences.sceneryShadows = sceneryShadows;
 							Static347.method5826();
-							Static218.aClass177_Sub1_2.write(GameShell.signlink);
+							Static218.preferences.write(GameShell.signlink);
 							Static236.sentToServer = false;
 							return;
 						}
 						if (opcode == 6012) {
-							Static218.aClass177_Sub1_2.aBoolean364 = intStack[--isp] == 1;
+							Static218.preferences.highDetailLighting = intStack[--isp] == 1;
 							Static174.method1506();
-							Static218.aClass177_Sub1_2.write(GameShell.signlink);
+							Static218.preferences.write(GameShell.signlink);
 							Static236.sentToServer = false;
 							return;
 						}
 						if (opcode == 6014) {
-							Static218.aClass177_Sub1_2.aBoolean361 = intStack[--isp] == 1;
+							Static218.preferences.highDetailWater = intStack[--isp] == 1;
 							Static347.method5826();
-							Static218.aClass177_Sub1_2.write(GameShell.signlink);
+							Static218.preferences.write(GameShell.signlink);
 							Static236.sentToServer = false;
 							return;
 						}
 						if (opcode == 6015) {
-							Static218.aClass177_Sub1_2.aBoolean348 = intStack[--isp] == 1;
+							Static218.preferences.fog = intStack[--isp] == 1;
 							Static347.method5826();
-							Static218.aClass177_Sub1_2.write(GameShell.signlink);
+							Static218.preferences.write(GameShell.signlink);
 							Static236.sentToServer = false;
 							return;
 						}
@@ -3808,90 +3808,90 @@ public final class ScriptRunner {
 							if (local157 < 0 || local157 > 2) {
 								local157 = 0;
 							}
-							Static218.aClass177_Sub1_2.anInt4885 = local157;
+							Static218.preferences.anInt4885 = local157;
 							Static353.method5882();
-							Static218.aClass177_Sub1_2.write(GameShell.signlink);
+							Static218.preferences.write(GameShell.signlink);
 							return;
 						}
 						if (opcode == 6017) {
-							Static218.aClass177_Sub1_2.aBoolean352 = intStack[--isp] == 1;
+							Static218.preferences.stereo = intStack[--isp] == 1;
 							Static178.method2342();
-							Static218.aClass177_Sub1_2.write(GameShell.signlink);
+							Static218.preferences.write(GameShell.signlink);
 							Static236.sentToServer = false;
 							return;
 						}
 						if (opcode == 6018) {
-							local157 = intStack[--isp];
-							if (local157 < 0) {
-								local157 = 0;
+							int volume = intStack[--isp];
+							if (volume < 0) {
+								volume = 0;
 							}
-							if (local157 > 127) {
-								local157 = 127;
+							if (volume > 127) {
+								volume = 127;
 							}
-							Static218.aClass177_Sub1_2.anInt4888 = local157;
-							Static218.aClass177_Sub1_2.write(GameShell.signlink);
+							Static218.preferences.soundEffectsVolume = volume;
+							Static218.preferences.write(GameShell.signlink);
 							Static236.sentToServer = false;
 							return;
 						}
 						if (opcode == 6019) {
-							local157 = intStack[--isp];
-							if (local157 < 0) {
-								local157 = 0;
+							int volume = intStack[--isp];
+							if (volume < 0) {
+								volume = 0;
 							}
-							if (local157 > 255) {
-								local157 = 255;
+							if (volume > 255) {
+								volume = 255;
 							}
-							if (local157 != Static218.aClass177_Sub1_2.musicVolume) {
-								if (Static218.aClass177_Sub1_2.musicVolume == 0 && Static171.anInt3268 != -1) {
-									Static94.method2042(local157, Static171.anInt3268, Static101.aJs5_23);
+							if (volume != Static218.preferences.musicVolume) {
+								if (Static218.preferences.musicVolume == 0 && Static171.groupID != -1) {
+									Static94.playImmediate(Static171.groupID, client.js5Archive6, volume);
 									Static393.jingle = false;
-								} else if (local157 == 0) {
+								} else if (volume == 0) {
 									Static368.method6191();
 									Static393.jingle = false;
 								} else {
-									Static303.method5210(local157);
+									Static303.setVolume(volume);
 								}
-								Static218.aClass177_Sub1_2.musicVolume = local157;
+								Static218.preferences.musicVolume = volume;
 							}
-							Static218.aClass177_Sub1_2.write(GameShell.signlink);
+							Static218.preferences.write(GameShell.signlink);
 							Static236.sentToServer = false;
 							return;
 						}
 						if (opcode == 6020) {
-							local157 = intStack[--isp];
-							if (local157 < 0) {
-								local157 = 0;
+							int volume = intStack[--isp];
+							if (volume < 0) {
+								volume = 0;
 							}
-							if (local157 > 127) {
-								local157 = 127;
+							if (volume > 127) {
+								volume = 127;
 							}
-							Static218.aClass177_Sub1_2.anInt4882 = local157;
-							Static218.aClass177_Sub1_2.write(GameShell.signlink);
+							Static218.preferences.areaSoundsVolume = volume;
+							Static218.preferences.write(GameShell.signlink);
 							Static236.sentToServer = false;
 							return;
 						}
 						if (opcode == 6021) {
-							Static218.aClass177_Sub1_2.aBoolean366 = intStack[--isp] == 1;
+							Static218.preferences.aBoolean366 = intStack[--isp] == 1;
 							Static226.method3981();
 							return;
 						}
 						if (opcode == 6023) {
-							local157 = intStack[--isp];
-							local1292 = false;
-							if (local157 < 0) {
-								local157 = 0;
+							int particles = intStack[--isp];
+							boolean forceDisabled = false;
+							if (particles < 0) {
+								particles = 0;
 							}
-							if (local157 > 2) {
-								local157 = 2;
+							if (particles > 2) {
+								particles = 2;
 							}
 							if (GameShell.maxMemory < 96) {
-								local157 = 0;
-								local1292 = true;
+								particles = 0;
+								forceDisabled = true;
 							}
-							Static26.method864(local157);
-							Static218.aClass177_Sub1_2.write(GameShell.signlink);
+							Preferences.setParticles(particles);
+							Static218.preferences.write(GameShell.signlink);
 							Static236.sentToServer = false;
-							intStack[isp++] = local1292 ? 0 : 1;
+							intStack[isp++] = forceDisabled ? 0 : 1;
 							return;
 						}
 						if (opcode == 6024) {
@@ -3899,8 +3899,8 @@ public final class ScriptRunner {
 							if (local157 < 0 || local157 > 2) {
 								local157 = 0;
 							}
-							Static218.aClass177_Sub1_2.anInt4891 = local157;
-							Static218.aClass177_Sub1_2.write(GameShell.signlink);
+							Static218.preferences.antiAliasingMode = local157;
+							Static218.preferences.write(GameShell.signlink);
 							return;
 						}
 						if (opcode == 6025) {
@@ -3908,8 +3908,8 @@ public final class ScriptRunner {
 							if (local157 < 0 || local157 > Static289.method5018(GameShell.maxMemory)) {
 								local157 = 0;
 							}
-							Static218.aClass177_Sub1_2.anInt4883 = local157;
-							Static218.aClass177_Sub1_2.write(GameShell.signlink);
+							Static218.preferences.buildArea = local157;
+							Static218.preferences.write(GameShell.signlink);
 							Static236.sentToServer = false;
 							return;
 						}
@@ -3922,18 +3922,18 @@ public final class ScriptRunner {
 							return;
 						}
 						if (opcode == 6028) {
-							Static218.aClass177_Sub1_2.aBoolean363 = intStack[--isp] != 0;
-							Static218.aClass177_Sub1_2.write(GameShell.signlink);
+							Static218.preferences.customCursors = intStack[--isp] != 0;
+							Static218.preferences.write(GameShell.signlink);
 							return;
 						}
 						if (opcode == 6029) {
-							Static218.aClass177_Sub1_2.anInt4895 = intStack[--isp];
-							Static218.aClass177_Sub1_2.write(GameShell.signlink);
+							Static218.preferences.manyIdleAnimations = intStack[--isp];
+							Static218.preferences.write(GameShell.signlink);
 							return;
 						}
 						if (opcode == 6030) {
-							Static218.aClass177_Sub1_2.aBoolean357 = intStack[--isp] != 0;
-							Static218.aClass177_Sub1_2.write(GameShell.signlink);
+							Static218.preferences.aBoolean357 = intStack[--isp] != 0;
+							Static218.preferences.write(GameShell.signlink);
 							Static347.method5826();
 							return;
 						}
@@ -3950,8 +3950,8 @@ public final class ScriptRunner {
 							if (local157 < 0 || local157 > 3) {
 								local157 = 2;
 							}
-							Static218.aClass177_Sub1_2.anInt4878 = local157;
-							Static218.aClass177_Sub1_2.write(GameShell.signlink);
+							Static218.preferences.anInt4878 = local157;
+							Static218.preferences.write(GameShell.signlink);
 							Static236.sentToServer = false;
 							return;
 						}
@@ -3960,87 +3960,87 @@ public final class ScriptRunner {
 							if (local157 < 0 || local157 > 4) {
 								local157 = 2;
 							}
-							Static218.aClass177_Sub1_2.anInt4881 = local157;
-							Static218.aClass177_Sub1_2.write(GameShell.signlink);
+							Static218.preferences.anInt4881 = local157;
+							Static218.preferences.write(GameShell.signlink);
 							return;
 						}
 						if (opcode == 6035) {
-							Static218.aClass177_Sub1_2.aBoolean365 = intStack[--isp] == 1;
+							Static218.preferences.aBoolean365 = intStack[--isp] == 1;
 							Static347.method5826();
 							Static226.method3981();
 							return;
 						}
 					} else if (opcode < 6200) {
 						if (opcode == 6101) {
-							intStack[isp++] = Static218.aClass177_Sub1_2.anInt4879;
+							intStack[isp++] = Static218.preferences.brightness;
 							return;
 						}
 						if (opcode == 6102) {
-							intStack[isp++] = Static218.aClass177_Sub1_2.method4495(Static77.anInt1762) ? 1 : 0;
+							intStack[isp++] = Static218.preferences.method4495(Static77.anInt1762) ? 1 : 0;
 							return;
 						}
 						if (opcode == 6103) {
-							intStack[isp++] = Static218.aClass177_Sub1_2.aBoolean349 ? 1 : 0;
+							intStack[isp++] = Static218.preferences.roofsVisible ? 1 : 0;
 							return;
 						}
 						if (opcode == 6105) {
-							intStack[isp++] = Static218.aClass177_Sub1_2.aBoolean359 ? 1 : 0;
+							intStack[isp++] = Static218.preferences.groundDecoration ? 1 : 0;
 							return;
 						}
 						if (opcode == 6106) {
-							intStack[isp++] = Static218.aClass177_Sub1_2.aBoolean350 ? 1 : 0;
+							intStack[isp++] = Static218.preferences.highDetailTextures ? 1 : 0;
 							return;
 						}
 						if (opcode == 6107) {
-							intStack[isp++] = Static218.aClass177_Sub1_2.anInt4895;
+							intStack[isp++] = Static218.preferences.manyIdleAnimations;
 							return;
 						}
 						if (opcode == 6108) {
-							intStack[isp++] = Static218.aClass177_Sub1_2.aBoolean353 ? 1 : 0;
+							intStack[isp++] = Static218.preferences.flickeringEffects ? 1 : 0;
 							return;
 						}
 						if (opcode == 6109) {
-							intStack[isp++] = Static218.aClass177_Sub1_2.aBoolean355 ? 1 : 0;
+							intStack[isp++] = Static218.preferences.groundTextures ? 1 : 0;
 							return;
 						}
 						if (opcode == 6110) {
-							intStack[isp++] = Static218.aClass177_Sub1_2.aBoolean358 ? 1 : 0;
+							intStack[isp++] = Static218.preferences.characterShadows ? 1 : 0;
 							return;
 						}
 						if (opcode == 6111) {
-							intStack[isp++] = Static218.aClass177_Sub1_2.anInt4886;
+							intStack[isp++] = Static218.preferences.sceneryShadows;
 							return;
 						}
 						if (opcode == 6112) {
-							intStack[isp++] = Static218.aClass177_Sub1_2.aBoolean364 ? 1 : 0;
+							intStack[isp++] = Static218.preferences.highDetailLighting ? 1 : 0;
 							return;
 						}
 						if (opcode == 6114) {
-							intStack[isp++] = Static218.aClass177_Sub1_2.aBoolean361 ? 1 : 0;
+							intStack[isp++] = Static218.preferences.highDetailWater ? 1 : 0;
 							return;
 						}
 						if (opcode == 6115) {
-							intStack[isp++] = Static218.aClass177_Sub1_2.aBoolean348 ? 1 : 0;
+							intStack[isp++] = Static218.preferences.fog ? 1 : 0;
 							return;
 						}
 						if (opcode == 6116) {
-							intStack[isp++] = Static218.aClass177_Sub1_2.anInt4885;
+							intStack[isp++] = Static218.preferences.anInt4885;
 							return;
 						}
 						if (opcode == 6117) {
-							intStack[isp++] = Static218.aClass177_Sub1_2.aBoolean352 ? 1 : 0;
+							intStack[isp++] = Static218.preferences.stereo ? 1 : 0;
 							return;
 						}
 						if (opcode == 6118) {
-							intStack[isp++] = Static218.aClass177_Sub1_2.anInt4888;
+							intStack[isp++] = Static218.preferences.soundEffectsVolume;
 							return;
 						}
 						if (opcode == 6119) {
-							intStack[isp++] = Static218.aClass177_Sub1_2.musicVolume;
+							intStack[isp++] = Static218.preferences.musicVolume;
 							return;
 						}
 						if (opcode == 6120) {
-							intStack[isp++] = Static218.aClass177_Sub1_2.anInt4882;
+							intStack[isp++] = Static218.preferences.areaSoundsVolume;
 							return;
 						}
 						if (opcode == 6121) {
@@ -4048,15 +4048,15 @@ public final class ScriptRunner {
 							return;
 						}
 						if (opcode == 6123) {
-							intStack[isp++] = Static184.method3390();
+							intStack[isp++] = Static184.getParticles();
 							return;
 						}
 						if (opcode == 6124) {
-							intStack[isp++] = Static218.aClass177_Sub1_2.anInt4891;
+							intStack[isp++] = Static218.preferences.antiAliasingMode;
 							return;
 						}
 						if (opcode == 6125) {
-							intStack[isp++] = Static218.aClass177_Sub1_2.anInt4883;
+							intStack[isp++] = Static218.preferences.buildArea;
 							return;
 						}
 						if (opcode == 6126) {
@@ -4064,19 +4064,19 @@ public final class ScriptRunner {
 							return;
 						}
 						if (opcode == 6127) {
-							intStack[isp++] = Static218.aClass177_Sub1_2.aBoolean356 ? 1 : 0;
+							intStack[isp++] = Static218.preferences.aBoolean356 ? 1 : 0;
 							return;
 						}
 						if (opcode == 6128) {
-							intStack[isp++] = Static218.aClass177_Sub1_2.aBoolean363 ? 1 : 0;
+							intStack[isp++] = Static218.preferences.customCursors ? 1 : 0;
 							return;
 						}
 						if (opcode == 6129) {
-							intStack[isp++] = Static218.aClass177_Sub1_2.anInt4895;
+							intStack[isp++] = Static218.preferences.manyIdleAnimations;
 							return;
 						}
 						if (opcode == 6130) {
-							intStack[isp++] = Static218.aClass177_Sub1_2.aBoolean357 ? 1 : 0;
+							intStack[isp++] = Static218.preferences.aBoolean357 ? 1 : 0;
 							return;
 						}
 						if (opcode == 6131) {
@@ -4084,7 +4084,7 @@ public final class ScriptRunner {
 							return;
 						}
 						if (opcode == 6132) {
-							intStack[isp++] = Static218.aClass177_Sub1_2.anInt4878;
+							intStack[isp++] = Static218.preferences.anInt4878;
 							return;
 						}
 						if (opcode == 6133) {
@@ -4096,7 +4096,7 @@ public final class ScriptRunner {
 							return;
 						}
 						if (opcode == 6135) {
-							intStack[isp++] = Static218.aClass177_Sub1_2.anInt4881;
+							intStack[isp++] = Static218.preferences.anInt4881;
 							return;
 						}
 					} else if (opcode < 6300) {
@@ -4221,7 +4221,7 @@ public final class ScriptRunner {
 					} else if (opcode < 6600) {
 						if (opcode == 6500) {
 							if (Static347.anInt6442 == 10 && Static154.anInt2803 == 0 && Static347.step == 0 && Static141.anInt2652 == 0) {
-								intStack[isp++] = Static319.method5429() == -1 ? 0 : 1;
+								intStack[isp++] = Static319.fetch() == -1 ? 0 : 1;
 								return;
 							}
 							intStack[isp++] = 1;
@@ -4283,12 +4283,12 @@ public final class ScriptRunner {
 							return;
 						}
 						if (opcode == 6504) {
-							Static218.aClass177_Sub1_2.anInt4887 = intStack[--isp];
-							Static218.aClass177_Sub1_2.write(GameShell.signlink);
+							Static218.preferences.anInt4887 = intStack[--isp];
+							Static218.preferences.write(GameShell.signlink);
 							return;
 						}
 						if (opcode == 6505) {
-							intStack[isp++] = Static218.aClass177_Sub1_2.anInt4887;
+							intStack[isp++] = Static218.preferences.anInt4887;
 							return;
 						}
 						if (opcode == 6506) {
@@ -4334,17 +4334,17 @@ public final class ScriptRunner {
 						}
 					} else if (opcode < 6700) {
 						if (opcode == 6600) {
-							Static218.aClass177_Sub1_2.aBoolean351 = intStack[--isp] == 1;
-							Static218.aClass177_Sub1_2.write(GameShell.signlink);
+							Static218.preferences.aBoolean351 = intStack[--isp] == 1;
+							Static218.preferences.write(GameShell.signlink);
 							return;
 						}
 						if (opcode == 6601) {
-							intStack[isp++] = Static218.aClass177_Sub1_2.aBoolean351 ? 1 : 0;
+							intStack[isp++] = Static218.preferences.aBoolean351 ? 1 : 0;
 							return;
 						}
 					} else if (opcode < 6800 && client.modeWhat == GameMode.GAME_MODE_WIP) {
 						if (opcode == 6700) {
-							local157 = Static329.aClass4_130.method83();
+							local157 = Static329.subInterfaces.method83();
 							if (Static139.topLevelInterface != -1) {
 								local157++;
 							}
@@ -4360,11 +4360,11 @@ public final class ScriptRunner {
 								}
 								local157--;
 							}
-							@Pc(6577) Class2_Sub7 local6577 = (Class2_Sub7) Static329.aClass4_130.head();
+							@Pc(6577) SubInterface local6577 = (SubInterface) Static329.subInterfaces.head();
 							while (local157-- > 0) {
-								local6577 = (Class2_Sub7) Static329.aClass4_130.next();
+								local6577 = (SubInterface) Static329.subInterfaces.next();
 							}
-							intStack[isp++] = local6577.anInt1370;
+							intStack[isp++] = local6577.id;
 							return;
 						}
 						if (opcode == 6702) {
@@ -4505,7 +4505,7 @@ public final class ScriptRunner {
 							local157 = intStack[isp];
 							local192 = intStack[isp + 1];
 							local89 = intStack[isp + 2];
-							@Pc(7165) Component local7165 = Static207.method3704(local157 << 16 | local192, local89);
+							@Pc(7165) Component local7165 = Static207.getCreatedComponent(local157 << 16 | local192, local89);
 							Static207.method3698();
 							@Pc(7170) ServerActiveProperties local7170 = Static45.getServerActiveProperties(local7165);
 							Static185.method3399(local7165.anInt4238, local7170.getTargetMask(), local157 << 16 | local192, local89, local7165.anInt4286, local7170.anInt1759);
@@ -4561,12 +4561,12 @@ public final class ScriptRunner {
 	}
 
 	@OriginalMember(owner = "client!lk", name = "a", descriptor = "(Lclient!js;I)V")
-	private static void run(@OriginalArg(0) Class2_Sub2_Sub11 arg0, @OriginalArg(1) int maxCycles) {
+	private static void run(@OriginalArg(0) ClientScript arg0, @OriginalArg(1) int maxCycles) {
 		isp = 0;
 		anInt3652 = 0;
 		@Pc(5) int local5 = -1;
-		@Pc(8) int[] local8 = arg0.anIntArray199;
-		@Pc(11) int[] local11 = arg0.anIntArray200;
+		@Pc(8) int[] local8 = arg0.opcodes;
+		@Pc(11) int[] local11 = arg0.intOperands;
 		@Pc(13) byte local13 = -1;
 		anInt3661 = 0;
 		@Pc(603) int local603;
@@ -4604,7 +4604,7 @@ public final class ScriptRunner {
 						local54 = local11[local5];
 						Static214.aClass226_1.method5779(local54, intStack[--isp]);
 					} else if (local31 == 3) {
-						stringStack[anInt3652++] = arg0.aStringArray27[local5];
+						stringStack[anInt3652++] = arg0.stringOperands[local5];
 					} else if (local31 == 6) {
 						local5 += local11[local5];
 					} else if (local31 == 7) {
@@ -4632,12 +4632,12 @@ public final class ScriptRunner {
 							return;
 						}
 						@Pc(216) Class172 local216 = aClass172Array1[--anInt3661];
-						arg0 = local216.aClass2_Sub2_Sub11_1;
-						local8 = arg0.anIntArray199;
-						local11 = arg0.anIntArray200;
+						arg0 = local216.aClientScript_1;
+						local8 = arg0.opcodes;
+						local11 = arg0.intOperands;
 						local5 = local216.anInt4704;
-						anIntArray212 = local216.anIntArray319;
-						aStringArray30 = local216.aStringArray47;
+						intLocals = local216.anIntArray319;
+						stringLocals = local216.aStringArray47;
 					} else if (local31 == 25) {
 						local54 = local11[local5];
 						intStack[isp++] = Static214.aClass226_1.method5777(local54);
@@ -4655,13 +4655,13 @@ public final class ScriptRunner {
 							local5 += local11[local5];
 						}
 					} else if (local31 == 33) {
-						intStack[isp++] = anIntArray212[local11[local5]];
+						intStack[isp++] = intLocals[local11[local5]];
 					} else if (local31 == 34) {
-						anIntArray212[local11[local5]] = intStack[--isp];
+						intLocals[local11[local5]] = intStack[--isp];
 					} else if (local31 == 35) {
-						stringStack[anInt3652++] = aStringArray30[local11[local5]];
+						stringStack[anInt3652++] = stringLocals[local11[local5]];
 					} else if (local31 == 36) {
-						aStringArray30[local11[local5]] = stringStack[--anInt3652];
+						stringLocals[local11[local5]] = stringStack[--anInt3652];
 					} else if (local31 == 37) {
 						local54 = local11[local5];
 						anInt3652 -= local54;
@@ -4675,35 +4675,35 @@ public final class ScriptRunner {
 						@Pc(452) int local452;
 						if (local31 == 40) {
 							local54 = local11[local5];
-							@Pc(436) Class2_Sub2_Sub11 local436 = Static295.method5099(local54);
+							@Pc(436) ClientScript local436 = Static295.get(local54);
 							if (local436 == null) {
 								throw new RuntimeException();
 							}
-							@Pc(446) int[] local446 = new int[local436.anInt3225];
-							@Pc(450) String[] local450 = new String[local436.anInt3228];
-							for (local452 = 0; local452 < local436.anInt3230; local452++) {
-								local446[local452] = intStack[isp + local452 - local436.anInt3230];
+							@Pc(446) int[] local446 = new int[local436.intLocals];
+							@Pc(450) String[] local450 = new String[local436.stringLocals];
+							for (local452 = 0; local452 < local436.intArgs; local452++) {
+								local446[local452] = intStack[isp + local452 - local436.intArgs];
 							}
-							for (@Pc(471) int local471 = 0; local471 < local436.anInt3227; local471++) {
-								local450[local471] = stringStack[anInt3652 + local471 - local436.anInt3227];
+							for (@Pc(471) int local471 = 0; local471 < local436.stringArgs; local471++) {
+								local450[local471] = stringStack[anInt3652 + local471 - local436.stringArgs];
 							}
-							isp -= local436.anInt3230;
-							anInt3652 -= local436.anInt3227;
+							isp -= local436.intArgs;
+							anInt3652 -= local436.stringArgs;
 							@Pc(502) Class172 local502 = new Class172();
-							local502.aClass2_Sub2_Sub11_1 = arg0;
+							local502.aClientScript_1 = arg0;
 							local502.anInt4704 = local5;
-							local502.anIntArray319 = anIntArray212;
-							local502.aStringArray47 = aStringArray30;
+							local502.anIntArray319 = intLocals;
+							local502.aStringArray47 = stringLocals;
 							if (anInt3661 >= aClass172Array1.length) {
 								throw new RuntimeException();
 							}
 							aClass172Array1[anInt3661++] = local502;
 							arg0 = local436;
-							local8 = local436.anIntArray199;
-							local11 = local436.anIntArray200;
+							local8 = local436.opcodes;
+							local11 = local436.intOperands;
 							local5 = -1;
-							anIntArray212 = local446;
-							aStringArray30 = local450;
+							intLocals = local446;
+							stringLocals = local450;
 						} else if (local31 == 42) {
 							intStack[isp++] = Static75.anIntArray117[local11[local5]];
 						} else if (local31 == 43) {
@@ -4757,7 +4757,7 @@ public final class ScriptRunner {
 							Static75.aStringArray11[local54] = stringStack[--anInt3652];
 							Static290.method5022(local54);
 						} else if (local31 == 51) {
-							@Pc(774) HashTable local774 = arg0.aClass4Array1[local11[local5]];
+							@Pc(774) HashTable local774 = arg0.switchTables[local11[local5]];
 							@Pc(787) IntNode local787 = (IntNode) local774.get((long) intStack[--isp]);
 							if (local787 != null) {
 								local5 += local787.value;
@@ -4768,20 +4768,20 @@ public final class ScriptRunner {
 			}
 		} catch (@Pc(837) Exception local837) {
 			@Pc(855) StringBuffer local855;
-			if (arg0.aString27 == null) {
+			if (arg0.name == null) {
 				local855 = new StringBuffer(30);
 				local855.append("CS2: ").append(arg0.key).append(" ");
 				for (local603 = anInt3661 - 1; local603 >= 0; local603--) {
-					local855.append("v: ").append(aClass172Array1[local603].aClass2_Sub2_Sub11_1.key).append(" ");
+					local855.append("v: ").append(aClass172Array1[local603].aClientScript_1.key).append(" ");
 				}
 				local855.append("op: ").append(local13);
 				Static262.report(local837, local855.toString());
 			} else {
-				Static207.add("Clientscript error in: " + arg0.aString27);
+				Static207.add("Clientscript error in: " + arg0.name);
 				local855 = new StringBuffer(30);
-				local855.append("Clientscript error in: ").append(arg0.aString27).append("\n");
+				local855.append("Clientscript error in: ").append(arg0.name).append("\n");
 				for (local603 = anInt3661 - 1; local603 >= 0; local603--) {
-					local855.append("via: ").append(aClass172Array1[local603].aClass2_Sub2_Sub11_1.aString27).append("\n");
+					local855.append("via: ").append(aClass172Array1[local603].aClientScript_1.name).append("\n");
 				}
 				local855.append("Op: ").append(local13).append("\n");
 				@Pc(895) String local895 = local837.getMessage();
@@ -4789,7 +4789,7 @@ public final class ScriptRunner {
 					local855.append("Message: ").append(local895).append("\n");
 				}
 				Static262.report(local837, local855.toString());
-				Static158.method2939(local855.toString());
+				Static158.add(local855.toString());
 			}
 		}
 	}

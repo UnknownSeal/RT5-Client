@@ -20,7 +20,7 @@ public final class Static359 {
 
     @OriginalMember(owner = "client!us", name = "b", descriptor = "(Z)V")
 	public static void method6008() {
-		@Pc(12) DelayedStateChange local12 = Static316.create(15, 0);
+		@Pc(12) DelayedStateChange local12 = DelayedStateChange.create(15, 0);
 		local12.pushClient();
 	}
 }

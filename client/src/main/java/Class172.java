@@ -11,7 +11,7 @@ public final class Class172 {
 	public int[] anIntArray319;
 
 	@OriginalMember(owner = "client!ol", name = "f", descriptor = "Lclient!js;")
-	public Class2_Sub2_Sub11 aClass2_Sub2_Sub11_1;
+	public ClientScript aClientScript_1;
 
 	@OriginalMember(owner = "client!ol", name = "g", descriptor = "I")
 	public int anInt4704 = -1;

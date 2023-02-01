@@ -112,7 +112,7 @@ public final class Static165 {
 		@Pc(41) String local41;
 		if (Static330.aBoolean419 && Static268.size < 2) {
 			local41 = Static91.aString18 + LocalisedText.MINI_SEPARATOR.getLocalisedText(client.language) + Static371.aString68 + " ->";
-		} else if (Static148.aBoolean192 && Static174.aClass123_2.method3342(81) && Static268.size > 2) {
+		} else if (Static148.shiftClick && Static174.aClass123_2.method3342(81) && Static268.size > 2) {
 			local41 = Static318.method5420((Class2_Sub5) Static129.A_LINKED_LIST___19.sentinel.previous.previous);
 		} else {
 			@Pc(68) Class2_Sub5 local68 = (Class2_Sub5) Static129.A_LINKED_LIST___19.sentinel.previous;

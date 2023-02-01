@@ -14,11 +14,11 @@ public final class Static37 {
 
 	@OriginalMember(owner = "client!ca", name = "i", descriptor = "(I)V")
 	public static void method1135() {
-		if (Static190.aAudioChannel_1 != null) {
-			Static190.aAudioChannel_1.method6315();
+		if (client.soundChannel != null) {
+			client.soundChannel.loop();
 		}
 		if (client.musicChannel != null) {
-			client.musicChannel.method6315();
+			client.musicChannel.loop();
 		}
 	}
 

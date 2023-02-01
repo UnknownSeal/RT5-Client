@@ -26,13 +26,13 @@ public final class TextureOpColorize extends TextureOp {
 
 	@OriginalMember(owner = "client!na", name = "a", descriptor = "(ILclient!bt;I)V")
 	@Override
-	public void decode(@OriginalArg(0) int arg0, @OriginalArg(1) Buffer arg1) {
-		if (arg0 == 0) {
-			this.anInt4019 = arg1.g2();
-		} else if (arg0 == 1) {
-			this.anInt4011 = arg1.g2();
-		} else if (arg0 == 2) {
-			this.anInt4013 = arg1.g2();
+	public void decode(@OriginalArg(1) Buffer buffer, @OriginalArg(0) int opcode) {
+		if (opcode == 0) {
+			this.anInt4019 = buffer.g2();
+		} else if (opcode == 1) {
+			this.anInt4011 = buffer.g2();
+		} else if (opcode == 2) {
+			this.anInt4013 = buffer.g2();
 		}
 	}
 

@@ -10,7 +10,7 @@ public final class TextureOpCurve extends TextureOp {
 	private int[] anIntArray525;
 
 	@OriginalMember(owner = "client!wt", name = "T", descriptor = "[[I")
-	private int[][] anIntArrayArray65;
+	private int[][] markers;
 
 	@OriginalMember(owner = "client!wt", name = "Z", descriptor = "[I")
 	private int[] anIntArray526;
@@ -29,29 +29,29 @@ public final class TextureOpCurve extends TextureOp {
 	@OriginalMember(owner = "client!wt", name = "a", descriptor = "(BI)[I")
 	@Override
 	public int[] getMonochromeOutput(@OriginalArg(1) int y) {
-		@Pc(16) int[] local16 = super.monochromeImageCache.get(y);
+		@Pc(16) int[] destination = super.monochromeImageCache.get(y);
 		if (super.monochromeImageCache.invalid) {
-			@Pc(26) int[] local26 = this.getChildMonochromeOutput(0, y);
-			for (@Pc(28) int local28 = 0; local28 < Static227.width; local28++) {
-				@Pc(36) int local36 = local26[local28] >> 4;
+			@Pc(26) int[] source = this.getChildMonochromeOutput(0, y);
+			for (@Pc(28) int x = 0; x < Static227.width; x++) {
+				@Pc(36) int local36 = source[x] >> 4;
 				if (local36 < 0) {
 					local36 = 0;
 				}
 				if (local36 > 256) {
 					local36 = 256;
 				}
-				local16[local28] = this.aShortArray129[local36];
+				destination[x] = this.aShortArray129[local36];
 			}
 		}
-		return local16;
+		return destination;
 	}
 
 	@OriginalMember(owner = "client!wt", name = "f", descriptor = "(I)V")
 	private void method6485() {
-		@Pc(8) int[] local8 = this.anIntArrayArray65[0];
-		@Pc(21) int[] local21 = this.anIntArrayArray65[1];
-		@Pc(30) int[] local30 = this.anIntArrayArray65[this.anIntArrayArray65.length - 2];
-		@Pc(39) int[] local39 = this.anIntArrayArray65[this.anIntArrayArray65.length - 1];
+		@Pc(8) int[] local8 = this.markers[0];
+		@Pc(21) int[] local21 = this.markers[1];
+		@Pc(30) int[] local30 = this.markers[this.markers.length - 2];
+		@Pc(39) int[] local39 = this.markers[this.markers.length - 1];
 		this.anIntArray526 = new int[] { local30[0] + local30[0] - local39[0], local30[1] + -local39[1] + local30[1] };
 		this.anIntArray525 = new int[] { local8[0] + local8[0] - local21[0], local8[1] + -local21[1] + local8[1] };
 	}
@@ -70,10 +70,10 @@ public final class TextureOpCurve extends TextureOp {
 		if (local4 == 2) {
 			for (local4 = 0; local4 < 257; local4++) {
 				local22 = local4 << 4;
-				for (local24 = 1; local24 < this.anIntArrayArray65.length - 1 && this.anIntArrayArray65[local24][0] <= local22; local24++) {
+				for (local24 = 1; local24 < this.markers.length - 1 && this.markers[local24][0] <= local22; local24++) {
 				}
-				local55 = this.anIntArrayArray65[local24 - 1];
-				local60 = this.anIntArrayArray65[local24];
+				local55 = this.markers[local24 - 1];
+				local60 = this.markers[local24];
 				local69 = this.method6488(local24 - 2)[1];
 				local73 = local55[1];
 				local77 = local60[1];
@@ -98,10 +98,10 @@ public final class TextureOpCurve extends TextureOp {
 		} else if (local4 == 1) {
 			for (local4 = 0; local4 < 257; local4++) {
 				local22 = local4 << 4;
-				for (local24 = 1; this.anIntArrayArray65.length - 1 > local24 && local22 >= this.anIntArrayArray65[local24][0]; local24++) {
+				for (local24 = 1; this.markers.length - 1 > local24 && local22 >= this.markers[local24][0]; local24++) {
 				}
-				local55 = this.anIntArrayArray65[local24 - 1];
-				local60 = this.anIntArrayArray65[local24];
+				local55 = this.markers[local24 - 1];
+				local60 = this.markers[local24];
 				local69 = (local22 - local55[0] << 12) / (local60[0] - local55[0]);
 				local73 = 4096 - TextureOp.COSINE[local69 >> 5 & 0xFF] >> 1;
 				local77 = 4096 - local73;
@@ -117,10 +117,10 @@ public final class TextureOpCurve extends TextureOp {
 		} else {
 			for (local4 = 0; local4 < 257; local4++) {
 				local22 = local4 << 4;
-				for (local24 = 1; this.anIntArrayArray65.length - 1 > local24 && this.anIntArrayArray65[local24][0] <= local22; local24++) {
+				for (local24 = 1; this.markers.length - 1 > local24 && this.markers[local24][0] <= local22; local24++) {
 				}
-				local55 = this.anIntArrayArray65[local24 - 1];
-				local60 = this.anIntArrayArray65[local24];
+				local55 = this.markers[local24 - 1];
+				local60 = this.markers[local24];
 				local69 = (local22 - local55[0] << 12) / (local60[0] - local55[0]);
 				local73 = 4096 - local69;
 				local77 = local69 * local60[1] + local55[1] * local73 >> 12;
@@ -138,10 +138,10 @@ public final class TextureOpCurve extends TextureOp {
 	@OriginalMember(owner = "client!wt", name = "d", descriptor = "(I)V")
 	@Override
 	public void postDecode() {
-		if (this.anIntArrayArray65 == null) {
-			this.anIntArrayArray65 = new int[][] { new int[2], { 4096, 4096 } };
+		if (this.markers == null) {
+			this.markers = new int[][] { new int[2], { 4096, 4096 } };
 		}
-		if (this.anIntArrayArray65.length < 2) {
+		if (this.markers.length < 2) {
 			throw new RuntimeException("Curve operation requires at least two markers");
 		}
 		if (this.anInt7259 == 2) {
@@ -155,24 +155,24 @@ public final class TextureOpCurve extends TextureOp {
 	private int[] method6488(@OriginalArg(1) int arg0) {
 		if (arg0 < 0) {
 			return this.anIntArray525;
-		} else if (this.anIntArrayArray65.length <= arg0) {
+		} else if (this.markers.length <= arg0) {
 			return this.anIntArray526;
 		} else {
-			return this.anIntArrayArray65[arg0];
+			return this.markers[arg0];
 		}
 	}
 
 	@OriginalMember(owner = "client!wt", name = "a", descriptor = "(ILclient!bt;I)V")
 	@Override
-	public void decode(@OriginalArg(0) int arg0, @OriginalArg(1) Buffer arg1) {
-		if (arg0 != 0) {
+	public void decode(@OriginalArg(1) Buffer buffer, @OriginalArg(0) int opcode) {
+		if (opcode != 0) {
 			return;
 		}
-		this.anInt7259 = arg1.g1();
-		this.anIntArrayArray65 = new int[arg1.g1()][2];
-		for (@Pc(22) int local22 = 0; local22 < this.anIntArrayArray65.length; local22++) {
-			this.anIntArrayArray65[local22][0] = arg1.g2();
-			this.anIntArrayArray65[local22][1] = arg1.g2();
+		this.anInt7259 = buffer.g1();
+		this.markers = new int[buffer.g1()][2];
+		for (@Pc(22) int i = 0; i < this.markers.length; i++) {
+			this.markers[i][0] = buffer.g2();
+			this.markers[i][1] = buffer.g2();
 		}
 	}
 }

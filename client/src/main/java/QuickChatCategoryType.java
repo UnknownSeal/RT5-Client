@@ -37,12 +37,12 @@ public final class QuickChatCategoryType extends SecondaryNode {
 	}
 
 	@OriginalMember(owner = "client!mn", name = "a", descriptor = "(CZ)I")
-	public int method3793(@OriginalArg(0) char arg0) {
+	public int getSubcategoryByShortcut(@OriginalArg(0) char shortcut) {
 		if (this.subcategories == null) {
 			return -1;
 		}
 		for (@Pc(20) int local20 = 0; local20 < this.subcategories.length; local20++) {
-			if (this.subcategoryShortcuts[local20] == arg0) {
+			if (this.subcategoryShortcuts[local20] == shortcut) {
 				return this.subcategories[local20];
 			}
 		}

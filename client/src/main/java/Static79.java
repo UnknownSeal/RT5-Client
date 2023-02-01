@@ -169,7 +169,7 @@ public final class Static79 {
 		if (arg0 < 3 && Static325.method5544(arg7, arg1)) {
 			local30 = arg0 + 1;
 		}
-		if (!Static218.aClass177_Sub1_2.method4494(Static77.anInt1762) && !Static142.method2661(arg7, Static44.visibleLevel, local30, arg1)) {
+		if (!Static218.preferences.method4494(Static77.anInt1762) && !Static142.method2661(arg7, Static44.visibleLevel, local30, arg1)) {
 			return;
 		}
 		if (Static330.aClass67ArrayArrayArray3 == null) {
@@ -179,10 +179,10 @@ public final class Static79 {
 		if (arg2 < 0) {
 			return;
 		}
-		@Pc(76) boolean local76 = Static218.aClass177_Sub1_2.aBoolean359;
-		Static218.aClass177_Sub1_2.aBoolean359 = true;
+		@Pc(76) boolean local76 = Static218.preferences.groundDecoration;
+		Static218.preferences.groundDecoration = true;
 		Static190.aClass29_Sub1_63.method1105(arg3, arg1, arg7, arg2, local30, arg0, Static190.aClass19_8, Static171.collisionMap[arg0], arg6, arg5);
-		Static218.aClass177_Sub1_2.aBoolean359 = local76;
+		Static218.preferences.groundDecoration = local76;
 		return;
 	}
 }

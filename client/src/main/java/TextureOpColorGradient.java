@@ -54,21 +54,21 @@ public final class TextureOpColorGradient extends TextureOp {
 
 	@OriginalMember(owner = "client!kt", name = "a", descriptor = "(ILclient!bt;I)V")
 	@Override
-	public void decode(@OriginalArg(0) int arg0, @OriginalArg(1) Buffer arg1) {
-		if (arg0 != 0) {
+	public void decode(@OriginalArg(1) Buffer buffer, @OriginalArg(0) int opcode) {
+		if (opcode != 0) {
 			return;
 		}
-		@Pc(10) int local10 = arg1.g1();
+		@Pc(10) int local10 = buffer.g1();
 		if (local10 != 0) {
 			this.method3502(local10);
 			return;
 		}
-		this.anIntArrayArray26 = new int[arg1.g1()][4];
+		this.anIntArrayArray26 = new int[buffer.g1()][4];
 		for (@Pc(21) int local21 = 0; local21 < this.anIntArrayArray26.length; local21++) {
-			this.anIntArrayArray26[local21][0] = arg1.g2();
-			this.anIntArrayArray26[local21][1] = arg1.g1() << 4;
-			this.anIntArrayArray26[local21][2] = arg1.g1() << 4;
-			this.anIntArrayArray26[local21][3] = arg1.g1() << 4;
+			this.anIntArrayArray26[local21][0] = buffer.g2();
+			this.anIntArrayArray26[local21][1] = buffer.g1() << 4;
+			this.anIntArrayArray26[local21][2] = buffer.g1() << 4;
+			this.anIntArrayArray26[local21][3] = buffer.g1() << 4;
 		}
 	}
 

@@ -19,9 +19,6 @@ public final class Static153 {
 	@OriginalMember(owner = "client!ip", name = "g", descriptor = "Lclient!h;")
 	public static final Class89 aClass89_119 = new Class89(72, -2);
 
-	@OriginalMember(owner = "client!ip", name = "h", descriptor = "I")
-	public static int anInt2794 = 2;
-
 	@OriginalMember(owner = "client!ip", name = "a", descriptor = "(I)[Lclient!rt;")
 	public static GameMode[] method2770() {
 		return new GameMode[] { GameMode.GAME_MODE_LIVE, GameMode.GAME_MODE_RC, GameMode.GAME_MODE_WIP};

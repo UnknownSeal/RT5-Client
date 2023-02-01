@@ -12,7 +12,7 @@ public final class Static374 {
 	public static final Class210 aClass210_16 = new Class210(9, 17);
 
 	@OriginalMember(owner = "client!vr", name = "j", descriptor = "Ljava/lang/String;")
-	public static String aString70 = "";
+	public static String username = "";
 
 	@OriginalMember(owner = "client!vr", name = "k", descriptor = "Lclient!mc;")
 	public static final Class145 aClass145_255 = new Class145(66, 2);

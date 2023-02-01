@@ -26,9 +26,9 @@ public final class Static117 {
 		@Pc(11) int local11 = Static107.anInt2220;
 		@Pc(15) int local15 = Static352.anInt6519 - 3;
 		if (Static197.aClass13_12 == null || Static138.aClass13_8 == null) {
-			if (Static30.aJs5_5.method5086(Static186.anInt3731) && Static30.aJs5_5.method5086(Static67.anInt1636)) {
-				Static197.aClass13_12 = arg0.method2891(Static396.loadSoftwareSprite(Static30.aJs5_5, Static186.anInt3731, 0));
-				@Pc(44) SoftwareSprite local44 = Static396.loadSoftwareSprite(Static30.aJs5_5, Static67.anInt1636, 0);
+			if (client.js5Archive8.isFileReady(Static186.anInt3731) && client.js5Archive8.isFileReady(Static67.anInt1636)) {
+				Static197.aClass13_12 = arg0.method2891(Static396.loadSoftwareSprite(client.js5Archive8, Static186.anInt3731, 0));
+				@Pc(44) SoftwareSprite local44 = Static396.loadSoftwareSprite(client.js5Archive8, Static67.anInt1636, 0);
 				Static138.aClass13_8 = arg0.method2891(local44);
 				local44.method1684();
 				Static75.aClass13_5 = arg0.method2891(local44);
@@ -59,13 +59,13 @@ public final class Static117 {
 				arg0.method2901(local7, local192 - 12, local11, 16, Static200.anInt3697 | 255 - Static86.anInt1868 << 24, 1);
 			}
 		}
-		if ((Static337.aClass13_17 == null || Static211.aClass13_13 == null || Static35.aClass13_3 == null) && Static30.aJs5_5.method5086(Static74.anInt1722) && Static30.aJs5_5.method5086(Static363.anInt6804) && Static30.aJs5_5.method5086(Static390.anInt7211)) {
-			@Pc(275) SoftwareSprite local275 = Static396.loadSoftwareSprite(Static30.aJs5_5, Static363.anInt6804, 0);
+		if ((Static337.aClass13_17 == null || Static211.aClass13_13 == null || Static35.aClass13_3 == null) && client.js5Archive8.isFileReady(Static74.anInt1722) && client.js5Archive8.isFileReady(Static363.anInt6804) && client.js5Archive8.isFileReady(Static390.anInt7211)) {
+			@Pc(275) SoftwareSprite local275 = Static396.loadSoftwareSprite(client.js5Archive8, Static363.anInt6804, 0);
 			Static211.aClass13_13 = arg0.method2891(local275);
 			local275.method1684();
 			Static339.aClass13_18 = arg0.method2891(local275);
-			Static337.aClass13_17 = arg0.method2891(Static396.loadSoftwareSprite(Static30.aJs5_5, Static74.anInt1722, 0));
-			@Pc(300) SoftwareSprite local300 = Static396.loadSoftwareSprite(Static30.aJs5_5, Static390.anInt7211, 0);
+			Static337.aClass13_17 = arg0.method2891(Static396.loadSoftwareSprite(client.js5Archive8, Static74.anInt1722, 0));
+			@Pc(300) SoftwareSprite local300 = Static396.loadSoftwareSprite(client.js5Archive8, Static390.anInt7211, 0);
 			Static35.aClass13_3 = arg0.method2891(local300);
 			local300.method1684();
 			Static110.aClass13_6 = arg0.method2891(local300);

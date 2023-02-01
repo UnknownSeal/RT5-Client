@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static298 {
 
 	@OriginalMember(owner = "client!rc", name = "d", descriptor = "[B")
-	public static byte[] aByteArray27;
+	public static byte[] buffer;
 
 	@OriginalMember(owner = "client!rc", name = "h", descriptor = "I")
 	public static int anInt2437;
@@ -41,7 +41,7 @@ public final class Static298 {
 			return;
 		}
 		if (local11.aClass2_Sub12_Sub4_3 != null) {
-			Static227.aClass2_Sub12_Sub2_2.method2081(local11.aClass2_Sub12_Sub4_3);
+			client.soundStream.method2081(local11.aClass2_Sub12_Sub4_3);
 			local11.aClass2_Sub12_Sub4_3 = null;
 		}
 		local11.unlink();

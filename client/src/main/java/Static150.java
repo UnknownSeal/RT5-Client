@@ -18,7 +18,7 @@ public final class Static150 {
 
 	@OriginalMember(owner = "client!il", name = "b", descriptor = "(IIB)V")
 	public static void method2737(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
-		@Pc(16) DelayedStateChange local16 = Static316.create(6, arg0);
+		@Pc(16) DelayedStateChange local16 = DelayedStateChange.create(6, arg0);
 		local16.pushServer();
 		local16.anInt2289 = arg1;
 	}

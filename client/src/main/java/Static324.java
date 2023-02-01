@@ -7,9 +7,6 @@ public final class Static324 {
 	@OriginalMember(owner = "client!sq", name = "q", descriptor = "[I")
 	public static int[] anIntArray412;
 
-	@OriginalMember(owner = "client!sq", name = "r", descriptor = "Lclient!r;")
-	public static Js5 aJs5_86;
-
 	@OriginalMember(owner = "client!sq", name = "c", descriptor = "[I")
 	public static int[] anIntArray409 = new int[2];
 

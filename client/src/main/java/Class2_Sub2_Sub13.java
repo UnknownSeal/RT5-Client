@@ -55,7 +55,7 @@ public final class Class2_Sub2_Sub13 extends SecondaryNode {
 		for (local34 = 0; local34 < this.aByteArrayArray11.length; local34++) {
 			@Pc(64) byte[] local64 = this.aByteArrayArray11[local34];
 			local78 = local64[1] & 0xFF | (local64[0] & 0xFF) << 8;
-			local55 &= Static78.aJs5_89.method5086(local78);
+			local55 &= Static78.aJs5_89.isFileReady(local78);
 		}
 		if (!local55) {
 			return false;
@@ -75,7 +75,7 @@ public final class Class2_Sub2_Sub13 extends SecondaryNode {
 				}
 			}
 			if (local144 == null) {
-				local144 = new Class2_Sub18(local142, Static78.aJs5_89.method5081(local142));
+				local144 = new Class2_Sub18(local142, Static78.aJs5_89.fetchFile(local142));
 				local103.addTail(local144);
 			}
 			this.aClass159Array1[local119[local121]] = new Class159(local128, local144);

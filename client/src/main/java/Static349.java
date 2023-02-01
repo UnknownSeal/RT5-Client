@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static349 {
 
 	@OriginalMember(owner = "client!ud", name = "b", descriptor = "J")
-	public static long aLong200 = 0L;
+	public static long closeTime = 0L;
 
 	@OriginalMember(owner = "client!ud", name = "g", descriptor = "Lclient!hu;")
 	public static final SoftLruHashTable A_SOFT_LRU_HASH_TABLE___58 = new SoftLruHashTable(5);

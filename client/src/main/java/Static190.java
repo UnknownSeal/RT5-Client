@@ -10,9 +10,6 @@ public final class Static190 {
 	@OriginalMember(owner = "client!kt", name = "X", descriptor = "Lclient!wm;")
 	public static Class19 aClass19_8;
 
-	@OriginalMember(owner = "client!kt", name = "Z", descriptor = "Lclient!tg;")
-	public static AudioChannel aAudioChannel_1;
-
 	@OriginalMember(owner = "client!kt", name = "db", descriptor = "Lclient!bu;")
 	public static Class29_Sub1 aClass29_Sub1_63;
 
@@ -29,8 +26,8 @@ public final class Static190 {
 	public static void method3499(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) Class19 arg2) {
 		Static65.aClass19_3 = arg2;
 		Static332.aEnvironmentArrayArray3 = new Environment[arg1][arg0];
-		if (Static209.anIntArray228 != null) {
-			Static62.aClass42_5 = Static297.method5106(Static209.anIntArray228[2], Static209.anIntArray228[4], Static209.anIntArray228[5], Static209.anIntArray228[1], Static209.anIntArray228[0], Static209.anIntArray228[3]);
+		if (Static209.skyboxTextures != null) {
+			Static62.aClass42_5 = Static297.method5106(Static209.skyboxTextures[2], Static209.skyboxTextures[4], Static209.skyboxTextures[5], Static209.skyboxTextures[1], Static209.skyboxTextures[0], Static209.skyboxTextures[3]);
 		}
 		Static119.aEnvironment_1 = new Environment();
 		Static20.method560();
@@ -38,7 +35,7 @@ public final class Static190 {
 
 	@OriginalMember(owner = "client!kt", name = "a", descriptor = "(IIIII)V")
 	public static void method3500(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(4) int arg3) {
-		@Pc(12) DelayedStateChange local12 = Static316.create(4, arg3);
+		@Pc(12) DelayedStateChange local12 = DelayedStateChange.create(4, arg3);
 		local12.pushServer();
 		local12.anInt2290 = arg0;
 		local12.anInt2284 = arg1;

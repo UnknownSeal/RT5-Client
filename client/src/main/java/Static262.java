@@ -92,7 +92,7 @@ public final class Static262 {
 
 	@OriginalMember(owner = "client!pa", name = "a", descriptor = "(Z)V")
 	public static void method6253() {
-		Static217.method3794(Static218.aClass177_Sub1_2.anInt4883);
+		Static217.method3794(Static218.preferences.buildArea);
 		@Pc(18) int local18 = (Static136.anInt6778 >> 10) + (Static164.originX >> 3);
 		@Pc(27) int local27 = (Static211.anInt3777 >> 10) + (Static148.originZ >> 3);
 		Static355.anInt6585 = Static17.self.aByte78 = 0;
@@ -115,11 +115,11 @@ public final class Static262 {
 			for (mapZ = (local27 - (Static242.anInt4449 >> 4)) / 8; mapZ <= (local27 + (Static242.anInt4449 >> 4)) / 8; mapZ++) {
 				@Pc(105) int mapSquare = (mapX << 8) + mapZ;
 				Static291.mapSquares[i] = mapSquare;
-				Static221.mapGroupIDs[i] = Static288.js5Archive5.getGroupID("m" + mapX + "_" + mapZ);
-				Static374.locGroupIDs[i] = Static288.js5Archive5.getGroupID("l" + mapX + "_" + mapZ);
-				Static190.npcGroupIDs[i] = Static288.js5Archive5.getGroupID("n" + mapX + "_" + mapZ);
-				Static51.underwaterMapGroupIDs[i] = Static288.js5Archive5.getGroupID("um" + mapX + "_" + mapZ);
-				Static62.underwaterLocGroupIDs[i] = Static288.js5Archive5.getGroupID("ul" + mapX + "_" + mapZ);
+				Static221.mapGroupIDs[i] = client.js5Archive5.getGroupID("m" + mapX + "_" + mapZ);
+				Static374.locGroupIDs[i] = client.js5Archive5.getGroupID("l" + mapX + "_" + mapZ);
+				Static190.npcGroupIDs[i] = client.js5Archive5.getGroupID("n" + mapX + "_" + mapZ);
+				Static51.underwaterMapGroupIDs[i] = client.js5Archive5.getGroupID("um" + mapX + "_" + mapZ);
+				Static62.underwaterLocGroupIDs[i] = client.js5Archive5.getGroupID("ul" + mapX + "_" + mapZ);
 				if (Static190.npcGroupIDs[i] == -1) {
 					Static221.mapGroupIDs[i] = -1;
 					Static374.locGroupIDs[i] = -1;

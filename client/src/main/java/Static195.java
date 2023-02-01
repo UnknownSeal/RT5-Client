@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static195 {
 
-	@OriginalMember(owner = "client!lg", name = "c", descriptor = "Lclient!r;")
-	public static Js5 aJs5_54;
-
 	@OriginalMember(owner = "client!lg", name = "e", descriptor = "[I")
 	public static final int[] anIntArray211 = new int[] { 1, 2, 4, 8 };
 

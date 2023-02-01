@@ -317,9 +317,9 @@ public final class Static7 {
 			return Static6.getComponent(arg0.layer);
 		}
 		@Pc(25) int local25 = arg0.id >>> 16;
-		@Pc(30) Class137 local30 = new Class137(Static329.aClass4_130);
-		for (@Pc(35) Class2_Sub7 local35 = (Class2_Sub7) local30.method3560(); local35 != null; local35 = (Class2_Sub7) local30.method3559()) {
-			if (local35.anInt1370 == local25) {
+		@Pc(30) Class137 local30 = new Class137(Static329.subInterfaces);
+		for (@Pc(35) SubInterface local35 = (SubInterface) local30.method3560(); local35 != null; local35 = (SubInterface) local30.method3559()) {
+			if (local35.id == local25) {
 				return Static6.getComponent((int) local35.key);
 			}
 		}
@@ -340,12 +340,12 @@ public final class Static7 {
 
 	@OriginalMember(owner = "client!ag", name = "a", descriptor = "(IB)Lclient!ac;")
 	public static World get(@OriginalArg(0) int arg0) {
-		return Static70.aBoolean130 && arg0 >= Static375.minID && Static312.maxID >= arg0 ? Static295.worlds[arg0 - Static375.minID] : null;
+		return Static70.loaded && arg0 >= Static375.minID && Static312.maxID >= arg0 ? Static295.worlds[arg0 - Static375.minID] : null;
 	}
 
 	@OriginalMember(owner = "client!ag", name = "a", descriptor = "(III)V")
 	public static void method6468(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
-		@Pc(12) DelayedStateChange local12 = Static316.create(14, arg1);
+		@Pc(12) DelayedStateChange local12 = DelayedStateChange.create(14, arg1);
 		local12.pushServer();
 		local12.anInt2289 = arg0;
 	}

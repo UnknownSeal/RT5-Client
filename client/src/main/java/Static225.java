@@ -124,7 +124,7 @@ public final class Static225 {
 	@OriginalMember(owner = "client!n", name = "a", descriptor = "(IIZIIIFII)[[I")
 	public static int[][] method3955(@OriginalArg(6) float arg0) {
 		@Pc(9) int[][] local9 = new int[256][64];
-		@Pc(13) Class2_Sub3_Sub6 local13 = new Class2_Sub3_Sub6();
+		@Pc(13) TextureOpPerlinNoise local13 = new TextureOpPerlinNoise();
 		local13.anInt1051 = 8;
 		local13.anInt1043 = 3;
 		local13.aBoolean85 = false;
@@ -140,9 +140,9 @@ public final class Static225 {
 
 	@OriginalMember(owner = "client!n", name = "a", descriptor = "(B)V")
 	public static void method3956() {
-		@Pc(1) SoftLruHashTable local1 = Static92.A_SOFT_LRU_HASH_TABLE___9;
-		synchronized (Static92.A_SOFT_LRU_HASH_TABLE___9) {
-			Static92.A_SOFT_LRU_HASH_TABLE___9.method2621();
+		@Pc(1) SoftLruHashTable local1 = Static92.bodyModels;
+		synchronized (Static92.bodyModels) {
+			Static92.bodyModels.method2621();
 		}
 		local1 = Static349.A_SOFT_LRU_HASH_TABLE___58;
 		synchronized (Static349.A_SOFT_LRU_HASH_TABLE___58) {

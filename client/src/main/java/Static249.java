@@ -15,12 +15,12 @@ public final class Static249 {
 
 	@OriginalMember(owner = "client!of", name = "a", descriptor = "(IIIILclient!r;ZI)V")
 	public static void playFadeOut(@OriginalArg(0) int arg0, @OriginalArg(4) Js5 arg1, @OriginalArg(6) int arg2) {
-		Static341.anInt6376 = 0;
-		Static116.aJs5_26 = arg1;
-		Static105.anInt2183 = arg2;
-		Static28.anInt672 = 2;
-		Static356.anInt6641 = arg0;
-		Static235.anInt3365 = 1;
+		Static341.songFileID = 0;
+		Static116.songArchive = arg1;
+		Static105.songGroupID = arg2;
+		Static28.volumeFadeRate = 2;
+		Static356.volume = arg0;
+		Static235.state = 1;
 		Static384.aBoolean485 = false;
 	}
 }

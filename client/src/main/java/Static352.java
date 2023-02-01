@@ -20,12 +20,12 @@ public final class Static352 {
 
 	@OriginalMember(owner = "client!uh", name = "a", descriptor = "(IIIII)V")
 	public static void method5875(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {
-		Static257.aClass2_Sub4_Sub2_4.offset = 0;
-		Static257.aClass2_Sub4_Sub2_4.p1(Static43.aClass242_6.anInt7038);
-		Static257.aClass2_Sub4_Sub2_4.p1(arg2);
-		Static257.aClass2_Sub4_Sub2_4.p1(arg3);
-		Static257.aClass2_Sub4_Sub2_4.p2(arg1);
-		Static257.aClass2_Sub4_Sub2_4.p2(arg0);
+		Static257.outboundBuffer.offset = 0;
+		Static257.outboundBuffer.p1(Static43.aClass242_6.anInt7038);
+		Static257.outboundBuffer.p1(arg2);
+		Static257.outboundBuffer.p1(arg3);
+		Static257.outboundBuffer.p2(arg1);
+		Static257.outboundBuffer.p2(arg0);
 		Static327.anInt6109 = 0;
 		Static66.anInt1625 = 0;
 		Static318.anInt5968 = -3;
@@ -51,7 +51,7 @@ public final class Static352 {
 			Static178.anInt2319 -= local31.bottom + local31.top;
 			Static142.anInt2663 -= local31.right + local31.left;
 		}
-		if (Static144.method2692() == 1) {
+		if (Static144.getWindowMode() == 1) {
 			GameShell.canvasHeight = Static263.anInt4834;
 			GameShell.canvasWidth = Static254.anInt4701;
 			GameShell.topMargin = 0;
@@ -99,7 +99,7 @@ public final class Static352 {
 			return;
 		}
 		Static100.aBoolean156 = true;
-		if (Static218.aClass177_Sub1_2.aBoolean351) {
+		if (Static218.preferences.aBoolean351) {
 			Static277.aFloat67 = (int) Static277.aFloat67 + 191 & 0xFFFFFF80;
 		} else {
 			Static184.aFloat39 += (24.0F - Static184.aFloat39) / 2.0F;

@@ -28,7 +28,7 @@ public final class Static99 {
 		System.gc();
 		Static174.method1507();
 		Static393.jingle = false;
-		Static171.anInt3268 = -1;
+		Static171.groupID = -1;
 		Static239.method4151(true);
 		Static164.originX = 0;
 		Static9.anInt212 = 0;
@@ -63,7 +63,7 @@ public final class Static99 {
 
 	@OriginalMember(owner = "client!fm", name = "j", descriptor = "(I)V")
 	public static void method2146() {
-		Static65.aClass19_3.method2838(((float) Static218.aClass177_Sub1_2.anInt4879 * 0.1F + 0.7F) * 1.1523438F);
+		Static65.aClass19_3.method2838(((float) Static218.preferences.brightness * 0.1F + 0.7F) * 1.1523438F);
 		Static65.aClass19_3.method2832(Static28.anInt686, 0.69921875F, 1.2F, -50.0F, (float) -60, -50.0F);
 		Static65.aClass19_3.method2879(Static279.anInt5161, -1);
 		Static65.aClass19_3.method2870(Static62.aClass42_5);

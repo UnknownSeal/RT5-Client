@@ -46,7 +46,7 @@ public final class Static371 {
 		if (arg3.heightMode == 4) {
 			arg3.height = arg3.anInt4291 * arg3.width / arg3.anInt4243;
 		}
-		if (Static18.aBoolean30 && (Static45.getServerActiveProperties(arg3).anInt1758 != 0 || arg3.type == 0)) {
+		if (Static18.qaOpTest && (Static45.getServerActiveProperties(arg3).anInt1758 != 0 || arg3.type == 0)) {
 			if (arg3.height < 5 && arg3.width < 5) {
 				arg3.height = 5;
 				arg3.width = 5;
@@ -63,9 +63,9 @@ public final class Static371 {
 			Static20.aComponent_1 = arg3;
 		}
 		if (arg2 && arg3.onResize != null && (arg3.width != local8 || local11 != arg3.height)) {
-			@Pc(191) Class2_Sub13 local191 = new Class2_Sub13();
-			local191.aComponent_3 = arg3;
-			local191.anObjectArray4 = arg3.onResize;
+			@Pc(191) HookRequest local191 = new HookRequest();
+			local191.source = arg3;
+			local191.arguments = arg3.onResize;
 			Static274.A_LINKED_LIST___30.addTail(local191);
 		}
 	}

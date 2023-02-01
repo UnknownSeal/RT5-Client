@@ -42,21 +42,21 @@ public final class TextureOpVoronoiNoise extends TextureOp {
 
 	@OriginalMember(owner = "client!jt", name = "a", descriptor = "(ILclient!bt;I)V")
 	@Override
-	public void decode(@OriginalArg(0) int arg0, @OriginalArg(1) Buffer arg1) {
-		if (arg0 == 0) {
-			this.anInt3263 = this.anInt3265 = arg1.g1();
-		} else if (arg0 == 1) {
-			this.anInt3261 = arg1.g1();
-		} else if (arg0 == 2) {
-			this.anInt3257 = arg1.g2();
-		} else if (arg0 == 3) {
-			this.anInt3264 = arg1.g1();
-		} else if (arg0 == 4) {
-			this.anInt3256 = arg1.g1();
-		} else if (arg0 == 5) {
-			this.anInt3263 = arg1.g1();
-		} else if (arg0 == 6) {
-			this.anInt3265 = arg1.g1();
+	public void decode(@OriginalArg(1) Buffer buffer, @OriginalArg(0) int opcode) {
+		if (opcode == 0) {
+			this.anInt3263 = this.anInt3265 = buffer.g1();
+		} else if (opcode == 1) {
+			this.anInt3261 = buffer.g1();
+		} else if (opcode == 2) {
+			this.anInt3257 = buffer.g2();
+		} else if (opcode == 3) {
+			this.anInt3264 = buffer.g1();
+		} else if (opcode == 4) {
+			this.anInt3256 = buffer.g1();
+		} else if (opcode == 5) {
+			this.anInt3263 = buffer.g1();
+		} else if (opcode == 6) {
+			this.anInt3265 = buffer.g1();
 		}
 	}
 

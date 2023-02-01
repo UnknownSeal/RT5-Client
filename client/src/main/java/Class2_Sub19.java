@@ -108,7 +108,7 @@ public final class Class2_Sub19 extends Node {
 			this.anInt2906 = this.aClass11_Sub5_Sub2_Sub1_2.anInt4201;
 		}
 		if (this.anInt2894 != local8 && this.aClass2_Sub12_Sub4_3 != null) {
-			Static227.aClass2_Sub12_Sub2_2.method2081(this.aClass2_Sub12_Sub4_3);
+			client.soundStream.method2081(this.aClass2_Sub12_Sub4_3);
 			this.aClass2_Sub12_Sub4_3 = null;
 		}
 	}

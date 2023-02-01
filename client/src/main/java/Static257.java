@@ -17,7 +17,7 @@ public final class Static257 {
 	public static final Class116 types = new Class116(64);
 
 	@OriginalMember(owner = "client!on", name = "g", descriptor = "Lclient!qg;")
-	public static final Packet aClass2_Sub4_Sub2_4 = new Packet(5000);
+	public static final Packet outboundBuffer = new Packet(5000);
 
 	@OriginalMember(owner = "client!on", name = "h", descriptor = "[I")
 	public static final int[] anIntArray257 = new int[4096];
@@ -101,7 +101,7 @@ public final class Static257 {
 		}
 		@Pc(31) int local31;
 		@Pc(30) int local30;
-		if (Static218.aClass177_Sub1_2.method4494(Static77.anInt1762)) {
+		if (Static218.preferences.method4494(Static77.anInt1762)) {
 			local31 = 0;
 			local30 = 3;
 		} else {

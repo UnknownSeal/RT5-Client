@@ -77,10 +77,10 @@ public final class Static93 {
 	@OriginalMember(owner = "client!fe", name = "a", descriptor = "(B)V")
 	public static void method2002() {
 		Static91.method1960(Static101.aClass145_75);
-		Static257.aClass2_Sub4_Sub2_4.p1(Static144.method2692());
-		Static257.aClass2_Sub4_Sub2_4.p2(GameShell.canvasWidth);
-		Static257.aClass2_Sub4_Sub2_4.p2(GameShell.canvasHeight);
-		Static257.aClass2_Sub4_Sub2_4.p1(Static218.aClass177_Sub1_2.anInt4885);
+		Static257.outboundBuffer.p1(Static144.getWindowMode());
+		Static257.outboundBuffer.p2(GameShell.canvasWidth);
+		Static257.outboundBuffer.p2(GameShell.canvasHeight);
+		Static257.outboundBuffer.p1(Static218.preferences.anInt4885);
 	}
 
 	@OriginalMember(owner = "client!fe", name = "a", descriptor = "()V")

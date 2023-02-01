@@ -6,9 +6,6 @@ public final class Static227 {
 	@OriginalMember(owner = "client!nb", name = "C", descriptor = "Lclient!nk;")
 	public static Component aComponent_11;
 
-	@OriginalMember(owner = "client!nb", name = "E", descriptor = "Lclient!fi;")
-	public static Class2_Sub12_Sub2 aClass2_Sub12_Sub2_2;
-
 	@OriginalMember(owner = "client!nb", name = "F", descriptor = "I")
 	public static int width;
 

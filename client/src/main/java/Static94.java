@@ -11,14 +11,14 @@ public final class Static94 {
 	public static final Class89 aClass89_79 = new Class89(53, -1);
 
 	@OriginalMember(owner = "client!ff", name = "a", descriptor = "(IBIZILclient!r;)V")
-	public static void method2042(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(5) Js5 arg2) {
-		Static341.anInt6376 = 0;
-		Static105.anInt2183 = arg1;
-		Static28.anInt672 = 10000;
+	public static void playImmediate(@OriginalArg(2) int groupID, @OriginalArg(5) Js5 archive, @OriginalArg(0) int volume) {
+		Static341.songFileID = 0;
+		Static105.songGroupID = groupID;
+		Static28.volumeFadeRate = 10000;
 		Static384.aBoolean485 = false;
-		Static116.aJs5_26 = arg2;
-		Static235.anInt3365 = 1;
-		Static356.anInt6641 = arg0;
+		Static116.songArchive = archive;
+		Static235.state = 1;
+		Static356.volume = volume;
 	}
 
 	@OriginalMember(owner = "client!ff", name = "a", descriptor = "(IIILclient!cj;Lclient!cj;)V")
@@ -33,7 +33,7 @@ public final class Static94 {
 	@OriginalMember(owner = "client!ff", name = "b", descriptor = "(III)V")
 	public static void method2045(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
 		Static91.method1960(Static126.aClass145_229);
-		Static257.aClass2_Sub4_Sub2_4.p4(arg0);
-		Static257.aClass2_Sub4_Sub2_4.ip2add(arg1);
+		Static257.outboundBuffer.p4(arg0);
+		Static257.outboundBuffer.ip2add(arg1);
 	}
 }

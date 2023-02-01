@@ -151,7 +151,7 @@ public final class Class164 {
 		if (local28 != null) {
 			return local28;
 		}
-		this.aClass125_2.aJs5_50.method5086(this.anInt4413);
+		this.aClass125_2.aJs5_50.isFileReady(this.anInt4413);
 		@Pc(48) SoftwareSprite local48 = Static396.loadSoftwareSprite(this.aClass125_2.aJs5_50, this.anInt4413, 0);
 		if (local48 != null) {
 			local28 = arg0.method2891(local48);
@@ -298,7 +298,7 @@ public final class Class164 {
 		@Pc(33) Class13 local33 = (Class13) this.aClass125_2.aSoftLruHashTable_27.get((long) local24);
 		if (local33 != null) {
 			return local33;
-		} else if (this.aClass125_2.aJs5_50.method5086(local17)) {
+		} else if (this.aClass125_2.aJs5_50.isFileReady(local17)) {
 			@Pc(53) SoftwareSprite local53 = Static396.loadSoftwareSprite(this.aClass125_2.aJs5_50, local17, 0);
 			if (local53 != null) {
 				local33 = arg0.method2891(local53);

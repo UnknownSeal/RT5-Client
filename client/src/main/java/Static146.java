@@ -28,8 +28,8 @@ public final class Static146 {
 	}
 
 	@OriginalMember(owner = "client!ih", name = "a", descriptor = "(ILjava/lang/String;)I")
-	public static int method2698(@OriginalArg(1) String arg0) {
-		return Static319.method5432(10, arg0);
+	public static int parseInt(@OriginalArg(1) String s) {
+		return Static319.parseInt(s, 10);
 	}
 
 	@OriginalMember(owner = "client!ih", name = "a", descriptor = "(BI)Lclient!tb;")

@@ -199,7 +199,7 @@ public final class Static267 {
 			@Pc(16) byte[] local16 = arg0.fetchFile(arg1, arg2);
 			return local16 == null ? null : new Class2_Sub27(local16);
 		} else {
-			arg0.method5087(arg2, arg1);
+			arg0.isFileReady(arg1, arg2);
 			return null;
 		}
 	}

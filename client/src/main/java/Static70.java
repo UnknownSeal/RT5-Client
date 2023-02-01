@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static70 {
 
 	@OriginalMember(owner = "client!e", name = "e", descriptor = "Z")
-	public static boolean aBoolean130 = false;
+	public static boolean loaded = false;
 
 	@OriginalMember(owner = "client!e", name = "j", descriptor = "Lclient!h;")
 	public static final Class89 aClass89_58 = new Class89(48, 5);

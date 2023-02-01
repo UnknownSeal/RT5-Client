@@ -125,7 +125,7 @@ public final class Static241 {
 	@OriginalMember(owner = "client!nq", name = "a", descriptor = "(ZI)V")
 	public static void method4191(@OriginalArg(0) boolean arg0) {
 		if (arg0 && Static344.aMap_3 != null) {
-			Static97.anInt2034 = Static344.aMap_3.anInt6869;
+			Static97.anInt2034 = Static344.aMap_3.id;
 		} else {
 			Static97.anInt2034 = -1;
 		}

@@ -49,70 +49,70 @@ public final class Static161 {
 	}
 
 	@OriginalMember(owner = "client!jg", name = "a", descriptor = "(Ljava/lang/String;ZZ)V")
-	public static void method2971(@OriginalArg(0) String arg0, @OriginalArg(1) boolean arg1) {
+	public static void execute(@OriginalArg(0) String command, @OriginalArg(1) boolean arg1) {
 		if (Static189.aClass127_6 == Static121.aClass127_4 && Static4.anInt90 < 2) {
 			return;
 		}
-		if (arg0.equalsIgnoreCase("errortest")) {
+		if (command.equalsIgnoreCase("errortest")) {
 			throw new RuntimeException();
 		}
 		try {
-			if (arg0.equalsIgnoreCase("fpson")) {
-				Static356.aBoolean456 = true;
-				Static158.method2939("fps debug enabled");
+			if (command.equalsIgnoreCase("fpson")) {
+				client.displayFps = true;
+				Static158.add("fps debug enabled");
 				return;
 			}
-			if (arg0.equalsIgnoreCase("fpsoff")) {
-				Static356.aBoolean456 = false;
-				Static158.method2939("fps debug disabled");
+			if (command.equalsIgnoreCase("fpsoff")) {
+				client.displayFps = false;
+				Static158.add("fps debug disabled");
 				return;
 			}
-			if (arg0.equalsIgnoreCase("cls")) {
+			if (command.equalsIgnoreCase("cls")) {
 				Static177.anInt3385 = 0;
 				Static368.anInt6917 = 0;
 				return;
 			}
-			if (arg0.equalsIgnoreCase("cleartext")) {
+			if (command.equalsIgnoreCase("cleartext")) {
 				Static284.aClass36_7.method1416();
-				Static158.method2939("Text coords cleared");
+				Static158.add("Text coords cleared");
 				return;
 			}
 			@Pc(76) int local76;
 			@Pc(96) int local96;
 			@Pc(87) Runtime local87;
-			if (arg0.equalsIgnoreCase("gc")) {
-				Static59.method1643();
-				for (local76 = 0; local76 < 10; local76++) {
+			if (command.equalsIgnoreCase("gc")) {
+				client.removeSoft();
+				for (int i = 0; i < 10; i++) {
 					System.gc();
 				}
-				local87 = Runtime.getRuntime();
-				local96 = (int) ((local87.totalMemory() - local87.freeMemory()) / 1024L);
-				Static158.method2939("mem=" + local96 + "k");
+				Runtime runtime = Runtime.getRuntime();
+				int used = (int) ((runtime.totalMemory() - runtime.freeMemory()) / 1024L);
+				Static158.add("mem=" + used + "k");
 				return;
 			}
-			if (arg0.equalsIgnoreCase("compact")) {
-				Static59.method1643();
-				for (local76 = 0; local76 < 10; local76++) {
+			if (command.equalsIgnoreCase("compact")) {
+				client.removeSoft();
+				for (int i = 0; i < 10; i++) {
 					System.gc();
 				}
 				local87 = Runtime.getRuntime();
 				local96 = (int) ((local87.totalMemory() - local87.freeMemory()) / 1024L);
-				Static158.method2939("Memory before cleanup=" + local96 + "k");
+				Static158.add("Memory before cleanup=" + local96 + "k");
 				Static163.method3104();
-				Static59.method1643();
+				client.removeSoft();
 				for (@Pc(153) int local153 = 0; local153 < 10; local153++) {
 					System.gc();
 				}
 				local96 = (int) ((local87.totalMemory() - local87.freeMemory()) / 1024L);
-				Static158.method2939("Memory after cleanup=" + local96 + "k");
+				Static158.add("Memory after cleanup=" + local96 + "k");
 				return;
 			}
-			if (arg0.equalsIgnoreCase("pcachesize")) {
-				Static158.method2939("Number of player models in cache:" + Static365.method6116());
+			if (command.equalsIgnoreCase("pcachesize")) {
+				Static158.add("Number of player models in cache:" + Static365.getModelCacheSize());
 				return;
 			}
-			if (arg0.equalsIgnoreCase("clientdrop")) {
-				Static158.method2939("Dropped client connection");
+			if (command.equalsIgnoreCase("clientdrop")) {
+				Static158.add("Dropped client connection");
 				if (Static347.anInt6442 == 30) {
 					Static211.method3724();
 					return;
@@ -122,234 +122,234 @@ public final class Static161 {
 				}
 				return;
 			}
-			if (arg0.equalsIgnoreCase("clientjs5drop")) {
-				client.js5NetQueue.method4644();
-				Static158.method2939("Dropped client js5 net queue");
+			if (command.equalsIgnoreCase("clientjs5drop")) {
+				client.js5NetQueue.quit();
+				Static158.add("Dropped client js5 net queue");
 				return;
 			}
-			if (arg0.equalsIgnoreCase("serverjs5drop")) {
-				client.js5NetQueue.method4634();
-				Static158.method2939("Dropped server js5 net queue");
+			if (command.equalsIgnoreCase("serverjs5drop")) {
+				client.js5NetQueue.closeServer();
+				Static158.add("Dropped server js5 net queue");
 				return;
 			}
-			if (arg0.equalsIgnoreCase("breakcon")) {
-				GameShell.signlink.method3759();
-				Static335.socket.method2801();
-				client.js5NetQueue.method4632();
-				Static158.method2939("Breaking new connections for 5 seconds");
+			if (command.equalsIgnoreCase("breakcon")) {
+				GameShell.signlink.breakConnection();
+				Static335.socket.breakConnection();
+				client.js5NetQueue.breakConnection();
+				Static158.add("Breaking new connections for 5 seconds");
 				return;
 			}
-			if (arg0.equalsIgnoreCase("rebuild")) {
+			if (command.equalsIgnoreCase("rebuild")) {
 				Static347.method5826();
 				Static247.method4298();
-				Static158.method2939("Rebuilding map");
+				Static158.add("Rebuilding map");
 				return;
 			}
-			if (arg0.equalsIgnoreCase("wm1")) {
-				Static143.method2677(-1, 1, false, -1);
-				if (Static144.method2692() == 1) {
-					Static158.method2939("wm1 succeeded");
+			if (command.equalsIgnoreCase("wm1")) {
+				Static143.setWindowMode(false, 1, -1, -1);
+				if (Static144.getWindowMode() == 1) {
+					Static158.add("wm1 succeeded");
 					return;
 				}
-				Static158.method2939("wm1 failed");
+				Static158.add("wm1 failed");
 				return;
 			}
-			if (arg0.equalsIgnoreCase("wm2")) {
-				Static143.method2677(-1, 2, false, -1);
-				if (Static144.method2692() == 2) {
-					Static158.method2939("wm2 succeeded");
+			if (command.equalsIgnoreCase("wm2")) {
+				Static143.setWindowMode(false, 2, -1, -1);
+				if (Static144.getWindowMode() == 2) {
+					Static158.add("wm2 succeeded");
 					return;
 				}
-				Static158.method2939("wm2 failed");
+				Static158.add("wm2 failed");
 				return;
 			}
-			if (arg0.equalsIgnoreCase("wm3")) {
-				Static143.method2677(768, 3, false, 1024);
-				if (Static144.method2692() == 3) {
-					Static158.method2939("wm3 succeeded");
+			if (command.equalsIgnoreCase("wm3")) {
+				Static143.setWindowMode(false, 3, 768, 1024);
+				if (Static144.getWindowMode() == 3) {
+					Static158.add("wm3 succeeded");
 					return;
 				}
-				Static158.method2939("wm3 failed");
+				Static158.add("wm3 failed");
 				return;
 			}
-			if (arg0.equalsIgnoreCase("tk0")) {
+			if (command.equalsIgnoreCase("tk0")) {
 				Static78.method5700(0);
 				if (Static77.anInt1762 == 0) {
-					Static158.method2939("Entered tk0");
-					Static218.aClass177_Sub1_2.anInt4878 = 0;
-					Static218.aClass177_Sub1_2.write(GameShell.signlink);
+					Static158.add("Entered tk0");
+					Static218.preferences.anInt4878 = 0;
+					Static218.preferences.write(GameShell.signlink);
 					Static236.sentToServer = false;
 					return;
 				}
-				Static158.method2939("Failed to enter tk0");
+				Static158.add("Failed to enter tk0");
 				return;
 			}
-			if (arg0.equalsIgnoreCase("tk1")) {
+			if (command.equalsIgnoreCase("tk1")) {
 				Static78.method5700(1);
 				if (Static77.anInt1762 != 1) {
-					Static158.method2939("Failed to enter tk1");
+					Static158.add("Failed to enter tk1");
 					return;
 				}
-				Static158.method2939("Entered tk1");
-				Static218.aClass177_Sub1_2.anInt4878 = 1;
-				Static218.aClass177_Sub1_2.write(GameShell.signlink);
+				Static158.add("Entered tk1");
+				Static218.preferences.anInt4878 = 1;
+				Static218.preferences.write(GameShell.signlink);
 				Static236.sentToServer = false;
 				return;
 			}
-			if (arg0.equalsIgnoreCase("tk2")) {
+			if (command.equalsIgnoreCase("tk2")) {
 				Static78.method5700(2);
 				if (Static77.anInt1762 != 2) {
-					Static158.method2939("Failed to enter tk2");
+					Static158.add("Failed to enter tk2");
 					return;
 				}
-				Static158.method2939("Entered tk2");
-				Static218.aClass177_Sub1_2.anInt4878 = 2;
-				Static218.aClass177_Sub1_2.write(GameShell.signlink);
+				Static158.add("Entered tk2");
+				Static218.preferences.anInt4878 = 2;
+				Static218.preferences.write(GameShell.signlink);
 				Static236.sentToServer = false;
 				return;
 			}
-			if (arg0.equalsIgnoreCase("tk3")) {
+			if (command.equalsIgnoreCase("tk3")) {
 				Static78.method5700(3);
 				if (Static77.anInt1762 == 3) {
-					Static158.method2939("Entered tk3");
+					Static158.add("Entered tk3");
 					return;
 				}
-				Static158.method2939("Failed to enter tk3");
+				Static158.add("Failed to enter tk3");
 				return;
 			}
-			if (arg0.equalsIgnoreCase("ot")) {
-				Static218.aClass177_Sub1_2.aBoolean355 = !Static218.aClass177_Sub1_2.aBoolean355;
-				Static218.aClass177_Sub1_2.write(GameShell.signlink);
+			if (command.equalsIgnoreCase("ot")) {
+				Static218.preferences.groundTextures = !Static218.preferences.groundTextures;
+				Static218.preferences.write(GameShell.signlink);
 				Static236.sentToServer = false;
 				Static347.method5826();
-				Static158.method2939("ot=" + Static218.aClass177_Sub1_2.aBoolean355);
+				Static158.add("ot=" + Static218.preferences.groundTextures);
 				return;
 			}
-			if (arg0.equalsIgnoreCase("gb")) {
-				Static218.aClass177_Sub1_2.aBoolean357 = !Static218.aClass177_Sub1_2.aBoolean357;
-				Static218.aClass177_Sub1_2.write(GameShell.signlink);
+			if (command.equalsIgnoreCase("gb")) {
+				Static218.preferences.aBoolean357 = !Static218.preferences.aBoolean357;
+				Static218.preferences.write(GameShell.signlink);
 				Static236.sentToServer = false;
 				Static347.method5826();
-				Static158.method2939("gb=" + Static218.aClass177_Sub1_2.aBoolean357);
+				Static158.add("gb=" + Static218.preferences.aBoolean357);
 				return;
 			}
-			if (arg0.startsWith("shadows")) {
-				if (arg0.length() < 8) {
-					Static158.method2939("Invalid shadows value");
+			if (command.startsWith("shadows")) {
+				if (command.length() < 8) {
+					Static158.add("Invalid shadows value");
 					return;
 				}
-				@Pc(521) String local521 = arg0.substring(8);
-				@Pc(531) int local531 = Static132.method2485(local521) ? Static146.method2698(local521) : -1;
+				@Pc(521) String local521 = command.substring(8);
+				@Pc(531) int local531 = Static132.isInt(local521) ? Static146.parseInt(local521) : -1;
 				if (local531 >= 0 && local531 <= 2) {
-					Static218.aClass177_Sub1_2.anInt4886 = local531;
-					Static218.aClass177_Sub1_2.write(GameShell.signlink);
+					Static218.preferences.sceneryShadows = local531;
+					Static218.preferences.write(GameShell.signlink);
 					Static236.sentToServer = false;
 					Static347.method5826();
-					Static158.method2939("shadows=" + local531);
+					Static158.add("shadows=" + local531);
 					return;
 				}
-				Static158.method2939("Invalid shadows value");
+				Static158.add("Invalid shadows value");
 				return;
 			}
-			if (arg0.startsWith("setba")) {
-				if (arg0.length() < 6) {
-					Static158.method2939("Invalid buildarea value");
+			if (command.startsWith("setba")) {
+				if (command.length() < 6) {
+					Static158.add("Invalid buildarea value");
 					return;
 				}
-				local76 = Static146.method2698(arg0.substring(6));
-				if (local76 >= 0 && local76 <= Static289.method5018(GameShell.maxMemory)) {
-					Static218.aClass177_Sub1_2.anInt4883 = local76;
-					Static218.aClass177_Sub1_2.write(GameShell.signlink);
+				int buildArea = Static146.parseInt(command.substring(6));
+				if (buildArea >= 0 && buildArea <= Static289.method5018(GameShell.maxMemory)) {
+					Static218.preferences.buildArea = buildArea;
+					Static218.preferences.write(GameShell.signlink);
 					Static236.sentToServer = false;
-					Static158.method2939("maxbuildarea=" + Static218.aClass177_Sub1_2.anInt4883);
+					Static158.add("maxbuildarea=" + Static218.preferences.buildArea);
 					return;
 				}
-				Static158.method2939("Invalid buildarea value");
+				Static158.add("Invalid buildarea value");
 				return;
 			}
-			if (arg0.startsWith("setparticles")) {
-				if (arg0.length() < 13) {
-					Static158.method2939("Invalid particles value");
+			if (command.startsWith("setparticles")) {
+				if (command.length() < 13) {
+					Static158.add("Invalid particles value");
 					return;
 				}
-				Static26.method864(Static146.method2698(arg0.substring(13)));
-				Static218.aClass177_Sub1_2.write(GameShell.signlink);
+				Preferences.setParticles(Static146.parseInt(command.substring(13)));
+				Static218.preferences.write(GameShell.signlink);
 				Static236.sentToServer = false;
-				Static158.method2939("particles=" + Static184.method3390());
+				Static158.add("particles=" + Static184.getParticles());
 				return;
 			}
-			if (arg0.startsWith("rect_debug")) {
-				if (arg0.length() < 10) {
-					Static158.method2939("Invalid rect_debug value");
+			if (command.startsWith("rect_debug")) {
+				if (command.length() < 10) {
+					Static158.add("Invalid rect_debug value");
 					return;
 				}
-				Static154.anInt2807 = Static146.method2698(arg0.substring(10).trim());
-				Static158.method2939("rect_debug=" + Static154.anInt2807);
+				Static154.rectDebug = Static146.parseInt(command.substring(10).trim());
+				Static158.add("rect_debug=" + Static154.rectDebug);
 				return;
 			}
-			if (arg0.equalsIgnoreCase("qa_op_test")) {
-				Static18.aBoolean30 = true;
-				Static158.method2939("qa_op_test=" + Static18.aBoolean30);
+			if (command.equalsIgnoreCase("qa_op_test")) {
+				Static18.qaOpTest = true;
+				Static158.add("qa_op_test=" + Static18.qaOpTest);
 				return;
 			}
-			if (arg0.equalsIgnoreCase("clipcomponents")) {
+			if (command.equalsIgnoreCase("clipcomponents")) {
 				Static88.aBoolean134 = !Static88.aBoolean134;
-				Static158.method2939("clipcomponents=" + Static88.aBoolean134);
+				Static158.add("clipcomponents=" + Static88.aBoolean134);
 				return;
 			}
-			if (arg0.startsWith("bloom")) {
+			if (command.startsWith("bloom")) {
 				@Pc(736) boolean local736 = Static190.aClass19_8.method2892();
 				if (Static284.method4881(!local736)) {
 					if (!local736) {
-						Static158.method2939("Bloom enabled");
+						Static158.add("Bloom enabled");
 						return;
 					}
-					Static158.method2939("Bloom disabled");
+					Static158.add("Bloom disabled");
 					return;
 				}
-				Static158.method2939("Failed to enable bloom");
+				Static158.add("Failed to enable bloom");
 				return;
 			}
-			if (arg0.equalsIgnoreCase("tween")) {
-				if (!Static318.aBoolean408) {
-					Static318.aBoolean408 = true;
-					Static158.method2939("Forced tweening ENABLED!");
+			if (command.equalsIgnoreCase("tween")) {
+				if (!Static318.forceTween) {
+					Static318.forceTween = true;
+					Static158.add("Forced tweening ENABLED!");
 					return;
 				}
-				Static318.aBoolean408 = false;
-				Static158.method2939("Forced tweening disabled.");
+				Static318.forceTween = false;
+				Static158.add("Forced tweening disabled.");
 				return;
 			}
-			if (arg0.equalsIgnoreCase("shiftclick")) {
-				if (Static148.aBoolean192) {
-					Static158.method2939("Shift-click disabled.");
-					Static148.aBoolean192 = false;
+			if (command.equalsIgnoreCase("shiftclick")) {
+				if (Static148.shiftClick) {
+					Static158.add("Shift-click disabled.");
+					Static148.shiftClick = false;
 					return;
 				}
-				Static158.method2939("Shift-click ENABLED!");
-				Static148.aBoolean192 = true;
+				Static158.add("Shift-click ENABLED!");
+				Static148.shiftClick = true;
 				return;
 			}
-			if (arg0.equalsIgnoreCase("getcgcoord")) {
-				Static158.method2939("x:" + (Static17.self.xFine >> 7) + " z:" + (Static17.self.zFine >> 7));
+			if (command.equalsIgnoreCase("getcgcoord")) {
+				Static158.add("x:" + (Static17.self.xFine >> 7) + " z:" + (Static17.self.zFine >> 7));
 				return;
 			}
-			if (arg0.equalsIgnoreCase("getheight")) {
-				Static158.method2939("Height: " + Static365.aClass6Array4[Static17.self.aByte78].method5718(Static17.self.xFine >> 7, Static17.self.zFine >> 7));
+			if (command.equalsIgnoreCase("getheight")) {
+				Static158.add("Height: " + Static365.aClass6Array4[Static17.self.aByte78].method5718(Static17.self.xFine >> 7, Static17.self.zFine >> 7));
 				return;
 			}
-			if (arg0.equalsIgnoreCase("resetminimap")) {
-				Static30.aJs5_5.method5089();
-				Static30.aJs5_5.method5067();
+			if (command.equalsIgnoreCase("resetminimap")) {
+				client.js5Archive8.method5089();
+				client.js5Archive8.method5067();
 				Static320.aClass104_2.method2707();
 				Static236.aClass125_1.method3379();
 				Static247.method4298();
-				Static158.method2939("Minimap reset");
+				Static158.add("Minimap reset");
 				return;
 			}
-			if (arg0.startsWith("mc")) {
+			if (command.startsWith("mc")) {
 				if (Static190.aClass19_8.method2869()) {
-					local76 = Integer.parseInt(arg0.substring(3));
+					local76 = Integer.parseInt(command.substring(3));
 					if (local76 < 1) {
 						local76 = 1;
 					} else if (local76 > 4) {
@@ -358,62 +358,62 @@ public final class Static161 {
 					Static102.anInt3591 = local76;
 					Static190.aClass19_8.method2854(Static102.anInt3591);
 					Static190.aClass19_8.method2893(0);
-					Static158.method2939("Render cores now: " + Static102.anInt3591);
+					Static158.add("Render cores now: " + Static102.anInt3591);
 					return;
 				}
-				Static158.method2939("Current toolkit doesn't support multiple cores");
+				Static158.add("Current toolkit doesn't support multiple cores");
 				return;
 			}
-			if (arg0.startsWith("cachespace")) {
-				Static158.method2939("I(s): " + Static335.A_SOFT_LRU_HASH_TABLE___57.method2616() + "/" + Static335.A_SOFT_LRU_HASH_TABLE___57.method2620());
-				Static158.method2939("I(m): " + Static124.A_SOFT_LRU_HASH_TABLE___63.method2616() + "/" + Static124.A_SOFT_LRU_HASH_TABLE___63.method2620());
-				Static158.method2939("O(s): " + Static313.aClass107_2.aClass97_1.method2587() + "/" + Static313.aClass107_2.aClass97_1.method2592());
+			if (command.startsWith("cachespace")) {
+				Static158.add("I(s): " + Static335.A_SOFT_LRU_HASH_TABLE___57.method2616() + "/" + Static335.A_SOFT_LRU_HASH_TABLE___57.method2620());
+				Static158.add("I(m): " + Static124.A_SOFT_LRU_HASH_TABLE___63.method2616() + "/" + Static124.A_SOFT_LRU_HASH_TABLE___63.method2620());
+				Static158.add("O(s): " + Static313.aClass107_2.aClass97_1.method2587() + "/" + Static313.aClass107_2.aClass97_1.method2592());
 				return;
 			}
-			if (arg0.equalsIgnoreCase("getcamerapos")) {
-				Static158.method2939("Pos: " + Static17.self.aByte78 + "," + (Static164.originX + (Static136.anInt6778 >> 7) >> 6) + "," + ((Static211.anInt3777 >> 7) + Static148.originZ >> 6) + "," + (Static164.originX + (Static136.anInt6778 >> 7) & 0x3F) + "," + (Static148.originZ + (Static211.anInt3777 >> 7) & 0x3F) + " Height: " + (Static386.method6031(Static136.anInt6778, Static211.anInt3777, Static17.self.aByte78) - Static102.anInt3592));
-				Static158.method2939("Look: " + Static17.self.aByte78 + "," + (Static164.originX + Static254.anInt4698 >> 6) + "," + (Static123.anInt2420 + Static148.originZ >> 6) + "," + (Static254.anInt4698 + Static164.originX & 0x3F) + "," + (Static148.originZ + Static123.anInt2420 & 0x3F) + " Height: " + (Static386.method6031(Static254.anInt4698, Static123.anInt2420, Static17.self.aByte78) - Static57.anInt1464));
+			if (command.equalsIgnoreCase("getcamerapos")) {
+				Static158.add("Pos: " + Static17.self.aByte78 + "," + (Static164.originX + (Static136.anInt6778 >> 7) >> 6) + "," + ((Static211.anInt3777 >> 7) + Static148.originZ >> 6) + "," + (Static164.originX + (Static136.anInt6778 >> 7) & 0x3F) + "," + (Static148.originZ + (Static211.anInt3777 >> 7) & 0x3F) + " Height: " + (Static386.method6031(Static136.anInt6778, Static211.anInt3777, Static17.self.aByte78) - Static102.anInt3592));
+				Static158.add("Look: " + Static17.self.aByte78 + "," + (Static164.originX + Static254.anInt4698 >> 6) + "," + (Static123.anInt2420 + Static148.originZ >> 6) + "," + (Static254.anInt4698 + Static164.originX & 0x3F) + "," + (Static148.originZ + Static123.anInt2420 & 0x3F) + " Height: " + (Static386.method6031(Static254.anInt4698, Static123.anInt2420, Static17.self.aByte78) - Static57.anInt1464));
 				return;
 			}
-			if (arg0.equals("showocc")) {
+			if (command.equals("showocc")) {
 				Static160.aBoolean206 = !Static160.aBoolean206;
 				Static347.method5826();
-				Static158.method2939("showocc=" + Static160.aBoolean206);
+				Static158.add("showocc=" + Static160.aBoolean206);
 				return;
 			}
-			if (arg0.equals("wallocc")) {
+			if (command.equals("wallocc")) {
 				Static263.aBoolean329 = !Static263.aBoolean329;
 				Static347.method5826();
-				Static158.method2939("forcewallocc=" + Static263.aBoolean329);
+				Static158.add("forcewallocc=" + Static263.aBoolean329);
 				return;
 			}
-			if (arg0.equals("renderprofile") || arg0.equals("rp")) {
+			if (command.equals("renderprofile") || command.equals("rp")) {
 				Static294.aBoolean392 = !Static294.aBoolean392;
 				Static190.aClass19_8.method2855(Static294.aBoolean392);
 				Static49.method1471();
-				Static158.method2939("showprofiling=" + Static294.aBoolean392);
+				Static158.add("showprofiling=" + Static294.aBoolean392);
 				return;
 			}
-			if (arg0.equals("nonpcs")) {
+			if (command.equals("nonpcs")) {
 				Static47.aBoolean102 = !Static47.aBoolean102;
-				Static158.method2939("nonpcs=" + Static47.aBoolean102);
+				Static158.add("nonpcs=" + Static47.aBoolean102);
 				return;
 			}
-			if (arg0.equals("autoworld")) {
+			if (command.equals("autoworld")) {
 				Static200.method3643();
-				Static158.method2939("auto world selected");
+				Static158.add("auto world selected");
 				return;
 			}
-			if (arg0.equals("heap")) {
-				Static158.method2939("Heap: " + GameShell.maxMemory + "MB");
+			if (command.equals("heap")) {
+				Static158.add("Heap: " + GameShell.maxMemory + "MB");
 				return;
 			}
-			if (arg0.equals("savevarcs")) {
+			if (command.equals("savevarcs")) {
 				Static340.method5764();
-				Static158.method2939("perm varcs saved");
+				Static158.add("perm varcs saved");
 				return;
 			}
-			if (arg0.equals("scramblevarcs")) {
+			if (command.equals("scramblevarcs")) {
 				for (local76 = 0; local76 < Static75.anIntArray117.length; local76++) {
 					if (Static89.aBooleanArray18[local76]) {
 						Static75.anIntArray117[local76] = (int) (Math.random() * 99999.0D);
@@ -423,64 +423,64 @@ public final class Static161 {
 					}
 				}
 				Static340.method5764();
-				Static158.method2939("perm varcs scrambled");
+				Static158.add("perm varcs scrambled");
 				return;
 			}
-			if (arg0.equals("showcolmap")) {
+			if (command.equals("showcolmap")) {
 				Static46.aBoolean100 = true;
 				Static247.method4298();
-				Static158.method2939("colmap is shown");
+				Static158.add("colmap is shown");
 				return;
 			}
-			if (arg0.equals("hidecolmap")) {
+			if (command.equals("hidecolmap")) {
 				Static46.aBoolean100 = false;
 				Static247.method4298();
-				Static158.method2939("colmap is hidden");
+				Static158.add("colmap is hidden");
 				return;
 			}
-			if (arg0.equals("resetcache")) {
+			if (command.equals("resetcache")) {
 				Static211.method3720();
-				Static158.method2939("Caches reset");
+				Static158.add("Caches reset");
 				return;
 			}
-			if (arg0.equals("profilecpu")) {
-				Static158.method2939(Static374.method6272() + "ms");
+			if (command.equals("profilecpu")) {
+				Static158.add(Static374.method6272() + "ms");
 				return;
 			}
-			if (arg0.startsWith("cpuusage")) {
-				local76 = Integer.parseInt(arg0.substring(9));
+			if (command.startsWith("cpuusage")) {
+				local76 = Integer.parseInt(command.substring(9));
 				if (local76 >= 0 && local76 <= 4) {
-					Static218.aClass177_Sub1_2.anInt4881 = local76;
+					Static218.preferences.anInt4881 = local76;
 				}
-				Static158.method2939("cpuusage=" + Static218.aClass177_Sub1_2.anInt4881);
+				Static158.add("cpuusage=" + Static218.preferences.anInt4881);
 				return;
 			}
-			if (arg0.startsWith("getclientvarpbit")) {
-				local76 = Integer.parseInt(arg0.substring(17));
-				Static158.method2939("varpbit=" + Static214.aClass226_1.method5777(local76));
+			if (command.startsWith("getclientvarpbit")) {
+				local76 = Integer.parseInt(command.substring(17));
+				Static158.add("varpbit=" + Static214.aClass226_1.method5777(local76));
 				return;
 			}
-			if (arg0.startsWith("getclientvarp")) {
-				local76 = Integer.parseInt(arg0.substring(14));
-				Static158.method2939("varp=" + Static214.aClass226_1.method5776(local76));
+			if (command.startsWith("getclientvarp")) {
+				local76 = Integer.parseInt(command.substring(14));
+				Static158.add("varp=" + Static214.aClass226_1.method5776(local76));
 				return;
 			}
 			if (Static347.anInt6442 == 30) {
 				Static91.method1960(Static243.aClass145_162);
-				Static257.aClass2_Sub4_Sub2_4.p1(arg0.length() + 2);
-				Static257.aClass2_Sub4_Sub2_4.p1(arg1 ? 1 : 0);
-				Static257.aClass2_Sub4_Sub2_4.pjstr(arg0);
+				Static257.outboundBuffer.p1(command.length() + 2);
+				Static257.outboundBuffer.p1(arg1 ? 1 : 0);
+				Static257.outboundBuffer.pjstr(command);
 			}
-			if (arg0.startsWith("fps ") && Static189.aClass127_6 != Static121.aClass127_4) {
-				Static250.method4345(Static146.method2698(arg0.substring(4)));
+			if (command.startsWith("fps ") && Static121.aClass127_4 != Static189.aClass127_6) {
+				GameShell.setFramesPerSecond(Static146.parseInt(command.substring(4)));
 				return;
 			}
 			if (Static347.anInt6442 != 30) {
-				Static158.method2939("Unrecogonised commmand when not logged in: " + arg0);
+				Static158.add("Unrecogonised commmand when not logged in: " + command);
 				return;
 			}
 		} catch (@Pc(1450) Exception local1450) {
-			Static158.method2939("Whoops, something went wrong.");
+			Static158.add("Whoops, something went wrong.");
 			return;
 		}
 	}
@@ -499,8 +499,8 @@ public final class Static161 {
 		if (!Static101.aBoolean158 && Static335.socket != null) {
 			Static91.method1960(Static326.aClass145_228);
 			try {
-				Static335.socket.write(Static257.aClass2_Sub4_Sub2_4.bytes, Static257.aClass2_Sub4_Sub2_4.offset);
-				Static257.aClass2_Sub4_Sub2_4.offset = 0;
+				Static335.socket.write(Static257.outboundBuffer.bytes, Static257.outboundBuffer.offset);
+				Static257.outboundBuffer.offset = 0;
 			} catch (@Pc(57) IOException local57) {
 				Static101.aBoolean158 = true;
 			}

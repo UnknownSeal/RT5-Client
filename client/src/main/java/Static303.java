@@ -61,11 +61,11 @@ public final class Static303 {
 	}
 
 	@OriginalMember(owner = "client!rm", name = "a", descriptor = "(IZ)V")
-	public static void method5210(@OriginalArg(0) int arg0) {
-		if (Static235.anInt3365 == 0) {
-			Static91.aClass2_Sub12_Sub3_1.method4277(arg0);
+	public static void setVolume(@OriginalArg(0) int volume) {
+		if (Static235.state == 0) {
+			Static91.stream.setVolume(volume);
 		} else {
-			Static356.anInt6641 = arg0;
+			Static356.volume = volume;
 		}
 	}
 
@@ -102,9 +102,9 @@ public final class Static303 {
 					@Pc(117) String local117;
 					if (local51) {
 						local32 &= 0x7FFF;
-						@Pc(127) Class86 local127 = Static290.method5026(Static89.aClass2_Sub4_2);
-						local107 = local127.anInt2377;
-						local117 = local127.aQuickChatPhraseType_1.decodeMessage(Static89.aClass2_Sub4_2);
+						@Pc(127) QuickChatPhrase local127 = Static290.method5026(Static89.aClass2_Sub4_2);
+						local107 = local127.id;
+						local117 = local127.type.decodeMessage(Static89.aClass2_Sub4_2);
 					} else {
 						local117 = Static153.method2772(Static308.method5275(Static89.aClass2_Sub4_2));
 					}

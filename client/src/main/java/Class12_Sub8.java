@@ -113,9 +113,9 @@ public final class Class12_Sub8 extends Class12 {
 		@Pc(54) int local54;
 		if (this.aBoolean422) {
 			arg3 = false;
-		} else if (this.type.anInt6578 > Static153.anInt2794) {
+		} else if (this.type.anInt6578 > Preferences.particles) {
 			arg3 = false;
-		} else if (Static336.anInt6313 > Static360.anIntArray421[Static153.anInt2794]) {
+		} else if (Static336.anInt6313 > Static360.anIntArray421[Preferences.particles]) {
 			arg3 = false;
 		} else if (this.aBoolean423) {
 			arg3 = false;

@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static26 {
 
 	@OriginalMember(owner = "client!bj", name = "f", descriptor = "[[B")
-	public static byte[][] aByteArrayArray3;
+	public static byte[][] fakeModelCacheEntries;
 
 	@OriginalMember(owner = "client!bj", name = "g", descriptor = "[[Lclient!nk;")
 	public static Component[][] aComponentArrayArray1;
@@ -17,7 +17,7 @@ public final class Static26 {
 		}
 		Static100.aBoolean156 = true;
 		Static369.aBoolean471 = true;
-		if (Static218.aClass177_Sub1_2.aBoolean351) {
+		if (Static218.preferences.aBoolean351) {
 			Static277.aFloat67 = (int) Static277.aFloat67 - 65 & 0xFFFFFF80;
 		} else {
 			Static184.aFloat39 += (-Static184.aFloat39 - 24.0F) / 2.0F;
@@ -38,14 +38,6 @@ public final class Static26 {
 			local51 = (local41 << 8) / local45;
 		}
 		return (short) (local45 | local9 << 10 | local51 >> 4 << 7);
-	}
-
-	@OriginalMember(owner = "client!bj", name = "a", descriptor = "(IZ)V")
-	public static void method864(@OriginalArg(0) int arg0) {
-		if (arg0 < 0 || arg0 > 2) {
-			arg0 = 0;
-		}
-		Static153.anInt2794 = arg0;
 	}
 
 	@OriginalMember(owner = "client!bj", name = "a", descriptor = "(III)Lclient!el;")

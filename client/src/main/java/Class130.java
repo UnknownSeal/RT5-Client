@@ -96,7 +96,7 @@ public abstract class Class130 {
 										local131 = arg2[local25];
 									}
 									local25++;
-									@Pc(144) int local144 = Static146.method2698(local63.substring(4));
+									@Pc(144) int local144 = Static146.parseInt(local63.substring(4));
 									@Pc(148) Class13 local148 = arg4[local144];
 									@Pc(157) int local157 = arg1 == null ? local148.method6383() : arg1[local144];
 									local148.method6400(local121 + arg0, local131 + -local157 + local19 + this.aClass239_8.anInt6841, 0, 0);
@@ -418,7 +418,7 @@ public abstract class Class130 {
 						if (!local56.equals("reg")) {
 							if (local56.startsWith("img=")) {
 								try {
-									@Pc(122) int local122 = Static146.method2698(local56.substring(4));
+									@Pc(122) int local122 = Static146.parseInt(local56.substring(4));
 									@Pc(126) Class13 local126 = arg5[local122];
 									@Pc(135) int local135 = arg6 == null ? local126.method6383() : arg6[local122];
 									if ((-16777216 & Static280.anInt5197) == -16777216) {

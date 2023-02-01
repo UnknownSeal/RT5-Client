@@ -37,7 +37,7 @@ public final class Static144 {
 	}
 
 	@OriginalMember(owner = "client!ie", name = "a", descriptor = "(B)I")
-	public static int method2692() {
+	public static int getWindowMode() {
 		if (GameShell.fullScreenFrame == null) {
 			return Static363.aBoolean464 ? 2 : 1;
 		} else {

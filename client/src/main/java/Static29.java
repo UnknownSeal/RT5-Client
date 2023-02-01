@@ -22,8 +22,8 @@ public final class Static29 {
 	}
 
 	@OriginalMember(owner = "client!bm", name = "a", descriptor = "(IZIII)V")
-	public static void play(@OriginalArg(0) int loops, @OriginalArg(2) int arg1, @OriginalArg(3) int delay, @OriginalArg(4) int id) {
-		if (Static218.aClass177_Sub1_2.anInt4888 == 0 || loops == 0 || Static243.size >= 50 || id == -1) {
+	public static void play(@OriginalArg(3) int delay, @OriginalArg(4) int id, @OriginalArg(0) int loops, @OriginalArg(2) int volume) {
+		if (Static218.preferences.soundEffectsVolume == 0 || loops == 0 || Static243.size >= 50 || id == -1) {
 			return;
 		}
 		Static256.ids[Static243.size] = id;
@@ -31,7 +31,7 @@ public final class Static29 {
 		Static237.delays[Static243.size] = delay;
 		Static196.sounds[Static243.size] = null;
 		Static162.positions[Static243.size] = 0;
-		Static223.anIntArray256[Static243.size] = arg1;
+		Static223.anIntArray256[Static243.size] = volume;
 		Static243.size++;
 	}
 

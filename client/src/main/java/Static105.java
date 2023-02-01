@@ -8,7 +8,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static105 {
 
 	@OriginalMember(owner = "client!ft", name = "V", descriptor = "I")
-	public static int anInt2183;
+	public static int songGroupID;
 
 	@OriginalMember(owner = "client!ft", name = "ab", descriptor = "I")
 	public static int anInt2187;

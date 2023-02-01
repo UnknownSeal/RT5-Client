@@ -24,8 +24,8 @@ public final class ColorImageCacheEntry extends Node {
 	}
 
 	@OriginalMember(owner = "client!wh", name = "<init>", descriptor = "(II)V")
-	public ColorImageCacheEntry(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
-		this.index = arg1;
-		this.row = arg0;
+	public ColorImageCacheEntry(@OriginalArg(0) int row, @OriginalArg(1) int index) {
+		this.row = row;
+		this.index = index;
 	}
 }

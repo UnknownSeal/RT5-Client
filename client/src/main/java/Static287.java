@@ -79,7 +79,7 @@ public final class Static287 {
 		} else {
 			arg0.x = arg1 - arg0.width - (arg1 * arg0.anInt4241 >> 14);
 		}
-		if (!Static18.aBoolean30) {
+		if (!Static18.qaOpTest) {
 			return;
 		}
 		if (Static45.getServerActiveProperties(arg0).anInt1758 == 0 && arg0.type != 0) {

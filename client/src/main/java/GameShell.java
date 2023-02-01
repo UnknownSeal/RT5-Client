@@ -127,6 +127,11 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 		}
 	}
 
+	@OriginalMember(owner = "client!og", name = "b", descriptor = "(IB)V")
+	public static void setFramesPerSecond(@OriginalArg(0) int fps) {
+		timeParFrame = 1000 / fps;
+	}
+
 	@OriginalMember(owner = "client!un", name = "windowActivated", descriptor = "(Ljava/awt/event/WindowEvent;)V")
 	@Override
 	public final void windowActivated(@OriginalArg(0) WindowEvent windowEvent) {

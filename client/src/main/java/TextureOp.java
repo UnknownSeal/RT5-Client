@@ -78,39 +78,39 @@ public abstract class TextureOp extends Node {
 		} else if (type == 19) {
 			return new TextureOpPolarDistortion();
 		} else if (type == 20) {
-			return new Class2_Sub3_Sub38();
+			return new TextureOpTile();
 		} else if (type == 21) {
-			return new Class2_Sub3_Sub16();
+			return new TextureOpInterpolate();
 		} else if (type == 22) {
-			return new Class2_Sub3_Sub8();
+			return new TextureOpInvert();
 		} else if (type == 23) {
-			return new Class2_Sub3_Sub9();
+			return new TextureOpKaleidoscope();
 		} else if (type == 24) {
-			return new Class2_Sub3_Sub24();
+			return new TextureOpMonochrome();
 		} else if (type == 25) {
-			return new Class2_Sub3_Sub14();
+			return new TextureOpBrightness();
 		} else if (type == 26) {
-			return new Class2_Sub3_Sub12();
+			return new TextureOpBinary();
 		} else if (type == 27) {
-			return new Class2_Sub3_Sub33();
+			return new TextureOpSquareWaveform();
 		} else if (type == 28) {
-			return new Class2_Sub3_Sub36();
+			return new TextureOpIrregularBricks();
 		} else if (type == 29) {
-			return new Class2_Sub3_Sub37();
+			return new TextureOpRasterizer();
 		} else if (type == 30) {
-			return new Class2_Sub3_Sub34();
+			return new TextureOpRange();
 		} else if (type == 31) {
-			return new Class2_Sub3_Sub11();
+			return new TextureOpMandelbrot();
 		} else if (type == 32) {
-			return new Class2_Sub3_Sub19();
+			return new TextureOpEmboss();
 		} else if (type == 33) {
-			return new Class2_Sub3_Sub5();
+			return new TextureOpColorEdgeDetector();
 		} else if (type == 34) {
-			return new Class2_Sub3_Sub6();
+			return new TextureOpPerlinNoise();
 		} else if (type == 35) {
-			return new Class2_Sub3_Sub3();
+			return new TextureOpMonochromeEdgeDetector();
 		} else if (type == 36) {
-			return new Class2_Sub3_Sub35();
+			return new TextureOpTexture();
 		} else if (type == 37) {
 			return new TextureOp37();
 		} else if (type == 38) {
@@ -200,7 +200,7 @@ public abstract class TextureOp extends Node {
 	}
 
 	@OriginalMember(owner = "client!jq", name = "a", descriptor = "(ILclient!bt;I)V")
-	public void decode(@OriginalArg(0) int arg0, @OriginalArg(1) Buffer arg1) {
+	public void decode(@OriginalArg(1) Buffer buffer, @OriginalArg(0) int opcode) {
 	}
 
 	@OriginalMember(owner = "client!jq", name = "a", descriptor = "(BI)[I")

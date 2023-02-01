@@ -27,11 +27,11 @@ public final class Static207 {
 		if (!Static330.aBoolean419) {
 			return;
 		}
-		@Pc(11) Component local11 = method3704(Static337.anInt6317, Static214.anInt3792);
+		@Pc(11) Component local11 = getCreatedComponent(Static337.anInt6317, Static214.anInt3792);
 		if (local11 != null && local11.onUseWith != null) {
-			@Pc(20) Class2_Sub13 local20 = new Class2_Sub13();
-			local20.aComponent_3 = local11;
-			local20.anObjectArray4 = local11.onUseWith;
+			@Pc(20) HookRequest local20 = new HookRequest();
+			local20.source = local11;
+			local20.arguments = local11.onUseWith;
 			ScriptRunner.method3590(local20);
 		}
 		Static330.aBoolean419 = false;
@@ -51,7 +51,7 @@ public final class Static207 {
 	public static Component method3702(@OriginalArg(0) Component arg0) {
 		@Pc(11) Component local11 = Static45.method1413(arg0);
 		if (local11 == null) {
-			local11 = arg0.aComponent_12;
+			local11 = arg0.dragComponent;
 		}
 		return local11;
 	}
@@ -62,14 +62,14 @@ public final class Static207 {
 	}
 
 	@OriginalMember(owner = "client!mc", name = "a", descriptor = "(IIB)Lclient!nk;")
-	public static Component method3704(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
-		@Pc(7) Component local7 = Static6.getComponent(arg0);
-		if (arg1 == -1) {
-			return local7;
-		} else if (local7 == null || local7.createdComponent == null || arg1 >= local7.createdComponent.length) {
+	public static Component getCreatedComponent(@OriginalArg(0) int componentID, @OriginalArg(1) int createdComponentID) {
+		@Pc(7) Component component = Static6.getComponent(componentID);
+		if (createdComponentID == -1) {
+			return component;
+		} else if (component == null || component.createdComponent == null || createdComponentID >= component.createdComponent.length) {
 			return null;
 		} else {
-			return local7.createdComponent[arg1];
+			return component.createdComponent[createdComponentID];
 		}
 	}
 }

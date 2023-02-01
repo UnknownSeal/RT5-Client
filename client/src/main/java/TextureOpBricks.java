@@ -63,7 +63,7 @@ public final class TextureOpBricks extends TextureOp {
 	@OriginalMember(owner = "client!pk", name = "a", descriptor = "(BI)[I")
 	@Override
 	public int[] getMonochromeOutput(@OriginalArg(1) int y) {
-		@Pc(11) int[] local11 = super.monochromeImageCache.get(y);
+		@Pc(11) int[] destination = super.monochromeImageCache.get(y);
 		if (super.monochromeImageCache.invalid) {
 			@Pc(22) int local22 = 0;
 			@Pc(29) int local29;
@@ -96,37 +96,37 @@ public final class TextureOpBricks extends TextureOp {
 					@Pc(172) int local172 = this.anIntArrayArray42[local62][local107];
 					@Pc(179) int local179 = this.anIntArrayArray42[local62][local165];
 					if (local179 + this.anInt5020 < local128 && local172 - this.anInt5020 > local128) {
-						local11[local103] = this.anIntArrayArray41[local62][local165];
+						destination[local103] = this.anIntArrayArray41[local62][local165];
 					} else {
-						local11[local103] = 0;
+						destination[local103] = 0;
 					}
 				}
 			} else {
-				Static403.fill(local11, 0, Static227.width, 0);
+				Static403.fill(destination, 0, Static227.width, 0);
 			}
 		}
-		return local11;
+		return destination;
 	}
 
 	@OriginalMember(owner = "client!pk", name = "a", descriptor = "(ILclient!bt;I)V")
 	@Override
-	public void decode(@OriginalArg(0) int arg0, @OriginalArg(1) Buffer arg1) {
-		if (arg0 == 0) {
-			this.anInt5021 = arg1.g1();
-		} else if (arg0 == 1) {
-			this.anInt5013 = arg1.g1();
-		} else if (arg0 == 2) {
-			this.anInt5006 = arg1.g2();
-		} else if (arg0 == 3) {
-			this.anInt5015 = arg1.g2();
-		} else if (arg0 == 4) {
-			this.anInt5018 = arg1.g2();
-		} else if (arg0 == 5) {
-			this.anInt5009 = arg1.g2();
-		} else if (arg0 == 6) {
-			this.anInt5017 = arg1.g2();
-		} else if (arg0 == 7) {
-			this.anInt5010 = arg1.g2();
+	public void decode(@OriginalArg(1) Buffer buffer, @OriginalArg(0) int opcode) {
+		if (opcode == 0) {
+			this.anInt5021 = buffer.g1();
+		} else if (opcode == 1) {
+			this.anInt5013 = buffer.g1();
+		} else if (opcode == 2) {
+			this.anInt5006 = buffer.g2();
+		} else if (opcode == 3) {
+			this.anInt5015 = buffer.g2();
+		} else if (opcode == 4) {
+			this.anInt5018 = buffer.g2();
+		} else if (opcode == 5) {
+			this.anInt5009 = buffer.g2();
+		} else if (opcode == 6) {
+			this.anInt5017 = buffer.g2();
+		} else if (opcode == 7) {
+			this.anInt5010 = buffer.g2();
 		}
 	}
 

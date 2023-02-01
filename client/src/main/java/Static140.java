@@ -117,9 +117,9 @@ public final class Static140 {
 
 	@OriginalMember(owner = "client!hu", name = "h", descriptor = "(I)V")
 	public static void method2627() {
-		@Pc(1) SoftLruHashTable local1 = Static92.A_SOFT_LRU_HASH_TABLE___9;
-		synchronized (Static92.A_SOFT_LRU_HASH_TABLE___9) {
-			Static92.A_SOFT_LRU_HASH_TABLE___9.method2614();
+		@Pc(1) SoftLruHashTable local1 = Static92.bodyModels;
+		synchronized (Static92.bodyModels) {
+			Static92.bodyModels.method2614();
 		}
 		local1 = Static349.A_SOFT_LRU_HASH_TABLE___58;
 		synchronized (Static349.A_SOFT_LRU_HASH_TABLE___58) {

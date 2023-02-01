@@ -122,20 +122,20 @@ public final class Static73 {
 				Static231.aClass89_164 = null;
 				return true;
 			} else {
-				@Pc(344) Class2_Sub7 local344;
+				@Pc(344) SubInterface local344;
 				if (Static231.aClass89_164 == Static297.aClass89_200) {
 					local220 = Static212.inboundBuffer.g4();
 					local74 = Static212.inboundBuffer.g4();
 					local228 = Static212.inboundBuffer.ig2();
 					if (Static378.method6313(local228)) {
-						@Pc(335) Class2_Sub7 local335 = (Class2_Sub7) Static329.aClass4_130.get((long) local220);
-						local344 = (Class2_Sub7) Static329.aClass4_130.get((long) local74);
+						@Pc(335) SubInterface local335 = (SubInterface) Static329.subInterfaces.get((long) local220);
+						local344 = (SubInterface) Static329.subInterfaces.get((long) local74);
 						if (local344 != null) {
-							Static276.method4654(false, local344, local335 == null || local344.anInt1370 != local335.anInt1370);
+							Static276.method4654(false, local344, local335 == null || local344.id != local335.id);
 						}
 						if (local335 != null) {
 							local335.unlink();
-							Static329.aClass4_130.put(local335, (long) local74);
+							Static329.subInterfaces.put(local335, (long) local74);
 						}
 						@Pc(375) Component local375 = Static6.getComponent(local220);
 						if (local375 != null) {
@@ -361,16 +361,16 @@ public final class Static73 {
 							if (Static378.method6313(local249)) {
 								for (local506 = local220; local506 <= local228; local506++) {
 									local1101 = (long) local506 + ((long) local497 << 32);
-									local1109 = (ServerActiveProperties) Static327.aClass4_127.get(local1101);
+									local1109 = (ServerActiveProperties) Static327.serverActiveProperties.get(local1101);
 									if (local1109 != null) {
 										local1118 = new ServerActiveProperties(local1109.anInt1758, local74);
 										local1109.unlink();
 									} else if (local506 == -1) {
-										local1118 = new ServerActiveProperties(Static6.getComponent(local497).aServerActiveProperties_1.anInt1758, local74);
+										local1118 = new ServerActiveProperties(Static6.getComponent(local497).serverActiveProperties.anInt1758, local74);
 									} else {
 										local1118 = new ServerActiveProperties(0, local74);
 									}
-									Static327.aClass4_127.put(local1118, local1101);
+									Static327.serverActiveProperties.put(local1118, local1101);
 								}
 							}
 							Static231.aClass89_164 = null;
@@ -389,9 +389,9 @@ public final class Static73 {
 							local228 = Static212.inboundBuffer.ig4();
 							local249 = Static212.inboundBuffer.g2();
 							if (Static378.method6313(local220)) {
-								local344 = (Class2_Sub7) Static329.aClass4_130.get((long) local228);
+								local344 = (SubInterface) Static329.subInterfaces.get((long) local228);
 								if (local344 != null) {
-									Static276.method4654(false, local344, local249 != local344.anInt1370);
+									Static276.method4654(false, local344, local249 != local344.id);
 								}
 								Static382.method6364(local228, local74, false, local249);
 							}
@@ -645,7 +645,7 @@ public final class Static73 {
 									local74 = Static212.inboundBuffer.g1();
 									local228 = Static212.inboundBuffer.g2();
 									local249 = Static212.inboundBuffer.g1();
-									Static29.play(local74, local249, local228, local220);
+									Static29.play(local228, local220, local74, local249);
 									Static231.aClass89_164 = null;
 									return true;
 								} else if (Static78.aClass89_224 == Static231.aClass89_164) {
@@ -811,7 +811,7 @@ public final class Static73 {
 										return true;
 									} else if (Static231.aClass89_164 == Static82.aClass89_66) {
 										if (GameShell.fullScreenFrame != null) {
-											Static143.method2677(-1, Static218.aClass177_Sub1_2.anInt4894, false, -1);
+											Static143.setWindowMode(false, Static218.preferences.anInt4894, -1, -1);
 										}
 										@Pc(2782) byte[] local2782 = new byte[Static82.anInt1836];
 										Static212.inboundBuffer.method4865(local2782, Static82.anInt1836);
@@ -910,16 +910,16 @@ public final class Static73 {
 										if (Static378.method6313(local497)) {
 											for (local506 = local74; local506 <= local249; local506++) {
 												local1101 = ((long) local220 << 32) + ((long) local506);
-												local1109 = (ServerActiveProperties) Static327.aClass4_127.get(local1101);
+												local1109 = (ServerActiveProperties) Static327.serverActiveProperties.get(local1101);
 												if (local1109 != null) {
 													local1118 = new ServerActiveProperties(local228, local1109.anInt1759);
 													local1109.unlink();
 												} else if (local506 == -1) {
-													local1118 = new ServerActiveProperties(local228, Static6.getComponent(local220).aServerActiveProperties_1.anInt1759);
+													local1118 = new ServerActiveProperties(local228, Static6.getComponent(local220).serverActiveProperties.anInt1759);
 												} else {
 													local1118 = new ServerActiveProperties(local228, -1);
 												}
-												Static327.aClass4_127.put(local1118, local1101);
+												Static327.serverActiveProperties.put(local1118, local1101);
 											}
 										}
 										Static231.aClass89_164 = null;
@@ -1083,7 +1083,7 @@ public final class Static73 {
 											}
 											local1391 = Static212.inboundBuffer.gjstr();
 											if (local220 == 99) {
-												Static158.method2939(local1391);
+												Static158.add(local1391);
 											} else if (local1627.equals("") || !Static105.method2208(local1627)) {
 												Static33.method4199(local3809, local74, local1391, local220, local1627);
 											} else {
@@ -1596,8 +1596,8 @@ public final class Static73 {
 												}
 												local5648[0] = Integer.valueOf(Static212.inboundBuffer.mg4());
 												if (Static378.method6313(local220)) {
-													@Pc(5704) Class2_Sub13 local5704 = new Class2_Sub13();
-													local5704.anObjectArray4 = local5648;
+													@Pc(5704) HookRequest local5704 = new HookRequest();
+													local5704.arguments = local5648;
 													ScriptRunner.method3590(local5704);
 												}
 												Static231.aClass89_164 = null;
@@ -1606,7 +1606,7 @@ public final class Static73 {
 												local220 = Static212.inboundBuffer.g2();
 												local74 = Static212.inboundBuffer.mg4();
 												if (Static378.method6313(local220)) {
-													@Pc(5735) Class2_Sub7 local5735 = (Class2_Sub7) Static329.aClass4_130.get((long) local74);
+													@Pc(5735) SubInterface local5735 = (SubInterface) Static329.subInterfaces.get((long) local74);
 													if (local5735 != null) {
 														Static276.method4654(false, local5735, true);
 													}

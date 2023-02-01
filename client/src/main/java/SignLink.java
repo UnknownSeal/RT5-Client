@@ -241,7 +241,7 @@ public final class SignLink implements Runnable {
 	}
 
 	@OriginalMember(owner = "client!ml", name = "b", descriptor = "(B)V")
-	public void method3759() {
+	public void breakConnection() {
 		Static215.aLong122 = MonotonicClock.currentTimeMillis() + 5000L;
 	}
 

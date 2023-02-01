@@ -32,7 +32,7 @@ public final class Static122 {
 			}
 			@Pc(105) int local105 = local26 + Static301.aComponent_13.scrollX - Static4.anInt88;
 			@Pc(113) int local113 = local30 + Static301.aComponent_13.scrollY - Static100.anInt2111;
-			@Pc(128) Class2_Sub13 local128;
+			@Pc(128) HookRequest local128;
 			if (Static226.aClass119_1.method3304()) {
 				if (Static375.aComponent_14.dragDeadtime < Static129.anInt2458) {
 					@Pc(205) int local205 = local26 - Static168.anInt7248;
@@ -42,23 +42,23 @@ public final class Static122 {
 					}
 				}
 				if (Static375.aComponent_14.onDragStart != null && Static57.aBoolean124) {
-					local128 = new Class2_Sub13();
-					local128.anInt2117 = local113;
-					local128.aComponent_3 = Static375.aComponent_14;
-					local128.anObjectArray4 = Static375.aComponent_14.onDragStart;
-					local128.anInt2116 = local105;
+					local128 = new HookRequest();
+					local128.mouseY = local113;
+					local128.source = Static375.aComponent_14;
+					local128.arguments = Static375.aComponent_14.onDragStart;
+					local128.mouseX = local105;
 					ScriptRunner.method3590(local128);
 				}
 			} else {
 				if (Static57.aBoolean124) {
 					Static207.method3698();
 					if (Static375.aComponent_14.onDragRelease != null) {
-						local128 = new Class2_Sub13();
-						local128.anInt2116 = local105;
-						local128.aComponent_4 = Static182.aComponent_7;
-						local128.aComponent_3 = Static375.aComponent_14;
-						local128.anObjectArray4 = Static375.aComponent_14.onDragRelease;
-						local128.anInt2117 = local113;
+						local128 = new HookRequest();
+						local128.mouseX = local105;
+						local128.target = Static182.aComponent_7;
+						local128.source = Static375.aComponent_14;
+						local128.arguments = Static375.aComponent_14.onDragRelease;
+						local128.mouseY = local113;
 						ScriptRunner.method3590(local128);
 					}
 					if (Static182.aComponent_7 != null && Static45.method1413(Static375.aComponent_14) != null) {

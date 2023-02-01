@@ -5,13 +5,10 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static391 {
 
 	@OriginalMember(owner = "client!wq", name = "c", descriptor = "I")
-	public static int anInt7216;
+	public static int loginScreenID;
 
 	@OriginalMember(owner = "client!wq", name = "j", descriptor = "Lclient!r;")
 	public static Js5 aJs5_95;
-
-	@OriginalMember(owner = "client!wq", name = "m", descriptor = "Lclient!r;")
-	public static Js5 aJs5_96;
 
 	@OriginalMember(owner = "client!wq", name = "h", descriptor = "[I")
 	public static final int[] anIntArray495 = new int[] { 16, 32, 64, 128 };

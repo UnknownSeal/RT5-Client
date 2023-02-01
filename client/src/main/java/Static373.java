@@ -24,13 +24,13 @@ public final class Static373 {
 
 	@OriginalMember(owner = "client!vq", name = "a", descriptor = "(ZIZIZ)V")
 	public static void method6266(@OriginalArg(0) boolean loginScreen, @OriginalArg(1) int arg1, @OriginalArg(2) boolean arg2, @OriginalArg(3) int arg3) {
-		if (!arg2 && Static105.anInt2187 == arg1 && Static9.anInt212 == arg3 && (Static355.anInt6585 == Static44.visibleLevel || Static218.aClass177_Sub1_2.method4494(Static77.anInt1762))) {
+		if (!arg2 && Static105.anInt2187 == arg1 && Static9.anInt212 == arg3 && (Static355.anInt6585 == Static44.visibleLevel || Static218.preferences.method4494(Static77.anInt1762))) {
 			return;
 		}
 		Static44.visibleLevel = Static355.anInt6585;
 		Static105.anInt2187 = arg1;
 		Static9.anInt212 = arg3;
-		if (Static218.aClass177_Sub1_2.method4494(Static77.anInt1762)) {
+		if (Static218.preferences.method4494(Static77.anInt1762)) {
 			Static44.visibleLevel = 0;
 		}
 		if (loginScreen) {

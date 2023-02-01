@@ -72,14 +72,14 @@ public final class Js5NetQueue {
 	}
 
 	@OriginalMember(owner = "client!pp", name = "a", descriptor = "(I)V")
-	public void method4632() {
+	public void breakConnection() {
 		if (this.socket != null) {
-			this.socket.method2801();
+			this.socket.breakConnection();
 		}
 	}
 
 	@OriginalMember(owner = "client!pp", name = "b", descriptor = "(I)V")
-	public void method4634() {
+	public void closeServer() {
 		if (this.socket == null) {
 			return;
 		}
@@ -88,10 +88,10 @@ public final class Js5NetQueue {
 			this.outBuffer.p1(7);
 			this.outBuffer.p3(0);
 			this.socket.write(this.outBuffer.bytes, 4);
-		} catch (@Pc(34) IOException local34) {
+		} catch (@Pc(34) IOException exception) {
 			try {
 				this.socket.close();
-			} catch (@Pc(40) Exception local40) {
+			} catch (@Pc(40) Exception closeException) {
 			}
 			this.response = -2;
 			this.socket = null;
@@ -322,7 +322,7 @@ public final class Js5NetQueue {
 	}
 
 	@OriginalMember(owner = "client!pp", name = "c", descriptor = "(B)V")
-	public void method4642() {
+	public void rekey() {
 		try {
 			this.socket.close();
 		} catch (@Pc(9) Exception local9) {
@@ -339,7 +339,7 @@ public final class Js5NetQueue {
 	}
 
 	@OriginalMember(owner = "client!pp", name = "e", descriptor = "(I)V")
-	public void method4644() {
+	public void quit() {
 		if (this.socket != null) {
 			this.socket.close();
 		}

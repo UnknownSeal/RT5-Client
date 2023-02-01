@@ -8,7 +8,7 @@ public final class Static111 {
 	public static Js5 spritesArchive;
 
 	@OriginalMember(owner = "client!ge", name = "k", descriptor = "Lclient!r;")
-	public static Js5 aJs5_25;
+	public static Js5 instrumentsArchive;
 
 	@OriginalMember(owner = "client!ge", name = "c", descriptor = "I")
 	public static final int anInt2254 = 12;

@@ -4,12 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static85 {
 
-    @OriginalMember(owner = "client!ep", name = "c", descriptor = "Lclient!r;")
-	public static Js5 aJs5_20;
-
-	@OriginalMember(owner = "client!ep", name = "e", descriptor = "Lclient!r;")
-	public static Js5 aJs5_21;
-
 	@OriginalMember(owner = "client!ep", name = "a", descriptor = "[I")
 	public static final int[] anIntArray121 = new int[2048];
 
@@ -21,9 +15,9 @@ public final class Static85 {
 		if (arg1.createdComponent != null) {
 			Static364.method6104(arg0, local24, arg1.id, arg1.createdComponent, local12);
 		}
-		@Pc(57) Class2_Sub7 local57 = (Class2_Sub7) Static329.aClass4_130.get((long) arg1.id);
+		@Pc(57) SubInterface local57 = (SubInterface) Static329.subInterfaces.get((long) arg1.id);
 		if (local57 != null) {
-			Static129.method2435(local24, local57.anInt1370, arg0, local12);
+			Static129.method2435(local24, local57.id, arg0, local12);
 		}
 	}
 }

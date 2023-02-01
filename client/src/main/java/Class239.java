@@ -182,7 +182,7 @@ public final class Class239 {
 						local31 = 174;
 					} else if (local77.startsWith("img=") && arg3 != null) {
 						try {
-							@Pc(286) int local286 = Static146.method2698(local77.substring(4));
+							@Pc(286) int local286 = Static146.parseInt(local77.substring(4));
 							local31 = -1;
 							local50 = arg3[local286].method6398();
 						} catch (@Pc(297) Exception local297) {
@@ -313,7 +313,7 @@ public final class Class239 {
 						if (!local58.equals("reg")) {
 							if (local58.startsWith("img=") && arg0 != null) {
 								try {
-									@Pc(118) int local118 = Static146.method2698(local58.substring(4));
+									@Pc(118) int local118 = Static146.parseInt(local58.substring(4));
 									local23 += arg0[local118].method6398();
 									local21 = -1;
 								} catch (@Pc(129) Exception local129) {

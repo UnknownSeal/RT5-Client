@@ -27,10 +27,4 @@ public final class Static84 {
 		return false;
 	}
 
-	@OriginalMember(owner = "client!eo", name = "a", descriptor = "(ZIIZ)V")
-	public static void method1909(@OriginalArg(3) boolean arg0) {
-		Static354.aBoolean93 = arg0;
-		Static200.anInt3698 = 2;
-		Static356.anInt6643 = 22050;
-	}
 }

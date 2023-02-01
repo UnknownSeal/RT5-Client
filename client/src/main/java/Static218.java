@@ -5,22 +5,22 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static218 {
 
 	@OriginalMember(owner = "client!mo", name = "c", descriptor = "Lclient!pe;")
-	public static Class177_Sub1 aClass177_Sub1_2;
+	public static Preferences preferences;
 
 	@OriginalMember(owner = "client!mo", name = "C", descriptor = "F")
 	public static float aFloat30;
 
 	@OriginalMember(owner = "client!mo", name = "D", descriptor = "I")
-	public static int anInt914 = 0;
+	public static int bufferOffset = 0;
 
 	@OriginalMember(owner = "client!mo", name = "a", descriptor = "(IZLclient!r;)Lclient!vi;")
 	public static Class239 method1088(@OriginalArg(0) int arg0, @OriginalArg(2) Js5 arg1) {
-		@Pc(13) byte[] local13 = arg1.method5081(arg0);
+		@Pc(13) byte[] local13 = arg1.fetchFile(arg0);
 		return local13 == null ? null : new Class239(local13);
 	}
 
 	@OriginalMember(owner = "client!mo", name = "a", descriptor = "(Z)I")
-	public static int method1090() {
+	public static int getTotal() {
 		return 6;
 	}
 

@@ -23,7 +23,7 @@ public final class TextureOpMonochromeFill extends TextureOp {
 
 	@OriginalMember(owner = "client!ae", name = "a", descriptor = "(ILclient!bt;I)V")
 	@Override
-	public void decode(@OriginalArg(0) int opcode, @OriginalArg(1) Buffer buffer) {
+	public void decode(@OriginalArg(1) Buffer buffer, @OriginalArg(0) int opcode) {
 		if (opcode == 0) {
 			this.value = (buffer.g1() << 12) / 255;
 		}

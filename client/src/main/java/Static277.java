@@ -21,7 +21,7 @@ public final class Static277 {
 
 	@OriginalMember(owner = "client!q", name = "a", descriptor = "(IIIIB)V")
 	public static void method4679(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
-		@Pc(12) DelayedStateChange local12 = Static316.create(8, arg2);
+		@Pc(12) DelayedStateChange local12 = DelayedStateChange.create(8, arg2);
 		local12.pushServer();
 		local12.anInt2289 = arg1;
 		local12.anInt2284 = arg3;
@@ -30,16 +30,16 @@ public final class Static277 {
 
 	@OriginalMember(owner = "client!q", name = "a", descriptor = "(IIILjava/lang/String;I)V")
 	public static void method4680(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) String arg2, @OriginalArg(4) int arg3) {
-		@Pc(8) Component local8 = Static207.method3704(arg0, arg3);
+		@Pc(8) Component local8 = Static207.getCreatedComponent(arg0, arg3);
 		if (local8 == null) {
 			return;
 		}
 		if (local8.onOptionClick != null) {
-			@Pc(18) Class2_Sub13 local18 = new Class2_Sub13();
-			local18.anObjectArray4 = local8.onOptionClick;
-			local18.anInt2118 = arg1;
-			local18.aComponent_3 = local8;
-			local18.aString20 = arg2;
+			@Pc(18) HookRequest local18 = new HookRequest();
+			local18.arguments = local8.onOptionClick;
+			local18.op = arg1;
+			local18.source = local8;
+			local18.opBase = arg2;
 			ScriptRunner.method3590(local18);
 		}
 		@Pc(35) boolean local35 = true;

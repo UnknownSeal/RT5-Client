@@ -17,7 +17,7 @@ public final class Static132 {
 	public static boolean aBoolean180 = false;
 
 	@OriginalMember(owner = "client!hk", name = "i", descriptor = "[I")
-	public static final int[] anIntArray162 = new int[100];
+	public static final int[] phraseIDs = new int[100];
 
 	@OriginalMember(owner = "client!hk", name = "j", descriptor = "I")
 	public static int anInt2468 = -2;
@@ -35,7 +35,7 @@ public final class Static132 {
 	}
 
 	@OriginalMember(owner = "client!hk", name = "a", descriptor = "(ZLjava/lang/String;)Z")
-	public static boolean method2485(@OriginalArg(1) String arg0) {
-		return Static340.method5765(arg0);
+	public static boolean isInt(@OriginalArg(1) String s) {
+		return Static340.isIntInternal(s);
 	}
 }

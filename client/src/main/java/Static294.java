@@ -4,16 +4,13 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static294 {
 
-	@OriginalMember(owner = "client!qt", name = "v", descriptor = "Lclient!r;")
-	public static Js5 aJs5_75;
-
 	@OriginalMember(owner = "client!qt", name = "E", descriptor = "Z")
 	public static boolean aBoolean392 = false;
 
 	@OriginalMember(owner = "client!qt", name = "a", descriptor = "(IILclient!r;)Lclient!ne;")
-	public static Class2_Sub25 method5061(@OriginalArg(0) int arg0, @OriginalArg(2) Js5 arg1) {
-		@Pc(15) byte[] local15 = arg1.method5081(arg0);
-		return local15 == null ? null : new Class2_Sub25(local15);
+	public static MidiInstrument method5061(@OriginalArg(0) int arg0, @OriginalArg(2) Js5 arg1) {
+		@Pc(15) byte[] local15 = arg1.fetchFile(arg0);
+		return local15 == null ? null : new MidiInstrument(local15);
 	}
 
 	@OriginalMember(owner = "client!qt", name = "a", descriptor = "(Lclient!bt;II)V")

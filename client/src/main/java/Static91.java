@@ -11,7 +11,7 @@ public final class Static91 {
 	public static Map aMap_1;
 
 	@OriginalMember(owner = "client!f", name = "F", descriptor = "Lclient!od;")
-	public static Class2_Sub12_Sub3 aClass2_Sub12_Sub3_1;
+	public static MidiPcmStream stream;
 
 	@OriginalMember(owner = "client!f", name = "b", descriptor = "Lclient!mc;")
 	public static final Class145 aClass145_69 = new Class145(61, -1);
@@ -27,7 +27,7 @@ public final class Static91 {
 
 	@OriginalMember(owner = "client!f", name = "a", descriptor = "(Lclient!mc;I)V")
 	public static void method1960(@OriginalArg(0) Class145 arg0) {
-		Static257.aClass2_Sub4_Sub2_4.p1isaac(arg0.method3701());
+		Static257.outboundBuffer.p1isaac(arg0.method3701());
 	}
 
 	@OriginalMember(owner = "client!f", name = "a", descriptor = "(B)V")
@@ -69,24 +69,24 @@ public final class Static91 {
 				}
 				Static335.socket = new BufferedSocket((Socket) Static5.sockerRequest.result, GameShell.signlink);
 				Static5.sockerRequest = null;
-				@Pc(105) long local105 = Static241.aLong130 = Static80.method5984(Static374.aString70);
+				@Pc(105) long local105 = Static241.aLong130 = Static80.method5984(Static374.username);
 				local112 = (int) (local105 >> 16 & 0x1FL);
-				Static257.aClass2_Sub4_Sub2_4.offset = 0;
-				Static257.aClass2_Sub4_Sub2_4.p1(Static43.aClass242_1.anInt7038);
-				Static257.aClass2_Sub4_Sub2_4.p1(local112);
-				Static335.socket.write(Static257.aClass2_Sub4_Sub2_4.bytes, 2);
+				Static257.outboundBuffer.offset = 0;
+				Static257.outboundBuffer.p1(Static43.aClass242_1.anInt7038);
+				Static257.outboundBuffer.p1(local112);
+				Static335.socket.write(Static257.outboundBuffer.bytes, 2);
 				if (client.musicChannel != null) {
 					client.musicChannel.method6324();
 				}
-				if (Static190.aAudioChannel_1 != null) {
-					Static190.aAudioChannel_1.method6324();
+				if (client.soundChannel != null) {
+					client.soundChannel.method6324();
 				}
 				@Pc(145) int local145 = Static335.socket.read();
 				if (client.musicChannel != null) {
 					client.musicChannel.method6324();
 				}
-				if (Static190.aAudioChannel_1 != null) {
-					Static190.aAudioChannel_1.method6324();
+				if (client.soundChannel != null) {
+					client.soundChannel.method6324();
 				}
 				if (local145 != 0) {
 					Static347.step = 0;
@@ -111,64 +111,64 @@ public final class Static91 {
 				local208.p4(local211[1]);
 				local208.p4(local211[2]);
 				local208.p4(local211[3]);
-				local208.p8(Static80.method5984(Static374.aString70));
+				local208.p8(Static80.method5984(Static374.username));
 				local208.pjstr(Static16.aString51);
 				local208.rsaenc(Static320.aBigInteger2, Static194.aBigInteger1);
-				Static257.aClass2_Sub4_Sub2_4.offset = 0;
+				Static257.outboundBuffer.offset = 0;
 				if (Static347.anInt6442 == 40) {
-					Static257.aClass2_Sub4_Sub2_4.p1(Static43.aClass242_5.anInt7038);
+					Static257.outboundBuffer.p1(Static43.aClass242_5.anInt7038);
 				} else {
-					Static257.aClass2_Sub4_Sub2_4.p1(Static43.aClass242_3.anInt7038);
+					Static257.outboundBuffer.p1(Static43.aClass242_3.anInt7038);
 				}
-				Static257.aClass2_Sub4_Sub2_4.p2(0);
-				local112 = Static257.aClass2_Sub4_Sub2_4.offset;
-				Static257.aClass2_Sub4_Sub2_4.p4(578);
-				Static257.aClass2_Sub4_Sub2_4.p1(Static202.anInt3714);
-				Static257.aClass2_Sub4_Sub2_4.p1(Static144.method2692());
-				Static257.aClass2_Sub4_Sub2_4.p2(GameShell.canvasWidth);
-				Static257.aClass2_Sub4_Sub2_4.p2(GameShell.canvasHeight);
-				Static257.aClass2_Sub4_Sub2_4.p1(Static218.aClass177_Sub1_2.anInt4885);
-				Static27.method875(Static257.aClass2_Sub4_Sub2_4);
-				Static257.aClass2_Sub4_Sub2_4.pjstr(client.settings);
-				Static257.aClass2_Sub4_Sub2_4.p4(Static165.anInt3149);
-				@Pc(354) Buffer local354 = Static218.aClass177_Sub1_2.method4493();
-				Static257.aClass2_Sub4_Sub2_4.p1(local354.offset);
-				Static257.aClass2_Sub4_Sub2_4.pdata(local354.bytes, local354.offset);
+				Static257.outboundBuffer.p2(0);
+				local112 = Static257.outboundBuffer.offset;
+				Static257.outboundBuffer.p4(578);
+				Static257.outboundBuffer.p1(Static202.anInt3714);
+				Static257.outboundBuffer.p1(Static144.getWindowMode());
+				Static257.outboundBuffer.p2(GameShell.canvasWidth);
+				Static257.outboundBuffer.p2(GameShell.canvasHeight);
+				Static257.outboundBuffer.p1(Static218.preferences.anInt4885);
+				Static27.method875(Static257.outboundBuffer);
+				Static257.outboundBuffer.pjstr(client.settings);
+				Static257.outboundBuffer.p4(Static165.anInt3149);
+				@Pc(354) Buffer local354 = Static218.preferences.method4493();
+				Static257.outboundBuffer.p1(local354.offset);
+				Static257.outboundBuffer.pdata(local354.bytes, local354.offset);
 				Static236.sentToServer = true;
-				Static257.aClass2_Sub4_Sub2_4.p2(Static292.anInt5510);
-				Static257.aClass2_Sub4_Sub2_4.p4(Static342.aJs5_77.getChecksum());
-				Static257.aClass2_Sub4_Sub2_4.p4(Static34.aJs5_67.getChecksum());
-				Static257.aClass2_Sub4_Sub2_4.p4(Static289.aJs5_71.getChecksum());
-				Static257.aClass2_Sub4_Sub2_4.p4(Static354.aJs5_9.getChecksum());
-				Static257.aClass2_Sub4_Sub2_4.p4(Static85.aJs5_21.getChecksum());
-				Static257.aClass2_Sub4_Sub2_4.p4(Static288.js5Archive5.getChecksum());
-				Static257.aClass2_Sub4_Sub2_4.p4(Static101.aJs5_23.getChecksum());
-				Static257.aClass2_Sub4_Sub2_4.p4(Static237.aJs5_63.getChecksum());
-				Static257.aClass2_Sub4_Sub2_4.p4(Static30.aJs5_5.getChecksum());
-				Static257.aClass2_Sub4_Sub2_4.p4(Static324.aJs5_86.getChecksum());
-				Static257.aClass2_Sub4_Sub2_4.p4(Static75.aJs5_18.getChecksum());
-				Static257.aClass2_Sub4_Sub2_4.p4(Static216.aJs5_58.getChecksum());
-				Static257.aClass2_Sub4_Sub2_4.p4(Static195.aJs5_54.getChecksum());
-				Static257.aClass2_Sub4_Sub2_4.p4(Static255.aJs5_64.getChecksum());
-				Static257.aClass2_Sub4_Sub2_4.p4(Static133.aJs5_32.getChecksum());
-				Static257.aClass2_Sub4_Sub2_4.p4(Static120.aJs5_28.getChecksum());
-				Static257.aClass2_Sub4_Sub2_4.p4(Static391.aJs5_96.getChecksum());
-				Static257.aClass2_Sub4_Sub2_4.p4(Static226.aJs5_61.getChecksum());
-				Static257.aClass2_Sub4_Sub2_4.p4(Static216.aJs5_57.getChecksum());
-				Static257.aClass2_Sub4_Sub2_4.p4(Static61.aJs5_12.getChecksum());
-				Static257.aClass2_Sub4_Sub2_4.p4(Static139.aJs5_35.getChecksum());
-				Static257.aClass2_Sub4_Sub2_4.p4(Static173.aJs5_45.getChecksum());
-				Static257.aClass2_Sub4_Sub2_4.p4(Static294.aJs5_75.getChecksum());
-				Static257.aClass2_Sub4_Sub2_4.p4(Static389.aJs5_66.getChecksum());
-				Static257.aClass2_Sub4_Sub2_4.p4(Static385.aJs5_94.getChecksum());
-				Static257.aClass2_Sub4_Sub2_4.p4(Static139.aJs5_34.getChecksum());
-				Static257.aClass2_Sub4_Sub2_4.p4(Static235.aJs5_47.getChecksum());
-				Static257.aClass2_Sub4_Sub2_4.p4(Static61.aJs5_11.getChecksum());
-				Static257.aClass2_Sub4_Sub2_4.p4(Static85.aJs5_20.getChecksum());
-				Static257.aClass2_Sub4_Sub2_4.pdata(local208.bytes, local208.offset);
-				Static257.aClass2_Sub4_Sub2_4.psize2(Static257.aClass2_Sub4_Sub2_4.offset - local112);
-				Static335.socket.write(Static257.aClass2_Sub4_Sub2_4.bytes, Static257.aClass2_Sub4_Sub2_4.offset);
-				Static257.aClass2_Sub4_Sub2_4.initIsaac(local211);
+				Static257.outboundBuffer.p2(Static292.anInt5510);
+				Static257.outboundBuffer.p4(client.js5Archive0.getChecksum());
+				Static257.outboundBuffer.p4(client.js5Archive1.getChecksum());
+				Static257.outboundBuffer.p4(client.js5Archive2.getChecksum());
+				Static257.outboundBuffer.p4(client.js5Archive3.getChecksum());
+				Static257.outboundBuffer.p4(client.js5Archive4.getChecksum());
+				Static257.outboundBuffer.p4(client.js5Archive5.getChecksum());
+				Static257.outboundBuffer.p4(client.js5Archive6.getChecksum());
+				Static257.outboundBuffer.p4(client.js5Archive7.getChecksum());
+				Static257.outboundBuffer.p4(client.js5Archive8.getChecksum());
+				Static257.outboundBuffer.p4(client.js5Archive9.getChecksum());
+				Static257.outboundBuffer.p4(client.js5Archive10.getChecksum());
+				Static257.outboundBuffer.p4(client.js5Archive11.getChecksum());
+				Static257.outboundBuffer.p4(client.js5Archive12.getChecksum());
+				Static257.outboundBuffer.p4(client.js5Archive13.getChecksum());
+				Static257.outboundBuffer.p4(client.js5Archive14.getChecksum());
+				Static257.outboundBuffer.p4(client.js5Archive15.getChecksum());
+				Static257.outboundBuffer.p4(client.js5Archive16.getChecksum());
+				Static257.outboundBuffer.p4(client.js5Archive17.getChecksum());
+				Static257.outboundBuffer.p4(client.js5Archive18.getChecksum());
+				Static257.outboundBuffer.p4(client.js5Archive19.getChecksum());
+				Static257.outboundBuffer.p4(client.js5Archive20.getChecksum());
+				Static257.outboundBuffer.p4(client.js5Archive21.getChecksum());
+				Static257.outboundBuffer.p4(client.js5Archive22.getChecksum());
+				Static257.outboundBuffer.p4(client.js5Archive23.getChecksum());
+				Static257.outboundBuffer.p4(client.js5Archive24.getChecksum());
+				Static257.outboundBuffer.p4(client.js5Archive25.getChecksum());
+				Static257.outboundBuffer.p4(client.js5Archive26.getChecksum());
+				Static257.outboundBuffer.p4(client.js5Archive27.getChecksum());
+				Static257.outboundBuffer.p4(client.js5Archive28.getChecksum());
+				Static257.outboundBuffer.pdata(local208.bytes, local208.offset);
+				Static257.outboundBuffer.psize2(Static257.outboundBuffer.offset - local112);
+				Static335.socket.write(Static257.outboundBuffer.bytes, Static257.outboundBuffer.offset);
+				Static257.outboundBuffer.initIsaac(local211);
 				for (@Pc(579) int local579 = 0; local579 < 4; local579++) {
 					local211[local579] += 50;
 				}
@@ -210,9 +210,9 @@ public final class Static91 {
 				}
 			}
 			if (Static347.step == 6) {
-				Static257.aClass2_Sub4_Sub2_4.offset = 0;
-				Static257.aClass2_Sub4_Sub2_4.p1isaac(Static43.aClass242_4.anInt7038);
-				Static335.socket.write(Static257.aClass2_Sub4_Sub2_4.bytes, Static257.aClass2_Sub4_Sub2_4.offset);
+				Static257.outboundBuffer.offset = 0;
+				Static257.outboundBuffer.p1isaac(Static43.aClass242_4.anInt7038);
+				Static335.socket.write(Static257.outboundBuffer.bytes, Static257.outboundBuffer.offset);
 				Static347.step = 4;
 			} else if (Static347.step == 7) {
 				if (Static335.socket.available() >= 1) {

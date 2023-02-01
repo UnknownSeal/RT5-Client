@@ -43,8 +43,8 @@ public final class Static115 {
 	public static void method3840(@OriginalArg(0) String arg0) {
 		if (!arg0.equals("")) {
 			Static91.method1960(Static13.aClass145_18);
-			Static257.aClass2_Sub4_Sub2_4.p1(Static27.method872(arg0));
-			Static257.aClass2_Sub4_Sub2_4.pjstr(arg0);
+			Static257.outboundBuffer.p1(Static27.method872(arg0));
+			Static257.outboundBuffer.pjstr(arg0);
 		}
 	}
 
@@ -57,16 +57,16 @@ public final class Static115 {
 					if (local9.createdComponent != null) {
 						method3846(arg0, local9.createdComponent);
 					}
-					@Pc(30) Class2_Sub7 local30 = (Class2_Sub7) Static329.aClass4_130.get((long) local9.id);
+					@Pc(30) SubInterface local30 = (SubInterface) Static329.subInterfaces.get((long) local9.id);
 					if (local30 != null) {
-						Static392.method6459(local30.anInt1370, arg0);
+						Static392.method6459(local30.id, arg0);
 					}
 				}
-				@Pc(49) Class2_Sub13 local49;
+				@Pc(49) HookRequest local49;
 				if (arg0 == 0 && local9.onDialogAbort != null) {
-					local49 = new Class2_Sub13();
-					local49.aComponent_3 = local9;
-					local49.anObjectArray4 = local9.onDialogAbort;
+					local49 = new HookRequest();
+					local49.source = local9;
+					local49.arguments = local9.onDialogAbort;
 					ScriptRunner.method3590(local49);
 				}
 				if (arg0 == 1 && local9.onWidgetsOpenClose != null) {
@@ -76,9 +76,9 @@ public final class Static115 {
 							continue;
 						}
 					}
-					local49 = new Class2_Sub13();
-					local49.anObjectArray4 = local9.onWidgetsOpenClose;
-					local49.aComponent_3 = local9;
+					local49 = new HookRequest();
+					local49.arguments = local9.onWidgetsOpenClose;
+					local49.source = local9;
 					ScriptRunner.method3590(local49);
 				}
 			}

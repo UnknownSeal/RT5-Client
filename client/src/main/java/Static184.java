@@ -14,8 +14,8 @@ public final class Static184 {
 	public static int anInt3436 = -1;
 
 	@OriginalMember(owner = "client!km", name = "a", descriptor = "(I)I")
-	public static int method3390() {
-		return Static153.anInt2794;
+	public static int getParticles() {
+		return Preferences.particles;
 	}
 
 	@OriginalMember(owner = "client!km", name = "a", descriptor = "(ZLclient!nh;I)V")

@@ -25,7 +25,7 @@ public final class Static17 {
 
 	@OriginalMember(owner = "client!at", name = "a", descriptor = "(BII)V")
 	public static void method4207(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
-		@Pc(8) DelayedStateChange local8 = Static316.create(7, arg0);
+		@Pc(8) DelayedStateChange local8 = DelayedStateChange.create(7, arg0);
 		local8.pushServer();
 		local8.anInt2289 = arg1;
 	}
@@ -151,12 +151,6 @@ public final class Static17 {
 		} else {
 			return Class.forName(name);
 		}
-	}
-
-	@OriginalMember(owner = "client!at", name = "a", descriptor = "(II)V")
-	public static void method4212(@OriginalArg(1) int arg0) {
-		@Pc(8) DelayedStateChange local8 = Static316.create(4, arg0);
-		local8.pushClient();
 	}
 
 	@OriginalMember(owner = "client!at", name = "c", descriptor = "(B)Lclient!wj;")

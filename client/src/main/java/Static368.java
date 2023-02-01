@@ -16,8 +16,8 @@ public final class Static368 {
 
 	@OriginalMember(owner = "client!vl", name = "g", descriptor = "(I)V")
 	public static void method6191() {
-		Static91.aClass2_Sub12_Sub3_1.method4273();
-		Static116.aJs5_26 = null;
-		Static235.anInt3365 = 1;
+		Static91.stream.method4273();
+		Static116.songArchive = null;
+		Static235.state = 1;
 	}
 }

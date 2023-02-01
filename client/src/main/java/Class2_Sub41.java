@@ -55,7 +55,7 @@ public final class Class2_Sub41 extends Node {
 				local70 = local87.method4234(local81) | false;
 				local79 = arg4.aBoolean263 | false;
 			}
-			if ((arg4.aBoolean264 || Static318.aBoolean408) && arg5 != -1 && arg4.anIntArray262.length > arg5) {
+			if ((arg4.aBoolean264 || Static318.forceTween) && arg5 != -1 && arg4.anIntArray262.length > arg5) {
 				local85 = arg4.anIntArray261[arg0];
 				local83 = arg4.anIntArray262[arg5];
 				@Pc(166) int local166 = local83 >>> 16;
@@ -131,7 +131,7 @@ public final class Class2_Sub41 extends Node {
 			if (arg6 != null) {
 				for (local354 = 0; local354 < 5; local354++) {
 					if (arg6.anIntArray194[local354] < Static353.aShortArrayArray7[local354].length) {
-						local7.method3837(Static10.aShortArray1[local354], Static353.aShortArrayArray7[local354][arg6.anIntArray194[local354]]);
+						local7.method3837(Static10.sourceBodyColors[local354], Static353.aShortArrayArray7[local354][arg6.anIntArray194[local354]]);
 					}
 					if (arg6.anIntArray194[local354] < Static186.aShortArrayArray6[local354].length) {
 						local7.method3837(Static43.aShortArray20[local354], Static186.aShortArrayArray6[local354][arg6.anIntArray194[local354]]);

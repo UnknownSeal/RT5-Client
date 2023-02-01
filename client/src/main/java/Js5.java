@@ -15,7 +15,7 @@ public final class Js5 {
 	private Object[][] unpacked;
 
 	@OriginalMember(owner = "client!r", name = "h", descriptor = "Lclient!ra;")
-	private Class198 index = null;
+	private Js5Index index = null;
 
 	@OriginalMember(owner = "client!r", name = "g", descriptor = "Lclient!di;")
 	private final Js5ResourceProvider provider;
@@ -34,9 +34,9 @@ public final class Js5 {
 	}
 
 	@OriginalMember(owner = "client!r", name = "a", descriptor = "(BI)I")
-	private int method5066(@OriginalArg(1) int arg0) {
-		if (this.isGroupValid(arg0)) {
-			return this.packed[arg0] == null ? this.provider.method887(arg0) : 100;
+	private int getPercentageComplete(@OriginalArg(1) int group) {
+		if (this.isGroupValid(group)) {
+			return this.packed[group] == null ? this.provider.getPercentageComplete(group) : 100;
 		} else {
 			return 0;
 		}
@@ -65,14 +65,14 @@ public final class Js5 {
 	}
 
 	@OriginalMember(owner = "client!r", name = "a", descriptor = "(ZIZ)V")
-	public void method5069(@OriginalArg(2) boolean arg0) {
+	public void discardNames(@OriginalArg(2) boolean groups) {
 		if (!this.isIndexReady()) {
 			return;
 		}
-		this.index.aClass167Array1 = null;
-		this.index.anIntArrayArray47 = null;
-		if (arg0) {
-			this.index.anIntArray379 = null;
+		this.index.fileNameHashTables = null;
+		this.index.fileNameHashes = null;
+		if (groups) {
+			this.index.groupNameHashes = null;
 			this.index.gruopNameHashTable = null;
 		}
 	}
@@ -101,21 +101,21 @@ public final class Js5 {
 	}
 
 	@OriginalMember(owner = "client!r", name = "a", descriptor = "(I)Z")
-	public boolean method5072() {
+	public boolean fetchAll() {
 		if (!this.isIndexReady()) {
 			return false;
 		}
-		@Pc(13) boolean local13 = true;
-		for (@Pc(15) int local15 = 0; local15 < this.index.anIntArray380.length; local15++) {
-			@Pc(23) int local23 = this.index.anIntArray380[local15];
-			if (this.packed[local23] == null) {
-				this.fetchGroup(local23);
-				if (this.packed[local23] == null) {
-					local13 = false;
+		@Pc(13) boolean success = true;
+		for (@Pc(15) int i = 0; i < this.index.groupIDs.length; i++) {
+			@Pc(23) int groupID = this.index.groupIDs[i];
+			if (this.packed[groupID] == null) {
+				this.fetchGroup(groupID);
+				if (this.packed[groupID] == null) {
+					success = false;
 				}
 			}
 		}
-		return local13;
+		return success;
 	}
 
 	@OriginalMember(owner = "client!r", name = "a", descriptor = "(BII[I)Z")
@@ -370,15 +370,15 @@ public final class Js5 {
 	}
 
 	@OriginalMember(owner = "client!r", name = "a", descriptor = "(II)[B")
-	public byte[] method5081(@OriginalArg(0) int arg0) {
+	public byte[] fetchFile(@OriginalArg(0) int id) {
 		if (!this.isIndexReady()) {
 			return null;
 		} else if (this.index.groupCapacities.length == 1) {
-			return this.fetchFile(0, arg0);
-		} else if (!this.isGroupValid(arg0)) {
+			return this.fetchFile(0, id);
+		} else if (!this.isGroupValid(id)) {
 			return null;
-		} else if (this.index.groupCapacities[arg0] == 1) {
-			return this.fetchFile(arg0, 0);
+		} else if (this.index.groupCapacities[id] == 1) {
+			return this.fetchFile(id, 0);
 		} else {
 			throw new RuntimeException();
 		}
@@ -390,16 +390,16 @@ public final class Js5 {
 	}
 
 	@OriginalMember(owner = "client!r", name = "a", descriptor = "(Ljava/lang/String;Ljava/lang/String;I)[B")
-	public byte[] method5083(@OriginalArg(0) String arg0, @OriginalArg(1) String arg1) {
+	public byte[] fetchFile(@OriginalArg(0) String group, @OriginalArg(1) String file) {
 		if (!this.isIndexReady()) {
 			return null;
 		}
-		@Pc(12) String local12 = arg0.toLowerCase();
-		@Pc(15) String local15 = arg1.toLowerCase();
-		@Pc(28) int local28 = this.index.gruopNameHashTable.get(Static278.hashCode(local12));
-		if (this.isGroupValid(local28)) {
-			@Pc(46) int local46 = this.index.aClass167Array1[local28].get(Static278.hashCode(local15));
-			return this.fetchFile(local28, local46);
+		@Pc(12) String groupLowercase = group.toLowerCase();
+		@Pc(15) String fileLowercase = file.toLowerCase();
+		@Pc(28) int groupID = this.index.gruopNameHashTable.get(Static278.hashCode(groupLowercase));
+		if (this.isGroupValid(groupID)) {
+			@Pc(46) int fileID = this.index.fileNameHashTables[groupID].get(Static278.hashCode(fileLowercase));
+			return this.fetchFile(groupID, fileID);
 		} else {
 			return null;
 		}
@@ -410,7 +410,7 @@ public final class Js5 {
 		if (this.isIndexReady()) {
 			@Pc(12) String local12 = arg0.toLowerCase();
 			@Pc(21) int local21 = this.index.gruopNameHashTable.get(Static278.hashCode(local12));
-			return this.method5066(local21);
+			return this.getPercentageComplete(local21);
 		} else {
 			return 0;
 		}
@@ -419,40 +419,40 @@ public final class Js5 {
 	@OriginalMember(owner = "client!r", name = "b", descriptor = "(B)Z")
 	private boolean isIndexReady() {
 		if (this.index == null) {
-			this.index = this.provider.method884();
+			this.index = this.provider.fetchIndex();
 			if (this.index == null) {
 				return false;
 			}
-			this.packed = new Object[this.index.anInt5592];
-			this.unpacked = new Object[this.index.anInt5592][];
+			this.packed = new Object[this.index.capacity];
+			this.unpacked = new Object[this.index.capacity][];
 		}
 		return true;
 	}
 
 	@OriginalMember(owner = "client!r", name = "d", descriptor = "(BI)Z")
-	public boolean method5086(@OriginalArg(1) int arg0) {
+	public boolean isFileReady(@OriginalArg(1) int id) {
 		if (!this.isIndexReady()) {
 			return false;
 		} else if (this.index.groupCapacities.length == 1) {
-			return this.method5087(arg0, 0);
-		} else if (!this.isGroupValid(arg0)) {
+			return this.isFileReady(0, id);
+		} else if (!this.isGroupValid(id)) {
 			return false;
-		} else if (this.index.groupCapacities[arg0] == 1) {
-			return this.method5087(0, arg0);
+		} else if (this.index.groupCapacities[id] == 1) {
+			return this.isFileReady(id, 0);
 		} else {
 			throw new RuntimeException();
 		}
 	}
 
 	@OriginalMember(owner = "client!r", name = "b", descriptor = "(III)Z")
-	public boolean method5087(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
-		if (!this.isFileValid(arg1, arg0)) {
+	public boolean isFileReady(@OriginalArg(2) int group, @OriginalArg(0) int file) {
+		if (!this.isFileValid(group, file)) {
 			return false;
-		} else if (this.unpacked[arg1] != null && this.unpacked[arg1][arg0] != null) {
+		} else if (this.unpacked[group] != null && this.unpacked[group][file] != null) {
 			return true;
-		} else if (this.packed[arg1] == null) {
-			this.fetchGroup(arg1);
-			return this.packed[arg1] != null;
+		} else if (this.packed[group] == null) {
+			this.fetchGroup(group);
+			return this.packed[group] != null;
 		} else {
 			return true;
 		}
@@ -473,22 +473,22 @@ public final class Js5 {
 	}
 
 	@OriginalMember(owner = "client!r", name = "d", descriptor = "(B)I")
-	public int method5090() {
+	public int getPercentageComplete() {
 		if (!this.isIndexReady()) {
 			return 0;
 		}
-		@Pc(13) int local13 = 0;
-		@Pc(23) int local23 = 0;
-		for (@Pc(25) int local25 = 0; local25 < this.packed.length; local25++) {
-			if (this.index.anIntArray376[local25] > 0) {
-				local13 += 100;
-				local23 += this.method5066(local25);
+		@Pc(13) int total = 0;
+		@Pc(23) int complete = 0;
+		for (@Pc(25) int i = 0; i < this.packed.length; i++) {
+			if (this.index.anIntArray376[i] > 0) {
+				total += 100;
+				complete += this.getPercentageComplete(i);
 			}
 		}
-		if (local13 == 0) {
+		if (total == 0) {
 			return 100;
 		} else {
-			return local23 * 100 / local13;
+			return complete * 100 / total;
 		}
 	}
 
@@ -515,16 +515,16 @@ public final class Js5 {
 	}
 
 	@OriginalMember(owner = "client!r", name = "a", descriptor = "(Ljava/lang/String;Ljava/lang/String;Z)Z")
-	public boolean method5097(@OriginalArg(0) String arg0, @OriginalArg(1) String arg1) {
+	public boolean isFileReady(@OriginalArg(0) String group, @OriginalArg(1) String file) {
 		if (!this.isIndexReady()) {
 			return false;
 		}
-		@Pc(12) String local12 = arg0.toLowerCase();
-		@Pc(15) String local15 = arg1.toLowerCase();
-		@Pc(24) int local24 = this.index.gruopNameHashTable.get(Static278.hashCode(local12));
-		if (this.isGroupValid(local24)) {
-			@Pc(47) int local47 = this.index.aClass167Array1[local24].get(Static278.hashCode(local15));
-			return this.method5087(local47, local24);
+		@Pc(12) String groupLowercase = group.toLowerCase();
+		@Pc(15) String fileLowercase = file.toLowerCase();
+		@Pc(24) int groupID = this.index.gruopNameHashTable.get(Static278.hashCode(groupLowercase));
+		if (this.isGroupValid(groupID)) {
+			@Pc(47) int fileID = this.index.fileNameHashTables[groupID].get(Static278.hashCode(fileLowercase));
+			return this.isFileReady(groupID, fileID);
 		} else {
 			return false;
 		}

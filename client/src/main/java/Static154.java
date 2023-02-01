@@ -14,7 +14,7 @@ public final class Static154 {
 	public static int anInt2806 = 0;
 
 	@OriginalMember(owner = "client!is", name = "k", descriptor = "I")
-	public static int anInt2807 = 0;
+	public static int rectDebug = 0;
 
 	@OriginalMember(owner = "client!is", name = "m", descriptor = "J")
 	public static long aLong89 = 0L;
@@ -40,7 +40,7 @@ public final class Static154 {
 		for (@Pc(16) Class2_Sub19 local16 = (Class2_Sub19) Static363.A_LINKED_LIST___39.head(); local16 != null; local16 = (Class2_Sub19) Static363.A_LINKED_LIST___39.next()) {
 			if (local16.aClass11_Sub5_Sub2_Sub2_1 == arg0) {
 				if (local16.aClass2_Sub12_Sub4_3 != null) {
-					Static227.aClass2_Sub12_Sub2_2.method2081(local16.aClass2_Sub12_Sub4_3);
+					client.soundStream.method2081(local16.aClass2_Sub12_Sub4_3);
 					local16.aClass2_Sub12_Sub4_3 = null;
 				}
 				local16.unlink();

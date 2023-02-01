@@ -82,16 +82,16 @@ public final class Static164 {
 					return;
 				}
 				Static154.anInt2803 = 1;
-				if (Static392.anInt7225 == Static278.anInt5154) {
-					Static278.anInt5154 = Static35.anInt920;
+				if (client.worldListDefaultPort == client.worldListPort) {
+					client.worldListPort = client.worldListAlternatePort;
 				} else {
-					Static278.anInt5154 = Static392.anInt7225;
+					client.worldListPort = client.worldListDefaultPort;
 				}
 				Static60.anInt666++;
 				Static193.anInt3557 = 0;
 			}
 			if (Static154.anInt2803 == 1) {
-				Static5.sockerRequest = GameShell.signlink.openSocket(Static61.aString14, Static278.anInt5154);
+				Static5.sockerRequest = GameShell.signlink.openSocket(client.worldListHostname, client.worldListPort);
 				Static154.anInt2803 = 2;
 			}
 			@Pc(125) int local125;
@@ -104,19 +104,19 @@ public final class Static164 {
 				}
 				Static335.socket = new BufferedSocket((Socket) Static5.sockerRequest.result, GameShell.signlink);
 				Static5.sockerRequest = null;
-				Static335.socket.write(Static257.aClass2_Sub4_Sub2_4.bytes, Static257.aClass2_Sub4_Sub2_4.offset);
+				Static335.socket.write(Static257.outboundBuffer.bytes, Static257.outboundBuffer.offset);
 				if (client.musicChannel != null) {
 					client.musicChannel.method6324();
 				}
-				if (Static190.aAudioChannel_1 != null) {
-					Static190.aAudioChannel_1.method6324();
+				if (client.soundChannel != null) {
+					client.soundChannel.method6324();
 				}
 				local125 = Static335.socket.read();
 				if (client.musicChannel != null) {
 					client.musicChannel.method6324();
 				}
-				if (Static190.aAudioChannel_1 != null) {
-					Static190.aAudioChannel_1.method6324();
+				if (client.soundChannel != null) {
+					client.soundChannel.method6324();
 				}
 				if (local125 != 101) {
 					Static41.reply = local125;
@@ -153,10 +153,10 @@ public final class Static164 {
 			} else {
 				Static154.anInt2803 = 1;
 				Static193.anInt3557 = 0;
-				if (Static278.anInt5154 == Static392.anInt7225) {
-					Static278.anInt5154 = Static35.anInt920;
+				if (client.worldListPort == client.worldListDefaultPort) {
+					client.worldListPort = client.worldListAlternatePort;
 				} else {
-					Static278.anInt5154 = Static392.anInt7225;
+					client.worldListPort = client.worldListDefaultPort;
 				}
 				Static60.anInt666++;
 			}

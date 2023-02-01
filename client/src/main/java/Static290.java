@@ -8,7 +8,7 @@ public final class Static290 {
 	public static Class22 aClass22_3;
 
 	@OriginalMember(owner = "client!qp", name = "a", descriptor = "I")
-	public static int anInt5496 = 0;
+	public static int bufferLength = 0;
 
 	@OriginalMember(owner = "client!qp", name = "c", descriptor = "I")
 	public static int anInt5498 = -1;
@@ -21,7 +21,7 @@ public final class Static290 {
 
 	@OriginalMember(owner = "client!qp", name = "a", descriptor = "(II)V")
 	public static void method5022(@OriginalArg(0) int arg0) {
-		@Pc(8) DelayedStateChange local8 = Static316.create(2, arg0);
+		@Pc(8) DelayedStateChange local8 = DelayedStateChange.create(2, arg0);
 		local8.pushClient();
 	}
 
@@ -44,14 +44,14 @@ public final class Static290 {
 	@OriginalMember(owner = "client!qp", name = "b", descriptor = "(I)V")
 	public static void method5025() {
 		Static91.method1960(Static13.aClass145_18);
-		Static257.aClass2_Sub4_Sub2_4.p1(0);
+		Static257.outboundBuffer.p1(0);
 	}
 
 	@OriginalMember(owner = "client!qp", name = "a", descriptor = "(ILclient!bt;)Lclient!gr;")
-	public static Class86 method5026(@OriginalArg(1) Buffer arg0) {
-		@Pc(15) Class86 local15 = new Class86();
-		local15.anInt2377 = arg0.g2();
-		local15.aQuickChatPhraseType_1 = Static146.get(local15.anInt2377);
+	public static QuickChatPhrase method5026(@OriginalArg(1) Buffer arg0) {
+		@Pc(15) QuickChatPhrase local15 = new QuickChatPhrase();
+		local15.id = arg0.g2();
+		local15.type = Static146.get(local15.id);
 		return local15;
 	}
 }

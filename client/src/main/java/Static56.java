@@ -35,17 +35,6 @@ public final class Static56 {
 		Static50.method1530();
 	}
 
-	@OriginalMember(owner = "client!dd", name = "a", descriptor = "(ILclient!ll;)V")
-	public static void method1613(@OriginalArg(1) Class2_Sub12 arg0) {
-		arg0.aBoolean389 = false;
-		if (arg0.aClass2_Sub21_5 != null) {
-			arg0.aClass2_Sub21_5.anInt3175 = 0;
-		}
-		for (@Pc(23) Class2_Sub12 local23 = arg0.method4977(); local23 != null; local23 = arg0.method4971()) {
-			method1613(local23);
-		}
-	}
-
 	@OriginalMember(owner = "client!dd", name = "a", descriptor = "(I)V")
 	public static void method1614() {
 		if (Static18.aPrivelegedRequest_2 == null) {
@@ -81,7 +70,7 @@ public final class Static56 {
 				@Pc(133) int local133 = Static340.method5763(local33.aClass11_Sub5_Sub2_Sub2_1);
 				if (local133 != local33.anInt2894) {
 					if (local33.aClass2_Sub12_Sub4_3 != null) {
-						Static227.aClass2_Sub12_Sub2_2.method2081(local33.aClass2_Sub12_Sub4_3);
+						client.soundStream.method2081(local33.aClass2_Sub12_Sub4_3);
 						local33.aClass2_Sub12_Sub4_3 = null;
 					}
 					local33.anInt2894 = local133;
@@ -108,7 +97,7 @@ public final class Static56 {
 				@Pc(300) int local300 = Static384.method6414(local208.aClass11_Sub5_Sub2_Sub1_2);
 				if (local300 != local208.anInt2894) {
 					if (local208.aClass2_Sub12_Sub4_3 != null) {
-						Static227.aClass2_Sub12_Sub2_2.method2081(local208.aClass2_Sub12_Sub4_3);
+						client.soundStream.method2081(local208.aClass2_Sub12_Sub4_3);
 						local208.aClass2_Sub12_Sub4_3 = null;
 					}
 					local208.anInt2894 = local300;

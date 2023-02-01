@@ -46,7 +46,7 @@ public final class Class11_Sub5_Sub1 extends Class11_Sub5 implements Interface6 
 		this.aBoolean154 = arg7;
 		this.aShort34 = (short) arg1.anInt1351;
 		this.aByte24 = (byte) arg13;
-		this.aBoolean155 = arg0.method2878() && arg1.aBoolean110 && !this.aBoolean154 && Static218.aClass177_Sub1_2.anInt4886 != 0;
+		this.aBoolean155 = arg0.method2878() && arg1.aBoolean110 && !this.aBoolean154 && Static218.preferences.sceneryShadows != 0;
 		@Pc(77) int local77 = 1024;
 		if (this.aBoolean153) {
 			local77 |= 0x8000;

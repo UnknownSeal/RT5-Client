@@ -27,7 +27,7 @@ public final class Static242 {
 		}
 		@Pc(21) Class13 local21 = (Class13) Static61.A_SOFT_LRU_HASH_TABLE___5.get((long) local7);
 		if (local21 == null) {
-			@Pc(28) SoftwareSprite[] local28 = Static396.method1688(Static30.aJs5_5, local7);
+			@Pc(28) SoftwareSprite[] local28 = Static396.method1688(client.js5Archive8, local7);
 			if (local28 == null) {
 				return;
 			}

@@ -151,16 +151,16 @@ public final class Static178 {
 	@OriginalMember(owner = "client!kf", name = "b", descriptor = "(I)V")
 	public static void method2342() {
 		if (client.musicChannel != null) {
-			client.musicChannel.method6325();
+			client.musicChannel.quit();
 		}
-		if (Static190.aAudioChannel_1 != null) {
-			Static190.aAudioChannel_1.method6325();
+		if (client.soundChannel != null) {
+			client.soundChannel.quit();
 		}
-		Static84.method1909(Static218.aClass177_Sub1_2.aBoolean352);
-		client.musicChannel = Static381.method6346(0, GameShell.signlink, GameShell.canvas, 22050);
-		client.musicChannel.method6329(Static385.aClass2_Sub12_Sub3_3);
-		Static190.aAudioChannel_1 = Static381.method6346(1, GameShell.signlink, GameShell.canvas, 2048);
-		Static190.aAudioChannel_1.method6329(Static227.aClass2_Sub12_Sub2_2);
+		AudioChannel.init(Static218.preferences.stereo);
+		client.musicChannel = AudioChannel.create(GameShell.signlink, GameShell.canvas, 0, 22050);
+		client.musicChannel.setStream(client.musicStream);
+		client.soundChannel = AudioChannel.create(GameShell.signlink, GameShell.canvas, 1, 2048);
+		client.soundChannel.setStream(client.soundStream);
 	}
 
 	@OriginalMember(owner = "client!kf", name = "a", descriptor = "(III)Ljava/lang/String;")

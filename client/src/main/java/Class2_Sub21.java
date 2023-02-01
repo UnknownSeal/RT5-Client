@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public abstract class Class2_Sub21 extends Node {
 
 	@OriginalMember(owner = "client!ls", name = "s", descriptor = "I")
-	public int anInt3175;
+	public int offset;
 
 	@OriginalMember(owner = "client!ls", name = "<init>", descriptor = "()V")
 	protected Class2_Sub21() {

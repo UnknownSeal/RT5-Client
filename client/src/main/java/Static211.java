@@ -42,8 +42,8 @@ public final class Static211 {
 		Static91.method1962();
 		Static71.method6020();
 		if (Static189.aClass127_6 != Static121.aClass127_4) {
-			for (@Pc(80) int local80 = 0; local80 < Static26.aByteArrayArray3.length; local80++) {
-				Static26.aByteArrayArray3[local80] = null;
+			for (@Pc(80) int local80 = 0; local80 < Static26.fakeModelCacheEntries.length; local80++) {
+				Static26.fakeModelCacheEntries[local80] = null;
 			}
 			Static50.anInt1332 = 0;
 		}
@@ -54,37 +54,37 @@ public final class Static211 {
 		Static161.method2968();
 		ScriptRunner.A_SOFT_LRU_HASH_TABLE___30.method2614();
 		Static190.aClass19_8.method2903();
-		Static261.aClass116_7.method3152();
+		Static261.scripts.method3152();
 		Static194.method3540();
-		Static342.aJs5_77.method5067();
-		Static34.aJs5_67.method5067();
-		Static289.aJs5_71.method5067();
-		Static354.aJs5_9.method5067();
-		Static85.aJs5_21.method5067();
-		Static288.js5Archive5.method5067();
-		Static101.aJs5_23.method5067();
-		Static237.aJs5_63.method5067();
-		Static30.aJs5_5.method5067();
-		Static324.aJs5_86.method5067();
-		Static75.aJs5_18.method5067();
-		Static216.aJs5_58.method5067();
-		Static195.aJs5_54.method5067();
-		Static255.aJs5_64.method5067();
-		Static133.aJs5_32.method5067();
-		Static120.aJs5_28.method5067();
-		Static391.aJs5_96.method5067();
-		Static226.aJs5_61.method5067();
-		Static216.aJs5_57.method5067();
-		Static61.aJs5_12.method5067();
-		Static139.aJs5_35.method5067();
-		Static173.aJs5_45.method5067();
-		Static294.aJs5_75.method5067();
-		Static389.aJs5_66.method5067();
-		Static385.aJs5_94.method5067();
-		Static139.aJs5_34.method5067();
-		Static235.aJs5_47.method5067();
-		Static61.aJs5_11.method5067();
-		Static85.aJs5_20.method5067();
+		client.js5Archive0.method5067();
+		client.js5Archive1.method5067();
+		client.js5Archive2.method5067();
+		client.js5Archive3.method5067();
+		client.js5Archive4.method5067();
+		client.js5Archive5.method5067();
+		client.js5Archive6.method5067();
+		client.js5Archive7.method5067();
+		client.js5Archive8.method5067();
+		client.js5Archive9.method5067();
+		client.js5Archive10.method5067();
+		client.js5Archive11.method5067();
+		client.js5Archive12.method5067();
+		client.js5Archive13.method5067();
+		client.js5Archive14.method5067();
+		client.js5Archive15.method5067();
+		client.js5Archive16.method5067();
+		client.js5Archive17.method5067();
+		client.js5Archive18.method5067();
+		client.js5Archive19.method5067();
+		client.js5Archive20.method5067();
+		client.js5Archive21.method5067();
+		client.js5Archive22.method5067();
+		client.js5Archive23.method5067();
+		client.js5Archive24.method5067();
+		client.js5Archive25.method5067();
+		client.js5Archive26.method5067();
+		client.js5Archive27.method5067();
+		client.js5Archive28.method5067();
 		Static306.A_SOFT_LRU_HASH_TABLE___49.method2614();
 		Static139.A_SOFT_LRU_HASH_TABLE___18.method2614();
 		Static61.A_SOFT_LRU_HASH_TABLE___5.method2614();

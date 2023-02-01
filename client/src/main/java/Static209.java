@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static209 {
 
 	@OriginalMember(owner = "client!me", name = "c", descriptor = "[I")
-	public static int[] anIntArray228;
+	public static int[] skyboxTextures;
 
 	@OriginalMember(owner = "client!me", name = "d", descriptor = "[Ljava/lang/String;")
 	public static final String[] aStringArray32 = new String[200];
@@ -32,7 +32,7 @@ public final class Static209 {
 		}
 		if (Static355.loadPercentage < 10) {
 			if (!Static344.archive.isGroupReady(Static344.aMap_3.aString67)) {
-				Static355.loadPercentage = Static389.aJs5_66.method5084(Static344.aMap_3.aString67) / 10;
+				Static355.loadPercentage = client.js5Archive23.method5084(Static344.aMap_3.aString67) / 10;
 				return;
 			}
 			Static386.method6030();
@@ -56,7 +56,7 @@ public final class Static209 {
 				Static96.anInt2003 = local84;
 				Static151.anInt2772 = local82;
 			} else if (Static184.anInt3436 == -1 || Static18.anInt519 == -1) {
-				Static344.aMap_3.method6150(Static344.aMap_3.anInt6872 >> 14 & 0x3FFF, Static344.aMap_3.anInt6872 & 0x3FFF, local80);
+				Static344.aMap_3.method6150(Static344.aMap_3.origin >> 14 & 0x3FFF, Static344.aMap_3.origin & 0x3FFF, local80);
 				Static96.anInt2003 = local80[2] - Static344.anInt6055;
 				Static151.anInt2772 = local80[1] - Static344.anInt6057;
 			} else {

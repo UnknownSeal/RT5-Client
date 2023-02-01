@@ -11,7 +11,7 @@ public final class Static171 {
 	public static final CollisionMap[] collisionMap = new CollisionMap[4];
 
 	@OriginalMember(owner = "client!jt", name = "db", descriptor = "I")
-	public static int anInt3268 = -1;
+	public static int groupID = -1;
 
 	@OriginalMember(owner = "client!jt", name = "eb", descriptor = "Lclient!oj;")
 	public static final Class170 aClass170_3 = new Class170(0);
@@ -19,9 +19,9 @@ public final class Static171 {
 	@OriginalMember(owner = "client!jt", name = "a", descriptor = "(IILjava/lang/String;)V")
 	public static void method3255(@OriginalArg(0) int arg0, @OriginalArg(2) String arg1) {
 		Static91.method1960(Static382.aClass145_258);
-		Static257.aClass2_Sub4_Sub2_4.p1(Static27.method872(arg1) + 1);
-		Static257.aClass2_Sub4_Sub2_4.p1add(arg0);
-		Static257.aClass2_Sub4_Sub2_4.pjstr(arg1);
+		Static257.outboundBuffer.p1(Static27.method872(arg1) + 1);
+		Static257.outboundBuffer.p1add(arg0);
+		Static257.outboundBuffer.pjstr(arg1);
 	}
 
 	@OriginalMember(owner = "client!jt", name = "a", descriptor = "(BIIZII)V")
@@ -129,8 +129,8 @@ public final class Static171 {
 			Static190.aClass19_8.method2821(local104 + local106 / 2, local110 + local108 / 2, Static320.anInt6006 << 1, Static320.anInt6006 << 1);
 			Static306.method5253(Static320.anInt6006 << 1, local106 / 2 + local104, Static320.anInt6006 << 1, local110 + local108 / 2);
 			Static96.method2085(Static211.anInt3777, Static102.anInt3592, -Static342.anInt5657 & 0x3FFF, -Static4.anInt87 & 0x3FFF, -Static265.anInt4857 & 0x3FFF, Static136.anInt6778);
-			@Pc(541) byte local541 = Static218.aClass177_Sub1_2.method4491(Static77.anInt1762) == 2 ? (byte) Static163.anInt3086 : 1;
-			Static225.method3953(Static190.aClass19_8, Static114.loop, Static102.anInt3591, Static76.aClass14_3, Static136.anInt6778, Static102.anInt3592, Static211.anInt3777, Static230.aByteArrayArrayArray13, Static353.anIntArray448, Static107.anIntArray136, Static248.anIntArray318, Static324.anIntArray409, Static86.anIntArray122, Static17.self.aByte78 + 1, local541, Static17.self.xFine >> 7, Static17.self.zFine >> 7, !Static218.aClass177_Sub1_2.aBoolean353);
+			@Pc(541) byte local541 = Static218.preferences.method4491(Static77.anInt1762) == 2 ? (byte) Static163.anInt3086 : 1;
+			Static225.method3953(Static190.aClass19_8, Static114.loop, Static102.anInt3591, Static76.aClass14_3, Static136.anInt6778, Static102.anInt3592, Static211.anInt3777, Static230.aByteArrayArrayArray13, Static353.anIntArray448, Static107.anIntArray136, Static248.anIntArray318, Static324.anIntArray409, Static86.anIntArray122, Static17.self.aByte78 + 1, local541, Static17.self.xFine >> 7, Static17.self.zFine >> 7, !Static218.preferences.flickeringEffects);
 			Static37.method1135();
 			if (Static347.anInt6442 == 30) {
 				Static306.method5252(local110, local108, local106, local104);

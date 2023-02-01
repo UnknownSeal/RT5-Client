@@ -189,7 +189,7 @@ public final class Npc extends Class11_Sub5_Sub2 {
 		local17.method3935(super.xFine, super.anInt6782, super.zFine);
 		@Pc(37) BasType local37 = this.method4331();
 		@Pc(50) NpcType local50 = this.type.multiNpcs == null ? this.type : this.type.getMultiNpc(Static214.aClass226_1);
-		if (Static218.aClass177_Sub1_2.aBoolean358 && local50.hasshadow && local37.aBoolean424) {
+		if (Static218.preferences.characterShadows && local50.hasshadow && local37.aBoolean424) {
 			@Pc(75) Class157 local75 = super.anInt4597 != -1 && super.anInt4590 == 0 ? Static39.aClass85_1.method2371(super.anInt4597) : null;
 			@Pc(92) Class157 local92 = super.anInt4585 == -1 || super.aBoolean317 && local75 != null ? null : Static39.aClass85_1.method2371(super.anInt4585);
 			@Pc(144) Model local144 = Static178.method2340(local92 == null ? super.anInt4607 : super.anInt4626, this.type.shadowcolormodifier2 & 0xFF, this.type.shadowcolormodifier1 & 0xFF, super.anInt4596, local92 == null ? local75 : local92, this.type.size, this.type.shadowcolor2 & 0xFFFF, super.aModelArray3[0], local22, arg0, this.type.shadowcolor1 & 0xFFFF, super.aBoolean318, super.anInt4608, super.anInt4589);

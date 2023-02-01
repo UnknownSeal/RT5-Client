@@ -44,7 +44,7 @@ public final class Static193 {
 					@Pc(86) int local86 = local66 + arg0;
 					if (local82 > 0 && local86 > 0 && local82 < arg4 - 1 && arg3 - 1 > local86) {
 						@Pc(112) Class41 local112 = Static359.aClass202_4.method5162(local19);
-						if (local78 != 22 || Static218.aClass177_Sub1_2.aBoolean359 || local112.anInt1335 != 0 || local112.anInt1324 == 1 || local112.aBoolean117) {
+						if (local78 != 22 || Static218.preferences.groundDecoration || local112.anInt1335 != 0 || local112.anInt1324 == 1 || local112.aBoolean117) {
 							if (!local112.method1529()) {
 								Static305.anInt5742++;
 								local7 = false;

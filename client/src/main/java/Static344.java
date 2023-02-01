@@ -329,7 +329,7 @@ public final class Static344 {
 		@Pc(26) int[] local26 = archive.getFileIDs(local21);
 		for (@Pc(28) int local28 = 0; local28 < local26.length; local28++) {
 			@Pc(37) Map local37 = Map.create(local26[local28], local21, archive);
-			areas.put(local37, (long) local37.anInt6869);
+			areas.put(local37, (long) local37.id);
 		}
 		Static280.method4765(false);
 	}
@@ -349,8 +349,8 @@ public final class Static344 {
 	}
 
 	@OriginalMember(owner = "client!tt", name = "a", descriptor = "(I)Lclient!vj;")
-	public static Map method5513(@OriginalArg(0) int arg0) {
-		return (Map) areas.get((long) arg0);
+	public static Map get(@OriginalArg(0) int id) {
+		return (Map) areas.get(id);
 	}
 
 	@OriginalMember(owner = "client!tt", name = "a", descriptor = "(Lclient!ci;III)I")
@@ -519,7 +519,7 @@ public final class Static344 {
 
 	@OriginalMember(owner = "client!tt", name = "a", descriptor = "(Lclient!wm;II)V")
 	public static void method5520(@OriginalArg(0) Class19 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		@Pc(9) Buffer local9 = new Buffer(archive.method5083(aMap_3.aString67, "area"));
+		@Pc(9) Buffer local9 = new Buffer(archive.fetchFile(aMap_3.aString67, "area"));
 		@Pc(13) int local13 = local9.g1();
 		@Pc(16) int[] local16 = new int[local13];
 		for (@Pc(18) int local18 = 0; local18 < local13; local18++) {

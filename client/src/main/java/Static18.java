@@ -14,7 +14,7 @@ public final class Static18 {
 	public static int anInt519 = -1;
 
 	@OriginalMember(owner = "client!bb", name = "q", descriptor = "Z")
-	public static boolean aBoolean30 = false;
+	public static boolean qaOpTest = false;
 
 	@OriginalMember(owner = "client!bb", name = "y", descriptor = "[I")
 	public static final int[] anIntArray27 = new int[100];

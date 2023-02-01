@@ -297,8 +297,8 @@ public final class Class192 {
 			this.method4931(-1);
 		}
 		this.method4932(arg5, arg4);
-		@Pc(79) boolean local79 = arg0 & this.aBoolean386 & Static218.aClass177_Sub1_2.anInt4886 != 0;
-		@Pc(117) boolean local117 = local79 & (local11.anInt1351 != this.anInt5428 || (this.anInt5424 != this.anInt5426 || this.aClass157_2 != null && (this.aClass157_2.aBoolean262 || Static318.aBoolean408) && this.anInt5423 != this.anInt5426) && Static218.aClass177_Sub1_2.anInt4886 >= 2);
+		@Pc(79) boolean local79 = arg0 & this.aBoolean386 & Static218.preferences.sceneryShadows != 0;
+		@Pc(117) boolean local117 = local79 & (local11.anInt1351 != this.anInt5428 || (this.anInt5424 != this.anInt5426 || this.aClass157_2 != null && (this.aClass157_2.aBoolean262 || Static318.forceTween) && this.anInt5423 != this.anInt5426) && Static218.preferences.sceneryShadows >= 2);
 		if (arg1 && !local117) {
 			this.anInt5428 = local11.anInt1351;
 			this.anInt5424 = this.anInt5426;

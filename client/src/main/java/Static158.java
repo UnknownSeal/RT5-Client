@@ -11,7 +11,7 @@ public final class Static158 {
 	public static final int[][] anIntArrayArray22 = new int[][] { { 0, 1, 2, 3 }, { 1, -1, -1, 0 }, { -1, 2, -1, 0 }, { -1, 0, -1, 2 }, { 0, 1, -1, 2 }, { 1, 2, -1, 0 }, { -1, 4, -1, 1 }, { -1, 3, 4, -1 }, { -1, 0, 2, -1 }, { -1, -1, 2, 0 }, { 0, 2, 5, 3 }, { 0, -1, 6, -1 }, { 0, 1, 2, 3 } };
 
 	@OriginalMember(owner = "client!jc", name = "S", descriptor = "Lclient!cc;")
-	public static PrivelegedRequest aPrivelegedRequest_7 = null;
+	public static PrivelegedRequest socketRequest = null;
 
 	@OriginalMember(owner = "client!jc", name = "T", descriptor = "Lclient!ij;")
 	public static final Class105 aClass105_1 = new Class105();
@@ -28,7 +28,7 @@ public final class Static158 {
 			if (local27.anInt6454 != -1) {
 				@Pc(39) Class13 local39 = (Class13) Static210.A_SOFT_LRU_HASH_TABLE___31.get((long) local27.anInt6454);
 				if (local39 == null) {
-					@Pc(47) SoftwareSprite local47 = Static396.loadSoftwareSprite(Static30.aJs5_5, local27.anInt6454, 0);
+					@Pc(47) SoftwareSprite local47 = Static396.loadSoftwareSprite(client.js5Archive8, local27.anInt6454, 0);
 					if (local47 != null) {
 						local39 = Static190.aClass19_8.method2891(local47);
 						Static210.A_SOFT_LRU_HASH_TABLE___31.put((long) local27.anInt6454, local39);
@@ -45,7 +45,7 @@ public final class Static158 {
 	}
 
 	@OriginalMember(owner = "client!jc", name = "a", descriptor = "(Ljava/lang/String;I)V")
-	public static void method2939(@OriginalArg(0) String arg0) {
+	public static void add(@OriginalArg(0) String arg0) {
 		if (Static124.aStringArray65 == null) {
 			Static148.method2709();
 		}
@@ -88,7 +88,7 @@ public final class Static158 {
 	}
 
 	@OriginalMember(owner = "client!jc", name = "a", descriptor = "(I[B)Z")
-	public static boolean method2943(@OriginalArg(1) byte[] arg0) {
+	public static boolean decode(@OriginalArg(1) byte[] arg0) {
 		@Pc(8) Buffer local8 = new Buffer(arg0);
 		@Pc(12) int local12 = local8.g1();
 		if (local12 != 1) {

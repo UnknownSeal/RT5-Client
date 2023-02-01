@@ -56,14 +56,14 @@ public final class SoftLruHashTable {
 	}
 
 	@OriginalMember(owner = "client!hu", name = "a", descriptor = "(I)I")
-	public int method2613() {
-		@Pc(7) int local7 = 0;
-		for (@Pc(18) ReferenceNode local18 = (ReferenceNode) this.queue.head(); local18 != null; local18 = (ReferenceNode) this.queue.next()) {
-			if (!local18.isSoft()) {
-				local7++;
+	public int size() {
+		@Pc(7) int size = 0;
+		for (@Pc(18) ReferenceNode node = (ReferenceNode) this.queue.head(); node != null; node = (ReferenceNode) this.queue.next()) {
+			if (!node.isSoft()) {
+				size++;
 			}
 		}
-		return local7;
+		return size;
 	}
 
 	@OriginalMember(owner = "client!hu", name = "b", descriptor = "(I)V")

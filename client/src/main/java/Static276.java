@@ -21,8 +21,8 @@ public final class Static276 {
 	}
 
 	@OriginalMember(owner = "client!pr", name = "a", descriptor = "(ZZLclient!cu;Z)V")
-	public static void method4654(@OriginalArg(0) boolean arg0, @OriginalArg(2) Class2_Sub7 arg1, @OriginalArg(3) boolean arg2) {
-		@Pc(8) int local8 = arg1.anInt1370;
+	public static void method4654(@OriginalArg(0) boolean arg0, @OriginalArg(2) SubInterface arg1, @OriginalArg(3) boolean arg2) {
+		@Pc(8) int local8 = arg1.id;
 		@Pc(12) int local12 = (int) arg1.key;
 		arg1.unlink();
 		if (arg2) {
@@ -37,15 +37,15 @@ public final class Static276 {
 		if (!arg0 && Static139.topLevelInterface != -1) {
 			Static392.method6459(Static139.topLevelInterface, 1);
 		}
-		@Pc(49) Class137 local49 = new Class137(Static329.aClass4_130);
-		for (@Pc(54) Class2_Sub7 local54 = (Class2_Sub7) local49.method3560(); local54 != null; local54 = (Class2_Sub7) local49.method3559()) {
+		@Pc(49) Class137 local49 = new Class137(Static329.subInterfaces);
+		for (@Pc(54) SubInterface local54 = (SubInterface) local49.method3560(); local54 != null; local54 = (SubInterface) local49.method3559()) {
 			if (!local54.isLinked()) {
-				local54 = (Class2_Sub7) local49.method3560();
+				local54 = (SubInterface) local49.method3560();
 				if (local54 == null) {
 					return;
 				}
 			}
-			if (local54.anInt1373 == 3) {
+			if (local54.type == 3) {
 				@Pc(76) int local76 = (int) local54.key;
 				if (local76 >>> 16 == local8) {
 					method4654(arg0, local54, true);

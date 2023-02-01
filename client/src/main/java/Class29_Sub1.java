@@ -502,7 +502,7 @@ public final class Class29_Sub1 extends Class29 {
 
 	@OriginalMember(owner = "client!bu", name = "a", descriptor = "(IIIIIIILclient!wm;Lclient!dg;II)V")
 	public void method1105(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(6) int arg5, @OriginalArg(7) Class19 arg6, @OriginalArg(8) CollisionMap arg7, @OriginalArg(9) int arg8, @OriginalArg(10) int arg9) {
-		if (!Static218.aClass177_Sub1_2.method4494(Static77.anInt1762) && !Static142.method2661(arg2, Static44.visibleLevel, arg4, arg1)) {
+		if (!Static218.preferences.method4494(Static77.anInt1762) && !Static142.method2661(arg2, Static44.visibleLevel, arg4, arg1)) {
 			return;
 		}
 		if (arg5 < this.anInt922) {
@@ -912,7 +912,7 @@ public final class Class29_Sub1 extends Class29 {
 					}
 				}
 			}
-		} else if (Static218.aClass177_Sub1_2.aBoolean359 || local30.anInt1335 != 0 || local30.anInt1324 == 1 || local30.aBoolean117) {
+		} else if (Static218.preferences.groundDecoration || local30.anInt1335 != 0 || local30.anInt1324 == 1 || local30.aBoolean117) {
 			@Pc(266) Class11_Sub2 local266;
 			if (local220) {
 				@Pc(264) Class11_Sub2_Sub1 local264 = new Class11_Sub2_Sub1(arg6, local30, arg4, local166, local158, local174, super.aBoolean73, arg0, local186);

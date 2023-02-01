@@ -6,13 +6,13 @@ public final class Static396 {
 
 	@OriginalMember(owner = "client!dk", name = "a", descriptor = "(Lclient!r;I)Lclient!dk;")
 	public static SoftwareSprite loadSoftwareSpriteAutoDetect(@OriginalArg(0) Js5 arg0, @OriginalArg(1) int arg1) {
-		@Pc(4) byte[] local4 = arg0.method5081(arg1);
+		@Pc(4) byte[] local4 = arg0.fetchFile(arg1);
 		return local4 == null ? null : method1679(local4)[0];
 	}
 
 	@OriginalMember(owner = "client!dk", name = "b", descriptor = "(Lclient!r;I)[Lclient!dk;")
 	public static SoftwareSprite[] method1678(@OriginalArg(0) Js5 arg0, @OriginalArg(1) int arg1) {
-		@Pc(4) byte[] local4 = arg0.method5081(arg1);
+		@Pc(4) byte[] local4 = arg0.fetchFile(arg1);
 		return local4 == null ? null : method1679(local4);
 	}
 

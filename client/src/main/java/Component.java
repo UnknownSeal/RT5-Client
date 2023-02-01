@@ -211,7 +211,7 @@ public final class Component {
 	public int dragDeadtime = 0;
 
 	@OriginalMember(owner = "client!nk", name = "X", descriptor = "Lclient!nk;")
-	public Component aComponent_12 = null;
+	public Component dragComponent = null;
 
 	@OriginalMember(owner = "client!nk", name = "Db", descriptor = "I")
 	public int anInt4280 = -1;
@@ -283,10 +283,10 @@ public final class Component {
 	public int modelSeqID = -1;
 
 	@OriginalMember(owner = "client!nk", name = "l", descriptor = "Z")
-	public boolean aBoolean280 = false;
+	public boolean objWearColor = false;
 
 	@OriginalMember(owner = "client!nk", name = "F", descriptor = "Lclient!eh;")
-	public ServerActiveProperties aServerActiveProperties_1 = Static367.A_CLASS_2___SUB_10___2;
+	public ServerActiveProperties serverActiveProperties = Static367.A_CLASS_2___SUB_10___2;
 
 	@OriginalMember(owner = "client!nk", name = "ic", descriptor = "I")
 	public int halign = 0;
@@ -465,17 +465,17 @@ public final class Component {
 	}
 
 	@OriginalMember(owner = "client!nk", name = "a", descriptor = "(ILjava/lang/String;Z)V")
-	public void method4102(@OriginalArg(0) int arg0, @OriginalArg(1) String arg1) {
-		if (this.ops == null || this.ops.length <= arg0) {
-			@Pc(24) String[] local24 = new String[arg0 + 1];
+	public void setOp(@OriginalArg(0) int i, @OriginalArg(1) String op) {
+		if (this.ops == null || this.ops.length <= i) {
+			@Pc(24) String[] ops = new String[i + 1];
 			if (this.ops != null) {
-				for (@Pc(29) int local29 = 0; local29 < this.ops.length; local29++) {
-					local24[local29] = this.ops[local29];
+				for (@Pc(29) int j = 0; j < this.ops.length; j++) {
+					ops[j] = this.ops[j];
 				}
 			}
-			this.ops = local24;
+			this.ops = ops;
 		}
-		this.ops[arg0] = arg1;
+		this.ops[i] = op;
 	}
 
 	@OriginalMember(owner = "client!nk", name = "a", descriptor = "(IILclient!io;Lclient!wl;ILclient!nb;Lclient!ak;Lclient!jo;Lclient!ta;ILclient!gp;ILclient!e;Lclient!wm;)Lclient!gn;")
@@ -728,7 +728,7 @@ public final class Component {
 				this.anInt4286 = -1;
 			}
 		}
-		this.aServerActiveProperties_1 = new ServerActiveProperties(local155, local556);
+		this.serverActiveProperties = new ServerActiveProperties(local155, local556);
 		this.anObjectArray22 = this.method4106(buffer);
 		this.onMouseOver = this.method4106(buffer);
 		this.onMouseLeave = this.method4106(buffer);

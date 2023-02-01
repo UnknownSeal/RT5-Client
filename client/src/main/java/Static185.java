@@ -6,71 +6,71 @@ public final class Static185 {
 
 	@OriginalMember(owner = "client!kn", name = "a", descriptor = "(IIII)V")
 	public static void method3397(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
-		Static257.aClass2_Sub4_Sub2_4.p4(arg2);
-		Static257.aClass2_Sub4_Sub2_4.p2add(arg1);
-		Static257.aClass2_Sub4_Sub2_4.p2(arg0);
+		Static257.outboundBuffer.p4(arg2);
+		Static257.outboundBuffer.p2add(arg1);
+		Static257.outboundBuffer.p2(arg0);
 	}
 
 	@OriginalMember(owner = "client!kn", name = "a", descriptor = "(BILclient!bc;I)Lclient!js;")
-	public static Class2_Sub2_Sub11 method3398(@OriginalArg(1) int arg0, @OriginalArg(2) Class16 arg1, @OriginalArg(3) int arg2) {
+	public static ClientScript method3398(@OriginalArg(1) int arg0, @OriginalArg(2) Class16 arg1, @OriginalArg(3) int arg2) {
 		@Pc(10) int local10 = arg2 << 8 | arg1.anInt538;
-		@Pc(27) Class2_Sub2_Sub11 local27 = (Class2_Sub2_Sub11) Static261.aClass116_7.get((long) local10 << 16);
+		@Pc(27) ClientScript local27 = (ClientScript) Static261.scripts.get((long) local10 << 16);
 		if (local27 != null) {
 			return local27;
 		}
-		@Pc(39) byte[] local39 = Static195.aJs5_54.method5081(Static195.aJs5_54.method5096(local10));
+		@Pc(39) byte[] local39 = client.js5Archive12.fetchFile(client.js5Archive12.method5096(local10));
 		if (local39 == null) {
 			local10 = arg1.anInt538 | arg0 + 65536 << 8;
-			local27 = (Class2_Sub2_Sub11) Static261.aClass116_7.get((long) local10 << 16);
+			local27 = (ClientScript) Static261.scripts.get((long) local10 << 16);
 			if (local27 != null) {
 				return local27;
 			}
-			local39 = Static195.aJs5_54.method5081(Static195.aJs5_54.method5096(local10));
+			local39 = client.js5Archive12.fetchFile(client.js5Archive12.method5096(local10));
 			if (local39 == null) {
 				local10 = arg1.anInt538 | 0xFFFF00;
-				local27 = (Class2_Sub2_Sub11) Static261.aClass116_7.get((long) local10 << 16);
+				local27 = (ClientScript) Static261.scripts.get((long) local10 << 16);
 				if (local27 != null) {
 					return local27;
 				}
-				local39 = Static195.aJs5_54.method5081(Static195.aJs5_54.method5096(local10));
+				local39 = client.js5Archive12.fetchFile(client.js5Archive12.method5096(local10));
 				if (local39 == null) {
 					return null;
 				} else if (local39.length <= 1) {
 					return null;
 				} else {
-					local27 = Static214.method3744(local39);
+					local27 = ClientScript.decode(local39);
 					local27.aClass16_4 = arg1;
-					Static261.aClass116_7.put((long) local10 << 16, local27);
+					Static261.scripts.put((long) local10 << 16, local27);
 					return local27;
 				}
 			} else if (local39.length <= 1) {
 				return null;
 			} else {
-				local27 = Static214.method3744(local39);
+				local27 = ClientScript.decode(local39);
 				local27.aClass16_4 = arg1;
-				Static261.aClass116_7.put((long) local10 << 16, local27);
+				Static261.scripts.put((long) local10 << 16, local27);
 				return local27;
 			}
 		} else if (local39.length <= 1) {
 			return null;
 		} else {
-			local27 = Static214.method3744(local39);
+			local27 = ClientScript.decode(local39);
 			local27.aClass16_4 = arg1;
-			Static261.aClass116_7.put((long) local10 << 16, local27);
+			Static261.scripts.put((long) local10 << 16, local27);
 			return local27;
 		}
 	}
 
 	@OriginalMember(owner = "client!kn", name = "a", descriptor = "(IIIIBII)V")
 	public static void method3399(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5) {
-		@Pc(8) Component local8 = Static207.method3704(arg2, arg3);
+		@Pc(8) Component local8 = Static207.getCreatedComponent(arg2, arg3);
 		if (local8 == null) {
 			return;
 		}
 		if (local8.onUse != null) {
-			@Pc(18) Class2_Sub13 local18 = new Class2_Sub13();
-			local18.aComponent_3 = local8;
-			local18.anObjectArray4 = local8.onUse;
+			@Pc(18) HookRequest local18 = new HookRequest();
+			local18.source = local8;
+			local18.arguments = local8.onUse;
 			ScriptRunner.method3590(local18);
 		}
 		Static196.anInt3317 = local8.objId;

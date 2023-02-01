@@ -10,7 +10,7 @@ public final class Static145 {
 		if (local18) {
 			Static116.anInt2357 = 1;
 		}
-		if (Static148.aBoolean192 && Static174.aClass123_2.method3342(81) && Static268.size > 2) {
+		if (Static148.shiftClick && Static174.aClass123_2.method3342(81) && Static268.size > 2) {
 			if (local18) {
 				Static32.aClass2_Sub5_2 = (Class2_Sub5) Static129.A_LINKED_LIST___19.sentinel.previous.previous;
 			} else {

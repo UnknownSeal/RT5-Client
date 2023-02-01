@@ -21,9 +21,9 @@ public final class Static175 {
 
     @OriginalMember(owner = "client!kc", name = "a", descriptor = "(IIII)V")
 	public static void playJingle(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
-		@Pc(15) int local15 = arg2 * Static218.aClass177_Sub1_2.musicVolume >> 8;
+		@Pc(15) int local15 = arg2 * Static218.preferences.musicVolume >> 8;
 		if (local15 != 0 && arg0 != -1) {
-			Static94.method2042(local15, arg0, Static216.aJs5_58);
+			Static94.playImmediate(arg0, client.js5Archive11, local15);
 			Static393.jingle = true;
 		}
 	}

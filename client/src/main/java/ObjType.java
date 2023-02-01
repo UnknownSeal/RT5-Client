@@ -359,13 +359,13 @@ public final class ObjType {
 			return true;
 		}
 		@Pc(36) boolean local36 = true;
-		if (!this.aClass107_1.aJs5_41.method5087(0, local6)) {
+		if (!this.aClass107_1.aJs5_41.isFileReady(local6, 0)) {
 			local36 = false;
 		}
-		if (local14 != -1 && !this.aClass107_1.aJs5_41.method5087(0, local14)) {
+		if (local14 != -1 && !this.aClass107_1.aJs5_41.isFileReady(local14, 0)) {
 			local36 = false;
 		}
-		if (local17 != -1 && !this.aClass107_1.aJs5_41.method5087(0, local17)) {
+		if (local17 != -1 && !this.aClass107_1.aJs5_41.isFileReady(local17, 0)) {
 			local36 = false;
 		}
 		return local36;
@@ -507,7 +507,7 @@ public final class ObjType {
 			if (arg6 != null) {
 				for (local229 = 0; local229 < 5; local229++) {
 					if (Static353.aShortArrayArray7[local229].length > arg6.anIntArray194[local229]) {
-						local102.method3837(Static10.aShortArray1[local229], Static353.aShortArrayArray7[local229][arg6.anIntArray194[local229]]);
+						local102.method3837(Static10.sourceBodyColors[local229], Static353.aShortArrayArray7[local229][arg6.anIntArray194[local229]]);
 					}
 					if (arg6.anIntArray194[local229] < Static186.aShortArrayArray6[local229].length) {
 						local102.method3837(Static43.aShortArray20[local229], Static186.aShortArrayArray6[local229][arg6.anIntArray194[local229]]);
@@ -654,7 +654,7 @@ public final class ObjType {
 		if (arg1 != null) {
 			for (local23 = 0; local23 < 5; local23++) {
 				if (arg1.anIntArray194[local23] < Static353.aShortArrayArray7[local23].length) {
-					local14.method4662(Static10.aShortArray1[local23], Static353.aShortArrayArray7[local23][arg1.anIntArray194[local23]]);
+					local14.method4662(Static10.sourceBodyColors[local23], Static353.aShortArrayArray7[local23][arg1.anIntArray194[local23]]);
 				}
 				if (arg1.anIntArray194[local23] < Static186.aShortArrayArray6[local23].length) {
 					local14.method4662(Static43.aShortArray20[local23], Static186.aShortArrayArray6[local23][arg1.anIntArray194[local23]]);
@@ -771,10 +771,10 @@ public final class ObjType {
 			return true;
 		}
 		@Pc(29) boolean local29 = true;
-		if (!this.aClass107_1.aJs5_41.method5087(0, local6)) {
+		if (!this.aClass107_1.aJs5_41.isFileReady(local6, 0)) {
 			local29 = false;
 		}
-		if (local9 != -1 && !this.aClass107_1.aJs5_41.method5087(0, local9)) {
+		if (local9 != -1 && !this.aClass107_1.aJs5_41.isFileReady(local9, 0)) {
 			local29 = false;
 		}
 		return local29;

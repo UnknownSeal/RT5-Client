@@ -10,20 +10,20 @@ public final class Static252 {
 	@OriginalMember(owner = "client!oi", name = "a", descriptor = "(ZII)V")
 	public static void method4364(@OriginalArg(0) boolean arg0, @OriginalArg(2) int arg1) {
 		if (arg1 == 0) {
-			Static190.aClass19_8 = Static387.method2822(Static218.aClass177_Sub1_2.anInt4885 * 2, GameShell.signlink, Static128.anInterface2_4, GameShell.canvas, arg1);
+			Static190.aClass19_8 = Static387.method2822(Static218.preferences.anInt4885 * 2, GameShell.signlink, Static128.anInterface2_4, GameShell.canvas, arg1);
 		} else {
 			if (arg0) {
 				Static190.aClass19_8 = Static387.method2822(0, GameShell.signlink, Static128.anInterface2_4, GameShell.canvas, 0);
 				Static190.aClass19_8.method2867(0);
-				@Pc(22) Class239 local22 = Static101.method2165(Static371.anInt7014, Static255.aJs5_64);
-				@Pc(31) Class130 local31 = Static190.aClass19_8.method2857(local22, Static396.method1688(Static30.aJs5_5, Static371.anInt7014));
+				@Pc(22) Class239 local22 = Static101.method2165(Static371.anInt7014, client.js5Archive13);
+				@Pc(31) Class130 local31 = Static190.aClass19_8.method2857(local22, Static396.method1688(client.js5Archive8, Static371.anInt7014));
 				Static351.method5856(local31, true, LocalisedText.LOADING_PLEASE_WAIT.getLocalisedText(client.language));
 				Static190.aClass19_8.method2883();
 				Static372.method6259();
 				Static190.aClass19_8.method2825();
 			}
 			try {
-				Static190.aClass19_8 = Static387.method2822(Static218.aClass177_Sub1_2.anInt4885 * 2, GameShell.signlink, Static128.anInterface2_4, GameShell.canvas, arg1);
+				Static190.aClass19_8 = Static387.method2822(Static218.preferences.anInt4885 * 2, GameShell.signlink, Static128.anInterface2_4, GameShell.canvas, arg1);
 			} catch (@Pc(61) Throwable local61) {
 				Static190.aClass19_8 = Static387.method2822(0, GameShell.signlink, Static128.anInterface2_4, GameShell.canvas, 0);
 				arg1 = 0;
@@ -47,9 +47,9 @@ public final class Static252 {
 			local127 += 128;
 		}
 		Static190.aClass19_8.method2872(50, local127);
-		Static190.aClass19_8.method2874(!Static218.aClass177_Sub1_2.aBoolean350);
+		Static190.aClass19_8.method2874(!Static218.preferences.highDetailTextures);
 		if (Static190.aClass19_8.method2858()) {
-			Static284.method4881(Static218.aClass177_Sub1_2.aBoolean356);
+			Static284.method4881(Static218.preferences.aBoolean356);
 		}
 		Static190.method3499(Static242.anInt4449 >> 3, Static373.anInt7033 >> 3, Static190.aClass19_8);
 		Static348.method5827();

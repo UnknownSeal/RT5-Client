@@ -52,7 +52,7 @@ public final class TextureOpColorFill extends TextureOp {
 
 	@OriginalMember(owner = "client!pb", name = "a", descriptor = "(ILclient!bt;I)V")
 	@Override
-	public void decode(@OriginalArg(0) int opcode, @OriginalArg(1) Buffer buffer) {
+	public void decode(@OriginalArg(1) Buffer buffer, @OriginalArg(0) int opcode) {
 		if (opcode == 0) {
 			this.setColor(buffer.ig3());
 		}

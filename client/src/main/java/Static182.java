@@ -45,7 +45,7 @@ public final class Static182 {
 			}
 			Static288.anInt5463 += local70;
 		}
-		if (!Static218.aClass177_Sub1_2.aBoolean351) {
+		if (!Static218.preferences.aBoolean351) {
 			Static31.aFloat28 += (float) arg0 * Static296.aFloat68 / 6.0F;
 			Static277.aFloat67 += Static184.aFloat39 * (float) arg0 / 6.0F;
 		}
@@ -88,7 +88,7 @@ public final class Static182 {
 
 	@OriginalMember(owner = "client!kk", name = "b", descriptor = "(B)V")
 	public static void method3387() {
-		Static257.aClass2_Sub4_Sub2_4.offset = 0;
+		Static257.outboundBuffer.offset = 0;
 		Static82.anInt1836 = 0;
 		Static39.aClass89_35 = null;
 		Static151.anInt2773 = 0;

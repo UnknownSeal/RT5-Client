@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static28 {
 
 	@OriginalMember(owner = "client!bl", name = "k", descriptor = "I")
-	public static int anInt672;
+	public static int volumeFadeRate;
 
 	@OriginalMember(owner = "client!bl", name = "o", descriptor = "I")
 	public static int anInt675 = 0;

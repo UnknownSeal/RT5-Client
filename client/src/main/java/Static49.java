@@ -191,7 +191,7 @@ public final class Static49 {
 				}
 			}
 			if (Static34.aMapElementList_3 != null) {
-				Static289.aJs5_71.discardUnpacked = 1;
+				client.js5Archive2.discardUnpacked = 1;
 				Static236.aClass125_1.method3376(64, 1024);
 				for (local216 = 0; local216 < Static34.aMapElementList_3.size; local216++) {
 					local220 = Static34.aMapElementList_3.positions[local216];
@@ -209,8 +209,8 @@ public final class Static49 {
 					}
 				}
 				Static236.aClass125_1.method3376(64, 128);
-				Static289.aJs5_71.discardUnpacked = 2;
-				Static289.aJs5_71.method5067();
+				client.js5Archive2.discardUnpacked = 2;
+				client.js5Archive2.method5067();
 			}
 		}
 		return true;

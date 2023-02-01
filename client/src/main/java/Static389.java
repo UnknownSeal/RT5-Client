@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static389 {
 
-	@OriginalMember(owner = "client!wo", name = "M", descriptor = "Lclient!r;")
-	public static Js5 aJs5_66;
-
 	@OriginalMember(owner = "client!wo", name = "J", descriptor = "I")
 	public static int anInt4896 = 0;
 
@@ -56,12 +53,12 @@ public final class Static389 {
 			local118.p1((int) (Math.random() * 255.0D));
 		}
 		local118.tinyenc(local8);
-		Static257.aClass2_Sub4_Sub2_4.offset = 0;
-		Static257.aClass2_Sub4_Sub2_4.p1(Static43.aClass242_8.anInt7038);
-		Static257.aClass2_Sub4_Sub2_4.p2(local28.offset + local118.offset + 2);
-		Static257.aClass2_Sub4_Sub2_4.p2(578);
-		Static257.aClass2_Sub4_Sub2_4.pdata(local28.bytes, local28.offset);
-		Static257.aClass2_Sub4_Sub2_4.pdata(local118.bytes, local118.offset);
+		Static257.outboundBuffer.offset = 0;
+		Static257.outboundBuffer.p1(Static43.aClass242_8.anInt7038);
+		Static257.outboundBuffer.p2(local28.offset + local118.offset + 2);
+		Static257.outboundBuffer.p2(578);
+		Static257.outboundBuffer.pdata(local28.bytes, local28.offset);
+		Static257.outboundBuffer.pdata(local118.bytes, local118.offset);
 		Static141.anInt2652 = 1;
 		Static66.anInt1625 = 0;
 		Static318.anInt5968 = -3;

@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static120 {
 
-	@OriginalMember(owner = "client!gs", name = "n", descriptor = "Lclient!r;")
-	public static Js5 aJs5_28;
-
 	@OriginalMember(owner = "client!gs", name = "g", descriptor = "Lclient!h;")
 	public static final Class89 aClass89_95 = new Class89(12, 3);
 
@@ -27,7 +24,7 @@ public final class Static120 {
 		@Pc(6) int local6 = arg1.offset;
 		@Pc(10) byte[] local10 = Static51.encodeString(arg0);
 		arg1.psmarts(local10.length);
-		arg1.offset += Static370.aClass140_1.method3647(arg1.bytes, local10, 0, arg1.offset, local10.length);
+		arg1.offset += Static370.huffmanCodec.method3647(arg1.bytes, local10, 0, arg1.offset, local10.length);
 		return arg1.offset - local6;
 	}
 
@@ -83,7 +80,7 @@ public final class Static120 {
 
 	@OriginalMember(owner = "client!gs", name = "a", descriptor = "(IBI)V")
 	public static void method2383(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
-		@Pc(13) DelayedStateChange local13 = Static316.create(12, arg1);
+		@Pc(13) DelayedStateChange local13 = DelayedStateChange.create(12, arg1);
 		local13.pushServer();
 		local13.anInt2289 = arg0;
 	}
@@ -96,7 +93,7 @@ public final class Static120 {
 				local7 = 32767;
 			}
 			@Pc(23) byte[] local23 = new byte[local7];
-			arg0.offset += Static370.aClass140_1.method3650(local7, local23, 0, arg0.offset, arg0.bytes);
+			arg0.offset += Static370.huffmanCodec.method3650(local7, local23, 0, arg0.offset, arg0.bytes);
 			return Static47.decodeString(0, local23, local7);
 		} catch (@Pc(47) Exception local47) {
 			return "Cabbage";

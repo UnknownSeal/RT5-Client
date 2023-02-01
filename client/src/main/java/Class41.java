@@ -377,7 +377,7 @@ public final class Class41 {
 			synchronized (this.aClass202_1.aJs5_78) {
 				for (local35 = 0; local35 < this.anIntArray97.length; local35++) {
 					if (this.anIntArray97[local35] == arg0) {
-						return this.aClass202_1.aJs5_78.method5087(0, this.anIntArray92[local35] & 0xFFFF);
+						return this.aClass202_1.aJs5_78.isFileReady(this.anIntArray92[local35] & 0xFFFF, 0);
 					}
 				}
 				return true;
@@ -389,7 +389,7 @@ public final class Class41 {
 			local31 = this.aClass202_1.aJs5_78;
 			synchronized (this.aClass202_1.aJs5_78) {
 				for (local35 = 0; local35 < this.anIntArray92.length; local35++) {
-					local27 &= this.aClass202_1.aJs5_78.method5087(0, this.anIntArray92[local35] & 0xFFFF);
+					local27 &= this.aClass202_1.aJs5_78.isFileReady(this.anIntArray92[local35] & 0xFFFF, 0);
 				}
 				return local27;
 			}
@@ -863,7 +863,7 @@ public final class Class41 {
 		@Pc(16) Js5 local16 = this.aClass202_1.aJs5_78;
 		synchronized (this.aClass202_1.aJs5_78) {
 			for (@Pc(28) int local28 = 0; local28 < this.anIntArray92.length; local28++) {
-				local12 &= this.aClass202_1.aJs5_78.method5087(0, this.anIntArray92[local28] & 0xFFFF);
+				local12 &= this.aClass202_1.aJs5_78.isFileReady(this.anIntArray92[local28] & 0xFFFF, 0);
 			}
 			return local12;
 		}

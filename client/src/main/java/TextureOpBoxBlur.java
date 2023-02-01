@@ -57,7 +57,7 @@ public final class TextureOpBoxBlur extends TextureOp {
 
 	@OriginalMember(owner = "client!ar", name = "a", descriptor = "(ILclient!bt;I)V")
 	@Override
-	public void decode(@OriginalArg(0) int opcode, @OriginalArg(1) Buffer buffer) {
+	public void decode(@OriginalArg(1) Buffer buffer, @OriginalArg(0) int opcode) {
 		if (opcode == 0) {
 			this.radiusX = buffer.g1();
 		} else if (opcode == 1) {

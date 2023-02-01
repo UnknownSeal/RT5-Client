@@ -29,7 +29,7 @@ public class TextureOpSprite extends TextureOp {
 
 	@OriginalMember(owner = "client!ek", name = "a", descriptor = "(ILclient!bt;I)V")
 	@Override
-	public final void decode(@OriginalArg(0) int opcode, @OriginalArg(1) Buffer buffer) {
+	public final void decode(@OriginalArg(1) Buffer buffer, @OriginalArg(0) int opcode) {
 		if (opcode == 0) {
 			this.spriteID = buffer.g2();
 		}

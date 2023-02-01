@@ -235,11 +235,11 @@ public final class TextureOpCombine extends TextureOp {
 
 	@OriginalMember(owner = "client!ri", name = "a", descriptor = "(ILclient!bt;I)V")
 	@Override
-	public void decode(@OriginalArg(0) int arg0, @OriginalArg(1) Buffer arg1) {
-		if (arg0 == 0) {
-			this.anInt5701 = arg1.g1();
-		} else if (arg0 == 1) {
-			super.monochrome = arg1.g1() == 1;
+	public void decode(@OriginalArg(1) Buffer buffer, @OriginalArg(0) int opcode) {
+		if (opcode == 0) {
+			this.anInt5701 = buffer.g1();
+		} else if (opcode == 1) {
+			super.monochrome = buffer.g1() == 1;
 		}
 	}
 }

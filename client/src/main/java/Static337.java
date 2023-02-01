@@ -8,7 +8,7 @@ public final class Static337 {
 	public static Class13 aClass13_17;
 
 	@OriginalMember(owner = "client!tk", name = "f", descriptor = "Lclient!kp;")
-	public static Class131 aClass131_1;
+	public static MouseWheel aMouseWheel_1;
 
 	@OriginalMember(owner = "client!tk", name = "g", descriptor = "I")
 	public static int anInt6317;
@@ -22,7 +22,7 @@ public final class Static337 {
 			return;
 		}
 		@Pc(16) int local16 = 0;
-		@Pc(24) int local24 = Static218.aClass177_Sub1_2.anInt4882 * arg2.anInt2906 >> 8;
+		@Pc(24) int local24 = Static218.preferences.areaSoundsVolume * arg2.anInt2906 >> 8;
 		if (arg2.anInt2896 < arg4) {
 			local16 = arg4 - arg2.anInt2896;
 		} else if (arg4 < arg2.anInt2899) {
@@ -33,13 +33,13 @@ public final class Static337 {
 		} else if (arg3 < arg2.anInt2910) {
 			local16 += arg2.anInt2910 - arg3;
 		}
-		if (arg2.anInt2901 == 0 || arg2.anInt2901 < local16 - 64 || Static218.aClass177_Sub1_2.anInt4882 == 0 || arg2.anInt2905 != arg1) {
+		if (arg2.anInt2901 == 0 || arg2.anInt2901 < local16 - 64 || Static218.preferences.areaSoundsVolume == 0 || arg2.anInt2905 != arg1) {
 			if (arg2.aClass2_Sub12_Sub4_3 != null) {
-				Static227.aClass2_Sub12_Sub2_2.method2081(arg2.aClass2_Sub12_Sub4_3);
+				client.soundStream.method2081(arg2.aClass2_Sub12_Sub4_3);
 				arg2.aClass2_Sub12_Sub4_3 = null;
 			}
 			if (arg2.aClass2_Sub12_Sub4_2 != null) {
-				Static227.aClass2_Sub12_Sub2_2.method2081(arg2.aClass2_Sub12_Sub4_2);
+				client.soundStream.method2081(arg2.aClass2_Sub12_Sub4_2);
 				arg2.aClass2_Sub12_Sub4_2 = null;
 			}
 			return;
@@ -52,12 +52,12 @@ public final class Static337 {
 		if (arg2.aClass2_Sub12_Sub4_3 != null) {
 			arg2.aClass2_Sub12_Sub4_3.method4978(local140);
 		} else if (arg2.anInt2894 >= 0) {
-			@Pc(155) Class247 local155 = Static408.method6434(Static85.aJs5_21, arg2.anInt2894, 0);
+			@Pc(155) SynthSound local155 = Static408.method6434(client.js5Archive4, arg2.anInt2894, 0);
 			if (local155 != null) {
-				@Pc(162) Class2_Sub21_Sub1 local162 = local155.method6433().method3178(Static300.aClass249_1);
+				@Pc(162) Class2_Sub21_Sub1 local162 = local155.method6433().method3178(client.resampler);
 				@Pc(167) Class2_Sub12_Sub4 local167 = Static405.method5005(local162, local140);
 				local167.method4983(-1);
-				Static227.aClass2_Sub12_Sub2_2.method2083(local167);
+				client.soundStream.addSubStream(local167);
 				arg2.aClass2_Sub12_Sub4_3 = local167;
 			}
 		}
@@ -69,12 +69,12 @@ public final class Static337 {
 			arg2.aClass2_Sub12_Sub4_2 = null;
 		} else if (arg2.anIntArray181 != null && (arg2.anInt2907 -= arg0) <= 0) {
 			@Pc(204) int local204 = (int) ((double) arg2.anIntArray181.length * Math.random());
-			@Pc(212) Class247 local212 = Static408.method6434(Static85.aJs5_21, arg2.anIntArray181[local204], 0);
+			@Pc(212) SynthSound local212 = Static408.method6434(client.js5Archive4, arg2.anIntArray181[local204], 0);
 			if (local212 != null) {
-				@Pc(219) Class2_Sub21_Sub1 local219 = local212.method6433().method3178(Static300.aClass249_1);
+				@Pc(219) Class2_Sub21_Sub1 local219 = local212.method6433().method3178(client.resampler);
 				@Pc(224) Class2_Sub12_Sub4 local224 = Static405.method5005(local219, local140);
 				local224.method4983(0);
-				Static227.aClass2_Sub12_Sub2_2.method2083(local224);
+				client.soundStream.addSubStream(local224);
 				arg2.anInt2907 = (int) ((double) (arg2.anInt2897 - arg2.anInt2903) * Math.random()) + arg2.anInt2903;
 				arg2.aClass2_Sub12_Sub4_2 = local224;
 				return;

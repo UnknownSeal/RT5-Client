@@ -10,7 +10,7 @@ public interface Interface3 {
 	void method1992(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) throws Exception;
 
 	@OriginalMember(owner = "client!fc", name = "a", descriptor = "(BILjava/awt/Component;Z)V")
-	void method1993(@OriginalArg(1) int arg0, @OriginalArg(2) Component arg1, @OriginalArg(3) boolean arg2) throws Exception;
+	void init(@OriginalArg(1) int arg0, @OriginalArg(2) Component arg1, @OriginalArg(3) boolean arg2) throws Exception;
 
 	@OriginalMember(owner = "client!fc", name = "a", descriptor = "(I[I)V")
 	void method1994(@OriginalArg(0) int arg0, @OriginalArg(1) int[] arg1);

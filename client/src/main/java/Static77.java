@@ -8,7 +8,7 @@ public final class Static77 {
 	public static int anInt1756;
 
 	@OriginalMember(owner = "client!eh", name = "s", descriptor = "I")
-	public static int anInt1751 = 0;
+	public static int step = 0;
 
 	@OriginalMember(owner = "client!eh", name = "D", descriptor = "I")
 	public static int anInt1762 = 0;

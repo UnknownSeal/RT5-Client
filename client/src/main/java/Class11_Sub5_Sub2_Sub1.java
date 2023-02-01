@@ -16,7 +16,7 @@ public final class Class11_Sub5_Sub2_Sub1 extends Class11_Sub5_Sub2 {
 	public int anInt4181;
 
 	@OriginalMember(owner = "client!nh", name = "Rc", descriptor = "Ljava/lang/String;")
-	public String aString42;
+	public String username;
 
 	@OriginalMember(owner = "client!nh", name = "Wc", descriptor = "I")
 	private int anInt4195;
@@ -196,11 +196,11 @@ public final class Class11_Sub5_Sub2_Sub1 extends Class11_Sub5_Sub2 {
 			local207[local136] = local143;
 		}
 		this.anInt4195 = arg0.g2();
-		this.aString42 = arg0.gjstr();
+		this.username = arg0.gjstr();
 		if (local29) {
 			this.aString41 = arg0.gjstr();
 		} else {
-			this.aString41 = this.aString42;
+			this.aString41 = this.username;
 		}
 		this.combatLevel = arg0.g1();
 		if (local37) {
@@ -279,7 +279,7 @@ public final class Class11_Sub5_Sub2_Sub1 extends Class11_Sub5_Sub2 {
 			arg1 |= 0x7;
 		}
 		super.aModelArray3[0] = this.appearance.method3190(super.anInt4624, Static59.aClass7_1, Static39.aClass85_1, Static21.setIdentikit, local28, super.anInt4592, super.anInt4629, arg1, super.anInt4593, super.anInt4626, local48, Static214.aClass226_1, Static313.aClass107_2, arg0, Static6.aClass219_1, super.aClass20Array3, super.anInt4607);
-		@Pc(116) int local116 = Static365.method6116();
+		@Pc(116) int local116 = Static365.getModelCacheSize();
 		if (GameShell.maxMemory < 96 && local116 > 50) {
 			Static163.method3104();
 		}
@@ -287,16 +287,16 @@ public final class Class11_Sub5_Sub2_Sub1 extends Class11_Sub5_Sub2 {
 		if (Static189.aClass127_6 != Static121.aClass127_4 && local116 < 50) {
 			local136 = 50 - local116;
 			while (Static50.anInt1332 < local136) {
-				Static26.aByteArrayArray3[Static50.anInt1332] = new byte[102400];
+				Static26.fakeModelCacheEntries[Static50.anInt1332] = new byte[102400];
 				Static50.anInt1332++;
 			}
 			while (local136 < Static50.anInt1332) {
 				Static50.anInt1332--;
-				Static26.aByteArrayArray3[Static50.anInt1332] = null;
+				Static26.fakeModelCacheEntries[Static50.anInt1332] = null;
 			}
 		} else if (Static121.aClass127_4 != Static189.aClass127_6) {
 			Static50.anInt1332 = 0;
-			Static26.aByteArrayArray3 = new byte[50][];
+			Static26.fakeModelCacheEntries = new byte[50][];
 		}
 		if (super.aModelArray3[0] == null) {
 			return false;
@@ -401,7 +401,7 @@ public final class Class11_Sub5_Sub2_Sub1 extends Class11_Sub5_Sub2 {
 		local19.method3935(super.xFine, super.anInt6782, super.zFine);
 		@Pc(45) float local45 = arg0.method2802();
 		@Pc(48) float local48 = arg0.method2860();
-		if (Static218.aClass177_Sub1_2.aBoolean358) {
+		if (Static218.preferences.characterShadows) {
 			@Pc(55) BasType local55 = this.method4331();
 			if (local55.aBoolean424 && (this.appearance.npcID == -1 || Static6.aClass219_1.get(this.appearance.npcID).hasshadow)) {
 				@Pc(87) Class157 local87 = super.anInt4597 != -1 && super.anInt4590 == 0 ? Static39.aClass85_1.method2371(super.anInt4597) : null;
@@ -535,7 +535,7 @@ public final class Class11_Sub5_Sub2_Sub1 extends Class11_Sub5_Sub2 {
 				local39[this.aByte40] = -1;
 			}
 		}
-		local17 = local17 + this.aString42;
+		local17 = local17 + this.username;
 		if (Static333.aStringArray67 != null) {
 			local17 = local17 + Static333.aStringArray67[this.aByte40];
 		}

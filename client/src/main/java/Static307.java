@@ -13,7 +13,7 @@ public final class Static307 {
 
 	@OriginalMember(owner = "client!rq", name = "a", descriptor = "(IZ)V")
 	public static void method5254(@OriginalArg(0) int arg0) {
-		if (!Static218.aClass177_Sub1_2.aBoolean363) {
+		if (!Static218.preferences.customCursors) {
 			arg0 = -1;
 		}
 		if (Static29.anInt721 == arg0) {

@@ -22,7 +22,18 @@ public final class LinkedList {
 		this.sentinel.next = this.sentinel;
 	}
 
-	@OriginalMember(owner = "client!ld", name = "a", descriptor = "(Lclient!ag;B)V")
+    @OriginalMember(owner = "client!fk", name = "a", descriptor = "(Lclient!ag;BLclient!ag;)V")
+    public static void insertBefore(@OriginalArg(0) Node node, @OriginalArg(2) Node position) {
+        if (node.previous != null) {
+            node.unlink();
+        }
+        node.previous = position.previous;
+        node.next = position;
+        node.previous.next = node;
+        node.next.previous = node;
+    }
+
+    @OriginalMember(owner = "client!ld", name = "a", descriptor = "(Lclient!ag;B)V")
 	public void addTail(@OriginalArg(0) Node arg0) {
 		if (arg0.previous != null) {
 			arg0.unlink();

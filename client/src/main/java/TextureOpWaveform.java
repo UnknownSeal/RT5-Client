@@ -26,13 +26,13 @@ public final class TextureOpWaveform extends TextureOp {
 
 	@OriginalMember(owner = "client!jl", name = "a", descriptor = "(ILclient!bt;I)V")
 	@Override
-	public void decode(@OriginalArg(0) int arg0, @OriginalArg(1) Buffer arg1) {
-		if (arg0 == 0) {
-			this.anInt3132 = arg1.g1();
-		} else if (arg0 == 1) {
-			this.anInt3135 = arg1.g1();
-		} else if (arg0 == 3) {
-			this.anInt3137 = arg1.g1();
+	public void decode(@OriginalArg(1) Buffer buffer, @OriginalArg(0) int opcode) {
+		if (opcode == 0) {
+			this.anInt3132 = buffer.g1();
+		} else if (opcode == 1) {
+			this.anInt3135 = buffer.g1();
+		} else if (opcode == 3) {
+			this.anInt3137 = buffer.g1();
 		}
 	}
 

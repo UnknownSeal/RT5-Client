@@ -14,6 +14,6 @@ public final class Static247 {
 
 	@OriginalMember(owner = "client!od", name = "a", descriptor = "(BLjava/lang/String;I)I")
 	public static int method4301(@OriginalArg(1) String arg0) {
-		return Static319.method5432(16, arg0);
+		return Static319.parseInt(arg0, 16);
 	}
 }

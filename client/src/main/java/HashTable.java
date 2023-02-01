@@ -7,10 +7,10 @@ import org.openrs2.deob.annotation.Pc;
 public final class HashTable {
 
 	@OriginalMember(owner = "client!ad", name = "f", descriptor = "Lclient!ag;")
-	private Node aClass2_9;
+	private Node searchCursor;
 
 	@OriginalMember(owner = "client!ad", name = "j", descriptor = "J")
-	private long aLong10;
+	private long searchKey;
 
 	@OriginalMember(owner = "client!ad", name = "s", descriptor = "Lclient!ag;")
 	private Node iteratorCursor;
@@ -72,24 +72,24 @@ public final class HashTable {
 			}
 		}
 		this.iteratorCursor = null;
-		this.aClass2_9 = null;
+		this.searchCursor = null;
 	}
 
 	@OriginalMember(owner = "client!ad", name = "b", descriptor = "(B)Lclient!ag;")
 	public Node method82() {
-		if (this.aClass2_9 == null) {
+		if (this.searchCursor == null) {
 			return null;
 		}
-		@Pc(34) Node local34 = this.buckets[(int) ((long) (this.bucketCount - 1) & this.aLong10)];
-		while (local34 != this.aClass2_9) {
-			if (this.aClass2_9.key == this.aLong10) {
-				@Pc(46) Node local46 = this.aClass2_9;
-				this.aClass2_9 = this.aClass2_9.next;
+		@Pc(34) Node local34 = this.buckets[(int) ((long) (this.bucketCount - 1) & this.searchKey)];
+		while (local34 != this.searchCursor) {
+			if (this.searchCursor.key == this.searchKey) {
+				@Pc(46) Node local46 = this.searchCursor;
+				this.searchCursor = this.searchCursor.next;
 				return local46;
 			}
-			this.aClass2_9 = this.aClass2_9.next;
+			this.searchCursor = this.searchCursor.next;
 		}
-		this.aClass2_9 = null;
+		this.searchCursor = null;
 		return null;
 	}
 
@@ -136,17 +136,17 @@ public final class HashTable {
 	}
 
 	@OriginalMember(owner = "client!ad", name = "a", descriptor = "(JI)Lclient!ag;")
-	public Node get(@OriginalArg(0) long arg0) {
-		this.aLong10 = arg0;
-		@Pc(23) Node local23 = this.buckets[(int) (arg0 & (long) (this.bucketCount - 1))];
-		for (this.aClass2_9 = local23.next; this.aClass2_9 != local23; this.aClass2_9 = this.aClass2_9.next) {
-			if (arg0 == this.aClass2_9.key) {
-				@Pc(41) Node local41 = this.aClass2_9;
-				this.aClass2_9 = this.aClass2_9.next;
-				return local41;
+	public Node get(@OriginalArg(0) long key) {
+		this.searchKey = key;
+		@Pc(23) Node sentinel = this.buckets[(int) (key & (long) (this.bucketCount - 1))];
+		for (this.searchCursor = sentinel.next; this.searchCursor != sentinel; this.searchCursor = this.searchCursor.next) {
+			if (this.searchCursor.key == key) {
+				@Pc(41) Node value = this.searchCursor;
+				this.searchCursor = this.searchCursor.next;
+				return value;
 			}
 		}
-		this.aClass2_9 = null;
+		this.searchCursor = null;
 		return null;
 	}
 }

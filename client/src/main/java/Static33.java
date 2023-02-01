@@ -22,7 +22,7 @@ public final class Static33 {
 	public static int method4200() {
 		if (Static375.aComponent_14 == null) {
 			if (!Static375.aBoolean477 && Static268.size > 0) {
-				if (Static148.aBoolean192 && Static174.aClass123_2.method3342(81) && Static268.size > 2) {
+				if (Static148.shiftClick && Static174.aClass123_2.method3342(81) && Static268.size > 2) {
 					return ((Class2_Sub5) Static129.A_LINKED_LIST___19.sentinel.previous.previous).anInt1007;
 				}
 				return ((Class2_Sub5) Static129.A_LINKED_LIST___19.sentinel.previous).anInt1007;

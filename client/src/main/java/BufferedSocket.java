@@ -204,10 +204,10 @@ public final class BufferedSocket implements Runnable {
 	}
 
 	@OriginalMember(owner = "client!iu", name = "e", descriptor = "(I)V")
-	public void method2801() {
+	public void breakConnection() {
 		if (!this.closed) {
-			this.inputStream = new InputStream_Sub1();
-			this.outputStream = new OutputStream_Sub1();
+			this.inputStream = new BrokenInputStream();
+			this.outputStream = new BrokenOutputStream();
 		}
 	}
 }

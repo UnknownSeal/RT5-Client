@@ -23,20 +23,20 @@ public final class Static163 {
 		if (arg4) {
 			Static335.method5693();
 		}
-		if (GameShell.fullScreenFrame != null && (arg3 != 3 || arg0 != Static218.aClass177_Sub1_2.anInt4884 || Static218.aClass177_Sub1_2.anInt4893 != arg1)) {
+		if (GameShell.fullScreenFrame != null && (arg3 != 3 || arg0 != Static218.preferences.anInt4884 || Static218.preferences.anInt4893 != arg1)) {
 			Static17.method4214(GameShell.fullScreenFrame, GameShell.signlink);
 			GameShell.fullScreenFrame = null;
 		}
 		if (arg3 == 3 && GameShell.fullScreenFrame == null) {
 			GameShell.fullScreenFrame = Static5.method85(arg1, GameShell.signlink, arg0, 0);
 			if (GameShell.fullScreenFrame != null) {
-				Static218.aClass177_Sub1_2.anInt4893 = arg1;
-				Static218.aClass177_Sub1_2.anInt4884 = arg0;
-				Static218.aClass177_Sub1_2.write(GameShell.signlink);
+				Static218.preferences.anInt4893 = arg1;
+				Static218.preferences.anInt4884 = arg0;
+				Static218.preferences.write(GameShell.signlink);
 			}
 		}
 		if (arg3 == 3 && GameShell.fullScreenFrame == null) {
-			method3099(-1, -1, arg2, Static218.aClass177_Sub1_2.anInt4894, true);
+			method3099(-1, -1, arg2, Static218.preferences.anInt4894, true);
 			return;
 		}
 		@Pc(81) Container local81;
@@ -118,8 +118,8 @@ public final class Static163 {
 	public static void method3101(@OriginalArg(1) String arg0) {
 		if (Static47.aClass214Array1 != null) {
 			Static91.method1960(Static70.aClass145_57);
-			Static257.aClass2_Sub4_Sub2_4.p1(Static27.method872(arg0));
-			Static257.aClass2_Sub4_Sub2_4.pjstr(arg0);
+			Static257.outboundBuffer.p1(Static27.method872(arg0));
+			Static257.outboundBuffer.pjstr(arg0);
 		}
 	}
 
@@ -128,7 +128,7 @@ public final class Static163 {
 		if (Static45.getServerActiveProperties(arg0).getTargetMask() == 0) {
 			return null;
 		} else if (arg0.opCircumfix == null || arg0.opCircumfix.trim().length() == 0) {
-			return Static18.aBoolean30 ? "Hidden-use" : null;
+			return Static18.qaOpTest ? "Hidden-use" : null;
 		} else {
 			return arg0.opCircumfix;
 		}

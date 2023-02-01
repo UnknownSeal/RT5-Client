@@ -21,11 +21,11 @@ public final class Static109 {
 		for (@Pc(10) Class2_Sub19 local10 = (Class2_Sub19) Static83.A_LINKED_LIST___14.head(); local10 != null; local10 = (Class2_Sub19) Static83.A_LINKED_LIST___14.next()) {
 			if (local10.anInt2905 == arg0 && local10.anInt2899 == arg1 * 128 && local10.anInt2910 == arg2 * 128 && local10.aClass41_1.anInt1351 == arg3.anInt1351) {
 				if (local10.aClass2_Sub12_Sub4_3 != null) {
-					Static227.aClass2_Sub12_Sub2_2.method2081(local10.aClass2_Sub12_Sub4_3);
+					client.soundStream.method2081(local10.aClass2_Sub12_Sub4_3);
 					local10.aClass2_Sub12_Sub4_3 = null;
 				}
 				if (local10.aClass2_Sub12_Sub4_2 != null) {
-					Static227.aClass2_Sub12_Sub2_2.method2081(local10.aClass2_Sub12_Sub4_2);
+					client.soundStream.method2081(local10.aClass2_Sub12_Sub4_2);
 					local10.aClass2_Sub12_Sub4_2 = null;
 				}
 				local10.unlink();

@@ -5,15 +5,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static61 {
 
-	@OriginalMember(owner = "client!dj", name = "cb", descriptor = "Ljava/lang/String;")
-	public static String aString14;
-
-	@OriginalMember(owner = "client!dj", name = "db", descriptor = "Lclient!r;")
-	public static Js5 aJs5_11;
-
-	@OriginalMember(owner = "client!dj", name = "eb", descriptor = "Lclient!r;")
-	public static Js5 aJs5_12;
-
 	@OriginalMember(owner = "client!dj", name = "Y", descriptor = "Lclient!hu;")
 	public static final SoftLruHashTable A_SOFT_LRU_HASH_TABLE___5 = new SoftLruHashTable(8);
 
@@ -66,8 +57,8 @@ public final class Static61 {
 			Static207.add(LocalisedText.FRIEND_LIST_ADD_SELF.getLocalisedText(client.language));
 		} else {
 			Static91.method1960(Static148.aClass145_104);
-			Static257.aClass2_Sub4_Sub2_4.p1(Static27.method872(arg0));
-			Static257.aClass2_Sub4_Sub2_4.pjstr(arg0);
+			Static257.outboundBuffer.p1(Static27.method872(arg0));
+			Static257.outboundBuffer.pjstr(arg0);
 		}
 	}
 

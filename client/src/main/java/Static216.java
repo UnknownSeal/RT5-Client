@@ -4,12 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static216 {
 
-	@OriginalMember(owner = "client!mm", name = "b", descriptor = "Lclient!r;")
-	public static Js5 aJs5_57;
-
-    @OriginalMember(owner = "client!mm", name = "j", descriptor = "Lclient!r;")
-	public static Js5 aJs5_58;
-
 	@OriginalMember(owner = "client!mm", name = "c", descriptor = "[I")
 	public static final int[] anIntArray231 = new int[3];
 
@@ -21,7 +15,7 @@ public final class Static216 {
 
 	@OriginalMember(owner = "client!mm", name = "a", descriptor = "(IIII)V")
 	public static void method3773(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		@Pc(8) DelayedStateChange local8 = Static316.create(9, arg1);
+		@Pc(8) DelayedStateChange local8 = DelayedStateChange.create(9, arg1);
 		local8.pushServer();
 		local8.anInt2289 = arg0;
 		local8.anInt2290 = arg2;
@@ -91,9 +85,9 @@ public final class Static216 {
 		for (@Pc(7) int local7 = 0; local7 < Static243.size; local7++) {
 			@Pc(15) int local15 = Static237.delays[local7]--;
 			if (Static237.delays[local7] >= -10) {
-				@Pc(90) Class247 local90 = Static196.sounds[local7];
+				@Pc(90) SynthSound local90 = Static196.sounds[local7];
 				if (local90 == null) {
-					local90 = Static408.method6434(Static85.aJs5_21, Static256.ids[local7], 0);
+					local90 = Static408.method6434(client.js5Archive4, Static256.ids[local7], 0);
 					if (local90 == null) {
 						continue;
 					}
@@ -103,7 +97,7 @@ public final class Static216 {
 				if (Static237.delays[local7] < 0) {
 					@Pc(143) int local143;
 					if (Static162.positions[local7] == 0) {
-						local143 = Static218.aClass177_Sub1_2.anInt4888 * Static223.anIntArray256[local7] >> 8;
+						local143 = Static218.preferences.soundEffectsVolume * Static223.anIntArray256[local7] >> 8;
 					} else {
 						@Pc(133) int local133 = Static162.positions[local7] >> 24 & 0x3;
 						if (Static17.self.aByte78 == local133) {
@@ -126,16 +120,16 @@ public final class Static216 {
 							if (local211 < 0) {
 								local211 = 0;
 							}
-							local143 = Static223.anIntArray256[local7] * (local153 - local211) * Static218.aClass177_Sub1_2.anInt4882 / local153 >> 8;
+							local143 = Static223.anIntArray256[local7] * (local153 - local211) * Static218.preferences.areaSoundsVolume / local153 >> 8;
 						} else {
 							local143 = 0;
 						}
 					}
 					if (local143 > 0) {
-						@Pc(264) Class2_Sub21_Sub1 local264 = local90.method6433().method3178(Static300.aClass249_1);
+						@Pc(264) Class2_Sub21_Sub1 local264 = local90.method6433().method3178(client.resampler);
 						@Pc(269) Class2_Sub12_Sub4 local269 = Static405.method5005(local264, local143);
 						local269.method4983(Static329.loops[local7] - 1);
-						Static227.aClass2_Sub12_Sub2_2.method2083(local269);
+						client.soundStream.addSubStream(local269);
 					}
 					Static237.delays[local7] = -100;
 				}
@@ -152,21 +146,21 @@ public final class Static216 {
 				local7--;
 			}
 		}
-		if (Static393.jingle && !Static64.method1704()) {
-			if (Static218.aClass177_Sub1_2.musicVolume != 0 && Static171.anInt3268 != -1) {
-				Static94.method2042(Static218.aClass177_Sub1_2.musicVolume, Static171.anInt3268, Static101.aJs5_23);
+		if (Static393.jingle && !Static64.isPlaying()) {
+			if (Static218.preferences.musicVolume != 0 && Static171.groupID != -1) {
+				Static94.playImmediate(Static171.groupID, client.js5Archive6, Static218.preferences.musicVolume);
 			}
 			Static393.jingle = false;
-		} else if (Static218.aClass177_Sub1_2.musicVolume != 0 && Static171.anInt3268 != -1 && !Static64.method1704()) {
+		} else if (Static218.preferences.musicVolume != 0 && Static171.groupID != -1 && !Static64.isPlaying()) {
 			Static91.method1960(Static67.aClass145_56);
-			Static257.aClass2_Sub4_Sub2_4.p4(Static171.anInt3268);
-			Static171.anInt3268 = -1;
+			Static257.outboundBuffer.p4(Static171.groupID);
+			Static171.groupID = -1;
 		}
 	}
 
 	@OriginalMember(owner = "client!mm", name = "a", descriptor = "(II)V")
 	public static void method3777(@OriginalArg(1) int arg0) {
-		@Pc(12) DelayedStateChange local12 = Static316.create(7, arg0);
+		@Pc(12) DelayedStateChange local12 = DelayedStateChange.create(7, arg0);
 		local12.pushClient();
 	}
 }

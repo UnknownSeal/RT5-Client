@@ -140,7 +140,7 @@ public final class Class99 implements Interface2 {
 		if (local15 != null) {
 			return (Class2_Sub2_Sub14) local15;
 		}
-		@Pc(26) byte[] local26 = this.aJs5_38.method5081(arg0);
+		@Pc(26) byte[] local26 = this.aJs5_38.fetchFile(arg0);
 		if (local26 == null) {
 			return null;
 		} else {

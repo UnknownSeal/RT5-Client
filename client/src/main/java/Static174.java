@@ -22,7 +22,7 @@ public final class Static174 {
 	@OriginalMember(owner = "client!kb", name = "b", descriptor = "(I)V")
 	public static void method1506() {
 		@Pc(5) byte local5 = 0;
-		if (Static218.aClass177_Sub1_2.aBoolean364) {
+		if (Static218.preferences.highDetailLighting) {
 			local5 = 55;
 		}
 		Static91.method1963(local5);
@@ -44,12 +44,12 @@ public final class Static174 {
 	@OriginalMember(owner = "client!kb", name = "a", descriptor = "(II)V")
 	public static void method1507() {
 		Static384.aBoolean485 = false;
-		Static235.anInt3365 = 1;
-		Static105.anInt2183 = -1;
-		Static116.aJs5_26 = null;
-		Static341.anInt6376 = -1;
-		Static356.anInt6641 = 0;
-		Static28.anInt672 = 2;
+		Static235.state = 1;
+		Static105.songGroupID = -1;
+		Static116.songArchive = null;
+		Static341.songFileID = -1;
+		Static356.volume = 0;
+		Static28.volumeFadeRate = 2;
 	}
 
 	@OriginalMember(owner = "client!kb", name = "a", descriptor = "(BLclient!bt;)Lclient!vo;")

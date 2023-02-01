@@ -44,7 +44,7 @@ public final class Static201 {
 					@Pc(90) int local90 = arg8 + local19.x;
 					@Pc(95) int local95 = arg4 + local19.y;
 					@Pc(98) int local98 = local19.transparency;
-					if (Static18.aBoolean30 && (Static45.getServerActiveProperties(local19).anInt1758 != 0 || local19.type == 0) && local98 > 127) {
+					if (Static18.qaOpTest && (Static45.getServerActiveProperties(local19).anInt1758 != 0 || local19.type == 0) && local98 > 127) {
 						local98 = 127;
 					}
 					@Pc(151) int local151;
@@ -144,12 +144,12 @@ public final class Static201 {
 								continue;
 							}
 							if (local19.anInt4273 == Static60.anInt667) {
-								if (!Static356.aBoolean456 && !Static294.aBoolean392) {
+								if (!client.displayFps && !Static294.aBoolean392) {
 									continue;
 								}
 								local243 = local19.width + local90;
 								local248 = local95 + 15;
-								if (Static356.aBoolean456) {
+								if (client.displayFps) {
 									Static276.aClass130_4.method5897(local243, local248, "Fps:" + GameShell.framesPerSecond, -256);
 									local248 += 15;
 									@Pc(504) Runtime local504 = Runtime.getRuntime();
@@ -202,9 +202,9 @@ public final class Static201 {
 							if (local19.createdComponent != null) {
 								method3652(local286, local19.id, local19.createdComponent, local155, local95 - local19.scrollY, local151, local275, local66, local90 - local19.scrollX);
 							}
-							@Pc(820) Class2_Sub7 local820 = (Class2_Sub7) Static329.aClass4_130.get((long) local19.id);
+							@Pc(820) SubInterface local820 = (SubInterface) Static329.subInterfaces.get((long) local19.id);
 							if (local820 != null) {
-								Static199.method5245(local155, local286, local275, local820.anInt1370, local66, local95, local151, local90);
+								Static199.method5245(local155, local286, local275, local820.id, local66, local95, local151, local90);
 							}
 							if (local19.anInt4273 == Static270.anInt4964 && Static190.aClass19_8.method2892()) {
 								Static190.aClass19_8.method2887();
@@ -212,7 +212,7 @@ public final class Static201 {
 							}
 							Static190.aClass19_8.method2895(arg5, arg3, arg6, arg0);
 						}
-						if (Static20.aBooleanArray6[local66] || Static154.anInt2807 > 1) {
+						if (Static20.aBooleanArray6[local66] || Static154.rectDebug > 1) {
 							if (local19.type == 3) {
 								if (local98 == 0) {
 									if (local19.fill) {
@@ -262,7 +262,7 @@ public final class Static201 {
 										if (local19.objId == -1) {
 											local1139 = local19.method4112(Static190.aClass19_8);
 										} else {
-											@Pc(1121) Class117 local1121 = local19.aBoolean280 ? Static17.self.appearance : null;
+											@Pc(1121) Class117 local1121 = local19.objWearColor ? Static17.self.appearance : null;
 											local1139 = Static313.aClass107_2.method2758(local19.anInt4306, local19.objId, local1121, Static190.aClass19_8, local19.graphicShadow | 0xFF000000, local19.outline, local19.objCount);
 										}
 										if (local1139 != null) {
@@ -317,7 +317,7 @@ public final class Static201 {
 										if (local1490 != null) {
 											local1490 = local1490.getCountObjType(local19.objCount);
 											local1511 = local19.modelSeqID == -1 ? null : Static39.aClass85_1.method2371(local19.modelSeqID);
-											local1519 = local19.aBoolean280 ? Static17.self.appearance : null;
+											local1519 = local19.objWearColor ? Static17.self.appearance : null;
 											local1477 = local1490.method4775(local19.anInt4283, 1024, local19.anInt4316, local1511, Static190.aClass19_8, 1, local1519, local19.anInt4247);
 											if (local1477 == null) {
 												Static200.redraw(local19);
@@ -338,7 +338,7 @@ public final class Static201 {
 										@Pc(1701) Class2_Sub41 local1701 = Static374.method6274(false, local19.modelID);
 										local1511 = local19.modelSeqID == -1 ? null : Static39.aClass85_1.method2371(local19.modelSeqID);
 										if (local1701 != null) {
-											local1519 = local19.aBoolean280 ? Static17.self.appearance : null;
+											local1519 = local19.objWearColor ? Static17.self.appearance : null;
 											local1477 = local1701.method6359(local19.anInt4247, local19.anInt4283, local19.anInt4236, local19.modelType == 9, local1511, local19.anInt4316, local1519, Static190.aClass19_8);
 										}
 									} else if (local19.modelSeqID == -1) {

@@ -17,7 +17,7 @@ public final class Static329 {
 	public static final boolean[][] aBooleanArrayArray4 = new boolean[][] { new boolean[13], { false, false, true, true, true, true, true, false, false, false, false, false, true }, { true, true, true, true, true, true, false, false, false, false, false, false, false }, { true, true, true, false, false, true, true, true, false, false, false, false, false }, { true, false, false, false, false, true, true, true, false, false, false, false, false }, { false, false, true, true, true, true, false, false, false, false, false, false, false }, { false, true, true, true, true, true, false, false, false, false, false, false, true }, { false, true, true, true, true, true, true, true, false, false, false, false, true }, { true, true, false, false, false, false, false, true, false, false, false, false, false }, { true, true, true, true, true, false, false, false, true, true, false, false, false }, { true, false, false, false, true, true, true, true, true, true, false, false, false }, { true, false, true, true, true, true, true, true, false, false, true, true, false }, { true, true, true, true, true, true, true, true, true, true, true, true, true }, new boolean[13], { true, true, true, true, true, true, true, true, true, true, true, true, true } };
 
 	@OriginalMember(owner = "client!tc", name = "Y", descriptor = "Lclient!ad;")
-	public static HashTable aClass4_130 = new HashTable(8);
+	public static HashTable subInterfaces = new HashTable(8);
 
 	@OriginalMember(owner = "client!tc", name = "ab", descriptor = "[I")
 	public static final int[] anIntArray420 = new int[3];
@@ -29,18 +29,18 @@ public final class Static329 {
 		}
 		@Pc(22) int local22 = (arg4 + arg2) / 2;
 		@Pc(24) int local24 = arg2;
-		@Pc(28) World local28 = Static300.aWorldArray2[local22];
-		Static300.aWorldArray2[local22] = Static300.aWorldArray2[arg4];
-		Static300.aWorldArray2[arg4] = local28;
+		@Pc(28) World local28 = Static300.sorted[local22];
+		Static300.sorted[local22] = Static300.sorted[arg4];
+		Static300.sorted[arg4] = local28;
 		for (@Pc(40) int local40 = arg2; local40 < arg4; local40++) {
-			if (Static212.method3729(arg1, arg0, Static300.aWorldArray2[local40], local28, arg3, arg5) <= 0) {
-				@Pc(57) World local57 = Static300.aWorldArray2[local40];
-				Static300.aWorldArray2[local40] = Static300.aWorldArray2[local24];
-				Static300.aWorldArray2[local24++] = local57;
+			if (Static212.method3729(arg1, arg0, Static300.sorted[local40], local28, arg3, arg5) <= 0) {
+				@Pc(57) World local57 = Static300.sorted[local40];
+				Static300.sorted[local40] = Static300.sorted[local24];
+				Static300.sorted[local24++] = local57;
 			}
 		}
-		Static300.aWorldArray2[arg4] = Static300.aWorldArray2[local24];
-		Static300.aWorldArray2[local24] = local28;
+		Static300.sorted[arg4] = Static300.sorted[local24];
+		Static300.sorted[local24] = local28;
 		method5628(arg0, arg1, arg2, arg3, local24 - 1, arg5);
 		method5628(arg0, arg1, local24 + 1, arg3, arg4, arg5);
 	}

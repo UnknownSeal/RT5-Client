@@ -62,6 +62,58 @@ public final class DelayedStateChange extends SecondaryNode {
 		return serverChange;
 	}
 
+    @OriginalMember(owner = "client!at", name = "a", descriptor = "(II)V")
+    public static void setComponentModelClient(@OriginalArg(1) int id) {
+        @Pc(8) DelayedStateChange change = create(4, id);
+        change.pushClient();
+    }
+
+	@OriginalMember(owner = "client!sg", name = "a", descriptor = "(III)Lclient!gg;")
+	public static DelayedStateChange create(@OriginalArg(0) int type, @OriginalArg(2) int id) {
+		@Pc(15) DelayedStateChange change = (DelayedStateChange) changes.get((long) id | (long) type << 32);
+		if (change == null) {
+			change = new DelayedStateChange(type, id);
+			changes.put(change, change.key);
+		}
+		return change;
+	}
+
+	@OriginalMember(owner = "client!k", name = "a", descriptor = "(II)V")
+	public static void setComponentModelAngleClient(@OriginalArg(1) int id) {
+		@Pc(13) DelayedStateChange change = create(8, id);
+		change.pushClient();
+	}
+
+	@OriginalMember(owner = "client!eq", name = "b", descriptor = "(ZI)V")
+	public static void setComponentModelOffsetClient(@OriginalArg(1) int id) {
+		@Pc(12) DelayedStateChange change = create(10, id);
+		change.pushClient();
+	}
+
+	@OriginalMember(owner = "client!og", name = "a", descriptor = "(IB)V")
+	public static void setComponentModelAnimClient(@OriginalArg(0) int id) {
+		@Pc(8) DelayedStateChange change = create(5, id);
+		change.pushClient();
+	}
+
+	@OriginalMember(owner = "client!kg", name = "a", descriptor = "(BI)V")
+	public static void setComponentTextClient(@OriginalArg(1) int id) {
+		@Pc(16) DelayedStateChange change = create(3, id);
+		change.pushClient();
+	}
+
+	@OriginalMember(owner = "client!hg", name = "a", descriptor = "(BI)V")
+	public static void method2439(@OriginalArg(1) int id) {
+		@Pc(17) DelayedStateChange change = create(16, id);
+		change.pushClient();
+	}
+
+	@OriginalMember(owner = "client!sj", name = "c", descriptor = "(II)V")
+	public static void setComponentObjClient(@OriginalArg(1) int id) {
+		@Pc(13) DelayedStateChange change = create(9, id);
+		change.pushClient();
+	}
+
 	@OriginalMember(owner = "client!gg", name = "b", descriptor = "(I)I")
 	public int getType() {
 		return (int) (super.key >>> 32 & 0xFFL);

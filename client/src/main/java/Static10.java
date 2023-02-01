@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static10 {
 
 	@OriginalMember(owner = "client!aj", name = "U", descriptor = "[S")
-	public static short[] aShortArray1;
+	public static short[] sourceBodyColors;
 
 	@OriginalMember(owner = "client!aj", name = "R", descriptor = "Lclient!h;")
 	public static final Class89 aClass89_12 = new Class89(58, 0);
@@ -40,7 +40,7 @@ public final class Static10 {
 
 	@OriginalMember(owner = "client!aj", name = "a", descriptor = "(IILjava/lang/String;)V")
 	public static void method239(@OriginalArg(1) int arg0, @OriginalArg(2) String arg1) {
-		@Pc(8) DelayedStateChange local8 = Static316.create(2, arg0);
+		@Pc(8) DelayedStateChange local8 = DelayedStateChange.create(2, arg0);
 		local8.pushServer();
 		local8.aString21 = arg1;
 	}

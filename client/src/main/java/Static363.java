@@ -47,7 +47,7 @@ public final class Static363 {
 
 	@OriginalMember(owner = "client!vf", name = "i", descriptor = "(I)V")
 	public static void method6090() {
-		if (Static218.aClass177_Sub1_2.method4491(Static77.anInt1762) != 2) {
+		if (Static218.preferences.method4491(Static77.anInt1762) != 2) {
 			return;
 		}
 		@Pc(21) byte local21 = (byte) (Static163.anInt3086 - 4 & 0xFF);

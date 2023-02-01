@@ -20,9 +20,9 @@ public final class Static72 {
 
 	@OriginalMember(owner = "client!ec", name = "a", descriptor = "(JB)V")
 	public static void method1809(@OriginalArg(0) long arg0) {
-		Static257.aClass2_Sub4_Sub2_4.offset = 0;
-		Static257.aClass2_Sub4_Sub2_4.p1(Static43.aClass242_7.anInt7038);
-		Static257.aClass2_Sub4_Sub2_4.p8(arg0);
+		Static257.outboundBuffer.offset = 0;
+		Static257.outboundBuffer.p1(Static43.aClass242_7.anInt7038);
+		Static257.outboundBuffer.p8(arg0);
 		Static141.anInt2652 = 1;
 		Static327.anInt6109 = 0;
 		Static66.anInt1625 = 0;

@@ -86,9 +86,9 @@ public final class Static1 {
 		@Pc(78) int local78 = local36 & 0x1F;
 		if (local78 == 0) {
 			if (arg1) {
-				Static29.play(local46, 255, 0, local40);
+				Static29.play(0, local40, local46, 255);
 			}
-		} else if (Static218.aClass177_Sub1_2.anInt4882 != 0) {
+		} else if (Static218.preferences.areaSoundsVolume != 0) {
 			Static256.ids[Static243.size] = local40;
 			Static329.loops[Static243.size] = local46;
 			Static237.delays[Static243.size] = 0;

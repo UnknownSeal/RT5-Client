@@ -210,9 +210,9 @@ public final class Static317 {
 		synchronized (Static349.A_SOFT_LRU_HASH_TABLE___58) {
 			Static349.A_SOFT_LRU_HASH_TABLE___58.method2614();
 		}
-		local15 = Static92.A_SOFT_LRU_HASH_TABLE___9;
-		synchronized (Static92.A_SOFT_LRU_HASH_TABLE___9) {
-			Static92.A_SOFT_LRU_HASH_TABLE___9.method2614();
+		local15 = Static92.bodyModels;
+		synchronized (Static92.bodyModels) {
+			Static92.bodyModels.method2614();
 		}
 	}
 
@@ -238,8 +238,8 @@ public final class Static317 {
 			world.activity = buffer.gjstr2();
 			world.hostname = buffer.gjstr2();
 		}
-		Static361.anInt6767 = buffer.mg4();
-		Static70.aBoolean130 = true;
+		Static361.checksum = buffer.mg4();
+		Static70.loaded = true;
 	}
 
 }

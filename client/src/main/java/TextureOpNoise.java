@@ -14,20 +14,20 @@ public final class TextureOpNoise extends TextureOp {
 	@OriginalMember(owner = "client!li", name = "a", descriptor = "(BI)[I")
 	@Override
 	public int[] getMonochromeOutput(@OriginalArg(1) int y) {
-		@Pc(16) int[] local16 = super.monochromeImageCache.get(y);
+		@Pc(16) int[] destination = super.monochromeImageCache.get(y);
 		if (super.monochromeImageCache.invalid) {
-			@Pc(24) int local24 = Static16.normalizedY[y];
-			for (@Pc(26) int local26 = 0; local26 < Static227.width; local26++) {
-				local16[local26] = this.method3587(local24, Static334.normalizedX[local26]) % 4096;
+			@Pc(24) int heightFraction = Static16.normalizedY[y];
+			for (@Pc(26) int x = 0; x < Static227.width; x++) {
+				destination[x] = this.noise(heightFraction, Static334.normalizedX[x]) % 4096;
 			}
 		}
-		return local16;
+		return destination;
 	}
 
 	@OriginalMember(owner = "client!li", name = "b", descriptor = "(III)I")
-	private int method3587(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
-		@Pc(9) int local9 = arg0 * 57 + arg1;
-		@Pc(15) int local15 = local9 << 1 ^ local9;
+	private int noise(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
+		@Pc(9) int noise = arg0 * 57 + arg1;
+		@Pc(15) int local15 = noise << 1 ^ noise;
 		return 4096 - (local15 * (local15 * local15 * 15731 + 789221) + 1376312589 & Integer.MAX_VALUE) / 262144;
 	}
 }

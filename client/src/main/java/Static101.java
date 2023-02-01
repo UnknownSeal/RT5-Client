@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static101 {
 
-	@OriginalMember(owner = "client!fo", name = "h", descriptor = "Lclient!r;")
-	public static Js5 aJs5_23;
-
 	@OriginalMember(owner = "client!fo", name = "f", descriptor = "Lclient!mc;")
 	public static final Class145 aClass145_75 = new Class145(8, 6);
 
@@ -67,22 +64,22 @@ public final class Static101 {
 	}
 
 	@OriginalMember(owner = "client!fo", name = "a", descriptor = "(II)I")
-	public static int method2166(@OriginalArg(1) int arg0) {
+	public static int close(@OriginalArg(1) int reply) {
 		if (Static335.socket != null) {
 			Static335.socket.close();
 			Static335.socket = null;
 		}
-		Static12.anInt270++;
-		if (Static12.anInt270 > 4) {
-			Static12.anInt270 = 0;
-			Static77.anInt1751 = 0;
-			return arg0;
+		Static12.errors++;
+		if (Static12.errors > 4) {
+			Static12.errors = 0;
+			Static77.step = 0;
+			return reply;
 		}
-		Static77.anInt1751 = 0;
-		if (Static278.anInt5154 == Static392.anInt7225) {
-			Static278.anInt5154 = Static35.anInt920;
+		Static77.step = 0;
+		if (client.worldListDefaultPort == client.worldListPort) {
+			client.worldListPort = client.worldListAlternatePort;
 		} else {
-			Static278.anInt5154 = Static392.anInt7225;
+			client.worldListPort = client.worldListDefaultPort;
 		}
 		return -1;
 	}

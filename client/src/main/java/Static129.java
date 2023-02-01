@@ -37,16 +37,10 @@ public final class Static129 {
 
 	@OriginalMember(owner = "client!hg", name = "a", descriptor = "(IIBI)V")
 	public static void method2438(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2) {
-		@Pc(13) DelayedStateChange local13 = Static316.create(11, arg2);
+		@Pc(13) DelayedStateChange local13 = DelayedStateChange.create(11, arg2);
 		local13.pushServer();
 		local13.anInt2290 = arg1;
 		local13.anInt2289 = arg0;
-	}
-
-	@OriginalMember(owner = "client!hg", name = "a", descriptor = "(BI)V")
-	public static void method2439(@OriginalArg(1) int arg0) {
-		@Pc(17) DelayedStateChange local17 = Static316.create(16, arg0);
-		local17.pushClient();
 	}
 
 	@OriginalMember(owner = "client!hg", name = "b", descriptor = "(I)V")

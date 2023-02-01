@@ -19,9 +19,9 @@ public final class Static50 {
 			if (Static139.topLevelInterface != -1) {
 				Static162.method2978(Static139.topLevelInterface);
 			}
-			for (@Pc(19) Class2_Sub7 local19 = (Class2_Sub7) Static329.aClass4_130.head(); local19 != null; local19 = (Class2_Sub7) Static329.aClass4_130.next()) {
+			for (@Pc(19) SubInterface local19 = (SubInterface) Static329.subInterfaces.head(); local19 != null; local19 = (SubInterface) Static329.subInterfaces.next()) {
 				if (!local19.isLinked()) {
-					local19 = (Class2_Sub7) Static329.aClass4_130.head();
+					local19 = (SubInterface) Static329.subInterfaces.head();
 					if (local19 == null) {
 						break;
 					}
@@ -29,9 +29,9 @@ public final class Static50 {
 				Static276.method4654(false, local19, true);
 			}
 			Static139.topLevelInterface = -1;
-			Static329.aClass4_130 = new HashTable(8);
+			Static329.subInterfaces = new HashTable(8);
 			Static210.method3719();
-			Static139.topLevelInterface = Static391.anInt7216;
+			Static139.topLevelInterface = Static391.loginScreenID;
 			Static60.method891(false);
 			Static98.method2107();
 			ScriptRunner.method3597(Static139.topLevelInterface);
@@ -82,6 +82,6 @@ public final class Static50 {
 
 	@OriginalMember(owner = "client!ct", name = "e", descriptor = "(B)V")
 	public static void method1530() {
-		Static65.aClass19_3.method2879(Static99.anInt2095, Static218.aClass177_Sub1_2.aBoolean348 ? Static364.anInt6817 + 256 : -1);
+		Static65.aClass19_3.method2879(Static99.anInt2095, Static218.preferences.fog ? Static364.anInt6817 + 256 : -1);
 	}
 }

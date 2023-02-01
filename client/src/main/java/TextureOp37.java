@@ -51,21 +51,21 @@ public final class TextureOp37 extends TextureOp {
 
 	@OriginalMember(owner = "client!qk", name = "a", descriptor = "(ILclient!bt;I)V")
 	@Override
-	public void decode(@OriginalArg(0) int arg0, @OriginalArg(1) Buffer arg1) {
-		if (arg0 == 0) {
-			this.anInt5416 = arg1.g2();
-		} else if (arg0 == 1) {
-			this.anInt5401 = arg1.g2();
-		} else if (arg0 == 2) {
-			this.anInt5408 = arg1.g2();
-		} else if (arg0 == 3) {
-			this.anInt5412 = arg1.g2();
-		} else if (arg0 == 4) {
-			this.anInt5404 = arg1.g2();
-		} else if (arg0 == 5) {
-			this.anInt5402 = arg1.g2();
-		} else if (arg0 == 6) {
-			this.anInt5403 = arg1.g2();
+	public void decode(@OriginalArg(1) Buffer buffer, @OriginalArg(0) int opcode) {
+		if (opcode == 0) {
+			this.anInt5416 = buffer.g2();
+		} else if (opcode == 1) {
+			this.anInt5401 = buffer.g2();
+		} else if (opcode == 2) {
+			this.anInt5408 = buffer.g2();
+		} else if (opcode == 3) {
+			this.anInt5412 = buffer.g2();
+		} else if (opcode == 4) {
+			this.anInt5404 = buffer.g2();
+		} else if (opcode == 5) {
+			this.anInt5402 = buffer.g2();
+		} else if (opcode == 6) {
+			this.anInt5403 = buffer.g2();
 		}
 	}
 

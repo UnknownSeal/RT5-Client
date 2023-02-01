@@ -14,12 +14,12 @@ public final class Static390 {
 
 	@OriginalMember(owner = "client!wp", name = "a", descriptor = "(I)V")
 	public static void method6448() {
-		Static289.aJs5_71.discardUnpacked = 1;
+		client.js5Archive2.discardUnpacked = 1;
 		client.instance.loadMiscNatives();
 		GameShell.focus = true;
 		Static343.aBoolean431 = true;
 		Static4.method77();
-		Static257.aClass2_Sub4_Sub2_4.offset = 0;
+		Static257.outboundBuffer.offset = 0;
 		Static86.anInt1870 = 0;
 		Static231.aClass89_164 = null;
 		Static334.aClass89_222 = null;
@@ -78,9 +78,9 @@ public final class Static390 {
 		if (Static139.topLevelInterface != -1) {
 			Static162.method2978(Static139.topLevelInterface);
 		}
-		for (@Pc(4552) Class2_Sub7 local4552 = (Class2_Sub7) Static329.aClass4_130.head(); local4552 != null; local4552 = (Class2_Sub7) Static329.aClass4_130.next()) {
+		for (@Pc(4552) SubInterface local4552 = (SubInterface) Static329.subInterfaces.head(); local4552 != null; local4552 = (SubInterface) Static329.subInterfaces.next()) {
 			if (!local4552.isLinked()) {
-				local4552 = (Class2_Sub7) Static329.aClass4_130.head();
+				local4552 = (SubInterface) Static329.subInterfaces.head();
 				if (local4552 == null) {
 					break;
 				}
@@ -88,7 +88,7 @@ public final class Static390 {
 			Static276.method4654(false, local4552, true);
 		}
 		Static139.topLevelInterface = -1;
-		Static329.aClass4_130 = new HashTable(8);
+		Static329.subInterfaces = new HashTable(8);
 		Static210.method3719();
 		Static192.aComponent_8 = null;
 		for (@Pc(4594) int local4594 = 0; local4594 < 8; local4594++) {
@@ -117,12 +117,12 @@ public final class Static390 {
 		Static100.aBoolean156 = true;
 		Static330.aString62 = LocalisedText.WALK_HERE.getLocalisedText(client.language);
 		Static292.anInt5510 = 0;
-		Static218.aClass177_Sub1_2.aBoolean365 = false;
-		Static218.aClass177_Sub1_2.aBoolean366 = false;
+		Static218.preferences.aBoolean365 = false;
+		Static218.preferences.aBoolean366 = false;
 		Static160.method2955();
 		Static93.method2002();
 		Static375.aLong222 = 0L;
 		Static385.aClass2_Sub16_2 = null;
-		Static289.aJs5_71.discardUnpacked = 2;
+		client.js5Archive2.discardUnpacked = 2;
 	}
 }

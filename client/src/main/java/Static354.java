@@ -3,12 +3,6 @@ import org.openrs2.deob.annotation.OriginalMember;
 
 public final class Static354 {
 
-	@OriginalMember(owner = "client!un", name = "h", descriptor = "Z")
-	public static boolean aBoolean93;
-
-	@OriginalMember(owner = "client!un", name = "H", descriptor = "Lclient!r;")
-	public static Js5 aJs5_9;
-
 	@OriginalMember(owner = "client!un", name = "I", descriptor = "Lclient!cc;")
 	public static PrivelegedRequest aPrivelegedRequest_5;
 

@@ -20,34 +20,34 @@ public final class Static388 {
 	}
 
 	@OriginalMember(owner = "client!wn", name = "a", descriptor = "(Z)V")
-	public static void method6437() {
+	public static void loop() {
 		try {
-			if (Static235.anInt3365 == 1) {
-				@Pc(16) int local16 = Static91.aClass2_Sub12_Sub3_1.method4302();
-				if (local16 > 0 && Static91.aClass2_Sub12_Sub3_1.method4269()) {
-					local16 -= Static28.anInt672;
-					if (local16 < 0) {
-						local16 = 0;
+			if (Static235.state == 1) {
+				@Pc(16) int volume = Static91.stream.getVolume();
+				if (volume > 0 && Static91.stream.isValid()) {
+					volume -= Static28.volumeFadeRate;
+					if (volume < 0) {
+						volume = 0;
 					}
-					Static91.aClass2_Sub12_Sub3_1.method4277(local16);
+					Static91.stream.setVolume(volume);
 				} else {
-					Static91.aClass2_Sub12_Sub3_1.method4273();
-					Static91.aClass2_Sub12_Sub3_1.method4275();
+					Static91.stream.method4273();
+					Static91.stream.clearInstrument();
 					Static155.aClass2_Sub34_1 = null;
 					Static164.aClass24_1 = null;
-					if (Static116.aJs5_26 == null) {
-						Static235.anInt3365 = 0;
+					if (Static116.songArchive == null) {
+						Static235.state = 0;
 					} else {
-						Static235.anInt3365 = 2;
+						Static235.state = 2;
 					}
 				}
 			}
-		} catch (@Pc(57) Exception local57) {
-			local57.printStackTrace();
-			Static91.aClass2_Sub12_Sub3_1.method4273();
+		} catch (@Pc(57) Exception exception) {
+			exception.printStackTrace();
+			Static91.stream.method4273();
 			Static164.aClass24_1 = null;
-			Static235.anInt3365 = 0;
-			Static116.aJs5_26 = null;
+			Static235.state = 0;
+			Static116.songArchive = null;
 			Static155.aClass2_Sub34_1 = null;
 		}
 	}

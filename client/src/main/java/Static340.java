@@ -91,45 +91,45 @@ public final class Static340 {
 	}
 
 	@OriginalMember(owner = "client!tp", name = "a", descriptor = "(BZLjava/lang/String;I)Z")
-	public static boolean method5765(@OriginalArg(2) String arg0) {
-		@Pc(36) boolean local36 = false;
-		@Pc(38) boolean local38 = false;
-		@Pc(40) int local40 = 0;
-		@Pc(43) int local43 = arg0.length();
-		for (@Pc(45) int local45 = 0; local45 < local43; local45++) {
-			@Pc(51) char local51 = arg0.charAt(local45);
-			if (local45 == 0) {
-				if (local51 == '-') {
-					local36 = true;
+	public static boolean isIntInternal(@OriginalArg(2) String s) {
+		@Pc(36) boolean negative = false;
+		@Pc(38) boolean valid = false;
+		@Pc(40) int value = 0;
+		@Pc(43) int length = s.length();
+		for (@Pc(45) int i = 0; i < length; i++) {
+			@Pc(51) char c = s.charAt(i);
+			if (i == 0) {
+				if (c == '-') {
+					negative = true;
 					continue;
 				}
-				if (local51 == '+') {
+				if (c == '+') {
 					continue;
 				}
 			}
-			@Pc(94) int local94;
-			if (local51 >= '0' && local51 <= '9') {
-				local94 = local51 - '0';
-			} else if (local51 >= 'A' && local51 <= 'Z') {
-				local94 = local51 - '7';
-			} else if (local51 >= 'a' && local51 <= 'z') {
-				local94 = local51 - 'W';
+			@Pc(94) int digit;
+			if (c >= '0' && c <= '9') {
+				digit = c - '0';
+			} else if (c >= 'A' && c <= 'Z') {
+				digit = c - '7';
+			} else if (c >= 'a' && c <= 'z') {
+				digit = c - 'W';
 			} else {
 				return false;
 			}
-			if (local94 >= 10) {
+			if (digit >= 10) {
 				return false;
 			}
-			if (local36) {
-				local94 = -local94;
+			if (negative) {
+				digit = -digit;
 			}
-			@Pc(123) int local123 = local40 * 10 + local94;
-			if (local40 != local123 / 10) {
+			@Pc(123) int nextValue = value * 10 + digit;
+			if (nextValue / 10 != value) {
 				return false;
 			}
-			local40 = local123;
-			local38 = true;
+			value = nextValue;
+			valid = true;
 		}
-		return local38;
+		return valid;
 	}
 }

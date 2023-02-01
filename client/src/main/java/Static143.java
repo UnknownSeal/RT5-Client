@@ -15,16 +15,16 @@ public final class Static143 {
 	public static final Class145 aClass145_102 = new Class145(45, 3);
 
 	@OriginalMember(owner = "client!ib", name = "a", descriptor = "(IIBZI)V")
-	public static void method2677(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) boolean arg2, @OriginalArg(4) int arg3) {
+	public static void setWindowMode(@OriginalArg(3) boolean replaceCannvas, @OriginalArg(1) int mode, @OriginalArg(0) int arg0, @OriginalArg(4) int arg3) {
 		Static338.aLong214 = 0L;
-		@Pc(12) int local12 = Static144.method2692();
-		if (arg1 == 3 || local12 == 3) {
-			arg2 = true;
+		@Pc(12) int oldMode = Static144.getWindowMode();
+		if (mode == 3 || oldMode == 3) {
+			replaceCannvas = true;
 		}
 		if (!Static190.aClass19_8.method2840()) {
-			arg2 = true;
+			replaceCannvas = true;
 		}
-		Static163.method3099(arg3, arg0, local12, arg1, arg2);
+		Static163.method3099(arg3, arg0, oldMode, mode, replaceCannvas);
 	}
 
 	@OriginalMember(owner = "client!ib", name = "a", descriptor = "(IIB)V")

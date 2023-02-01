@@ -19,52 +19,52 @@ public final class Static134 {
 	@OriginalMember(owner = "client!hn", name = "a", descriptor = "(BLclient!r;)I")
 	public static int method2509(@OriginalArg(1) Js5 arg0) {
 		@Pc(5) int local5 = 0;
-		if (arg0.method5086(Static373.anInt7028)) {
+		if (arg0.isFileReady(Static373.anInt7028)) {
 			local5++;
 		}
-		if (arg0.method5086(Static192.anInt3545)) {
+		if (arg0.isFileReady(Static192.anInt3545)) {
 			local5++;
 		}
-		if (arg0.method5086(Static256.anInt4745)) {
+		if (arg0.isFileReady(Static256.anInt4745)) {
 			local5++;
 		}
-		if (arg0.method5086(Static382.anInt7140)) {
+		if (arg0.isFileReady(Static382.anInt7140)) {
 			local5++;
 		}
-		if (arg0.method5086(Static166.anInt3193)) {
+		if (arg0.isFileReady(Static166.anInt3193)) {
 			local5++;
 		}
-		if (arg0.method5086(Static390.anInt7206)) {
+		if (arg0.isFileReady(Static390.anInt7206)) {
 			local5++;
 		}
-		if (arg0.method5086(Static363.anInt6792)) {
+		if (arg0.isFileReady(Static363.anInt6792)) {
 			local5++;
 		}
-		if (arg0.method5086(Static237.anInt4324)) {
+		if (arg0.isFileReady(Static237.anInt4324)) {
 			local5++;
 		}
-		if (arg0.method5086(Static155.anInt2811)) {
+		if (arg0.isFileReady(Static155.anInt2811)) {
 			local5++;
 		}
-		if (arg0.method5086(Static326.anInt6236)) {
+		if (arg0.isFileReady(Static326.anInt6236)) {
 			local5++;
 		}
-		if (arg0.method5086(Static169.anInt3205)) {
+		if (arg0.isFileReady(Static169.anInt3205)) {
 			local5++;
 		}
-		if (arg0.method5086(Static102.anInt3590)) {
+		if (arg0.isFileReady(Static102.anInt3590)) {
 			local5++;
 		}
-		if (arg0.method5086(Static32.anInt798)) {
+		if (arg0.isFileReady(Static32.anInt798)) {
 			local5++;
 		}
-		if (arg0.method5086(Static139.anInt2594)) {
+		if (arg0.isFileReady(Static139.anInt2594)) {
 			local5++;
 		}
-		if (arg0.method5086(Static322.anInt6031)) {
+		if (arg0.isFileReady(Static322.anInt6031)) {
 			local5++;
 		}
-		if (arg0.method5086(Static373.anInt7030)) {
+		if (arg0.isFileReady(Static373.anInt7030)) {
 			local5++;
 		}
 		return local5;

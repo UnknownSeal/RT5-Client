@@ -52,7 +52,7 @@ public final class Static220 {
 			Static169.aStringArray26[local3] = Static169.aStringArray26[local3 - 1];
 			Static88.aStringArray13[local3] = Static88.aStringArray13[local3 - 1];
 			Static135.aStringArray20[local3] = Static135.aStringArray20[local3 - 1];
-			Static132.anIntArray162[local3] = Static132.anIntArray162[local3 - 1];
+			Static132.phraseIDs[local3] = Static132.phraseIDs[local3 - 1];
 		}
 		Static291.anIntArray373[0] = arg4;
 		Static42.aStringArray59[0] = arg6;
@@ -62,7 +62,7 @@ public final class Static220 {
 		Static21.anInt551 = Static88.anInt1876;
 		Static226.anInt4016++;
 		Static135.aStringArray20[0] = arg1;
-		Static132.anIntArray162[0] = arg3;
+		Static132.phraseIDs[0] = arg3;
 	}
 
 	@OriginalMember(owner = "client!mq", name = "a", descriptor = "(ZII)I")

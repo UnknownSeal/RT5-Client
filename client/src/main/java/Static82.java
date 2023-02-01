@@ -50,14 +50,14 @@ public final class Static82 {
 	@OriginalMember(owner = "client!em", name = "a", descriptor = "(IZ)V")
 	public static void closeWidget() {
 		Static91.method1960(Static186.aClass145_145);
-		for (@Pc(21) Class2_Sub7 local21 = (Class2_Sub7) Static329.aClass4_130.head(); local21 != null; local21 = (Class2_Sub7) Static329.aClass4_130.next()) {
+		for (@Pc(21) SubInterface local21 = (SubInterface) Static329.subInterfaces.head(); local21 != null; local21 = (SubInterface) Static329.subInterfaces.next()) {
 			if (!local21.isLinked()) {
-				local21 = (Class2_Sub7) Static329.aClass4_130.head();
+				local21 = (SubInterface) Static329.subInterfaces.head();
 				if (local21 == null) {
 					break;
 				}
 			}
-			if (local21.anInt1373 == 0) {
+			if (local21.type == 0) {
 				Static276.method4654(true, local21, true);
 			}
 		}

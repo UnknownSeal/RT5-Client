@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static173 {
 
-	@OriginalMember(owner = "client!k", name = "G", descriptor = "Lclient!r;")
-	public static Js5 aJs5_45;
-
 	@OriginalMember(owner = "client!k", name = "C", descriptor = "I")
 	public static int anInt3338 = 0;
 
@@ -225,9 +222,4 @@ public final class Static173 {
 		}
 	}
 
-	@OriginalMember(owner = "client!k", name = "a", descriptor = "(II)V")
-	public static void setComponentModelAngleClient(@OriginalArg(1) int arg0) {
-		@Pc(13) DelayedStateChange local13 = Static316.create(8, arg0);
-		local13.pushClient();
-	}
 }

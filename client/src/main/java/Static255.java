@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static255 {
 
-	@OriginalMember(owner = "client!ol", name = "e", descriptor = "Lclient!r;")
-	public static Js5 aJs5_64;
-
 	@OriginalMember(owner = "client!ol", name = "a", descriptor = "(IIBII)I")
 	public static int method4376(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {
 		@Pc(21) int local21 = 65536 - Class19.COSINE[arg0 * 8192 / arg2] >> 1;

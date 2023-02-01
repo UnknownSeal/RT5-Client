@@ -70,13 +70,13 @@ public final class TextureOpHerringbone extends TextureOp {
 
 	@OriginalMember(owner = "client!sb", name = "a", descriptor = "(ILclient!bt;I)V")
 	@Override
-	public void decode(@OriginalArg(0) int arg0, @OriginalArg(1) Buffer arg1) {
-		if (arg0 == 0) {
-			this.anInt5874 = arg1.g1();
-		} else if (arg0 == 1) {
-			this.anInt5877 = arg1.g1();
-		} else if (arg0 == 2) {
-			this.anInt5872 = arg1.g2();
+	public void decode(@OriginalArg(1) Buffer buffer, @OriginalArg(0) int opcode) {
+		if (opcode == 0) {
+			this.anInt5874 = buffer.g1();
+		} else if (opcode == 1) {
+			this.anInt5877 = buffer.g1();
+		} else if (opcode == 2) {
+			this.anInt5872 = buffer.g2();
 		}
 	}
 }

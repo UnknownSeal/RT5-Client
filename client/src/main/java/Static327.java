@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static327 {
 
 	@OriginalMember(owner = "client!ta", name = "b", descriptor = "Lclient!ad;")
-	public static final HashTable aClass4_127 = new HashTable(512);
+	public static final HashTable serverActiveProperties = new HashTable(512);
 
 	@OriginalMember(owner = "client!ta", name = "p", descriptor = "Lclient!mc;")
 	public static final Class145 aClass145_222 = new Class145(77, -1);
@@ -68,7 +68,7 @@ public final class Static327 {
 			}
 			if (local54 != -1 && local56 != -1) {
 				if (Static330.aBoolean419 && (Static115.anInt3837 & 0x40) != 0) {
-					@Pc(293) Component local293 = Static207.method3704(Static337.anInt6317, Static214.anInt3792);
+					@Pc(293) Component local293 = Static207.getCreatedComponent(Static337.anInt6317, Static214.anInt3792);
 					if (local293 == null) {
 						Static207.method3698();
 					} else {

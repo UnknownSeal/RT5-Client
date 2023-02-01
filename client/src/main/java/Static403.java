@@ -122,7 +122,7 @@ public final class Static403 {
 	}
 
 	@OriginalMember(owner = "client!pm", name = "a", descriptor = "([III)V")
-	public static void method4607(@OriginalArg(0) int[] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
+	public static void clear(@OriginalArg(0) int[] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
 		@Pc(5) int local5 = arg2 - 7;
 		while (arg1 < local5) {
 			arg0[arg1++] = 0;

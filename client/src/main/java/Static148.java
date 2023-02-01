@@ -18,7 +18,7 @@ public final class Static148 {
 	public static final Class145 aClass145_104 = new Class145(18, -1);
 
 	@OriginalMember(owner = "client!ij", name = "j", descriptor = "Z")
-	public static boolean aBoolean192 = false;
+	public static boolean shiftClick = false;
 
 	@OriginalMember(owner = "client!ij", name = "a", descriptor = "(B)V")
 	public static void method2709() {

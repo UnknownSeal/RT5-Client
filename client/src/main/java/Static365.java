@@ -13,10 +13,10 @@ public final class Static365 {
 	public static int anInt6832 = 0;
 
 	@OriginalMember(owner = "client!vh", name = "b", descriptor = "(I)I")
-	public static int method6116() {
-		@Pc(5) SoftLruHashTable local5 = Static92.A_SOFT_LRU_HASH_TABLE___9;
-		synchronized (Static92.A_SOFT_LRU_HASH_TABLE___9) {
-			return Static92.A_SOFT_LRU_HASH_TABLE___9.method2613();
+	public static int getModelCacheSize() {
+		@Pc(5) SoftLruHashTable local5 = Static92.bodyModels;
+		synchronized (Static92.bodyModels) {
+			return Static92.bodyModels.size();
 		}
 	}
 }

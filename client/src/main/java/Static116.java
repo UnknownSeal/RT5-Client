@@ -6,7 +6,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static116 {
 
 	@OriginalMember(owner = "client!go", name = "p", descriptor = "Lclient!r;")
-	public static Js5 aJs5_26;
+	public static Js5 songArchive;
 
 	@OriginalMember(owner = "client!go", name = "s", descriptor = "[Lclient!jd;")
 	public static Class13[] aClass13Array8;

@@ -51,11 +51,11 @@ public final class Static366 {
 			return;
 		}
 		Static91.method1960(Static105.aClass145_79);
-		Static257.aClass2_Sub4_Sub2_4.p4(arg0.id);
-		Static257.aClass2_Sub4_Sub2_4.p2add(arg0.createdComponentID);
-		Static257.aClass2_Sub4_Sub2_4.p2add(Static214.anInt3792);
-		Static257.aClass2_Sub4_Sub2_4.p2(Static196.anInt3317);
-		Static257.aClass2_Sub4_Sub2_4.mp4(Static337.anInt6317);
-		Static257.aClass2_Sub4_Sub2_4.p2(arg0.objId);
+		Static257.outboundBuffer.p4(arg0.id);
+		Static257.outboundBuffer.p2add(arg0.createdComponentID);
+		Static257.outboundBuffer.p2add(Static214.anInt3792);
+		Static257.outboundBuffer.p2(Static196.anInt3317);
+		Static257.outboundBuffer.mp4(Static337.anInt6317);
+		Static257.outboundBuffer.p2(arg0.objId);
 	}
 }

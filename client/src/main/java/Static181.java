@@ -58,10 +58,10 @@ public final class Static181 {
 			for (local52 = (local13 - (Static373.anInt7033 >> 4)) / 8; local52 <= (local13 + (Static373.anInt7033 >> 4)) / 8; local52++) {
 				for (local59 = (local17 - (Static242.anInt4449 >> 4)) / 8; local59 <= (local17 + (Static242.anInt4449 >> 4)) / 8; local59++) {
 					Static291.mapSquares[local44] = (local52 << 8) + local59;
-					Static221.mapGroupIDs[local44] = Static288.js5Archive5.getGroupID("m" + local52 + "_" + local59);
-					Static374.locGroupIDs[local44] = Static288.js5Archive5.getGroupID("l" + local52 + "_" + local59);
-					Static51.underwaterMapGroupIDs[local44] = Static288.js5Archive5.getGroupID("um" + local52 + "_" + local59);
-					Static62.underwaterLocGroupIDs[local44] = Static288.js5Archive5.getGroupID("ul" + local52 + "_" + local59);
+					Static221.mapGroupIDs[local44] = client.js5Archive5.getGroupID("m" + local52 + "_" + local59);
+					Static374.locGroupIDs[local44] = client.js5Archive5.getGroupID("l" + local52 + "_" + local59);
+					Static51.underwaterMapGroupIDs[local44] = client.js5Archive5.getGroupID("um" + local52 + "_" + local59);
+					Static62.underwaterLocGroupIDs[local44] = client.js5Archive5.getGroupID("ul" + local52 + "_" + local59);
 					local44++;
 				}
 			}
@@ -124,10 +124,10 @@ public final class Static181 {
 							Static291.mapSquares[local48] = local235;
 							@Pc(270) int local270 = local235 >> 8 & 0xFF;
 							@Pc(274) int local274 = local235 & 0xFF;
-							Static221.mapGroupIDs[local48] = Static288.js5Archive5.getGroupID("m" + local270 + "_" + local274);
-							Static374.locGroupIDs[local48] = Static288.js5Archive5.getGroupID("l" + local270 + "_" + local274);
-							Static51.underwaterMapGroupIDs[local48] = Static288.js5Archive5.getGroupID("um" + local270 + "_" + local274);
-							Static62.underwaterLocGroupIDs[local48] = Static288.js5Archive5.getGroupID("ul" + local270 + "_" + local274);
+							Static221.mapGroupIDs[local48] = client.js5Archive5.getGroupID("m" + local270 + "_" + local274);
+							Static374.locGroupIDs[local48] = client.js5Archive5.getGroupID("l" + local270 + "_" + local274);
+							Static51.underwaterMapGroupIDs[local48] = client.js5Archive5.getGroupID("um" + local270 + "_" + local274);
+							Static62.underwaterLocGroupIDs[local48] = client.js5Archive5.getGroupID("ul" + local270 + "_" + local274);
 							local48++;
 						}
 					}
@@ -147,9 +147,9 @@ public final class Static181 {
 					if (local13.createdComponent != null) {
 						method3377(local13.createdComponent, local13.id);
 					}
-					@Pc(51) Class2_Sub7 local51 = (Class2_Sub7) Static329.aClass4_130.get((long) local13.id);
+					@Pc(51) SubInterface local51 = (SubInterface) Static329.subInterfaces.get((long) local13.id);
 					if (local51 != null) {
-						Static232.method4027(local51.anInt1370);
+						Static232.method4027(local51.id);
 					}
 				}
 				if (local13.type == 6 && local13.modelSeqID != -1) {

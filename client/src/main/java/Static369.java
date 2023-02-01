@@ -27,7 +27,7 @@ public final class Static369 {
 
 	@OriginalMember(owner = "client!vm", name = "c", descriptor = "(IB)V")
 	public static void setComponentScrollPositionClient(@OriginalArg(0) int arg0) {
-		@Pc(16) DelayedStateChange change = Static316.create(12, arg0);
+		@Pc(16) DelayedStateChange change = DelayedStateChange.create(12, arg0);
 		change.pushClient();
 	}
 

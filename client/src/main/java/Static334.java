@@ -13,7 +13,7 @@ public final class Static334 {
 	public static Class89 aClass89_222;
 
 	@OriginalMember(owner = "client!th", name = "a", descriptor = "(ILclient!lo;)V")
-	public static void method5686(@OriginalArg(1) Class140 arg0) {
-		Static370.aClass140_1 = arg0;
+	public static void init(@OriginalArg(1) HuffmanCodec codec) {
+		Static370.huffmanCodec = codec;
 	}
 }

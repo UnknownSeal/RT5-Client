@@ -19,6 +19,6 @@ public final class Static268 {
 
 	@OriginalMember(owner = "client!pg", name = "g", descriptor = "(I)Lclient!ac;")
 	public static World method4547() {
-		return Static300.aWorldArray2.length > Static231.anInt4079 ? Static300.aWorldArray2[Static231.anInt4079++] : null;
+		return Static300.sorted.length > Static231.anInt4079 ? Static300.sorted[Static231.anInt4079++] : null;
 	}
 }

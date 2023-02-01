@@ -78,9 +78,9 @@ public final class Static309 {
 			Static207.add(LocalisedText.IGNORE_LIST_ADD_SELF.getLocalisedText(client.language));
 		} else {
 			Static91.method1960(Static192.aClass145_139);
-			Static257.aClass2_Sub4_Sub2_4.p1(Static27.method872(arg0) + 1);
-			Static257.aClass2_Sub4_Sub2_4.pjstr(arg0);
-			Static257.aClass2_Sub4_Sub2_4.p1(arg1 ? 1 : 0);
+			Static257.outboundBuffer.p1(Static27.method872(arg0) + 1);
+			Static257.outboundBuffer.pjstr(arg0);
+			Static257.outboundBuffer.p1(arg1 ? 1 : 0);
 		}
 	}
 

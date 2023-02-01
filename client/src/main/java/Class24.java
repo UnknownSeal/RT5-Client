@@ -55,7 +55,7 @@ public final class Class24 {
 		if (local31 != null) {
 			return local31;
 		} else if (arg1 == null || arg1[0] > 0) {
-			@Pc(54) Class247 local54 = Static408.method6434(this.aJs5_3, arg2, arg0);
+			@Pc(54) SynthSound local54 = Static408.method6434(this.aJs5_3, arg2, arg0);
 			if (local54 == null) {
 				return null;
 			}

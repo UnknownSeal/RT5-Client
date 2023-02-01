@@ -3,9 +3,6 @@ import org.openrs2.deob.annotation.OriginalMember;
 
 public final class Static30 {
 
-	@OriginalMember(owner = "client!bo", name = "e", descriptor = "Lclient!r;")
-	public static Js5 aJs5_5;
-
 	@OriginalMember(owner = "client!bo", name = "h", descriptor = "Lclient!je;")
 	public static WorldMapFont font22;
 

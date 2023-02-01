@@ -46,7 +46,7 @@ public final class Static32 {
 	}
 
 	@OriginalMember(owner = "client!br", name = "c", descriptor = "(Z)I")
-	public static int method991() {
+	public static int getTotal() {
 		return 2;
 	}
 }

@@ -144,13 +144,13 @@ public final class Class2_Sub2_Sub14 extends SecondaryNode {
 		@Pc(9) int local9;
 		if (Static123.spriteGroupID >= 0) {
 			for (local9 = 0; local9 < this.spriteIDs.length; local9++) {
-				if (!arg1.method5087(this.spriteIDs[local9], Static123.spriteGroupID)) {
+				if (!arg1.isFileReady(Static123.spriteGroupID, this.spriteIDs[local9])) {
 					return false;
 				}
 			}
 		} else {
 			for (local9 = 0; local9 < this.spriteIDs.length; local9++) {
-				if (!arg1.method5086(this.spriteIDs[local9])) {
+				if (!arg1.isFileReady(this.spriteIDs[local9])) {
 					return false;
 				}
 			}

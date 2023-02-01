@@ -4,19 +4,16 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class Static356 {
 
 	@OriginalMember(owner = "client!up", name = "O", descriptor = "I")
-	public static int anInt6641;
+	public static int volume;
 
 	@OriginalMember(owner = "client!up", name = "S", descriptor = "[I")
 	public static int[] anIntArray462;
 
 	@OriginalMember(owner = "client!up", name = "T", descriptor = "I")
-	public static int anInt6643;
+	public static int sampleRate;
 
 	@OriginalMember(owner = "client!up", name = "C", descriptor = "Lclient!cm;")
 	public static final Class36 aClass36_10 = new Class36();
-
-	@OriginalMember(owner = "client!up", name = "P", descriptor = "Z")
-	public static boolean aBoolean456 = false;
 
 	@OriginalMember(owner = "client!up", name = "R", descriptor = "[I")
 	public static final int[] anIntArray461 = new int[14];

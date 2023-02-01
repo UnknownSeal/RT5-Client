@@ -33,7 +33,7 @@ public final class Class80 {
 		@Pc(11) Js5 local11 = this.aClass55_2.aJs5_16;
 		synchronized (this.aClass55_2.aJs5_16) {
 			for (@Pc(27) int local27 = 0; local27 < 5; local27++) {
-				if (this.anIntArray141[local27] != -1 && !this.aClass55_2.aJs5_16.method5087(0, this.anIntArray141[local27])) {
+				if (this.anIntArray141[local27] != -1 && !this.aClass55_2.aJs5_16.isFileReady(this.anIntArray141[local27], 0)) {
 					local7 = false;
 				}
 			}
@@ -87,7 +87,7 @@ public final class Class80 {
 		@Pc(16) Js5 local16 = this.aClass55_2.aJs5_16;
 		synchronized (this.aClass55_2.aJs5_16) {
 			for (@Pc(20) int local20 = 0; local20 < this.anIntArray142.length; local20++) {
-				if (!this.aClass55_2.aJs5_16.method5087(0, this.anIntArray142[local20])) {
+				if (!this.aClass55_2.aJs5_16.isFileReady(this.anIntArray142[local20], 0)) {
 					local12 = false;
 				}
 			}

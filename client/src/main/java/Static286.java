@@ -391,7 +391,7 @@ public final class Static286 {
 		@Pc(26) int local26 = arg0.g1();
 		for (@Pc(28) int local28 = 0; local28 < local26; local28++) {
 			@Pc(34) int local34 = arg0.g1();
-			local17.decode(local34, arg0);
+			local17.decode(arg0, local34);
 		}
 		local17.postDecode();
 		return local17;

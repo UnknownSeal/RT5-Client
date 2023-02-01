@@ -11,7 +11,7 @@ public final class Static284 {
 	public static final int[] anIntArray367 = new int[] { 1, 2, 4, 8 };
 
 	@OriginalMember(owner = "client!qi", name = "e", descriptor = "J")
-	public static long aLong157 = 0L;
+	public static long openTime = 0L;
 
 	@OriginalMember(owner = "client!qi", name = "f", descriptor = "Lclient!cm;")
 	public static final Class36 aClass36_7 = new Class36();
@@ -52,7 +52,7 @@ public final class Static284 {
 				Static243.anInt4495--;
 			}
 		}
-		if (!Static356.aBoolean456) {
+		if (!client.displayFps) {
 			return;
 		}
 		@Pc(237) int local237 = arg3 + arg4 - 5;
@@ -83,8 +83,8 @@ public final class Static284 {
 		if (arg0 == local11) {
 			return false;
 		} else {
-			Static218.aClass177_Sub1_2.aBoolean356 = arg0;
-			Static218.aClass177_Sub1_2.write(GameShell.signlink);
+			Static218.preferences.aBoolean356 = arg0;
+			Static218.preferences.write(GameShell.signlink);
 			return true;
 		}
 	}
@@ -94,7 +94,7 @@ public final class Static284 {
 		if (!Static45.getServerActiveProperties(arg0).method1854(arg1) && arg0.onOptionClick == null) {
 			return null;
 		} else if (arg0.ops == null || arg1 >= arg0.ops.length || arg0.ops[arg1] == null || arg0.ops[arg1].trim().length() == 0) {
-			return Static18.aBoolean30 ? "Hidden-" + arg1 : null;
+			return Static18.qaOpTest ? "Hidden-" + arg1 : null;
 		} else {
 			return arg0.ops[arg1];
 		}
