@@ -22,7 +22,7 @@ public final class Class125 {
 	public Class125(@OriginalArg(0) GameType arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5 arg2, @OriginalArg(3) Js5 arg3) {
 		this.aJs5_49 = arg2;
 		this.aJs5_50 = arg3;
-		this.aJs5_49.method5080(36);
+		this.aJs5_49.getGroupCapacity(36);
 	}
 
 	@OriginalMember(owner = "client!ki", name = "a", descriptor = "(I)V")

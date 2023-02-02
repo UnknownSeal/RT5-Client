@@ -49,9 +49,9 @@ public final class Static340 {
 		@Pc(32) BasType local32 = arg0.method4331();
 		if (arg0.aBoolean317) {
 			local28 = local8.idlesound;
-		} else if (local32.runSeqID == arg0.anInt4585 || arg0.anInt4585 == local32.anInt6292 || local32.anInt6301 == arg0.anInt4585 || local32.anInt6271 == arg0.anInt4585) {
+		} else if (local32.runSeqID == arg0.anInt4585 || arg0.anInt4585 == local32.runFollow180SeqID || local32.runFollowCwSeqID == arg0.anInt4585 || local32.runFollowCcwSeqID == arg0.anInt4585) {
 			local28 = local8.runsound;
-		} else if (local32.crawlSeqID == arg0.anInt4585 || arg0.anInt4585 == local32.anInt6299 || local32.anInt6267 == arg0.anInt4585 || arg0.anInt4585 == local32.anInt6284) {
+		} else if (local32.crawlSeqID == arg0.anInt4585 || arg0.anInt4585 == local32.crawlFollow180SeqID || local32.crawlFollowCwSeqID == arg0.anInt4585 || arg0.anInt4585 == local32.crawlFollowCcwSeqID) {
 			local28 = local8.crawlsound;
 		}
 		return local28;

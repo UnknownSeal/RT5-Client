@@ -65,8 +65,8 @@ public final class Static210 {
 
 	@OriginalMember(owner = "client!mg", name = "b", descriptor = "(I)V")
 	public static void method3719() {
-		Static26.aComponentArrayArray1 = new Component[Static283.aJs5_68.method5091()][];
-		Static113.aComponentArrayArray2 = new Component[Static283.aJs5_68.method5091()][];
-		Static128.aBooleanArray21 = new boolean[Static283.aJs5_68.method5091()];
+		Static26.aComponentArrayArray1 = new Component[Static283.aJs5_68.capacity()][];
+		Static113.aComponentArrayArray2 = new Component[Static283.aJs5_68.capacity()][];
+		Static128.aBooleanArray21 = new boolean[Static283.aJs5_68.capacity()];
 	}
 }

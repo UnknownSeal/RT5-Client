@@ -29,7 +29,7 @@ public final class Class55 {
 	public Class55(@OriginalArg(0) GameType arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5 arg2, @OriginalArg(3) Js5 arg3) {
 		this.aJs5_17 = arg2;
 		this.aJs5_16 = arg3;
-		this.aJs5_17.method5080(3);
+		this.aJs5_17.getGroupCapacity(3);
 	}
 
 	@OriginalMember(owner = "client!e", name = "a", descriptor = "(B)V")

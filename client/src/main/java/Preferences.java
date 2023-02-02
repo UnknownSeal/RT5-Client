@@ -61,10 +61,10 @@ public final class Preferences extends Class177 {
 			}
 			if (request.status == 1) {
 				file = (FileOnDisk) request.result;
-				@Pc(153) byte[] bytes = new byte[(int) file.method5195()];
+				@Pc(153) byte[] bytes = new byte[(int) file.length()];
 				@Pc(168) int local168;
 				for (@Pc(155) int local155 = 0; local155 < bytes.length; local155 += local168) {
-					local168 = file.method5193(bytes.length - local155, local155, bytes);
+					local168 = file.read(bytes.length - local155, local155, bytes);
 					if (local168 == -1) {
 						throw new IOException("EOF");
 					}

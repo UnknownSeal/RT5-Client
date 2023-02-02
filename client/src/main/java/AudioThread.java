@@ -23,17 +23,17 @@ public final class AudioThread implements Runnable {
 		this.running = true;
 		try {
 			while (!this.stop) {
-				for (@Pc(12) int local12 = 0; local12 < 2; local12++) {
-					@Pc(19) AudioChannel local19 = this.channels[local12];
-					if (local19 != null) {
-						local19.loop();
+				for (@Pc(12) int i = 0; i < 2; i++) {
+					@Pc(19) AudioChannel channel = this.channels[i];
+					if (channel != null) {
+						channel.loop();
 					}
 				}
 				Static231.sleep(10L);
 				GameShell.flush(this.signLink, null);
 			}
-		} catch (@Pc(43) Exception local43) {
-			Static262.report(local43, null);
+		} catch (@Pc(43) Exception exception) {
+			Static262.report(exception, null);
 		} finally {
 			@Pc(53) Object local53 = null;
 			this.running = false;

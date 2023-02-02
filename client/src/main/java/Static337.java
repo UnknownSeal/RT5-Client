@@ -52,9 +52,9 @@ public final class Static337 {
 		if (arg2.aClass2_Sub12_Sub4_3 != null) {
 			arg2.aClass2_Sub12_Sub4_3.method4978(local140);
 		} else if (arg2.anInt2894 >= 0) {
-			@Pc(155) SynthSound local155 = Static408.method6434(client.js5Archive4, arg2.anInt2894, 0);
+			@Pc(155) SynthSound local155 = Static408.create(client.js5Archive4, arg2.anInt2894, 0);
 			if (local155 != null) {
-				@Pc(162) Class2_Sub21_Sub1 local162 = local155.method6433().method3178(client.resampler);
+				@Pc(162) PcmSound local162 = local155.method6433().method3178(client.resampler);
 				@Pc(167) Class2_Sub12_Sub4 local167 = Static405.method5005(local162, local140);
 				local167.method4983(-1);
 				client.soundStream.addSubStream(local167);
@@ -69,9 +69,9 @@ public final class Static337 {
 			arg2.aClass2_Sub12_Sub4_2 = null;
 		} else if (arg2.anIntArray181 != null && (arg2.anInt2907 -= arg0) <= 0) {
 			@Pc(204) int local204 = (int) ((double) arg2.anIntArray181.length * Math.random());
-			@Pc(212) SynthSound local212 = Static408.method6434(client.js5Archive4, arg2.anIntArray181[local204], 0);
+			@Pc(212) SynthSound local212 = Static408.create(client.js5Archive4, arg2.anIntArray181[local204], 0);
 			if (local212 != null) {
-				@Pc(219) Class2_Sub21_Sub1 local219 = local212.method6433().method3178(client.resampler);
+				@Pc(219) PcmSound local219 = local212.method6433().method3178(client.resampler);
 				@Pc(224) Class2_Sub12_Sub4 local224 = Static405.method5005(local219, local140);
 				local224.method4983(0);
 				client.soundStream.addSubStream(local224);

@@ -18,7 +18,7 @@ public final class Static126 {
 		Static283.aJs5_68 = arg2;
 		Static142.aJs5_37 = arg1;
 		Static391.aJs5_95 = arg0;
-		Static26.aComponentArrayArray1 = new Component[Static283.aJs5_68.method5091()][];
-		Static128.aBooleanArray21 = new boolean[Static283.aJs5_68.method5091()];
+		Static26.aComponentArrayArray1 = new Component[Static283.aJs5_68.capacity()][];
+		Static128.aBooleanArray21 = new boolean[Static283.aJs5_68.capacity()];
 	}
 }

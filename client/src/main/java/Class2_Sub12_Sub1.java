@@ -45,9 +45,9 @@ public final class Class2_Sub12_Sub1 extends PcmStream {
 			arg0.anInt1792 = arg1 * local23 + arg0.anInt1792 & 0xFFFFF;
 			if (arg1 >= local33) {
 				if (this.aClass2_Sub12_Sub3_2.anIntArray297[arg0.anInt1793] == 0) {
-					arg0.stream = Static405.method4997(arg0.aClass2_Sub21_Sub1_1, arg0.stream.method4981(), arg0.stream.method4996(), arg0.stream.method4985());
+					arg0.stream = Static405.method4997(arg0.aPcmSound, arg0.stream.method4981(), arg0.stream.method4996(), arg0.stream.method4985());
 				} else {
-					arg0.stream = Static405.method4997(arg0.aClass2_Sub21_Sub1_1, arg0.stream.method4981(), 0, arg0.stream.method4985());
+					arg0.stream = Static405.method4997(arg0.aPcmSound, arg0.stream.method4981(), 0, arg0.stream.method4985());
 					this.aClass2_Sub12_Sub3_2.method4271(arg0.aMidiInstrument_1.aShortArray90[arg0.anInt1781] < 0, arg0);
 				}
 				if (arg0.aMidiInstrument_1.aShortArray90[arg0.anInt1781] < 0) {
@@ -121,9 +121,9 @@ public final class Class2_Sub12_Sub1 extends PcmStream {
 				}
 				@Pc(90) Class2_Sub12_Sub4 local90 = arg4.stream;
 				if (this.aClass2_Sub12_Sub3_2.anIntArray297[arg4.anInt1793] == 0) {
-					arg4.stream = Static405.method4997(arg4.aClass2_Sub21_Sub1_1, local90.method4981(), local90.method4996(), local90.method4985());
+					arg4.stream = Static405.method4997(arg4.aPcmSound, local90.method4981(), local90.method4996(), local90.method4985());
 				} else {
-					arg4.stream = Static405.method4997(arg4.aClass2_Sub21_Sub1_1, local90.method4981(), 0, local90.method4985());
+					arg4.stream = Static405.method4997(arg4.aPcmSound, local90.method4981(), 0, local90.method4985());
 					this.aClass2_Sub12_Sub3_2.method4271(arg4.aMidiInstrument_1.aShortArray90[arg4.anInt1781] < 0, arg4);
 					arg4.stream.method4980(local74, local90.method4996());
 				}

@@ -20,8 +20,8 @@ public final class Class109 {
 	public Class109(@OriginalArg(0) GameType arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5 arg2) {
 		this.aJs5_43 = arg2;
 		if (this.aJs5_43 != null) {
-			@Pc(20) int local20 = this.aJs5_43.method5091() - 1;
-			this.aJs5_43.method5080(local20);
+			@Pc(20) int local20 = this.aJs5_43.capacity() - 1;
+			this.aJs5_43.getGroupCapacity(local20);
 		}
 	}
 

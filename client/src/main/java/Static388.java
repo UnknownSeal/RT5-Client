@@ -34,7 +34,7 @@ public final class Static388 {
 					Static91.stream.method4273();
 					Static91.stream.clearInstrument();
 					Static155.aClass2_Sub34_1 = null;
-					Static164.aClass24_1 = null;
+					Static164.aSoundBank_1 = null;
 					if (Static116.songArchive == null) {
 						Static235.state = 0;
 					} else {
@@ -45,7 +45,7 @@ public final class Static388 {
 		} catch (@Pc(57) Exception exception) {
 			exception.printStackTrace();
 			Static91.stream.method4273();
-			Static164.aClass24_1 = null;
+			Static164.aSoundBank_1 = null;
 			Static235.state = 0;
 			Static116.songArchive = null;
 			Static155.aClass2_Sub34_1 = null;

@@ -20,7 +20,7 @@ public final class Static294 {
 		}
 		try {
 			Static317.aBufferedFile_6.seek(0L);
-			Static317.aBufferedFile_6.method5214(arg1, arg0.bytes, 24);
+			Static317.aBufferedFile_6.write(arg1, arg0.bytes, 24);
 		} catch (@Pc(23) Exception local23) {
 		}
 	}

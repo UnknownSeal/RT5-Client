@@ -10,7 +10,7 @@ public final class MidiInstrument extends Node {
 	public final byte[] aByteArray45 = new byte[128];
 
 	@OriginalMember(owner = "client!ne", name = "v", descriptor = "[Lclient!jn;")
-	public final Class2_Sub21_Sub1[] aClass2_Sub21_Sub1Array1 = new Class2_Sub21_Sub1[128];
+	public final PcmSound[] aPcmSound = new PcmSound[128];
 
 	@OriginalMember(owner = "client!ne", name = "x", descriptor = "[B")
 	public final byte[] aByteArray46 = new byte[128];
@@ -388,10 +388,10 @@ public final class MidiInstrument extends Node {
 	}
 
 	@OriginalMember(owner = "client!ne", name = "a", descriptor = "([BLclient!bk;I[I)Z")
-	public boolean method4017(@OriginalArg(0) byte[] arg0, @OriginalArg(1) Class24 arg1, @OriginalArg(3) int[] arg2) {
+	public boolean method4017(@OriginalArg(0) byte[] arg0, @OriginalArg(1) SoundBank arg1, @OriginalArg(3) int[] arg2) {
 		@Pc(7) boolean local7 = true;
 		@Pc(15) int local15 = 0;
-		@Pc(17) Class2_Sub21_Sub1 local17 = null;
+		@Pc(17) PcmSound local17 = null;
 		for (@Pc(19) int local19 = 0; local19 < 128; local19++) {
 			if (arg0 == null || arg0[local19] != 0) {
 				@Pc(34) int local34 = this.anIntArray264[local19];
@@ -401,14 +401,14 @@ public final class MidiInstrument extends Node {
 						if ((local34 & 0x1) == 0) {
 							local17 = arg1.method871(local34 >> 2, arg2);
 						} else {
-							local17 = arg1.method869(arg2, local34 >> 2);
+							local17 = arg1.getVorbisSound(arg2, local34 >> 2);
 						}
 						if (local17 == null) {
 							local7 = false;
 						}
 					}
 					if (local17 != null) {
-						this.aClass2_Sub21_Sub1Array1[local19] = local17;
+						this.aPcmSound[local19] = local17;
 						this.anIntArray264[local19] = 0;
 					}
 				}

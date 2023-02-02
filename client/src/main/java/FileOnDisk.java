@@ -31,7 +31,7 @@ public final class FileOnDisk {
 	}
 
 	@OriginalMember(owner = "client!rl", name = "a", descriptor = "(II[BZ)I")
-	public int method5193(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) byte[] arg2) throws IOException {
+	public int read(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) byte[] arg2) throws IOException {
 		@Pc(11) int local11 = this.aRandomAccessFile1.read(arg2, arg1, arg0);
 		if (local11 > 0) {
 			this.aLong167 += local11;
@@ -61,18 +61,18 @@ public final class FileOnDisk {
 	}
 
 	@OriginalMember(owner = "client!rl", name = "b", descriptor = "(B)J")
-	public long method5195() throws IOException {
+	public long length() throws IOException {
 		return this.aRandomAccessFile1.length();
 	}
 
 	@OriginalMember(owner = "client!rl", name = "a", descriptor = "(IJ)V")
-	public void method5196(@OriginalArg(1) long arg0) throws IOException {
+	public void seek(@OriginalArg(1) long arg0) throws IOException {
 		this.aRandomAccessFile1.seek(arg0);
 		this.aLong167 = arg0;
 	}
 
 	@OriginalMember(owner = "client!rl", name = "a", descriptor = "(I)Ljava/io/File;")
-	public File method5197() {
+	public File getFile() {
 		return this.aFile1;
 	}
 }

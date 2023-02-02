@@ -21,7 +21,7 @@ public final class Class72 {
 	@OriginalMember(owner = "client!fl", name = "<init>", descriptor = "(Lclient!dn;ILclient!r;)V")
 	public Class72(@OriginalArg(0) GameType arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5 arg2) {
 		this.aJs5_22 = arg2;
-		this.anInt2059 = this.aJs5_22.method5080(4);
+		this.anInt2059 = this.aJs5_22.getGroupCapacity(4);
 	}
 
 	@OriginalMember(owner = "client!fl", name = "a", descriptor = "(IB)V")

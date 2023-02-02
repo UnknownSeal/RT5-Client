@@ -20,8 +20,8 @@ public final class Class128 {
 	public Class128(@OriginalArg(0) GameType arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5 arg2) {
 		this.aJs5_51 = arg2;
 		if (this.aJs5_51 != null) {
-			@Pc(20) int local20 = this.aJs5_51.method5091() - 1;
-			this.aJs5_51.method5080(local20);
+			@Pc(20) int local20 = this.aJs5_51.capacity() - 1;
+			this.aJs5_51.getGroupCapacity(local20);
 		}
 	}
 

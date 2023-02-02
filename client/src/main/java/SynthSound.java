@@ -60,9 +60,9 @@ public final class SynthSound {
 	}
 
 	@OriginalMember(owner = "client!wk", name = "b", descriptor = "()Lclient!jn;")
-	public Class2_Sub21_Sub1 method6433() {
+	public PcmSound method6433() {
 		@Pc(2) byte[] local2 = this.getSamples();
-		return new Class2_Sub21_Sub1(22050, local2, this.start * 22050 / 1000, this.end * 22050 / 1000);
+		return new PcmSound(22050, local2, this.start * 22050 / 1000, this.end * 22050 / 1000);
 	}
 
 	@OriginalMember(owner = "client!wk", name = "c", descriptor = "()I")

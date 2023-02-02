@@ -15,7 +15,7 @@ public final class Class160 {
 	@OriginalMember(owner = "client!ng", name = "<init>", descriptor = "(Lclient!dn;ILclient!r;)V")
 	public Class160(@OriginalArg(0) GameType arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5 arg2) {
 		this.aJs5_62 = arg2;
-		this.aJs5_62.method5080(30);
+		this.aJs5_62.getGroupCapacity(30);
 	}
 
 	@OriginalMember(owner = "client!ng", name = "a", descriptor = "(IZ)V")

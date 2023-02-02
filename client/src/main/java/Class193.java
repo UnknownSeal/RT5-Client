@@ -15,6 +15,6 @@ public final class Class193 {
 	public Class193(@OriginalArg(0) GameType arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5 arg2) {
 		new SoftLruHashTable(64);
 		this.aJs5_72 = arg2;
-		this.anInt5494 = this.aJs5_72.method5080(15);
+		this.anInt5494 = this.aJs5_72.getGroupCapacity(15);
 	}
 }

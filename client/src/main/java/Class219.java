@@ -33,8 +33,8 @@ public final class Class219 {
 		this.aJs5_88 = arg4;
 		this.aBoolean410 = arg2;
 		if (this.aJs5_87 != null) {
-			@Pc(38) int local38 = this.aJs5_87.method5091() - 1;
-			this.aJs5_87.method5080(local38);
+			@Pc(38) int local38 = this.aJs5_87.capacity() - 1;
+			this.aJs5_87.getGroupCapacity(local38);
 		}
 	}
 

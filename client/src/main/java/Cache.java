@@ -85,7 +85,7 @@ public final class Cache {
 				buffer[4] = (byte) (local27 >> 8);
 				buffer[5] = (byte) local27;
 				this.index.seek((long) (arg2 * 6));
-				this.index.method5214(0, buffer, 6);
+				this.index.write(0, buffer, 6);
 				@Pc(168) int local168 = 0;
 				@Pc(170) int local170 = 0;
 				while (local168 < arg1) {
@@ -131,12 +131,12 @@ public final class Cache {
 					buffer[5] = (byte) (local174 >> 8);
 					buffer[6] = (byte) local174;
 					this.data.seek((long) (local27 * 520));
-					this.data.method5214(0, buffer, 8);
+					this.data.write(0, buffer, 8);
 					local209 = arg1 - local168;
 					if (local209 > 512) {
 						local209 = 512;
 					}
-					this.data.method5214(local168, arg3, local209);
+					this.data.write(local168, arg3, local209);
 					local168 += local209;
 					local27 = local174;
 					local170++;

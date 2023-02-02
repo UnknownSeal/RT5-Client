@@ -44,13 +44,13 @@ public class AudioChannel {
 	private long closeUntil = 0L;
 
 	@OriginalMember(owner = "client!tg", name = "C", descriptor = "J")
-	private long aLong226 = 0L;
+	private long calculateConsumptionAt = 0L;
 
 	@OriginalMember(owner = "client!tg", name = "w", descriptor = "I")
 	private int consumedSamples = 0;
 
 	@OriginalMember(owner = "client!tg", name = "D", descriptor = "I")
-	private int anInt7100 = 0;
+	private int previousConsumedSamples = 0;
 
 	@OriginalMember(owner = "client!tg", name = "E", descriptor = "[Lclient!ll;")
 	private final PcmStream[] aPcmStreamArray6 = new PcmStream[8];
@@ -81,7 +81,7 @@ public class AudioChannel {
 			throw new IllegalStateException();
 		}
 		try {
-			@Pc(33) AudioChannel audioChannel = (AudioChannel) Class.forName("AudioChannel_Sub1").getDeclaredConstructor().newInstance();
+			@Pc(33) AudioChannel audioChannel = (AudioChannel) Class.forName("JavaAudioChannel").getDeclaredConstructor().newInstance();
 			audioChannel.sampleRate = sampleRate;
 			audioChannel.samples = new int[(stereo ? 2 : 1) * 256];
 			audioChannel.init(component);
@@ -184,22 +184,22 @@ public class AudioChannel {
 				this.write();
 				bufferSize += 256;
 			}
-			if (now > this.aLong226) {
+			if (now > this.calculateConsumptionAt) {
 				if (this.skipConsumptionCheck) {
 					this.skipConsumptionCheck = false;
-				} else if (this.consumedSamples == 0 && this.anInt7100 == 0) {
+				} else if (this.consumedSamples == 0 && this.previousConsumedSamples == 0) {
 					this.close();
 					this.closeUntil = now + 2000L;
 					return;
 				} else {
-					this.anInt7098 = Math.min(this.anInt7100, this.consumedSamples);
-					this.anInt7100 = this.consumedSamples;
+					this.anInt7098 = Math.min(this.previousConsumedSamples, this.consumedSamples);
+					this.previousConsumedSamples = this.consumedSamples;
 				}
 				this.consumedSamples = 0;
-				this.aLong226 = now + 2000L;
+				this.calculateConsumptionAt = now + 2000L;
 			}
 			this.previousBufferSize = bufferSize;
-		} catch (@Pc(227) Exception local227) {
+		} catch (@Pc(227) Exception exception) {
 			this.close();
 			this.closeUntil = now + 2000L;
 		}
@@ -209,8 +209,8 @@ public class AudioChannel {
 	public final synchronized void method6316() {
 		this.skipConsumptionCheck = true;
 		try {
-			this.method6321();
-		} catch (@Pc(16) Exception local16) {
+			this.flush();
+		} catch (@Pc(16) Exception exception) {
 			this.close();
 			this.closeUntil = MonotonicClock.currentTimeMillis() + 2000L;
 		}
@@ -235,7 +235,7 @@ public class AudioChannel {
 	}
 
 	@OriginalMember(owner = "client!tg", name = "b", descriptor = "()V")
-	protected void method6321() throws Exception {
+	protected void flush() throws Exception {
 	}
 
 	@OriginalMember(owner = "client!tg", name = "a", descriptor = "([II)V")

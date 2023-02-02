@@ -31,7 +31,7 @@ public final class SignLink implements Runnable {
 	public FileOnDisk[] aFileOnDiskArray1;
 
 	@OriginalMember(owner = "client!ml", name = "r", descriptor = "Lclient!fc;")
-	private Interface3 anInterface3_1;
+	private AudioSource anAudioSource_1;
 
 	@OriginalMember(owner = "client!ml", name = "e", descriptor = "Ljava/applet/Applet;")
 	public Applet applet = null;
@@ -261,8 +261,8 @@ public final class SignLink implements Runnable {
 	}
 
 	@OriginalMember(owner = "client!ml", name = "b", descriptor = "(I)Lclient!fc;")
-	public Interface3 method3763() {
-		return this.anInterface3_1;
+	public AudioSource getAudioSource() {
+		return this.anAudioSource_1;
 	}
 
 	@OriginalMember(owner = "client!ml", name = "c", descriptor = "(I)Z")

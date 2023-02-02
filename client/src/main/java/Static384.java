@@ -22,9 +22,9 @@ public final class Static384 {
 		@Pc(12) BasType local12 = arg0.method4331();
 		if (arg0.aBoolean317) {
 			local8 = arg0.anInt4167;
-		} else if (local12.runSeqID == arg0.anInt4585 || local12.anInt6292 == arg0.anInt4585 || local12.anInt6301 == arg0.anInt4585 || local12.anInt6271 == arg0.anInt4585) {
+		} else if (local12.runSeqID == arg0.anInt4585 || local12.runFollow180SeqID == arg0.anInt4585 || local12.runFollowCwSeqID == arg0.anInt4585 || local12.runFollowCcwSeqID == arg0.anInt4585) {
 			local8 = arg0.anInt4196;
-		} else if (local12.crawlSeqID == arg0.anInt4585 || local12.anInt6299 == arg0.anInt4585 || local12.anInt6267 == arg0.anInt4585 || local12.anInt6284 == arg0.anInt4585) {
+		} else if (local12.crawlSeqID == arg0.anInt4585 || local12.crawlFollow180SeqID == arg0.anInt4585 || local12.crawlFollowCwSeqID == arg0.anInt4585 || local12.crawlFollowCcwSeqID == arg0.anInt4585) {
 			local8 = arg0.anInt4187;
 		}
 		return local8;

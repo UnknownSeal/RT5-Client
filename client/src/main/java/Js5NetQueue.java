@@ -180,7 +180,7 @@ public final class Js5NetQueue {
 			return this.getUrgentRequestCount() == 0 && this.getPrefetchRequestCount() == 0;
 		}
 		try {
-			this.socket.method2792();
+			this.socket.checkError();
 			for (@Pc(74) Js5NetRequest local74 = (Js5NetRequest) this.pendingUrgentRequests.head(); local74 != null; local74 = (Js5NetRequest) this.pendingUrgentRequests.next()) {
 				this.outBuffer.offset = 0;
 				this.outBuffer.p1(1);

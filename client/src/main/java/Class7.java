@@ -15,7 +15,7 @@ public final class Class7 {
 	@OriginalMember(owner = "client!ak", name = "<init>", descriptor = "(Lclient!dn;ILclient!r;)V")
 	public Class7(@OriginalArg(0) GameType arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5 arg2) {
 		this.archive = arg2;
-		this.archive.method5080(32);
+		this.archive.getGroupCapacity(32);
 	}
 
 	@OriginalMember(owner = "client!ak", name = "a", descriptor = "(I)V")

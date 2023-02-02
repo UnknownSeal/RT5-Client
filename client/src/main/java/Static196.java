@@ -28,16 +28,16 @@ public final class Static196 {
 						return false;
 					}
 				}
-				if (Static164.aClass24_1 == null) {
-					Static164.aClass24_1 = new Class24(Static123.synthArchive, Static177.vorbisArchive);
+				if (Static164.aSoundBank_1 == null) {
+					Static164.aSoundBank_1 = new SoundBank(Static123.synthArchive, Static177.vorbisArchive);
 				}
-				if (Static91.stream.method4280(Static164.aClass24_1, Static155.aClass2_Sub34_1, Static111.instrumentsArchive)) {
+				if (Static91.stream.method4280(Static164.aSoundBank_1, Static155.aClass2_Sub34_1, Static111.instrumentsArchive)) {
 					Static91.stream.method4270();
 					Static91.stream.setVolume(Static356.volume);
 					Static91.stream.method4272(Static155.aClass2_Sub34_1, Static384.aBoolean485);
 					Static155.aClass2_Sub34_1 = null;
 					Static116.songArchive = null;
-					Static164.aClass24_1 = null;
+					Static164.aSoundBank_1 = null;
 					Static235.state = 0;
 					return true;
 				}
@@ -46,7 +46,7 @@ public final class Static196 {
 			local64.printStackTrace();
 			Static91.stream.method4273();
 			Static235.state = 0;
-			Static164.aClass24_1 = null;
+			Static164.aSoundBank_1 = null;
 			Static116.songArchive = null;
 			Static155.aClass2_Sub34_1 = null;
 		}

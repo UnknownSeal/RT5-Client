@@ -7,14 +7,14 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class SignLinkAudioChannel extends AudioChannel {
 
 	@OriginalMember(owner = "client!wb", name = "M", descriptor = "Lclient!fc;")
-	public static Interface3 audioSource;
+	public static AudioSource audioSource;
 	@OriginalMember(owner = "client!wb", name = "L", descriptor = "I")
-	private final int anInt7104;
+	private final int channel;
 
 	@OriginalMember(owner = "client!wb", name = "<init>", descriptor = "(Lclient!ml;I)V")
-	public SignLinkAudioChannel(@OriginalArg(0) SignLink arg0, @OriginalArg(1) int arg1) {
-		audioSource = arg0.method3763();
-		this.anInt7104 = arg1;
+	public SignLinkAudioChannel(@OriginalArg(0) SignLink signLink, @OriginalArg(1) int channel) {
+		audioSource = signLink.getAudioSource();
+		this.channel = channel;
 	}
 
 	@OriginalMember(owner = "client!wb", name = "a", descriptor = "(Ljava/awt/Component;)V")
@@ -26,13 +26,13 @@ public final class SignLinkAudioChannel extends AudioChannel {
 	@OriginalMember(owner = "client!wb", name = "c", descriptor = "()V")
 	@Override
 	protected void close() {
-		audioSource.method1996(this.anInt7104);
+		audioSource.close(this.channel);
 	}
 
 	@OriginalMember(owner = "client!wb", name = "d", descriptor = "()V")
 	@Override
 	protected void write() {
-		audioSource.method1994(this.anInt7104, super.samples);
+		audioSource.write(this.channel, super.samples);
 	}
 
 	@OriginalMember(owner = "client!wb", name = "g", descriptor = "(I)V")
@@ -41,18 +41,18 @@ public final class SignLinkAudioChannel extends AudioChannel {
 		if (bufferCapacity > 32768) {
 			throw new IllegalArgumentException();
 		}
-		audioSource.method1992(this.anInt7104, bufferCapacity);
+		audioSource.open(this.channel, bufferCapacity);
 	}
 
 	@OriginalMember(owner = "client!wb", name = "a", descriptor = "()I")
 	@Override
 	protected int getBufferSize() {
-		return audioSource.method1995(this.anInt7104);
+		return audioSource.getBufferSize(this.channel);
 	}
 
 	@OriginalMember(owner = "client!wb", name = "b", descriptor = "()V")
 	@Override
-	protected void method6321() {
-		audioSource.method1997(this.anInt7104);
+	protected void flush() {
+		audioSource.flush(this.channel);
 	}
 }

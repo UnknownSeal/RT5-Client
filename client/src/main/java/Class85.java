@@ -19,8 +19,8 @@ public final class Class85 {
 	public Class85(@OriginalArg(0) GameType arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5 arg2, @OriginalArg(3) Js5 arg3, @OriginalArg(4) Js5 arg4) {
 		this.aJs5_27 = arg2;
 		if (this.aJs5_27 != null) {
-			@Pc(26) int local26 = this.aJs5_27.method5091() - 1;
-			this.aJs5_27.method5080(local26);
+			@Pc(26) int local26 = this.aJs5_27.capacity() - 1;
+			this.aJs5_27.getGroupCapacity(local26);
 		}
 		Static81.method3664(arg3, arg4);
 	}

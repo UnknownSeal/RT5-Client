@@ -304,7 +304,7 @@ public final class Class2_Sub27 extends Node {
 	}
 
 	@OriginalMember(owner = "client!pf", name = "a", descriptor = "([I)Lclient!jn;")
-	public Class2_Sub21_Sub1 method4518(@OriginalArg(0) int[] arg0) {
+	public PcmSound method4518(@OriginalArg(0) int[] arg0) {
 		if (arg0 != null && arg0[0] <= 0) {
 			return null;
 		}
@@ -343,6 +343,6 @@ public final class Class2_Sub27 extends Node {
 		this.aFloatArray29 = null;
 		@Pc(129) byte[] local129 = this.aByteArray59;
 		this.aByteArray59 = null;
-		return new Class2_Sub21_Sub1(this.anInt4927, local129, this.anInt4921, this.anInt4918, this.aBoolean369);
+		return new PcmSound(this.anInt4927, local129, this.anInt4921, this.anInt4918, this.aBoolean369);
 	}
 }

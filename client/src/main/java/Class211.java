@@ -30,8 +30,8 @@ public final class Class211 {
 	public Class211(@OriginalArg(0) GameType arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5 arg2, @OriginalArg(3) Js5 arg3) {
 		this.aJs5_82 = arg2;
 		this.aJs5_81 = arg3;
-		@Pc(26) int local26 = this.aJs5_82.method5091() - 1;
-		this.aJs5_82.method5080(local26);
+		@Pc(26) int local26 = this.aJs5_82.capacity() - 1;
+		this.aJs5_82.getGroupCapacity(local26);
 	}
 
 	@OriginalMember(owner = "client!sg", name = "a", descriptor = "(II)Lclient!hf;")

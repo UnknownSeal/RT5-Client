@@ -87,7 +87,7 @@ public final class Static216 {
 			if (Static237.delays[local7] >= -10) {
 				@Pc(90) SynthSound local90 = Static196.sounds[local7];
 				if (local90 == null) {
-					local90 = Static408.method6434(client.js5Archive4, Static256.ids[local7], 0);
+					local90 = Static408.create(client.js5Archive4, Static256.ids[local7], 0);
 					if (local90 == null) {
 						continue;
 					}
@@ -126,7 +126,7 @@ public final class Static216 {
 						}
 					}
 					if (local143 > 0) {
-						@Pc(264) Class2_Sub21_Sub1 local264 = local90.method6433().method3178(client.resampler);
+						@Pc(264) PcmSound local264 = local90.method6433().method3178(client.resampler);
 						@Pc(269) Class2_Sub12_Sub4 local269 = Static405.method5005(local264, local143);
 						local269.method4983(Static329.loops[local7] - 1);
 						client.soundStream.addSubStream(local269);

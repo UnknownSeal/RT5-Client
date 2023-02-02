@@ -15,7 +15,7 @@ public final class Static222 {
 		if (Static128.aBooleanArray21[arg0]) {
 			return true;
 		} else if (Static283.aJs5_68.isGroupReady(arg0)) {
-			@Pc(23) int local23 = Static283.aJs5_68.method5080(arg0);
+			@Pc(23) int local23 = Static283.aJs5_68.getGroupCapacity(arg0);
 			if (local23 == 0) {
 				Static128.aBooleanArray21[arg0] = true;
 				return true;

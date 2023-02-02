@@ -16,7 +16,7 @@ public final class Class18 {
 	public Class18(@OriginalArg(0) GameType arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5 arg2) {
 		this.aJs5_2 = arg2;
 		if (this.aJs5_2 != null) {
-			this.aJs5_2.method5080(11);
+			this.aJs5_2.getGroupCapacity(11);
 		}
 	}
 

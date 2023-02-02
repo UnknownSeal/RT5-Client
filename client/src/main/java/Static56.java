@@ -61,9 +61,9 @@ public final class Static56 {
 			@Pc(42) BasType local42 = local33.aClass11_Sub5_Sub2_Sub2_1.method4331();
 			if (local33.aClass11_Sub5_Sub2_Sub2_1.aBoolean317) {
 				local37 = 0;
-			} else if (local42.runSeqID == local33.aClass11_Sub5_Sub2_Sub2_1.anInt4585 || local42.anInt6292 == local33.aClass11_Sub5_Sub2_Sub2_1.anInt4585 || local42.anInt6301 == local33.aClass11_Sub5_Sub2_Sub2_1.anInt4585 || local42.anInt6271 == local33.aClass11_Sub5_Sub2_Sub2_1.anInt4585) {
+			} else if (local42.runSeqID == local33.aClass11_Sub5_Sub2_Sub2_1.anInt4585 || local42.runFollow180SeqID == local33.aClass11_Sub5_Sub2_Sub2_1.anInt4585 || local42.runFollowCwSeqID == local33.aClass11_Sub5_Sub2_Sub2_1.anInt4585 || local42.runFollowCcwSeqID == local33.aClass11_Sub5_Sub2_Sub2_1.anInt4585) {
 				local37 = 2;
-			} else if (local42.crawlSeqID == local33.aClass11_Sub5_Sub2_Sub2_1.anInt4585 || local33.aClass11_Sub5_Sub2_Sub2_1.anInt4585 == local42.anInt6299 || local42.anInt6267 == local33.aClass11_Sub5_Sub2_Sub2_1.anInt4585 || local42.anInt6284 == local33.aClass11_Sub5_Sub2_Sub2_1.anInt4585) {
+			} else if (local42.crawlSeqID == local33.aClass11_Sub5_Sub2_Sub2_1.anInt4585 || local33.aClass11_Sub5_Sub2_Sub2_1.anInt4585 == local42.crawlFollow180SeqID || local42.crawlFollowCwSeqID == local33.aClass11_Sub5_Sub2_Sub2_1.anInt4585 || local42.crawlFollowCcwSeqID == local33.aClass11_Sub5_Sub2_Sub2_1.anInt4585) {
 				local37 = 3;
 			}
 			if (local37 != local33.anInt2900) {
@@ -88,9 +88,9 @@ public final class Static56 {
 			@Pc(217) BasType local217 = local208.aClass11_Sub5_Sub2_Sub1_2.method4331();
 			if (local208.aClass11_Sub5_Sub2_Sub1_2.aBoolean317) {
 				local212 = 0;
-			} else if (local208.aClass11_Sub5_Sub2_Sub1_2.anInt4585 == local217.runSeqID || local208.aClass11_Sub5_Sub2_Sub1_2.anInt4585 == local217.anInt6292 || local208.aClass11_Sub5_Sub2_Sub1_2.anInt4585 == local217.anInt6301 || local217.anInt6271 == local208.aClass11_Sub5_Sub2_Sub1_2.anInt4585) {
+			} else if (local208.aClass11_Sub5_Sub2_Sub1_2.anInt4585 == local217.runSeqID || local208.aClass11_Sub5_Sub2_Sub1_2.anInt4585 == local217.runFollow180SeqID || local208.aClass11_Sub5_Sub2_Sub1_2.anInt4585 == local217.runFollowCwSeqID || local217.runFollowCcwSeqID == local208.aClass11_Sub5_Sub2_Sub1_2.anInt4585) {
 				local212 = 2;
-			} else if (local217.crawlSeqID == local208.aClass11_Sub5_Sub2_Sub1_2.anInt4585 || local217.anInt6299 == local208.aClass11_Sub5_Sub2_Sub1_2.anInt4585 || local208.aClass11_Sub5_Sub2_Sub1_2.anInt4585 == local217.anInt6267 || local217.anInt6284 == local208.aClass11_Sub5_Sub2_Sub1_2.anInt4585) {
+			} else if (local217.crawlSeqID == local208.aClass11_Sub5_Sub2_Sub1_2.anInt4585 || local217.crawlFollow180SeqID == local208.aClass11_Sub5_Sub2_Sub1_2.anInt4585 || local208.aClass11_Sub5_Sub2_Sub1_2.anInt4585 == local217.crawlFollowCwSeqID || local217.crawlFollowCcwSeqID == local208.aClass11_Sub5_Sub2_Sub1_2.anInt4585) {
 				local212 = 3;
 			}
 			if (local212 != local208.anInt2900) {

@@ -42,9 +42,9 @@ public final class BufferedSocket implements Runnable {
 	private OutputStream outputStream;
 
 	@OriginalMember(owner = "client!iu", name = "<init>", descriptor = "(Ljava/net/Socket;Lclient!ml;)V")
-	public BufferedSocket(@OriginalArg(0) Socket arg0, @OriginalArg(1) SignLink arg1) throws IOException {
-		this.socket = arg0;
-		this.signlink = arg1;
+	public BufferedSocket(@OriginalArg(0) Socket socket, @OriginalArg(1) SignLink signLink) throws IOException {
+		this.socket = socket;
+		this.signlink = signLink;
 		this.socket.setSoTimeout(30000);
 		this.socket.setTcpNoDelay(true);
 		this.inputStream = this.socket.getInputStream();
@@ -52,7 +52,7 @@ public final class BufferedSocket implements Runnable {
 	}
 
 	@OriginalMember(owner = "client!iu", name = "a", descriptor = "(B)V")
-	public void method2792() throws IOException {
+	public void checkError() throws IOException {
 		if (!this.closed && this.error) {
 			this.error = false;
 			throw new IOException();

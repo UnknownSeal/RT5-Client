@@ -125,10 +125,10 @@ public final class MidiPcmStream extends PcmStream {
 
 	@OriginalMember(owner = "client!od", name = "a", descriptor = "(IZLclient!ej;)V")
 	public void method4271(@OriginalArg(1) boolean arg0, @OriginalArg(2) MidiNote arg1) {
-		@Pc(8) int local8 = arg1.aClass2_Sub21_Sub1_1.aByteArray31.length;
+		@Pc(8) int local8 = arg1.aPcmSound.aByteArray31.length;
 		@Pc(31) int local31;
-		if (arg0 && arg1.aClass2_Sub21_Sub1_1.aBoolean219) {
-			@Pc(41) int local41 = local8 + local8 - arg1.aClass2_Sub21_Sub1_1.anInt3178;
+		if (arg0 && arg1.aPcmSound.aBoolean219) {
+			@Pc(41) int local41 = local8 + local8 - arg1.aPcmSound.anInt3178;
 			local8 <<= 0x8;
 			local31 = (int) ((long) this.anIntArray297[arg1.anInt1793] * (long) local41 >> 6);
 			if (local31 >= local8) {
@@ -281,7 +281,7 @@ public final class MidiPcmStream extends PcmStream {
 	}
 
 	@OriginalMember(owner = "client!od", name = "a", descriptor = "(Lclient!bk;Lclient!sl;Lclient!r;II)Z")
-	public synchronized boolean method4280(@OriginalArg(0) Class24 arg0, @OriginalArg(1) Class2_Sub34 arg1, @OriginalArg(2) Js5 arg2) {
+	public synchronized boolean method4280(@OriginalArg(0) SoundBank arg0, @OriginalArg(1) Class2_Sub34 arg1, @OriginalArg(2) Js5 arg2) {
 		arg1.method5448();
 		@Pc(9) boolean local9 = true;
 		@Pc(23) int[] local23 = new int[] { 22050 };
@@ -671,7 +671,7 @@ public final class MidiPcmStream extends PcmStream {
 			@Pc(102) double local102 = Math.sin((double) (arg0.anInt1790 & 0x1FF) * 0.01227184630308513D);
 			local14 += (int) ((double) local63 * local102);
 		}
-		local63 = (int) ((double) (arg0.aClass2_Sub21_Sub1_1.anInt3176 * 256) * Math.pow(2.0D, (double) local14 * 3.255208333333333E-4D) / (double) Static356.sampleRate + 0.5D);
+		local63 = (int) ((double) (arg0.aPcmSound.anInt3176 * 256) * Math.pow(2.0D, (double) local14 * 3.255208333333333E-4D) / (double) Static356.sampleRate + 0.5D);
 		return local63 < 1 ? 1 : local63;
 	}
 
@@ -787,13 +787,13 @@ public final class MidiPcmStream extends PcmStream {
 		if (local105 == null) {
 			return;
 		}
-		@Pc(113) Class2_Sub21_Sub1 local113 = local105.aClass2_Sub21_Sub1Array1[arg1];
+		@Pc(113) PcmSound local113 = local105.aPcmSound[arg1];
 		if (local113 == null) {
 			return;
 		}
 		@Pc(120) MidiNote local120 = new MidiNote();
 		local120.anInt1793 = arg0;
-		local120.aClass2_Sub21_Sub1_1 = local113;
+		local120.aPcmSound = local113;
 		local120.aMidiInstrument_1 = local105;
 		local120.aClass17_1 = local105.aClass17Array1[arg1];
 		local120.anInt1788 = local105.aByteArray46[arg1];

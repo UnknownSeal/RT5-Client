@@ -16,7 +16,7 @@ public final class Static164 {
 	public static float aFloat38;
 
 	@OriginalMember(owner = "client!jl", name = "eb", descriptor = "Lclient!bk;")
-	public static Class24 aClass24_1;
+	public static SoundBank aSoundBank_1;
 
 	@OriginalMember(owner = "client!jl", name = "V", descriptor = "Lclient!h;")
 	public static final Class89 aClass89_129 = new Class89(79, 7);

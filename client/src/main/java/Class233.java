@@ -16,7 +16,7 @@ public final class Class233 {
 	public Class233(@OriginalArg(0) GameType arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5 arg2) {
 		this.aJs5_91 = arg2;
 		if (this.aJs5_91 != null) {
-			this.aJs5_91.method5080(35);
+			this.aJs5_91.getGroupCapacity(35);
 		}
 	}
 

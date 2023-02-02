@@ -365,8 +365,8 @@ public final class Js5 {
 	}
 
 	@OriginalMember(owner = "client!r", name = "a", descriptor = "(IB)I")
-	public int method5080(@OriginalArg(0) int arg0) {
-		return this.isGroupValid(arg0) ? this.index.groupCapacities[arg0] : 0;
+	public int getGroupCapacity(@OriginalArg(0) int group) {
+		return this.isGroupValid(group) ? this.index.groupCapacities[group] : 0;
 	}
 
 	@OriginalMember(owner = "client!r", name = "a", descriptor = "(II)[B")
@@ -493,7 +493,7 @@ public final class Js5 {
 	}
 
 	@OriginalMember(owner = "client!r", name = "e", descriptor = "(B)I")
-	public int method5091() {
+	public int capacity() {
 		return this.isIndexReady() ? this.index.groupCapacities.length : -1;
 	}
 

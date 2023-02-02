@@ -55,8 +55,8 @@ public final class Class107 {
 		if (this.aJs5_42 == null) {
 			this.anInt2779 = 0;
 		} else {
-			@Pc(54) int local54 = this.aJs5_42.method5091() - 1;
-			this.anInt2779 = local54 * 256 + this.aJs5_42.method5080(local54);
+			@Pc(54) int local54 = this.aJs5_42.capacity() - 1;
+			this.anInt2779 = local54 * 256 + this.aJs5_42.getGroupCapacity(local54);
 		}
 		this.aStringArray21 = new String[] { null, null, LocalisedText.TAKE.getLocalisedText(this.anInt2781), null, null };
 		this.aStringArray22 = new String[] { null, null, null, null, LocalisedText.DROP.getLocalisedText(this.anInt2781) };

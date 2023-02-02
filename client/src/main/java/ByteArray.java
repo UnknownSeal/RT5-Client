@@ -16,7 +16,7 @@ public abstract class ByteArray {
 		}
 		if (bytes.length > 136 && !directBuffersUnsupported) {
 			try {
-				@Pc(18) ByteArray array = (ByteArray) Class.forName("ByteArray_Sub1").getDeclaredConstructor().newInstance();
+				@Pc(18) ByteArray array = (ByteArray) Class.forName("DirectByteArray").getDeclaredConstructor().newInstance();
 				array.set(bytes);
 				return array;
 			} catch (@Pc(25) Throwable exception) {

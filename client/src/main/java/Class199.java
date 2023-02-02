@@ -21,7 +21,7 @@ public final class Class199 {
 		if (this.aJs5_76 == null) {
 			this.anInt5596 = 0;
 		} else {
-			this.anInt5596 = this.aJs5_76.method5080(16);
+			this.anInt5596 = this.aJs5_76.getGroupCapacity(16);
 		}
 	}
 

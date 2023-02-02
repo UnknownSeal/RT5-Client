@@ -22,7 +22,7 @@ public final class Class104 {
 	public Class104(@OriginalArg(0) GameType arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5 arg2, @OriginalArg(3) Js5 arg3) {
 		this.aJs5_39 = arg3;
 		this.aJs5_40 = arg2;
-		this.aJs5_40.method5080(34);
+		this.aJs5_40.getGroupCapacity(34);
 	}
 
 	@OriginalMember(owner = "client!ii", name = "a", descriptor = "(IZI)V")

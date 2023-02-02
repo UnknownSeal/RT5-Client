@@ -61,7 +61,7 @@ public final class Class2_Sub2_Sub13 extends SecondaryNode {
 			return false;
 		}
 		@Pc(103) LinkedList local103 = new LinkedList();
-		local78 = Static392.aJs5_97.method5080(this.anInt4499);
+		local78 = Static392.aJs5_97.getGroupCapacity(this.anInt4499);
 		this.aClass159Array1 = new Class159[local78];
 		@Pc(119) int[] local119 = Static392.aJs5_97.getFileIDs(this.anInt4499);
 		for (@Pc(121) int local121 = 0; local121 < local119.length; local121++) {
