@@ -77,7 +77,7 @@ public final class Static236 {
 					local55 = -1;
 				}
 				@Pc(186) boolean local186 = true;
-				@Pc(221) Class157 local221;
+				@Pc(221) SeqType local221;
 				if (local55 != -1 && local25.anInt4594 != -1) {
 					@Pc(207) Class91 local207;
 					if (local55 == local25.anInt4594) {
@@ -98,8 +98,8 @@ public final class Static236 {
 						local207 = Static322.aClass211_2.method5406(local55);
 						@Pc(262) Class91 local262 = Static322.aClass211_2.method5406(local25.anInt4594);
 						if (local207.anInt2448 != -1 && local262.anInt2448 != -1) {
-							@Pc(277) Class157 local277 = Static39.aClass85_1.method2371(local207.anInt2448);
-							@Pc(283) Class157 local283 = Static39.aClass85_1.method2371(local262.anInt2448);
+							@Pc(277) SeqType local277 = Static39.aClass85_1.method2371(local207.anInt2448);
+							@Pc(283) SeqType local283 = Static39.aClass85_1.method2371(local262.anInt2448);
 							if (local277.priority < local283.priority) {
 								local186 = false;
 							}

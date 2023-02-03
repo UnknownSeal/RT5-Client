@@ -81,7 +81,7 @@ public final class PlayerAppearance {
 	}
 
 	@OriginalMember(owner = "client!jo", name = "a", descriptor = "(ILclient!gp;Lclient!wl;ZIILclient!nb;Lclient!ta;Lclient!e;Lclient!wm;ILclient!io;)Lclient!gn;")
-	public Model method3183(@OriginalArg(0) int arg0, @OriginalArg(1) Class85 arg1, @OriginalArg(2) Interface11 arg2, @OriginalArg(5) int arg3, @OriginalArg(6) Class157 arg4, @OriginalArg(7) Class219 arg5, @OriginalArg(8) IdentityKitTypeList arg6, @OriginalArg(9) Class19 arg7, @OriginalArg(10) int arg8, @OriginalArg(11) ObjTypeList arg9) {
+	public Model method3183(@OriginalArg(0) int arg0, @OriginalArg(1) Class85 arg1, @OriginalArg(2) Interface11 arg2, @OriginalArg(5) int arg3, @OriginalArg(6) SeqType arg4, @OriginalArg(7) Class219 arg5, @OriginalArg(8) IdentityKitTypeList arg6, @OriginalArg(9) Class19 arg7, @OriginalArg(10) int arg8, @OriginalArg(11) ObjTypeList arg9) {
 		if (this.npcID != -1) {
 			return arg5.get(this.npcID).getHeadModel(arg3, arg8, arg0, arg7, arg4, arg2, arg1);
 		}
@@ -191,7 +191,7 @@ public final class PlayerAppearance {
 	}
 
 	@OriginalMember(owner = "client!jo", name = "a", descriptor = "(IILclient!e;ILclient!nb;IIILclient!gp;Lclient!wm;II)Lclient!gn;")
-	public Model method3184(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) IdentityKitTypeList arg2, @OriginalArg(4) Class157 arg3, @OriginalArg(6) int arg4, @OriginalArg(7) int arg5, @OriginalArg(8) Class85 arg6, @OriginalArg(9) Class19 arg7, @OriginalArg(10) int arg8, @OriginalArg(11) int arg9) {
+	public Model method3184(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) IdentityKitTypeList arg2, @OriginalArg(4) SeqType arg3, @OriginalArg(6) int arg4, @OriginalArg(7) int arg5, @OriginalArg(8) Class85 arg6, @OriginalArg(9) Class19 arg7, @OriginalArg(10) int arg8, @OriginalArg(11) int arg9) {
 		@Pc(7) int local7 = 1024;
 		@Pc(32) int local32;
 		@Pc(36) int local36;
@@ -312,7 +312,7 @@ public final class PlayerAppearance {
 	}
 
 	@OriginalMember(owner = "client!jo", name = "a", descriptor = "(IZLclient!ak;Lclient!gp;Lclient!e;Lclient!nb;IIIIZILclient!nb;Lclient!wl;Lclient!io;Lclient!wm;Lclient!ta;[Lclient!bg;I)Lclient!gn;")
-	public Model getBodyModel(@OriginalArg(0) int arg0, @OriginalArg(2) Class7 arg1, @OriginalArg(3) Class85 arg2, @OriginalArg(4) IdentityKitTypeList arg3, @OriginalArg(5) Class157 arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6, @OriginalArg(8) int arg7, @OriginalArg(9) int arg8, @OriginalArg(11) int arg9, @OriginalArg(12) Class157 arg10, @OriginalArg(13) Interface11 arg11, @OriginalArg(14) ObjTypeList arg12, @OriginalArg(15) Class19 arg13, @OriginalArg(16) Class219 arg14, @OriginalArg(17) Class20[] arg15, @OriginalArg(18) int arg16) {
+	public Model getBodyModel(@OriginalArg(0) int arg0, @OriginalArg(2) Class7 arg1, @OriginalArg(3) Class85 arg2, @OriginalArg(4) IdentityKitTypeList arg3, @OriginalArg(5) SeqType arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6, @OriginalArg(8) int arg7, @OriginalArg(9) int arg8, @OriginalArg(11) int arg9, @OriginalArg(12) SeqType arg10, @OriginalArg(13) Interface11 arg11, @OriginalArg(14) ObjTypeList arg12, @OriginalArg(15) Class19 arg13, @OriginalArg(16) Class219 arg14, @OriginalArg(17) Class20[] arg15, @OriginalArg(18) int arg16) {
 		if (this.npcID != -1) {
 			return arg14.get(this.npcID).getBodyModel(arg1, arg16, arg4, arg13, arg2, arg6, arg9, arg8, arg10, arg7, arg15, arg0, arg11, arg5);
 		}
@@ -352,9 +352,9 @@ public final class PlayerAppearance {
 		for (@Pc(158) int local158 = 0; local158 < local156; local158++) {
 			Static41.aClass2_Sub2_Sub13Array2[local158] = null;
 			if (arg15[local158] != null) {
-				@Pc(176) Class157 local176 = arg2.method2371(arg15[local158].anInt624);
+				@Pc(176) SeqType local176 = arg2.method2371(arg15[local158].anInt624);
 				if (local176.frames != null) {
-					Static114.aClass157Array14[local158] = local176;
+					Static114.A_SEQ_TYPE_ARRAY_14[local158] = local176;
 					local149 = true;
 					local190 = arg15[local158].anInt628;
 					local195 = arg15[local158].anInt627;
@@ -605,7 +605,7 @@ public final class PlayerAppearance {
 		for (local646 = 0; local646 < local156; local646++) {
 			Static41.aClass2_Sub2_Sub13Array2[local646] = null;
 			Static385.aClass2_Sub2_Sub13Array4[local646] = null;
-			Static114.aClass157Array14[local646] = null;
+			Static114.A_SEQ_TYPE_ARRAY_14[local646] = null;
 		}
 		return local1310;
 	}

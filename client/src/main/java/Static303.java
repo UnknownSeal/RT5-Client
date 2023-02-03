@@ -227,13 +227,13 @@ public final class Static303 {
 				local32 = -1;
 			}
 			@Pc(690) boolean local690 = true;
-			@Pc(780) Class157 local780;
+			@Pc(780) SeqType local780;
 			if (local32 != -1 && arg2.anInt4594 != -1) {
 				@Pc(707) Class91 local707;
 				if (local32 == arg2.anInt4594) {
 					local707 = Static322.aClass211_2.method5406(local32);
 					if (local707.aBoolean177 && local707.anInt2448 != -1) {
-						@Pc(723) Class157 local723 = Static39.aClass85_1.method2371(local707.anInt2448);
+						@Pc(723) SeqType local723 = Static39.aClass85_1.method2371(local707.anInt2448);
 						local289 = local723.exactmove;
 						if (local289 == 0) {
 							local690 = false;
@@ -249,7 +249,7 @@ public final class Static303 {
 					@Pc(763) Class91 local763 = Static322.aClass211_2.method5406(arg2.anInt4594);
 					if (local707.anInt2448 != -1 && local763.anInt2448 != -1) {
 						local780 = Static39.aClass85_1.method2371(local707.anInt2448);
-						@Pc(786) Class157 local786 = Static39.aClass85_1.method2371(local763.anInt2448);
+						@Pc(786) SeqType local786 = Static39.aClass85_1.method2371(local763.anInt2448);
 						if (local780.priority < local786.priority) {
 							local690 = false;
 						}

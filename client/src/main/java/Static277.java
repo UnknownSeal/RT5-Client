@@ -97,7 +97,7 @@ public final class Static277 {
 		if (arg0.anInt4584 == Static114.loop || arg0.anInt4597 == -1 || arg0.anInt4590 != 0) {
 			local5 = true;
 		} else {
-			@Pc(25) Class157 local25 = Static39.aClass85_1.method2371(arg0.anInt4597);
+			@Pc(25) SeqType local25 = Static39.aClass85_1.method2371(arg0.anInt4597);
 			if (local25.tween || arg0.anInt4624 + 1 > local25.frameDelay[arg0.anInt4607]) {
 				local5 = true;
 			}

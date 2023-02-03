@@ -42,17 +42,17 @@ public final class Class85 {
 	}
 
 	@OriginalMember(owner = "client!gp", name = "c", descriptor = "(II)Lclient!nb;")
-	public Class157 method2371(@OriginalArg(1) int arg0) {
+	public SeqType method2371(@OriginalArg(1) int arg0) {
 		@Pc(6) SoftLruHashTable local6 = this.aSoftLruHashTable_14;
-		@Pc(16) Class157 local16;
+		@Pc(16) SeqType local16;
 		synchronized (this.aSoftLruHashTable_14) {
-			local16 = (Class157) this.aSoftLruHashTable_14.get((long) arg0);
+			local16 = (SeqType) this.aSoftLruHashTable_14.get((long) arg0);
 		}
 		if (local16 != null) {
 			return local16;
 		}
 		@Pc(37) byte[] local37 = this.aJs5_27.fetchFile(Static98.method2104(arg0), Static341.method5767(arg0));
-		local16 = new Class157();
+		local16 = new SeqType();
 		local16.anInt4028 = arg0;
 		local16.aClass85_2 = this;
 		if (local37 != null) {

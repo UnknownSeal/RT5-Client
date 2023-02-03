@@ -13,7 +13,7 @@ public final class Class192 {
 	private boolean[] aBooleanArray49;
 
 	@OriginalMember(owner = "client!ql", name = "h", descriptor = "Lclient!nb;")
-	private Class157 aClass157_2;
+	private SeqType aSeqType_2;
 
 	@OriginalMember(owner = "client!ql", name = "j", descriptor = "I")
 	private int anInt5423;
@@ -111,7 +111,7 @@ public final class Class192 {
 				local24 = null;
 			}
 			if (local22.anIntArray95 != null) {
-				if (this.aClass157_2 != null && local22.method1531(this.aClass157_2.anInt4028)) {
+				if (this.aSeqType_2 != null && local22.method1531(this.aSeqType_2.anInt4028)) {
 					return;
 				}
 				local11 = local22.method1527();
@@ -120,7 +120,7 @@ public final class Class192 {
 				}
 			} else if (local22.anInt1326 == -1) {
 				if (local24 != null && local24.anIntArray95 != null) {
-					if (this.aClass157_2 != null && local24.method1531(this.aClass157_2.anInt4028)) {
+					if (this.aSeqType_2 != null && local24.method1531(this.aSeqType_2.anInt4028)) {
 						return;
 					}
 					local11 = local24.method1527();
@@ -137,28 +137,28 @@ public final class Class192 {
 			}
 		}
 		if (local11 == -1) {
-			this.aClass157_2 = null;
+			this.aSeqType_2 = null;
 			return;
 		}
 		this.aModel_7 = null;
-		if (this.aClass157_2 == null || local11 != this.aClass157_2.anInt4028) {
-			this.aClass157_2 = Static39.aClass85_1.method2371(local11);
-		} else if (this.aClass157_2.exactmove == 0) {
+		if (this.aSeqType_2 == null || local11 != this.aSeqType_2.anInt4028) {
+			this.aSeqType_2 = Static39.aClass85_1.method2371(local11);
+		} else if (this.aSeqType_2.exactmove == 0) {
 			return;
 		}
-		if (this.aClass157_2.frames == null) {
-			this.aClass157_2 = null;
+		if (this.aSeqType_2.frames == null) {
+			this.aSeqType_2 = null;
 			return;
 		}
 		if (local13) {
-			this.anInt5426 = (int) ((double) this.aClass157_2.frames.length * Math.random());
-			this.anInt5431 = (int) ((double) this.aClass157_2.frameDelay[this.anInt5426] * Math.random()) + 1;
+			this.anInt5426 = (int) ((double) this.aSeqType_2.frames.length * Math.random());
+			this.anInt5431 = (int) ((double) this.aSeqType_2.frameDelay[this.anInt5426] * Math.random()) + 1;
 		} else {
 			this.anInt5426 = 0;
 			this.anInt5431 = 1;
 		}
 		this.anInt5423 = this.anInt5426 + 1;
-		if (this.anInt5423 < 0 || this.anInt5423 >= this.aClass157_2.frames.length) {
+		if (this.anInt5423 < 0 || this.anInt5423 >= this.aSeqType_2.frames.length) {
 			this.anInt5423 = -1;
 		}
 		this.anInt5441 = Static114.loop - this.anInt5431;
@@ -167,52 +167,52 @@ public final class Class192 {
 	@OriginalMember(owner = "client!ql", name = "a", descriptor = "(IIB)V")
 	private void method4932(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
 		label80: while (true) {
-			if (this.aClass157_2 == null) {
+			if (this.aSeqType_2 == null) {
 				if (this.aBoolean385) {
 					return;
 				}
 				this.method4931(-1);
-				if (this.aClass157_2 == null) {
+				if (this.aSeqType_2 == null) {
 					return;
 				}
 			}
 			@Pc(31) int local31 = Static114.loop - this.anInt5441;
-			if (local31 > 100 && this.aClass157_2.replayOff > 0) {
-				@Pc(53) int local53 = this.aClass157_2.frames.length - this.aClass157_2.replayOff;
-				while (this.anInt5426 < local53 && this.aClass157_2.frameDelay[this.anInt5426] < local31) {
-					local31 -= this.aClass157_2.frameDelay[this.anInt5426];
+			if (local31 > 100 && this.aSeqType_2.replayOff > 0) {
+				@Pc(53) int local53 = this.aSeqType_2.frames.length - this.aSeqType_2.replayOff;
+				while (this.anInt5426 < local53 && this.aSeqType_2.frameDelay[this.anInt5426] < local31) {
+					local31 -= this.aSeqType_2.frameDelay[this.anInt5426];
 					this.anInt5426++;
 				}
 				if (this.anInt5426 >= local53) {
 					@Pc(92) int local92 = 0;
-					for (@Pc(94) int local94 = local53; local94 < this.aClass157_2.frames.length; local94++) {
-						local92 += this.aClass157_2.frameDelay[local94];
+					for (@Pc(94) int local94 = local53; local94 < this.aSeqType_2.frames.length; local94++) {
+						local92 += this.aSeqType_2.frameDelay[local94];
 					}
 					local31 %= local92;
 				}
 				this.anInt5423 = this.anInt5426 + 1;
-				if (this.anInt5423 >= this.aClass157_2.frames.length) {
-					this.anInt5423 -= this.aClass157_2.replayOff;
-					if (this.anInt5423 < 0 || this.anInt5423 >= this.aClass157_2.frames.length) {
+				if (this.anInt5423 >= this.aSeqType_2.frames.length) {
+					this.anInt5423 -= this.aSeqType_2.replayOff;
+					if (this.anInt5423 < 0 || this.anInt5423 >= this.aSeqType_2.frames.length) {
 						this.anInt5423 = -1;
 					}
 				}
 			}
-			while (this.aClass157_2.frameDelay[this.anInt5426] < local31) {
-				Static1.method4(this.aClass157_2, false, this.aByte59, arg0, arg1, this.anInt5426);
-				local31 -= this.aClass157_2.frameDelay[this.anInt5426];
+			while (this.aSeqType_2.frameDelay[this.anInt5426] < local31) {
+				Static1.method4(this.aSeqType_2, false, this.aByte59, arg0, arg1, this.anInt5426);
+				local31 -= this.aSeqType_2.frameDelay[this.anInt5426];
 				this.anInt5426++;
-				if (this.anInt5426 >= this.aClass157_2.frames.length) {
-					this.anInt5426 -= this.aClass157_2.replayOff;
-					if (this.anInt5426 < 0 || this.anInt5426 >= this.aClass157_2.frames.length) {
-						this.aClass157_2 = null;
+				if (this.anInt5426 >= this.aSeqType_2.frames.length) {
+					this.anInt5426 -= this.aSeqType_2.replayOff;
+					if (this.anInt5426 < 0 || this.anInt5426 >= this.aSeqType_2.frames.length) {
+						this.aSeqType_2 = null;
 						continue label80;
 					}
 				}
 				this.anInt5423 = this.anInt5426 + 1;
-				if (this.anInt5423 >= this.aClass157_2.frames.length) {
-					this.anInt5423 -= this.aClass157_2.replayOff;
-					if (this.anInt5423 < 0 || this.aClass157_2.frames.length <= this.anInt5423) {
+				if (this.anInt5423 >= this.aSeqType_2.frames.length) {
+					this.anInt5423 -= this.aSeqType_2.replayOff;
+					if (this.anInt5423 < 0 || this.aSeqType_2.frames.length <= this.anInt5423) {
 						this.anInt5423 = -1;
 					}
 				}
@@ -298,7 +298,7 @@ public final class Class192 {
 		}
 		this.method4932(arg5, arg4);
 		@Pc(79) boolean local79 = arg0 & this.aBoolean386 & Static218.preferences.sceneryShadows != 0;
-		@Pc(117) boolean local117 = local79 & (local11.anInt1351 != this.anInt5428 || (this.anInt5424 != this.anInt5426 || this.aClass157_2 != null && (this.aClass157_2.aBoolean262 || Static318.forceTween) && this.anInt5423 != this.anInt5426) && Static218.preferences.sceneryShadows >= 2);
+		@Pc(117) boolean local117 = local79 & (local11.anInt1351 != this.anInt5428 || (this.anInt5424 != this.anInt5426 || this.aSeqType_2 != null && (this.aSeqType_2.aBoolean262 || Static318.forceTween) && this.anInt5423 != this.anInt5426) && Static218.preferences.sceneryShadows >= 2);
 		if (arg1 && !local117) {
 			this.anInt5428 = local11.anInt1351;
 			this.anInt5424 = this.anInt5426;
@@ -315,11 +315,11 @@ public final class Class192 {
 			local167 = this.aByte58 < 3 ? Static365.aClass6Array4[this.aByte58 + 1] : null;
 		}
 		@Pc(175) Model local175 = null;
-		if (this.aClass157_2 != null) {
+		if (this.aSeqType_2 != null) {
 			if (local117) {
 				arg3 |= 0x20000;
 			}
-			local175 = local11.method1518(this.anInt5423, this.anInt5431, local149, this.anInt5433 == 11 ? 10 : this.anInt5433, this.aClass157_2, this.anInt5433 == 11 ? this.anInt5429 + 4 : this.anInt5429, arg2, this.anInt5426, local167, local149.method5727(this.anInt5422, this.anInt5438), this.anInt5422, this.anInt5438, arg3);
+			local175 = local11.method1518(this.anInt5423, this.anInt5431, local149, this.anInt5433 == 11 ? 10 : this.anInt5433, this.aSeqType_2, this.anInt5433 == 11 ? this.anInt5429 + 4 : this.anInt5429, arg2, this.anInt5426, local167, local149.method5727(this.anInt5422, this.anInt5438), this.anInt5422, this.anInt5438, arg3);
 			if (local175 == null) {
 				this.anInt5421 = 0;
 				this.aBooleanArray49 = null;

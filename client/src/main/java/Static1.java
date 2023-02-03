@@ -69,7 +69,7 @@ public final class Static1 {
 	}
 
 	@OriginalMember(owner = "client!a", name = "a", descriptor = "(Lclient!nb;ZIIIII)V")
-	public static void method4(@OriginalArg(0) Class157 arg0, @OriginalArg(1) boolean arg1, @OriginalArg(2) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5) {
+	public static void method4(@OriginalArg(0) SeqType arg0, @OriginalArg(1) boolean arg1, @OriginalArg(2) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5) {
 		if (Static243.size >= 50 || (arg0 == null || arg0.soundeffect == null || arg0.soundeffect.length <= arg5 || arg0.soundeffect[arg5] == null)) {
 			return;
 		}

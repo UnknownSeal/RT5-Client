@@ -28,7 +28,7 @@ public final class Static92 {
 					if (local9 == -1) {
 						arg2.aClass20Array3[local19] = null;
 					} else {
-						@Pc(41) Class157 local41 = Static39.aClass85_1.method2371(local9);
+						@Pc(41) SeqType local41 = Static39.aClass85_1.method2371(local9);
 						@Pc(44) int local44 = local41.exactmove;
 						@Pc(49) Class20 local49 = arg2.aClass20Array3[local19];
 						if (local49 != null) {

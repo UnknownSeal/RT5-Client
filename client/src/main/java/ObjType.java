@@ -439,7 +439,7 @@ public final class ObjType {
 	}
 
 	@OriginalMember(owner = "client!qf", name = "a", descriptor = "(IIIILclient!nb;Lclient!wm;ILclient!jo;I)Lclient!gn;")
-	public Model method4775(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) Class157 arg3, @OriginalArg(5) Class19 arg4, @OriginalArg(6) int arg5, @OriginalArg(7) PlayerAppearance arg6, @OriginalArg(8) int arg7) {
+	public Model method4775(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) SeqType arg3, @OriginalArg(5) Class19 arg4, @OriginalArg(6) int arg5, @OriginalArg(7) PlayerAppearance arg6, @OriginalArg(8) int arg7) {
 		@Pc(15) int local15;
 		if (this.countObj != null && arg5 > 1) {
 			local15 = -1;

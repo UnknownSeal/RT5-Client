@@ -189,10 +189,10 @@ public final class Static73 {
 						local249 = Static212.inboundBuffer.ig2();
 						if (local228 >> 30 == 0) {
 							@Pc(621) Class91 local621;
-							@Pc(692) Class157 local692;
-							@Pc(684) Class157 local684;
+							@Pc(692) SeqType local692;
+							@Pc(684) SeqType local684;
 							@Pc(667) Class91 local667;
-							@Pc(635) Class157 local635;
+							@Pc(635) SeqType local635;
 							if (local228 >> 29 != 0) {
 								local497 = local228 & 0xFFFF;
 								@Pc(790) Npc local790 = Static365.npcs[local497];

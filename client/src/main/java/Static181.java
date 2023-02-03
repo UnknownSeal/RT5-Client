@@ -153,7 +153,7 @@ public final class Static181 {
 					}
 				}
 				if (local13.type == 6 && local13.modelSeqID != -1) {
-					@Pc(71) Class157 local71 = Static39.aClass85_1.method2371(local13.modelSeqID);
+					@Pc(71) SeqType local71 = Static39.aClass85_1.method2371(local13.modelSeqID);
 					if (local71 != null) {
 						local13.anInt4283 += Static165.anInt3148;
 						while (local71.frameDelay[local13.anInt4247] < local13.anInt4283) {

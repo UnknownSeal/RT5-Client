@@ -10,7 +10,7 @@ public final class Static173 {
 	@OriginalMember(owner = "client!k", name = "a", descriptor = "(BLclient!mr;)V")
 	public static void method3314(@OriginalArg(1) Class11_Sub5_Sub2 arg0) {
 		arg0.aBoolean318 = false;
-		@Pc(20) Class157 local20;
+		@Pc(20) SeqType local20;
 		if (arg0.anInt4585 != -1) {
 			local20 = Static39.aClass85_1.method2371(arg0.anInt4585);
 			if (local20 == null || local20.frames == null) {
@@ -45,7 +45,7 @@ public final class Static173 {
 				}
 			}
 		}
-		@Pc(196) Class157 local196;
+		@Pc(196) SeqType local196;
 		if (arg0.anInt4594 != -1 && arg0.anInt4595 <= Static114.loop) {
 			@Pc(184) Class91 local184 = Static322.aClass211_2.method5406(arg0.anInt4594);
 			@Pc(187) int local187 = local184.anInt2448;

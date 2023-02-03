@@ -76,7 +76,7 @@ public final class Class11_Sub5_Sub3 extends Class11_Sub5 {
 	public final int anInt4725;
 
 	@OriginalMember(owner = "client!om", name = "N", descriptor = "Lclient!nb;")
-	private final Class157 aClass157_1;
+	private final SeqType aSeqType_1;
 
 	@OriginalMember(owner = "client!om", name = "<init>", descriptor = "(IIIIIIIIIII)V")
 	public Class11_Sub5_Sub3(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) int arg8, @OriginalArg(9) int arg9, @OriginalArg(10) int arg10) {
@@ -91,9 +91,9 @@ public final class Class11_Sub5_Sub3 extends Class11_Sub5 {
 		this.aBoolean326 = false;
 		@Pc(65) int local65 = Static322.aClass211_2.method5406(this.anInt4732).anInt2448;
 		if (local65 == -1) {
-			this.aClass157_1 = null;
+			this.aSeqType_1 = null;
 		} else {
-			this.aClass157_1 = Static39.aClass85_1.method2371(local65);
+			this.aSeqType_1 = Static39.aClass85_1.method2371(local65);
 		}
 	}
 
@@ -145,28 +145,28 @@ public final class Class11_Sub5_Sub3 extends Class11_Sub5 {
 		}
 		this.anInt4724 = (int) (Math.atan2(this.aDouble4, this.aDouble6) * 2607.5945876176133D) + 8192 & 0x3FFF;
 		this.anInt4727 = (int) (Math.atan2(this.aDouble7, this.aDouble2) * 2607.5945876176133D) & 0x3FFF;
-		if (this.aClass157_1 == null) {
+		if (this.aSeqType_1 == null) {
 			return;
 		}
 		this.anInt4742 += arg0;
 		while (true) {
 			do {
 				do {
-					if (this.anInt4742 <= this.aClass157_1.frameDelay[this.anInt4728]) {
+					if (this.anInt4742 <= this.aSeqType_1.frameDelay[this.anInt4728]) {
 						return;
 					}
-					this.anInt4742 -= this.aClass157_1.frameDelay[this.anInt4728];
+					this.anInt4742 -= this.aSeqType_1.frameDelay[this.anInt4728];
 					this.anInt4728++;
-					if (this.anInt4728 >= this.aClass157_1.frames.length) {
-						this.anInt4728 -= this.aClass157_1.replayOff;
-						if (this.anInt4728 < 0 || this.aClass157_1.frames.length <= this.anInt4728) {
+					if (this.anInt4728 >= this.aSeqType_1.frames.length) {
+						this.anInt4728 -= this.aSeqType_1.replayOff;
+						if (this.anInt4728 < 0 || this.aSeqType_1.frames.length <= this.anInt4728) {
 							this.anInt4728 = 0;
 						}
 					}
 					this.anInt4718 = this.anInt4728 + 1;
-				} while (this.aClass157_1.frames.length > this.anInt4718);
-				this.anInt4718 -= this.aClass157_1.replayOff;
-			} while (this.anInt4718 >= 0 && this.anInt4718 < this.aClass157_1.frames.length);
+				} while (this.aSeqType_1.frames.length > this.anInt4718);
+				this.anInt4718 -= this.aSeqType_1.replayOff;
+			} while (this.anInt4718 >= 0 && this.anInt4718 < this.aSeqType_1.frames.length);
 			this.anInt4718 = -1;
 		}
 	}

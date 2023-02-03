@@ -84,7 +84,7 @@ public final class Static154 {
 					if (local11 == -1) {
 						arg3.aClass20Array3[local21] = null;
 					} else {
-						@Pc(46) Class157 local46 = Static39.aClass85_1.method2371(local11);
+						@Pc(46) SeqType local46 = Static39.aClass85_1.method2371(local11);
 						@Pc(49) int local49 = local46.exactmove;
 						@Pc(54) Class20 local54 = arg3.aClass20Array3[local21];
 						if (local54 != null) {

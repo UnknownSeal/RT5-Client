@@ -31,7 +31,7 @@ public final class Class11_Sub5_Sub4 extends Class11_Sub5 {
 	public final int anInt6504;
 
 	@OriginalMember(owner = "client!uh", name = "T", descriptor = "Lclient!nb;")
-	private Class157 aClass157_3;
+	private SeqType aSeqType_3;
 
 	@OriginalMember(owner = "client!uh", name = "<init>", descriptor = "(IIIIIIIIIII)V")
 	public Class11_Sub5_Sub4(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) int arg8, @OriginalArg(9) int arg9, @OriginalArg(10) int arg10) {
@@ -43,10 +43,10 @@ public final class Class11_Sub5_Sub4 extends Class11_Sub5 {
 			this.aBoolean445 = true;
 		} else {
 			this.aBoolean445 = false;
-			this.aClass157_3 = Static39.aClass85_1.method2371(local41);
+			this.aSeqType_3 = Static39.aClass85_1.method2371(local41);
 		}
 		if (arg2 == this.anInt6504) {
-			Static1.method4(this.aClass157_3, false, super.aByte78, super.xFine, super.zFine, this.anInt6509);
+			Static1.method4(this.aSeqType_3, false, super.aByte78, super.xFine, super.zFine, this.anInt6509);
 		}
 	}
 
@@ -135,16 +135,16 @@ public final class Class11_Sub5_Sub4 extends Class11_Sub5 {
 			return;
 		}
 		this.anInt6524 += arg0;
-		while (this.anInt6524 > this.aClass157_3.frameDelay[this.anInt6509]) {
-			this.anInt6524 -= this.aClass157_3.frameDelay[this.anInt6509];
+		while (this.anInt6524 > this.aSeqType_3.frameDelay[this.anInt6509]) {
+			this.anInt6524 -= this.aSeqType_3.frameDelay[this.anInt6509];
 			this.anInt6509++;
-			if (this.anInt6509 >= this.aClass157_3.frames.length) {
+			if (this.anInt6509 >= this.aSeqType_3.frames.length) {
 				this.aBoolean445 = true;
 				break;
 			}
 		}
 		if (!this.aBoolean445) {
-			Static1.method4(this.aClass157_3, false, super.aByte78, super.xFine, super.zFine, this.anInt6509);
+			Static1.method4(this.aSeqType_3, false, super.aByte78, super.xFine, super.zFine, this.anInt6509);
 		}
 	}
 

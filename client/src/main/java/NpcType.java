@@ -175,7 +175,7 @@ public final class NpcType {
 	public int headicon = -1;
 
 	@OriginalMember(owner = "client!fk", name = "a", descriptor = "(Lclient!ak;ILclient!nb;Lclient!wm;Lclient!gp;IIILclient!nb;I[Lclient!bg;IBLclient!wl;I)Lclient!gn;")
-	public Model getBodyModel(@OriginalArg(0) Class7 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Class157 arg2, @OriginalArg(3) Class19 arg3, @OriginalArg(4) Class85 arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) Class157 arg8, @OriginalArg(9) int arg9, @OriginalArg(10) Class20[] arg10, @OriginalArg(11) int arg11, @OriginalArg(13) Interface11 arg12, @OriginalArg(14) int arg13) {
+	public Model getBodyModel(@OriginalArg(0) Class7 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) SeqType arg2, @OriginalArg(3) Class19 arg3, @OriginalArg(4) Class85 arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) SeqType arg8, @OriginalArg(9) int arg9, @OriginalArg(10) Class20[] arg10, @OriginalArg(11) int arg11, @OriginalArg(13) Interface11 arg12, @OriginalArg(14) int arg13) {
 		if (this.multiNpcs != null) {
 			@Pc(13) NpcType local13 = this.getMultiNpc(arg12);
 			return local13 == null ? null : local13.getBodyModel(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13);
@@ -197,10 +197,10 @@ public final class NpcType {
 		for (@Pc(80) int local80 = 0; local80 < local78; local80++) {
 			Static21.aClass2_Sub2_Sub13Array1[local80] = null;
 			if (arg10[local80] != null) {
-				@Pc(98) Class157 local98 = arg4.method2371(arg10[local80].anInt624);
+				@Pc(98) SeqType local98 = arg4.method2371(arg10[local80].anInt624);
 				if (local98.frames != null) {
 					local65 = true;
-					Static168.aClass157Array42[local80] = local98;
+					Static168.A_SEQ_TYPE_ARRAY_42[local80] = local98;
 					local112 = arg10[local80].anInt628;
 					local117 = arg10[local80].anInt627;
 					@Pc(122) int local122 = local98.frames[local112];
@@ -448,7 +448,7 @@ public final class NpcType {
 		@Pc(1308) int local1308 = 1;
 		while (local1306 < local78) {
 			if (Static21.aClass2_Sub2_Sub13Array1[local1306] != null) {
-				local1300.method3822(Static132.anIntArray161[local1306], Static356.anIntArray461[local1306] - 1, Static116.aClass2_Sub2_Sub13Array3[local1306], local1308, Static225.anIntArray259[local1306], Static191.anIntArray101[local1306], Static21.aClass2_Sub2_Sub13Array1[local1306], Static168.aClass157Array42[local1306].aBoolean263, this.anIntArrayArray19[local1306]);
+				local1300.method3822(Static132.anIntArray161[local1306], Static356.anIntArray461[local1306] - 1, Static116.aClass2_Sub2_Sub13Array3[local1306], local1308, Static225.anIntArray259[local1306], Static191.anIntArray101[local1306], Static21.aClass2_Sub2_Sub13Array1[local1306], Static168.A_SEQ_TYPE_ARRAY_42[local1306].aBoolean263, this.anIntArrayArray19[local1306]);
 			}
 			local1306++;
 			local1308 <<= 0x1;
@@ -463,7 +463,7 @@ public final class NpcType {
 		for (@Pc(1427) int local1427 = 0; local1427 < local78; local1427++) {
 			Static21.aClass2_Sub2_Sub13Array1[local1427] = null;
 			Static116.aClass2_Sub2_Sub13Array3[local1427] = null;
-			Static168.aClass157Array42[local1427] = null;
+			Static168.A_SEQ_TYPE_ARRAY_42[local1427] = null;
 		}
 		if (this.resize_x != 128 || this.resize_y != 128) {
 			local1300.method3841(this.resize_x, this.resize_y, this.resize_x);
@@ -473,7 +473,7 @@ public final class NpcType {
 	}
 
 	@OriginalMember(owner = "client!fk", name = "a", descriptor = "(IIIILclient!wm;Lclient!nb;ZLclient!wl;Lclient!gp;)Lclient!gn;")
-	public Model getHeadModel(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) Class19 arg3, @OriginalArg(5) Class157 arg4, @OriginalArg(7) Interface11 arg5, @OriginalArg(8) Class85 arg6) {
+	public Model getHeadModel(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) Class19 arg3, @OriginalArg(5) SeqType arg4, @OriginalArg(7) Interface11 arg5, @OriginalArg(8) Class85 arg6) {
 		if (this.multiNpcs != null) {
 			@Pc(13) NpcType type = this.getMultiNpc(arg5);
 			return type == null ? null : type.getHeadModel(arg0, arg1, arg2, arg3, arg4, arg5, arg6);

@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!nb")
-public final class Class157 {
+public final class SeqType {
 
 	@OriginalMember(owner = "client!nb", name = "a", descriptor = "[[I")
 	public int[][] soundeffect;
