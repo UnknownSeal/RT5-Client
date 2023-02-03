@@ -38,7 +38,7 @@ public final class Class11_Sub5_Sub4 extends Class11_Sub5 {
 		super(arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, false, (byte) 0);
 		this.anInt6505 = arg0;
 		this.anInt6504 = arg1 + arg2;
-		@Pc(41) int local41 = Static322.aClass211_2.method5406(this.anInt6505).anInt2448;
+		@Pc(41) int local41 = Static322.aClass211_2.get(this.anInt6505).anInt2448;
 		if (local41 == -1) {
 			this.aBoolean445 = true;
 		} else {
@@ -112,7 +112,7 @@ public final class Class11_Sub5_Sub4 extends Class11_Sub5 {
 
 	@OriginalMember(owner = "client!uh", name = "a", descriptor = "(ILclient!wm;Z)Lclient!gn;")
 	private Model method5873(@OriginalArg(0) int arg0, @OriginalArg(1) Class19 arg1) {
-		@Pc(9) Class91 local9 = Static322.aClass211_2.method5406(this.anInt6505);
+		@Pc(9) Class91 local9 = Static322.aClass211_2.get(this.anInt6505);
 		return this.aBoolean445 ? local9.method2433(-1, 0, arg1, arg0, Static39.aClass85_1, -1) : local9.method2433(this.anInt6510, this.anInt6524, arg1, arg0, Static39.aClass85_1, this.anInt6509);
 	}
 

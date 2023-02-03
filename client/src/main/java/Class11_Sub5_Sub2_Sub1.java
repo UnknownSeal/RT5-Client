@@ -323,7 +323,7 @@ public final class Class11_Sub5_Sub2_Sub1 extends Class11_Sub5_Sub2 {
 		}
 		super.aModelArray3[1] = null;
 		if (!this.aBoolean275 && super.anInt4594 != -1 && super.anInt4582 != -1) {
-			@Pc(302) Class91 local302 = Static322.aClass211_2.method5406(super.anInt4594);
+			@Pc(302) Class91 local302 = Static322.aClass211_2.get(super.anInt4594);
 			@Pc(322) Model local322 = local302.method2433(super.anInt4612, super.anInt4620, arg0, (local302.aBoolean178 ? 7 : 2) | local7, Static39.aClass85_1, super.anInt4582);
 			if (local322 != null) {
 				local322.method3812(0, -super.anInt4639, 0);
@@ -365,7 +365,7 @@ public final class Class11_Sub5_Sub2_Sub1 extends Class11_Sub5_Sub2 {
 			super.anInt4597 = -1;
 		}
 		if (super.anInt4594 != -1) {
-			@Pc(37) Class91 local37 = Static322.aClass211_2.method5406(super.anInt4594);
+			@Pc(37) Class91 local37 = Static322.aClass211_2.get(super.anInt4594);
 			if (local37.aBoolean177 && local37.anInt2448 != -1 && Static39.aClass85_1.method2371(local37.anInt2448).movetype == 1) {
 				super.anInt4594 = -1;
 			}

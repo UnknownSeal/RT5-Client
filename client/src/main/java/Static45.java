@@ -11,7 +11,7 @@ public final class Static45 {
 	public static int anInt1196 = 0;
 
 	@OriginalMember(owner = "client!client", name = "fb", descriptor = "I")
-	public static final int anInt1198 = 0;
+	public static final int MAX_LENGTH = 0;
 
 	@OriginalMember(owner = "client!client", name = "a", descriptor = "()V")
 	public static void method1396() {

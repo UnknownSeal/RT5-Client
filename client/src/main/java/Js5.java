@@ -157,7 +157,7 @@ public final class Js5 {
 			}
 			@Pc(157) byte[] local157;
 			try {
-				local157 = Static161.method2969(local128);
+				local157 = Static161.uncompress(local128);
 			} catch (@Pc(159) RuntimeException local159) {
 				throw Static382.method6363(local159, "T3 - " + (arg2 != null) + "," + arg1 + "," + local128.length + "," + Static36.method1111(local128, local128.length) + "," + Static36.method1111(local128, local128.length - 2) + "," + this.index.anIntArray382[arg1] + "," + this.index.checksum);
 			}

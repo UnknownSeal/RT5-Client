@@ -2,25 +2,27 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!ot")
-public final class Class174 {
+public final class Bzip2DState {
 
+	@OriginalMember(owner = "client!bp", name = "s", descriptor = "[I")
+	public static int[] tt;
 	@OriginalMember(owner = "client!ot", name = "b", descriptor = "B")
 	public byte aByte53;
 
 	@OriginalMember(owner = "client!ot", name = "c", descriptor = "I")
-	public int anInt4788;
+	public int blockSize100k;
 
 	@OriginalMember(owner = "client!ot", name = "g", descriptor = "I")
-	public int anInt4790;
+	public int strmAvailOut;
 
 	@OriginalMember(owner = "client!ot", name = "h", descriptor = "I")
-	public int anInt4791;
+	public int bsBuff;
 
 	@OriginalMember(owner = "client!ot", name = "i", descriptor = "I")
 	public int anInt4792;
 
 	@OriginalMember(owner = "client!ot", name = "m", descriptor = "[B")
-	public byte[] aByteArray54;
+	public byte[] strmNextOut;
 
 	@OriginalMember(owner = "client!ot", name = "p", descriptor = "I")
 	public int anInt4794;
@@ -29,7 +31,7 @@ public final class Class174 {
 	public int anInt4795;
 
 	@OriginalMember(owner = "client!ot", name = "r", descriptor = "I")
-	public int anInt4796;
+	public int strmTotalInLo32;
 
 	@OriginalMember(owner = "client!ot", name = "v", descriptor = "I")
 	public int anInt4797;
@@ -41,7 +43,7 @@ public final class Class174 {
 	public int anInt4799;
 
 	@OriginalMember(owner = "client!ot", name = "y", descriptor = "[B")
-	public byte[] aByteArray57;
+	public byte[] strmNextIn;
 
 	@OriginalMember(owner = "client!ot", name = "z", descriptor = "I")
 	public int anInt4800;
@@ -50,7 +52,7 @@ public final class Class174 {
 	public int anInt4801;
 
 	@OriginalMember(owner = "client!ot", name = "G", descriptor = "I")
-	public int anInt4802;
+	public int bsLive;
 
 	@OriginalMember(owner = "client!ot", name = "a", descriptor = "[I")
 	public final int[] anIntArray324 = new int[6];
@@ -83,7 +85,7 @@ public final class Class174 {
 	public final boolean[] aBooleanArray41 = new boolean[256];
 
 	@OriginalMember(owner = "client!ot", name = "j", descriptor = "I")
-	public int anInt4793 = 0;
+	public int strmNextInPtr = 0;
 
 	@OriginalMember(owner = "client!ot", name = "A", descriptor = "[I")
 	public final int[] anIntArray326 = new int[16];

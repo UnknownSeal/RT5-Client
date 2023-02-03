@@ -81,7 +81,7 @@ public final class Static236 {
 				if (local55 != -1 && local25.anInt4594 != -1) {
 					@Pc(207) Class91 local207;
 					if (local55 == local25.anInt4594) {
-						local207 = Static322.aClass211_2.method5406(local55);
+						local207 = Static322.aClass211_2.get(local55);
 						if (local207.aBoolean177 && local207.anInt2448 != -1) {
 							local221 = Static39.aClass85_1.method2371(local207.anInt2448);
 							local224 = local221.exactmove;
@@ -95,8 +95,8 @@ public final class Static236 {
 							}
 						}
 					} else {
-						local207 = Static322.aClass211_2.method5406(local55);
-						@Pc(262) Class91 local262 = Static322.aClass211_2.method5406(local25.anInt4594);
+						local207 = Static322.aClass211_2.get(local55);
+						@Pc(262) Class91 local262 = Static322.aClass211_2.get(local25.anInt4594);
 						if (local207.anInt2448 != -1 && local262.anInt2448 != -1) {
 							@Pc(277) SeqType local277 = Static39.aClass85_1.method2371(local207.anInt2448);
 							@Pc(283) SeqType local283 = Static39.aClass85_1.method2371(local262.anInt2448);
@@ -117,7 +117,7 @@ public final class Static236 {
 						local25.anInt4582 = -1;
 					}
 					if (local25.anInt4594 != -1 && Static114.loop == local25.anInt4595) {
-						@Pc(340) int local340 = Static322.aClass211_2.method5406(local25.anInt4594).anInt2448;
+						@Pc(340) int local340 = Static322.aClass211_2.get(local25.anInt4594).anInt2448;
 						if (local340 != -1) {
 							local221 = Static39.aClass85_1.method2371(local340);
 							if (local221 != null && local221.frames != null) {

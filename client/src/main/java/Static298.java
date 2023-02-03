@@ -57,7 +57,7 @@ public final class Static298 {
 	}
 
 	@OriginalMember(owner = "client!rc", name = "a", descriptor = "(BI)I")
-	public static int method2427(@OriginalArg(1) int arg0) {
+	public static int getFileID(@OriginalArg(1) int arg0) {
 		return arg0 & 0xFF;
 	}
 }

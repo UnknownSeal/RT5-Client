@@ -23,28 +23,28 @@ public final class Static161 {
 	}
 
 	@OriginalMember(owner = "client!jg", name = "a", descriptor = "([BI)[B")
-	public static byte[] method2969(@OriginalArg(0) byte[] arg0) {
-		@Pc(8) Buffer local8 = new Buffer(arg0);
-		@Pc(12) int local12 = local8.g1();
-		@Pc(23) int local23 = local8.mg4();
-		if (local23 < 0 || Static45.anInt1198 != 0 && Static45.anInt1198 < local23) {
+	public static byte[] uncompress(@OriginalArg(0) byte[] in) {
+		@Pc(8) Buffer buffer = new Buffer(in);
+		@Pc(12) int type = buffer.g1();
+		@Pc(23) int length = buffer.mg4();
+		if (length < 0 || Static45.MAX_LENGTH != 0 && Static45.MAX_LENGTH < length) {
 			throw new RuntimeException();
-		} else if (local12 == 0) {
-			@Pc(45) byte[] local45 = new byte[local23];
-			local8.gdata(local45, local23);
-			return local45;
+		} else if (type == 0) {
+			@Pc(45) byte[] out = new byte[length];
+			buffer.gdata(out, length);
+			return out;
 		} else {
-			@Pc(57) int local57 = local8.mg4();
-			if (local57 < 0 || Static45.anInt1198 != 0 && Static45.anInt1198 < local57) {
+			@Pc(57) int uncompressedLength = buffer.mg4();
+			if (uncompressedLength < 0 || Static45.MAX_LENGTH != 0 && Static45.MAX_LENGTH < uncompressedLength) {
 				throw new RuntimeException();
 			}
-			@Pc(71) byte[] local71 = new byte[local57];
-			if (local12 == 1) {
-				Static213.method3741(local71, local57, arg0, local23);
+			@Pc(71) byte[] out = new byte[uncompressedLength];
+			if (type == 1) {
+				Static213.bunzip2(out, uncompressedLength, in, length);
 			} else {
-				Static92.aClass92_1.method2436(local71, local8);
+				Static92.GZIP_DECOMPRESSOR.gUnzip(out, buffer);
 			}
-			return local71;
+			return out;
 		}
 	}
 

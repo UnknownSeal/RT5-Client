@@ -14,7 +14,7 @@ public final class Static92 {
 	public static int anInt1913 = 0;
 
 	@OriginalMember(owner = "client!fa", name = "e", descriptor = "Lclient!hg;")
-	public static final Class92 aClass92_1 = new Class92();
+	public static final GzipDecompressor GZIP_DECOMPRESSOR = new GzipDecompressor();
 
 	@OriginalMember(owner = "client!fa", name = "a", descriptor = "([I[ILclient!oe;I[I)V")
 	public static void method1966(@OriginalArg(0) int[] arg0, @OriginalArg(1) int[] arg1, @OriginalArg(2) Npc arg2, @OriginalArg(4) int[] arg3) {

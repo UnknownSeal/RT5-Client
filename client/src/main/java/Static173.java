@@ -47,7 +47,7 @@ public final class Static173 {
 		}
 		@Pc(196) SeqType local196;
 		if (arg0.anInt4594 != -1 && arg0.anInt4595 <= Static114.loop) {
-			@Pc(184) Class91 local184 = Static322.aClass211_2.method5406(arg0.anInt4594);
+			@Pc(184) Class91 local184 = Static322.aClass211_2.get(arg0.anInt4594);
 			@Pc(187) int local187 = local184.anInt2448;
 			if (local187 == -1) {
 				arg0.anInt4594 = -1;

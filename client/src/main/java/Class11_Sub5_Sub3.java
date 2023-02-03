@@ -89,7 +89,7 @@ public final class Class11_Sub5_Sub3 extends Class11_Sub5 {
 		this.anInt4735 = arg8;
 		this.anInt4725 = arg5;
 		this.aBoolean326 = false;
-		@Pc(65) int local65 = Static322.aClass211_2.method5406(this.anInt4732).anInt2448;
+		@Pc(65) int local65 = Static322.aClass211_2.get(this.anInt4732).anInt2448;
 		if (local65 == -1) {
 			this.aSeqType_1 = null;
 		} else {
@@ -210,7 +210,7 @@ public final class Class11_Sub5_Sub3 extends Class11_Sub5 {
 
 	@OriginalMember(owner = "client!om", name = "a", descriptor = "(IBLclient!wm;)Lclient!gn;")
 	private Model method4395(@OriginalArg(0) int arg0, @OriginalArg(2) Class19 arg1) {
-		@Pc(17) Class91 local17 = Static322.aClass211_2.method5406(this.anInt4732);
+		@Pc(17) Class91 local17 = Static322.aClass211_2.get(this.anInt4732);
 		return local17.method2433(this.anInt4718, this.anInt4742, arg1, arg0, Static39.aClass85_1, this.anInt4728);
 	}
 

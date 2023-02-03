@@ -148,7 +148,7 @@ public final class Static117 {
 	}
 
 	@OriginalMember(owner = "client!gp", name = "b", descriptor = "(II)I")
-	public static int method2370(@OriginalArg(1) int arg0) {
+	public static int getGroupID(@OriginalArg(1) int arg0) {
 		return arg0 >>> 8;
 	}
 
