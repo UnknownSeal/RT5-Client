@@ -36,7 +36,7 @@ public final class Static1 {
 					@Pc(106) int local106 = local92 & 0x3F;
 					@Pc(119) int local119 = local102 + (Static291.mapSquares[local10] >> 8) * 64 - Static164.originX;
 					@Pc(132) int local132 = local106 + (Static291.mapSquares[local10] & 0xFF) * 64 - Static148.originZ;
-					@Pc(139) NpcType type = Static6.aClass219_1.get(local65.g2());
+					@Pc(139) NpcType type = NpcTypeList.npcTypeList.get(local65.g2());
 					if (Static365.npcs[id] == null && (type.defaultmode & 0x1) > 0 && Static44.visibleLevel == local96 && local119 >= 0 && local119 + type.size < Static373.anInt7033 && local132 >= 0 && local132 + type.size < Static242.anInt4449) {
 						Static365.npcs[id] = new Npc();
 						Static365.npcs[id].anInt4619 = id;

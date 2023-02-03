@@ -48,7 +48,7 @@ public final class ObjTypeList {
 	private final String[] defaultIOps;
 
 	@OriginalMember(owner = "client!io", name = "<init>", descriptor = "(Lclient!dn;IZLclient!be;Lclient!r;Lclient!r;)V")
-	public ObjTypeList(@OriginalArg(0) GameType arg0, @OriginalArg(1) int arg1, @OriginalArg(2) boolean arg2, @OriginalArg(3) Class18 arg3, @OriginalArg(4) Js5 arg4, @OriginalArg(5) Js5 arg5) {
+	public ObjTypeList(@OriginalArg(1) int arg1, @OriginalArg(2) boolean arg2, @OriginalArg(3) Class18 arg3, @OriginalArg(4) Js5 arg4, @OriginalArg(5) Js5 arg5) {
 		this.modelsArchive = arg5;
 		this.anInt2781 = arg1;
 		this.aClass18_1 = arg3;

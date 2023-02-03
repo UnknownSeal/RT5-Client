@@ -2375,10 +2375,10 @@ public final class ScriptRunner {
 										int3 = intStack[isp + 1];
 										local8083 = Static363.aClass18_2.method565(int3);
 										if (local8083.method6262()) {
-											stringStack[anInt3652++] = Static6.aClass219_1.get(int1).method2090(local8083.aString69, int3);
+											stringStack[anInt3652++] = NpcTypeList.npcTypeList.get(int1).method2090(local8083.aString69, int3);
 											return;
 										}
-										intStack[isp++] = Static6.aClass219_1.get(int1).method2098(local8083.anInt7023, int3);
+										intStack[isp++] = NpcTypeList.npcTypeList.get(int1).method2098(local8083.anInt7023, int3);
 										return;
 									}
 								} else if (opcode < 4500) {
@@ -3358,7 +3358,7 @@ public final class ScriptRunner {
 							Static257.aShortArray79[intStack[isp]] = (short) Static376.method6284(intStack[isp + 1]);
 							ObjTypeList.objTypeList.method2767();
 							ObjTypeList.objTypeList.method2760();
-							Static6.aClass219_1.method5571();
+							NpcTypeList.npcTypeList.method5571();
 							Static98.method2107();
 							return;
 						}

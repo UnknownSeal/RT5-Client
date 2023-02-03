@@ -34,7 +34,7 @@ public final class NpcType {
 	private short[] recol_s;
 
 	@OriginalMember(owner = "client!fk", name = "jb", descriptor = "Lclient!ta;")
-	public Class219 aClass219_2;
+	public NpcTypeList aNpcTypeList_2;
 
 	@OriginalMember(owner = "client!fk", name = "kb", descriptor = "[S")
 	private short[] retex_d;
@@ -175,7 +175,7 @@ public final class NpcType {
 	public int headicon = -1;
 
 	@OriginalMember(owner = "client!fk", name = "a", descriptor = "(Lclient!ak;ILclient!nb;Lclient!wm;Lclient!gp;IIILclient!nb;I[Lclient!bg;IBLclient!wl;I)Lclient!gn;")
-	public Model getBodyModel(@OriginalArg(0) Class7 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) SeqType arg2, @OriginalArg(3) Class19 arg3, @OriginalArg(4) Class85 arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) SeqType arg8, @OriginalArg(9) int arg9, @OriginalArg(10) Class20[] arg10, @OriginalArg(11) int arg11, @OriginalArg(13) Interface11 arg12, @OriginalArg(14) int arg13) {
+	public Model getBodyModel(@OriginalArg(0) Class7 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) SeqType arg2, @OriginalArg(3) Class19 arg3, @OriginalArg(4) SeqTypeList arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) SeqType arg8, @OriginalArg(9) int arg9, @OriginalArg(10) Class20[] arg10, @OriginalArg(11) int arg11, @OriginalArg(13) Interface11 arg12, @OriginalArg(14) int arg13) {
 		if (this.multiNpcs != null) {
 			@Pc(13) NpcType local13 = this.getMultiNpc(arg12);
 			return local13 == null ? null : local13.getBodyModel(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13);
@@ -308,10 +308,10 @@ public final class NpcType {
 				local37 |= 0x200;
 			}
 		}
-		@Pc(520) SoftLruHashTable local520 = this.aClass219_2.aSoftLruHashTable_54;
+		@Pc(520) SoftLruHashTable local520 = this.aNpcTypeList_2.aSoftLruHashTable_54;
 		@Pc(537) Model local537;
-		synchronized (this.aClass219_2.aSoftLruHashTable_54) {
-			local537 = (Model) this.aClass219_2.aSoftLruHashTable_54.get((long) (this.anInt2048 | arg3.anInt2836 << 16));
+		synchronized (this.aNpcTypeList_2.aSoftLruHashTable_54) {
+			local537 = (Model) this.aNpcTypeList_2.aSoftLruHashTable_54.get((long) (this.anInt2048 | arg3.anInt2836 << 16));
 		}
 		if (local537 == null || (local537.method3826() & local37) != local37) {
 			if (local537 != null) {
@@ -319,15 +319,15 @@ public final class NpcType {
 			}
 			local359 = local37;
 			@Pc(566) boolean local566 = false;
-			@Pc(570) Js5 local570 = this.aClass219_2.aJs5_88;
+			@Pc(570) Js5 local570 = this.aNpcTypeList_2.modelArchive;
 			@Pc(574) int i;
-			synchronized (this.aClass219_2.aJs5_88) {
+			synchronized (this.aNpcTypeList_2.modelArchive) {
 				i = 0;
 				while (true) {
 					if (i >= this.modelids.length) {
 						break;
 					}
-					if (this.modelids[i] != -1 && !this.aClass219_2.aJs5_88.isFileReady(this.modelids[i], 0)) {
+					if (this.modelids[i] != -1 && !this.aNpcTypeList_2.modelArchive.isFileReady(this.modelids[i], 0)) {
 						local566 = true;
 					}
 					i++;
@@ -339,9 +339,9 @@ public final class NpcType {
 			@Pc(621) RawModel[] models = new RawModel[this.modelids.length];
 			for (i = 0; i < this.modelids.length; i++) {
 				if (this.modelids[i] != -1) {
-					@Pc(636) Js5 local636 = this.aClass219_2.aJs5_88;
-					synchronized (this.aClass219_2.aJs5_88) {
-						models[i] = RawModel.create(this.aClass219_2.aJs5_88, this.modelids[i]);
+					@Pc(636) Js5 local636 = this.aNpcTypeList_2.modelArchive;
+					synchronized (this.aNpcTypeList_2.modelArchive) {
+						models[i] = RawModel.create(this.aNpcTypeList_2.modelArchive, this.modelids[i]);
 					}
 					if (this.modeloffsets != null && this.modeloffsets[i] != null && models[i] != null) {
 						models[i].translate(this.modeloffsets[i][0], this.modeloffsets[i][2], this.modeloffsets[i][1]);
@@ -419,7 +419,7 @@ public final class NpcType {
 			if (this.retex_d != null) {
 				local359 |= 0x4000;
 			}
-			local537 = arg3.method2864(local1152, local359, this.aClass219_2.anInt6108, this.ambient + 64, this.contrast + 850);
+			local537 = arg3.method2864(local1152, local359, this.aNpcTypeList_2.anInt6108, this.ambient + 64, this.contrast + 850);
 			if (this.recol_s != null) {
 				for (local718 = 0; local718 < this.recol_s.length; local718++) {
 					if (this.recol_p == null || this.recol_p.length <= local718) {
@@ -435,9 +435,9 @@ public final class NpcType {
 				}
 			}
 			local537.method3813(local37);
-			@Pc(1272) SoftLruHashTable local1272 = this.aClass219_2.aSoftLruHashTable_54;
-			synchronized (this.aClass219_2.aSoftLruHashTable_54) {
-				this.aClass219_2.aSoftLruHashTable_54.put((long) (arg3.anInt2836 << 16 | this.anInt2048), local537);
+			@Pc(1272) SoftLruHashTable local1272 = this.aNpcTypeList_2.aSoftLruHashTable_54;
+			synchronized (this.aNpcTypeList_2.aSoftLruHashTable_54) {
+				this.aNpcTypeList_2.aSoftLruHashTable_54.put((long) (arg3.anInt2836 << 16 | this.anInt2048), local537);
 			}
 		}
 		@Pc(1300) Model local1300 = local537.method3799((byte) 4, local37, true);
@@ -473,7 +473,7 @@ public final class NpcType {
 	}
 
 	@OriginalMember(owner = "client!fk", name = "a", descriptor = "(IIIILclient!wm;Lclient!nb;ZLclient!wl;Lclient!gp;)Lclient!gn;")
-	public Model getHeadModel(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) Class19 arg3, @OriginalArg(5) SeqType arg4, @OriginalArg(7) Interface11 arg5, @OriginalArg(8) Class85 arg6) {
+	public Model getHeadModel(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) Class19 arg3, @OriginalArg(5) SeqType arg4, @OriginalArg(7) Interface11 arg5, @OriginalArg(8) SeqTypeList arg6) {
 		if (this.multiNpcs != null) {
 			@Pc(13) NpcType type = this.getMultiNpc(arg5);
 			return type == null ? null : type.getHeadModel(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -484,10 +484,10 @@ public final class NpcType {
 			if (arg4 != null && arg2 != -1) {
 				local36 = arg4.method3989(arg2, true, arg1) | 0x400;
 			}
-			@Pc(63) SoftLruHashTable local63 = this.aClass219_2.aSoftLruHashTable_55;
+			@Pc(63) SoftLruHashTable local63 = this.aNpcTypeList_2.aSoftLruHashTable_55;
 			@Pc(80) Model local80;
-			synchronized (this.aClass219_2.aSoftLruHashTable_55) {
-				local80 = (Model) this.aClass219_2.aSoftLruHashTable_55.get((long) arg3.anInt2836 << 16 | this.anInt2048);
+			synchronized (this.aNpcTypeList_2.aSoftLruHashTable_55) {
+				local80 = (Model) this.aNpcTypeList_2.aSoftLruHashTable_55.get((long) arg3.anInt2836 << 16 | this.anInt2048);
 			}
 			if (local80 == null || local36 != (local36 & local80.method3826())) {
 				if (local80 != null) {
@@ -495,15 +495,15 @@ public final class NpcType {
 				}
 				@Pc(107) int local107 = local36;
 				@Pc(109) boolean local109 = false;
-				@Pc(113) Js5 local113 = this.aClass219_2.aJs5_88;
+				@Pc(113) Js5 local113 = this.aNpcTypeList_2.modelArchive;
 				@Pc(117) int local117;
-				synchronized (this.aClass219_2.aJs5_88) {
+				synchronized (this.aNpcTypeList_2.modelArchive) {
 					local117 = 0;
 					while (true) {
 						if (this.headmodels.length <= local117) {
 							break;
 						}
-						if (!this.aClass219_2.aJs5_88.isFileReady(this.headmodels[local117], 0)) {
+						if (!this.aNpcTypeList_2.modelArchive.isFileReady(this.headmodels[local117], 0)) {
 							local109 = true;
 						}
 						local117++;
@@ -513,10 +513,10 @@ public final class NpcType {
 					return null;
 				}
 				@Pc(157) RawModel[] local157 = new RawModel[this.headmodels.length];
-				@Pc(161) Js5 local161 = this.aClass219_2.aJs5_88;
-				synchronized (this.aClass219_2.aJs5_88) {
+				@Pc(161) Js5 local161 = this.aNpcTypeList_2.modelArchive;
+				synchronized (this.aNpcTypeList_2.modelArchive) {
 					for (@Pc(165) int local165 = 0; local165 < this.headmodels.length; local165++) {
-						local157[local165] = RawModel.create(this.aClass219_2.aJs5_88, this.headmodels[local165]);
+						local157[local165] = RawModel.create(this.aNpcTypeList_2.modelArchive, this.headmodels[local165]);
 					}
 				}
 				@Pc(209) RawModel local209;
@@ -531,7 +531,7 @@ public final class NpcType {
 				if (this.retex_d != null) {
 					local107 |= 0x4000;
 				}
-				local80 = arg3.method2864(local209, local107, this.aClass219_2.anInt6108, 64, 768);
+				local80 = arg3.method2864(local209, local107, this.aNpcTypeList_2.anInt6108, 64, 768);
 				if (this.recol_s != null) {
 					for (local117 = 0; local117 < this.recol_s.length; local117++) {
 						if (this.recol_p == null || this.recol_p.length <= local117) {
@@ -547,9 +547,9 @@ public final class NpcType {
 					}
 				}
 				local80.method3813(local36);
-				@Pc(319) SoftLruHashTable local319 = this.aClass219_2.aSoftLruHashTable_55;
-				synchronized (this.aClass219_2.aSoftLruHashTable_55) {
-					this.aClass219_2.aSoftLruHashTable_55.put((long) arg3.anInt2836 << 16 | this.anInt2048, local80);
+				@Pc(319) SoftLruHashTable local319 = this.aNpcTypeList_2.aSoftLruHashTable_55;
+				synchronized (this.aNpcTypeList_2.aSoftLruHashTable_55) {
+					this.aNpcTypeList_2.aSoftLruHashTable_55.put((long) arg3.anInt2836 << 16 | this.anInt2048, local80);
 				}
 			}
 			if (arg4 != null && arg2 != -1) {
@@ -606,9 +606,9 @@ public final class NpcType {
 		}
 		if (value < 0 || value >= this.multiNpcs.length - 1 || this.multiNpcs[value] == -1) {
 			@Pc(68) int defaultMultiNpc = this.multiNpcs[this.multiNpcs.length - 1];
-			return defaultMultiNpc == -1 ? null : this.aClass219_2.get(defaultMultiNpc);
+			return defaultMultiNpc == -1 ? null : this.aNpcTypeList_2.get(defaultMultiNpc);
 		} else {
-			return this.aClass219_2.get(this.multiNpcs[value]);
+			return this.aNpcTypeList_2.get(this.multiNpcs[value]);
 		}
 	}
 
@@ -789,7 +789,7 @@ public final class NpcType {
 				this.aBoolean146 = true;
 			} else if (opcode >= 150 && opcode < 155) {
 				this.ops[opcode - 150] = buffer.gjstr();
-				if (!this.aClass219_2.aBoolean410) {
+				if (!this.aNpcTypeList_2.allowMembers) {
 					this.ops[opcode - 150] = null;
 				}
 			} else if (opcode == 160) {
@@ -847,7 +847,7 @@ public final class NpcType {
 		}
 		for (@Pc(28) int local28 = 0; local28 < this.multiNpcs.length; local28++) {
 			if (this.multiNpcs[local28] != -1) {
-				@Pc(45) NpcType local45 = this.aClass219_2.get(this.multiNpcs[local28]);
+				@Pc(45) NpcType local45 = this.aNpcTypeList_2.get(this.multiNpcs[local28]);
 				if (local45.idlesound != -1 || local45.walksound != -1 || local45.runsound != -1) {
 					return true;
 				}

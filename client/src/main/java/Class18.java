@@ -13,7 +13,7 @@ public final class Class18 {
 	private final Js5 aJs5_2;
 
 	@OriginalMember(owner = "client!be", name = "<init>", descriptor = "(Lclient!dn;ILclient!r;)V")
-	public Class18(@OriginalArg(0) GameType arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5 arg2) {
+	public Class18(@OriginalArg(2) Js5 arg2) {
 		this.aJs5_2 = arg2;
 		if (this.aJs5_2 != null) {
 			this.aJs5_2.getGroupCapacity(11);

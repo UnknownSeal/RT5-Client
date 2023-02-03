@@ -49,7 +49,7 @@ public final class Class2_Sub41 extends Node {
 			local9 = 1056;
 			@Pc(104) int local104 = local81 >>> 16;
 			local81 &= 0xFFFF;
-			local87 = Static39.aClass85_1.method2368(local104);
+			local87 = SeqTypeList.seqTypeList.method2368(local104);
 			if (local87 != null) {
 				local77 = local87.method4236(local81) | false;
 				local70 = local87.method4234(local81) | false;
@@ -63,7 +63,7 @@ public final class Class2_Sub41 extends Node {
 				if (local166 == local104) {
 					local89 = local87;
 				} else {
-					local89 = Static39.aClass85_1.method2368(local83 >>> 16);
+					local89 = SeqTypeList.seqTypeList.method2368(local83 >>> 16);
 				}
 				if (local89 != null) {
 					local77 |= local89.method4236(local83);

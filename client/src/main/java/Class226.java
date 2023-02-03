@@ -17,7 +17,7 @@ public final class Class226 implements Interface11 {
 
 	@OriginalMember(owner = "client!ts", name = "a", descriptor = "(III)V")
 	public void method5778(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
-		@Pc(8) Class134 local8 = Static322.aClass128_1.method3393(arg0);
+		@Pc(8) Class134 local8 = VarbitTypeList.varbitTypeList.method3393(arg0);
 		@Pc(11) int local11 = local8.anInt3554;
 		@Pc(14) int local14 = local8.anInt3548;
 		@Pc(17) int local17 = local8.anInt3549;
@@ -56,7 +56,7 @@ public final class Class226 implements Interface11 {
 	@OriginalMember(owner = "client!ts", name = "a", descriptor = "(BI)I")
 	@Override
 	public int method5777(@OriginalArg(1) int arg0) {
-		@Pc(8) Class134 local8 = Static322.aClass128_1.method3393(arg0);
+		@Pc(8) Class134 local8 = VarbitTypeList.varbitTypeList.method3393(arg0);
 		@Pc(11) int local11 = local8.anInt3554;
 		@Pc(20) int local20 = local8.anInt3548;
 		@Pc(23) int local23 = local8.anInt3549;
@@ -102,7 +102,7 @@ public final class Class226 implements Interface11 {
 
 	@OriginalMember(owner = "client!ts", name = "b", descriptor = "(III)V")
 	public void method5785(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
-		@Pc(8) Class134 local8 = Static322.aClass128_1.method3393(arg0);
+		@Pc(8) Class134 local8 = VarbitTypeList.varbitTypeList.method3393(arg0);
 		@Pc(11) int local11 = local8.anInt3554;
 		@Pc(14) int local14 = local8.anInt3548;
 		@Pc(17) int local17 = local8.anInt3549;

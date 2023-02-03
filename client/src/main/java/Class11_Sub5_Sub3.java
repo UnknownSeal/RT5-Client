@@ -93,7 +93,7 @@ public final class Class11_Sub5_Sub3 extends Class11_Sub5 {
 		if (local65 == -1) {
 			this.aSeqType_1 = null;
 		} else {
-			this.aSeqType_1 = Static39.aClass85_1.method2371(local65);
+			this.aSeqType_1 = SeqTypeList.seqTypeList.method2371(local65);
 		}
 	}
 
@@ -211,7 +211,7 @@ public final class Class11_Sub5_Sub3 extends Class11_Sub5 {
 	@OriginalMember(owner = "client!om", name = "a", descriptor = "(IBLclient!wm;)Lclient!gn;")
 	private Model method4395(@OriginalArg(0) int arg0, @OriginalArg(2) Class19 arg1) {
 		@Pc(17) Class91 local17 = Static322.aClass211_2.get(this.anInt4732);
-		return local17.method2433(this.anInt4718, this.anInt4742, arg1, arg0, Static39.aClass85_1, this.anInt4728);
+		return local17.method2433(this.anInt4718, this.anInt4742, arg1, arg0, SeqTypeList.seqTypeList, this.anInt4728);
 	}
 
 	@OriginalMember(owner = "client!om", name = "a", descriptor = "(Lclient!wm;B)V")

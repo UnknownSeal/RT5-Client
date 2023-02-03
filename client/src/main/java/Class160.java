@@ -47,7 +47,7 @@ public final class Class160 {
 		@Pc(38) byte[] local38 = this.aJs5_62.fetchFile(30, arg0);
 		local16 = new Class101();
 		if (local38 != null) {
-			local16.method2694(new Buffer(local38));
+			local16.decode(new Buffer(local38));
 		}
 		@Pc(56) SoftLruHashTable local56 = this.aSoftLruHashTable_35;
 		synchronized (this.aSoftLruHashTable_35) {

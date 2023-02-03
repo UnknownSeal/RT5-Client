@@ -13,7 +13,7 @@ public final class Class7 {
 	private final Js5 archive;
 
 	@OriginalMember(owner = "client!ak", name = "<init>", descriptor = "(Lclient!dn;ILclient!r;)V")
-	public Class7(@OriginalArg(0) GameType arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5 arg2) {
+	public Class7(@OriginalArg(2) Js5 arg2) {
 		this.archive = arg2;
 		this.archive.getGroupCapacity(32);
 	}

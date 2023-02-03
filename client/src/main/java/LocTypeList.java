@@ -40,7 +40,7 @@ public final class LocTypeList {
 	}
 
 	@OriginalMember(owner = "client!rh", name = "<init>", descriptor = "(Lclient!dn;IZLclient!r;Lclient!r;)V")
-	public LocTypeList(@OriginalArg(0) GameType arg0, @OriginalArg(1) int arg1, @OriginalArg(2) boolean arg2, @OriginalArg(3) Js5 arg3, @OriginalArg(4) Js5 arg4) {
+	public LocTypeList(@OriginalArg(2) boolean arg2, @OriginalArg(3) Js5 arg3, @OriginalArg(4) Js5 arg4) {
 		this.aJs5_79 = arg3;
 		this.allowMembers = arg2;
 		this.aJs5_78 = arg4;

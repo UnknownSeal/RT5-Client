@@ -123,7 +123,7 @@ public final class Static178 {
 		@Pc(521) Class2_Sub2_Sub13 local521 = null;
 		if (arg4 != null) {
 			@Pc(528) int local528 = arg4.frames[arg0];
-			local521 = Static39.aClass85_1.method2368(local528 >> 16);
+			local521 = SeqTypeList.seqTypeList.method2368(local528 >> 16);
 			arg0 = local528 & 0xFFFF;
 		}
 		if (local521 == null) {

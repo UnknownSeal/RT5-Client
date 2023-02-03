@@ -22,7 +22,7 @@ public final class SeqType {
 	public int anInt4028;
 
 	@OriginalMember(owner = "client!nb", name = "t", descriptor = "Lclient!gp;")
-	public Class85 aClass85_2;
+	public SeqTypeList aSeqTypeList_2;
 
 	@OriginalMember(owner = "client!nb", name = "w", descriptor = "[I")
 	private int[] frameSet;
@@ -67,7 +67,7 @@ public final class SeqType {
 	public Model method3985(@OriginalArg(0) Model arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4) {
 		@Pc(8) int local8 = this.frameDelay[arg1];
 		@Pc(13) int local13 = this.frames[arg1];
-		@Pc(21) Class2_Sub2_Sub13 local21 = this.aClass85_2.method2368(local13 >> 16);
+		@Pc(21) Class2_Sub2_Sub13 local21 = this.aSeqTypeList_2.method2368(local13 >> 16);
 		@Pc(25) int local25 = local13 & 0xFFFF;
 		if (local21 == null) {
 			return arg0.method3799((byte) 1, arg2, true);
@@ -75,7 +75,7 @@ public final class SeqType {
 		@Pc(35) Class2_Sub2_Sub13 local35 = null;
 		if ((this.tween || Static318.forceTween) && arg4 != -1 && this.frames.length > arg4) {
 			@Pc(54) int local54 = this.frames[arg4];
-			local35 = this.aClass85_2.method2368(local54 >> 16);
+			local35 = this.aSeqTypeList_2.method2368(local54 >> 16);
 			arg4 = local54 & 0xFFFF;
 		}
 		@Pc(68) Class2_Sub2_Sub13 local68 = null;
@@ -86,14 +86,14 @@ public final class SeqType {
 			if (this.frameSet.length > arg1) {
 				local72 = this.frameSet[arg1];
 				if (local72 != 65535) {
-					local68 = this.aClass85_2.method2368(local72 >> 16);
+					local68 = this.aSeqTypeList_2.method2368(local72 >> 16);
 					local72 &= 0xFFFF;
 				}
 			}
 			if ((this.tween || Static318.forceTween) && arg4 != -1 && this.frameSet.length > arg4) {
 				local74 = this.frameSet[arg4];
 				if (local74 != 65535) {
-					local70 = this.aClass85_2.method2368(local74 >> 16);
+					local70 = this.aSeqTypeList_2.method2368(local74 >> 16);
 					local74 &= 0xFFFF;
 				}
 			}
@@ -144,7 +144,7 @@ public final class SeqType {
 	public Model method3986(@OriginalArg(0) int arg0, @OriginalArg(1) byte arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(7) Model arg6) {
 		@Pc(8) int local8 = this.frameDelay[arg2];
 		@Pc(13) int local13 = this.frames[arg2];
-		@Pc(21) Class2_Sub2_Sub13 local21 = this.aClass85_2.method2368(local13 >> 16);
+		@Pc(21) Class2_Sub2_Sub13 local21 = this.aSeqTypeList_2.method2368(local13 >> 16);
 		@Pc(25) int local25 = local13 & 0xFFFF;
 		if (local21 == null) {
 			return arg6.method3799(arg1, arg5, true);
@@ -152,7 +152,7 @@ public final class SeqType {
 		@Pc(35) Class2_Sub2_Sub13 local35 = null;
 		if ((this.tween || Static318.forceTween) && arg0 != -1 && arg0 < this.frames.length) {
 			@Pc(53) int local53 = this.frames[arg0];
-			local35 = this.aClass85_2.method2368(local53 >> 16);
+			local35 = this.aSeqTypeList_2.method2368(local53 >> 16);
 			arg0 = local53 & 0xFFFF;
 		}
 		if (this.aBoolean263) {
@@ -254,14 +254,14 @@ public final class SeqType {
 		@Pc(7) int local7 = 0;
 		@Pc(12) int local12 = this.frames[arg0];
 		@Pc(14) Class2_Sub2_Sub13 local14 = null;
-		@Pc(22) Class2_Sub2_Sub13 local22 = this.aClass85_2.method2368(local12 >> 16);
+		@Pc(22) Class2_Sub2_Sub13 local22 = this.aSeqTypeList_2.method2368(local12 >> 16);
 		@Pc(26) int local26 = local12 & 0xFFFF;
 		if (local22 == null) {
 			return 0;
 		}
 		if ((this.tween || Static318.forceTween) && arg2 != -1 && this.frames.length > arg2) {
 			local7 = this.frames[arg2];
-			local14 = this.aClass85_2.method2368(local7 >> 16);
+			local14 = this.aSeqTypeList_2.method2368(local7 >> 16);
 			local7 &= 0xFFFF;
 		}
 		if (this.aBoolean263) {
@@ -287,7 +287,7 @@ public final class SeqType {
 			if (arg0 < this.frameSet.length) {
 				local125 = this.frameSet[arg0];
 				if (local125 != 65535) {
-					local138 = this.aClass85_2.method2368(local125 >> 16);
+					local138 = this.aSeqTypeList_2.method2368(local125 >> 16);
 					local125 &= 0xFFFF;
 					if (local138 != null) {
 						if (local138.method4236(local125)) {
@@ -302,7 +302,7 @@ public final class SeqType {
 			if ((this.tween || Static318.forceTween) && arg2 != -1 && this.frameSet.length > arg2) {
 				local125 = this.frameSet[arg2];
 				if (local125 != 65535) {
-					local138 = this.aClass85_2.method2368(local125 >> 16);
+					local138 = this.aSeqTypeList_2.method2368(local125 >> 16);
 					local125 &= 0xFFFF;
 					if (local138 != null) {
 						if (local138.method4236(local125)) {

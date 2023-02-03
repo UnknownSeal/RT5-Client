@@ -22,11 +22,11 @@ public final class Static211 {
 		Static336.aClass241_5.method6269();
 		IdentityKitTypeList.identityKitTypeList.method1782();
 		LocTypeList.locTypeList.clear();
-		Static6.aClass219_1.method5570();
+		NpcTypeList.npcTypeList.method5570();
 		ObjTypeList.objTypeList.clear();
-		Static39.aClass85_1.method2373();
+		SeqTypeList.seqTypeList.method2373();
 		Static322.aClass211_2.method5409();
-		Static322.aClass128_1.method3394();
+		VarbitTypeList.varbitTypeList.method3394();
 		Static56.aClass199_1.method5107();
 		Static59.aClass7_1.method241();
 		Static320.aClass104_2.method2707();

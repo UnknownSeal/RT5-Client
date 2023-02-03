@@ -151,7 +151,7 @@ public final class Static241 {
 		Static344.aClass104_4.method2702(64, 64);
 		Static344.aClass125_4.method3376(64, 128);
 		Static344.aLocTypeList_3.method5160(64);
-		Static322.aClass128_1.method3391(64);
+		VarbitTypeList.varbitTypeList.method3391(64);
 	}
 
 	@OriginalMember(owner = "client!nq", name = "b", descriptor = "(B)V")

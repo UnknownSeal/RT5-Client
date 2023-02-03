@@ -43,7 +43,7 @@ public final class Class11_Sub5_Sub4 extends Class11_Sub5 {
 			this.aBoolean445 = true;
 		} else {
 			this.aBoolean445 = false;
-			this.aSeqType_3 = Static39.aClass85_1.method2371(local41);
+			this.aSeqType_3 = SeqTypeList.seqTypeList.method2371(local41);
 		}
 		if (arg2 == this.anInt6504) {
 			Static1.method4(this.aSeqType_3, false, super.aByte78, super.xFine, super.zFine, this.anInt6509);
@@ -113,7 +113,7 @@ public final class Class11_Sub5_Sub4 extends Class11_Sub5 {
 	@OriginalMember(owner = "client!uh", name = "a", descriptor = "(ILclient!wm;Z)Lclient!gn;")
 	private Model method5873(@OriginalArg(0) int arg0, @OriginalArg(1) Class19 arg1) {
 		@Pc(9) Class91 local9 = Static322.aClass211_2.get(this.anInt6505);
-		return this.aBoolean445 ? local9.method2433(-1, 0, arg1, arg0, Static39.aClass85_1, -1) : local9.method2433(this.anInt6510, this.anInt6524, arg1, arg0, Static39.aClass85_1, this.anInt6509);
+		return this.aBoolean445 ? local9.method2433(-1, 0, arg1, arg0, SeqTypeList.seqTypeList, -1) : local9.method2433(this.anInt6510, this.anInt6524, arg1, arg0, SeqTypeList.seqTypeList, this.anInt6509);
 	}
 
 	@OriginalMember(owner = "client!uh", name = "a", descriptor = "(IIILclient!wm;ZLclient!hp;Z)V")

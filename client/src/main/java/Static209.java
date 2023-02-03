@@ -111,7 +111,7 @@ public final class Static209 {
 			Static344.aClass125_4.method3376(256, 1024);
 			Static344.aClass104_4.method2702(256, 256);
 			Static344.aLocTypeList_3.method5160(4096);
-			Static322.aClass128_1.method3391(256);
+			VarbitTypeList.varbitTypeList.method3391(256);
 			Static355.loadPercentage = 20;
 		} else if (Static355.loadPercentage == 20) {
 			Static161.method2972(true);

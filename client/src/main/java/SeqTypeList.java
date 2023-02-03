@@ -4,8 +4,10 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!gp")
-public final class Class85 {
+public final class SeqTypeList {
 
+	@OriginalMember(owner = "client!cf", name = "B", descriptor = "Lclient!gp;")
+	public static SeqTypeList seqTypeList;
 	@OriginalMember(owner = "client!gp", name = "f", descriptor = "Lclient!hu;")
 	private final SoftLruHashTable aSoftLruHashTable_14 = new SoftLruHashTable(64);
 
@@ -13,14 +15,14 @@ public final class Class85 {
 	private final SoftLruHashTable aSoftLruHashTable_15 = new SoftLruHashTable(100);
 
 	@OriginalMember(owner = "client!gp", name = "n", descriptor = "Lclient!r;")
-	private final Js5 aJs5_27;
+	private final Js5 archive;
 
 	@OriginalMember(owner = "client!gp", name = "<init>", descriptor = "(Lclient!dn;ILclient!r;Lclient!r;Lclient!r;)V")
-	public Class85(@OriginalArg(0) GameType arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5 arg2, @OriginalArg(3) Js5 arg3, @OriginalArg(4) Js5 arg4) {
-		this.aJs5_27 = arg2;
-		if (this.aJs5_27 != null) {
-			@Pc(26) int local26 = this.aJs5_27.capacity() - 1;
-			this.aJs5_27.getGroupCapacity(local26);
+	public SeqTypeList(@OriginalArg(0) GameType arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5 archive, @OriginalArg(3) Js5 arg3, @OriginalArg(4) Js5 arg4) {
+		this.archive = archive;
+		if (this.archive != null) {
+			@Pc(26) int group = this.archive.capacity() - 1;
+			this.archive.getGroupCapacity(group);
 		}
 		Static81.method3664(arg3, arg4);
 	}
@@ -51,10 +53,10 @@ public final class Class85 {
 		if (local16 != null) {
 			return local16;
 		}
-		@Pc(37) byte[] local37 = this.aJs5_27.fetchFile(Static98.method2104(arg0), Static341.method5767(arg0));
+		@Pc(37) byte[] local37 = this.archive.fetchFile(Static98.method2104(arg0), Static341.method5767(arg0));
 		local16 = new SeqType();
 		local16.anInt4028 = arg0;
-		local16.aClass85_2 = this;
+		local16.aSeqTypeList_2 = this;
 		if (local37 != null) {
 			local16.decode(new Buffer(local37));
 		}

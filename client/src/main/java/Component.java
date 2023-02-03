@@ -479,7 +479,7 @@ public final class Component {
 	}
 
 	@OriginalMember(owner = "client!nk", name = "a", descriptor = "(IILclient!io;Lclient!wl;ILclient!nb;Lclient!ak;Lclient!jo;Lclient!ta;ILclient!gp;ILclient!e;Lclient!wm;)Lclient!gn;")
-	public Model method4104(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) ObjTypeList arg2, @OriginalArg(3) Interface11 arg3, @OriginalArg(5) SeqType arg4, @OriginalArg(6) Class7 arg5, @OriginalArg(7) PlayerAppearance arg6, @OriginalArg(8) Class219 arg7, @OriginalArg(9) int arg8, @OriginalArg(10) Class85 arg9, @OriginalArg(11) int arg10, @OriginalArg(12) IdentityKitTypeList arg11, @OriginalArg(13) Class19 arg12) {
+	public Model method4104(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) ObjTypeList arg2, @OriginalArg(3) Interface11 arg3, @OriginalArg(5) SeqType arg4, @OriginalArg(6) Class7 arg5, @OriginalArg(7) PlayerAppearance arg6, @OriginalArg(8) NpcTypeList arg7, @OriginalArg(9) int arg8, @OriginalArg(10) SeqTypeList arg9, @OriginalArg(11) int arg10, @OriginalArg(12) IdentityKitTypeList arg11, @OriginalArg(13) Class19 arg12) {
 		Static86.aBoolean133 = false;
 		if (this.modelType == 0) {
 			return null;

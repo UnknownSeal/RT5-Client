@@ -19,7 +19,7 @@ public final class Class72 {
 	public final int anInt2059;
 
 	@OriginalMember(owner = "client!fl", name = "<init>", descriptor = "(Lclient!dn;ILclient!r;)V")
-	public Class72(@OriginalArg(0) GameType arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5 arg2) {
+	public Class72(@OriginalArg(1) int arg1, @OriginalArg(2) Js5 arg2) {
 		this.aJs5_22 = arg2;
 		this.anInt2059 = this.aJs5_22.getGroupCapacity(4);
 	}
@@ -45,22 +45,22 @@ public final class Class72 {
 		@Pc(6) SoftLruHashTable local6 = this.types;
 		@Pc(16) Class148 local16;
 		synchronized (this.types) {
-			local16 = (Class148) this.types.get((long) arg0);
+			local16 = (Class148) this.types.get(arg0);
 		}
 		if (local16 != null) {
 			return local16;
 		}
-		@Pc(41) byte[] local41 = this.aJs5_22.fetchFile(4, arg0);
+		@Pc(41) byte[] bytes = this.aJs5_22.fetchFile(4, arg0);
 		local16 = new Class148();
 		local16.aClass72_4 = this;
 		local16.anInt3756 = arg0;
-		if (local41 != null) {
-			local16.method3717(new Buffer(local41));
+		if (bytes != null) {
+			local16.method3717(new Buffer(bytes));
 		}
 		local16.method3715();
 		@Pc(66) SoftLruHashTable local66 = this.types;
 		synchronized (this.types) {
-			this.types.put((long) arg0, local16);
+			this.types.put(arg0, local16);
 			return local16;
 		}
 	}

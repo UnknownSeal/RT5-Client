@@ -240,7 +240,7 @@ public final class Static91 {
 					Static206.mapMembers = Static212.inboundBuffer.g1() == 1;
 					LocTypeList.locTypeList.setAllowMembers(Static206.mapMembers);
 					ObjTypeList.objTypeList.setAllowMembers(Static206.mapMembers);
-					Static6.aClass219_1.setAllowMembers(Static206.mapMembers);
+					NpcTypeList.npcTypeList.setAllowMembers(Static206.mapMembers);
 					if (Static56.playerUnderage && !Static347.aBoolean434 || Static381.playerMemeber) {
 						try {
 							BrowserControl.call(GameShell.signlink.applet, "zap");

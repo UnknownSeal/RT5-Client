@@ -19,7 +19,7 @@ public final class EnumTypeList {
 	}
 
 	@OriginalMember(owner = "client!is", name = "<init>", descriptor = "(Lclient!dn;ILclient!r;)V")
-	public EnumTypeList(@OriginalArg(0) GameType arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5 archive) {
+	public EnumTypeList(@OriginalArg(1) int arg1, @OriginalArg(2) Js5 archive) {
 		this.archive = archive;
 		if (this.archive != null) {
 			@Pc(20) int capacity = this.archive.capacity() - 1;

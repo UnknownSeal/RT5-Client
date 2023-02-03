@@ -17,7 +17,7 @@ public final class Static317 {
 			return;
 		}
 		if (arg0.anInt4597 != -1 && arg0.anInt4590 == 0) {
-			@Pc(39) SeqType local39 = Static39.aClass85_1.method2371(arg0.anInt4597);
+			@Pc(39) SeqType local39 = SeqTypeList.seqTypeList.method2371(arg0.anInt4597);
 			if (arg0.anInt4642 > 0 && local39.looptype == 0) {
 				Static16.anInt4756 = 0;
 				Static170.anInt3229 = -1;
@@ -34,7 +34,7 @@ public final class Static317 {
 		if (arg0.anInt4594 != -1 && arg0.anInt4595 <= Static114.loop) {
 			@Pc(97) Class91 local97 = Static322.aClass211_2.get(arg0.anInt4594);
 			if (local97.aBoolean177 && local97.anInt2448 != -1) {
-				@Pc(111) SeqType local111 = Static39.aClass85_1.method2371(local97.anInt2448);
+				@Pc(111) SeqType local111 = SeqTypeList.seqTypeList.method2371(local97.anInt2448);
 				if (arg0.anInt4642 > 0 && local111.looptype == 0) {
 					Static16.anInt4756 = 0;
 					arg0.anInt4641++;

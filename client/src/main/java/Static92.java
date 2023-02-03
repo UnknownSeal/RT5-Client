@@ -28,7 +28,7 @@ public final class Static92 {
 					if (local9 == -1) {
 						arg2.aClass20Array3[local19] = null;
 					} else {
-						@Pc(41) SeqType local41 = Static39.aClass85_1.method2371(local9);
+						@Pc(41) SeqType local41 = SeqTypeList.seqTypeList.method2371(local9);
 						@Pc(44) int local44 = local41.exactmove;
 						@Pc(49) Class20 local49 = arg2.aClass20Array3[local19];
 						if (local49 != null) {
@@ -45,7 +45,7 @@ public final class Static92 {
 								} else if (local44 == 2) {
 									local49.anInt626 = 0;
 								}
-							} else if (local41.priority >= Static39.aClass85_1.method2371(local49.anInt624).priority) {
+							} else if (local41.priority >= SeqTypeList.seqTypeList.method2371(local49.anInt624).priority) {
 								local49 = arg2.aClass20Array3[local19] = null;
 							}
 						}

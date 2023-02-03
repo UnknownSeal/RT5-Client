@@ -4,8 +4,10 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!ta")
-public final class Class219 {
+public final class NpcTypeList {
 
+	@OriginalMember(owner = "client!ae", name = "T", descriptor = "Lclient!ta;")
+	public static NpcTypeList npcTypeList;
 	@OriginalMember(owner = "client!ta", name = "r", descriptor = "I")
 	public int anInt6108;
 
@@ -19,22 +21,22 @@ public final class Class219 {
 	public final SoftLruHashTable aSoftLruHashTable_55 = new SoftLruHashTable(5);
 
 	@OriginalMember(owner = "client!ta", name = "c", descriptor = "Lclient!r;")
-	private final Js5 aJs5_87;
+	private final Js5 archive;
 
 	@OriginalMember(owner = "client!ta", name = "l", descriptor = "Lclient!r;")
-	public final Js5 aJs5_88;
+	public final Js5 modelArchive;
 
 	@OriginalMember(owner = "client!ta", name = "m", descriptor = "Z")
-	public boolean aBoolean410;
+	public boolean allowMembers;
 
 	@OriginalMember(owner = "client!ta", name = "<init>", descriptor = "(Lclient!dn;IZLclient!r;Lclient!r;)V")
-	public Class219(@OriginalArg(0) GameType arg0, @OriginalArg(1) int arg1, @OriginalArg(2) boolean arg2, @OriginalArg(3) Js5 arg3, @OriginalArg(4) Js5 arg4) {
-		this.aJs5_87 = arg3;
-		this.aJs5_88 = arg4;
-		this.aBoolean410 = arg2;
-		if (this.aJs5_87 != null) {
-			@Pc(38) int local38 = this.aJs5_87.capacity() - 1;
-			this.aJs5_87.getGroupCapacity(local38);
+	public NpcTypeList(@OriginalArg(0) GameType arg0, @OriginalArg(1) int arg1, @OriginalArg(2) boolean arg2, @OriginalArg(3) Js5 archive, @OriginalArg(4) Js5 modelArchive) {
+		this.archive = archive;
+		this.modelArchive = modelArchive;
+		this.allowMembers = arg2;
+		if (this.archive != null) {
+			@Pc(38) int group = this.archive.capacity() - 1;
+			this.archive.getGroupCapacity(group);
 		}
 	}
 
@@ -48,9 +50,9 @@ public final class Class219 {
 		if (local16 != null) {
 			return local16;
 		}
-		@Pc(37) byte[] data = this.aJs5_87.fetchFile(Static65.method1732(id), Static349.method5830(id));
+		@Pc(37) byte[] data = this.archive.fetchFile(Static65.method1732(id), Static349.method5830(id));
 		local16 = new NpcType();
-		local16.aClass219_2 = this;
+		local16.aNpcTypeList_2 = this;
 		local16.anInt2048 = id;
 		if (data != null) {
 			local16.decode(new Buffer(data));
@@ -92,9 +94,9 @@ public final class Class219 {
 	}
 
 	@OriginalMember(owner = "client!ta", name = "a", descriptor = "(ZB)V")
-	public void setAllowMembers(@OriginalArg(0) boolean arg0) {
-		if (arg0 != this.aBoolean410) {
-			this.aBoolean410 = arg0;
+	public void setAllowMembers(@OriginalArg(0) boolean allowMembers) {
+		if (allowMembers != this.allowMembers) {
+			this.allowMembers = allowMembers;
 			this.method5570();
 		}
 	}

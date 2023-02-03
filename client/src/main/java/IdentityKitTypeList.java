@@ -28,7 +28,7 @@ public final class IdentityKitTypeList {
 	}
 
 	@OriginalMember(owner = "client!e", name = "<init>", descriptor = "(Lclient!dn;ILclient!r;Lclient!r;)V")
-	public IdentityKitTypeList(@OriginalArg(0) GameType arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5 archive, @OriginalArg(3) Js5 modelsArchive) {
+	public IdentityKitTypeList(@OriginalArg(2) Js5 archive, @OriginalArg(3) Js5 modelsArchive) {
 		this.archive = archive;
 		this.modelsArchive = modelsArchive;
 		this.archive.getGroupCapacity(3);

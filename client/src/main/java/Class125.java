@@ -19,7 +19,7 @@ public final class Class125 {
 	public final Js5 aJs5_50;
 
 	@OriginalMember(owner = "client!ki", name = "<init>", descriptor = "(Lclient!dn;ILclient!r;Lclient!r;)V")
-	public Class125(@OriginalArg(0) GameType arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5 arg2, @OriginalArg(3) Js5 arg3) {
+	public Class125(@OriginalArg(2) Js5 arg2, @OriginalArg(3) Js5 arg3) {
 		this.aJs5_49 = arg2;
 		this.aJs5_50 = arg3;
 		this.aJs5_49.getGroupCapacity(36);

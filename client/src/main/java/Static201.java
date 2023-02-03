@@ -313,7 +313,7 @@ public final class Static201 {
 										@Pc(1490) ObjType local1490 = ObjTypeList.objTypeList.get(local19.objId);
 										if (local1490 != null) {
 											local1490 = local1490.getCountObjType(local19.objCount);
-											local1511 = local19.modelSeqID == -1 ? null : Static39.aClass85_1.method2371(local19.modelSeqID);
+											local1511 = local19.modelSeqID == -1 ? null : SeqTypeList.seqTypeList.method2371(local19.modelSeqID);
 											local1519 = local19.objWearColor ? Static17.self.appearance : null;
 											local1477 = local1490.method4775(local19.anInt4283, 1024, local19.anInt4316, local1511, Static190.aClass19_8, 1, local1519, local19.anInt4247);
 											if (local1477 == null) {
@@ -326,26 +326,26 @@ public final class Static201 {
 										local1161 = local19.modelID;
 										if (local1161 >= 0 && local1161 < 2048) {
 											@Pc(1566) Class11_Sub5_Sub2_Sub1 local1566 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local1161];
-											@Pc(1579) SeqType local1579 = local19.modelSeqID == -1 ? null : Static39.aClass85_1.method2371(local19.modelSeqID);
+											@Pc(1579) SeqType local1579 = local19.modelSeqID == -1 ? null : SeqTypeList.seqTypeList.method2371(local19.modelSeqID);
 											if (local1566 != null && (local1161 == Static234.selfID || Static276.method4650(local1566.aString41) == local19.anInt4236)) {
-												local1477 = local1566.appearance.getBodyModel(local19.anInt4283, Static59.aClass7_1, Static39.aClass85_1, IdentityKitTypeList.identityKitTypeList, local1579, local19.anInt4316, 0, 1024, -1, 0, null, Static214.aClass226_1, ObjTypeList.objTypeList, Static190.aClass19_8, Static6.aClass219_1, null, local19.anInt4247);
+												local1477 = local1566.appearance.getBodyModel(local19.anInt4283, Static59.aClass7_1, SeqTypeList.seqTypeList, IdentityKitTypeList.identityKitTypeList, local1579, local19.anInt4316, 0, 1024, -1, 0, null, Static214.aClass226_1, ObjTypeList.objTypeList, Static190.aClass19_8, NpcTypeList.npcTypeList, null, local19.anInt4247);
 											}
 										}
 									} else if (local19.modelType == 8 || local19.modelType == 9) {
 										@Pc(1701) Class2_Sub41 local1701 = Static374.method6274(false, local19.modelID);
-										local1511 = local19.modelSeqID == -1 ? null : Static39.aClass85_1.method2371(local19.modelSeqID);
+										local1511 = local19.modelSeqID == -1 ? null : SeqTypeList.seqTypeList.method2371(local19.modelSeqID);
 										if (local1701 != null) {
 											local1519 = local19.objWearColor ? Static17.self.appearance : null;
 											local1477 = local1701.method6359(local19.anInt4247, local19.anInt4283, local19.anInt4236, local19.modelType == 9, local1511, local19.anInt4316, local1519, Static190.aClass19_8);
 										}
 									} else if (local19.modelSeqID == -1) {
-										local1477 = local19.method4104(0, -1, ObjTypeList.objTypeList, Static214.aClass226_1, null, Static59.aClass7_1, Static17.self.appearance, Static6.aClass219_1, -1, Static39.aClass85_1, 1024, IdentityKitTypeList.identityKitTypeList, Static190.aClass19_8);
+										local1477 = local19.method4104(0, -1, ObjTypeList.objTypeList, Static214.aClass226_1, null, Static59.aClass7_1, Static17.self.appearance, NpcTypeList.npcTypeList, -1, SeqTypeList.seqTypeList, 1024, IdentityKitTypeList.identityKitTypeList, Static190.aClass19_8);
 										if (local1477 == null && Static86.aBoolean133) {
 											Static200.redraw(local19);
 										}
 									} else {
-										@Pc(1640) SeqType local1640 = Static39.aClass85_1.method2371(local19.modelSeqID);
-										local1477 = local19.method4104(local19.anInt4283, local19.anInt4316, ObjTypeList.objTypeList, Static214.aClass226_1, local1640, Static59.aClass7_1, Static17.self.appearance, Static6.aClass219_1, local19.anInt4247, Static39.aClass85_1, 1024, IdentityKitTypeList.identityKitTypeList, Static190.aClass19_8);
+										@Pc(1640) SeqType local1640 = SeqTypeList.seqTypeList.method2371(local19.modelSeqID);
+										local1477 = local19.method4104(local19.anInt4283, local19.anInt4316, ObjTypeList.objTypeList, Static214.aClass226_1, local1640, Static59.aClass7_1, Static17.self.appearance, NpcTypeList.npcTypeList, local19.anInt4247, SeqTypeList.seqTypeList, 1024, IdentityKitTypeList.identityKitTypeList, Static190.aClass19_8);
 										if (local1477 == null && Static86.aBoolean133) {
 											Static200.redraw(local19);
 										}
