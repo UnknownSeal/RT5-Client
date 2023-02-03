@@ -55,7 +55,7 @@ public final class Static318 {
 		@Pc(50) Class2_Sub17 local50;
 		if (Static77.anInt1762 == 0) {
 			for (local50 = (Class2_Sub17) Static142.A_LINKED_LIST___21.head(); local50 != null; local50 = (Class2_Sub17) Static142.A_LINKED_LIST___21.next()) {
-				Static313.aClass107_2.method2769(local50.anInt2541, Static200.aClass130_3, local50.anInt2539, arg0, false, local50.anInt2535, false, local50.aBoolean183 ? Static17.self.appearance : null, local50.anInt2537, arg0, local50.anInt2538);
+				ObjTypeList.objTypeList.method2769(local50.anInt2541, Static200.aClass130_3, local50.anInt2539, arg0, false, local50.anInt2535, false, local50.aBoolean183 ? Static17.self.appearance : null, local50.anInt2537, arg0, local50.anInt2538);
 				local50.unlink();
 			}
 			Static98.method2107();
@@ -68,7 +68,7 @@ public final class Static318 {
 			Static76.aClass130_2 = Static179.aClass19_5.method2857(Static101.method2165(Static183.anInt80, client.js5Archive13), Static396.method1688(client.js5Archive8, Static183.anInt80));
 		}
 		for (local50 = (Class2_Sub17) Static142.A_LINKED_LIST___21.head(); local50 != null; local50 = (Class2_Sub17) Static142.A_LINKED_LIST___21.next()) {
-			Static313.aClass107_2.method2769(local50.anInt2541, Static76.aClass130_2, local50.anInt2539, arg0, false, local50.anInt2535, false, local50.aBoolean183 ? Static17.self.appearance : null, local50.anInt2537, Static179.aClass19_5, local50.anInt2538);
+			ObjTypeList.objTypeList.method2769(local50.anInt2541, Static76.aClass130_2, local50.anInt2539, arg0, false, local50.anInt2535, false, local50.aBoolean183 ? Static17.self.appearance : null, local50.anInt2537, Static179.aClass19_5, local50.anInt2538);
 			local50.unlink();
 		}
 	}

@@ -76,16 +76,16 @@ public final class HashTable {
 	}
 
 	@OriginalMember(owner = "client!ad", name = "b", descriptor = "(B)Lclient!ag;")
-	public Node method82() {
+	public Node nextWithKey() {
 		if (this.searchCursor == null) {
 			return null;
 		}
-		@Pc(34) Node local34 = this.buckets[(int) ((long) (this.bucketCount - 1) & this.searchKey)];
-		while (local34 != this.searchCursor) {
+		@Pc(34) Node sentinel = this.buckets[(int) ((long) (this.bucketCount - 1) & this.searchKey)];
+		while (sentinel != this.searchCursor) {
 			if (this.searchCursor.key == this.searchKey) {
-				@Pc(46) Node local46 = this.searchCursor;
+				@Pc(46) Node node = this.searchCursor;
 				this.searchCursor = this.searchCursor.next;
-				return local46;
+				return node;
 			}
 			this.searchCursor = this.searchCursor.next;
 		}
@@ -131,7 +131,7 @@ public final class HashTable {
 	}
 
 	@OriginalMember(owner = "client!ad", name = "d", descriptor = "(B)I")
-	public int method89() {
+	public int getBucketCount() {
 		return this.bucketCount;
 	}
 

@@ -27,7 +27,7 @@ public final class Static174 {
 		}
 		Static91.method1963(local5);
 		Static359.aClass202_4.method5154(local5);
-		Static313.aClass107_2.method2765(local5);
+		ObjTypeList.objTypeList.method2765(local5);
 		Static6.aClass219_1.method5577(local5);
 		Static322.aClass211_2.method5411(local5);
 		Static10.method237(local5);

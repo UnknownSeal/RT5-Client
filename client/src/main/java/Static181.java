@@ -156,19 +156,19 @@ public final class Static181 {
 					@Pc(71) Class157 local71 = Static39.aClass85_1.method2371(local13.modelSeqID);
 					if (local71 != null) {
 						local13.anInt4283 += Static165.anInt3148;
-						while (local71.anIntArray261[local13.anInt4247] < local13.anInt4283) {
-							local13.anInt4283 -= local71.anIntArray261[local13.anInt4247];
+						while (local71.frameDelay[local13.anInt4247] < local13.anInt4283) {
+							local13.anInt4283 -= local71.frameDelay[local13.anInt4247];
 							local13.anInt4247++;
-							if (local71.anIntArray262.length <= local13.anInt4247) {
-								local13.anInt4247 -= local71.anInt4032;
-								if (local13.anInt4247 < 0 || local13.anInt4247 >= local71.anIntArray262.length) {
+							if (local71.frames.length <= local13.anInt4247) {
+								local13.anInt4247 -= local71.replayOff;
+								if (local13.anInt4247 < 0 || local13.anInt4247 >= local71.frames.length) {
 									local13.anInt4247 = 0;
 								}
 							}
 							local13.anInt4316 = local13.anInt4247 + 1;
-							if (local71.anIntArray262.length <= local13.anInt4316) {
-								local13.anInt4316 -= local71.anInt4032;
-								if (local13.anInt4316 < 0 || local13.anInt4316 >= local71.anIntArray262.length) {
+							if (local71.frames.length <= local13.anInt4316) {
+								local13.anInt4316 -= local71.replayOff;
+								if (local13.anInt4316 < 0 || local13.anInt4316 >= local71.frames.length) {
 									local13.anInt4316 = -1;
 								}
 							}

@@ -27,13 +27,13 @@ public final class Static157 {
 		if (aModel_4 != null) {
 			return;
 		}
-		@Pc(8) Class185 local8 = new Class185(580, 1104, 1);
+		@Pc(8) RawModel local8 = new RawModel(580, 1104, 1);
 		local8.method4661();
 		local8.method4664(128, 0, 0);
 		local8.method4664(-128, 0, 0);
 		for (@Pc(37) int local37 = 0; local37 <= 24; local37++) {
 			@Pc(44) int local44 = local37 * 8192 / 24;
-			@Pc(48) int local48 = Class19.anIntArray178[local44];
+			@Pc(48) int local48 = Class19.SINE[local44];
 			@Pc(52) int local52 = Class19.COSINE[local44];
 			@Pc(61) int local61;
 			@Pc(67) int local67;
@@ -42,8 +42,8 @@ public final class Static157 {
 			for (@Pc(54) int local54 = 1; local54 < 24; local54++) {
 				local61 = local54 * 8192 / 24;
 				local67 = Class19.COSINE[local61] >> 8;
-				local75 = Class19.anIntArray178[local61] * local48 >> 23;
-				local83 = Class19.anIntArray178[local61] * local52 >> 23;
+				local75 = Class19.SINE[local61] * local48 >> 23;
+				local83 = Class19.SINE[local61] * local52 >> 23;
 				local8.method4664(local67, local83, -local75);
 			}
 			if (local37 > 0) {

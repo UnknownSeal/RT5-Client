@@ -11,7 +11,7 @@ public final class Static310 {
 	public static final Class145 aClass145_203 = new Class145(59, 18);
 
 	@OriginalMember(owner = "client!rt", name = "g", descriptor = "[Lclient!pr;")
-	public static final Class185[] aClass185Array1 = new Class185[4];
+	public static final RawModel[] A_RAW_MODEL_ARRAY_1 = new RawModel[4];
 
 	@OriginalMember(owner = "client!rt", name = "a", descriptor = "(I)V")
 	public static void method5282() {

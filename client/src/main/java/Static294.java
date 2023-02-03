@@ -15,12 +15,12 @@ public final class Static294 {
 
 	@OriginalMember(owner = "client!qt", name = "a", descriptor = "(Lclient!bt;II)V")
 	public static void method5064(@OriginalArg(0) Buffer arg0, @OriginalArg(1) int arg1) {
-		if (Static317.aBufferedFile_6 == null) {
+		if (client.uid == null) {
 			return;
 		}
 		try {
-			Static317.aBufferedFile_6.seek(0L);
-			Static317.aBufferedFile_6.write(arg1, arg0.bytes, 24);
+			client.uid.seek(0L);
+			client.uid.write(arg1, arg0.bytes, 24);
 		} catch (@Pc(23) Exception local23) {
 		}
 	}

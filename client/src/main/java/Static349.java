@@ -40,11 +40,11 @@ public final class Static349 {
 		@Pc(57) int local57 = 0;
 		@Pc(59) int local59 = local39;
 		if (local46 != 0) {
-			local57 = Class19.anIntArray178[local46] * -local39 >> 15;
+			local57 = Class19.SINE[local46] * -local39 >> 15;
 			local59 = local39 * Class19.COSINE[local46] >> 15;
 		}
 		if (local53 != 0) {
-			local55 = local59 * Class19.anIntArray178[local53] >> 15;
+			local55 = local59 * Class19.SINE[local53] >> 15;
 			local59 = Class19.COSINE[local53] * local59 >> 15;
 		}
 		Static4.anInt87 = arg5;

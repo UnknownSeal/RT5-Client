@@ -14,13 +14,13 @@ public final class Static80 {
 	public static final int[] experience = new int[25];
 
     @OriginalMember(owner = "client!ek", name = "a", descriptor = "(ZLjava/lang/String;)J")
-	public static long method5981(@OriginalArg(1) String arg0) {
-		@Pc(8) int local8 = arg0.length();
-		@Pc(10) long local10 = 0L;
-		for (@Pc(12) int local12 = 0; local12 < local8; local12++) {
-			local10 = (local10 << 5) - (local10 - ((long) arg0.charAt(local12)));
+	public static long longHashCode(@OriginalArg(1) String s) {
+		@Pc(8) int length = s.length();
+		@Pc(10) long hash = 0L;
+		for (@Pc(12) int I = 0; I < length; I++) {
+			hash = (hash << 5) - (hash - ((long) s.charAt(I)));
 		}
-		return local10;
+		return hash;
 	}
 
 	@OriginalMember(owner = "client!ek", name = "a", descriptor = "(BLjava/lang/String;)J")

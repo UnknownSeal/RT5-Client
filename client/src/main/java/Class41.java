@@ -714,26 +714,26 @@ public final class Class41 {
 				if (local165 != null) {
 					local209 = arg3.method2806(local209, local165.method3826());
 				}
-				@Pc(219) Class185 local219 = null;
-				@Pc(221) Class185[] local221 = Static310.aClass185Array1;
-				synchronized (Static310.aClass185Array1) {
+				@Pc(219) RawModel local219 = null;
+				@Pc(221) RawModel[] local221 = Static310.A_RAW_MODEL_ARRAY_1;
+				synchronized (Static310.A_RAW_MODEL_ARRAY_1) {
 					@Pc(225) int local225 = 0;
 					while (true) {
 						if (local120 <= local225) {
 							if (local120 > 1) {
-								local219 = new Class185(Static310.aClass185Array1, local120);
+								local219 = new RawModel(Static310.A_RAW_MODEL_ARRAY_1, local120);
 							}
 							break;
 						}
 						@Pc(230) Js5 local230 = this.aClass202_1.aJs5_78;
 						synchronized (this.aClass202_1.aJs5_78) {
-							local219 = Static298.method2426(this.aClass202_1.aJs5_78, this.anIntArray92[local225] & 0xFFFF);
+							local219 = RawModel.create(this.aClass202_1.aJs5_78, this.anIntArray92[local225] & 0xFFFF);
 						}
 						if (local219 == null) {
 							return null;
 						}
 						if (local120 > 1) {
-							Static310.aClass185Array1[local225] = local219;
+							Static310.A_RAW_MODEL_ARRAY_1[local225] = local219;
 						}
 						local225++;
 					}
@@ -774,9 +774,9 @@ public final class Class41 {
 					local130 = arg3.method2806(local130, local165.method3826());
 				}
 				@Pc(435) Js5 local435 = this.aClass202_1.aJs5_78;
-				@Pc(447) Class185 local447;
+				@Pc(447) RawModel local447;
 				synchronized (this.aClass202_1.aJs5_78) {
-					local447 = Static298.method2426(this.aClass202_1.aJs5_78, local364 & 0xFFFF);
+					local447 = RawModel.create(this.aClass202_1.aJs5_78, local364 & 0xFFFF);
 				}
 				if (local447 == null) {
 					return null;

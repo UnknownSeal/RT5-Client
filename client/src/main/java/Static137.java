@@ -540,13 +540,13 @@ public final class Static137 {
 			local31.aLinkedList_34.addTail(arg2);
 			return;
 		}
-		@Pc(54) ObjType local54 = Static313.aClass107_2.get(arg2.anInt1717);
+		@Pc(54) ObjType local54 = ObjTypeList.objTypeList.get(arg2.anInt1717);
 		@Pc(57) int local57 = local54.cost;
 		if (local54.stackable == 1) {
 			local57 *= arg2.anInt1719 + 1;
 		}
 		for (@Pc(76) Class2_Sub8 local76 = (Class2_Sub8) local31.aLinkedList_34.head(); local76 != null; local76 = (Class2_Sub8) local31.aLinkedList_34.next()) {
-			local54 = Static313.aClass107_2.get(local76.anInt1717);
+			local54 = ObjTypeList.objTypeList.get(local76.anInt1717);
 			@Pc(87) int local87 = local54.cost;
 			if (local54.stackable == 1) {
 				local87 *= local76.anInt1719 + 1;

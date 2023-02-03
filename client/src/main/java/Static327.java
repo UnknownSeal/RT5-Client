@@ -166,7 +166,7 @@ public final class Static327 {
 					@Pc(1038) Class2_Sub32 local1038 = (Class2_Sub32) Static120.aClass4_49.get((long) (local354.anInt4076 | local354.anInt4073 << 28 | local354.anInt4075 << 14));
 					if (local1038 != null) {
 						for (@Pc(1046) Class2_Sub8 local1046 = (Class2_Sub8) local1038.aLinkedList_34.tail(); local1046 != null; local1046 = (Class2_Sub8) local1038.aLinkedList_34.method3546()) {
-							@Pc(1054) ObjType local1054 = Static313.aClass107_2.get(local1046.anInt1717);
+							@Pc(1054) ObjType local1054 = ObjTypeList.objTypeList.get(local1046.anInt1717);
 							if (!Static330.aBoolean419) {
 								if (local354.anInt4073 == Static17.self.aByte78) {
 									@Pc(1134) String[] local1134 = local1054.ops;

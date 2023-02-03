@@ -13,9 +13,6 @@ public final class Static78 {
 	@OriginalMember(owner = "client!ei", name = "e", descriptor = "Lclient!h;")
 	public static final Class89 aClass89_223 = new Class89(15, 10);
 
-	@OriginalMember(owner = "client!ei", name = "g", descriptor = "[S")
-	public static final short[] aShortArray123 = new short[] { 6798, 8741, 25238, 4626, 4550 };
-
 	@OriginalMember(owner = "client!ei", name = "i", descriptor = "S")
 	public static short aShort86 = 1;
 

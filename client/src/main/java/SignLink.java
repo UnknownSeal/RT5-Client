@@ -28,7 +28,7 @@ public final class SignLink implements Runnable {
 	@OriginalMember(owner = "client!ml", name = "i", descriptor = "Ljava/lang/String;")
 	public static String javaVendor;
 	@OriginalMember(owner = "client!ml", name = "p", descriptor = "[Lclient!rl;")
-	public FileOnDisk[] aFileOnDiskArray1;
+	public FileOnDisk[] cacheIndexes;
 
 	@OriginalMember(owner = "client!ml", name = "r", descriptor = "Lclient!fc;")
 	private AudioSource anAudioSource_1;
@@ -37,7 +37,7 @@ public final class SignLink implements Runnable {
 	public Applet applet = null;
 
 	@OriginalMember(owner = "client!ml", name = "j", descriptor = "Lclient!rl;")
-	public FileOnDisk aFileOnDisk_2 = null;
+	public FileOnDisk cacheData = null;
 
 	@OriginalMember(owner = "client!ml", name = "a", descriptor = "Lclient!cc;")
 	private PrivelegedRequest requestQueueHead = null;
@@ -303,9 +303,9 @@ public final class SignLink implements Runnable {
 			this.aThread1.join();
 		} catch (@Pc(24) InterruptedException local24) {
 		}
-		if (this.aFileOnDisk_2 != null) {
+		if (this.cacheData != null) {
 			try {
-				this.aFileOnDisk_2.close();
+				this.cacheData.close();
 			} catch (@Pc(33) IOException local33) {
 			}
 		}
@@ -315,11 +315,11 @@ public final class SignLink implements Runnable {
 			} catch (@Pc(43) IOException local43) {
 			}
 		}
-		if (this.aFileOnDiskArray1 != null) {
-			for (@Pc(49) int local49 = 0; local49 < this.aFileOnDiskArray1.length; local49++) {
-				if (this.aFileOnDiskArray1[local49] != null) {
+		if (this.cacheIndexes != null) {
+			for (@Pc(49) int local49 = 0; local49 < this.cacheIndexes.length; local49++) {
+				if (this.cacheIndexes[local49] != null) {
 					try {
-						this.aFileOnDiskArray1[local49].close();
+						this.cacheIndexes[local49].close();
 					} catch (@Pc(63) IOException local63) {
 					}
 				}

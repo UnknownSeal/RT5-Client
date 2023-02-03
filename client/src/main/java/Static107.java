@@ -21,7 +21,7 @@ public final class Static107 {
 		@Pc(6) long local6 = (long) arg4;
 		@Pc(12) Model local12 = (Model) Static133.A_SOFT_LRU_HASH_TABLE___17.get(local6);
 		if (local12 == null) {
-			@Pc(22) Class185 local22 = Static298.method2426(client.js5Archive7, arg4);
+			@Pc(22) RawModel local22 = RawModel.create(client.js5Archive7, arg4);
 			if (local22 == null) {
 				return null;
 			}

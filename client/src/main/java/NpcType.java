@@ -198,12 +198,12 @@ public final class NpcType {
 			Static21.aClass2_Sub2_Sub13Array1[local80] = null;
 			if (arg10[local80] != null) {
 				@Pc(98) Class157 local98 = arg4.method2371(arg10[local80].anInt624);
-				if (local98.anIntArray262 != null) {
+				if (local98.frames != null) {
 					local65 = true;
 					Static168.aClass157Array42[local80] = local98;
 					local112 = arg10[local80].anInt628;
 					local117 = arg10[local80].anInt627;
-					@Pc(122) int local122 = local98.anIntArray262[local112];
+					@Pc(122) int local122 = local98.frames[local112];
 					Static21.aClass2_Sub2_Sub13Array1[local80] = arg4.method2368(local122 >>> 16);
 					@Pc(135) int local135 = local122 & 0xFFFF;
 					Static225.anIntArray259[local80] = local135;
@@ -212,10 +212,10 @@ public final class NpcType {
 						local67 |= Static21.aClass2_Sub2_Sub13Array1[local80].method4234(local135);
 						local71 |= local98.aBoolean263;
 					}
-					if ((local98.aBoolean264 || Static318.forceTween) && local117 != -1 && local98.anIntArray262.length > local117) {
-						Static132.anIntArray161[local80] = local98.anIntArray261[local112];
+					if ((local98.tween || Static318.forceTween) && local117 != -1 && local98.frames.length > local117) {
+						Static132.anIntArray161[local80] = local98.frameDelay[local112];
 						Static356.anIntArray461[local80] = arg10[local80].anInt625;
-						@Pc(221) int local221 = local98.anIntArray262[local117];
+						@Pc(221) int local221 = local98.frames[local117];
 						Static116.aClass2_Sub2_Sub13Array3[local80] = arg4.method2368(local221 >>> 16);
 						@Pc(234) int local234 = local221 & 0xFFFF;
 						Static191.anIntArray101[local80] = local234;
@@ -246,7 +246,7 @@ public final class NpcType {
 		if (local65) {
 			@Pc(302) int local302;
 			if (arg2 != null) {
-				local266 = arg2.anIntArray262[arg1];
+				local266 = arg2.frames[arg1];
 				local302 = local266 >>> 16;
 				local277 = arg4.method2368(local302);
 				local266 &= 0xFFFF;
@@ -255,9 +255,9 @@ public final class NpcType {
 					local67 |= local277.method4234(local266);
 					local71 |= arg2.aBoolean263;
 				}
-				if ((arg2.aBoolean264 || Static318.forceTween) && arg13 != -1 && arg2.anIntArray262.length > arg13) {
-					local117 = arg2.anIntArray261[arg1];
-					local112 = arg2.anIntArray262[arg13];
+				if ((arg2.tween || Static318.forceTween) && arg13 != -1 && arg2.frames.length > arg13) {
+					local117 = arg2.frameDelay[arg1];
+					local112 = arg2.frames[arg13];
 					local359 = local112 >>> 16;
 					local112 &= 0xFFFF;
 					if (local302 == local359) {
@@ -273,7 +273,7 @@ public final class NpcType {
 			}
 			local37 |= 0x20;
 			if (arg8 != null) {
-				local281 = arg8.anIntArray262[arg6];
+				local281 = arg8.frames[arg6];
 				local302 = local281 >>> 16;
 				local281 &= 0xFFFF;
 				local287 = arg4.method2368(local302);
@@ -282,9 +282,9 @@ public final class NpcType {
 					local67 |= local287.method4234(local281);
 					local71 |= arg8.aBoolean263;
 				}
-				if ((arg8.aBoolean264 || Static318.forceTween) && arg7 != -1 && arg8.anIntArray262.length > arg7) {
-					local283 = arg8.anIntArray262[arg7];
-					local285 = arg8.anIntArray261[arg6];
+				if ((arg8.tween || Static318.forceTween) && arg7 != -1 && arg8.frames.length > arg7) {
+					local283 = arg8.frames[arg7];
+					local285 = arg8.frameDelay[arg6];
 					local359 = local283 >>> 16;
 					if (local302 == local359) {
 						local289 = local287;
@@ -336,12 +336,12 @@ public final class NpcType {
 			if (local566) {
 				return null;
 			}
-			@Pc(621) Class185[] models = new Class185[this.modelids.length];
+			@Pc(621) RawModel[] models = new RawModel[this.modelids.length];
 			for (i = 0; i < this.modelids.length; i++) {
 				if (this.modelids[i] != -1) {
 					@Pc(636) Js5 local636 = this.aClass219_2.aJs5_88;
 					synchronized (this.aClass219_2.aJs5_88) {
-						models[i] = Static298.method2426(this.aClass219_2.aJs5_88, this.modelids[i]);
+						models[i] = RawModel.create(this.aClass219_2.aJs5_88, this.modelids[i]);
 					}
 					if (this.modeloffsets != null && this.modeloffsets[i] != null && models[i] != null) {
 						models[i].translate(this.modeloffsets[i][0], this.modeloffsets[i][2], this.modeloffsets[i][1]);
@@ -374,11 +374,11 @@ public final class NpcType {
 								local805[13] = -local749;
 							} else {
 								@Pc(821) int local821 = Class19.COSINE[local765];
-								@Pc(825) int local825 = Class19.anIntArray178[local765];
+								@Pc(825) int local825 = Class19.SINE[local765];
 								@Pc(829) int local829 = Class19.COSINE[local774];
-								@Pc(833) int local833 = Class19.anIntArray178[local774];
+								@Pc(833) int local833 = Class19.SINE[local774];
 								@Pc(837) int local837 = Class19.COSINE[local783];
-								@Pc(841) int local841 = Class19.anIntArray178[local783];
+								@Pc(841) int local841 = Class19.SINE[local783];
 								@Pc(849) int local849 = local825 * local837 + 16384 >> 15;
 								@Pc(857) int local857 = local841 * local825 + 16384 >> 15;
 								local805[5] = -local825;
@@ -407,11 +407,11 @@ public final class NpcType {
 					}
 				}
 			}
-			@Pc(1152) Class185 local1152;
+			@Pc(1152) RawModel local1152;
 			if (models.length == 1) {
 				local1152 = models[0];
 			} else {
-				local1152 = new Class185(models, models.length);
+				local1152 = new RawModel(models, models.length);
 			}
 			if (this.recol_s != null) {
 				local359 = local37 | 0x2000;
@@ -454,7 +454,7 @@ public final class NpcType {
 			local1308 <<= 0x1;
 		}
 		if (local277 != null && local287 != null) {
-			local1300.method3810(local117, arg11 - 1, arg2.aBooleanArray37, arg5 - 1, arg8.aBoolean263 | arg2.aBoolean263, local281, local283, local112, local287, local279, local285, local289, local277, local266);
+			local1300.method3810(local117, arg11 - 1, arg2.frameGroup, arg5 - 1, arg8.aBoolean263 | arg2.aBoolean263, local281, local283, local112, local287, local279, local285, local289, local277, local266);
 		} else if (local277 != null) {
 			local1300.method3827(local117, local279, local112, arg2.aBoolean263, arg11 - 1, local266, local277, 0);
 		} else if (local287 != null) {
@@ -512,18 +512,18 @@ public final class NpcType {
 				if (local109) {
 					return null;
 				}
-				@Pc(157) Class185[] local157 = new Class185[this.headmodels.length];
+				@Pc(157) RawModel[] local157 = new RawModel[this.headmodels.length];
 				@Pc(161) Js5 local161 = this.aClass219_2.aJs5_88;
 				synchronized (this.aClass219_2.aJs5_88) {
 					for (@Pc(165) int local165 = 0; local165 < this.headmodels.length; local165++) {
-						local157[local165] = Static298.method2426(this.aClass219_2.aJs5_88, this.headmodels[local165]);
+						local157[local165] = RawModel.create(this.aClass219_2.aJs5_88, this.headmodels[local165]);
 					}
 				}
-				@Pc(209) Class185 local209;
+				@Pc(209) RawModel local209;
 				if (local157.length == 1) {
 					local209 = local157[0];
 				} else {
-					local209 = new Class185(local157, local157.length);
+					local209 = new RawModel(local157, local157.length);
 				}
 				if (this.recol_s != null) {
 					local107 = local36 | 0x2000;

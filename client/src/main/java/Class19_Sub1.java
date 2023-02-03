@@ -2343,7 +2343,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 
 	@OriginalMember(owner = "client!bf", name = "a", descriptor = "(Lclient!pr;IIII)Lclient!gn;")
 	@Override
-	public Model method2864(@OriginalArg(0) Class185 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
+	public Model method2864(@OriginalArg(0) RawModel arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
 		return new Model_Sub2(this, arg0, arg1, arg3, arg4, arg2);
 	}
 

@@ -206,7 +206,7 @@ public final class Static73 {
 											local621 = Static322.aClass211_2.method5406(local220);
 											if (local621.aBoolean177 && local621.anInt2448 != -1) {
 												local635 = Static39.aClass85_1.method2371(local621.anInt2448);
-												local638 = local635.anInt4022;
+												local638 = local635.exactmove;
 												if (local638 == 0 || local638 == 2) {
 													local604 = false;
 												} else if (local638 == 1) {
@@ -219,7 +219,7 @@ public final class Static73 {
 											if (local621.anInt2448 != -1 && local667.anInt2448 != -1) {
 												local684 = Static39.aClass85_1.method2371(local621.anInt2448);
 												local692 = Static39.aClass85_1.method2371(local667.anInt2448);
-												if (local692.anInt4023 > local684.anInt4023) {
+												if (local692.priority > local684.priority) {
 													local604 = false;
 												}
 											}
@@ -239,7 +239,7 @@ public final class Static73 {
 											local536 = Static322.aClass211_2.method5406(local790.anInt4594).anInt2448;
 											if (local536 != -1) {
 												local635 = Static39.aClass85_1.method2371(local536);
-												if (local635 != null && local635.anIntArray262 != null) {
+												if (local635 != null && local635.frames != null) {
 													Static1.method4(local635, false, local790.aByte78, local790.xFine, local790.zFine, 0);
 												}
 											}
@@ -264,7 +264,7 @@ public final class Static73 {
 											local621 = Static322.aClass211_2.method5406(local220);
 											if (local621.aBoolean177 && local621.anInt2448 != -1) {
 												local635 = Static39.aClass85_1.method2371(local621.anInt2448);
-												local638 = local635.anInt4022;
+												local638 = local635.exactmove;
 												if (local638 == 0 || local638 == 2) {
 													local604 = false;
 												} else if (local638 == 1) {
@@ -277,7 +277,7 @@ public final class Static73 {
 											if (local621.anInt2448 != -1 && local667.anInt2448 != -1) {
 												local684 = Static39.aClass85_1.method2371(local621.anInt2448);
 												local692 = Static39.aClass85_1.method2371(local667.anInt2448);
-												if (local692.anInt4023 > local684.anInt4023) {
+												if (local692.priority > local684.priority) {
 													local604 = false;
 												}
 											}
@@ -300,7 +300,7 @@ public final class Static73 {
 											local536 = Static322.aClass211_2.method5406(local589.anInt4594).anInt2448;
 											if (local536 != -1) {
 												local635 = Static39.aClass85_1.method2371(local536);
-												if (local635 != null && local635.anIntArray262 != null) {
+												if (local635 != null && local635.frames != null) {
 													Static1.method4(local635, Static17.self == local589, local589.aByte78, local589.xFine, local589.zFine, 0);
 												}
 											}
@@ -979,7 +979,7 @@ public final class Static73 {
 										local249 = Static212.inboundBuffer.img4();
 										if (Static378.method6313(local220)) {
 											Static216.method3773(local74, local249, local228);
-											@Pc(3499) ObjType local3499 = Static313.aClass107_2.get(local74);
+											@Pc(3499) ObjType local3499 = ObjTypeList.objTypeList.get(local74);
 											Static277.method4679(local3499.yAngle2D, local3499.xAngle2D, local249, local3499.zoom2d);
 											Static376.method6286(local249, local3499.zAngle2D, local3499.xOffset2D, local3499.yOffset2D);
 										}

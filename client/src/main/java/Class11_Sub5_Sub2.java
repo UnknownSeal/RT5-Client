@@ -246,7 +246,7 @@ public abstract class Class11_Sub5_Sub2 extends Class11_Sub5 {
 	protected final void method4320(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
 		@Pc(11) int local11 = super.aShort103 + super.aShort104 >> 1;
 		@Pc(19) int local19 = super.aShort102 + super.aShort101 >> 1;
-		@Pc(23) int local23 = Class19.anIntArray178[arg2];
+		@Pc(23) int local23 = Class19.SINE[arg2];
 		@Pc(27) int local27 = Class19.COSINE[arg2];
 		@Pc(38) int local38 = -arg1 / 2;
 		@Pc(43) int local43 = -arg0 / 2;

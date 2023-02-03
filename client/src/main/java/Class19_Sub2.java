@@ -938,12 +938,12 @@ public final class Class19_Sub2 extends Class19 {
 	@Override
 	public void method2874(@OriginalArg(0) boolean arg0) {
 		this.aBoolean201 = arg0;
-		this.aSoftLruHashTable_25.method2614();
+		this.aSoftLruHashTable_25.clear();
 	}
 
 	@OriginalMember(owner = "client!j", name = "a", descriptor = "(Lclient!pr;IIII)Lclient!gn;")
 	@Override
-	public Model method2864(@OriginalArg(0) Class185 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
+	public Model method2864(@OriginalArg(0) RawModel arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
 		return new Model_Sub1(this, arg0, arg1, arg3, arg4, arg2);
 	}
 
@@ -1626,7 +1626,7 @@ public final class Class19_Sub2 extends Class19 {
 	@OriginalMember(owner = "client!j", name = "L", descriptor = "()V")
 	@Override
 	public void method2903() {
-		this.aSoftLruHashTable_25.method2614();
+		this.aSoftLruHashTable_25.clear();
 	}
 
 	@OriginalMember(owner = "client!j", name = "y", descriptor = "()Z")

@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static150 {
 
-	@OriginalMember(owner = "client!il", name = "Z", descriptor = "Lclient!rn;")
-	public static BufferedFile aBufferedFile_2;
-
 	@OriginalMember(owner = "client!il", name = "P", descriptor = "Lclient!mc;")
 	public static final Class145 aClass145_107 = new Class145(17, 8);
 

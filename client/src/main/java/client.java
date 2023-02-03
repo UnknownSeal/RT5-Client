@@ -149,6 +149,16 @@ public final class client extends GameShell {
 	public static int worldListDefaultPort;
 	@OriginalMember(owner = "client!up", name = "P", descriptor = "Z")
 	public static boolean displayFps = false;
+	@OriginalMember(owner = "client!il", name = "Z", descriptor = "Lclient!rn;")
+	public static BufferedFile cacheMasterIndex;
+	@OriginalMember(owner = "client!sh", name = "d", descriptor = "Lclient!rn;")
+	public static BufferedFile uid;
+	@OriginalMember(owner = "client!tk", name = "f", descriptor = "Lclient!kp;")
+	public static MouseWheel mouseWheel;
+	@OriginalMember(owner = "client!bm", name = "S", descriptor = "J")
+	public static long previousGC = 0L;
+	@OriginalMember(owner = "client!ad", name = "p", descriptor = "J")
+	public static long firstGC = 0L;
 
 	@OriginalMember(owner = "client!client", name = "main", descriptor = "([Ljava/lang/String;)V")
 	public static void main(@OriginalArg(0) String[] arguments) {
@@ -224,10 +234,10 @@ public final class client extends GameShell {
 	public static void clean() {
 		Static39.aClass72_3.clean();
 		Static336.aClass241_5.method6268();
-		Static21.setIdentikit.method1785();
+		IdentityKitTypeList.identityKitTypeList.method1785();
 		Static359.aClass202_4.method5161();
 		Static6.aClass219_1.method5574();
-		Static313.aClass107_2.method2757();
+		ObjTypeList.objTypeList.method2757();
 		Static39.aClass85_1.method2375();
 		Static322.aClass211_2.method5410();
 		Static322.aClass128_1.method3389();
@@ -257,10 +267,10 @@ public final class client extends GameShell {
 	public static void removeSoft() {
 		Static39.aClass72_3.method2108();
 		Static336.aClass241_5.method6267();
-		Static21.setIdentikit.method1781();
+		IdentityKitTypeList.identityKitTypeList.method1781();
 		Static359.aClass202_4.method5157();
 		Static6.aClass219_1.method5578();
-		Static313.aClass107_2.method2763();
+		ObjTypeList.objTypeList.method2763();
 		Static39.aClass85_1.method2374();
 		Static322.aClass211_2.method5407();
 		Static322.aClass128_1.method3392();
@@ -383,7 +393,7 @@ public final class client extends GameShell {
 		}
 		if (Static154.rectDebug == 3) {
 			for (local92 = 0; local92 < Static154.anInt2806; local92++) {
-				@Pc(398) Rectangle local398 = Class55.aRectangleArray1[local92];
+				@Pc(398) Rectangle local398 = IdentityKitTypeList.aRectangleArray1[local92];
 				if (Static20.aBooleanArray6[local92]) {
 					Static190.aClass19_8.method2868(local398.height, local398.x, local398.y, -1996553985, local398.width);
 				} else if (Static375.aBooleanArray64[local92]) {
@@ -399,7 +409,7 @@ public final class client extends GameShell {
 			for (local96 = 0; local96 < Static154.anInt2806; local96++) {
 				if (Static375.aBooleanArray64[local96]) {
 					Static375.aBooleanArray64[local96] = false;
-					Static281.aRectangleArray2[local92++] = Class55.aRectangleArray1[local96];
+					Static281.aRectangleArray2[local92++] = IdentityKitTypeList.aRectangleArray1[local96];
 				}
 			}
 			Static190.aClass19_8.method2842(Static281.aRectangleArray2, local92);
@@ -534,8 +544,8 @@ public final class client extends GameShell {
 		Static37.method1135();
 		Static174.aClass123_2.method3336();
 		Static226.aClass119_1.method3306();
-		if (Static337.aMouseWheel_1 != null) {
-			@Pc(81) int local81 = Static337.aMouseWheel_1.getWheelRotation();
+		if (mouseWheel != null) {
+			@Pc(81) int local81 = mouseWheel.getWheelRotation();
 			Static323.anInt6063 = local81;
 		}
 		if (Static190.aClass19_8 != null) {
@@ -890,44 +900,44 @@ public final class client extends GameShell {
 			worldID = worldListWorldID;
 		}
 		if (game == GameType.GAME_TYPE_STELLARDAWN) {
-			Static186.aShortArrayArray6 = Static30.aShortArrayArray3;
+			Static186.aShortArrayArray6 = PlayerAppearance.GAME1_DESTINATION_SKIN_COLORS;
 			Static28.anInt686 = 16777215;
 			Static148.shiftClick = true;
-			Static43.aShortArray20 = Static113.aShortArray46;
+			Static43.aShortArray20 = PlayerAppearance.GAME1_SOURCE_SKIN_COLORS;
 			Static279.anInt5161 = 0;
-			Static10.sourceBodyColors = Static25.GAME1_SOURCE_BODY_COLORS;
-			Static353.aShortArrayArray7 = Static201.aShortArrayArray5;
+			Static10.sourceBodyColors = PlayerAppearance.GAME1_SOURCE_BODY_COLORS;
+			Static353.aShortArrayArray7 = PlayerAppearance.GAME1_DESTINATION_BODY_COLORS;
 		} else {
-			Static43.aShortArray20 = Static131.aShortArray65;
-			Static10.sourceBodyColors = Static78.aShortArray123;
-			Static353.aShortArrayArray7 = Static25.GAME0_DESTINATION_BODY_COLORS;
-			Static186.aShortArrayArray6 = Static386.GAME0_DESTINATION_SKIN_COLORS;
+			Static43.aShortArray20 = PlayerAppearance.GAME0_SOURCE_SKIN_COLORS;
+			Static10.sourceBodyColors = PlayerAppearance.GAME0_SOURCE_BODY_COLORS;
+			Static353.aShortArrayArray7 = PlayerAppearance.GAME0_DESTINATION_BODY_COLORS;
+			Static186.aShortArrayArray6 = PlayerAppearance.GAME0_DESTINATION_SKIN_COLORS;
 		}
 		Static174.aClass123_2 = Static18.method556(GameShell.canvas);
 		Static226.aClass119_1 = Static31.method948(GameShell.canvas);
-		Static337.aMouseWheel_1 = MouseWheel.create();
-		if (Static337.aMouseWheel_1 != null) {
-			Static337.aMouseWheel_1.start(GameShell.canvas);
+		mouseWheel = MouseWheel.create();
+		if (mouseWheel != null) {
+			mouseWheel.start(GameShell.canvas);
 		}
 		Static367.anInt6878 = Static215.anInt3795;
 		try {
-			if (GameShell.signlink.aFileOnDisk_2 != null) {
-				cacheData = new BufferedFile(GameShell.signlink.aFileOnDisk_2, 5200, 0);
-				for (@Pc(171) int local171 = 0; local171 < 29; local171++) {
-					cacheIndexes[local171] = new BufferedFile(GameShell.signlink.aFileOnDiskArray1[local171], 6000, 0);
+			if (GameShell.signlink.cacheData != null) {
+				cacheData = new BufferedFile(GameShell.signlink.cacheData, 5200, 0);
+				for (@Pc(171) int i = 0; i < 29; i++) {
+					cacheIndexes[i] = new BufferedFile(GameShell.signlink.cacheIndexes[i], 6000, 0);
 				}
-				Static150.aBufferedFile_2 = new BufferedFile(GameShell.signlink.aFileOnDisk_3, 6000, 0);
-				masterCache = new Cache(255, cacheData, Static150.aBufferedFile_2, 500000);
-				Static317.aBufferedFile_6 = new BufferedFile(GameShell.signlink.aFileOnDisk_1, 24, 0);
+				cacheMasterIndex = new BufferedFile(GameShell.signlink.aFileOnDisk_3, 6000, 0);
+				masterCache = new Cache(255, cacheData, cacheMasterIndex, 500000);
+				uid = new BufferedFile(GameShell.signlink.aFileOnDisk_1, 24, 0);
 				GameShell.signlink.aFileOnDisk_1 = null;
 				GameShell.signlink.aFileOnDisk_3 = null;
-				GameShell.signlink.aFileOnDiskArray1 = null;
-				GameShell.signlink.aFileOnDisk_2 = null;
+				GameShell.signlink.cacheIndexes = null;
+				GameShell.signlink.cacheData = null;
 			}
 		} catch (@Pc(227) IOException local227) {
-			Static150.aBufferedFile_2 = null;
+			cacheMasterIndex = null;
 			cacheData = null;
-			Static317.aBufferedFile_6 = null;
+			uid = null;
 			masterCache = null;
 		}
 		if (Static189.aClass127_6 != Static121.aClass127_4) {
@@ -952,13 +962,13 @@ public final class client extends GameShell {
 			@Pc(45) Runtime runtime = Runtime.getRuntime();
 			int usedMemory = (int) ((runtime.totalMemory() - runtime.freeMemory()) / 1024L);
 			@Pc(60) long now = MonotonicClock.currentTimeMillis();
-			if (Static5.firstGC == 0L) {
-				Static5.firstGC = now;
+			if (firstGC == 0L) {
+				firstGC = now;
 			}
-			if (usedMemory > 16384 && now - Static5.firstGC < 5000L) {
-				if (now - Static29.previousGC > 1000L) {
+			if (usedMemory > 16384 && now - firstGC < 5000L) {
+				if (now - previousGC > 1000L) {
 					System.gc();
-					Static29.previousGC = now;
+					previousGC = now;
 				}
 				mainLoadSecondaryState = LocalisedText.ALLOCATING_MEMORY.getLocalisedText(language);
 				mainLoadPercentage = 5;
@@ -1143,17 +1153,17 @@ public final class client extends GameShell {
 				Static363.aClass18_2 = new Class18(game, language, js5Archive2);
 				Static59.aClass7_1 = new Class7(game, language, js5Archive2);
 				Static221.aClass150_3 = new Class150(game, language, js5Archive2, js5Archive8);
-				Static140.aClass109_1 = new Class109(game, language, js5Archive17);
+				EnumTypeList.enumTypeList = new EnumTypeList(game, language, js5Archive17);
 				Static39.aClass72_3 = new Class72(game, language, js5Archive2);
 				Static336.aClass241_5 = new Class241(game, language, js5Archive2);
-				Static21.setIdentikit = new Class55(game, language, js5Archive2, js5Archive7);
+				IdentityKitTypeList.identityKitTypeList = new IdentityKitTypeList(game, language, js5Archive2, js5Archive7);
 				Static178.aClass51_3 = new Class51(game, language, js5Archive2);
 				Static90.aClass190_3 = new Class190(game, language, js5Archive2);
 				Static359.aClass202_4 = new Class202(game, language, true, js5Archive16, js5Archive7);
 				Static236.aClass125_1 = new Class125(game, language, js5Archive2, js5Archive8);
 				Static320.aClass104_2 = new Class104(game, language, js5Archive2, js5Archive8);
 				Static6.aClass219_1 = new Class219(game, language, true, js5Archive18, js5Archive7);
-				Static313.aClass107_2 = new Class107(game, language, true, Static363.aClass18_2, js5Archive19, js5Archive7);
+				ObjTypeList.objTypeList = new ObjTypeList(game, language, true, Static363.aClass18_2, js5Archive19, js5Archive7);
 				Static287.aClass233_1 = new Class233(game, language, js5Archive2);
 				Static39.aClass85_1 = new Class85(game, language, js5Archive20, js5Archive0, js5Archive1);
 				Static9.aClass213_1 = new Class213(game, language, js5Archive2);
@@ -1165,7 +1175,7 @@ public final class client extends GameShell {
 				Static322.aClass128_1 = new Class128(game, language, js5Archive22);
 				Static56.aClass199_1 = new Class199(game, language, js5Archive2);
 				Static126.method5701(js5Archive13, js5Archive7, js5Archive3, js5Archive8);
-				Static325.method5543(new Class83(), js5Archive24, js5Archive25);
+				Static325.method5543(new Js5QuickChatCommandDecoder(), js5Archive24, js5Archive25);
 				Static117.method2366(js5Archive24, js5Archive25);
 				mainLoadSecondaryState = LocalisedText.LOADED_CONFIG.getLocalisedText(language);
 				mainLoadPercentage = 65;
@@ -1182,34 +1192,31 @@ public final class client extends GameShell {
 			local55 = Static254.method4374();
 			if (local55 > local6) {
 				mainLoadSecondaryState = LocalisedText.LOADING_SPRITES.getLocalisedText(language) + local6 * 100 / local55 + "%";
-				mainLoadPercentage = 70;
 			} else {
 				Static44.method1358(Static190.aClass19_8, js5Archive8);
 				Static144.method2691(Static124.aClass13Array27);
 				mainLoadSecondaryState = LocalisedText.LOADED_SPRITES.getLocalisedText(language);
 				mainLoadState = 130;
-				mainLoadPercentage = 70;
 			}
+			mainLoadPercentage = 70;
 		} else if (mainLoadState == 130) {
 			if (js5Archive10.isFileReady("huffman", "")) {
 				@Pc(1242) HuffmanCodec codec = new HuffmanCodec(js5Archive10.fetchFile("huffman", ""));
 				Static334.init(codec);
 				mainLoadSecondaryState = LocalisedText.LOADED_WORDPACK.getLocalisedText(language);
 				mainLoadState = 140;
-				mainLoadPercentage = 75;
 			} else {
 				mainLoadSecondaryState = LocalisedText.LOADING_WORDPACK.getLocalisedText(language) + "0%";
-				mainLoadPercentage = 75;
 			}
+			mainLoadPercentage = 75;
 		} else if (mainLoadState == 140) {
 			if (js5Archive3.fetchAll()) {
 				mainLoadSecondaryState = LocalisedText.LOADED_INTERFACES.getLocalisedText(language);
 				mainLoadState = 150;
-				mainLoadPercentage = 80;
 			} else {
 				mainLoadSecondaryState = LocalisedText.LOADING_INTERFACES.getLocalisedText(language) + js5Archive3.getPercentageComplete() + "%";
-				mainLoadPercentage = 80;
 			}
+			mainLoadPercentage = 80;
 		} else if (mainLoadState == 150) {
 			if (js5Archive12.fetchAll()) {
 				mainLoadSecondaryState = LocalisedText.LOADED_INTERFACE_SCRIPTS.getLocalisedText(language);
@@ -1315,10 +1322,10 @@ public final class client extends GameShell {
 			Static335.socket.close();
 			Static335.socket = null;
 		}
-		if (Static337.aMouseWheel_1 != null) {
-			Static337.aMouseWheel_1.stop(GameShell.canvas);
+		if (mouseWheel != null) {
+			mouseWheel.stop(GameShell.canvas);
 		}
-		Static337.aMouseWheel_1 = null;
+		mouseWheel = null;
 		if (musicChannel != null) {
 			musicChannel.quit();
 		}

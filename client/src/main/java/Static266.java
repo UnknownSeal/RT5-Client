@@ -10,11 +10,6 @@ public final class Static266 {
 	@OriginalMember(owner = "client!pe", name = "Y", descriptor = "[I")
 	public static final int[] anIntArray334 = new int[64];
 
-	@OriginalMember(owner = "client!pe", name = "b", descriptor = "(II)I")
-	public static int method4497(@OriginalArg(0) int arg0) {
-		return arg0 >>> 8;
-	}
-
 	@OriginalMember(owner = "client!pe", name = "a", descriptor = "(III)Lclient!f;")
 	public static Class67 method4499(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
 		if (Static330.aClass67ArrayArrayArray3[arg0][arg1][arg2] == null) {

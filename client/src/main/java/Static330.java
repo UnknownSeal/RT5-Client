@@ -160,7 +160,7 @@ public final class Static330 {
 								local487 = local525.equipmentTransforms[local483][0];
 								@Pc(547) int local547 = local525.equipmentTransforms[local483][2];
 								@Pc(552) int local552 = local491.aClass248_7.method6440();
-								@Pc(556) int local556 = Class19.anIntArray178[local552];
+								@Pc(556) int local556 = Class19.SINE[local552];
 								@Pc(560) int local560 = Class19.COSINE[local552];
 								@Pc(571) int local571 = local556 * local547 + local487 * local560 >> 15;
 								@Pc(582) int local582 = local547 * local560 - local556 * local487 >> 15;

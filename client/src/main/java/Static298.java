@@ -56,12 +56,6 @@ public final class Static298 {
 		}
 	}
 
-	@OriginalMember(owner = "client!rc", name = "a", descriptor = "(IZLclient!r;I)Lclient!pr;")
-	public static Class185 method2426(@OriginalArg(2) Js5 arg0, @OriginalArg(3) int arg1) {
-		@Pc(9) byte[] local9 = arg0.fetchFile(arg1, 0);
-		return local9 == null ? null : new Class185(local9);
-	}
-
 	@OriginalMember(owner = "client!rc", name = "a", descriptor = "(BI)I")
 	public static int method2427(@OriginalArg(1) int arg0) {
 		return arg0 & 0xFF;

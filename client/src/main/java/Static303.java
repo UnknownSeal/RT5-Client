@@ -234,7 +234,7 @@ public final class Static303 {
 					local707 = Static322.aClass211_2.method5406(local32);
 					if (local707.aBoolean177 && local707.anInt2448 != -1) {
 						@Pc(723) Class157 local723 = Static39.aClass85_1.method2371(local707.anInt2448);
-						local289 = local723.anInt4022;
+						local289 = local723.exactmove;
 						if (local289 == 0) {
 							local690 = false;
 						} else if (local289 == 1) {
@@ -250,7 +250,7 @@ public final class Static303 {
 					if (local707.anInt2448 != -1 && local763.anInt2448 != -1) {
 						local780 = Static39.aClass85_1.method2371(local707.anInt2448);
 						@Pc(786) Class157 local786 = Static39.aClass85_1.method2371(local763.anInt2448);
-						if (local780.anInt4023 < local786.anInt4023) {
+						if (local780.priority < local786.priority) {
 							local690 = false;
 						}
 					}
@@ -271,7 +271,7 @@ public final class Static303 {
 					local283 = Static322.aClass211_2.method5406(arg2.anInt4594).anInt2448;
 					if (local283 != -1) {
 						local780 = Static39.aClass85_1.method2371(local283);
-						if (local780 != null && local780.anIntArray262 != null) {
+						if (local780 != null && local780.frames != null) {
 							Static1.method4(local780, arg2 == Static17.self, arg2.aByte78, arg2.xFine, arg2.zFine, 0);
 						}
 					}

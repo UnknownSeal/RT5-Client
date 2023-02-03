@@ -9,7 +9,7 @@ import org.openrs2.deob.annotation.Pc;
 public abstract class Class19 {
 
 	@OriginalMember(owner = "client!wm", name = "h", descriptor = "[I")
-	public static final int[] anIntArray178 = new int[16384];
+	public static final int[] SINE = new int[16384];
 
 	@OriginalMember(owner = "client!wm", name = "f", descriptor = "[I")
 	public static final int[] COSINE = new int[16384];
@@ -23,7 +23,7 @@ public abstract class Class19 {
 	static {
 		@Pc(9) double local9 = 3.834951969714103E-4D;
 		for (@Pc(11) int local11 = 0; local11 < 16384; local11++) {
-			anIntArray178[local11] = (int) (Math.sin(local9 * (double) local11) * 32768.0D);
+			SINE[local11] = (int) (Math.sin(local9 * (double) local11) * 32768.0D);
 			COSINE[local11] = (int) (Math.cos(local9 * (double) local11) * 32768.0D);
 		}
 	}
@@ -232,7 +232,7 @@ public abstract class Class19 {
 	public abstract int method2863(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1);
 
 	@OriginalMember(owner = "client!wm", name = "a", descriptor = "(Lclient!pr;IIII)Lclient!gn;")
-	public abstract Model method2864(@OriginalArg(0) Class185 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4);
+	public abstract Model method2864(@OriginalArg(0) RawModel arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4);
 
 	@OriginalMember(owner = "client!wm", name = "d", descriptor = "(I)V")
 	public abstract void method2865(@OriginalArg(0) int arg0);

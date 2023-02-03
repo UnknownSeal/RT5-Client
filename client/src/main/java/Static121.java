@@ -12,11 +12,6 @@ public final class Static121 {
 	@OriginalMember(owner = "client!gu", name = "y", descriptor = "Lclient!kk;")
 	public static Class127 aClass127_4;
 
-	@OriginalMember(owner = "client!gu", name = "a", descriptor = "(ZI)I")
-	public static int method2393(@OriginalArg(1) int arg0) {
-		return arg0 & 0xFF;
-	}
-
 	@OriginalMember(owner = "client!gu", name = "a", descriptor = "(IIIIIIIII)V")
 	public static void method2394(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5) {
 		Static324.method5540(arg3, arg2, arg0, 0, arg1, arg5, arg4);

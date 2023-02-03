@@ -17,7 +17,7 @@ public final class Class2_Sub41 extends Node {
 	}
 
 	@OriginalMember(owner = "client!we", name = "a", descriptor = "(IIIIZLclient!nb;IILclient!jo;Lclient!wm;)Lclient!gn;")
-	public Model method6359(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) boolean arg3, @OriginalArg(5) Class157 arg4, @OriginalArg(6) int arg5, @OriginalArg(8) Class117 arg6, @OriginalArg(9) Class19 arg7) {
+	public Model method6359(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) boolean arg3, @OriginalArg(5) Class157 arg4, @OriginalArg(6) int arg5, @OriginalArg(8) PlayerAppearance arg6, @OriginalArg(9) Class19 arg7) {
 		@Pc(7) Model local7 = null;
 		@Pc(9) int local9 = 1024;
 		@Pc(11) BasType local11 = null;
@@ -45,7 +45,7 @@ public final class Class2_Sub41 extends Node {
 		@Pc(87) Class2_Sub2_Sub13 local87 = null;
 		@Pc(89) Class2_Sub2_Sub13 local89 = null;
 		if (arg4 != null) {
-			local81 = arg4.anIntArray262[arg0];
+			local81 = arg4.frames[arg0];
 			local9 = 1056;
 			@Pc(104) int local104 = local81 >>> 16;
 			local81 &= 0xFFFF;
@@ -55,9 +55,9 @@ public final class Class2_Sub41 extends Node {
 				local70 = local87.method4234(local81) | false;
 				local79 = arg4.aBoolean263 | false;
 			}
-			if ((arg4.aBoolean264 || Static318.forceTween) && arg5 != -1 && arg4.anIntArray262.length > arg5) {
-				local85 = arg4.anIntArray261[arg0];
-				local83 = arg4.anIntArray262[arg5];
+			if ((arg4.tween || Static318.forceTween) && arg5 != -1 && arg4.frames.length > arg5) {
+				local85 = arg4.frameDelay[arg0];
+				local83 = arg4.frames[arg5];
 				@Pc(166) int local166 = local83 >>> 16;
 				local83 &= 0xFFFF;
 				if (local166 == local104) {
@@ -80,7 +80,7 @@ public final class Class2_Sub41 extends Node {
 				local9 |= 0x200;
 			}
 		}
-		@Pc(230) long local230 = this.method6362(arg6 == null ? null : arg6.anIntArray194, local23, arg3, arg2);
+		@Pc(230) long local230 = this.method6362(arg6 == null ? null : arg6.colors, local23, arg3, arg2);
 		if (Static48.A_SOFT_LRU_HASH_TABLE___3 != null) {
 			local7 = (Model) Static48.A_SOFT_LRU_HASH_TABLE___3.get(local230);
 		}
@@ -91,17 +91,17 @@ public final class Class2_Sub41 extends Node {
 			@Pc(259) int local259 = local9;
 			@Pc(261) boolean local261 = false;
 			for (@Pc(263) int local263 = 0; local263 < local23.length; local263++) {
-				if (local23[local263] != -1 && !Static313.aClass107_2.get(local23[local263]).method4769(arg3)) {
+				if (local23[local263] != -1 && !ObjTypeList.objTypeList.get(local23[local263]).method4769(arg3)) {
 					local261 = true;
 				}
 			}
 			if (local261) {
 				return null;
 			}
-			@Pc(300) Class185[] local300 = new Class185[local23.length];
+			@Pc(300) RawModel[] local300 = new RawModel[local23.length];
 			for (@Pc(302) int local302 = 0; local302 < local23.length; local302++) {
 				if (local23[local302] != -1) {
-					local300[local302] = Static313.aClass107_2.get(local23[local302]).method4778(arg3);
+					local300[local302] = ObjTypeList.objTypeList.get(local23[local302]).method4778(arg3);
 				}
 			}
 			@Pc(354) int local354;
@@ -123,18 +123,18 @@ public final class Class2_Sub41 extends Node {
 					}
 				}
 			}
-			@Pc(442) Class185 local442 = new Class185(local300, local300.length);
+			@Pc(442) RawModel local442 = new RawModel(local300, local300.length);
 			if (arg6 != null) {
 				local259 = local9 | 0x2000;
 			}
 			local7 = arg7.method2864(local442, local259, Static25.anInt648, 64, 850);
 			if (arg6 != null) {
 				for (local354 = 0; local354 < 5; local354++) {
-					if (arg6.anIntArray194[local354] < Static353.aShortArrayArray7[local354].length) {
-						local7.method3837(Static10.sourceBodyColors[local354], Static353.aShortArrayArray7[local354][arg6.anIntArray194[local354]]);
+					if (arg6.colors[local354] < Static353.aShortArrayArray7[local354].length) {
+						local7.method3837(Static10.sourceBodyColors[local354], Static353.aShortArrayArray7[local354][arg6.colors[local354]]);
 					}
-					if (arg6.anIntArray194[local354] < Static186.aShortArrayArray6[local354].length) {
-						local7.method3837(Static43.aShortArray20[local354], Static186.aShortArrayArray6[local354][arg6.anIntArray194[local354]]);
+					if (arg6.colors[local354] < Static186.aShortArrayArray6[local354].length) {
+						local7.method3837(Static43.aShortArray20[local354], Static186.aShortArrayArray6[local354][arg6.colors[local354]]);
 					}
 				}
 			}

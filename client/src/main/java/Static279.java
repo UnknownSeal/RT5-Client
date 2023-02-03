@@ -19,7 +19,7 @@ public final class Static279 {
 		for (@Pc(29) int local29 = 0; local29 < 100; local29++) {
 			local37 = Static121.anIntArray157[local29] >> 4;
 			local43 = Static121.anIntArray156[local29] >> 4;
-			@Pc(60) int local60 = local37 + (Class19.anIntArray178[(local43 + (local37 & 0x40)) * 64 & 0x3FFF] >> 10);
+			@Pc(60) int local60 = local37 + (Class19.SINE[(local43 + (local37 & 0x40)) * 64 & 0x3FFF] >> 10);
 			arg0.method2901(local60, local43, 2, 2, Static353.anIntArray450[local29] << 24 | 0xFFFFFF, 1);
 		}
 		local37 = 350 / Static78.anInt6309;

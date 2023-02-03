@@ -134,7 +134,7 @@ public final class Class91 {
 			if (this.aShortArray51 != null) {
 				local109 |= 0x4000;
 			}
-			@Pc(132) Class185 local132 = Static298.method2426(this.aClass211_1.aJs5_81, this.anInt2452);
+			@Pc(132) RawModel local132 = RawModel.create(this.aClass211_1.aJs5_81, this.anInt2452);
 			if (local132 == null) {
 				return null;
 			}

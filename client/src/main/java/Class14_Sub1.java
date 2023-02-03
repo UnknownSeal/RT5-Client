@@ -63,7 +63,7 @@ public final class Class14_Sub1 extends Class14 {
 	public void method3930(@OriginalArg(0) int arg0) {
 		this.anInt503 = 32768;
 		this.anInt505 = this.anInt506 = Class19.COSINE[arg0 & 0x3FFF];
-		this.anInt507 = Class19.anIntArray178[arg0 & 0x3FFF];
+		this.anInt507 = Class19.SINE[arg0 & 0x3FFF];
 		this.anInt500 = -this.anInt507;
 		this.anInt497 = this.anInt498 = this.anInt499 = this.anInt496 = this.anInt504 = this.anInt502 = this.anInt501 = 0;
 	}
@@ -79,11 +79,11 @@ public final class Class14_Sub1 extends Class14 {
 	@Override
 	public void method3929(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5) {
 		@Pc(5) int local5 = Class19.COSINE[arg3 & 0x3FFF];
-		@Pc(11) int local11 = Class19.anIntArray178[arg3 & 0x3FFF];
+		@Pc(11) int local11 = Class19.SINE[arg3 & 0x3FFF];
 		@Pc(17) int local17 = Class19.COSINE[arg4 & 0x3FFF];
-		@Pc(23) int local23 = Class19.anIntArray178[arg4 & 0x3FFF];
+		@Pc(23) int local23 = Class19.SINE[arg4 & 0x3FFF];
 		@Pc(29) int local29 = Class19.COSINE[arg5 & 0x3FFF];
-		@Pc(35) int local35 = Class19.anIntArray178[arg5 & 0x3FFF];
+		@Pc(35) int local35 = Class19.SINE[arg5 & 0x3FFF];
 		@Pc(41) int local41 = local11 * local29 >> 15;
 		@Pc(47) int local47 = local11 * local35 >> 15;
 		this.anInt505 = local17 * local29 + local23 * local47 >> 15;
@@ -115,7 +115,7 @@ public final class Class14_Sub1 extends Class14 {
 	public void method3924(@OriginalArg(0) int arg0) {
 		this.anInt506 = 32768;
 		this.anInt505 = this.anInt503 = Class19.COSINE[arg0 & 0x3FFF];
-		this.anInt497 = Class19.anIntArray178[arg0 & 0x3FFF];
+		this.anInt497 = Class19.SINE[arg0 & 0x3FFF];
 		this.anInt504 = -this.anInt497;
 		this.anInt500 = this.anInt498 = this.anInt507 = this.anInt499 = this.anInt496 = this.anInt502 = this.anInt501 = 0;
 	}
@@ -124,7 +124,7 @@ public final class Class14_Sub1 extends Class14 {
 	@Override
 	public void method3928(@OriginalArg(0) int arg0) {
 		@Pc(5) int local5 = Class19.COSINE[arg0 & 0x3FFF];
-		@Pc(11) int local11 = Class19.anIntArray178[arg0 & 0x3FFF];
+		@Pc(11) int local11 = Class19.SINE[arg0 & 0x3FFF];
 		@Pc(14) int local14 = this.anInt507;
 		@Pc(17) int local17 = this.anInt506;
 		@Pc(20) int local20 = this.anInt499;
@@ -162,7 +162,7 @@ public final class Class14_Sub1 extends Class14 {
 	public void method3932(@OriginalArg(0) int arg0) {
 		this.anInt505 = 32768;
 		this.anInt506 = this.anInt503 = Class19.COSINE[arg0 & 0x3FFF];
-		this.anInt502 = Class19.anIntArray178[arg0 & 0x3FFF];
+		this.anInt502 = Class19.SINE[arg0 & 0x3FFF];
 		this.anInt499 = -this.anInt502;
 		this.anInt500 = this.anInt497 = this.anInt498 = this.anInt507 = this.anInt496 = this.anInt504 = this.anInt501 = 0;
 	}
@@ -179,7 +179,7 @@ public final class Class14_Sub1 extends Class14 {
 	@Override
 	public void method3925(@OriginalArg(0) int arg0) {
 		@Pc(5) int local5 = Class19.COSINE[arg0 & 0x3FFF];
-		@Pc(11) int local11 = Class19.anIntArray178[arg0 & 0x3FFF];
+		@Pc(11) int local11 = Class19.SINE[arg0 & 0x3FFF];
 		@Pc(14) int local14 = this.anInt505;
 		@Pc(17) int local17 = this.anInt500;
 		@Pc(20) int local20 = this.anInt497;

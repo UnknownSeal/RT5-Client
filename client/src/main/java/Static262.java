@@ -30,7 +30,7 @@ public final class Static262 {
 		} else {
 			local66 = (int) Static277.aFloat67 + Static6.anInt158 & 0x3FFF;
 		}
-		@Pc(77) int local77 = Class19.anIntArray178[local66];
+		@Pc(77) int local77 = Class19.SINE[local66];
 		@Pc(81) int local81 = Class19.COSINE[local66];
 		if (Static314.anInt5911 != 4) {
 			local77 = local77 * 256 / (Static97.anInt2005 + 256);

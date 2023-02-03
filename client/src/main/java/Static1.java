@@ -70,17 +70,17 @@ public final class Static1 {
 
 	@OriginalMember(owner = "client!a", name = "a", descriptor = "(Lclient!nb;ZIIIII)V")
 	public static void method4(@OriginalArg(0) Class157 arg0, @OriginalArg(1) boolean arg1, @OriginalArg(2) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5) {
-		if (Static243.size >= 50 || (arg0 == null || arg0.anIntArrayArray33 == null || arg0.anIntArrayArray33.length <= arg5 || arg0.anIntArrayArray33[arg5] == null)) {
+		if (Static243.size >= 50 || (arg0 == null || arg0.soundeffect == null || arg0.soundeffect.length <= arg5 || arg0.soundeffect[arg5] == null)) {
 			return;
 		}
-		@Pc(36) int local36 = arg0.anIntArrayArray33[arg5][0];
+		@Pc(36) int local36 = arg0.soundeffect[arg5][0];
 		@Pc(40) int local40 = local36 >> 8;
 		@Pc(46) int local46 = local36 >> 5 & 0x7;
 		@Pc(65) int local65;
-		if (arg0.anIntArrayArray33[arg5].length > 1) {
-			local65 = (int) ((double) arg0.anIntArrayArray33[arg5].length * Math.random());
+		if (arg0.soundeffect[arg5].length > 1) {
+			local65 = (int) ((double) arg0.soundeffect[arg5].length * Math.random());
 			if (local65 > 0) {
-				local40 = arg0.anIntArrayArray33[arg5][local65];
+				local40 = arg0.soundeffect[arg5][local65];
 			}
 		}
 		@Pc(78) int local78 = local36 & 0x1F;

@@ -60,7 +60,7 @@ public final class Class160 {
 	public void method4032() {
 		@Pc(7) SoftLruHashTable local7 = this.aSoftLruHashTable_35;
 		synchronized (this.aSoftLruHashTable_35) {
-			this.aSoftLruHashTable_35.method2614();
+			this.aSoftLruHashTable_35.clear();
 		}
 	}
 }

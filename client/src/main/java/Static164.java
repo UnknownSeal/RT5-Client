@@ -49,7 +49,7 @@ public final class Static164 {
 		if (local43 > local34 * local34) {
 			return;
 		}
-		@Pc(53) int local53 = Class19.anIntArray178[local15];
+		@Pc(53) int local53 = Class19.SINE[local15];
 		@Pc(57) int local57 = Class19.COSINE[local15];
 		if (Static314.anInt5911 != 4) {
 			local57 = local57 * 256 / (Static97.anInt2005 + 256);

@@ -23,7 +23,7 @@ public final class Class56 {
 
 	@OriginalMember(owner = "client!ea", name = "a", descriptor = "(I)V")
 	public void method1787() {
-		this.aSoftLruHashTable_8.method2614();
+		this.aSoftLruHashTable_8.clear();
 	}
 
 	@OriginalMember(owner = "client!ea", name = "a", descriptor = "(IB)Lclient!al;")

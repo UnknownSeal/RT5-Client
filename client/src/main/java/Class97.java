@@ -112,7 +112,7 @@ public final class Class97 {
 	@OriginalMember(owner = "client!hs", name = "a", descriptor = "(ILclient!iq;)V")
 	private void method2593(@OriginalArg(1) Interface7 arg0) {
 		@Pc(11) long local11 = arg0.method1779();
-		for (@Pc(25) Class2_Sub2_Sub2 local25 = (Class2_Sub2_Sub2) this.aClass4_55.get(local11); local25 != null; local25 = (Class2_Sub2_Sub2) this.aClass4_55.method82()) {
+		for (@Pc(25) Class2_Sub2_Sub2 local25 = (Class2_Sub2_Sub2) this.aClass4_55.get(local11); local25 != null; local25 = (Class2_Sub2_Sub2) this.aClass4_55.nextWithKey()) {
 			if (local25.anInterface7_3.method1778(arg0)) {
 				this.method2586(local25);
 				return;
@@ -123,7 +123,7 @@ public final class Class97 {
 	@OriginalMember(owner = "client!hs", name = "a", descriptor = "(Lclient!iq;I)Ljava/lang/Object;")
 	public Object method2596(@OriginalArg(0) Interface7 arg0) {
 		@Pc(11) long local11 = arg0.method1779();
-		for (@Pc(18) Class2_Sub2_Sub2 local18 = (Class2_Sub2_Sub2) this.aClass4_55.get(local11); local18 != null; local18 = (Class2_Sub2_Sub2) this.aClass4_55.method82()) {
+		for (@Pc(18) Class2_Sub2_Sub2 local18 = (Class2_Sub2_Sub2) this.aClass4_55.get(local11); local18 != null; local18 = (Class2_Sub2_Sub2) this.aClass4_55.nextWithKey()) {
 			if (local18.anInterface7_3.method1778(arg0)) {
 				@Pc(30) Object local30 = local18.method4625();
 				if (local30 != null) {

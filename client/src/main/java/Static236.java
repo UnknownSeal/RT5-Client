@@ -84,7 +84,7 @@ public final class Static236 {
 						local207 = Static322.aClass211_2.method5406(local55);
 						if (local207.aBoolean177 && local207.anInt2448 != -1) {
 							local221 = Static39.aClass85_1.method2371(local207.anInt2448);
-							local224 = local221.anInt4022;
+							local224 = local221.exactmove;
 							if (local224 == 0) {
 								local186 = false;
 							} else if (local224 == 1) {
@@ -100,7 +100,7 @@ public final class Static236 {
 						if (local207.anInt2448 != -1 && local262.anInt2448 != -1) {
 							@Pc(277) Class157 local277 = Static39.aClass85_1.method2371(local207.anInt2448);
 							@Pc(283) Class157 local283 = Static39.aClass85_1.method2371(local262.anInt2448);
-							if (local277.anInt4023 < local283.anInt4023) {
+							if (local277.priority < local283.priority) {
 								local186 = false;
 							}
 						}
@@ -120,7 +120,7 @@ public final class Static236 {
 						@Pc(340) int local340 = Static322.aClass211_2.method5406(local25.anInt4594).anInt2448;
 						if (local340 != -1) {
 							local221 = Static39.aClass85_1.method2371(local340);
-							if (local221 != null && local221.anIntArray262 != null) {
+							if (local221 != null && local221.frames != null) {
 								Static1.method4(local221, false, local25.aByte78, local25.xFine, local25.zFine, 0);
 							}
 						}

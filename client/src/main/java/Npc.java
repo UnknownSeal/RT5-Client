@@ -155,12 +155,12 @@ public final class Npc extends Class11_Sub5_Sub2 {
 			local10--;
 			local15++;
 		}
-		if (super.anInt4597 != -1 && Static39.aClass85_1.method2371(super.anInt4597).anInt4029 == 1) {
+		if (super.anInt4597 != -1 && Static39.aClass85_1.method2371(super.anInt4597).movetype == 1) {
 			super.anInt4597 = -1;
 		}
 		if (super.anInt4594 != -1) {
 			@Pc(83) Class91 local83 = Static322.aClass211_2.method5406(super.anInt4594);
-			if (local83.aBoolean177 && local83.anInt2448 != -1 && Static39.aClass85_1.method2371(local83.anInt2448).anInt4029 == 1) {
+			if (local83.aBoolean177 && local83.anInt2448 != -1 && Static39.aClass85_1.method2371(local83.anInt2448).movetype == 1) {
 				super.anInt4594 = -1;
 			}
 		}
@@ -227,12 +227,12 @@ public final class Npc extends Class11_Sub5_Sub2 {
 	@OriginalMember(owner = "client!oe", name = "a", descriptor = "(IIIIZI)V")
 	public void method4338(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) boolean arg3, @OriginalArg(5) int arg4) {
 		super.aByte78 = (byte) arg1;
-		if (super.anInt4597 != -1 && Static39.aClass85_1.method2371(super.anInt4597).anInt4029 == 1) {
+		if (super.anInt4597 != -1 && Static39.aClass85_1.method2371(super.anInt4597).movetype == 1) {
 			super.anInt4597 = -1;
 		}
 		if (super.anInt4594 != -1) {
 			@Pc(37) Class91 local37 = Static322.aClass211_2.method5406(super.anInt4594);
-			if (local37.aBoolean177 && local37.anInt2448 != -1 && Static39.aClass85_1.method2371(local37.anInt2448).anInt4029 == 1) {
+			if (local37.aBoolean177 && local37.anInt2448 != -1 && Static39.aClass85_1.method2371(local37.anInt2448).movetype == 1) {
 				super.anInt4594 = -1;
 			}
 		}

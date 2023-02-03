@@ -37,7 +37,7 @@ public final class Class128 {
 	public void method3391(@OriginalArg(0) int arg0) {
 		@Pc(7) SoftLruHashTable local7 = this.aSoftLruHashTable_28;
 		synchronized (this.aSoftLruHashTable_28) {
-			this.aSoftLruHashTable_28.method2614();
+			this.aSoftLruHashTable_28.clear();
 			this.aSoftLruHashTable_28 = new SoftLruHashTable(arg0);
 		}
 	}
@@ -76,7 +76,7 @@ public final class Class128 {
 	public void method3394() {
 		@Pc(6) SoftLruHashTable local6 = this.aSoftLruHashTable_28;
 		synchronized (this.aSoftLruHashTable_28) {
-			this.aSoftLruHashTable_28.method2614();
+			this.aSoftLruHashTable_28.clear();
 		}
 	}
 }

@@ -479,7 +479,7 @@ public final class Component {
 	}
 
 	@OriginalMember(owner = "client!nk", name = "a", descriptor = "(IILclient!io;Lclient!wl;ILclient!nb;Lclient!ak;Lclient!jo;Lclient!ta;ILclient!gp;ILclient!e;Lclient!wm;)Lclient!gn;")
-	public Model method4104(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Class107 arg2, @OriginalArg(3) Interface11 arg3, @OriginalArg(5) Class157 arg4, @OriginalArg(6) Class7 arg5, @OriginalArg(7) Class117 arg6, @OriginalArg(8) Class219 arg7, @OriginalArg(9) int arg8, @OriginalArg(10) Class85 arg9, @OriginalArg(11) int arg10, @OriginalArg(12) Class55 arg11, @OriginalArg(13) Class19 arg12) {
+	public Model method4104(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) ObjTypeList arg2, @OriginalArg(3) Interface11 arg3, @OriginalArg(5) Class157 arg4, @OriginalArg(6) Class7 arg5, @OriginalArg(7) PlayerAppearance arg6, @OriginalArg(8) Class219 arg7, @OriginalArg(9) int arg8, @OriginalArg(10) Class85 arg9, @OriginalArg(11) int arg10, @OriginalArg(12) IdentityKitTypeList arg11, @OriginalArg(13) Class19 arg12) {
 		Static86.aBoolean133 = false;
 		if (this.modelType == 0) {
 			return null;
@@ -496,7 +496,7 @@ public final class Component {
 					if (local61 != null) {
 						arg10 = arg12.method2806(arg10, local61.method3826());
 					}
-					@Pc(87) Class185 local87 = Static298.method2426(Static142.aJs5_37, this.modelID);
+					@Pc(87) RawModel local87 = RawModel.create(Static142.aJs5_37, this.modelID);
 					if (local87 == null) {
 						Static86.aBoolean133 = true;
 						return null;

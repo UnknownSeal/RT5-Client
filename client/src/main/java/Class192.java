@@ -143,22 +143,22 @@ public final class Class192 {
 		this.aModel_7 = null;
 		if (this.aClass157_2 == null || local11 != this.aClass157_2.anInt4028) {
 			this.aClass157_2 = Static39.aClass85_1.method2371(local11);
-		} else if (this.aClass157_2.anInt4022 == 0) {
+		} else if (this.aClass157_2.exactmove == 0) {
 			return;
 		}
-		if (this.aClass157_2.anIntArray262 == null) {
+		if (this.aClass157_2.frames == null) {
 			this.aClass157_2 = null;
 			return;
 		}
 		if (local13) {
-			this.anInt5426 = (int) ((double) this.aClass157_2.anIntArray262.length * Math.random());
-			this.anInt5431 = (int) ((double) this.aClass157_2.anIntArray261[this.anInt5426] * Math.random()) + 1;
+			this.anInt5426 = (int) ((double) this.aClass157_2.frames.length * Math.random());
+			this.anInt5431 = (int) ((double) this.aClass157_2.frameDelay[this.anInt5426] * Math.random()) + 1;
 		} else {
 			this.anInt5426 = 0;
 			this.anInt5431 = 1;
 		}
 		this.anInt5423 = this.anInt5426 + 1;
-		if (this.anInt5423 < 0 || this.anInt5423 >= this.aClass157_2.anIntArray262.length) {
+		if (this.anInt5423 < 0 || this.anInt5423 >= this.aClass157_2.frames.length) {
 			this.anInt5423 = -1;
 		}
 		this.anInt5441 = Static114.loop - this.anInt5431;
@@ -177,42 +177,42 @@ public final class Class192 {
 				}
 			}
 			@Pc(31) int local31 = Static114.loop - this.anInt5441;
-			if (local31 > 100 && this.aClass157_2.anInt4032 > 0) {
-				@Pc(53) int local53 = this.aClass157_2.anIntArray262.length - this.aClass157_2.anInt4032;
-				while (this.anInt5426 < local53 && this.aClass157_2.anIntArray261[this.anInt5426] < local31) {
-					local31 -= this.aClass157_2.anIntArray261[this.anInt5426];
+			if (local31 > 100 && this.aClass157_2.replayOff > 0) {
+				@Pc(53) int local53 = this.aClass157_2.frames.length - this.aClass157_2.replayOff;
+				while (this.anInt5426 < local53 && this.aClass157_2.frameDelay[this.anInt5426] < local31) {
+					local31 -= this.aClass157_2.frameDelay[this.anInt5426];
 					this.anInt5426++;
 				}
 				if (this.anInt5426 >= local53) {
 					@Pc(92) int local92 = 0;
-					for (@Pc(94) int local94 = local53; local94 < this.aClass157_2.anIntArray262.length; local94++) {
-						local92 += this.aClass157_2.anIntArray261[local94];
+					for (@Pc(94) int local94 = local53; local94 < this.aClass157_2.frames.length; local94++) {
+						local92 += this.aClass157_2.frameDelay[local94];
 					}
 					local31 %= local92;
 				}
 				this.anInt5423 = this.anInt5426 + 1;
-				if (this.anInt5423 >= this.aClass157_2.anIntArray262.length) {
-					this.anInt5423 -= this.aClass157_2.anInt4032;
-					if (this.anInt5423 < 0 || this.anInt5423 >= this.aClass157_2.anIntArray262.length) {
+				if (this.anInt5423 >= this.aClass157_2.frames.length) {
+					this.anInt5423 -= this.aClass157_2.replayOff;
+					if (this.anInt5423 < 0 || this.anInt5423 >= this.aClass157_2.frames.length) {
 						this.anInt5423 = -1;
 					}
 				}
 			}
-			while (this.aClass157_2.anIntArray261[this.anInt5426] < local31) {
+			while (this.aClass157_2.frameDelay[this.anInt5426] < local31) {
 				Static1.method4(this.aClass157_2, false, this.aByte59, arg0, arg1, this.anInt5426);
-				local31 -= this.aClass157_2.anIntArray261[this.anInt5426];
+				local31 -= this.aClass157_2.frameDelay[this.anInt5426];
 				this.anInt5426++;
-				if (this.anInt5426 >= this.aClass157_2.anIntArray262.length) {
-					this.anInt5426 -= this.aClass157_2.anInt4032;
-					if (this.anInt5426 < 0 || this.anInt5426 >= this.aClass157_2.anIntArray262.length) {
+				if (this.anInt5426 >= this.aClass157_2.frames.length) {
+					this.anInt5426 -= this.aClass157_2.replayOff;
+					if (this.anInt5426 < 0 || this.anInt5426 >= this.aClass157_2.frames.length) {
 						this.aClass157_2 = null;
 						continue label80;
 					}
 				}
 				this.anInt5423 = this.anInt5426 + 1;
-				if (this.anInt5423 >= this.aClass157_2.anIntArray262.length) {
-					this.anInt5423 -= this.aClass157_2.anInt4032;
-					if (this.anInt5423 < 0 || this.aClass157_2.anIntArray262.length <= this.anInt5423) {
+				if (this.anInt5423 >= this.aClass157_2.frames.length) {
+					this.anInt5423 -= this.aClass157_2.replayOff;
+					if (this.anInt5423 < 0 || this.aClass157_2.frames.length <= this.anInt5423) {
 						this.anInt5423 = -1;
 					}
 				}

@@ -7,9 +7,6 @@ public final class Static337 {
 	@OriginalMember(owner = "client!tk", name = "e", descriptor = "Lclient!jd;")
 	public static Class13 aClass13_17;
 
-	@OriginalMember(owner = "client!tk", name = "f", descriptor = "Lclient!kp;")
-	public static MouseWheel aMouseWheel_1;
-
 	@OriginalMember(owner = "client!tk", name = "g", descriptor = "I")
 	public static int anInt6317;
 
@@ -86,7 +83,7 @@ public final class Static337 {
 	public static void animate(@OriginalArg(1) Class11_Sub5_Sub2_Sub1 arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
 		if (arg0.anInt4597 == arg2 && arg2 != -1) {
 			@Pc(18) Class157 local18 = Static39.aClass85_1.method2371(arg2);
-			@Pc(21) int local21 = local18.anInt4022;
+			@Pc(21) int local21 = local18.exactmove;
 			if (local21 == 1) {
 				arg0.anInt4590 = arg1;
 				arg0.anInt4607 = 0;
@@ -98,7 +95,7 @@ public final class Static337 {
 			if (local21 == 2) {
 				arg0.anInt4598 = 0;
 			}
-		} else if (arg2 == -1 || arg0.anInt4597 == -1 || Static39.aClass85_1.method2371(arg2).anInt4023 >= Static39.aClass85_1.method2371(arg0.anInt4597).anInt4023) {
+		} else if (arg2 == -1 || arg0.anInt4597 == -1 || Static39.aClass85_1.method2371(arg2).priority >= Static39.aClass85_1.method2371(arg0.anInt4597).priority) {
 			arg0.anInt4597 = arg2;
 			arg0.anInt4598 = 0;
 			arg0.anInt4624 = 0;

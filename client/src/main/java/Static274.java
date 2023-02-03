@@ -28,8 +28,4 @@ public final class Static274 {
 		return Static125.aClass127_8 == arg0 || Static27.aClass127_1 == arg0 || Static45.aClass127_2 == arg0 || Static48.aClass127_3 == arg0;
 	}
 
-	@OriginalMember(owner = "client!pp", name = "a", descriptor = "(II)I")
-	public static int method4640(@OriginalArg(0) int arg0) {
-		return arg0 >>> 8;
-	}
 }

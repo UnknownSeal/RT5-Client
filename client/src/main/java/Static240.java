@@ -4,11 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static240 {
 
-	@OriginalMember(owner = "client!np", name = "a", descriptor = "(BI)I")
-	public static int method4178(@OriginalArg(1) int arg0) {
-		return arg0 & 0xFF;
-	}
-
 	@OriginalMember(owner = "client!np", name = "a", descriptor = "(IIIII)V")
 	public static void method4180(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
 		if (arg3 > arg2) {

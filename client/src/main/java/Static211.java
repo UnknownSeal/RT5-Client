@@ -20,10 +20,10 @@ public final class Static211 {
 	public static void method3720() {
 		Static39.aClass72_3.method2103();
 		Static336.aClass241_5.method6269();
-		Static21.setIdentikit.method1782();
+		IdentityKitTypeList.identityKitTypeList.method1782();
 		Static359.aClass202_4.method5158();
 		Static6.aClass219_1.method5570();
-		Static313.aClass107_2.method2761();
+		ObjTypeList.objTypeList.clear();
 		Static39.aClass85_1.method2373();
 		Static322.aClass211_2.method5409();
 		Static322.aClass128_1.method3394();
@@ -52,7 +52,7 @@ public final class Static211 {
 		Static369.method6216();
 		Static192.method3507();
 		Static161.method2968();
-		ScriptRunner.A_SOFT_LRU_HASH_TABLE___30.method2614();
+		ScriptRunner.A_SOFT_LRU_HASH_TABLE___30.clear();
 		Static190.aClass19_8.method2903();
 		Static261.scripts.method3152();
 		Static194.method3540();
@@ -85,10 +85,10 @@ public final class Static211 {
 		client.js5Archive26.method5067();
 		client.js5Archive27.method5067();
 		client.js5Archive28.method5067();
-		Static306.A_SOFT_LRU_HASH_TABLE___49.method2614();
-		Static139.A_SOFT_LRU_HASH_TABLE___18.method2614();
-		Static61.A_SOFT_LRU_HASH_TABLE___5.method2614();
-		Static210.A_SOFT_LRU_HASH_TABLE___31.method2614();
+		Static306.A_SOFT_LRU_HASH_TABLE___49.clear();
+		Static139.A_SOFT_LRU_HASH_TABLE___18.clear();
+		Static61.A_SOFT_LRU_HASH_TABLE___5.clear();
+		Static210.A_SOFT_LRU_HASH_TABLE___31.clear();
 	}
 
 	@OriginalMember(owner = "client!mh", name = "a", descriptor = "(II)V")

@@ -22,7 +22,7 @@ public final class Class7 {
 	public void method241() {
 		@Pc(11) SoftLruHashTable local11 = this.types;
 		synchronized (this.types) {
-			this.types.method2614();
+			this.types.clear();
 		}
 	}
 

@@ -48,6 +48,6 @@ public final class Static71 {
 
 	@OriginalMember(owner = "client!eb", name = "c", descriptor = "(B)V")
 	public static void method6020() {
-		Static48.A_SOFT_LRU_HASH_TABLE___3.method2614();
+		Static48.A_SOFT_LRU_HASH_TABLE___3.clear();
 	}
 }

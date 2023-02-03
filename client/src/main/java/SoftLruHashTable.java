@@ -13,19 +13,19 @@ public final class SoftLruHashTable {
 	private int available;
 
 	@OriginalMember(owner = "client!hu", name = "y", descriptor = "I")
-	private final int anInt2619;
+	private final int capacity;
 
 	@OriginalMember(owner = "client!hu", name = "k", descriptor = "Lclient!ad;")
 	private final HashTable table;
 
 	@OriginalMember(owner = "client!hu", name = "<init>", descriptor = "(I)V")
-	public SoftLruHashTable(@OriginalArg(0) int arg0) {
-		this.available = arg0;
-		this.anInt2619 = arg0;
-		@Pc(14) int local14;
-		for (local14 = 1; local14 + local14 < arg0; local14 += local14) {
+	public SoftLruHashTable(@OriginalArg(0) int capacity) {
+		this.available = capacity;
+		this.capacity = capacity;
+		@Pc(14) int bucketCount;
+		for (bucketCount = 1; bucketCount + bucketCount < capacity; bucketCount += bucketCount) {
 		}
-		this.table = new HashTable(local14);
+		this.table = new HashTable(bucketCount);
 	}
 
 	@OriginalMember(owner = "client!hu", name = "a", descriptor = "(BJ)Ljava/lang/Object;")
@@ -67,10 +67,10 @@ public final class SoftLruHashTable {
 	}
 
 	@OriginalMember(owner = "client!hu", name = "b", descriptor = "(I)V")
-	public void method2614() {
+	public void clear() {
 		this.queue.clear();
 		this.table.clear();
-		this.available = this.anInt2619;
+		this.available = this.capacity;
 	}
 
 	@OriginalMember(owner = "client!hu", name = "a", descriptor = "(II)V")
@@ -102,7 +102,7 @@ public final class SoftLruHashTable {
 
 	@OriginalMember(owner = "client!hu", name = "a", descriptor = "(IILjava/lang/Object;J)V")
 	private void method2617(@OriginalArg(2) Object arg0, @OriginalArg(3) long arg1) {
-		if (this.anInt2619 < 1) {
+		if (this.capacity < 1) {
 			throw new IllegalStateException("s>cs");
 		}
 		this.method2626(arg1);
@@ -153,7 +153,7 @@ public final class SoftLruHashTable {
 
 	@OriginalMember(owner = "client!hu", name = "a", descriptor = "(B)I")
 	public int method2620() {
-		return this.anInt2619;
+		return this.capacity;
 	}
 
 	@OriginalMember(owner = "client!hu", name = "e", descriptor = "(I)V")

@@ -231,7 +231,7 @@ public final class Class6_Sub1 extends Class6 {
 		for (@Pc(84) int local84 = 0; local84 < arg6.length; local84++) {
 			@Pc(115) long local115 = (long) arg12 << 48 | (long) arg11 << 42 | (long) arg10 << 28 | (long) (arg9[local84] << 14) | (long) arg8[local84];
 			@Pc(121) Node local121;
-			for (local121 = this.aClass4_7.get(local115); local121 != null; local121 = this.aClass4_7.method82()) {
+			for (local121 = this.aClass4_7.get(local115); local121 != null; local121 = this.aClass4_7.nextWithKey()) {
 				@Pc(126) Class2_Sub36 local126 = (Class2_Sub36) local121;
 				if (local126.anInt6095 == arg8[local84] && local126.aFloat75 == (float) arg9[local84] && local126.anInt6097 == arg10 && local126.anInt6096 == arg11 && local126.anInt6098 == arg12) {
 					break;

@@ -51,16 +51,16 @@ public final class Static296 {
 	public static void method5103() {
 		Static174.aClass123_2.method3337();
 		Static226.aClass119_1.method3311();
-		if (Static337.aMouseWheel_1 != null) {
-			Static337.aMouseWheel_1.stop(GameShell.canvas);
+		if (client.mouseWheel != null) {
+			client.mouseWheel.stop(GameShell.canvas);
 		}
 		client.instance.method1379();
 		GameShell.canvas.setBackground(Color.black);
 		Static29.anInt721 = -1;
 		Static174.aClass123_2 = Static18.method556(GameShell.canvas);
 		Static226.aClass119_1 = Static31.method948(GameShell.canvas);
-		if (Static337.aMouseWheel_1 != null) {
-			Static337.aMouseWheel_1.start(GameShell.canvas);
+		if (client.mouseWheel != null) {
+			client.mouseWheel.start(GameShell.canvas);
 		}
 	}
 }

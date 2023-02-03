@@ -29,9 +29,9 @@ public final class Static218 {
 		@Pc(12) String local12 = Static318.method5420(arg0);
 		@Pc(14) int[] local14 = null;
 		if (Static298.method2425(arg0.anInt1005)) {
-			local14 = Static313.aClass107_2.get((int) arg0.aLong30).anIntArray364;
+			local14 = ObjTypeList.objTypeList.get((int) arg0.aLong30).anIntArray364;
 		} else if (arg0.anInt1008 != -1) {
-			local14 = Static313.aClass107_2.get(arg0.anInt1008).anIntArray364;
+			local14 = ObjTypeList.objTypeList.get(arg0.anInt1008).anIntArray364;
 		} else if (Static297.method5110(arg0.anInt1005)) {
 			@Pc(46) Npc local46 = Static365.npcs[(int) arg0.aLong30];
 			if (local46 != null) {

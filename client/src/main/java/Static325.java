@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class Static325 {
 
 	@OriginalMember(owner = "client!sr", name = "a", descriptor = "Lclient!o;")
-	public static Interface9 anInterface9_1 = null;
+	public static QuickChatCommandDecoder anQuickChatCommandDecoder_1 = null;
 
 	@OriginalMember(owner = "client!sr", name = "f", descriptor = "I")
 	public static int anInt6079 = 0;
@@ -19,9 +19,9 @@ public final class Static325 {
 	public static final int[] baseLevels = new int[25];
 
 	@OriginalMember(owner = "client!sr", name = "a", descriptor = "(Lclient!o;Lclient!r;Lclient!r;B)V")
-	public static void method5543(@OriginalArg(0) Interface9 arg0, @OriginalArg(1) Js5 arg1, @OriginalArg(2) Js5 arg2) {
+	public static void method5543(@OriginalArg(0) QuickChatCommandDecoder arg0, @OriginalArg(1) Js5 arg1, @OriginalArg(2) Js5 arg2) {
 		Static137.archive = arg1;
-		anInterface9_1 = arg0;
+		anQuickChatCommandDecoder_1 = arg0;
 		Static308.globalArchive = arg2;
 		if (Static137.archive != null) {
 			Static21.capacity = Static137.archive.getGroupCapacity(1);

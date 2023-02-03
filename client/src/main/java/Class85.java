@@ -56,9 +56,9 @@ public final class Class85 {
 		local16.anInt4028 = arg0;
 		local16.aClass85_2 = this;
 		if (local37 != null) {
-			local16.method3992(new Buffer(local37));
+			local16.decode(new Buffer(local37));
 		}
-		local16.method3990();
+		local16.postDecode();
 		@Pc(64) SoftLruHashTable local64 = this.aSoftLruHashTable_14;
 		synchronized (this.aSoftLruHashTable_14) {
 			this.aSoftLruHashTable_14.put((long) arg0, local16);
@@ -70,11 +70,11 @@ public final class Class85 {
 	public void method2373() {
 		@Pc(8) SoftLruHashTable local8 = this.aSoftLruHashTable_14;
 		synchronized (this.aSoftLruHashTable_14) {
-			this.aSoftLruHashTable_14.method2614();
+			this.aSoftLruHashTable_14.clear();
 		}
 		local8 = this.aSoftLruHashTable_15;
 		synchronized (this.aSoftLruHashTable_15) {
-			this.aSoftLruHashTable_15.method2614();
+			this.aSoftLruHashTable_15.clear();
 		}
 	}
 

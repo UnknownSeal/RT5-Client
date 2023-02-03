@@ -40,10 +40,10 @@ public final class Static156 {
 
 	@OriginalMember(owner = "client!iu", name = "b", descriptor = "(B)V")
 	public static void method2798() {
-		@Pc(9) int[] local9 = new int[Static313.aClass107_2.anInt2779];
+		@Pc(9) int[] local9 = new int[ObjTypeList.objTypeList.anInt2779];
 		@Pc(11) int local11 = 0;
-		for (@Pc(13) int local13 = 0; local13 < Static313.aClass107_2.anInt2779; local13++) {
-			@Pc(20) ObjType local20 = Static313.aClass107_2.get(local13);
+		for (@Pc(13) int local13 = 0; local13 < ObjTypeList.objTypeList.anInt2779; local13++) {
+			@Pc(20) ObjType local20 = ObjTypeList.objTypeList.get(local13);
 			if (local20.manwear1 >= 0 || local20.womanwear1 >= 0) {
 				local9[local11++] = local13;
 			}

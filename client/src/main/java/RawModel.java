@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!pr")
-public final class Class185 {
+public final class RawModel {
 
 	@OriginalMember(owner = "client!pr", name = "a", descriptor = "[B")
 	public byte[] aByteArray61;
@@ -112,7 +112,7 @@ public final class Class185 {
 	public int anInt5087 = 0;
 
 	@OriginalMember(owner = "client!pr", name = "<init>", descriptor = "([B)V")
-	public Class185(@OriginalArg(0) byte[] arg0) {
+	public RawModel(@OriginalArg(0) byte[] arg0) {
 		if (arg0[arg0.length - 1] == -1 && arg0[arg0.length - 2] == -1) {
 			this.method4651(arg0);
 		} else {
@@ -121,7 +121,7 @@ public final class Class185 {
 	}
 
 	@OriginalMember(owner = "client!pr", name = "<init>", descriptor = "(III)V")
-	public Class185(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
+	public RawModel(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
 		this.aByteArray61 = new byte[arg1];
 		if (arg2 > 0) {
 			this.aShortArray96 = new short[arg2];
@@ -153,7 +153,7 @@ public final class Class185 {
 	}
 
 	@OriginalMember(owner = "client!pr", name = "<init>", descriptor = "([Lclient!pr;I)V")
-	public Class185(@OriginalArg(0) Class185[] arg0, @OriginalArg(1) int arg1) {
+	public RawModel(@OriginalArg(0) RawModel[] arg0, @OriginalArg(1) int arg1) {
 		this.anInt5072 = 0;
 		this.anInt5075 = 0;
 		this.anInt5071 = 0;
@@ -167,7 +167,7 @@ public final class Class185 {
 		@Pc(43) boolean local43 = false;
 		this.aByte56 = -1;
 		for (@Pc(48) int local48 = 0; local48 < arg1; local48++) {
-			@Pc(54) Class185 local54 = arg0[local48];
+			@Pc(54) RawModel local54 = arg0[local48];
 			if (local54 != null) {
 				this.anInt5075 += local54.anInt5075;
 				this.anInt5072 += local54.anInt5072;
@@ -252,7 +252,7 @@ public final class Class185 {
 		@Pc(566) int local566;
 		for (@Pc(354) int local354 = 0; local354 < arg1; local354++) {
 			@Pc(361) short local361 = (short) (0x1 << local354);
-			@Pc(365) Class185 local365 = arg0[local354];
+			@Pc(365) RawModel local365 = arg0[local354];
 			if (local365 != null) {
 				for (@Pc(369) int local369 = 0; local369 < local365.anInt5071; local369++) {
 					if (local33 && local365.aByteArray64 != null) {
@@ -312,7 +312,7 @@ public final class Class185 {
 		this.anInt5087 = this.anInt5075;
 		for (@Pc(658) int local658 = 0; local658 < arg1; local658++) {
 			@Pc(665) short local665 = (short) (0x1 << local658);
-			@Pc(669) Class185 local669 = arg0[local658];
+			@Pc(669) RawModel local669 = arg0[local658];
 			if (local669 != null) {
 				for (local555 = 0; local555 < local669.anInt5071; local555++) {
 					if (local39) {
@@ -345,6 +345,12 @@ public final class Class185 {
 				}
 			}
 		}
+	}
+
+	@OriginalMember(owner = "client!rc", name = "a", descriptor = "(IZLclient!r;I)Lclient!pr;")
+	public static RawModel create(@OriginalArg(2) Js5 arg0, @OriginalArg(3) int arg1) {
+		@Pc(9) byte[] local9 = arg0.fetchFile(arg1, 0);
+		return local9 == null ? null : new RawModel(local9);
 	}
 
 	@OriginalMember(owner = "client!pr", name = "a", descriptor = "(B[B)V")
@@ -996,7 +1002,7 @@ public final class Class185 {
 	}
 
 	@OriginalMember(owner = "client!pr", name = "a", descriptor = "(SILclient!pr;Z)I")
-	private int method4656(@OriginalArg(0) short arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Class185 arg2) {
+	private int method4656(@OriginalArg(0) short arg0, @OriginalArg(1) int arg1, @OriginalArg(2) RawModel arg2) {
 		@Pc(15) int local15 = arg2.anIntArray354[arg1];
 		@Pc(20) int local20 = arg2.anIntArray355[arg1];
 		@Pc(25) int local25 = arg2.anIntArray356[arg1];
@@ -1015,7 +1021,7 @@ public final class Class185 {
 	}
 
 	@OriginalMember(owner = "client!pr", name = "a", descriptor = "(ZSS)V")
-	public void method4657(@OriginalArg(1) short arg0, @OriginalArg(2) short arg1) {
+	public void retexture(@OriginalArg(1) short arg0, @OriginalArg(2) short arg1) {
 		if (this.aShortArray98 == null) {
 			return;
 		}
@@ -1085,7 +1091,7 @@ public final class Class185 {
 	}
 
 	@OriginalMember(owner = "client!pr", name = "a", descriptor = "(SSZ)V")
-	public void method4662(@OriginalArg(0) short arg0, @OriginalArg(1) short arg1) {
+	public void recolor(@OriginalArg(0) short arg0, @OriginalArg(1) short arg1) {
 		for (@Pc(3) int local3 = 0; local3 < this.anInt5071; local3++) {
 			if (this.aShortArray108[local3] == arg0) {
 				this.aShortArray108[local3] = arg1;
@@ -1100,7 +1106,7 @@ public final class Class185 {
 		@Pc(13) int local13;
 		@Pc(32) int local32;
 		if (arg1 != 0) {
-			local7 = Class19.anIntArray178[arg1];
+			local7 = Class19.SINE[arg1];
 			local11 = Class19.COSINE[arg1];
 			for (local13 = 0; local13 < this.anInt5075; local13++) {
 				local32 = local7 * this.anIntArray355[local13] + this.anIntArray354[local13] * local11 >> 15;
@@ -1109,7 +1115,7 @@ public final class Class185 {
 			}
 		}
 		if (arg2 != 0) {
-			local7 = Class19.anIntArray178[arg2];
+			local7 = Class19.SINE[arg2];
 			local11 = Class19.COSINE[arg2];
 			for (local13 = 0; local13 < this.anInt5075; local13++) {
 				local32 = local11 * this.anIntArray355[local13] - this.anIntArray356[local13] * local7 >> 15;
@@ -1120,7 +1126,7 @@ public final class Class185 {
 		if (arg0 == 0) {
 			return;
 		}
-		local7 = Class19.anIntArray178[arg0];
+		local7 = Class19.SINE[arg0];
 		local11 = Class19.COSINE[arg0];
 		for (local13 = 0; local13 < this.anInt5075; local13++) {
 			local32 = local7 * this.anIntArray356[local13] + this.anIntArray354[local13] * local11 >> 15;

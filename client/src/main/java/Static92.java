@@ -29,7 +29,7 @@ public final class Static92 {
 						arg2.aClass20Array3[local19] = null;
 					} else {
 						@Pc(41) Class157 local41 = Static39.aClass85_1.method2371(local9);
-						@Pc(44) int local44 = local41.anInt4022;
+						@Pc(44) int local44 = local41.exactmove;
 						@Pc(49) Class20 local49 = arg2.aClass20Array3[local19];
 						if (local49 != null) {
 							if (local9 == local49.anInt624) {
@@ -45,7 +45,7 @@ public final class Static92 {
 								} else if (local44 == 2) {
 									local49.anInt626 = 0;
 								}
-							} else if (local41.anInt4023 >= Static39.aClass85_1.method2371(local49.anInt624).anInt4023) {
+							} else if (local41.priority >= Static39.aClass85_1.method2371(local49.anInt624).priority) {
 								local49 = arg2.aClass20Array3[local19] = null;
 							}
 						}

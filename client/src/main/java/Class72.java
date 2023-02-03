@@ -36,7 +36,7 @@ public final class Class72 {
 	public void method2103() {
 		@Pc(6) SoftLruHashTable local6 = this.types;
 		synchronized (this.types) {
-			this.types.method2614();
+			this.types.clear();
 		}
 	}
 

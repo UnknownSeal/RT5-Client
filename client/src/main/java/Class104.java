@@ -59,11 +59,11 @@ public final class Class104 {
 	public void method2707() {
 		@Pc(8) SoftLruHashTable local8 = this.aSoftLruHashTable_19;
 		synchronized (this.aSoftLruHashTable_19) {
-			this.aSoftLruHashTable_19.method2614();
+			this.aSoftLruHashTable_19.clear();
 		}
 		local8 = this.aSoftLruHashTable_20;
 		synchronized (this.aSoftLruHashTable_20) {
-			this.aSoftLruHashTable_20.method2614();
+			this.aSoftLruHashTable_20.clear();
 		}
 	}
 

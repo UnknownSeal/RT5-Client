@@ -155,11 +155,11 @@ public final class Class12_Sub8 extends Class12 {
 					} else {
 						local167 = (int) (Math.random() * (double) this.anInt6250) + this.anInt6247;
 						@Pc(171) int local171 = local167 & 0x3FFF;
-						local175 = Class19.anIntArray178[local171];
+						local175 = Class19.SINE[local171];
 						local179 = Class19.COSINE[local171];
 						local189 = (int) ((double) this.anInt6237 * Math.random()) + this.anInt6260;
 						@Pc(193) int local193 = local189 & 0x1FFF;
-						local197 = Class19.anIntArray178[local193];
+						local197 = Class19.SINE[local193];
 						local201 = Class19.COSINE[local193];
 						local207 = local197 * local179 >> 15;
 						local213 = local197 * local175 >> 15;

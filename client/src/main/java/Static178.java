@@ -50,7 +50,7 @@ public final class Static178 {
 				local93 = 21;
 			}
 			@Pc(132) int[] local132 = new int[] { 64, 96, 128 };
-			@Pc(150) Class185 local150 = new Class185(local93 * 3 + 1, -local93 + local93 * 3 * 2, 0);
+			@Pc(150) RawModel local150 = new RawModel(local93 * 3 + 1, -local93 + local93 * 3 * 2, 0);
 			local157 = local150.method4664(0, 0, 0);
 			@Pc(161) int[][] local161 = new int[3][local93];
 			@Pc(175) int local175;
@@ -60,7 +60,7 @@ public final class Static178 {
 				local173 = local132[local163];
 				for (local175 = 0; local175 < local93; local175++) {
 					@Pc(183) int local183 = (local175 << 14) / local93;
-					@Pc(191) int local191 = Class19.anIntArray178[local183] * local169 >> 15;
+					@Pc(191) int local191 = Class19.SINE[local183] * local169 >> 15;
 					local199 = local173 * Class19.COSINE[local183] >> 15;
 					local161[local163][local175] = local150.method4664(0, local191, local199);
 				}
@@ -122,7 +122,7 @@ public final class Static178 {
 		}
 		@Pc(521) Class2_Sub2_Sub13 local521 = null;
 		if (arg4 != null) {
-			@Pc(528) int local528 = arg4.anIntArray262[arg0];
+			@Pc(528) int local528 = arg4.frames[arg0];
 			local521 = Static39.aClass85_1.method2368(local528 >> 16);
 			arg0 = local528 & 0xFFFF;
 		}

@@ -19,7 +19,7 @@ public final class Static161 {
 
 	@OriginalMember(owner = "client!jg", name = "b", descriptor = "(B)V")
 	public static void method2968() {
-		Static119.types.method2614();
+		Static119.types.clear();
 	}
 
 	@OriginalMember(owner = "client!jg", name = "a", descriptor = "([BI)[B")
@@ -367,7 +367,7 @@ public final class Static161 {
 			if (command.startsWith("cachespace")) {
 				Static158.add("I(s): " + Static335.A_SOFT_LRU_HASH_TABLE___57.method2616() + "/" + Static335.A_SOFT_LRU_HASH_TABLE___57.method2620());
 				Static158.add("I(m): " + Static124.A_SOFT_LRU_HASH_TABLE___63.method2616() + "/" + Static124.A_SOFT_LRU_HASH_TABLE___63.method2620());
-				Static158.add("O(s): " + Static313.aClass107_2.aClass97_1.method2587() + "/" + Static313.aClass107_2.aClass97_1.method2592());
+				Static158.add("O(s): " + ObjTypeList.objTypeList.aClass97_1.method2587() + "/" + ObjTypeList.objTypeList.aClass97_1.method2592());
 				return;
 			}
 			if (command.equalsIgnoreCase("getcamerapos")) {

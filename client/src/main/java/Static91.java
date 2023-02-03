@@ -239,7 +239,7 @@ public final class Static91 {
 					Static381.aBoolean482 = Static212.inboundBuffer.g1() == 1;
 					Static206.mapMembers = Static212.inboundBuffer.g1() == 1;
 					Static359.aClass202_4.setAllowMembers(Static206.mapMembers);
-					Static313.aClass107_2.setAllowMembers(Static206.mapMembers);
+					ObjTypeList.objTypeList.setAllowMembers(Static206.mapMembers);
 					Static6.aClass219_1.setAllowMembers(Static206.mapMembers);
 					if (Static56.aBoolean123 && !Static347.aBoolean434 || Static381.aBoolean482) {
 						try {
@@ -346,16 +346,16 @@ public final class Static91 {
 
 	@OriginalMember(owner = "client!f", name = "a", descriptor = "(I)V")
 	public static void method1962() {
-		Static335.A_SOFT_LRU_HASH_TABLE___57.method2614();
-		Static124.A_SOFT_LRU_HASH_TABLE___63.method2614();
-		Static333.A_SOFT_LRU_HASH_TABLE___65.method2614();
-		Static297.A_SOFT_LRU_HASH_TABLE___44.method2614();
-		Static288.A_SOFT_LRU_HASH_TABLE___42.method2614();
+		Static335.A_SOFT_LRU_HASH_TABLE___57.clear();
+		Static124.A_SOFT_LRU_HASH_TABLE___63.clear();
+		Static333.A_SOFT_LRU_HASH_TABLE___65.clear();
+		Static297.A_SOFT_LRU_HASH_TABLE___44.clear();
+		Static288.A_SOFT_LRU_HASH_TABLE___42.clear();
 	}
 
 	@OriginalMember(owner = "client!f", name = "a", descriptor = "(IZ)V")
 	public static void method1963(@OriginalArg(0) int arg0) {
 		Static323.anInt6062 = arg0;
-		Static124.A_SOFT_LRU_HASH_TABLE___63.method2614();
+		Static124.A_SOFT_LRU_HASH_TABLE___63.clear();
 	}
 }

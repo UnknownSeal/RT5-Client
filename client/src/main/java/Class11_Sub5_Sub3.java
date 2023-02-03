@@ -152,21 +152,21 @@ public final class Class11_Sub5_Sub3 extends Class11_Sub5 {
 		while (true) {
 			do {
 				do {
-					if (this.anInt4742 <= this.aClass157_1.anIntArray261[this.anInt4728]) {
+					if (this.anInt4742 <= this.aClass157_1.frameDelay[this.anInt4728]) {
 						return;
 					}
-					this.anInt4742 -= this.aClass157_1.anIntArray261[this.anInt4728];
+					this.anInt4742 -= this.aClass157_1.frameDelay[this.anInt4728];
 					this.anInt4728++;
-					if (this.anInt4728 >= this.aClass157_1.anIntArray262.length) {
-						this.anInt4728 -= this.aClass157_1.anInt4032;
-						if (this.anInt4728 < 0 || this.aClass157_1.anIntArray262.length <= this.anInt4728) {
+					if (this.anInt4728 >= this.aClass157_1.frames.length) {
+						this.anInt4728 -= this.aClass157_1.replayOff;
+						if (this.anInt4728 < 0 || this.aClass157_1.frames.length <= this.anInt4728) {
 							this.anInt4728 = 0;
 						}
 					}
 					this.anInt4718 = this.anInt4728 + 1;
-				} while (this.aClass157_1.anIntArray262.length > this.anInt4718);
-				this.anInt4718 -= this.aClass157_1.anInt4032;
-			} while (this.anInt4718 >= 0 && this.anInt4718 < this.aClass157_1.anIntArray262.length);
+				} while (this.aClass157_1.frames.length > this.anInt4718);
+				this.anInt4718 -= this.aClass157_1.replayOff;
+			} while (this.anInt4718 >= 0 && this.anInt4718 < this.aClass157_1.frames.length);
 			this.anInt4718 = -1;
 		}
 	}

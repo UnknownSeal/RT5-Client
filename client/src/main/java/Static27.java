@@ -39,11 +39,11 @@ public final class Static27 {
 	@OriginalMember(owner = "client!bk", name = "a", descriptor = "(Lclient!bt;B)V")
 	public static void method875(@OriginalArg(0) Buffer arg0) {
 		@Pc(8) byte[] local8 = new byte[24];
-		if (Static317.aBufferedFile_6 != null) {
+		if (client.uid != null) {
 			@Pc(20) int local20;
 			try {
-				Static317.aBufferedFile_6.seek(0L);
-				Static317.aBufferedFile_6.method5219(local8);
+				client.uid.seek(0L);
+				client.uid.method5219(local8);
 				for (local20 = 0; local20 < 24 && local8[local20] == 0; local20++) {
 				}
 				if (local20 >= 24) {

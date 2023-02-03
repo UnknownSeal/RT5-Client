@@ -53,15 +53,15 @@ public final class Class202 {
 		this.anInt5669 = arg0;
 		@Pc(9) SoftLruHashTable local9 = this.aSoftLruHashTable_46;
 		synchronized (this.aSoftLruHashTable_46) {
-			this.aSoftLruHashTable_46.method2614();
+			this.aSoftLruHashTable_46.clear();
 		}
 		local9 = this.aSoftLruHashTable_47;
 		synchronized (this.aSoftLruHashTable_47) {
-			this.aSoftLruHashTable_47.method2614();
+			this.aSoftLruHashTable_47.clear();
 		}
 		local9 = this.aSoftLruHashTable_48;
 		synchronized (this.aSoftLruHashTable_48) {
-			this.aSoftLruHashTable_48.method2614();
+			this.aSoftLruHashTable_48.clear();
 		}
 	}
 
@@ -97,19 +97,19 @@ public final class Class202 {
 	public void method5158() {
 		@Pc(2) SoftLruHashTable local2 = this.aSoftLruHashTable_45;
 		synchronized (this.aSoftLruHashTable_45) {
-			this.aSoftLruHashTable_45.method2614();
+			this.aSoftLruHashTable_45.clear();
 		}
 		local2 = this.aSoftLruHashTable_46;
 		synchronized (this.aSoftLruHashTable_46) {
-			this.aSoftLruHashTable_46.method2614();
+			this.aSoftLruHashTable_46.clear();
 		}
 		local2 = this.aSoftLruHashTable_47;
 		synchronized (this.aSoftLruHashTable_47) {
-			this.aSoftLruHashTable_47.method2614();
+			this.aSoftLruHashTable_47.clear();
 		}
 		local2 = this.aSoftLruHashTable_48;
 		synchronized (this.aSoftLruHashTable_48) {
-			this.aSoftLruHashTable_48.method2614();
+			this.aSoftLruHashTable_48.clear();
 		}
 	}
 

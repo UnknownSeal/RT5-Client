@@ -24,7 +24,7 @@ public final class Class18 {
 	public void method563() {
 		@Pc(2) SoftLruHashTable local2 = this.aSoftLruHashTable_2;
 		synchronized (this.aSoftLruHashTable_2) {
-			this.aSoftLruHashTable_2.method2614();
+			this.aSoftLruHashTable_2.clear();
 		}
 	}
 

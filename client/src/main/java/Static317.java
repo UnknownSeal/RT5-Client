@@ -7,9 +7,6 @@ public final class Static317 {
 	@OriginalMember(owner = "client!sh", name = "a", descriptor = "F")
 	public static float aFloat74;
 
-	@OriginalMember(owner = "client!sh", name = "d", descriptor = "Lclient!rn;")
-	public static BufferedFile aBufferedFile_6;
-
 	@OriginalMember(owner = "client!sh", name = "a", descriptor = "(Lclient!mr;BZ)V")
 	public static void method5547(@OriginalArg(0) Class11_Sub5_Sub2 arg0, @OriginalArg(2) boolean arg1) {
 		@Pc(9) BasType local9 = arg0.method4331();
@@ -21,13 +18,13 @@ public final class Static317 {
 		}
 		if (arg0.anInt4597 != -1 && arg0.anInt4590 == 0) {
 			@Pc(39) Class157 local39 = Static39.aClass85_1.method2371(arg0.anInt4597);
-			if (arg0.anInt4642 > 0 && local39.anInt4027 == 0) {
+			if (arg0.anInt4642 > 0 && local39.looptype == 0) {
 				Static16.anInt4756 = 0;
 				Static170.anInt3229 = -1;
 				arg0.anInt4641++;
 				return;
 			}
-			if (arg0.anInt4642 <= 0 && local39.anInt4029 == 0) {
+			if (arg0.anInt4642 <= 0 && local39.movetype == 0) {
 				Static170.anInt3229 = -1;
 				Static16.anInt4756 = 0;
 				arg0.anInt4641++;
@@ -38,13 +35,13 @@ public final class Static317 {
 			@Pc(97) Class91 local97 = Static322.aClass211_2.method5406(arg0.anInt4594);
 			if (local97.aBoolean177 && local97.anInt2448 != -1) {
 				@Pc(111) Class157 local111 = Static39.aClass85_1.method2371(local97.anInt2448);
-				if (arg0.anInt4642 > 0 && local111.anInt4027 == 0) {
+				if (arg0.anInt4642 > 0 && local111.looptype == 0) {
 					Static16.anInt4756 = 0;
 					arg0.anInt4641++;
 					Static170.anInt3229 = -1;
 					return;
 				}
-				if (arg0.anInt4642 <= 0 && local111.anInt4029 == 0) {
+				if (arg0.anInt4642 <= 0 && local111.movetype == 0) {
 					arg0.anInt4641++;
 					Static170.anInt3229 = -1;
 					Static16.anInt4756 = 0;
@@ -208,11 +205,11 @@ public final class Static317 {
 		Static233.anInt4199 = arg0;
 		@Pc(15) SoftLruHashTable local15 = Static349.A_SOFT_LRU_HASH_TABLE___58;
 		synchronized (Static349.A_SOFT_LRU_HASH_TABLE___58) {
-			Static349.A_SOFT_LRU_HASH_TABLE___58.method2614();
+			Static349.A_SOFT_LRU_HASH_TABLE___58.clear();
 		}
 		local15 = Static92.bodyModels;
 		synchronized (Static92.bodyModels) {
-			Static92.bodyModels.method2614();
+			Static92.bodyModels.clear();
 		}
 	}
 

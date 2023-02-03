@@ -20,7 +20,7 @@ public final class Static286 {
 
 	@OriginalMember(owner = "client!qk", name = "b", descriptor = "(B)V")
 	public static void method4920() {
-		Static254.A_SOFT_LRU_HASH_TABLE___39.method2614();
+		Static254.A_SOFT_LRU_HASH_TABLE___39.clear();
 	}
 
 	@OriginalMember(owner = "client!qk", name = "a", descriptor = "(Lclient!jg;ILclient!wm;Lclient!np;BI)Z")

@@ -396,15 +396,15 @@ public final class ScriptRunner {
 					isp -= 2;
 					int1 = intStack[isp];
 					int3 = intStack[isp + 1];
-					for (local25  = 0; local25  < Static5.MALE_FEATURES.length; local25 ++) {
-						if (Static5.MALE_FEATURES[local25 ] == int1) {
-							Static17.self.appearance.method3180(Static21.setIdentikit, local25 , int3);
+					for (local25  = 0; local25  < PlayerAppearance.MALE_FEATURES.length; local25 ++) {
+						if (PlayerAppearance.MALE_FEATURES[local25 ] == int1) {
+							Static17.self.appearance.method3180(IdentityKitTypeList.identityKitTypeList, local25 , int3);
 							return;
 						}
 					}
-					for (local353 = 0; local353 < Static355.FEMALE_FEATURES.length; local353++) {
-						if (Static355.FEMALE_FEATURES[local25 ] == int1) {
-							Static17.self.appearance.method3180(Static21.setIdentikit, local353, int3);
+					for (local353 = 0; local353 < PlayerAppearance.FEMALE_FEATURES.length; local353++) {
+						if (PlayerAppearance.FEMALE_FEATURES[local25 ] == int1) {
+							Static17.self.appearance.method3180(IdentityKitTypeList.identityKitTypeList, local353, int3);
 							return;
 						}
 					}
@@ -665,7 +665,7 @@ public final class ScriptRunner {
 						} else {
 							component.objWearColor = false;
 						}
-						@Pc(1537) ObjType objType = Static313.aClass107_2.get(int3);
+						@Pc(1537) ObjType objType = ObjTypeList.objTypeList.get(int3);
 						component.modelXAngle = objType.xAngle2D;
 						component.modelYAngle = objType.yAngle2D;
 						component.modelYOffset = objType.zAngle2D;
@@ -1483,7 +1483,7 @@ public final class ScriptRunner {
 									return;
 								}
 								if (opcode == 3327) {
-									intStack[isp++] = Static17.self.appearance.aBoolean220 ? 1 : 0;
+									intStack[isp++] = Static17.self.appearance.female ? 1 : 0;
 									return;
 								}
 								if (opcode == 3328) {
@@ -1542,13 +1542,13 @@ public final class ScriptRunner {
 									return;
 								}
 							} else if (opcode < 3500) {
-								@Pc(4761) Class52 local4761;
+								@Pc(4761) EnumType local4761;
 								if (opcode == 3400) {
 									isp -= 2;
 									int1 = intStack[isp];
 									int3 = intStack[isp + 1];
-									local4761 = Static140.aClass109_1.method2779(int1);
-									stringStack[anInt3652++] = local4761.method1775(int3);
+									local4761 = EnumTypeList.enumTypeList.get(int1);
+									stringStack[anInt3652++] = local4761.getString(int3);
 									return;
 								}
 								if (opcode == 3408) {
@@ -1557,13 +1557,13 @@ public final class ScriptRunner {
 									int3 = intStack[isp + 1];
 									local25  = intStack[isp + 2];
 									local353 = intStack[isp + 3];
-									@Pc(4807) Class52 local4807 = Static140.aClass109_1.method2779(local25 );
-									if (local4807.aChar4 == int1 && local4807.aChar3 == int3) {
+									@Pc(4807) EnumType local4807 = EnumTypeList.enumTypeList.get(local25 );
+									if (local4807.keyType == int1 && local4807.valueType == int3) {
 										if (int3 == 115) {
-											stringStack[anInt3652++] = local4807.method1775(local353);
+											stringStack[anInt3652++] = local4807.getString(local353);
 											return;
 										}
-										intStack[isp++] = local4807.method1766(local353);
+										intStack[isp++] = local4807.getInt(local353);
 										return;
 									}
 									throw new RuntimeException("C3408-1");
@@ -1576,11 +1576,11 @@ public final class ScriptRunner {
 									if (int3 == -1) {
 										throw new RuntimeException("C3409-2");
 									}
-									@Pc(4883) Class52 local4883 = Static140.aClass109_1.method2779(int3);
-									if (local4883.aChar3 != int1) {
+									@Pc(4883) EnumType local4883 = EnumTypeList.enumTypeList.get(int3);
+									if (local4883.valueType != int1) {
 										throw new RuntimeException("C3409-1");
 									}
-									intStack[isp++] = local4883.method1771(local25 ) ? 1 : 0;
+									intStack[isp++] = local4883.containsValue(local25 ) ? 1 : 0;
 									return;
 								}
 								if (opcode == 3410) {
@@ -1589,17 +1589,17 @@ public final class ScriptRunner {
 									if (int1 == -1) {
 										throw new RuntimeException("C3410-2");
 									}
-									local4761 = Static140.aClass109_1.method2779(int1);
-									if (local4761.aChar3 != 's') {
+									local4761 = EnumTypeList.enumTypeList.get(int1);
+									if (local4761.valueType != 's') {
 										throw new RuntimeException("C3410-1");
 									}
-									intStack[isp++] = local4761.method1769(local1101) ? 1 : 0;
+									intStack[isp++] = local4761.containsValue(local1101) ? 1 : 0;
 									return;
 								}
 								if (opcode == 3411) {
 									int1 = intStack[--isp];
-									@Pc(4981) Class52 local4981 = Static140.aClass109_1.method2779(int1);
-									intStack[isp++] = local4981.aClass4_31.method83();
+									@Pc(4981) EnumType local4981 = EnumTypeList.enumTypeList.get(int1);
+									intStack[isp++] = local4981.table.method83();
 									return;
 								}
 							} else if (opcode < 3700) {
@@ -2098,7 +2098,7 @@ public final class ScriptRunner {
 									anInt3652 -= 2;
 									local3493 = stringStack[anInt3652];
 									local1101 = stringStack[anInt3652 + 1];
-									if (Static17.self.appearance != null && Static17.self.appearance.aBoolean220) {
+									if (Static17.self.appearance != null && Static17.self.appearance.female) {
 										stringStack[anInt3652++] = local1101;
 										return;
 									}
@@ -2257,7 +2257,7 @@ public final class ScriptRunner {
 								if (opcode < 4300) {
 									if (opcode == 4200) {
 										int1 = intStack[--isp];
-										stringStack[anInt3652++] = Static313.aClass107_2.get(int1).name;
+										stringStack[anInt3652++] = ObjTypeList.objTypeList.get(int1).name;
 										return;
 									}
 									@Pc(7803) ObjType local7803;
@@ -2265,7 +2265,7 @@ public final class ScriptRunner {
 										isp -= 2;
 										int1 = intStack[isp];
 										int3 = intStack[isp + 1];
-										local7803 = Static313.aClass107_2.get(int1);
+										local7803 = ObjTypeList.objTypeList.get(int1);
 										if (int3 >= 1 && int3 <= 5 && local7803.ops[int3 - 1] != null) {
 											stringStack[anInt3652++] = local7803.ops[int3 - 1];
 											return;
@@ -2277,7 +2277,7 @@ public final class ScriptRunner {
 										isp -= 2;
 										int1 = intStack[isp];
 										int3 = intStack[isp + 1];
-										local7803 = Static313.aClass107_2.get(int1);
+										local7803 = ObjTypeList.objTypeList.get(int1);
 										if (int3 >= 1 && int3 <= 5 && local7803.iOps[int3 - 1] != null) {
 											stringStack[anInt3652++] = local7803.iOps[int3 - 1];
 											return;
@@ -2287,18 +2287,18 @@ public final class ScriptRunner {
 									}
 									if (opcode == 4203) {
 										int1 = intStack[--isp];
-										intStack[isp++] = Static313.aClass107_2.get(int1).cost;
+										intStack[isp++] = ObjTypeList.objTypeList.get(int1).cost;
 										return;
 									}
 									if (opcode == 4204) {
 										int1 = intStack[--isp];
-										intStack[isp++] = Static313.aClass107_2.get(int1).stackable == 1 ? 1 : 0;
+										intStack[isp++] = ObjTypeList.objTypeList.get(int1).stackable == 1 ? 1 : 0;
 										return;
 									}
 									@Pc(7966) ObjType local7966;
 									if (opcode == 4205) {
 										int1 = intStack[--isp];
-										local7966 = Static313.aClass107_2.get(int1);
+										local7966 = ObjTypeList.objTypeList.get(int1);
 										if (local7966.certificateTemplate == -1 && local7966.certificateLink >= 0) {
 											intStack[isp++] = local7966.certificateLink;
 											return;
@@ -2308,7 +2308,7 @@ public final class ScriptRunner {
 									}
 									if (opcode == 4206) {
 										int1 = intStack[--isp];
-										local7966 = Static313.aClass107_2.get(int1);
+										local7966 = ObjTypeList.objTypeList.get(int1);
 										if (local7966.certificateTemplate >= 0 && local7966.certificateLink >= 0) {
 											intStack[isp++] = local7966.certificateLink;
 											return;
@@ -2318,7 +2318,7 @@ public final class ScriptRunner {
 									}
 									if (opcode == 4207) {
 										int1 = intStack[--isp];
-										intStack[isp++] = Static313.aClass107_2.get(int1).members ? 1 : 0;
+										intStack[isp++] = ObjTypeList.objTypeList.get(int1).members ? 1 : 0;
 										return;
 									}
 									if (opcode == 4208) {
@@ -2327,17 +2327,17 @@ public final class ScriptRunner {
 										int3 = intStack[isp + 1];
 										local8083 = Static363.aClass18_2.method565(int3);
 										if (local8083.method6262()) {
-											stringStack[anInt3652++] = Static313.aClass107_2.get(int1).method4772(local8083.aString69, int3);
+											stringStack[anInt3652++] = ObjTypeList.objTypeList.get(int1).method4772(local8083.aString69, int3);
 											return;
 										}
-										intStack[isp++] = Static313.aClass107_2.get(int1).method4771(local8083.anInt7023, int3);
+										intStack[isp++] = ObjTypeList.objTypeList.get(int1).method4771(local8083.anInt7023, int3);
 										return;
 									}
 									if (opcode == 4209) {
 										isp -= 2;
 										int1 = intStack[isp];
 										int3 = intStack[isp + 1] - 1;
-										local7803 = Static313.aClass107_2.get(int1);
+										local7803 = ObjTypeList.objTypeList.get(int1);
 										if (local7803.anInt5244 == int3) {
 											intStack[isp++] = local7803.anInt5204;
 											return;
@@ -3356,8 +3356,8 @@ public final class ScriptRunner {
 						if (opcode == 5401) {
 							isp -= 2;
 							Static257.aShortArray79[intStack[isp]] = (short) Static376.method6284(intStack[isp + 1]);
-							Static313.aClass107_2.method2767();
-							Static313.aClass107_2.method2760();
+							ObjTypeList.objTypeList.method2767();
+							ObjTypeList.objTypeList.method2760();
 							Static6.aClass219_1.method5571();
 							Static98.method2107();
 							return;

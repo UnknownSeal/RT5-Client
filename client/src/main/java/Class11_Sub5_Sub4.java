@@ -135,10 +135,10 @@ public final class Class11_Sub5_Sub4 extends Class11_Sub5 {
 			return;
 		}
 		this.anInt6524 += arg0;
-		while (this.anInt6524 > this.aClass157_3.anIntArray261[this.anInt6509]) {
-			this.anInt6524 -= this.aClass157_3.anIntArray261[this.anInt6509];
+		while (this.anInt6524 > this.aClass157_3.frameDelay[this.anInt6509]) {
+			this.anInt6524 -= this.aClass157_3.frameDelay[this.anInt6509];
 			this.anInt6509++;
-			if (this.anInt6509 >= this.aClass157_3.anIntArray262.length) {
+			if (this.anInt6509 >= this.aClass157_3.frames.length) {
 				this.aBoolean445 = true;
 				break;
 			}

@@ -39,7 +39,7 @@ public final class Static307 {
 	public static void method5255(@OriginalArg(0) int arg0, @OriginalArg(1) Npc arg1, @OriginalArg(3) int arg2) {
 		if (arg0 == arg1.anInt4597 && arg0 != -1) {
 			@Pc(78) Class157 local78 = Static39.aClass85_1.method2371(arg0);
-			@Pc(81) int local81 = local78.anInt4022;
+			@Pc(81) int local81 = local78.exactmove;
 			if (local81 == 1) {
 				arg1.anInt4592 = 1;
 				arg1.anInt4624 = 0;
@@ -51,7 +51,7 @@ public final class Static307 {
 			if (local81 == 2) {
 				arg1.anInt4598 = 0;
 			}
-		} else if (arg0 == -1 || arg1.anInt4597 == -1 || Static39.aClass85_1.method2371(arg0).anInt4023 >= Static39.aClass85_1.method2371(arg1.anInt4597).anInt4023) {
+		} else if (arg0 == -1 || arg1.anInt4597 == -1 || Static39.aClass85_1.method2371(arg0).priority >= Static39.aClass85_1.method2371(arg1.anInt4597).priority) {
 			arg1.anInt4597 = arg0;
 			arg1.anInt4598 = 0;
 			arg1.anInt4607 = 0;

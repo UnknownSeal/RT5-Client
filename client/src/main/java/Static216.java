@@ -37,7 +37,7 @@ public final class Static216 {
 				} else {
 					local44 = (int) Static277.aFloat67 + Static6.anInt158 & 0x3FFF;
 				}
-				@Pc(58) int local58 = Class19.anIntArray178[local44];
+				@Pc(58) int local58 = Class19.SINE[local44];
 				@Pc(62) int local62 = Class19.COSINE[local44];
 				if (Static314.anInt5911 != 4) {
 					local62 = local62 * 256 / (Static97.anInt2005 + 256);
