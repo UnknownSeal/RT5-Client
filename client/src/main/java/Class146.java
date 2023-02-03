@@ -48,9 +48,9 @@ public final class Class146 {
 	}
 
 	@OriginalMember(owner = "client!md", name = "a", descriptor = "(ZZILclient!wm;)Lclient!jd;")
-	public Class13 method3710(@OriginalArg(0) boolean arg0, @OriginalArg(2) int arg1, @OriginalArg(3) Class19 arg2) {
+	public Sprite method3710(@OriginalArg(0) boolean arg0, @OriginalArg(2) int arg1, @OriginalArg(3) Class19 arg2) {
 		@Pc(24) long local24 = (long) (this.anInt3751 | arg1 << 16 | (arg0 ? 262144 : 0) | arg2.anInt2836 << 19);
-		@Pc(32) Class13 local32 = (Class13) this.aClass104_1.aSoftLruHashTable_20.get(local24);
+		@Pc(32) Sprite local32 = (Sprite) this.aClass104_1.aSoftLruHashTable_20.get(local24);
 		if (local32 != null) {
 			return local32;
 		} else if (this.aClass104_1.aJs5_39.isFileReady(this.anInt3751)) {

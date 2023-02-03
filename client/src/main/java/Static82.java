@@ -23,7 +23,7 @@ public final class Static82 {
 	public static final Class145 aClass145_64 = new Class145(25, 2);
 
 	@OriginalMember(owner = "client!em", name = "i", descriptor = "I")
-	public static int anInt1836 = 0;
+	public static int length = 0;
 
 	@OriginalMember(owner = "client!em", name = "j", descriptor = "[I")
 	public static final int[] anIntArray120 = new int[13];

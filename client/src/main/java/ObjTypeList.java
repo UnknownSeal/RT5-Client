@@ -91,7 +91,7 @@ public final class ObjTypeList {
 	}
 
 	@OriginalMember(owner = "client!io", name = "a", descriptor = "(IIILclient!jo;Lclient!wm;III)Lclient!jd;")
-	public Class13 method2758(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) PlayerAppearance arg2, @OriginalArg(4) Class19 arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6) {
+	public Sprite method2758(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) PlayerAppearance arg2, @OriginalArg(4) Class19 arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6) {
 		this.aClass53_1.aBoolean128 = arg2 != null;
 		this.aClass53_1.anInt1645 = arg6;
 		this.aClass53_1.anInt1644 = arg1;
@@ -99,7 +99,7 @@ public final class ObjTypeList {
 		this.aClass53_1.anInt1640 = arg4;
 		this.aClass53_1.anInt1642 = arg5;
 		this.aClass53_1.anInt1641 = arg0;
-		return (Class13) this.aClass97_1.method2596(this.aClass53_1);
+		return (Sprite) this.aClass97_1.method2596(this.aClass53_1);
 	}
 
 	@OriginalMember(owner = "client!io", name = "b", descriptor = "(II)Lclient!qf;")
@@ -223,8 +223,8 @@ public final class ObjTypeList {
 	}
 
 	@OriginalMember(owner = "client!io", name = "a", descriptor = "(ILclient!ur;ILclient!wm;ZIZLclient!jo;ILclient!wm;IB)Lclient!jd;")
-	public Class13 method2769(@OriginalArg(0) int arg0, @OriginalArg(1) Class130 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class19 arg3, @OriginalArg(4) boolean arg4, @OriginalArg(5) int arg5, @OriginalArg(6) boolean arg6, @OriginalArg(7) PlayerAppearance arg7, @OriginalArg(8) int arg8, @OriginalArg(9) Class19 arg9, @OriginalArg(10) int arg10) {
-		@Pc(22) Class13 local22 = this.method2758(arg8, arg0, arg7, arg3, arg5, arg10, arg2);
+	public Sprite method2769(@OriginalArg(0) int arg0, @OriginalArg(1) Class130 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class19 arg3, @OriginalArg(4) boolean arg4, @OriginalArg(5) int arg5, @OriginalArg(6) boolean arg6, @OriginalArg(7) PlayerAppearance arg7, @OriginalArg(8) int arg8, @OriginalArg(9) Class19 arg9, @OriginalArg(10) int arg10) {
+		@Pc(22) Sprite local22 = this.method2758(arg8, arg0, arg7, arg3, arg5, arg10, arg2);
 		if (local22 != null) {
 			return local22;
 		}
@@ -244,7 +244,7 @@ public final class ObjTypeList {
 		if (local97 == null) {
 			return null;
 		}
-		@Pc(111) Class13 local111;
+		@Pc(111) Sprite local111;
 		if (arg4) {
 			local111 = arg9.method2884(local97, 36, 36, 32);
 		} else {

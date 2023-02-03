@@ -20,7 +20,7 @@ public final class Static262 {
 		}
 		@Pc(37) int local37 = Math.min(arg5.width / 2, arg5.height / 2);
 		if (local37 * local37 >= local19) {
-			Static376.renderDot(arg6, arg2, arg7, arg3, Static123.aClass13Array10[arg0], arg4, arg5);
+			Static376.renderDot(arg6, arg2, arg7, arg3, Static123.aSpriteArray10[arg0], arg4, arg5);
 			return;
 		}
 		local37 -= 10;
@@ -41,7 +41,7 @@ public final class Static262 {
 		@Pc(129) double local129 = Math.atan2((double) local112, (double) local123);
 		@Pc(136) int local136 = (int) (Math.sin(local129) * (double) local37);
 		@Pc(143) int local143 = (int) ((double) local37 * Math.cos(local129));
-		Static116.aClass13Array8[arg0].method6385((float) arg5.width / 2.0F + (float) arg7 + (float) local136, (float) -local143 + (float) arg5.height / 2.0F + (float) arg4, 4096, (int) (-local129 / 6.283185307179586D * 65535.0D));
+		Static116.aSpriteArray8[arg0].method6385((float) arg5.width / 2.0F + (float) arg7 + (float) local136, (float) -local143 + (float) arg5.height / 2.0F + (float) arg4, 4096, (int) (-local129 / 6.283185307179586D * 65535.0D));
 	}
 
 	@OriginalMember(owner = "client!pa", name = "a", descriptor = "(ILclient!qg;)V")
@@ -76,7 +76,7 @@ public final class Static262 {
 			message = Static200.method3646(message, "%26", "&");
 			message = Static200.method3646(message, "%23", "#");
 			if (Static392.signlink.applet != null) {
-				@Pc(103) PrivelegedRequest local103 = Static392.signlink.method3765(new URL(Static392.signlink.applet.getCodeBase(), "clienterror.ws?c=" + Static277.clientVersion + "&u=" + Static241.aLong130 + "&v1=" + SignLink.javaVendor + "&v2=" + SignLink.javaVersion + "&e=" + message));
+				@Pc(103) PrivelegedRequest local103 = Static392.signlink.method3765(new URL(Static392.signlink.applet.getCodeBase(), "clienterror.ws?c=" + Static277.clientVersion + "&u=" + Static241.encodedUsername + "&v1=" + SignLink.javaVendor + "&v2=" + SignLink.javaVersion + "&e=" + message));
 				while (local103.status == 0) {
 					Static231.sleep(1L);
 				}

@@ -1044,8 +1044,8 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 
 	@OriginalMember(owner = "client!bf", name = "a", descriptor = "([IIIII)Lclient!jd;")
 	@Override
-	public Class13 method2884(@OriginalArg(0) int[] arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {
-		return new Class13_Sub2(this, arg2, arg3, arg0, 0, arg1);
+	public Sprite method2884(@OriginalArg(0) int[] arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {
+		return new Sprite_Sub2(this, arg2, arg3, arg0, 0, arg1);
 	}
 
 	@OriginalMember(owner = "client!bf", name = "P", descriptor = "()V")
@@ -1598,8 +1598,8 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 
 	@OriginalMember(owner = "client!bf", name = "a", descriptor = "(IIIIZ)Lclient!jd;")
 	@Override
-	public Class13 method2818(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) boolean arg4) {
-		return new Class13_Sub2(this, arg0, arg1, arg2, arg3);
+	public Sprite method2818(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) boolean arg4) {
+		return new Sprite_Sub2(this, arg0, arg1, arg2, arg3);
 	}
 
 	@OriginalMember(owner = "client!bf", name = "W", descriptor = "()V")
@@ -1885,7 +1885,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 
 	@OriginalMember(owner = "client!bf", name = "a", descriptor = "(Lclient!dk;Z)Lclient!jd;")
 	@Override
-	public Class13 method2891(@OriginalArg(0) SoftwareSprite arg0) {
+	public Sprite method2891(@OriginalArg(0) SoftwareSprite arg0) {
 		@Pc(6) int[] local6 = new int[arg0.anInt1531 * arg0.anInt1533];
 		@Pc(8) int local8 = 0;
 		@Pc(10) int local10 = 0;
@@ -1906,7 +1906,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 				}
 			}
 		}
-		@Pc(100) Class13 local100 = this.method2884(local6, arg0.anInt1531, arg0.anInt1531, arg0.anInt1533);
+		@Pc(100) Sprite local100 = this.method2884(local6, arg0.anInt1531, arg0.anInt1531, arg0.anInt1533);
 		local100.method6390(arg0.anInt1535, arg0.anInt1530, arg0.anInt1532, arg0.anInt1534);
 		return local100;
 	}

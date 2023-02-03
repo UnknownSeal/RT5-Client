@@ -857,10 +857,10 @@ public final class Component {
 	}
 
 	@OriginalMember(owner = "client!nk", name = "a", descriptor = "(ZLclient!wm;)Lclient!jd;")
-	public Class13 method4112(@OriginalArg(1) Class19 arg0) {
+	public Sprite method4112(@OriginalArg(1) Class19 arg0) {
 		Static86.aBoolean133 = false;
 		@Pc(48) long local48 = ((this.horizontalFlip ? 1L : 0L) << 38) + ((this.alpha ? 1L : 0L) << 35) + (long) this.graphic + ((long) this.outline << 36) + ((this.verticalFlip ? 1L : 0L) << 39) + ((long) this.graphicShadow << 40);
-		@Pc(54) Class13 local54 = (Class13) Static335.A_SOFT_LRU_HASH_TABLE___57.get(local48);
+		@Pc(54) Sprite local54 = (Sprite) Static335.A_SOFT_LRU_HASH_TABLE___57.get(local48);
 		if (local54 != null) {
 			return local54;
 		}

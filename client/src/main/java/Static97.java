@@ -26,8 +26,8 @@ public final class Static97 {
 	public static void method2087(@OriginalArg(0) String arg0, @OriginalArg(1) String arg1, @OriginalArg(2) int arg2) {
 		Static374.username = arg1;
 		Static202.anInt3714 = arg2;
-		Static16.aString51 = arg0;
-		if (Static374.username.equals("") || Static16.aString51.equals("")) {
+		Static16.password = arg0;
+		if (Static374.username.equals("") || Static16.password.equals("")) {
 			Static41.reply = 3;
 		} else if (client.worldID == -1) {
 			Static60.anInt666 = 0;
@@ -37,13 +37,13 @@ public final class Static97 {
 			@Pc(40) Buffer local40 = new Buffer(128);
 			local40.p1(10);
 			local40.p4((int) (Math.random() * 9.9999999E7D));
-			local40.p8(Static80.method5984(Static374.username));
+			local40.p8(Static80.encode(Static374.username));
 			local40.p4((int) (Math.random() * 9.9999999E7D));
-			local40.pjstr(Static16.aString51);
+			local40.pjstr(Static16.password);
 			local40.p4((int) (Math.random() * 9.9999999E7D));
-			local40.rsaenc(Static320.aBigInteger2, Static194.aBigInteger1);
+			local40.rsaEncrypt(Static194.EXPONENT, Static320.MODULUS);
 			Static257.outboundBuffer.offset = 0;
-			Static257.outboundBuffer.p1(Static43.aClass242_10.anInt7038);
+			Static257.outboundBuffer.p1(Static43.aClass242_10.value);
 			Static257.outboundBuffer.p1(local40.offset + 2);
 			Static257.outboundBuffer.p2(578);
 			Static257.outboundBuffer.pdata(local40.bytes, local40.offset);

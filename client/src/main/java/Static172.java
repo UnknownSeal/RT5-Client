@@ -34,7 +34,7 @@ public final class Static172 {
 			Static322.method5481(true, local10, arg0, 0, 0, arg2, 0, local22);
 			return;
 		}
-		@Pc(59) Class41 local59 = Static359.aClass202_4.method5162(local29);
+		@Pc(59) Class41 local59 = LocTypeList.locTypeList.method5162(local29);
 		@Pc(75) int local75;
 		@Pc(72) int local72;
 		if (local22 == 0 || local22 == 2) {

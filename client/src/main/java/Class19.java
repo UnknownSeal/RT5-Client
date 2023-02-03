@@ -85,7 +85,7 @@ public abstract class Class19 {
 	public abstract void method2817(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3);
 
 	@OriginalMember(owner = "client!wm", name = "a", descriptor = "(IIIIZ)Lclient!jd;")
-	public abstract Class13 method2818(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) boolean arg4);
+	public abstract Sprite method2818(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) boolean arg4);
 
 	@OriginalMember(owner = "client!wm", name = "l", descriptor = "()V")
 	public abstract void method2819();
@@ -294,7 +294,7 @@ public abstract class Class19 {
 	public abstract void method2883();
 
 	@OriginalMember(owner = "client!wm", name = "a", descriptor = "([IIIII)Lclient!jd;")
-	public abstract Class13 method2884(@OriginalArg(0) int[] arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3);
+	public abstract Sprite method2884(@OriginalArg(0) int[] arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3);
 
 	@OriginalMember(owner = "client!wm", name = "D", descriptor = "()I")
 	public abstract int method2886();
@@ -314,7 +314,7 @@ public abstract class Class19 {
 	}
 
 	@OriginalMember(owner = "client!wm", name = "a", descriptor = "(Lclient!dk;Z)Lclient!jd;")
-	public abstract Class13 method2891(@OriginalArg(0) SoftwareSprite arg0);
+	public abstract Sprite method2891(@OriginalArg(0) SoftwareSprite arg0);
 
 	@OriginalMember(owner = "client!wm", name = "G", descriptor = "()Z")
 	public abstract boolean method2892();

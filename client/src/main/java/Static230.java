@@ -8,10 +8,10 @@ public final class Static230 {
 	public static byte[][][] aByteArrayArrayArray13;
 
 	@OriginalMember(owner = "client!ne", name = "B", descriptor = "[Lclient!jd;")
-	public static Class13[] aClass13Array16;
+	public static Sprite[] headHints;
 
 	@OriginalMember(owner = "client!ne", name = "H", descriptor = "Lclient!h;")
-	public static final Class89 aClass89_163 = new Class89(102, 12);
+	public static final Class89 HINT_ARROW = new Class89(102, 12);
 
 	@OriginalMember(owner = "client!ne", name = "a", descriptor = "(IIIII)V")
 	public static void method4011(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {
@@ -75,10 +75,10 @@ public final class Static230 {
 	@OriginalMember(owner = "client!ne", name = "b", descriptor = "(IIIII)V")
 	public static void method4015(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {
 		if (Static93.anInt1951 == 1) {
-			Static288.aClass13Array21[Static313.anInt5878 / 100].method6384(Static320.anInt6005 - 8, Static291.anInt5504 + -8);
+			Static288.aSpriteArray21[Static313.anInt5878 / 100].method6384(Static320.anInt6005 - 8, Static291.anInt5504 + -8);
 		}
 		if (Static93.anInt1951 == 2) {
-			Static288.aClass13Array21[Static313.anInt5878 / 100 + 4].method6384(Static320.anInt6005 - 8, Static291.anInt5504 - 8);
+			Static288.aSpriteArray21[Static313.anInt5878 / 100 + 4].method6384(Static320.anInt6005 - 8, Static291.anInt5504 - 8);
 		}
 		Static290.setTutorialIsland();
 	}

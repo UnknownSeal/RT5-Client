@@ -11,18 +11,15 @@ public final class Static347 {
 	@OriginalMember(owner = "client!ub", name = "Z", descriptor = "I")
 	public static int step = 0;
 
-	@OriginalMember(owner = "client!ub", name = "bb", descriptor = "I")
-	public static int anInt6442 = 0;
-
 	@OriginalMember(owner = "client!ub", name = "cb", descriptor = "I")
 	public static int anInt6443 = 0;
 
 	@OriginalMember(owner = "client!ub", name = "c", descriptor = "(Z)V")
 	public static void method5826() {
-		if (anInt6442 == 10) {
+		if (client.gameState == 10) {
 			Static336.method5704(28);
 		}
-		if (anInt6442 == 30) {
+		if (client.gameState == 30) {
 			Static336.method5704(25);
 		}
 	}

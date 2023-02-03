@@ -9,7 +9,7 @@ public final class Static116 {
 	public static Js5 songArchive;
 
 	@OriginalMember(owner = "client!go", name = "s", descriptor = "[Lclient!jd;")
-	public static Class13[] aClass13Array8;
+	public static Sprite[] aSpriteArray8;
 
 	@OriginalMember(owner = "client!go", name = "i", descriptor = "I")
 	public static int anInt2357 = 0;

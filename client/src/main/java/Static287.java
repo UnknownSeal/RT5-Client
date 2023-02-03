@@ -44,7 +44,7 @@ public final class Static287 {
 		if (arg1 == 11) {
 			arg1 = 10;
 		}
-		@Pc(15) Class41 local15 = Static359.aClass202_4.method5162(arg0);
+		@Pc(15) Class41 local15 = LocTypeList.locTypeList.method5162(arg0);
 		if (arg1 >= 5 && arg1 <= 8) {
 			arg1 = 4;
 		}

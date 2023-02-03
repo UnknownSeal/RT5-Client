@@ -24,26 +24,26 @@ public final class Static80 {
 	}
 
 	@OriginalMember(owner = "client!ek", name = "a", descriptor = "(BLjava/lang/String;)J")
-	public static long method5984(@OriginalArg(1) String arg0) {
-		@Pc(5) long local5 = 0L;
-		@Pc(8) int local8 = arg0.length();
-		for (@Pc(10) int local10 = 0; local10 < local8; local10++) {
-			local5 *= 37L;
-			@Pc(19) char local19 = arg0.charAt(local10);
-			if (local19 >= 'A' && local19 <= 'Z') {
-				local5 += local19 + 1 - 65;
-			} else if (local19 >= 'a' && local19 <= 'z') {
-				local5 += local19 - 96;
-			} else if (local19 >= '0' && local19 <= '9') {
-				local5 += local19 + 27 - 48;
+	public static long encode(@OriginalArg(1) String s) {
+		@Pc(5) long out = 0L;
+		@Pc(8) int length = s.length();
+		for (@Pc(10) int i = 0; i < length; i++) {
+			out *= 37L;
+			@Pc(19) char c = s.charAt(i);
+			if (c >= 'A' && c <= 'Z') {
+				out += c + 1 - 65;
+			} else if (c >= 'a' && c <= 'z') {
+				out += c - 96;
+			} else if (c >= '0' && c <= '9') {
+				out += c + 27 - 48;
 			}
-			if (local5 >= 177917621779460413L) {
+			if (out >= 177917621779460413L) {
 				break;
 			}
 		}
-		while (local5 % 37L == 0L && local5 != 0L) {
-			local5 /= 37L;
+		while (out % 37L == 0L && out != 0L) {
+			out /= 37L;
 		}
-		return local5;
+		return out;
 	}
 }

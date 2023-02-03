@@ -47,7 +47,7 @@ public final class Static49 {
 		for (local29 = 0; local29 < local89.length; local29++) {
 			local89[local29] = -16777216;
 		}
-		Static292.aClass13_15 = arg0.method2884(local89, 512, 512, 512);
+		Static292.aSprite_15 = arg0.method2884(local89, 512, 512, 512);
 		Static99.method2146();
 		local40 = (int) (Math.random() * 20.0D) + ((int) (Math.random() * 20.0D) + 238 - 10 << 8) + ((int) (Math.random() * 20.0D) + 238 + -10 << 16) + 238 - 10 | 0xFF000000;
 		@Pc(162) int local162 = ((int) (Math.random() * 20.0D) + 238 - 10 | 0xFF00) << 16;
@@ -112,7 +112,7 @@ public final class Static49 {
 					}
 				}
 				arg0.method2901(0, 0, Static285.anInt5368 * 4, Static285.anInt5368 * 4, local189, 2);
-				Static292.aClass13_15.method6389((local195 - local11) * 4 + 48, 464 - (-local17 + local199) * 4 - Static285.anInt5368 * 4, Static285.anInt5368 * 4, Static285.anInt5368 * 4);
+				Static292.aSprite_15.method6389((local195 - local11) * 4 + 48, 464 - (-local17 + local199) * 4 - Static285.anInt5368 * 4, Static285.anInt5368 * 4, Static285.anInt5368 * 4);
 			}
 		}
 		arg0.method2898();
@@ -136,13 +136,13 @@ public final class Static49 {
 								local621 = (Interface6) Static28.method893(local220, local199, local216);
 							}
 							if (local621 != null) {
-								@Pc(662) Class41 local662 = Static359.aClass202_4.method5162(local621.method6084());
+								@Pc(662) Class41 local662 = LocTypeList.locTypeList.method5162(local621.method6084());
 								if (!local662.aBoolean111 || Static206.mapMembers) {
 									local284 = local662.anInt1306;
 									if (local662.anIntArray94 != null) {
 										for (local288 = 0; local288 < local662.anIntArray94.length; local288++) {
 											if (local662.anIntArray94[local288] != -1) {
-												@Pc(691) Class41 local691 = Static359.aClass202_4.method5162(local662.anIntArray94[local288]);
+												@Pc(691) Class41 local691 = LocTypeList.locTypeList.method5162(local662.anIntArray94[local288]);
 												if (local691.anInt1306 >= 0) {
 													local284 = local691.anInt1306;
 												}

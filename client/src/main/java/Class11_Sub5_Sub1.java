@@ -165,7 +165,7 @@ public final class Class11_Sub5_Sub1 extends Class11_Sub5 implements Interface6 
 
 	@OriginalMember(owner = "client!fm", name = "a", descriptor = "(BZLclient!wm;I)Lclient!ij;")
 	private Class105 method2147(@OriginalArg(1) boolean arg0, @OriginalArg(2) Class19 arg1, @OriginalArg(3) int arg2) {
-		@Pc(13) Class41 local13 = Static359.aClass202_4.method5162(this.aShort34 & 0xFFFF);
+		@Pc(13) Class41 local13 = LocTypeList.locTypeList.method5162(this.aShort34 & 0xFFFF);
 		@Pc(21) Class6 local21;
 		@Pc(32) Class6 local32;
 		if (this.aBoolean154) {

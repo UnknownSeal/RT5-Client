@@ -6,7 +6,7 @@ public final class Static124 {
 	public static String[] aStringArray65;
 
 	@OriginalMember(owner = "client!hb", name = "m", descriptor = "[Lclient!jd;")
-	public static Class13[] aClass13Array27;
+	public static Sprite[] aSpriteArray27;
 
 	@OriginalMember(owner = "client!hb", name = "h", descriptor = "Lclient!hu;")
 	public static final SoftLruHashTable A_SOFT_LRU_HASH_TABLE___63 = new SoftLruHashTable(50);

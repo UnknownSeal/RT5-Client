@@ -14,7 +14,7 @@ public final class Static62 {
 	public static Class42 aClass42_5;
 
 	@OriginalMember(owner = "client!dm", name = "r", descriptor = "[Lclient!jd;")
-	public static Class13[] aClass13Array9;
+	public static Sprite[] aSpriteArray9;
 
 	@OriginalMember(owner = "client!dm", name = "a", descriptor = "(BLclient!r;)V")
 	public static void method2390(@OriginalArg(1) Js5 arg0) {

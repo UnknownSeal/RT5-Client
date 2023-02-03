@@ -9,7 +9,7 @@ public final class Static76 {
 	public static Class130 aClass130_2;
 
 	@OriginalMember(owner = "client!eg", name = "e", descriptor = "[Lclient!jd;")
-	public static Class13[] mapDots;
+	public static Sprite[] mapDots;
 
 	@OriginalMember(owner = "client!eg", name = "c", descriptor = "I")
 	public static final int anInt1738 = 328;

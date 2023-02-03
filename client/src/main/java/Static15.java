@@ -10,7 +10,7 @@ public final class Static15 {
 	public static int anInt366;
 
 	@OriginalMember(owner = "client!ar", name = "U", descriptor = "[Lclient!jd;")
-	public static Class13[] aClass13Array3;
+	public static Sprite[] aSpriteArray3;
 
 	@OriginalMember(owner = "client!ar", name = "a", descriptor = "(IJ)Ljava/lang/String;")
 	public static String formatHttpDate(@OriginalArg(1) long arg0) {
@@ -43,7 +43,7 @@ public final class Static15 {
 		} else {
 			arg0 = 0;
 		}
-		@Pc(39) Class13 local39 = local9.method3710(arg1.aBoolean118, arg0, arg4);
+		@Pc(39) Sprite local39 = local9.method3710(arg1.aBoolean118, arg0, arg4);
 		if (local39 == null) {
 			return;
 		}

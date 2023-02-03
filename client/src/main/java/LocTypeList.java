@@ -4,8 +4,10 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!rh")
-public final class Class202 {
+public final class LocTypeList {
 
+	@OriginalMember(owner = "client!us", name = "S", descriptor = "Lclient!rh;")
+	public static LocTypeList locTypeList;
 	@OriginalMember(owner = "client!rh", name = "v", descriptor = "I")
 	public int anInt5669;
 
@@ -28,7 +30,7 @@ public final class Class202 {
 	private final Js5 aJs5_79;
 
 	@OriginalMember(owner = "client!rh", name = "o", descriptor = "Z")
-	public boolean aBoolean401;
+	public boolean allowMembers;
 
 	@OriginalMember(owner = "client!rh", name = "d", descriptor = "Lclient!r;")
 	public final Js5 aJs5_78;
@@ -38,9 +40,9 @@ public final class Class202 {
 	}
 
 	@OriginalMember(owner = "client!rh", name = "<init>", descriptor = "(Lclient!dn;IZLclient!r;Lclient!r;)V")
-	public Class202(@OriginalArg(0) GameType arg0, @OriginalArg(1) int arg1, @OriginalArg(2) boolean arg2, @OriginalArg(3) Js5 arg3, @OriginalArg(4) Js5 arg4) {
+	public LocTypeList(@OriginalArg(0) GameType arg0, @OriginalArg(1) int arg1, @OriginalArg(2) boolean arg2, @OriginalArg(3) Js5 arg3, @OriginalArg(4) Js5 arg4) {
 		this.aJs5_79 = arg3;
-		this.aBoolean401 = arg2;
+		this.allowMembers = arg2;
 		this.aJs5_78 = arg4;
 		if (this.aJs5_79 != null) {
 			@Pc(47) int local47 = this.aJs5_79.capacity() - 1;
@@ -66,10 +68,10 @@ public final class Class202 {
 	}
 
 	@OriginalMember(owner = "client!rh", name = "a", descriptor = "(BZ)V")
-	public void setAllowMembers(@OriginalArg(1) boolean arg0) {
-		if (arg0 != this.aBoolean401) {
-			this.aBoolean401 = arg0;
-			this.method5158();
+	public void setAllowMembers(@OriginalArg(1) boolean allowMembers) {
+		if (allowMembers != this.allowMembers) {
+			this.allowMembers = allowMembers;
+			this.clear();
 		}
 	}
 
@@ -94,7 +96,7 @@ public final class Class202 {
 	}
 
 	@OriginalMember(owner = "client!rh", name = "a", descriptor = "(I)V")
-	public void method5158() {
+	public void clear() {
 		@Pc(2) SoftLruHashTable local2 = this.aSoftLruHashTable_45;
 		synchronized (this.aSoftLruHashTable_45) {
 			this.aSoftLruHashTable_45.clear();
@@ -117,7 +119,7 @@ public final class Class202 {
 	public void method5159(@OriginalArg(1) boolean arg0) {
 		if (arg0 != this.aBoolean400) {
 			this.aBoolean400 = arg0;
-			this.method5158();
+			this.clear();
 		}
 	}
 
@@ -159,7 +161,7 @@ public final class Class202 {
 		@Pc(37) byte[] local37 = this.aJs5_79.fetchFile(Static324.method5539(arg0), Static381.method6347(arg0));
 		local16 = new Class41();
 		local16.anInt1351 = arg0;
-		local16.aClass202_1 = this;
+		local16.aLocTypeList_1 = this;
 		if (local37 != null) {
 			local16.method1526(new Buffer(local37));
 		}
@@ -168,7 +170,7 @@ public final class Class202 {
 			local16.anInt1324 = 0;
 			local16.aBoolean114 = false;
 		}
-		if (!this.aBoolean401 && local16.aBoolean111) {
+		if (!this.allowMembers && local16.aBoolean111) {
 			local16.anIntArray96 = null;
 			local16.aStringArray10 = null;
 		}

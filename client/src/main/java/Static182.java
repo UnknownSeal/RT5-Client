@@ -89,11 +89,11 @@ public final class Static182 {
 	@OriginalMember(owner = "client!kk", name = "b", descriptor = "(B)V")
 	public static void method3387() {
 		Static257.outboundBuffer.offset = 0;
-		Static82.anInt1836 = 0;
+		Static82.length = 0;
 		Static39.aClass89_35 = null;
 		Static151.anInt2773 = 0;
 		Static334.aClass89_222 = null;
-		Static231.aClass89_164 = null;
+		Static231.packetInbound = null;
 		Static268.anInt4955 = 0;
 		Static212.inboundBuffer.offset = 0;
 		Static66.aClass89_57 = null;

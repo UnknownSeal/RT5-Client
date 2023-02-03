@@ -146,8 +146,8 @@ public final class Class164 {
 	}
 
 	@OriginalMember(owner = "client!np", name = "a", descriptor = "(BLclient!wm;)Lclient!jd;")
-	public Class13 method4182(@OriginalArg(1) Class19 arg0) {
-		@Pc(28) Class13 local28 = (Class13) this.aClass125_2.aSoftLruHashTable_27.get((long) (this.anInt4413 | 0x20000 | arg0.anInt2836 << 29));
+	public Sprite method4182(@OriginalArg(1) Class19 arg0) {
+		@Pc(28) Sprite local28 = (Sprite) this.aClass125_2.aSoftLruHashTable_27.get((long) (this.anInt4413 | 0x20000 | arg0.anInt2836 << 29));
 		if (local28 != null) {
 			return local28;
 		}
@@ -292,10 +292,10 @@ public final class Class164 {
 	}
 
 	@OriginalMember(owner = "client!np", name = "a", descriptor = "(Lclient!wm;ZZ)Lclient!jd;")
-	public Class13 method4188(@OriginalArg(0) Class19 arg0, @OriginalArg(2) boolean arg1) {
+	public Sprite method4188(@OriginalArg(0) Class19 arg0, @OriginalArg(2) boolean arg1) {
 		@Pc(17) int local17 = arg1 ? this.anInt4438 : this.anInt4420;
 		@Pc(24) int local24 = local17 | arg0.anInt2836 << 29;
-		@Pc(33) Class13 local33 = (Class13) this.aClass125_2.aSoftLruHashTable_27.get((long) local24);
+		@Pc(33) Sprite local33 = (Sprite) this.aClass125_2.aSoftLruHashTable_27.get((long) local24);
 		if (local33 != null) {
 			return local33;
 		} else if (this.aClass125_2.aJs5_50.isFileReady(local17)) {

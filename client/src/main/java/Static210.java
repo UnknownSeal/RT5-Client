@@ -20,7 +20,7 @@ public final class Static210 {
 	public static final Class89 aClass89_156 = new Class89(7, 2);
 
 	@OriginalMember(owner = "client!mg", name = "B", descriptor = "I")
-	public static int anInt3774 = 0;
+	public static int blackmarks = 0;
 
 	@OriginalMember(owner = "client!mg", name = "C", descriptor = "[I")
 	public static final int[] anIntArray229 = new int[4];

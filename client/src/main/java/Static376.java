@@ -19,7 +19,7 @@ public final class Static376 {
 		if (local10 < 0 || Static373.anInt7033 <= local10 || local15 < 0 || Static242.anInt4449 <= local15 || (arg1 < 0 || Static373.anInt7033 <= arg1 || arg2 < 0 || Static242.anInt4449 <= arg2)) {
 			return;
 		}
-		@Pc(85) int local85 = Static141.method2654(true, Static52.anIntArray99, 0, -4, 0, 0, Static171.collisionMap[arg0.aByte78], local10, 0, arg1, Static59.anIntArray105, arg0.method4327(), arg2, local15);
+		@Pc(85) int local85 = Static141.findPath1(true, Static52.anIntArray99, 0, -4, 0, 0, Static171.collisionMap[arg0.aByte78], local10, 0, arg1, Static59.anIntArray105, arg0.method4327(), arg2, local15);
 		if (local85 >= 1 && local85 <= 3) {
 			for (@Pc(97) int local97 = 0; local97 < local85 - 1; local97++) {
 				arg0.method4070(Static59.anIntArray105[local97], (byte) 2, Static52.anIntArray99[local97]);
@@ -100,7 +100,7 @@ public final class Static376 {
 	}
 
 	@OriginalMember(owner = "client!vt", name = "a", descriptor = "(Lclient!kf;IIILclient!jd;ILclient!nk;B)V")
-	public static void renderDot(@OriginalArg(0) Class78 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) Class13 arg4, @OriginalArg(5) int arg5, @OriginalArg(6) Component arg6) {
+	public static void renderDot(@OriginalArg(0) Class78 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) Sprite arg4, @OriginalArg(5) int arg5, @OriginalArg(6) Component arg6) {
 		if (arg4 == null) {
 			return;
 		}

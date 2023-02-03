@@ -42,7 +42,7 @@ public final class Static322 {
 		if (local13 < 0 || Static373.anInt7033 <= local13 || local18 < 0 || Static242.anInt4449 <= local18) {
 			return false;
 		} else if (arg5 >= 0 && arg5 < Static373.anInt7033 && arg2 >= 0 && arg2 < Static242.anInt4449) {
-			@Pc(88) int local88 = Static141.method2654(arg0, Static52.anIntArray99, arg6, arg1, arg7, arg3, Static171.collisionMap[Static17.self.aByte78], local13, arg4, arg5, Static59.anIntArray105, Static17.self.method4327(), arg2, local18);
+			@Pc(88) int local88 = Static141.findPath1(arg0, Static52.anIntArray99, arg6, arg1, arg7, arg3, Static171.collisionMap[Static17.self.aByte78], local13, arg4, arg5, Static59.anIntArray105, Static17.self.method4327(), arg2, local18);
 			if (local88 < 1) {
 				return false;
 			}
@@ -267,7 +267,7 @@ public final class Static322 {
 		Static211.method3720();
 		Static3.aBoolean5 = false;
 		Static50.method1530();
-		if (GameShell.frame != null && Static335.socket != null && Static347.anInt6442 == 25) {
+		if (GameShell.frame != null && Static335.socket != null && client.gameState == 25) {
 			Static91.method1960(Static30.aClass145_28);
 			Static257.outboundBuffer.p4(1057001181);
 		}
@@ -285,7 +285,7 @@ public final class Static322 {
 				}
 			}
 		}
-		if (Static347.anInt6442 == 28) {
+		if (client.gameState == 28) {
 			Static336.method5704(10);
 		} else {
 			Static336.method5704(30);

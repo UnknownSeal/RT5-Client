@@ -7,7 +7,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static352 {
 
 	@OriginalMember(owner = "client!uh", name = "x", descriptor = "[Lclient!jd;")
-	public static Class13[] aClass13Array25;
+	public static Sprite[] aSpriteArray25;
 
 	@OriginalMember(owner = "client!uh", name = "O", descriptor = "I")
 	public static int anInt6519;
@@ -21,7 +21,7 @@ public final class Static352 {
 	@OriginalMember(owner = "client!uh", name = "a", descriptor = "(IIIII)V")
 	public static void method5875(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {
 		Static257.outboundBuffer.offset = 0;
-		Static257.outboundBuffer.p1(Static43.aClass242_6.anInt7038);
+		Static257.outboundBuffer.p1(Static43.aClass242_6.value);
 		Static257.outboundBuffer.p1(arg2);
 		Static257.outboundBuffer.p1(arg3);
 		Static257.outboundBuffer.p2(arg1);

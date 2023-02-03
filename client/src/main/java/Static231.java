@@ -14,7 +14,7 @@ public final class Static231 {
 	public static final Class127 aClass127_7 = new Class127("LOCAL", 4);
 
 	@OriginalMember(owner = "client!nf", name = "t", descriptor = "Lclient!h;")
-	public static Class89 aClass89_164 = null;
+	public static Class89 packetInbound = null;
 
 	@OriginalMember(owner = "client!nf", name = "v", descriptor = "I")
 	public static int anInt4079 = 999999;

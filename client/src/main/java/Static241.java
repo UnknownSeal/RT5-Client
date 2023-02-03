@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static241 {
 
 	@OriginalMember(owner = "client!nq", name = "g", descriptor = "J")
-	public static long aLong130;
+	public static long encodedUsername;
 
 	@OriginalMember(owner = "client!nq", name = "f", descriptor = "Lclient!h;")
 	public static final Class89 aClass89_170 = new Class89(19, 0);
@@ -146,11 +146,11 @@ public final class Static241 {
 		Static369.font30 = null;
 		Static175.font17 = null;
 		Static107.font12 = null;
-		Static371.aClass13_20 = null;
+		Static371.aSprite_20 = null;
 		Static344.aClass125_4.method3379();
 		Static344.aClass104_4.method2702(64, 64);
 		Static344.aClass125_4.method3376(64, 128);
-		Static344.aClass202_3.method5160(64);
+		Static344.aLocTypeList_3.method5160(64);
 		Static322.aClass128_1.method3391(64);
 	}
 

@@ -11,7 +11,7 @@ public final class Static330 {
 	public static Class67[][][] aClass67ArrayArrayArray3;
 
 	@OriginalMember(owner = "client!td", name = "Y", descriptor = "Ljava/lang/String;")
-	public static String aString62;
+	public static String walkHereOp;
 
 	@OriginalMember(owner = "client!td", name = "X", descriptor = "Z")
 	public static boolean aBoolean419 = false;
@@ -148,7 +148,7 @@ public final class Static330 {
 							local477 = -local53 - 1;
 							local483 = local477 >> 11 & 0xF;
 							local487 = local477 & 0x7FF;
-							if (Static234.anInt4226 == local487) {
+							if (Static234.selfID == local487) {
 								local491 = Static17.self;
 							} else {
 								local491 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local487];
@@ -201,7 +201,7 @@ public final class Static330 {
 				local40 = (local32 >> 4 & 0x7) + Static67.anInt1637;
 				local49 = Static7.anInt7240 + (local32 & 0x7);
 				local53 = Static212.inboundBuffer.ig2add();
-				if (local40 >= 0 && local49 >= 0 && Static373.anInt7033 > local40 && local49 < Static242.anInt4449 && local23 != Static234.anInt4226) {
+				if (local40 >= 0 && local49 >= 0 && Static373.anInt7033 > local40 && local49 < Static242.anInt4449 && local23 != Static234.selfID) {
 					Static137.method2550(local49, local40, new Class2_Sub8(local53, local12), Static243.anInt4502);
 					Static165.method3153(local40, Static243.anInt4502, local49);
 				}
@@ -238,7 +238,7 @@ public final class Static330 {
 			} else if (arg0 == Static72.aClass210_3) {
 				local12 = Static212.inboundBuffer.g2();
 				local23 = Static212.inboundBuffer.g1();
-				Static359.aClass202_4.method5162(local12).method1521(local23);
+				LocTypeList.locTypeList.method5162(local12).method1521(local23);
 			} else if (Static110.aClass210_5 == arg0) {
 				Static212.inboundBuffer.g1();
 				local12 = Static212.inboundBuffer.g1();
@@ -349,14 +349,14 @@ public final class Static330 {
 				}
 			} else {
 				Static262.report(null, "T3 - " + arg0);
-				Static99.method2144();
+				Static99.logout();
 			}
 		}
 	}
 
 	@OriginalMember(owner = "client!td", name = "a", descriptor = "(BLjava/lang/String;)Ljava/lang/String;")
 	public static String method5656(@OriginalArg(1) String arg0) {
-		@Pc(16) String local16 = Static170.method3228(Static80.method5984(arg0));
+		@Pc(16) String local16 = Static170.method3228(Static80.encode(arg0));
 		if (local16 == null) {
 			local16 = "";
 		}

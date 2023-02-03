@@ -100,16 +100,16 @@ public final class Static45 {
 				local118.anInt4638 = -1;
 			}
 		}
-		for (local75 = 0; local75 < Static50.aClass84Array1.length; local75++) {
-			@Pc(221) Class84 local221 = Static50.aClass84Array1[local75];
+		for (local75 = 0; local75 < Static50.HINT_ARROWS.length; local75++) {
+			@Pc(221) HintArrow local221 = Static50.HINT_ARROWS[local75];
 			if (local221 != null) {
-				if (local221.anInt2355 == 1) {
-					@Pc(232) Npc local232 = Static365.npcs[local221.anInt2354];
+				if (local221.type == 1) {
+					@Pc(232) Npc local232 = Static365.npcs[local221.target];
 					if (local232 != null && local232.anInt4638 >= 0) {
 						local232.anInt4638 += 2048;
 					}
-				} else if (local221.anInt2355 == 10) {
-					@Pc(253) Class11_Sub5_Sub2_Sub1 local253 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local221.anInt2354];
+				} else if (local221.type == 10) {
+					@Pc(253) Class11_Sub5_Sub2_Sub1 local253 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local221.target];
 					if (local253 != null && local253 != Static17.self && local253.anInt4638 >= 0) {
 						local253.anInt4638 += 2048;
 					}
@@ -309,7 +309,7 @@ public final class Static45 {
 										if (client.game == GameType.GAME_TYPE_STELLARDAWN) {
 											Static1.add(-1, true, local727, false, LocalisedText.FACE_HERE.getLocalisedText(client.language), local719, 59, "", -1, 1L);
 										}
-										Static1.add(-1, true, local727, false, Static330.aString62, local719, 22, "", -1, 1L);
+										Static1.add(-1, true, local727, false, Static330.walkHereOp, local719, 22, "", -1, 1L);
 										continue;
 									}
 									if (local6.anInt4273 == Static91.anInt1909) {
@@ -329,7 +329,7 @@ public final class Static45 {
 											@Pc(888) int[] local888 = new int[3];
 											local883.method6148(local888, local653, local374);
 											if (local888 != null) {
-												if (Static174.aClass123_2.method3342(82) && Static4.anInt90 > 0) {
+												if (Static174.aClass123_2.method3342(82) && Static4.staffModLevel > 0) {
 													Static6.method141(local888[0], local888[2], local888[1]);
 													continue;
 												}

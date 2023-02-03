@@ -18,10 +18,10 @@ public final class Static336 {
 
 	@OriginalMember(owner = "client!tj", name = "c", descriptor = "(IB)V")
 	public static void method5704(@OriginalArg(0) int arg0) {
-		if (Static347.anInt6442 == arg0) {
+		if (client.gameState == arg0) {
 			return;
 		}
-		if (Static347.anInt6442 == 0) {
+		if (client.gameState == 0) {
 			Static103.clear();
 		}
 		if (arg0 == 40) {
@@ -31,7 +31,7 @@ public final class Static336 {
 			Static246.aBufferedSocket_2.close();
 			Static246.aBufferedSocket_2 = null;
 		}
-		if (Static347.anInt6442 == 25 || Static347.anInt6442 == 28) {
+		if (client.gameState == 25 || client.gameState == 28) {
 			client.js5Archive2.discardUnpacked = 2;
 			client.js5Archive17.discardUnpacked = 2;
 			client.js5Archive16.discardUnpacked = 2;
@@ -64,7 +64,7 @@ public final class Static336 {
 			Static67.clear();
 		}
 		@Pc(146) boolean local146 = arg0 == 5 || arg0 == 10 || arg0 == 28;
-		@Pc(165) boolean local165 = Static347.anInt6442 == 5 || Static347.anInt6442 == 10 || Static347.anInt6442 == 28;
+		@Pc(165) boolean local165 = client.gameState == 5 || client.gameState == 10 || client.gameState == 28;
 		if (local146 != local165) {
 			if (local146) {
 				Static171.groupID = Static97.titleSong;
@@ -82,6 +82,6 @@ public final class Static336 {
 		if (arg0 == 25 || arg0 == 28 || arg0 == 40) {
 			Static190.aClass19_8.method2804();
 		}
-		Static347.anInt6442 = arg0;
+		client.gameState = arg0;
 	}
 }

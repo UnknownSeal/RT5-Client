@@ -34,7 +34,7 @@ public final class Static285 {
 		}
 		arg0.modelXAngle = 150;
 		arg0.modelYAngle = (int) (Math.sin((double) Static114.loop / 40.0D) * 256.0D) & 0x7FF;
-		arg0.modelID = Static234.anInt4226;
+		arg0.modelID = Static234.selfID;
 		arg0.modelType = 5;
 		arg0.anInt4236 = Static276.method4650(Static17.self.aString41);
 		arg0.anInt4316 = Static17.self.anInt4593;

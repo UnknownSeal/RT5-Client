@@ -105,7 +105,7 @@ public final class Static163 {
 		if (Static139.topLevelInterface != -1) {
 			Static60.method891(true);
 		}
-		if (Static335.socket != null && (Static347.anInt6442 == 30 || Static347.anInt6442 == 25)) {
+		if (Static335.socket != null && (client.gameState == 30 || client.gameState == 25)) {
 			Static93.method2002();
 		}
 		for (local159 = 0; local159 < 100; local159++) {

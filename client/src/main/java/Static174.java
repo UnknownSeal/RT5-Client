@@ -26,7 +26,7 @@ public final class Static174 {
 			local5 = 55;
 		}
 		Static91.method1963(local5);
-		Static359.aClass202_4.method5154(local5);
+		LocTypeList.locTypeList.method5154(local5);
 		ObjTypeList.objTypeList.method2765(local5);
 		Static6.aClass219_1.method5577(local5);
 		Static322.aClass211_2.method5411(local5);
@@ -34,9 +34,9 @@ public final class Static174 {
 		Static154.method2783(local5);
 		Static317.method5548(local5);
 		Static202.method3677(local5);
-		if (Static347.anInt6442 == 10) {
+		if (client.gameState == 10) {
 			Static336.method5704(28);
-		} else if (Static347.anInt6442 == 30) {
+		} else if (client.gameState == 30) {
 			Static336.method5704(25);
 		}
 	}

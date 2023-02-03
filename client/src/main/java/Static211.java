@@ -8,7 +8,7 @@ public final class Static211 {
 	public static int anInt3777;
 
 	@OriginalMember(owner = "client!mh", name = "f", descriptor = "Lclient!jd;")
-	public static Class13 aClass13_13;
+	public static Sprite aSprite;
 
 	@OriginalMember(owner = "client!mh", name = "j", descriptor = "I")
 	public static int anInt3780;
@@ -21,7 +21,7 @@ public final class Static211 {
 		Static39.aClass72_3.method2103();
 		Static336.aClass241_5.method6269();
 		IdentityKitTypeList.identityKitTypeList.method1782();
-		Static359.aClass202_4.method5158();
+		LocTypeList.locTypeList.clear();
 		Static6.aClass219_1.method5570();
 		ObjTypeList.objTypeList.clear();
 		Static39.aClass85_1.method2373();
@@ -167,7 +167,7 @@ public final class Static211 {
 	@OriginalMember(owner = "client!mh", name = "b", descriptor = "(B)V")
 	public static void method3724() {
 		if (Static86.anInt1870 > 0) {
-			Static99.method2144();
+			Static99.logout();
 		} else {
 			Static246.aBufferedSocket_2 = Static335.socket;
 			Static335.socket = null;

@@ -45,7 +45,7 @@ public final class Static389 {
 		local28.p2(arg5);
 		local28.p2(arg2);
 		local28.p4(local8[3]);
-		local28.rsaenc(Static320.aBigInteger2, Static194.aBigInteger1);
+		local28.rsaEncrypt(Static194.EXPONENT, Static320.MODULUS);
 		@Pc(118) Buffer local118 = new Buffer(350);
 		local118.pjstr(arg9);
 		@Pc(131) int local131 = 8 - Static27.method872(arg9) % 8;
@@ -54,7 +54,7 @@ public final class Static389 {
 		}
 		local118.tinyenc(local8);
 		Static257.outboundBuffer.offset = 0;
-		Static257.outboundBuffer.p1(Static43.aClass242_8.anInt7038);
+		Static257.outboundBuffer.p1(Static43.aClass242_8.value);
 		Static257.outboundBuffer.p2(local28.offset + local118.offset + 2);
 		Static257.outboundBuffer.p2(578);
 		Static257.outboundBuffer.pdata(local28.bytes, local28.offset);

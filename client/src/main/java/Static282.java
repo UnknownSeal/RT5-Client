@@ -15,7 +15,7 @@ public final class Static282 {
 		@Pc(37) int local37;
 		@Pc(43) int local43;
 		if (local11 != null) {
-			local25 = Static359.aClass202_4.method5162(local11.method6084());
+			local25 = LocTypeList.locTypeList.method5162(local11.method6084());
 			local33 = local11.method6083() & 0x3;
 			local37 = local11.method6080();
 			if (local25.anInt1316 == -1) {
@@ -62,7 +62,7 @@ public final class Static282 {
 		}
 		local11 = (Interface6) Static105.method2207(arg6, arg4, arg7, Interface6.class);
 		if (local11 != null) {
-			local25 = Static359.aClass202_4.method5162(local11.method6084());
+			local25 = LocTypeList.locTypeList.method5162(local11.method6084());
 			local33 = local11.method6083() & 0x3;
 			local37 = local11.method6080();
 			if (local25.anInt1316 != -1) {
@@ -83,7 +83,7 @@ public final class Static282 {
 		if (local11 == null) {
 			return;
 		}
-		local25 = Static359.aClass202_4.method5162(local11.method6084());
+		local25 = LocTypeList.locTypeList.method5162(local11.method6084());
 		local33 = local11.method6083() & 0x3;
 		if (local25.anInt1316 != -1) {
 			Static15.method395(local33, local25, arg5, arg2, arg3);

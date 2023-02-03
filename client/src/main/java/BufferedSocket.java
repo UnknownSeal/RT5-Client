@@ -66,7 +66,7 @@ public final class BufferedSocket implements Runnable {
 	}
 
 	@OriginalMember(owner = "client!iu", name = "a", descriptor = "([BIII)V")
-	public void read(@OriginalArg(0) byte[] bytes, @OriginalArg(1) int length, @OriginalArg(3) int offset) throws IOException {
+	public void read(@OriginalArg(3) int offset, @OriginalArg(1) int length, @OriginalArg(0) byte[] bytes) throws IOException {
 		if (this.closed) {
 			return;
 		}

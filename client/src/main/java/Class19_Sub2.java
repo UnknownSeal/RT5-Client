@@ -522,14 +522,14 @@ public final class Class19_Sub2 extends Class19 {
 			this.aClass2_Sub1_1 = new Class2_Sub1();
 			this.aClass2_Sub1_1.aBoolean2 = this.method2914(local6);
 			@Pc(65) int local65 = this.aClass2_Sub1_1.aBoolean2 ? 64 : 128;
-			this.aClass2_Sub1_1.aClass13_1 = this.method2884(local44, local65, local65, local65);
+			this.aClass2_Sub1_1.aSprite_1 = this.method2884(local44, local65, local65, local65);
 			this.aSoftLruHashTable_24.put((long) local6, this.aClass2_Sub1_1);
 		}
 		if (this.aClass2_Sub1_1.aBoolean2) {
 			local3 <<= 0x1;
 			arg3 <<= 0x1;
 		}
-		this.aClass2_Sub1_1.aClass13_1.method6394(arg1 - local3, arg2 - local3, arg3, arg3, 1, arg0.anInt4469, 1);
+		this.aClass2_Sub1_1.aSprite_1.method6394(arg1 - local3, arg2 - local3, arg3, arg3, 1, arg0.anInt4469, 1);
 	}
 
 	@OriginalMember(owner = "client!j", name = "l", descriptor = "()V")
@@ -760,7 +760,7 @@ public final class Class19_Sub2 extends Class19 {
 
 	@OriginalMember(owner = "client!j", name = "a", descriptor = "(IIIIZ)Lclient!jd;")
 	@Override
-	public Class13 method2818(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) boolean arg4) {
+	public Sprite method2818(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) boolean arg4) {
 		@Pc(4) int[] local4 = new int[arg2 * arg3];
 		@Pc(11) int local11 = arg1 * this.anInt2863 + arg0;
 		@Pc(16) int local16 = this.anInt2863 - arg2;
@@ -772,9 +772,9 @@ public final class Class19_Sub2 extends Class19 {
 			local11 += local16;
 		}
 		if (arg4) {
-			return new Class13_Sub1_Sub1(this, local4, arg2, arg3);
+			return new Sprite_Sub1_Sub1(this, local4, arg2, arg3);
 		} else {
-			return new Class13_Sub1_Sub3(this, local4, arg2, arg3);
+			return new Sprite_Sub1_Sub3(this, local4, arg2, arg3);
 		}
 	}
 
@@ -1502,12 +1502,12 @@ public final class Class19_Sub2 extends Class19 {
 
 	@OriginalMember(owner = "client!j", name = "a", descriptor = "(Lclient!dk;Z)Lclient!jd;")
 	@Override
-	public Class13 method2891(@OriginalArg(0) SoftwareSprite arg0) {
+	public Sprite method2891(@OriginalArg(0) SoftwareSprite arg0) {
 		@Pc(2) int[] local2 = arg0.anIntArray108;
 		@Pc(5) byte[] local5 = arg0.aByteArray21;
 		@Pc(8) int local8 = arg0.anInt1531;
 		@Pc(11) int local11 = arg0.anInt1533;
-		@Pc(76) Class13_Sub1 local76;
+		@Pc(76) Sprite_Sub1 local76;
 		@Pc(20) int[] local20;
 		@Pc(25) byte[] local25;
 		@Pc(27) int local27;
@@ -1525,7 +1525,7 @@ public final class Class19_Sub2 extends Class19 {
 			for (local32 = 0; local32 < local2.length; local32++) {
 				local20[local32] = local2[local32];
 			}
-			local76 = new Class13_Sub1_Sub2(this, local25, local20, local8, local11);
+			local76 = new Sprite_Sub1_Sub2(this, local25, local20, local8, local11);
 		} else {
 			local20 = new int[local8 * local11];
 			local25 = arg0.aByteArray20;
@@ -1536,8 +1536,8 @@ public final class Class19_Sub2 extends Class19 {
 						local20[local32 + local34] = local2[local5[local32 + local34] & 0xFF];
 					}
 				}
-				new Class13_Sub1_Sub1(this, local20, local8, local11);
-				local76 = new Class13_Sub1_Sub3(this, local20, local8, local11);
+				new Sprite_Sub1_Sub1(this, local20, local8, local11);
+				local76 = new Sprite_Sub1_Sub3(this, local20, local8, local11);
 			} else {
 				for (local27 = 0; local27 < local11; local27++) {
 					local32 = local27 * local8;
@@ -1545,7 +1545,7 @@ public final class Class19_Sub2 extends Class19 {
 						local20[local32 + local34] = local2[local5[local32 + local34] & 0xFF] | local25[local32 + local34] << 24;
 					}
 				}
-				local76 = new Class13_Sub1_Sub1(this, local20, local8, local11);
+				local76 = new Sprite_Sub1_Sub1(this, local20, local8, local11);
 			}
 		}
 		local76.method6390(arg0.anInt1535, arg0.anInt1530, arg0.anInt1532, arg0.anInt1534);
@@ -1828,7 +1828,7 @@ public final class Class19_Sub2 extends Class19 {
 
 	@OriginalMember(owner = "client!j", name = "a", descriptor = "([IIIII)Lclient!jd;")
 	@Override
-	public Class13 method2884(@OriginalArg(0) int[] arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {
+	public Sprite method2884(@OriginalArg(0) int[] arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {
 		@Pc(1) boolean local1 = false;
 		@Pc(3) int local3 = 0;
 		for (@Pc(5) int local5 = 0; local5 < arg3; local5++) {
@@ -1836,10 +1836,10 @@ public final class Class19_Sub2 extends Class19 {
 				@Pc(16) int local16 = arg0[local3++] >>> 24;
 				if (local16 != 0 && local16 != 255) {
 					local1 = true;
-					return local1 ? new Class13_Sub1_Sub1(this, arg0, 0, arg1, arg2, arg3) : new Class13_Sub1_Sub3(this, arg0, 0, arg1, arg2, arg3);
+					return local1 ? new Sprite_Sub1_Sub1(this, arg0, 0, arg1, arg2, arg3) : new Sprite_Sub1_Sub3(this, arg0, 0, arg1, arg2, arg3);
 				}
 			}
 		}
-		return local1 ? new Class13_Sub1_Sub1(this, arg0, 0, arg1, arg2, arg3) : new Class13_Sub1_Sub3(this, arg0, 0, arg1, arg2, arg3);
+		return local1 ? new Sprite_Sub1_Sub1(this, arg0, 0, arg1, arg2, arg3) : new Sprite_Sub1_Sub3(this, arg0, 0, arg1, arg2, arg3);
 	}
 }

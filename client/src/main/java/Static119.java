@@ -7,7 +7,7 @@ public final class Static119 {
 	public static byte aByte25;
 
 	@OriginalMember(owner = "client!gr", name = "e", descriptor = "Lclient!jd;")
-	public static Class13 aClass13_7;
+	public static Sprite aSprite_7;
 
 	@OriginalMember(owner = "client!gr", name = "f", descriptor = "Lclient!bh;")
 	public static Environment aEnvironment_1;

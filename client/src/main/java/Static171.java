@@ -132,7 +132,7 @@ public final class Static171 {
 			@Pc(541) byte local541 = Static218.preferences.method4491(Static77.anInt1762) == 2 ? (byte) Static163.anInt3086 : 1;
 			Static225.method3953(Static190.aClass19_8, Static114.loop, Static102.anInt3591, Static76.aClass14_3, Static136.anInt6778, Static102.anInt3592, Static211.anInt3777, Static230.aByteArrayArrayArray13, Static353.anIntArray448, Static107.anIntArray136, Static248.anIntArray318, Static324.anIntArray409, Static86.anIntArray122, Static17.self.aByte78 + 1, local541, Static17.self.xFine >> 7, Static17.self.zFine >> 7, !Static218.preferences.flickeringEffects);
 			Static37.method1135();
-			if (Static347.anInt6442 == 30) {
+			if (client.gameState == 30) {
 				Static306.method5252(local110, local108, local106, local104);
 				Static228.method3994(local104, local106, local108, local110);
 				Static169.method3212(local108, local104, local106, local110);

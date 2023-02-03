@@ -103,8 +103,8 @@ public final class Preferences extends Class177 {
 	@OriginalMember(owner = "client!pe", name = "a", descriptor = "(ZI)V")
 	public void setAllLevelsVisible(@OriginalArg(0) boolean arg0) {
 		super.aBoolean354 = arg0;
-		if (Static359.aClass202_4 != null) {
-			Static359.aClass202_4.method5159(!this.method4494(Static77.anInt1762));
+		if (LocTypeList.locTypeList != null) {
+			LocTypeList.locTypeList.method5159(!this.method4494(Static77.anInt1762));
 		}
 	}
 

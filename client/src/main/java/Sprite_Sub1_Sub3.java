@@ -4,19 +4,19 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!fb")
-public final class Class13_Sub1_Sub3 extends Class13_Sub1 {
+public final class Sprite_Sub1_Sub3 extends Sprite_Sub1 {
 
 	@OriginalMember(owner = "client!fb", name = "H", descriptor = "[I")
 	private final int[] anIntArray125;
 
 	@OriginalMember(owner = "client!fb", name = "<init>", descriptor = "(Lclient!j;[III)V")
-	public Class13_Sub1_Sub3(@OriginalArg(0) Class19_Sub2 arg0, @OriginalArg(1) int[] arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
+	public Sprite_Sub1_Sub3(@OriginalArg(0) Class19_Sub2 arg0, @OriginalArg(1) int[] arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
 		super(arg0, arg2, arg3);
 		this.anIntArray125 = arg1;
 	}
 
 	@OriginalMember(owner = "client!fb", name = "<init>", descriptor = "(Lclient!j;[IIIII)V")
-	public Class13_Sub1_Sub3(@OriginalArg(0) Class19_Sub2 arg0, @OriginalArg(1) int[] arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5) {
+	public Sprite_Sub1_Sub3(@OriginalArg(0) Class19_Sub2 arg0, @OriginalArg(1) int[] arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5) {
 		super(arg0, arg4, arg5);
 		this.anIntArray125 = new int[arg4 * arg5];
 		@Pc(15) int local15 = arg3 - super.anInt1936;

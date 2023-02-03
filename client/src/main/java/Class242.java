@@ -6,11 +6,11 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class Class242 {
 
 	@OriginalMember(owner = "client!vr", name = "g", descriptor = "I")
-	public final int anInt7038;
+	public final int value;
 
 	@OriginalMember(owner = "client!vr", name = "<init>", descriptor = "(II)V")
-	public Class242(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
-		this.anInt7038 = arg0;
+	public Class242(@OriginalArg(0) int arg0) {
+		this.value = arg0;
 	}
 
 	@OriginalMember(owner = "client!vr", name = "toString", descriptor = "()Ljava/lang/String;")

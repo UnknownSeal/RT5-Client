@@ -52,7 +52,7 @@ public final class Static216 {
 			}
 			arg3.method2815(local32[local32.length - 2], local32[local32.length - 1], local32[0], local32[1], local14.anInt4422, arg5, arg0, arg7);
 		}
-		@Pc(267) Class13 local267 = null;
+		@Pc(267) Sprite local267 = null;
 		if (local14.anInt4420 != -1) {
 			local267 = local14.method4188(arg3, false);
 			if (local267 != null) {

@@ -103,19 +103,19 @@ public final class Static235 {
 	}
 
 	@OriginalMember(owner = "client!nj", name = "a", descriptor = "(B)Z")
-	public static boolean method3340() {
+	public static boolean readPacket() {
 		try {
-			return Static73.method1821();
-		} catch (@Pc(16) IOException local16) {
+			return Static73.readPacketInternal();
+		} catch (@Pc(16) IOException exception) {
 			Static211.method3724();
 			return true;
-		} catch (@Pc(21) Exception local21) {
-			@Pc(81) String local81 = "T2 - " + (Static231.aClass89_164 == null ? -1 : Static231.aClass89_164.method2399()) + "," + (Static66.aClass89_57 == null ? -1 : Static66.aClass89_57.method2399()) + "," + (Static39.aClass89_35 == null ? -1 : Static39.aClass89_35.method2399()) + " - " + Static82.anInt1836 + "," + (Static164.originX + Static17.self.anIntArray316[0]) + "," + (Static148.originZ + Static17.self.anIntArray317[0]) + " - ";
-			for (@Pc(83) int local83 = 0; local83 < Static82.anInt1836 && local83 < 50; local83++) {
+		} catch (@Pc(21) Exception exception) {
+			@Pc(81) String local81 = "T2 - " + (Static231.packetInbound == null ? -1 : Static231.packetInbound.method2399()) + "," + (Static66.aClass89_57 == null ? -1 : Static66.aClass89_57.method2399()) + "," + (Static39.aClass89_35 == null ? -1 : Static39.aClass89_35.method2399()) + " - " + Static82.length + "," + (Static164.originX + Static17.self.anIntArray316[0]) + "," + (Static148.originZ + Static17.self.anIntArray317[0]) + " - ";
+			for (@Pc(83) int local83 = 0; local83 < Static82.length && local83 < 50; local83++) {
 				local81 = local81 + Static212.inboundBuffer.bytes[local83] + ",";
 			}
-			Static262.report(local21, local81);
-			Static99.method2144();
+			Static262.report(exception, local81);
+			Static99.logout();
 			return true;
 		}
 	}

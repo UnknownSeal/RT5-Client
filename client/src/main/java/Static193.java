@@ -43,7 +43,7 @@ public final class Static193 {
 					@Pc(82) int local82 = arg1 + local72;
 					@Pc(86) int local86 = local66 + arg0;
 					if (local82 > 0 && local86 > 0 && local82 < arg4 - 1 && arg3 - 1 > local86) {
-						@Pc(112) Class41 local112 = Static359.aClass202_4.method5162(local19);
+						@Pc(112) Class41 local112 = LocTypeList.locTypeList.method5162(local19);
 						if (local78 != 22 || Static218.preferences.groundDecoration || local112.anInt1335 != 0 || local112.anInt1324 == 1 || local112.aBoolean117) {
 							if (!local112.method1529()) {
 								Static305.anInt5742++;
@@ -65,8 +65,8 @@ public final class Static193 {
 	@OriginalMember(owner = "client!la", name = "a", descriptor = "(ILclient!wm;Lclient!ur;ZIII)V")
 	public static void method3511(@OriginalArg(0) int arg0, @OriginalArg(1) Class19 arg1, @OriginalArg(2) Class130 arg2, @OriginalArg(3) boolean arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5) {
 		if (arg3) {
-			Static252.aClass13_14.method6384((GameShell.canvasWidth - Static252.aClass13_14.method6398()) / 2, (GameShell.canvasHeight - Static252.aClass13_14.method6383()) / 2);
-			Static333.aClass13_21.method6384((GameShell.canvasWidth - Static333.aClass13_21.method6398()) / 2, 18);
+			Static252.aSprite_14.method6384((GameShell.canvasWidth - Static252.aSprite_14.method6398()) / 2, (GameShell.canvasHeight - Static252.aSprite_14.method6383()) / 2);
+			Static333.aSprite_21.method6384((GameShell.canvasWidth - Static333.aSprite_21.method6398()) / 2, 18);
 		}
 		arg2.method5899((GameType.GAME_TYPE_RUNESCAPE == client.game ? LocalisedText.RUNESCAPE_IS_LOADING : LocalisedText.ALTERNATE_GAME_IS_LOADING).getLocalisedText(client.language), -1, GameShell.canvasHeight / 2 - 26, arg0, GameShell.canvasWidth / 2);
 		@Pc(58) int local58 = GameShell.canvasHeight / 2 - 18;

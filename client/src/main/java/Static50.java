@@ -11,7 +11,7 @@ public final class Static50 {
 	public static int anInt1332 = 0;
 
 	@OriginalMember(owner = "client!ct", name = "xb", descriptor = "[Lclient!go;")
-	public static final Class84[] aClass84Array1 = new Class84[8];
+	public static final HintArrow[] HINT_ARROWS = new HintArrow[8];
 
 	@OriginalMember(owner = "client!ct", name = "a", descriptor = "(ZZ)V")
 	public static void method1525(@OriginalArg(0) boolean arg0) {

@@ -8,7 +8,7 @@ public final class Static56 {
 	public static Class199 aClass199_1;
 
 	@OriginalMember(owner = "client!dd", name = "q", descriptor = "Z")
-	public static boolean aBoolean123 = false;
+	public static boolean playerUnderage = false;
 
 	@OriginalMember(owner = "client!dd", name = "r", descriptor = "Lclient!ld;")
 	public static final LinkedList A_LINKED_LIST___13 = new LinkedList();
@@ -18,7 +18,7 @@ public final class Static56 {
 
 	@OriginalMember(owner = "client!dd", name = "a", descriptor = "(B)V")
 	public static void method1611() {
-		if (Static347.anInt6442 == 10 || Static347.anInt6442 == 28) {
+		if (client.gameState == 10 || client.gameState == 28) {
 			Static387.method2835(5000, Static136.anInt6778 >> 10, Static211.anInt3777 >> 10);
 		} else {
 			@Pc(31) int local31 = Static17.self.anIntArray316[0] >> 3;

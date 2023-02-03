@@ -14,15 +14,15 @@ public final class Static99 {
 	}
 
 	@OriginalMember(owner = "client!fm", name = "i", descriptor = "(I)V")
-	public static void method2144() {
+	public static void logout() {
 		if (Static335.socket != null) {
 			Static335.socket.close();
 			Static335.socket = null;
 		}
 		Static211.method3720();
 		Static253.method4365();
-		for (@Pc(17) int local17 = 0; local17 < 4; local17++) {
-			Static171.collisionMap[local17].clear();
+		for (@Pc(17) int i = 0; i < 4; i++) {
+			Static171.collisionMap[i].clear();
 		}
 		Static241.method4191(false);
 		System.gc();
@@ -35,8 +35,8 @@ public final class Static99 {
 		Static220.aBoolean252 = false;
 		Static105.anInt2187 = 0;
 		Static148.originZ = 0;
-		for (@Pc(56) int local56 = 0; local56 < Static50.aClass84Array1.length; local56++) {
-			Static50.aClass84Array1[local56] = null;
+		for (@Pc(56) int local56 = 0; local56 < Static50.HINT_ARROWS.length; local56++) {
+			Static50.HINT_ARROWS[local56] = null;
 		}
 		Static358.method5887();
 		for (@Pc(75) int local75 = 0; local75 < 2048; local75++) {

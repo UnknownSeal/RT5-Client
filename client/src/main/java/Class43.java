@@ -7,7 +7,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Class43 {
 
 	@OriginalMember(owner = "client!dd", name = "d", descriptor = "Lclient!jd;")
-	private Class13 aClass13_4;
+	private Sprite aSprite_4;
 
 	@OriginalMember(owner = "client!dd", name = "g", descriptor = "I")
 	private int anInt1451;
@@ -65,14 +65,14 @@ public final class Class43 {
 			arg2.method2901(arg6, arg8, arg7, arg3, arg5, 0);
 		} else {
 			@Pc(37) Class229 local37 = Static274.anInterface2_7.method2658(this.anInt1457);
-			if (this.aClass13_4 == null && Static274.anInterface2_7.method2657(this.anInt1457)) {
+			if (this.aSprite_4 == null && Static274.anInterface2_7.method2657(this.anInt1457)) {
 				@Pc(75) int[] local75 = local37.aBoolean442 ? Static274.anInterface2_7.method2659(this.anInt1457, false, this.anInt1461, 0.7F, this.anInt1461) : Static274.anInterface2_7.method2656(0.7F, this.anInt1461, this.anInt1461, this.anInt1457);
-				this.aClass13_4 = arg2.method2884(local75, this.anInt1461, this.anInt1461, this.anInt1461);
+				this.aSprite_4 = arg2.method2884(local75, this.anInt1461, this.anInt1461, this.anInt1461);
 			}
 			if (!local37.aBoolean442) {
 				arg2.method2901(arg6, arg8, arg7, arg3, arg5, 0);
 			}
-			if (this.aClass13_4 != null) {
+			if (this.aSprite_4 != null) {
 				@Pc(108) int local108 = local37.aBoolean442 ? 0 : 1;
 				@Pc(114) int local114 = arg3 * arg4 / -4096;
 				@Pc(127) int local127;
@@ -89,7 +89,7 @@ public final class Class43 {
 				}
 				for (@Pc(166) int local166 = local127 - arg3; local166 < arg7; local166 += arg3) {
 					for (@Pc(173) int local173 = local114 - arg3; local173 < arg3; local173 += arg3) {
-						this.aClass13_4.method6394(arg6 + local166, arg8 + local173, arg3, arg3, 0, 0, local108);
+						this.aSprite_4.method6394(arg6 + local166, arg8 + local173, arg3, arg3, 0, 0, local108);
 					}
 				}
 			}
@@ -111,7 +111,7 @@ public final class Class43 {
 				local20 = 512;
 			}
 			if (local20 != this.anInt1461) {
-				this.aClass13_4 = null;
+				this.aSprite_4 = null;
 				this.anInt1461 = local20;
 			}
 			if (this.aClass112Array1 != null) {
@@ -147,6 +147,6 @@ public final class Class43 {
 				this.aClass112Array1[local10].method2921();
 			}
 		}
-		this.aClass13_4 = null;
+		this.aSprite_4 = null;
 	}
 }

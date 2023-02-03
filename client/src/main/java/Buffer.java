@@ -413,7 +413,7 @@ public class Buffer extends Node {
 
 	// rsa, encrypt
 	@OriginalMember(owner = "client!bt", name = "a", descriptor = "(Ljava/math/BigInteger;ILjava/math/BigInteger;)V")
-	public final void rsaenc(@OriginalArg(0) BigInteger modulus, @OriginalArg(2) BigInteger exponent) {
+	public final void rsaEncrypt(@OriginalArg(2) BigInteger exponent, @OriginalArg(0) BigInteger modulus) {
 		@Pc(6) int len = this.offset;
 		this.offset = 0;
 

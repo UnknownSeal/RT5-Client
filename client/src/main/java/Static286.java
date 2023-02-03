@@ -35,7 +35,7 @@ public final class Static286 {
 			local26 = Static344.anInt6050 + (arg2.anInt4419 + arg0.anInt2949 - Static344.anInt6058) * (-Static344.anInt6050 + Static344.anInt6051) / (Static344.anInt6054 - Static344.anInt6058);
 			local28 = Static344.anInt6061 - (Static344.anInt6061 - Static344.anInt6053) * (-Static344.anInt6059 + arg0.anInt2952 + arg2.anInt4428) / (Static344.anInt6060 - Static344.anInt6059);
 		}
-		@Pc(123) Class13 local123 = null;
+		@Pc(123) Sprite local123 = null;
 		@Pc(125) int local125 = 0;
 		@Pc(127) int local127 = 0;
 		@Pc(129) int local129 = 0;

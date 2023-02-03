@@ -4,10 +4,10 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!jd")
-public abstract class Class13 {
+public abstract class Sprite {
 
 	@OriginalMember(owner = "client!jd", name = "<init>", descriptor = "()V")
-	protected Class13() {
+	protected Sprite() {
 	}
 
 	@OriginalMember(owner = "client!jd", name = "a", descriptor = "()I")

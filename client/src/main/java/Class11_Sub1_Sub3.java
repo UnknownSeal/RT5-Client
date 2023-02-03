@@ -203,7 +203,7 @@ public final class Class11_Sub1_Sub3 extends Class11_Sub1 implements Interface6 
 
 	@OriginalMember(owner = "client!kr", name = "a", descriptor = "(IZLclient!wm;Z)Lclient!ij;")
 	private Class105 method3469(@OriginalArg(0) int arg0, @OriginalArg(2) Class19 arg1, @OriginalArg(3) boolean arg2) {
-		@Pc(19) Class41 local19 = Static359.aClass202_4.method5162(this.aShort40 & 0xFFFF);
+		@Pc(19) Class41 local19 = LocTypeList.locTypeList.method5162(this.aShort40 & 0xFFFF);
 		@Pc(27) Class6 local27;
 		@Pc(35) Class6 local35;
 		if (this.aBoolean230) {

@@ -6,7 +6,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!wg")
-public final class Class13_Sub2 extends Class13 {
+public final class Sprite_Sub2 extends Sprite {
 
 	@OriginalMember(owner = "client!wg", name = "g", descriptor = "Lclient!ln;")
 	private Class8_Sub1_Sub1 aClass8_Sub1_Sub1_4;
@@ -36,13 +36,13 @@ public final class Class13_Sub2 extends Class13 {
 	private final Class8_Sub1_Sub1 aClass8_Sub1_Sub1_5;
 
 	@OriginalMember(owner = "client!wg", name = "<init>", descriptor = "(Lclient!bf;IIII)V")
-	public Class13_Sub2(@OriginalArg(0) Class19_Sub1 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
+	public Sprite_Sub2(@OriginalArg(0) Class19_Sub1 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
 		this.aClass19_Sub1_42 = arg0;
 		this.aClass8_Sub1_Sub1_5 = Static401.method3641(arg1, arg2, arg3, arg4, arg0);
 	}
 
 	@OriginalMember(owner = "client!wg", name = "<init>", descriptor = "(Lclient!bf;II[III)V")
-	public Class13_Sub2(@OriginalArg(0) Class19_Sub1 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int[] arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5) {
+	public Sprite_Sub2(@OriginalArg(0) Class19_Sub1 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int[] arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5) {
 		this.aClass19_Sub1_42 = arg0;
 		this.aClass8_Sub1_Sub1_5 = Static401.method3639(arg0, arg3, arg1, arg2);
 	}

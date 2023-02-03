@@ -14,7 +14,7 @@ public final class Static320 {
 	public static final Class16 aClass16_8 = new Class16("", 13);
 
 	@OriginalMember(owner = "client!sm", name = "w", descriptor = "Ljava/math/BigInteger;")
-	public static final BigInteger aBigInteger2 = new BigInteger("7162900525229798032761816791230527296329313291232324290237849263501208207972894053929065636522363163621000728841182238772712427862772219676577293600221789");
+	public static final BigInteger MODULUS = new BigInteger("7162900525229798032761816791230527296329313291232324290237849263501208207972894053929065636522363163621000728841182238772712427862772219676577293600221789");
 
 	@OriginalMember(owner = "client!sm", name = "y", descriptor = "I")
 	public static int anInt6005 = 0;

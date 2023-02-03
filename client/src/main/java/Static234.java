@@ -6,7 +6,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static234 {
 
 	@OriginalMember(owner = "client!ni", name = "E", descriptor = "I")
-	public static int anInt4226 = -1;
+	public static int selfID = -1;
 
 	@OriginalMember(owner = "client!ni", name = "P", descriptor = "[Ljava/lang/String;")
 	public static final String[] aStringArray39 = new String[100];

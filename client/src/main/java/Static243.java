@@ -43,7 +43,7 @@ public final class Static243 {
 		@Pc(18) int local18;
 		if (arg8 < 0) {
 			local18 = -arg8 - 1;
-			if (Static234.anInt4226 == local18) {
+			if (Static234.selfID == local18) {
 				local27 = Static17.self;
 			} else {
 				local27 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local18];
@@ -55,7 +55,7 @@ public final class Static243 {
 		if (local27 == null) {
 			return;
 		}
-		@Pc(51) Class41 local51 = Static359.aClass202_4.method5162(arg1);
+		@Pc(51) Class41 local51 = LocTypeList.locTypeList.method5162(arg1);
 		@Pc(62) int local62;
 		@Pc(65) int local65;
 		if (arg10 == 1 || arg10 == 3) {

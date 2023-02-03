@@ -8,7 +8,7 @@ public final class Static12 {
 	public static int index;
 
 	@OriginalMember(owner = "client!am", name = "f", descriptor = "Lclient!jd;")
-	public static Class13 aClass13_2;
+	public static Sprite aSprite_2;
 
 	@OriginalMember(owner = "client!am", name = "i", descriptor = "[I")
 	public static int[] anIntArray15;

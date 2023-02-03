@@ -44,13 +44,13 @@ public final class Static190 {
 
 	@OriginalMember(owner = "client!kt", name = "f", descriptor = "(I)V")
 	public static void method3501() {
-		Static211.aClass13_13 = null;
-		Static339.aClass13_18 = null;
-		Static75.aClass13_5 = null;
-		Static337.aClass13_17 = null;
-		Static35.aClass13_3 = null;
-		Static197.aClass13_12 = null;
-		Static110.aClass13_6 = null;
-		Static138.aClass13_8 = null;
+		Static211.aSprite = null;
+		Static339.aSprite_18 = null;
+		Static75.aSprite_5 = null;
+		Static337.aSprite_17 = null;
+		Static35.aSprite_3 = null;
+		Static197.aSprite_12 = null;
+		Static110.aSprite_6 = null;
+		Static138.aSprite_8 = null;
 	}
 }

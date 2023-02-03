@@ -13,7 +13,7 @@ public final class Static16 {
 	public static Class19 aClass19_10;
 
 	@OriginalMember(owner = "client!as", name = "f", descriptor = "Ljava/lang/String;")
-	public static String aString51 = "";
+	public static String password = "";
 
 	@OriginalMember(owner = "client!as", name = "a", descriptor = "([II[J)V")
 	public static void method4406(@OriginalArg(0) int[] arg0, @OriginalArg(2) long[] arg1) {

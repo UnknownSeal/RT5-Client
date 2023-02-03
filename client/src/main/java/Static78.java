@@ -64,15 +64,15 @@ public final class Static78 {
 		Static252.method4364(true, arg0);
 		Static236.method4101(client.js5Archive8, client.js5Archive13, Static190.aClass19_8);
 		Static44.method1358(Static190.aClass19_8, client.js5Archive8);
-		Static144.method2691(Static124.aClass13Array27);
+		Static144.method2691(Static124.aSpriteArray27);
 		Static190.method3501();
 		Static98.method2107();
-		if (Static347.anInt6442 == 10) {
+		if (client.gameState == 10) {
 			Static50.method1525(false);
-		} else if (Static347.anInt6442 == 30) {
+		} else if (client.gameState == 30) {
 			Static336.method5704(25);
 			return;
-		} else if (Static347.anInt6442 == 5) {
+		} else if (client.gameState == 5) {
 			Static348.method5829(client.js5Archive8, Static190.aClass19_8);
 			return;
 		}

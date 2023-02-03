@@ -245,7 +245,7 @@ public final class Class11_Sub5_Sub2_Sub1 extends Class11_Sub5_Sub2 {
 			super.xFine = super.anIntArray316[0] * 128 + this.method4327() * 64;
 			super.zFine = super.anIntArray317[0] * 128 + this.method4327() * 64;
 		}
-		if (Static234.anInt4226 == super.anInt4619 && local410 != null) {
+		if (Static234.selfID == super.anInt4619 && local410 != null) {
 			for (local327 = 0; local327 < local207.length; local327++) {
 				if (local207[local327] != local410[local327]) {
 					ObjTypeList.objTypeList.method2760();
@@ -418,32 +418,32 @@ public final class Class11_Sub5_Sub2_Sub1 extends Class11_Sub5_Sub2 {
 		if (Static17.self == this) {
 			arg0.method2823(local45, local48 - 144.0F);
 			local19.method3921(super.xFine, super.anInt6782, super.zFine);
-			for (@Pc(183) int local183 = Static50.aClass84Array1.length - 1; local183 >= 0; local183--) {
-				@Pc(189) Class84 local189 = Static50.aClass84Array1[local183];
-				if (local189 != null && local189.anInt2361 != -1) {
+			for (@Pc(183) int local183 = Static50.HINT_ARROWS.length - 1; local183 >= 0; local183--) {
+				@Pc(189) HintArrow local189 = Static50.HINT_ARROWS[local183];
+				if (local189 != null && local189.model != -1) {
 					@Pc(239) int local239;
 					@Pc(228) int local228;
-					if (local189.anInt2355 == 1 && local189.anInt2354 >= 0 && local189.anInt2354 < Static365.npcs.length) {
-						@Pc(215) Npc local215 = Static365.npcs[local189.anInt2354];
+					if (local189.type == 1 && local189.target >= 0 && local189.target < Static365.npcs.length) {
+						@Pc(215) Npc local215 = Static365.npcs[local189.target];
 						if (local215 != null) {
 							local228 = local215.xFine / 32 - Static17.self.xFine / 32;
 							local239 = local215.zFine / 32 - Static17.self.zFine / 32;
-							this.method4072(local189.anInt2361, 360000, local228, local239, local19, super.aModelArray3[0], arg0);
+							this.method4072(local189.model, 360000, local228, local239, local19, super.aModelArray3[0], arg0);
 						}
 					}
-					if (local189.anInt2355 == 2) {
+					if (local189.type == 2) {
 						@Pc(273) int local273 = (local189.anInt2352 - Static164.originX) * 4 + 2 - Static17.self.xFine / 32;
 						local228 = (local189.anInt2364 - Static148.originZ) * 4 + 2 - Static17.self.zFine / 32;
 						local239 = local189.anInt2349 * 4;
 						local239 *= local239;
-						this.method4072(local189.anInt2361, local239, local273, local228, local19, super.aModelArray3[0], arg0);
+						this.method4072(local189.model, local239, local273, local228, local19, super.aModelArray3[0], arg0);
 					}
-					if (local189.anInt2355 == 10 && local189.anInt2354 >= 0 && Static12.aClass11_Sub5_Sub2_Sub1Array1.length > local189.anInt2354) {
-						@Pc(332) Class11_Sub5_Sub2_Sub1 local332 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local189.anInt2354];
+					if (local189.type == 10 && local189.target >= 0 && Static12.aClass11_Sub5_Sub2_Sub1Array1.length > local189.target) {
+						@Pc(332) Class11_Sub5_Sub2_Sub1 local332 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local189.target];
 						if (local332 != null) {
 							local228 = local332.xFine / 32 - Static17.self.xFine / 32;
 							local239 = local332.zFine / 32 - Static17.self.zFine / 32;
-							this.method4072(local189.anInt2361, 360000, local228, local239, local19, super.aModelArray3[0], arg0);
+							this.method4072(local189.model, 360000, local228, local239, local19, super.aModelArray3[0], arg0);
 						}
 					}
 				}

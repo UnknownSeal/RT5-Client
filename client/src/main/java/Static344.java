@@ -11,7 +11,7 @@ public final class Static344 {
 	public static Interface11 anInterface11_2;
 
 	@OriginalMember(owner = "client!tt", name = "c", descriptor = "Lclient!rh;")
-	public static Class202 aClass202_3;
+	public static LocTypeList aLocTypeList_3;
 
 	@OriginalMember(owner = "client!tt", name = "d", descriptor = "Lclient!ii;")
 	public static Class104 aClass104_4;
@@ -163,7 +163,7 @@ public final class Static344 {
 		for (@Pc(100) int local100 = 0; local100 < arg8.length; local100++) {
 			@Pc(107) int local107 = arg9[local100] & 0x3F;
 			if (local107 == 0 || local107 == 2 || local107 == 3 || local107 == 9) {
-				@Pc(127) Class41 local127 = aClass202_3.method5162(arg8[local100] & 0xFFFF);
+				@Pc(127) Class41 local127 = aLocTypeList_3.method5162(arg8[local100] & 0xFFFF);
 				if (local127.anInt1316 == -1) {
 					@Pc(133) int local133 = -3355444;
 					if (local127.anInt1335 == 1) {
@@ -316,11 +316,11 @@ public final class Static344 {
 	}
 
 	@OriginalMember(owner = "client!tt", name = "a", descriptor = "(Lclient!r;Lclient!fl;Lclient!vq;Lclient!rh;Lclient!ki;Lclient!ii;Lclient!wl;)V")
-	public static void method5511(@OriginalArg(0) Js5 arg0, @OriginalArg(1) Class72 arg1, @OriginalArg(2) Class241 arg2, @OriginalArg(3) Class202 arg3, @OriginalArg(4) Class125 arg4, @OriginalArg(5) Class104 arg5, @OriginalArg(6) Interface11 arg6) {
+	public static void method5511(@OriginalArg(0) Js5 arg0, @OriginalArg(1) Class72 arg1, @OriginalArg(2) Class241 arg2, @OriginalArg(3) LocTypeList arg3, @OriginalArg(4) Class125 arg4, @OriginalArg(5) Class104 arg5, @OriginalArg(6) Interface11 arg6) {
 		archive = arg0;
 		aClass72_6 = arg1;
 		aClass241_4 = arg2;
-		aClass202_3 = arg3;
+		aLocTypeList_3 = arg3;
 		aClass125_4 = arg4;
 		aClass104_4 = arg5;
 		anInterface11_2 = arg6;
@@ -812,11 +812,11 @@ public final class Static344 {
 			return;
 		}
 		for (@Pc(4) int local4 = 0; local4 < arg5.length; local4++) {
-			@Pc(14) Class41 local14 = aClass202_3.method5162(arg5[local4] & 0xFFFF);
+			@Pc(14) Class41 local14 = aLocTypeList_3.method5162(arg5[local4] & 0xFFFF);
 			@Pc(17) int local17 = local14.anInt1316;
 			if (local17 != -1) {
 				@Pc(25) Class146 local25 = aClass104_4.method2708(local17);
-				@Pc(49) Class13 local49 = local25.method3710(local14.aBoolean118 ? local14.aBoolean113 : false, local14.aBoolean115 ? arg6[local4] >> 6 & 0x3 : 0, arg0);
+				@Pc(49) Sprite local49 = local25.method3710(local14.aBoolean118 ? local14.aBoolean113 : false, local14.aBoolean115 ? arg6[local4] >> 6 & 0x3 : 0, arg0);
 				if (local49 != null) {
 					@Pc(58) int local58 = arg3 * local49.method6398() >> 2;
 					@Pc(65) int local65 = arg4 * local49.method6383() >> 2;
@@ -892,7 +892,7 @@ public final class Static344 {
 						@Pc(31) Class2_Sub29 local31 = (Class2_Sub29) aClass4_125.get((long) (local1 << 16 | local4));
 						if (local31 != null) {
 							for (local35 = 0; local35 < local31.aShortArray109.length; local35++) {
-								@Pc(46) Class41 local46 = aClass202_3.method5162(local31.aShortArray109[local35] & 0xFFFF);
+								@Pc(46) Class41 local46 = aLocTypeList_3.method5162(local31.aShortArray109[local35] & 0xFFFF);
 								local49 = local46.anInt1306;
 								if (local46.anIntArray94 != null) {
 									local46 = local46.method1533(anInterface11_2);
@@ -909,7 +909,7 @@ public final class Static344 {
 							}
 						}
 					} else {
-						@Pc(94) Class41 local94 = aClass202_3.method5162(local15 - 1);
+						@Pc(94) Class41 local94 = aLocTypeList_3.method5162(local15 - 1);
 						local35 = local94.anInt1306;
 						if (local94.anIntArray94 != null) {
 							local94 = local94.method1533(anInterface11_2);
@@ -935,7 +935,7 @@ public final class Static344 {
 						for (@Pc(160) Class12_Sub7 local160 = (Class12_Sub7) local153.method1415(); local160 != null; local160 = (Class12_Sub7) local153.method1420()) {
 							if (local160.aShortArray116 != null) {
 								for (local49 = 0; local49 < local160.aShortArray116.length; local49++) {
-									@Pc(177) Class41 local177 = aClass202_3.method5162(local160.aShortArray116[local49] & 0xFFFF);
+									@Pc(177) Class41 local177 = aLocTypeList_3.method5162(local160.aShortArray116[local49] & 0xFFFF);
 									@Pc(180) int local180 = local177.anInt1306;
 									if (local177.anIntArray94 != null) {
 										local177 = local177.method1533(anInterface11_2);

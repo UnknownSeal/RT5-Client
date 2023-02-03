@@ -13,6 +13,6 @@ public final class Static355 {
 
 	@OriginalMember(owner = "client!uo", name = "a", descriptor = "(I)Z")
 	public static boolean method5933() {
-		return Static121.aClass127_4 != Static189.aClass127_6 || Static4.anInt90 >= 2;
+		return Static121.aClass127_4 != Static189.aClass127_6 || Static4.staffModLevel >= 2;
 	}
 }

@@ -10,7 +10,7 @@ public final class Static381 {
 	public static int anInt7117 = 0;
 
 	@OriginalMember(owner = "client!wd", name = "o", descriptor = "Z")
-	public static boolean aBoolean482 = false;
+	public static boolean playerMemeber = false;
 
 	@OriginalMember(owner = "client!wd", name = "a", descriptor = "(II)I")
 	public static int method6347(@OriginalArg(0) int arg0) {

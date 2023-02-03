@@ -71,7 +71,7 @@ public final class Static319 {
 				if (Static70.loaded) {
 					checksum = Static361.checksum;
 				}
-				Static257.outboundBuffer.p1(Static43.aClass242_9.anInt7038);
+				Static257.outboundBuffer.p1(Static43.aClass242_9.value);
 				Static257.outboundBuffer.p4(checksum);
 				Static335.socket.write(Static257.outboundBuffer.bytes, Static257.outboundBuffer.offset);
 				if (client.musicChannel != null) {
@@ -113,7 +113,7 @@ public final class Static319 {
 			if (n > Static290.bufferLength - Static218.bufferOffset) {
 				n = Static290.bufferLength - Static218.bufferOffset;
 			}
-			Static335.socket.read(Static298.buffer, n, Static218.bufferOffset);
+			Static335.socket.read(Static218.bufferOffset, n, Static298.buffer);
 			Static218.bufferOffset += n;
 			if (Static218.bufferOffset < Static290.bufferLength) {
 				return -1;

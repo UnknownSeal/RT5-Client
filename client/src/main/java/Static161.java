@@ -50,7 +50,7 @@ public final class Static161 {
 
 	@OriginalMember(owner = "client!jg", name = "a", descriptor = "(Ljava/lang/String;ZZ)V")
 	public static void execute(@OriginalArg(0) String command, @OriginalArg(1) boolean arg1) {
-		if (Static189.aClass127_6 == Static121.aClass127_4 && Static4.anInt90 < 2) {
+		if (Static189.aClass127_6 == Static121.aClass127_4 && Static4.staffModLevel < 2) {
 			return;
 		}
 		if (command.equalsIgnoreCase("errortest")) {
@@ -113,11 +113,11 @@ public final class Static161 {
 			}
 			if (command.equalsIgnoreCase("clientdrop")) {
 				Static158.add("Dropped client connection");
-				if (Static347.anInt6442 == 30) {
+				if (client.gameState == 30) {
 					Static211.method3724();
 					return;
 				}
-				if (Static347.anInt6442 == 25) {
+				if (client.gameState == 25) {
 					Static101.aBoolean158 = true;
 				}
 				return;
@@ -465,7 +465,7 @@ public final class Static161 {
 				Static158.add("varp=" + Static214.aClass226_1.method5776(local76));
 				return;
 			}
-			if (Static347.anInt6442 == 30) {
+			if (client.gameState == 30) {
 				Static91.method1960(Static243.aClass145_162);
 				Static257.outboundBuffer.p1(command.length() + 2);
 				Static257.outboundBuffer.p1(arg1 ? 1 : 0);
@@ -475,7 +475,7 @@ public final class Static161 {
 				GameShell.setFramesPerSecond(Static146.parseInt(command.substring(4)));
 				return;
 			}
-			if (Static347.anInt6442 != 30) {
+			if (client.gameState != 30) {
 				Static158.add("Unrecogonised commmand when not logged in: " + command);
 				return;
 			}
@@ -488,7 +488,7 @@ public final class Static161 {
 	@OriginalMember(owner = "client!jg", name = "a", descriptor = "(BZ)V")
 	public static void method2972(@OriginalArg(1) boolean arg0) {
 		Static37.method1135();
-		if (Static347.anInt6442 != 30 && Static347.anInt6442 != 25) {
+		if (client.gameState != 30 && client.gameState != 25) {
 			return;
 		}
 		Static367.anInt6876++;

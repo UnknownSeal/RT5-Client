@@ -19,7 +19,7 @@ public final class Class112 {
 	private int anInt2875;
 
 	@OriginalMember(owner = "client!ja", name = "l", descriptor = "Lclient!jd;")
-	private Class13 aClass13_11;
+	private Sprite aSprite_11;
 
 	@OriginalMember(owner = "client!ja", name = "p", descriptor = "I")
 	public int anInt2880;
@@ -62,7 +62,7 @@ public final class Class112 {
 
 	@OriginalMember(owner = "client!ja", name = "a", descriptor = "(Lclient!wm;IIIIII)V")
 	public void method2916(@OriginalArg(0) Class19 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6) {
-		if (this.aClass13_11 == null) {
+		if (this.aSprite_11 == null) {
 			return;
 		}
 		@Pc(10) int local10 = this.anInt2875 - arg5 & 0x3FFF;
@@ -76,7 +76,7 @@ public final class Class112 {
 		@Pc(38) int local38 = local10 * arg4 / 4096 + (arg4 - this.anInt2872) / 2;
 		@Pc(51) int local51 = local17 * arg4 / -4096 + (arg3 - this.anInt2872) / 2;
 		if (local38 < arg4 && local38 + this.anInt2872 > 0 && local51 < arg3 && local51 + this.anInt2872 > 0) {
-			this.aClass13_11.method6387(local51 + arg1, local38 + arg2, this.anInt2872, this.anInt2872);
+			this.aSprite_11.method6387(local51 + arg1, local38 + arg2, this.anInt2872, this.anInt2872);
 		}
 	}
 
@@ -139,12 +139,12 @@ public final class Class112 {
 		local147.method3843(local223, null, 1024);
 		@Pc(245) int local245 = this.anInt2874 * 13 / 16;
 		@Pc(252) int local252 = (this.anInt2874 - local245) / 2;
-		Static157.aClass13_10.method6394(local252, local252, local245, local245, 1, this.anInt2882 | 0xFF000000, 1);
-		this.aClass13_11 = arg0.method2818(0, 0, this.anInt2874, this.anInt2874, true);
+		Static157.aSprite_10.method6394(local252, local252, local245, local245, 1, this.anInt2882 | 0xFF000000, 1);
+		this.aSprite_11 = arg0.method2818(0, 0, this.anInt2874, this.anInt2874, true);
 		arg0.method2819();
 		arg0.method2901(0, 0, this.anInt2874, this.anInt2874, 0, 0);
-		Static157.aClass13_9.method6394(0, 0, this.anInt2874, this.anInt2874, 0, 0, 0);
-		this.aClass13_11.method6391(0);
+		Static157.aSprite_9.method6394(0, 0, this.anInt2874, this.anInt2874, 0, 0, 0);
+		this.aSprite_11.method6391(0);
 		arg0.method2895(Static157.anIntArray180[0], Static157.anIntArray180[1], Static157.anIntArray180[2], Static157.anIntArray180[3]);
 	}
 
@@ -204,23 +204,23 @@ public final class Class112 {
 		@Pc(218) Class14 local218 = arg0.method2808();
 		local218.method3921(0, 0, arg0.method2814() - local172.method3811());
 		local172.method3843(local218, null, arg0.method2814());
-		this.aClass13_11 = arg0.method2818(0, 0, this.anInt2874, this.anInt2874, true);
-		this.aClass13_11.method6391(3);
+		this.aSprite_11 = arg0.method2818(0, 0, this.anInt2874, this.anInt2874, true);
+		this.aSprite_11.method6391(3);
 		arg0.method2895(Static157.anIntArray180[0], Static157.anIntArray180[1], Static157.anIntArray180[2], Static157.anIntArray180[3]);
 	}
 
 	@OriginalMember(owner = "client!ja", name = "c", descriptor = "()V")
 	public void method2921() {
-		this.aClass13_11 = null;
+		this.aSprite_11 = null;
 	}
 
 	@OriginalMember(owner = "client!ja", name = "c", descriptor = "(Lclient!wm;Lclient!ja;)Z")
 	private boolean method2922(@OriginalArg(0) Class19 arg0, @OriginalArg(1) Class112 arg1) {
-		if (this.aClass13_11 == null) {
+		if (this.aSprite_11 == null) {
 			if (this.anInt2877 == 0) {
 				if (Static274.anInterface2_7.method2657(this.anInt2876)) {
 					@Pc(23) int[] local23 = Static274.anInterface2_7.method2656(0.7F, this.anInt2874, this.anInt2874, this.anInt2876);
-					this.aClass13_11 = arg0.method2884(local23, this.anInt2874, this.anInt2874, this.anInt2874);
+					this.aSprite_11 = arg0.method2884(local23, this.anInt2874, this.anInt2874, this.anInt2874);
 				}
 			} else if (this.anInt2877 == 2) {
 				this.method2919(arg0, arg1);
@@ -228,12 +228,12 @@ public final class Class112 {
 				this.method2918(arg0, arg1);
 			}
 		}
-		return this.aClass13_11 != null;
+		return this.aSprite_11 != null;
 	}
 
 	@OriginalMember(owner = "client!ja", name = "d", descriptor = "(Lclient!wm;Lclient!ja;)Z")
 	public boolean method2924(@OriginalArg(0) Class19 arg0, @OriginalArg(1) Class112 arg1) {
-		return this.aClass13_11 != null || this.method2922(arg0, arg1);
+		return this.aSprite_11 != null || this.method2922(arg0, arg1);
 	}
 
 	@OriginalMember(owner = "client!ja", name = "a", descriptor = "(IIII)Z")
@@ -268,7 +268,7 @@ public final class Class112 {
 			this.anInt2872 = 0;
 		}
 		if (this.anInt2872 < 8) {
-			this.aClass13_11 = null;
+			this.aSprite_11 = null;
 			return false;
 		}
 		@Pc(143) int local143 = Static162.clp2(this.anInt2872);
@@ -283,7 +283,7 @@ public final class Class112 {
 		}
 		this.anInt2875 = (int) (Math.asin((double) ((float) local12 / 256.0F)) * 5215.189175235227D) & 0x3FFF;
 		this.anInt2871 = (int) (Math.atan2((double) local7, (double) -local17) * 5215.189175235227D) & 0x3FFF;
-		this.aClass13_11 = null;
+		this.aSprite_11 = null;
 		return true;
 	}
 }

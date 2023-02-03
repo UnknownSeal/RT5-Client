@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!cn")
-public final class Class13_Sub1_Sub2 extends Class13_Sub1 {
+public final class Sprite_Sub1_Sub2 extends Sprite_Sub1 {
 
 	@OriginalMember(owner = "client!cn", name = "H", descriptor = "[B")
 	private final byte[] aByteArray13;
@@ -13,7 +13,7 @@ public final class Class13_Sub1_Sub2 extends Class13_Sub1 {
 	private final int[] anIntArray89;
 
 	@OriginalMember(owner = "client!cn", name = "<init>", descriptor = "(Lclient!j;[B[III)V")
-	public Class13_Sub1_Sub2(@OriginalArg(0) Class19_Sub2 arg0, @OriginalArg(1) byte[] arg1, @OriginalArg(2) int[] arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
+	public Sprite_Sub1_Sub2(@OriginalArg(0) Class19_Sub2 arg0, @OriginalArg(1) byte[] arg1, @OriginalArg(2) int[] arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
 		super(arg0, arg3, arg4);
 		this.aByteArray13 = arg1;
 		this.anIntArray89 = arg2;

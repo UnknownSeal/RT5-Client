@@ -33,7 +33,7 @@ public final class Static17 {
 	@OriginalMember(owner = "client!at", name = "a", descriptor = "(ZZ)V")
 	public static void method4209(@OriginalArg(1) boolean arg0) {
 		while (true) {
-			if (Static212.inboundBuffer.method4872(Static82.anInt1836) >= 15) {
+			if (Static212.inboundBuffer.method4872(Static82.length) >= 15) {
 				@Pc(16) int local16 = Static212.inboundBuffer.gBit(15);
 				if (local16 != 32767) {
 					@Pc(21) boolean local21 = false;

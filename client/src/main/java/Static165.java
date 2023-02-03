@@ -136,9 +136,9 @@ public final class Static165 {
 			} else if (Static241.method4189(local68.anInt1005)) {
 				@Pc(108) Class41 local108;
 				if (local68.anInt1005 == 1010) {
-					local108 = Static359.aClass202_4.method5162((int) local68.aLong30);
+					local108 = LocTypeList.locTypeList.method5162((int) local68.aLong30);
 				} else {
-					local108 = Static359.aClass202_4.method5162((int) (local68.aLong30 >>> 32 & 0x7FFFFFFFL));
+					local108 = LocTypeList.locTypeList.method5162((int) (local68.aLong30 >>> 32 & 0x7FFFFFFFL));
 				}
 				if (local108.anIntArray94 != null) {
 					local108 = local108.method1533(Static214.aClass226_1);
@@ -159,10 +159,10 @@ public final class Static165 {
 			if (local218 == null) {
 				local218 = Static52.aClass130_1;
 			}
-			local218.method5902(Static129.anInt2460, local41, Static288.anInt5464, Static61.aRandom1, Static164.aComponent_5.valign, Static210.anIntArray229, Static164.aComponent_5.graphicShadow, Static164.aComponent_5.width, Static164.aComponent_5.color, Static283.anInt5352, Static134.aClass13Array12, Static164.aComponent_5.height, Static164.aComponent_5.halign, Static72.anIntArray114);
+			local218.method5902(Static129.anInt2460, local41, Static288.anInt5464, Static61.aRandom1, Static164.aComponent_5.valign, Static210.anIntArray229, Static164.aComponent_5.graphicShadow, Static164.aComponent_5.width, Static164.aComponent_5.color, Static283.anInt5352, Static134.aSpriteArray12, Static164.aComponent_5.height, Static164.aComponent_5.halign, Static72.anIntArray114);
 			Static369.method6220(Static210.anIntArray229[2], Static210.anIntArray229[0], Static210.anIntArray229[3], Static210.anIntArray229[1]);
 		} else if (Static179.aComponent_6 != null && GameType.GAME_TYPE_RUNESCAPE == client.game) {
-			@Pc(287) int local287 = Static52.aClass130_1.method5898(Static290.anInt5498 + 4, Static283.anInt5352, Static134.aClass13Array12, Static61.aRandom1, Static63.anInt1549 + 16, Static72.anIntArray114, local41);
+			@Pc(287) int local287 = Static52.aClass130_1.method5898(Static290.anInt5498 + 4, Static283.anInt5352, Static134.aSpriteArray12, Static61.aRandom1, Static63.anInt1549 + 16, Static72.anIntArray114, local41);
 			Static369.method6220(Static113.aClass239_2.method6125(local41) + local287, Static290.anInt5498 + 4, 16, Static63.anInt1549);
 		}
 	}

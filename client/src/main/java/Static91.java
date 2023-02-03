@@ -59,7 +59,7 @@ public final class Static91 {
 				Static5.sockerRequest = GameShell.signlink.openSocket(client.hostname, client.port);
 				Static347.step = 2;
 			}
-			@Pc(112) int local112;
+
 			if (Static347.step == 2) {
 				if (Static5.sockerRequest.status == 2) {
 					throw new IOException();
@@ -69,11 +69,11 @@ public final class Static91 {
 				}
 				Static335.socket = new BufferedSocket((Socket) Static5.sockerRequest.result, GameShell.signlink);
 				Static5.sockerRequest = null;
-				@Pc(105) long local105 = Static241.aLong130 = Static80.method5984(Static374.username);
-				local112 = (int) (local105 >> 16 & 0x1FL);
+				@Pc(105) long encodedUsername = Static241.encodedUsername = Static80.encode(Static374.username);
+				@Pc(112) int usernameHash = (int) (encodedUsername >> 16 & 0x1FL);
 				Static257.outboundBuffer.offset = 0;
-				Static257.outboundBuffer.p1(Static43.aClass242_1.anInt7038);
-				Static257.outboundBuffer.p1(local112);
+				Static257.outboundBuffer.p1(Static43.aClass242_1.value);
+				Static257.outboundBuffer.p1(usernameHash);
 				Static335.socket.write(Static257.outboundBuffer.bytes, 2);
 				if (client.musicChannel != null) {
 					client.musicChannel.method6324();
@@ -81,16 +81,16 @@ public final class Static91 {
 				if (client.soundChannel != null) {
 					client.soundChannel.method6324();
 				}
-				@Pc(145) int local145 = Static335.socket.read();
+				@Pc(145) int reply = Static335.socket.read();
 				if (client.musicChannel != null) {
 					client.musicChannel.method6324();
 				}
 				if (client.soundChannel != null) {
 					client.soundChannel.method6324();
 				}
-				if (local145 != 0) {
+				if (reply != 0) {
 					Static347.step = 0;
-					Static41.reply = local145;
+					Static41.reply = reply;
 					Static335.socket.close();
 					Static335.socket = null;
 					return;
@@ -101,27 +101,27 @@ public final class Static91 {
 				if (Static335.socket.available() < 8) {
 					return;
 				}
-				Static335.socket.read(Static212.inboundBuffer.bytes, 8, 0);
+				Static335.socket.read(0, 8, Static212.inboundBuffer.bytes);
 				Static212.inboundBuffer.offset = 0;
 				Static201.serverKey = Static212.inboundBuffer.g8();
-				@Pc(208) Buffer local208 = new Buffer(70);
-				@Pc(211) int[] local211 = new int[] { (int) (Math.random() * 9.9999999E7D), (int) (Math.random() * 9.9999999E7D), (int) (Static201.serverKey >> 32), (int) Static201.serverKey};
-				local208.p1(10);
-				local208.p4(local211[0]);
-				local208.p4(local211[1]);
-				local208.p4(local211[2]);
-				local208.p4(local211[3]);
-				local208.p8(Static80.method5984(Static374.username));
-				local208.pjstr(Static16.aString51);
-				local208.rsaenc(Static320.aBigInteger2, Static194.aBigInteger1);
+				@Pc(208) Buffer buffer = new Buffer(70);
+				@Pc(211) int[] key = new int[] { (int) (Math.random() * 9.9999999E7D), (int) (Math.random() * 9.9999999E7D), (int) (Static201.serverKey >> 32), (int) Static201.serverKey};
+				buffer.p1(10);
+				buffer.p4(key[0]);
+				buffer.p4(key[1]);
+				buffer.p4(key[2]);
+				buffer.p4(key[3]);
+				buffer.p8(Static80.encode(Static374.username));
+				buffer.pjstr(Static16.password);
+				buffer.rsaEncrypt(Static194.EXPONENT, Static320.MODULUS);
 				Static257.outboundBuffer.offset = 0;
-				if (Static347.anInt6442 == 40) {
-					Static257.outboundBuffer.p1(Static43.aClass242_5.anInt7038);
+				if (client.gameState == 40) {
+					Static257.outboundBuffer.p1(Static43.aClass242_5.value);
 				} else {
-					Static257.outboundBuffer.p1(Static43.aClass242_3.anInt7038);
+					Static257.outboundBuffer.p1(Static43.aClass242_3.value);
 				}
 				Static257.outboundBuffer.p2(0);
-				local112 = Static257.outboundBuffer.offset;
+				int local112 = Static257.outboundBuffer.offset;
 				Static257.outboundBuffer.p4(578);
 				Static257.outboundBuffer.p1(Static202.anInt3714);
 				Static257.outboundBuffer.p1(Static144.getWindowMode());
@@ -165,14 +165,14 @@ public final class Static91 {
 				Static257.outboundBuffer.p4(client.js5Archive26.getChecksum());
 				Static257.outboundBuffer.p4(client.js5Archive27.getChecksum());
 				Static257.outboundBuffer.p4(client.js5Archive28.getChecksum());
-				Static257.outboundBuffer.pdata(local208.bytes, local208.offset);
+				Static257.outboundBuffer.pdata(buffer.bytes, buffer.offset);
 				Static257.outboundBuffer.psize2(Static257.outboundBuffer.offset - local112);
 				Static335.socket.write(Static257.outboundBuffer.bytes, Static257.outboundBuffer.offset);
-				Static257.outboundBuffer.initIsaac(local211);
-				for (@Pc(579) int local579 = 0; local579 < 4; local579++) {
-					local211[local579] += 50;
+				Static257.outboundBuffer.initIsaac(key);
+				for (@Pc(579) int i = 0; i < 4; i++) {
+					key[i] += 50;
 				}
-				Static212.inboundBuffer.initIsaac(local211);
+				Static212.inboundBuffer.initIsaac(key);
 				Static347.step = 4;
 			}
 			@Pc(619) int local619;
@@ -193,7 +193,7 @@ public final class Static91 {
 					Static347.step = 8;
 				} else if (local619 == 15) {
 					Static347.step = 12;
-					Static82.anInt1836 = -2;
+					Static82.length = -2;
 				} else if (local619 == 23 && Static216.errors < 1) {
 					Static182.loops = 0;
 					Static216.errors++;
@@ -211,7 +211,7 @@ public final class Static91 {
 			}
 			if (Static347.step == 6) {
 				Static257.outboundBuffer.offset = 0;
-				Static257.outboundBuffer.p1isaac(Static43.aClass242_4.anInt7038);
+				Static257.outboundBuffer.p1isaac(Static43.aClass242_4.value);
 				Static335.socket.write(Static257.outboundBuffer.bytes, Static257.outboundBuffer.offset);
 				Static347.step = 4;
 			} else if (Static347.step == 7) {
@@ -227,21 +227,21 @@ public final class Static91 {
 					if (Static335.socket.available() < 13) {
 						return;
 					}
-					Static335.socket.read(Static212.inboundBuffer.bytes, 13, 0);
+					Static335.socket.read(0, 13, Static212.inboundBuffer.bytes);
 					Static212.inboundBuffer.offset = 0;
-					Static4.anInt90 = Static212.inboundBuffer.g1();
-					Static210.anInt3774 = Static212.inboundBuffer.g1();
-					Static56.aBoolean123 = Static212.inboundBuffer.g1() == 1;
+					Static4.staffModLevel = Static212.inboundBuffer.g1();
+					Static210.blackmarks = Static212.inboundBuffer.g1();
+					Static56.playerUnderage = Static212.inboundBuffer.g1() == 1;
 					Static101.aBoolean159 = Static212.inboundBuffer.g1() == 1;
 					Static347.aBoolean434 = Static212.inboundBuffer.g1() == 1;
-					Static109.aBoolean166 = Static212.inboundBuffer.g1() == 1;
-					Static234.anInt4226 = Static212.inboundBuffer.g2();
-					Static381.aBoolean482 = Static212.inboundBuffer.g1() == 1;
+					Static109.enabled = Static212.inboundBuffer.g1() == 1;
+					Static234.selfID = Static212.inboundBuffer.g2();
+					Static381.playerMemeber = Static212.inboundBuffer.g1() == 1;
 					Static206.mapMembers = Static212.inboundBuffer.g1() == 1;
-					Static359.aClass202_4.setAllowMembers(Static206.mapMembers);
+					LocTypeList.locTypeList.setAllowMembers(Static206.mapMembers);
 					ObjTypeList.objTypeList.setAllowMembers(Static206.mapMembers);
 					Static6.aClass219_1.setAllowMembers(Static206.mapMembers);
-					if (Static56.aBoolean123 && !Static347.aBoolean434 || Static381.aBoolean482) {
+					if (Static56.playerUnderage && !Static347.aBoolean434 || Static381.playerMemeber) {
 						try {
 							BrowserControl.call(GameShell.signlink.applet, "zap");
 						} catch (@Pc(896) Throwable local896) {
@@ -271,18 +271,18 @@ public final class Static91 {
 						if (Static335.socket.available() < 1) {
 							return;
 						}
-						Static335.socket.read(Static212.inboundBuffer.bytes, 1, Static212.inboundBuffer.offset + 2);
+						Static335.socket.read(Static212.inboundBuffer.offset + 2, 1, Static212.inboundBuffer.bytes);
 					}
-					Static231.aClass89_164 = Static166.method3187()[Static212.inboundBuffer.method4863()];
-					Static82.anInt1836 = Static212.inboundBuffer.g2();
+					Static231.packetInbound = Static166.method3187()[Static212.inboundBuffer.method4863()];
+					Static82.length = Static212.inboundBuffer.g2();
 					Static347.step = 9;
 				}
 				if (Static347.step == 9) {
-					if (Static335.socket.available() >= Static82.anInt1836) {
-						Static335.socket.read(Static212.inboundBuffer.bytes, Static82.anInt1836, 0);
+					if (Static335.socket.available() >= Static82.length) {
+						Static335.socket.read(0, Static82.length, Static212.inboundBuffer.bytes);
 						Static212.inboundBuffer.offset = 0;
 						Static41.reply = 2;
-						local619 = Static82.anInt1836;
+						local619 = Static82.length;
 						Static347.step = 0;
 						Static390.method6448();
 						Static366.method6119(Static212.inboundBuffer);
@@ -291,29 +291,29 @@ public final class Static91 {
 						if (local619 != Static212.inboundBuffer.offset) {
 							throw new RuntimeException("lswp pos:" + Static212.inboundBuffer.offset + " psize:" + local619);
 						}
-						Static231.aClass89_164 = null;
+						Static231.packetInbound = null;
 					}
 				} else if (Static347.step == 12) {
-					if (Static82.anInt1836 == -2) {
+					if (Static82.length == -2) {
 						if (Static335.socket.available() < 2) {
 							return;
 						}
-						Static335.socket.read(Static212.inboundBuffer.bytes, 2, 0);
+						Static335.socket.read(0, 2, Static212.inboundBuffer.bytes);
 						Static212.inboundBuffer.offset = 0;
-						Static82.anInt1836 = Static212.inboundBuffer.g2();
+						Static82.length = Static212.inboundBuffer.g2();
 					}
-					if (Static335.socket.available() >= Static82.anInt1836) {
-						Static335.socket.read(Static212.inboundBuffer.bytes, Static82.anInt1836, 0);
+					if (Static335.socket.available() >= Static82.length) {
+						Static335.socket.read(0, Static82.length, Static212.inboundBuffer.bytes);
 						Static212.inboundBuffer.offset = 0;
 						Static41.reply = 15;
 						Static347.step = 0;
-						local619 = Static82.anInt1836;
+						local619 = Static82.length;
 						Static182.method3387();
 						Static366.method6119(Static212.inboundBuffer);
 						if (Static212.inboundBuffer.offset != local619) {
 							throw new RuntimeException("lswpr pos:" + Static212.inboundBuffer.offset + " psize:" + local619);
 						}
-						Static231.aClass89_164 = null;
+						Static231.packetInbound = null;
 					}
 				}
 			} else if (Static335.socket.available() >= 1) {

@@ -8,7 +8,7 @@ public final class Static247 {
 
 	@OriginalMember(owner = "client!od", name = "f", descriptor = "(I)V")
 	public static void method4298() {
-		Static292.aClass13_15 = null;
+		Static292.aSprite_15 = null;
 		Static343.anInt6389 = -1;
 	}
 

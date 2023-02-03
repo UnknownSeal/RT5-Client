@@ -11,7 +11,7 @@ public final class Static75 {
 	public static int[] anIntArray117;
 
 	@OriginalMember(owner = "client!ef", name = "z", descriptor = "Lclient!jd;")
-	public static Class13 aClass13_5;
+	public static Sprite aSprite_5;
 
 	@OriginalMember(owner = "client!ef", name = "B", descriptor = "I")
 	public static int anInt1737;

@@ -100,7 +100,7 @@ public final class Static142 {
 			}
 			if (Static141.anInt2652 == 4 && Static335.socket.available() >= Static163.aStringArray23.length * 8) {
 				Static212.inboundBuffer.offset = 0;
-				Static335.socket.read(Static212.inboundBuffer.bytes, Static163.aStringArray23.length * 8, 0);
+				Static335.socket.read(0, Static163.aStringArray23.length * 8, Static212.inboundBuffer.bytes);
 				for (local119 = 0; local119 < Static163.aStringArray23.length; local119++) {
 					Static163.aStringArray23[local119] = Static202.method3675(Static212.inboundBuffer.g8());
 				}

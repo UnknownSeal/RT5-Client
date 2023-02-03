@@ -119,8 +119,8 @@ public final class Static67 {
 	public static void clear() {
 		if (Static283.loaded) {
 			Static283.loaded = false;
-			Static252.aClass13_14 = null;
-			Static333.aClass13_21 = null;
+			Static252.aSprite_14 = null;
+			Static333.aSprite_21 = null;
 		}
 	}
 }

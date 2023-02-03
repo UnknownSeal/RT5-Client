@@ -17,7 +17,7 @@ public final class Class2_Sub2_Sub3 extends SecondaryNode {
 		aClass242Array1 = new Class242[32];
 		@Pc(80) Class242[] local80 = Static180.method3370();
 		for (@Pc(82) int local82 = 0; local82 < local80.length; local82++) {
-			aClass242Array1[local80[local82].anInt7038] = local80[local82];
+			aClass242Array1[local80[local82].value] = local80[local82];
 		}
 	}
 

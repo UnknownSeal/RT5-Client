@@ -36,7 +36,7 @@ public final class Static181 {
 			local23 = Static212.inboundBuffer.g1();
 			local36 = Static212.inboundBuffer.g1bneg() == 1;
 			Static217.method3794(local23);
-			local44 = (Static82.anInt1836 - Static212.inboundBuffer.offset) / 16;
+			local44 = (Static82.length - Static212.inboundBuffer.offset) / 16;
 			Static277.xteaKeys = new int[local44][4];
 			for (local48 = 0; local48 < local44; local48++) {
 				for (local52 = 0; local52 < 4; local52++) {
@@ -87,7 +87,7 @@ public final class Static181 {
 			}
 		}
 		Static212.inboundBuffer.accessBytes();
-		local48 = (Static82.anInt1836 - Static212.inboundBuffer.offset) / 16;
+		local48 = (Static82.length - Static212.inboundBuffer.offset) / 16;
 		Static277.xteaKeys = new int[local48][4];
 		for (local52 = 0; local52 < local48; local52++) {
 			for (local59 = 0; local59 < 4; local59++) {

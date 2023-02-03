@@ -5,10 +5,10 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static157 {
 
 	@OriginalMember(owner = "client!ja", name = "f", descriptor = "Lclient!jd;")
-	public static Class13 aClass13_9;
+	public static Sprite aSprite_9;
 
 	@OriginalMember(owner = "client!ja", name = "h", descriptor = "Lclient!jd;")
-	public static Class13 aClass13_10;
+	public static Sprite aSprite_10;
 
 	@OriginalMember(owner = "client!ja", name = "o", descriptor = "Lclient!gn;")
 	public static Model aModel_4;
@@ -19,7 +19,7 @@ public final class Static157 {
 	@OriginalMember(owner = "client!ja", name = "a", descriptor = "()V")
 	public static void method2917() {
 		aModel_4 = null;
-		aClass13_9 = null;
+		aSprite_9 = null;
 	}
 
 	@OriginalMember(owner = "client!ja", name = "a", descriptor = "(Lclient!wm;)V")
@@ -70,7 +70,7 @@ public final class Static157 {
 
 	@OriginalMember(owner = "client!ja", name = "b", descriptor = "(Lclient!wm;)V")
 	public static void method2925(@OriginalArg(0) Class19 arg0) {
-		if (aClass13_9 != null) {
+		if (aSprite_9 != null) {
 			return;
 		}
 		@Pc(4) int[] local4 = new int[16384];
@@ -97,7 +97,7 @@ public final class Static157 {
 				local4[local28 + local34] = local4[local28 + local49] = local4[local32 + local34] = local4[local32 + local49] = 127 - local81 << 24 | 0xFFFFFF;
 			}
 		}
-		aClass13_9 = arg0.method2884(local7, 128, 128, 128);
-		aClass13_10 = arg0.method2884(local4, 128, 128, 128);
+		aSprite_9 = arg0.method2884(local7, 128, 128, 128);
+		aSprite_10 = arg0.method2884(local4, 128, 128, 128);
 	}
 }

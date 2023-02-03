@@ -244,7 +244,7 @@ public final class Static201 {
 									if (Static88.aBoolean134) {
 										Static190.aClass19_8.method2817(local90, local95, local90 + local19.width, local19.height + local95);
 									}
-									local955.method5892(0, local19.textLineHeight, local90, local19.halign, local19.textShadow ? 255 - (local98 & 0xFF) << 24 : -1, null, 0, null, local19.height, local970, local19.valign, local95, Static124.aClass13Array27, local248 | 255 - (local98 & 0xFF) << 24, local19.width);
+									local955.method5892(0, local19.textLineHeight, local90, local19.halign, local19.textShadow ? 255 - (local98 & 0xFF) << 24 : -1, null, 0, null, local19.height, local970, local19.valign, local95, Static124.aSpriteArray27, local248 | 255 - (local98 & 0xFF) << 24, local19.width);
 									if (Static88.aBoolean134) {
 										Static190.aClass19_8.method2895(arg5, arg3, arg6, arg0);
 									}
@@ -255,7 +255,7 @@ public final class Static201 {
 								@Pc(1161) int local1161;
 								if (local19.type == 5) {
 									if (local19.anInt4280 < 0) {
-										@Pc(1139) Class13 local1139;
+										@Pc(1139) Sprite local1139;
 										if (local19.objId == -1) {
 											local1139 = local19.method4112(Static190.aClass19_8);
 										} else {
@@ -327,7 +327,7 @@ public final class Static201 {
 										if (local1161 >= 0 && local1161 < 2048) {
 											@Pc(1566) Class11_Sub5_Sub2_Sub1 local1566 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local1161];
 											@Pc(1579) SeqType local1579 = local19.modelSeqID == -1 ? null : Static39.aClass85_1.method2371(local19.modelSeqID);
-											if (local1566 != null && (local1161 == Static234.anInt4226 || Static276.method4650(local1566.aString41) == local19.anInt4236)) {
+											if (local1566 != null && (local1161 == Static234.selfID || Static276.method4650(local1566.aString41) == local19.anInt4236)) {
 												local1477 = local1566.appearance.getBodyModel(local19.anInt4283, Static59.aClass7_1, Static39.aClass85_1, IdentityKitTypeList.identityKitTypeList, local1579, local19.anInt4316, 0, 1024, -1, 0, null, Static214.aClass226_1, ObjTypeList.objTypeList, Static190.aClass19_8, Static6.aClass219_1, null, local19.anInt4247);
 											}
 										}

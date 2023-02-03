@@ -31,7 +31,7 @@ public final class WorldMapFont {
 	private boolean aBoolean205 = false;
 
 	@OriginalMember(owner = "client!je", name = "c", descriptor = "[Lclient!jd;")
-	private final Class13[] aClass13Array14;
+	private final Sprite[] aSpriteArray14;
 
 	@OriginalMember(owner = "client!je", name = "d", descriptor = "[I")
 	private final int[] anIntArray183;
@@ -49,7 +49,7 @@ public final class WorldMapFont {
 	@OriginalMember(owner = "client!je", name = "<init>", descriptor = "(Lclient!wm;IZLjava/awt/Component;)V")
 	public WorldMapFont(@OriginalArg(0) Class19 arg0, @OriginalArg(1) int size, @OriginalArg(2) boolean arg2, @OriginalArg(3) Component component) {
 		this.aBoolean205 = false;
-		this.aClass13Array14 = new Class13[256];
+		this.aSpriteArray14 = new Sprite[256];
 		this.anIntArray183 = new int[256];
 		@Pc(30) Font bold = new Font("Helvetica", 1, size);
 		@Pc(34) FontMetrics boldMetrics = component.getFontMetrics(bold);
@@ -81,9 +81,9 @@ public final class WorldMapFont {
 		for (@Pc(9) int local9 = 0; local9 < arg1.length(); local9++) {
 			@Pc(16) int local16 = CHAR_INDEXES[arg1.charAt(local9)];
 			if (arg6) {
-				this.aClass13Array14[local16].method6400(arg3 + 1, arg4 + 1, 1, -16777216);
+				this.aSpriteArray14[local16].method6400(arg3 + 1, arg4 + 1, 1, -16777216);
 			}
-			this.aClass13Array14[local16].method6400(arg3, arg4, 1, local7);
+			this.aSpriteArray14[local16].method6400(arg3, arg4, 1, local7);
 			arg3 += this.anIntArray183[local16];
 		}
 	}
@@ -152,7 +152,7 @@ public final class WorldMapFont {
 		this.anInt2914 = maxAscent - local123;
 		this.anInt2912 = height;
 		this.anIntArray183[arg4] = width;
-		this.aClass13Array14[arg4] = arg0.method2884(pixels, imageWidth, imageWidth, imageHeight);
+		this.aSpriteArray14[arg4] = arg0.method2884(pixels, imageWidth, imageWidth, imageHeight);
 	}
 
 	@OriginalMember(owner = "client!je", name = "a", descriptor = "(Ljava/lang/String;)I")

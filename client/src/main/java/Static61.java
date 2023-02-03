@@ -16,7 +16,7 @@ public final class Static61 {
 		if (arg0 == null) {
 			return;
 		}
-		if (Static384.anInt7178 >= 100 && !Static381.aBoolean482 || Static384.anInt7178 >= 200) {
+		if (Static384.anInt7178 >= 100 && !Static381.playerMemeber || Static384.anInt7178 >= 200) {
 			Static207.add(LocalisedText.FRIEND_LIST_FULL.getLocalisedText(client.language));
 			return;
 		}

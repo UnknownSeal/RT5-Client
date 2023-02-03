@@ -26,10 +26,10 @@ public final class Static348 {
 			return;
 		}
 		arg1.method2867(0);
-		Static252.aClass13_14 = arg1.method2891(Static396.loadSoftwareSpriteAutoDetect(arg0, Static75.anInt1736));
-		Static252.aClass13_14.method6384((GameShell.canvasWidth - Static252.aClass13_14.method6398()) / 2, (GameShell.canvasHeight - Static252.aClass13_14.method6383()) / 2);
-		Static333.aClass13_21 = arg1.method2891(Static396.loadSoftwareSpriteAutoDetect(arg0, Static265.anInt4856));
-		Static333.aClass13_21.method6384((GameShell.canvasWidth - Static333.aClass13_21.method6398()) / 2, 18);
+		Static252.aSprite_14 = arg1.method2891(Static396.loadSoftwareSpriteAutoDetect(arg0, Static75.anInt1736));
+		Static252.aSprite_14.method6384((GameShell.canvasWidth - Static252.aSprite_14.method6398()) / 2, (GameShell.canvasHeight - Static252.aSprite_14.method6383()) / 2);
+		Static333.aSprite_21 = arg1.method2891(Static396.loadSoftwareSpriteAutoDetect(arg0, Static265.anInt4856));
+		Static333.aSprite_21.method6384((GameShell.canvasWidth - Static333.aSprite_21.method6398()) / 2, 18);
 		Static283.loaded = true;
 	}
 }

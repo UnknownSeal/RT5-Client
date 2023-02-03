@@ -26,7 +26,7 @@ public final class Static158 {
 		for (@Pc(13) int local13 = 0; local13 < arg0.length; local13++) {
 			@Pc(27) Class230 local27 = Static287.aClass233_1.method5884(arg0[local13]);
 			if (local27.anInt6454 != -1) {
-				@Pc(39) Class13 local39 = (Class13) Static210.A_SOFT_LRU_HASH_TABLE___31.get((long) local27.anInt6454);
+				@Pc(39) Sprite local39 = (Sprite) Static210.A_SOFT_LRU_HASH_TABLE___31.get((long) local27.anInt6454);
 				if (local39 == null) {
 					@Pc(47) SoftwareSprite local47 = Static396.loadSoftwareSprite(client.js5Archive8, local27.anInt6454, 0);
 					if (local47 != null) {
@@ -35,7 +35,7 @@ public final class Static158 {
 					}
 				}
 				if (local39 != null) {
-					Static134.aClass13Array12[local11] = local39;
+					Static134.aSpriteArray12[local11] = local39;
 					local9.append(" <img=").append(local11).append(">");
 					local11++;
 				}

@@ -88,7 +88,7 @@ public final class Static303 {
 			if (arg2.aString41 != null && arg2.appearance != null) {
 				@Pc(59) boolean local59 = false;
 				if (local36 <= 1) {
-					if (!local51 && (Static56.aBoolean123 && !Static101.aBoolean159 || Static109.aBoolean166)) {
+					if (!local51 && (Static56.playerUnderage && !Static101.aBoolean159 || Static109.enabled)) {
 						local59 = true;
 					} else if (Static105.method2208(arg2.aString41)) {
 						local59 = true;

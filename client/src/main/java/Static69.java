@@ -25,8 +25,8 @@ public final class Static69 {
 				Static365.npcs[local24] = null;
 			}
 		}
-		if (Static212.inboundBuffer.offset != Static82.anInt1836) {
-			throw new RuntimeException("gnp1 pos:" + Static212.inboundBuffer.offset + " psize:" + Static82.anInt1836);
+		if (Static212.inboundBuffer.offset != Static82.length) {
+			throw new RuntimeException("gnp1 pos:" + Static212.inboundBuffer.offset + " psize:" + Static82.length);
 		}
 		for (local24 = 0; local24 < Static166.size; local24++) {
 			if (Static365.npcs[Static211.ids[local24]] == null) {

@@ -110,7 +110,7 @@ public final class Static209 {
 			Static344.method5527(arg1, Static344.anInt6048 >> 2 << 10, Static344.anInt6049 >> 1);
 			Static344.aClass125_4.method3376(256, 1024);
 			Static344.aClass104_4.method2702(256, 256);
-			Static344.aClass202_3.method5160(4096);
+			Static344.aLocTypeList_3.method5160(4096);
 			Static322.aClass128_1.method3391(256);
 			Static355.loadPercentage = 20;
 		} else if (Static355.loadPercentage == 20) {

@@ -218,7 +218,7 @@ public final class Js5NetQueue {
 					if (local175 < local219) {
 						local219 = local175;
 					}
-					this.socket.read(this.ingoingBuffer.bytes, local219, this.ingoingBuffer.offset);
+					this.socket.read(this.ingoingBuffer.offset, local219, this.ingoingBuffer.bytes);
 					if (this.encryptionKey != 0) {
 						for (local243 = 0; local243 < local219; local243++) {
 							this.ingoingBuffer.bytes[this.ingoingBuffer.offset + local243] = (byte) (this.ingoingBuffer.bytes[this.ingoingBuffer.offset + local243] ^ this.encryptionKey);
@@ -271,7 +271,7 @@ public final class Js5NetQueue {
 					if (local175 < local243) {
 						local243 = local175;
 					}
-					this.socket.read(this.current.data.bytes, local243, this.current.data.offset);
+					this.socket.read(this.current.data.offset, local243, this.current.data.bytes);
 					if (this.encryptionKey != 0) {
 						for (local301 = 0; local301 < local243; local301++) {
 							this.current.data.bytes[local301 + this.current.data.offset] ^= this.encryptionKey;

@@ -6,7 +6,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static137 {
 
 	@OriginalMember(owner = "client!hq", name = "v", descriptor = "[Lclient!jd;")
-	public static Class13[] aClass13Array13;
+	public static Sprite[] aSprite;
 
 	@OriginalMember(owner = "client!hq", name = "C", descriptor = "Lclient!r;")
 	public static Js5 archive;
@@ -31,9 +31,9 @@ public final class Static137 {
 		if (!Static375.aBoolean477) {
 			Static147.method2703();
 		}
-		for (@Pc(36) int local36 = 0; local36 < 100 && Static235.method3340(); local36++) {
+		for (@Pc(36) int local36 = 0; local36 < 100 && Static235.readPacket(); local36++) {
 		}
-		if (Static347.anInt6442 != 30) {
+		if (client.gameState != 30) {
 			return;
 		}
 		Static5.method88(Static257.outboundBuffer, Static163.aClass145_116.method3701());
@@ -224,7 +224,7 @@ public final class Static137 {
 			Static184.aFloat39 /= 2.0F;
 		}
 		Static183.method68();
-		if (Static347.anInt6442 != 30) {
+		if (client.gameState != 30) {
 			return;
 		}
 		Static56.method1611();
@@ -409,7 +409,7 @@ public final class Static137 {
 											if (Static375.aComponent_14 != null) {
 												Static122.method2398();
 											}
-											if (Static4.anInt90 > 0 && Static174.aClass123_2.method3342(82) && Static174.aClass123_2.method3342(81) && Static323.anInt6063 != 0) {
+											if (Static4.staffModLevel > 0 && Static174.aClass123_2.method3342(82) && Static174.aClass123_2.method3342(81) && Static323.anInt6063 != 0) {
 												local410 = Static17.self.aByte78 - Static323.anInt6063;
 												if (local410 < 0) {
 													local410 = 0;

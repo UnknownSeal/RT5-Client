@@ -59,13 +59,13 @@ public final class Static169 {
 
 	@OriginalMember(owner = "client!jr", name = "a", descriptor = "(IIIZIII)V")
 	public static void method3212(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(4) int arg2, @OriginalArg(6) int arg3) {
-		@Pc(7) Class84[] local7 = Static50.aClass84Array1;
+		@Pc(7) HintArrow[] local7 = Static50.HINT_ARROWS;
 		for (@Pc(9) int local9 = 0; local9 < local7.length; local9++) {
-			@Pc(17) Class84 local17 = local7[local9];
-			if (local17 != null && local17.anInt2355 == 2) {
-				Static121.method2394(local17.anInt2359, arg2 >> 1, local17.anInt2356 + (local17.anInt2364 - Static148.originZ << 7), local17.anInt2362 * 2, arg0 >> 1, (local17.anInt2352 - Static164.originX << 7) + local17.anInt2350);
+			@Pc(17) HintArrow local17 = local7[local9];
+			if (local17 != null && local17.type == 2) {
+				Static121.method2394(local17.anInt2359, arg2 >> 1, local17.zOffset + (local17.anInt2364 - Static148.originZ << 7), local17.anInt2362 * 2, arg0 >> 1, (local17.anInt2352 - Static164.originX << 7) + local17.xOffset);
 				if (Static216.anIntArray231[0] > -1 && Static114.loop % 20 < 10) {
-					Static230.aClass13Array16[local17.anInt2363].method6384(arg1 + Static216.anIntArray231[0] - 12, Static216.anIntArray231[1] + arg3 - 28);
+					Static230.headHints[local17.headIcon].method6384(arg1 + Static216.anIntArray231[0] - 12, Static216.anIntArray231[1] + arg3 - 28);
 				}
 			}
 		}

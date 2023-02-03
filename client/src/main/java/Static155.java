@@ -72,23 +72,23 @@ public final class Static155 {
 
 	@OriginalMember(owner = "client!it", name = "b", descriptor = "(I)V")
 	public static void method2790() {
-		Static12.aClass13_2 = null;
-		Static119.aClass13_7 = null;
-		Static137.aClass13Array13 = null;
-		Static332.aClass13Array23 = null;
+		Static12.aSprite_2 = null;
+		Static119.aSprite_7 = null;
+		Static137.aSprite = null;
+		Static332.aSpriteArray23 = null;
 		Static276.aClass130_4 = null;
 		Static76.mapDots = null;
-		Static15.aClass13Array3 = null;
+		Static15.aSpriteArray3 = null;
 		Static200.aClass130_3 = null;
-		Static232.aClass13Array17 = null;
-		Static126.aClass13Array22 = null;
-		Static116.aClass13Array8 = null;
-		Static123.aClass13Array10 = null;
-		Static124.aClass13Array27 = null;
+		Static232.aSpriteArray17 = null;
+		Static126.aSpriteArray22 = null;
+		Static116.aSpriteArray8 = null;
+		Static123.aSpriteArray10 = null;
+		Static124.aSpriteArray27 = null;
 		Static52.aClass130_1 = null;
-		Static288.aClass13Array21 = null;
-		Static352.aClass13Array25 = null;
-		Static62.aClass13Array9 = null;
-		Static230.aClass13Array16 = null;
+		Static288.aSpriteArray21 = null;
+		Static352.aSpriteArray25 = null;
+		Static62.aSpriteArray9 = null;
+		Static230.headHints = null;
 	}
 }

@@ -674,7 +674,7 @@ public final class ObjType {
 		if (local176) {
 			local210.method3841(this.resizeX, this.resizeY, this.resizeZ);
 		}
-		@Pc(227) Class13 local227 = null;
+		@Pc(227) Sprite local227 = null;
 		if (this.certificateTemplate != -1) {
 			local227 = this.objTypeList.method2769(this.certificateLink, arg0, 10, arg2, true, 0, true, arg1, 0, arg4, 1);
 			if (local227 == null) {

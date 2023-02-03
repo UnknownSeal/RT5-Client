@@ -78,7 +78,7 @@ public final class Static327 {
 					if (GameType.GAME_TYPE_STELLARDAWN == client.game) {
 						Static1.add(-1, true, local56, false, LocalisedText.FACE_HERE.getLocalisedText(client.language), local54, 59, "", -1, 0L);
 					}
-					Static1.add(-1, true, local56, false, Static330.aString62, local54, 22, "", -1, 0L);
+					Static1.add(-1, true, local56, false, Static330.walkHereOp, local54, 22, "", -1, 0L);
 				}
 			}
 		}
@@ -211,7 +211,7 @@ public final class Static327 {
 				}
 				if (local354.aClass11_1 instanceof Interface6) {
 					@Pc(1288) Interface6 local1288 = (Interface6) local354.aClass11_1;
-					@Pc(1297) Class41 local1297 = Static359.aClass202_4.method5162(local1288.method6084());
+					@Pc(1297) Class41 local1297 = LocTypeList.locTypeList.method5162(local1288.method6084());
 					if (local1297.anIntArray94 != null) {
 						local1297 = local1297.method1533(Static214.aClass226_1);
 					}

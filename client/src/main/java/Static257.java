@@ -51,12 +51,12 @@ public final class Static257 {
 		}
 		@Pc(71) int local71 = arg0 + (arg3 - local42) / 2;
 		@Pc(80) int local80 = arg2 + (arg1 - local44) / 2;
-		if (Static371.aClass13_20 == null || Static371.aClass13_20.method6388() != arg3 || Static371.aClass13_20.method6381() != arg1) {
+		if (Static371.aSprite_20 == null || Static371.aSprite_20.method6388() != arg3 || Static371.aSprite_20.method6381() != arg1) {
 			Static344.method5529(Static344.anInt6057, Static344.anInt6055 + Static344.anInt6052, Static344.anInt6056 + Static344.anInt6057, Static344.anInt6055, local71, local80, local71 + local42, local44 + local80);
 			Static344.method5521(arg4);
-			Static371.aClass13_20 = arg4.method2818(local71, local80, local42, local44, false);
+			Static371.aSprite_20 = arg4.method2818(local71, local80, local42, local44, false);
 		}
-		Static371.aClass13_20.method6384(local71, local80);
+		Static371.aSprite_20.method6384(local71, local80);
 		@Pc(127) int local127 = local42 * Static44.anInt1105 / Static344.anInt6056;
 		@Pc(133) int local133 = local44 * Static368.anInt6930 / Static344.anInt6052;
 		@Pc(141) int local141 = Static178.anInt2317 * local42 / Static344.anInt6056 + local71;
