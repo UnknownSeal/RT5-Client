@@ -735,7 +735,7 @@ public final class client extends GameShell {
 								for (@Pc(190) int local190 = 0; local190 < local179; local190++) {
 									local33.anIntArray316[local190] = Static52.anIntArray99[local179 - local190 - 1];
 									local33.anIntArray317[local190] = Static59.anIntArray105[local179 - local190 - 1];
-									local33.aByteArray51[local190] = 1;
+									local33.movementQueueSpeed[local190] = 1;
 								}
 								local33.movementQueueSize = local179;
 							}

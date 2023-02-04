@@ -16,9 +16,6 @@ public final class Static97 {
 	@OriginalMember(owner = "client!fk", name = "c", descriptor = "I")
 	public static int anInt2005 = 0;
 
-	@OriginalMember(owner = "client!fk", name = "P", descriptor = "Lclient!h;")
-	public static final Class89 aClass89_82 = new Class89(9, 8);
-
 	@OriginalMember(owner = "client!fk", name = "lb", descriptor = "I")
 	public static int anInt2040 = -50;
 

@@ -14,7 +14,7 @@ public final class Static337 {
 	public static LinkedList aLinkedList_37 = new LinkedList();
 
 	@OriginalMember(owner = "client!tk", name = "a", descriptor = "(IILclient!jc;III)V")
-	public static void method5705(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Class2_Sub19 arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
+	public static void method5705(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) AreaSound arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
 		if (arg2.anInt2894 == -1 && arg2.anIntArray181 == null) {
 			return;
 		}
@@ -31,9 +31,9 @@ public final class Static337 {
 			local16 += arg2.anInt2910 - arg3;
 		}
 		if (arg2.anInt2901 == 0 || arg2.anInt2901 < local16 - 64 || Static218.preferences.areaSoundsVolume == 0 || arg2.anInt2905 != arg1) {
-			if (arg2.aClass2_Sub12_Sub4_3 != null) {
-				client.soundStream.method2081(arg2.aClass2_Sub12_Sub4_3);
-				arg2.aClass2_Sub12_Sub4_3 = null;
+			if (arg2.primarySystem != null) {
+				client.soundStream.method2081(arg2.primarySystem);
+				arg2.primarySystem = null;
 			}
 			if (arg2.aClass2_Sub12_Sub4_2 != null) {
 				client.soundStream.method2081(arg2.aClass2_Sub12_Sub4_2);
@@ -46,8 +46,8 @@ public final class Static337 {
 			local16 = 0;
 		}
 		@Pc(140) int local140 = local24 * (arg2.anInt2901 - local16) / arg2.anInt2901;
-		if (arg2.aClass2_Sub12_Sub4_3 != null) {
-			arg2.aClass2_Sub12_Sub4_3.method4978(local140);
+		if (arg2.primarySystem != null) {
+			arg2.primarySystem.method4978(local140);
 		} else if (arg2.anInt2894 >= 0) {
 			@Pc(155) SynthSound local155 = Static408.create(client.js5Archive4, arg2.anInt2894, 0);
 			if (local155 != null) {
@@ -55,7 +55,7 @@ public final class Static337 {
 				@Pc(167) Class2_Sub12_Sub4 local167 = Static405.method5005(local162, local140);
 				local167.method4983(-1);
 				client.soundStream.addSubStream(local167);
-				arg2.aClass2_Sub12_Sub4_3 = local167;
+				arg2.primarySystem = local167;
 			}
 		}
 		if (arg2.aClass2_Sub12_Sub4_2 != null) {

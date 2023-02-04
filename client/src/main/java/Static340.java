@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static340 {
 
-	@OriginalMember(owner = "client!tp", name = "k", descriptor = "Lclient!h;")
-	public static final Class89 aClass89_227 = new Class89(101, 14);
-
 	@OriginalMember(owner = "client!tp", name = "a", descriptor = "(CB)C")
 	public static char method5761(@OriginalArg(0) char arg0) {
 		if (arg0 == ' ' || arg0 == ' ' || arg0 == '_' || arg0 == '-') {

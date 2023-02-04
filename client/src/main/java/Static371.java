@@ -13,12 +13,6 @@ public final class Static371 {
 	@OriginalMember(owner = "client!vo", name = "m", descriptor = "Ljava/lang/String;")
 	public static String aString68 = null;
 
-	@OriginalMember(owner = "client!vo", name = "p", descriptor = "Lclient!h;")
-	public static final Class89 aClass89_243 = new Class89(89, 6);
-
-	@OriginalMember(owner = "client!vo", name = "z", descriptor = "Lclient!h;")
-	public static final Class89 aClass89_244 = new Class89(33, 15);
-
 	@OriginalMember(owner = "client!vo", name = "D", descriptor = "[Ljava/lang/String;")
 	public static final String[] aStringArray66 = new String[100];
 

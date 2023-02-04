@@ -10,9 +10,6 @@ public final class Static7 {
 	@OriginalMember(owner = "client!ag", name = "r", descriptor = "Lclient!bu;")
 	public static Class29_Sub1 aClass29_Sub1_120;
 
-	@OriginalMember(owner = "client!ag", name = "f", descriptor = "Lclient!h;")
-	public static final Class89 aClass89_257 = new Class89(90, 12);
-
 	@OriginalMember(owner = "client!ag", name = "l", descriptor = "Lclient!ad;")
 	public static final HashTable aClass4_151 = new HashTable(16);
 

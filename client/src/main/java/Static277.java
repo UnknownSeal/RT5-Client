@@ -14,7 +14,7 @@ public final class Static277 {
 	public static final LinkedList A_LINKED_LIST___31 = new LinkedList();
 
 	@OriginalMember(owner = "client!q", name = "o", descriptor = "[I")
-	public static final int[] anIntArray361 = new int[250];
+	public static final int[] extendedIDs = new int[250];
 
 	@OriginalMember(owner = "client!q", name = "q", descriptor = "F")
 	public static float aFloat67 = 0.0F;

@@ -10,9 +10,6 @@ public final class Static165 {
 	@OriginalMember(owner = "client!jm", name = "p", descriptor = "[[[I")
 	public static int[][][] anIntArrayArrayArray9;
 
-	@OriginalMember(owner = "client!jm", name = "c", descriptor = "Lclient!h;")
-	public static final Class89 aClass89_131 = new Class89(44, 8);
-
 	@OriginalMember(owner = "client!jm", name = "k", descriptor = "I")
 	public static int anInt3148 = 0;
 
@@ -33,27 +30,6 @@ public final class Static165 {
 		local9.aClass11_Sub5_1 = arg1;
 		local9.anInt645 = arg0;
 		return local9;
-	}
-
-	@OriginalMember(owner = "client!jm", name = "a", descriptor = "(IIZZI)I")
-	public static int method3149(@OriginalArg(0) int arg0, @OriginalArg(3) boolean arg1, @OriginalArg(4) int arg2) {
-		@Pc(10) Class2_Sub41 local10 = Static374.method6274(false, arg2);
-		if (local10 == null) {
-			return 0;
-		}
-		@Pc(16) int local16 = 0;
-		for (@Pc(18) int local18 = 0; local18 < local10.anIntArray489.length; local18++) {
-			if (local10.anIntArray489[local18] >= 0 && local10.anIntArray489[local18] < ObjTypeList.objTypeList.anInt2779) {
-				@Pc(44) ObjType local44 = ObjTypeList.objTypeList.get(local10.anIntArray489[local18]);
-				@Pc(54) int local54 = local44.method4771(Static363.aClass18_2.method565(arg0).anInt7023, arg0);
-				if (arg1) {
-					local16 += local10.anIntArray488[local18] * local54;
-				} else {
-					local16 += local54;
-				}
-			}
-		}
-		return local16;
 	}
 
 	@OriginalMember(owner = "client!jm", name = "a", descriptor = "(IIII)V")

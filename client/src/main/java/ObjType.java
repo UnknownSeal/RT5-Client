@@ -387,7 +387,7 @@ public final class ObjType {
 		if (this.params == null) {
 			return arg0;
 		} else {
-			@Pc(22) IntNode local22 = (IntNode) this.params.get((long) arg1);
+			@Pc(22) IntNode local22 = (IntNode) this.params.get(arg1);
 			return local22 == null ? arg0 : local22.value;
 		}
 	}

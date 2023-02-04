@@ -7,9 +7,6 @@ public final class Static297 {
 	@OriginalMember(owner = "client!rb", name = "k", descriptor = "Lclient!hu;")
 	public static final SoftLruHashTable A_SOFT_LRU_HASH_TABLE___44 = new SoftLruHashTable(8);
 
-	@OriginalMember(owner = "client!rb", name = "n", descriptor = "Lclient!h;")
-	public static final Class89 aClass89_200 = new Class89(66, 10);
-
 	@OriginalMember(owner = "client!rb", name = "o", descriptor = "[I")
 	public static final int[] anIntArray383 = new int[] { 2, 1, 1, 1, 2, 2, 2, 1, 3, 3, 3, 2, 0, 4, 0 };
 

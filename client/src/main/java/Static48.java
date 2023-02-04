@@ -16,9 +16,6 @@ public final class Static48 {
 	@OriginalMember(owner = "client!cq", name = "e", descriptor = "Lclient!kk;")
 	public static final Class127 aClass127_3 = new Class127("WTI", 5);
 
-	@OriginalMember(owner = "client!cq", name = "f", descriptor = "Lclient!h;")
-	public static final Class89 aClass89_43 = new Class89(24, 12);
-
 	@OriginalMember(owner = "client!cq", name = "g", descriptor = "Lclient!hu;")
 	public static final SoftLruHashTable A_SOFT_LRU_HASH_TABLE___3 = new SoftLruHashTable(10);
 

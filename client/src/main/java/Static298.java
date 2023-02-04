@@ -36,13 +36,13 @@ public final class Static298 {
 
 	@OriginalMember(owner = "client!rc", name = "a", descriptor = "(ILclient!nh;)V")
 	public static void method2423(@OriginalArg(1) Class11_Sub5_Sub2_Sub1 arg0) {
-		@Pc(11) Class2_Sub19 local11 = (Class2_Sub19) Static232.aClass4_86.get((long) arg0.anInt4619);
+		@Pc(11) AreaSound local11 = (AreaSound) Static232.aClass4_86.get((long) arg0.anInt4619);
 		if (local11 == null) {
 			return;
 		}
-		if (local11.aClass2_Sub12_Sub4_3 != null) {
-			client.soundStream.method2081(local11.aClass2_Sub12_Sub4_3);
-			local11.aClass2_Sub12_Sub4_3 = null;
+		if (local11.primarySystem != null) {
+			client.soundStream.method2081(local11.primarySystem);
+			local11.primarySystem = null;
 		}
 		local11.unlink();
 	}

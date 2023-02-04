@@ -46,18 +46,18 @@ public final class Static173 {
 			}
 		}
 		@Pc(196) SeqType local196;
-		if (arg0.anInt4594 != -1 && arg0.anInt4595 <= Static114.loop) {
-			@Pc(184) Class91 local184 = Static322.aClass211_2.get(arg0.anInt4594);
+		if (arg0.spotAnimID != -1 && arg0.anInt4595 <= Static114.loop) {
+			@Pc(184) Class91 local184 = Static322.aClass211_2.get(arg0.spotAnimID);
 			@Pc(187) int local187 = local184.anInt2448;
 			if (local187 == -1) {
-				arg0.anInt4594 = -1;
+				arg0.spotAnimID = -1;
 			} else {
 				label299: {
 					local196 = SeqTypeList.seqTypeList.method2371(local187);
-					if (local184.aBoolean177) {
+					if (local184.loop) {
 						if (local196.looptype == 3) {
 							if (arg0.anInt4642 > 0 && arg0.anInt4622 <= Static114.loop && arg0.anInt4584 < Static114.loop) {
-								arg0.anInt4594 = -1;
+								arg0.spotAnimID = -1;
 								break label299;
 							}
 						} else if (local196.looptype == 1 && arg0.anInt4642 > 0 && Static114.loop >= arg0.anInt4622 && Static114.loop > arg0.anInt4584) {
@@ -66,7 +66,7 @@ public final class Static173 {
 						}
 					}
 					if (local196 == null || local196.frames == null) {
-						arg0.anInt4594 = -1;
+						arg0.spotAnimID = -1;
 					} else {
 						if (arg0.anInt4582 < 0) {
 							arg0.anInt4582 = 0;
@@ -79,23 +79,23 @@ public final class Static173 {
 							Static1.method4(local196, arg0 == Static17.self, arg0.aByte78, arg0.xFine, arg0.zFine, arg0.anInt4582);
 						}
 						if (local196.frames.length <= arg0.anInt4582) {
-							if (local184.aBoolean177) {
+							if (local184.loop) {
 								arg0.anInt4582 -= local196.replayOff;
 								arg0.anInt4602++;
 								if (arg0.anInt4602 >= local196.replaycount) {
-									arg0.anInt4594 = -1;
+									arg0.spotAnimID = -1;
 								} else if (arg0.anInt4582 >= 0 && local196.frames.length > arg0.anInt4582) {
 									Static1.method4(local196, Static17.self == arg0, arg0.aByte78, arg0.xFine, arg0.zFine, arg0.anInt4582);
 								} else {
-									arg0.anInt4594 = -1;
+									arg0.spotAnimID = -1;
 								}
 							} else {
-								arg0.anInt4594 = -1;
+								arg0.spotAnimID = -1;
 							}
 						}
 						arg0.anInt4612 = arg0.anInt4582 + 1;
 						if (arg0.anInt4612 >= local196.frames.length) {
-							if (local184.aBoolean177) {
+							if (local184.loop) {
 								arg0.anInt4612 -= local196.replayOff;
 								if (arg0.anInt4602 + 1 >= local196.replaycount) {
 									arg0.anInt4612 = -1;

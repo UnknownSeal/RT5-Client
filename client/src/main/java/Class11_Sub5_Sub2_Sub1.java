@@ -322,8 +322,8 @@ public final class Class11_Sub5_Sub2_Sub1 extends Class11_Sub5_Sub2 {
 			}
 		}
 		super.aModelArray3[1] = null;
-		if (!this.aBoolean275 && super.anInt4594 != -1 && super.anInt4582 != -1) {
-			@Pc(302) Class91 local302 = Static322.aClass211_2.get(super.anInt4594);
+		if (!this.aBoolean275 && super.spotAnimID != -1 && super.anInt4582 != -1) {
+			@Pc(302) Class91 local302 = Static322.aClass211_2.get(super.spotAnimID);
 			@Pc(322) Model local322 = local302.method2433(super.anInt4612, super.anInt4620, arg0, (local302.aBoolean178 ? 7 : 2) | local7, SeqTypeList.seqTypeList, super.anInt4582);
 			if (local322 != null) {
 				local322.method3812(0, -super.anInt4639, 0);
@@ -364,10 +364,10 @@ public final class Class11_Sub5_Sub2_Sub1 extends Class11_Sub5_Sub2 {
 		if (super.anInt4597 != -1 && SeqTypeList.seqTypeList.method2371(super.anInt4597).movetype == 1) {
 			super.anInt4597 = -1;
 		}
-		if (super.anInt4594 != -1) {
-			@Pc(37) Class91 local37 = Static322.aClass211_2.get(super.anInt4594);
-			if (local37.aBoolean177 && local37.anInt2448 != -1 && SeqTypeList.seqTypeList.method2371(local37.anInt2448).movetype == 1) {
-				super.anInt4594 = -1;
+		if (super.spotAnimID != -1) {
+			@Pc(37) Class91 local37 = Static322.aClass211_2.get(super.spotAnimID);
+			if (local37.loop && local37.anInt2448 != -1 && SeqTypeList.seqTypeList.method2371(local37.anInt2448).movetype == 1) {
+				super.spotAnimID = -1;
 			}
 		}
 		this.anInt4174 = -1;
@@ -507,11 +507,11 @@ public final class Class11_Sub5_Sub2_Sub1 extends Class11_Sub5_Sub2 {
 		for (@Pc(18) int local18 = super.movementQueueSize; local18 > 0; local18--) {
 			super.anIntArray316[local18] = super.anIntArray316[local18 - 1];
 			super.anIntArray317[local18] = super.anIntArray317[local18 - 1];
-			super.aByteArray51[local18] = super.aByteArray51[local18 - 1];
+			super.movementQueueSpeed[local18] = super.movementQueueSpeed[local18 - 1];
 		}
 		super.anIntArray316[0] = arg2;
 		super.anIntArray317[0] = arg0;
-		super.aByteArray51[0] = arg1;
+		super.movementQueueSpeed[0] = arg1;
 	}
 
 	@OriginalMember(owner = "client!nh", name = "a", descriptor = "(IZ)Ljava/lang/String;")

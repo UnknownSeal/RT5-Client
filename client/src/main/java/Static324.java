@@ -77,7 +77,7 @@ public final class Static324 {
 
 	@OriginalMember(owner = "client!sq", name = "a", descriptor = "(Lclient!nh;I)V")
 	public static void method5541(@OriginalArg(0) Class11_Sub5_Sub2_Sub1 arg0) {
-		@Pc(19) Class2_Sub19 local19 = (Class2_Sub19) Static232.aClass4_86.get((long) arg0.anInt4619);
+		@Pc(19) AreaSound local19 = (AreaSound) Static232.aClass4_86.get((long) arg0.anInt4619);
 		if (local19 == null) {
 			Static211.method3723(null, arg0.anIntArray317[0], 0, arg0, null, arg0.anIntArray316[0], arg0.aByte78);
 		} else {

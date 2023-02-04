@@ -39,9 +39,6 @@ public final class Static319 {
 	@OriginalMember(owner = "client!sk", name = "u", descriptor = "[I")
 	public static final int[] anIntArray403 = new int[13];
 
-	@OriginalMember(owner = "client!sk", name = "v", descriptor = "Lclient!h;")
-	public static final Class89 aClass89_211 = new Class89(32, -2);
-
 	@OriginalMember(owner = "client!sk", name = "a", descriptor = "(B)I")
 	public static int fetch() {
 		try {

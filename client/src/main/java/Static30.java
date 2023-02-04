@@ -6,14 +6,8 @@ public final class Static30 {
 	@OriginalMember(owner = "client!bo", name = "h", descriptor = "Lclient!je;")
 	public static WorldMapFont font22;
 
-	@OriginalMember(owner = "client!bo", name = "a", descriptor = "Lclient!h;")
-	public static final Class89 aClass89_25 = new Class89(88, -2);
-
 	@OriginalMember(owner = "client!bo", name = "f", descriptor = "Lclient!mc;")
 	public static final Class145 aClass145_28 = new Class145(33, 4);
-
-	@OriginalMember(owner = "client!bo", name = "g", descriptor = "Lclient!h;")
-	public static final Class89 aClass89_26 = new Class89(16, 7);
 
 	@OriginalMember(owner = "client!bo", name = "a", descriptor = "(IIIIIIIIII)V")
 	public static void method943(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6, @OriginalArg(8) int arg7, @OriginalArg(9) int arg8) {

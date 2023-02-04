@@ -1350,7 +1350,7 @@ public final class ScriptRunner {
 									isp -= 2;
 									int1 = intStack[isp];
 									int3 = intStack[isp + 1];
-									intStack[isp++] = Static41.getItemType(false, int1, int3);
+									intStack[isp++] = Inventory.getItemType(false, int1, int3);
 									return;
 								}
 								if (opcode == 3302) {
@@ -1364,7 +1364,7 @@ public final class ScriptRunner {
 									isp -= 2;
 									int1 = intStack[isp];
 									int3 = intStack[isp + 1];
-									intStack[isp++] = Static192.getSlotTotal(int1, false, int3);
+									intStack[isp++] = Inventory.getSlotTotal(int1, false, int3);
 									return;
 								}
 								if (opcode == 3304) {
@@ -1417,7 +1417,7 @@ public final class ScriptRunner {
 									isp -= 2;
 									int1 = intStack[isp];
 									int3 = intStack[isp + 1];
-									intStack[isp++] = Static41.getItemType(true, int1, int3);
+									intStack[isp++] = Inventory.getItemType(true, int1, int3);
 									return;
 								}
 								if (opcode == 3314) {
@@ -1431,7 +1431,7 @@ public final class ScriptRunner {
 									isp -= 2;
 									int1 = intStack[isp];
 									int3 = intStack[isp + 1];
-									intStack[isp++] = Static192.getSlotTotal(int1, true, int3);
+									intStack[isp++] = Inventory.getSlotTotal(int1, true, int3);
 									return;
 								}
 								if (opcode == 3316) {
@@ -1503,14 +1503,14 @@ public final class ScriptRunner {
 									isp -= 2;
 									int1 = intStack[isp];
 									int3 = intStack[isp + 1];
-									intStack[isp++] = Static165.method3149(int3, false, int1);
+									intStack[isp++] = Inventory.getTotalParam(int3, false, int1);
 									return;
 								}
 								if (opcode == 3332) {
 									isp -= 2;
 									int1 = intStack[isp];
 									int3 = intStack[isp + 1];
-									intStack[isp++] = Static165.method3149(int3, true, int1);
+									intStack[isp++] = Inventory.getTotalParam(int3, true, int1);
 									return;
 								}
 								if (opcode == 3333) {

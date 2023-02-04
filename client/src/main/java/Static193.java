@@ -7,9 +7,6 @@ public final class Static193 {
 	@OriginalMember(owner = "client!la", name = "k", descriptor = "I")
 	public static int anInt3556;
 
-	@OriginalMember(owner = "client!la", name = "i", descriptor = "Lclient!h;")
-	public static final Class89 aClass89_146 = new Class89(63, -1);
-
 	@OriginalMember(owner = "client!la", name = "j", descriptor = "I")
 	public static int uidsWriterIndex = 0;
 

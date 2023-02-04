@@ -7,9 +7,6 @@ public final class Static94 {
 	@OriginalMember(owner = "client!ff", name = "A", descriptor = "I")
 	public static int anInt1979 = 0;
 
-	@OriginalMember(owner = "client!ff", name = "G", descriptor = "Lclient!h;")
-	public static final Class89 aClass89_79 = new Class89(53, -1);
-
 	@OriginalMember(owner = "client!ff", name = "a", descriptor = "(IBIZILclient!r;)V")
 	public static void playImmediate(@OriginalArg(2) int groupID, @OriginalArg(5) Js5 archive, @OriginalArg(0) int volume) {
 		Static341.songFileID = 0;

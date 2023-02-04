@@ -11,9 +11,6 @@ public final class Static268 {
 	@OriginalMember(owner = "client!pg", name = "S", descriptor = "I")
 	public static int size = 0;
 
-	@OriginalMember(owner = "client!pg", name = "T", descriptor = "Lclient!h;")
-	public static final Class89 aClass89_180 = new Class89(92, 6);
-
 	@OriginalMember(owner = "client!pg", name = "U", descriptor = "[I")
 	public static final int[] boostedLevels = new int[25];
 

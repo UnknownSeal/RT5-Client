@@ -7,9 +7,6 @@ public final class Static84 {
 	@OriginalMember(owner = "client!eo", name = "b", descriptor = "Lclient!mc;")
 	public static final Class145 aClass145_65 = new Class145(10, 8);
 
-	@OriginalMember(owner = "client!eo", name = "e", descriptor = "Lclient!h;")
-	public static final Class89 aClass89_70 = new Class89(21, 3);
-
 	@OriginalMember(owner = "client!eo", name = "a", descriptor = "(CB)Z")
 	public static boolean method1908(@OriginalArg(0) char arg0) {
 		if (arg0 > '\u0000' && arg0 < '\u0080' || !(arg0 < ' ' || arg0 > 'ÿ')) {

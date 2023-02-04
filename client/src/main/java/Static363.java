@@ -26,7 +26,7 @@ public final class Static363 {
 	public static final Class145 aClass145_239 = new Class145(67, 4);
 
 	@OriginalMember(owner = "client!vf", name = "U", descriptor = "Lclient!ld;")
-	public static final LinkedList A_LINKED_LIST___39 = new LinkedList();
+	public static final LinkedList npcSounds = new LinkedList();
 
 	@OriginalMember(owner = "client!vf", name = "W", descriptor = "Lclient!mc;")
 	public static final Class145 aClass145_240 = new Class145(37, 6);

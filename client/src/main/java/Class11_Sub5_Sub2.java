@@ -118,7 +118,7 @@ public abstract class Class11_Sub5_Sub2 extends Class11_Sub5 {
 	public int anInt4600 = 0;
 
 	@OriginalMember(owner = "client!mr", name = "T", descriptor = "I")
-	public int anInt4594 = -1;
+	public int spotAnimID = -1;
 
 	@OriginalMember(owner = "client!mr", name = "I", descriptor = "Z")
 	public boolean aBoolean319 = false;
@@ -205,7 +205,7 @@ public abstract class Class11_Sub5_Sub2 extends Class11_Sub5 {
 	public final Model[] aModelArray3 = new Model[3];
 
 	@OriginalMember(owner = "client!mr", name = "cc", descriptor = "[B")
-	public final byte[] aByteArray51 = new byte[10];
+	public final byte[] movementQueueSpeed = new byte[10];
 
 	@OriginalMember(owner = "client!mr", name = "gc", descriptor = "Z")
 	protected boolean aBoolean321 = false;

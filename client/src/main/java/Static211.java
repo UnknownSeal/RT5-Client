@@ -110,7 +110,7 @@ public final class Static211 {
 
 	@OriginalMember(owner = "client!mh", name = "a", descriptor = "(Lclient!ct;IILclient!nh;Lclient!oe;BII)V")
 	public static void method3723(@OriginalArg(0) Class41 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class11_Sub5_Sub2_Sub1 arg3, @OriginalArg(4) Npc arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6) {
-		@Pc(7) Class2_Sub19 local7 = new Class2_Sub19();
+		@Pc(7) AreaSound local7 = new AreaSound();
 		local7.anInt2905 = arg6;
 		local7.anInt2899 = arg5 * 128;
 		local7.anInt2910 = arg1 * 128;
@@ -139,7 +139,7 @@ public final class Static211 {
 			}
 			Static83.A_LINKED_LIST___14.addTail(local7);
 		} else if (arg4 != null) {
-			local7.aClass11_Sub5_Sub2_Sub2_1 = arg4;
+			local7.npc = arg4;
 			@Pc(131) NpcType local131 = arg4.type;
 			if (local131.multiNpcs != null) {
 				local7.aBoolean204 = true;
@@ -152,7 +152,7 @@ public final class Static211 {
 				local7.anInt2901 = local131.soundradius * 128;
 				local7.anInt2906 = local131.soundvolume;
 			}
-			Static363.A_LINKED_LIST___39.addTail(local7);
+			Static363.npcSounds.addTail(local7);
 		} else if (arg3 != null) {
 			local7.aClass11_Sub5_Sub2_Sub1_2 = arg3;
 			local7.anInt2896 = (arg5 + arg3.method4327()) * 128;

@@ -12,9 +12,6 @@ public final class Static227 {
 	@OriginalMember(owner = "client!nb", name = "i", descriptor = "Lclient!mc;")
 	public static final Class145 aClass145_151 = new Class145(68, 3);
 
-	@OriginalMember(owner = "client!nb", name = "D", descriptor = "Lclient!h;")
-	public static final Class89 aClass89_161 = new Class89(91, 2);
-
 	@OriginalMember(owner = "client!nb", name = "a", descriptor = "(Z)V")
 	public static void method3988() {
 		for (@Pc(6) Class2_Sub5 local6 = (Class2_Sub5) Static129.A_LINKED_LIST___19.head(); local6 != null; local6 = (Class2_Sub5) Static129.A_LINKED_LIST___19.next()) {

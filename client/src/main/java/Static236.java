@@ -33,8 +33,8 @@ public final class Static236 {
 
 	@OriginalMember(owner = "client!nk", name = "a", descriptor = "(I)V")
 	public static void method4111() {
-		for (@Pc(7) int local7 = 0; local7 < Static343.anInt6390; local7++) {
-			@Pc(21) int local21 = Static277.anIntArray361[local7];
+		for (@Pc(7) int local7 = 0; local7 < Static343.extendedCount; local7++) {
+			@Pc(21) int local21 = Static277.extendedIDs[local7];
 			@Pc(25) Npc local25 = Static365.npcs[local21];
 			@Pc(29) int local29 = Static212.inboundBuffer.g1();
 			if ((local29 & 0x40) != 0) {
@@ -78,11 +78,11 @@ public final class Static236 {
 				}
 				@Pc(186) boolean local186 = true;
 				@Pc(221) SeqType local221;
-				if (local55 != -1 && local25.anInt4594 != -1) {
+				if (local55 != -1 && local25.spotAnimID != -1) {
 					@Pc(207) Class91 local207;
-					if (local55 == local25.anInt4594) {
+					if (local55 == local25.spotAnimID) {
 						local207 = Static322.aClass211_2.get(local55);
-						if (local207.aBoolean177 && local207.anInt2448 != -1) {
+						if (local207.loop && local207.anInt2448 != -1) {
 							local221 = SeqTypeList.seqTypeList.method2371(local207.anInt2448);
 							local224 = local221.exactmove;
 							if (local224 == 0) {
@@ -96,7 +96,7 @@ public final class Static236 {
 						}
 					} else {
 						local207 = Static322.aClass211_2.get(local55);
-						@Pc(262) Class91 local262 = Static322.aClass211_2.get(local25.anInt4594);
+						@Pc(262) Class91 local262 = Static322.aClass211_2.get(local25.spotAnimID);
 						if (local207.anInt2448 != -1 && local262.anInt2448 != -1) {
 							@Pc(277) SeqType local277 = SeqTypeList.seqTypeList.method2371(local207.anInt2448);
 							@Pc(283) SeqType local283 = SeqTypeList.seqTypeList.method2371(local262.anInt2448);
@@ -108,7 +108,7 @@ public final class Static236 {
 				}
 				if (local186) {
 					local25.anInt4620 = 0;
-					local25.anInt4594 = local55;
+					local25.spotAnimID = local55;
 					local25.anInt4582 = 0;
 					local25.anInt4639 = local107 >> 16;
 					local25.anInt4612 = 1;
@@ -116,8 +116,8 @@ public final class Static236 {
 					if (Static114.loop < local25.anInt4595) {
 						local25.anInt4582 = -1;
 					}
-					if (local25.anInt4594 != -1 && Static114.loop == local25.anInt4595) {
-						@Pc(340) int local340 = Static322.aClass211_2.get(local25.anInt4594).anInt2448;
+					if (local25.spotAnimID != -1 && Static114.loop == local25.anInt4595) {
+						@Pc(340) int local340 = Static322.aClass211_2.get(local25.spotAnimID).anInt2448;
 						if (local340 != -1) {
 							local221 = SeqTypeList.seqTypeList.method2371(local340);
 							if (local221 != null && local221.frames != null) {
@@ -159,13 +159,13 @@ public final class Static236 {
 				local25.anInt4657 = Static212.inboundBuffer.ig2();
 			}
 			if ((local29 & 0x10) != 0) {
-				if (local25.type.method2099()) {
-					Static154.method2781(local25);
+				if (local25.type.hasAreaSound()) {
+					Static154.remove(local25);
 				}
 				local25.setType(NpcTypeList.npcTypeList.get(Static212.inboundBuffer.ig2()));
 				local25.setSize(local25.type.size);
 				local25.anInt4604 = local25.type.rotationspeed << 3;
-				if (local25.type.method2099()) {
+				if (local25.type.hasAreaSound()) {
 					Static211.method3723(null, local25.anIntArray317[0], 0, null, local25, local25.anIntArray316[0], local25.aByte78);
 				}
 			}

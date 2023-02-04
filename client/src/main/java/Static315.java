@@ -88,63 +88,59 @@ public final class Static315 {
 	}
 
 	@OriginalMember(owner = "client!se", name = "b", descriptor = "(I)V")
-	public static void method5381() {
+	public static void readNpcInfo() {
 		Static212.inboundBuffer.accessBits();
-		@Pc(13) int local13 = Static212.inboundBuffer.gBit(8);
-		@Pc(18) int local18;
-		if (local13 < Static166.size) {
-			for (local18 = local13; local18 < Static166.size; local18++) {
-				Static17.anIntArray291[Static242.anInt4450++] = Static211.ids[local18];
+		@Pc(13) int size = Static212.inboundBuffer.gBit(8);
+
+		if (size < Static166.size) {
+			for (@Pc(18) int i = size; i < Static166.size; i++) {
+				Static17.removeIDs[Static242.removedCount++] = Static211.ids[i];
 			}
 		}
-		if (Static166.size < local13) {
+		if (Static166.size < size) {
 			throw new RuntimeException("gnpov1");
 		}
 		Static166.size = 0;
-		for (local18 = 0; local18 < local13; local18++) {
-			@Pc(64) int local64 = Static211.ids[local18];
-			@Pc(68) Npc local68 = Static365.npcs[local64];
-			@Pc(73) int local73 = Static212.inboundBuffer.gBit(1);
-			if (local73 == 0) {
-				Static211.ids[Static166.size++] = local64;
-				local68.lastSeenLoop = Static114.loop;
+		for (int i = 0; i < size; i++) {
+			@Pc(64) int id = Static211.ids[i];
+			@Pc(68) Npc npc = Static365.npcs[id];
+			@Pc(73) int updated = Static212.inboundBuffer.gBit(1);
+			if (updated == 0) {
+				Static211.ids[Static166.size++] = id;
+				npc.lastSeenLoop = Static114.loop;
 			} else {
-				@Pc(96) int local96 = Static212.inboundBuffer.gBit(2);
-				if (local96 == 0) {
-					Static211.ids[Static166.size++] = local64;
-					local68.lastSeenLoop = Static114.loop;
-					Static277.anIntArray361[Static343.anInt6390++] = local64;
-				} else {
-					@Pc(140) int local140;
-					@Pc(150) int local150;
-					if (local96 == 1) {
-						Static211.ids[Static166.size++] = local64;
-						local68.lastSeenLoop = Static114.loop;
-						local140 = Static212.inboundBuffer.gBit(3);
-						local68.method4337(1, local140);
-						local150 = Static212.inboundBuffer.gBit(1);
-						if (local150 == 1) {
-							Static277.anIntArray361[Static343.anInt6390++] = local64;
-						}
-					} else if (local96 == 2) {
-						Static211.ids[Static166.size++] = local64;
-						local68.lastSeenLoop = Static114.loop;
-						if (Static212.inboundBuffer.gBit(1) == 1) {
-							local140 = Static212.inboundBuffer.gBit(3);
-							local68.method4337(2, local140);
-							local150 = Static212.inboundBuffer.gBit(3);
-							local68.method4337(2, local150);
-						} else {
-							local140 = Static212.inboundBuffer.gBit(3);
-							local68.method4337(0, local140);
-						}
-						local140 = Static212.inboundBuffer.gBit(1);
-						if (local140 == 1) {
-							Static277.anIntArray361[Static343.anInt6390++] = local64;
-						}
-					} else if (local96 == 3) {
-						Static17.anIntArray291[Static242.anInt4450++] = local64;
+				@Pc(96) int type = Static212.inboundBuffer.gBit(2);
+				if (type == 0) {
+					Static211.ids[Static166.size++] = id;
+					npc.lastSeenLoop = Static114.loop;
+					Static277.extendedIDs[Static343.extendedCount++] = id;
+				} else if (type == 1) {
+					Static211.ids[Static166.size++] = id;
+					npc.lastSeenLoop = Static114.loop;
+					@Pc(140) int direction = Static212.inboundBuffer.gBit(3);
+					npc.move(1, direction);
+					@Pc(150) int extended = Static212.inboundBuffer.gBit(1);
+					if (extended == 1) {
+						Static277.extendedIDs[Static343.extendedCount++] = id;
 					}
+				} else if (type == 2) {
+					Static211.ids[Static166.size++] = id;
+					npc.lastSeenLoop = Static114.loop;
+					if (Static212.inboundBuffer.gBit(1) == 1) {
+						int firstDirection = Static212.inboundBuffer.gBit(3);
+						npc.move(2, firstDirection);
+						int secondDirection = Static212.inboundBuffer.gBit(3);
+						npc.move(2, secondDirection);
+					} else {
+						int directed = Static212.inboundBuffer.gBit(3);
+						npc.move(0, directed);
+					}
+					int extended = Static212.inboundBuffer.gBit(1);
+					if (extended == 1) {
+						Static277.extendedIDs[Static343.extendedCount++] = id;
+					}
+				} else if (type == 3) {
+					Static17.removeIDs[Static242.removedCount++] = id;
 				}
 			}
 		}

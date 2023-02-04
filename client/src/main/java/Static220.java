@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static220 {
 
-	@OriginalMember(owner = "client!mq", name = "o", descriptor = "Lclient!h;")
-	public static final Class89 aClass89_158 = new Class89(55, -1);
-
 	@OriginalMember(owner = "client!mq", name = "p", descriptor = "Lclient!ad;")
 	public static final HashTable aClass4_83 = new HashTable(8);
 

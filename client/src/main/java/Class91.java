@@ -37,7 +37,7 @@ public final class Class91 {
 	private int anInt2446 = 0;
 
 	@OriginalMember(owner = "client!hf", name = "f", descriptor = "Z")
-	public boolean aBoolean177 = false;
+	public boolean loop = false;
 
 	@OriginalMember(owner = "client!hf", name = "k", descriptor = "I")
 	public int anInt2448 = -1;
@@ -81,7 +81,7 @@ public final class Class91 {
 		} else if (opcode == 9) {
 			this.aBoolean178 = true;
 		} else if (opcode == 10) {
-			this.aBoolean177 = true;
+			this.loop = true;
 		} else {
 			@Pc(96) int local96;
 			@Pc(106) int local106;

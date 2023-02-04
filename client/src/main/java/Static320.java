@@ -22,9 +22,6 @@ public final class Static320 {
 	@OriginalMember(owner = "client!sm", name = "z", descriptor = "I")
 	public static int anInt6006 = 0;
 
-	@OriginalMember(owner = "client!sm", name = "B", descriptor = "Lclient!h;")
-	public static final Class89 aClass89_214 = new Class89(93, 5);
-
 	@OriginalMember(owner = "client!sm", name = "b", descriptor = "(B)V")
 	public static void method5460() {
 		Static133.A_SOFT_LRU_HASH_TABLE___17.method2621();

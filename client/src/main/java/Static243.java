@@ -24,11 +24,11 @@ public final class Static243 {
 
 	@OriginalMember(owner = "client!nt", name = "a", descriptor = "(IZII)I")
 	public static int getItemCount(@OriginalArg(0) int arg0, @OriginalArg(1) boolean arg1, @OriginalArg(3) int arg2) {
-		@Pc(13) Class2_Sub41 local13 = Static374.method6274(arg1, arg2);
+		@Pc(13) Inventory local13 = Static374.get(arg1, arg2);
 		if (local13 == null) {
 			return 0;
-		} else if (arg0 >= 0 && arg0 < local13.anIntArray488.length) {
-			return local13.anIntArray488[arg0];
+		} else if (arg0 >= 0 && arg0 < local13.count.length) {
+			return local13.count[arg0];
 		} else {
 			return 0;
 		}

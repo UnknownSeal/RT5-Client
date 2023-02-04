@@ -273,7 +273,7 @@ public final class Static91 {
 						}
 						Static335.socket.read(Static212.inboundBuffer.offset + 2, 1, Static212.inboundBuffer.bytes);
 					}
-					Static231.packetInbound = Static166.method3187()[Static212.inboundBuffer.method4863()];
+					InboundPacket.packetInbound = Static166.method3187()[Static212.inboundBuffer.method4863()];
 					Static82.length = Static212.inboundBuffer.g2();
 					Static347.step = 9;
 				}
@@ -291,7 +291,7 @@ public final class Static91 {
 						if (local619 != Static212.inboundBuffer.offset) {
 							throw new RuntimeException("lswp pos:" + Static212.inboundBuffer.offset + " psize:" + local619);
 						}
-						Static231.packetInbound = null;
+						InboundPacket.packetInbound = null;
 					}
 				} else if (Static347.step == 12) {
 					if (Static82.length == -2) {
@@ -313,7 +313,7 @@ public final class Static91 {
 						if (Static212.inboundBuffer.offset != local619) {
 							throw new RuntimeException("lswpr pos:" + Static212.inboundBuffer.offset + " psize:" + local619);
 						}
-						Static231.packetInbound = null;
+						InboundPacket.packetInbound = null;
 					}
 				}
 			} else if (Static335.socket.available() >= 1) {

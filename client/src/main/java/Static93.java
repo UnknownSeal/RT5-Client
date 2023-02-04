@@ -7,9 +7,6 @@ public final class Static93 {
 	@OriginalMember(owner = "client!fe", name = "a", descriptor = "I")
 	public static int anInt1946;
 
-	@OriginalMember(owner = "client!fe", name = "e", descriptor = "Lclient!h;")
-	public static final Class89 aClass89_76 = new Class89(29, 3);
-
 	@OriginalMember(owner = "client!fe", name = "f", descriptor = "I")
 	public static int anInt1950 = 0;
 
@@ -35,13 +32,13 @@ public final class Static93 {
 			local7 = -1;
 			arg0.anInt4584 = 0;
 			local9 = 0;
-			arg0.anInt4594 = -1;
+			arg0.spotAnimID = -1;
 			arg0.xFine = arg0.anIntArray316[0] * 128 + arg0.method4327() * 64;
 			arg0.zFine = arg0.anIntArray317[0] * 128 + arg0.method4327() * 64;
 			arg0.method4330();
 		}
 		if (Static17.self == arg0 && (arg0.xFine < 1536 || arg0.zFine < 1536 || Static373.anInt7033 * 128 - 1536 <= arg0.xFine || arg0.zFine >= (Static242.anInt4449 - 12) * 128)) {
-			arg0.anInt4594 = -1;
+			arg0.spotAnimID = -1;
 			arg0.anInt4597 = -1;
 			local9 = 0;
 			local7 = -1;

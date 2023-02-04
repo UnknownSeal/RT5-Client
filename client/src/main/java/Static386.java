@@ -7,9 +7,6 @@ public final class Static386 {
 	@OriginalMember(owner = "client!wj", name = "c", descriptor = "I")
 	public static int anInt6737 = 0;
 
-	@OriginalMember(owner = "client!wj", name = "e", descriptor = "Lclient!h;")
-	public static final Class89 aClass89_236 = new Class89(67, -1);
-
 	@OriginalMember(owner = "client!wj", name = "a", descriptor = "(I)V")
 	public static void method6028() {
 		@Pc(7) int local7 = Static31.anInt751;
@@ -83,7 +80,7 @@ public final class Static386 {
 			local107 = local103 >> 28;
 			local113 = local103 >> 14 & 0xFF;
 			local117 = local103 & 0xFF;
-			local75.aByteArray51[0] = Static335.aByteArray92[arg1];
+			local75.movementQueueSpeed[0] = Static335.aByteArray92[arg1];
 			local75.aByte78 = (byte) local107;
 			local75.method4063(local31 + (local113 << 6) - Static164.originX, -Static148.originZ + local36 + (local117 << 6));
 			local75.aBoolean276 = false;

@@ -8,9 +8,6 @@ public final class Static43 {
 	@OriginalMember(owner = "client!ck", name = "U", descriptor = "Lclient!r;")
 	public static Js5 globalArchive;
 
-	@OriginalMember(owner = "client!ck", name = "B", descriptor = "Lclient!h;")
-	public static final Class89 aClass89_39 = new Class89(34, 15);
-
 	@OriginalMember(owner = "client!ck", name = "H", descriptor = "[I")
 	public static final int[] anIntArray87 = new int[5];
 

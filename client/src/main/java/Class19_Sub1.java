@@ -264,7 +264,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 	private final LinkedList aLinkedList_9 = new LinkedList();
 
 	@OriginalMember(owner = "client!bf", name = "W", descriptor = "Lclient!ld;")
-	private final LinkedList aLinkedList_10 = new LinkedList();
+	private final LinkedList shaders = new LinkedList();
 
 	@OriginalMember(owner = "client!bf", name = "Y", descriptor = "[F")
 	private final float[] aFloatArray6 = new float[4];
@@ -1349,8 +1349,8 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 			local16 = (IntNode) this.aLinkedList_4.method3548();
 			this.anOpengl1.glDeleteLists((int) local16.key, local16.value);
 		}
-		while (!this.aLinkedList_10.method3549()) {
-			local16 = (IntNode) this.aLinkedList_10.method3548();
+		while (!this.shaders.method3549()) {
+			local16 = (IntNode) this.shaders.method3548();
 			this.anOpengl1.glDeleteObjectARB(local16.value);
 		}
 		while (!this.aLinkedList_4.method3549()) {
@@ -1813,8 +1813,8 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 
 	@OriginalMember(owner = "client!bf", name = "o", descriptor = "(I)V")
 	public synchronized void method820(@OriginalArg(0) int arg0) {
-		@Pc(4) IntNode local4 = new IntNode(arg0);
-		this.aLinkedList_10.addTail(local4);
+		@Pc(4) IntNode node = new IntNode(arg0);
+		this.shaders.addTail(node);
 	}
 
 	@OriginalMember(owner = "client!bf", name = "m", descriptor = "()I")

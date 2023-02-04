@@ -21,13 +21,13 @@ public final class Static390 {
 		Static4.method77();
 		Static257.outboundBuffer.offset = 0;
 		Static86.anInt1870 = 0;
-		Static231.packetInbound = null;
-		Static334.aClass89_222 = null;
-		Static39.aClass89_35 = null;
+		InboundPacket.packetInbound = null;
+		InboundPacket.aInboundPacket_222 = null;
+		InboundPacket.aInboundPacket_35 = null;
 		Static268.anInt4955 = 0;
 		Static212.inboundBuffer.offset = 0;
 		Static151.anInt2773 = 0;
-		Static66.aClass89_57 = null;
+		InboundPacket.aInboundPacket_57 = null;
 		for (@Pc(4365) int local4365 = 0; local4365 < Static50.HINT_ARROWS.length; local4365++) {
 			Static50.HINT_ARROWS[local4365] = null;
 		}

@@ -841,14 +841,14 @@ public final class NpcType {
 	}
 
 	@OriginalMember(owner = "client!fk", name = "a", descriptor = "(I)Z")
-	public boolean method2099() {
+	public boolean hasAreaSound() {
 		if (this.multiNpcs == null) {
 			return this.idlesound != -1 || this.walksound != -1 || this.runsound != -1;
 		}
-		for (@Pc(28) int local28 = 0; local28 < this.multiNpcs.length; local28++) {
-			if (this.multiNpcs[local28] != -1) {
-				@Pc(45) NpcType local45 = this.aNpcTypeList_2.get(this.multiNpcs[local28]);
-				if (local45.idlesound != -1 || local45.walksound != -1 || local45.runsound != -1) {
+		for (@Pc(28) int i = 0; i < this.multiNpcs.length; i++) {
+			if (this.multiNpcs[i] != -1) {
+				@Pc(45) NpcType npcType = this.aNpcTypeList_2.get(this.multiNpcs[i]);
+				if (npcType.idlesound != -1 || npcType.walksound != -1 || npcType.runsound != -1) {
 					return true;
 				}
 			}

@@ -53,37 +53,37 @@ public final class Static56 {
 
 	@OriginalMember(owner = "client!dd", name = "a", descriptor = "(IIIII)V")
 	public static void method1616(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(4) int arg3) {
-		for (@Pc(10) Class2_Sub19 local10 = (Class2_Sub19) Static83.A_LINKED_LIST___14.head(); local10 != null; local10 = (Class2_Sub19) Static83.A_LINKED_LIST___14.next()) {
+		for (@Pc(10) AreaSound local10 = (AreaSound) Static83.A_LINKED_LIST___14.head(); local10 != null; local10 = (AreaSound) Static83.A_LINKED_LIST___14.next()) {
 			Static337.method5705(arg2, arg3, local10, arg1, arg0);
 		}
-		for (@Pc(33) Class2_Sub19 local33 = (Class2_Sub19) Static363.A_LINKED_LIST___39.head(); local33 != null; local33 = (Class2_Sub19) Static363.A_LINKED_LIST___39.next()) {
+		for (@Pc(33) AreaSound local33 = (AreaSound) Static363.npcSounds.head(); local33 != null; local33 = (AreaSound) Static363.npcSounds.next()) {
 			@Pc(37) byte local37 = 1;
-			@Pc(42) BasType local42 = local33.aClass11_Sub5_Sub2_Sub2_1.method4331();
-			if (local33.aClass11_Sub5_Sub2_Sub2_1.aBoolean317) {
+			@Pc(42) BasType local42 = local33.npc.method4331();
+			if (local33.npc.aBoolean317) {
 				local37 = 0;
-			} else if (local42.runSeqID == local33.aClass11_Sub5_Sub2_Sub2_1.anInt4585 || local42.runFollow180SeqID == local33.aClass11_Sub5_Sub2_Sub2_1.anInt4585 || local42.runFollowCwSeqID == local33.aClass11_Sub5_Sub2_Sub2_1.anInt4585 || local42.runFollowCcwSeqID == local33.aClass11_Sub5_Sub2_Sub2_1.anInt4585) {
+			} else if (local42.runSeqID == local33.npc.anInt4585 || local42.runFollow180SeqID == local33.npc.anInt4585 || local42.runFollowCwSeqID == local33.npc.anInt4585 || local42.runFollowCcwSeqID == local33.npc.anInt4585) {
 				local37 = 2;
-			} else if (local42.crawlSeqID == local33.aClass11_Sub5_Sub2_Sub2_1.anInt4585 || local33.aClass11_Sub5_Sub2_Sub2_1.anInt4585 == local42.crawlFollow180SeqID || local42.crawlFollowCwSeqID == local33.aClass11_Sub5_Sub2_Sub2_1.anInt4585 || local42.crawlFollowCcwSeqID == local33.aClass11_Sub5_Sub2_Sub2_1.anInt4585) {
+			} else if (local42.crawlSeqID == local33.npc.anInt4585 || local33.npc.anInt4585 == local42.crawlFollow180SeqID || local42.crawlFollowCwSeqID == local33.npc.anInt4585 || local42.crawlFollowCcwSeqID == local33.npc.anInt4585) {
 				local37 = 3;
 			}
 			if (local37 != local33.anInt2900) {
-				@Pc(133) int local133 = Static340.method5763(local33.aClass11_Sub5_Sub2_Sub2_1);
+				@Pc(133) int local133 = Static340.method5763(local33.npc);
 				if (local133 != local33.anInt2894) {
-					if (local33.aClass2_Sub12_Sub4_3 != null) {
-						client.soundStream.method2081(local33.aClass2_Sub12_Sub4_3);
-						local33.aClass2_Sub12_Sub4_3 = null;
+					if (local33.primarySystem != null) {
+						client.soundStream.method2081(local33.primarySystem);
+						local33.primarySystem = null;
 					}
 					local33.anInt2894 = local133;
 				}
 				local33.anInt2900 = local37;
 			}
-			local33.anInt2899 = local33.aClass11_Sub5_Sub2_Sub2_1.xFine;
-			local33.anInt2896 = local33.aClass11_Sub5_Sub2_Sub2_1.xFine + local33.aClass11_Sub5_Sub2_Sub2_1.method4327() * 64;
-			local33.anInt2910 = local33.aClass11_Sub5_Sub2_Sub2_1.zFine;
-			local33.anInt2904 = local33.aClass11_Sub5_Sub2_Sub2_1.zFine + local33.aClass11_Sub5_Sub2_Sub2_1.method4327() * 64;
+			local33.anInt2899 = local33.npc.xFine;
+			local33.anInt2896 = local33.npc.xFine + local33.npc.method4327() * 64;
+			local33.anInt2910 = local33.npc.zFine;
+			local33.anInt2904 = local33.npc.zFine + local33.npc.method4327() * 64;
 			Static337.method5705(arg2, arg3, local33, arg1, arg0);
 		}
-		for (@Pc(208) Class2_Sub19 local208 = (Class2_Sub19) Static232.aClass4_86.head(); local208 != null; local208 = (Class2_Sub19) Static232.aClass4_86.next()) {
+		for (@Pc(208) AreaSound local208 = (AreaSound) Static232.aClass4_86.head(); local208 != null; local208 = (AreaSound) Static232.aClass4_86.next()) {
 			@Pc(212) byte local212 = 1;
 			@Pc(217) BasType local217 = local208.aClass11_Sub5_Sub2_Sub1_2.method4331();
 			if (local208.aClass11_Sub5_Sub2_Sub1_2.aBoolean317) {
@@ -96,9 +96,9 @@ public final class Static56 {
 			if (local212 != local208.anInt2900) {
 				@Pc(300) int local300 = Static384.method6414(local208.aClass11_Sub5_Sub2_Sub1_2);
 				if (local300 != local208.anInt2894) {
-					if (local208.aClass2_Sub12_Sub4_3 != null) {
-						client.soundStream.method2081(local208.aClass2_Sub12_Sub4_3);
-						local208.aClass2_Sub12_Sub4_3 = null;
+					if (local208.primarySystem != null) {
+						client.soundStream.method2081(local208.primarySystem);
+						local208.primarySystem = null;
 					}
 					local208.anInt2894 = local300;
 				}

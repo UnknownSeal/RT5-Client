@@ -7,9 +7,6 @@ public final class Static170 {
 	@OriginalMember(owner = "client!js", name = "O", descriptor = "I")
 	public static int anInt3229;
 
-	@OriginalMember(owner = "client!js", name = "J", descriptor = "Lclient!h;")
-	public static final Class89 aClass89_136 = new Class89(73, 6);
-
 	@OriginalMember(owner = "client!js", name = "Q", descriptor = "[B")
 	public static final byte[] aByteArray33 = new byte[] { 2, 0, 0, 2, 0, 0, 0, 4, 4 };
 

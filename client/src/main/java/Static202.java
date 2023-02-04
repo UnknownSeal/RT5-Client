@@ -10,9 +10,6 @@ public final class Static202 {
 	@OriginalMember(owner = "client!lq", name = "s", descriptor = "I")
 	public static int anInt3714 = -1;
 
-	@OriginalMember(owner = "client!lq", name = "t", descriptor = "Lclient!h;")
-	public static final Class89 aClass89_153 = new Class89(28, 6);
-
 	@OriginalMember(owner = "client!lq", name = "a", descriptor = "(JI)Ljava/lang/String;")
 	public static String method3675(@OriginalArg(0) long arg0) {
 		if (arg0 <= 0L || arg0 >= 6582952005840035281L) {

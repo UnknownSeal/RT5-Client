@@ -10,14 +10,8 @@ public final class Static78 {
 	@OriginalMember(owner = "client!ei", name = "j", descriptor = "Lclient!r;")
 	public static Js5 aJs5_89;
 
-	@OriginalMember(owner = "client!ei", name = "e", descriptor = "Lclient!h;")
-	public static final Class89 aClass89_223 = new Class89(15, 10);
-
 	@OriginalMember(owner = "client!ei", name = "i", descriptor = "S")
 	public static short aShort86 = 1;
-
-	@OriginalMember(owner = "client!ei", name = "l", descriptor = "Lclient!h;")
-	public static final Class89 aClass89_224 = new Class89(31, 8);
 
 	@OriginalMember(owner = "client!ei", name = "a", descriptor = "(BI)V")
 	public static void method5696(@OriginalArg(1) int arg0) {

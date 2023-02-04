@@ -7,9 +7,6 @@ public final class Static144 {
     @OriginalMember(owner = "client!ie", name = "j", descriptor = "I")
 	public static int anInt2694 = 0;
 
-	@OriginalMember(owner = "client!ie", name = "n", descriptor = "Lclient!h;")
-	public static final Class89 aClass89_112 = new Class89(38, 14);
-
 	@OriginalMember(owner = "client!ie", name = "a", descriptor = "(Z)V")
 	public static void method2690() {
 		for (@Pc(14) Class2_Sub37 local14 = (Class2_Sub37) Static207.aLinkedList_26.head(); local14 != null; local14 = (Class2_Sub37) Static207.aLinkedList_26.next()) {

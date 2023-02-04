@@ -14,9 +14,6 @@ public final class Static372 {
 	@OriginalMember(owner = "client!vp", name = "k", descriptor = "Lclient!mc;")
 	public static final Class145 aClass145_253 = new Class145(6, 15);
 
-	@OriginalMember(owner = "client!vp", name = "m", descriptor = "Lclient!h;")
-	public static final Class89 aClass89_245 = new Class89(5, 8);
-
 	@OriginalMember(owner = "client!vp", name = "a", descriptor = "(I)V")
 	public static void method6259() {
 		if (GameShell.fullScreenFrame != null) {

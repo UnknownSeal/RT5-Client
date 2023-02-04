@@ -10,9 +10,6 @@ public final class Static6 {
 	@OriginalMember(owner = "client!ae", name = "O", descriptor = "[I")
 	public static final int[] anIntArray4 = new int[13];
 
-	@OriginalMember(owner = "client!ae", name = "P", descriptor = "Lclient!h;")
-	public static final Class89 aClass89_9 = new Class89(97, 7);
-
 	@OriginalMember(owner = "client!ae", name = "R", descriptor = "I")
 	public static int anInt158 = 0;
 

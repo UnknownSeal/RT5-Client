@@ -11,9 +11,6 @@ public final class Static137 {
 	@OriginalMember(owner = "client!hq", name = "C", descriptor = "Lclient!r;")
 	public static Js5 archive;
 
-	@OriginalMember(owner = "client!hq", name = "x", descriptor = "Lclient!h;")
-	public static final Class89 aClass89_106 = new Class89(14, 6);
-
 	@OriginalMember(owner = "client!hq", name = "b", descriptor = "(I)V")
 	public static void method2549() {
 		if (Static86.anInt1870 > 0) {

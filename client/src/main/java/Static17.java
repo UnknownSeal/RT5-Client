@@ -15,7 +15,7 @@ public final class Static17 {
 	public static final Class116 aClass116_6 = new Class116(16);
 
 	@OriginalMember(owner = "client!at", name = "J", descriptor = "[I")
-	public static final int[] anIntArray291 = new int[1000];
+	public static final int[] removeIDs = new int[1000];
 
 	@OriginalMember(owner = "client!at", name = "O", descriptor = "Z")
 	public static boolean aBoolean308 = true;
@@ -45,8 +45,8 @@ public final class Static17 {
 					@Pc(42) Npc local42 = Static365.npcs[local16];
 					Static211.ids[Static166.size++] = local16;
 					local42.lastSeenLoop = Static114.loop;
-					if (local42.type != null && local42.type.method2099()) {
-						Static154.method2781(local42);
+					if (local42.type != null && local42.type.hasAreaSound()) {
+						Static154.remove(local42);
 					}
 					@Pc(71) int local71;
 					if (arg0) {
@@ -74,7 +74,7 @@ public final class Static17 {
 					}
 					@Pc(119) int local119 = Static212.inboundBuffer.gBit(1);
 					if (local119 == 1) {
-						Static277.anIntArray361[Static343.anInt6390++] = local16;
+						Static277.extendedIDs[Static343.extendedCount++] = local16;
 					}
 					local42.setType(NpcTypeList.npcTypeList.get(Static212.inboundBuffer.gBit(14)));
 					@Pc(151) int local151 = Static212.inboundBuffer.gBit(3) + 4 << 11 & 0x3929;
@@ -88,7 +88,7 @@ public final class Static17 {
 						local42.method4329(local151);
 					}
 					local42.method4338(local42.method4327(), local156, self.anIntArray316[0] + local97, local161 == 1, self.anIntArray317[0] + local71);
-					if (local42.type.method2099()) {
+					if (local42.type.hasAreaSound()) {
 						Static211.method3723(null, local42.anIntArray317[0], 0, null, local42, local42.anIntArray316[0], local42.aByte78);
 					}
 					continue;

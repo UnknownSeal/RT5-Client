@@ -7,17 +7,8 @@ public final class Static272 {
 	@OriginalMember(owner = "client!pk", name = "nb", descriptor = "I")
 	public static int anInt5023;
 
-	@OriginalMember(owner = "client!pk", name = "Q", descriptor = "Lclient!h;")
-	public static final Class89 aClass89_184 = new Class89(2, 2);
-
-	@OriginalMember(owner = "client!pk", name = "hb", descriptor = "Lclient!h;")
-	public static final Class89 aClass89_185 = new Class89(78, 6);
-
 	@OriginalMember(owner = "client!pk", name = "ib", descriptor = "I")
 	public static int anInt5022 = -1;
-
-	@OriginalMember(owner = "client!pk", name = "jb", descriptor = "Lclient!h;")
-	public static final Class89 aClass89_186 = new Class89(0, 10);
 
 	@OriginalMember(owner = "client!pk", name = "kb", descriptor = "Lclient!mc;")
 	public static final Class145 aClass145_180 = new Class145(0, 2);

@@ -3,9 +3,6 @@ import org.openrs2.deob.annotation.OriginalMember;
 
 public final class Static380 {
 
-	@OriginalMember(owner = "client!wc", name = "i", descriptor = "Lclient!h;")
-	public static final Class89 aClass89_248 = new Class89(94, 3);
-
 	@OriginalMember(owner = "client!wc", name = "a", descriptor = "(ZIILclient!nk;)V")
 	public static void dragPickUp(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) Component component) {
 		if (Static375.aComponent_14 != null || Static375.aBoolean477 || (component == null || Static207.method3702(component) == null)) {

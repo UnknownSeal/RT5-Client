@@ -7,9 +7,6 @@ public final class Static80 {
 	@OriginalMember(owner = "client!ek", name = "Z", descriptor = "I")
 	public static int anInt6679;
 
-	@OriginalMember(owner = "client!ek", name = "X", descriptor = "Lclient!h;")
-	public static final Class89 aClass89_234 = new Class89(65, 5);
-
 	@OriginalMember(owner = "client!ek", name = "ab", descriptor = "[I")
 	public static final int[] experience = new int[25];
 

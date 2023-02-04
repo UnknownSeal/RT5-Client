@@ -51,8 +51,8 @@ public final class Npc extends Class11_Sub5_Sub2 {
 			}
 		}
 		super.aModelArray3[1] = null;
-		if (super.anInt4594 != -1 && super.anInt4582 != -1) {
-			@Pc(218) Class91 local218 = Static322.aClass211_2.get(super.anInt4594);
+		if (super.spotAnimID != -1 && super.anInt4582 != -1) {
+			@Pc(218) Class91 local218 = Static322.aClass211_2.get(super.spotAnimID);
 			@Pc(238) Model local238 = local218.method2433(super.anInt4612, super.anInt4620, arg1, (local218.aBoolean178 ? 7 : 2) | local7, SeqTypeList.seqTypeList, super.anInt4582);
 			if (local238 != null) {
 				local238.method3812(0, -super.anInt4639, 0);
@@ -124,56 +124,56 @@ public final class Npc extends Class11_Sub5_Sub2 {
 	}
 
 	@OriginalMember(owner = "client!oe", name = "a", descriptor = "(IZI)V")
-	public void method4337(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
+	public void move(@OriginalArg(0) int speed, @OriginalArg(2) int direction) {
 		@Pc(10) int local10 = super.anIntArray316[0];
 		@Pc(15) int local15 = super.anIntArray317[0];
-		if (arg1 == 0) {
+		if (direction == 0) {
 			local15++;
 		}
-		if (arg1 == 1) {
+		if (direction == 1) {
 			local10++;
 			local15++;
 		}
-		if (arg1 == 2) {
+		if (direction == 2) {
 			local10++;
 		}
-		if (arg1 == 3) {
+		if (direction == 3) {
 			local15--;
 			local10++;
 		}
-		if (arg1 == 4) {
+		if (direction == 4) {
 			local15--;
 		}
-		if (arg1 == 5) {
+		if (direction == 5) {
 			local10--;
 			local15--;
 		}
-		if (arg1 == 6) {
+		if (direction == 6) {
 			local10--;
 		}
-		if (arg1 == 7) {
+		if (direction == 7) {
 			local10--;
 			local15++;
 		}
 		if (super.anInt4597 != -1 && SeqTypeList.seqTypeList.method2371(super.anInt4597).movetype == 1) {
 			super.anInt4597 = -1;
 		}
-		if (super.anInt4594 != -1) {
-			@Pc(83) Class91 local83 = Static322.aClass211_2.get(super.anInt4594);
-			if (local83.aBoolean177 && local83.anInt2448 != -1 && SeqTypeList.seqTypeList.method2371(local83.anInt2448).movetype == 1) {
-				super.anInt4594 = -1;
+		if (super.spotAnimID != -1) {
+			@Pc(83) Class91 type = Static322.aClass211_2.get(super.spotAnimID);
+			if (type.loop && type.anInt2448 != -1 && SeqTypeList.seqTypeList.method2371(type.anInt2448).movetype == 1) {
+				super.spotAnimID = -1;
 			}
 		}
 		if (super.movementQueueSize < 9) {
 			super.movementQueueSize++;
 		}
-		for (@Pc(118) int local118 = super.movementQueueSize; local118 > 0; local118--) {
-			super.anIntArray316[local118] = super.anIntArray316[local118 - 1];
-			super.anIntArray317[local118] = super.anIntArray317[local118 - 1];
-			super.aByteArray51[local118] = super.aByteArray51[local118 - 1];
+		for (@Pc(118) int i = super.movementQueueSize; i > 0; i--) {
+			super.anIntArray316[i] = super.anIntArray316[i - 1];
+			super.anIntArray317[i] = super.anIntArray317[i - 1];
+			super.movementQueueSpeed[i] = super.movementQueueSpeed[i - 1];
 		}
 		super.anIntArray316[0] = local10;
-		super.aByteArray51[0] = (byte) arg0;
+		super.movementQueueSpeed[0] = (byte) speed;
 		super.anIntArray317[0] = local15;
 	}
 
@@ -230,10 +230,10 @@ public final class Npc extends Class11_Sub5_Sub2 {
 		if (super.anInt4597 != -1 && SeqTypeList.seqTypeList.method2371(super.anInt4597).movetype == 1) {
 			super.anInt4597 = -1;
 		}
-		if (super.anInt4594 != -1) {
-			@Pc(37) Class91 local37 = Static322.aClass211_2.get(super.anInt4594);
-			if (local37.aBoolean177 && local37.anInt2448 != -1 && SeqTypeList.seqTypeList.method2371(local37.anInt2448).movetype == 1) {
-				super.anInt4594 = -1;
+		if (super.spotAnimID != -1) {
+			@Pc(37) Class91 local37 = Static322.aClass211_2.get(super.spotAnimID);
+			if (local37.loop && local37.anInt2448 != -1 && SeqTypeList.seqTypeList.method2371(local37.anInt2448).movetype == 1) {
+				super.spotAnimID = -1;
 			}
 		}
 		if (!arg3) {
@@ -246,11 +246,11 @@ public final class Npc extends Class11_Sub5_Sub2 {
 				for (@Pc(108) int local108 = super.movementQueueSize; local108 > 0; local108--) {
 					super.anIntArray316[local108] = super.anIntArray316[local108 - 1];
 					super.anIntArray317[local108] = super.anIntArray317[local108 - 1];
-					super.aByteArray51[local108] = super.aByteArray51[local108 - 1];
+					super.movementQueueSpeed[local108] = super.movementQueueSpeed[local108 - 1];
 				}
 				super.anIntArray316[0] = arg2;
 				super.anIntArray317[0] = arg4;
-				super.aByteArray51[0] = 1;
+				super.movementQueueSpeed[0] = 1;
 				return;
 			}
 		}

@@ -3,7 +3,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!jc")
-public final class Class2_Sub19 extends Node {
+public final class AreaSound extends Node {
 
 	@OriginalMember(owner = "client!jc", name = "s", descriptor = "Lclient!nh;")
 	public Class11_Sub5_Sub2_Sub1 aClass11_Sub5_Sub2_Sub1_2;
@@ -27,7 +27,7 @@ public final class Class2_Sub19 extends Node {
 	public int anInt2899;
 
 	@OriginalMember(owner = "client!jc", name = "B", descriptor = "Lclient!oe;")
-	public Npc aClass11_Sub5_Sub2_Sub2_1;
+	public Npc npc;
 
 	@OriginalMember(owner = "client!jc", name = "E", descriptor = "I")
 	public int anInt2901;
@@ -42,7 +42,7 @@ public final class Class2_Sub19 extends Node {
 	public int anInt2905;
 
 	@OriginalMember(owner = "client!jc", name = "K", descriptor = "Lclient!qn;")
-	public Class2_Sub12_Sub4 aClass2_Sub12_Sub4_3;
+	public Class2_Sub12_Sub4 primarySystem;
 
 	@OriginalMember(owner = "client!jc", name = "L", descriptor = "I")
 	public int anInt2906;
@@ -87,11 +87,11 @@ public final class Class2_Sub19 extends Node {
 				this.anInt2894 = local88.anInt1325;
 				this.anIntArray181 = local88.anIntArray93;
 			}
-		} else if (this.aClass11_Sub5_Sub2_Sub2_1 != null) {
-			@Pc(42) int local42 = Static340.method5763(this.aClass11_Sub5_Sub2_Sub2_1);
+		} else if (this.npc != null) {
+			@Pc(42) int local42 = Static340.method5763(this.npc);
 			if (local42 != local8) {
 				this.anInt2894 = local42;
-				@Pc(52) NpcType local52 = this.aClass11_Sub5_Sub2_Sub2_1.type;
+				@Pc(52) NpcType local52 = this.npc.type;
 				if (local52.multiNpcs != null) {
 					local52 = local52.getMultiNpc(Static214.aClass226_1);
 				}
@@ -107,9 +107,9 @@ public final class Class2_Sub19 extends Node {
 			this.anInt2901 = this.aClass11_Sub5_Sub2_Sub1_2.anInt4182 * 128;
 			this.anInt2906 = this.aClass11_Sub5_Sub2_Sub1_2.anInt4201;
 		}
-		if (this.anInt2894 != local8 && this.aClass2_Sub12_Sub4_3 != null) {
-			client.soundStream.method2081(this.aClass2_Sub12_Sub4_3);
-			this.aClass2_Sub12_Sub4_3 = null;
+		if (this.anInt2894 != local8 && this.primarySystem != null) {
+			client.soundStream.method2081(this.primarySystem);
+			this.primarySystem = null;
 		}
 	}
 }

@@ -4,16 +4,86 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!we")
-public final class Class2_Sub41 extends Node {
+public final class Inventory extends Node {
 
 	@OriginalMember(owner = "client!we", name = "u", descriptor = "[I")
-	public int[] anIntArray488 = new int[1];
+	public int[] count = new int[1];
 
 	@OriginalMember(owner = "client!we", name = "x", descriptor = "[I")
-	public int[] anIntArray489 = new int[] { -1 };
+	public int[] types = new int[] { -1 };
 
 	static {
 		new LocalisedText("You cannot send a quick chat message to a player on this world at this time.", "Einem Spieler auf dieser Welt können derzeit keine Direktchat-Nachrichten", "Impossible d'envoyer un message rapide à un joueur de ce serveur à l'heure actuelle.", "Você não pode enviar uma mensagem de papo rápido para um jogador neste mundo neste momento.");
+	}
+
+	@OriginalMember(owner = "client!ch", name = "a", descriptor = "(ZIII)I")
+	public static int getItemType(@OriginalArg(0) boolean arg0, @OriginalArg(2) int id, @OriginalArg(3) int slot) {
+		@Pc(13) Inventory inventory = Static374.get(arg0, id);
+		if (inventory == null) {
+			return -1;
+		} else if (slot >= 0 && inventory.types.length > slot) {
+			return inventory.types[slot];
+		} else {
+			return -1;
+		}
+	}
+
+	@OriginalMember(owner = "client!qk", name = "d", descriptor = "(IZI)V")
+	public static void clear(@OriginalArg(1) boolean arg0, @OriginalArg(2) int arg1) {
+		@Pc(10) Inventory inventory = Static374.get(arg0, arg1);
+		if (inventory != null) {
+			for (@Pc(15) int i = 0; i < inventory.types.length; i++) {
+				inventory.types[i] = -1;
+				inventory.count[i] = 0;
+			}
+		}
+	}
+
+	@OriginalMember(owner = "client!jo", name = "a", descriptor = "(ZBI)V")
+	public static void delete(@OriginalArg(0) boolean arg0, @OriginalArg(2) int id) {
+		@Pc(8) Inventory inventory = Static374.get(arg0, id);
+		if (inventory != null) {
+			inventory.unlink();
+		}
+	}
+
+	@OriginalMember(owner = "client!l", name = "a", descriptor = "(IZIB)I")
+	public static int getSlotTotal(@OriginalArg(0) int id, @OriginalArg(1) boolean arg1, @OriginalArg(2) int type) {
+		@Pc(10) Inventory inventory = Static374.get(arg1, id);
+		if (inventory == null) {
+			return 0;
+		} else if (type == -1) {
+			return 0;
+		} else {
+			@Pc(22) int total = 0;
+			for (@Pc(32) int i = 0; i < inventory.count.length; i++) {
+				if (type == inventory.types[i]) {
+					total += inventory.count[i];
+				}
+			}
+			return total;
+		}
+	}
+
+	@OriginalMember(owner = "client!jm", name = "a", descriptor = "(IIZZI)I")
+	public static int getTotalParam(@OriginalArg(0) int arg0, @OriginalArg(3) boolean arg1, @OriginalArg(4) int id) {
+		@Pc(10) Inventory inventory = Static374.get(false, id);
+		if (inventory == null) {
+			return 0;
+		}
+		@Pc(16) int total = 0;
+		for (@Pc(18) int i = 0; i < inventory.types.length; i++) {
+			if (inventory.types[i] >= 0 && inventory.types[i] < ObjTypeList.objTypeList.anInt2779) {
+				@Pc(44) ObjType objType = ObjTypeList.objTypeList.get(inventory.types[i]);
+				@Pc(54) int local54 = objType.method4771(Static363.aClass18_2.method565(arg0).anInt7023, arg0);
+				if (arg1) {
+					total += inventory.count[i] * local54;
+				} else {
+					total += local54;
+				}
+			}
+		}
+		return total;
 	}
 
 	@OriginalMember(owner = "client!we", name = "a", descriptor = "(IIIIZLclient!nb;IILclient!jo;Lclient!wm;)Lclient!gn;")
@@ -24,13 +94,13 @@ public final class Class2_Sub41 extends Node {
 		if (arg2 != -1) {
 			local11 = Static59.aClass7_1.method245(arg2);
 		}
-		@Pc(23) int[] local23 = this.anIntArray489;
+		@Pc(23) int[] local23 = this.types;
 		if (local11 != null && local11.anIntArray425 != null) {
 			local23 = new int[local11.anIntArray425.length];
 			for (@Pc(35) int local35 = 0; local35 < local11.anIntArray425.length; local35++) {
 				@Pc(42) int local42 = local11.anIntArray425[local35];
-				if (local42 >= 0 && this.anIntArray489.length > local42) {
-					local23[local35] = this.anIntArray489[local42];
+				if (local42 >= 0 && this.types.length > local42) {
+					local23[local35] = this.types[local42];
 				} else {
 					local23[local35] = -1;
 				}

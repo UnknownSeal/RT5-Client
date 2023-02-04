@@ -11,9 +11,6 @@ public final class Static235 {
 	@OriginalMember(owner = "client!nj", name = "e", descriptor = "I")
 	public static int state = 0;
 
-	@OriginalMember(owner = "client!nj", name = "h", descriptor = "Lclient!h;")
-	public static final Class89 aClass89_140 = new Class89(42, 3);
-
 	@OriginalMember(owner = "client!nj", name = "j", descriptor = "I")
 	public static int anInt3368 = 0;
 
@@ -110,7 +107,7 @@ public final class Static235 {
 			Static211.method3724();
 			return true;
 		} catch (@Pc(21) Exception exception) {
-			@Pc(81) String local81 = "T2 - " + (Static231.packetInbound == null ? -1 : Static231.packetInbound.method2399()) + "," + (Static66.aClass89_57 == null ? -1 : Static66.aClass89_57.method2399()) + "," + (Static39.aClass89_35 == null ? -1 : Static39.aClass89_35.method2399()) + " - " + Static82.length + "," + (Static164.originX + Static17.self.anIntArray316[0]) + "," + (Static148.originZ + Static17.self.anIntArray317[0]) + " - ";
+			@Pc(81) String local81 = "T2 - " + (InboundPacket.packetInbound == null ? -1 : InboundPacket.packetInbound.getID()) + "," + (InboundPacket.aInboundPacket_57 == null ? -1 : InboundPacket.aInboundPacket_57.getID()) + "," + (InboundPacket.aInboundPacket_35 == null ? -1 : InboundPacket.aInboundPacket_35.getID()) + " - " + Static82.length + "," + (Static164.originX + Static17.self.anIntArray316[0]) + "," + (Static148.originZ + Static17.self.anIntArray317[0]) + " - ";
 			for (@Pc(83) int local83 = 0; local83 < Static82.length && local83 < 50; local83++) {
 				local81 = local81 + Static212.inboundBuffer.bytes[local83] + ",";
 			}

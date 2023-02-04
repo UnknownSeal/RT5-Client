@@ -10,9 +10,6 @@ public final class Static177 {
 	@OriginalMember(owner = "client!ke", name = "F", descriptor = "[S")
 	public static short[] results;
 
-	@OriginalMember(owner = "client!ke", name = "y", descriptor = "Lclient!h;")
-	public static final Class89 aClass89_141 = new Class89(68, 4);
-
 	@OriginalMember(owner = "client!ke", name = "E", descriptor = "I")
 	public static int anInt3381 = 0;
 

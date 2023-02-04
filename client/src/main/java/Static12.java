@@ -113,12 +113,12 @@ public final class Static12 {
 
 	@OriginalMember(owner = "client!am", name = "a", descriptor = "(I)V")
 	public static void method282() {
-		for (@Pc(10) Class2_Sub19 local10 = (Class2_Sub19) Static83.A_LINKED_LIST___14.head(); local10 != null; local10 = (Class2_Sub19) Static83.A_LINKED_LIST___14.next()) {
+		for (@Pc(10) AreaSound local10 = (AreaSound) Static83.A_LINKED_LIST___14.head(); local10 != null; local10 = (AreaSound) Static83.A_LINKED_LIST___14.next()) {
 			if (local10.aBoolean204) {
 				local10.method2940();
 			}
 		}
-		for (@Pc(30) Class2_Sub19 local30 = (Class2_Sub19) Static363.A_LINKED_LIST___39.head(); local30 != null; local30 = (Class2_Sub19) Static363.A_LINKED_LIST___39.next()) {
+		for (@Pc(30) AreaSound local30 = (AreaSound) Static363.npcSounds.head(); local30 != null; local30 = (AreaSound) Static363.npcSounds.next()) {
 			if (local30.aBoolean204) {
 				local30.method2940();
 			}

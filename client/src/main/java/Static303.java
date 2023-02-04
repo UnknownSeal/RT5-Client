@@ -228,11 +228,11 @@ public final class Static303 {
 			}
 			@Pc(690) boolean local690 = true;
 			@Pc(780) SeqType local780;
-			if (local32 != -1 && arg2.anInt4594 != -1) {
+			if (local32 != -1 && arg2.spotAnimID != -1) {
 				@Pc(707) Class91 local707;
-				if (local32 == arg2.anInt4594) {
+				if (local32 == arg2.spotAnimID) {
 					local707 = Static322.aClass211_2.get(local32);
-					if (local707.aBoolean177 && local707.anInt2448 != -1) {
+					if (local707.loop && local707.anInt2448 != -1) {
 						@Pc(723) SeqType local723 = SeqTypeList.seqTypeList.method2371(local707.anInt2448);
 						local289 = local723.exactmove;
 						if (local289 == 0) {
@@ -246,7 +246,7 @@ public final class Static303 {
 					}
 				} else {
 					local707 = Static322.aClass211_2.get(local32);
-					@Pc(763) Class91 local763 = Static322.aClass211_2.get(arg2.anInt4594);
+					@Pc(763) Class91 local763 = Static322.aClass211_2.get(arg2.spotAnimID);
 					if (local707.anInt2448 != -1 && local763.anInt2448 != -1) {
 						local780 = SeqTypeList.seqTypeList.method2371(local707.anInt2448);
 						@Pc(786) SeqType local786 = SeqTypeList.seqTypeList.method2371(local763.anInt2448);
@@ -259,7 +259,7 @@ public final class Static303 {
 			if (local690) {
 				arg2.anInt4639 = local36 >> 16;
 				local43 = Static114.loop;
-				arg2.anInt4594 = local32;
+				arg2.spotAnimID = local32;
 				arg2.anInt4595 = (local36 & 0xFFFF) + local43;
 				arg2.anInt4582 = 0;
 				arg2.anInt4620 = 0;
@@ -267,8 +267,8 @@ public final class Static303 {
 				if (arg2.anInt4595 > local43) {
 					arg2.anInt4582 = -1;
 				}
-				if (arg2.anInt4594 != -1 && local43 == arg2.anInt4595) {
-					local283 = Static322.aClass211_2.get(arg2.anInt4594).anInt2448;
+				if (arg2.spotAnimID != -1 && local43 == arg2.anInt4595) {
+					local283 = Static322.aClass211_2.get(arg2.spotAnimID).anInt2448;
 					if (local283 != -1) {
 						local780 = SeqTypeList.seqTypeList.method2371(local283);
 						if (local780 != null && local780.frames != null) {

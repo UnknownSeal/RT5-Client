@@ -36,14 +36,14 @@ public final class Static154 {
 	}
 
 	@OriginalMember(owner = "client!is", name = "a", descriptor = "(Lclient!oe;B)V")
-	public static void method2781(@OriginalArg(0) Npc arg0) {
-		for (@Pc(16) Class2_Sub19 local16 = (Class2_Sub19) Static363.A_LINKED_LIST___39.head(); local16 != null; local16 = (Class2_Sub19) Static363.A_LINKED_LIST___39.next()) {
-			if (local16.aClass11_Sub5_Sub2_Sub2_1 == arg0) {
-				if (local16.aClass2_Sub12_Sub4_3 != null) {
-					client.soundStream.method2081(local16.aClass2_Sub12_Sub4_3);
-					local16.aClass2_Sub12_Sub4_3 = null;
+	public static void remove(@OriginalArg(0) Npc npc) {
+		for (@Pc(16) AreaSound areaSound = (AreaSound) Static363.npcSounds.head(); areaSound != null; areaSound = (AreaSound) Static363.npcSounds.next()) {
+			if (npc == areaSound.npc) {
+				if (areaSound.primarySystem != null) {
+					client.soundStream.method2081(areaSound.primarySystem);
+					areaSound.primarySystem = null;
 				}
-				local16.unlink();
+				areaSound.unlink();
 				return;
 			}
 		}
@@ -60,17 +60,17 @@ public final class Static154 {
 
 	@OriginalMember(owner = "client!is", name = "a", descriptor = "(IZZ)I")
 	public static int method2784(@OriginalArg(0) int arg0) {
-		@Pc(14) Class2_Sub41 local14 = Static374.method6274(false, arg0);
+		@Pc(14) Inventory local14 = Static374.get(false, arg0);
 		if (local14 == null) {
 			return Static178.aClass51_3.get(arg0).anInt2488;
 		}
 		@Pc(29) int local29 = 0;
-		for (@Pc(31) int local31 = 0; local31 < local14.anIntArray489.length; local31++) {
-			if (local14.anIntArray489[local31] == -1) {
+		for (@Pc(31) int local31 = 0; local31 < local14.types.length; local31++) {
+			if (local14.types[local31] == -1) {
 				local29++;
 			}
 		}
-		return local29 + Static178.aClass51_3.get(arg0).anInt2488 - local14.anIntArray489.length;
+		return local29 + Static178.aClass51_3.get(arg0).anInt2488 - local14.types.length;
 	}
 
 	@OriginalMember(owner = "client!is", name = "a", descriptor = "([I[I[IILclient!nh;)V")

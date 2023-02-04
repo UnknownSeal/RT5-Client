@@ -7,9 +7,6 @@ public final class Static139 {
 	@OriginalMember(owner = "client!hs", name = "v", descriptor = "I")
 	public static int anInt2594;
 
-	@OriginalMember(owner = "client!hs", name = "r", descriptor = "Lclient!h;")
-	public static final Class89 aClass89_108 = new Class89(59, -2);
-
 	@OriginalMember(owner = "client!hs", name = "u", descriptor = "I")
 	public static int anInt2593 = -50;
 

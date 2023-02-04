@@ -8,29 +8,29 @@ public final class Static69 {
 	public static boolean aBoolean129 = true;
 
 	@OriginalMember(owner = "client!du", name = "a", descriptor = "(IZ)V")
-	public static void method1780(@OriginalArg(1) boolean arg0) {
-		Static242.anInt4450 = 0;
-		Static343.anInt6390 = 0;
-		Static315.method5381();
+	public static void readNpcInfoPacket(@OriginalArg(1) boolean arg0) {
+		Static242.removedCount = 0;
+		Static343.extendedCount = 0;
+		Static315.readNpcInfo();
 		Static17.method4209(arg0);
 		Static236.method4111();
-		@Pc(24) int local24;
-		for (@Pc(18) int local18 = 0; local18 < Static242.anInt4450; local18++) {
-			local24 = Static17.anIntArray291[local18];
-			if (Static114.loop != Static365.npcs[local24].lastSeenLoop) {
-				if (Static365.npcs[local24].type.method2099()) {
-					Static154.method2781(Static365.npcs[local24]);
+
+		for (@Pc(18) int i = 0; i < Static242.removedCount; i++) {
+			@Pc(24) int id = Static17.removeIDs[i];
+			if (Static114.loop != Static365.npcs[id].lastSeenLoop) {
+				if (Static365.npcs[id].type.hasAreaSound()) {
+					Static154.remove(Static365.npcs[id]);
 				}
-				Static365.npcs[local24].setType(null);
-				Static365.npcs[local24] = null;
+				Static365.npcs[id].setType(null);
+				Static365.npcs[id] = null;
 			}
 		}
 		if (Static212.inboundBuffer.offset != Static82.length) {
 			throw new RuntimeException("gnp1 pos:" + Static212.inboundBuffer.offset + " psize:" + Static82.length);
 		}
-		for (local24 = 0; local24 < Static166.size; local24++) {
-			if (Static365.npcs[Static211.ids[local24]] == null) {
-				throw new RuntimeException("gnp2 pos:" + local24 + " size:" + Static166.size);
+		for (int i = 0; i < Static166.size; i++) {
+			if (Static365.npcs[Static211.ids[i]] == null) {
+				throw new RuntimeException("gnp2 pos:" + i + " size:" + Static166.size);
 			}
 		}
 	}

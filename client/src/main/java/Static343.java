@@ -7,7 +7,7 @@ public final class Static343 {
 	public static int anInt6389 = -1;
 
 	@OriginalMember(owner = "client!ts", name = "f", descriptor = "I")
-	public static int anInt6390 = 0;
+	public static int extendedCount = 0;
 
 	@OriginalMember(owner = "client!ts", name = "h", descriptor = "Lclient!mc;")
 	public static final Class145 aClass145_231 = new Class145(24, -1);

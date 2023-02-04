@@ -7,9 +7,6 @@ public final class Static201 {
 	@OriginalMember(owner = "client!lp", name = "a", descriptor = "I")
 	public static int anInt3699 = 1;
 
-	@OriginalMember(owner = "client!lp", name = "b", descriptor = "Lclient!h;")
-	public static final Class89 aClass89_151 = new Class89(13, 5);
-
 	@OriginalMember(owner = "client!lp", name = "d", descriptor = "I")
 	public static int anInt3701 = 0;
 
@@ -332,7 +329,7 @@ public final class Static201 {
 											}
 										}
 									} else if (local19.modelType == 8 || local19.modelType == 9) {
-										@Pc(1701) Class2_Sub41 local1701 = Static374.method6274(false, local19.modelID);
+										@Pc(1701) Inventory local1701 = Static374.get(false, local19.modelID);
 										local1511 = local19.modelSeqID == -1 ? null : SeqTypeList.seqTypeList.method2371(local19.modelSeqID);
 										if (local1701 != null) {
 											local1519 = local19.objWearColor ? Static17.self.appearance : null;

@@ -10,9 +10,6 @@ public final class Static207 {
 	@OriginalMember(owner = "client!mc", name = "h", descriptor = "Lclient!ld;")
 	public static final LinkedList A_LINKED_LIST___25 = new LinkedList();
 
-	@OriginalMember(owner = "client!mc", name = "j", descriptor = "Lclient!h;")
-	public static final Class89 aClass89_154 = new Class89(81, 8);
-
 	@OriginalMember(owner = "client!mc", name = "l", descriptor = "Lclient!ld;")
 	public static LinkedList aLinkedList_26 = new LinkedList();
 

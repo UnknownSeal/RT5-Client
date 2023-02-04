@@ -90,13 +90,13 @@ public final class Static182 {
 	public static void method3387() {
 		Static257.outboundBuffer.offset = 0;
 		Static82.length = 0;
-		Static39.aClass89_35 = null;
+		InboundPacket.aInboundPacket_35 = null;
 		Static151.anInt2773 = 0;
-		Static334.aClass89_222 = null;
-		Static231.packetInbound = null;
+		InboundPacket.aInboundPacket_222 = null;
+		InboundPacket.packetInbound = null;
 		Static268.anInt4955 = 0;
 		Static212.inboundBuffer.offset = 0;
-		Static66.aClass89_57 = null;
+		InboundPacket.aInboundPacket_57 = null;
 		Static160.method2955();
 		Static309.method5279();
 		for (@Pc(35) int local35 = 0; local35 < 2048; local35++) {
