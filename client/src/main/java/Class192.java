@@ -142,7 +142,7 @@ public final class Class192 {
 		}
 		this.aModel_7 = null;
 		if (this.aSeqType_2 == null || local11 != this.aSeqType_2.anInt4028) {
-			this.aSeqType_2 = SeqTypeList.seqTypeList.method2371(local11);
+			this.aSeqType_2 = SeqTypeList.seqTypeList.get(local11);
 		} else if (this.aSeqType_2.exactmove == 0) {
 			return;
 		}

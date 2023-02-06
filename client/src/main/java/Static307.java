@@ -38,7 +38,7 @@ public final class Static307 {
 	@OriginalMember(owner = "client!rq", name = "a", descriptor = "(ILclient!oe;BI)V")
 	public static void method5255(@OriginalArg(0) int arg0, @OriginalArg(1) Npc arg1, @OriginalArg(3) int arg2) {
 		if (arg0 == arg1.anInt4597 && arg0 != -1) {
-			@Pc(78) SeqType local78 = SeqTypeList.seqTypeList.method2371(arg0);
+			@Pc(78) SeqType local78 = SeqTypeList.seqTypeList.get(arg0);
 			@Pc(81) int local81 = local78.exactmove;
 			if (local81 == 1) {
 				arg1.anInt4592 = 1;
@@ -51,7 +51,7 @@ public final class Static307 {
 			if (local81 == 2) {
 				arg1.anInt4598 = 0;
 			}
-		} else if (arg0 == -1 || arg1.anInt4597 == -1 || SeqTypeList.seqTypeList.method2371(arg0).priority >= SeqTypeList.seqTypeList.method2371(arg1.anInt4597).priority) {
+		} else if (arg0 == -1 || arg1.anInt4597 == -1 || SeqTypeList.seqTypeList.get(arg0).priority >= SeqTypeList.seqTypeList.get(arg1.anInt4597).priority) {
 			arg1.anInt4597 = arg0;
 			arg1.anInt4598 = 0;
 			arg1.anInt4607 = 0;
@@ -60,7 +60,7 @@ public final class Static307 {
 			arg1.anInt4590 = arg2;
 			arg1.anInt4642 = arg1.movementQueueSize;
 			if (arg1.anInt4597 != -1) {
-				Static1.method4(SeqTypeList.seqTypeList.method2371(arg1.anInt4597), false, arg1.aByte78, arg1.xFine, arg1.zFine, arg1.anInt4607);
+				Static1.method4(SeqTypeList.seqTypeList.get(arg1.anInt4597), false, arg1.aByte78, arg1.xFine, arg1.zFine, arg1.anInt4607);
 			}
 		}
 	}

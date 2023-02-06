@@ -75,7 +75,7 @@ public final class Inventory extends Node {
 		for (@Pc(18) int i = 0; i < inventory.types.length; i++) {
 			if (inventory.types[i] >= 0 && inventory.types[i] < ObjTypeList.objTypeList.anInt2779) {
 				@Pc(44) ObjType objType = ObjTypeList.objTypeList.get(inventory.types[i]);
-				@Pc(54) int local54 = objType.method4771(Static363.aClass18_2.method565(arg0).anInt7023, arg0);
+				@Pc(54) int local54 = objType.method4771(Static363.aClass18_2.get(arg0).anInt7023, arg0);
 				if (arg1) {
 					total += inventory.count[i] * local54;
 				} else {
@@ -92,7 +92,7 @@ public final class Inventory extends Node {
 		@Pc(9) int local9 = 1024;
 		@Pc(11) BasType local11 = null;
 		if (arg2 != -1) {
-			local11 = Static59.aClass7_1.method245(arg2);
+			local11 = BasTypeList.basTypeList.get(arg2);
 		}
 		@Pc(23) int[] local23 = this.types;
 		if (local11 != null && local11.anIntArray425 != null) {

@@ -19,14 +19,14 @@ public final class Npc extends Class11_Sub5_Sub2 {
 	private boolean method4334(@OriginalArg(1) int arg0, @OriginalArg(2) Class19 arg1) {
 		@Pc(7) int local7 = arg0;
 		@Pc(11) BasType local11 = this.method4331();
-		@Pc(27) SeqType local27 = super.anInt4597 != -1 && super.anInt4590 == 0 ? SeqTypeList.seqTypeList.method2371(super.anInt4597) : null;
-		@Pc(45) SeqType local45 = super.anInt4585 == -1 || super.aBoolean317 && local27 != null ? null : SeqTypeList.seqTypeList.method2371(super.anInt4585);
+		@Pc(27) SeqType local27 = super.anInt4597 != -1 && super.anInt4590 == 0 ? SeqTypeList.seqTypeList.get(super.anInt4597) : null;
+		@Pc(45) SeqType local45 = super.anInt4585 == -1 || super.aBoolean317 && local27 != null ? null : SeqTypeList.seqTypeList.get(super.anInt4585);
 		@Pc(48) int local48 = local11.anInt6287;
 		@Pc(51) int local51 = local11.anInt6290;
 		if (local48 != 0 || local51 != 0 || local11.anInt6281 != 0 || local11.anInt6283 != 0) {
 			arg0 |= 0x7;
 		}
-		@Pc(102) Model local102 = super.aModelArray3[0] = this.type.getBodyModel(Static59.aClass7_1, super.anInt4607, local27, arg1, SeqTypeList.seqTypeList, super.anInt4629, super.anInt4626, super.anInt4593, local45, arg0, super.aClass20Array3, super.anInt4624, Static214.aClass226_1, super.anInt4592);
+		@Pc(102) Model local102 = super.aModelArray3[0] = this.type.getBodyModel(BasTypeList.basTypeList, super.anInt4607, local27, arg1, SeqTypeList.seqTypeList, super.anInt4629, super.anInt4626, super.anInt4593, local45, arg0, super.aClass20Array3, super.anInt4624, Static214.aClass226_1, super.anInt4592);
 		if (local102 == null) {
 			return false;
 		}
@@ -155,12 +155,12 @@ public final class Npc extends Class11_Sub5_Sub2 {
 			local10--;
 			local15++;
 		}
-		if (super.anInt4597 != -1 && SeqTypeList.seqTypeList.method2371(super.anInt4597).movetype == 1) {
+		if (super.anInt4597 != -1 && SeqTypeList.seqTypeList.get(super.anInt4597).movetype == 1) {
 			super.anInt4597 = -1;
 		}
 		if (super.spotAnimID != -1) {
 			@Pc(83) Class91 type = Static322.aClass211_2.get(super.spotAnimID);
-			if (type.loop && type.anInt2448 != -1 && SeqTypeList.seqTypeList.method2371(type.anInt2448).movetype == 1) {
+			if (type.loop && type.anInt2448 != -1 && SeqTypeList.seqTypeList.get(type.anInt2448).movetype == 1) {
 				super.spotAnimID = -1;
 			}
 		}
@@ -190,8 +190,8 @@ public final class Npc extends Class11_Sub5_Sub2 {
 		@Pc(37) BasType local37 = this.method4331();
 		@Pc(50) NpcType local50 = this.type.multiNpcs == null ? this.type : this.type.getMultiNpc(Static214.aClass226_1);
 		if (Static218.preferences.characterShadows && local50.hasshadow && local37.aBoolean424) {
-			@Pc(75) SeqType local75 = super.anInt4597 != -1 && super.anInt4590 == 0 ? SeqTypeList.seqTypeList.method2371(super.anInt4597) : null;
-			@Pc(92) SeqType local92 = super.anInt4585 == -1 || super.aBoolean317 && local75 != null ? null : SeqTypeList.seqTypeList.method2371(super.anInt4585);
+			@Pc(75) SeqType local75 = super.anInt4597 != -1 && super.anInt4590 == 0 ? SeqTypeList.seqTypeList.get(super.anInt4597) : null;
+			@Pc(92) SeqType local92 = super.anInt4585 == -1 || super.aBoolean317 && local75 != null ? null : SeqTypeList.seqTypeList.get(super.anInt4585);
 			@Pc(144) Model local144 = Static178.method2340(local92 == null ? super.anInt4607 : super.anInt4626, this.type.shadowcolormodifier2 & 0xFF, this.type.shadowcolormodifier1 & 0xFF, super.anInt4596, local92 == null ? local75 : local92, this.type.size, this.type.shadowcolor2 & 0xFFFF, super.aModelArray3[0], local22, arg0, this.type.shadowcolor1 & 0xFFFF, super.aBoolean318, super.anInt4608, super.anInt4589);
 			if (local144 != null) {
 				@Pc(149) float local149 = arg0.method2802();
@@ -227,12 +227,12 @@ public final class Npc extends Class11_Sub5_Sub2 {
 	@OriginalMember(owner = "client!oe", name = "a", descriptor = "(IIIIZI)V")
 	public void method4338(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) boolean arg3, @OriginalArg(5) int arg4) {
 		super.aByte78 = (byte) arg1;
-		if (super.anInt4597 != -1 && SeqTypeList.seqTypeList.method2371(super.anInt4597).movetype == 1) {
+		if (super.anInt4597 != -1 && SeqTypeList.seqTypeList.get(super.anInt4597).movetype == 1) {
 			super.anInt4597 = -1;
 		}
 		if (super.spotAnimID != -1) {
 			@Pc(37) Class91 local37 = Static322.aClass211_2.get(super.spotAnimID);
-			if (local37.loop && local37.anInt2448 != -1 && SeqTypeList.seqTypeList.method2371(local37.anInt2448).movetype == 1) {
+			if (local37.loop && local37.anInt2448 != -1 && SeqTypeList.seqTypeList.get(local37.anInt2448).movetype == 1) {
 				super.spotAnimID = -1;
 			}
 		}

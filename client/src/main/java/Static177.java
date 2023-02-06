@@ -34,9 +34,9 @@ public final class Static177 {
 				arg0.method1100(local16, local59, local53, Static190.aClass19_8, local34);
 				if (!arg0.aBoolean73 && Static105.anInt2187 / 8 == local40 && Static9.anInt212 / 8 == local46) {
 					if (local16[0] == -1) {
-						Static368.aClass43_1 = null;
+						Static368.aSkyBox_1 = null;
 					} else {
-						Static368.aClass43_1 = Static9.aClass213_1.method5423(local16[0], local16[1], local16[2], Static278.aClass160_1, local16[3]);
+						Static368.aSkyBox_1 = SkyBoxTypeList.skyBoxTypeList.getSkyBox(local16[0], local16[1], local16[2], SkyBoxSphereTypeList.skyBoxSphereTypeList, local16[3]);
 						Static72.anInt1683 = local16[4];
 					}
 				}

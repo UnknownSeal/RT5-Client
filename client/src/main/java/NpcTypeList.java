@@ -30,7 +30,7 @@ public final class NpcTypeList {
 	public boolean allowMembers;
 
 	@OriginalMember(owner = "client!ta", name = "<init>", descriptor = "(Lclient!dn;IZLclient!r;Lclient!r;)V")
-	public NpcTypeList(@OriginalArg(0) GameType arg0, @OriginalArg(1) int arg1, @OriginalArg(2) boolean arg2, @OriginalArg(3) Js5 archive, @OriginalArg(4) Js5 modelArchive) {
+	public NpcTypeList(@OriginalArg(2) boolean arg2, @OriginalArg(3) Js5 archive, @OriginalArg(4) Js5 modelArchive) {
 		this.archive = archive;
 		this.modelArchive = modelArchive;
 		this.allowMembers = arg2;

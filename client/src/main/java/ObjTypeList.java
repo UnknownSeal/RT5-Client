@@ -138,7 +138,7 @@ public final class ObjTypeList {
 			if (newType.params != null) {
 				@Pc(194) boolean local194 = false;
 				for (@Pc(199) Node local199 = newType.params.head(); local199 != null; local199 = newType.params.next()) {
-					@Pc(211) Class240 local211 = this.aClass18_1.method565((int) local199.key);
+					@Pc(211) Class240 local211 = this.aClass18_1.get((int) local199.key);
 					if (local211.aBoolean476) {
 						local199.unlink();
 					} else {

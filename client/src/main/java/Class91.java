@@ -108,7 +108,7 @@ public final class Class91 {
 	@OriginalMember(owner = "client!hf", name = "a", descriptor = "(IILclient!wm;BILclient!gp;I)Lclient!gn;")
 	public Model method2433(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Class19 arg2, @OriginalArg(4) int arg3, @OriginalArg(5) SeqTypeList arg4, @OriginalArg(6) int arg5) {
 		@Pc(7) int local7 = arg3;
-		@Pc(23) SeqType local23 = this.anInt2448 == -1 || arg5 == -1 ? null : arg4.method2371(this.anInt2448);
+		@Pc(23) SeqType local23 = this.anInt2448 == -1 || arg5 == -1 ? null : arg4.get(this.anInt2448);
 		if (local23 != null) {
 			local7 = arg3 | local23.method3989(arg5, false, arg0);
 		}

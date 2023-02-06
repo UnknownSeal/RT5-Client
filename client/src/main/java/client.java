@@ -243,14 +243,14 @@ public final class client extends GameShell {
 		SeqTypeList.seqTypeList.method2375();
 		Static322.aClass211_2.method5410();
 		VarbitTypeList.varbitTypeList.method3389();
-		Static56.aClass199_1.method5108();
-		Static59.aClass7_1.method243();
+		VarpTypeList.varpTypeList.clean();
+		BasTypeList.basTypeList.method243();
 		Static236.aClass125_1.method3375();
 		Static320.aClass104_2.method2704();
 		Static363.aClass18_2.method566();
 		Static287.aClass233_1.method5883();
-		Static9.aClass213_1.method5422();
-		Static278.aClass160_1.method4028();
+		SkyBoxTypeList.skyBoxTypeList.method5422();
+		SkyBoxSphereTypeList.skyBoxSphereTypeList.method4028();
 		Static90.aClass190_3.method4878();
 		Static221.aClass150_3.method3731();
 		Static367.aClass132_1.method3471();
@@ -276,14 +276,14 @@ public final class client extends GameShell {
 		SeqTypeList.seqTypeList.method2374();
 		Static322.aClass211_2.method5407();
 		VarbitTypeList.varbitTypeList.method3392();
-		Static56.aClass199_1.method5111();
-		Static59.aClass7_1.method242();
+		VarpTypeList.varpTypeList.method5111();
+		BasTypeList.basTypeList.method242();
 		Static320.aClass104_2.method2705();
 		Static236.aClass125_1.method3372();
 		Static287.aClass233_1.method5881();
 		Static363.aClass18_2.method564();
-		Static9.aClass213_1.method5421();
-		Static278.aClass160_1.method4029();
+		SkyBoxTypeList.skyBoxTypeList.method5421();
+		SkyBoxSphereTypeList.skyBoxSphereTypeList.method4029();
 		Static90.aClass190_3.method4883();
 		Static221.aClass150_3.method3727();
 		Static367.aClass132_1.method3472();
@@ -1153,7 +1153,7 @@ public final class client extends GameShell {
 				mainLoadPercentage = 65;
 			} else {
 				Static363.aClass18_2 = new Class18(js5Archive2);
-				Static59.aClass7_1 = new Class7(js5Archive2);
+				BasTypeList.basTypeList = new BasTypeList(js5Archive2);
 				Static221.aClass150_3 = new Class150(language, js5Archive2, js5Archive8);
 				EnumTypeList.enumTypeList = new EnumTypeList(language, js5Archive17);
 				Static39.aClass72_3 = new Class72(language, js5Archive2);
@@ -1164,18 +1164,18 @@ public final class client extends GameShell {
 				LocTypeList.locTypeList = new LocTypeList(true, js5Archive16, js5Archive7);
 				Static236.aClass125_1 = new Class125(js5Archive2, js5Archive8);
 				Static320.aClass104_2 = new Class104(js5Archive2, js5Archive8);
-				NpcTypeList.npcTypeList = new NpcTypeList(game, language, true, js5Archive18, js5Archive7);
+				NpcTypeList.npcTypeList = new NpcTypeList(true, js5Archive18, js5Archive7);
 				ObjTypeList.objTypeList = new ObjTypeList(language, true, Static363.aClass18_2, js5Archive19, js5Archive7);
 				Static287.aClass233_1 = new Class233(game, language, js5Archive2);
-				SeqTypeList.seqTypeList = new SeqTypeList(game, language, js5Archive20, js5Archive0, js5Archive1);
-				Static9.aClass213_1 = new Class213(game, language, js5Archive2);
-				Static278.aClass160_1 = new Class160(game, language, js5Archive2);
-				Static322.aClass211_2 = new Class211(game, language, js5Archive21, js5Archive7);
-				Static367.aClass132_1 = new Class132(game, language, js5Archive2);
-				Static183.aClass193_2 = new Class193(game, language, js5Archive2);
-				Static162.aClass45_1 = new Class45(game, language, js5Archive2);
-				VarbitTypeList.varbitTypeList = new VarbitTypeList(game, language, js5Archive22);
-				Static56.aClass199_1 = new Class199(game, language, js5Archive2);
+				SeqTypeList.seqTypeList = new SeqTypeList(js5Archive20, js5Archive0, js5Archive1);
+				SkyBoxTypeList.skyBoxTypeList = new SkyBoxTypeList(js5Archive2);
+				SkyBoxSphereTypeList.skyBoxSphereTypeList = new SkyBoxSphereTypeList(js5Archive2);
+				Static322.aClass211_2 = new Class211(js5Archive21, js5Archive7);
+				Static367.aClass132_1 = new Class132(js5Archive2);
+				Static183.aClass193_2 = new Class193(js5Archive2);
+				Static162.aClass45_1 = new Class45(js5Archive2);
+				VarbitTypeList.varbitTypeList = new VarbitTypeList(js5Archive22);
+				VarpTypeList.varpTypeList = new VarpTypeList(js5Archive2);
 				Static126.method5701(js5Archive13, js5Archive7, js5Archive3, js5Archive8);
 				Static325.method5543(new Js5QuickChatCommandDecoder(), js5Archive24, js5Archive25);
 				Static117.method2366(js5Archive24, js5Archive25);
@@ -1264,10 +1264,10 @@ public final class client extends GameShell {
 				Static336.method5704(1000);
 			}
 		} else if (mainLoadState == 190) {
-			Static89.aBooleanArray18 = new boolean[Static162.aClass45_1.anInt1466];
-			Static75.aStringArray11 = new String[Static183.aClass193_2.anInt5494];
-			Static75.anIntArray117 = new int[Static162.aClass45_1.anInt1466];
-			for (local6 = 0; local6 < Static162.aClass45_1.anInt1466; local6++) {
+			Static89.aBooleanArray18 = new boolean[Static162.aClass45_1.capacity];
+			Static75.aStringArray11 = new String[Static183.aClass193_2.capacity];
+			Static75.anIntArray117 = new int[Static162.aClass45_1.capacity];
+			for (local6 = 0; local6 < Static162.aClass45_1.capacity; local6++) {
 				if (Static162.aClass45_1.method1623(local6).anInt1258 == 0) {
 					Static89.aBooleanArray18[local6] = true;
 					Static112.anInt2294++;

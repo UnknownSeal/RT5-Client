@@ -109,7 +109,7 @@ public final class Static241 {
 			}
 			Static1.add(-1, true, 0, arg1, LocalisedText.EXAMINE.getLocalisedText(client.language), 0, 1006, "<col=ffff00>" + nameWithLevel, Static135.anInt2523, (long) npc.anInt4619);
 		} else if (!arg1) {
-			@Pc(335) Class240 local335 = Static172.anInt3298 == -1 ? null : Static363.aClass18_2.method565(Static172.anInt3298);
+			@Pc(335) Class240 local335 = Static172.anInt3298 == -1 ? null : Static363.aClass18_2.get(Static172.anInt3298);
 			if ((Static115.anInt3837 & 0x2) != 0) {
 				if (local335 == null || type.method2098(local335.anInt7023, Static172.anInt3298) != local335.anInt7023) {
 					Static1.add(-1, true, 0, false, Static91.aString18, 0, 10, Static371.aString68 + " -> <col=ffff00>" + nameWithLevel, Static41.anInt1044, (long) npc.anInt4619);

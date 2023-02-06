@@ -19,7 +19,7 @@ public final class Class240 {
 	public boolean aBoolean476 = true;
 
 	@OriginalMember(owner = "client!vp", name = "a", descriptor = "(Lclient!bt;I)V")
-	public void method6260(@OriginalArg(0) Buffer arg0) {
+	public void decode(@OriginalArg(0) Buffer arg0) {
 		while (true) {
 			@Pc(5) int local5 = arg0.g1();
 			if (local5 == 0) {

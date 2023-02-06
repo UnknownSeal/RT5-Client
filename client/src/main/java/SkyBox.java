@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!dd")
-public final class Class43 {
+public final class SkyBox {
 
 	@OriginalMember(owner = "client!dd", name = "d", descriptor = "Lclient!jd;")
 	private Sprite aSprite_4;
@@ -34,27 +34,27 @@ public final class Class43 {
 	private final int anInt1452;
 
 	@OriginalMember(owner = "client!dd", name = "i", descriptor = "[Lclient!ja;")
-	private final Class112[] aClass112Array1;
+	private final SkyBoxSphere[] aSkyBoxSphereArray1;
 
 	@OriginalMember(owner = "client!dd", name = "l", descriptor = "Lclient!ja;")
-	private final Class112 aClass112_1;
+	private final SkyBoxSphere aSkyBoxSphere_1;
 
 	@OriginalMember(owner = "client!dd", name = "k", descriptor = "[Lclient!ja;")
-	private final Class112[] aClass112Array2;
+	private final SkyBoxSphere[] aSkyBoxSphereArray2;
 
 	@OriginalMember(owner = "client!dd", name = "<init>", descriptor = "(I[Lclient!ja;IIII)V")
-	public Class43(@OriginalArg(0) int arg0, @OriginalArg(1) Class112[] arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5) {
+	public SkyBox(@OriginalArg(0) int arg0, @OriginalArg(1) SkyBoxSphere[] spheres, @OriginalArg(2) int defaultSphereIndex, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5) {
 		this.anInt1448 = arg4;
 		this.anInt1457 = arg0;
 		this.anInt1456 = arg3;
 		this.anInt1452 = arg5;
-		this.aClass112Array1 = arg1;
-		if (arg1 == null) {
-			this.aClass112_1 = null;
-			this.aClass112Array2 = null;
+		this.aSkyBoxSphereArray1 = spheres;
+		if (spheres == null) {
+			this.aSkyBoxSphere_1 = null;
+			this.aSkyBoxSphereArray2 = null;
 		} else {
-			this.aClass112Array2 = new Class112[arg1.length];
-			this.aClass112_1 = arg2 < 0 ? null : arg1[arg2];
+			this.aSkyBoxSphereArray2 = new SkyBoxSphere[spheres.length];
+			this.aSkyBoxSphere_1 = defaultSphereIndex < 0 ? null : spheres[defaultSphereIndex];
 		}
 	}
 
@@ -95,7 +95,7 @@ public final class Class43 {
 			}
 		}
 		for (@Pc(208) int local208 = this.anInt1451 - 1; local208 >= 0; local208--) {
-			this.aClass112Array2[local208].method2916(arg2, arg6, arg8, arg7, arg3, arg4, local8);
+			this.aSkyBoxSphereArray2[local208].method2916(arg2, arg6, arg8, arg7, arg3, arg4, local8);
 		}
 	}
 
@@ -114,17 +114,17 @@ public final class Class43 {
 				this.aSprite_4 = null;
 				this.anInt1461 = local20;
 			}
-			if (this.aClass112Array1 != null) {
+			if (this.aSkyBoxSphereArray1 != null) {
 				this.anInt1451 = 0;
-				@Pc(57) int[] local57 = new int[this.aClass112Array1.length];
-				for (@Pc(59) int local59 = 0; local59 < this.aClass112Array1.length; local59++) {
-					@Pc(66) Class112 local66 = this.aClass112Array1[local59];
+				@Pc(57) int[] local57 = new int[this.aSkyBoxSphereArray1.length];
+				for (@Pc(59) int local59 = 0; local59 < this.aSkyBoxSphereArray1.length; local59++) {
+					@Pc(66) SkyBoxSphere local66 = this.aSkyBoxSphereArray1[local59];
 					if (local66.method2926(this.anInt1456, this.anInt1448, this.anInt1452, this.anInt1459)) {
 						local57[this.anInt1451] = local66.anInt2880;
-						this.aClass112Array2[this.anInt1451++] = local66;
+						this.aSkyBoxSphereArray2[this.anInt1451++] = local66;
 					}
 				}
-				Static17.method4210(this.aClass112Array2, local57, 0, this.anInt1451 - 1);
+				Static17.method4210(this.aSkyBoxSphereArray2, local57, 0, this.anInt1451 - 1);
 			}
 			this.aBoolean122 = true;
 		}
@@ -132,7 +132,7 @@ public final class Class43 {
 		if (this.aBoolean122) {
 			this.aBoolean122 = false;
 			for (@Pc(126) int local126 = this.anInt1451 - 1; local126 >= 0; local126--) {
-				@Pc(137) boolean local137 = this.aClass112Array2[local126].method2924(arg1, this.aClass112_1);
+				@Pc(137) boolean local137 = this.aSkyBoxSphereArray2[local126].method2924(arg1, this.aSkyBoxSphere_1);
 				local115 |= local137;
 				this.aBoolean122 |= !local137;
 			}
@@ -142,9 +142,9 @@ public final class Class43 {
 
 	@OriginalMember(owner = "client!dd", name = "b", descriptor = "(Z)V")
 	public void method1618() {
-		if (this.aClass112Array1 != null) {
-			for (@Pc(10) int local10 = 0; local10 < this.aClass112Array1.length; local10++) {
-				this.aClass112Array1[local10].method2921();
+		if (this.aSkyBoxSphereArray1 != null) {
+			for (@Pc(10) int local10 = 0; local10 < this.aSkyBoxSphereArray1.length; local10++) {
+				this.aSkyBoxSphereArray1[local10].method2921();
 			}
 		}
 		this.aSprite_4 = null;

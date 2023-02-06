@@ -7,7 +7,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class SoftLruHashTable {
 
 	@OriginalMember(owner = "client!hu", name = "w", descriptor = "Lclient!wc;")
-	private final Class246 queue = new Class246();
+	private final SecondaryLinkedList queue = new SecondaryLinkedList();
 
 	@OriginalMember(owner = "client!hu", name = "h", descriptor = "I")
 	private int available;

@@ -43,7 +43,7 @@ public final class Class11_Sub5_Sub4 extends Class11_Sub5 {
 			this.aBoolean445 = true;
 		} else {
 			this.aBoolean445 = false;
-			this.aSeqType_3 = SeqTypeList.seqTypeList.method2371(local41);
+			this.aSeqType_3 = SeqTypeList.seqTypeList.get(local41);
 		}
 		if (arg2 == this.anInt6504) {
 			Static1.method4(this.aSeqType_3, false, super.aByte78, super.xFine, super.zFine, this.anInt6509);

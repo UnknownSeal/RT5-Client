@@ -93,7 +93,7 @@ public final class Class11_Sub5_Sub3 extends Class11_Sub5 {
 		if (local65 == -1) {
 			this.aSeqType_1 = null;
 		} else {
-			this.aSeqType_1 = SeqTypeList.seqTypeList.method2371(local65);
+			this.aSeqType_1 = SeqTypeList.seqTypeList.get(local65);
 		}
 	}
 

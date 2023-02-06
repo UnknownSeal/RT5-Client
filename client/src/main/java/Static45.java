@@ -244,8 +244,8 @@ public final class Static45 {
 								if (local6.anInt4273 != 0) {
 									if (local6.anInt4273 == Static199.anInt5755 || local6.anInt4273 == Static147.anInt2708) {
 										Static20.aComponent_1 = local6;
-										if (Static368.aClass43_1 != null) {
-											Static368.aClass43_1.method1617(local6.height, Static190.aClass19_8);
+										if (Static368.aSkyBox_1 != null) {
+											Static368.aSkyBox_1.method1617(local6.height, Static190.aClass19_8);
 										}
 										if (local6.anInt4273 == Static199.anInt5755) {
 											if (!Static375.aBoolean477 && arg8 >= local28 && arg9 >= local30 && arg8 < local32 && arg9 < local34) {
@@ -619,7 +619,7 @@ public final class Static45 {
 								}
 							}
 							if (local6.type == 5 && local6.anInt4280 != -1) {
-								local6.method4110(Static9.aClass213_1, Static278.aClass160_1).method1617(local6.height, Static190.aClass19_8);
+								local6.method4110(SkyBoxTypeList.skyBoxTypeList, SkyBoxSphereTypeList.skyBoxSphereTypeList).method1617(local6.height, Static190.aClass19_8);
 							}
 							Static24.method852(local6);
 							if (local6.type == 0) {

@@ -83,7 +83,7 @@ public final class Static236 {
 					if (local55 == local25.spotAnimID) {
 						local207 = Static322.aClass211_2.get(local55);
 						if (local207.loop && local207.anInt2448 != -1) {
-							local221 = SeqTypeList.seqTypeList.method2371(local207.anInt2448);
+							local221 = SeqTypeList.seqTypeList.get(local207.anInt2448);
 							local224 = local221.exactmove;
 							if (local224 == 0) {
 								local186 = false;
@@ -98,8 +98,8 @@ public final class Static236 {
 						local207 = Static322.aClass211_2.get(local55);
 						@Pc(262) Class91 local262 = Static322.aClass211_2.get(local25.spotAnimID);
 						if (local207.anInt2448 != -1 && local262.anInt2448 != -1) {
-							@Pc(277) SeqType local277 = SeqTypeList.seqTypeList.method2371(local207.anInt2448);
-							@Pc(283) SeqType local283 = SeqTypeList.seqTypeList.method2371(local262.anInt2448);
+							@Pc(277) SeqType local277 = SeqTypeList.seqTypeList.get(local207.anInt2448);
+							@Pc(283) SeqType local283 = SeqTypeList.seqTypeList.get(local262.anInt2448);
 							if (local277.priority < local283.priority) {
 								local186 = false;
 							}
@@ -119,7 +119,7 @@ public final class Static236 {
 					if (local25.spotAnimID != -1 && Static114.loop == local25.anInt4595) {
 						@Pc(340) int local340 = Static322.aClass211_2.get(local25.spotAnimID).anInt2448;
 						if (local340 != -1) {
-							local221 = SeqTypeList.seqTypeList.method2371(local340);
+							local221 = SeqTypeList.seqTypeList.get(local340);
 							if (local221 != null && local221.frames != null) {
 								Static1.method4(local221, false, local25.aByte78, local25.xFine, local25.zFine, 0);
 							}

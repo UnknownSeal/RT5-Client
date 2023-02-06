@@ -84,7 +84,7 @@ public final class Static154 {
 					if (local11 == -1) {
 						arg3.aClass20Array3[local21] = null;
 					} else {
-						@Pc(46) SeqType local46 = SeqTypeList.seqTypeList.method2371(local11);
+						@Pc(46) SeqType local46 = SeqTypeList.seqTypeList.get(local11);
 						@Pc(49) int local49 = local46.exactmove;
 						@Pc(54) Class20 local54 = arg3.aClass20Array3[local21];
 						if (local54 != null) {
@@ -101,7 +101,7 @@ public final class Static154 {
 								} else if (local49 == 2) {
 									local54.anInt626 = 0;
 								}
-							} else if (local46.priority >= SeqTypeList.seqTypeList.method2371(local54.anInt624).priority) {
+							} else if (local46.priority >= SeqTypeList.seqTypeList.get(local54.anInt624).priority) {
 								local54 = arg3.aClass20Array3[local21] = null;
 							}
 						}

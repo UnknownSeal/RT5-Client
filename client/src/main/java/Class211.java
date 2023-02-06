@@ -27,7 +27,7 @@ public final class Class211 {
 	}
 
 	@OriginalMember(owner = "client!sg", name = "<init>", descriptor = "(Lclient!dn;ILclient!r;Lclient!r;)V")
-	public Class211(@OriginalArg(0) GameType arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5 arg2, @OriginalArg(3) Js5 arg3) {
+	public Class211(@OriginalArg(2) Js5 arg2, @OriginalArg(3) Js5 arg3) {
 		this.archive = arg2;
 		this.aJs5_81 = arg3;
 		@Pc(26) int local26 = this.archive.capacity() - 1;

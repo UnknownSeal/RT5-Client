@@ -22,7 +22,7 @@ public final class Static75 {
 	@OriginalMember(owner = "client!ef", name = "a", descriptor = "(II)V")
 	public static void method1835(@OriginalArg(1) int arg0) {
 		Static12.method282();
-		@Pc(15) int local15 = Static56.aClass199_1.method5113(arg0).anInt4700;
+		@Pc(15) int local15 = VarpTypeList.varpTypeList.get(arg0).clientCode;
 		if (local15 == 0) {
 			return;
 		}

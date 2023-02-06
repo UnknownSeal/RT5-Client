@@ -201,7 +201,7 @@ public final class Static327 {
 								}
 								Static1.add(-1, true, local354.anInt4075, local354.anInt4073 != Static17.self.aByte78, LocalisedText.EXAMINE.getLocalisedText(client.language), local354.anInt4076, 1009, "<col=ff9040>" + local1054.name, Static135.anInt2523, (long) local1046.anInt1717);
 							} else if (Static17.self.aByte78 == local354.anInt4073) {
-								@Pc(1071) Class240 local1071 = Static172.anInt3298 == -1 ? null : Static363.aClass18_2.method565(Static172.anInt3298);
+								@Pc(1071) Class240 local1071 = Static172.anInt3298 == -1 ? null : Static363.aClass18_2.get(Static172.anInt3298);
 								if ((Static115.anInt3837 & 0x1) != 0 && (local1071 == null || local1054.method4771(local1071.anInt7023, Static172.anInt3298) != local1071.anInt7023)) {
 									Static1.add(-1, true, local354.anInt4075, false, Static91.aString18, local354.anInt4076, 13, Static371.aString68 + " -> <col=ff9040>" + local1054.name, Static41.anInt1044, (long) local1046.anInt1717);
 								}
@@ -252,7 +252,7 @@ public final class Static327 {
 							}
 							Static1.add(-1, true, local354.anInt4075, local354.anInt4073 != Static17.self.aByte78, LocalisedText.EXAMINE.getLocalisedText(client.language), local354.anInt4076, 1010, "<col=00ffff>" + local1297.aString12, Static135.anInt2523, (long) local1297.anInt1351);
 						} else if (local354.anInt4073 == Static17.self.aByte78) {
-							@Pc(1324) Class240 local1324 = Static172.anInt3298 == -1 ? null : Static363.aClass18_2.method565(Static172.anInt3298);
+							@Pc(1324) Class240 local1324 = Static172.anInt3298 == -1 ? null : Static363.aClass18_2.get(Static172.anInt3298);
 							if ((Static115.anInt3837 & 0x4) != 0 && (local1324 == null || local1297.method1532(local1324.anInt7023, Static172.anInt3298) != local1324.anInt7023)) {
 								Static1.add(-1, true, local354.anInt4075, false, Static91.aString18, local354.anInt4076, 57, Static371.aString68 + " -> <col=00ffff>" + local1297.aString12, Static41.anInt1044, Static310.method5283(local354.anInt4075, local354.anInt4076, local1288));
 							}

@@ -396,8 +396,8 @@ public final class Static344 {
 	}
 
 	@OriginalMember(owner = "client!tt", name = "a", descriptor = "(II)Lclient!wc;")
-	public static Class246 method5515(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
-		@Pc(3) Class246 local3 = new Class246();
+	public static SecondaryLinkedList method5515(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
+		@Pc(3) SecondaryLinkedList local3 = new SecondaryLinkedList();
 		for (@Pc(8) Map local8 = (Map) areas.head(); local8 != null; local8 = (Map) areas.next()) {
 			if (local8.valid && local8.containsSource(arg0, arg1)) {
 				local3.addTail(local8);

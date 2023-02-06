@@ -425,7 +425,7 @@ public abstract class Class11_Sub5_Sub2 extends Class11_Sub5 {
 	@OriginalMember(owner = "client!mr", name = "c", descriptor = "(I)Lclient!ti;")
 	public final BasType method4331() {
 		@Pc(13) int local13 = this.method4328();
-		return local13 == -1 ? Static18.A_BAS_TYPE___1 : Static59.aClass7_1.method245(local13);
+		return local13 == -1 ? Static18.A_BAS_TYPE___1 : BasTypeList.basTypeList.get(local13);
 	}
 
 	@OriginalMember(owner = "client!mr", name = "a", descriptor = "(ILclient!wm;[Lclient!gn;Z)V")

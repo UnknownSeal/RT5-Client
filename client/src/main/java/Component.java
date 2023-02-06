@@ -479,7 +479,7 @@ public final class Component {
 	}
 
 	@OriginalMember(owner = "client!nk", name = "a", descriptor = "(IILclient!io;Lclient!wl;ILclient!nb;Lclient!ak;Lclient!jo;Lclient!ta;ILclient!gp;ILclient!e;Lclient!wm;)Lclient!gn;")
-	public Model method4104(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) ObjTypeList arg2, @OriginalArg(3) Interface11 arg3, @OriginalArg(5) SeqType arg4, @OriginalArg(6) Class7 arg5, @OriginalArg(7) PlayerAppearance arg6, @OriginalArg(8) NpcTypeList arg7, @OriginalArg(9) int arg8, @OriginalArg(10) SeqTypeList arg9, @OriginalArg(11) int arg10, @OriginalArg(12) IdentityKitTypeList arg11, @OriginalArg(13) Class19 arg12) {
+	public Model method4104(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) ObjTypeList arg2, @OriginalArg(3) Interface11 arg3, @OriginalArg(5) SeqType arg4, @OriginalArg(6) BasTypeList arg5, @OriginalArg(7) PlayerAppearance arg6, @OriginalArg(8) NpcTypeList arg7, @OriginalArg(9) int arg8, @OriginalArg(10) SeqTypeList arg9, @OriginalArg(11) int arg10, @OriginalArg(12) IdentityKitTypeList arg11, @OriginalArg(13) Class19 arg12) {
 		Static86.aBoolean133 = false;
 		if (this.modelType == 0) {
 			return null;
@@ -843,14 +843,14 @@ public final class Component {
 	}
 
 	@OriginalMember(owner = "client!nk", name = "a", descriptor = "(ILclient!sj;Lclient!ng;)Lclient!dd;")
-	public Class43 method4110(@OriginalArg(1) Class213 arg0, @OriginalArg(2) Class160 arg1) {
+	public SkyBox method4110(@OriginalArg(1) SkyBoxTypeList arg0, @OriginalArg(2) SkyBoxSphereTypeList arg1) {
 		if (this.anInt4280 == -1) {
 			return null;
 		}
 		@Pc(41) long local41 = (long) this.anInt4280 & 0xFFFFL | (long) this.anInt4242 << 16 & 0xFFFFL << 16 | ((long) this.anInt4235 & 0xFFFFL) << 32 | ((long) this.anInt4267 & 0xFFFFL) << 48;
-		@Pc(47) Class43 local47 = (Class43) Static288.A_SOFT_LRU_HASH_TABLE___42.get(local41);
+		@Pc(47) SkyBox local47 = (SkyBox) Static288.A_SOFT_LRU_HASH_TABLE___42.get(local41);
 		if (local47 == null) {
-			local47 = arg0.method5423(this.anInt4280, this.anInt4267, this.anInt4235, arg1, this.anInt4242);
+			local47 = arg0.getSkyBox(this.anInt4280, this.anInt4267, this.anInt4235, arg1, this.anInt4242);
 			Static288.A_SOFT_LRU_HASH_TABLE___42.put(local41, local47);
 		}
 		return local47;

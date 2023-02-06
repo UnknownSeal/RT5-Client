@@ -10,12 +10,12 @@ public final class Class132 {
 	private final SoftLruHashTable aSoftLruHashTable_29 = new SoftLruHashTable(256);
 
 	@OriginalMember(owner = "client!ks", name = "a", descriptor = "Lclient!r;")
-	private final Js5 aJs5_53;
+	private final Js5 archive;
 
 	@OriginalMember(owner = "client!ks", name = "<init>", descriptor = "(Lclient!dn;ILclient!r;)V")
-	public Class132(@OriginalArg(0) GameType arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5 arg2) {
-		this.aJs5_53 = arg2;
-		this.aJs5_53.getGroupCapacity(26);
+	public Class132(@OriginalArg(2) Js5 arg2) {
+		this.archive = arg2;
+		this.archive.getGroupCapacity(26);
 	}
 
 	@OriginalMember(owner = "client!ks", name = "a", descriptor = "(BI)Lclient!ck;")
@@ -28,7 +28,7 @@ public final class Class132 {
 		if (local16 != null) {
 			return local16;
 		}
-		@Pc(38) byte[] local38 = this.aJs5_53.fetchFile(26, arg0);
+		@Pc(38) byte[] local38 = this.archive.fetchFile(26, arg0);
 		local16 = new Class2_Sub2_Sub3();
 		if (local38 != null) {
 			local16.method1345(new Buffer(local38));

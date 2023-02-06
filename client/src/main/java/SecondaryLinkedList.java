@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!wc")
-public final class Class246 {
+public final class SecondaryLinkedList {
 
 	@OriginalMember(owner = "client!wc", name = "g", descriptor = "Lclient!tl;")
 	private SecondaryNode cursor;
@@ -13,7 +13,7 @@ public final class Class246 {
 	private final SecondaryNode sentinel = new SecondaryNode();
 
 	@OriginalMember(owner = "client!wc", name = "<init>", descriptor = "()V")
-	public Class246() {
+	public SecondaryLinkedList() {
 		this.sentinel.secondaryPrevious = this.sentinel;
 		this.sentinel.secondaryNext = this.sentinel;
 	}

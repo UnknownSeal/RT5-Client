@@ -4,8 +4,10 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!ak")
-public final class Class7 {
+public final class BasTypeList {
 
+	@OriginalMember(owner = "client!dh", name = "a", descriptor = "Lclient!ak;")
+	public static BasTypeList basTypeList;
 	@OriginalMember(owner = "client!ak", name = "i", descriptor = "Lclient!hu;")
 	private final SoftLruHashTable types = new SoftLruHashTable(64);
 
@@ -13,8 +15,8 @@ public final class Class7 {
 	private final Js5 archive;
 
 	@OriginalMember(owner = "client!ak", name = "<init>", descriptor = "(Lclient!dn;ILclient!r;)V")
-	public Class7(@OriginalArg(2) Js5 arg2) {
-		this.archive = arg2;
+	public BasTypeList(@OriginalArg(2) Js5 archive) {
+		this.archive = archive;
 		this.archive.getGroupCapacity(32);
 	}
 
@@ -43,24 +45,22 @@ public final class Class7 {
 	}
 
 	@OriginalMember(owner = "client!ak", name = "a", descriptor = "(II)Lclient!ti;")
-	public BasType method245(@OriginalArg(0) int arg0) {
-		@Pc(6) SoftLruHashTable local6 = this.types;
-		@Pc(16) BasType local16;
+	public BasType get(@OriginalArg(0) int id) {
+		@Pc(16) BasType type;
 		synchronized (this.types) {
-			local16 = (BasType) this.types.get((long) arg0);
+			type = (BasType) this.types.get(id);
 		}
-		if (local16 != null) {
-			return local16;
+		if (type != null) {
+			return type;
 		}
-		@Pc(33) byte[] data = this.archive.fetchFile(32, arg0);
-		local16 = new BasType();
-		if (data != null) {
-			local16.decode(new Buffer(data));
+		@Pc(33) byte[] bytes = this.archive.fetchFile(32, id);
+		type = new BasType();
+		if (bytes != null) {
+			type.decode(new Buffer(bytes));
 		}
-		@Pc(49) SoftLruHashTable local49 = this.types;
 		synchronized (this.types) {
-			this.types.put((long) arg0, local16);
-			return local16;
+			this.types.put(id, type);
+			return type;
 		}
 	}
 }

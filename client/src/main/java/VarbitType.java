@@ -4,34 +4,34 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!la")
-public final class Class134 {
+public final class VarbitType {
 
 	@OriginalMember(owner = "client!la", name = "a", descriptor = "I")
-	public int anInt3548;
+	public int startBit;
 
 	@OriginalMember(owner = "client!la", name = "b", descriptor = "I")
-	public int anInt3549;
+	public int endBit;
 
 	@OriginalMember(owner = "client!la", name = "h", descriptor = "I")
-	public int anInt3554;
+	public int baseVar;
 
 	@OriginalMember(owner = "client!la", name = "a", descriptor = "(Lclient!bt;I)V")
-	public void method3508(@OriginalArg(0) Buffer arg0) {
+	public void decode(@OriginalArg(0) Buffer buffer) {
 		while (true) {
-			@Pc(16) int local16 = arg0.g1();
-			if (local16 == 0) {
+			@Pc(16) int opcode = buffer.g1();
+			if (opcode == 0) {
 				return;
 			}
-			this.method3509(local16, arg0);
+			this.decode(opcode, buffer);
 		}
 	}
 
 	@OriginalMember(owner = "client!la", name = "a", descriptor = "(IILclient!bt;)V")
-	private void method3509(@OriginalArg(1) int arg0, @OriginalArg(2) Buffer arg1) {
-		if (arg0 == 1) {
-			this.anInt3554 = arg1.g2();
-			this.anInt3548 = arg1.g1();
-			this.anInt3549 = arg1.g1();
+	private void decode(@OriginalArg(1) int opcode, @OriginalArg(2) Buffer buffer) {
+		if (opcode == 1) {
+			this.baseVar = buffer.g2();
+			this.startBit = buffer.g1();
+			this.endBit = buffer.g1();
 		}
 	}
 }

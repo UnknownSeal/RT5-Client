@@ -271,14 +271,14 @@ public final class Class11_Sub5_Sub2_Sub1 extends Class11_Sub5_Sub2 {
 	private boolean method4066(@OriginalArg(1) Class19 arg0, @OriginalArg(2) int arg1) {
 		@Pc(7) int local7 = arg1;
 		@Pc(13) BasType local13 = this.method4331();
-		@Pc(28) SeqType local28 = super.anInt4597 != -1 && super.anInt4590 == 0 ? SeqTypeList.seqTypeList.method2371(super.anInt4597) : null;
-		@Pc(48) SeqType local48 = super.anInt4585 == -1 || this.aBoolean275 || super.aBoolean317 && local28 != null ? null : SeqTypeList.seqTypeList.method2371(super.anInt4585);
+		@Pc(28) SeqType local28 = super.anInt4597 != -1 && super.anInt4590 == 0 ? SeqTypeList.seqTypeList.get(super.anInt4597) : null;
+		@Pc(48) SeqType local48 = super.anInt4585 == -1 || this.aBoolean275 || super.aBoolean317 && local28 != null ? null : SeqTypeList.seqTypeList.get(super.anInt4585);
 		@Pc(51) int local51 = local13.anInt6287;
 		@Pc(54) int local54 = local13.anInt6290;
 		if (local51 != 0 || local54 != 0 || local13.anInt6281 != 0 || local13.anInt6283 != 0) {
 			arg1 |= 0x7;
 		}
-		super.aModelArray3[0] = this.appearance.getBodyModel(super.anInt4624, Static59.aClass7_1, SeqTypeList.seqTypeList, IdentityKitTypeList.identityKitTypeList, local28, super.anInt4592, super.anInt4629, arg1, super.anInt4593, super.anInt4626, local48, Static214.aClass226_1, ObjTypeList.objTypeList, arg0, NpcTypeList.npcTypeList, super.aClass20Array3, super.anInt4607);
+		super.aModelArray3[0] = this.appearance.getBodyModel(super.anInt4624, BasTypeList.basTypeList, SeqTypeList.seqTypeList, IdentityKitTypeList.identityKitTypeList, local28, super.anInt4592, super.anInt4629, arg1, super.anInt4593, super.anInt4626, local48, Static214.aClass226_1, ObjTypeList.objTypeList, arg0, NpcTypeList.npcTypeList, super.aClass20Array3, super.anInt4607);
 		@Pc(116) int local116 = Static365.getModelCacheSize();
 		if (GameShell.maxMemory < 96 && local116 > 50) {
 			Static163.method3104();
@@ -361,12 +361,12 @@ public final class Class11_Sub5_Sub2_Sub1 extends Class11_Sub5_Sub2 {
 
 	@OriginalMember(owner = "client!nh", name = "a", descriptor = "(IIIB)V")
 	public void method4067(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) byte arg2) {
-		if (super.anInt4597 != -1 && SeqTypeList.seqTypeList.method2371(super.anInt4597).movetype == 1) {
+		if (super.anInt4597 != -1 && SeqTypeList.seqTypeList.get(super.anInt4597).movetype == 1) {
 			super.anInt4597 = -1;
 		}
 		if (super.spotAnimID != -1) {
 			@Pc(37) Class91 local37 = Static322.aClass211_2.get(super.spotAnimID);
-			if (local37.loop && local37.anInt2448 != -1 && SeqTypeList.seqTypeList.method2371(local37.anInt2448).movetype == 1) {
+			if (local37.loop && local37.anInt2448 != -1 && SeqTypeList.seqTypeList.get(local37.anInt2448).movetype == 1) {
 				super.spotAnimID = -1;
 			}
 		}
@@ -404,8 +404,8 @@ public final class Class11_Sub5_Sub2_Sub1 extends Class11_Sub5_Sub2 {
 		if (Static218.preferences.characterShadows) {
 			@Pc(55) BasType local55 = this.method4331();
 			if (local55.aBoolean424 && (this.appearance.npcID == -1 || NpcTypeList.npcTypeList.get(this.appearance.npcID).hasshadow)) {
-				@Pc(87) SeqType local87 = super.anInt4597 != -1 && super.anInt4590 == 0 ? SeqTypeList.seqTypeList.method2371(super.anInt4597) : null;
-				@Pc(108) SeqType local108 = super.anInt4585 == -1 || this.aBoolean275 || super.aBoolean317 && local87 != null ? null : SeqTypeList.seqTypeList.method2371(super.anInt4585);
+				@Pc(87) SeqType local87 = super.anInt4597 != -1 && super.anInt4590 == 0 ? SeqTypeList.seqTypeList.get(super.anInt4597) : null;
+				@Pc(108) SeqType local108 = super.anInt4585 == -1 || this.aBoolean275 || super.aBoolean317 && local87 != null ? null : SeqTypeList.seqTypeList.get(super.anInt4585);
 				@Pc(142) Model local142 = Static178.method2340(local108 == null ? super.anInt4607 : super.anInt4626, 240, 160, super.anInt4596, local108 == null ? local87 : local108, 1, 0, super.aModelArray3[0], local24, arg0, 0, super.aBoolean318, super.anInt4608, super.anInt4589);
 				if (local142 != null) {
 					arg0.method2823(local45, local48 - 128.0F);

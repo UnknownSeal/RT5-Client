@@ -24,8 +24,8 @@ public final class Static335 {
 		Static190.method3501();
 		Static339.method5758();
 		Static389.method4489();
-		if (Static368.aClass43_1 != null) {
-			Static368.aClass43_1.method1618();
+		if (Static368.aSkyBox_1 != null) {
+			Static368.aSkyBox_1.method1618();
 		}
 		Static393.method6460();
 		Static211.method3720();

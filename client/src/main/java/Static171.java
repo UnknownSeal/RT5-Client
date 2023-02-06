@@ -118,10 +118,10 @@ public final class Static171 {
 			Static190.aClass19_8.method2895(local104, local110, local106 + local104, local110 + local108);
 			Static190.aClass19_8.method2819();
 			local301 = Static99.anInt2095;
-			if (Static368.aClass43_1 == null) {
+			if (Static368.aSkyBox_1 == null) {
 				Static190.aClass19_8.method2867(local301);
 			} else {
-				Static368.aClass43_1.method1612(Static4.anInt87, Static72.anInt1683 << 3, Static190.aClass19_8, local108, Static265.anInt4857, local301, local104, local106, local110);
+				Static368.aSkyBox_1.method1612(Static4.anInt87, Static72.anInt1683 << 3, Static190.aClass19_8, local108, Static265.anInt4857, local301, local104, local106, local110);
 			}
 			Static37.method1135();
 			Static76.aClass14_3.method3929(Static136.anInt6778, Static102.anInt3592, Static211.anInt3777, -Static265.anInt4857 & 0x3FFF, -Static4.anInt87 & 0x3FFF, -Static342.anInt5657 & 0x3FFF);

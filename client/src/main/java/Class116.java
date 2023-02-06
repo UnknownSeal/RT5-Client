@@ -10,7 +10,7 @@ public final class Class116 {
 	private SecondaryNode aClass2_Sub2_32 = new SecondaryNode();
 
 	@OriginalMember(owner = "client!jm", name = "q", descriptor = "Lclient!wc;")
-	private final Class246 queue = new Class246();
+	private final SecondaryLinkedList queue = new SecondaryLinkedList();
 
 	@OriginalMember(owner = "client!jm", name = "m", descriptor = "I")
 	private final int anInt3150;

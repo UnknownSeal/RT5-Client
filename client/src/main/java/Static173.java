@@ -12,7 +12,7 @@ public final class Static173 {
 		arg0.aBoolean318 = false;
 		@Pc(20) SeqType local20;
 		if (arg0.anInt4585 != -1) {
-			local20 = SeqTypeList.seqTypeList.method2371(arg0.anInt4585);
+			local20 = SeqTypeList.seqTypeList.get(arg0.anInt4585);
 			if (local20 == null || local20.frames == null) {
 				arg0.aBoolean317 = false;
 				arg0.anInt4585 = -1;
@@ -34,7 +34,7 @@ public final class Static173 {
 								arg0.aBoolean317 = false;
 								break label297;
 							}
-							local20 = SeqTypeList.seqTypeList.method2371(arg0.anInt4585);
+							local20 = SeqTypeList.seqTypeList.get(arg0.anInt4585);
 						}
 						Static1.method4(local20, arg0 == Static17.self, arg0.aByte78, arg0.xFine, arg0.zFine, arg0.anInt4626);
 					}
@@ -53,7 +53,7 @@ public final class Static173 {
 				arg0.spotAnimID = -1;
 			} else {
 				label299: {
-					local196 = SeqTypeList.seqTypeList.method2371(local187);
+					local196 = SeqTypeList.seqTypeList.get(local187);
 					if (local184.loop) {
 						if (local196.looptype == 3) {
 							if (arg0.anInt4642 > 0 && arg0.anInt4622 <= Static114.loop && arg0.anInt4584 < Static114.loop) {
@@ -111,7 +111,7 @@ public final class Static173 {
 			}
 		}
 		if (arg0.anInt4597 != -1 && arg0.anInt4590 <= 1) {
-			local20 = SeqTypeList.seqTypeList.method2371(arg0.anInt4597);
+			local20 = SeqTypeList.seqTypeList.get(arg0.anInt4597);
 			if (local20.looptype == 3) {
 				if (arg0.anInt4642 > 0 && arg0.anInt4622 <= Static114.loop && Static114.loop > arg0.anInt4584) {
 					arg0.anInt4597 = -1;
@@ -121,7 +121,7 @@ public final class Static173 {
 			}
 		}
 		if (arg0.anInt4597 != -1 && arg0.anInt4590 == 0) {
-			local20 = SeqTypeList.seqTypeList.method2371(arg0.anInt4597);
+			local20 = SeqTypeList.seqTypeList.get(arg0.anInt4597);
 			if (local20 == null || local20.frames == null) {
 				arg0.anInt4597 = -1;
 			} else {
@@ -163,7 +163,7 @@ public final class Static173 {
 				if (local777.anInt629 > 0) {
 					local777.anInt629--;
 				} else {
-					local196 = SeqTypeList.seqTypeList.method2371(local777.anInt624);
+					local196 = SeqTypeList.seqTypeList.get(local777.anInt624);
 					if (local196 == null || local196.frames == null) {
 						arg0.aClass20Array3[local765] = null;
 					} else {

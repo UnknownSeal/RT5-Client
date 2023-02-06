@@ -298,7 +298,7 @@ public final class Static201 {
 											Static200.redraw(local19);
 										}
 									} else {
-										local19.method4110(Static9.aClass213_1, Static278.aClass160_1).method1612(local19.anInt4302 << 3, 0, Static190.aClass19_8, local19.height, local19.anInt4270 << 3, 0, local90, local19.width, local95);
+										local19.method4110(SkyBoxTypeList.skyBoxTypeList, SkyBoxSphereTypeList.skyBoxSphereTypeList).method1612(local19.anInt4302 << 3, 0, Static190.aClass19_8, local19.height, local19.anInt4270 << 3, 0, local90, local19.width, local95);
 									}
 								} else if (local19.type == 6) {
 									Static99.method2146();
@@ -310,7 +310,7 @@ public final class Static201 {
 										@Pc(1490) ObjType local1490 = ObjTypeList.objTypeList.get(local19.objId);
 										if (local1490 != null) {
 											local1490 = local1490.getCountObjType(local19.objCount);
-											local1511 = local19.modelSeqID == -1 ? null : SeqTypeList.seqTypeList.method2371(local19.modelSeqID);
+											local1511 = local19.modelSeqID == -1 ? null : SeqTypeList.seqTypeList.get(local19.modelSeqID);
 											local1519 = local19.objWearColor ? Static17.self.appearance : null;
 											local1477 = local1490.method4775(local19.anInt4283, 1024, local19.anInt4316, local1511, Static190.aClass19_8, 1, local1519, local19.anInt4247);
 											if (local1477 == null) {
@@ -323,26 +323,26 @@ public final class Static201 {
 										local1161 = local19.modelID;
 										if (local1161 >= 0 && local1161 < 2048) {
 											@Pc(1566) Class11_Sub5_Sub2_Sub1 local1566 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local1161];
-											@Pc(1579) SeqType local1579 = local19.modelSeqID == -1 ? null : SeqTypeList.seqTypeList.method2371(local19.modelSeqID);
+											@Pc(1579) SeqType local1579 = local19.modelSeqID == -1 ? null : SeqTypeList.seqTypeList.get(local19.modelSeqID);
 											if (local1566 != null && (local1161 == Static234.selfID || Static276.method4650(local1566.aString41) == local19.anInt4236)) {
-												local1477 = local1566.appearance.getBodyModel(local19.anInt4283, Static59.aClass7_1, SeqTypeList.seqTypeList, IdentityKitTypeList.identityKitTypeList, local1579, local19.anInt4316, 0, 1024, -1, 0, null, Static214.aClass226_1, ObjTypeList.objTypeList, Static190.aClass19_8, NpcTypeList.npcTypeList, null, local19.anInt4247);
+												local1477 = local1566.appearance.getBodyModel(local19.anInt4283, BasTypeList.basTypeList, SeqTypeList.seqTypeList, IdentityKitTypeList.identityKitTypeList, local1579, local19.anInt4316, 0, 1024, -1, 0, null, Static214.aClass226_1, ObjTypeList.objTypeList, Static190.aClass19_8, NpcTypeList.npcTypeList, null, local19.anInt4247);
 											}
 										}
 									} else if (local19.modelType == 8 || local19.modelType == 9) {
 										@Pc(1701) Inventory local1701 = Static374.get(false, local19.modelID);
-										local1511 = local19.modelSeqID == -1 ? null : SeqTypeList.seqTypeList.method2371(local19.modelSeqID);
+										local1511 = local19.modelSeqID == -1 ? null : SeqTypeList.seqTypeList.get(local19.modelSeqID);
 										if (local1701 != null) {
 											local1519 = local19.objWearColor ? Static17.self.appearance : null;
 											local1477 = local1701.method6359(local19.anInt4247, local19.anInt4283, local19.anInt4236, local19.modelType == 9, local1511, local19.anInt4316, local1519, Static190.aClass19_8);
 										}
 									} else if (local19.modelSeqID == -1) {
-										local1477 = local19.method4104(0, -1, ObjTypeList.objTypeList, Static214.aClass226_1, null, Static59.aClass7_1, Static17.self.appearance, NpcTypeList.npcTypeList, -1, SeqTypeList.seqTypeList, 1024, IdentityKitTypeList.identityKitTypeList, Static190.aClass19_8);
+										local1477 = local19.method4104(0, -1, ObjTypeList.objTypeList, Static214.aClass226_1, null, BasTypeList.basTypeList, Static17.self.appearance, NpcTypeList.npcTypeList, -1, SeqTypeList.seqTypeList, 1024, IdentityKitTypeList.identityKitTypeList, Static190.aClass19_8);
 										if (local1477 == null && Static86.aBoolean133) {
 											Static200.redraw(local19);
 										}
 									} else {
-										@Pc(1640) SeqType local1640 = SeqTypeList.seqTypeList.method2371(local19.modelSeqID);
-										local1477 = local19.method4104(local19.anInt4283, local19.anInt4316, ObjTypeList.objTypeList, Static214.aClass226_1, local1640, Static59.aClass7_1, Static17.self.appearance, NpcTypeList.npcTypeList, local19.anInt4247, SeqTypeList.seqTypeList, 1024, IdentityKitTypeList.identityKitTypeList, Static190.aClass19_8);
+										@Pc(1640) SeqType local1640 = SeqTypeList.seqTypeList.get(local19.modelSeqID);
+										local1477 = local19.method4104(local19.anInt4283, local19.anInt4316, ObjTypeList.objTypeList, Static214.aClass226_1, local1640, BasTypeList.basTypeList, Static17.self.appearance, NpcTypeList.npcTypeList, local19.anInt4247, SeqTypeList.seqTypeList, 1024, IdentityKitTypeList.identityKitTypeList, Static190.aClass19_8);
 										if (local1477 == null && Static86.aBoolean133) {
 											Static200.redraw(local19);
 										}

@@ -312,7 +312,7 @@ public final class PlayerAppearance {
 	}
 
 	@OriginalMember(owner = "client!jo", name = "a", descriptor = "(IZLclient!ak;Lclient!gp;Lclient!e;Lclient!nb;IIIIZILclient!nb;Lclient!wl;Lclient!io;Lclient!wm;Lclient!ta;[Lclient!bg;I)Lclient!gn;")
-	public Model getBodyModel(@OriginalArg(0) int arg0, @OriginalArg(2) Class7 arg1, @OriginalArg(3) SeqTypeList arg2, @OriginalArg(4) IdentityKitTypeList arg3, @OriginalArg(5) SeqType arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6, @OriginalArg(8) int arg7, @OriginalArg(9) int arg8, @OriginalArg(11) int arg9, @OriginalArg(12) SeqType arg10, @OriginalArg(13) Interface11 arg11, @OriginalArg(14) ObjTypeList arg12, @OriginalArg(15) Class19 arg13, @OriginalArg(16) NpcTypeList arg14, @OriginalArg(17) Class20[] arg15, @OriginalArg(18) int arg16) {
+	public Model getBodyModel(@OriginalArg(0) int arg0, @OriginalArg(2) BasTypeList arg1, @OriginalArg(3) SeqTypeList arg2, @OriginalArg(4) IdentityKitTypeList arg3, @OriginalArg(5) SeqType arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6, @OriginalArg(8) int arg7, @OriginalArg(9) int arg8, @OriginalArg(11) int arg9, @OriginalArg(12) SeqType arg10, @OriginalArg(13) Interface11 arg11, @OriginalArg(14) ObjTypeList arg12, @OriginalArg(15) Class19 arg13, @OriginalArg(16) NpcTypeList arg14, @OriginalArg(17) Class20[] arg15, @OriginalArg(18) int arg16) {
 		if (this.npcID != -1) {
 			return arg14.get(this.npcID).getBodyModel(arg1, arg16, arg4, arg13, arg2, arg6, arg9, arg8, arg10, arg7, arg15, arg0, arg11, arg5);
 		}
@@ -352,7 +352,7 @@ public final class PlayerAppearance {
 		for (@Pc(158) int local158 = 0; local158 < local156; local158++) {
 			Static41.aClass2_Sub2_Sub13Array2[local158] = null;
 			if (arg15[local158] != null) {
-				@Pc(176) SeqType local176 = arg2.method2371(arg15[local158].anInt624);
+				@Pc(176) SeqType local176 = arg2.get(arg15[local158].anInt624);
 				if (local176.frames != null) {
 					Static114.A_SEQ_TYPE_ARRAY_14[local158] = local176;
 					local149 = true;
@@ -456,7 +456,7 @@ public final class PlayerAppearance {
 		}
 		@Pc(597) BasType local597 = null;
 		if (this.basID != -1) {
-			local597 = arg1.method245(this.basID);
+			local597 = arg1.get(this.basID);
 		}
 		@Pc(640) int local640;
 		@Pc(646) int local646;

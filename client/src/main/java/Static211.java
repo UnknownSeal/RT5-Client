@@ -27,14 +27,14 @@ public final class Static211 {
 		SeqTypeList.seqTypeList.method2373();
 		Static322.aClass211_2.method5409();
 		VarbitTypeList.varbitTypeList.method3394();
-		Static56.aClass199_1.method5107();
-		Static59.aClass7_1.method241();
+		VarpTypeList.varpTypeList.clear();
+		BasTypeList.basTypeList.method241();
 		Static320.aClass104_2.method2707();
 		Static236.aClass125_1.method3379();
 		Static287.aClass233_1.method5880();
 		Static363.aClass18_2.method563();
-		Static9.aClass213_1.method5425();
-		Static278.aClass160_1.method4032();
+		SkyBoxTypeList.skyBoxTypeList.method5425();
+		SkyBoxSphereTypeList.skyBoxSphereTypeList.method4032();
 		Static90.aClass190_3.method4884();
 		Static221.aClass150_3.method3732();
 		Static367.aClass132_1.method3474();

@@ -2325,7 +2325,7 @@ public final class ScriptRunner {
 										isp -= 2;
 										int1 = intStack[isp];
 										int3 = intStack[isp + 1];
-										local8083 = Static363.aClass18_2.method565(int3);
+										local8083 = Static363.aClass18_2.get(int3);
 										if (local8083.method6262()) {
 											stringStack[anInt3652++] = ObjTypeList.objTypeList.get(int1).method4772(local8083.aString69, int3);
 											return;
@@ -2373,7 +2373,7 @@ public final class ScriptRunner {
 										isp -= 2;
 										int1 = intStack[isp];
 										int3 = intStack[isp + 1];
-										local8083 = Static363.aClass18_2.method565(int3);
+										local8083 = Static363.aClass18_2.get(int3);
 										if (local8083.method6262()) {
 											stringStack[anInt3652++] = NpcTypeList.npcTypeList.get(int1).method2090(local8083.aString69, int3);
 											return;
@@ -2386,7 +2386,7 @@ public final class ScriptRunner {
 										isp -= 2;
 										int1 = intStack[isp];
 										int3 = intStack[isp + 1];
-										local8083 = Static363.aClass18_2.method565(int3);
+										local8083 = Static363.aClass18_2.get(int3);
 										if (local8083.method6262()) {
 											stringStack[anInt3652++] = LocTypeList.locTypeList.method5162(int1).method1520(local8083.aString69, int3);
 											return;
@@ -2399,7 +2399,7 @@ public final class ScriptRunner {
 										isp -= 2;
 										int1 = intStack[isp];
 										int3 = intStack[isp + 1];
-										local8083 = Static363.aClass18_2.method565(int3);
+										local8083 = Static363.aClass18_2.get(int3);
 										if (local8083.method6262()) {
 											stringStack[anInt3652++] = Static367.aClass132_1.method3470(int1).method1346(int3, local8083.aString69);
 											return;
@@ -2409,7 +2409,7 @@ public final class ScriptRunner {
 									}
 								} else if (opcode < 4700 && opcode == 4600) {
 									int1 = intStack[--isp];
-									@Pc(8467) BasType local8467 = Static59.aClass7_1.method245(int1);
+									@Pc(8467) BasType local8467 = BasTypeList.basTypeList.get(int1);
 									if (local8467.anIntArray426 != null && local8467.anIntArray426.length > 0) {
 										local25  = 0;
 										local353 = local8467.anIntArray427[0];
@@ -3091,7 +3091,7 @@ public final class ScriptRunner {
 					isp -= 2;
 					local157 = intStack[isp];
 					local192 = intStack[isp + 1];
-					@Pc(1901) Class246 local1901 = Static344.method5515(local157 >> 14 & 0x3FFF, local157 & 0x3FFF);
+					@Pc(1901) SecondaryLinkedList local1901 = Static344.method5515(local157 >> 14 & 0x3FFF, local157 & 0x3FFF);
 					local1903 = false;
 					for (@Pc(1908) Map local1908 = (Map) local1901.head(); local1908 != null; local1908 = (Map) local1901.next()) {
 						if (local1908.id == local192) {
@@ -4545,7 +4545,7 @@ public final class ScriptRunner {
 							isp -= 2;
 							local157 = intStack[isp];
 							local192 = intStack[isp + 1];
-							@Pc(7329) Class240 local7329 = Static363.aClass18_2.method565(local192);
+							@Pc(7329) Class240 local7329 = Static363.aClass18_2.get(local192);
 							if (local7329.method6262()) {
 								stringStack[anInt3652++] = Static236.aClass125_1.method3378(local157).method4184(local192, local7329.aString69);
 								return;

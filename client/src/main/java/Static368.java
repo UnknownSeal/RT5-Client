@@ -6,7 +6,7 @@ public final class Static368 {
 	public static int anInt6930;
 
 	@OriginalMember(owner = "client!vl", name = "ib", descriptor = "Lclient!dd;")
-	public static Class43 aClass43_1;
+	public static SkyBox aSkyBox_1;
 
 	@OriginalMember(owner = "client!vl", name = "R", descriptor = "I")
 	public static int anInt6917 = 0;

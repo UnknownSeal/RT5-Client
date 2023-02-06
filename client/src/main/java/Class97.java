@@ -7,7 +7,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Class97 {
 
 	@OriginalMember(owner = "client!hs", name = "h", descriptor = "Lclient!wc;")
-	private final Class246 aClass246_1 = new Class246();
+	private final SecondaryLinkedList aSecondaryLinkedList_1 = new SecondaryLinkedList();
 
 	@OriginalMember(owner = "client!hs", name = "m", descriptor = "I")
 	private final int anInt2588;
@@ -35,7 +35,7 @@ public final class Class97 {
 
 	@OriginalMember(owner = "client!hs", name = "a", descriptor = "(I)V")
 	public void method2584() {
-		this.aClass246_1.clear();
+		this.aSecondaryLinkedList_1.clear();
 		this.aClass4_55.clear();
 		this.anInt2579 = this.anInt2588;
 	}
@@ -62,12 +62,12 @@ public final class Class97 {
 		this.method2593(arg0);
 		this.anInt2579--;
 		while (this.anInt2579 < 0) {
-			@Pc(36) Class2_Sub2_Sub2 local36 = (Class2_Sub2_Sub2) this.aClass246_1.removeHead();
+			@Pc(36) Class2_Sub2_Sub2 local36 = (Class2_Sub2_Sub2) this.aSecondaryLinkedList_1.removeHead();
 			this.method2586(local36);
 		}
 		@Pc(61) Class2_Sub2_Sub2_Sub2 local61 = new Class2_Sub2_Sub2_Sub2(arg0, arg1, 1);
 		this.aClass4_55.put(local61, arg0.method1779());
-		this.aClass246_1.addTail(local61);
+		this.aSecondaryLinkedList_1.addTail(local61);
 		local61.secondaryKey = 0L;
 	}
 
@@ -76,7 +76,7 @@ public final class Class97 {
 		if (Static281.aClass236_1 == null) {
 			return;
 		}
-		for (@Pc(19) Class2_Sub2_Sub2 local19 = (Class2_Sub2_Sub2) this.aClass246_1.head(); local19 != null; local19 = (Class2_Sub2_Sub2) this.aClass246_1.next()) {
+		for (@Pc(19) Class2_Sub2_Sub2 local19 = (Class2_Sub2_Sub2) this.aSecondaryLinkedList_1.head(); local19 != null; local19 = (Class2_Sub2_Sub2) this.aSecondaryLinkedList_1.next()) {
 			if (local19.method4624()) {
 				if (local19.method4625() == null) {
 					local19.unlink();
@@ -95,7 +95,7 @@ public final class Class97 {
 
 	@OriginalMember(owner = "client!hs", name = "a", descriptor = "(B)V")
 	public void method2590() {
-		for (@Pc(7) Class2_Sub2_Sub2 local7 = (Class2_Sub2_Sub2) this.aClass246_1.head(); local7 != null; local7 = (Class2_Sub2_Sub2) this.aClass246_1.next()) {
+		for (@Pc(7) Class2_Sub2_Sub2 local7 = (Class2_Sub2_Sub2) this.aSecondaryLinkedList_1.head(); local7 != null; local7 = (Class2_Sub2_Sub2) this.aSecondaryLinkedList_1.next()) {
 			if (local7.method4624()) {
 				local7.unlink();
 				local7.unlinkSecondary();
@@ -130,12 +130,12 @@ public final class Class97 {
 					if (local18.method4624()) {
 						@Pc(59) Class2_Sub2_Sub2_Sub2 local59 = new Class2_Sub2_Sub2_Sub2(arg0, local30, local18.anInt5040);
 						this.aClass4_55.put(local59, local18.key);
-						this.aClass246_1.addTail(local59);
+						this.aSecondaryLinkedList_1.addTail(local59);
 						local59.secondaryKey = 0L;
 						local18.unlink();
 						local18.unlinkSecondary();
 					} else {
-						this.aClass246_1.addTail(local18);
+						this.aSecondaryLinkedList_1.addTail(local18);
 						local18.secondaryKey = 0L;
 					}
 					return local30;

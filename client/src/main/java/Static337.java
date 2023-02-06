@@ -82,7 +82,7 @@ public final class Static337 {
 	@OriginalMember(owner = "client!tk", name = "a", descriptor = "(ILclient!nh;II)V")
 	public static void animate(@OriginalArg(1) Class11_Sub5_Sub2_Sub1 arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
 		if (arg0.anInt4597 == arg2 && arg2 != -1) {
-			@Pc(18) SeqType local18 = SeqTypeList.seqTypeList.method2371(arg2);
+			@Pc(18) SeqType local18 = SeqTypeList.seqTypeList.get(arg2);
 			@Pc(21) int local21 = local18.exactmove;
 			if (local21 == 1) {
 				arg0.anInt4590 = arg1;
@@ -95,7 +95,7 @@ public final class Static337 {
 			if (local21 == 2) {
 				arg0.anInt4598 = 0;
 			}
-		} else if (arg2 == -1 || arg0.anInt4597 == -1 || SeqTypeList.seqTypeList.method2371(arg2).priority >= SeqTypeList.seqTypeList.method2371(arg0.anInt4597).priority) {
+		} else if (arg2 == -1 || arg0.anInt4597 == -1 || SeqTypeList.seqTypeList.get(arg2).priority >= SeqTypeList.seqTypeList.get(arg0.anInt4597).priority) {
 			arg0.anInt4597 = arg2;
 			arg0.anInt4598 = 0;
 			arg0.anInt4624 = 0;
@@ -104,7 +104,7 @@ public final class Static337 {
 			arg0.anInt4592 = 1;
 			arg0.anInt4607 = 0;
 			if (arg0.anInt4597 != -1) {
-				Static1.method4(SeqTypeList.seqTypeList.method2371(arg0.anInt4597), arg0 == Static17.self, arg0.aByte78, arg0.xFine, arg0.zFine, arg0.anInt4607);
+				Static1.method4(SeqTypeList.seqTypeList.get(arg0.anInt4597), arg0 == Static17.self, arg0.aByte78, arg0.xFine, arg0.zFine, arg0.anInt4607);
 			}
 		}
 	}

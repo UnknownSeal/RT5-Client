@@ -7,62 +7,60 @@ import org.openrs2.deob.annotation.Pc;
 public final class Class18 {
 
 	@OriginalMember(owner = "client!be", name = "i", descriptor = "Lclient!hu;")
-	private final SoftLruHashTable aSoftLruHashTable_2 = new SoftLruHashTable(64);
+	private final SoftLruHashTable types = new SoftLruHashTable(64);
 
 	@OriginalMember(owner = "client!be", name = "h", descriptor = "Lclient!r;")
-	private final Js5 aJs5_2;
+	private final Js5 archive;
 
 	@OriginalMember(owner = "client!be", name = "<init>", descriptor = "(Lclient!dn;ILclient!r;)V")
 	public Class18(@OriginalArg(2) Js5 arg2) {
-		this.aJs5_2 = arg2;
-		if (this.aJs5_2 != null) {
-			this.aJs5_2.getGroupCapacity(11);
+		this.archive = arg2;
+		if (this.archive != null) {
+			this.archive.getGroupCapacity(11);
 		}
 	}
 
 	@OriginalMember(owner = "client!be", name = "b", descriptor = "(I)V")
 	public void method563() {
-		@Pc(2) SoftLruHashTable local2 = this.aSoftLruHashTable_2;
-		synchronized (this.aSoftLruHashTable_2) {
-			this.aSoftLruHashTable_2.clear();
+		@Pc(2) SoftLruHashTable local2 = this.types;
+		synchronized (this.types) {
+			this.types.clear();
 		}
 	}
 
 	@OriginalMember(owner = "client!be", name = "c", descriptor = "(I)V")
 	public void method564() {
-		@Pc(14) SoftLruHashTable local14 = this.aSoftLruHashTable_2;
-		synchronized (this.aSoftLruHashTable_2) {
-			this.aSoftLruHashTable_2.method2621();
+		@Pc(14) SoftLruHashTable local14 = this.types;
+		synchronized (this.types) {
+			this.types.method2621();
 		}
 	}
 
 	@OriginalMember(owner = "client!be", name = "a", descriptor = "(II)Lclient!vp;")
-	public Class240 method565(@OriginalArg(1) int arg0) {
-		@Pc(11) SoftLruHashTable local11 = this.aSoftLruHashTable_2;
+	public Class240 get(@OriginalArg(1) int id) {
 		@Pc(21) Class240 local21;
-		synchronized (this.aSoftLruHashTable_2) {
-			local21 = (Class240) this.aSoftLruHashTable_2.get((long) arg0);
+		synchronized (this.types) {
+			local21 = (Class240) this.types.get(id);
 		}
 		if (local21 != null) {
 			return local21;
 		}
-		@Pc(38) byte[] local38 = this.aJs5_2.fetchFile(11, arg0);
+		@Pc(38) byte[] bytes = this.archive.fetchFile(11, id);
 		local21 = new Class240();
-		if (local38 != null) {
-			local21.method6260(new Buffer(local38));
+		if (bytes != null) {
+			local21.decode(new Buffer(bytes));
 		}
-		@Pc(54) SoftLruHashTable local54 = this.aSoftLruHashTable_2;
-		synchronized (this.aSoftLruHashTable_2) {
-			this.aSoftLruHashTable_2.put((long) arg0, local21);
+		synchronized (this.types) {
+			this.types.put(id, local21);
 			return local21;
 		}
 	}
 
 	@OriginalMember(owner = "client!be", name = "b", descriptor = "(II)V")
 	public void method566() {
-		@Pc(6) SoftLruHashTable local6 = this.aSoftLruHashTable_2;
-		synchronized (this.aSoftLruHashTable_2) {
-			this.aSoftLruHashTable_2.clean(5);
+		@Pc(6) SoftLruHashTable local6 = this.types;
+		synchronized (this.types) {
+			this.types.clean(5);
 		}
 	}
 }

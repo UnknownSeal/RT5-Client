@@ -7,7 +7,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Js5CacheQueue implements Runnable {
 
 	@OriginalMember(owner = "client!ro", name = "c", descriptor = "Lclient!wc;")
-	private final Class246 queue = new Class246();
+	private final SecondaryLinkedList queue = new SecondaryLinkedList();
 
 	@OriginalMember(owner = "client!ro", name = "j", descriptor = "Z")
 	private boolean stop = false;
@@ -34,7 +34,7 @@ public final class Js5CacheQueue implements Runnable {
 	@Override
 	public void run() {
 		while (!this.stop) {
-			@Pc(6) Class246 local6 = this.queue;
+			@Pc(6) SecondaryLinkedList local6 = this.queue;
 			@Pc(14) Js5CacheRequest request;
 			synchronized (this.queue) {
 				request = (Js5CacheRequest) this.queue.removeHead();
@@ -62,7 +62,7 @@ public final class Js5CacheQueue implements Runnable {
 
 	@OriginalMember(owner = "client!ro", name = "a", descriptor = "(BLclient!td;)V")
 	private void method5223(@OriginalArg(1) Js5CacheRequest arg0) {
-		@Pc(2) Class246 local2 = this.queue;
+		@Pc(2) SecondaryLinkedList local2 = this.queue;
 		synchronized (this.queue) {
 			this.queue.addTail(arg0);
 			this.size++;
@@ -74,7 +74,7 @@ public final class Js5CacheQueue implements Runnable {
 	public Js5CacheRequest readSynchronous(@OriginalArg(2) Cache cache, @OriginalArg(0) int group) {
 		@Pc(15) Js5CacheRequest request = new Js5CacheRequest();
 		request.type = 1;
-		@Pc(21) Class246 local21 = this.queue;
+		@Pc(21) SecondaryLinkedList local21 = this.queue;
 		synchronized (this.queue) {
 			@Pc(29) Js5CacheRequest otherRequest = (Js5CacheRequest) this.queue.head();
 			while (true) {
@@ -109,7 +109,7 @@ public final class Js5CacheQueue implements Runnable {
 	@OriginalMember(owner = "client!ro", name = "a", descriptor = "(Z)V")
 	public void method5227() {
 		this.stop = true;
-		@Pc(9) Class246 local9 = this.queue;
+		@Pc(9) SecondaryLinkedList local9 = this.queue;
 		synchronized (this.queue) {
 			this.queue.notifyAll();
 		}

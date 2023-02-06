@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!ja")
-public final class Class112 {
+public final class SkyBoxSphere {
 
 	@OriginalMember(owner = "client!ja", name = "a", descriptor = "I")
 	private int anInt2871;
@@ -49,7 +49,7 @@ public final class Class112 {
 	private final int anInt2877;
 
 	@OriginalMember(owner = "client!ja", name = "<init>", descriptor = "(IIIIIIIZ)V")
-	public Class112(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) boolean arg7) {
+	public SkyBoxSphere(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) boolean arg7) {
 		this.anInt2878 = arg2;
 		this.anInt2873 = arg3;
 		this.anInt2881 = arg4;
@@ -81,7 +81,7 @@ public final class Class112 {
 	}
 
 	@OriginalMember(owner = "client!ja", name = "a", descriptor = "(Lclient!wm;Lclient!ja;)V")
-	private void method2918(@OriginalArg(0) Class19 arg0, @OriginalArg(1) Class112 arg1) {
+	private void method2918(@OriginalArg(0) Class19 arg0, @OriginalArg(1) SkyBoxSphere arg1) {
 		Static157.method2923(arg0);
 		Static157.method2925(arg0);
 		arg0.method2851(Static157.anIntArray180);
@@ -149,7 +149,7 @@ public final class Class112 {
 	}
 
 	@OriginalMember(owner = "client!ja", name = "b", descriptor = "(Lclient!wm;Lclient!ja;)V")
-	private void method2919(@OriginalArg(0) Class19 arg0, @OriginalArg(1) Class112 arg1) {
+	private void method2919(@OriginalArg(0) Class19 arg0, @OriginalArg(1) SkyBoxSphere arg1) {
 		@Pc(6) RawModel local6 = RawModel.create(Static336.aJs5_90, this.anInt2876);
 		if (local6 == null) {
 			return;
@@ -215,7 +215,7 @@ public final class Class112 {
 	}
 
 	@OriginalMember(owner = "client!ja", name = "c", descriptor = "(Lclient!wm;Lclient!ja;)Z")
-	private boolean method2922(@OriginalArg(0) Class19 arg0, @OriginalArg(1) Class112 arg1) {
+	private boolean method2922(@OriginalArg(0) Class19 arg0, @OriginalArg(1) SkyBoxSphere arg1) {
 		if (this.aSprite_11 == null) {
 			if (this.anInt2877 == 0) {
 				if (Static274.anInterface2_7.method2657(this.anInt2876)) {
@@ -232,7 +232,7 @@ public final class Class112 {
 	}
 
 	@OriginalMember(owner = "client!ja", name = "d", descriptor = "(Lclient!wm;Lclient!ja;)Z")
-	public boolean method2924(@OriginalArg(0) Class19 arg0, @OriginalArg(1) Class112 arg1) {
+	public boolean method2924(@OriginalArg(0) Class19 arg0, @OriginalArg(1) SkyBoxSphere arg1) {
 		return this.aSprite_11 != null || this.method2922(arg0, arg1);
 	}
 

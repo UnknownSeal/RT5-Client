@@ -7,9 +7,9 @@ import org.openrs2.deob.annotation.Pc;
 public final class DelayedStateChange extends SecondaryNode {
 
 	@OriginalMember(owner = "client!md", name = "l", descriptor = "Lclient!wc;")
-	public static final Class246 clientQueue = new Class246();
+	public static final SecondaryLinkedList clientQueue = new SecondaryLinkedList();
 	@OriginalMember(owner = "client!vl", name = "bb", descriptor = "Lclient!wc;")
-	public static final Class246 serverQueue = new Class246();
+	public static final SecondaryLinkedList serverQueue = new SecondaryLinkedList();
 	@OriginalMember(owner = "client!ra", name = "u", descriptor = "Lclient!ad;")
 	public static final HashTable changes = new HashTable(16);
 	@OriginalMember(owner = "client!gg", name = "D", descriptor = "Ljava/lang/String;")

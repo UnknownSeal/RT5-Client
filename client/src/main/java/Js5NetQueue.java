@@ -20,16 +20,16 @@ public final class Js5NetQueue {
 	private Js5NetRequest current;
 
 	@OriginalMember(owner = "client!pp", name = "o", descriptor = "Lclient!wc;")
-	private final Class246 pendingUrgentRequests = new Class246();
+	private final SecondaryLinkedList pendingUrgentRequests = new SecondaryLinkedList();
 
 	@OriginalMember(owner = "client!pp", name = "r", descriptor = "Lclient!wc;")
-	private final Class246 inFlightUrgentRequests = new Class246();
+	private final SecondaryLinkedList inFlightUrgentRequests = new SecondaryLinkedList();
 
 	@OriginalMember(owner = "client!pp", name = "u", descriptor = "Lclient!wc;")
-	private final Class246 pendingPrefetchRequests = new Class246();
+	private final SecondaryLinkedList pendingPrefetchRequests = new SecondaryLinkedList();
 
 	@OriginalMember(owner = "client!pp", name = "v", descriptor = "Lclient!wc;")
-	private final Class246 inFlightPrefetchRequests = new Class246();
+	private final SecondaryLinkedList inFlightPrefetchRequests = new SecondaryLinkedList();
 
 	@OriginalMember(owner = "client!pp", name = "B", descriptor = "Lclient!bt;")
 	private final Buffer outBuffer = new Buffer(4);

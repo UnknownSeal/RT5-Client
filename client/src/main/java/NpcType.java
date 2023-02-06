@@ -175,7 +175,7 @@ public final class NpcType {
 	public int headicon = -1;
 
 	@OriginalMember(owner = "client!fk", name = "a", descriptor = "(Lclient!ak;ILclient!nb;Lclient!wm;Lclient!gp;IIILclient!nb;I[Lclient!bg;IBLclient!wl;I)Lclient!gn;")
-	public Model getBodyModel(@OriginalArg(0) Class7 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) SeqType arg2, @OriginalArg(3) Class19 arg3, @OriginalArg(4) SeqTypeList arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) SeqType arg8, @OriginalArg(9) int arg9, @OriginalArg(10) Class20[] arg10, @OriginalArg(11) int arg11, @OriginalArg(13) Interface11 arg12, @OriginalArg(14) int arg13) {
+	public Model getBodyModel(@OriginalArg(0) BasTypeList arg0, @OriginalArg(1) int arg1, @OriginalArg(2) SeqType arg2, @OriginalArg(3) Class19 arg3, @OriginalArg(4) SeqTypeList arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) SeqType arg8, @OriginalArg(9) int arg9, @OriginalArg(10) Class20[] arg10, @OriginalArg(11) int arg11, @OriginalArg(13) Interface11 arg12, @OriginalArg(14) int arg13) {
 		if (this.multiNpcs != null) {
 			@Pc(13) NpcType local13 = this.getMultiNpc(arg12);
 			return local13 == null ? null : local13.getBodyModel(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13);
@@ -197,7 +197,7 @@ public final class NpcType {
 		for (@Pc(80) int local80 = 0; local80 < local78; local80++) {
 			Static21.aClass2_Sub2_Sub13Array1[local80] = null;
 			if (arg10[local80] != null) {
-				@Pc(98) SeqType local98 = arg4.method2371(arg10[local80].anInt624);
+				@Pc(98) SeqType local98 = arg4.get(arg10[local80].anInt624);
 				if (local98.frames != null) {
 					local65 = true;
 					Static168.A_SEQ_TYPE_ARRAY_42[local80] = local98;
@@ -350,7 +350,7 @@ public final class NpcType {
 			}
 			@Pc(700) BasType basType = null;
 			if (this.bastypeid != -1) {
-				basType = arg0.method245(this.bastypeid);
+				basType = arg0.get(this.bastypeid);
 			}
 			@Pc(718) int local718;
 			if (basType != null && basType.equipmentTransforms != null) {
